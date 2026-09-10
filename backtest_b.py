@@ -19,7 +19,7 @@ def tradeable(sym):
 def solana_liquidity(sym):
     """Liquiditaet des besten Solana-Pools laut DexScreener; 0 wenn keiner."""
     d = get(f"{DS}/latest/dex/search", {"q": sym}) or {}
-    pairs = [p for p in d.get("pairs", []) if p.get("chainId") == "solana" and p["baseToken"]["symbol"].upper() == sym]
+    pairs = [p for p in (d.get("pairs") or []) if p.get("chainId") == "solana" and p["baseToken"]["symbol"].upper() == sym]
     return max([(p.get("liquidity") or {}).get("usd", 0) for p in pairs] or [0])
 
 def universe():
