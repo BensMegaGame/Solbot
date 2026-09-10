@@ -3,7 +3,7 @@ Ausgefuehrt wird zu Solana-DEX-Preisen (DexScreener), Signale aus CoinGecko-Tage
 import os, time, requests
 from common import *
 from strategies_b import STRATEGIES, exit_signal
-from backtest_b import UNIVERSE, history, POS_USD, MAX_POS
+from backtest_b import universe, history, POS_USD, MAX_POS
 
 SEARCH_SYMBOL = {"BTC": "cbBTC", "ETH": "WETH"}   # so heissen sie auf Solana
 
@@ -30,7 +30,8 @@ def main():
         print("Bot B: keine Strategie festgelegt – erst Backtest laufen lassen"); pf.s["last_day"] = today; pf.commit(); return
     strat = cfg["strategy"]; fn = STRATEGIES[strat]
     prices = {}
-    for cid, sym in UNIVERSE.items():
+    uni = load("universe_b.json", {}) or universe()
+    for cid, sym in uni.items():
         addr = resolve(sym)
         if not addr: continue
         pair = solana_pair(addr)
@@ -48,7 +49,7 @@ def main():
             h = history(cid, 60)
             if h and fn(h[0], h[1]) == "buy":
                 pf.buy(sym, addr, px, POS_USD, liq, strat)
-            time.sleep(3)
+            time.sleep(2.5 if os.environ.get("COINGECKO_KEY") else 6)
         time.sleep(1.1)
     pf.s["last_day"] = today; pf.s["strategy"] = strat
     v = pf.mark(prices); pf.commit()
