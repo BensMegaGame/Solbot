@@ -13,7 +13,7 @@ def resolve(sym):
     if sym in cache: return cache[sym]
     q = SEARCH_SYMBOL.get(sym, sym)
     d = get(f"{DS}/latest/dex/search", {"q": q}) or {}
-    pairs = [p for p in d.get("pairs", []) if p.get("chainId") == "solana"
+    pairs = [p for p in (d.get("pairs") or []) if p.get("chainId") == "solana"
              and p["baseToken"]["symbol"].upper() == q.upper() and (p.get("liquidity") or {}).get("usd", 0) > 200_000]
     if not pairs: return None
     best = max(pairs, key=lambda p: p["liquidity"]["usd"])
