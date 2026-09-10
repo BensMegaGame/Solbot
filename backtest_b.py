@@ -7,9 +7,20 @@ from strategies_b import STRATEGIES, exit_signal
 CG = "https://api.coingecko.com/api/v3"
 POS_USD, MAX_POS, SLIP = 125.0, 4, 0.005
 KEY = os.environ.get("COINGECKO_KEY")
-TOP_N, MIN_LIQ = 50, 500_000
-EXCLUDE = {"USDC", "USDT", "USDS", "PYUSD", "USD1", "DAI", "FDUSD", "USDE", "EURC", "USDG", "USDY",
-           "JITOSOL", "MSOL", "BSOL", "JUPSOL", "INF", "BNSOL", "HSOL", "LST", "DSOL", "VSOL", "SSOL"}
+TOP_N, MIN_LIQ, MIN_DAYS = 50, 500_000, 300
+EXCLUDE = {"WBTC", "TBTC", "WETH", "WSOL", "INF", "LST", "SPYX", "TSLAX", "NVDAX", "AAPLX", "MSTRX"}
+EXCLUDE_SUB = ("USD", "EUR", "GBP", "CHF", "JPY", "XAU", "DAI", "SOL")   # Stables, Gold, LSTs (…SOL)
+
+def tradeable(sym):
+    if sym == "SOL" or sym == "CBBTC": return True
+    if sym in EXCLUDE: return False
+    return not any(s in sym for s in EXCLUDE_SUB)
+
+def solana_liquidity(sym):
+    """Liquiditaet des besten Solana-Pools laut DexScreener; 0 wenn keiner."""
+    d = get(f"{DS}/latest/dex/search", {"q": sym}) or {}
+    pairs = [p for p in d.get("pairs", []) if p.get("chainId") == "solana" and p["baseToken"]["symbol"].upper() == sym]
+    return max([(p.get("liquidity") or {}).get("usd", 0) for p in pairs] or [0])
 
 def universe():
     """Top-N Solana-Tokens nach Liquiditaet (ueber CoinGecko-Kategorie), ohne Stables/LSTs.
@@ -23,8 +34,12 @@ def universe():
             print("coingecko markets", r.status_code); break
         for c in r.json():
             sym = c["symbol"].upper()
-            if sym in EXCLUDE or sym.endswith("SOL") and sym != "SOL": continue
+            if not tradeable(sym) or sym in out.values(): continue
             if (c.get("total_volume") or 0) < MIN_LIQ: continue
+            liq = solana_liquidity("CBBTC" if sym == "CBBTC" else sym)
+            time.sleep(1.1)
+            if liq < MIN_LIQ:
+                print(f"skip {sym}: Solana-Liquiditaet {liq:,.0f}"); continue
             out[c["id"]] = sym
             if len(out) >= TOP_N: break
         if len(out) >= TOP_N: break
@@ -82,8 +97,10 @@ def main():
     print(f"Universum: {len(uni)} Tokens")
     for cid, sym in uni.items():
         h = history(cid)
-        if h and len(h[0]) > 60: data[sym] = h
+        if h and len(h[0]) >= MIN_DAYS: data[sym] = h
+        elif h: print(f"skip {sym}: nur {len(h[0])} Tage Historie")
         time.sleep(2.5 if KEY else 6)
+    save("universe_b.json", {cid: sym for cid, sym in uni.items() if sym in data})
     if not data:
         print("keine Daten"); return
     hold = {s: round((d[0][-1] / d[0][31] - 1) * 100, 1) for s, d in data.items()}
