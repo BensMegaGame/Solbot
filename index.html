@@ -117,8 +117,8 @@ function backtest(bt){
   if(!bt){ el.innerHTML='<div class="empty">Noch nicht gelaufen. Auf GitHub: Actions → backtest-bot-b → Run workflow.</div>'; return }
   const best=bt.results[0]; const ok=best.trades>=15&&best.return_pct>0;
   el.innerHTML=`<p style="font-size:14px;margin:6px 0 10px">${bt.days} Tage, Tokens: ${bt.tokens.join(', ')}. ${ok?`Gewählt: <b>${best.strategy}</b>.`:'Keine Strategie erfüllt die Kriterien (mind. 15 Trades und positiv) – Bot B sammelt nur Daten.'}</p>`+
-    '<table><tr><th>Strategie</th><th class="n">Rendite</th><th class="n">Trades</th><th class="n">Treffer</th><th class="n">Max. Drawdown</th></tr>'+
-    bt.results.map(r=>`<tr><td>${r.strategy}</td><td class="n ${cls(r.return_pct)}">${pct(r.return_pct)}</td><td class="n">${r.trades}</td><td class="n">${r.win_rate} %</td><td class="n">${r.max_drawdown_pct} %</td></tr>`).join('')+'</table>'+
+    '<table><tr><th>Strategie</th><th class="n">Rendite</th><th class="n">Trades</th><th class="n">Treffer</th><th class="n">Max. Drawdown</th><th class="n">1. Hälfte</th><th class="n">2. Hälfte</th></tr>'+
+    bt.results.map(r=>`<tr><td>${r.strategy}</td><td class="n ${cls(r.return_pct)}">${pct(r.return_pct)}</td><td class="n">${r.trades}</td><td class="n">${r.win_rate} %</td><td class="n">${r.max_drawdown_pct} %</td><td class="n ${r.half1_pct!=null?cls(r.half1_pct):''}">${r.half1_pct!=null?pct(r.half1_pct):'–'}</td><td class="n ${r.half2_pct!=null?cls(r.half2_pct):''}">${r.half2_pct!=null?pct(r.half2_pct):'–'}</td></tr>`).join('')+'</table>'+
     `<p style="font-size:13px;color:#5f6b67;margin-top:8px">Zum Vergleich Kaufen &amp; Halten: ${Object.entries(bt.buy_and_hold_pct).map(([k,v])=>k+' '+pct(v)).join(', ')}</p>`;
 }
 
