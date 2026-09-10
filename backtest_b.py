@@ -61,6 +61,14 @@ def main():
         print("keine Daten"); return
     hold = {s: round((d[0][-1] / d[0][31] - 1) * 100, 1) for s, d in data.items()}
     results = [run(s, data) for s in STRATEGIES]
+    # Robustheit: erste vs. zweite Jahreshaelfte getrennt
+    half = min(len(v[0]) for v in data.values()) // 2
+    d1 = {k: (v[0][:half], v[1][:half]) for k, v in data.items()}
+    d2 = {k: (v[0][half:], v[1][half:]) for k, v in data.items()}
+    for r in results:
+        h1, h2 = run(r["strategy"], d1), run(r["strategy"], d2)
+        r["half1_pct"], r["half1_trades"] = h1["return_pct"], h1["trades"]
+        r["half2_pct"], r["half2_trades"] = h2["return_pct"], h2["trades"]
     results.sort(key=lambda r: (r["trades"] >= 15, r["return_pct"]), reverse=True)
     out = {"run": now_iso(), "days": min(len(v[0]) for v in data.values()), "tokens": list(data),
            "buy_and_hold_pct": hold, "results": results}
@@ -72,7 +80,8 @@ def main():
     else:
         verdict = "keine Strategie erfuellt die Kriterien (>=15 Trades, positiv) – Bot B bleibt im Sammelmodus"
     for r in results:
-        print(f"{r['strategy']:<14} return {r['return_pct']:>6}%  trades {r['trades']:>3}  win {r['win_rate']}%  mdd {r['max_drawdown_pct']}%")
+        print(f"{r['strategy']:<16} return {r['return_pct']:>6}%  trades {r['trades']:>3}  win {r['win_rate']}%  mdd {r['max_drawdown_pct']}%"
+              f"  | H1 {r['half1_pct']}% ({r['half1_trades']})  H2 {r['half2_pct']}% ({r['half2_trades']})")
     print("Buy&Hold:", hold); print(verdict)
 
 if __name__ == "__main__":
