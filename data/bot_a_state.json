@@ -1,11 +1,35 @@
 {
- "cash": 500.0,
- "positions": {},
- "trades": [],
+ "cash": 449.73,
+ "positions": {
+  "AaEhFTX4naHSWSXz9TVe5QgLbtSLT8ZqYJGZzDDcoroh": {
+   "sym": "JUPCAT",
+   "qty": 143929.04413267493,
+   "cost": 50.269999999999996,
+   "opened": "2026-09-10T18:51:47Z",
+   "peak": 0.0003467,
+   "entry": 0.00034926932436
+  }
+ },
+ "trades": [
+  {
+   "t": "2026-09-10T18:51:47Z",
+   "side": "buy",
+   "sym": "JUPCAT",
+   "addr": "AaEhFTX4naHSWSXz9TVe5QgLbtSLT8ZqYJGZzDDcoroh",
+   "price": 0.0003467,
+   "usd": 50.27,
+   "slip": 0.002,
+   "reason": "screener"
+  }
+ ],
  "equity": [
   {
    "t": "2026-09-10T17:17:59Z",
    "v": 500.0
+  },
+  {
+   "t": "2026-09-10T18:52:27Z",
+   "v": 499.63
   }
  ],
  "started": "2026-09-10T17:17:16Z"
