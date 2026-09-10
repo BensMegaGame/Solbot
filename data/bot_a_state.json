@@ -1,13 +1,21 @@
 {
- "cash": 449.73,
+ "cash": 399.46000000000004,
  "positions": {
   "AaEhFTX4naHSWSXz9TVe5QgLbtSLT8ZqYJGZzDDcoroh": {
    "sym": "JUPCAT",
    "qty": 143929.04413267493,
    "cost": 50.269999999999996,
    "opened": "2026-09-10T18:51:47Z",
-   "peak": 0.0005243,
+   "peak": 0.0006442,
    "entry": 0.00034926932436
+  },
+  "Aw6fiDPWLUnjSsJQtsyEMSaoPaKAUUrStAsYPiPwpump": {
+   "sym": "Anonymouse",
+   "qty": 160193.25714542024,
+   "cost": 50.269999999999996,
+   "opened": "2026-09-10T23:17:49Z",
+   "peak": 0.0003115,
+   "entry": 0.00031380846419999995
   }
  },
  "trades": [
@@ -17,6 +25,16 @@
    "sym": "JUPCAT",
    "addr": "AaEhFTX4naHSWSXz9TVe5QgLbtSLT8ZqYJGZzDDcoroh",
    "price": 0.0003467,
+   "usd": 50.27,
+   "slip": 0.002,
+   "reason": "screener"
+  },
+  {
+   "t": "2026-09-10T23:17:49Z",
+   "side": "buy",
+   "sym": "Anonymouse",
+   "addr": "Aw6fiDPWLUnjSsJQtsyEMSaoPaKAUUrStAsYPiPwpump",
+   "price": 0.0003115,
    "usd": 50.27,
    "slip": 0.002,
    "reason": "screener"
@@ -34,6 +52,10 @@
   {
    "t": "2026-09-10T21:20:33Z",
    "v": 525.19
+  },
+  {
+   "t": "2026-09-10T23:18:41Z",
+   "v": 542.08
   }
  ],
  "started": "2026-09-10T17:17:16Z"
