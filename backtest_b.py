@@ -4,12 +4,36 @@ import time, os
 from common import *
 from strategies_b import STRATEGIES, exit_signal
 
-UNIVERSE = {"solana": "SOL", "jupiter-exchange-solana": "JUP", "jito-governance-token": "JTO",
-            "pyth-network": "PYTH", "render-token": "RENDER", "raydium": "RAY", "kamino": "KMNO",
-            "bitcoin": "BTC", "ethereum": "ETH"}
 CG = "https://api.coingecko.com/api/v3"
 POS_USD, MAX_POS, SLIP = 125.0, 4, 0.005
 KEY = os.environ.get("COINGECKO_KEY")
+TOP_N, MIN_LIQ = 50, 500_000
+EXCLUDE = {"USDC", "USDT", "USDS", "PYUSD", "USD1", "DAI", "FDUSD", "USDE", "EURC", "USDG", "USDY",
+           "JITOSOL", "MSOL", "BSOL", "JUPSOL", "INF", "BNSOL", "HSOL", "LST", "DSOL", "VSOL", "SSOL"}
+
+def universe():
+    """Top-N Solana-Tokens nach Liquiditaet (ueber CoinGecko-Kategorie), ohne Stables/LSTs.
+    Liefert {coingecko_id: symbol} und merkt sich die Liste in data/universe_b.json."""
+    hdr = {"x-cg-demo-api-key": KEY} if KEY else {}
+    out = {}
+    for page in (1, 2):
+        r = requests.get(f"{CG}/coins/markets", params={"vs_currency": "usd", "category": "solana-ecosystem",
+                         "order": "volume_desc", "per_page": 100, "page": page}, headers={**UA, **hdr}, timeout=30)
+        if r.status_code != 200:
+            print("coingecko markets", r.status_code); break
+        for c in r.json():
+            sym = c["symbol"].upper()
+            if sym in EXCLUDE or sym.endswith("SOL") and sym != "SOL": continue
+            if (c.get("total_volume") or 0) < MIN_LIQ: continue
+            out[c["id"]] = sym
+            if len(out) >= TOP_N: break
+        if len(out) >= TOP_N: break
+        time.sleep(3)
+    if not out:  # Fallback, falls CoinGecko nicht antwortet
+        out = load("universe_b.json", {}) or {"solana": "SOL", "jupiter-exchange-solana": "JUP", "jito-governance-token": "JTO",
+               "pyth-network": "PYTH", "render-token": "RENDER", "raydium": "RAY", "kamino": "KMNO"}
+    save("universe_b.json", out)
+    return out
 
 def history(cid, days=365):
     hdr = {"x-cg-demo-api-key": KEY} if KEY else {}
@@ -23,6 +47,7 @@ def history(cid, days=365):
 def run(strategy, data):
     fn = STRATEGIES[strategy]
     n = min(len(v[0]) for v in data.values())
+    data = {k: (v[0][-n:], v[1][-n:]) for k, v in data.items()}
     cash, pos, trades, eq = START_CAPITAL, {}, [], []
     for i in range(31, n):
         # Ausstiege
@@ -53,10 +78,12 @@ def run(strategy, data):
 
 def main():
     data = {}
-    for cid, sym in UNIVERSE.items():
+    uni = universe()
+    print(f"Universum: {len(uni)} Tokens")
+    for cid, sym in uni.items():
         h = history(cid)
         if h and len(h[0]) > 60: data[sym] = h
-        time.sleep(3)
+        time.sleep(2.5 if KEY else 6)
     if not data:
         print("keine Daten"); return
     hold = {s: round((d[0][-1] / d[0][31] - 1) * 100, 1) for s, d in data.items()}
@@ -74,7 +101,10 @@ def main():
            "buy_and_hold_pct": hold, "results": results}
     save("backtest_b.json", out)
     best = results[0]
-    if best["trades"] >= 15 and best["return_pct"] > 0:
+    cur = load("strategy_b.json", {})
+    if cur.get("manual"):
+        verdict = f"manuelle Wahl bleibt: {cur['strategy']}"
+    elif best["trades"] >= 15 and best["return_pct"] > 0:
         save("strategy_b.json", {"strategy": best["strategy"], "chosen_at": now_iso(), "auto": True})
         verdict = f"gewaehlt: {best['strategy']}"
     else:
