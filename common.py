@@ -50,7 +50,7 @@ def slippage_pct(order_usd, liquidity_usd):
 
 def solana_pair(addr):
     d = get(f"{DS}/latest/dex/tokens/{addr}")
-    pairs = [p for p in (d or {}).get("pairs", []) if p.get("chainId") == "solana"]
+    pairs = [p for p in ((d or {}).get("pairs") or []) if p.get("chainId") == "solana"]
     if not pairs: return None
     return max(pairs, key=lambda p: (p.get("liquidity") or {}).get("usd", 0))
 
