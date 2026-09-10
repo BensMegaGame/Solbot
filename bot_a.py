@@ -44,7 +44,7 @@ def passes(m):
 def rug_ok(addr):
     s = get(f"{RC}/{addr}/report/summary")
     if not s: return True, []
-    risks = [r.get("name", "") for r in s.get("risks", [])]
+    risks = [r.get("name", "") for r in (s.get("risks") or [])]
     return not any(k in r.lower() for r in risks for k in HARD_RISKS), risks
 
 def main():
