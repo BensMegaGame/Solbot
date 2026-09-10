@@ -85,7 +85,9 @@ def run(strategy, data):
     for v in eq:
         peak = max(peak, v); mdd = min(mdd, v / peak - 1)
     wins = [t for t in trades if t["pnl"] > 0]
-    return {"strategy": strategy, "return_pct": round((final / START_CAPITAL - 1) * 100, 1),
+    top = max((t["pnl"] for t in trades), default=0)
+    total = sum(t["pnl"] for t in trades)
+    return {"top_trade_pnl": round(top, 2), "top_trade_share_pct": round(top / total * 100, 1) if total > 0 else None,"strategy": strategy, "return_pct": round((final / START_CAPITAL - 1) * 100, 1),
             "trades": len(trades), "win_rate": round(len(wins) / len(trades) * 100, 1) if trades else 0,
             "max_drawdown_pct": round(mdd * 100, 1),
             "avg_pnl": round(sum(t["pnl"] for t in trades) / len(trades), 2) if trades else 0,
