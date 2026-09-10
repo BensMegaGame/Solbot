@@ -53,7 +53,7 @@
   <h3>Letzte Trades</h3>
   <div id="trades"></div>
 
-  <h3>Backtest Bot B (12 Monate)</h3>
+  <h3>Backtest Bot B</h3>
   <div id="backtest"></div>
 
   <p class="note">Simulation ohne echtes Geld. Preise von Solana-DEX-Pools, Gebühren und Slippage werden geschätzt. Keine Anlageberatung.</p>
@@ -112,13 +112,14 @@ function trades(a,b){
     rows.slice(0,40).map(t=>`<tr><td>${t.t.slice(5,16).replace('T',' ')}</td><td><span class="tag ${t.tag}"></span>${t.sym}</td><td>${t.side==='buy'?'Kauf':'Verkauf'+(t.frac&&t.frac<1?' ½':'')}</td><td class="n">${fmt(t.usd)}</td><td class="n ${t.pnl!=null?cls(t.pnl):''}">${t.pnl!=null?fmt(t.pnl):''}</td><td>${t.reason}</td></tr>`).join('')+'</table>';
 }
 
-function backtest(bt){
+function backtest(bt, cfg){
   const el=document.getElementById('backtest');
   if(!bt){ el.innerHTML='<div class="empty">Noch nicht gelaufen. Auf GitHub: Actions → backtest-bot-b → Run workflow.</div>'; return }
-  const best=bt.results[0]; const ok=best.trades>=15&&best.return_pct>0;
-  el.innerHTML=`<p style="font-size:14px;margin:6px 0 10px">${bt.days} Tage, Tokens: ${bt.tokens.join(', ')}. ${ok?`Gewählt: <b>${best.strategy}</b>.`:'Keine Strategie erfüllt die Kriterien (mind. 15 Trades und positiv) – Bot B sammelt nur Daten.'}</p>`+
-    '<table><tr><th>Strategie</th><th class="n">Rendite</th><th class="n">Trades</th><th class="n">Treffer</th><th class="n">Max. Drawdown</th><th class="n">1. Hälfte</th><th class="n">2. Hälfte</th></tr>'+
-    bt.results.map(r=>`<tr><td>${r.strategy}</td><td class="n ${cls(r.return_pct)}">${pct(r.return_pct)}</td><td class="n">${r.trades}</td><td class="n">${r.win_rate} %</td><td class="n">${r.max_drawdown_pct} %</td><td class="n ${r.half1_pct!=null?cls(r.half1_pct):''}">${r.half1_pct!=null?pct(r.half1_pct):'–'}</td><td class="n ${r.half2_pct!=null?cls(r.half2_pct):''}">${r.half2_pct!=null?pct(r.half2_pct):'–'}</td></tr>`).join('')+'</table>'+
+  const active = cfg ? `Bot B handelt aktuell nach <b>${cfg.strategy}</b>${cfg.manual?' (manuell gewählt)':''}.` : 'Bot B hat noch keine Strategie – er sammelt nur Daten.';
+  el.innerHTML=`<p style="font-size:14px;margin:6px 0 10px">${bt.days} Tage, ${bt.tokens.length} Tokens: ${bt.tokens.join(', ')}.<br>${active}</p>`+
+    '<table><tr><th>Strategie</th><th class="n">Rendite</th><th class="n">Trades</th><th class="n">Treffer</th><th class="n">Max. DD</th><th class="n">1. Hälfte</th><th class="n">2. Hälfte</th><th class="n">Bester Trade</th></tr>'+
+    bt.results.map(r=>`<tr><td>${r.strategy}</td><td class="n ${cls(r.return_pct)}">${pct(r.return_pct)}</td><td class="n">${r.trades}</td><td class="n">${r.win_rate} %</td><td class="n">${r.max_drawdown_pct} %</td><td class="n ${r.half1_pct!=null?cls(r.half1_pct):''}">${r.half1_pct!=null?pct(r.half1_pct):'–'}</td><td class="n ${r.half2_pct!=null?cls(r.half2_pct):''}">${r.half2_pct!=null?pct(r.half2_pct):'–'}</td><td class="n">${r.top_trade_share_pct!=null?r.top_trade_share_pct+' % des Gewinns':'–'}</td></tr>`).join('')+'</table>'+
+    '<p style="font-size:13px;color:#5f6b67;margin-top:8px">Robust ist eine Strategie nur, wenn beide Hälften positiv sind und kein einzelner Trade den Großteil des Gewinns ausmacht.</p>'+
     `<p style="font-size:13px;color:#5f6b67;margin-top:8px">Zum Vergleich Kaufen &amp; Halten: ${Object.entries(bt.buy_and_hold_pct).map(([k,v])=>k+' '+pct(v)).join(', ')}</p>`;
 }
 
@@ -127,7 +128,7 @@ function backtest(bt){
   if(cfg) document.getElementById('b-strat').textContent=cfg.strategy;
   const last=[a,b].filter(Boolean).flatMap(s=>s.equity).map(p=>p.t).sort().pop();
   document.getElementById('sub').textContent = last ? 'Letzter Lauf: '+new Date(last).toLocaleString('de-DE')+' · aktualisiert alle 30 Minuten' : 'Noch kein Lauf – der erste Durchgang startet automatisch nach dem Hochladen.';
-  summarize('a',a); summarize('b',b); drawChart(a,b); positions(a,b); trades(a,b); backtest(bt);
+  summarize('a',a); summarize('b',b); drawChart(a,b); positions(a,b); trades(a,b); backtest(bt,cfg);
 })();
 </script>
 </body>
