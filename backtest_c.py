@@ -1,10 +1,10 @@
 """Backtest Bot C: Long/Short mit Hebel auf Jupiter Perps (SOL, ETH, BTC), 4h-Kerzen + Funding.
 Testet Strategien x Hebel (3/5/10) x Risiko je Trade (4 %/8 %). Schreibt data/backtest_c.json."""
 from common import *
-from strategies_c import STRATEGIES, exit_signal, margin_for
+from strategies_c import STRATEGIES, exit_signal, margin_for, CONTEXT
 from data_c import klines, funding, align_funding, BARS_PER_DAY
 
-LEVERAGES, RISKS, MAX_POS, DAYS = (3, 5, 10), (0.04, 0.08), 3, 365
+LEVERAGES, RISKS, MAX_POS, DAYS = (3, 5), (0.04, 0.08), 3, 365
 FUNDING_BAR = FUNDING_DAY / BARS_PER_DAY
 
 def universe():
@@ -35,8 +35,10 @@ def run(strategy, lev, risk, data, start=0, end=None):
                 d = (fill / p["entry"] - 1) * (1 if p["side"] == "long" else -1)
                 net = max(p["margin"] + p["size"] * d - p["funding"] - p["size"] * PERP_FEE, 0.0)
             cash += net; trades.append({"sym": sym, "side": p["side"], "pnl": net - p["margin"], "bars": i - p["bar"], "why": why}); del pos[sym]
+        CONTEXT["data"] = data
         for sym, d in data.items():
             if sym in pos or len(pos) >= MAX_POS: continue
+            CONTEXT["sym"] = sym
             sig = fn(d["bars"], d["fund"], i)
             if not sig: continue
             side, stop = sig
