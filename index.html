@@ -41,7 +41,7 @@
 
   <div class="bots">
     <div class="bot a"><h2>Bot A – Micro-Caps</h2><div><span class="eq" id="a-eq">–</span><span class="ret" id="a-ret"></span></div><div class="kv" id="a-kv"></div></div>
-    <div class="bot b"><h2>Bot B – <span id="b-strat">langsame Strategie</span></h2><div><span class="eq" id="b-eq">–</span><span class="ret" id="b-ret"></span></div><div class="kv" id="b-kv"></div></div>
+    <div class="bot b"><h2>Bot B – <span id="b-strat">Zweite Welle</span></h2><div><span class="eq" id="b-eq">–</span><span class="ret" id="b-ret"></span></div><div class="kv" id="b-kv"></div></div>
     <div class="bot c"><h2>Bot C – <span id="c-strat">Perps SOL/ETH/BTC</span></h2><div><span class="eq" id="c-eq">–</span><span class="ret" id="c-ret"></span></div><div class="kv" id="c-kv"></div></div>
   </div>
 
@@ -54,7 +54,7 @@
   <h3>Letzte Trades</h3>
   <div id="trades"></div>
 
-  <h3>Backtest Bot B</h3>
+  <h3>Backtest Bot B (alte Version, große Tokens – nur zur Referenz)</h3>
   <div id="backtest"></div>
 
   <h3>Backtest Bot C (Jupiter Perps, 4h-Kerzen: Long/Short, 3x–10x Hebel, 4 %/8 % Risiko)</h3>
@@ -142,7 +142,7 @@ function backtestC(bt, cfg){
 
 (async()=>{
   const [a,b,c,bt,cfg,btc,cfgc]=await Promise.all([j('data/bot_a_state.json'),j('data/bot_b_state.json'),j('data/bot_c_state.json'),j('data/backtest_b.json'),j('data/strategy_b.json'),j('data/backtest_c.json'),j('data/strategy_c.json')]);
-  if(cfg) document.getElementById('b-strat').textContent=cfg.strategy;
+  if(b&&b.strategy==='second_wave') document.getElementById('b-strat').textContent='Zweite Welle'+(b.watchlist?` · ${b.watchlist} beobachtet`:''); else if(cfg) document.getElementById('b-strat').textContent=cfg.strategy;
   if(cfgc) document.getElementById('c-strat').textContent=cfgc.strategy+' '+cfgc.lev+'x';
   const last=[a,b,c].filter(Boolean).flatMap(s=>s.equity).map(p=>p.t).sort().pop();
   document.getElementById('sub').textContent = last ? 'Letzter Lauf: '+new Date(last).toLocaleString('de-DE')+' · aktualisiert alle 30 Minuten' : 'Noch kein Lauf – der erste Durchgang startet automatisch nach dem Hochladen.';
