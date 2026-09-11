@@ -1,5 +1,5 @@
 {
- "cash": 497.2520194569039,
+ "cash": 396.71201945690393,
  "positions": {
   "AaEhFTX4naHSWSXz9TVe5QgLbtSLT8ZqYJGZzDDcoroh": {
    "sym": "JUPCAT",
@@ -17,6 +17,22 @@
    "opened": "2026-09-10T23:17:49Z",
    "peak": 0.0003342,
    "entry": 0.00031380846419999995
+  },
+  "HYm6BfpDQkfUtnCWVnj6YAGzJvnpzuCWDZKrpbAVkBFh": {
+   "sym": "WUFF",
+   "qty": 246420.73876937485,
+   "cost": 50.269999999999996,
+   "opened": "2026-09-11T13:14:43Z",
+   "peak": 0.0002025,
+   "entry": 0.00020400068699999996
+  },
+  "6CsmCtDAhRcbp3G4KiinKC2JjLJ9BpR7isqcgZefqLym": {
+   "sym": "METH",
+   "qty": 21545.854749912956,
+   "cost": 50.269999999999996,
+   "opened": "2026-09-11T13:14:57Z",
+   "peak": 0.002316,
+   "entry": 0.0023331634127999996
   }
  },
  "trades": [
@@ -50,6 +66,26 @@
    "pnl": 72.66,
    "frac": 0.5,
    "reason": "tp1"
+  },
+  {
+   "t": "2026-09-11T13:14:43Z",
+   "side": "buy",
+   "sym": "WUFF",
+   "addr": "HYm6BfpDQkfUtnCWVnj6YAGzJvnpzuCWDZKrpbAVkBFh",
+   "price": 0.0002025,
+   "usd": 50.27,
+   "slip": 0.002,
+   "reason": "screener"
+  },
+  {
+   "t": "2026-09-11T13:14:57Z",
+   "side": "buy",
+   "sym": "METH",
+   "addr": "6CsmCtDAhRcbp3G4KiinKC2JjLJ9BpR7isqcgZefqLym",
+   "price": 0.002316,
+   "usd": 50.27,
+   "slip": 0.002,
+   "reason": "screener"
   }
  ],
  "equity": [
@@ -84,6 +120,10 @@
   {
    "t": "2026-09-11T10:57:16Z",
    "v": 631.7
+  },
+  {
+   "t": "2026-09-11T13:15:10Z",
+   "v": 619.18
   }
  ],
  "started": "2026-09-10T17:17:16Z"
