@@ -32,8 +32,35 @@ def _bybit_klines(sym, days):
         time.sleep(0.3)
     return out
 
+def _hl_klines(sym, days):
+    end = int(time.time() * 1000); start = end - days * 86400000
+    r = requests.post("https://api.hyperliquid.xyz/info", json={"type": "candleSnapshot", "req": {"coin": sym, "interval": "4h", "startTime": start, "endTime": end}}, headers=UA, timeout=30)
+    if r.status_code != 200: raise RuntimeError(f"hyperliquid {r.status_code}")
+    rows = r.json()
+    return [{"t": int(k["t"]), "o": float(k["o"]), "h": float(k["h"]), "l": float(k["l"]), "c": float(k["c"]), "v": float(k["v"]) * float(k["c"])} for k in rows]
+
+def _coinbase_klines(sym, days):
+    """Stundenkerzen (max. 300 je Aufruf), zu 4h zusammengefasst."""
+    import datetime as dt
+    end = int(time.time()); start = end - days * 86400; hourly = []
+    cur = start
+    while cur < end:
+        stop = min(cur + 300 * 3600, end)
+        r = requests.get(f"https://api.exchange.coinbase.com/products/{sym}-USD/candles",
+                         params={"granularity": 3600, "start": dt.datetime.utcfromtimestamp(cur).isoformat(), "end": dt.datetime.utcfromtimestamp(stop).isoformat()}, headers=UA, timeout=20)
+        if r.status_code != 200: raise RuntimeError(f"coinbase {r.status_code}")
+        hourly += r.json(); cur = stop; time.sleep(0.25)
+    hourly = sorted({int(k[0]): k for k in hourly}.values(), key=lambda k: k[0])
+    out = {}
+    for t, l, h, o, c, v in hourly:
+        b = (t // 14400) * 14400
+        if b not in out: out[b] = {"t": b * 1000, "o": o, "h": h, "l": l, "c": c, "v": v * c}
+        else:
+            x = out[b]; x["h"] = max(x["h"], h); x["l"] = min(x["l"], l); x["c"] = c; x["v"] += v * c
+    return [out[k] for k in sorted(out)]
+
 def klines(sym, days=365):
-    for fn in (_binance_klines, _bybit_klines):
+    for fn in (_binance_klines, _bybit_klines, _hl_klines, _coinbase_klines):
         try:
             k = fn(sym, days)
             if len(k) > 100: return k
@@ -66,8 +93,22 @@ def _bybit_funding(sym, days):
         time.sleep(0.3)
     return out
 
+def _hl_funding(sym, days):
+    """Hyperliquid zahlt stuendlich; auf 8h-Aequivalent skaliert, damit die Schwellen passen."""
+    end = int(time.time() * 1000); start = end - days * 86400000; out = []
+    while start < end:
+        r = requests.post("https://api.hyperliquid.xyz/info", json={"type": "fundingHistory", "coin": sym, "startTime": start, "endTime": end}, headers=UA, timeout=30)
+        if r.status_code != 200: raise RuntimeError(f"hyperliquid funding {r.status_code}")
+        rows = r.json()
+        if not rows: break
+        out += [{"t": int(x["time"]), "r": float(x["fundingRate"]) * 8} for x in rows]
+        nxt = int(rows[-1]["time"]) + 1
+        if nxt <= start or len(rows) < 100: break
+        start = nxt; time.sleep(0.3)
+    return out
+
 def funding(sym, days=365):
-    for fn in (_binance_funding, _bybit_funding):
+    for fn in (_binance_funding, _bybit_funding, _hl_funding):
         try:
             f = fn(sym, days)
             if len(f) > 10: return f
