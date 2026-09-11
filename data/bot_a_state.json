@@ -1,13 +1,14 @@
 {
- "cash": 399.46000000000004,
+ "cash": 497.2520194569039,
  "positions": {
   "AaEhFTX4naHSWSXz9TVe5QgLbtSLT8ZqYJGZzDDcoroh": {
    "sym": "JUPCAT",
-   "qty": 143929.04413267493,
-   "cost": 50.269999999999996,
+   "qty": 71964.52206633746,
+   "cost": 25.134999999999998,
    "opened": "2026-09-10T18:51:47Z",
-   "peak": 0.001044,
-   "entry": 0.00034926932436
+   "peak": 0.001366,
+   "entry": 0.00034926932436,
+   "tp1": true
   },
   "Aw6fiDPWLUnjSsJQtsyEMSaoPaKAUUrStAsYPiPwpump": {
    "sym": "Anonymouse",
@@ -38,6 +39,17 @@
    "usd": 50.27,
    "slip": 0.002,
    "reason": "screener"
+  },
+  {
+   "t": "2026-09-11T10:49:50Z",
+   "side": "sell",
+   "sym": "JUPCAT",
+   "addr": "AaEhFTX4naHSWSXz9TVe5QgLbtSLT8ZqYJGZzDDcoroh",
+   "price": 0.001366,
+   "usd": 97.79,
+   "pnl": 72.66,
+   "frac": 0.5,
+   "reason": "tp1"
   }
  ],
  "equity": [
@@ -64,6 +76,10 @@
   {
    "t": "2026-09-11T06:18:07Z",
    "v": 603.26
+  },
+  {
+   "t": "2026-09-11T10:50:37Z",
+   "v": 633.75
   }
  ],
  "started": "2026-09-10T17:17:16Z"
