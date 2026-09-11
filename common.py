@@ -103,3 +103,70 @@ class Paper:
 
     def commit(self):
         save(self.file, self.s)
+
+
+# ---------------- Perpetuals (Bot C) ----------------
+PERP_FEE     = 0.0006    # Jupiter Perps: 0,06 % oeffnen + 0,06 % schliessen
+PERP_SLIP    = 0.0005    # JLP-Pool: praktisch kein Slippage auf SOL/ETH/BTC, kleiner Puffer
+FUNDING_DAY  = 0.0024    # Jupiter Borrow-Fee ~0,01 %/Stunde auf die volle Positionsgroesse (beide Seiten zahlen)
+MAINT_MARGIN = 0.05      # Liquidation, wenn Verlust >= Margin * (1 - 5 %)
+
+def liq_price(entry, side, lev):
+    move = (1 - MAINT_MARGIN) / lev
+    return entry * (1 - move) if side == "long" else entry * (1 + move)
+
+class PaperPerp:
+    """Simulierte Perp-Positionen: long/short, isolierte Margin, Liquidation, Funding.
+    open()/close() sind die Stellen, die fuer echte Trades (Drift SDK) ersetzt wuerden."""
+    def __init__(self, bot):
+        self.bot = bot; self.file = f"{bot}_state.json"
+        self.s = load(self.file, {"cash": START_CAPITAL, "positions": {}, "trades": [],
+                                   "equity": [], "started": now_iso(), "liquidations": 0})
+
+    def open(self, sym, key, side, price, margin, lev, reason):
+        if margin > self.s["cash"] or margin <= 0 or key in self.s["positions"]: return False
+        fill = price * (1 + PERP_SLIP) if side == "long" else price * (1 - PERP_SLIP)
+        size = margin * lev; fee = size * PERP_FEE
+        self.s["cash"] -= margin + fee
+        self.s["positions"][key] = {"sym": sym, "side": side, "lev": lev, "entry": fill, "size": size,
+                                     "qty": size / fill, "margin": margin, "liq": liq_price(fill, side, lev),
+                                     "opened": now_iso(), "peak": fill, "funding": 0.0, "last_mark": time.time()}
+        self.s["trades"].append({"t": now_iso(), "side": "open_" + side, "sym": sym, "addr": key, "price": fill,
+                                 "usd": round(margin, 2), "lev": lev, "reason": reason})
+        return True
+
+    def pnl(self, p, price):
+        d = (price - p["entry"]) / p["entry"]
+        return p["size"] * (d if p["side"] == "long" else -d) - p["funding"]
+
+    def close(self, key, price, reason):
+        p = self.s["positions"].get(key)
+        if not p: return False
+        fill = price * (1 - PERP_SLIP) if p["side"] == "long" else price * (1 + PERP_SLIP)
+        if reason == "liquidation":
+            net = 0.0; self.s["liquidations"] += 1
+        else:
+            net = max(p["margin"] + self.pnl(p, fill) - p["size"] * PERP_FEE, 0.0)
+        self.s["cash"] += net
+        self.s["trades"].append({"t": now_iso(), "side": "close_" + p["side"], "sym": p["sym"], "addr": key, "price": fill,
+                                 "usd": round(net, 2), "pnl": round(net - p["margin"], 2), "lev": p["lev"], "reason": reason})
+        del self.s["positions"][key]
+        return True
+
+    def mark(self, prices):
+        """Funding abrechnen, Liquidationen pruefen, Equity schreiben."""
+        now = time.time()
+        for key, p in list(self.s["positions"].items()):
+            px = prices.get(key)
+            if not px: continue
+            days = (now - p.get("last_mark", now)) / 86400
+            p["funding"] += p["size"] * FUNDING_DAY * days   # Borrow-Fee, zahlen long und short
+            p["last_mark"] = now
+            p["peak"] = max(p["peak"], px) if p["side"] == "long" else min(p["peak"], px)
+            hit = px <= p["liq"] if p["side"] == "long" else px >= p["liq"]
+            if hit or p["margin"] + self.pnl(p, px) <= 0: self.close(key, px, "liquidation")
+        val = self.s["cash"] + sum(p["margin"] + self.pnl(p, prices.get(k, p["entry"])) for k, p in self.s["positions"].items())
+        self.s["equity"].append({"t": now_iso(), "v": round(val, 2)}); self.s["equity"] = self.s["equity"][-5000:]
+        return val
+
+    def commit(self): save(self.file, self.s)
