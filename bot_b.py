@@ -16,7 +16,7 @@ MIN_MCAP, MAX_MCAP     = 1_000_000, 30_000_000
 MIN_LIQ, MIN_LIQ_RATIO = 100_000, 0.04
 MIN_VOL24              = 100_000
 # ---------- Einstieg ----------
-MIN_HISTORY_DAYS = 3          # eigene Snapshots, bevor gekauft wird
+MIN_HISTORY_DAYS = 3          # Tage Historie (eigene Snapshots oder GeckoTerminal-Kerzen), bevor gekauft wird
 VOL_TREND_MIN    = 1.20       # 3d-Volumen vs. 3d davor (wenn >= 6 Tage Historie), sonst gegen Vortag
 MIN_BUY_RATIO    = 0.52
 MAX_ABOVE_AVG    = 0.60       # nicht kaufen, wenn Preis > 60 % ueber 7-Tage-Schnitt
@@ -64,9 +64,37 @@ def rug_ok(addr):
     risks = [r.get("name", "") for r in (s.get("risks") or [])]
     return not any(k in r.lower() for r in risks for k in HARD_RISKS), risks
 
+GT = "https://api.geckoterminal.com/api/v2/networks/solana"
+
+def gt_pools():
+    """GeckoTerminal: umsatzstaerkste + trendende Solana-Pools mit Erstellungsdatum. Liefert {token_addr: pool_addr}."""
+    out = {}
+    import datetime as dt
+    for ep in ["/trending_pools"] + [f"/pools?page={p}&sort=h24_volume_usd_desc" for p in (1, 2, 3, 4, 5)]:
+        d = get(GT + ep)
+        for pool in (d or {}).get("data", []):
+            a = pool.get("attributes", {})
+            try: age = (dt.datetime.now(dt.timezone.utc) - dt.datetime.fromisoformat(a["pool_created_at"].replace("Z", "+00:00"))).days
+            except Exception: continue
+            if not (MIN_AGE_D - 7 <= age <= MAX_AGE_D + 2): continue
+            base = (pool.get("relationships", {}).get("base_token", {}).get("data", {}).get("id") or "").replace("solana_", "")
+            if base and base not in out: out[base] = pool["id"].replace("solana_", "")
+        time.sleep(2.1)   # 30 Aufrufe/Minute
+    return out
+
+def gt_history(pool_addr):
+    """30 Tageskerzen eines Pools -> Zeilen wie unsere Snapshots (px, vol). Liquiditaet/Buy-Ratio kommen vom aktuellen Snapshot."""
+    d = get(f"{GT}/pools/{pool_addr}/ohlcv/day", {"limit": 30})
+    rows = []
+    for ts, o, h, l, c, v in sorted((d or {}).get("data", {}).get("attributes", {}).get("ohlcv_list", [])):
+        rows.append({"d": int(ts // DAY), "t": "", "px": float(c), "vol": float(v), "vol6": None, "liq": None, "mcap": None, "buy_ratio": None, "age_d": None})
+    return rows[:-1]   # letzte = laufender Tag
+
 def discover(hist):
-    """Adressen: Bot A's Kandidatenlog (Alter passt in 3–8 Wochen), DexScreener-Profile/Boosts, bereits beobachtete."""
+    """Adressen: GeckoTerminal-Pools (3–8 Wochen alt), Bot A's Kandidatenlog, DexScreener-Profile/Boosts, bereits beobachtete."""
     addrs = set(hist.keys())
+    pools = gt_pools(); addrs |= set(pools)
+    save("bot_b_pools.json", {**load("bot_b_pools.json", {}), **pools})
     seen = load("bot_a_seen.json", {})
     now = time.time()
     for a, first in seen.items():
@@ -76,7 +104,7 @@ def discover(hist):
     for ep in ("/token-profiles/latest/v1", "/token-boosts/latest/v1", "/token-boosts/top/v1"):
         for t in get(DS + ep) or []:
             if t.get("chainId") == "solana": addrs.add(t["tokenAddress"])
-    return list(addrs)
+    return list(addrs)[:400]
 
 def resolve(sym):
     """(fuer Bot C) liquidester Solana-Pool eines Symbols."""
@@ -98,15 +126,22 @@ def daily(rows):
     for r in rows: by[r["d"]] = r
     return [by[k] for k in sorted(by)]
 
+def merged_history(own, gt):
+    """Eigene Snapshots haben Vorrang; GeckoTerminal fuellt fehlende Tage auf."""
+    by = {r["d"]: r for r in gt}
+    for r in own: by[r["d"]] = r
+    return [by[k] for k in sorted(by)]
+
 def entry_check(rows, cur):
-    """Gibt (ok, grund) zurueck. rows = Tages-Snapshots (aelteste zuerst), cur = aktueller Snapshot."""
-    if len(rows) < MIN_HISTORY_DAYS: return False, f"historie {len(rows)}d"
+    """Gibt (ok, grund) zurueck. rows = Tages-Historie (aelteste zuerst), cur = aktueller Snapshot."""
     if not (MIN_AGE_D <= cur["age_d"] <= MAX_AGE_D): return False, "alter"
+    if len(rows) < MIN_HISTORY_DAYS: return False, f"historie {len(rows)}d"
     if not (MIN_MCAP <= cur["mcap"] <= MAX_MCAP): return False, "mcap"
     if cur["liq"] < MIN_LIQ or cur["liq"] / max(cur["mcap"], 1) < MIN_LIQ_RATIO: return False, "liquiditaet"
     if cur["vol"] < MIN_VOL24: return False, "volumen"
-    # 1 Sicherheit: Liquiditaet faellt nicht
-    if cur["liq"] < 0.85 * max(r["liq"] for r in rows[-3:]): return False, "liq faellt"
+    # 1 Sicherheit: Liquiditaet faellt nicht (nur pruefbar mit eigenen Snapshots)
+    liqs = [r["liq"] for r in rows[-3:] if r.get("liq")]
+    if liqs and cur["liq"] < 0.85 * max(liqs): return False, "liq faellt"
     # 2 Substanz: Volumen-Trend aus eigenen Snapshots
     vols = [r["vol"] for r in rows] + [cur["vol"]]
     if len(vols) >= 6: trend = sum(vols[-3:]) / 3 / max(sum(vols[-6:-3]) / 3, 1)
@@ -171,14 +206,23 @@ def main():
         if x >= ADD_AT_X and not pos.get("added") and cur["vol"] > pos.get("entry_vol", 0) and st["cash"] >= ADD_USD + 5:
             pos["added"] = True; pf.buy(pos["sym"], a, px, ADD_USD, liq, "add")
     # 4. Einstiege
-    checks = []
+    checks = []; pools = load("bot_b_pools.json", {}); gt_cache = load("bot_b_gt_cache.json", {})
     for a, p in pairs.items():
         if a in st["positions"] or len(st["positions"]) >= MAX_POS: continue
         if st["cooldown"].get(a, 0) > today: continue
         rows = daily(hist.get(a, {}).get("rows", []))
         cur = rows[-1] if rows else None
         if not cur: continue
-        ok, why = entry_check(rows[:-1], cur)
+        # Grobfilter zuerst (spart GeckoTerminal-Aufrufe)
+        if not (MIN_AGE_D <= cur["age_d"] <= MAX_AGE_D) or not (MIN_MCAP <= cur["mcap"] <= MAX_MCAP) or cur["liq"] < MIN_LIQ or cur["vol"] < MIN_VOL24:
+            continue
+        own = rows[:-1]
+        if len(own) < 7 and a in pools:
+            c = gt_cache.get(a)
+            if not c or c["d"] != today:
+                c = {"d": today, "rows": gt_history(pools[a])}; gt_cache[a] = c; time.sleep(2.1)
+            own = merged_history(own, c["rows"])
+        ok, why = entry_check(own, cur)
         checks.append((p["baseToken"]["symbol"], why))
         if not ok: continue
         safe, risks = rug_ok(a); time.sleep(1.1)
@@ -189,7 +233,7 @@ def main():
             pos = st["positions"][a]; pos["entry_liq"] = cur["liq"]; pos["entry_vol"] = cur["vol"]
             if st["half_left"] > 0: st["half_left"] -= 1
             append_jsonl("bot_b_signals.jsonl", {"t": now_iso(), "addr": a, "sym": pos["sym"], "why": why, "risks": risks, **cur})
-    save("bot_b_history.json", hist)
+    save("bot_b_history.json", hist); save("bot_b_gt_cache.json", {k: v for k, v in gt_cache.items() if v["d"] >= today - 1})
     st["watchlist"] = len(hist); st["strategy"] = "second_wave"
     v = pf.mark(prices); pf.commit()
     passed = [c for c in checks if c[1].startswith("ok")]
