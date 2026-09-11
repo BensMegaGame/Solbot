@@ -57,7 +57,7 @@
   <h3>Backtest Bot B</h3>
   <div id="backtest"></div>
 
-  <h3>Backtest Bot C (Jupiter Perps: Long/Short, 3x–10x Hebel)</h3>
+  <h3>Backtest Bot C (Jupiter Perps, 4h-Kerzen: Long/Short, 3x–10x Hebel, 4 %/8 % Risiko)</h3>
   <div id="backtest_c"></div>
 
   <p class="note">Simulation ohne echtes Geld. Preise von Solana-DEX-Pools, Gebühren und Slippage werden geschätzt. Keine Anlageberatung.</p>
@@ -132,11 +132,12 @@ function backtest(bt, cfg){
 function backtestC(bt, cfg){
   const el=document.getElementById('backtest_c');
   if(!bt){ el.innerHTML='<div class="empty">Noch nicht gelaufen. Auf GitHub: Actions → backtest-bot-c → Run workflow.</div>'; return }
-  const active = cfg ? `Bot C handelt aktuell nach <b>${cfg.strategy} ${cfg.lev}x</b>${cfg.manual?' (manuell gewählt)':''}.` : 'Bot C hat noch keine Strategie – er sammelt nur Daten.';
-  el.innerHTML=`<p style="font-size:14px;margin:6px 0 10px">${bt.days} Tage, ${bt.tokens.length} Tokens: ${bt.tokens.join(', ')}.<br>${active}</p>`+
-    '<table><tr><th>Strategie</th><th class="n">Hebel</th><th class="n">Rendite</th><th class="n">Trades (L/S)</th><th class="n">Treffer</th><th class="n">Max. DD</th><th class="n">Liq.</th><th class="n">1. Hälfte</th><th class="n">2. Hälfte</th></tr>'+
-    bt.results.map(r=>`<tr><td>${r.strategy}</td><td class="n">${r.lev}x</td><td class="n ${cls(r.return_pct)}">${pct(r.return_pct)}</td><td class="n">${r.trades} (${r.longs}/${r.shorts})</td><td class="n">${r.win_rate} %</td><td class="n">${r.max_drawdown_pct} %</td><td class="n ${r.liquidations?'down':''}">${r.liquidations}</td><td class="n ${cls(r.half1_pct)}">${pct(r.half1_pct)}</td><td class="n ${cls(r.half2_pct)}">${pct(r.half2_pct)}</td></tr>`).join('')+'</table>'+
-    '<p style="font-size:13px;color:#5f6b67;margin-top:8px">Sortiert: robuste Strategien (beide Hälften positiv, ≥15 Trades) zuerst, dann nach Rendite je Drawdown. Positionsgröße ist dynamisch (4 % Risiko je Trade). Hebel vergrößert Gewinn, Drawdown und Borrow-Kosten – jede Liquidation disqualifiziert.</p>';
+  const active = cfg ? `Bot C handelt aktuell nach <b>${cfg.strategy} ${cfg.lev}x, ${cfg.risk_pct||4} % Risiko</b>${cfg.manual?' (manuell gewählt)':''}.` : 'Bot C hat noch keine Strategie – er sammelt nur Daten.';
+  const bh = bt.buy_and_hold_pct ? ' Kaufen &amp; Halten: '+Object.entries(bt.buy_and_hold_pct).map(([k,v])=>k+' '+pct(v)).join(', ')+'.' : '';
+  el.innerHTML=`<p style="font-size:14px;margin:6px 0 10px">${bt.days} Tage (${bt.bars||''} Kerzen), ${bt.tokens.join(', ')}.${bh}<br>${active}</p>`+
+    '<table><tr><th>Strategie</th><th class="n">Hebel</th><th class="n">Risiko</th><th class="n">Rendite</th><th class="n">Trades (L/S)</th><th class="n">Treffer</th><th class="n">Max. DD</th><th class="n">Liq.</th><th class="n">Ø Haltezeit</th><th class="n">1. Hälfte</th><th class="n">2. Hälfte</th></tr>'+
+    bt.results.filter(r=>r.trades>0).map(r=>`<tr><td>${r.strategy}</td><td class="n">${r.lev}x</td><td class="n">${r.risk_pct||''} %</td><td class="n ${cls(r.return_pct)}">${pct(r.return_pct)}</td><td class="n">${r.trades} (${r.longs}/${r.shorts})</td><td class="n">${r.win_rate} %</td><td class="n">${r.max_drawdown_pct} %</td><td class="n ${r.liquidations?'down':''}">${r.liquidations}</td><td class="n">${r.avg_hold_days!=null?r.avg_hold_days+' d':'–'}</td><td class="n ${cls(r.half1_pct)}">${pct(r.half1_pct)}</td><td class="n ${cls(r.half2_pct)}">${pct(r.half2_pct)}</td></tr>`).join('')+'</table>'+
+    '<p style="font-size:13px;color:#5f6b67;margin-top:8px">Sortiert: robuste Strategien (beide Hälften positiv, ≥15 Trades) zuerst, dann nach Rendite je Drawdown. Positionsgröße ist dynamisch (Risiko je Trade konstant, Stop ATR-basiert). Hebel allein ändert die Rendite kaum – Risiko je Trade und Strategie entscheiden. Jede Liquidation disqualifiziert.</p>';
 }
 
 (async()=>{
