@@ -1,7 +1,7 @@
 name: paper-bots
 on:
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "0 * * * *"
   workflow_dispatch:
 permissions:
   contents: write
@@ -16,6 +16,8 @@ jobs:
       - run: pip install -r requirements.txt
       - run: python bot_a.py
       - run: python bot_b.py
+        env: { COINGECKO_KEY: "${{ secrets.COINGECKO_KEY }}" }
+      - run: python bot_c.py
         env: { COINGECKO_KEY: "${{ secrets.COINGECKO_KEY }}" }
       - name: Ergebnisse speichern
         run: |
