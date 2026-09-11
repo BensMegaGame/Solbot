@@ -1,7 +1,7 @@
 """Bot C – Long/Short mit Hebel auf Jupiter Perps (SOL, ETH, BTC), Perp-Simulation auf 4h-Kerzen.
 Laeuft mit jedem Workflow-Lauf; handelt nur, wenn eine neue 4h-Kerze abgeschlossen ist."""
 from common import *
-from strategies_c import STRATEGIES, exit_signal, margin_for
+from strategies_c import STRATEGIES, exit_signal, margin_for, CONTEXT
 from data_c import klines, funding, align_funding, BARS_PER_DAY
 from backtest_c import universe, MAX_POS
 from bot_b import resolve
@@ -12,12 +12,16 @@ def main():
     uni = load("universe_c.json", {}) or universe()
     strat, lev, risk = (cfg["strategy"], cfg.get("lev", 3), cfg.get("risk_pct", 4) / 100) if cfg else (None, 1, 0.04)
     fn = STRATEGIES.get(strat) if strat else None
-    prices = {}
+    prices = {}; allbars = {}
+    for cid, sym in uni.items():
+        k = klines(sym, 45)
+        if k: allbars[sym] = {"bars": k[:-1]}
+    CONTEXT["data"] = allbars
     for cid, sym in uni.items():
         addr = resolve(sym)
         pair = solana_pair(addr) if addr else None
-        bars = klines(sym, 45)
-        if not bars: continue
+        if sym not in allbars: continue
+        bars = allbars[sym]["bars"] + [allbars[sym]["bars"][-1]]  # letzte = Platzhalter fuer laufende Kerze
         px = float((pair or {}).get("priceUsd") or bars[-1]["c"]); prices[addr or sym] = px
         key = addr or sym
         last_closed = bars[-2]                      # bars[-1] ist die laufende Kerze
@@ -33,6 +37,7 @@ def main():
             if seen.get(sym) == last_closed["t"]: continue     # diese Kerze schon ausgewertet
             seen[sym] = last_closed["t"]
             f = align_funding(bars, funding(sym, 45))
+            CONTEXT["sym"] = sym
             sig = fn(bars[:-1], f[:-1], i)
             if sig:
                 side, stop = sig
