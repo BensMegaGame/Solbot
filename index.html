@@ -87,9 +87,9 @@ function summarize(id, s){
 }
 
 function drawChart(a, b, c){
-  const c=document.getElementById('chart'), dpr=window.devicePixelRatio||1;
-  c.width=c.clientWidth*dpr; c.height=220*dpr; const g=c.getContext('2d'); g.scale(dpr,dpr);
-  const W=c.clientWidth, H=220, L=44, R=8, T=10, B=22;
+  const canvas=document.getElementById('chart'), dpr=window.devicePixelRatio||1;
+  canvas.width=canvas.clientWidth*dpr; canvas.height=220*dpr; const g=canvas.getContext('2d'); g.scale(dpr,dpr);
+  const W=canvas.clientWidth, H=220, L=44, R=8, T=10, B=22;
   const cs=getComputedStyle(document.body);
   const series=[[a?a.equity:[], cs.getPropertyValue('--a')],[b?b.equity:[], cs.getPropertyValue('--b')],[c?c.equity:[], cs.getPropertyValue('--c')]];
   const all=series.flatMap(s=>s[0]); if(!all.length){ g.fillStyle='#5f6b67'; g.font='14px Georgia'; g.fillText('Noch keine Daten – nach dem ersten Lauf erscheint hier die Kurve.', L, H/2); return }
