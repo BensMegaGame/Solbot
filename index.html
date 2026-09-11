@@ -3,18 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Paper-Trading – Bot A &amp; Bot B</title>
+<title>Paper-Trading – Bot A, B &amp; C</title>
 <style>
-  :root { --bg:#f3f5f2; --ink:#182320; --mute:#5f6b67; --line:#d5dbd7; --a:#2a6f97; --b:#8a5a1f; --up:#1f7a5c; --down:#b23a2a; }
+  :root { --bg:#f3f5f2; --ink:#182320; --mute:#5f6b67; --line:#d5dbd7; --a:#2a6f97; --b:#8a5a1f; --c:#5b3f8f; --up:#1f7a5c; --down:#b23a2a; }
   * { box-sizing:border-box }
   body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.5 Georgia, "Iowan Old Style", "Times New Roman", serif; }
   main { max-width:860px; margin:0 auto; padding:28px 18px 60px }
   h1 { font-size:26px; font-weight:normal; margin:0 0 4px }
   .sub { color:var(--mute); margin:0 0 26px; font-size:14px }
-  .bots { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:22px }
-  @media (max-width:560px){ .bots { grid-template-columns:1fr } }
+  .bots { display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px; margin-bottom:22px }
+  @media (max-width:700px){ .bots { grid-template-columns:1fr } }
   .bot { border-top:3px solid; padding:12px 0 0 }
-  .bot.a { border-color:var(--a) } .bot.b { border-color:var(--b) }
+  .bot.a { border-color:var(--a) } .bot.b { border-color:var(--b) } .bot.c { border-color:var(--c) }
   .bot h2 { font-size:17px; font-weight:normal; margin:0 0 6px }
   .bot .eq { font-size:34px; line-height:1.1; font-variant-numeric:tabular-nums }
   .bot .ret { font-size:15px; margin-left:8px }
@@ -28,7 +28,7 @@
   th { font-weight:normal; color:var(--mute) }
   td.n, th.n { text-align:right }
   .tag { display:inline-block; width:9px; height:9px; border-radius:50%; margin-right:6px; vertical-align:middle }
-  .tag.a{ background:var(--a) } .tag.b{ background:var(--b) }
+  .tag.a{ background:var(--a) } .tag.b{ background:var(--b) } .tag.c{ background:var(--c) }
   .empty { color:var(--mute); font-size:14px; padding:8px 0 }
   .note { font-size:13px; color:var(--mute); margin-top:34px }
   a { color:var(--a) }
@@ -36,12 +36,13 @@
 </head>
 <body>
 <main>
-  <h1>Paper-Trading: Bot A &amp; Bot B</h1>
+  <h1>Paper-Trading: Bot A, B &amp; C</h1>
   <p class="sub" id="sub">Lade Daten…</p>
 
   <div class="bots">
     <div class="bot a"><h2>Bot A – Micro-Caps</h2><div><span class="eq" id="a-eq">–</span><span class="ret" id="a-ret"></span></div><div class="kv" id="a-kv"></div></div>
     <div class="bot b"><h2>Bot B – <span id="b-strat">langsame Strategie</span></h2><div><span class="eq" id="b-eq">–</span><span class="ret" id="b-ret"></span></div><div class="kv" id="b-kv"></div></div>
+    <div class="bot c"><h2>Bot C – <span id="c-strat">Perps SOL/ETH/BTC</span></h2><div><span class="eq" id="c-eq">–</span><span class="ret" id="c-ret"></span></div><div class="kv" id="c-kv"></div></div>
   </div>
 
   <h3>Kapitalverlauf seit Start (500 $ je Bot)</h3>
@@ -56,6 +57,9 @@
   <h3>Backtest Bot B</h3>
   <div id="backtest"></div>
 
+  <h3>Backtest Bot C (Jupiter Perps: Long/Short, 3x–10x Hebel)</h3>
+  <div id="backtest_c"></div>
+
   <p class="note">Simulation ohne echtes Geld. Preise von Solana-DEX-Pools, Gebühren und Slippage werden geschätzt. Keine Anlageberatung.</p>
 </main>
 <script>
@@ -69,7 +73,7 @@ function summarize(id, s){
   if(!s){ document.getElementById(id+'-eq').textContent='noch kein Lauf'; return null }
   const eq = s.equity.length ? s.equity[s.equity.length-1].v : s.cash;
   const ret = (eq/START-1)*100;
-  const sells = s.trades.filter(t=>t.side==='sell');
+  const sells = s.trades.filter(t=>t.side==='sell'||t.side.startsWith('close'));
   const wins = sells.filter(t=>t.pnl>0).length;
   document.getElementById(id+'-eq').textContent = fmt(eq)+' $';
   const r = document.getElementById(id+'-ret'); r.textContent = pct(ret); r.className='ret '+cls(ret);
@@ -77,15 +81,17 @@ function summarize(id, s){
     `<span>Cash</span><b>${fmt(s.cash)} $</b><span>Positionen</span><b>${Object.keys(s.positions).length}</b>`+
     `<span>Verkäufe</span><b>${sells.length}</b><span>Trefferquote</span><b>${sells.length?Math.round(wins/sells.length*100)+' %':'–'}</b>`+
     `<span>Realisiert</span><b class="${cls(sells.reduce((a,t)=>a+t.pnl,0))}">${fmt(sells.reduce((a,t)=>a+t.pnl,0))} $</b>`+
-    `<span>Seit</span><b>${s.started?s.started.slice(0,10):'–'}</b>`;
+    `<span>Seit</span><b>${s.started?s.started.slice(0,10):'–'}</b>`+
+    (s.liquidations!=null?`<span>Liquidationen</span><b class="${s.liquidations?'down':''}">${s.liquidations}</b>`:'');
   return s;
 }
 
-function drawChart(a, b){
+function drawChart(a, b, c){
   const c=document.getElementById('chart'), dpr=window.devicePixelRatio||1;
   c.width=c.clientWidth*dpr; c.height=220*dpr; const g=c.getContext('2d'); g.scale(dpr,dpr);
   const W=c.clientWidth, H=220, L=44, R=8, T=10, B=22;
-  const series=[[a?a.equity:[], getComputedStyle(document.body).getPropertyValue('--a')],[b?b.equity:[], getComputedStyle(document.body).getPropertyValue('--b')]];
+  const cs=getComputedStyle(document.body);
+  const series=[[a?a.equity:[], cs.getPropertyValue('--a')],[b?b.equity:[], cs.getPropertyValue('--b')],[c?c.equity:[], cs.getPropertyValue('--c')]];
   const all=series.flatMap(s=>s[0]); if(!all.length){ g.fillStyle='#5f6b67'; g.font='14px Georgia'; g.fillText('Noch keine Daten – nach dem ersten Lauf erscheint hier die Kurve.', L, H/2); return }
   const t0=Math.min(...all.map(p=>Date.parse(p.t))), t1=Math.max(...all.map(p=>Date.parse(p.t)));
   let lo=Math.min(START,...all.map(p=>p.v)), hi=Math.max(START,...all.map(p=>p.v)); const pad=(hi-lo)*0.1||10; lo-=pad; hi+=pad;
@@ -96,20 +102,20 @@ function drawChart(a, b){
   for(const [pts,col] of series){ if(!pts.length) continue; g.strokeStyle=col.trim(); g.lineWidth=2; g.beginPath(); pts.forEach((p,i)=>i?g.lineTo(X(p.t),Y(p.v)):g.moveTo(X(p.t),Y(p.v))); g.stroke(); }
 }
 
-function positions(a,b){
-  const rows=[]; for(const [tag,s] of [['a',a],['b',b]]){ if(!s) continue;
-    for(const [addr,p] of Object.entries(s.positions)) rows.push({tag,sym:p.sym,entry:p.entry,val:p.qty*p.entry,opened:p.opened,tp1:p.tp1,addr}); }
+function positions(a,b,c){
+  const rows=[]; for(const [tag,s] of [['a',a],['b',b],['c',c]]){ if(!s) continue;
+    for(const [addr,p] of Object.entries(s.positions)) rows.push({tag,sym:p.sym+(p.side?` ${p.side==='long'?'▲':'▼'} ${p.lev}x`:''),entry:p.entry,val:p.margin!=null?p.margin:p.qty*p.entry,opened:p.opened,tp1:p.tp1,addr}); }
   if(!rows.length){ document.getElementById('positions').innerHTML='<div class="empty">Keine offenen Positionen.</div>'; return }
   document.getElementById('positions').innerHTML='<table><tr><th>Token</th><th class="n">Einstieg</th><th class="n">Einsatz</th><th>Seit</th></tr>'+
     rows.map(r=>`<tr><td><span class="tag ${r.tag}"></span><a href="https://dexscreener.com/solana/${r.addr}" target="_blank">${r.sym}</a>${r.tp1?' (½ realisiert)':''}</td><td class="n">${r.entry<0.01?r.entry.toExponential(2):fmt(r.entry)} $</td><td class="n">${fmt(r.val)} $</td><td>${r.opened.slice(0,10)}</td></tr>`).join('')+'</table>';
 }
 
-function trades(a,b){
-  const rows=[]; for(const [tag,s] of [['a',a],['b',b]]){ if(!s) continue; s.trades.forEach(t=>rows.push({tag,...t})); }
+function trades(a,b,c){
+  const rows=[]; for(const [tag,s] of [['a',a],['b',b],['c',c]]){ if(!s) continue; s.trades.forEach(t=>rows.push({tag,...t})); }
   rows.sort((x,y)=>y.t.localeCompare(x.t));
   if(!rows.length){ document.getElementById('trades').innerHTML='<div class="empty">Noch keine Trades.</div>'; return }
   document.getElementById('trades').innerHTML='<table><tr><th>Zeit</th><th>Token</th><th>Seite</th><th class="n">USD</th><th class="n">P&amp;L</th><th>Grund</th></tr>'+
-    rows.slice(0,40).map(t=>`<tr><td>${t.t.slice(5,16).replace('T',' ')}</td><td><span class="tag ${t.tag}"></span>${t.sym}</td><td>${t.side==='buy'?'Kauf':'Verkauf'+(t.frac&&t.frac<1?' ½':'')}</td><td class="n">${fmt(t.usd)}</td><td class="n ${t.pnl!=null?cls(t.pnl):''}">${t.pnl!=null?fmt(t.pnl):''}</td><td>${t.reason}</td></tr>`).join('')+'</table>';
+    rows.slice(0,40).map(t=>`<tr><td>${t.t.slice(5,16).replace('T',' ')}</td><td><span class="tag ${t.tag}"></span>${t.sym}</td><td>${({buy:'Kauf',sell:'Verkauf'+(t.frac&&t.frac<1?' ½':''),open_long:'Long '+t.lev+'x',open_short:'Short '+t.lev+'x',close_long:'Long zu',close_short:'Short zu'})[t.side]||t.side}</td><td class="n">${fmt(t.usd)}</td><td class="n ${t.pnl!=null?cls(t.pnl):''}">${t.pnl!=null?fmt(t.pnl):''}</td><td>${t.reason}</td></tr>`).join('')+'</table>';
 }
 
 function backtest(bt, cfg){
@@ -123,12 +129,23 @@ function backtest(bt, cfg){
     `<p style="font-size:13px;color:#5f6b67;margin-top:8px">Zum Vergleich Kaufen &amp; Halten: ${Object.entries(bt.buy_and_hold_pct).map(([k,v])=>k+' '+pct(v)).join(', ')}</p>`;
 }
 
+function backtestC(bt, cfg){
+  const el=document.getElementById('backtest_c');
+  if(!bt){ el.innerHTML='<div class="empty">Noch nicht gelaufen. Auf GitHub: Actions → backtest-bot-c → Run workflow.</div>'; return }
+  const active = cfg ? `Bot C handelt aktuell nach <b>${cfg.strategy} ${cfg.lev}x</b>${cfg.manual?' (manuell gewählt)':''}.` : 'Bot C hat noch keine Strategie – er sammelt nur Daten.';
+  el.innerHTML=`<p style="font-size:14px;margin:6px 0 10px">${bt.days} Tage, ${bt.tokens.length} Tokens: ${bt.tokens.join(', ')}.<br>${active}</p>`+
+    '<table><tr><th>Strategie</th><th class="n">Hebel</th><th class="n">Rendite</th><th class="n">Trades (L/S)</th><th class="n">Treffer</th><th class="n">Max. DD</th><th class="n">Liq.</th><th class="n">1. Hälfte</th><th class="n">2. Hälfte</th></tr>'+
+    bt.results.map(r=>`<tr><td>${r.strategy}</td><td class="n">${r.lev}x</td><td class="n ${cls(r.return_pct)}">${pct(r.return_pct)}</td><td class="n">${r.trades} (${r.longs}/${r.shorts})</td><td class="n">${r.win_rate} %</td><td class="n">${r.max_drawdown_pct} %</td><td class="n ${r.liquidations?'down':''}">${r.liquidations}</td><td class="n ${cls(r.half1_pct)}">${pct(r.half1_pct)}</td><td class="n ${cls(r.half2_pct)}">${pct(r.half2_pct)}</td></tr>`).join('')+'</table>'+
+    '<p style="font-size:13px;color:#5f6b67;margin-top:8px">Sortiert: robuste Strategien (beide Hälften positiv, ≥15 Trades) zuerst, dann nach Rendite je Drawdown. Positionsgröße ist dynamisch (4 % Risiko je Trade). Hebel vergrößert Gewinn, Drawdown und Borrow-Kosten – jede Liquidation disqualifiziert.</p>';
+}
+
 (async()=>{
-  const [a,b,bt,cfg]=await Promise.all([j('data/bot_a_state.json'),j('data/bot_b_state.json'),j('data/backtest_b.json'),j('data/strategy_b.json')]);
+  const [a,b,c,bt,cfg,btc,cfgc]=await Promise.all([j('data/bot_a_state.json'),j('data/bot_b_state.json'),j('data/bot_c_state.json'),j('data/backtest_b.json'),j('data/strategy_b.json'),j('data/backtest_c.json'),j('data/strategy_c.json')]);
   if(cfg) document.getElementById('b-strat').textContent=cfg.strategy;
-  const last=[a,b].filter(Boolean).flatMap(s=>s.equity).map(p=>p.t).sort().pop();
+  if(cfgc) document.getElementById('c-strat').textContent=cfgc.strategy+' '+cfgc.lev+'x';
+  const last=[a,b,c].filter(Boolean).flatMap(s=>s.equity).map(p=>p.t).sort().pop();
   document.getElementById('sub').textContent = last ? 'Letzter Lauf: '+new Date(last).toLocaleString('de-DE')+' · aktualisiert alle 30 Minuten' : 'Noch kein Lauf – der erste Durchgang startet automatisch nach dem Hochladen.';
-  summarize('a',a); summarize('b',b); drawChart(a,b); positions(a,b); trades(a,b); backtest(bt,cfg);
+  summarize('a',a); summarize('b',b); summarize('c',c); drawChart(a,b,c); positions(a,b,c); trades(a,b,c); backtest(bt,cfg); backtestC(btc,cfgc);
 })();
 </script>
 </body>
