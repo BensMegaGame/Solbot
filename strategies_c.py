@@ -82,3 +82,58 @@ def margin_for(risk_pct, lev, equity, stop_pct):
     """Verlust am Stop = risk_pct * equity. margin = risk / (lev * stop)."""
     m = risk_pct * equity / (lev * stop_pct)
     return max(MIN_MARGIN, min(m, MAX_MARGIN_PCT * equity))
+
+# ======== Runde 2: Regime-Filter + kreative Strategien ========
+CONTEXT = {}   # backtest/bot setzen hier {"data": {sym: {"bars":[...]}}, "sym": aktuelles Symbol}
+
+def _efficiency(c, n=30):
+    """Kaufman Efficiency Ratio: 1 = glatter Trend, 0 = Gezappel."""
+    net = abs(c[-1] - c[-1-n]); path = sum(abs(a - b) for a, b in zip(c[-n-1:-1], c[-n:]))
+    return net / path if path else 0
+
+def c6r_pullback_regime(bars, fund, i):
+    """C6, aber nur wenn der Markt tatsaechlich trendet (Efficiency Ratio > 0,3 ueber 30 Kerzen)."""
+    if i < 130: return None
+    c = [b["c"] for b in bars[:i+1]]
+    if _efficiency(c) < 0.30: return None
+    return c6_trend_pullback(bars, fund, i)
+
+def c8_pair_relative(bars, fund, i):
+    """Marktneutral: SOL vs. BTC. Wer in 5 Tagen (30 Kerzen) relativ staerker war, wird long, der andere short.
+    Nur bei klarem Abstand (> 6 %). ETH bleibt aussen vor."""
+    d = CONTEXT.get("data"); sym = CONTEXT.get("sym")
+    if not d or sym not in ("SOL", "BTC") or "SOL" not in d or "BTC" not in d or i < 40: return None
+    rs = d["SOL"]["bars"][i]["c"] / d["SOL"]["bars"][i-30]["c"] - d["BTC"]["bars"][i]["c"] / d["BTC"]["bars"][i-30]["c"]
+    if abs(rs) < 0.06: return None
+    c = [b["c"] for b in bars[:i+1]]; atr = _atr(bars[:i+1]) / c[-1]; stop = max(0.02, 1.5 * atr)
+    if sym == "SOL": return ("long", stop) if rs > 0 else ("short", stop)
+    return ("short", stop) if rs > 0 else ("long", stop)
+
+def c9_cascade_fade(bars, fund, i):
+    """Liquidations-Kaskade: eine 4h-Kerze mit Spanne > 2,5 ATR und Volumen > 2x Schnitt uebertreibt meist.
+    Gegen die Kerze handeln, kurz halten."""
+    if i < 60: return None
+    b = bars[i]; c = [x["c"] for x in bars[:i+1]]; atr = _atr(bars[:i]) 
+    vol_avg = sum(x["v"] for x in bars[i-30:i]) / 30
+    if (b["h"] - b["l"]) < 2.5 * atr or b["v"] < 2 * vol_avg: return None
+    stop = max(0.015, 1.0 * atr / c[-1])
+    if b["c"] < b["o"] and (b["o"] - b["c"]) / b["o"] > 0.03: return ("long", stop)
+    if b["c"] > b["o"] and (b["c"] - b["o"]) / b["o"] > 0.03: return ("short", stop)
+    return None
+
+def c10_weekend_fade(bars, fund, i):
+    """Wochenend-Bewegungen entstehen auf duenner Liquiditaet. Montag 00:00 UTC: wenn Sa+So > 2,5 % bewegt, dagegen."""
+    import datetime as dt
+    b = bars[i]; t = dt.datetime.utcfromtimestamp(b["t"] / 1000)
+    if not (t.weekday() == 0 and t.hour == 0) or i < 20: return None    # erste Montagskerze
+    move = bars[i-1]["c"] / bars[i-13]["c"] - 1                          # Freitag 24:00 -> Sonntag 24:00 (12 Kerzen)
+    if abs(move) < 0.025: return None
+    c = [x["c"] for x in bars[:i+1]]; stop = max(0.015, 1.2 * _atr(bars[:i+1]) / c[-1])
+    return ("short", stop) if move > 0 else ("long", stop)
+
+STRATEGIES.update({"C6r_pullback_regime": c6r_pullback_regime, "C8_pair_SOL_BTC": c8_pair_relative,
+                   "C9_cascade_fade": c9_cascade_fade, "C10_weekend_fade": c10_weekend_fade})
+EXITS.update({"C6r_pullback_regime": (2.5, 90, 2.0), "C8_pair_SOL_BTC": (2.0, 60, None),
+              "C9_cascade_fade": (1.5, 12, None), "C10_weekend_fade": (1.5, 18, None)})
+# Runde 1 zum Vergleich auf die zwei Besten reduzieren
+for k in ("C5_squeeze", "C7_funding"): STRATEGIES.pop(k, None)
