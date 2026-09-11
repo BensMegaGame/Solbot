@@ -1,15 +1,6 @@
 {
- "cash": 396.71201945690393,
+ "cash": 409.83514129514265,
  "positions": {
-  "AaEhFTX4naHSWSXz9TVe5QgLbtSLT8ZqYJGZzDDcoroh": {
-   "sym": "JUPCAT",
-   "qty": 71964.52206633746,
-   "cost": 25.134999999999998,
-   "opened": "2026-09-10T18:51:47Z",
-   "peak": 0.001366,
-   "entry": 0.00034926932436,
-   "tp1": true
-  },
   "Aw6fiDPWLUnjSsJQtsyEMSaoPaKAUUrStAsYPiPwpump": {
    "sym": "Anonymouse",
    "qty": 160193.25714542024,
@@ -23,7 +14,7 @@
    "qty": 246420.73876937485,
    "cost": 50.269999999999996,
    "opened": "2026-09-11T13:14:43Z",
-   "peak": 0.0002192,
+   "peak": 0.0002492,
    "entry": 0.00020400068699999996
   },
   "6CsmCtDAhRcbp3G4KiinKC2JjLJ9BpR7isqcgZefqLym": {
@@ -31,8 +22,16 @@
    "qty": 21545.854749912956,
    "cost": 50.269999999999996,
    "opened": "2026-09-11T13:14:57Z",
-   "peak": 0.002316,
+   "peak": 0.002861,
    "entry": 0.0023331634127999996
+  },
+  "zzjkh1hLbvsFJXWLfE6h4JNbcnRj4eteuKRw42PN2tC": {
+   "sym": "MM",
+   "qty": 82808.16395751479,
+   "cost": 50.269999999999996,
+   "opened": "2026-09-11T18:23:10Z",
+   "peak": 0.0006026,
+   "entry": 0.0006070657480799999
   }
  },
  "trades": [
@@ -86,6 +85,27 @@
    "usd": 50.27,
    "slip": 0.002,
    "reason": "screener"
+  },
+  {
+   "t": "2026-09-11T18:22:56Z",
+   "side": "sell",
+   "sym": "JUPCAT",
+   "addr": "AaEhFTX4naHSWSXz9TVe5QgLbtSLT8ZqYJGZzDDcoroh",
+   "price": 0.0008856,
+   "usd": 63.39,
+   "pnl": 38.26,
+   "frac": 1.0,
+   "reason": "trail"
+  },
+  {
+   "t": "2026-09-11T18:23:10Z",
+   "side": "buy",
+   "sym": "MM",
+   "addr": "zzjkh1hLbvsFJXWLfE6h4JNbcnRj4eteuKRw42PN2tC",
+   "price": 0.0006026,
+   "usd": 50.27,
+   "slip": 0.002,
+   "reason": "screener"
   }
  ],
  "equity": [
@@ -128,6 +148,10 @@
   {
    "t": "2026-09-11T14:57:35Z",
    "v": 623.15
+  },
+  {
+   "t": "2026-09-11T18:23:45Z",
+   "v": 610.68
   }
  ],
  "started": "2026-09-10T17:17:16Z"
