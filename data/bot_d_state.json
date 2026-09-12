@@ -1,5 +1,5 @@
 {
- "cash": 246.53829066277294,
+ "cash": 231.44329066277294,
  "positions": {
   "66aBzVKucLmWvY2JEU5CjAYcUSz7YcpoBDfXXWV9pump": {
    "sym": "stonkbaton",
@@ -44,6 +44,15 @@
    "opened": "2026-09-12T19:36:28Z",
    "peak": 0.0003154,
    "entry": 0.00028294188759999994,
+   "kind": "longshot"
+  },
+  "Fuo63YDw3vg68VVCF79gDc9MrP5k8MUjHkKiRG9Y5Nnj": {
+   "sym": "RONNIE",
+   "qty": 154489.7820458155,
+   "cost": 15.094999999999999,
+   "opened": "2026-09-12T20:01:37Z",
+   "peak": 9.69e-05,
+   "entry": 9.77087274e-05,
    "kind": "longshot"
   }
  },
@@ -160,6 +169,16 @@
    "usd": 15.09,
    "slip": 0.002,
    "reason": "longshot"
+  },
+  {
+   "t": "2026-09-12T20:01:37Z",
+   "side": "buy",
+   "sym": "RONNIE",
+   "addr": "Fuo63YDw3vg68VVCF79gDc9MrP5k8MUjHkKiRG9Y5Nnj",
+   "price": 9.69e-05,
+   "usd": 15.09,
+   "slip": 0.002,
+   "reason": "longshot"
   }
  ],
  "equity": [
@@ -254,6 +273,10 @@
   {
    "t": "2026-09-12T19:56:34Z",
    "v": 462.03
+  },
+  {
+   "t": "2026-09-12T20:01:40Z",
+   "v": 461.22
   }
  ],
  "started": "2026-09-12T18:11:27Z",
