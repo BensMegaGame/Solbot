@@ -1,5 +1,5 @@
 {
- "cash": 273.75499999999994,
+ "cash": 258.7783576157543,
  "positions": {
   "HgMih2Enbszn2C555XQhUhyH5nUajbbMNGqUoSMzpump": {
    "sym": "WEN",
@@ -10,21 +10,12 @@
    "entry": 0.0001272532652,
    "kind": "longshot"
   },
-  "84uuSMjPYDEAcsr8FXoBvCK2HwZS94c6BA8kk4jNpump": {
-   "sym": "faucat",
-   "qty": 52711.478451547606,
-   "cost": 15.094999999999999,
-   "opened": "2026-09-12T18:11:46Z",
-   "peak": 0.0003167,
-   "entry": 0.000286370264,
-   "kind": "longshot"
-  },
   "66aBzVKucLmWvY2JEU5CjAYcUSz7YcpoBDfXXWV9pump": {
    "sym": "stonkbaton",
    "qty": 70646.81396998359,
    "cost": 15.094999999999999,
    "opened": "2026-09-12T18:16:29Z",
-   "peak": 0.0004835,
+   "peak": 0.0009177,
    "entry": 0.00021366851739999996,
    "kind": "longshot"
   },
@@ -54,6 +45,15 @@
    "peak": 0.0001348,
    "entry": 0.00012360110880000003,
    "kind": "standard"
+  },
+  "67v7qwNf2KkjiPPQ3D2t2rJiv6g7Gsx8N3rfAes3pump": {
+   "sym": "PUMPER",
+   "qty": 105945.22208237453,
+   "cost": 15.094999999999999,
+   "opened": "2026-09-12T19:06:32Z",
+   "peak": 0.0001413,
+   "entry": 0.00014247928979999999,
+   "kind": "longshot"
   }
  },
  "trades": [
@@ -116,6 +116,27 @@
    "usd": 60.32,
    "slip": 0.002,
    "reason": "std echte wallets 56% (16)"
+  },
+  {
+   "t": "2026-09-12T19:06:24Z",
+   "side": "sell",
+   "sym": "faucat",
+   "addr": "84uuSMjPYDEAcsr8FXoBvCK2HwZS94c6BA8kk4jNpump",
+   "price": 2.638e-06,
+   "usd": 0.12,
+   "pnl": -14.98,
+   "frac": 1.0,
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-12T19:06:32Z",
+   "side": "buy",
+   "sym": "PUMPER",
+   "addr": "67v7qwNf2KkjiPPQ3D2t2rJiv6g7Gsx8N3rfAes3pump",
+   "price": 0.0001413,
+   "usd": 15.09,
+   "slip": 0.002,
+   "reason": "longshot"
   }
  ],
  "equity": [
@@ -166,6 +187,10 @@
   {
    "t": "2026-09-12T19:01:32Z",
    "v": 531.39
+  },
+  {
+   "t": "2026-09-12T19:06:34Z",
+   "v": 546.5
   }
  ],
  "started": "2026-09-12T18:11:27Z",
