@@ -1,14 +1,6 @@
 {
- "cash": 161.916303786747,
+ "cash": 210.0599815494208,
  "positions": {
-  "HYm6BfpDQkfUtnCWVnj6YAGzJvnpzuCWDZKrpbAVkBFh": {
-   "sym": "WUFF",
-   "qty": 246420.73876937485,
-   "cost": 50.269999999999996,
-   "opened": "2026-09-11T13:14:43Z",
-   "peak": 0.0002492,
-   "entry": 0.00020400068699999996
-  },
   "zzjkh1hLbvsFJXWLfE6h4JNbcnRj4eteuKRw42PN2tC": {
    "sym": "MM",
    "qty": 82808.16395751479,
@@ -24,14 +16,6 @@
    "opened": "2026-09-12T00:04:58Z",
    "peak": 0.0001783,
    "entry": 0.00011212482203999998
-  },
-  "GWTP6M5bxhaJ1k2Kxvf8hhYaHE6jZMhh4cKzFuCpnc83": {
-   "sym": "USEFUL",
-   "qty": 26235.646477811988,
-   "cost": 50.269999999999996,
-   "opened": "2026-09-12T00:05:34Z",
-   "peak": 0.001902,
-   "entry": 0.0019160953415999998
   },
   "2bDQvnvwd7rNbm4o3JNdN6z9c7MVzp4yqHJPNXPiSTNK": {
    "sym": "BITCAT",
@@ -223,6 +207,28 @@
    "usd": 50.27,
    "slip": 0.002,
    "reason": "screener"
+  },
+  {
+   "t": "2026-09-12T18:10:02Z",
+   "side": "sell",
+   "sym": "WUFF",
+   "addr": "HYm6BfpDQkfUtnCWVnj6YAGzJvnpzuCWDZKrpbAVkBFh",
+   "price": 9.532e-05,
+   "usd": 23.35,
+   "pnl": -26.92,
+   "frac": 1.0,
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-12T18:10:06Z",
+   "side": "sell",
+   "sym": "USEFUL",
+   "addr": "GWTP6M5bxhaJ1k2Kxvf8hhYaHE6jZMhh4cKzFuCpnc83",
+   "price": 0.0009505,
+   "usd": 24.79,
+   "pnl": -25.48,
+   "frac": 1.0,
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -469,6 +475,10 @@
   {
    "t": "2026-09-12T18:05:56Z",
    "v": 410.63
+  },
+  {
+   "t": "2026-09-12T18:10:59Z",
+   "v": 403.37
   }
  ],
  "started": "2026-09-10T17:17:16Z"

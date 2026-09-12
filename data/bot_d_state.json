@@ -1,0 +1,54 @@
+{
+ "cash": 469.80999999999995,
+ "positions": {
+  "HgMih2Enbszn2C555XQhUhyH5nUajbbMNGqUoSMzpump": {
+   "sym": "WEN",
+   "qty": 118621.71061996449,
+   "cost": 15.094999999999999,
+   "opened": "2026-09-12T18:11:43Z",
+   "peak": 0.0001262,
+   "entry": 0.0001272532652,
+   "kind": "longshot"
+  },
+  "84uuSMjPYDEAcsr8FXoBvCK2HwZS94c6BA8kk4jNpump": {
+   "sym": "faucat",
+   "qty": 52711.478451547606,
+   "cost": 15.094999999999999,
+   "opened": "2026-09-12T18:11:46Z",
+   "peak": 0.000284,
+   "entry": 0.000286370264,
+   "kind": "longshot"
+  }
+ },
+ "trades": [
+  {
+   "t": "2026-09-12T18:11:43Z",
+   "side": "buy",
+   "sym": "WEN",
+   "addr": "HgMih2Enbszn2C555XQhUhyH5nUajbbMNGqUoSMzpump",
+   "price": 0.0001262,
+   "usd": 15.09,
+   "slip": 0.002,
+   "reason": "longshot"
+  },
+  {
+   "t": "2026-09-12T18:11:46Z",
+   "side": "buy",
+   "sym": "faucat",
+   "addr": "84uuSMjPYDEAcsr8FXoBvCK2HwZS94c6BA8kk4jNpump",
+   "price": 0.000284,
+   "usd": 15.09,
+   "slip": 0.002,
+   "reason": "longshot"
+  }
+ ],
+ "equity": [
+  {
+   "t": "2026-09-12T18:11:48Z",
+   "v": 499.75
+  }
+ ],
+ "started": "2026-09-12T18:11:27Z",
+ "strategy": "concentrated",
+ "helius": true
+}
