@@ -14,6 +14,7 @@ TP2_X = 10.0                        # Rest bei 10x
 STOP = -0.5                         # oder -50 %
 TRAIL = -0.35                       # nach TP1: Rest raus wenn 35 % unter Hoch
 MAX_HOLD_D = 10                     # Zeitstop
+COOLDOWN_D = 14                     # Tage Sperre nach Verkauf mit Verlust (verhindert sofortiges Rebuy)
 
 RC = "https://api.rugcheck.xyz/v1/tokens"
 HARD_RISKS = ("mint", "freeze", "unlocked", "top 10", "single holder")
@@ -50,6 +51,8 @@ def rug_ok(addr):
 def main():
     pf = Paper("bot_a")
     prices = {}
+    today = int(time.time() // 86400)
+    cooldown = load("bot_a_cooldown.json", {})
     # 1) offene Positionen verwalten
     for addr, pos in list(pf.s["positions"].items()):
         p = solana_pair(addr)
@@ -57,16 +60,22 @@ def main():
         m = metrics(p); px = m["price"]; prices[addr] = px
         pos["peak"] = max(pos.get("peak", px), px)
         x = px / pos["entry"]; held_d = (time.time() - time.mktime(time.strptime(pos["opened"], "%Y-%m-%dT%H:%M:%SZ"))) / 86400
-        if x <= 1 + STOP: pf.sell(addr, px, 1.0, m["liq"], "stop")
-        elif x >= TP2_X: pf.sell(addr, px, 1.0, m["liq"], "tp2")
+        why = None
+        if x <= 1 + STOP: why = "stop"
+        elif x >= TP2_X: why = "tp2"
         elif x >= TP1_X and not pos.get("tp1"): pos["tp1"] = True; pf.sell(addr, px, TP1_FRAC, m["liq"], "tp1")
-        elif pos.get("tp1") and px / pos["peak"] - 1 <= TRAIL: pf.sell(addr, px, 1.0, m["liq"], "trail")
-        elif held_d >= MAX_HOLD_D: pf.sell(addr, px, 1.0, m["liq"], "time")
+        elif pos.get("tp1") and px / pos["peak"] - 1 <= TRAIL: why = "trail"
+        elif held_d >= MAX_HOLD_D: why = "time"
+        if why:
+            pf.sell(addr, px, 1.0, m["liq"], why)
+            if why in ("stop", "trail") or px < pos["entry"]:   # jeder Verlust-Exit sperrt den Token
+                cooldown[addr] = today + COOLDOWN_D
         time.sleep(1.1)
     # 2) neue Kandidaten
     seen = load("bot_a_seen.json", {})
     for addr in candidates():
         if addr in pf.s["positions"] or len(pf.s["positions"]) >= MAX_POS: continue
+        if cooldown.get(addr, 0) > today: continue
         p = solana_pair(addr)
         if not p: continue
         m = metrics(p)
@@ -82,6 +91,7 @@ def main():
                 prices[addr] = m["price"]
         time.sleep(1.1)
     save("bot_a_seen.json", seen)
+    save("bot_a_cooldown.json", {k: v for k, v in cooldown.items() if v > today})   # abgelaufene Sperren aufraeumen
     v = pf.mark(prices); pf.commit()
     print(f"Bot A: equity {v:.2f} | cash {pf.s['cash']:.2f} | positions {len(pf.s['positions'])}")
 
