@@ -1,14 +1,6 @@
 {
- "cash": 409.83514129514265,
+ "cash": 291.75148541406946,
  "positions": {
-  "Aw6fiDPWLUnjSsJQtsyEMSaoPaKAUUrStAsYPiPwpump": {
-   "sym": "Anonymouse",
-   "qty": 160193.25714542024,
-   "cost": 50.269999999999996,
-   "opened": "2026-09-10T23:17:49Z",
-   "peak": 0.0003342,
-   "entry": 0.00031380846419999995
-  },
   "HYm6BfpDQkfUtnCWVnj6YAGzJvnpzuCWDZKrpbAVkBFh": {
    "sym": "WUFF",
    "qty": 246420.73876937485,
@@ -17,14 +9,6 @@
    "peak": 0.0002492,
    "entry": 0.00020400068699999996
   },
-  "6CsmCtDAhRcbp3G4KiinKC2JjLJ9BpR7isqcgZefqLym": {
-   "sym": "METH",
-   "qty": 21545.854749912956,
-   "cost": 50.269999999999996,
-   "opened": "2026-09-11T13:14:57Z",
-   "peak": 0.002861,
-   "entry": 0.0023331634127999996
-  },
   "zzjkh1hLbvsFJXWLfE6h4JNbcnRj4eteuKRw42PN2tC": {
    "sym": "MM",
    "qty": 82808.16395751479,
@@ -32,6 +16,30 @@
    "opened": "2026-09-11T18:23:10Z",
    "peak": 0.001625,
    "entry": 0.0006070657480799999
+  },
+  "Aw6fiDPWLUnjSsJQtsyEMSaoPaKAUUrStAsYPiPwpump": {
+   "sym": "Anonymouse",
+   "qty": 448339.6190547925,
+   "cost": 50.269999999999996,
+   "opened": "2026-09-12T00:04:58Z",
+   "peak": 0.0001113,
+   "entry": 0.00011212482203999998
+  },
+  "3URpNcV9wAPjwMAyuBsPjwwkGN9wFJuwcRs3RMbdpair": {
+   "sym": "PAIRZ",
+   "qty": 19591.754849155244,
+   "cost": 50.269999999999996,
+   "opened": "2026-09-12T00:05:22Z",
+   "peak": 0.002547,
+   "entry": 0.0025658753075999997
+  },
+  "GWTP6M5bxhaJ1k2Kxvf8hhYaHE6jZMhh4cKzFuCpnc83": {
+   "sym": "USEFUL",
+   "qty": 26235.646477811988,
+   "cost": 50.269999999999996,
+   "opened": "2026-09-12T00:05:34Z",
+   "peak": 0.001902,
+   "entry": 0.0019160953415999998
   }
  },
  "trades": [
@@ -106,6 +114,58 @@
    "usd": 50.27,
    "slip": 0.002,
    "reason": "screener"
+  },
+  {
+   "t": "2026-09-12T00:04:46Z",
+   "side": "sell",
+   "sym": "Anonymouse",
+   "addr": "Aw6fiDPWLUnjSsJQtsyEMSaoPaKAUUrStAsYPiPwpump",
+   "price": 0.0001113,
+   "usd": 17.72,
+   "pnl": -32.55,
+   "frac": 1.0,
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-12T00:04:49Z",
+   "side": "sell",
+   "sym": "METH",
+   "addr": "6CsmCtDAhRcbp3G4KiinKC2JjLJ9BpR7isqcgZefqLym",
+   "price": 0.0007009,
+   "usd": 15.01,
+   "pnl": -35.26,
+   "frac": 1.0,
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-12T00:04:58Z",
+   "side": "buy",
+   "sym": "Anonymouse",
+   "addr": "Aw6fiDPWLUnjSsJQtsyEMSaoPaKAUUrStAsYPiPwpump",
+   "price": 0.0001113,
+   "usd": 50.27,
+   "slip": 0.002,
+   "reason": "screener"
+  },
+  {
+   "t": "2026-09-12T00:05:22Z",
+   "side": "buy",
+   "sym": "PAIRZ",
+   "addr": "3URpNcV9wAPjwMAyuBsPjwwkGN9wFJuwcRs3RMbdpair",
+   "price": 0.002547,
+   "usd": 50.27,
+   "slip": 0.002,
+   "reason": "screener"
+  },
+  {
+   "t": "2026-09-12T00:05:34Z",
+   "side": "buy",
+   "sym": "USEFUL",
+   "addr": "GWTP6M5bxhaJ1k2Kxvf8hhYaHE6jZMhh4cKzFuCpnc83",
+   "price": 0.001902,
+   "usd": 50.27,
+   "slip": 0.002,
+   "reason": "screener"
   }
  ],
  "equity": [
@@ -160,6 +220,10 @@
   {
    "t": "2026-09-11T21:40:04Z",
    "v": 614.66
+  },
+  {
+   "t": "2026-09-12T00:05:47Z",
+   "v": 561.38
   }
  ],
  "started": "2026-09-10T17:17:16Z"
