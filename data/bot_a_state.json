@@ -1,5 +1,5 @@
 {
- "cash": 109.51998154942082,
+ "cash": 132.87436968268193,
  "positions": {
   "zzjkh1hLbvsFJXWLfE6h4JNbcnRj4eteuKRw42PN2tC": {
    "sym": "MM",
@@ -40,14 +40,6 @@
    "opened": "2026-09-12T18:05:51Z",
    "peak": 0.0008959,
    "entry": 0.0007696618512
-  },
-  "GJnF3R7QXZdquYEeCFUE5YJuSkR9wdL9B3ojE5bNpump": {
-   "sym": "Cupsey",
-   "qty": 399521.21377740917,
-   "cost": 50.269999999999996,
-   "opened": "2026-09-12T18:35:40Z",
-   "peak": 0.0001302,
-   "entry": 0.00012582560892
   },
   "5GefefPX1mDs6ZJB1apYmz6fCTCiNJpHturZ9bvFpump": {
    "sym": "Pumpoween",
@@ -265,6 +257,17 @@
    "usd": 50.27,
    "slip": 0.002,
    "reason": "screener"
+  },
+  {
+   "t": "2026-09-12T22:25:08Z",
+   "side": "sell",
+   "sym": "Cupsey",
+   "addr": "GJnF3R7QXZdquYEeCFUE5YJuSkR9wdL9B3ojE5bNpump",
+   "price": 5.88e-05,
+   "usd": 23.35,
+   "pnl": -26.92,
+   "frac": 1.0,
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -719,6 +722,10 @@
   {
    "t": "2026-09-12T22:20:57Z",
    "v": 386.18
+  },
+  {
+   "t": "2026-09-12T22:25:58Z",
+   "v": 381.65
   }
  ],
  "started": "2026-09-10T17:17:16Z"

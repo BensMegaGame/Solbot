@@ -1,5 +1,5 @@
 {
- "cash": 171.12329066277294,
+ "cash": 199.6554772431574,
  "positions": {
   "66aBzVKucLmWvY2JEU5CjAYcUSz7YcpoBDfXXWV9pump": {
    "sym": "stonkbaton",
@@ -28,15 +28,6 @@
    "entry": 0.0009924353088000002,
    "kind": "standard"
   },
-  "GJnF3R7QXZdquYEeCFUE5YJuSkR9wdL9B3ojE5bNpump": {
-   "sym": "Cupsey",
-   "qty": 488021.5119882484,
-   "cost": 60.32,
-   "opened": "2026-09-12T18:36:43Z",
-   "peak": 0.0001348,
-   "entry": 0.00012360110880000003,
-   "kind": "standard"
-  },
   "Adgt7dseCq71eN6GDuoUgpsNQp81ZNhq24nrF7pxpump": {
    "sym": "Noiz ",
    "qty": 53350.17776279231,
@@ -60,7 +51,7 @@
    "qty": 145375.67254420512,
    "cost": 60.32,
    "opened": "2026-09-12T21:26:41Z",
-   "peak": 0.0004222,
+   "peak": 0.0004246,
    "entry": 0.00041492499359999997,
    "kind": "standard"
   }
@@ -198,6 +189,17 @@
    "usd": 60.32,
    "slip": 0.002,
    "reason": "std echte wallets 43% (14)"
+  },
+  {
+   "t": "2026-09-12T22:26:31Z",
+   "side": "sell",
+   "sym": "Cupsey",
+   "addr": "GJnF3R7QXZdquYEeCFUE5YJuSkR9wdL9B3ojE5bNpump",
+   "price": 5.88e-05,
+   "usd": 28.53,
+   "pnl": -31.79,
+   "frac": 1.0,
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -408,6 +410,10 @@
   {
    "t": "2026-09-12T22:21:36Z",
    "v": 432.82
+  },
+  {
+   "t": "2026-09-12T22:26:39Z",
+   "v": 431.22
   }
  ],
  "started": "2026-09-12T18:11:27Z",
