@@ -1,12 +1,12 @@
 {
- "cash": 334.07499999999993,
+ "cash": 273.75499999999994,
  "positions": {
   "HgMih2Enbszn2C555XQhUhyH5nUajbbMNGqUoSMzpump": {
    "sym": "WEN",
    "qty": 118621.71061996449,
    "cost": 15.094999999999999,
    "opened": "2026-09-12T18:11:43Z",
-   "peak": 0.0004114,
+   "peak": 0.0005305,
    "entry": 0.0001272532652,
    "kind": "longshot"
   },
@@ -24,7 +24,7 @@
    "qty": 70646.81396998359,
    "cost": 15.094999999999999,
    "opened": "2026-09-12T18:16:29Z",
-   "peak": 0.0002479,
+   "peak": 0.0002628,
    "entry": 0.00021366851739999996,
    "kind": "longshot"
   },
@@ -33,7 +33,7 @@
    "qty": 152833.68943582973,
    "cost": 60.32,
    "opened": "2026-09-12T18:24:32Z",
-   "peak": 0.0004007,
+   "peak": 0.0004109,
    "entry": 0.0003946773792,
    "kind": "standard"
   },
@@ -42,8 +42,17 @@
    "qty": 60779.78026893837,
    "cost": 60.32,
    "opened": "2026-09-12T18:26:37Z",
-   "peak": 0.0009852,
+   "peak": 0.0009858,
    "entry": 0.0009924353088000002,
+   "kind": "standard"
+  },
+  "GJnF3R7QXZdquYEeCFUE5YJuSkR9wdL9B3ojE5bNpump": {
+   "sym": "Cupsey",
+   "qty": 488021.5119882484,
+   "cost": 60.32,
+   "opened": "2026-09-12T18:36:43Z",
+   "peak": 0.0001227,
+   "entry": 0.00012360110880000003,
    "kind": "standard"
   }
  },
@@ -97,6 +106,16 @@
    "usd": 60.32,
    "slip": 0.002,
    "reason": "std echte wallets 78% (9)"
+  },
+  {
+   "t": "2026-09-12T18:36:43Z",
+   "side": "buy",
+   "sym": "Cupsey",
+   "addr": "GJnF3R7QXZdquYEeCFUE5YJuSkR9wdL9B3ojE5bNpump",
+   "price": 0.0001227,
+   "usd": 60.32,
+   "slip": 0.002,
+   "reason": "std echte wallets 56% (16)"
   }
  ],
  "equity": [
@@ -123,6 +142,10 @@
   {
    "t": "2026-09-12T18:31:36Z",
    "v": 531.6
+  },
+  {
+   "t": "2026-09-12T18:36:45Z",
+   "v": 548.35
   }
  ],
  "started": "2026-09-12T18:11:27Z",
