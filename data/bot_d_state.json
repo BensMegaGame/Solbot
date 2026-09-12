@@ -1,5 +1,5 @@
 {
- "cash": 231.44329066277294,
+ "cash": 171.12329066277294,
  "positions": {
   "66aBzVKucLmWvY2JEU5CjAYcUSz7YcpoBDfXXWV9pump": {
    "sym": "stonkbaton",
@@ -54,6 +54,15 @@
    "peak": 0.0001549,
    "entry": 9.77087274e-05,
    "kind": "longshot"
+  },
+  "5GefefPX1mDs6ZJB1apYmz6fCTCiNJpHturZ9bvFpump": {
+   "sym": "Pumpoween",
+   "qty": 145375.67254420512,
+   "cost": 60.32,
+   "opened": "2026-09-12T21:26:41Z",
+   "peak": 0.0004119,
+   "entry": 0.00041492499359999997,
+   "kind": "standard"
   }
  },
  "trades": [
@@ -179,6 +188,16 @@
    "usd": 15.09,
    "slip": 0.002,
    "reason": "longshot"
+  },
+  {
+   "t": "2026-09-12T21:26:41Z",
+   "side": "buy",
+   "sym": "Pumpoween",
+   "addr": "5GefefPX1mDs6ZJB1apYmz6fCTCiNJpHturZ9bvFpump",
+   "price": 0.0004119,
+   "usd": 60.32,
+   "slip": 0.002,
+   "reason": "std echte wallets 43% (14)"
   }
  ],
  "equity": [
@@ -341,6 +360,10 @@
   {
    "t": "2026-09-12T21:21:32Z",
    "v": 441.37
+  },
+  {
+   "t": "2026-09-12T21:26:43Z",
+   "v": 440.32
   }
  ],
  "started": "2026-09-12T18:11:27Z",
