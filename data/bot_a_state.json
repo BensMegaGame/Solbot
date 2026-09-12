@@ -1,5 +1,5 @@
 {
- "cash": 241.48148541406948,
+ "cash": 212.18630378674698,
  "positions": {
   "HYm6BfpDQkfUtnCWVnj6YAGzJvnpzuCWDZKrpbAVkBFh": {
    "sym": "WUFF",
@@ -25,14 +25,6 @@
    "peak": 0.0001783,
    "entry": 0.00011212482203999998
   },
-  "3URpNcV9wAPjwMAyuBsPjwwkGN9wFJuwcRs3RMbdpair": {
-   "sym": "PAIRZ",
-   "qty": 19591.754849155244,
-   "cost": 50.269999999999996,
-   "opened": "2026-09-12T00:05:22Z",
-   "peak": 0.002547,
-   "entry": 0.0025658753075999997
-  },
   "GWTP6M5bxhaJ1k2Kxvf8hhYaHE6jZMhh4cKzFuCpnc83": {
    "sym": "USEFUL",
    "qty": 26235.646477811988,
@@ -48,6 +40,14 @@
    "opened": "2026-09-12T05:35:32Z",
    "peak": 0.0003046,
    "entry": 0.00017720355971999997
+  },
+  "3URpNcV9wAPjwMAyuBsPjwwkGN9wFJuwcRs3RMbdpair": {
+   "sym": "PAIRZ",
+   "qty": 46332.59015858718,
+   "cost": 50.269999999999996,
+   "opened": "2026-09-12T15:50:19Z",
+   "peak": 0.001077,
+   "entry": 0.0010849814316000001
   }
  },
  "trades": [
@@ -181,6 +181,27 @@
    "sym": "BITCAT",
    "addr": "2bDQvnvwd7rNbm4o3JNdN6z9c7MVzp4yqHJPNXPiSTNK",
    "price": 0.0001759,
+   "usd": 50.27,
+   "slip": 0.002,
+   "reason": "screener"
+  },
+  {
+   "t": "2026-09-12T15:50:05Z",
+   "side": "sell",
+   "sym": "PAIRZ",
+   "addr": "3URpNcV9wAPjwMAyuBsPjwwkGN9wFJuwcRs3RMbdpair",
+   "price": 0.001077,
+   "usd": 20.97,
+   "pnl": -29.3,
+   "frac": 1.0,
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-12T15:50:19Z",
+   "side": "buy",
+   "sym": "PAIRZ",
+   "addr": "3URpNcV9wAPjwMAyuBsPjwwkGN9wFJuwcRs3RMbdpair",
+   "price": 0.001077,
    "usd": 50.27,
    "slip": 0.002,
    "reason": "screener"
@@ -318,6 +339,10 @@
   {
    "t": "2026-09-12T15:45:41Z",
    "v": 518.42
+  },
+  {
+   "t": "2026-09-12T15:50:43Z",
+   "v": 507.59
   }
  ],
  "started": "2026-09-10T17:17:16Z"
