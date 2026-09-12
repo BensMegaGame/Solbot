@@ -1,15 +1,6 @@
 {
- "cash": 258.7783576157543,
+ "cash": 246.53829066277294,
  "positions": {
-  "HgMih2Enbszn2C555XQhUhyH5nUajbbMNGqUoSMzpump": {
-   "sym": "WEN",
-   "qty": 118621.71061996449,
-   "cost": 15.094999999999999,
-   "opened": "2026-09-12T18:11:43Z",
-   "peak": 0.0006176,
-   "entry": 0.0001272532652,
-   "kind": "longshot"
-  },
   "66aBzVKucLmWvY2JEU5CjAYcUSz7YcpoBDfXXWV9pump": {
    "sym": "stonkbaton",
    "qty": 70646.81396998359,
@@ -24,7 +15,7 @@
    "qty": 152833.68943582973,
    "cost": 60.32,
    "opened": "2026-09-12T18:24:32Z",
-   "peak": 0.0004547,
+   "peak": 0.0004775,
    "entry": 0.0003946773792,
    "kind": "standard"
   },
@@ -46,13 +37,13 @@
    "entry": 0.00012360110880000003,
    "kind": "standard"
   },
-  "67v7qwNf2KkjiPPQ3D2t2rJiv6g7Gsx8N3rfAes3pump": {
-   "sym": "PUMPER",
-   "qty": 105945.22208237453,
+  "Adgt7dseCq71eN6GDuoUgpsNQp81ZNhq24nrF7pxpump": {
+   "sym": "Noiz ",
+   "qty": 53350.17776279231,
    "cost": 15.094999999999999,
-   "opened": "2026-09-12T19:06:32Z",
-   "peak": 0.0001413,
-   "entry": 0.00014247928979999999,
+   "opened": "2026-09-12T19:36:28Z",
+   "peak": 0.0002806,
+   "entry": 0.00028294188759999994,
    "kind": "longshot"
   }
  },
@@ -137,6 +128,38 @@
    "usd": 15.09,
    "slip": 0.002,
    "reason": "longshot"
+  },
+  {
+   "t": "2026-09-12T19:36:19Z",
+   "side": "sell",
+   "sym": "WEN",
+   "addr": "HgMih2Enbszn2C555XQhUhyH5nUajbbMNGqUoSMzpump",
+   "price": 2.26e-05,
+   "usd": 2.65,
+   "pnl": -12.45,
+   "frac": 1.0,
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-12T19:36:25Z",
+   "side": "sell",
+   "sym": "PUMPER",
+   "addr": "67v7qwNf2KkjiPPQ3D2t2rJiv6g7Gsx8N3rfAes3pump",
+   "price": 2.158e-06,
+   "usd": 0.21,
+   "pnl": -14.89,
+   "frac": 1.0,
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-12T19:36:28Z",
+   "side": "buy",
+   "sym": "Noiz ",
+   "addr": "Adgt7dseCq71eN6GDuoUgpsNQp81ZNhq24nrF7pxpump",
+   "price": 0.0002806,
+   "usd": 15.09,
+   "slip": 0.002,
+   "reason": "longshot"
   }
  ],
  "equity": [
@@ -211,6 +234,10 @@
   {
    "t": "2026-09-12T19:31:30Z",
    "v": 509.01
+  },
+  {
+   "t": "2026-09-12T19:36:29Z",
+   "v": 463.71
   }
  ],
  "started": "2026-09-12T18:11:27Z",
