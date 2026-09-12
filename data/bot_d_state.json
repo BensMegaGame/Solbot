@@ -1,5 +1,5 @@
 {
- "cash": 199.6554772431574,
+ "cash": 139.3354772431574,
  "positions": {
   "66aBzVKucLmWvY2JEU5CjAYcUSz7YcpoBDfXXWV9pump": {
    "sym": "stonkbaton",
@@ -53,6 +53,15 @@
    "opened": "2026-09-12T21:26:41Z",
    "peak": 0.0004246,
    "entry": 0.00041492499359999997,
+   "kind": "standard"
+  },
+  "BifUDWQFpbTrSxYXBnqCpAVYgcyQGzHzJk2MDmeM2Gyv": {
+   "sym": "TCAT",
+   "qty": 44322.90119982093,
+   "cost": 60.32,
+   "opened": "2026-09-12T23:01:40Z",
+   "peak": 0.001351,
+   "entry": 0.001360921744,
    "kind": "standard"
   }
  },
@@ -200,6 +209,16 @@
    "pnl": -31.79,
    "frac": 1.0,
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-12T23:01:40Z",
+   "side": "buy",
+   "sym": "TCAT",
+   "addr": "BifUDWQFpbTrSxYXBnqCpAVYgcyQGzHzJk2MDmeM2Gyv",
+   "price": 0.001351,
+   "usd": 60.32,
+   "slip": 0.002,
+   "reason": "std echte wallets 73% (15)"
   }
  ],
  "equity": [
@@ -438,6 +457,10 @@
   {
    "t": "2026-09-12T22:56:34Z",
    "v": 462.98
+  },
+  {
+   "t": "2026-09-12T23:01:43Z",
+   "v": 458.45
   }
  ],
  "started": "2026-09-12T18:11:27Z",

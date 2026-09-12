@@ -1,5 +1,5 @@
 {
- "cash": 132.87436968268193,
+ "cash": 82.60436968268193,
  "positions": {
   "zzjkh1hLbvsFJXWLfE6h4JNbcnRj4eteuKRw42PN2tC": {
    "sym": "MM",
@@ -38,7 +38,7 @@
    "qty": 65314.39738324398,
    "cost": 50.269999999999996,
    "opened": "2026-09-12T18:05:51Z",
-   "peak": 0.0008959,
+   "peak": 0.000898,
    "entry": 0.0007696618512
   },
   "5GefefPX1mDs6ZJB1apYmz6fCTCiNJpHturZ9bvFpump": {
@@ -48,6 +48,14 @@
    "opened": "2026-09-12T21:25:13Z",
    "peak": 0.0004229,
    "entry": 0.0004150532496
+  },
+  "BifUDWQFpbTrSxYXBnqCpAVYgcyQGzHzJk2MDmeM2Gyv": {
+   "sym": "TCAT",
+   "qty": 37717.46001572064,
+   "cost": 50.269999999999996,
+   "opened": "2026-09-12T23:00:22Z",
+   "peak": 0.001323,
+   "entry": 0.0013328044883999998
   }
  },
  "trades": [
@@ -268,6 +276,16 @@
    "pnl": -26.92,
    "frac": 1.0,
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-12T23:00:22Z",
+   "side": "buy",
+   "sym": "TCAT",
+   "addr": "BifUDWQFpbTrSxYXBnqCpAVYgcyQGzHzJk2MDmeM2Gyv",
+   "price": 0.001323,
+   "usd": 50.27,
+   "slip": 0.002,
+   "reason": "screener"
   }
  ],
  "equity": [
@@ -750,6 +768,10 @@
   {
    "t": "2026-09-12T22:55:55Z",
    "v": 373.58
+  },
+  {
+   "t": "2026-09-12T23:00:56Z",
+   "v": 381.55
   }
  ],
  "started": "2026-09-10T17:17:16Z"
