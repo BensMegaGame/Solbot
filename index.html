@@ -3,18 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Paper-Trading – Bot A, B &amp; C</title>
+<title>Paper-Trading – Bot A–D</title>
 <style>
-  :root { --bg:#f3f5f2; --ink:#182320; --mute:#5f6b67; --line:#d5dbd7; --a:#2a6f97; --b:#8a5a1f; --c:#5b3f8f; --up:#1f7a5c; --down:#b23a2a; }
+  :root { --bg:#f3f5f2; --ink:#182320; --mute:#5f6b67; --line:#d5dbd7; --a:#2a6f97; --b:#8a5a1f; --c:#5b3f8f; --d:#8a2f4f; --up:#1f7a5c; --down:#b23a2a; }
   * { box-sizing:border-box }
   body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.5 Georgia, "Iowan Old Style", "Times New Roman", serif; }
   main { max-width:860px; margin:0 auto; padding:28px 18px 60px }
   h1 { font-size:26px; font-weight:normal; margin:0 0 4px }
   .sub { color:var(--mute); margin:0 0 26px; font-size:14px }
-  .bots { display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px; margin-bottom:22px }
-  @media (max-width:700px){ .bots { grid-template-columns:1fr } }
+  .bots { display:grid; grid-template-columns:1fr 1fr 1fr 1fr; gap:14px; margin-bottom:22px }
+  @media (max-width:900px){ .bots { grid-template-columns:1fr 1fr } } @media (max-width:560px){ .bots { grid-template-columns:1fr } }
   .bot { border-top:3px solid; padding:12px 0 0 }
-  .bot.a { border-color:var(--a) } .bot.b { border-color:var(--b) } .bot.c { border-color:var(--c) }
+  .bot.a { border-color:var(--a) } .bot.b { border-color:var(--b) } .bot.c { border-color:var(--c) } .bot.d { border-color:var(--d) }
   .bot h2 { font-size:17px; font-weight:normal; margin:0 0 6px }
   .bot .eq { font-size:34px; line-height:1.1; font-variant-numeric:tabular-nums }
   .bot .ret { font-size:15px; margin-left:8px }
@@ -28,7 +28,7 @@
   th { font-weight:normal; color:var(--mute) }
   td.n, th.n { text-align:right }
   .tag { display:inline-block; width:9px; height:9px; border-radius:50%; margin-right:6px; vertical-align:middle }
-  .tag.a{ background:var(--a) } .tag.b{ background:var(--b) } .tag.c{ background:var(--c) }
+  .tag.a{ background:var(--a) } .tag.b{ background:var(--b) } .tag.c{ background:var(--c) } .tag.d{ background:var(--d) }
   .empty { color:var(--mute); font-size:14px; padding:8px 0 }
   .note { font-size:13px; color:var(--mute); margin-top:34px }
   a { color:var(--a) }
@@ -36,13 +36,14 @@
 </head>
 <body>
 <main>
-  <h1>Paper-Trading: Bot A, B &amp; C</h1>
+  <h1>Paper-Trading: Bot A–D</h1>
   <p class="sub" id="sub">Lade Daten…</p>
 
   <div class="bots">
     <div class="bot a"><h2>Bot A – Micro-Caps</h2><div><span class="eq" id="a-eq">–</span><span class="ret" id="a-ret"></span></div><div class="kv" id="a-kv"></div></div>
     <div class="bot b"><h2>Bot B – <span id="b-strat">Zweite Welle</span></h2><div><span class="eq" id="b-eq">–</span><span class="ret" id="b-ret"></span></div><div class="kv" id="b-kv"></div></div>
     <div class="bot c"><h2>Bot C – <span id="c-strat">Perps SOL/ETH/BTC</span></h2><div><span class="eq" id="c-eq">–</span><span class="ret" id="c-ret"></span></div><div class="kv" id="c-kv"></div></div>
+    <div class="bot d"><h2>Bot D – <span id="d-strat">Konzentriert + Longshots</span></h2><div><span class="eq" id="d-eq">–</span><span class="ret" id="d-ret"></span></div><div class="kv" id="d-kv"></div></div>
   </div>
 
   <h3>Kapitalverlauf seit Start (500 $ je Bot)</h3>
@@ -54,8 +55,8 @@
   <h3>Letzte Trades</h3>
   <div id="trades"></div>
 
-  <h3>Backtest Bot B (alte Version, große Tokens – nur zur Referenz)</h3>
-  <div id="backtest"></div>
+  <h3>Strategien im Überblick</h3>
+  <div id="strategy_overview"></div>
 
   <h3>Backtest Bot C (Jupiter Perps, 4h-Kerzen: Long/Short, 3x–10x Hebel, 4 %/8 % Risiko)</h3>
   <div id="backtest_c"></div>
@@ -86,12 +87,12 @@ function summarize(id, s){
   return s;
 }
 
-function drawChart(a, b, c){
+function drawChart(a, b, c, d){
   const canvas=document.getElementById('chart'), dpr=window.devicePixelRatio||1;
   canvas.width=canvas.clientWidth*dpr; canvas.height=220*dpr; const g=canvas.getContext('2d'); g.scale(dpr,dpr);
   const W=canvas.clientWidth, H=220, L=44, R=8, T=10, B=22;
   const cs=getComputedStyle(document.body);
-  const series=[[a?a.equity:[], cs.getPropertyValue('--a')],[b?b.equity:[], cs.getPropertyValue('--b')],[c?c.equity:[], cs.getPropertyValue('--c')]];
+  const series=[[a?a.equity:[], cs.getPropertyValue('--a')],[b?b.equity:[], cs.getPropertyValue('--b')],[c?c.equity:[], cs.getPropertyValue('--c')],[d?d.equity:[], cs.getPropertyValue('--d')]];
   const all=series.flatMap(s=>s[0]); if(!all.length){ g.fillStyle='#5f6b67'; g.font='14px Georgia'; g.fillText('Noch keine Daten – nach dem ersten Lauf erscheint hier die Kurve.', L, H/2); return }
   const t0=Math.min(...all.map(p=>Date.parse(p.t))), t1=Math.max(...all.map(p=>Date.parse(p.t)));
   let lo=Math.min(START,...all.map(p=>p.v)), hi=Math.max(START,...all.map(p=>p.v)); const pad=(hi-lo)*0.1||10; lo-=pad; hi+=pad;
@@ -102,31 +103,35 @@ function drawChart(a, b, c){
   for(const [pts,col] of series){ if(!pts.length) continue; g.strokeStyle=col.trim(); g.lineWidth=2; g.beginPath(); pts.forEach((p,i)=>i?g.lineTo(X(p.t),Y(p.v)):g.moveTo(X(p.t),Y(p.v))); g.stroke(); }
 }
 
-function positions(a,b,c){
-  const rows=[]; for(const [tag,s] of [['a',a],['b',b],['c',c]]){ if(!s) continue;
-    for(const [addr,p] of Object.entries(s.positions)) rows.push({tag,sym:p.sym+(p.side?` ${p.side==='long'?'▲':'▼'} ${p.lev}x`:''),entry:p.entry,val:p.margin!=null?p.margin:p.qty*p.entry,opened:p.opened,tp1:p.tp1,addr}); }
+function positions(a,b,c,d){
+  const rows=[]; for(const [tag,s] of [['a',a],['b',b],['c',c],['d',d]]){ if(!s) continue;
+    for(const [addr,p] of Object.entries(s.positions)) rows.push({tag,sym:p.sym+(p.side?` ${p.side==='long'?'▲':'▼'} ${p.lev}x`:'')+(p.kind==='longshot'?' ★':''),entry:p.entry,val:p.margin!=null?p.margin:p.qty*p.entry,opened:p.opened,tp1:p.tp1,addr}); }
   if(!rows.length){ document.getElementById('positions').innerHTML='<div class="empty">Keine offenen Positionen.</div>'; return }
   document.getElementById('positions').innerHTML='<table><tr><th>Token</th><th class="n">Einstieg</th><th class="n">Einsatz</th><th>Seit</th></tr>'+
     rows.map(r=>`<tr><td><span class="tag ${r.tag}"></span><a href="https://dexscreener.com/solana/${r.addr}" target="_blank">${r.sym}</a>${r.tp1?' (½ realisiert)':''}</td><td class="n">${r.entry<0.01?r.entry.toExponential(2):fmt(r.entry)} $</td><td class="n">${fmt(r.val)} $</td><td>${r.opened.slice(0,10)}</td></tr>`).join('')+'</table>';
 }
 
-function trades(a,b,c){
-  const rows=[]; for(const [tag,s] of [['a',a],['b',b],['c',c]]){ if(!s) continue; s.trades.forEach(t=>rows.push({tag,...t})); }
+function trades(a,b,c,d){
+  const rows=[]; for(const [tag,s] of [['a',a],['b',b],['c',c],['d',d]]){ if(!s) continue; s.trades.forEach(t=>rows.push({tag,...t})); }
   rows.sort((x,y)=>y.t.localeCompare(x.t));
   if(!rows.length){ document.getElementById('trades').innerHTML='<div class="empty">Noch keine Trades.</div>'; return }
   document.getElementById('trades').innerHTML='<table><tr><th>Zeit</th><th>Token</th><th>Seite</th><th class="n">USD</th><th class="n">P&amp;L</th><th>Grund</th></tr>'+
     rows.slice(0,40).map(t=>`<tr><td>${t.t.slice(5,16).replace('T',' ')}</td><td><span class="tag ${t.tag}"></span>${t.sym}</td><td>${({buy:'Kauf',sell:'Verkauf'+(t.frac&&t.frac<1?' ½':''),open_long:'Long '+t.lev+'x',open_short:'Short '+t.lev+'x',close_long:'Long zu',close_short:'Short zu'})[t.side]||t.side}</td><td class="n">${fmt(t.usd)}</td><td class="n ${t.pnl!=null?cls(t.pnl):''}">${t.pnl!=null?fmt(t.pnl):''}</td><td>${t.reason}</td></tr>`).join('')+'</table>';
 }
 
-function backtest(bt, cfg){
-  const el=document.getElementById('backtest');
-  if(!bt){ el.innerHTML='<div class="empty">Noch nicht gelaufen. Auf GitHub: Actions → backtest-bot-b → Run workflow.</div>'; return }
-  const active = cfg ? `Bot B handelt aktuell nach <b>${cfg.strategy}</b>${cfg.manual?' (manuell gewählt)':''}.` : 'Bot B hat noch keine Strategie – er sammelt nur Daten.';
-  el.innerHTML=`<p style="font-size:14px;margin:6px 0 10px">${bt.days} Tage, ${bt.tokens.length} Tokens: ${bt.tokens.join(', ')}.<br>${active}</p>`+
-    '<table><tr><th>Strategie</th><th class="n">Rendite</th><th class="n">Trades</th><th class="n">Treffer</th><th class="n">Max. DD</th><th class="n">1. Hälfte</th><th class="n">2. Hälfte</th><th class="n">Bester Trade</th></tr>'+
-    bt.results.map(r=>`<tr><td>${r.strategy}</td><td class="n ${cls(r.return_pct)}">${pct(r.return_pct)}</td><td class="n">${r.trades}</td><td class="n">${r.win_rate} %</td><td class="n">${r.max_drawdown_pct} %</td><td class="n ${r.half1_pct!=null?cls(r.half1_pct):''}">${r.half1_pct!=null?pct(r.half1_pct):'–'}</td><td class="n ${r.half2_pct!=null?cls(r.half2_pct):''}">${r.half2_pct!=null?pct(r.half2_pct):'–'}</td><td class="n">${r.top_trade_share_pct!=null?r.top_trade_share_pct+' % des Gewinns':'–'}</td></tr>`).join('')+'</table>'+
-    '<p style="font-size:13px;color:#5f6b67;margin-top:8px">Robust ist eine Strategie nur, wenn beide Hälften positiv sind und kein einzelner Trade den Großteil des Gewinns ausmacht.</p>'+
-    `<p style="font-size:13px;color:#5f6b67;margin-top:8px">Zum Vergleich Kaufen &amp; Halten: ${Object.entries(bt.buy_and_hold_pct).map(([k,v])=>k+' '+pct(v)).join(', ')}</p>`;
+function strategyOverview(){
+  const rows = [
+    {tag:'a', name:'Bot A – Micro-Cap-Lotterie', desc:'Solana-Tokens, 2–14 Tage alt, 100k–3 Mio. $ MCap. Kauft nach Liquiditäts-, Volumen- und Sicherheitsfiltern (RugCheck). Ziel: wenige sehr große Gewinner tragen viele kleine Verluste.', exit:'Hälfte bei 3x, Rest bei 10x oder −35 % Trailing, Stop −50 %, Zeitstop 10 Tage.'},
+    {tag:'b', name:'Bot B – Zweite Welle', desc:'Solana-Tokens, 3–8 Wochen alt (1–30 Mio. $ MCap), die den ersten Hype-Dump überlebt haben. Kauft nur bei anhaltend wachsendem Volumen, Käuferüberhang und Preis über dem 7-Tage-Schnitt.', exit:'Hälfte bei 2x, Trailing 30 %, Stop −35 %, sofort raus wenn These bricht (Liquidität/Volumen fällt), Zeitstop 30 Tage.'},
+    {tag:'d', name:'Bot D – Konzentriert + Longshots', desc:'Bot A\'s Filter plus Holder-Qualität (mind. 40 % echte, aktive Wallets unter den letzten Käufern) und Bot-Cluster-Erkennung (gleichmäßige Kaufabstände, identische Beträge → Ablehnung). Positionsgröße 60 $, ab 500 $ Portfolio 15 % des Cash (max. 120 $). Kein Nachkaufen. Zusätzlich Longshots ★: 0,5–6 h alte Tokens mit sauberem RugCheck, 15 $ fix, Ziel 5–20x.', exit:'Standard wie Bot A. Longshot: nichts vor 5x, dann ⅓ raus, Rest bis 20x oder −40 % Trailing, Stop −60 %, max. 5 Tage.'},
+    {tag:'c', name:'Bot C – Perps SOL/ETH/BTC', desc:'Long & Short mit Hebel auf Jupiter Perps. Aktuell aktiv: C10 Wochenend-Fade – handelt gegen übertriebene Wochenendbewegungen (dünne Liquidität), einmal pro Woche.', exit:'ATR-basierter Stop, Ziel/Trailing je nach Strategie, siehe Backtest-Tabelle unten.'},
+  ];
+  document.getElementById('strategy_overview').innerHTML = rows.map(r=>
+    `<div style="border-top:3px solid var(--${r.tag});padding:10px 0 14px;margin-bottom:4px">
+       <div style="font-weight:bold;margin-bottom:4px">${r.name}</div>
+       <div style="font-size:14px;color:var(--mute);margin-bottom:4px">${r.desc}</div>
+       <div style="font-size:13px;color:var(--mute)"><b style="color:var(--ink);font-weight:normal">Exit:</b> ${r.exit}</div>
+     </div>`).join('');
 }
 
 function backtestC(bt, cfg){
@@ -141,12 +146,12 @@ function backtestC(bt, cfg){
 }
 
 (async()=>{
-  const [a,b,c,bt,cfg,btc,cfgc]=await Promise.all([j('data/bot_a_state.json'),j('data/bot_b_state.json'),j('data/bot_c_state.json'),j('data/backtest_b.json'),j('data/strategy_b.json'),j('data/backtest_c.json'),j('data/strategy_c.json')]);
+  const [a,b,c,d,bt,cfg,btc,cfgc]=await Promise.all([j('data/bot_a_state.json'),j('data/bot_b_state.json'),j('data/bot_c_state.json'),j('data/bot_d_state.json'),j('data/backtest_b.json'),j('data/strategy_b.json'),j('data/backtest_c.json'),j('data/strategy_c.json')]);
   if(b&&b.strategy==='second_wave') document.getElementById('b-strat').textContent='Zweite Welle'+(b.watchlist?` · ${b.watchlist} beobachtet`:''); else if(cfg) document.getElementById('b-strat').textContent=cfg.strategy;
   if(cfgc) document.getElementById('c-strat').textContent=cfgc.strategy+' '+cfgc.lev+'x';
-  const last=[a,b,c].filter(Boolean).flatMap(s=>s.equity).map(p=>p.t).sort().pop();
+  const last=[a,b,c,d].filter(Boolean).flatMap(s=>s.equity).map(p=>p.t).sort().pop();
   document.getElementById('sub').textContent = last ? 'Letzter Lauf: '+new Date(last).toLocaleString('de-DE')+' · aktualisiert alle 30 Minuten' : 'Noch kein Lauf – der erste Durchgang startet automatisch nach dem Hochladen.';
-  summarize('a',a); summarize('b',b); summarize('c',c); drawChart(a,b,c); positions(a,b,c); trades(a,b,c); backtest(bt,cfg); backtestC(btc,cfgc);
+  summarize('a',a); summarize('b',b); summarize('c',c); summarize('d',d); if(d&&d.helius===false) document.getElementById('d-strat').textContent+=' · ohne Helius'; drawChart(a,b,c,d); positions(a,b,c,d); trades(a,b,c,d); backtestC(btc,cfgc); strategyOverview();
 })();
 </script>
 </body>
