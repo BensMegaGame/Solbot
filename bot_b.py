@@ -12,9 +12,9 @@ from common import *
 
 # ---------- Universum ----------
 MIN_AGE_D, MAX_AGE_D   = 21, 56
-MIN_MCAP, MAX_MCAP     = 1_000_000, 30_000_000
-MIN_LIQ, MIN_LIQ_RATIO = 100_000, 0.04
-MIN_VOL24              = 100_000
+MIN_MCAP, MAX_MCAP     = 300_000, 30_000_000
+MIN_LIQ, MIN_LIQ_RATIO = 50_000, 0.04
+MIN_VOL24              = 40_000
 # ---------- Einstieg ----------
 MIN_HISTORY_DAYS = 3          # Tage Historie (eigene Snapshots oder GeckoTerminal-Kerzen), bevor gekauft wird
 VOL_TREND_MIN    = 1.20       # 3d-Volumen vs. 3d davor (wenn >= 6 Tage Historie), sonst gegen Vortag
@@ -207,15 +207,18 @@ def main():
             pos["added"] = True; pf.buy(pos["sym"], a, px, ADD_USD, liq, "add")
     # 4. Einstiege
     checks = []; pools = load("bot_b_pools.json", {}); gt_cache = load("bot_b_gt_cache.json", {})
+    grob = {"alter": 0, "mcap": 0, "liq": 0, "vol": 0}
     for a, p in pairs.items():
         if a in st["positions"] or len(st["positions"]) >= MAX_POS: continue
         if st["cooldown"].get(a, 0) > today: continue
         rows = daily(hist.get(a, {}).get("rows", []))
         cur = rows[-1] if rows else None
         if not cur: continue
-        # Grobfilter zuerst (spart GeckoTerminal-Aufrufe)
-        if not (MIN_AGE_D <= cur["age_d"] <= MAX_AGE_D) or not (MIN_MCAP <= cur["mcap"] <= MAX_MCAP) or cur["liq"] < MIN_LIQ or cur["vol"] < MIN_VOL24:
-            continue
+        # Grobfilter zuerst (spart GeckoTerminal-Aufrufe) – Gruende zaehlen
+        if not (MIN_AGE_D <= cur["age_d"] <= MAX_AGE_D): grob["alter"] += 1; continue
+        if not (MIN_MCAP <= cur["mcap"] <= MAX_MCAP): grob["mcap"] += 1; continue
+        if cur["liq"] < MIN_LIQ: grob["liq"] += 1; continue
+        if cur["vol"] < MIN_VOL24: grob["vol"] += 1; continue
         own = rows[:-1]
         if len(own) < 7 and a in pools:
             c = gt_cache.get(a)
@@ -238,6 +241,7 @@ def main():
     v = pf.mark(prices); pf.commit()
     passed = [c for c in checks if c[1].startswith("ok")]
     print(f"Bot B [zweite Welle]: equity {v:.2f} | cash {st['cash']:.2f} | positions {len(st['positions'])} | beobachtet {len(hist)} | signale {len(passed)}")
+    print(f"   grobfilter: {grob['alter']} alter, {grob['mcap']} mcap, {grob['liq']} liq, {grob['vol']} vol -> {len(checks)} feingeprueft")
     for sym, why in checks[:15]: print(f"   {sym:<10} {why}")
 
 if __name__ == "__main__":
