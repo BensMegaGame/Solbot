@@ -1,5 +1,5 @@
 {
- "cash": 212.18630378674698,
+ "cash": 161.916303786747,
  "positions": {
   "HYm6BfpDQkfUtnCWVnj6YAGzJvnpzuCWDZKrpbAVkBFh": {
    "sym": "WUFF",
@@ -48,6 +48,14 @@
    "opened": "2026-09-12T15:50:19Z",
    "peak": 0.001077,
    "entry": 0.0010849814316000001
+  },
+  "DD3AC2Cmr5rXzJ6ErRHeryx3ASLVMhSBALiUqeKcpump": {
+   "sym": "Leafy",
+   "qty": 65314.39738324398,
+   "cost": 50.269999999999996,
+   "opened": "2026-09-12T18:05:51Z",
+   "peak": 0.000764,
+   "entry": 0.0007696618512
   }
  },
  "trades": [
@@ -202,6 +210,16 @@
    "sym": "PAIRZ",
    "addr": "3URpNcV9wAPjwMAyuBsPjwwkGN9wFJuwcRs3RMbdpair",
    "price": 0.001077,
+   "usd": 50.27,
+   "slip": 0.002,
+   "reason": "screener"
+  },
+  {
+   "t": "2026-09-12T18:05:51Z",
+   "side": "buy",
+   "sym": "Leafy",
+   "addr": "DD3AC2Cmr5rXzJ6ErRHeryx3ASLVMhSBALiUqeKcpump",
+   "price": 0.000764,
    "usd": 50.27,
    "slip": 0.002,
    "reason": "screener"
@@ -447,6 +465,10 @@
   {
    "t": "2026-09-12T18:00:59Z",
    "v": 415.43
+  },
+  {
+   "t": "2026-09-12T18:05:56Z",
+   "v": 410.63
   }
  ],
  "started": "2026-09-10T17:17:16Z"
