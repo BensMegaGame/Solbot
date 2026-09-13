@@ -42,7 +42,7 @@
   <div class="bots">
     <div class="bot a"><h2>Bot A – Micro-Caps</h2><div><span class="eq" id="a-eq">–</span><span class="ret" id="a-ret"></span></div><div class="kv" id="a-kv"></div></div>
     <div class="bot b"><h2>Bot B – <span id="b-strat">Zweite Welle</span></h2><div><span class="eq" id="b-eq">–</span><span class="ret" id="b-ret"></span></div><div class="kv" id="b-kv"></div></div>
-    <div class="bot c"><h2>Bot C – <span id="c-strat">Perps SOL/ETH/BTC</span></h2><div><span class="eq" id="c-eq">–</span><span class="ret" id="c-ret"></span></div><div class="kv" id="c-kv"></div></div>
+    <div class="bot c"><h2>Bot C – <span id="c-strat">Graduation (Pump.fun)</span></h2><div><span class="eq" id="c-eq">–</span><span class="ret" id="c-ret"></span></div><div class="kv" id="c-kv"></div></div>
     <div class="bot d"><h2>Bot D – <span id="d-strat">Konzentriert + Longshots</span></h2><div><span class="eq" id="d-eq">–</span><span class="ret" id="d-ret"></span></div><div class="kv" id="d-kv"></div></div>
   </div>
 
@@ -58,8 +58,6 @@
   <h3>Strategien im Überblick</h3>
   <div id="strategy_overview"></div>
 
-  <h3>Backtest Bot C (Jupiter Perps, 4h-Kerzen: Long/Short, 3x–10x Hebel, 4 %/8 % Risiko)</h3>
-  <div id="backtest_c"></div>
 
   <p class="note">Simulation ohne echtes Geld. Preise von Solana-DEX-Pools, Gebühren und Slippage werden geschätzt. Keine Anlageberatung.</p>
 </main>
@@ -111,7 +109,7 @@ function positions(a,b,c,d){
       const cur = isPerp ? (p.margin + (p.size||0) * ((px/p.entry - 1) * (p.side==='long'?1:-1)) - (p.funding||0)) : p.qty*px;
       const entryVal = isPerp ? p.margin : p.qty*p.entry;
       const pct = entryVal ? (cur/entryVal - 1) * 100 : 0;
-      const link = isPerp ? `https://solscan.io/token/${addr}` : `https://dexscreener.com/solana/${addr}`;
+      const link = isPerp ? `https://solscan.io/token/${addr}` : (tag==='c' ? `https://pump.fun/coin/${addr}` : `https://dexscreener.com/solana/${addr}`);
       rows.push({tag, addr, link, sym:p.sym+(isPerp?` ${p.side==='long'?'▲':'▼'} ${p.lev}x`:'')+(p.kind==='longshot'?' ★':''),
                  entry:p.entry, cur, pct, opened:p.opened, tp1:p.tp1, stale: p.cur_price==null});
     }}
@@ -126,7 +124,7 @@ function trades(a,b,c,d){
   if(!rows.length){ document.getElementById('trades').innerHTML='<div class="empty">Noch keine Trades.</div>'; return }
   document.getElementById('trades').innerHTML='<table><tr><th>Zeit</th><th>Token</th><th>Seite</th><th class="n">USD</th><th class="n">P&amp;L</th><th>Grund</th></tr>'+
     rows.slice(0,40).map(t=>{const isPerp=(t.side||'').startsWith('open')||(t.side||'').startsWith('close');
-      const link=isPerp?`https://solscan.io/token/${t.addr}`:`https://dexscreener.com/solana/${t.addr}`;
+      const link=isPerp?`https://solscan.io/token/${t.addr}`:(t.tag==='c'?`https://pump.fun/coin/${t.addr}`:`https://dexscreener.com/solana/${t.addr}`);
       const when=new Date(t.t).toLocaleString('de-DE',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'});
       return `<tr><td>${when}</td><td><span class="tag ${t.tag}"></span><a href="${link}" target="_blank">${t.sym}</a></td><td>${({buy:'Kauf',sell:'Verkauf'+(t.frac&&t.frac<1?' ½':''),open_long:'Long '+t.lev+'x',open_short:'Short '+t.lev+'x',close_long:'Long zu',close_short:'Short zu'})[t.side]||t.side}</td><td class="n">${fmt(t.usd)}</td><td class="n ${t.pnl!=null?cls(t.pnl):''}">${t.pnl!=null?fmt(t.pnl):''}</td><td>${t.reason}</td></tr>`;}).join('')+'</table>';
 }
@@ -136,7 +134,7 @@ function strategyOverview(){
     {tag:'a', name:'Bot A – Micro-Cap-Lotterie', desc:'Solana-Tokens, 2–14 Tage alt, 100k–3 Mio. $ MCap. Kauft nach Liquiditäts-, Volumen- und Sicherheitsfiltern (RugCheck). Ziel: wenige sehr große Gewinner tragen viele kleine Verluste.', exit:'Hälfte bei 3x, Rest bei 10x oder −35 % Trailing, Stop −50 %, Zeitstop 10 Tage.'},
     {tag:'b', name:'Bot B – Zweite Welle', desc:'Solana-Tokens, 3–8 Wochen alt (1–30 Mio. $ MCap), die den ersten Hype-Dump überlebt haben. Kauft nur bei anhaltend wachsendem Volumen, Käuferüberhang und Preis über dem 7-Tage-Schnitt.', exit:'Hälfte bei 2x, Trailing 30 %, Stop −35 %, sofort raus wenn These bricht (Liquidität/Volumen fällt), Zeitstop 30 Tage.'},
     {tag:'d', name:'Bot D – Konzentriert + Longshots', desc:'Bot A\'s Filter plus Holder-Qualität (mind. 40 % echte, aktive Wallets unter den letzten Käufern) und Bot-Cluster-Erkennung (gleichmäßige Kaufabstände, identische Beträge → Ablehnung). Positionsgröße 60 $, ab 500 $ Portfolio 15 % des Cash (max. 120 $). Kein Nachkaufen. Zusätzlich Longshots ★: 0,5–6 h alte Tokens mit sauberem RugCheck, 15 $ fix, Ziel 5–20x.', exit:'Standard wie Bot A. Longshot: nichts vor 5x, dann ⅓ raus, Rest bis 20x oder −40 % Trailing, Stop −60 %, max. 5 Tage.'},
-    {tag:'c', name:'Bot C – Perps SOL/ETH/BTC', desc:'Long & Short mit Hebel auf Jupiter Perps. Aktuell aktiv: C10 Wochenend-Fade – handelt gegen übertriebene Wochenendbewegungen (dünne Liquidität), einmal pro Woche.', exit:'ATR-basierter Stop, Ziel/Trailing je nach Strategie, siehe Backtest-Tabelle unten.'},
+    {tag:'c', name:'Bot C – Graduation Momentum (Pump.fun)', desc:'Kauft Tokens, deren Pump.fun-Bonding-Curve zwischen 90 und 99,5 % steht und in den letzten 30 Minuten sichtbar Fortschritt macht (mind. +3 Punkte). Filter direkt aus Codex: mind. 30 Käufe/Stunde, Verkäufe < 80 % der Käufe, Top-10-Holder ≤ 35 %, Bundler ≤ 10 %, Sniper ≤ 15 %, Insider ≤ 10 %, RugCheck sauber. 30 $ je Position, max. 8. Codex wird alle 10 Minuten abgefragt (Free-Tier).', exit:'Bei 3x die Hälfte, bei 5x die Hälfte des Rests, alles nach 24 h. Stop −50 %.'},
   ];
   document.getElementById('strategy_overview').innerHTML = rows.map(r=>
     `<div style="border-top:3px solid var(--${r.tag});padding:10px 0 14px;margin-bottom:4px">
@@ -146,24 +144,13 @@ function strategyOverview(){
      </div>`).join('');
 }
 
-function backtestC(bt, cfg){
-  const el=document.getElementById('backtest_c');
-  if(!bt){ el.innerHTML='<div class="empty">Noch nicht gelaufen. Auf GitHub: Actions → backtest-bot-c → Run workflow.</div>'; return }
-  const active = cfg ? `Bot C handelt aktuell nach <b>${cfg.strategy} ${cfg.lev}x, ${cfg.risk_pct||4} % Risiko</b>${cfg.manual?' (manuell gewählt)':''}.` : 'Bot C hat noch keine Strategie – er sammelt nur Daten.';
-  const bh = bt.buy_and_hold_pct ? ' Kaufen &amp; Halten: '+Object.entries(bt.buy_and_hold_pct).map(([k,v])=>k+' '+pct(v)).join(', ')+'.' : '';
-  el.innerHTML=`<p style="font-size:14px;margin:6px 0 10px">${bt.days} Tage (${bt.bars||''} Kerzen), ${bt.tokens.join(', ')}.${bh}<br>${active}</p>`+
-    '<table><tr><th>Strategie</th><th class="n">Hebel</th><th class="n">Risiko</th><th class="n">Rendite</th><th class="n">Trades (L/S)</th><th class="n">Treffer</th><th class="n">Max. DD</th><th class="n">Liq.</th><th class="n">Ø Haltezeit</th><th class="n">1. Hälfte</th><th class="n">2. Hälfte</th></tr>'+
-    bt.results.filter(r=>r.trades>0).map(r=>`<tr><td>${r.strategy}</td><td class="n">${r.lev}x</td><td class="n">${r.risk_pct||''} %</td><td class="n ${cls(r.return_pct)}">${pct(r.return_pct)}</td><td class="n">${r.trades} (${r.longs}/${r.shorts})</td><td class="n">${r.win_rate} %</td><td class="n">${r.max_drawdown_pct} %</td><td class="n ${r.liquidations?'down':''}">${r.liquidations}</td><td class="n">${r.avg_hold_days!=null?r.avg_hold_days+' d':'–'}</td><td class="n ${cls(r.half1_pct)}">${pct(r.half1_pct)}</td><td class="n ${cls(r.half2_pct)}">${pct(r.half2_pct)}</td></tr>`).join('')+'</table>'+
-    '<p style="font-size:13px;color:#5f6b67;margin-top:8px">Sortiert: robuste Strategien (beide Hälften positiv, ≥15 Trades) zuerst, dann nach Rendite je Drawdown. Positionsgröße ist dynamisch (Risiko je Trade konstant, Stop ATR-basiert). Hebel allein ändert die Rendite kaum – Risiko je Trade und Strategie entscheiden. Jede Liquidation disqualifiziert.</p>';
-}
-
 (async()=>{
   const [a,b,c,d,bt,cfg,btc,cfgc]=await Promise.all([j('data/bot_a_state.json'),j('data/bot_b_state.json'),j('data/bot_c_state.json'),j('data/bot_d_state.json'),j('data/backtest_b.json'),j('data/strategy_b.json'),j('data/backtest_c.json'),j('data/strategy_c.json')]);
   if(b&&b.strategy==='second_wave') document.getElementById('b-strat').textContent='Zweite Welle'+(b.watchlist?` · ${b.watchlist} beobachtet`:''); else if(cfg) document.getElementById('b-strat').textContent=cfg.strategy;
-  if(cfgc) document.getElementById('c-strat').textContent=cfgc.strategy+' '+cfgc.lev+'x';
+  if(c&&c.strategy==='graduation') document.getElementById('c-strat').textContent='Graduation (Pump.fun)'+(c.codex===false?' · ohne Codex':''); else if(cfgc) document.getElementById('c-strat').textContent=cfgc.strategy+' '+cfgc.lev+'x';
   const last=[a,b,c,d].filter(Boolean).flatMap(s=>s.equity).map(p=>p.t).sort().pop();
   document.getElementById('sub').textContent = last ? 'Letzter Lauf: '+new Date(last).toLocaleString('de-DE')+' · aktualisiert alle 30 Minuten' : 'Noch kein Lauf – der erste Durchgang startet automatisch nach dem Hochladen.';
-  summarize('a',a); summarize('b',b); summarize('c',c); summarize('d',d); if(d&&d.helius===false) document.getElementById('d-strat').textContent+=' · ohne Helius'; drawChart(a,b,c,d); positions(a,b,c,d); trades(a,b,c,d); backtestC(btc,cfgc); strategyOverview();
+  summarize('a',a); summarize('b',b); summarize('c',c); summarize('d',d); if(d&&d.helius===false) document.getElementById('d-strat').textContent+=' · ohne Helius'; drawChart(a,b,c,d); positions(a,b,c,d); trades(a,b,c,d);  strategyOverview();
 })();
 </script>
 </body>
