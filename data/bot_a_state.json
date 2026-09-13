@@ -1,5 +1,5 @@
 {
- "cash": 77.92859133187079,
+ "cash": 27.658591331870795,
  "positions": {
   "Aw6fiDPWLUnjSsJQtsyEMSaoPaKAUUrStAsYPiPwpump": {
    "sym": "Anonymouse",
@@ -48,6 +48,14 @@
    "opened": "2026-09-13T01:05:20Z",
    "peak": 0.0002648,
    "entry": 0.00024772231572
+  },
+  "Hy1LfQLL4zLQihmiQKZm7DQzXm5K8aVSfKtdHFYXbKMm": {
+   "sym": "AMBA",
+   "qty": 56827.46794305706,
+   "cost": 50.269999999999996,
+   "opened": "2026-09-13T03:20:17Z",
+   "peak": 0.0008781,
+   "entry": 0.0008846074234799999
   }
  },
  "trades": [
@@ -310,6 +318,16 @@
    "pnl": -27.95,
    "frac": 1.0,
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-13T03:20:17Z",
+   "side": "buy",
+   "sym": "AMBA",
+   "addr": "Hy1LfQLL4zLQihmiQKZm7DQzXm5K8aVSfKtdHFYXbKMm",
+   "price": 0.0008781,
+   "usd": 50.27,
+   "slip": 0.002,
+   "reason": "screener"
   }
  ],
  "equity": [
@@ -1000,6 +1018,10 @@
   {
    "t": "2026-09-13T03:15:59Z",
    "v": 395.19
+  },
+  {
+   "t": "2026-09-13T03:21:00Z",
+   "v": 384.89
   }
  ],
  "started": "2026-09-10T17:17:16Z"
