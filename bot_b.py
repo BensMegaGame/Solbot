@@ -10,6 +10,14 @@ Alles ist in data/bot_b_history.json und data/bot_b_state.json nachvollziehbar."
 import time, os
 from common import *
 
+EXCLUDE_SYM = {"USDC", "USDT", "USDS", "PYUSD", "USD1", "DAI", "FDUSD", "USDE", "EURC", "USDG", "USDY", "OTC"}
+EXCLUDE_SUB = ("USD", "EUR", "GBP", "CHF", "JPY", "XAU")
+
+def tradeable_sym(sym):
+    sym = sym.upper()
+    if sym in EXCLUDE_SYM: return False
+    return not any(s in sym for s in EXCLUDE_SUB)
+
 # ---------- Universum ----------
 MIN_AGE_D, MAX_AGE_D   = 14, 56
 MIN_MCAP, MAX_MCAP     = 300_000, 30_000_000
@@ -166,6 +174,8 @@ def main():
     today = day_key()
     # 2. Snapshots
     for a, p in pairs.items():
+        sym = p["baseToken"]["symbol"]
+        if not tradeable_sym(sym): continue
         s = snapshot(p)
         if s["px"] <= 0: continue
         rows = hist.setdefault(a, {"sym": p["baseToken"]["symbol"], "rows": []})["rows"]
