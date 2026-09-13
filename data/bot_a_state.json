@@ -1,5 +1,5 @@
 {
- "cash": 27.658591331870795,
+ "cash": 52.602243414891376,
  "positions": {
   "Aw6fiDPWLUnjSsJQtsyEMSaoPaKAUUrStAsYPiPwpump": {
    "sym": "Anonymouse",
@@ -8,14 +8,6 @@
    "opened": "2026-09-12T00:04:58Z",
    "peak": 0.0001783,
    "entry": 0.00011212482203999998
-  },
-  "3URpNcV9wAPjwMAyuBsPjwwkGN9wFJuwcRs3RMbdpair": {
-   "sym": "PAIRZ",
-   "qty": 46332.59015858718,
-   "cost": 50.269999999999996,
-   "opened": "2026-09-12T15:50:19Z",
-   "peak": 0.001077,
-   "entry": 0.0010849814316000001
   },
   "DD3AC2Cmr5rXzJ6ErRHeryx3ASLVMhSBALiUqeKcpump": {
    "sym": "Leafy",
@@ -328,6 +320,17 @@
    "usd": 50.27,
    "slip": 0.002,
    "reason": "screener"
+  },
+  {
+   "t": "2026-09-13T07:50:03Z",
+   "side": "sell",
+   "sym": "PAIRZ",
+   "addr": "3URpNcV9wAPjwMAyuBsPjwwkGN9wFJuwcRs3RMbdpair",
+   "price": 0.0005415,
+   "usd": 24.94,
+   "pnl": -25.33,
+   "frac": 1.0,
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -1234,6 +1237,10 @@
   {
    "t": "2026-09-13T07:45:51Z",
    "v": 361.06
+  },
+  {
+   "t": "2026-09-13T07:50:52Z",
+   "v": 359.02
   }
  ],
  "started": "2026-09-10T17:17:16Z"
