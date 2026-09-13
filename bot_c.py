@@ -15,7 +15,7 @@ SOLANA = 1399811149
 GRAD_MIN, GRAD_MAX = 90.0, 99.5
 MIN_PROGRESS_30M = 3.0            # Kurve muss in den letzten ~30 Min mind. 3 Punkte gestiegen sein
 MIN_OBS = 2                       # mind. 2 Beobachtungen (>= 10 Min) vor dem Kauf
-MIN_BUYS_1H, MAX_SELL_RATIO = 30, 0.8
+MIN_BUYS_1H, MAX_SELL_RATIO = 15, 0.8
 MAX_TOP10, MAX_BUNDLER, MAX_SNIPER, MAX_INSIDER = 35.0, 10.0, 15.0, 10.0
 # Codex liefert fuer Bonding-Curve-Tokens (noch nicht migriert) KEINE volle Markt-
 # kapitalisierung/DEX-Liquiditaet - beides ist dort strukturell klein/0. Nicht als Sicherheitsfilter
