@@ -1,5 +1,5 @@
 {
- "cash": 105.87718829371741,
+ "cash": 55.607188293717414,
  "positions": {
   "Aw6fiDPWLUnjSsJQtsyEMSaoPaKAUUrStAsYPiPwpump": {
    "sym": "Anonymouse",
@@ -30,7 +30,7 @@
    "qty": 65314.39738324398,
    "cost": 50.269999999999996,
    "opened": "2026-09-12T18:05:51Z",
-   "peak": 0.000994,
+   "peak": 0.001004,
    "entry": 0.0007696618512
   },
   "5GefefPX1mDs6ZJB1apYmz6fCTCiNJpHturZ9bvFpump": {
@@ -38,7 +38,7 @@
    "qty": 121116.98932232622,
    "cost": 50.269999999999996,
    "opened": "2026-09-12T21:25:13Z",
-   "peak": 0.0004269,
+   "peak": 0.0004291,
    "entry": 0.0004150532496
   },
   "BifUDWQFpbTrSxYXBnqCpAVYgcyQGzHzJk2MDmeM2Gyv": {
@@ -48,6 +48,14 @@
    "opened": "2026-09-12T23:00:22Z",
    "peak": 0.00157,
    "entry": 0.0013328044883999998
+  },
+  "Cp6AVzuSJ8pDCkYGBxAX3p9Dk77pHSsd35yHh19GJC3i": {
+   "sym": "INCOGINU",
+   "qty": 202928.8312354551,
+   "cost": 50.269999999999996,
+   "opened": "2026-09-13T01:05:20Z",
+   "peak": 0.0002459,
+   "entry": 0.00024772231572
   }
  },
  "trades": [
@@ -289,6 +297,16 @@
    "pnl": -27.0,
    "frac": 1.0,
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-13T01:05:20Z",
+   "side": "buy",
+   "sym": "INCOGINU",
+   "addr": "Cp6AVzuSJ8pDCkYGBxAX3p9Dk77pHSsd35yHh19GJC3i",
+   "price": 0.0002459,
+   "usd": 50.27,
+   "slip": 0.002,
+   "reason": "screener"
   }
  ],
  "equity": [
@@ -871,6 +889,10 @@
   {
    "t": "2026-09-13T01:00:58Z",
    "v": 396.7
+  },
+  {
+   "t": "2026-09-13T01:05:56Z",
+   "v": 397.1
   }
  ],
  "started": "2026-09-10T17:17:16Z"

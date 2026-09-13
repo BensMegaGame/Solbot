@@ -1,5 +1,5 @@
 {
- "cash": 124.44668198327605,
+ "cash": 64.12668198327606,
  "positions": {
   "zzjkh1hLbvsFJXWLfE6h4JNbcnRj4eteuKRw42PN2tC": {
    "sym": "MM",
@@ -24,7 +24,7 @@
    "qty": 53350.17776279231,
    "cost": 15.094999999999999,
    "opened": "2026-09-12T19:36:28Z",
-   "peak": 0.0008568,
+   "peak": 0.001017,
    "entry": 0.00028294188759999994,
    "kind": "longshot"
   },
@@ -33,7 +33,7 @@
    "qty": 154489.7820458155,
    "cost": 15.094999999999999,
    "opened": "2026-09-12T20:01:37Z",
-   "peak": 0.0003602,
+   "peak": 0.0003941,
    "entry": 9.77087274e-05,
    "kind": "longshot"
   },
@@ -42,7 +42,7 @@
    "qty": 145375.67254420512,
    "cost": 60.32,
    "opened": "2026-09-12T21:26:41Z",
-   "peak": 0.0004267,
+   "peak": 0.0004291,
    "entry": 0.00041492499359999997,
    "kind": "standard"
   },
@@ -63,6 +63,15 @@
    "peak": 9.508e-05,
    "entry": 8.181719444e-05,
    "kind": "longshot"
+  },
+  "Cp6AVzuSJ8pDCkYGBxAX3p9Dk77pHSsd35yHh19GJC3i": {
+   "sym": "INCOGINU",
+   "qty": 243415.60780877268,
+   "cost": 60.32,
+   "opened": "2026-09-13T01:06:41Z",
+   "peak": 0.000246,
+   "entry": 0.00024780662400000005,
+   "kind": "standard"
   }
  },
  "trades": [
@@ -240,6 +249,16 @@
    "usd": 15.09,
    "slip": 0.002,
    "reason": "longshot"
+  },
+  {
+   "t": "2026-09-13T01:06:41Z",
+   "side": "buy",
+   "sym": "INCOGINU",
+   "addr": "Cp6AVzuSJ8pDCkYGBxAX3p9Dk77pHSsd35yHh19GJC3i",
+   "price": 0.000246,
+   "usd": 60.32,
+   "slip": 0.002,
+   "reason": "std echte wallets 75% (12)"
   }
  ],
  "equity": [
@@ -578,6 +597,10 @@
   {
    "t": "2026-09-13T01:01:40Z",
    "v": 474.88
+  },
+  {
+   "t": "2026-09-13T01:06:42Z",
+   "v": 491.53
   }
  ],
  "started": "2026-09-12T18:11:27Z",
