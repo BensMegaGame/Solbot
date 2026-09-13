@@ -96,6 +96,8 @@ class Paper:
         return True
 
     def mark(self, prices):
+        for a, p in self.s["positions"].items():
+            if a in prices: p["cur_price"] = prices[a]
         val = self.s["cash"] + sum(p["qty"] * prices.get(a, p["entry"]) for a, p in self.s["positions"].items())
         self.s["equity"].append({"t": now_iso(), "v": round(val, 2)})
         self.s["equity"] = self.s["equity"][-5000:]
@@ -165,6 +167,8 @@ class PaperPerp:
             p["peak"] = max(p["peak"], px) if p["side"] == "long" else min(p["peak"], px)
             hit = px <= p["liq"] if p["side"] == "long" else px >= p["liq"]
             if hit or p["margin"] + self.pnl(p, px) <= 0: self.close(key, px, "liquidation")
+        for k, p in self.s["positions"].items():
+            if k in prices: p["cur_price"] = prices[k]
         val = self.s["cash"] + sum(p["margin"] + self.pnl(p, prices.get(k, p["entry"])) for k, p in self.s["positions"].items())
         self.s["equity"].append({"t": now_iso(), "v": round(val, 2)}); self.s["equity"] = self.s["equity"][-5000:]
         return val

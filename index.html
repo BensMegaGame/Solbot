@@ -105,10 +105,19 @@ function drawChart(a, b, c, d){
 
 function positions(a,b,c,d){
   const rows=[]; for(const [tag,s] of [['a',a],['b',b],['c',c],['d',d]]){ if(!s) continue;
-    for(const [addr,p] of Object.entries(s.positions)) rows.push({tag,sym:p.sym+(p.side?` ${p.side==='long'?'▲':'▼'} ${p.lev}x`:'')+(p.kind==='longshot'?' ★':''),entry:p.entry,val:p.margin!=null?p.margin:p.qty*p.entry,opened:p.opened,tp1:p.tp1,addr}); }
+    for(const [addr,p] of Object.entries(s.positions)){
+      const isPerp = p.side!=null;
+      const px = p.cur_price!=null ? p.cur_price : p.entry;
+      const cur = isPerp ? (p.margin + (p.size||0) * ((px/p.entry - 1) * (p.side==='long'?1:-1)) - (p.funding||0)) : p.qty*px;
+      const entryVal = isPerp ? p.margin : p.qty*p.entry;
+      const pct = entryVal ? (cur/entryVal - 1) * 100 : 0;
+      const link = isPerp ? `https://solscan.io/token/${addr}` : `https://dexscreener.com/solana/${addr}`;
+      rows.push({tag, addr, link, sym:p.sym+(isPerp?` ${p.side==='long'?'▲':'▼'} ${p.lev}x`:'')+(p.kind==='longshot'?' ★':''),
+                 entry:p.entry, cur, pct, opened:p.opened, tp1:p.tp1, stale: p.cur_price==null});
+    }}
   if(!rows.length){ document.getElementById('positions').innerHTML='<div class="empty">Keine offenen Positionen.</div>'; return }
-  document.getElementById('positions').innerHTML='<table><tr><th>Token</th><th class="n">Einstieg</th><th class="n">Einsatz</th><th>Seit</th></tr>'+
-    rows.map(r=>`<tr><td><span class="tag ${r.tag}"></span><a href="https://dexscreener.com/solana/${r.addr}" target="_blank">${r.sym}</a>${r.tp1?' (½ realisiert)':''}</td><td class="n">${r.entry<0.01?r.entry.toExponential(2):fmt(r.entry)} $</td><td class="n">${fmt(r.val)} $</td><td>${r.opened.slice(0,10)}</td></tr>`).join('')+'</table>';
+  document.getElementById('positions').innerHTML='<table><tr><th>Token</th><th class="n">Einstieg</th><th class="n">Aktueller Wert</th><th class="n">P&amp;L</th><th>Seit</th></tr>'+
+    rows.map(r=>`<tr><td><span class="tag ${r.tag}"></span><a href="${r.link}" target="_blank">${r.sym}</a>${r.tp1?' (½ realisiert)':''}</td><td class="n">${r.entry<0.01?r.entry.toExponential(2):fmt(r.entry)} $</td><td class="n">${fmt(r.cur)} $${r.stale?' <span style="color:#b5915f" title="noch kein aktueller Kurs seit letztem Lauf">·</span>':''}</td><td class="n ${cls(r.pct)}">${pct(r.pct)}</td><td>${r.opened.slice(0,10)}</td></tr>`).join('')+'</table>';
 }
 
 function trades(a,b,c,d){
@@ -116,7 +125,10 @@ function trades(a,b,c,d){
   rows.sort((x,y)=>y.t.localeCompare(x.t));
   if(!rows.length){ document.getElementById('trades').innerHTML='<div class="empty">Noch keine Trades.</div>'; return }
   document.getElementById('trades').innerHTML='<table><tr><th>Zeit</th><th>Token</th><th>Seite</th><th class="n">USD</th><th class="n">P&amp;L</th><th>Grund</th></tr>'+
-    rows.slice(0,40).map(t=>`<tr><td>${t.t.slice(5,16).replace('T',' ')}</td><td><span class="tag ${t.tag}"></span>${t.sym}</td><td>${({buy:'Kauf',sell:'Verkauf'+(t.frac&&t.frac<1?' ½':''),open_long:'Long '+t.lev+'x',open_short:'Short '+t.lev+'x',close_long:'Long zu',close_short:'Short zu'})[t.side]||t.side}</td><td class="n">${fmt(t.usd)}</td><td class="n ${t.pnl!=null?cls(t.pnl):''}">${t.pnl!=null?fmt(t.pnl):''}</td><td>${t.reason}</td></tr>`).join('')+'</table>';
+    rows.slice(0,40).map(t=>{const isPerp=(t.side||'').startsWith('open')||(t.side||'').startsWith('close');
+      const link=isPerp?`https://solscan.io/token/${t.addr}`:`https://dexscreener.com/solana/${t.addr}`;
+      const when=new Date(t.t).toLocaleString('de-DE',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'});
+      return `<tr><td>${when}</td><td><span class="tag ${t.tag}"></span><a href="${link}" target="_blank">${t.sym}</a></td><td>${({buy:'Kauf',sell:'Verkauf'+(t.frac&&t.frac<1?' ½':''),open_long:'Long '+t.lev+'x',open_short:'Short '+t.lev+'x',close_long:'Long zu',close_short:'Short zu'})[t.side]||t.side}</td><td class="n">${fmt(t.usd)}</td><td class="n ${t.pnl!=null?cls(t.pnl):''}">${t.pnl!=null?fmt(t.pnl):''}</td><td>${t.reason}</td></tr>`;}).join('')+'</table>';
 }
 
 function strategyOverview(){
