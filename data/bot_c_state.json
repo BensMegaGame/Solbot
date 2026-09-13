@@ -1,17 +1,6 @@
 {
- "cash": 469.83,
- "positions": {
-  "2zsCP6b6KZh7BktujFbS5mLWwUub22E4MuQN3ZjDpump": {
-   "sym": "PLOP",
-   "qty": 651388.9547279048,
-   "cost": 30.169999999999998,
-   "opened": "2026-09-13T18:40:45Z",
-   "peak": 5.37881682035e-05,
-   "entry": 4.631641322902455e-05,
-   "liq": 10240.0,
-   "cur_price": 2.75203760544e-05
-  }
- },
+ "cash": 473.8677895487377,
+ "positions": {},
  "trades": [
   {
    "t": "2026-09-13T18:40:45Z",
@@ -22,6 +11,17 @@
    "usd": 30.17,
    "slip": 0.002,
    "reason": "grad 96% +3.4"
+  },
+  {
+   "t": "2026-09-13T20:41:30Z",
+   "side": "sell",
+   "sym": "PLOP",
+   "addr": "2zsCP6b6KZh7BktujFbS5mLWwUub22E4MuQN3ZjDpump",
+   "price": 6.26074547533e-06,
+   "usd": 4.04,
+   "pnl": -26.13,
+   "frac": 1.0,
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -1260,10 +1260,14 @@
   {
    "t": "2026-09-13T20:31:29Z",
    "v": 487.76
+  },
+  {
+   "t": "2026-09-13T20:41:30Z",
+   "v": 473.87
   }
  ],
  "started": "2026-09-11T10:50:57Z",
  "strategy": "graduation",
  "codex": true,
- "last_poll": 1789331488.9258194
+ "last_poll": 1789332090.3190157
 }
