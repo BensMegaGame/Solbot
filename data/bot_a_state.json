@@ -1,5 +1,5 @@
 {
- "cash": 55.607188293717414,
+ "cash": 77.92859133187079,
  "positions": {
   "Aw6fiDPWLUnjSsJQtsyEMSaoPaKAUUrStAsYPiPwpump": {
    "sym": "Anonymouse",
@@ -8,14 +8,6 @@
    "opened": "2026-09-12T00:04:58Z",
    "peak": 0.0001783,
    "entry": 0.00011212482203999998
-  },
-  "2bDQvnvwd7rNbm4o3JNdN6z9c7MVzp4yqHJPNXPiSTNK": {
-   "sym": "BITCAT",
-   "qty": 283685.0460534304,
-   "cost": 50.269999999999996,
-   "opened": "2026-09-12T05:35:32Z",
-   "peak": 0.0003046,
-   "entry": 0.00017720355971999997
   },
   "3URpNcV9wAPjwMAyuBsPjwwkGN9wFJuwcRs3RMbdpair": {
    "sym": "PAIRZ",
@@ -38,7 +30,7 @@
    "qty": 121116.98932232622,
    "cost": 50.269999999999996,
    "opened": "2026-09-12T21:25:13Z",
-   "peak": 0.0004456,
+   "peak": 0.0004489,
    "entry": 0.0004150532496
   },
   "BifUDWQFpbTrSxYXBnqCpAVYgcyQGzHzJk2MDmeM2Gyv": {
@@ -307,6 +299,17 @@
    "usd": 50.27,
    "slip": 0.002,
    "reason": "screener"
+  },
+  {
+   "t": "2026-09-13T01:45:03Z",
+   "side": "sell",
+   "sym": "BITCAT",
+   "addr": "2bDQvnvwd7rNbm4o3JNdN6z9c7MVzp4yqHJPNXPiSTNK",
+   "price": 7.915e-05,
+   "usd": 22.32,
+   "pnl": -27.95,
+   "frac": 1.0,
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -921,6 +924,10 @@
   {
    "t": "2026-09-13T01:40:55Z",
    "v": 380.83
+  },
+  {
+   "t": "2026-09-13T01:45:55Z",
+   "v": 375.31
   }
  ],
  "started": "2026-09-10T17:17:16Z"
