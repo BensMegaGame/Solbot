@@ -982,15 +982,14 @@
   {
    "t": "2026-09-13T09:51:17Z",
    "v": 500.0
+  },
+  {
+   "t": "2026-09-13T09:56:17Z",
+   "v": 500.0
   }
  ],
  "started": "2026-09-11T10:50:57Z",
- "liquidations": 0,
- "last_bar": {
-  "SOL": 1789272000000,
-  "ETH": 1789272000000,
-  "BTC": 1789272000000
- },
- "strategy": "C10_weekend_fade",
- "lev": 5
+ "strategy": "graduation",
+ "codex": true,
+ "last_poll": 1789293377.689059
 }
