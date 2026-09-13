@@ -11,7 +11,7 @@ import time, os
 from common import *
 
 # ---------- Universum ----------
-MIN_AGE_D, MAX_AGE_D   = 21, 56
+MIN_AGE_D, MAX_AGE_D   = 14, 56
 MIN_MCAP, MAX_MCAP     = 300_000, 30_000_000
 MIN_LIQ, MIN_LIQ_RATIO = 50_000, 0.04
 MIN_VOL24              = 40_000
