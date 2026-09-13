@@ -1,5 +1,5 @@
 {
- "cash": 52.602243414891376,
+ "cash": 77.9580721762169,
  "positions": {
   "Aw6fiDPWLUnjSsJQtsyEMSaoPaKAUUrStAsYPiPwpump": {
    "sym": "Anonymouse",
@@ -8,16 +8,17 @@
    "opened": "2026-09-12T00:04:58Z",
    "peak": 0.0001783,
    "entry": 0.00011212482203999998,
-   "cur_price": 8.778e-05
+   "cur_price": 8.36e-05
   },
   "DD3AC2Cmr5rXzJ6ErRHeryx3ASLVMhSBALiUqeKcpump": {
    "sym": "Leafy",
-   "qty": 65314.39738324398,
-   "cost": 50.269999999999996,
+   "qty": 32657.19869162199,
+   "cost": 25.134999999999998,
    "opened": "2026-09-12T18:05:51Z",
-   "peak": 0.00226,
+   "peak": 0.002328,
    "entry": 0.0007696618512,
-   "cur_price": 0.002175
+   "cur_price": 0.002328,
+   "tp1": true
   },
   "5GefefPX1mDs6ZJB1apYmz6fCTCiNJpHturZ9bvFpump": {
    "sym": "Pumpoween",
@@ -26,7 +27,7 @@
    "opened": "2026-09-12T21:25:13Z",
    "peak": 0.0004489,
    "entry": 0.0004150532496,
-   "cur_price": 0.0004294
+   "cur_price": 0.0004341
   },
   "BifUDWQFpbTrSxYXBnqCpAVYgcyQGzHzJk2MDmeM2Gyv": {
    "sym": "TCAT",
@@ -35,7 +36,7 @@
    "opened": "2026-09-12T23:00:22Z",
    "peak": 0.002396,
    "entry": 0.0013328044883999998,
-   "cur_price": 0.001808
+   "cur_price": 0.001827
   },
   "Cp6AVzuSJ8pDCkYGBxAX3p9Dk77pHSsd35yHh19GJC3i": {
    "sym": "INCOGINU",
@@ -44,7 +45,7 @@
    "opened": "2026-09-13T01:05:20Z",
    "peak": 0.0002745,
    "entry": 0.00024772231572,
-   "cur_price": 0.0001722
+   "cur_price": 0.0001897
   },
   "Hy1LfQLL4zLQihmiQKZm7DQzXm5K8aVSfKtdHFYXbKMm": {
    "sym": "AMBA",
@@ -53,7 +54,16 @@
    "opened": "2026-09-13T03:20:17Z",
    "peak": 0.0009914,
    "entry": 0.0008846074234799999,
-   "cur_price": 0.0008738
+   "cur_price": 0.0008724
+  },
+  "EHpaxqVVjyyPt2cjfft5SqTkfaEjCF7RUCaFxCrZpump": {
+   "sym": "wheelsmith",
+   "qty": 364501.09277427616,
+   "cost": 50.269999999999996,
+   "opened": "2026-09-13T16:30:40Z",
+   "peak": 0.0001369,
+   "entry": 0.00013791453852,
+   "cur_price": 0.0001369
   }
  },
  "trades": [
@@ -337,6 +347,27 @@
    "pnl": -25.33,
    "frac": 1.0,
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-13T16:30:03Z",
+   "side": "sell",
+   "sym": "Leafy",
+   "addr": "DD3AC2Cmr5rXzJ6ErRHeryx3ASLVMhSBALiUqeKcpump",
+   "price": 0.002328,
+   "usd": 75.63,
+   "pnl": 50.49,
+   "frac": 0.5,
+   "reason": "tp1"
+  },
+  {
+   "t": "2026-09-13T16:30:40Z",
+   "side": "buy",
+   "sym": "wheelsmith",
+   "addr": "EHpaxqVVjyyPt2cjfft5SqTkfaEjCF7RUCaFxCrZpump",
+   "price": 0.0001369,
+   "usd": 50.27,
+   "slip": 0.002,
+   "reason": "screener"
   }
  ],
  "equity": [
@@ -1659,6 +1690,10 @@
   {
    "t": "2026-09-13T16:25:46Z",
    "v": 438.82
+  },
+  {
+   "t": "2026-09-13T16:30:43Z",
+   "v": 450.92
   }
  ],
  "started": "2026-09-10T17:17:16Z"
