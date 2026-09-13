@@ -1,5 +1,5 @@
 {
- "cash": 30.706859054903106,
+ "cash": 46.224528023535186,
  "positions": {
   "GWTP6M5bxhaJ1k2Kxvf8hhYaHE6jZMhh4cKzFuCpnc83": {
    "sym": "USEFUL",
@@ -9,7 +9,7 @@
    "peak": 0.002056,
    "entry": 0.0009924353088000002,
    "kind": "standard",
-   "cur_price": 0.001191
+   "cur_price": 0.001207
   },
   "Adgt7dseCq71eN6GDuoUgpsNQp81ZNhq24nrF7pxpump": {
    "sym": "Noiz ",
@@ -19,7 +19,7 @@
    "peak": 0.001339,
    "entry": 0.00028294188759999994,
    "kind": "longshot",
-   "cur_price": 0.0004658
+   "cur_price": 0.0004667
   },
   "Fuo63YDw3vg68VVCF79gDc9MrP5k8MUjHkKiRG9Y5Nnj": {
    "sym": "RONNIE",
@@ -29,7 +29,7 @@
    "peak": 0.0004144,
    "entry": 9.77087274e-05,
    "kind": "longshot",
-   "cur_price": 0.0001486
+   "cur_price": 0.0001773
   },
   "5GefefPX1mDs6ZJB1apYmz6fCTCiNJpHturZ9bvFpump": {
    "sym": "Pumpoween",
@@ -39,7 +39,7 @@
    "peak": 0.0004655,
    "entry": 0.00041492499359999997,
    "kind": "standard",
-   "cur_price": 0.0004646
+   "cur_price": 0.0004644
   },
   "BifUDWQFpbTrSxYXBnqCpAVYgcyQGzHzJk2MDmeM2Gyv": {
    "sym": "TCAT",
@@ -49,7 +49,7 @@
    "peak": 0.002276,
    "entry": 0.001360921744,
    "kind": "standard",
-   "cur_price": 0.001665
+   "cur_price": 0.001671
   },
   "DrdwSUzt5ZMqa9Yj1cpvNRRx7zQZP5s9Gm2S8m62STNK": {
    "sym": "STINK",
@@ -59,18 +59,17 @@
    "peak": 0.0001707,
    "entry": 0.0001684279168,
    "kind": "standard",
-   "cur_price": 8.992e-05
+   "cur_price": 9.665e-05
   },
-  "J53EGLkGxyC3mh45RVWxYtETEj2T9G3YnUPX5nn6AXGc": {
-   "sym": "EBT",
-   "qty": 80131.7073881434,
-   "cost": 9.962699999999998,
-   "opened": "2026-09-13T17:21:36Z",
-   "peak": 0.0006622,
-   "entry": 0.0001243290618,
+  "GJRxYW8MiEPhJztdh41EXsuZvNQj7sJZRnuKSrTBpump": {
+   "sym": "aicate",
+   "qty": 226681.7062422702,
+   "cost": 15.094999999999999,
+   "opened": "2026-09-13T19:31:33Z",
+   "peak": 6.604e-05,
+   "entry": 6.659116983999999e-05,
    "kind": "longshot",
-   "cur_price": 0.0004061,
-   "tp1": true
+   "cur_price": 6.604e-05
   }
  },
  "trades": [
@@ -385,6 +384,27 @@
    "pnl": 22.05,
    "frac": 0.34,
    "reason": "tp1"
+  },
+  {
+   "t": "2026-09-13T19:31:30Z",
+   "side": "sell",
+   "sym": "EBT",
+   "addr": "J53EGLkGxyC3mh45RVWxYtETEj2T9G3YnUPX5nn6AXGc",
+   "price": 0.0003842,
+   "usd": 30.61,
+   "pnl": 20.65,
+   "frac": 1.0,
+   "reason": "trail"
+  },
+  {
+   "t": "2026-09-13T19:31:33Z",
+   "side": "buy",
+   "sym": "aicate",
+   "addr": "GJRxYW8MiEPhJztdh41EXsuZvNQj7sJZRnuKSrTBpump",
+   "price": 6.604e-05,
+   "usd": 15.09,
+   "slip": 0.002,
+   "reason": "longshot"
   }
  ],
  "equity": [
@@ -1607,6 +1627,10 @@
   {
    "t": "2026-09-13T19:26:30Z",
    "v": 356.99
+  },
+  {
+   "t": "2026-09-13T19:31:35Z",
+   "v": 363.04
   }
  ],
  "started": "2026-09-12T18:11:27Z",
