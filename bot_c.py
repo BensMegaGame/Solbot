@@ -17,7 +17,10 @@ MIN_PROGRESS_30M = 3.0            # Kurve muss in den letzten ~30 Min mind. 3 Pu
 MIN_OBS = 2                       # mind. 2 Beobachtungen (>= 10 Min) vor dem Kauf
 MIN_BUYS_1H, MAX_SELL_RATIO = 30, 0.8
 MAX_TOP10, MAX_BUNDLER, MAX_SNIPER, MAX_INSIDER = 35.0, 10.0, 15.0, 10.0
-MIN_MCAP, MIN_LIQ = 40_000, 8_000
+# Codex liefert fuer Bonding-Curve-Tokens (noch nicht migriert) KEINE volle Markt-
+# kapitalisierung/DEX-Liquiditaet - beides ist dort strukturell klein/0. Nicht als Sicherheitsfilter
+# nutzen; die eigentliche Reife/Sicherheit kommt aus grad + den Holder-/Bot-Filtern unten.
+MIN_MCAP, MIN_LIQ = 0, 0
 # ---- Position / Exits ----
 POS_USD, MAX_POS = 30.0, 8
 TP1_X, TP1_FRAC = 3.0, 0.5        # bei 3x: Haelfte raus
@@ -81,7 +84,7 @@ def fetch_prices(addrs):
 
 def quality_check(c):
     if not (GRAD_MIN <= c["grad"] < GRAD_MAX): return "grad"
-    if c["price"] <= 0 or c["mcap"] < MIN_MCAP or c["liq"] < MIN_LIQ: return "mcap/liq"
+    if c["price"] <= 0: return "kein preis"
     if c["buys1"] < MIN_BUYS_1H: return f"buys1 {c['buys1']}"
     if c["buys1"] and c["sells1"] / c["buys1"] > MAX_SELL_RATIO: return f"sell-ratio {c['sells1']/c['buys1']:.2f}"
     if c["top10"] is not None and c["top10"] > MAX_TOP10: return f"top10 {c['top10']:.0f}%"
@@ -126,7 +129,7 @@ def main():
         ok, risks = rug_ok(a); time.sleep(1.1)
         if not ok: checks.append((c["sym"], "rugcheck")); cooldown[a] = today + COOLDOWN_D; continue
         if st["cash"] < POS_USD + 2: break
-        if pf.buy(c["sym"], a, c["price"], POS_USD, max(c["liq"], 8_000), f"grad {c['grad']:.0f}% +{progress:.1f}"):
+        if pf.buy(c["sym"], a, c["price"], POS_USD, max(c["liq"], 15_000), f"grad {c['grad']:.0f}% +{progress:.1f}"):
             st["positions"][a]["liq"] = c["liq"]; prices[a] = c["price"]
             checks.append((c["sym"], f"GEKAUFT grad {c['grad']:.0f}% buys {c['buys1']} top10 {c['top10']}"))
             append_jsonl("bot_c_signals.jsonl", {"t": now_iso(), **c, "progress": round(progress, 1)})
