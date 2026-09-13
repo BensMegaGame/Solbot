@@ -1,5 +1,5 @@
 {
- "cash": 3.6772016110861014,
+ "cash": 18.4010604787167,
  "positions": {
   "GWTP6M5bxhaJ1k2Kxvf8hhYaHE6jZMhh4cKzFuCpnc83": {
    "sym": "USEFUL",
@@ -9,7 +9,7 @@
    "peak": 0.002056,
    "entry": 0.0009924353088000002,
    "kind": "standard",
-   "cur_price": 0.001505
+   "cur_price": 0.001506
   },
   "Adgt7dseCq71eN6GDuoUgpsNQp81ZNhq24nrF7pxpump": {
    "sym": "Noiz ",
@@ -19,7 +19,7 @@
    "peak": 0.001339,
    "entry": 0.00028294188759999994,
    "kind": "longshot",
-   "cur_price": 0.0005998
+   "cur_price": 0.0005473
   },
   "Fuo63YDw3vg68VVCF79gDc9MrP5k8MUjHkKiRG9Y5Nnj": {
    "sym": "RONNIE",
@@ -29,7 +29,7 @@
    "peak": 0.0004144,
    "entry": 9.77087274e-05,
    "kind": "longshot",
-   "cur_price": 9.029e-05
+   "cur_price": 9.169e-05
   },
   "5GefefPX1mDs6ZJB1apYmz6fCTCiNJpHturZ9bvFpump": {
    "sym": "Pumpoween",
@@ -49,17 +49,7 @@
    "peak": 0.002276,
    "entry": 0.001360921744,
    "kind": "standard",
-   "cur_price": 0.001827
-  },
-  "Cp6AVzuSJ8pDCkYGBxAX3p9Dk77pHSsd35yHh19GJC3i": {
-   "sym": "INCOGINU",
-   "qty": 243415.60780877268,
-   "cost": 60.32,
-   "opened": "2026-09-13T01:06:41Z",
-   "peak": 0.0002987,
-   "entry": 0.00024780662400000005,
-   "kind": "standard",
-   "cur_price": 0.0001339
+   "cur_price": 0.001842
   },
   "DrdwSUzt5ZMqa9Yj1cpvNRRx7zQZP5s9Gm2S8m62STNK": {
    "sym": "STINK",
@@ -69,7 +59,17 @@
    "peak": 0.0001707,
    "entry": 0.0001684279168,
    "kind": "standard",
-   "cur_price": 0.0001707
+   "cur_price": 0.0001549
+  },
+  "Bobw9yYiRS4Qvcy1Moa1amCa9z1KvpjAuP4RXQ9Wpump": {
+   "sym": "CATFLIX",
+   "qty": 103313.04265175654,
+   "cost": 15.094999999999999,
+   "opened": "2026-09-13T17:11:32Z",
+   "peak": 0.0001449,
+   "entry": 0.0001461093354,
+   "kind": "longshot",
+   "cur_price": 0.0001449
   }
  },
  "trades": [
@@ -331,6 +331,27 @@
    "pnl": -14.96,
    "frac": 1.0,
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-13T17:11:29Z",
+   "side": "sell",
+   "sym": "INCOGINU",
+   "addr": "Cp6AVzuSJ8pDCkYGBxAX3p9Dk77pHSsd35yHh19GJC3i",
+   "price": 0.0001232,
+   "usd": 29.82,
+   "pnl": -30.5,
+   "frac": 1.0,
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-13T17:11:32Z",
+   "side": "buy",
+   "sym": "CATFLIX",
+   "addr": "Bobw9yYiRS4Qvcy1Moa1amCa9z1KvpjAuP4RXQ9Wpump",
+   "price": 0.0001449,
+   "usd": 15.09,
+   "slip": 0.002,
+   "reason": "longshot"
   }
  ],
  "equity": [
@@ -1441,6 +1462,10 @@
   {
    "t": "2026-09-13T17:06:31Z",
    "v": 379.57
+  },
+  {
+   "t": "2026-09-13T17:11:43Z",
+   "v": 369.15
   }
  ],
  "started": "2026-09-12T18:11:27Z",
