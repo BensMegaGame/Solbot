@@ -1,7 +1,32 @@
 {
- "cash": 500.0,
- "positions": {},
- "trades": [],
+ "cash": 469.98,
+ "positions": {
+  "C1xyeVk4NDAcsVXr2r7Jqq3a71yUdnkUupzdPXHypump": {
+   "sym": "bikenina",
+   "qty": 124792.82045,
+   "cost": 30.02,
+   "opened": "2026-09-14T14:41:04Z",
+   "peak": 0.0002422,
+   "entry": 0.00024055871076355658,
+   "mig": 1789395049.0,
+   "cur_price": 0.0002422,
+   "mark": 0.0002422
+  }
+ },
+ "trades": [
+  {
+   "t": "2026-09-14T14:41:04Z",
+   "side": "buy",
+   "sym": "bikenina",
+   "addr": "C1xyeVk4NDAcsVXr2r7Jqq3a71yUdnkUupzdPXHypump",
+   "price": 0.0002422,
+   "fill": 0.000240558711,
+   "usd": 30.02,
+   "slip": 0.0117,
+   "quote": "jup",
+   "reason": "postgrad 30min"
+  }
+ ],
  "equity": [
   {
    "t": "2026-09-14T14:30:57Z",
@@ -10,6 +35,10 @@
   {
    "t": "2026-09-14T14:36:00Z",
    "v": 500.0
+  },
+  {
+   "t": "2026-09-14T14:41:04Z",
+   "v": 500.2
   }
  ],
  "started": "2026-09-14T14:30:55Z",
