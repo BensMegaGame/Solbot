@@ -1,6 +1,17 @@
 {
- "cash": 473.8677895487377,
- "positions": {},
+ "cash": 443.69778954873766,
+ "positions": {
+  "b5ig4LCMf6LGxdDsK8gmczQMaKQsDKB1quKfHtZpump": {
+   "sym": "CORG",
+   "qty": 657124.1114029884,
+   "cost": 30.169999999999998,
+   "opened": "2026-09-14T01:51:24Z",
+   "peak": 4.55623515268e-05,
+   "entry": 4.591217926182276e-05,
+   "liq": 9944.0,
+   "cur_price": 4.55623515268e-05
+  }
+ },
  "trades": [
   {
    "t": "2026-09-13T18:40:45Z",
@@ -22,6 +33,16 @@
    "pnl": -26.13,
    "frac": 1.0,
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-14T01:51:24Z",
+   "side": "buy",
+   "sym": "CORG",
+   "addr": "b5ig4LCMf6LGxdDsK8gmczQMaKQsDKB1quKfHtZpump",
+   "price": 4.55623515268e-05,
+   "usd": 30.17,
+   "slip": 0.002,
+   "reason": "grad 97% +4.6"
   }
  ],
  "equity": [
@@ -1384,10 +1405,14 @@
   {
    "t": "2026-09-14T01:41:23Z",
    "v": 473.87
+  },
+  {
+   "t": "2026-09-14T01:51:24Z",
+   "v": 473.64
   }
  ],
  "started": "2026-09-11T10:50:57Z",
  "strategy": "graduation",
  "codex": true,
- "last_poll": 1789350083.6407905
+ "last_poll": 1789350682.9830441
 }
