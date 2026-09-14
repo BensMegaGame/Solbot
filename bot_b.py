@@ -37,8 +37,6 @@ LIQ_DROP_EXIT, VOL_DROP_EXIT = -0.40, 0.50
 # ---------- Schutz ----------
 COOLDOWN_D, STREAK_HALVE = 14, 3
 
-RC = "https://api.rugcheck.xyz/v1/tokens"
-HARD_RISKS = ("mint", "freeze", "unlocked", "top 10", "single holder")
 DAY = 86400
 
 def day_key(): return int(time.time() // DAY)
@@ -65,12 +63,6 @@ def snapshot(p):
             "liq": (p.get("liquidity") or {}).get("usd") or 0, "mcap": p.get("marketCap") or p.get("fdv") or 0,
             "buy_ratio": b / (b + s) if b + s else 0,
             "age_d": (time.time() * 1000 - (p.get("pairCreatedAt") or time.time() * 1000)) / 86400000}
-
-def rug_ok(addr):
-    s = get(f"{RC}/{addr}/report/summary")
-    if not s: return True, []
-    risks = [r.get("name", "") for r in (s.get("risks") or [])]
-    return not any(k in r.lower() for r in risks for k in HARD_RISKS), risks
 
 SOLANA_NET = 1399811149
 CODEX_KEY = os.environ.get("CODEX_KEY")
@@ -128,7 +120,7 @@ def discover(hist):
     seen = load("bot_a_seen.json", {})
     now = time.time()
     for a, first in seen.items():
-        try: age = (now - time.mktime(time.strptime(first, "%Y-%m-%dT%H:%M:%SZ"))) / DAY
+        try: age = (now - parse_iso(first)) / DAY
         except Exception: continue
         if MIN_AGE_D <= age <= MAX_AGE_D: addrs.add(a)     # nur wenn schon reif, nicht mehr verfrueht
     return list(addrs)[:400]
@@ -214,7 +206,7 @@ def main():
         cur = snapshot(p); px = cur["px"]; liq = cur["liq"]
         pos["peak"] = max(pos.get("peak", px), px)
         x = px / pos["entry"]
-        held = (time.time() - time.mktime(time.strptime(pos["opened"], "%Y-%m-%dT%H:%M:%SZ"))) / DAY
+        held = held_seconds(pos) / DAY
         why = None
         if x <= 1 + HARD_STOP: why = "stop"
         elif liq < pos.get("entry_liq", liq) * (1 + LIQ_DROP_EXIT): why = "these: liq"
@@ -259,7 +251,9 @@ def main():
         checks.append((p["baseToken"]["symbol"], why))
         if not ok: continue
         safe, risks = rug_ok(a); time.sleep(1.1)
-        if not safe: st["cooldown"][a] = today + 30; continue
+        if not safe:
+            if risks != ["rugcheck unavailable"]: st["cooldown"][a] = today + 30
+            continue
         size = ENTRY_USD * (0.5 if st["half_left"] > 0 else 1.0)
         if st["cash"] < size + 5: continue
         if pf.buy(p["baseToken"]["symbol"], a, cur["px"], size, cur["liq"], why):
