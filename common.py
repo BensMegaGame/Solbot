@@ -17,6 +17,8 @@ HELIUS_KEY = os.environ.get("HELIUS_KEY")
 JUP_QUOTE  = "https://api.jup.ag/swap/v1/quote"
 USDC       = "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
 MAX_IMPACT = 0.10          # Kauf ablehnen, wenn Jupiter > 10 % Price-Impact meldet (macht ein echter Bot auch)
+MAX_DEVIATION = 6          # Sicherung gegen kaputte Quotes: weicht der Jupiter-Fill um mehr als das 6-fache vom
+                           # zuletzt bekannten Kurs ab (z.B. Route ueber einen fast leeren Pool), wird NICHT gehandelt.
 STALE_ZERO_H = 6           # Position ohne Kurs seit > 6 h -> mit 0 bewerten (tot/gerugt), nicht mit Einstand
 
 def now_iso():
@@ -129,6 +131,9 @@ class Paper:
             if impact > MAX_IMPACT or out_raw <= 0:
                 print(f"  {sym}: impact {impact:.1%} > {MAX_IMPACT:.0%} -> kein Kauf"); return False
             qty = out_raw / 10 ** dec
+            fill_px = usd / qty if qty else 0
+            if price and fill_px and not (price / MAX_DEVIATION <= fill_px <= price * MAX_DEVIATION):
+                print(f"  {sym}: Jupiter-Fill {fill_px:.8g} weicht >{MAX_DEVIATION}x von Kurs {price:.8g} ab -> verworfen (kaputte Quote?)"); return False
             cost = usd + GAS_USD                       # Jupiter-Out enthaelt schon DEX-Fees + Impact
             if cost > self.s["cash"]: return False
             slip = impact; src = "jup"
@@ -158,6 +163,11 @@ class Paper:
                 pos["no_route"] = now_iso(); print(f"  {pos['sym']}: keine Jupiter-Route -> Verkauf nicht moeglich")
                 return False
             out_raw, slip = q
+            fill_px = (out_raw / 1e6) / qty if qty else 0
+            ref = pos.get("cur_price") or price
+            if ref and fill_px and not (ref / MAX_DEVIATION <= fill_px <= ref * MAX_DEVIATION):
+                print(f"  {pos['sym']}: Jupiter-Fill {fill_px:.8g} weicht >{MAX_DEVIATION}x von Kurs {ref:.8g} ab -> verworfen (kaputte Quote?)")
+                return False
             net = out_raw / 1e6 - GAS_USD; src = "jup"
             pos.pop("no_route", None)
         else:
