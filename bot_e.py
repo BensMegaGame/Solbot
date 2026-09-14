@@ -19,7 +19,9 @@ MAX_UNIVERSE = 500
 DISCOVER_EVERY_S = 20 * 60      # Universum alle 20 Minuten neu zusammenstellen (alles kostenlos)
 COOLDOWN_D = 10
 MAX_POS_TOTAL, MAX_POS_PER_TIER = 8, 2
-EXCLUDE_SYM = {"USDC", "USDT", "USDS", "PYUSD", "USD1", "DAI", "FDUSD", "USDE", "EURC", "USDG", "USDY"}
+EXCLUDE_SYM = {"USDC", "USDT", "USDS", "PYUSD", "USD1", "DAI", "FDUSD", "USDE", "EURC", "USDG", "USDY",
+               "ETH", "WETH", "BNB", "WBNB", "BTC", "WBTC", "CBBTC", "SOL", "WSOL", "XRP", "ADA", "DOGE",
+               "AVAX", "MATIC", "POL", "DOT", "LINK", "LTC", "TRX", "TON", "SUI", "NEAR", "ATOM"}
 EXCLUDE_SUB = ("USD", "EUR", "GBP", "CHF", "JPY", "XAU")
 
 def tradeable(sym):
