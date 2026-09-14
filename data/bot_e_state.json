@@ -1,5 +1,5 @@
 {
- "cash": 225.68515161795588,
+ "cash": 283.6633726179559,
  "positions": {
   "72yxYmhLgDGwdyi2b9GjDynBB6VuG3kDxNKqDbzXh5bi": {
    "sym": "WOW",
@@ -13,8 +13,8 @@
    "tp1_gain": 0.75,
    "moon_x": 5.0,
    "max_hold_h": 24,
-   "cur_price": 8.652e-05,
-   "mark": 8.652e-05,
+   "cur_price": 8.233e-05,
+   "mark": 8.233e-05,
    "tp1": true
   },
   "2bRoY87nsBq84TTKJKFD5gYxVLPhrTPKK9MaheSLCCLg": {
@@ -29,23 +29,8 @@
    "tp1_gain": 0.75,
    "moon_x": 5.0,
    "max_hold_h": 24,
-   "cur_price": 5.05e-05,
-   "mark": 5.05e-05
-  },
-  "8WXiWXTMNPxmzpZdEmGBYNc3j7B5n3VEqgD6LjXAx2Xp": {
-   "sym": "LOTTO",
-   "qty": 570903.239003,
-   "cost": 80.02,
-   "opened": "2026-09-14T18:51:48Z",
-   "peak": 0.0001534,
-   "entry": 0.00014016385708328326,
-   "tier": "T4",
-   "stop": 0.25,
-   "tp1_gain": 0.4,
-   "moon_x": 3.0,
-   "max_hold_h": 48,
-   "mark": 0.0001074,
-   "cur_price": 0.0001074
+   "cur_price": 5.022e-05,
+   "mark": 5.022e-05
   },
   "H22aquDouZNFyfykwnXmY5Y9z5sMQtLFy5tUKR99pump": {
    "sym": "NINA",
@@ -59,8 +44,8 @@
    "tp1_gain": 0.4,
    "moon_x": 3.0,
    "max_hold_h": 48,
-   "mark": 0.0002439,
-   "cur_price": 0.0002439
+   "mark": 0.0002479,
+   "cur_price": 0.0002479
   }
  },
  "trades": [
@@ -312,6 +297,21 @@
    "held_h": 0.3,
    "frac": 1.0,
    "slip": 0.0046,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-14T22:21:53Z",
+   "side": "sell",
+   "sym": "LOTTO",
+   "addr": "8WXiWXTMNPxmzpZdEmGBYNc3j7B5n3VEqgD6LjXAx2Xp",
+   "price": 0.0001043,
+   "usd": 57.98,
+   "pnl": -22.04,
+   "peak_x": 1.094,
+   "held_h": 3.5,
+   "frac": 1.0,
+   "slip": 0.012,
    "quote": "jup",
    "reason": "stop"
   }
@@ -812,6 +812,10 @@
   {
    "t": "2026-09-14T22:16:51Z",
    "v": 418.69
+  },
+  {
+   "t": "2026-09-14T22:21:54Z",
+   "v": 415.44
   }
  ],
  "started": "2026-09-14T12:02:41Z",
