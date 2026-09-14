@@ -1,39 +1,38 @@
 {
- "cash": 427.73076000000003,
+ "cash": 422.0566390000001,
  "positions": {
-  "C1xyeVk4NDAcsVXr2r7Jqq3a71yUdnkUupzdPXHypump": {
-   "sym": "bikenina",
-   "qty": 62396.410225,
-   "cost": 15.01,
-   "opened": "2026-09-14T14:41:04Z",
-   "peak": 0.0005738,
-   "entry": 0.00024055871076355658,
-   "mig": 1789395049.0,
-   "cur_price": 0.0005738,
-   "mark": 0.0005738,
-   "tp1": true
-  },
   "UNHwuKaSGKP7qmYMFS5aSJdqifHj6CiXWvtoeYNpump": {
    "sym": "fomo",
    "qty": 7056.903366,
    "cost": 30.02,
    "opened": "2026-09-14T14:56:08Z",
-   "peak": 0.004276,
+   "peak": 0.004289,
    "entry": 0.004253990517233902,
    "mig": 1789397153.0,
-   "cur_price": 0.004243,
-   "mark": 0.004243
+   "cur_price": 0.004289,
+   "mark": 0.004289
   },
   "Rcx2rdscZAzwCsVudYzkTrjEPfePgdey4AVCpJepump": {
    "sym": "FAIR",
    "qty": 5749.511471,
    "cost": 30.02,
    "opened": "2026-09-14T15:21:04Z",
-   "peak": 0.005202,
+   "peak": 0.005207,
    "entry": 0.005221313176157328,
    "mig": 1789398221.0,
-   "cur_price": 0.005168,
-   "mark": 0.005168
+   "cur_price": 0.005207,
+   "mark": 0.005207
+  },
+  "ANC8Qsky43JdjBXHqWwtLDtsspxkjbPsjiCaY3ypump": {
+   "sym": "DVLT",
+   "qty": 20541.855084,
+   "cost": 30.02,
+   "opened": "2026-09-14T15:36:02Z",
+   "peak": 0.001447,
+   "entry": 0.001461406473623821,
+   "mig": 1789399431.0,
+   "cur_price": 0.001447,
+   "mark": 0.001447
   }
  },
  "trades": [
@@ -110,6 +109,31 @@
    "slip": 0.0046,
    "quote": "jup",
    "reason": "postgrad 17min"
+  },
+  {
+   "t": "2026-09-14T15:36:01Z",
+   "side": "sell",
+   "sym": "bikenina",
+   "addr": "C1xyeVk4NDAcsVXr2r7Jqq3a71yUdnkUupzdPXHypump",
+   "price": 0.0003799,
+   "usd": 24.35,
+   "pnl": 9.34,
+   "frac": 1.0,
+   "slip": 0.0085,
+   "quote": "jup",
+   "reason": "trail"
+  },
+  {
+   "t": "2026-09-14T15:36:02Z",
+   "side": "buy",
+   "sym": "DVLT",
+   "addr": "ANC8Qsky43JdjBXHqWwtLDtsspxkjbPsjiCaY3ypump",
+   "price": 0.001447,
+   "fill": 0.001461406474,
+   "usd": 30.02,
+   "slip": 0.0188,
+   "quote": "jup",
+   "reason": "postgrad 12min"
   }
  ],
  "equity": [
@@ -164,6 +188,10 @@
   {
    "t": "2026-09-14T15:31:00Z",
    "v": 523.19
+  },
+  {
+   "t": "2026-09-14T15:36:02Z",
+   "v": 511.99
   }
  ],
  "started": "2026-09-14T14:30:55Z",
