@@ -14,6 +14,7 @@ WALLET_MIN_AGE_D, WALLET_MIN_TX, WALLET_MIN_TOKENS = 7, 20, 3
 MIN_GAP_CV, MAX_SAME_AMOUNT = 0.30, 0.50
 # ---- Exits (Standard) ----
 TP1_X, TP1_FRAC, TP2_X, STOP, TRAIL, MAX_HOLD_D = 3.0, 0.5, 10.0, -0.5, -0.35, 10
+USE_TP0, TP0_X, TP0_FRAC = True, 1.8, 0.25     # fruehes Zwischenziel nur fuer Standard-Positionen (Testflag)
 COOLDOWN_D = 14
 # ---- Longshot ----
 LS_USD, LS_MAX_POS = 15.0, 3
@@ -131,6 +132,7 @@ def manage(pf, addr, pos, m, cooldown, today):
     if x <= 1 + stop: why = "stop"
     elif x >= tp2: why = "tp2"
     elif x >= tp1 and not pos.get("tp1"): pos["tp1"] = True; pf.sell(addr, px, f1, m["liq"], "tp1"); return
+    elif USE_TP0 and not ls and x >= TP0_X and not pos.get("tp0"): pos["tp0"] = True; pf.sell(addr, px, TP0_FRAC, m["liq"], "tp0"); return
     elif pos.get("tp1") and px / pos["peak"] - 1 <= trail: why = "trail"
     elif held >= maxd: why = "time"
     if why:
