@@ -2,11 +2,10 @@
 Kauft Tokens, deren Bonding Curve zwischen 90 und 99,5 % steht UND die in den letzten Minuten
 sichtbar Fortschritt machen. Sicherheits-/Qualitaetsfilter direkt aus Codex (Bundler, Sniper, Insider, Top-10).
 Exits: bei 3x die Haelfte, bei 5x die Haelfte des Rests, alles nach 24 h. Stop -50 %.
-Codex Free-Tier = 10.000 Anfragen/Monat -> der Bot fragt hoechstens alle 10 Minuten ab (2 Anfragen je Lauf).
+Codex Free-Tier = 10.000 Anfragen/Monat -> der Bot fragt hoechstens alle 15 Minuten ab (2 Anfragen je Lauf).
 ACHTUNG fuer spaeter: Kaeufe auf der Bonding Curve laufen live NICHT ueber Jupiter, sondern ueber das Pump.fun-Programm."""
 import os, time
 from common import *
-from bot_a import rug_ok
 
 CODEX_KEY = os.environ.get("CODEX_KEY")
 CODEX_URL = "https://graph.codex.io/graphql"
@@ -27,7 +26,7 @@ TP1_X, TP1_FRAC = 3.0, 0.5        # bei 3x: Haelfte raus
 TP2_X, TP2_FRAC = 5.0, 0.5        # bei 5x: Haelfte des Rests raus
 STOP, MAX_HOLD_H = -0.5, 24
 COOLDOWN_D = 7
-POLL_MIN = 10                     # Codex-Abfrage hoechstens alle 10 Minuten (Free-Tier-Budget)
+POLL_MIN = 15                     # Codex-Abfrage hoechstens alle 10 Minuten (Free-Tier-Budget)
 
 def codex(query, variables=None):
     if not CODEX_KEY: return None
@@ -94,7 +93,7 @@ def quality_check(c):
     return None
 
 def main():
-    pf = Paper("bot_c"); st = pf.s
+    pf = Paper("bot_c", quotes=False); st = pf.s   # Bonding Curve: keine Jupiter-Route, bleibt Schaetzung
     for k in ("lev", "last_bar", "liquidations"): st.pop(k, None)     # Reste der alten Perp-Version
     st["strategy"] = "graduation"; st["codex"] = bool(CODEX_KEY)
     now = time.time(); today = int(now // 86400)
@@ -108,7 +107,7 @@ def main():
         px = prices.get(addr, 0)
         if px <= 0: continue
         pos["peak"] = max(pos.get("peak", px), px)
-        x = px / pos["entry"]; held_h = (now - time.mktime(time.strptime(pos["opened"], "%Y-%m-%dT%H:%M:%SZ"))) / 3600
+        x = px / pos["entry"]; held_h = held_seconds(pos) / 3600
         liq = pos.get("liq", 20_000)
         if x <= 1 + STOP: pf.sell(addr, px, 1.0, liq, "stop"); cooldown[addr] = today + COOLDOWN_D
         elif x >= TP2_X and pos.get("tp1") and not pos.get("tp2"): pos["tp2"] = True; pf.sell(addr, px, TP2_FRAC, liq, "tp2")
@@ -127,7 +126,10 @@ def main():
         progress = c["grad"] - old[-1]
         if progress < MIN_PROGRESS_30M: checks.append((c["sym"], f"stagniert +{progress:.1f}")); continue
         ok, risks = rug_ok(a); time.sleep(1.1)
-        if not ok: checks.append((c["sym"], "rugcheck")); cooldown[a] = today + COOLDOWN_D; continue
+        if not ok:
+            checks.append((c["sym"], "rugcheck"))
+            if risks != ["rugcheck unavailable"]: cooldown[a] = today + COOLDOWN_D
+            continue
         if st["cash"] < POS_USD + 2: break
         if pf.buy(c["sym"], a, c["price"], POS_USD, max(c["liq"], 15_000), f"grad {c['grad']:.0f}% +{progress:.1f}"):
             st["positions"][a]["liq"] = c["liq"]; prices[a] = c["price"]
