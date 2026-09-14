@@ -1,5 +1,5 @@
 {
- "cash": 235.46419100000014,
+ "cash": 205.44419100000013,
  "positions": {
   "NWq7Y6UUpkneabRgKqmrHPeGepLZbxw4pFYBi79pump": {
    "sym": "FTFS",
@@ -9,19 +9,19 @@
    "peak": 0.005575,
    "entry": 0.005343477355620453,
    "mig": 1789407232.0,
-   "cur_price": 0.005568,
-   "mark": 0.005568
+   "cur_price": 0.005573,
+   "mark": 0.005573
   },
   "zsCYqs39DWS4DPpJvzbAqLVZmhQzwMnyb2UTjctpump": {
    "sym": "USGR",
    "qty": 2667.477305,
    "cost": 15.01,
    "opened": "2026-09-14T18:01:07Z",
-   "peak": 0.009158,
+   "peak": 0.009229,
    "entry": 0.005627039439797595,
    "mig": 1789408102.0,
-   "cur_price": 0.009157,
-   "mark": 0.009157,
+   "cur_price": 0.009229,
+   "mark": 0.009229,
    "tp1": true
   },
   "PEsT7duf8MDrDax42dH37v7bVdHhk9ewNm1L1QCpump": {
@@ -32,19 +32,30 @@
    "peak": 0.1413,
    "entry": 0.14101570814934333,
    "mig": 1789417990.0,
-   "cur_price": 0.1405,
-   "mark": 0.1405
+   "cur_price": 0.1406,
+   "mark": 0.1406
   },
   "8XcATDK56Axr3sDkh9HhzN1AWXUefY4Vdo8PdXopump": {
    "sym": "OpenAI",
    "qty": 7912.654976,
    "cost": 30.02,
    "opened": "2026-09-14T21:11:04Z",
-   "peak": 0.003851,
+   "peak": 0.003855,
    "entry": 0.0037939225318245444,
    "mig": 1789418644.0,
-   "cur_price": 0.003845,
-   "mark": 0.003845
+   "cur_price": 0.003855,
+   "mark": 0.003855
+  },
+  "R5djwmnzNmsytb8BqTohFDW555Q531jRXNeRwigpump": {
+   "sym": "STRATEGY",
+   "qty": 6297.836778,
+   "cost": 30.02,
+   "opened": "2026-09-14T22:31:03Z",
+   "peak": 0.004714,
+   "entry": 0.004766716105578943,
+   "mig": 1789424082.0,
+   "cur_price": 0.004714,
+   "mark": 0.004714
   }
  },
  "trades": [
@@ -653,6 +664,18 @@
    "slip": 0.0047,
    "quote": "jup",
    "reason": "tp1"
+  },
+  {
+   "t": "2026-09-14T22:31:03Z",
+   "side": "buy",
+   "sym": "STRATEGY",
+   "addr": "R5djwmnzNmsytb8BqTohFDW555Q531jRXNeRwigpump",
+   "price": 0.004714,
+   "fill": 0.004766716106,
+   "usd": 30.02,
+   "slip": 0.011,
+   "quote": "jup",
+   "reason": "postgrad 16min"
   }
  ],
  "equity": [
@@ -1039,6 +1062,10 @@
   {
    "t": "2026-09-14T22:25:59Z",
    "v": 351.51
+  },
+  {
+   "t": "2026-09-14T22:31:03Z",
+   "v": 351.49
   }
  ],
  "started": "2026-09-14T14:30:55Z",
