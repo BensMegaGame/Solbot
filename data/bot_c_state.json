@@ -1,28 +1,28 @@
 {
- "cash": 346.98300300623464,
+ "cash": 358.74326500623465,
  "positions": {
   "6HQdAaugomYDk5yBdFGv4uLDjRtrH23o3oZh8tywpump": {
    "sym": "LONGALON",
-   "qty": 450192.41905852535,
-   "cost": 30.169999999999998,
+   "qty": 225096.20952926268,
+   "cost": 15.084999999999999,
    "opened": "2026-09-14T06:41:34Z",
-   "peak": 9.02812363587e-05,
+   "peak": 0.001618,
    "entry": 6.701578863343293e-05,
    "liq": 15008.0,
-   "cur_price": 5.29479353733e-05,
-   "mark": 5.29479353733e-05,
-   "no_quote_since": "2026-09-14T14:20:54Z"
+   "cur_price": 0.001618,
+   "mark": 0.001618,
+   "tp1": true
   },
   "7YkVB7wohCf51NFWMWY2h6FHpJsYa8VZVDvAczx8pump": {
    "sym": "thewok",
    "qty": 807117.4055871171,
    "cost": 30.169999999999998,
    "opened": "2026-09-14T13:15:59Z",
-   "peak": 4.63990805533e-05,
+   "peak": 4.703e-05,
    "entry": 3.737993975988363e-05,
    "liq": 7952.0,
-   "cur_price": 4.35e-05,
-   "mark": 4.35e-05
+   "cur_price": 4.703e-05,
+   "mark": 4.703e-05
   }
  },
  "trades": [
@@ -129,6 +129,19 @@
    "usd": 30.17,
    "slip": 0.002,
    "reason": "grad 98% +7.6"
+  },
+  {
+   "t": "2026-09-14T14:25:56Z",
+   "side": "sell",
+   "sym": "LONGALON",
+   "addr": "6HQdAaugomYDk5yBdFGv4uLDjRtrH23o3oZh8tywpump",
+   "price": 0.001618,
+   "usd": 11.76,
+   "pnl": -3.32,
+   "frac": 0.5,
+   "slip": 0.0406,
+   "quote": "jup",
+   "reason": "tp1"
   }
  ],
  "equity": [
@@ -1787,6 +1800,10 @@
   {
    "t": "2026-09-14T14:20:54Z",
    "v": 405.93
+  },
+  {
+   "t": "2026-09-14T14:25:56Z",
+   "v": 760.91
   }
  ],
  "started": "2026-09-11T10:50:57Z",
