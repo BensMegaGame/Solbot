@@ -17,33 +17,33 @@
    "qty": 20541.855084,
    "cost": 30.02,
    "opened": "2026-09-14T15:36:02Z",
-   "peak": 0.001587,
+   "peak": 0.001592,
    "entry": 0.001461406473623821,
    "mig": 1789399431.0,
-   "cur_price": 0.001587,
-   "mark": 0.001587
+   "cur_price": 0.001592,
+   "mark": 0.001592
   },
   "NWq7Y6UUpkneabRgKqmrHPeGepLZbxw4pFYBi79pump": {
    "sym": "FTFS",
    "qty": 5618.064418,
    "cost": 30.02,
    "opened": "2026-09-14T17:46:09Z",
-   "peak": 0.005496,
+   "peak": 0.005504,
    "entry": 0.005343477355620453,
    "mig": 1789407232.0,
-   "cur_price": 0.005496,
-   "mark": 0.005496
+   "cur_price": 0.005504,
+   "mark": 0.005504
   },
   "zsCYqs39DWS4DPpJvzbAqLVZmhQzwMnyb2UTjctpump": {
    "sym": "USGR",
    "qty": 5334.95461,
    "cost": 30.02,
    "opened": "2026-09-14T18:01:07Z",
-   "peak": 0.005762,
+   "peak": 0.005771,
    "entry": 0.005627039439797595,
    "mig": 1789408102.0,
-   "cur_price": 0.005762,
-   "mark": 0.005762
+   "cur_price": 0.005771,
+   "mark": 0.005771
   },
   "CfEaZjy8sZcP5trncm9AeswuZUeCpfZJ4ZDMePu1pump": {
    "sym": "BIKELUGA",
@@ -53,8 +53,8 @@
    "peak": 0.0004041,
    "entry": 0.0002225528264228027,
    "mig": 1789408833.0,
-   "cur_price": 0.0003418,
-   "mark": 0.0003418,
+   "cur_price": 0.0003548,
+   "mark": 0.0003548,
    "tp1": true
   },
   "pbELpkr4dQzvtHEe1AhTsGf7tqQ6NmGzEd8a9p3pump": {
@@ -62,11 +62,11 @@
    "qty": 4616.872459,
    "cost": 30.02,
    "opened": "2026-09-14T19:16:05Z",
-   "peak": 0.00657,
+   "peak": 0.006578,
    "entry": 0.006502237232367089,
    "mig": 1789412342.0,
-   "cur_price": 0.00657,
-   "mark": 0.00657
+   "cur_price": 0.006578,
+   "mark": 0.006578
   },
   "am5Xu7XsGmjERdZ3AhDzdhzeT32JGE5QG3UDHRmpump": {
    "sym": "Claude",
@@ -76,19 +76,8 @@
    "peak": 0.06156,
    "entry": 0.056016038261290306,
    "mig": 1789412307.0,
-   "cur_price": 0.0001077,
-   "mark": 0.0001077
-  },
-  "7jdLRxdcGxqTZAM7kxTNb9jiubqqdTM2Na9wZQ2pump": {
-   "sym": "OpenAI",
-   "qty": 792.581815,
-   "cost": 30.02,
-   "opened": "2026-09-14T19:21:09Z",
-   "peak": 0.03822,
-   "entry": 0.0378762159714704,
-   "mig": 1789412248.0,
-   "cur_price": 1.855e-06,
-   "mark": 1.855e-06
+   "cur_price": 1.879e-06,
+   "mark": 1.879e-06
   }
  },
  "trades": [
@@ -499,6 +488,21 @@
    "slip": 0.0019,
    "quote": "jup",
    "reason": "postgrad 24min"
+  },
+  {
+   "t": "2026-09-14T20:26:06Z",
+   "side": "sell",
+   "sym": "OpenAI",
+   "addr": "7jdLRxdcGxqTZAM7kxTNb9jiubqqdTM2Na9wZQ2pump",
+   "price": 1.859e-06,
+   "usd": -0.02,
+   "pnl": -30.04,
+   "peak_x": 1.009,
+   "held_h": 1.1,
+   "frac": 1.0,
+   "slip": 0.0114,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -785,6 +789,10 @@
   {
    "t": "2026-09-14T20:21:09Z",
    "v": 367.03
+  },
+  {
+   "t": "2026-09-14T20:26:06Z",
+   "v": 368.08
   }
  ],
  "started": "2026-09-14T14:30:55Z",
