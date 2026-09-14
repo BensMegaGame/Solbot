@@ -1,5 +1,5 @@
 {
- "cash": 105.07327194111193,
+ "cash": 157.43031294111194,
  "positions": {
   "5GefefPX1mDs6ZJB1apYmz6fCTCiNJpHturZ9bvFpump": {
    "sym": "Pumpoween",
@@ -8,8 +8,8 @@
    "opened": "2026-09-12T21:25:13Z",
    "peak": 0.0004989,
    "entry": 0.0004150532496,
-   "cur_price": 0.0004509,
-   "mark": 0.0004509
+   "cur_price": 0.0004644,
+   "mark": 0.0004644
   },
   "BifUDWQFpbTrSxYXBnqCpAVYgcyQGzHzJk2MDmeM2Gyv": {
    "sym": "TCAT",
@@ -28,20 +28,8 @@
    "opened": "2026-09-13T03:20:17Z",
    "peak": 0.00145,
    "entry": 0.0008846074234799999,
-   "cur_price": 0.0009803,
-   "mark": 0.0009803
-  },
-  "EHpaxqVVjyyPt2cjfft5SqTkfaEjCF7RUCaFxCrZpump": {
-   "sym": "wheelsmith",
-   "qty": 136687.90979035356,
-   "cost": 18.85125,
-   "opened": "2026-09-13T16:30:40Z",
-   "peak": 0.0006184,
-   "entry": 0.00013791453852,
-   "cur_price": 0.000433,
-   "mark": 0.000433,
-   "tp1": true,
-   "tp0": true
+   "cur_price": 0.0009755,
+   "mark": 0.0009755
   },
   "4MMQY9bwkxxTtsK3W227Q5ABT6yFY8Pmn9Ze7wmAXKY8": {
    "sym": "ALLINU",
@@ -50,8 +38,8 @@
    "opened": "2026-09-13T23:35:42Z",
    "peak": 0.003332,
    "entry": 0.0017347613975999998,
-   "cur_price": 0.002364,
-   "mark": 0.002364,
+   "cur_price": 0.002296,
+   "mark": 0.002296,
    "tp0": true
   },
   "2hkhFLWQKUcvUNh7eUkfZVz3rYfxXqFNeVLYMotrzFky": {
@@ -61,8 +49,8 @@
    "opened": "2026-09-14T14:15:23Z",
    "peak": 0.0006347,
    "entry": 0.00040301976415701074,
-   "cur_price": 0.0004519,
-   "mark": 0.0004519
+   "cur_price": 0.0004224,
+   "mark": 0.0004224
   },
   "8SqYfYNm3g7TQJmm7EaxYJcDV9f5G3Y7t92DzbUQKFws": {
    "sym": "DFC",
@@ -71,8 +59,8 @@
    "opened": "2026-09-14T17:25:39Z",
    "peak": 0.0003744,
    "entry": 0.00037899230500054314,
-   "cur_price": 0.000232,
-   "mark": 0.000232
+   "cur_price": 0.0002541,
+   "mark": 0.0002541
   }
  },
  "trades": [
@@ -529,6 +517,21 @@
    "slip": 0.0774,
    "quote": "jup",
    "reason": "screener"
+  },
+  {
+   "t": "2026-09-14T17:45:05Z",
+   "side": "sell",
+   "sym": "wheelsmith",
+   "addr": "EHpaxqVVjyyPt2cjfft5SqTkfaEjCF7RUCaFxCrZpump",
+   "price": 0.000377,
+   "usd": 52.36,
+   "pnl": 33.51,
+   "peak_x": 4.484,
+   "held_h": 25.2,
+   "frac": 1.0,
+   "slip": 0.0028,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
@@ -3067,6 +3070,10 @@
   {
    "t": "2026-09-14T17:40:50Z",
    "v": 467.77
+  },
+  {
+   "t": "2026-09-14T17:45:52Z",
+   "v": 460.08
   }
  ],
  "started": "2026-09-10T17:17:16Z"
