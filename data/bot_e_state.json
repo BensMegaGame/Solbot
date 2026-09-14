@@ -1,19 +1,31 @@
 {
- "cash": 439.65012614382897,
+ "cash": 365.23795812644204,
  "positions": {
-  "9LsmvhiNThFurje813v7STBDoQS4wtUySQL3oJXJpump": {
-   "sym": "Jabal",
-   "qty": 705784.1931670787,
-   "cost": 60.34987385617105,
-   "opened": "2026-09-14T12:56:31Z",
-   "peak": 8.48e-05,
-   "entry": 8.550754528145767e-05,
+  "8StnEDgfxfvxpCUUMH9ChXaqAkGGtxvnfxCAYHYnPXja": {
+   "sym": "FLOPPY",
+   "qty": 915960.4531265794,
+   "cost": 60.369943187048435,
+   "opened": "2026-09-14T13:11:30Z",
+   "peak": 6.532e-05,
+   "entry": 6.590889702822762e-05,
    "tier": "T3",
    "stop": 0.3,
    "tp1_gain": 0.65,
    "moon_x": 3.0,
-   "max_hold_h": 36,
-   "cur_price": 6.214e-05
+   "max_hold_h": 36
+  },
+  "72yxYmhLgDGwdyi2b9GjDynBB6VuG3kDxNKqDbzXh5bi": {
+   "sym": "WOW",
+   "qty": 1046494.1652218524,
+   "cost": 40.237414141610934,
+   "opened": "2026-09-14T13:11:32Z",
+   "peak": 3.813e-05,
+   "entry": 3.844972621809198e-05,
+   "tier": "T2",
+   "stop": 0.35,
+   "tp1_gain": 0.75,
+   "moon_x": 5.0,
+   "max_hold_h": 24
   }
  },
  "trades": [
@@ -26,6 +38,37 @@
    "usd": 60.35,
    "slip": 0.0025,
    "reason": "T3 chg -35%"
+  },
+  {
+   "t": "2026-09-14T13:11:29Z",
+   "side": "sell",
+   "sym": "Jabal",
+   "addr": "9LsmvhiNThFurje813v7STBDoQS4wtUySQL3oJXJpump",
+   "price": 3.733e-05,
+   "usd": 26.2,
+   "pnl": -34.15,
+   "frac": 1.0,
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-14T13:11:30Z",
+   "side": "buy",
+   "sym": "FLOPPY",
+   "addr": "8StnEDgfxfvxpCUUMH9ChXaqAkGGtxvnfxCAYHYnPXja",
+   "price": 6.532e-05,
+   "usd": 60.37,
+   "slip": 0.0028,
+   "reason": "T3 chg -31%"
+  },
+  {
+   "t": "2026-09-14T13:11:32Z",
+   "side": "buy",
+   "sym": "WOW",
+   "addr": "72yxYmhLgDGwdyi2b9GjDynBB6VuG3kDxNKqDbzXh5bi",
+   "price": 3.813e-05,
+   "usd": 40.24,
+   "slip": 0.0024,
+   "reason": "T2 chg -39%"
   }
  ],
  "equity": [
@@ -84,6 +127,10 @@
   {
    "t": "2026-09-14T13:06:33Z",
    "v": 483.51
+  },
+  {
+   "t": "2026-09-14T13:11:32Z",
+   "v": 465.85
   }
  ],
  "started": "2026-09-14T12:02:41Z",
