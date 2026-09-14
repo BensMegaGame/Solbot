@@ -1,5 +1,5 @@
 {
- "cash": 93.25674066125191,
+ "cash": 93.32687221209096,
  "positions": {
   "GWTP6M5bxhaJ1k2Kxvf8hhYaHE6jZMhh4cKzFuCpnc83": {
    "sym": "USEFUL",
@@ -9,7 +9,7 @@
    "peak": 0.002056,
    "entry": 0.0009924353088000002,
    "kind": "standard",
-   "cur_price": 0.0009373
+   "cur_price": 0.0009393
   },
   "Fuo63YDw3vg68VVCF79gDc9MrP5k8MUjHkKiRG9Y5Nnj": {
    "sym": "RONNIE",
@@ -19,7 +19,7 @@
    "peak": 0.0004144,
    "entry": 9.77087274e-05,
    "kind": "longshot",
-   "cur_price": 0.0001427
+   "cur_price": 0.0001429
   },
   "5GefefPX1mDs6ZJB1apYmz6fCTCiNJpHturZ9bvFpump": {
    "sym": "Pumpoween",
@@ -29,7 +29,7 @@
    "peak": 0.0005005,
    "entry": 0.00041492499359999997,
    "kind": "standard",
-   "cur_price": 0.0004895
+   "cur_price": 0.0004881
   },
   "BifUDWQFpbTrSxYXBnqCpAVYgcyQGzHzJk2MDmeM2Gyv": {
    "sym": "TCAT",
@@ -39,7 +39,7 @@
    "peak": 0.002276,
    "entry": 0.001360921744,
    "kind": "standard",
-   "cur_price": 0.001336
+   "cur_price": 0.001325
   },
   "GJRxYW8MiEPhJztdh41EXsuZvNQj7sJZRnuKSrTBpump": {
    "sym": "aicate",
@@ -49,17 +49,7 @@
    "peak": 0.0001035,
    "entry": 6.659116983999999e-05,
    "kind": "longshot",
-   "cur_price": 6.383e-05
-  },
-  "J8SJWCmak8yuiVAHvn1aArKnZW1DL2rEE8pGFYb5pump": {
-   "sym": "BABYCATE",
-   "qty": 41081.3937437967,
-   "cost": 15.094999999999999,
-   "opened": "2026-09-14T04:36:32Z",
-   "peak": 0.0006965,
-   "entry": 0.0003674412824,
-   "kind": "longshot",
-   "cur_price": 0.000433
+   "cur_price": 6.389e-05
   },
   "3qvfFEa3mA7WWARTrkt5Y1GJYu7kK2ksD21QKRwomquw": {
    "sym": "VIDA",
@@ -69,7 +59,7 @@
    "peak": 0.0002814,
    "entry": 0.0001436472544,
    "kind": "standard",
-   "cur_price": 0.0001342
+   "cur_price": 0.0001258
   }
  },
  "trades": [
@@ -458,6 +448,17 @@
    "usd": 60.32,
    "slip": 0.002,
    "reason": "std echte wallets 42% (19)"
+  },
+  {
+   "t": "2026-09-14T07:46:40Z",
+   "side": "sell",
+   "sym": "BABYCATE",
+   "addr": "J8SJWCmak8yuiVAHvn1aArKnZW1DL2rEE8pGFYb5pump",
+   "price": 2.205e-06,
+   "usd": 0.07,
+   "pnl": -15.02,
+   "frac": 1.0,
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -2268,6 +2269,10 @@
   {
    "t": "2026-09-14T07:41:43Z",
    "v": 391.26
+  },
+  {
+   "t": "2026-09-14T07:46:47Z",
+   "v": 369.49
   }
  ],
  "started": "2026-09-12T18:11:27Z",
