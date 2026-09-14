@@ -1,5 +1,5 @@
 {
- "cash": 78.23187221209096,
+ "cash": 63.65570709532268,
  "positions": {
   "GWTP6M5bxhaJ1k2Kxvf8hhYaHE6jZMhh4cKzFuCpnc83": {
    "sym": "USEFUL",
@@ -9,7 +9,7 @@
    "peak": 0.002056,
    "entry": 0.0009924353088000002,
    "kind": "standard",
-   "cur_price": 0.0008537
+   "cur_price": 0.0008592
   },
   "Fuo63YDw3vg68VVCF79gDc9MrP5k8MUjHkKiRG9Y5Nnj": {
    "sym": "RONNIE",
@@ -29,7 +29,7 @@
    "peak": 0.0005005,
    "entry": 0.00041492499359999997,
    "kind": "standard",
-   "cur_price": 0.0004767
+   "cur_price": 0.000475
   },
   "BifUDWQFpbTrSxYXBnqCpAVYgcyQGzHzJk2MDmeM2Gyv": {
    "sym": "TCAT",
@@ -39,17 +39,7 @@
    "peak": 0.002276,
    "entry": 0.001360921744,
    "kind": "standard",
-   "cur_price": 0.001307
-  },
-  "GJRxYW8MiEPhJztdh41EXsuZvNQj7sJZRnuKSrTBpump": {
-   "sym": "aicate",
-   "qty": 226681.7062422702,
-   "cost": 15.094999999999999,
-   "opened": "2026-09-13T19:31:33Z",
-   "peak": 0.0001035,
-   "entry": 6.659116983999999e-05,
-   "kind": "longshot",
-   "cur_price": 4.857e-05
+   "cur_price": 0.001675
   },
   "3qvfFEa3mA7WWARTrkt5Y1GJYu7kK2ksD21QKRwomquw": {
    "sym": "VIDA",
@@ -59,7 +49,7 @@
    "peak": 0.00038,
    "entry": 0.0001436472544,
    "kind": "standard",
-   "cur_price": 0.000356
+   "cur_price": 0.000333
   },
   "3qnQ5Vw3HUtWX7zTWA26iAqESsPCf36TWtPDywjL1U1C": {
    "sym": "TEEN",
@@ -69,7 +59,17 @@
    "peak": 0.0001395,
    "entry": 8.748409896e-05,
    "kind": "longshot",
-   "cur_price": 9.463e-05
+   "cur_price": 9.544e-05
+  },
+  "GADj8JQ8iQLQD5S6ScvncJWmGs7PkwHnXsBrEUns6ue5": {
+   "sym": "POKECOIN",
+   "qty": 66327.24802941746,
+   "cost": 15.094999999999999,
+   "opened": "2026-09-14T12:06:17Z",
+   "peak": 0.0002257,
+   "entry": 0.0002275836922,
+   "kind": "longshot",
+   "cur_price": 0.0002257
   }
  },
  "trades": [
@@ -476,6 +476,27 @@
    "sym": "TEEN",
    "addr": "3qnQ5Vw3HUtWX7zTWA26iAqESsPCf36TWtPDywjL1U1C",
    "price": 8.676e-05,
+   "usd": 15.09,
+   "slip": 0.002,
+   "reason": "longshot"
+  },
+  {
+   "t": "2026-09-14T12:06:12Z",
+   "side": "sell",
+   "sym": "aicate",
+   "addr": "GJRxYW8MiEPhJztdh41EXsuZvNQj7sJZRnuKSrTBpump",
+   "price": 2.389e-06,
+   "usd": 0.52,
+   "pnl": -14.58,
+   "frac": 1.0,
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-14T12:06:17Z",
+   "side": "buy",
+   "sym": "POKECOIN",
+   "addr": "GADj8JQ8iQLQD5S6ScvncJWmGs7PkwHnXsBrEUns6ue5",
+   "price": 0.0002257,
    "usd": 15.09,
    "slip": 0.002,
    "reason": "longshot"
@@ -2501,6 +2522,10 @@
   {
    "t": "2026-09-14T12:02:41Z",
    "v": 458.91
+  },
+  {
+   "t": "2026-09-14T12:06:19Z",
+   "v": 455.18
   }
  ],
  "started": "2026-09-12T18:11:27Z",
