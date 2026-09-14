@@ -12,7 +12,6 @@ Ohne genug eigene Historie fuer ein Fenster wird die betroffene Stufe uebersprun
 Laeuft live 1:1 wie Bot A/B/D ueber Jupiter-Swaps (normale AMM-Pools, kein Sonderweg noetig)."""
 import os, time
 from common import *
-from bot_a import rug_ok
 
 DS_SEARCH_PAGES_GT = 3          # GeckoTerminal-Seiten fuer breiteres Universum (etablierte Tokens)
 MAX_UNIVERSE = 500
@@ -118,7 +117,7 @@ def main():
         prices[a] = px; liq = (p.get("liquidity") or {}).get("usd") or 0
         pos["peak"] = max(pos.get("peak", px), px)
         x = px / pos["entry"] - 1
-        held_h = (now - time.mktime(time.strptime(pos["opened"], "%Y-%m-%dT%H:%M:%SZ"))) / 3600
+        held_h = held_seconds(pos) / 3600
         why = None
         if not pos.get("tp1"):
             if x <= -pos["stop"]: why = "stop"
@@ -160,8 +159,11 @@ def main():
             checks.append((sym, tier["name"], f"liq -{liq_drop*100:.0f}% (wahrsch. rug)")); cooldown[a] = today + COOLDOWN_D; continue
         px = float(p.get("priceUsd") or 0)
         if px <= 0: continue
-        ok = rug_ok(a); time.sleep(1.1)
-        if not ok: checks.append((sym, tier["name"], "rugcheck")); cooldown[a] = today + COOLDOWN_D; continue
+        ok, risks = rug_ok(a); time.sleep(1.1)
+        if not ok:
+            checks.append((sym, tier["name"], "rugcheck"))
+            if risks != ["rugcheck unavailable"]: cooldown[a] = today + COOLDOWN_D
+            continue
         if st["cash"] < tier["usd"] + 2: continue
         if pf.buy(sym, a, px, tier["usd"], liq_now, f"{tier['name']} chg {pc:.0f}%"):
             pos = st["positions"][a]
