@@ -1,5 +1,5 @@
 """Gemeinsame Bausteine: Konfiguration, Daten, Fee-Modell, Paper-Executor."""
-import json, os, time, requests
+import json, os, time, calendar, requests
 from datetime import datetime, timezone
 
 DATA = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
@@ -11,8 +11,33 @@ GAS_USD       = 0.02           # pro Transaktion inkl. Priority Fee
 DS = "https://api.dexscreener.com"
 UA = {"User-Agent": "solbot-paper/1.0"}
 
+# ---- Jupiter (echte Fill-Preise, auch im Paper-Modus) ----
+JUP_KEY    = os.environ.get("JUP_KEY")                     # kostenlos: https://portal.jup.ag
+HELIUS_KEY = os.environ.get("HELIUS_KEY")
+JUP_QUOTE  = "https://api.jup.ag/swap/v1/quote"
+USDC       = "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+MAX_IMPACT = 0.10          # Kauf ablehnen, wenn Jupiter > 10 % Price-Impact meldet (macht ein echter Bot auch)
+STALE_ZERO_H = 6           # Position ohne Kurs seit > 6 h -> mit 0 bewerten (tot/gerugt), nicht mit Einstand
+
 def now_iso():
     return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+def parse_iso(s):
+    """ISO-UTC-String -> Unix-Zeit. (time.mktime waere lokale Zeit -> auf CET-Server 1-2 h falsch.)"""
+    return calendar.timegm(time.strptime(s, "%Y-%m-%dT%H:%M:%SZ"))
+
+def held_seconds(pos):
+    return time.time() - parse_iso(pos["opened"])
+
+RC = "https://api.rugcheck.xyz/v1/tokens"
+HARD_RISKS = ("mint", "freeze", "unlocked", "top 10", "single holder")
+
+def rug_ok(addr):
+    """(ok, risks). Fail-CLOSED: wenn Rugcheck nicht antwortet -> (False, ['rugcheck unavailable'])."""
+    s = get(f"{RC}/{addr}/report/summary")
+    if not s: return False, ["rugcheck unavailable"]
+    risks = [r.get("name", "") for r in (s.get("risks") or [])]
+    return not any(k in r.lower() for r in risks for k in HARD_RISKS), risks
 
 def get(url, params=None, retries=3):
     for i in range(retries):
@@ -42,6 +67,34 @@ def append_jsonl(name, obj):
     with open(os.path.join(DATA, name), "a") as f:
         f.write(json.dumps(obj) + "\n")
 
+def rpc(method, params):
+    url = f"https://mainnet.helius-rpc.com/?api-key={HELIUS_KEY}" if HELIUS_KEY else "https://api.mainnet-beta.solana.com"
+    r = requests.post(url, json={"jsonrpc": "2.0", "id": 1, "method": method, "params": params}, headers=UA, timeout=20)
+    r.raise_for_status(); return r.json().get("result")
+
+def token_decimals(mint):
+    """Dezimalstellen eines Mints (fuer Jupiter-Rohbetraege). Gecacht in data/decimals.json."""
+    cache = load("decimals.json", {})
+    if mint in cache: return cache[mint]
+    try: dec = int(rpc("getTokenSupply", [mint])["value"]["decimals"])
+    except Exception as e:
+        print("decimals failed:", mint, e); return None
+    cache[mint] = dec; save("decimals.json", cache); return dec
+
+def jup_quote(input_mint, output_mint, amount_raw):
+    """Echte Jupiter-Quote. Gibt (out_raw, impact) oder None (kein Key / keine Route / Fehler)."""
+    if not JUP_KEY or amount_raw <= 0: return None
+    try:
+        r = requests.get(JUP_QUOTE, params={"inputMint": input_mint, "outputMint": output_mint, "amount": int(amount_raw),
+                                            "slippageBps": 100, "restrictIntermediateTokens": "true"},
+                         headers={"x-api-key": JUP_KEY, **UA}, timeout=15)
+        if r.status_code != 200:
+            print("jup quote", r.status_code, r.text[:120]); return None
+        q = r.json()
+        return int(q["outAmount"]), abs(float(q.get("priceImpactPct") or 0))
+    except Exception as e:
+        print("jup quote failed:", e); return None
+
 def slippage_pct(order_usd, liquidity_usd):
     """Grobe Schätzung: Preisimpact ~ Order / Liquidität, mindestens 0,2 %."""
     if not liquidity_usd:
@@ -57,48 +110,83 @@ def solana_pair(addr):
 class Paper:
     """Simuliertes Portfolio. buy()/sell() sind die einzigen Stellen, die
     fuer echte Trades ausgetauscht werden muessten (Jupiter Swap API)."""
-    def __init__(self, bot):
-        self.bot = bot
+    def __init__(self, bot, quotes=True):
+        self.bot = bot; self.quotes = quotes      # quotes=False: Token ohne Jupiter-Route (z.B. Bonding Curve)
         self.file = f"{bot}_state.json"
         self.s = load(self.file, {"cash": START_CAPITAL, "positions": {}, "trades": [],
                                    "equity": [], "started": now_iso()})
 
     def buy(self, sym, addr, price, usd, liquidity, reason):
         if usd > self.s["cash"] or usd <= 0: return False
-        slip = slippage_pct(usd, liquidity)
-        cost = usd * (1 + SWAP_FEE + slip) + GAS_USD
-        if cost > self.s["cash"]: usd = (self.s["cash"] - GAS_USD) / (1 + SWAP_FEE + slip); cost = self.s["cash"]
-        qty = usd / (price * (1 + slip))
+        src = "est"
+        q = None
+        if self.quotes and JUP_KEY:
+            dec = token_decimals(addr)
+            q = jup_quote(USDC, addr, usd * 1e6) if dec is not None else None
+            if q is None:
+                print(f"  {sym}: keine Jupiter-Route/Quote -> kein Kauf"); return False
+            out_raw, impact = q
+            if impact > MAX_IMPACT or out_raw <= 0:
+                print(f"  {sym}: impact {impact:.1%} > {MAX_IMPACT:.0%} -> kein Kauf"); return False
+            qty = out_raw / 10 ** dec
+            cost = usd + GAS_USD                       # Jupiter-Out enthaelt schon DEX-Fees + Impact
+            if cost > self.s["cash"]: return False
+            slip = impact; src = "jup"
+        else:
+            slip = slippage_pct(usd, liquidity)
+            cost = usd * (1 + SWAP_FEE + slip) + GAS_USD
+            if cost > self.s["cash"]: usd = (self.s["cash"] - GAS_USD) / (1 + SWAP_FEE + slip); cost = self.s["cash"]
+            qty = usd / (price * (1 + slip))
         self.s["cash"] -= cost
         pos = self.s["positions"].get(addr, {"sym": sym, "qty": 0, "cost": 0, "opened": now_iso(), "peak": price})
         pos["qty"] += qty; pos["cost"] += cost; pos["entry"] = pos["cost"] / pos["qty"]
         self.s["positions"][addr] = pos
         self.s["trades"].append({"t": now_iso(), "side": "buy", "sym": sym, "addr": addr,
-                                 "price": price, "usd": round(cost, 2), "slip": round(slip, 4), "reason": reason})
+                                 "price": price, "fill": round(cost / qty, 12), "usd": round(cost, 2), "slip": round(slip, 4),
+                                 "quote": src, "reason": reason})
         return True
 
     def sell(self, addr, price, frac, liquidity, reason):
         pos = self.s["positions"].get(addr)
         if not pos: return False
         qty = pos["qty"] * frac
-        gross = qty * price
-        slip = slippage_pct(gross, liquidity)
-        net = gross * (1 - SWAP_FEE - slip) - GAS_USD
+        src = "est"
+        if self.quotes and JUP_KEY:
+            dec = token_decimals(addr)
+            q = jup_quote(addr, USDC, qty * 10 ** dec) if dec is not None else None
+            if q is None:
+                pos["no_route"] = now_iso(); print(f"  {pos['sym']}: keine Jupiter-Route -> Verkauf nicht moeglich")
+                return False
+            out_raw, slip = q
+            net = out_raw / 1e6 - GAS_USD; src = "jup"
+            pos.pop("no_route", None)
+        else:
+            gross = qty * price
+            slip = slippage_pct(gross, liquidity)
+            net = gross * (1 - SWAP_FEE - slip) - GAS_USD
         self.s["cash"] += max(net, 0)
         cost_part = pos["cost"] * frac
         pos["qty"] -= qty; pos["cost"] -= cost_part
         pnl = net - cost_part
         self.s["trades"].append({"t": now_iso(), "side": "sell", "sym": pos["sym"], "addr": addr,
                                  "price": price, "usd": round(net, 2), "pnl": round(pnl, 2),
-                                 "frac": frac, "reason": reason})
+                                 "frac": frac, "slip": round(slip, 4), "quote": src, "reason": reason})
         if pos["qty"] <= 1e-9 or frac >= 0.999:
             del self.s["positions"][addr]
         return True
 
     def mark(self, prices):
+        """Equity. Ohne aktuellen Kurs: letzter bekannter Kurs; nach STALE_ZERO_H ohne Kurs -> 0 (tot).
+        Nie der Einstandspreis - der wuerde einen Rug als Break-even tarnen."""
+        now = time.time(); val = self.s["cash"]
         for a, p in self.s["positions"].items():
-            if a in prices: p["cur_price"] = prices[a]
-        val = self.s["cash"] + sum(p["qty"] * prices.get(a, p["entry"]) for a, p in self.s["positions"].items())
+            if a in prices and prices[a] > 0:
+                p["cur_price"] = prices[a]; p.pop("no_quote_since", None)
+            else:
+                p.setdefault("no_quote_since", now_iso())
+            stale_h = (now - parse_iso(p["no_quote_since"])) / 3600 if p.get("no_quote_since") else 0
+            px = 0.0 if stale_h > STALE_ZERO_H else p.get("cur_price", 0.0)
+            p["mark"] = px; val += p["qty"] * px
         self.s["equity"].append({"t": now_iso(), "v": round(val, 2)})
         self.s["equity"] = self.s["equity"][-5000:]
         return val
