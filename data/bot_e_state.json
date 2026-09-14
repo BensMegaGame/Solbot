@@ -1,5 +1,5 @@
 {
- "cash": 146.77030561795587,
+ "cash": 236.30324361795587,
  "positions": {
   "72yxYmhLgDGwdyi2b9GjDynBB6VuG3kDxNKqDbzXh5bi": {
    "sym": "WOW",
@@ -13,8 +13,8 @@
    "tp1_gain": 0.75,
    "moon_x": 5.0,
    "max_hold_h": 24,
-   "cur_price": 5.24e-05,
-   "mark": 5.24e-05,
+   "cur_price": 5.196e-05,
+   "mark": 5.196e-05,
    "tp1": true
   },
   "2bRoY87nsBq84TTKJKFD5gYxVLPhrTPKK9MaheSLCCLg": {
@@ -44,38 +44,39 @@
    "tp1_gain": 0.4,
    "moon_x": 3.0,
    "max_hold_h": 48,
-   "mark": 0.0001331,
-   "cur_price": 0.0001331
+   "mark": 0.0001307,
+   "cur_price": 0.0001307
   },
   "8WXiWXTMNPxmzpZdEmGBYNc3j7B5n3VEqgD6LjXAx2Xp": {
    "sym": "LOTTO",
    "qty": 570903.239003,
    "cost": 80.02,
    "opened": "2026-09-14T18:51:48Z",
-   "peak": 0.0001478,
+   "peak": 0.0001498,
    "entry": 0.00014016385708328326,
    "tier": "T4",
    "stop": 0.25,
    "tp1_gain": 0.4,
    "moon_x": 3.0,
    "max_hold_h": 48,
-   "mark": 0.0001478,
-   "cur_price": 0.0001478
+   "mark": 0.0001498,
+   "cur_price": 0.0001498
   },
   "DSgjVUFC6NA59YuxiEDSxgs6zP4jjwSuoYJ3uS7WboeH": {
    "sym": "SATS",
-   "qty": 641886.846894,
-   "cost": 60.02,
+   "qty": 128377.36937879998,
+   "cost": 12.003999999999998,
    "opened": "2026-09-14T19:11:41Z",
-   "peak": 0.0001438,
+   "peak": 0.0001811,
    "entry": 9.350557701942068e-05,
    "tier": "T3",
    "stop": 0.3,
    "tp1_gain": 0.65,
    "moon_x": 3.0,
    "max_hold_h": 36,
-   "mark": 0.0001438,
-   "cur_price": 0.0001438
+   "mark": 0.0001811,
+   "cur_price": 0.0001811,
+   "tp1": true
   }
  },
  "trades": [
@@ -245,6 +246,21 @@
    "slip": 0.0591,
    "quote": "jup",
    "reason": "T3 chg -31%"
+  },
+  {
+   "t": "2026-09-14T19:26:42Z",
+   "side": "sell",
+   "sym": "SATS",
+   "addr": "DSgjVUFC6NA59YuxiEDSxgs6zP4jjwSuoYJ3uS7WboeH",
+   "price": 0.0001811,
+   "usd": 89.53,
+   "pnl": 41.52,
+   "peak_x": 1.937,
+   "held_h": 0.3,
+   "frac": 0.8,
+   "slip": 0.0587,
+   "quote": "jup",
+   "reason": "tp1"
   }
  ],
  "equity": [
@@ -603,6 +619,10 @@
   {
    "t": "2026-09-14T19:21:50Z",
    "v": 450.97
+  },
+  {
+   "t": "2026-09-14T19:26:42Z",
+   "v": 471.05
   }
  ],
  "started": "2026-09-14T12:02:41Z",
