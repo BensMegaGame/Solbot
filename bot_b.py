@@ -20,7 +20,7 @@ def tradeable_sym(sym):
 
 # ---------- Universum ----------
 MIN_AGE_D, MAX_AGE_D   = 14, 56
-MIN_MCAP, MAX_MCAP     = 300_000, 30_000_000
+MIN_MCAP, MAX_MCAP     = 10_000, 300_000
 MIN_LIQ, MIN_LIQ_RATIO = 50_000, 0.04
 MIN_VOL24              = 40_000
 # ---------- Einstieg ----------
