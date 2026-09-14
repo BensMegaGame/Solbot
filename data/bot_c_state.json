@@ -1,16 +1,16 @@
 {
- "cash": 409.94000000000005,
+ "cash": 429.64146800000003,
  "positions": {
   "C1xyeVk4NDAcsVXr2r7Jqq3a71yUdnkUupzdPXHypump": {
    "sym": "bikenina",
    "qty": 124792.82045,
    "cost": 30.02,
    "opened": "2026-09-14T14:41:04Z",
-   "peak": 0.0002986,
+   "peak": 0.0003427,
    "entry": 0.00024055871076355658,
    "mig": 1789395049.0,
-   "cur_price": 0.0002936,
-   "mark": 0.0002936
+   "cur_price": 0.0003427,
+   "mark": 0.0003427
   },
   "UNHwuKaSGKP7qmYMFS5aSJdqifHj6CiXWvtoeYNpump": {
    "sym": "fomo",
@@ -20,19 +20,8 @@
    "peak": 0.004236,
    "entry": 0.004253990517233902,
    "mig": 1789397153.0,
-   "cur_price": 0.004236,
-   "mark": 0.004236
-  },
-  "5Bkk5HeKSZ7LS3GAFevW2Q4wURqGtyd3pfKLYbB3pump": {
-   "sym": "TRADY",
-   "qty": 116869.507061,
-   "cost": 30.02,
-   "opened": "2026-09-14T15:01:08Z",
-   "peak": 0.0002255,
-   "entry": 0.0002568676873457768,
-   "mig": 1789396622.0,
-   "cur_price": 0.0002255,
-   "mark": 0.0002255
+   "cur_price": 0.004211,
+   "mark": 0.004211
   }
  },
  "trades": [
@@ -71,6 +60,19 @@
    "slip": 0.0113,
    "quote": "jup",
    "reason": "postgrad 24min"
+  },
+  {
+   "t": "2026-09-14T15:06:04Z",
+   "side": "sell",
+   "sym": "TRADY",
+   "addr": "5Bkk5HeKSZ7LS3GAFevW2Q4wURqGtyd3pfKLYbB3pump",
+   "price": 0.0001724,
+   "usd": 19.7,
+   "pnl": -10.32,
+   "frac": 1.0,
+   "slip": 0.014,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -101,6 +103,10 @@
   {
    "t": "2026-09-14T15:01:08Z",
    "v": 502.83
+  },
+  {
+   "t": "2026-09-14T15:06:04Z",
+   "v": 502.12
   }
  ],
  "started": "2026-09-14T14:30:55Z",

@@ -1,5 +1,5 @@
 {
- "cash": 379.66,
+ "cash": 339.64000000000004,
  "positions": {
   "CFNRDaxFcvRwRSNnA5cHrCCr6AHhk9dNkHWpRUjNupFL": {
    "sym": "RAYCAT",
@@ -15,15 +15,16 @@
   },
   "9PSxYDFLPbSVx2PKjYRMumW14xtxViQU3Qmi7M8NQ32W": {
    "sym": "INCOME",
-   "qty": 280184.426620721,
-   "cost": 60.02,
+   "qty": 417038.045935878,
+   "cost": 100.04,
    "opened": "2026-09-14T14:25:53Z",
-   "peak": 0.0002396,
-   "entry": 0.00021421604592337907,
+   "peak": 0.0002801,
+   "entry": 0.00023988219054570797,
    "entry_liq": 61954.83,
    "entry_vol": 170012.14,
-   "cur_price": 0.0002396,
-   "mark": 0.0002396
+   "cur_price": 0.0002801,
+   "mark": 0.0002801,
+   "added": true
   }
  },
  "trades": [
@@ -48,6 +49,18 @@
    "slip": 0.0312,
    "quote": "jup",
    "reason": "ok vol-trend 3.24 buy 0.61"
+  },
+  {
+   "t": "2026-09-14T15:06:00Z",
+   "side": "buy",
+   "sym": "INCOME",
+   "addr": "9PSxYDFLPbSVx2PKjYRMumW14xtxViQU3Qmi7M8NQ32W",
+   "price": 0.0002801,
+   "fill": 0.000292429241,
+   "usd": 40.02,
+   "slip": 0.0349,
+   "quote": "jup",
+   "reason": "add"
   }
  ],
  "equity": [
@@ -2430,6 +2443,10 @@
   {
    "t": "2026-09-14T15:01:02Z",
    "v": 519.59
+  },
+  {
+   "t": "2026-09-14T15:06:00Z",
+   "v": 529.25
   }
  ],
  "started": "2026-09-11T10:50:37Z",
