@@ -1,5 +1,5 @@
 {
- "cash": 365.23795812644204,
+ "cash": 325.0169196179558,
  "positions": {
   "8StnEDgfxfvxpCUUMH9ChXaqAkGGtxvnfxCAYHYnPXja": {
    "sym": "FLOPPY",
@@ -12,7 +12,8 @@
    "stop": 0.3,
    "tp1_gain": 0.65,
    "moon_x": 3.0,
-   "max_hold_h": 36
+   "max_hold_h": 36,
+   "cur_price": 6.512e-05
   },
   "72yxYmhLgDGwdyi2b9GjDynBB6VuG3kDxNKqDbzXh5bi": {
    "sym": "WOW",
@@ -21,6 +22,20 @@
    "opened": "2026-09-14T13:11:32Z",
    "peak": 3.813e-05,
    "entry": 3.844972621809198e-05,
+   "tier": "T2",
+   "stop": 0.35,
+   "tp1_gain": 0.75,
+   "moon_x": 5.0,
+   "max_hold_h": 24,
+   "cur_price": 3.395e-05
+  },
+  "2bRoY87nsBq84TTKJKFD5gYxVLPhrTPKK9MaheSLCCLg": {
+   "sym": "UNC",
+   "qty": 814676.0273583293,
+   "cost": 40.22103850848625,
+   "opened": "2026-09-14T13:16:39Z",
+   "peak": 4.9e-05,
+   "entry": 4.9370592920117094e-05,
    "tier": "T2",
    "stop": 0.35,
    "tp1_gain": 0.75,
@@ -69,6 +84,16 @@
    "usd": 40.24,
    "slip": 0.0024,
    "reason": "T2 chg -39%"
+  },
+  {
+   "t": "2026-09-14T13:16:39Z",
+   "side": "buy",
+   "sym": "UNC",
+   "addr": "2bRoY87nsBq84TTKJKFD5gYxVLPhrTPKK9MaheSLCCLg",
+   "price": 4.9e-05,
+   "usd": 40.22,
+   "slip": 0.002,
+   "reason": "T2 chg -36%"
   }
  ],
  "equity": [
@@ -131,6 +156,10 @@
   {
    "t": "2026-09-14T13:11:32Z",
    "v": 465.85
+  },
+  {
+   "t": "2026-09-14T13:16:39Z",
+   "v": 460.41
   }
  ],
  "started": "2026-09-14T12:02:41Z",

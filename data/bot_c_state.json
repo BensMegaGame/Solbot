@@ -1,5 +1,5 @@
 {
- "cash": 372.57329517543417,
+ "cash": 346.98300300623464,
  "positions": {
   "6HQdAaugomYDk5yBdFGv4uLDjRtrH23o3oZh8tywpump": {
    "sym": "LONGALON",
@@ -9,17 +9,17 @@
    "peak": 9.02812363587e-05,
    "entry": 6.701578863343293e-05,
    "liq": 15008.0,
-   "cur_price": 5.56873661323e-05
+   "cur_price": 5.40602253958e-05
   },
-  "HbsNbyKWaYAEVBYpEtq1hxHQfwDDe5q24xWuAZfKNED4": {
-   "sym": "AI",
-   "qty": 911599.6223662165,
+  "7YkVB7wohCf51NFWMWY2h6FHpJsYa8VZVDvAczx8pump": {
+   "sym": "thewok",
+   "qty": 807117.4055871171,
    "cost": 30.169999999999998,
-   "opened": "2026-09-14T07:31:35Z",
-   "peak": 3.95067840032e-05,
-   "entry": 3.30956696994767e-05,
-   "liq": 7312.0,
-   "cur_price": 3.89278598152e-05
+   "opened": "2026-09-14T13:15:59Z",
+   "peak": 3.70951234024e-05,
+   "entry": 3.737993975988363e-05,
+   "liq": 7952.0,
+   "cur_price": 3.70951234024e-05
   }
  },
  "trades": [
@@ -105,6 +105,27 @@
    "usd": 30.17,
    "slip": 0.002,
    "reason": "grad 96% +3.3"
+  },
+  {
+   "t": "2026-09-14T13:15:58Z",
+   "side": "sell",
+   "sym": "AI",
+   "addr": "HbsNbyKWaYAEVBYpEtq1hxHQfwDDe5q24xWuAZfKNED4",
+   "price": 5.07110997754e-06,
+   "usd": 4.58,
+   "pnl": -25.59,
+   "frac": 1.0,
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-14T13:15:59Z",
+   "side": "buy",
+   "sym": "thewok",
+   "addr": "7YkVB7wohCf51NFWMWY2h6FHpJsYa8VZVDvAczx8pump",
+   "price": 3.70951234024e-05,
+   "usd": 30.17,
+   "slip": 0.002,
+   "reason": "grad 98% +7.6"
   }
  ],
  "equity": [
@@ -1739,10 +1760,14 @@
   {
    "t": "2026-09-14T13:05:56Z",
    "v": 433.13
+  },
+  {
+   "t": "2026-09-14T13:15:59Z",
+   "v": 401.26
   }
  ],
  "started": "2026-09-11T10:50:57Z",
  "strategy": "graduation",
  "codex": true,
- "last_poll": 1789391155.653682
+ "last_poll": 1789391757.873628
 }
