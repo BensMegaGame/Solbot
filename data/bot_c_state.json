@@ -1,5 +1,5 @@
 {
- "cash": 205.44419100000013,
+ "cash": 175.42419100000012,
  "positions": {
   "NWq7Y6UUpkneabRgKqmrHPeGepLZbxw4pFYBi79pump": {
    "sym": "FTFS",
@@ -9,8 +9,8 @@
    "peak": 0.005578,
    "entry": 0.005343477355620453,
    "mig": 1789407232.0,
-   "cur_price": 0.005571,
-   "mark": 0.005571
+   "cur_price": 0.005573,
+   "mark": 0.005573
   },
   "zsCYqs39DWS4DPpJvzbAqLVZmhQzwMnyb2UTjctpump": {
    "sym": "USGR",
@@ -20,8 +20,8 @@
    "peak": 0.009412,
    "entry": 0.005627039439797595,
    "mig": 1789408102.0,
-   "cur_price": 0.009412,
-   "mark": 0.009412,
+   "cur_price": 0.009388,
+   "mark": 0.009388,
    "tp1": true
   },
   "PEsT7duf8MDrDax42dH37v7bVdHhk9ewNm1L1QCpump": {
@@ -29,22 +29,22 @@
    "qty": 212.884085,
    "cost": 30.02,
    "opened": "2026-09-14T20:46:08Z",
-   "peak": 0.1415,
+   "peak": 0.1417,
    "entry": 0.14101570814934333,
    "mig": 1789417990.0,
-   "cur_price": 0.1409,
-   "mark": 0.1409
+   "cur_price": 0.1417,
+   "mark": 0.1417
   },
   "8XcATDK56Axr3sDkh9HhzN1AWXUefY4Vdo8PdXopump": {
    "sym": "OpenAI",
    "qty": 7912.654976,
    "cost": 30.02,
    "opened": "2026-09-14T21:11:04Z",
-   "peak": 0.003889,
+   "peak": 0.0039,
    "entry": 0.0037939225318245444,
    "mig": 1789418644.0,
-   "cur_price": 0.003889,
-   "mark": 0.003889
+   "cur_price": 0.0039,
+   "mark": 0.0039
   },
   "R5djwmnzNmsytb8BqTohFDW555Q531jRXNeRwigpump": {
    "sym": "STRATEGY",
@@ -54,8 +54,19 @@
    "peak": 0.004761,
    "entry": 0.004766716105578943,
    "mig": 1789424082.0,
-   "cur_price": 0.004731,
-   "mark": 0.004731
+   "cur_price": 0.004741,
+   "mark": 0.004741
+  },
+  "CkobbSiZC6oPt5LjtzX3t14AMUhPXjo6T8gnDDmupump": {
+   "sym": "MEWCATI",
+   "qty": 118059.94663,
+   "cost": 30.02,
+   "opened": "2026-09-14T23:21:02Z",
+   "peak": 0.0002487,
+   "entry": 0.0002542776009723493,
+   "mig": 1789426081.0,
+   "cur_price": 0.0002487,
+   "mark": 0.0002487
   }
  },
  "trades": [
@@ -676,6 +687,18 @@
    "slip": 0.011,
    "quote": "jup",
    "reason": "postgrad 16min"
+  },
+  {
+   "t": "2026-09-14T23:21:02Z",
+   "side": "buy",
+   "sym": "MEWCATI",
+   "addr": "CkobbSiZC6oPt5LjtzX3t14AMUhPXjo6T8gnDDmupump",
+   "price": 0.0002487,
+   "fill": 0.000254277601,
+   "usd": 30.02,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "postgrad 33min"
   }
  ],
  "equity": [
@@ -1102,6 +1125,10 @@
   {
    "t": "2026-09-14T23:16:00Z",
    "v": 352.41
+  },
+  {
+   "t": "2026-09-14T23:21:02Z",
+   "v": 352.02
   }
  ],
  "started": "2026-09-14T14:30:55Z",
