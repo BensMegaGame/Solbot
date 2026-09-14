@@ -1,17 +1,6 @@
 {
- "cash": 170.71099400000014,
+ "cash": 189.03374000000014,
  "positions": {
-  "UNHwuKaSGKP7qmYMFS5aSJdqifHj6CiXWvtoeYNpump": {
-   "sym": "fomo",
-   "qty": 7056.903366,
-   "cost": 30.02,
-   "opened": "2026-09-14T14:56:08Z",
-   "peak": 0.004635,
-   "entry": 0.004253990517233902,
-   "mig": 1789397153.0,
-   "cur_price": 0.004622,
-   "mark": 0.004622
-  },
   "ANC8Qsky43JdjBXHqWwtLDtsspxkjbPsjiCaY3ypump": {
    "sym": "DVLT",
    "qty": 20541.855084,
@@ -20,8 +9,8 @@
    "peak": 0.001603,
    "entry": 0.001461406473623821,
    "mig": 1789399431.0,
-   "cur_price": 0.001588,
-   "mark": 0.001588
+   "cur_price": 0.001589,
+   "mark": 0.001589
   },
   "NWq7Y6UUpkneabRgKqmrHPeGepLZbxw4pFYBi79pump": {
    "sym": "FTFS",
@@ -31,8 +20,8 @@
    "peak": 0.005571,
    "entry": 0.005343477355620453,
    "mig": 1789407232.0,
-   "cur_price": 0.005518,
-   "mark": 0.005518
+   "cur_price": 0.005557,
+   "mark": 0.005557
   },
   "zsCYqs39DWS4DPpJvzbAqLVZmhQzwMnyb2UTjctpump": {
    "sym": "USGR",
@@ -42,8 +31,8 @@
    "peak": 0.005802,
    "entry": 0.005627039439797595,
    "mig": 1789408102.0,
-   "cur_price": 0.005775,
-   "mark": 0.005775
+   "cur_price": 0.00573,
+   "mark": 0.00573
   },
   "pbELpkr4dQzvtHEe1AhTsGf7tqQ6NmGzEd8a9p3pump": {
    "sym": "FAIR",
@@ -53,20 +42,8 @@
    "peak": 0.006614,
    "entry": 0.006502237232367089,
    "mig": 1789412342.0,
-   "cur_price": 0.006542,
-   "mark": 0.006542
-  },
-  "BsT8W5QonrJuVVre5ivab62cJsxYYYAoZqiPu3uHpump": {
-   "sym": "USD",
-   "qty": 45710.0338595,
-   "cost": 15.01,
-   "opened": "2026-09-14T20:31:09Z",
-   "peak": 0.0005675,
-   "entry": 0.00032837429187072115,
-   "mig": 1789416596.0,
-   "cur_price": 0.0004383,
-   "mark": 0.0004383,
-   "tp1": true
+   "cur_price": 0.006537,
+   "mark": 0.006537
   },
   "PEsT7duf8MDrDax42dH37v7bVdHhk9ewNm1L1QCpump": {
    "sym": "WOFI",
@@ -76,8 +53,19 @@
    "peak": 0.1402,
    "entry": 0.14101570814934333,
    "mig": 1789417990.0,
-   "cur_price": 0.1402,
-   "mark": 0.1402
+   "cur_price": 0.1393,
+   "mark": 0.1393
+  },
+  "J2rrsW9b9XtjjbVeE7rsPgQWnPrCMweqvL1PqJjwpump": {
+   "sym": "SEMI",
+   "qty": 107198.545536,
+   "cost": 30.02,
+   "opened": "2026-09-14T21:01:05Z",
+   "peak": 0.0002478,
+   "entry": 0.000280041112963781,
+   "mig": 1789418290.0,
+   "cur_price": 0.0002478,
+   "mark": 0.0002478
   }
  },
  "trades": [
@@ -572,6 +560,48 @@
    "slip": 0.0065,
    "quote": "jup",
    "reason": "trail"
+  },
+  {
+   "t": "2026-09-14T21:01:04Z",
+   "side": "sell",
+   "sym": "fomo",
+   "addr": "UNHwuKaSGKP7qmYMFS5aSJdqifHj6CiXWvtoeYNpump",
+   "price": 0.004616,
+   "usd": 32.2,
+   "pnl": 2.18,
+   "peak_x": 1.09,
+   "held_h": 6.1,
+   "frac": 1.0,
+   "slip": 0.0098,
+   "quote": "jup",
+   "reason": "time"
+  },
+  {
+   "t": "2026-09-14T21:01:04Z",
+   "side": "sell",
+   "sym": "USD",
+   "addr": "BsT8W5QonrJuVVre5ivab62cJsxYYYAoZqiPu3uHpump",
+   "price": 0.0003713,
+   "usd": 16.14,
+   "pnl": 1.13,
+   "peak_x": 1.728,
+   "held_h": 0.5,
+   "frac": 1.0,
+   "slip": 0.0113,
+   "quote": "jup",
+   "reason": "trail"
+  },
+  {
+   "t": "2026-09-14T21:01:05Z",
+   "side": "buy",
+   "sym": "SEMI",
+   "addr": "J2rrsW9b9XtjjbVeE7rsPgQWnPrCMweqvL1PqJjwpump",
+   "price": 0.0002478,
+   "fill": 0.000280041113,
+   "usd": 30.02,
+   "slip": 0.024,
+   "quote": "jup",
+   "reason": "postgrad 23min"
   }
  ],
  "equity": [
@@ -886,6 +916,10 @@
   {
    "t": "2026-09-14T20:56:04Z",
    "v": 377.84
+  },
+  {
+   "t": "2026-09-14T21:01:05Z",
+   "v": 369.86
   }
  ],
  "started": "2026-09-14T14:30:55Z",
