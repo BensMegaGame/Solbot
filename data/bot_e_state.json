@@ -1,5 +1,5 @@
 {
- "cash": 385.44195661795584,
+ "cash": 325.42195661795586,
  "positions": {
   "72yxYmhLgDGwdyi2b9GjDynBB6VuG3kDxNKqDbzXh5bi": {
    "sym": "WOW",
@@ -13,8 +13,8 @@
    "tp1_gain": 0.75,
    "moon_x": 5.0,
    "max_hold_h": 24,
-   "cur_price": 4.625e-05,
-   "mark": 4.625e-05,
+   "cur_price": 5.115e-05,
+   "mark": 5.115e-05,
    "tp1": true
   },
   "2bRoY87nsBq84TTKJKFD5gYxVLPhrTPKK9MaheSLCCLg": {
@@ -29,8 +29,23 @@
    "tp1_gain": 0.75,
    "moon_x": 5.0,
    "max_hold_h": 24,
-   "cur_price": 4.834e-05,
-   "mark": 4.834e-05
+   "cur_price": 4.733e-05,
+   "mark": 4.733e-05
+  },
+  "CNWxmoBSQZo2Sgp5KSAK5m9FwSqDbXQRP4CNMuoe78Gm": {
+   "sym": "TWINE",
+   "qty": 504113.09547,
+   "cost": 60.02,
+   "opened": "2026-09-14T17:01:44Z",
+   "peak": 0.0001158,
+   "entry": 0.00011906058489522381,
+   "tier": "T3",
+   "stop": 0.3,
+   "tp1_gain": 0.65,
+   "moon_x": 3.0,
+   "max_hold_h": 36,
+   "no_quote_since": "2026-09-14T17:01:44Z",
+   "mark": 0.0
   }
  },
  "trades": [
@@ -137,6 +152,18 @@
    "slip": 0.0405,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-14T17:01:44Z",
+   "side": "buy",
+   "sym": "TWINE",
+   "addr": "CNWxmoBSQZo2Sgp5KSAK5m9FwSqDbXQRP4CNMuoe78Gm",
+   "price": 0.0001158,
+   "fill": 0.000119060585,
+   "usd": 60.02,
+   "slip": 0.0129,
+   "quote": "jup",
+   "reason": "T3 chg -33%"
   }
  ],
  "equity": [
@@ -379,6 +406,10 @@
   {
    "t": "2026-09-14T16:56:40Z",
    "v": 434.5
+  },
+  {
+   "t": "2026-09-14T17:01:44Z",
+   "v": 374.69
   }
  ],
  "started": "2026-09-14T12:02:41Z",
