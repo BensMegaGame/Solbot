@@ -1,5 +1,5 @@
 {
- "cash": 356.88597661795586,
+ "cash": 385.44195661795584,
  "positions": {
   "72yxYmhLgDGwdyi2b9GjDynBB6VuG3kDxNKqDbzXh5bi": {
    "sym": "WOW",
@@ -13,8 +13,8 @@
    "tp1_gain": 0.75,
    "moon_x": 5.0,
    "max_hold_h": 24,
-   "cur_price": 4.403e-05,
-   "mark": 4.403e-05,
+   "cur_price": 5.593e-05,
+   "mark": 5.593e-05,
    "tp1": true
   },
   "2bRoY87nsBq84TTKJKFD5gYxVLPhrTPKK9MaheSLCCLg": {
@@ -29,23 +29,8 @@
    "tp1_gain": 0.75,
    "moon_x": 5.0,
    "max_hold_h": 24,
-   "cur_price": 4.422e-05,
-   "mark": 4.422e-05
-  },
-  "7ghKoBZBAjGSgbxix5K5kFhQzu9mxVmbdPxRT8j27eEo": {
-   "sym": "ETAC",
-   "qty": 646046.795451,
-   "cost": 60.02,
-   "opened": "2026-09-14T13:56:30Z",
-   "peak": 0.0001073,
-   "entry": 9.290348690314381e-05,
-   "tier": "T3",
-   "stop": 0.3,
-   "tp1_gain": 0.65,
-   "moon_x": 3.0,
-   "max_hold_h": 36,
-   "mark": 0.0001073,
-   "cur_price": 0.0001073
+   "cur_price": 4.311e-05,
+   "mark": 4.311e-05
   }
  },
  "trades": [
@@ -135,6 +120,21 @@
    "pnl": -22.14,
    "frac": 1.0,
    "slip": 0.0546,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-14T16:16:47Z",
+   "side": "sell",
+   "sym": "ETAC",
+   "addr": "7ghKoBZBAjGSgbxix5K5kFhQzu9mxVmbdPxRT8j27eEo",
+   "price": 5.092e-05,
+   "usd": 28.56,
+   "pnl": -31.46,
+   "peak_x": 1.155,
+   "held_h": 2.3,
+   "frac": 1.0,
+   "slip": 0.0405,
    "quote": "jup",
    "reason": "stop"
   }
@@ -343,6 +343,10 @@
   {
    "t": "2026-09-14T16:11:45Z",
    "v": 471.45
+  },
+  {
+   "t": "2026-09-14T16:16:47Z",
+   "v": 432.27
   }
  ],
  "started": "2026-09-14T12:02:41Z",
