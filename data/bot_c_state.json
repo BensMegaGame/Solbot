@@ -1,6 +1,17 @@
 {
- "cash": 457.2568562681582,
- "positions": {},
+ "cash": 427.08685626815816,
+ "positions": {
+  "mWAqBmBh2LM5v2zqCKdkEinNLLiyxFxSRMahBzipump": {
+   "sym": "IRONMIKE",
+   "qty": 869985.3701018067,
+   "cost": 30.169999999999998,
+   "opened": "2026-09-14T03:21:31Z",
+   "peak": 3.44145094727e-05,
+   "entry": 3.4678744076431385e-05,
+   "liq": 7553.0,
+   "cur_price": 3.44145094727e-05
+  }
+ },
  "trades": [
   {
    "t": "2026-09-13T18:40:45Z",
@@ -43,6 +54,16 @@
    "pnl": -16.61,
    "frac": 1.0,
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-14T03:21:31Z",
+   "side": "buy",
+   "sym": "IRONMIKE",
+   "addr": "mWAqBmBh2LM5v2zqCKdkEinNLLiyxFxSRMahBzipump",
+   "price": 3.44145094727e-05,
+   "usd": 30.17,
+   "slip": 0.002,
+   "reason": "grad 97% +5.2"
   }
  ],
  "equity": [
@@ -1441,10 +1462,14 @@
   {
    "t": "2026-09-14T03:11:29Z",
    "v": 457.26
+  },
+  {
+   "t": "2026-09-14T03:21:31Z",
+   "v": 457.03
   }
  ],
  "started": "2026-09-11T10:50:57Z",
  "strategy": "graduation",
  "codex": true,
- "last_poll": 1789355489.3972
+ "last_poll": 1789356089.6863098
 }
