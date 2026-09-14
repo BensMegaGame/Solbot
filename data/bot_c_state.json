@@ -10,7 +10,8 @@
    "entry": 6.701578863343293e-05,
    "liq": 15008.0,
    "cur_price": 5.29479353733e-05,
-   "mark": 5.29479353733e-05
+   "mark": 5.29479353733e-05,
+   "no_quote_since": "2026-09-14T14:20:54Z"
   },
   "7YkVB7wohCf51NFWMWY2h6FHpJsYa8VZVDvAczx8pump": {
    "sym": "thewok",
@@ -20,8 +21,8 @@
    "peak": 4.63990805533e-05,
    "entry": 3.737993975988363e-05,
    "liq": 7952.0,
-   "cur_price": 4.63990805533e-05,
-   "mark": 4.63990805533e-05
+   "cur_price": 4.35e-05,
+   "mark": 4.35e-05
   }
  },
  "trades": [
@@ -1782,10 +1783,13 @@
   {
    "t": "2026-09-14T14:05:50Z",
    "v": 408.27
+  },
+  {
+   "t": "2026-09-14T14:20:54Z",
+   "v": 405.93
   }
  ],
  "started": "2026-09-11T10:50:57Z",
- "strategy": "graduation",
- "codex": true,
- "last_poll": 1789394749.7560747
+ "strategy": "post_graduation",
+ "codex": true
 }
