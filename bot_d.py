@@ -3,7 +3,7 @@ Kein Nachkaufen. Positionsgroesse in % des Cash sobald Portfolio > 500 $ (Deckel
 Holder-/Timing-Pruefung braucht HELIUS_KEY (Free-Tier reicht); ohne Key werden diese Checks uebersprungen."""
 import os, time, statistics
 from common import *
-from bot_a import candidates, metrics, passes, rug_ok
+from bot_a import candidates, metrics, passes
 
 # ---- Positionsgroesse ----
 BASE_USD, PCT_CASH, CAP_USD, START_EQ = 60.0, 0.15, 120.0, 500.0
@@ -22,7 +22,6 @@ LS_MIN_LIQ, LS_MIN_MCAP, LS_MAX_MCAP = 20_000, 30_000, 500_000
 LS_TP1_X, LS_TP1_FRAC, LS_TP2_X, LS_STOP, LS_TRAIL, LS_MAX_HOLD_D = 5.0, 0.34, 20.0, -0.6, -0.40, 5
 
 HELIUS = os.environ.get("HELIUS_KEY")
-RC = "https://api.rugcheck.xyz/v1/tokens"
 
 # ---------- Helius ----------
 def helius_rpc(method, params):
@@ -95,7 +94,7 @@ def size_for(pf, prices):
 
 def manage(pf, addr, pos, m, cooldown, today):
     px = m["price"]; pos["peak"] = max(pos.get("peak", px), px)
-    x = px / pos["entry"]; held = (time.time() - time.mktime(time.strptime(pos["opened"], "%Y-%m-%dT%H:%M:%SZ"))) / 86400
+    x = px / pos["entry"]; held = held_seconds(pos) / 86400
     ls = pos.get("kind") == "longshot"
     tp1, f1, tp2, stop, trail, maxd = (LS_TP1_X, LS_TP1_FRAC, LS_TP2_X, LS_STOP, LS_TRAIL, LS_MAX_HOLD_D) if ls else (TP1_X, TP1_FRAC, TP2_X, STOP, TRAIL, MAX_HOLD_D)
     why = None
@@ -142,6 +141,7 @@ def main():
         hq, why = holder_quality(addr, wcache)
         checks.append((sym, why))
         if hq is False: cooldown[addr] = today + 3; continue      # kurz sperren, nicht jede 5 Min neu pruefen
+        if hq is None: cooldown[addr] = today + 1; continue       # nicht pruefbar = nicht kaufen (fail-closed)
         usd = size_for(pf, prices)
         if st["cash"] >= usd + 2 and pf.buy(sym, addr, m["price"], usd, m["liq"], f"std {why}"):
             st["positions"][addr]["kind"] = "standard"; n_std += 1; prices[addr] = m["price"]
