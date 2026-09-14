@@ -1,16 +1,16 @@
 {
- "cash": 362.0166390000001,
+ "cash": 331.99663900000013,
  "positions": {
   "UNHwuKaSGKP7qmYMFS5aSJdqifHj6CiXWvtoeYNpump": {
    "sym": "fomo",
    "qty": 7056.903366,
    "cost": 30.02,
    "opened": "2026-09-14T14:56:08Z",
-   "peak": 0.004402,
+   "peak": 0.004403,
    "entry": 0.004253990517233902,
    "mig": 1789397153.0,
-   "cur_price": 0.004397,
-   "mark": 0.004397
+   "cur_price": 0.004403,
+   "mark": 0.004403
   },
   "ANC8Qsky43JdjBXHqWwtLDtsspxkjbPsjiCaY3ypump": {
    "sym": "DVLT",
@@ -31,8 +31,19 @@
    "peak": 0.0004327,
    "entry": 0.00035672769320872305,
    "mig": 1789402574.0,
-   "cur_price": 0.0004327,
-   "mark": 0.0004327
+   "cur_price": 0.0004164,
+   "mark": 0.0004164
+  },
+  "woaZrZXMhdvZap9xbpcYWTJyZ4Duy5Pro3Ncp6opump": {
+   "sym": "OpenAI",
+   "qty": 804.35771,
+   "cost": 30.02,
+   "opened": "2026-09-14T17:11:07Z",
+   "peak": 0.03719,
+   "entry": 0.03732170354903417,
+   "mig": 1789404811.0,
+   "cur_price": 0.03719,
+   "mark": 0.03719
   }
  },
  "trades": [
@@ -188,6 +199,18 @@
    "slip": 0.0117,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-14T17:11:07Z",
+   "side": "buy",
+   "sym": "OpenAI",
+   "addr": "woaZrZXMhdvZap9xbpcYWTJyZ4Duy5Pro3Ncp6opump",
+   "price": 0.03719,
+   "fill": 0.037321703549,
+   "usd": 30.02,
+   "slip": 0.0027,
+   "quote": "jup",
+   "reason": "postgrad 17min"
   }
  ],
  "equity": [
@@ -318,6 +341,10 @@
   {
    "t": "2026-09-14T17:06:07Z",
    "v": 460.07
+  },
+  {
+   "t": "2026-09-14T17:11:07Z",
+   "v": 458.63
   }
  ],
  "started": "2026-09-14T14:30:55Z",
