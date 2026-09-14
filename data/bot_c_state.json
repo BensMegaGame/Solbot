@@ -1,5 +1,5 @@
 {
- "cash": 151.55133700000013,
+ "cash": 170.71099400000014,
  "positions": {
   "UNHwuKaSGKP7qmYMFS5aSJdqifHj6CiXWvtoeYNpump": {
    "sym": "fomo",
@@ -9,8 +9,8 @@
    "peak": 0.004635,
    "entry": 0.004253990517233902,
    "mig": 1789397153.0,
-   "cur_price": 0.004635,
-   "mark": 0.004635
+   "cur_price": 0.004622,
+   "mark": 0.004622
   },
   "ANC8Qsky43JdjBXHqWwtLDtsspxkjbPsjiCaY3ypump": {
    "sym": "DVLT",
@@ -31,8 +31,8 @@
    "peak": 0.005571,
    "entry": 0.005343477355620453,
    "mig": 1789407232.0,
-   "cur_price": 0.005571,
-   "mark": 0.005571
+   "cur_price": 0.005518,
+   "mark": 0.005518
   },
   "zsCYqs39DWS4DPpJvzbAqLVZmhQzwMnyb2UTjctpump": {
    "sym": "USGR",
@@ -42,20 +42,8 @@
    "peak": 0.005802,
    "entry": 0.005627039439797595,
    "mig": 1789408102.0,
-   "cur_price": 0.005755,
-   "mark": 0.005755
-  },
-  "CfEaZjy8sZcP5trncm9AeswuZUeCpfZJ4ZDMePu1pump": {
-   "sym": "BIKELUGA",
-   "qty": 67444.6613025,
-   "cost": 15.01,
-   "opened": "2026-09-14T18:36:05Z",
-   "peak": 0.0004127,
-   "entry": 0.0002225528264228027,
-   "mig": 1789408833.0,
-   "cur_price": 0.0003964,
-   "mark": 0.0003964,
-   "tp1": true
+   "cur_price": 0.005775,
+   "mark": 0.005775
   },
   "pbELpkr4dQzvtHEe1AhTsGf7tqQ6NmGzEd8a9p3pump": {
    "sym": "FAIR",
@@ -65,8 +53,8 @@
    "peak": 0.006614,
    "entry": 0.006502237232367089,
    "mig": 1789412342.0,
-   "cur_price": 0.006609,
-   "mark": 0.006609
+   "cur_price": 0.006542,
+   "mark": 0.006542
   },
   "BsT8W5QonrJuVVre5ivab62cJsxYYYAoZqiPu3uHpump": {
    "sym": "USD",
@@ -76,8 +64,8 @@
    "peak": 0.0005675,
    "entry": 0.00032837429187072115,
    "mig": 1789416596.0,
-   "cur_price": 0.0005286,
-   "mark": 0.0005286,
+   "cur_price": 0.0004383,
+   "mark": 0.0004383,
    "tp1": true
   },
   "PEsT7duf8MDrDax42dH37v7bVdHhk9ewNm1L1QCpump": {
@@ -85,11 +73,11 @@
    "qty": 212.884085,
    "cost": 30.02,
    "opened": "2026-09-14T20:46:08Z",
-   "peak": 0.1399,
+   "peak": 0.1402,
    "entry": 0.14101570814934333,
    "mig": 1789417990.0,
-   "cur_price": 0.1399,
-   "mark": 0.1399
+   "cur_price": 0.1402,
+   "mark": 0.1402
   }
  },
  "trades": [
@@ -569,6 +557,21 @@
    "slip": 0.0023,
    "quote": "jup",
    "reason": "postgrad 13min"
+  },
+  {
+   "t": "2026-09-14T20:56:04Z",
+   "side": "sell",
+   "sym": "BIKELUGA",
+   "addr": "CfEaZjy8sZcP5trncm9AeswuZUeCpfZJ4ZDMePu1pump",
+   "price": 0.0003023,
+   "usd": 19.16,
+   "pnl": 4.15,
+   "peak_x": 1.854,
+   "held_h": 2.3,
+   "frac": 1.0,
+   "slip": 0.0065,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
@@ -879,6 +882,10 @@
   {
    "t": "2026-09-14T20:51:05Z",
    "v": 390.07
+  },
+  {
+   "t": "2026-09-14T20:56:04Z",
+   "v": 377.84
   }
  ],
  "started": "2026-09-14T14:30:55Z",
