@@ -1,17 +1,6 @@
 {
- "cash": 178.66221800000014,
+ "cash": 211.13170300000013,
  "positions": {
-  "ANC8Qsky43JdjBXHqWwtLDtsspxkjbPsjiCaY3ypump": {
-   "sym": "DVLT",
-   "qty": 20541.855084,
-   "cost": 30.02,
-   "opened": "2026-09-14T15:36:02Z",
-   "peak": 0.001607,
-   "entry": 0.001461406473623821,
-   "mig": 1789399431.0,
-   "cur_price": 0.001591,
-   "mark": 0.001591
-  },
   "NWq7Y6UUpkneabRgKqmrHPeGepLZbxw4pFYBi79pump": {
    "sym": "FTFS",
    "qty": 5618.064418,
@@ -20,19 +9,19 @@
    "peak": 0.005571,
    "entry": 0.005343477355620453,
    "mig": 1789407232.0,
-   "cur_price": 0.005511,
-   "mark": 0.005511
+   "cur_price": 0.005515,
+   "mark": 0.005515
   },
   "zsCYqs39DWS4DPpJvzbAqLVZmhQzwMnyb2UTjctpump": {
    "sym": "USGR",
    "qty": 5334.95461,
    "cost": 30.02,
    "opened": "2026-09-14T18:01:07Z",
-   "peak": 0.007183,
+   "peak": 0.007202,
    "entry": 0.005627039439797595,
    "mig": 1789408102.0,
-   "cur_price": 0.007183,
-   "mark": 0.007183
+   "cur_price": 0.007202,
+   "mark": 0.007202
   },
   "pbELpkr4dQzvtHEe1AhTsGf7tqQ6NmGzEd8a9p3pump": {
    "sym": "FAIR",
@@ -42,30 +31,30 @@
    "peak": 0.006614,
    "entry": 0.006502237232367089,
    "mig": 1789412342.0,
-   "cur_price": 0.006561,
-   "mark": 0.006561
+   "cur_price": 0.006559,
+   "mark": 0.006559
   },
   "PEsT7duf8MDrDax42dH37v7bVdHhk9ewNm1L1QCpump": {
    "sym": "WOFI",
    "qty": 212.884085,
    "cost": 30.02,
    "opened": "2026-09-14T20:46:08Z",
-   "peak": 0.1404,
+   "peak": 0.1405,
    "entry": 0.14101570814934333,
    "mig": 1789417990.0,
-   "cur_price": 0.1404,
-   "mark": 0.1404
+   "cur_price": 0.1405,
+   "mark": 0.1405
   },
   "8XcATDK56Axr3sDkh9HhzN1AWXUefY4Vdo8PdXopump": {
    "sym": "OpenAI",
    "qty": 7912.654976,
    "cost": 30.02,
    "opened": "2026-09-14T21:11:04Z",
-   "peak": 0.003789,
+   "peak": 0.003797,
    "entry": 0.0037939225318245444,
    "mig": 1789418644.0,
-   "cur_price": 0.003788,
-   "mark": 0.003788
+   "cur_price": 0.003797,
+   "mark": 0.003797
   }
  },
  "trades": [
@@ -629,6 +618,21 @@
    "slip": 0.0041,
    "quote": "jup",
    "reason": "postgrad 27min"
+  },
+  {
+   "t": "2026-09-14T21:36:05Z",
+   "side": "sell",
+   "sym": "DVLT",
+   "addr": "ANC8Qsky43JdjBXHqWwtLDtsspxkjbPsjiCaY3ypump",
+   "price": 0.001588,
+   "usd": 32.47,
+   "pnl": 2.45,
+   "peak_x": 1.1,
+   "held_h": 6.0,
+   "frac": 1.0,
+   "slip": 0.0017,
+   "quote": "jup",
+   "reason": "time"
   }
  ],
  "equity": [
@@ -971,6 +975,10 @@
   {
    "t": "2026-09-14T21:30:58Z",
    "v": 370.78
+  },
+  {
+   "t": "2026-09-14T21:36:05Z",
+   "v": 370.77
   }
  ],
  "started": "2026-09-14T14:30:55Z",
