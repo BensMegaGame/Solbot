@@ -16,8 +16,6 @@ TRAIL = -0.35                       # nach TP1: Rest raus wenn 35 % unter Hoch
 MAX_HOLD_D = 10                     # Zeitstop
 COOLDOWN_D = 14                     # Tage Sperre nach Verkauf mit Verlust (verhindert sofortiges Rebuy)
 
-RC = "https://api.rugcheck.xyz/v1/tokens"
-HARD_RISKS = ("mint", "freeze", "unlocked", "top 10", "single holder")
 
 def candidates():
     addrs = set()
@@ -42,12 +40,6 @@ def passes(m):
             and m["vol"] >= MIN_VOL and m["liq"] / max(m["mcap"], 1) >= MIN_LIQ_RATIO and m["buy_ratio"] >= MIN_BUY_RATIO
             and m["price"] > 0)
 
-def rug_ok(addr):
-    s = get(f"{RC}/{addr}/report/summary")
-    if not s: return True, []
-    risks = [r.get("name", "") for r in (s.get("risks") or [])]
-    return not any(k in r.lower() for r in risks for k in HARD_RISKS), risks
-
 def main():
     pf = Paper("bot_a")
     prices = {}
@@ -59,7 +51,7 @@ def main():
         if not p: continue
         m = metrics(p); px = m["price"]; prices[addr] = px
         pos["peak"] = max(pos.get("peak", px), px)
-        x = px / pos["entry"]; held_d = (time.time() - time.mktime(time.strptime(pos["opened"], "%Y-%m-%dT%H:%M:%SZ"))) / 86400
+        x = px / pos["entry"]; held_d = held_seconds(pos) / 86400
         why = None
         if x <= 1 + STOP: why = "stop"
         elif x >= TP2_X: why = "tp2"
