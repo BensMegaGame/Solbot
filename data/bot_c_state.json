@@ -1,17 +1,6 @@
 {
- "cash": 175.42419100000012,
+ "cash": 206.5096700000001,
  "positions": {
-  "NWq7Y6UUpkneabRgKqmrHPeGepLZbxw4pFYBi79pump": {
-   "sym": "FTFS",
-   "qty": 5618.064418,
-   "cost": 30.02,
-   "opened": "2026-09-14T17:46:09Z",
-   "peak": 0.00559,
-   "entry": 0.005343477355620453,
-   "mig": 1789407232.0,
-   "cur_price": 0.00559,
-   "mark": 0.00559
-  },
   "zsCYqs39DWS4DPpJvzbAqLVZmhQzwMnyb2UTjctpump": {
    "sym": "USGR",
    "qty": 2667.477305,
@@ -20,8 +9,8 @@
    "peak": 0.009518,
    "entry": 0.005627039439797595,
    "mig": 1789408102.0,
-   "cur_price": 0.009518,
-   "mark": 0.009518,
+   "cur_price": 0.009474,
+   "mark": 0.009474,
    "tp1": true
   },
   "PEsT7duf8MDrDax42dH37v7bVdHhk9ewNm1L1QCpump": {
@@ -32,19 +21,19 @@
    "peak": 0.1421,
    "entry": 0.14101570814934333,
    "mig": 1789417990.0,
-   "cur_price": 0.1419,
-   "mark": 0.1419
+   "cur_price": 0.141,
+   "mark": 0.141
   },
   "8XcATDK56Axr3sDkh9HhzN1AWXUefY4Vdo8PdXopump": {
    "sym": "OpenAI",
    "qty": 7912.654976,
    "cost": 30.02,
    "opened": "2026-09-14T21:11:04Z",
-   "peak": 0.003934,
+   "peak": 0.00394,
    "entry": 0.0037939225318245444,
    "mig": 1789418644.0,
-   "cur_price": 0.003934,
-   "mark": 0.003934
+   "cur_price": 0.00394,
+   "mark": 0.00394
   },
   "R5djwmnzNmsytb8BqTohFDW555Q531jRXNeRwigpump": {
    "sym": "STRATEGY",
@@ -54,8 +43,8 @@
    "peak": 0.004791,
    "entry": 0.004766716105578943,
    "mig": 1789424082.0,
-   "cur_price": 0.004791,
-   "mark": 0.004791
+   "cur_price": 0.004751,
+   "mark": 0.004751
   },
   "CkobbSiZC6oPt5LjtzX3t14AMUhPXjo6T8gnDDmupump": {
    "sym": "MEWCATI",
@@ -65,8 +54,8 @@
    "peak": 0.0002897,
    "entry": 0.0002542776009723493,
    "mig": 1789426081.0,
-   "cur_price": 0.0002897,
-   "mark": 0.0002897
+   "cur_price": 0.0002658,
+   "mark": 0.0002658
   }
  },
  "trades": [
@@ -699,6 +688,21 @@
    "slip": 0.0,
    "quote": "jup",
    "reason": "postgrad 33min"
+  },
+  {
+   "t": "2026-09-14T23:51:00Z",
+   "side": "sell",
+   "sym": "FTFS",
+   "addr": "NWq7Y6UUpkneabRgKqmrHPeGepLZbxw4pFYBi79pump",
+   "price": 0.00554,
+   "usd": 31.09,
+   "pnl": 1.07,
+   "peak_x": 1.046,
+   "held_h": 6.1,
+   "frac": 1.0,
+   "slip": 0.008,
+   "quote": "jup",
+   "reason": "time"
   }
  ],
  "equity": [
@@ -1149,6 +1153,10 @@
   {
    "t": "2026-09-14T23:46:05Z",
    "v": 357.93
+  },
+  {
+   "t": "2026-09-14T23:51:00Z",
+   "v": 354.28
   }
  ],
  "started": "2026-09-14T14:30:55Z",

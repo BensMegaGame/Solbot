@@ -1,5 +1,5 @@
 {
- "cash": 203.6433726179559,
+ "cash": 180.08850861795588,
  "positions": {
   "72yxYmhLgDGwdyi2b9GjDynBB6VuG3kDxNKqDbzXh5bi": {
    "sym": "WOW",
@@ -13,8 +13,8 @@
    "tp1_gain": 0.75,
    "moon_x": 5.0,
    "max_hold_h": 24,
-   "cur_price": 6.16e-05,
-   "mark": 6.16e-05,
+   "cur_price": 6.171e-05,
+   "mark": 6.171e-05,
    "tp1": true
   },
   "2bRoY87nsBq84TTKJKFD5gYxVLPhrTPKK9MaheSLCCLg": {
@@ -29,8 +29,8 @@
    "tp1_gain": 0.75,
    "moon_x": 5.0,
    "max_hold_h": 24,
-   "cur_price": 4.812e-05,
-   "mark": 4.812e-05
+   "cur_price": 4.819e-05,
+   "mark": 4.819e-05
   },
   "H22aquDouZNFyfykwnXmY5Y9z5sMQtLFy5tUKR99pump": {
    "sym": "NINA",
@@ -44,23 +44,23 @@
    "tp1_gain": 0.4,
    "moon_x": 3.0,
    "max_hold_h": 48,
-   "mark": 0.0002999,
-   "cur_price": 0.0002999
+   "mark": 0.0003024,
+   "cur_price": 0.0003024
   },
-  "GBLYwo4vvqGDPkVJqwWfrvtPavEWb5zALmPphxQbJaLG": {
-   "sym": "AGI",
-   "qty": 700686.438243,
+  "Fuo63YDw3vg68VVCF79gDc9MrP5k8MUjHkKiRG9Y5Nnj": {
+   "sym": "RONNIE",
+   "qty": 485739.744494,
    "cost": 80.02,
-   "opened": "2026-09-14T23:21:52Z",
-   "peak": 0.0001098,
-   "entry": 0.0001142022959665859,
+   "opened": "2026-09-14T23:51:45Z",
+   "peak": 0.0001571,
+   "entry": 0.00016473842403684228,
    "tier": "T4",
    "stop": 0.25,
    "tp1_gain": 0.4,
    "moon_x": 3.0,
    "max_hold_h": 48,
-   "mark": 8.628e-05,
-   "cur_price": 8.628e-05
+   "no_quote_since": "2026-09-14T23:51:45Z",
+   "mark": 0.0
   }
  },
  "trades": [
@@ -341,6 +341,33 @@
    "slip": 0.0877,
    "quote": "jup",
    "reason": "T4 chg -31%"
+  },
+  {
+   "t": "2026-09-14T23:51:44Z",
+   "side": "sell",
+   "sym": "AGI",
+   "addr": "GBLYwo4vvqGDPkVJqwWfrvtPavEWb5zALmPphxQbJaLG",
+   "price": 8.47e-05,
+   "usd": 56.47,
+   "pnl": -23.55,
+   "peak_x": 0.961,
+   "held_h": 0.5,
+   "frac": 1.0,
+   "slip": 0.0546,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-14T23:51:45Z",
+   "side": "buy",
+   "sym": "RONNIE",
+   "addr": "Fuo63YDw3vg68VVCF79gDc9MrP5k8MUjHkKiRG9Y5Nnj",
+   "price": 0.0001571,
+   "fill": 0.000164738424,
+   "usd": 80.02,
+   "slip": 0.0343,
+   "quote": "jup",
+   "reason": "T4 chg -28%"
   }
  ],
  "equity": [
@@ -911,6 +938,10 @@
   {
    "t": "2026-09-14T23:46:49Z",
    "v": 405.27
+  },
+  {
+   "t": "2026-09-14T23:51:45Z",
+   "v": 322.08
   }
  ],
  "started": "2026-09-14T12:02:41Z",
