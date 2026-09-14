@@ -1,5 +1,5 @@
 {
- "cash": 236.30324361795587,
+ "cash": 276.8766226179559,
  "positions": {
   "72yxYmhLgDGwdyi2b9GjDynBB6VuG3kDxNKqDbzXh5bi": {
    "sym": "WOW",
@@ -29,8 +29,8 @@
    "tp1_gain": 0.75,
    "moon_x": 5.0,
    "max_hold_h": 24,
-   "cur_price": 4.054e-05,
-   "mark": 4.054e-05
+   "cur_price": 3.899e-05,
+   "mark": 3.899e-05
   },
   "5Zspimi8VD6LctJLtaSjLqaSUvmh3Rs849iPtGocpump": {
    "sym": "MIZO",
@@ -44,8 +44,8 @@
    "tp1_gain": 0.4,
    "moon_x": 3.0,
    "max_hold_h": 48,
-   "mark": 0.0001115,
-   "cur_price": 0.0001115
+   "mark": 0.0001013,
+   "cur_price": 0.0001013
   },
   "8WXiWXTMNPxmzpZdEmGBYNc3j7B5n3VEqgD6LjXAx2Xp": {
    "sym": "LOTTO",
@@ -59,24 +59,8 @@
    "tp1_gain": 0.4,
    "moon_x": 3.0,
    "max_hold_h": 48,
-   "mark": 0.0001377,
-   "cur_price": 0.0001377
-  },
-  "DSgjVUFC6NA59YuxiEDSxgs6zP4jjwSuoYJ3uS7WboeH": {
-   "sym": "SATS",
-   "qty": 128377.36937879998,
-   "cost": 12.003999999999998,
-   "opened": "2026-09-14T19:11:41Z",
-   "peak": 0.0002503,
-   "entry": 9.350557701942068e-05,
-   "tier": "T3",
-   "stop": 0.3,
-   "tp1_gain": 0.65,
-   "moon_x": 3.0,
-   "max_hold_h": 36,
-   "mark": 0.0002503,
-   "cur_price": 0.0002503,
-   "tp1": true
+   "mark": 0.0001426,
+   "cur_price": 0.0001426
   }
  },
  "trades": [
@@ -261,6 +245,21 @@
    "slip": 0.0587,
    "quote": "jup",
    "reason": "tp1"
+  },
+  {
+   "t": "2026-09-14T20:22:19Z",
+   "side": "sell",
+   "sym": "SATS",
+   "addr": "DSgjVUFC6NA59YuxiEDSxgs6zP4jjwSuoYJ3uS7WboeH",
+   "price": 0.0003366,
+   "usd": 40.57,
+   "pnl": 28.57,
+   "peak_x": 3.6,
+   "held_h": 1.2,
+   "frac": 1.0,
+   "slip": 0.0055,
+   "quote": "jup",
+   "reason": "moon"
   }
  ],
  "equity": [
@@ -663,6 +662,10 @@
   {
    "t": "2026-09-14T20:17:14Z",
    "v": 457.05
+  },
+  {
+   "t": "2026-09-14T20:22:19Z",
+   "v": 460.88
   }
  ],
  "started": "2026-09-14T12:02:41Z",
