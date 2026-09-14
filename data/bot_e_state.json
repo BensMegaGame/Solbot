@@ -13,8 +13,8 @@
    "tp1_gain": 0.75,
    "moon_x": 5.0,
    "max_hold_h": 24,
-   "cur_price": 4.89e-05,
-   "mark": 4.89e-05,
+   "cur_price": 4.652e-05,
+   "mark": 4.652e-05,
    "tp1": true
   },
   "2bRoY87nsBq84TTKJKFD5gYxVLPhrTPKK9MaheSLCCLg": {
@@ -29,8 +29,8 @@
    "tp1_gain": 0.75,
    "moon_x": 5.0,
    "max_hold_h": 24,
-   "cur_price": 3.677e-05,
-   "mark": 3.677e-05
+   "cur_price": 3.679e-05,
+   "mark": 3.679e-05
   },
   "5Zspimi8VD6LctJLtaSjLqaSUvmh3Rs849iPtGocpump": {
    "sym": "MIZO",
@@ -44,8 +44,8 @@
    "tp1_gain": 0.4,
    "moon_x": 3.0,
    "max_hold_h": 48,
-   "mark": 0.0001226,
-   "cur_price": 0.0001226
+   "mark": 0.0001089,
+   "cur_price": 0.0001089
   },
   "8WXiWXTMNPxmzpZdEmGBYNc3j7B5n3VEqgD6LjXAx2Xp": {
    "sym": "LOTTO",
@@ -59,8 +59,8 @@
    "tp1_gain": 0.4,
    "moon_x": 3.0,
    "max_hold_h": 48,
-   "mark": 0.0001492,
-   "cur_price": 0.0001492
+   "mark": 0.0001383,
+   "cur_price": 0.0001383
   },
   "DSgjVUFC6NA59YuxiEDSxgs6zP4jjwSuoYJ3uS7WboeH": {
    "sym": "SATS",
@@ -74,8 +74,8 @@
    "tp1_gain": 0.65,
    "moon_x": 3.0,
    "max_hold_h": 36,
-   "mark": 0.0001616,
-   "cur_price": 0.0001616,
+   "mark": 0.000166,
+   "cur_price": 0.000166,
    "tp1": true
   }
  },
@@ -651,9 +651,13 @@
   {
    "t": "2026-09-14T20:02:22Z",
    "v": 456.32
+  },
+  {
+   "t": "2026-09-14T20:07:26Z",
+   "v": 441.92
   }
  ],
  "started": "2026-09-14T12:02:41Z",
  "strategy": "overreaction_fade",
- "universe_n": 503
+ "universe_n": 505
 }
