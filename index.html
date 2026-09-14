@@ -68,6 +68,8 @@ const fmt = n => (n==null||isNaN(n)) ? '–' : n.toLocaleString('de-DE',{minimum
 const pct = n => (n>=0?'+':'')+n.toFixed(1)+' %';
 const cls = n => n>=0?'up':'down';
 const START = 500;
+const CHART_FROM = '2026-09-12T00:00:00Z';   // Grafik erst ab hier (vorher GitHub-Actions-Testphase ohne Server)
+const V2_AT = '2026-09-14T13:00:00Z';        // v2: Jupiter-Quotes, fail-closed Rugcheck, ehrliches Marking, neue Kandidatenquellen
 async function j(p){ try{ const r=await fetch(p+'?t='+Date.now()); if(!r.ok) return null; return await r.json(); }catch(e){ return null } }
 
 function summarize(id, s){
@@ -92,7 +94,8 @@ function drawChart(a, b, c, d, e){
   canvas.width=canvas.clientWidth*dpr; canvas.height=220*dpr; const g=canvas.getContext('2d'); g.scale(dpr,dpr);
   const W=canvas.clientWidth, H=220, L=44, R=8, T=10, B=22;
   const cs=getComputedStyle(document.body);
-  const series=[[a?a.equity:[], cs.getPropertyValue('--a')],[b?b.equity:[], cs.getPropertyValue('--b')],[c?c.equity:[], cs.getPropertyValue('--c')],[d?d.equity:[], cs.getPropertyValue('--d')],[e?e.equity:[], cs.getPropertyValue('--e')]];
+  const cut=s=>s?s.equity.filter(p=>p.t>=CHART_FROM):[];
+  const series=[[cut(a), cs.getPropertyValue('--a')],[cut(b), cs.getPropertyValue('--b')],[cut(c), cs.getPropertyValue('--c')],[cut(d), cs.getPropertyValue('--d')],[cut(e), cs.getPropertyValue('--e')]];
   const all=series.flatMap(s=>s[0]); if(!all.length){ g.fillStyle='#5f6b67'; g.font='14px Georgia'; g.fillText('Noch keine Daten – nach dem ersten Lauf erscheint hier die Kurve.', L, H/2); return }
   const t0=Math.min(...all.map(p=>Date.parse(p.t))), t1=Math.max(...all.map(p=>Date.parse(p.t)));
   let lo=Math.min(START,...all.map(p=>p.v)), hi=Math.max(START,...all.map(p=>p.v)); const pad=(hi-lo)*0.1||10; lo-=pad; hi+=pad;
@@ -101,6 +104,9 @@ function drawChart(a, b, c, d, e){
   g.fillStyle='#5f6b67'; g.font='11px Georgia'; g.fillText('500', 8, Y(START)+4); g.fillText(Math.round(hi-pad), 8, T+10); g.fillText(Math.round(lo+pad), 8, H-B);
   g.fillText(new Date(t0).toLocaleDateString('de-DE'), L, H-6); const endLabel=new Date(t1).toLocaleDateString('de-DE'); g.fillText(endLabel, W-R-g.measureText(endLabel).width, H-6);
   for(const [pts,col] of series){ if(!pts.length) continue; g.strokeStyle=col.trim(); g.lineWidth=2; g.beginPath(); pts.forEach((p,i)=>i?g.lineTo(X(p.t),Y(p.v)):g.moveTo(X(p.t),Y(p.v))); g.stroke(); }
+  // v2-Marker: gestrichelte Linie ab dem Update
+  if(Date.parse(V2_AT)>=t0 && Date.parse(V2_AT)<=t1){ const x=X(V2_AT); g.save(); g.setLineDash([4,4]); g.strokeStyle='#8a94a6'; g.lineWidth=1; g.beginPath(); g.moveTo(x,T); g.lineTo(x,H-B); g.stroke(); g.restore();
+    g.fillStyle='#5f6b67'; g.font='bold 11px Georgia'; g.fillText('v2', x+4, T+10); }
 }
 
 function positions(a,b,c,d,e){
@@ -111,7 +117,7 @@ function positions(a,b,c,d,e){
       const cur = isPerp ? (p.margin + (p.size||0) * ((px/p.entry - 1) * (p.side==='long'?1:-1)) - (p.funding||0)) : p.qty*px;
       const entryVal = isPerp ? p.margin : p.qty*p.entry;
       const pct = entryVal ? (cur/entryVal - 1) * 100 : 0;
-      const link = isPerp ? `https://solscan.io/token/${addr}` : (tag==='c' ? `https://pump.fun/coin/${addr}` : `https://dexscreener.com/solana/${addr}`);
+      const link = isPerp ? `https://solscan.io/token/${addr}` : `https://dexscreener.com/solana/${addr}`;
       rows.push({tag, addr, link, sym:p.sym+(isPerp?` ${p.side==='long'?'▲':'▼'} ${p.lev}x`:'')+(p.kind==='longshot'?' ★':''),
                  entry:p.entry, cur, pct, opened:p.opened, tp1:p.tp1, stale: p.cur_price==null});
     }}
@@ -126,7 +132,7 @@ function trades(a,b,c,d,e){
   if(!rows.length){ document.getElementById('trades').innerHTML='<div class="empty">Noch keine Trades.</div>'; return }
   document.getElementById('trades').innerHTML='<table><tr><th>Zeit</th><th>Token</th><th>Seite</th><th class="n">USD</th><th class="n">P&amp;L</th><th>Grund</th></tr>'+
     rows.slice(0,40).map(t=>{const isPerp=(t.side||'').startsWith('open')||(t.side||'').startsWith('close');
-      const link=isPerp?`https://solscan.io/token/${t.addr}`:(t.tag==='c'?`https://pump.fun/coin/${t.addr}`:`https://dexscreener.com/solana/${t.addr}`);
+      const link=isPerp?`https://solscan.io/token/${t.addr}`:`https://dexscreener.com/solana/${t.addr}`;
       const when=new Date(t.t).toLocaleString('de-DE',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'});
       return `<tr><td>${when}</td><td><span class="tag ${t.tag}"></span><a href="${link}" target="_blank">${t.sym}</a></td><td>${({buy:'Kauf',sell:'Verkauf'+(t.frac&&t.frac<1?' ½':''),open_long:'Long '+t.lev+'x',open_short:'Short '+t.lev+'x',close_long:'Long zu',close_short:'Short zu'})[t.side]||t.side}</td><td class="n">${fmt(t.usd)}</td><td class="n ${t.pnl!=null?cls(t.pnl):''}">${t.pnl!=null?fmt(t.pnl):''}</td><td>${t.reason}</td></tr>`;}).join('')+'</table>';
 }
@@ -134,10 +140,10 @@ function trades(a,b,c,d,e){
 function strategyOverview(){
   const rows = [
     {tag:'a', name:'Bot A – Micro-Cap-Lotterie', desc:'Solana-Tokens, 2–14 Tage alt, 100k–3 Mio. $ MCap. Kauft nach Liquiditäts-, Volumen- und Sicherheitsfiltern (RugCheck). Ziel: wenige sehr große Gewinner tragen viele kleine Verluste.', exit:'Hälfte bei 3x, Rest bei 10x oder −35 % Trailing, Stop −50 %, Zeitstop 10 Tage.'},
-    {tag:'b', name:'Bot B – Zweite Welle', desc:'Solana-Tokens, 3–8 Wochen alt (1–30 Mio. $ MCap), die den ersten Hype-Dump überlebt haben. Kauft nur bei anhaltend wachsendem Volumen, Käuferüberhang und Preis über dem 7-Tage-Schnitt.', exit:'Hälfte bei 2x, Trailing 30 %, Stop −35 %, sofort raus wenn These bricht (Liquidität/Volumen fällt), Zeitstop 30 Tage.'},
-    {tag:'d', name:'Bot D – Konzentriert + Longshots', desc:'Bot A\'s Filter plus Holder-Qualität (mind. 40 % echte, aktive Wallets unter den letzten Käufern) und Bot-Cluster-Erkennung (gleichmäßige Kaufabstände, identische Beträge → Ablehnung). Positionsgröße 60 $, ab 500 $ Portfolio 15 % des Cash (max. 120 $). Kein Nachkaufen. Zusätzlich Longshots ★: 0,5–6 h alte Tokens mit sauberem RugCheck, 15 $ fix, Ziel 5–20x.', exit:'Standard wie Bot A. Longshot: nichts vor 5x, dann ⅓ raus, Rest bis 20x oder −40 % Trailing, Stop −60 %, max. 5 Tage.'},
+    {tag:'b', name:'Bot B – Zweite Welle', desc:'Solana-Tokens, 2–8 Wochen alt (10k–300k $ MCap, Liquidität ≥ 50k $), die den ersten Hype-Dump überlebt haben. Kandidaten direkt aus Codex (alle 30 Min). Kauft nur bei anhaltend wachsendem Volumen, Käuferüberhang und Preis über dem 7-Tage-Schnitt.', exit:'Hälfte bei 2x, Trailing 30 %, Stop −35 %, sofort raus wenn These bricht (Liquidität/Volumen fällt), Zeitstop 30 Tage.'},
+    {tag:'d', name:'Bot D – Konzentriert + Longshots', desc:'Bot A\'s Filter auf dem neutralen Codex-Universum (statt DexScreener-Boost-Feed) plus Holder-Qualität (mind. 40 % echte, aktive Wallets unter den letzten Käufern) und Bot-Cluster-Erkennung (gleichmäßige Kaufabstände, identische Beträge → Ablehnung). Positionsgröße 60 $, ab 500 $ Portfolio 15 % des Cash (max. 120 $). Kein Nachkaufen. Zusätzlich Longshots ★: 0,5–6 h alte Tokens mit sauberem RugCheck, 15 $ fix, Ziel 5–20x.', exit:'Standard wie Bot A. Longshot: nichts vor 5x, dann ⅓ raus, Rest bis 20x oder −40 % Trailing, Stop −60 %, max. 5 Tage.'},
     {tag:'e', name:'Bot E – Overreaction Fade', desc:'Kauft nach starken Kurseinbrüchen bei etablierten Solana-Tokens, gestaffelt nach Marktkapitalisierung: 15–35k $ (−40/−50 % in 5 Min), 36–60k $ (−35/−45 % in 1h), 61–100k $ (−30/−40 % in 1h), 101–300k $ (−25/−35 % in 6h). Ein eigener Liquiditäts-Check unterscheidet Panik von echtem Rugpull: fiel die Liquidität im selben Fenster ähnlich stark wie der Preis, wird nicht gekauft. 25–80 $ je Position je nach Stufe, max. 2 pro Stufe, 8 insgesamt.', exit:'80 % raus bei Kursziel (100/75/65/40 % je Stufe), Rest bis 5x/3x oder Zeitstop (24/24/36/48 h). Zusätzlicher Stop je Stufe (25–40 %), solange TP1 noch nicht erreicht ist.'},
-    {tag:'c', name:'Bot C – Graduation Momentum (Pump.fun)', desc:'Kauft Tokens, deren Pump.fun-Bonding-Curve zwischen 90 und 99,5 % steht und in den letzten 30 Minuten sichtbar Fortschritt macht (mind. +3 Punkte). Filter direkt aus Codex: mind. 30 Käufe/Stunde, Verkäufe < 80 % der Käufe, Top-10-Holder ≤ 35 %, Bundler ≤ 10 %, Sniper ≤ 15 %, Insider ≤ 10 %, RugCheck sauber. 30 $ je Position, max. 8. Codex wird alle 10 Minuten abgefragt (Free-Tier).', exit:'Bei 3x die Hälfte, bei 5x die Hälfte des Rests, alles nach 24 h. Stop −50 %.'},
+    {tag:'c', name:'Bot C – Post-Graduation Momentum (Pump.fun → DEX)', desc:'Kauft 10–40 Minuten NACH der Migration von Pump.fun auf den DEX (dann über Jupiter handelbar, erster Dump der Curve-Käufer meist durch). Filter aus Codex: Liquidität ≥ 20k $, mind. 20 Käufe und 12 verschiedene Käufer/Stunde, Verkäufe ≤ 90 % der Käufe, Top-10 ≤ 35 %, Bundler ≤ 10 %, Sniper ≤ 15 %, Insider ≤ 10 %, RugCheck sauber, Preis zuletzt nicht fallend. 30 $ je Position, max. 8. Loggt für jeden migrierten Token den Kursverlauf der ersten 3 h – daraus wird das Einstiegsfenster laufend kalibriert.', exit:'Hälfte bei +50 %, danach Trailing −25 %. Stop −30 %, Zeitstop 6 h.'},
   ];
   document.getElementById('strategy_overview').innerHTML = rows.map(r=>
     `<div style="border-top:3px solid var(--${r.tag});padding:10px 0 14px;margin-bottom:4px">
@@ -150,9 +156,9 @@ function strategyOverview(){
 (async()=>{
   const [a,b,c,d,e,bt,cfg,btc,cfgc]=await Promise.all([j('data/bot_a_state.json'),j('data/bot_b_state.json'),j('data/bot_c_state.json'),j('data/bot_d_state.json'),j('data/bot_e_state.json'),j('data/backtest_b.json'),j('data/strategy_b.json'),j('data/backtest_c.json'),j('data/strategy_c.json')]);
   if(b&&b.strategy==='second_wave') document.getElementById('b-strat').textContent='Zweite Welle'+(b.watchlist?` · ${b.watchlist} beobachtet`:''); else if(cfg) document.getElementById('b-strat').textContent=cfg.strategy;
-  if(c&&c.strategy==='graduation') document.getElementById('c-strat').textContent='Graduation (Pump.fun)'+(c.codex===false?' · ohne Codex':''); else if(cfgc) document.getElementById('c-strat').textContent=cfgc.strategy+' '+cfgc.lev+'x';
+  if(c&&c.strategy==='post_graduation') document.getElementById('c-strat').textContent='Post-Graduation'+(c.codex===false?' · ohne Codex':''); else if(c&&c.strategy==='graduation') document.getElementById('c-strat').textContent='Graduation (Pump.fun)'; else if(cfgc) document.getElementById('c-strat').textContent=cfgc.strategy+' '+cfgc.lev+'x';
   const last=[a,b,c,d,e].filter(Boolean).flatMap(s=>s.equity).map(p=>p.t).sort().pop();
-  document.getElementById('sub').textContent = last ? 'Letzter Lauf: '+new Date(last).toLocaleString('de-DE')+' · aktualisiert alle 30 Minuten' : 'Noch kein Lauf – der erste Durchgang startet automatisch nach dem Hochladen.';
+  document.getElementById('sub').textContent = last ? 'Letzter Lauf: '+new Date(last).toLocaleString('de-DE')+' · aktualisiert alle 5 Minuten · v2 seit 14.09.' : 'Noch kein Lauf – der erste Durchgang startet automatisch nach dem Hochladen.';
   summarize('a',a); summarize('b',b); summarize('c',c); summarize('d',d); summarize('e',e); if(d&&d.helius===false) document.getElementById('d-strat').textContent+=' · ohne Helius'; drawChart(a,b,c,d,e); positions(a,b,c,d,e); trades(a,b,c,d,e);  strategyOverview();
 })();
 </script>
