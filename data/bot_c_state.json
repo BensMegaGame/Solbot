@@ -1,27 +1,27 @@
 {
- "cash": 295.1772910000002,
+ "cash": 265.1572910000002,
  "positions": {
   "UNHwuKaSGKP7qmYMFS5aSJdqifHj6CiXWvtoeYNpump": {
    "sym": "fomo",
    "qty": 7056.903366,
    "cost": 30.02,
    "opened": "2026-09-14T14:56:08Z",
-   "peak": 0.004442,
+   "peak": 0.00445,
    "entry": 0.004253990517233902,
    "mig": 1789397153.0,
-   "cur_price": 0.004442,
-   "mark": 0.004442
+   "cur_price": 0.00445,
+   "mark": 0.00445
   },
   "ANC8Qsky43JdjBXHqWwtLDtsspxkjbPsjiCaY3ypump": {
    "sym": "DVLT",
    "qty": 20541.855084,
    "cost": 30.02,
    "opened": "2026-09-14T15:36:02Z",
-   "peak": 0.001521,
+   "peak": 0.001523,
    "entry": 0.001461406473623821,
    "mig": 1789399431.0,
-   "cur_price": 0.00152,
-   "mark": 0.00152
+   "cur_price": 0.001523,
+   "mark": 0.001523
   },
   "6XV1bfWhSZfmeZgfRzJHSZ51df31BNVzNE8Xxr2Kpump": {
    "sym": "WHEEL TYSON",
@@ -31,8 +31,8 @@
    "peak": 0.0005501,
    "entry": 0.00035672769320872305,
    "mig": 1789402574.0,
-   "cur_price": 0.0004745,
-   "mark": 0.0004745,
+   "cur_price": 0.0004454,
+   "mark": 0.0004454,
    "tp1": true
   },
   "woaZrZXMhdvZap9xbpcYWTJyZ4Duy5Pro3Ncp6opump": {
@@ -40,22 +40,22 @@
    "qty": 804.35771,
    "cost": 30.02,
    "opened": "2026-09-14T17:11:07Z",
-   "peak": 0.03729,
+   "peak": 0.03745,
    "entry": 0.03732170354903417,
    "mig": 1789404811.0,
-   "cur_price": 0.03718,
-   "mark": 0.03718
+   "cur_price": 0.03745,
+   "mark": 0.03745
   },
   "16zqZ5vR74hpEJvJMZpeu7KoPsFn4cuTt21eqPBpump": {
    "sym": "Claude",
    "qty": 539.282352,
    "cost": 30.02,
    "opened": "2026-09-14T17:21:09Z",
-   "peak": 0.05586,
+   "peak": 0.05603,
    "entry": 0.0556665722300514,
    "mig": 1789405421.0,
-   "cur_price": 0.05586,
-   "mark": 0.05586
+   "cur_price": 0.05603,
+   "mark": 0.05603
   },
   "NWq7Y6UUpkneabRgKqmrHPeGepLZbxw4pFYBi79pump": {
    "sym": "FTFS",
@@ -65,8 +65,19 @@
    "peak": 0.005345,
    "entry": 0.005343477355620453,
    "mig": 1789407232.0,
-   "cur_price": 0.005345,
-   "mark": 0.005345
+   "cur_price": 0.005317,
+   "mark": 0.005317
+  },
+  "zsCYqs39DWS4DPpJvzbAqLVZmhQzwMnyb2UTjctpump": {
+   "sym": "USGR",
+   "qty": 5334.95461,
+   "cost": 30.02,
+   "opened": "2026-09-14T18:01:07Z",
+   "peak": 0.005552,
+   "entry": 0.005627039439797595,
+   "mig": 1789408102.0,
+   "cur_price": 0.005552,
+   "mark": 0.005552
   }
  },
  "trades": [
@@ -273,6 +284,18 @@
    "slip": 0.0044,
    "quote": "jup",
    "reason": "postgrad 12min"
+  },
+  {
+   "t": "2026-09-14T18:01:07Z",
+   "side": "buy",
+   "sym": "USGR",
+   "addr": "zsCYqs39DWS4DPpJvzbAqLVZmhQzwMnyb2UTjctpump",
+   "price": 0.005552,
+   "fill": 0.00562703944,
+   "usd": 30.02,
+   "slip": 0.0097,
+   "quote": "jup",
+   "reason": "postgrad 13min"
   }
  ],
  "equity": [
@@ -443,6 +466,10 @@
   {
    "t": "2026-09-14T17:56:05Z",
    "v": 467.77
+  },
+  {
+   "t": "2026-09-14T18:01:07Z",
+   "v": 466.42
   }
  ],
  "started": "2026-09-14T14:30:55Z",
