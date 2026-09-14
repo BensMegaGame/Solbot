@@ -83,11 +83,12 @@ def codex(query, variables=None):
 Q_AGED = """
 query($net: [Int!], $after: Int!, $before: Int!) {
   filterTokens(
-    filters: { network: $net, createdAt: { gte: $after, lte: $before }, volume24: { gte: %s } }
+    filters: { network: $net, createdAt: { gte: $after, lte: $before }, volume24: { gte: %s },
+               marketCap: { gte: %s, lte: %s }, liquidity: { gte: %s } }
     rankings: [{ attribute: volume24, direction: DESC }]
     limit: 200
   ) { results { token { address symbol } } }
-}""" % MIN_VOL24
+}""" % (MIN_VOL24, MIN_MCAP, MAX_MCAP, MIN_LIQ)
 
 def codex_aged_candidates():
     """Direkt die Tokens im Zielalterfenster – ersetzt das 'hoffen, dass GeckoTerminal zufaellig alte zeigt'."""
