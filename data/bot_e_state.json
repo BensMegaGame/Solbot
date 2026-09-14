@@ -1,7 +1,32 @@
 {
- "cash": 500.0,
- "positions": {},
- "trades": [],
+ "cash": 439.65012614382897,
+ "positions": {
+  "9LsmvhiNThFurje813v7STBDoQS4wtUySQL3oJXJpump": {
+   "sym": "Jabal",
+   "qty": 705784.1931670787,
+   "cost": 60.34987385617105,
+   "opened": "2026-09-14T12:56:31Z",
+   "peak": 8.48e-05,
+   "entry": 8.550754528145767e-05,
+   "tier": "T3",
+   "stop": 0.3,
+   "tp1_gain": 0.65,
+   "moon_x": 3.0,
+   "max_hold_h": 36
+  }
+ },
+ "trades": [
+  {
+   "t": "2026-09-14T12:56:31Z",
+   "side": "buy",
+   "sym": "Jabal",
+   "addr": "9LsmvhiNThFurje813v7STBDoQS4wtUySQL3oJXJpump",
+   "price": 8.48e-05,
+   "usd": 60.35,
+   "slip": 0.0025,
+   "reason": "T3 chg -35%"
+  }
+ ],
  "equity": [
   {
    "t": "2026-09-14T12:03:08Z",
@@ -45,6 +70,10 @@
   },
   {
    "t": "2026-09-14T12:51:24Z",
+   "v": 500.0
+  },
+  {
+   "t": "2026-09-14T12:56:31Z",
    "v": 500.0
   }
  ],
