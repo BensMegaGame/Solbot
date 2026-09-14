@@ -1,5 +1,5 @@
 {
- "cash": 63.65570709532268,
+ "cash": 69.17343709532268,
  "positions": {
   "GWTP6M5bxhaJ1k2Kxvf8hhYaHE6jZMhh4cKzFuCpnc83": {
    "sym": "USEFUL",
@@ -9,8 +9,8 @@
    "peak": 0.002056,
    "entry": 0.0009924353088000002,
    "kind": "standard",
-   "cur_price": 0.0008774,
-   "mark": 0.0008774
+   "cur_price": 0.0009011,
+   "mark": 0.0009011
   },
   "Fuo63YDw3vg68VVCF79gDc9MrP5k8MUjHkKiRG9Y5Nnj": {
    "sym": "RONNIE",
@@ -20,8 +20,8 @@
    "peak": 0.0004144,
    "entry": 9.77087274e-05,
    "kind": "longshot",
-   "cur_price": 0.0002072,
-   "mark": 0.0002072
+   "cur_price": 0.0002428,
+   "mark": 0.0002428
   },
   "5GefefPX1mDs6ZJB1apYmz6fCTCiNJpHturZ9bvFpump": {
    "sym": "Pumpoween",
@@ -31,8 +31,8 @@
    "peak": 0.0005005,
    "entry": 0.00041492499359999997,
    "kind": "standard",
-   "cur_price": 0.0004708,
-   "mark": 0.0004708
+   "cur_price": 0.0004692,
+   "mark": 0.0004692
   },
   "BifUDWQFpbTrSxYXBnqCpAVYgcyQGzHzJk2MDmeM2Gyv": {
    "sym": "TCAT",
@@ -42,8 +42,8 @@
    "peak": 0.002276,
    "entry": 0.001360921744,
    "kind": "standard",
-   "cur_price": 0.001616,
-   "mark": 0.001616
+   "cur_price": 0.001564,
+   "mark": 0.001564
   },
   "3qvfFEa3mA7WWARTrkt5Y1GJYu7kK2ksD21QKRwomquw": {
    "sym": "VIDA",
@@ -53,8 +53,8 @@
    "peak": 0.00038,
    "entry": 0.0001436472544,
    "kind": "standard",
-   "cur_price": 0.0001633,
-   "mark": 0.0001633
+   "cur_price": 0.0001601,
+   "mark": 0.0001601
   },
   "3qnQ5Vw3HUtWX7zTWA26iAqESsPCf36TWtPDywjL1U1C": {
    "sym": "TEEN",
@@ -64,19 +64,8 @@
    "peak": 0.0001395,
    "entry": 8.748409896e-05,
    "kind": "longshot",
-   "cur_price": 5.435e-05,
-   "mark": 5.435e-05
-  },
-  "GADj8JQ8iQLQD5S6ScvncJWmGs7PkwHnXsBrEUns6ue5": {
-   "sym": "POKECOIN",
-   "qty": 66327.24802941746,
-   "cost": 15.094999999999999,
-   "opened": "2026-09-14T12:06:17Z",
-   "peak": 0.0002454,
-   "entry": 0.0002275836922,
-   "kind": "longshot",
-   "cur_price": 0.000101,
-   "mark": 0.000101
+   "cur_price": 5.73e-05,
+   "mark": 5.73e-05
   }
  },
  "trades": [
@@ -507,6 +496,19 @@
    "usd": 15.09,
    "slip": 0.002,
    "reason": "longshot"
+  },
+  {
+   "t": "2026-09-14T14:05:58Z",
+   "side": "sell",
+   "sym": "POKECOIN",
+   "addr": "GADj8JQ8iQLQD5S6ScvncJWmGs7PkwHnXsBrEUns6ue5",
+   "price": 8.815e-05,
+   "usd": 5.52,
+   "pnl": -9.58,
+   "frac": 1.0,
+   "slip": 0.0027,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -2625,6 +2627,10 @@
   {
    "t": "2026-09-14T14:01:02Z",
    "v": 373.71
+  },
+  {
+   "t": "2026-09-14T14:06:01Z",
+   "v": 376.1
   }
  ],
  "started": "2026-09-12T18:11:27Z",
