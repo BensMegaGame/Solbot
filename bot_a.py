@@ -9,7 +9,9 @@ MIN_LIQ_RATIO, MIN_BUY_RATIO = 0.05, 0.45
 # Positionen
 POS_USD, MAX_POS = 50.0, 8          # 50 $ pro Ticket, max. 8 offene
 # Ausstieg
-TP1_X, TP1_FRAC = 3.0, 0.5          # bei 3x die Haelfte raus
+USE_TP0 = True                      # Testflag: fruehes Zwischenziel (v2.1)
+TP0_X, TP0_FRAC = 1.8, 0.25         # bei 1.8x ein Viertel raus (faengt Spikes ein, die sonst als Stop enden)
+TP1_X, TP1_FRAC = 3.0, 0.5          # bei 3x die Haelfte (des Rests) raus
 TP2_X = 10.0                        # Rest bei 10x
 STOP = -0.5                         # oder -50 %
 TRAIL = -0.35                       # nach TP1: Rest raus wenn 35 % unter Hoch
@@ -56,6 +58,7 @@ def main():
         if x <= 1 + STOP: why = "stop"
         elif x >= TP2_X: why = "tp2"
         elif x >= TP1_X and not pos.get("tp1"): pos["tp1"] = True; pf.sell(addr, px, TP1_FRAC, m["liq"], "tp1")
+        elif USE_TP0 and x >= TP0_X and not pos.get("tp0"): pos["tp0"] = True; pf.sell(addr, px, TP0_FRAC, m["liq"], "tp0")
         elif pos.get("tp1") and px / pos["peak"] - 1 <= TRAIL: why = "trail"
         elif held_d >= MAX_HOLD_D: why = "time"
         if why:
