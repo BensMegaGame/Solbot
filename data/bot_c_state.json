@@ -1,6 +1,17 @@
 {
- "cash": 432.9132951754342,
- "positions": {},
+ "cash": 402.7432951754342,
+ "positions": {
+  "6HQdAaugomYDk5yBdFGv4uLDjRtrH23o3oZh8tywpump": {
+   "sym": "LONGALON",
+   "qty": 450192.41905852535,
+   "cost": 30.169999999999998,
+   "opened": "2026-09-14T06:41:34Z",
+   "peak": 6.65051619996e-05,
+   "entry": 6.701578863343293e-05,
+   "liq": 15008.0,
+   "cur_price": 6.65051619996e-05
+  }
+ },
  "trades": [
   {
    "t": "2026-09-13T18:40:45Z",
@@ -64,6 +75,16 @@
    "pnl": -24.34,
    "frac": 1.0,
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-14T06:41:34Z",
+   "side": "buy",
+   "sym": "LONGALON",
+   "addr": "6HQdAaugomYDk5yBdFGv4uLDjRtrH23o3oZh8tywpump",
+   "price": 6.65051619996e-05,
+   "usd": 30.17,
+   "slip": 0.002,
+   "reason": "grad 95% +3.8"
   }
  ],
  "equity": [
@@ -1542,10 +1563,14 @@
   {
    "t": "2026-09-14T06:31:30Z",
    "v": 432.91
+  },
+  {
+   "t": "2026-09-14T06:41:34Z",
+   "v": 432.68
   }
  ],
  "started": "2026-09-11T10:50:57Z",
  "strategy": "graduation",
  "codex": true,
- "last_poll": 1789367490.1007967
+ "last_poll": 1789368093.301006
 }
