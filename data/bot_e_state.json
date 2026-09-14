@@ -13,8 +13,8 @@
    "tp1_gain": 0.75,
    "moon_x": 5.0,
    "max_hold_h": 24,
-   "cur_price": 5.801e-05,
-   "mark": 5.801e-05,
+   "cur_price": 5.695e-05,
+   "mark": 5.695e-05,
    "tp1": true
   },
   "2bRoY87nsBq84TTKJKFD5gYxVLPhrTPKK9MaheSLCCLg": {
@@ -29,8 +29,8 @@
    "tp1_gain": 0.75,
    "moon_x": 5.0,
    "max_hold_h": 24,
-   "cur_price": 4.158e-05,
-   "mark": 4.158e-05
+   "cur_price": 4.194e-05,
+   "mark": 4.194e-05
   },
   "8WXiWXTMNPxmzpZdEmGBYNc3j7B5n3VEqgD6LjXAx2Xp": {
    "sym": "LOTTO",
@@ -44,23 +44,23 @@
    "tp1_gain": 0.4,
    "moon_x": 3.0,
    "max_hold_h": 48,
-   "mark": 0.0001473,
-   "cur_price": 0.0001473
+   "mark": 0.0001458,
+   "cur_price": 0.0001458
   },
   "H22aquDouZNFyfykwnXmY5Y9z5sMQtLFy5tUKR99pump": {
    "sym": "NINA",
    "qty": 297022.327884,
    "cost": 80.02,
    "opened": "2026-09-14T20:37:14Z",
-   "peak": 0.000266,
+   "peak": 0.0002689,
    "entry": 0.00026940735590507943,
    "tier": "T4",
    "stop": 0.25,
    "tp1_gain": 0.4,
    "moon_x": 3.0,
    "max_hold_h": 48,
-   "no_quote_since": "2026-09-14T20:37:14Z",
-   "mark": 0.0
+   "mark": 0.0002689,
+   "cur_price": 0.0002689
   }
  },
  "trades": [
@@ -705,9 +705,13 @@
   {
    "t": "2026-09-14T20:37:14Z",
    "v": 385.86
+  },
+  {
+   "t": "2026-09-14T20:42:10Z",
+   "v": 464.95
   }
  ],
  "started": "2026-09-14T12:02:41Z",
  "strategy": "overreaction_fade",
- "universe_n": 502
+ "universe_n": 501
 }
