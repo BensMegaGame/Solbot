@@ -1,5 +1,5 @@
 {
- "cash": 69.17343709532268,
+ "cash": 9.15343709532268,
  "positions": {
   "GWTP6M5bxhaJ1k2Kxvf8hhYaHE6jZMhh4cKzFuCpnc83": {
    "sym": "USEFUL",
@@ -9,8 +9,8 @@
    "peak": 0.002056,
    "entry": 0.0009924353088000002,
    "kind": "standard",
-   "cur_price": 0.0008968,
-   "mark": 0.0008968
+   "cur_price": 0.0009048,
+   "mark": 0.0009048
   },
   "Fuo63YDw3vg68VVCF79gDc9MrP5k8MUjHkKiRG9Y5Nnj": {
    "sym": "RONNIE",
@@ -20,8 +20,8 @@
    "peak": 0.0004144,
    "entry": 9.77087274e-05,
    "kind": "longshot",
-   "cur_price": 0.0002355,
-   "mark": 0.0002355
+   "cur_price": 0.0002272,
+   "mark": 0.0002272
   },
   "5GefefPX1mDs6ZJB1apYmz6fCTCiNJpHturZ9bvFpump": {
    "sym": "Pumpoween",
@@ -42,8 +42,8 @@
    "peak": 0.002276,
    "entry": 0.001360921744,
    "kind": "standard",
-   "cur_price": 0.001563,
-   "mark": 0.001563
+   "cur_price": 0.001539,
+   "mark": 0.001539
   },
   "3qvfFEa3mA7WWARTrkt5Y1GJYu7kK2ksD21QKRwomquw": {
    "sym": "VIDA",
@@ -53,8 +53,8 @@
    "peak": 0.00038,
    "entry": 0.0001436472544,
    "kind": "standard",
-   "cur_price": 0.0001355,
-   "mark": 0.0001355
+   "cur_price": 0.0001346,
+   "mark": 0.0001346
   },
   "3qnQ5Vw3HUtWX7zTWA26iAqESsPCf36TWtPDywjL1U1C": {
    "sym": "TEEN",
@@ -64,8 +64,19 @@
    "peak": 0.0001395,
    "entry": 8.748409896e-05,
    "kind": "longshot",
-   "cur_price": 6.211e-05,
-   "mark": 6.211e-05
+   "cur_price": 5.483e-05,
+   "mark": 5.483e-05
+  },
+  "2hkhFLWQKUcvUNh7eUkfZVz3rYfxXqFNeVLYMotrzFky": {
+   "sym": "ALICE",
+   "qty": 142514.532702735,
+   "cost": 60.02,
+   "opened": "2026-09-14T14:16:03Z",
+   "peak": 0.0003945,
+   "entry": 0.00042115003194230835,
+   "kind": "standard",
+   "cur_price": 0.0003945,
+   "mark": 0.0003945
   }
  },
  "trades": [
@@ -509,6 +520,18 @@
    "slip": 0.0027,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-14T14:16:03Z",
+   "side": "buy",
+   "sym": "ALICE",
+   "addr": "2hkhFLWQKUcvUNh7eUkfZVz3rYfxXqFNeVLYMotrzFky",
+   "price": 0.0003945,
+   "fill": 0.000421150032,
+   "usd": 60.02,
+   "slip": 0.0098,
+   "quote": "jup",
+   "reason": "std echte wallets 60% (10)"
   }
  ],
  "equity": [
@@ -2635,6 +2658,10 @@
   {
    "t": "2026-09-14T14:10:58Z",
    "v": 366.08
+  },
+  {
+   "t": "2026-09-14T14:16:05Z",
+   "v": 358.79
   }
  ],
  "started": "2026-09-12T18:11:27Z",

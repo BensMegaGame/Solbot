@@ -6,30 +6,30 @@
    "qty": 915960.4531265794,
    "cost": 60.369943187048435,
    "opened": "2026-09-14T13:11:30Z",
-   "peak": 7.093e-05,
+   "peak": 7.124e-05,
    "entry": 6.590889702822762e-05,
    "tier": "T3",
    "stop": 0.3,
    "tp1_gain": 0.65,
    "moon_x": 3.0,
    "max_hold_h": 36,
-   "cur_price": 6.627e-05,
-   "mark": 6.627e-05
+   "cur_price": 7.124e-05,
+   "mark": 7.124e-05
   },
   "72yxYmhLgDGwdyi2b9GjDynBB6VuG3kDxNKqDbzXh5bi": {
    "sym": "WOW",
    "qty": 209298.8330443704,
    "cost": 8.047482828322188,
    "opened": "2026-09-14T13:11:32Z",
-   "peak": 6.888e-05,
+   "peak": 7.15e-05,
    "entry": 3.844972621809198e-05,
    "tier": "T2",
    "stop": 0.35,
    "tp1_gain": 0.75,
    "moon_x": 5.0,
    "max_hold_h": 24,
-   "cur_price": 6.888e-05,
-   "mark": 6.888e-05,
+   "cur_price": 7.15e-05,
+   "mark": 7.15e-05,
    "tp1": true
   },
   "2bRoY87nsBq84TTKJKFD5gYxVLPhrTPKK9MaheSLCCLg": {
@@ -44,8 +44,8 @@
    "tp1_gain": 0.75,
    "moon_x": 5.0,
    "max_hold_h": 24,
-   "cur_price": 5.21e-05,
-   "mark": 5.21e-05
+   "cur_price": 5.231e-05,
+   "mark": 5.231e-05
   },
   "7ghKoBZBAjGSgbxix5K5kFhQzu9mxVmbdPxRT8j27eEo": {
    "sym": "ETAC",
@@ -59,8 +59,8 @@
    "tp1_gain": 0.65,
    "moon_x": 3.0,
    "max_hold_h": 36,
-   "mark": 7.289e-05,
-   "cur_price": 7.289e-05
+   "mark": 8.314e-05,
+   "cur_price": 8.314e-05
   }
  },
  "trades": [
@@ -249,9 +249,13 @@
   {
    "t": "2026-09-14T14:11:22Z",
    "v": 483.31
+  },
+  {
+   "t": "2026-09-14T14:16:33Z",
+   "v": 495.21
   }
  ],
  "started": "2026-09-14T12:02:41Z",
  "strategy": "overreaction_fade",
- "universe_n": 501
+ "universe_n": 503
 }

@@ -1,5 +1,5 @@
 {
- "cash": 70.72695494111193,
+ "cash": 20.706954941111924,
  "positions": {
   "5GefefPX1mDs6ZJB1apYmz6fCTCiNJpHturZ9bvFpump": {
    "sym": "Pumpoween",
@@ -18,8 +18,8 @@
    "opened": "2026-09-12T23:00:22Z",
    "peak": 0.002396,
    "entry": 0.0013328044883999998,
-   "cur_price": 0.001563,
-   "mark": 0.001563
+   "cur_price": 0.00154,
+   "mark": 0.00154
   },
   "Hy1LfQLL4zLQihmiQKZm7DQzXm5K8aVSfKtdHFYXbKMm": {
    "sym": "AMBA",
@@ -28,8 +28,8 @@
    "opened": "2026-09-13T03:20:17Z",
    "peak": 0.00145,
    "entry": 0.0008846074234799999,
-   "cur_price": 0.00103,
-   "mark": 0.00103
+   "cur_price": 0.001029,
+   "mark": 0.001029
   },
   "EHpaxqVVjyyPt2cjfft5SqTkfaEjCF7RUCaFxCrZpump": {
    "sym": "wheelsmith",
@@ -38,8 +38,8 @@
    "opened": "2026-09-13T16:30:40Z",
    "peak": 0.0002872,
    "entry": 0.00013791453852,
-   "cur_price": 0.0001901,
-   "mark": 0.0001901
+   "cur_price": 0.0002133,
+   "mark": 0.0002133
   },
   "4MMQY9bwkxxTtsK3W227Q5ABT6yFY8Pmn9Ze7wmAXKY8": {
    "sym": "ALLINU",
@@ -48,8 +48,18 @@
    "opened": "2026-09-13T23:35:42Z",
    "peak": 0.003303,
    "entry": 0.0017347613975999998,
-   "cur_price": 0.001389,
-   "mark": 0.001389
+   "cur_price": 0.00161,
+   "mark": 0.00161
+  },
+  "2hkhFLWQKUcvUNh7eUkfZVz3rYfxXqFNeVLYMotrzFky": {
+   "sym": "ALICE",
+   "qty": 124113.019877886,
+   "cost": 50.02,
+   "opened": "2026-09-14T14:15:23Z",
+   "peak": 0.0003995,
+   "entry": 0.00040301976415701074,
+   "cur_price": 0.0003995,
+   "mark": 0.0003995
   }
  },
  "trades": [
@@ -439,6 +449,18 @@
    "pnl": -25.64,
    "frac": 1.0,
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-14T14:15:23Z",
+   "side": "buy",
+   "sym": "ALICE",
+   "addr": "2hkhFLWQKUcvUNh7eUkfZVz3rYfxXqFNeVLYMotrzFky",
+   "price": 0.0003995,
+   "fill": 0.000403019764,
+   "usd": 50.02,
+   "slip": 0.018,
+   "quote": "jup",
+   "reason": "screener"
   }
  ],
  "equity": [
@@ -2809,6 +2831,10 @@
   {
    "t": "2026-09-14T14:10:41Z",
    "v": 355.34
+  },
+  {
+   "t": "2026-09-14T14:15:41Z",
+   "v": 368.84
   }
  ],
  "started": "2026-09-10T17:17:16Z"
