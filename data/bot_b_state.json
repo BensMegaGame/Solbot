@@ -1,17 +1,18 @@
 {
- "cash": 339.64000000000004,
+ "cash": 357.60173700000007,
  "positions": {
   "CFNRDaxFcvRwRSNnA5cHrCCr6AHhk9dNkHWpRUjNupFL": {
    "sym": "RAYCAT",
-   "qty": 8970.822400143534,
-   "cost": 60.32,
+   "qty": 6279.575680100474,
+   "cost": 42.224000000000004,
    "opened": "2026-09-14T12:13:02Z",
-   "peak": 0.008307,
+   "peak": 33.048,
    "entry": 0.006724021199999999,
    "entry_liq": 524272.52,
    "entry_vol": 109220985.09,
-   "cur_price": 0.007088,
-   "mark": 0.007088
+   "cur_price": 33.048,
+   "mark": 33.048,
+   "tp1": true
   },
   "9PSxYDFLPbSVx2PKjYRMumW14xtxViQU3Qmi7M8NQ32W": {
    "sym": "INCOME",
@@ -22,8 +23,8 @@
    "entry": 0.00023988219054570797,
    "entry_liq": 61954.83,
    "entry_vol": 170012.14,
-   "cur_price": 0.0003092,
-   "mark": 0.0003092,
+   "cur_price": 0.000304,
+   "mark": 0.000304,
    "added": true
   }
  },
@@ -61,6 +62,21 @@
    "slip": 0.0349,
    "quote": "jup",
    "reason": "add"
+  },
+  {
+   "t": "2026-09-14T17:30:57Z",
+   "side": "sell",
+   "sym": "RAYCAT",
+   "addr": "CFNRDaxFcvRwRSNnA5cHrCCr6AHhk9dNkHWpRUjNupFL",
+   "price": 33.048,
+   "usd": 17.96,
+   "pnl": -0.13,
+   "peak_x": 4914.916,
+   "held_h": 5.3,
+   "frac": 0.3,
+   "slip": 0.0109,
+   "quote": "jup",
+   "reason": "tp1"
   }
  ],
  "equity": [
@@ -2559,6 +2575,10 @@
   {
    "t": "2026-09-14T17:26:03Z",
    "v": 532.17
+  },
+  {
+   "t": "2026-09-14T17:30:57Z",
+   "v": 208011.8
   }
  ],
  "started": "2026-09-11T10:50:37Z",
