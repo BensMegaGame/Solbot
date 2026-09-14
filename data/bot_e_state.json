@@ -1,5 +1,5 @@
 {
- "cash": 264.9969196179558,
+ "cash": 318.66050561795583,
  "positions": {
   "8StnEDgfxfvxpCUUMH9ChXaqAkGGtxvnfxCAYHYnPXja": {
    "sym": "FLOPPY",
@@ -13,23 +13,24 @@
    "tp1_gain": 0.65,
    "moon_x": 3.0,
    "max_hold_h": 36,
-   "cur_price": 6.359e-05,
-   "mark": 6.359e-05
+   "cur_price": 6.627e-05,
+   "mark": 6.627e-05
   },
   "72yxYmhLgDGwdyi2b9GjDynBB6VuG3kDxNKqDbzXh5bi": {
    "sym": "WOW",
-   "qty": 1046494.1652218524,
-   "cost": 40.237414141610934,
+   "qty": 209298.8330443704,
+   "cost": 8.047482828322188,
    "opened": "2026-09-14T13:11:32Z",
-   "peak": 6.374e-05,
+   "peak": 6.888e-05,
    "entry": 3.844972621809198e-05,
    "tier": "T2",
    "stop": 0.35,
    "tp1_gain": 0.75,
    "moon_x": 5.0,
    "max_hold_h": 24,
-   "cur_price": 6.374e-05,
-   "mark": 6.374e-05
+   "cur_price": 6.888e-05,
+   "mark": 6.888e-05,
+   "tp1": true
   },
   "2bRoY87nsBq84TTKJKFD5gYxVLPhrTPKK9MaheSLCCLg": {
    "sym": "UNC",
@@ -43,8 +44,8 @@
    "tp1_gain": 0.75,
    "moon_x": 5.0,
    "max_hold_h": 24,
-   "cur_price": 5.182e-05,
-   "mark": 5.182e-05
+   "cur_price": 5.21e-05,
+   "mark": 5.21e-05
   },
   "7ghKoBZBAjGSgbxix5K5kFhQzu9mxVmbdPxRT8j27eEo": {
    "sym": "ETAC",
@@ -58,8 +59,8 @@
    "tp1_gain": 0.65,
    "moon_x": 3.0,
    "max_hold_h": 36,
-   "mark": 7.477e-05,
-   "cur_price": 7.477e-05
+   "mark": 7.289e-05,
+   "cur_price": 7.289e-05
   }
  },
  "trades": [
@@ -125,6 +126,19 @@
    "slip": 0.0817,
    "quote": "jup",
    "reason": "T3 chg -34%"
+  },
+  {
+   "t": "2026-09-14T14:11:22Z",
+   "side": "sell",
+   "sym": "WOW",
+   "addr": "72yxYmhLgDGwdyi2b9GjDynBB6VuG3kDxNKqDbzXh5bi",
+   "price": 6.888e-05,
+   "usd": 53.66,
+   "pnl": 21.47,
+   "frac": 0.8,
+   "slip": 0.0073,
+   "quote": "jup",
+   "reason": "tp1"
   }
  ],
  "equity": [
@@ -231,6 +245,10 @@
   {
    "t": "2026-09-14T14:06:29Z",
    "v": 480.47
+  },
+  {
+   "t": "2026-09-14T14:11:22Z",
+   "v": 483.31
   }
  ],
  "started": "2026-09-14T12:02:41Z",
