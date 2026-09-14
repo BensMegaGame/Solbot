@@ -1,5 +1,5 @@
 {
- "cash": 189.03374000000014,
+ "cash": 178.66221800000014,
  "positions": {
   "ANC8Qsky43JdjBXHqWwtLDtsspxkjbPsjiCaY3ypump": {
    "sym": "DVLT",
@@ -9,8 +9,8 @@
    "peak": 0.001603,
    "entry": 0.001461406473623821,
    "mig": 1789399431.0,
-   "cur_price": 0.001599,
-   "mark": 0.001599
+   "cur_price": 0.001584,
+   "mark": 0.001584
   },
   "NWq7Y6UUpkneabRgKqmrHPeGepLZbxw4pFYBi79pump": {
    "sym": "FTFS",
@@ -20,19 +20,19 @@
    "peak": 0.005571,
    "entry": 0.005343477355620453,
    "mig": 1789407232.0,
-   "cur_price": 0.005532,
-   "mark": 0.005532
+   "cur_price": 0.005497,
+   "mark": 0.005497
   },
   "zsCYqs39DWS4DPpJvzbAqLVZmhQzwMnyb2UTjctpump": {
    "sym": "USGR",
    "qty": 5334.95461,
    "cost": 30.02,
    "opened": "2026-09-14T18:01:07Z",
-   "peak": 0.005802,
+   "peak": 0.005997,
    "entry": 0.005627039439797595,
    "mig": 1789408102.0,
-   "cur_price": 0.0057,
-   "mark": 0.0057
+   "cur_price": 0.005997,
+   "mark": 0.005997
   },
   "pbELpkr4dQzvtHEe1AhTsGf7tqQ6NmGzEd8a9p3pump": {
    "sym": "FAIR",
@@ -42,8 +42,8 @@
    "peak": 0.006614,
    "entry": 0.006502237232367089,
    "mig": 1789412342.0,
-   "cur_price": 0.006508,
-   "mark": 0.006508
+   "cur_price": 0.006554,
+   "mark": 0.006554
   },
   "PEsT7duf8MDrDax42dH37v7bVdHhk9ewNm1L1QCpump": {
    "sym": "WOFI",
@@ -53,19 +53,19 @@
    "peak": 0.1402,
    "entry": 0.14101570814934333,
    "mig": 1789417990.0,
-   "cur_price": 0.1394,
-   "mark": 0.1394
+   "cur_price": 0.1401,
+   "mark": 0.1401
   },
-  "J2rrsW9b9XtjjbVeE7rsPgQWnPrCMweqvL1PqJjwpump": {
-   "sym": "SEMI",
-   "qty": 107198.545536,
+  "8XcATDK56Axr3sDkh9HhzN1AWXUefY4Vdo8PdXopump": {
+   "sym": "OpenAI",
+   "qty": 7912.654976,
    "cost": 30.02,
-   "opened": "2026-09-14T21:01:05Z",
-   "peak": 0.0002478,
-   "entry": 0.000280041112963781,
-   "mig": 1789418290.0,
-   "cur_price": 0.0002401,
-   "mark": 0.0002401
+   "opened": "2026-09-14T21:11:04Z",
+   "peak": 0.003768,
+   "entry": 0.0037939225318245444,
+   "mig": 1789418644.0,
+   "cur_price": 0.003768,
+   "mark": 0.003768
   }
  },
  "trades": [
@@ -602,6 +602,33 @@
    "slip": 0.024,
    "quote": "jup",
    "reason": "postgrad 23min"
+  },
+  {
+   "t": "2026-09-14T21:11:03Z",
+   "side": "sell",
+   "sym": "SEMI",
+   "addr": "J2rrsW9b9XtjjbVeE7rsPgQWnPrCMweqvL1PqJjwpump",
+   "price": 0.0001868,
+   "usd": 19.65,
+   "pnl": -10.37,
+   "peak_x": 0.885,
+   "held_h": 0.2,
+   "frac": 1.0,
+   "slip": 0.0147,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-14T21:11:04Z",
+   "side": "buy",
+   "sym": "OpenAI",
+   "addr": "8XcATDK56Axr3sDkh9HhzN1AWXUefY4Vdo8PdXopump",
+   "price": 0.003768,
+   "fill": 0.003793922532,
+   "usd": 30.02,
+   "slip": 0.0041,
+   "quote": "jup",
+   "reason": "postgrad 27min"
   }
  ],
  "equity": [
@@ -924,6 +951,10 @@
   {
    "t": "2026-09-14T21:06:02Z",
    "v": 368.83
+  },
+  {
+   "t": "2026-09-14T21:11:04Z",
+   "v": 363.98
   }
  ],
  "started": "2026-09-14T14:30:55Z",
