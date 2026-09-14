@@ -3,7 +3,7 @@ Kein Nachkaufen. Positionsgroesse in % des Cash sobald Portfolio > 500 $ (Deckel
 Holder-/Timing-Pruefung braucht HELIUS_KEY (Free-Tier reicht); ohne Key werden diese Checks uebersprungen."""
 import os, time, statistics
 from common import *
-from bot_a import candidates, metrics, passes
+from bot_a import candidates as boost_candidates, metrics, passes
 
 # ---- Positionsgroesse ----
 BASE_USD, PCT_CASH, CAP_USD, START_EQ = 60.0, 0.15, 120.0, 500.0
@@ -22,6 +22,36 @@ LS_MIN_LIQ, LS_MIN_MCAP, LS_MAX_MCAP = 20_000, 30_000, 500_000
 LS_TP1_X, LS_TP1_FRAC, LS_TP2_X, LS_STOP, LS_TRAIL, LS_MAX_HOLD_D = 5.0, 0.34, 20.0, -0.6, -0.40, 5
 
 HELIUS = os.environ.get("HELIUS_KEY")
+CODEX_KEY = os.environ.get("CODEX_KEY")
+DISCOVER_EVERY_S = 30 * 60           # Codex-Kandidaten hoechstens alle 30 Min (1440 Calls/Monat)
+from bot_a import MIN_AGE_H, MAX_AGE_H, MIN_LIQ, MIN_MCAP, MAX_MCAP, MIN_VOL
+
+Q_CAND = """
+query($net: [Int!], $after: Int!, $before: Int!) {
+  filterTokens(
+    filters: { network: $net, createdAt: { gte: $after, lte: $before }, volume24: { gte: %s },
+               marketCap: { gte: %s, lte: %s }, liquidity: { gte: %s } }
+    rankings: [{ attribute: volume24, direction: DESC }]
+    limit: 200
+  ) { results { token { address } } }
+}""" % (MIN_VOL, MIN_MCAP, MAX_MCAP, MIN_LIQ)
+
+def candidates():
+    """Neutrales Universum aus Codex (Alter/Liq/MCap/Vol wie Bot A), gecacht 30 Min. Fallback: Boost-Feed."""
+    meta = load("bot_d_meta.json", {})
+    if CODEX_KEY and time.time() - meta.get("last_discover", 0) >= DISCOVER_EVERY_S:
+        try:
+            now = time.time()
+            r = requests.post("https://graph.codex.io/graphql", headers={"Authorization": CODEX_KEY, "Content-Type": "application/json", **UA},
+                              json={"query": Q_CAND, "variables": {"net": [1399811149], "after": int(now - MAX_AGE_H * 3600), "before": int(now - MIN_AGE_H * 3600)}}, timeout=30)
+            r.raise_for_status(); d = r.json()
+            if d.get("errors"): print("codex:", str(d["errors"])[:200])
+            else:
+                meta["universe"] = [x["token"]["address"] for x in d["data"]["filterTokens"]["results"]]
+                meta["last_discover"] = now; save("bot_d_meta.json", meta)
+        except Exception as e: print("codex fehler:", e)
+    uni = meta.get("universe")
+    return uni if uni else boost_candidates()
 
 # ---------- Helius ----------
 def helius_rpc(method, params):
@@ -149,7 +179,7 @@ def main():
         time.sleep(1.1)
     save("bot_d_cooldown.json", {k: v for k, v in cooldown.items() if v > today})
     save("bot_d_wallets.json", dict(list(wcache.items())[-3000:]))
-    st["strategy"] = "concentrated"; st["helius"] = bool(HELIUS)
+    st["strategy"] = "concentrated"; st["helius"] = bool(HELIUS); st["codex"] = bool(CODEX_KEY)
     v = pf.mark(prices); pf.commit()
     print(f"Bot D [konzentriert{'' if HELIUS else ', ohne Helius'}]: equity {v:.2f} | cash {st['cash']:.2f} | positions {len(st['positions'])} (longshot {n_ls}) | geprueft {len(checks)}")
     for sym, why in checks[:12]: print(f"   {sym:<10} {why}")
