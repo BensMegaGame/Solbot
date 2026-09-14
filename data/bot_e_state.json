@@ -13,7 +13,9 @@
    "tp1_gain": 0.65,
    "moon_x": 3.0,
    "max_hold_h": 36,
-   "cur_price": 6.708e-05
+   "cur_price": 6.708e-05,
+   "no_quote_since": "2026-09-14T13:41:28Z",
+   "mark": 6.708e-05
   },
   "72yxYmhLgDGwdyi2b9GjDynBB6VuG3kDxNKqDbzXh5bi": {
    "sym": "WOW",
@@ -27,21 +29,23 @@
    "tp1_gain": 0.75,
    "moon_x": 5.0,
    "max_hold_h": 24,
-   "cur_price": 4.05e-05
+   "cur_price": 4.175e-05,
+   "mark": 4.175e-05
   },
   "2bRoY87nsBq84TTKJKFD5gYxVLPhrTPKK9MaheSLCCLg": {
    "sym": "UNC",
    "qty": 814676.0273583293,
    "cost": 40.22103850848625,
    "opened": "2026-09-14T13:16:39Z",
-   "peak": 4.92e-05,
+   "peak": 5.444e-05,
    "entry": 4.9370592920117094e-05,
    "tier": "T2",
    "stop": 0.35,
    "tp1_gain": 0.75,
    "moon_x": 5.0,
    "max_hold_h": 24,
-   "cur_price": 4.92e-05
+   "cur_price": 5.444e-05,
+   "mark": 5.444e-05
   }
  },
  "trades": [
@@ -177,6 +181,10 @@
   {
    "t": "2026-09-14T13:36:32Z",
    "v": 468.92
+  },
+  {
+   "t": "2026-09-14T13:41:28Z",
+   "v": 474.5
   }
  ],
  "started": "2026-09-14T12:02:41Z",
