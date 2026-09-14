@@ -20,7 +20,7 @@ def tradeable_sym(sym):
 
 # ---------- Universum ----------
 MIN_AGE_D, MAX_AGE_D   = 14, 56
-MIN_MCAP, MAX_MCAP     = 10_000, 300_000
+MIN_MCAP, MAX_MCAP     = 10_000, 800_000       # v2.2: aufgeweitet (300k war zu eng, siehe log)
 MIN_LIQ, MIN_LIQ_RATIO = 50_000, 0.04
 MIN_VOL24              = 40_000
 # ---------- Einstieg ----------
@@ -109,8 +109,12 @@ def gt_history(pool_addr):
     return rows[:-1]
 
 def discover(hist):
-    """Kandidaten NUR im Zielalterfenster (14-56 Tage): direkte Codex-Alterssuche (alle 30 Min) + bereits
-    beobachtete (fuer laufende Snapshots) + Bot A's Kandidatenlog, falls die dort schon alt genug sind."""
+    """Kandidaten NUR im Zielalterfenster (14-56 Tage): Codex filtert bereits serverseitig nach Alter,
+    MCap, Liquiditaet und Volumen (alle 30 Min neu) - das deckt Bs Universum vollstaendig und sauber ab.
+    Bot A's Kandidatenlog wird NICHT mehr gemischt: das filtert nur nach Alter, nicht nach MCap, und
+    fuellte die Watchlist zuletzt mit ~130 Tokens, die laengst ausserhalb von Bs 10k-300k-Fenster lagen.
+    Fallback: falls Codex mal ausfaellt/kein Key gesetzt ist, bleiben die bereits beobachteten Tokens erhalten,
+    damit laufende Snapshots/Positionen nicht abreissen - es kommen nur einfach keine neuen hinzu bis Codex wieder geht."""
     addrs = set(hist.keys())
     st_meta = load("bot_b_meta.json", {})
     if time.time() - st_meta.get("last_discover", 0) >= DISCOVER_EVERY_S:
@@ -118,12 +122,6 @@ def discover(hist):
         addrs |= fresh
         st_meta["last_discover"] = time.time(); st_meta["last_fresh_n"] = len(fresh)
         save("bot_b_meta.json", st_meta)
-    seen = load("bot_a_seen.json", {})
-    now = time.time()
-    for a, first in seen.items():
-        try: age = (now - parse_iso(first)) / DAY
-        except Exception: continue
-        if MIN_AGE_D <= age <= MAX_AGE_D: addrs.add(a)     # nur wenn schon reif, nicht mehr verfrueht
     return list(addrs)[:400]
 
 def resolve(sym):
@@ -195,11 +193,16 @@ def main():
         else: rows.append(s)
         hist[a]["rows"] = rows[-70:]
         prices[a] = s["px"]
-    # tote/zu alte Tokens aus der Beobachtung nehmen (nicht aus Positionen)
+    # tote/zu alte/nie-passende Tokens aus der Beobachtung nehmen (nicht aus Positionen/Cooldown)
+    # "nie passend": Codex liefert nur noch mcap/liq-gefilterte Kandidaten (v2.2) - Reste aus der alten
+    # ungefilterten Quelle (Bot A's Log) werden hier sofort ausgemustert statt langsam auszulaufen.
     for a in list(hist):
         r = hist[a]["rows"]
-        if a in st["positions"]: continue
-        if not r or r[-1]["age_d"] > MAX_AGE_D + 5 or (len(r) >= 3 and all(x["liq"] < 20_000 for x in r[-3:])): del hist[a]
+        if a in st["positions"] or st["cooldown"].get(a, 0) > today: continue
+        last = r[-1] if r else None
+        stale = not last or last["age_d"] > MAX_AGE_D + 5 or (len(r) >= 3 and all(x["liq"] < 20_000 for x in r[-3:]))
+        never_fits = last and not (MIN_MCAP <= last["mcap"] <= MAX_MCAP)
+        if stale or never_fits: del hist[a]
     # 3. Positionen verwalten
     for a, pos in list(st["positions"].items()):
         p = pairs.get(a)
