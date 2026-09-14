@@ -1,50 +1,49 @@
 {
- "cash": 392.0366390000001,
+ "cash": 362.0166390000001,
  "positions": {
   "UNHwuKaSGKP7qmYMFS5aSJdqifHj6CiXWvtoeYNpump": {
    "sym": "fomo",
    "qty": 7056.903366,
    "cost": 30.02,
    "opened": "2026-09-14T14:56:08Z",
-   "peak": 0.004374,
+   "peak": 0.004378,
    "entry": 0.004253990517233902,
    "mig": 1789397153.0,
-   "cur_price": 0.004374,
-   "mark": 0.004374
-  },
-  "Rcx2rdscZAzwCsVudYzkTrjEPfePgdey4AVCpJepump": {
-   "sym": "FAIR",
-   "qty": 5749.511471,
-   "cost": 30.02,
-   "opened": "2026-09-14T15:21:04Z",
-   "peak": 0.005372,
-   "entry": 0.005221313176157328,
-   "mig": 1789398221.0,
-   "cur_price": 0.005372,
-   "mark": 0.005372,
-   "no_quote_since": "2026-09-14T16:41:00Z"
+   "cur_price": 0.004378,
+   "mark": 0.004378
   },
   "ANC8Qsky43JdjBXHqWwtLDtsspxkjbPsjiCaY3ypump": {
    "sym": "DVLT",
    "qty": 20541.855084,
    "cost": 30.02,
    "opened": "2026-09-14T15:36:02Z",
-   "peak": 0.001491,
+   "peak": 0.001497,
    "entry": 0.001461406473623821,
    "mig": 1789399431.0,
-   "cur_price": 0.001477,
-   "mark": 0.001477
+   "cur_price": 0.001497,
+   "mark": 0.001497
   },
   "Ahezdv3CTkBM5w3jG7vKdk12cM332ThzXkQbSA7pump": {
    "sym": "OpenAI",
    "qty": 800.24069,
    "cost": 30.02,
    "opened": "2026-09-14T15:56:05Z",
-   "peak": 0.03779,
+   "peak": 0.03942,
    "entry": 0.03751371353036297,
    "mig": 1789400454.0,
-   "cur_price": 0.03766,
-   "mark": 0.03766
+   "cur_price": 0.03942,
+   "mark": 0.03942
+  },
+  "6XV1bfWhSZfmeZgfRzJHSZ51df31BNVzNE8Xxr2Kpump": {
+   "sym": "WHEEL TYSON",
+   "qty": 84153.825373,
+   "cost": 30.02,
+   "opened": "2026-09-14T16:46:02Z",
+   "peak": 0.0003343,
+   "entry": 0.00035672769320872305,
+   "mig": 1789402574.0,
+   "cur_price": 0.0003343,
+   "mark": 0.0003343
   }
  },
  "trades": [
@@ -158,6 +157,33 @@
    "slip": 0.0,
    "quote": "jup",
    "reason": "postgrad 15min"
+  },
+  {
+   "t": "2026-09-14T16:46:00Z",
+   "side": "sell",
+   "sym": "FAIR",
+   "addr": "Rcx2rdscZAzwCsVudYzkTrjEPfePgdey4AVCpJepump",
+   "price": 1.792e-06,
+   "usd": -0.01,
+   "pnl": -30.03,
+   "peak_x": 1.029,
+   "held_h": 1.4,
+   "frac": 1.0,
+   "slip": 0.0122,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-14T16:46:02Z",
+   "side": "buy",
+   "sym": "WHEEL TYSON",
+   "addr": "6XV1bfWhSZfmeZgfRzJHSZ51df31BNVzNE8Xxr2Kpump",
+   "price": 0.0003343,
+   "fill": 0.000356727693,
+   "usd": 30.02,
+   "slip": 0.0273,
+   "quote": "jup",
+   "reason": "postgrad 30min"
   }
  ],
  "equity": [
@@ -268,6 +294,10 @@
   {
    "t": "2026-09-14T16:41:00Z",
    "v": 514.27
+  },
+  {
+   "t": "2026-09-14T16:46:02Z",
+   "v": 483.34
   }
  ],
  "started": "2026-09-14T14:30:55Z",
