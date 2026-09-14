@@ -168,8 +168,10 @@ class Paper:
         cost_part = pos["cost"] * frac
         pos["qty"] -= qty; pos["cost"] -= cost_part
         pnl = net - cost_part
+        peak_x = round(max(pos.get("peak", price), price) / pos["entry"], 3) if pos.get("entry") else None
         self.s["trades"].append({"t": now_iso(), "side": "sell", "sym": pos["sym"], "addr": addr,
-                                 "price": price, "usd": round(net, 2), "pnl": round(pnl, 2),
+                                 "price": price, "usd": round(net, 2), "pnl": round(pnl, 2), "peak_x": peak_x,
+                                 "held_h": round(held_seconds(pos) / 3600, 1),
                                  "frac": frac, "slip": round(slip, 4), "quote": src, "reason": reason})
         if pos["qty"] <= 1e-9 or frac >= 0.999:
             del self.s["positions"][addr]
