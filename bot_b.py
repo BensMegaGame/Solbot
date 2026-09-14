@@ -31,7 +31,7 @@ MAX_ABOVE_AVG    = 0.60       # nicht kaufen, wenn Preis > 60 % ueber 7-Tage-Sch
 # ---------- Position ----------
 ENTRY_USD, ADD_USD, MAX_POS = 60.0, 40.0, 5
 ADD_AT_X   = 1.25             # Nachkauf bei +25 %, wenn Volumen weiter steigt
-TP1_X, TP1_FRAC = 2.0, 0.5
+TP1_X, TP1_FRAC = 1.5, 0.30   # v2.1: +50 % -> 30 % raus (vorher 2x/50 %); Rest laeuft ueber Trailing
 TRAIL, HARD_STOP, MAX_HOLD_D = -0.30, -0.35, 30
 LIQ_DROP_EXIT, VOL_DROP_EXIT = -0.40, 0.50
 # ---------- Schutz ----------
