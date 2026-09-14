@@ -1,5 +1,5 @@
 {
- "cash": 133.14801694111193,
+ "cash": 155.09327194111194,
  "positions": {
   "5GefefPX1mDs6ZJB1apYmz6fCTCiNJpHturZ9bvFpump": {
    "sym": "Pumpoween",
@@ -8,8 +8,8 @@
    "opened": "2026-09-12T21:25:13Z",
    "peak": 0.0004989,
    "entry": 0.0004150532496,
-   "cur_price": 0.0004694,
-   "mark": 0.0004694
+   "cur_price": 0.0004681,
+   "mark": 0.0004681
   },
   "BifUDWQFpbTrSxYXBnqCpAVYgcyQGzHzJk2MDmeM2Gyv": {
    "sym": "TCAT",
@@ -18,8 +18,8 @@
    "opened": "2026-09-12T23:00:22Z",
    "peak": 0.002396,
    "entry": 0.0013328044883999998,
-   "cur_price": 0.00147,
-   "mark": 0.00147
+   "cur_price": 0.001475,
+   "mark": 0.001475
   },
   "Hy1LfQLL4zLQihmiQKZm7DQzXm5K8aVSfKtdHFYXbKMm": {
    "sym": "AMBA",
@@ -28,8 +28,8 @@
    "opened": "2026-09-13T03:20:17Z",
    "peak": 0.00145,
    "entry": 0.0008846074234799999,
-   "cur_price": 0.0009488,
-   "mark": 0.0009488
+   "cur_price": 0.0008854,
+   "mark": 0.0008854
   },
   "EHpaxqVVjyyPt2cjfft5SqTkfaEjCF7RUCaFxCrZpump": {
    "sym": "wheelsmith",
@@ -38,30 +38,31 @@
    "opened": "2026-09-13T16:30:40Z",
    "peak": 0.0004966,
    "entry": 0.00013791453852,
-   "cur_price": 0.0003994,
-   "mark": 0.0003994,
+   "cur_price": 0.0004037,
+   "mark": 0.0004037,
    "tp1": true,
    "tp0": true
   },
   "4MMQY9bwkxxTtsK3W227Q5ABT6yFY8Pmn9Ze7wmAXKY8": {
    "sym": "ALLINU",
-   "qty": 28978.048548663417,
-   "cost": 50.269999999999996,
+   "qty": 21733.536411497564,
+   "cost": 37.7025,
    "opened": "2026-09-13T23:35:42Z",
    "peak": 0.003303,
    "entry": 0.0017347613975999998,
-   "cur_price": 0.003008,
-   "mark": 0.003008
+   "cur_price": 0.003125,
+   "mark": 0.003125,
+   "tp0": true
   },
   "2hkhFLWQKUcvUNh7eUkfZVz3rYfxXqFNeVLYMotrzFky": {
    "sym": "ALICE",
    "qty": 124113.019877886,
    "cost": 50.02,
    "opened": "2026-09-14T14:15:23Z",
-   "peak": 0.0005839,
+   "peak": 0.0006347,
    "entry": 0.00040301976415701074,
-   "cur_price": 0.0005738,
-   "mark": 0.0005738
+   "cur_price": 0.0006347,
+   "mark": 0.0006347
   }
  },
  "trades": [
@@ -489,6 +490,21 @@
    "held_h": 23.3,
    "frac": 0.25,
    "slip": 0.0012,
+   "quote": "jup",
+   "reason": "tp0"
+  },
+  {
+   "t": "2026-09-14T16:20:07Z",
+   "side": "sell",
+   "sym": "ALLINU",
+   "addr": "4MMQY9bwkxxTtsK3W227Q5ABT6yFY8Pmn9Ze7wmAXKY8",
+   "price": 0.003125,
+   "usd": 21.95,
+   "pnl": 9.38,
+   "peak_x": 1.904,
+   "held_h": 16.7,
+   "frac": 0.25,
+   "slip": 0.0359,
    "quote": "jup",
    "reason": "tp0"
   }
@@ -2961,6 +2977,10 @@
   {
    "t": "2026-09-14T16:15:56Z",
    "v": 512.34
+  },
+  {
+   "t": "2026-09-14T16:20:56Z",
+   "v": 519.61
   }
  ],
  "started": "2026-09-10T17:17:16Z"
