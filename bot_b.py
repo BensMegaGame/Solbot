@@ -72,46 +72,65 @@ def rug_ok(addr):
     risks = [r.get("name", "") for r in (s.get("risks") or [])]
     return not any(k in r.lower() for r in risks for k in HARD_RISKS), risks
 
+SOLANA_NET = 1399811149
+CODEX_KEY = os.environ.get("CODEX_KEY")
+CODEX_URL = "https://graph.codex.io/graphql"
+DISCOVER_EVERY_S = 30 * 60   # Codex-Discovery hoechstens alle 30 Minuten (Budget-Schonung)
+
+def codex(query, variables=None):
+    if not CODEX_KEY: return None
+    try:
+        r = requests.post(CODEX_URL, json={"query": query, "variables": variables or {}},
+                          headers={"Authorization": CODEX_KEY, "Content-Type": "application/json", **UA}, timeout=30)
+        r.raise_for_status(); out = r.json()
+        if out.get("errors"): print("codex:", str(out["errors"])[:200]); return None
+        return out.get("data")
+    except Exception as e:
+        print("codex fehler:", e); return None
+
+Q_AGED = """
+query($net: [Int!], $after: Int!, $before: Int!) {
+  filterTokens(
+    filters: { network: $net, createdAt: { gte: $after, lte: $before }, volume24: { gte: %s } }
+    rankings: [{ attribute: volume24, direction: DESC }]
+    limit: 200
+  ) { results { token { address symbol } } }
+}""" % MIN_VOL24
+
+def codex_aged_candidates():
+    """Direkt die Tokens im Zielalterfenster – ersetzt das 'hoffen, dass GeckoTerminal zufaellig alte zeigt'."""
+    now = time.time()
+    after = int(now - MAX_AGE_D * DAY); before = int(now - MIN_AGE_D * DAY)
+    d = codex(Q_AGED, {"net": [SOLANA_NET], "after": after, "before": before})
+    if not d: return set()
+    return {r["token"]["address"] for r in d["filterTokens"]["results"]}
+
 GT = "https://api.geckoterminal.com/api/v2/networks/solana"
 
-def gt_pools():
-    """GeckoTerminal: umsatzstaerkste + trendende Solana-Pools mit Erstellungsdatum. Liefert {token_addr: pool_addr}."""
-    out = {}
-    import datetime as dt
-    for ep in ["/trending_pools"] + [f"/pools?page={p}&sort=h24_volume_usd_desc" for p in (1, 2, 3, 4, 5)]:
-        d = get(GT + ep)
-        for pool in (d or {}).get("data", []):
-            a = pool.get("attributes", {})
-            try: age = (dt.datetime.now(dt.timezone.utc) - dt.datetime.fromisoformat(a["pool_created_at"].replace("Z", "+00:00"))).days
-            except Exception: continue
-            if not (MIN_AGE_D - 7 <= age <= MAX_AGE_D + 2): continue
-            base = (pool.get("relationships", {}).get("base_token", {}).get("data", {}).get("id") or "").replace("solana_", "")
-            if base and base not in out: out[base] = pool["id"].replace("solana_", "")
-        time.sleep(2.1)   # 30 Aufrufe/Minute
-    return out
-
 def gt_history(pool_addr):
-    """30 Tageskerzen eines Pools -> Zeilen wie unsere Snapshots (px, vol). Liquiditaet/Buy-Ratio kommen vom aktuellen Snapshot."""
+    """Tageskerzen eines Pools (Solana-Pooladresse = DexScreener pairAddress) fuers Backfill der eigenen Historie."""
     d = get(f"{GT}/pools/{pool_addr}/ohlcv/day", {"limit": 30})
     rows = []
     for ts, o, h, l, c, v in sorted((d or {}).get("data", {}).get("attributes", {}).get("ohlcv_list", [])):
         rows.append({"d": int(ts // DAY), "t": "", "px": float(c), "vol": float(v), "vol6": None, "liq": None, "mcap": None, "buy_ratio": None, "age_d": None})
-    return rows[:-1]   # letzte = laufender Tag
+    return rows[:-1]
 
 def discover(hist):
-    """Adressen: GeckoTerminal-Pools (3–8 Wochen alt), Bot A's Kandidatenlog, DexScreener-Profile/Boosts, bereits beobachtete."""
+    """Kandidaten NUR im Zielalterfenster (14-56 Tage): direkte Codex-Alterssuche (alle 30 Min) + bereits
+    beobachtete (fuer laufende Snapshots) + Bot A's Kandidatenlog, falls die dort schon alt genug sind."""
     addrs = set(hist.keys())
-    pools = gt_pools(); addrs |= set(pools)
-    save("bot_b_pools.json", {**load("bot_b_pools.json", {}), **pools})
+    st_meta = load("bot_b_meta.json", {})
+    if time.time() - st_meta.get("last_discover", 0) >= DISCOVER_EVERY_S:
+        fresh = codex_aged_candidates()
+        addrs |= fresh
+        st_meta["last_discover"] = time.time(); st_meta["last_fresh_n"] = len(fresh)
+        save("bot_b_meta.json", st_meta)
     seen = load("bot_a_seen.json", {})
     now = time.time()
     for a, first in seen.items():
         try: age = (now - time.mktime(time.strptime(first, "%Y-%m-%dT%H:%M:%SZ"))) / DAY
         except Exception: continue
-        if MIN_AGE_D - 7 <= age <= MAX_AGE_D: addrs.add(a)     # etwas frueher beobachten, damit Historie da ist
-    for ep in ("/token-profiles/latest/v1", "/token-boosts/latest/v1", "/token-boosts/top/v1"):
-        for t in get(DS + ep) or []:
-            if t.get("chainId") == "solana": addrs.add(t["tokenAddress"])
+        if MIN_AGE_D <= age <= MAX_AGE_D: addrs.add(a)     # nur wenn schon reif, nicht mehr verfrueht
     return list(addrs)[:400]
 
 def resolve(sym):
@@ -216,7 +235,7 @@ def main():
         if x >= ADD_AT_X and not pos.get("added") and cur["vol"] > pos.get("entry_vol", 0) and st["cash"] >= ADD_USD + 5:
             pos["added"] = True; pf.buy(pos["sym"], a, px, ADD_USD, liq, "add")
     # 4. Einstiege
-    checks = []; pools = load("bot_b_pools.json", {}); gt_cache = load("bot_b_gt_cache.json", {})
+    checks = []; gt_cache = load("bot_b_gt_cache.json", {})
     grob = {"alter": 0, "mcap": 0, "liq": 0, "vol": 0}
     for a, p in pairs.items():
         if a in st["positions"] or len(st["positions"]) >= MAX_POS: continue
@@ -230,10 +249,11 @@ def main():
         if cur["liq"] < MIN_LIQ: grob["liq"] += 1; continue
         if cur["vol"] < MIN_VOL24: grob["vol"] += 1; continue
         own = rows[:-1]
-        if len(own) < 7 and a in pools:
+        pool_addr = p.get("pairAddress")
+        if len(own) < 7 and pool_addr:
             c = gt_cache.get(a)
             if not c or c["d"] != today:
-                c = {"d": today, "rows": gt_history(pools[a])}; gt_cache[a] = c; time.sleep(2.1)
+                c = {"d": today, "rows": gt_history(pool_addr)}; gt_cache[a] = c; time.sleep(2.1)
             own = merged_history(own, c["rows"])
         ok, why = entry_check(own, cur)
         checks.append((p["baseToken"]["symbol"], why))
