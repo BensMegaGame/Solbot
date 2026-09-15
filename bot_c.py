@@ -20,7 +20,11 @@ ENTRY_MIN, ENTRY_MAX = 10, 40        # Minuten nach Migration (Startwert; nach a
 # v2.3 - kalibriert an 574 geloggten Pfaden (siehe analyze_c.py):
 # Rug-Quote ohne Filter 38 %. ALLE 14 gekauften Rugs hatten > 189.000 $ Startliquiditaet -
 # eine echte Pump.fun-Migration startet mit ~12-15k. Hohe Liquiditaet = kuenstlich aufgeblasen.
-MIN_LIQ, MAX_LIQ = 15_000, 50_000      # Obergrenze ist der wichtigste Filter ueberhaupt
+# v3.1 an 1.130 Pfaden nachgerechnet: die Untergrenze lag bei 15k genau dort, wo die EHRLICHEN
+# Migrationen starten (12-15k) - sie schloss also die Zielgruppe aus, nicht die Rugs.
+# EV je Trade: 15-50k = -3,0 % | 10-50k = +3,3 % | 8-50k = +3,9 % | 5-50k = +2,6 % | 3-50k = +0,8 %.
+# Die OBERgrenze bleibt der wichtigste Filter (alle gekauften Rugs hatten > 189k).
+MIN_LIQ, MAX_LIQ = 8_000, 50_000
 MAX_HOLDERS = 600                      # Rugs hatten im Median 1.674 Holder, Ueberlebende 277 (Fake-Holder)
 MAX_INSIDER_STRICT = 2.0
 MIN_BUYS_1H, MIN_UBUYS_1H = 20, 12
