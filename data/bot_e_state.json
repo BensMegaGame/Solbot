@@ -14,7 +14,8 @@
    "moon_x": 5.0,
    "max_hold_h": 24,
    "mark": 1.355e-05,
-   "cur_price": 1.355e-05
+   "cur_price": 1.355e-05,
+   "no_quote_since": "2026-09-15T19:01:29Z"
   },
   "2qEubd7GwtZbCqDu1uQwNC4kNaJLBdRUcWKpckTypump": {
    "sym": "KRYPTO",
@@ -28,24 +29,23 @@
    "tp1_gain": 0.75,
    "moon_x": 5.0,
    "max_hold_h": 24,
-   "mark": 7.434e-05,
-   "cur_price": 7.434e-05
+   "mark": 7.072e-05,
+   "cur_price": 7.072e-05
   },
   "2d4xZo72fDfFQaHTzqH3yJXWSnyEbh2H99EqJiUPpump": {
    "sym": "DWH",
    "qty": 685683.702934,
    "cost": 60.02,
    "opened": "2026-09-15T13:46:32Z",
-   "peak": 0.0001044,
+   "peak": 0.0001338,
    "entry": 8.753307063180585e-05,
    "tier": "T3",
    "stop": 0.3,
    "tp1_gain": 0.65,
    "moon_x": 3.0,
    "max_hold_h": 36,
-   "mark": 7.212e-05,
-   "cur_price": 7.212e-05,
-   "no_quote_since": "2026-09-15T18:56:30Z"
+   "mark": 0.0001338,
+   "cur_price": 0.0001338
   },
   "CT9YFpaLeugv5BCXTo7ZmM6ad1eGhQgx9hReAy6RJnC8": {
    "sym": "BCAT",
@@ -74,8 +74,8 @@
    "tp1_gain": 0.4,
    "moon_x": 3.0,
    "max_hold_h": 48,
-   "mark": 0.0001227,
-   "cur_price": 0.0001227
+   "mark": 0.0001233,
+   "cur_price": 0.0001233
   }
  },
  "trades": [
@@ -2143,6 +2143,10 @@
   {
    "t": "2026-09-15T18:56:30Z",
    "v": 252.05
+  },
+  {
+   "t": "2026-09-15T19:01:29Z",
+   "v": 292.46
   }
  ],
  "started": "2026-09-14T12:02:41Z",
