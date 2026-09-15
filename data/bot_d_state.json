@@ -1,5 +1,5 @@
 {
- "cash": 359.4326180000002,
+ "cash": 344.41261800000024,
  "positions": {
   "BdsfZvhXB6VjnJbzcpWwztiZW1a3wtAznztuVA4j2u64": {
    "sym": "ABTC",
@@ -20,8 +20,8 @@
    "peak": 0.0001648,
    "entry": 5.923371667409147e-05,
    "liq0": 21790.81,
-   "cur_price": 7.012e-05,
-   "mark": 7.012e-05
+   "cur_price": 7.411e-05,
+   "mark": 7.411e-05
   },
   "AmPojoiSMGzwMMmrXFzovcnUA8UuwSTBf1myCBbhR4Mf": {
    "sym": "HODL",
@@ -31,8 +31,8 @@
    "peak": 9.379e-05,
    "entry": 9.929043370036056e-05,
    "liq0": 30396.91,
-   "cur_price": 8.373e-05,
-   "mark": 8.373e-05
+   "cur_price": 8.175e-05,
+   "mark": 8.175e-05
   },
   "DiPGXNtHxipNrixTfrQPBA51GFLtHdQvBJ8Moj8m6aNP": {
    "sym": "TOELY",
@@ -42,8 +42,8 @@
    "peak": 0.0001233,
    "entry": 9.638345501636873e-05,
    "liq0": 25485.21,
-   "cur_price": 8.444e-05,
-   "mark": 8.444e-05
+   "cur_price": 7.119e-05,
+   "mark": 7.119e-05
   },
   "2bDQvnvwd7rNbm4o3JNdN6z9c7MVzp4yqHJPNXPiSTNK": {
    "sym": "BITCAT",
@@ -53,8 +53,8 @@
    "peak": 8.907e-05,
    "entry": 9.109235810265987e-05,
    "liq0": 28986.99,
-   "cur_price": 8.167e-05,
-   "mark": 8.167e-05
+   "cur_price": 7.814e-05,
+   "mark": 7.814e-05
   },
   "2s9ycNwMgVCB4SWtXmTu14w1ospd88MVYZdHLVEHLdVC": {
    "sym": "SKYNET",
@@ -64,8 +64,8 @@
    "peak": 0.0001424,
    "entry": 0.00010673293353768815,
    "liq0": 28990.92,
-   "cur_price": 0.0001168,
-   "mark": 0.0001168
+   "cur_price": 0.0001118,
+   "mark": 0.0001118
   },
   "F8Sc8HoZvJcMrTY6vBsetTqGPv6XQmM2XgVAZo1sSTNK": {
    "sym": "MARINE",
@@ -75,8 +75,8 @@
    "peak": 0.0001255,
    "entry": 8.37227799202227e-05,
    "liq0": 23200.72,
-   "cur_price": 7.608e-05,
-   "mark": 7.608e-05
+   "cur_price": 7.475e-05,
+   "mark": 7.475e-05
   },
   "3RTC33FgYgtbhEzXdRgNb2oaVuGPTSyUMkwWPJLx7NBX": {
    "sym": "LEVERSTONK",
@@ -86,8 +86,19 @@
    "peak": 0.0001667,
    "entry": 0.0001589314964875613,
    "liq0": 10025.8,
-   "cur_price": 0.0001628,
-   "mark": 0.0001628
+   "cur_price": 0.0001635,
+   "mark": 0.0001635
+  },
+  "3C6sZzwq2ietUdjRaNgTwoKw6dBMkKCe5u1rricjEFAU": {
+   "sym": "CHAIN",
+   "qty": 221388.534873,
+   "cost": 15.02,
+   "opened": "2026-09-15T20:46:12Z",
+   "peak": 6.605e-05,
+   "entry": 6.784452505011723e-05,
+   "liq0": 22443.65,
+   "cur_price": 6.605e-05,
+   "mark": 6.605e-05
   }
  },
  "trades": [
@@ -267,6 +278,18 @@
    "slip": 0.0588,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-15T20:46:12Z",
+   "side": "buy",
+   "sym": "CHAIN",
+   "addr": "3C6sZzwq2ietUdjRaNgTwoKw6dBMkKCe5u1rricjEFAU",
+   "price": 6.605e-05,
+   "fill": 6.7844525e-05,
+   "usd": 15.02,
+   "slip": 0.0454,
+   "quote": "jup",
+   "reason": "longshot"
   }
  ],
  "equity": [
@@ -469,6 +492,10 @@
   {
    "t": "2026-09-15T20:41:06Z",
    "v": 474.63
+  },
+  {
+   "t": "2026-09-15T20:46:12Z",
+   "v": 471.42
   }
  ],
  "started": "2026-09-15T16:35:51Z",
