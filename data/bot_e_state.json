@@ -1,5 +1,5 @@
 {
- "cash": 169.79908261795583,
+ "cash": 124.77908261795582,
  "positions": {
   "4sgjzB5Nc49SUB4xnb3MC2H5dVkKvimfFN5AsJuVs5U7": {
    "sym": "CINNA",
@@ -30,6 +30,21 @@
    "max_hold_h": 36,
    "mark": 7.027e-05,
    "cur_price": 7.027e-05
+  },
+  "41WU7d3EzacMHkpgHNnF7eG9aXjvbPqASXVLpGqkoTpa": {
+   "sym": "GAY",
+   "qty": 630680.399939,
+   "cost": 45.02,
+   "opened": "2026-09-15T21:21:49Z",
+   "peak": 6.941e-05,
+   "entry": 7.138322358575655e-05,
+   "tier": "T3",
+   "stop": 0.35,
+   "tp1_gain": 0.7,
+   "moon_x": 3.0,
+   "max_hold_h": 36,
+   "no_quote_since": "2026-09-15T21:21:49Z",
+   "mark": 0.0
   }
  },
  "trades": [
@@ -652,6 +667,18 @@
    "slip": 0.0034,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-15T21:21:49Z",
+   "side": "buy",
+   "sym": "GAY",
+   "addr": "41WU7d3EzacMHkpgHNnF7eG9aXjvbPqASXVLpGqkoTpa",
+   "price": 6.941e-05,
+   "fill": 7.1383224e-05,
+   "usd": 45.02,
+   "slip": 0.0202,
+   "quote": "jup",
+   "reason": "T3 chg -42%"
   }
  ],
  "equity": [
@@ -2254,6 +2281,10 @@
   {
    "t": "2026-09-15T21:16:22Z",
    "v": 238.65
+  },
+  {
+   "t": "2026-09-15T21:21:49Z",
+   "v": 193.63
   }
  ],
  "started": "2026-09-14T12:02:41Z",
