@@ -1,5 +1,5 @@
 {
- "cash": 158.4371910000001,
+ "cash": 128.4171910000001,
  "positions": {
   "R5djwmnzNmsytb8BqTohFDW555Q531jRXNeRwigpump": {
    "sym": "STRATEGY",
@@ -9,19 +9,19 @@
    "peak": 0.004928,
    "entry": 0.004766716105578943,
    "mig": 1789424082.0,
-   "cur_price": 0.004893,
-   "mark": 0.004893
+   "cur_price": 0.0049,
+   "mark": 0.0049
   },
   "3qFdxC9xvb2vqhFijrPLE4Dn5mH7Ndmagjh15Q1dN6Rb": {
    "sym": "Noiz",
    "qty": 5088.038135,
    "cost": 30.02,
    "opened": "2026-09-15T02:11:11Z",
-   "peak": 0.007651,
+   "peak": 0.007901,
    "entry": 0.005900113010847157,
    "mig": 1789437208.0,
-   "cur_price": 0.007651,
-   "mark": 0.007651
+   "cur_price": 0.007901,
+   "mark": 0.007901
   },
   "QDFTHtokUYRb38e1pR8Ky4uPWNyFJ5268yJVwH2pump": {
    "sym": "MDOR",
@@ -31,8 +31,19 @@
    "peak": 0.01513,
    "entry": 0.015136846417260754,
    "mig": 1789439946.0,
-   "cur_price": 0.01503,
-   "mark": 0.01503
+   "cur_price": 0.01508,
+   "mark": 0.01508
+  },
+  "Sq4yRhATFC8SqNZg2LEQEFs5RGpGWWWZJMt3ZXVpump": {
+   "sym": "NTDA",
+   "qty": 950.473309,
+   "cost": 30.02,
+   "opened": "2026-09-15T03:26:13Z",
+   "peak": 0.03136,
+   "entry": 0.0315842640879461,
+   "mig": 1789441590.0,
+   "cur_price": 0.03136,
+   "mark": 0.03136
   }
  },
  "trades": [
@@ -845,6 +856,18 @@
    "slip": 0.0022,
    "quote": "jup",
    "reason": "time"
+  },
+  {
+   "t": "2026-09-15T03:26:13Z",
+   "side": "buy",
+   "sym": "NTDA",
+   "addr": "Sq4yRhATFC8SqNZg2LEQEFs5RGpGWWWZJMt3ZXVpump",
+   "price": 0.03136,
+   "fill": 0.031584264088,
+   "usd": 30.02,
+   "slip": 0.0011,
+   "quote": "jup",
+   "reason": "postgrad 20min"
   }
  ],
  "equity": [
@@ -1467,6 +1490,10 @@
   {
    "t": "2026-09-15T03:21:04Z",
    "v": 257.99
+  },
+  {
+   "t": "2026-09-15T03:26:13Z",
+   "v": 259.19
   }
  ],
  "started": "2026-09-14T14:30:55Z",
