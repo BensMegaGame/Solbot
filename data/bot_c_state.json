@@ -1,5 +1,5 @@
 {
- "cash": 231.82883000000012,
+ "cash": 201.8088300000001,
  "positions": {
   "PEsT7duf8MDrDax42dH37v7bVdHhk9ewNm1L1QCpump": {
    "sym": "WOFI",
@@ -9,30 +9,30 @@
    "peak": 0.1422,
    "entry": 0.14101570814934333,
    "mig": 1789417990.0,
-   "cur_price": 0.1421,
-   "mark": 0.1421
+   "cur_price": 0.1416,
+   "mark": 0.1416
   },
   "8XcATDK56Axr3sDkh9HhzN1AWXUefY4Vdo8PdXopump": {
    "sym": "OpenAI",
    "qty": 7912.654976,
    "cost": 30.02,
    "opened": "2026-09-14T21:11:04Z",
-   "peak": 0.004023,
+   "peak": 0.00404,
    "entry": 0.0037939225318245444,
    "mig": 1789418644.0,
-   "cur_price": 0.004022,
-   "mark": 0.004022
+   "cur_price": 0.00404,
+   "mark": 0.00404
   },
   "R5djwmnzNmsytb8BqTohFDW555Q531jRXNeRwigpump": {
    "sym": "STRATEGY",
    "qty": 6297.836778,
    "cost": 30.02,
    "opened": "2026-09-14T22:31:03Z",
-   "peak": 0.004829,
+   "peak": 0.004863,
    "entry": 0.004766716105578943,
    "mig": 1789424082.0,
-   "cur_price": 0.004819,
-   "mark": 0.004819
+   "cur_price": 0.004863,
+   "mark": 0.004863
   },
   "CkobbSiZC6oPt5LjtzX3t14AMUhPXjo6T8gnDDmupump": {
    "sym": "MEWCATI",
@@ -42,8 +42,19 @@
    "peak": 0.000374,
    "entry": 0.0002542776009723493,
    "mig": 1789426081.0,
-   "cur_price": 0.0003175,
-   "mark": 0.0003175
+   "cur_price": 0.0003318,
+   "mark": 0.0003318
+  },
+  "8KGGEASotRFLqdvTrxaxz3sSSvyCP25qtwrt82XEpump": {
+   "sym": "JUDE",
+   "qty": 124865.822243,
+   "cost": 30.02,
+   "opened": "2026-09-15T00:55:59Z",
+   "peak": 0.0002372,
+   "entry": 0.00024041807005906234,
+   "mig": 1789432154.0,
+   "cur_price": 0.0002372,
+   "mark": 0.0002372
   }
  },
  "trades": [
@@ -706,6 +717,18 @@
    "slip": 0.0044,
    "quote": "jup",
    "reason": "time"
+  },
+  {
+   "t": "2026-09-15T00:55:59Z",
+   "side": "buy",
+   "sym": "JUDE",
+   "addr": "8KGGEASotRFLqdvTrxaxz3sSSvyCP25qtwrt82XEpump",
+   "price": 0.0002372,
+   "fill": 0.00024041807,
+   "usd": 30.02,
+   "slip": 0.0107,
+   "quote": "jup",
+   "reason": "postgrad 27min"
   }
  ],
  "equity": [
@@ -1208,6 +1231,10 @@
   {
    "t": "2026-09-15T00:50:54Z",
    "v": 361.74
+  },
+  {
+   "t": "2026-09-15T00:55:59Z",
+   "v": 363.34
   }
  ],
  "started": "2026-09-14T14:30:55Z",
