@@ -1,5 +1,5 @@
 {
- "cash": 180.08850861795588,
+ "cash": 120.06850861795587,
  "positions": {
   "72yxYmhLgDGwdyi2b9GjDynBB6VuG3kDxNKqDbzXh5bi": {
    "sym": "WOW",
@@ -13,8 +13,8 @@
    "tp1_gain": 0.75,
    "moon_x": 5.0,
    "max_hold_h": 24,
-   "cur_price": 4.846e-05,
-   "mark": 4.846e-05,
+   "cur_price": 4.648e-05,
+   "mark": 4.648e-05,
    "tp1": true
   },
   "2bRoY87nsBq84TTKJKFD5gYxVLPhrTPKK9MaheSLCCLg": {
@@ -29,8 +29,8 @@
    "tp1_gain": 0.75,
    "moon_x": 5.0,
    "max_hold_h": 24,
-   "cur_price": 4.776e-05,
-   "mark": 4.776e-05
+   "cur_price": 4.742e-05,
+   "mark": 4.742e-05
   },
   "H22aquDouZNFyfykwnXmY5Y9z5sMQtLFy5tUKR99pump": {
    "sym": "NINA",
@@ -44,8 +44,8 @@
    "tp1_gain": 0.4,
    "moon_x": 3.0,
    "max_hold_h": 48,
-   "mark": 0.0002685,
-   "cur_price": 0.0002685
+   "mark": 0.0002682,
+   "cur_price": 0.0002682
   },
   "Fuo63YDw3vg68VVCF79gDc9MrP5k8MUjHkKiRG9Y5Nnj": {
    "sym": "RONNIE",
@@ -59,8 +59,23 @@
    "tp1_gain": 0.4,
    "moon_x": 3.0,
    "max_hold_h": 48,
-   "mark": 0.0001565,
-   "cur_price": 0.0001565
+   "mark": 0.0001451,
+   "cur_price": 0.0001451
+  },
+  "7TRk8xVyE2gg6nf9osbct8g6uVsHdc1mYzzhwdPzo6da": {
+   "sym": "STANKS",
+   "qty": 586847.063556053,
+   "cost": 60.02,
+   "opened": "2026-09-15T00:06:57Z",
+   "peak": 9.815e-05,
+   "entry": 0.00010227536904811855,
+   "tier": "T3",
+   "stop": 0.3,
+   "tp1_gain": 0.65,
+   "moon_x": 3.0,
+   "max_hold_h": 36,
+   "no_quote_since": "2026-09-15T00:06:57Z",
+   "mark": 0.0
   }
  },
  "trades": [
@@ -368,6 +383,18 @@
    "slip": 0.0343,
    "quote": "jup",
    "reason": "T4 chg -28%"
+  },
+  {
+   "t": "2026-09-15T00:06:57Z",
+   "side": "buy",
+   "sym": "STANKS",
+   "addr": "7TRk8xVyE2gg6nf9osbct8g6uVsHdc1mYzzhwdPzo6da",
+   "price": 9.815e-05,
+   "fill": 0.000102275369,
+   "usd": 60.02,
+   "slip": 0.0406,
+   "quote": "jup",
+   "reason": "T3 chg -33%"
   }
  ],
  "equity": [
@@ -950,6 +977,10 @@
   {
    "t": "2026-09-15T00:02:44Z",
    "v": 384.91
+  },
+  {
+   "t": "2026-09-15T00:06:57Z",
+   "v": 318.57
   }
  ],
  "started": "2026-09-14T12:02:41Z",
