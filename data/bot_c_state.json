@@ -1,5 +1,5 @@
 {
- "cash": 37.97060400000013,
+ "cash": 7.95060400000013,
  "positions": {
   "RxYD33iqsGfmzm2mdHjiiXs6T43VV8FPCdwbaNppump": {
    "sym": "TNT",
@@ -9,8 +9,19 @@
    "peak": 0.01475,
    "entry": 0.014537500079031313,
    "mig": 1789471385.0,
-   "cur_price": 0.01471,
-   "mark": 0.01471
+   "cur_price": 0.01467,
+   "mark": 0.01467
+  },
+  "8Vu1DV5skQ4ik4S3Jt8ZR1gG5BLTmC5tmvi1ftFDpump": {
+   "sym": "Koa",
+   "qty": 133068.313213,
+   "cost": 30.02,
+   "opened": "2026-09-15T14:31:01Z",
+   "peak": 0.0002244,
+   "entry": 0.00022559841088499815,
+   "mig": 1789480989.0,
+   "cur_price": 0.0002244,
+   "mark": 0.0002244
   }
  },
  "trades": [
@@ -1165,6 +1176,18 @@
    "slip": 0.0035,
    "quote": "jup",
    "reason": "time"
+  },
+  {
+   "t": "2026-09-15T14:31:01Z",
+   "side": "buy",
+   "sym": "Koa",
+   "addr": "8Vu1DV5skQ4ik4S3Jt8ZR1gG5BLTmC5tmvi1ftFDpump",
+   "price": 0.0002244,
+   "fill": 0.000225598411,
+   "usd": 30.02,
+   "slip": 0.0215,
+   "quote": "jup",
+   "reason": "postgrad 28min"
   }
  ],
  "equity": [
@@ -2319,6 +2342,10 @@
   {
    "t": "2026-09-15T14:26:00Z",
    "v": 68.35
+  },
+  {
+   "t": "2026-09-15T14:31:01Z",
+   "v": 68.1
   }
  ],
  "started": "2026-09-14T14:30:55Z",
