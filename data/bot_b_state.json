@@ -23,8 +23,8 @@
    "entry": 0.0006893543867276652,
    "entry_liq": 82166.84,
    "entry_vol": 40539.49,
-   "cur_price": 0.0006814,
-   "mark": 0.0006814
+   "cur_price": 0.000672,
+   "mark": 0.000672
   },
   "92G6qAymyDNQe4kaBoB9h2fz6mzsYJrEV3T5BetZpump": {
    "sym": "TIT",
@@ -36,7 +36,8 @@
    "entry_liq": 14994.41,
    "entry_vol": 58145.51,
    "cur_price": 2.424e-05,
-   "mark": 2.424e-05
+   "mark": 2.424e-05,
+   "no_quote_since": "2026-09-15T23:00:59Z"
   },
   "7n8kRipxAQBfpGQtcGA2AbkM2HASSVCzqZ5F3QEopump": {
    "sym": "Zoe",
@@ -47,8 +48,8 @@
    "entry": 0.0002774009623007094,
    "entry_liq": 61969.9,
    "entry_vol": 276288.95,
-   "cur_price": 0.0002523,
-   "mark": 0.0002523
+   "cur_price": 0.0002517,
+   "mark": 0.0002517
   }
  },
  "trades": [
@@ -4092,6 +4093,10 @@
   {
    "t": "2026-09-15T22:56:00Z",
    "v": 418.67
+  },
+  {
+   "t": "2026-09-15T23:00:59Z",
+   "v": 417.72
   }
  ],
  "started": "2026-09-11T10:50:37Z",
