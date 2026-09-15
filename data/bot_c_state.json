@@ -1,17 +1,6 @@
 {
- "cash": 7.084118000000128,
+ "cash": 37.97060400000013,
  "positions": {
-  "DVsLaDtK8B2fLz7Wbv6rfL7i3Z1W3gU1w5MZN8Tpump": {
-   "sym": "DANGR",
-   "qty": 2490.73704,
-   "cost": 30.02,
-   "opened": "2026-09-15T07:36:01Z",
-   "peak": 0.01254,
-   "entry": 0.012052657313033736,
-   "mig": 1789457096.0,
-   "cur_price": 0.01248,
-   "mark": 0.01248
-  },
   "RxYD33iqsGfmzm2mdHjiiXs6T43VV8FPCdwbaNppump": {
    "sym": "TNT",
    "qty": 2065.004288,
@@ -20,8 +9,8 @@
    "peak": 0.01475,
    "entry": 0.014537500079031313,
    "mig": 1789471385.0,
-   "cur_price": 0.01467,
-   "mark": 0.01467
+   "cur_price": 0.01463,
+   "mark": 0.01463
   }
  },
  "trades": [
@@ -1161,6 +1150,21 @@
    "slip": 0.0,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-15T13:41:00Z",
+   "side": "sell",
+   "sym": "DANGR",
+   "addr": "DVsLaDtK8B2fLz7Wbv6rfL7i3Z1W3gU1w5MZN8Tpump",
+   "price": 0.01245,
+   "usd": 30.89,
+   "pnl": 0.87,
+   "peak_x": 1.04,
+   "held_h": 6.1,
+   "frac": 1.0,
+   "slip": 0.0035,
+   "quote": "jup",
+   "reason": "time"
   }
  ],
  "equity": [
@@ -2275,6 +2279,10 @@
   {
    "t": "2026-09-15T13:35:59Z",
    "v": 68.46
+  },
+  {
+   "t": "2026-09-15T13:41:00Z",
+   "v": 68.18
   }
  ],
  "started": "2026-09-14T14:30:55Z",
