@@ -1,16 +1,16 @@
 {
- "cash": 128.7413070000001,
+ "cash": 149.1821220000001,
  "positions": {
   "8XcATDK56Axr3sDkh9HhzN1AWXUefY4Vdo8PdXopump": {
    "sym": "OpenAI",
    "qty": 7912.654976,
    "cost": 30.02,
    "opened": "2026-09-14T21:11:04Z",
-   "peak": 0.004156,
+   "peak": 0.004163,
    "entry": 0.0037939225318245444,
    "mig": 1789418644.0,
-   "cur_price": 0.004156,
-   "mark": 0.004156
+   "cur_price": 0.004163,
+   "mark": 0.004163
   },
   "R5djwmnzNmsytb8BqTohFDW555Q531jRXNeRwigpump": {
    "sym": "STRATEGY",
@@ -20,19 +20,8 @@
    "peak": 0.004925,
    "entry": 0.004766716105578943,
    "mig": 1789424082.0,
-   "cur_price": 0.004925,
-   "mark": 0.004925
-  },
-  "CkobbSiZC6oPt5LjtzX3t14AMUhPXjo6T8gnDDmupump": {
-   "sym": "MEWCATI",
-   "qty": 118059.94663,
-   "cost": 30.02,
-   "opened": "2026-09-14T23:21:02Z",
-   "peak": 0.000374,
-   "entry": 0.0002542776009723493,
-   "mig": 1789426081.0,
-   "cur_price": 0.0001822,
-   "mark": 0.0001822
+   "cur_price": 0.004915,
+   "mark": 0.004915
   },
   "ZM2LAqp96icsMefJsf7FaxTcrVF1Ff3eUdB6UXPpump": {
    "sym": "DANGR",
@@ -42,19 +31,19 @@
    "peak": 0.007733,
    "entry": 0.007633365830477049,
    "mig": 1789434876.0,
-   "cur_price": 0.007676,
-   "mark": 0.007676
+   "cur_price": 0.007673,
+   "mark": 0.007673
   },
   "3qFdxC9xvb2vqhFijrPLE4Dn5mH7Ndmagjh15Q1dN6Rb": {
    "sym": "Noiz",
    "qty": 5088.038135,
    "cost": 30.02,
    "opened": "2026-09-15T02:11:11Z",
-   "peak": 0.005971,
+   "peak": 0.006002,
    "entry": 0.005900113010847157,
    "mig": 1789437208.0,
-   "cur_price": 0.005971,
-   "mark": 0.005971
+   "cur_price": 0.006002,
+   "mark": 0.006002
   }
  },
  "trades": [
@@ -810,6 +799,21 @@
    "slip": 0.0,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-15T02:46:01Z",
+   "side": "sell",
+   "sym": "MEWCATI",
+   "addr": "CkobbSiZC6oPt5LjtzX3t14AMUhPXjo6T8gnDDmupump",
+   "price": 0.0001736,
+   "usd": 20.44,
+   "pnl": -9.58,
+   "peak_x": 1.471,
+   "held_h": 3.4,
+   "frac": 1.0,
+   "slip": 0.0041,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -1400,6 +1404,10 @@
   {
    "t": "2026-09-15T02:41:03Z",
    "v": 274.72
+  },
+  {
+   "t": "2026-09-15T02:46:01Z",
+   "v": 273.79
   }
  ],
  "started": "2026-09-14T14:30:55Z",
