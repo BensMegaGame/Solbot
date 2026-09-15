@@ -6,33 +6,22 @@
    "qty": 2490.73704,
    "cost": 30.02,
    "opened": "2026-09-15T07:36:01Z",
-   "peak": 0.01244,
+   "peak": 0.01245,
    "entry": 0.012052657313033736,
    "mig": 1789457096.0,
-   "cur_price": 0.01238,
-   "mark": 0.01238
-  },
-  "zML5U2QXigL9aWubtVTGL1FewSHSve69QMfiRwtpump": {
-   "sym": "WOTF",
-   "qty": 630.243101,
-   "cost": 30.02,
-   "opened": "2026-09-15T11:15:57Z",
-   "peak": 0.04785,
-   "entry": 0.047632413512131405,
-   "mig": 1789470237.0,
-   "cur_price": 2.177e-06,
-   "mark": 2.177e-06
+   "cur_price": 0.01245,
+   "mark": 0.01245
   },
   "RxYD33iqsGfmzm2mdHjiiXs6T43VV8FPCdwbaNppump": {
    "sym": "TNT",
    "qty": 2065.004288,
    "cost": 30.02,
    "opened": "2026-09-15T11:40:57Z",
-   "peak": 0.01463,
+   "peak": 0.01464,
    "entry": 0.014537500079031313,
    "mig": 1789471385.0,
-   "cur_price": 0.01463,
-   "mark": 0.01463
+   "cur_price": 0.01464,
+   "mark": 0.01464
   }
  },
  "trades": [
@@ -1157,6 +1146,21 @@
    "slip": 0.0007,
    "quote": "jup",
    "reason": "postgrad 18min"
+  },
+  {
+   "t": "2026-09-15T12:30:54Z",
+   "side": "sell",
+   "sym": "WOTF",
+   "addr": "zML5U2QXigL9aWubtVTGL1FewSHSve69QMfiRwtpump",
+   "price": 2.177e-06,
+   "usd": -0.02,
+   "pnl": -30.04,
+   "peak_x": 1.005,
+   "held_h": 1.2,
+   "frac": 1.0,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -2215,6 +2219,10 @@
   {
    "t": "2026-09-15T12:25:54Z",
    "v": 68.13
+  },
+  {
+   "t": "2026-09-15T12:30:54Z",
+   "v": 68.33
   }
  ],
  "started": "2026-09-14T14:30:55Z",
