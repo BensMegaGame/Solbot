@@ -17,14 +17,23 @@ POLL_MIN = 10                        # Codex-Abfrage hoechstens alle 10 Min (~4.
 PATH_HOURS = 3                       # Pfad-Logging je Token nach Migration
 # ---- Einstieg ----
 ENTRY_MIN, ENTRY_MAX = 10, 40        # Minuten nach Migration (Startwert; nach analyze_c.py anpassen)
-MIN_LIQ, MIN_BUYS_1H, MIN_UBUYS_1H = 20_000, 20, 12
+# v2.3 - kalibriert an 574 geloggten Pfaden (siehe analyze_c.py):
+# Rug-Quote ohne Filter 38 %. ALLE 14 gekauften Rugs hatten > 189.000 $ Startliquiditaet -
+# eine echte Pump.fun-Migration startet mit ~12-15k. Hohe Liquiditaet = kuenstlich aufgeblasen.
+MIN_LIQ, MAX_LIQ = 15_000, 50_000      # Obergrenze ist der wichtigste Filter ueberhaupt
+MAX_HOLDERS = 600                      # Rugs hatten im Median 1.674 Holder, Ueberlebende 277 (Fake-Holder)
+MAX_INSIDER_STRICT = 2.0
+MIN_BUYS_1H, MIN_UBUYS_1H = 20, 12
 MAX_SELL_RATIO = 0.9
-MAX_TOP10, MAX_BUNDLER, MAX_SNIPER, MAX_INSIDER = 35.0, 10.0, 15.0, 10.0
+MAX_TOP10, MAX_BUNDLER, MAX_SNIPER, MAX_INSIDER = 35.0, 10.0, 15.0, MAX_INSIDER_STRICT
 MIN_OBS = 2                          # mind. 2 eigene Pfad-Punkte, und der Preis darf zuletzt nicht gefallen sein
 # ---- Position / Exits ----
 POS_USD, MAX_POS = 30.0, 8
-TP1_X, TP1_FRAC = 1.5, 0.5           # +50 %: Haelfte raus
-TRAIL, STOP, MAX_HOLD_H = -0.25, -0.30, 6
+# Exits ebenfalls aus den Pfaddaten (rug-ehrlich gerechnet, inkl. Gebuehren):
+# alt (Stop -30 %, TP 1.5x/halb) ergab EV -8 %; neu (enger Stop, hohes Ziel, ganz raus) ergab EV +5 %.
+# Enger Stop hilft, weil die meisten Tokens nach dem Einstieg weiter fallen statt sich zu erholen.
+TP1_X, TP1_FRAC = 3.0, 1.0           # bei 3x KOMPLETT raus (Teilverkauf war messbar schlechter)
+TRAIL, STOP, MAX_HOLD_H = -0.25, -0.15, 3
 COOLDOWN_D = 3
 
 def codex(query, variables=None):
@@ -86,6 +95,8 @@ def batch_pairs(addrs):
 
 def quality(c):
     if c["liq"] < MIN_LIQ: return f"liq {c['liq']:.0f}"
+    if c["liq"] > MAX_LIQ: return f"liq {c['liq']:.0f} zu hoch (fake?)"
+    if c["holders"] > MAX_HOLDERS: return f"holders {c['holders']}"
     if c["buys1"] < MIN_BUYS_1H: return f"buys1 {c['buys1']}"
     if c["ubuys1"] < MIN_UBUYS_1H: return f"ubuys1 {c['ubuys1']}"
     if c["buys1"] and c["sells1"] / c["buys1"] > MAX_SELL_RATIO: return f"sell-ratio {c['sells1']/c['buys1']:.2f}"
