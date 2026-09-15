@@ -1,5 +1,5 @@
 {
- "cash": 173.62364561795587,
+ "cash": 113.60364561795586,
  "positions": {
   "H22aquDouZNFyfykwnXmY5Y9z5sMQtLFy5tUKR99pump": {
    "sym": "NINA",
@@ -13,8 +13,8 @@
    "tp1_gain": 0.4,
    "moon_x": 3.0,
    "max_hold_h": 48,
-   "mark": 0.0003289,
-   "cur_price": 0.0003289,
+   "mark": 0.0003252,
+   "cur_price": 0.0003252,
    "tp1": true
   },
   "4sgjzB5Nc49SUB4xnb3MC2H5dVkKvimfFN5AsJuVs5U7": {
@@ -44,8 +44,8 @@
    "tp1_gain": 0.4,
    "moon_x": 3.0,
    "max_hold_h": 48,
-   "mark": 9.064e-05,
-   "cur_price": 9.064e-05
+   "mark": 9.097e-05,
+   "cur_price": 9.097e-05
   },
   "2qEubd7GwtZbCqDu1uQwNC4kNaJLBdRUcWKpckTypump": {
    "sym": "KRYPTO",
@@ -59,8 +59,23 @@
    "tp1_gain": 0.75,
    "moon_x": 5.0,
    "max_hold_h": 24,
-   "mark": 5.162e-05,
-   "cur_price": 5.162e-05
+   "mark": 5.859e-05,
+   "cur_price": 5.859e-05
+  },
+  "2f9pB9SDjsFKMy3sFhp5WUFrS6KRYeKGaajPxx8Spump": {
+   "sym": "TAYLORSWIF",
+   "qty": 682635.608229,
+   "cost": 60.02,
+   "opened": "2026-09-15T07:31:39Z",
+   "peak": 9.141e-05,
+   "entry": 8.792392204050602e-05,
+   "tier": "T3",
+   "stop": 0.3,
+   "tp1_gain": 0.65,
+   "moon_x": 3.0,
+   "max_hold_h": 36,
+   "no_quote_since": "2026-09-15T07:31:39Z",
+   "mark": 0.0
   }
  },
  "trades": [
@@ -545,6 +560,18 @@
    "slip": 0.0166,
    "quote": "jup",
    "reason": "T2 chg -36%"
+  },
+  {
+   "t": "2026-09-15T07:31:39Z",
+   "side": "buy",
+   "sym": "TAYLORSWIF",
+   "addr": "2f9pB9SDjsFKMy3sFhp5WUFrS6KRYeKGaajPxx8Spump",
+   "price": 9.141e-05,
+   "fill": 8.7923922e-05,
+   "usd": 60.02,
+   "slip": 0.067,
+   "quote": "jup",
+   "reason": "T3 chg -32%"
   }
  ],
  "equity": [
@@ -1483,6 +1510,10 @@
   {
    "t": "2026-09-15T07:26:37Z",
    "v": 319.93
+  },
+  {
+   "t": "2026-09-15T07:31:39Z",
+   "v": 264.2
   }
  ],
  "started": "2026-09-14T12:02:41Z",
