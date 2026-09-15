@@ -1,5 +1,5 @@
 {
- "cash": 113.67710361795585,
+ "cash": 169.79908261795583,
  "positions": {
   "4sgjzB5Nc49SUB4xnb3MC2H5dVkKvimfFN5AsJuVs5U7": {
    "sym": "CINNA",
@@ -13,8 +13,8 @@
    "tp1_gain": 1.0,
    "moon_x": 5.0,
    "max_hold_h": 24,
-   "mark": 1.329e-05,
-   "cur_price": 1.329e-05
+   "mark": 1.288e-05,
+   "cur_price": 1.288e-05
   },
   "CT9YFpaLeugv5BCXTo7ZmM6ad1eGhQgx9hReAy6RJnC8": {
    "sym": "BCAT",
@@ -30,21 +30,6 @@
    "max_hold_h": 36,
    "mark": 7.014e-05,
    "cur_price": 7.014e-05
-  },
-  "7vSG4GX8qz5V36noSde5Z9xV8xAXAGqivDyaNytPVDJf": {
-   "sym": "Tulip",
-   "qty": 549318.665016,
-   "cost": 80.02,
-   "opened": "2026-09-15T18:41:32Z",
-   "peak": 0.0001417,
-   "entry": 0.00014567136544990558,
-   "tier": "T4",
-   "stop": 0.25,
-   "tp1_gain": 0.4,
-   "moon_x": 3.0,
-   "max_hold_h": 48,
-   "mark": 0.0001207,
-   "cur_price": 0.0001207
   }
  },
  "trades": [
@@ -652,6 +637,21 @@
    "slip": 0.0142,
    "quote": "jup",
    "reason": "trail"
+  },
+  {
+   "t": "2026-09-15T20:11:44Z",
+   "side": "sell",
+   "sym": "Tulip",
+   "addr": "7vSG4GX8qz5V36noSde5Z9xV8xAXAGqivDyaNytPVDJf",
+   "price": 0.0001059,
+   "usd": 56.12,
+   "pnl": -23.9,
+   "peak_x": 0.973,
+   "held_h": 1.5,
+   "frac": 1.0,
+   "slip": 0.0034,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -2198,9 +2198,13 @@
   {
    "t": "2026-09-15T20:06:32Z",
    "v": 249.12
+  },
+  {
+   "t": "2026-09-15T20:11:44Z",
+   "v": 238.36
   }
  ],
  "started": "2026-09-14T12:02:41Z",
  "strategy": "overreaction_fade",
- "universe_n": 503
+ "universe_n": 502
 }
