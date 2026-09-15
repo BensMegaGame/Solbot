@@ -10,8 +10,8 @@
    "entry": 0.00023988219054570797,
    "entry_liq": 61954.83,
    "entry_vol": 170012.14,
-   "cur_price": 0.0001694,
-   "mark": 0.0001694,
+   "cur_price": 0.000173,
+   "mark": 0.000173,
    "added": true
   },
   "2DV95bLyBZjZ3Rbcm6c6GGHVpnqBtnNQwaQvzGDbpump": {
@@ -23,8 +23,8 @@
    "entry": 0.0006893543867276652,
    "entry_liq": 82166.84,
    "entry_vol": 40539.49,
-   "cur_price": 0.0006784,
-   "mark": 0.0006784
+   "cur_price": 0.0006656,
+   "mark": 0.0006656
   },
   "92G6qAymyDNQe4kaBoB9h2fz6mzsYJrEV3T5BetZpump": {
    "sym": "TIT",
@@ -36,7 +36,8 @@
    "entry_liq": 14994.41,
    "entry_vol": 58145.51,
    "cur_price": 2.798e-05,
-   "mark": 2.798e-05
+   "mark": 2.798e-05,
+   "no_quote_since": "2026-09-15T18:50:51Z"
   }
  },
  "trades": [
@@ -3841,6 +3842,10 @@
   {
    "t": "2026-09-15T18:45:48Z",
    "v": 463.27
+  },
+  {
+   "t": "2026-09-15T18:50:51Z",
+   "v": 463.66
   }
  ],
  "started": "2026-09-11T10:50:37Z",
