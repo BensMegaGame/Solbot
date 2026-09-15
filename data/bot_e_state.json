@@ -1,5 +1,5 @@
 {
- "cash": 213.64364561795588,
+ "cash": 173.62364561795587,
  "positions": {
   "H22aquDouZNFyfykwnXmY5Y9z5sMQtLFy5tUKR99pump": {
    "sym": "NINA",
@@ -13,8 +13,8 @@
    "tp1_gain": 0.4,
    "moon_x": 3.0,
    "max_hold_h": 48,
-   "mark": 0.00035,
-   "cur_price": 0.00035,
+   "mark": 0.0003255,
+   "cur_price": 0.0003255,
    "tp1": true
   },
   "4sgjzB5Nc49SUB4xnb3MC2H5dVkKvimfFN5AsJuVs5U7": {
@@ -46,6 +46,21 @@
    "max_hold_h": 48,
    "mark": 9.964e-05,
    "cur_price": 9.964e-05
+  },
+  "2qEubd7GwtZbCqDu1uQwNC4kNaJLBdRUcWKpckTypump": {
+   "sym": "KRYPTO",
+   "qty": 610791.781975,
+   "cost": 40.02,
+   "opened": "2026-09-15T06:51:43Z",
+   "peak": 6.312e-05,
+   "entry": 6.552151024461236e-05,
+   "tier": "T2",
+   "stop": 0.35,
+   "tp1_gain": 0.75,
+   "moon_x": 5.0,
+   "max_hold_h": 24,
+   "no_quote_since": "2026-09-15T06:51:43Z",
+   "mark": 0.0
   }
  },
  "trades": [
@@ -518,6 +533,18 @@
    "slip": 0.0557,
    "quote": "jup",
    "reason": "moon"
+  },
+  {
+   "t": "2026-09-15T06:51:43Z",
+   "side": "buy",
+   "sym": "KRYPTO",
+   "addr": "2qEubd7GwtZbCqDu1uQwNC4kNaJLBdRUcWKpckTypump",
+   "price": 6.312e-05,
+   "fill": 6.552151e-05,
+   "usd": 40.02,
+   "slip": 0.0166,
+   "quote": "jup",
+   "reason": "T2 chg -36%"
   }
  ],
  "equity": [
@@ -1424,9 +1451,13 @@
   {
    "t": "2026-09-15T06:46:34Z",
    "v": 336.84
+  },
+  {
+   "t": "2026-09-15T06:51:43Z",
+   "v": 295.37
   }
  ],
  "started": "2026-09-14T12:02:41Z",
  "strategy": "overreaction_fade",
- "universe_n": 502
+ "universe_n": 501
 }

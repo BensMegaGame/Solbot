@@ -1,16 +1,16 @@
 {
- "cash": 91.76020700000011,
+ "cash": 61.74020700000011,
  "positions": {
   "3qFdxC9xvb2vqhFijrPLE4Dn5mH7Ndmagjh15Q1dN6Rb": {
    "sym": "Noiz",
    "qty": 2544.0190675,
    "cost": 15.01,
    "opened": "2026-09-15T02:11:11Z",
-   "peak": 0.01165,
+   "peak": 0.01166,
    "entry": 0.005900113010847157,
    "mig": 1789437208.0,
-   "cur_price": 0.01165,
-   "mark": 0.01165,
+   "cur_price": 0.01166,
+   "mark": 0.01166,
    "tp1": true
   },
   "hvmfRvb6Kr2WU9K1byQrs6BwkeXKzy7UgCSCqrQpump": {
@@ -21,8 +21,19 @@
    "peak": 0.002536,
    "entry": 0.002522233829804071,
    "mig": 1789444838.0,
-   "cur_price": 0.002505,
-   "mark": 0.002505
+   "cur_price": 0.002528,
+   "mark": 0.002528
+  },
+  "NWwhV67SxAd36AjupjwvtEdwuxe5kkADmtXmngSpump": {
+   "sym": "HOOD",
+   "qty": 84378.33585,
+   "cost": 30.02,
+   "opened": "2026-09-15T06:51:00Z",
+   "peak": 0.0003481,
+   "entry": 0.0003557785265327676,
+   "mig": 1789454016.0,
+   "cur_price": 0.0003481,
+   "mark": 0.0003481
   }
  },
  "trades": [
@@ -973,6 +984,18 @@
    "slip": 0.983,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-15T06:51:00Z",
+   "side": "buy",
+   "sym": "HOOD",
+   "addr": "NWwhV67SxAd36AjupjwvtEdwuxe5kkADmtXmngSpump",
+   "price": 0.0003481,
+   "fill": 0.000355778527,
+   "usd": 30.02,
+   "slip": 0.0209,
+   "quote": "jup",
+   "reason": "postgrad 17min"
   }
  ],
  "equity": [
@@ -1759,6 +1782,10 @@
   {
    "t": "2026-09-15T06:45:57Z",
    "v": 151.21
+  },
+  {
+   "t": "2026-09-15T06:51:00Z",
+   "v": 150.86
   }
  ],
  "started": "2026-09-14T14:30:55Z",
