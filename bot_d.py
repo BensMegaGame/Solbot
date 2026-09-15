@@ -64,8 +64,11 @@ MIN_GAP_CV, MAX_SAME_AMOUNT = 0.30, 0.50
 POS_USD, MAX_POS = 15.0, 20            # 20 x 15 $ = 300 $ im Markt, 200 $ Puffer
 MAX_BUYS_PER_RUN = 6                   # Laufzeitschutz: Helius-Pruefung dauert ~10-20 s je Kandidat,
                                        # run_paper.sh bricht nach 240 s ab. Lieber ueber mehrere Laeufe fuellen.
-TP1_X, TP1_FRAC = 5.0, 0.34            # bei 5x ein Drittel raus (Einsatz zurueck + Gewinn)
-TP2_X = 20.0
+# Gestaffelt statt "alles oder nichts": 20x wird so selten erreicht, dass die Restposition meist
+# ueber Trailing oder Zeitstop endet statt am Ziel. Drei Stufen sichern unterwegs ab.
+TP1_X, TP1_FRAC = 5.0, 0.34            # ein Drittel raus - Einsatz zurueck plus Gewinn
+TP2_X, TP2_FRAC = 8.0, 0.5             # die Haelfte des Rests = wieder ein Drittel der Ausgangsposition
+TP3_X = 15.0                           # Rest
 STOP, TRAIL, MAX_HOLD_D = -0.40, -0.40, 3
 # Statt "12 h ohne Anstieg raus" (haette laut Trade-Historie fast alle Gewinner gekillt - Noiz brauchte
 # 31 h fuer 7,8x) der aussagekraeftigere Ausstieg: LIQUIDITAET. Sie verlaesst den Pool, bevor der Preis faellt.
@@ -271,7 +274,9 @@ def main():
         if x <= 1 + STOP: why = "stop"
         elif liq0 and liq / liq0 - 1 <= LIQ_EXIT_DROP: why = "liq-drop"
         elif held_d * 24 >= DEAD_AFTER_H and x - 1 <= DEAD_BELOW: why = "tot"
-        elif x >= TP2_X: why = "tp2"
+        elif x >= TP3_X: why = "tp3"
+        elif x >= TP2_X and not pos.get("tp2"):
+            pos["tp2"] = True; pf.sell(a, px, TP2_FRAC, liq, "tp2"); continue
         elif x >= TP1_X and not pos.get("tp1"):
             pos["tp1"] = True; pf.sell(a, px, TP1_FRAC, liq, "tp1"); continue
         elif pos.get("tp1") and px / pos["peak"] - 1 <= TRAIL: why = "trail"
