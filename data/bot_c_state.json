@@ -1,27 +1,27 @@
 {
- "cash": 149.1821220000001,
+ "cash": 119.16212200000011,
  "positions": {
   "8XcATDK56Axr3sDkh9HhzN1AWXUefY4Vdo8PdXopump": {
    "sym": "OpenAI",
    "qty": 7912.654976,
    "cost": 30.02,
    "opened": "2026-09-14T21:11:04Z",
-   "peak": 0.004163,
+   "peak": 0.004166,
    "entry": 0.0037939225318245444,
    "mig": 1789418644.0,
-   "cur_price": 0.004163,
-   "mark": 0.004163
+   "cur_price": 0.004166,
+   "mark": 0.004166
   },
   "R5djwmnzNmsytb8BqTohFDW555Q531jRXNeRwigpump": {
    "sym": "STRATEGY",
    "qty": 6297.836778,
    "cost": 30.02,
    "opened": "2026-09-14T22:31:03Z",
-   "peak": 0.004925,
+   "peak": 0.004927,
    "entry": 0.004766716105578943,
    "mig": 1789424082.0,
-   "cur_price": 0.004915,
-   "mark": 0.004915
+   "cur_price": 0.004927,
+   "mark": 0.004927
   },
   "ZM2LAqp96icsMefJsf7FaxTcrVF1Ff3eUdB6UXPpump": {
    "sym": "DANGR",
@@ -31,19 +31,30 @@
    "peak": 0.007733,
    "entry": 0.007633365830477049,
    "mig": 1789434876.0,
-   "cur_price": 0.007673,
-   "mark": 0.007673
+   "cur_price": 0.007687,
+   "mark": 0.007687
   },
   "3qFdxC9xvb2vqhFijrPLE4Dn5mH7Ndmagjh15Q1dN6Rb": {
    "sym": "Noiz",
    "qty": 5088.038135,
    "cost": 30.02,
    "opened": "2026-09-15T02:11:11Z",
-   "peak": 0.006002,
+   "peak": 0.006062,
    "entry": 0.005900113010847157,
    "mig": 1789437208.0,
-   "cur_price": 0.006002,
-   "mark": 0.006002
+   "cur_price": 0.006062,
+   "mark": 0.006062
+  },
+  "QDFTHtokUYRb38e1pR8Ky4uPWNyFJ5268yJVwH2pump": {
+   "sym": "MDOR",
+   "qty": 1983.240047,
+   "cost": 30.02,
+   "opened": "2026-09-15T02:51:03Z",
+   "peak": 0.0151,
+   "entry": 0.015136846417260754,
+   "mig": 1789439946.0,
+   "cur_price": 0.0151,
+   "mark": 0.0151
   }
  },
  "trades": [
@@ -814,6 +825,18 @@
    "slip": 0.0041,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-15T02:51:03Z",
+   "side": "buy",
+   "sym": "MDOR",
+   "addr": "QDFTHtokUYRb38e1pR8Ky4uPWNyFJ5268yJVwH2pump",
+   "price": 0.0151,
+   "fill": 0.015136846417,
+   "usd": 30.02,
+   "slip": 0.0013,
+   "quote": "jup",
+   "reason": "postgrad 12min"
   }
  ],
  "equity": [
@@ -1408,6 +1431,10 @@
   {
    "t": "2026-09-15T02:46:01Z",
    "v": 273.79
+  },
+  {
+   "t": "2026-09-15T02:51:03Z",
+   "v": 274.18
   }
  ],
  "started": "2026-09-14T14:30:55Z",
