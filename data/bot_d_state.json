@@ -1,5 +1,5 @@
 {
- "cash": 63.794520095322696,
+ "cash": 3.7745200953226927,
  "positions": {
   "GWTP6M5bxhaJ1k2Kxvf8hhYaHE6jZMhh4cKzFuCpnc83": {
    "sym": "USEFUL",
@@ -9,8 +9,8 @@
    "peak": 0.002056,
    "entry": 0.0009924353088000002,
    "kind": "standard",
-   "cur_price": 0.001738,
-   "mark": 0.001738,
+   "cur_price": 0.001617,
+   "mark": 0.001617,
    "tp0": true
   },
   "5GefefPX1mDs6ZJB1apYmz6fCTCiNJpHturZ9bvFpump": {
@@ -21,8 +21,8 @@
    "peak": 0.0006556,
    "entry": 0.00041492499359999997,
    "kind": "standard",
-   "cur_price": 0.0005436,
-   "mark": 0.0005436
+   "cur_price": 0.0005432,
+   "mark": 0.0005432
   },
   "2hkhFLWQKUcvUNh7eUkfZVz3rYfxXqFNeVLYMotrzFky": {
    "sym": "ALICE",
@@ -43,8 +43,19 @@
    "peak": 0.002746,
    "entry": 0.002449694426627364,
    "kind": "standard",
-   "cur_price": 0.002746,
-   "mark": 0.002746
+   "cur_price": 0.002726,
+   "mark": 0.002726
+  },
+  "bykrhkExmjWco2mFxKGX3XPmPVaZB9JJp9MkRe8pump": {
+   "sym": "Shrek",
+   "qty": 114111.017155,
+   "cost": 60.02,
+   "opened": "2026-09-15T11:46:13Z",
+   "peak": 0.0005241,
+   "entry": 0.0005259790114610341,
+   "kind": "standard",
+   "cur_price": 0.0005241,
+   "mark": 0.0005241
   }
  },
  "trades": [
@@ -587,6 +598,18 @@
    "slip": 0.0007,
    "quote": "jup",
    "reason": "tp0"
+  },
+  {
+   "t": "2026-09-15T11:46:13Z",
+   "side": "buy",
+   "sym": "Shrek",
+   "addr": "bykrhkExmjWco2mFxKGX3XPmPVaZB9JJp9MkRe8pump",
+   "price": 0.0005241,
+   "fill": 0.000525979011,
+   "usd": 60.02,
+   "slip": 0.0194,
+   "quote": "jup",
+   "reason": "std echte wallets 60% (10)"
   }
  ],
  "equity": [
@@ -3745,6 +3768,10 @@
   {
    "t": "2026-09-15T11:41:11Z",
    "v": 330.71
+  },
+  {
+   "t": "2026-09-15T11:46:14Z",
+   "v": 324.43
   }
  ],
  "started": "2026-09-12T18:11:27Z",
