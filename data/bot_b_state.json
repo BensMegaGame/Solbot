@@ -1,5 +1,5 @@
 {
- "cash": 218.2161340000001,
+ "cash": 158.1961340000001,
  "positions": {
   "9PSxYDFLPbSVx2PKjYRMumW14xtxViQU3Qmi7M8NQ32W": {
    "sym": "INCOME",
@@ -23,8 +23,8 @@
    "entry": 0.0006893543867276652,
    "entry_liq": 82166.84,
    "entry_vol": 40539.49,
-   "cur_price": 0.0006626,
-   "mark": 0.0006626
+   "cur_price": 0.000664,
+   "mark": 0.000664
   },
   "92G6qAymyDNQe4kaBoB9h2fz6mzsYJrEV3T5BetZpump": {
    "sym": "TIT",
@@ -36,7 +36,8 @@
    "entry_liq": 14994.41,
    "entry_vol": 58145.51,
    "cur_price": 2.275e-05,
-   "mark": 2.275e-05
+   "mark": 2.275e-05,
+   "no_quote_since": "2026-09-15T22:05:53Z"
   },
   "ADcF26nFGKMuRZ7va5361H2PCHCDRi2FmeJBkX3Spump": {
    "sym": "$TAP",
@@ -47,8 +48,20 @@
    "entry": 0.0004275718414788341,
    "entry_liq": 52581.92,
    "entry_vol": 67105,
-   "cur_price": 0.0003453,
-   "mark": 0.0003453
+   "cur_price": 0.0003095,
+   "mark": 0.0003095
+  },
+  "7n8kRipxAQBfpGQtcGA2AbkM2HASSVCzqZ5F3QEopump": {
+   "sym": "Zoe",
+   "qty": 216365.507539,
+   "cost": 60.02,
+   "opened": "2026-09-15T22:05:53Z",
+   "peak": 0.0002704,
+   "entry": 0.0002774009623007094,
+   "entry_liq": 61969.9,
+   "entry_vol": 276288.95,
+   "cur_price": 0.0002704,
+   "mark": 0.0002704
   }
  },
  "trades": [
@@ -151,6 +164,18 @@
    "slip": 0.0434,
    "quote": "jup",
    "reason": "ok vol-trend 1.21 buy 0.57"
+  },
+  {
+   "t": "2026-09-15T22:05:53Z",
+   "side": "buy",
+   "sym": "Zoe",
+   "addr": "7n8kRipxAQBfpGQtcGA2AbkM2HASSVCzqZ5F3QEopump",
+   "price": 0.0002704,
+   "fill": 0.000277400962,
+   "usd": 60.02,
+   "slip": 0.022,
+   "quote": "jup",
+   "reason": "ok vol-trend 3.22 buy 0.55"
   }
  ],
  "equity": [
@@ -4021,6 +4046,10 @@
   {
    "t": "2026-09-15T22:00:53Z",
    "v": 435.67
+  },
+  {
+   "t": "2026-09-15T22:05:53Z",
+   "v": 429.25
   }
  ],
  "started": "2026-09-11T10:50:37Z",
