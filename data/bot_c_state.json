@@ -1,7 +1,32 @@
 {
- "cash": 500.0,
- "positions": {},
- "trades": [],
+ "cash": 469.98,
+ "positions": {
+  "7XYdnXHv4B94hXX6pmnM1RhLKZV9V85QEjSj5mcQpump": {
+   "sym": "PADDOG",
+   "qty": 218503.265193,
+   "cost": 30.02,
+   "opened": "2026-09-15T17:10:46Z",
+   "peak": 0.0001579,
+   "entry": 0.0001373892512474991,
+   "mig": 1789491054.0,
+   "cur_price": 0.0001579,
+   "mark": 0.0001579
+  }
+ },
+ "trades": [
+  {
+   "t": "2026-09-15T17:10:46Z",
+   "side": "buy",
+   "sym": "PADDOG",
+   "addr": "7XYdnXHv4B94hXX6pmnM1RhLKZV9V85QEjSj5mcQpump",
+   "price": 0.0001579,
+   "fill": 0.000137389251,
+   "usd": 30.02,
+   "slip": 0.019,
+   "quote": "jup",
+   "reason": "postgrad 20min"
+  }
+ ],
  "equity": [
   {
    "t": "2026-09-15T16:35:51Z",
@@ -30,6 +55,10 @@
   {
    "t": "2026-09-15T17:09:00Z",
    "v": 500.0
+  },
+  {
+   "t": "2026-09-15T17:10:46Z",
+   "v": 504.48
   }
  ],
  "started": "2026-09-15T16:35:47Z",
