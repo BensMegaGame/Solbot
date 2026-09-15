@@ -21,7 +21,12 @@ def tradeable_sym(sym):
 # ---------- Universum ----------
 MIN_AGE_D, MAX_AGE_D   = 14, 56
 MIN_MCAP, MAX_MCAP     = 10_000, 800_000       # v2.2: aufgeweitet (300k war zu eng, siehe log)
-MIN_LIQ, MIN_LIQ_RATIO = 50_000, 0.04
+# v2.4: Liquiditaet proportional statt fix. Die alte 50k-Schwelle schloss das gesamte untere Mcap-Fenster
+# aus (0 von 5 beobachteten Tokens unter 100k Cap kamen durch) - und haette dort nur Tokens durchgelassen,
+# deren Liquiditaet ein Vielfaches ihrer Marktkapitalisierung betraegt, also genau das Fake-Muster aus Bot C.
+# Beobachtetes Verhaeltnis in der Watchlist: Median 0,28 / p10 0,17 / p90 0,71.
+MIN_LIQ = 10_000                       # absolute Untergrenze, nur damit 60 $ ohne grossen Impact handelbar sind
+MIN_LIQ_RATIO, MAX_LIQ_RATIO = 0.12, 1.2
 MIN_VOL24              = 40_000
 # ---------- Einstieg ----------
 MIN_HISTORY_DAYS = 3          # Tage Historie (eigene Snapshots oder GeckoTerminal-Kerzen), bevor gekauft wird
@@ -155,7 +160,10 @@ def entry_check(rows, cur):
     if not (MIN_AGE_D <= cur["age_d"] <= MAX_AGE_D): return False, "alter"
     if len(rows) < MIN_HISTORY_DAYS: return False, f"historie {len(rows)}d"
     if not (MIN_MCAP <= cur["mcap"] <= MAX_MCAP): return False, "mcap"
-    if cur["liq"] < MIN_LIQ or cur["liq"] / max(cur["mcap"], 1) < MIN_LIQ_RATIO: return False, "liquiditaet"
+    ratio = cur["liq"] / max(cur["mcap"], 1)
+    if cur["liq"] < MIN_LIQ: return False, f"liq {cur['liq']:.0f}"
+    if ratio < MIN_LIQ_RATIO: return False, f"liq/mcap {ratio:.2f} zu duenn"
+    if ratio > MAX_LIQ_RATIO: return False, f"liq/mcap {ratio:.2f} (kuenstlich?)"
     if cur["vol"] < MIN_VOL24: return False, "volumen"
     # 1 Sicherheit: Liquiditaet faellt nicht (nur pruefbar mit eigenen Snapshots)
     liqs = [r["liq"] for r in rows[-3:] if r.get("liq")]
