@@ -1,27 +1,16 @@
 {
  "cash": 171.7888300000001,
  "positions": {
-  "PEsT7duf8MDrDax42dH37v7bVdHhk9ewNm1L1QCpump": {
-   "sym": "WOFI",
-   "qty": 212.884085,
-   "cost": 30.02,
-   "opened": "2026-09-14T20:46:08Z",
-   "peak": 0.1423,
-   "entry": 0.14101570814934333,
-   "mig": 1789417990.0,
-   "cur_price": 5.962e-06,
-   "mark": 5.962e-06
-  },
   "8XcATDK56Axr3sDkh9HhzN1AWXUefY4Vdo8PdXopump": {
    "sym": "OpenAI",
    "qty": 7912.654976,
    "cost": 30.02,
    "opened": "2026-09-14T21:11:04Z",
-   "peak": 0.004051,
+   "peak": 0.004059,
    "entry": 0.0037939225318245444,
    "mig": 1789418644.0,
-   "cur_price": 0.004051,
-   "mark": 0.004051
+   "cur_price": 0.004059,
+   "mark": 0.004059
   },
   "R5djwmnzNmsytb8BqTohFDW555Q531jRXNeRwigpump": {
    "sym": "STRATEGY",
@@ -31,8 +20,8 @@
    "peak": 0.004867,
    "entry": 0.004766716105578943,
    "mig": 1789424082.0,
-   "cur_price": 0.004867,
-   "mark": 0.004867
+   "cur_price": 0.004839,
+   "mark": 0.004839
   },
   "CkobbSiZC6oPt5LjtzX3t14AMUhPXjo6T8gnDDmupump": {
    "sym": "MEWCATI",
@@ -42,8 +31,8 @@
    "peak": 0.000374,
    "entry": 0.0002542776009723493,
    "mig": 1789426081.0,
-   "cur_price": 0.0002997,
-   "mark": 0.0002997
+   "cur_price": 0.0003473,
+   "mark": 0.0003473
   },
   "8KGGEASotRFLqdvTrxaxz3sSSvyCP25qtwrt82XEpump": {
    "sym": "JUDE",
@@ -53,19 +42,19 @@
    "peak": 0.0002757,
    "entry": 0.00024041807005906234,
    "mig": 1789432154.0,
-   "cur_price": 0.0002474,
-   "mark": 0.0002474
+   "cur_price": 0.0002623,
+   "mark": 0.0002623
   },
   "13ynsosB4TvDuCcYnYBey4SFv485zAwubnYQatzrpump": {
    "sym": "WOFI",
    "qty": 563.977142,
    "cost": 30.02,
    "opened": "2026-09-15T01:11:00Z",
-   "peak": 0.05313,
+   "peak": 0.05322,
    "entry": 0.0532291076435151,
    "mig": 1789433405.0,
-   "cur_price": 0.05313,
-   "mark": 0.05313
+   "cur_price": 0.05322,
+   "mark": 0.05322
   }
  },
  "trades": [
@@ -752,6 +741,21 @@
    "slip": 0.0011,
    "quote": "jup",
    "reason": "postgrad 21min"
+  },
+  {
+   "t": "2026-09-15T01:15:59Z",
+   "side": "sell",
+   "sym": "WOFI",
+   "addr": "PEsT7duf8MDrDax42dH37v7bVdHhk9ewNm1L1QCpump",
+   "price": 5.962e-06,
+   "usd": -0.02,
+   "pnl": -30.04,
+   "peak_x": 1.009,
+   "held_h": 4.5,
+   "frac": 1.0,
+   "slip": 0.6974,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -1270,6 +1274,10 @@
   {
    "t": "2026-09-15T01:11:00Z",
    "v": 330.73
+  },
+  {
+   "t": "2026-09-15T01:15:59Z",
+   "v": 338.15
   }
  ],
  "started": "2026-09-14T14:30:55Z",
