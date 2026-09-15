@@ -1,5 +1,5 @@
 {
- "cash": 185.6757726179559,
+ "cash": 249.0286046179559,
  "positions": {
   "72yxYmhLgDGwdyi2b9GjDynBB6VuG3kDxNKqDbzXh5bi": {
    "sym": "WOW",
@@ -13,24 +13,9 @@
    "tp1_gain": 0.75,
    "moon_x": 5.0,
    "max_hold_h": 24,
-   "cur_price": 4.792e-05,
-   "mark": 4.792e-05,
+   "cur_price": 4.726e-05,
+   "mark": 4.726e-05,
    "tp1": true
-  },
-  "2bRoY87nsBq84TTKJKFD5gYxVLPhrTPKK9MaheSLCCLg": {
-   "sym": "UNC",
-   "qty": 814676.0273583293,
-   "cost": 40.22103850848625,
-   "opened": "2026-09-14T13:16:39Z",
-   "peak": 5.815e-05,
-   "entry": 4.9370592920117094e-05,
-   "tier": "T2",
-   "stop": 0.35,
-   "tp1_gain": 0.75,
-   "moon_x": 5.0,
-   "max_hold_h": 24,
-   "cur_price": 3.729e-05,
-   "mark": 3.729e-05
   },
   "H22aquDouZNFyfykwnXmY5Y9z5sMQtLFy5tUKR99pump": {
    "sym": "NINA",
@@ -44,24 +29,9 @@
    "tp1_gain": 0.4,
    "moon_x": 3.0,
    "max_hold_h": 48,
-   "mark": 0.0003437,
-   "cur_price": 0.0003437,
+   "mark": 0.000324,
+   "cur_price": 0.000324,
    "tp1": true
-  },
-  "7Vv1veMsBcBWAiSP1JTkRKvNeWmwf5Z7KbQuuKH1pump": {
-   "sym": "PS500",
-   "qty": 810761.202808,
-   "cost": 60.02,
-   "opened": "2026-09-15T00:57:02Z",
-   "peak": 0.0001169,
-   "entry": 7.402919601002862e-05,
-   "tier": "T3",
-   "stop": 0.3,
-   "tp1_gain": 0.65,
-   "moon_x": 3.0,
-   "max_hold_h": 36,
-   "mark": 5.526e-05,
-   "cur_price": 5.526e-05
   },
   "4sgjzB5Nc49SUB4xnb3MC2H5dVkKvimfFN5AsJuVs5U7": {
    "sym": "CINNA",
@@ -490,6 +460,36 @@
    "held_h": 0.3,
    "frac": 1.0,
    "slip": 0.0458,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-15T03:32:07Z",
+   "side": "sell",
+   "sym": "UNC",
+   "addr": "2bRoY87nsBq84TTKJKFD5gYxVLPhrTPKK9MaheSLCCLg",
+   "price": 3.121e-05,
+   "usd": 24.11,
+   "pnl": -16.11,
+   "peak_x": 1.178,
+   "held_h": 14.3,
+   "frac": 1.0,
+   "slip": 0.0566,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-15T03:32:07Z",
+   "side": "sell",
+   "sym": "PS500",
+   "addr": "7Vv1veMsBcBWAiSP1JTkRKvNeWmwf5Z7KbQuuKH1pump",
+   "price": 4.888e-05,
+   "usd": 39.24,
+   "pnl": -20.78,
+   "peak_x": 1.579,
+   "held_h": 2.6,
+   "frac": 1.0,
+   "slip": 0.0068,
    "quote": "jup",
    "reason": "stop"
   }
@@ -1238,9 +1238,13 @@
   {
    "t": "2026-09-15T03:27:01Z",
    "v": 315.7
+  },
+  {
+   "t": "2026-09-15T03:32:07Z",
+   "v": 302.57
   }
  ],
  "started": "2026-09-14T12:02:41Z",
  "strategy": "overreaction_fade",
- "universe_n": 503
+ "universe_n": 505
 }
