@@ -6,23 +6,12 @@
    "qty": 2544.0190675,
    "cost": 15.01,
    "opened": "2026-09-15T02:11:11Z",
-   "peak": 0.01061,
+   "peak": 0.01076,
    "entry": 0.005900113010847157,
    "mig": 1789437208.0,
-   "cur_price": 0.01061,
-   "mark": 0.01061,
+   "cur_price": 0.01076,
+   "mark": 0.01076,
    "tp1": true
-  },
-  "QDFTHtokUYRb38e1pR8Ky4uPWNyFJ5268yJVwH2pump": {
-   "sym": "MDOR",
-   "qty": 1983.240047,
-   "cost": 30.02,
-   "opened": "2026-09-15T02:51:03Z",
-   "peak": 0.0155,
-   "entry": 0.015136846417260754,
-   "mig": 1789439946.0,
-   "cur_price": 2.11e-06,
-   "mark": 2.11e-06
   },
   "raiM7E52pp7RdPhBUef5UhRgoXoehCugxSQPLnrpump": {
    "sym": "USMS",
@@ -32,19 +21,19 @@
    "peak": 0.007831,
    "entry": 0.0076481107017605495,
    "mig": 1789442565.0,
-   "cur_price": 0.007768,
-   "mark": 0.007768
+   "cur_price": 1.986e-06,
+   "mark": 1.986e-06
   },
   "hvmfRvb6Kr2WU9K1byQrs6BwkeXKzy7UgCSCqrQpump": {
    "sym": "USDF",
    "qty": 11902.147868,
    "cost": 30.02,
    "opened": "2026-09-15T04:16:11Z",
-   "peak": 0.002517,
+   "peak": 0.002522,
    "entry": 0.002522233829804071,
    "mig": 1789444838.0,
-   "cur_price": 0.002517,
-   "mark": 0.002517
+   "cur_price": 0.002522,
+   "mark": 0.002522
   }
  },
  "trades": [
@@ -965,6 +954,21 @@
    "slip": 0.0,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-15T05:50:59Z",
+   "side": "sell",
+   "sym": "MDOR",
+   "addr": "QDFTHtokUYRb38e1pR8Ky4uPWNyFJ5268yJVwH2pump",
+   "price": 2.082e-06,
+   "usd": -0.02,
+   "pnl": -30.04,
+   "peak_x": 1.024,
+   "held_h": 3.0,
+   "frac": 1.0,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -1703,6 +1707,10 @@
   {
    "t": "2026-09-15T05:45:59Z",
    "v": 179.2
+  },
+  {
+   "t": "2026-09-15T05:51:00Z",
+   "v": 149.16
   }
  ],
  "started": "2026-09-14T14:30:55Z",
