@@ -1,5 +1,5 @@
 {
- "cash": 60.04850861795587,
+ "cash": 153.97841561795587,
  "positions": {
   "72yxYmhLgDGwdyi2b9GjDynBB6VuG3kDxNKqDbzXh5bi": {
    "sym": "WOW",
@@ -13,8 +13,8 @@
    "tp1_gain": 0.75,
    "moon_x": 5.0,
    "max_hold_h": 24,
-   "cur_price": 4.916e-05,
-   "mark": 4.916e-05,
+   "cur_price": 6.899e-05,
+   "mark": 6.899e-05,
    "tp1": true
   },
   "2bRoY87nsBq84TTKJKFD5gYxVLPhrTPKK9MaheSLCCLg": {
@@ -29,23 +29,24 @@
    "tp1_gain": 0.75,
    "moon_x": 5.0,
    "max_hold_h": 24,
-   "cur_price": 4.399e-05,
-   "mark": 4.399e-05
+   "cur_price": 4.418e-05,
+   "mark": 4.418e-05
   },
   "H22aquDouZNFyfykwnXmY5Y9z5sMQtLFy5tUKR99pump": {
    "sym": "NINA",
-   "qty": 297022.327884,
-   "cost": 80.02,
+   "qty": 59404.465576799994,
+   "cost": 16.00399999999999,
    "opened": "2026-09-14T20:37:14Z",
-   "peak": 0.0003566,
+   "peak": 0.00041,
    "entry": 0.00026940735590507943,
    "tier": "T4",
    "stop": 0.25,
    "tp1_gain": 0.4,
    "moon_x": 3.0,
    "max_hold_h": 48,
-   "mark": 0.0003566,
-   "cur_price": 0.0003566
+   "mark": 0.00041,
+   "cur_price": 0.00041,
+   "tp1": true
   },
   "Fuo63YDw3vg68VVCF79gDc9MrP5k8MUjHkKiRG9Y5Nnj": {
    "sym": "RONNIE",
@@ -59,8 +60,8 @@
    "tp1_gain": 0.4,
    "moon_x": 3.0,
    "max_hold_h": 48,
-   "mark": 0.0001343,
-   "cur_price": 0.0001343
+   "mark": 0.0001341,
+   "cur_price": 0.0001341
   },
   "7TRk8xVyE2gg6nf9osbct8g6uVsHdc1mYzzhwdPzo6da": {
    "sym": "STANKS",
@@ -74,8 +75,8 @@
    "tp1_gain": 0.65,
    "moon_x": 3.0,
    "max_hold_h": 36,
-   "mark": 8.156e-05,
-   "cur_price": 8.156e-05
+   "mark": 7.852e-05,
+   "cur_price": 7.852e-05
   },
   "7Vv1veMsBcBWAiSP1JTkRKvNeWmwf5Z7KbQuuKH1pump": {
    "sym": "PS500",
@@ -89,8 +90,8 @@
    "tp1_gain": 0.65,
    "moon_x": 3.0,
    "max_hold_h": 36,
-   "mark": 7.944e-05,
-   "cur_price": 7.944e-05
+   "mark": 8.064e-05,
+   "cur_price": 8.064e-05
   }
  },
  "trades": [
@@ -422,6 +423,21 @@
    "slip": 0.0718,
    "quote": "jup",
    "reason": "T3 chg -37%"
+  },
+  {
+   "t": "2026-09-15T02:02:17Z",
+   "side": "sell",
+   "sym": "NINA",
+   "addr": "H22aquDouZNFyfykwnXmY5Y9z5sMQtLFy5tUKR99pump",
+   "price": 0.00041,
+   "usd": 93.93,
+   "pnl": 29.91,
+   "peak_x": 1.522,
+   "held_h": 5.4,
+   "frac": 0.8,
+   "slip": 0.0137,
+   "quote": "jup",
+   "reason": "tp1"
   }
  ],
  "equity": [
@@ -1096,6 +1112,10 @@
   {
    "t": "2026-09-15T01:57:13Z",
    "v": 389.6
+  },
+  {
+   "t": "2026-09-15T02:02:17Z",
+   "v": 405.36
   }
  ],
  "started": "2026-09-14T12:02:41Z",

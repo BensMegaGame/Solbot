@@ -1,27 +1,27 @@
 {
- "cash": 141.7688300000001,
+ "cash": 158.7613070000001,
  "positions": {
   "8XcATDK56Axr3sDkh9HhzN1AWXUefY4Vdo8PdXopump": {
    "sym": "OpenAI",
    "qty": 7912.654976,
    "cost": 30.02,
    "opened": "2026-09-14T21:11:04Z",
-   "peak": 0.004105,
+   "peak": 0.004112,
    "entry": 0.0037939225318245444,
    "mig": 1789418644.0,
-   "cur_price": 0.004105,
-   "mark": 0.004105
+   "cur_price": 0.004112,
+   "mark": 0.004112
   },
   "R5djwmnzNmsytb8BqTohFDW555Q531jRXNeRwigpump": {
    "sym": "STRATEGY",
    "qty": 6297.836778,
    "cost": 30.02,
    "opened": "2026-09-14T22:31:03Z",
-   "peak": 0.004901,
+   "peak": 0.004902,
    "entry": 0.004766716105578943,
    "mig": 1789424082.0,
-   "cur_price": 0.004901,
-   "mark": 0.004901
+   "cur_price": 0.004902,
+   "mark": 0.004902
   },
   "CkobbSiZC6oPt5LjtzX3t14AMUhPXjo6T8gnDDmupump": {
    "sym": "MEWCATI",
@@ -31,41 +31,30 @@
    "peak": 0.000374,
    "entry": 0.0002542776009723493,
    "mig": 1789426081.0,
-   "cur_price": 0.0002743,
-   "mark": 0.0002743
-  },
-  "8KGGEASotRFLqdvTrxaxz3sSSvyCP25qtwrt82XEpump": {
-   "sym": "JUDE",
-   "qty": 124865.822243,
-   "cost": 30.02,
-   "opened": "2026-09-15T00:55:59Z",
-   "peak": 0.0003065,
-   "entry": 0.00024041807005906234,
-   "mig": 1789432154.0,
-   "cur_price": 0.0002204,
-   "mark": 0.0002204
+   "cur_price": 0.0003093,
+   "mark": 0.0003093
   },
   "13ynsosB4TvDuCcYnYBey4SFv485zAwubnYQatzrpump": {
    "sym": "WOFI",
    "qty": 563.977142,
    "cost": 30.02,
    "opened": "2026-09-15T01:11:00Z",
-   "peak": 0.05353,
+   "peak": 0.05363,
    "entry": 0.0532291076435151,
    "mig": 1789433405.0,
-   "cur_price": 0.05329,
-   "mark": 0.05329
+   "cur_price": 0.05363,
+   "mark": 0.05363
   },
   "ZM2LAqp96icsMefJsf7FaxTcrVF1Ff3eUdB6UXPpump": {
    "sym": "DANGR",
    "qty": 3932.734349,
    "cost": 30.02,
    "opened": "2026-09-15T01:31:12Z",
-   "peak": 0.007675,
+   "peak": 0.007694,
    "entry": 0.007633365830477049,
    "mig": 1789434876.0,
-   "cur_price": 0.007632,
-   "mark": 0.007632
+   "cur_price": 0.007694,
+   "mark": 0.007694
   }
  },
  "trades": [
@@ -779,6 +768,21 @@
    "slip": 0.0083,
    "quote": "jup",
    "reason": "postgrad 16min"
+  },
+  {
+   "t": "2026-09-15T02:01:13Z",
+   "side": "sell",
+   "sym": "JUDE",
+   "addr": "8KGGEASotRFLqdvTrxaxz3sSSvyCP25qtwrt82XEpump",
+   "price": 0.0001368,
+   "usd": 16.99,
+   "pnl": -13.03,
+   "peak_x": 1.275,
+   "held_h": 1.1,
+   "frac": 1.0,
+   "slip": 0.0011,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -1333,6 +1337,10 @@
   {
    "t": "2026-09-15T01:56:14Z",
    "v": 325.09
+  },
+  {
+   "t": "2026-09-15T02:01:13Z",
+   "v": 319.19
   }
  ],
  "started": "2026-09-14T14:30:55Z",
