@@ -13,8 +13,8 @@
    "tp1_gain": 0.75,
    "moon_x": 5.0,
    "max_hold_h": 24,
-   "cur_price": 4.318e-05,
-   "mark": 4.318e-05,
+   "cur_price": 4.196e-05,
+   "mark": 4.196e-05,
    "tp1": true
   },
   "2bRoY87nsBq84TTKJKFD5gYxVLPhrTPKK9MaheSLCCLg": {
@@ -37,15 +37,15 @@
    "qty": 297022.327884,
    "cost": 80.02,
    "opened": "2026-09-14T20:37:14Z",
-   "peak": 0.0003089,
+   "peak": 0.0003099,
    "entry": 0.00026940735590507943,
    "tier": "T4",
    "stop": 0.25,
    "tp1_gain": 0.4,
    "moon_x": 3.0,
    "max_hold_h": 48,
-   "mark": 0.0002979,
-   "cur_price": 0.0002979
+   "mark": 0.0003099,
+   "cur_price": 0.0003099
   },
   "Fuo63YDw3vg68VVCF79gDc9MrP5k8MUjHkKiRG9Y5Nnj": {
    "sym": "RONNIE",
@@ -59,8 +59,8 @@
    "tp1_gain": 0.4,
    "moon_x": 3.0,
    "max_hold_h": 48,
-   "mark": 0.0001496,
-   "cur_price": 0.0001496
+   "mark": 0.0001459,
+   "cur_price": 0.0001459
   },
   "7TRk8xVyE2gg6nf9osbct8g6uVsHdc1mYzzhwdPzo6da": {
    "sym": "STANKS",
@@ -74,8 +74,8 @@
    "tp1_gain": 0.65,
    "moon_x": 3.0,
    "max_hold_h": 36,
-   "mark": 7.617e-05,
-   "cur_price": 7.617e-05
+   "mark": 8.09e-05,
+   "cur_price": 8.09e-05
   }
  },
  "trades": [
@@ -993,9 +993,13 @@
   {
    "t": "2026-09-15T00:21:49Z",
    "v": 374.58
+  },
+  {
+   "t": "2026-09-15T00:27:02Z",
+   "v": 378.87
   }
  ],
  "started": "2026-09-14T12:02:41Z",
  "strategy": "overreaction_fade",
- "universe_n": 503
+ "universe_n": 504
 }
