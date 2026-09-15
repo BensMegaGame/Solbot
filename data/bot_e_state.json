@@ -1,5 +1,5 @@
 {
- "cash": 80.03114161795585,
+ "cash": 113.67710361795585,
  "positions": {
   "4sgjzB5Nc49SUB4xnb3MC2H5dVkKvimfFN5AsJuVs5U7": {
    "sym": "CINNA",
@@ -15,21 +15,6 @@
    "max_hold_h": 24,
    "mark": 1.423e-05,
    "cur_price": 1.423e-05
-  },
-  "2qEubd7GwtZbCqDu1uQwNC4kNaJLBdRUcWKpckTypump": {
-   "sym": "KRYPTO",
-   "qty": 610791.781975,
-   "cost": 40.02,
-   "opened": "2026-09-15T06:51:43Z",
-   "peak": 9.101e-05,
-   "entry": 6.552151024461236e-05,
-   "tier": "T2",
-   "stop": 0.35,
-   "tp1_gain": 0.75,
-   "moon_x": 5.0,
-   "max_hold_h": 24,
-   "mark": 6.995e-05,
-   "cur_price": 6.995e-05
   },
   "CT9YFpaLeugv5BCXTo7ZmM6ad1eGhQgx9hReAy6RJnC8": {
    "sym": "BCAT",
@@ -58,8 +43,8 @@
    "tp1_gain": 0.4,
    "moon_x": 3.0,
    "max_hold_h": 48,
-   "mark": 0.0001199,
-   "cur_price": 0.0001199
+   "mark": 0.0001152,
+   "cur_price": 0.0001152
   }
  },
  "trades": [
@@ -650,6 +635,21 @@
    "held_h": 5.6,
    "frac": 1.0,
    "slip": 0.0077,
+   "quote": "jup",
+   "reason": "trail"
+  },
+  {
+   "t": "2026-09-15T19:41:33Z",
+   "side": "sell",
+   "sym": "KRYPTO",
+   "addr": "2qEubd7GwtZbCqDu1uQwNC4kNaJLBdRUcWKpckTypump",
+   "price": 5.594e-05,
+   "usd": 33.65,
+   "pnl": -6.37,
+   "peak_x": 1.389,
+   "held_h": 12.8,
+   "frac": 1.0,
+   "slip": 0.0142,
    "quote": "jup",
    "reason": "trail"
   }
@@ -2174,6 +2174,10 @@
   {
    "t": "2026-09-15T19:36:30Z",
    "v": 259.09
+  },
+  {
+   "t": "2026-09-15T19:41:33Z",
+   "v": 247.43
   }
  ],
  "started": "2026-09-14T12:02:41Z",
