@@ -1,5 +1,5 @@
 {
- "cash": 37.97628709532268,
+ "cash": 90.44693409532269,
  "positions": {
   "GWTP6M5bxhaJ1k2Kxvf8hhYaHE6jZMhh4cKzFuCpnc83": {
    "sym": "USEFUL",
@@ -9,8 +9,8 @@
    "peak": 0.002056,
    "entry": 0.0009924353088000002,
    "kind": "standard",
-   "cur_price": 0.0007273,
-   "mark": 0.0007273
+   "cur_price": 0.000713,
+   "mark": 0.000713
   },
   "Fuo63YDw3vg68VVCF79gDc9MrP5k8MUjHkKiRG9Y5Nnj": {
    "sym": "RONNIE",
@@ -31,19 +31,8 @@
    "peak": 0.0006556,
    "entry": 0.00041492499359999997,
    "kind": "standard",
-   "cur_price": 0.0005344,
-   "mark": 0.0005344
-  },
-  "BifUDWQFpbTrSxYXBnqCpAVYgcyQGzHzJk2MDmeM2Gyv": {
-   "sym": "TCAT",
-   "qty": 44322.90119982093,
-   "cost": 60.32,
-   "opened": "2026-09-12T23:01:40Z",
-   "peak": 0.002276,
-   "entry": 0.001360921744,
-   "kind": "standard",
-   "cur_price": 0.00124,
-   "mark": 0.00124
+   "cur_price": 0.0005269,
+   "mark": 0.0005269
   },
   "2hkhFLWQKUcvUNh7eUkfZVz3rYfxXqFNeVLYMotrzFky": {
    "sym": "ALICE",
@@ -53,8 +42,8 @@
    "peak": 0.0006241,
    "entry": 0.00042115003194230835,
    "kind": "standard",
-   "cur_price": 0.0002678,
-   "mark": 0.0002678
+   "cur_price": 0.0002666,
+   "mark": 0.0002666
   }
  },
  "trades": [
@@ -538,6 +527,21 @@
    "held_h": 19.2,
    "frac": 1.0,
    "slip": 0.05,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-15T04:41:21Z",
+   "side": "sell",
+   "sym": "TCAT",
+   "addr": "BifUDWQFpbTrSxYXBnqCpAVYgcyQGzHzJk2MDmeM2Gyv",
+   "price": 0.0005271,
+   "usd": 52.47,
+   "pnl": -7.85,
+   "peak_x": 1.672,
+   "held_h": 53.7,
+   "frac": 1.0,
+   "slip": 0.0424,
    "quote": "jup",
    "reason": "stop"
   }
@@ -3358,6 +3362,10 @@
   {
    "t": "2026-09-15T04:36:30Z",
    "v": 270.59
+  },
+  {
+   "t": "2026-09-15T04:41:32Z",
+   "v": 265.97
   }
  ],
  "started": "2026-09-12T18:11:27Z",
