@@ -13,8 +13,8 @@
    "tp1_gain": 0.4,
    "moon_x": 3.0,
    "max_hold_h": 48,
-   "mark": 0.0002469,
-   "cur_price": 0.0002469,
+   "mark": 0.000248,
+   "cur_price": 0.000248,
    "tp1": true
   },
   "4sgjzB5Nc49SUB4xnb3MC2H5dVkKvimfFN5AsJuVs5U7": {
@@ -59,8 +59,8 @@
    "tp1_gain": 0.75,
    "moon_x": 5.0,
    "max_hold_h": 24,
-   "mark": 6.454e-05,
-   "cur_price": 6.454e-05
+   "mark": 6.294e-05,
+   "cur_price": 6.294e-05
   },
   "2d4xZo72fDfFQaHTzqH3yJXWSnyEbh2H99EqJiUPpump": {
    "sym": "DWH",
@@ -74,8 +74,8 @@
    "tp1_gain": 0.65,
    "moon_x": 3.0,
    "max_hold_h": 36,
-   "mark": 9.639e-05,
-   "cur_price": 9.639e-05
+   "mark": 8.833e-05,
+   "cur_price": 8.833e-05
   }
  },
  "trades": [
@@ -1853,9 +1853,13 @@
   {
    "t": "2026-09-15T14:01:32Z",
    "v": 311.35
+  },
+  {
+   "t": "2026-09-15T14:06:38Z",
+   "v": 304.91
   }
  ],
  "started": "2026-09-14T12:02:41Z",
  "strategy": "overreaction_fade",
- "universe_n": 504
+ "universe_n": 502
 }
