@@ -1,6 +1,18 @@
 {
- "cash": 470.42145800000003,
- "positions": {},
+ "cash": 440.40145800000005,
+ "positions": {
+  "DWZqne4tLESk3oijs5WDrLwdcoB26Gz5vTfL2nkWpaid": {
+   "sym": "DOG",
+   "qty": 481586.535466,
+   "cost": 30.02,
+   "opened": "2026-09-15T22:46:01Z",
+   "peak": 7.596e-05,
+   "entry": 6.233562981770575e-05,
+   "mig": 1789511108.0,
+   "cur_price": 7.596e-05,
+   "mark": 7.596e-05
+  }
+ },
  "trades": [
   {
    "t": "2026-09-15T17:10:46Z",
@@ -28,6 +40,18 @@
    "slip": 0.0,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-15T22:46:01Z",
+   "side": "buy",
+   "sym": "DOG",
+   "addr": "DWZqne4tLESk3oijs5WDrLwdcoB26Gz5vTfL2nkWpaid",
+   "price": 7.596e-05,
+   "fill": 6.233563e-05,
+   "usd": 30.02,
+   "slip": 0.0186,
+   "quote": "jup",
+   "reason": "postgrad 21min"
   }
  ],
  "equity": [
@@ -326,6 +350,10 @@
   {
    "t": "2026-09-15T22:40:58Z",
    "v": 470.42
+  },
+  {
+   "t": "2026-09-15T22:46:01Z",
+   "v": 476.98
   }
  ],
  "started": "2026-09-15T16:35:47Z",
