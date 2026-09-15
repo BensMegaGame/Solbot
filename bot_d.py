@@ -32,18 +32,37 @@ MIN_LIQ, MAX_LIQ = 10_000, 50_000      # Obergrenze: Lehre aus Bot C
 MIN_VOL24 = 25_000
 
 # ---- Qualitaet (Plausibilitaetsfenster statt reiner Obergrenzen) ----
-MIN_HOLDERS, MAX_HOLDERS = 30, 600     # Untergrenze locker: bei 15k-MCap sind 30 Holder normal
-MAX_TOP10, MAX_BUNDLER, MAX_SNIPER, MAX_INSIDER = 35.0, 10.0, 15.0, 2.0
+# v3.2 - Holder-Grenze neu hergeleitet. Die 600 stammten aus Bot C (Tokens MINUTEN nach Migration; dort
+# sind 1.600 Holder unmoeglich organisch). Bot D's Universum ist 12 h bis 7 Tage alt - Median 631 Holder,
+# die 600er-Grenze warf also die Haelfte aller Kandidaten raus. 3.500 war umgekehrt zu lax: bei Bot C
+# steigt die Rug-Quote von 21 % (<=600) auf 38 % (<=3.500).
+MIN_HOLDERS, MAX_HOLDERS = 30, 2000
+# Zusaetzlich ein Plausibilitaetsmass gegen Airdrop-/Fake-Holder: Liquiditaet je Holder. Echte Kaeufer
+# bringen Kapital mit, per Airdrop verteilte Wallets nicht. In D's Universum liegt der Median bei 19 $;
+# die Ausreisser darunter sind eindeutig (LOTTO: 18.868 Holder bei 0,60 $ je Holder, ALLCAT: 1,30 $).
+# Kein liq/holder-Filter mehr: er fing nur Faelle, die MAX_HOLDERS ohnehin faengt, und produzierte
+# Fehlalarme bei voellig normalen Tokens. Die Holderzahl allein ist das trennschaerfere Mass.
+MAX_LIQ_OVER_MCAP = 1.0        # Sicherheitsnetz: Liquiditaet ueber der Marktkapitalisierung ist kuenstlich
+                               # (kommt im aktuellen Universum nicht vor, faengt aber kuenftige Ausreisser)
+MAX_PRE_BUY_DROP = -0.25       # nicht ins fallende Messer: Preis in der letzten Stunde um mehr als 25 % gefallen
+MAX_PRE_BUY_LIQ_DROP = -0.15   # Liquiditaet faellt bereits vor dem Kauf -> Rug-Vorlauf, Finger weg
+ORPHAN_HOURS = 12              # Position ohne jeden Kurs seit 12 h = faktisch tot -> abschreiben, Slot frei
+MAX_TOP10, MAX_BUNDLER, MAX_SNIPER, MAX_INSIDER = 45.0, 10.0, 15.0, 3.0
 MIN_BUYS_24H, MAX_SELL_RATIO = 30, 0.9
 
 # ---- Helius-Holderpruefung (uebernommen aus v2) ----
-N_BUYERS, MIN_REAL_SHARE = 20, 0.40
+N_BUYERS = 20
+# Die Wallet-Alters-Heuristik ist unbelegt: bei Memecoins kauft ein Grossteil mit frischen Wallets, das
+# sind keine Bots. Statt hart zu filtern wird die Quote gespeichert (bot_d_smart.json) und blockiert nur
+# bei eindeutigen Sybil-Clustern. Nach einigen Wochen laesst sich an den Trades messen, ob sie taugt.
+MIN_REAL_SHARE = 0.15
+N_WALLET_CHECK = 8            # Stichprobe statt aller 20 Wallets - 2,5x schneller, gleiche Aussage
 WALLET_MIN_AGE_D, WALLET_MIN_TX, WALLET_MIN_TOKENS = 7, 20, 3
 MIN_GAP_CV, MAX_SAME_AMOUNT = 0.30, 0.50
 
 # ---- Position / Exits (Longshot-Struktur fuer alle) ----
 POS_USD, MAX_POS = 15.0, 20            # 20 x 15 $ = 300 $ im Markt, 200 $ Puffer
-MAX_BUYS_PER_RUN = 4                   # Laufzeitschutz: Helius-Pruefung dauert ~10-20 s je Kandidat,
+MAX_BUYS_PER_RUN = 6                   # Laufzeitschutz: Helius-Pruefung dauert ~10-20 s je Kandidat,
                                        # run_paper.sh bricht nach 240 s ab. Lieber ueber mehrere Laeufe fuellen.
 TP1_X, TP1_FRAC = 5.0, 0.34            # bei 5x ein Drittel raus (Einsatz zurueck + Gewinn)
 TP2_X = 20.0
@@ -100,6 +119,7 @@ def codex_candidates():
 def quality(c):
     """Grund fuer Ablehnung, oder None wenn ok."""
     if not (MIN_LIQ <= c["liq"] <= MAX_LIQ): return f"liq {c['liq']:.0f}"
+    if c["mcap"] > 0 and c["liq"] / c["mcap"] > MAX_LIQ_OVER_MCAP: return f"liq/mcap {c['liq']/c['mcap']:.1f} (kuenstlich?)"
     if not (MIN_MCAP <= c["mcap"] <= MAX_MCAP): return f"mcap {c['mcap']:.0f}"
     if not (MIN_HOLDERS <= c["holders"] <= MAX_HOLDERS): return f"holders {c['holders']}"
     if c["buys"] < MIN_BUYS_24H: return f"buys24 {c['buys']}"
@@ -141,27 +161,36 @@ def wallet_is_real(w, cache):
         real = None
     cache[w] = real; return real
 
-def holder_quality(mint, cache, smart, sym):
-    """(ok, grund). ok=None wenn nicht pruefbar. Schreibt nebenbei die Kaeufer-Wallets fuer Smart Money mit."""
-    if not HELIUS: return None, "helius fehlt"
+def collect_buyers(mint, sym, smart):
+    """Nur Datensammlung fuer die spaetere Smart-Money-Strategie: 1 Helius-Call, keine Kaufentscheidung.
+    Laeuft fuer jeden Kandidaten mit brauchbaren Kennzahlen, nicht nur fuer die, die gekauft werden -
+    sonst haengt die gesamte Datenbasis an der Strenge der Filter und waechst praktisch nicht."""
+    if not HELIUS: return None
     try: buys = recent_buyers(mint)
-    except Exception as e: return None, f"helius: {e}"
-    if len(buys) < 8: return False, f"nur {len(buys)} kaeufer"
-    # Smart-Money-Rohdaten mitschreiben (aendert das Handeln nicht)
+    except Exception: return None
     for b in buys:
         w = smart.setdefault(b["wallet"], {"tokens": {}})
         w["tokens"].setdefault(mint, {"sym": sym, "first_seen": now_iso(), "t": b["t"]})
+    return buys
+
+def holder_quality(mint, cache, smart, sym, buys=None):
+    """(ok, grund). Harte Ablehnung nur bei eindeutigen Bot-Signaturen."""
+    if not HELIUS: return True, "helius fehlt (kein Ausschluss)"
+    if buys is None: buys = collect_buyers(mint, sym, smart)
+    if buys is None: return True, "helius nicht erreichbar (kein Ausschluss)"
+    if len(buys) < 8: return False, f"nur {len(buys)} kaeufer"
     ts = sorted(b["t"] for b in buys); gaps = [b - a for a, b in zip(ts, ts[1:]) if b > a]
     if len(gaps) >= 5:
         cv = statistics.pstdev(gaps) / max(statistics.mean(gaps), 1)
         if cv < MIN_GAP_CV: return False, f"bot-timing cv {cv:.2f}"
     amts = [b["amt"] for b in buys]
     if amts and max(amts.count(a) for a in set(amts)) / len(amts) > MAX_SAME_AMOUNT: return False, "identische betraege"
-    wallets = list(dict.fromkeys(b["wallet"] for b in buys))
+    wallets = list(dict.fromkeys(b["wallet"] for b in buys))[:N_WALLET_CHECK]
     flags = [wallet_is_real(w, cache) for w in wallets]; time.sleep(0.2)
     known = [f for f in flags if f is not None]
-    if len(known) < 5: return None, "wallets nicht pruefbar"
+    if len(known) < 3: return True, "wallets nicht pruefbar (kein Ausschluss)"
     share = sum(known) / len(known)
+    smart.setdefault("_stats", {})[mint] = {"real_share": round(share, 2), "t": now_iso(), "sym": sym}
     return share >= MIN_REAL_SHARE, f"echte wallets {share:.0%} ({len(known)})"
 
 def rug_strict(addr):
@@ -219,7 +248,20 @@ def main():
     # 3) Positionen verwalten
     for a, pos in list(st["positions"].items()):
         px = prices.get(a)
-        if not px: continue
+        if not px:
+            # Kein Kurs: merken, wann das begann. Bleibt es dabei, ist der Token tot (typisch nach einem Rug)
+            # und die Position wuerde sonst dauerhaft einen der MAX_POS Plaetze blockieren.
+            pos.setdefault("no_px_since", now_iso())
+            if (now - parse_iso(pos["no_px_since"])) / 3600 >= ORPHAN_HOURS:
+                qty = pos["qty"]; entry = pos["entry"]
+                st["trades"].append({"t": now_iso(), "side": "sell", "sym": pos["sym"], "addr": a,
+                                     "price": 0.0, "usd": 0.0, "pnl": round(-qty * entry, 2), "peak_x":
+                                     round(pos.get("peak", entry) / entry, 3), "held_h": round(held_seconds(pos) / 3600, 1),
+                                     "frac": 1.0, "quote": "none", "reason": "abgeschrieben"})
+                del st["positions"][a]; cooldown[a] = today + COOLDOWN_D
+                print(f"  {pos['sym']}: seit {ORPHAN_HOURS} h kein Kurs -> als Totalverlust abgeschrieben")
+            continue
+        pos.pop("no_px_since", None)
         liq = (pairs[a].get("liquidity") or {}).get("usd") or 0
         pos["peak"] = max(pos.get("peak", px), px)
         x = px / pos["entry"]; held_d = held_seconds(pos) / 86400
@@ -247,12 +289,21 @@ def main():
         if why: checks.append((c["sym"], why)); continue
         px = prices.get(a); liq = (pairs.get(a, {}).get("liquidity") or {}).get("usd") or 0
         if not px or not (MIN_LIQ <= liq <= MAX_LIQ): checks.append((c["sym"], f"ds-liq {liq:.0f}")); continue
+        # Eigener Verlauf der letzten ~1 h: weder in einen Preissturz noch in abfliessende Liquiditaet kaufen.
+        pts = [x for x in paths.get(a, {}).get("pts", []) if x[1] > 0 and x[2] > 0][-13:]
+        if len(pts) >= 4:
+            px_chg = pts[-1][1] / pts[0][1] - 1
+            liq_chg = pts[-1][2] / pts[0][2] - 1
+            if px_chg <= MAX_PRE_BUY_DROP: checks.append((c["sym"], f"preis {px_chg:+.0%} in 1h")); continue
+            if liq_chg <= MAX_PRE_BUY_LIQ_DROP:
+                checks.append((c["sym"], f"liq {liq_chg:+.0%} in 1h (rug-vorlauf)")); cooldown[a] = today + 2; continue
+        # Datensammlung laeuft VOR der Kaufentscheidung und unabhaengig von ihr
+        buys = collect_buyers(a, c["sym"], smart)
         if not rug_strict(a):
             checks.append((c["sym"], "rugcheck")); cooldown[a] = today + COOLDOWN_D; time.sleep(1.1); continue
         time.sleep(1.1)
-        hq, reason = holder_quality(a, wcache, smart, c["sym"])
+        hq, reason = holder_quality(a, wcache, smart, c["sym"], buys)
         if hq is False: cooldown[a] = today + 3; checks.append((c["sym"], reason)); continue
-        if hq is None: cooldown[a] = today + 1; checks.append((c["sym"], reason)); continue
         if st["cash"] < POS_USD + 2: break
         if bought >= MAX_BUYS_PER_RUN:
             checks.append((c["sym"], "ok, aber Kauflimit dieses Laufs erreicht")); break
@@ -265,13 +316,18 @@ def main():
 
     # 5) Smart-Money-Performance nachtragen (wie liefen die Tokens, die eine Wallet gekauft hat?)
     for w, rec in smart.items():
+        if w == "_stats" or "tokens" not in rec: continue
         for mint, info in rec["tokens"].items():
             if mint in prices and prices[mint] > 0:
                 info.setdefault("px0", prices[mint])
                 info["px_last"] = prices[mint]
                 if info.get("px0"): info["x"] = round(prices[mint] / info["px0"], 3)
-    if len(smart) > 4000:      # aelteste Wallets ausduennen
-        smart = dict(sorted(smart.items(), key=lambda kv: -len(kv[1]["tokens"]))[:3000])
+    if len(smart) > 6000:     # ausduennen: Wallets behalten, die in den meisten Tokens auftauchen
+        stats = smart.get("_stats")
+        keep = dict(sorted(((k, v) for k, v in smart.items() if k != "_stats"),
+                           key=lambda kv: -len(kv[1].get("tokens", {})))[:4500])
+        if stats: keep["_stats"] = stats
+        smart = keep
 
     # 6) Pfade aufraeumen
     for a in list(paths):
