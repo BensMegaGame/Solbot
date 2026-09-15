@@ -1,5 +1,5 @@
 {
- "cash": 61.74020700000011,
+ "cash": 31.720207000000112,
  "positions": {
   "3qFdxC9xvb2vqhFijrPLE4Dn5mH7Ndmagjh15Q1dN6Rb": {
    "sym": "Noiz",
@@ -9,8 +9,8 @@
    "peak": 0.01222,
    "entry": 0.005900113010847157,
    "mig": 1789437208.0,
-   "cur_price": 0.01222,
-   "mark": 0.01222,
+   "cur_price": 0.01221,
+   "mark": 0.01221,
    "tp1": true
   },
   "hvmfRvb6Kr2WU9K1byQrs6BwkeXKzy7UgCSCqrQpump": {
@@ -21,8 +21,8 @@
    "peak": 0.002537,
    "entry": 0.002522233829804071,
    "mig": 1789444838.0,
-   "cur_price": 0.002537,
-   "mark": 0.002537
+   "cur_price": 0.002532,
+   "mark": 0.002532
   },
   "NWwhV67SxAd36AjupjwvtEdwuxe5kkADmtXmngSpump": {
    "sym": "HOOD",
@@ -32,8 +32,19 @@
    "peak": 0.000365,
    "entry": 0.0003557785265327676,
    "mig": 1789454016.0,
-   "cur_price": 0.000365,
-   "mark": 0.000365
+   "cur_price": 1.866e-06,
+   "mark": 1.866e-06
+  },
+  "DVsLaDtK8B2fLz7Wbv6rfL7i3Z1W3gU1w5MZN8Tpump": {
+   "sym": "DANGR",
+   "qty": 2490.73704,
+   "cost": 30.02,
+   "opened": "2026-09-15T07:36:01Z",
+   "peak": 0.01203,
+   "entry": 0.012052657313033736,
+   "mig": 1789457096.0,
+   "cur_price": 0.01203,
+   "mark": 0.01203
   }
  },
  "trades": [
@@ -996,6 +1007,18 @@
    "slip": 0.0209,
    "quote": "jup",
    "reason": "postgrad 17min"
+  },
+  {
+   "t": "2026-09-15T07:36:01Z",
+   "side": "buy",
+   "sym": "DANGR",
+   "addr": "DVsLaDtK8B2fLz7Wbv6rfL7i3Z1W3gU1w5MZN8Tpump",
+   "price": 0.01203,
+   "fill": 0.012052657313,
+   "usd": 30.02,
+   "slip": 0.006,
+   "quote": "jup",
+   "reason": "postgrad 11min"
   }
  ],
  "equity": [
@@ -1818,6 +1841,10 @@
   {
    "t": "2026-09-15T07:31:01Z",
    "v": 153.82
+  },
+  {
+   "t": "2026-09-15T07:36:02Z",
+   "v": 123.04
   }
  ],
  "started": "2026-09-14T14:30:55Z",

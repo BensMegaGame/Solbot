@@ -13,8 +13,8 @@
    "tp1_gain": 0.4,
    "moon_x": 3.0,
    "max_hold_h": 48,
-   "mark": 0.0003252,
-   "cur_price": 0.0003252,
+   "mark": 0.0003183,
+   "cur_price": 0.0003183,
    "tp1": true
   },
   "4sgjzB5Nc49SUB4xnb3MC2H5dVkKvimfFN5AsJuVs5U7": {
@@ -59,8 +59,8 @@
    "tp1_gain": 0.75,
    "moon_x": 5.0,
    "max_hold_h": 24,
-   "mark": 5.859e-05,
-   "cur_price": 5.859e-05
+   "mark": 5.71e-05,
+   "cur_price": 5.71e-05
   },
   "2f9pB9SDjsFKMy3sFhp5WUFrS6KRYeKGaajPxx8Spump": {
    "sym": "TAYLORSWIF",
@@ -74,8 +74,8 @@
    "tp1_gain": 0.65,
    "moon_x": 3.0,
    "max_hold_h": 36,
-   "no_quote_since": "2026-09-15T07:31:39Z",
-   "mark": 0.0
+   "mark": 9.141e-05,
+   "cur_price": 9.141e-05
   }
  },
  "trades": [
@@ -1514,9 +1514,13 @@
   {
    "t": "2026-09-15T07:31:39Z",
    "v": 264.2
+  },
+  {
+   "t": "2026-09-15T07:36:42Z",
+   "v": 325.28
   }
  ],
  "started": "2026-09-14T12:02:41Z",
  "strategy": "overreaction_fade",
- "universe_n": 504
+ "universe_n": 505
 }
