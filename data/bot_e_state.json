@@ -14,7 +14,8 @@
    "moon_x": 5.0,
    "max_hold_h": 24,
    "mark": 1.478e-05,
-   "cur_price": 1.478e-05
+   "cur_price": 1.478e-05,
+   "no_quote_since": "2026-09-15T22:51:41Z"
   },
   "CT9YFpaLeugv5BCXTo7ZmM6ad1eGhQgx9hReAy6RJnC8": {
    "sym": "BCAT",
@@ -28,8 +29,8 @@
    "tp1_gain": 0.65,
    "moon_x": 3.0,
    "max_hold_h": 36,
-   "mark": 6.987e-05,
-   "cur_price": 6.987e-05
+   "mark": 7.05e-05,
+   "cur_price": 7.05e-05
   },
   "41WU7d3EzacMHkpgHNnF7eG9aXjvbPqASXVLpGqkoTpa": {
    "sym": "GAY",
@@ -43,8 +44,8 @@
    "tp1_gain": 0.7,
    "moon_x": 3.0,
    "max_hold_h": 36,
-   "mark": 4.98e-05,
-   "cur_price": 4.98e-05
+   "mark": 5.116e-05,
+   "cur_price": 5.116e-05
   },
   "86T4G3zJaBxQAuWAbfXggE5d5XEt4bns3Y41jgVLpump": {
    "sym": "LSM",
@@ -58,8 +59,8 @@
    "tp1_gain": 0.4,
    "moon_x": 3.0,
    "max_hold_h": 48,
-   "mark": 0.0001887,
-   "cur_price": 0.0001887
+   "mark": 0.0001855,
+   "cur_price": 0.0001855
   }
  },
  "trades": [
@@ -2380,9 +2381,13 @@
   {
    "t": "2026-09-15T22:46:30Z",
    "v": 226.8
+  },
+  {
+   "t": "2026-09-15T22:51:41Z",
+   "v": 226.76
   }
  ],
  "started": "2026-09-14T12:02:41Z",
  "strategy": "overreaction_fade",
- "universe_n": 504
+ "universe_n": 503
 }
