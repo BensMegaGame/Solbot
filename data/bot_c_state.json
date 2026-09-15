@@ -1,38 +1,27 @@
 {
- "cash": 33.51991100000012,
+ "cash": 51.44405700000012,
  "positions": {
   "hvmfRvb6Kr2WU9K1byQrs6BwkeXKzy7UgCSCqrQpump": {
    "sym": "USDF",
    "qty": 11902.147868,
    "cost": 30.02,
    "opened": "2026-09-15T04:16:11Z",
-   "peak": 0.002542,
+   "peak": 0.002543,
    "entry": 0.002522233829804071,
    "mig": 1789444838.0,
-   "cur_price": 0.002542,
-   "mark": 0.002542
+   "cur_price": 0.002543,
+   "mark": 0.002543
   },
   "DVsLaDtK8B2fLz7Wbv6rfL7i3Z1W3gU1w5MZN8Tpump": {
    "sym": "DANGR",
    "qty": 2490.73704,
    "cost": 30.02,
    "opened": "2026-09-15T07:36:01Z",
-   "peak": 0.01213,
+   "peak": 0.01217,
    "entry": 0.012052657313033736,
    "mig": 1789457096.0,
-   "cur_price": 0.0121,
-   "mark": 0.0121
-  },
-  "AQdPS6ByMt7aZhB49VT44C6vAqDFFQvvgqm5A2NKpump": {
-   "sym": "WOHUHCAT",
-   "qty": 137328.497978,
-   "cost": 30.02,
-   "opened": "2026-09-15T09:00:59Z",
-   "peak": 0.0002076,
-   "entry": 0.00021859992967234812,
-   "mig": 1789460806.0,
-   "cur_price": 0.0002076,
-   "mark": 0.0002076
+   "cur_price": 0.01217,
+   "mark": 0.01217
   }
  },
  "trades": [
@@ -1049,6 +1038,21 @@
    "slip": 0.013,
    "quote": "jup",
    "reason": "postgrad 34min"
+  },
+  {
+   "t": "2026-09-15T09:10:57Z",
+   "side": "sell",
+   "sym": "WOHUHCAT",
+   "addr": "AQdPS6ByMt7aZhB49VT44C6vAqDFFQvvgqm5A2NKpump",
+   "price": 0.0001421,
+   "usd": 17.92,
+   "pnl": -12.1,
+   "peak_x": 0.95,
+   "held_h": 0.2,
+   "frac": 1.0,
+   "slip": 0.0033,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -1947,6 +1951,10 @@
   {
    "t": "2026-09-15T09:05:58Z",
    "v": 122.42
+  },
+  {
+   "t": "2026-09-15T09:10:57Z",
+   "v": 112.02
   }
  ],
  "started": "2026-09-14T14:30:55Z",
