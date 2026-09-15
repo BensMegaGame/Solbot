@@ -1,5 +1,5 @@
 {
- "cash": 20.275383617955853,
+ "cash": 80.03114161795585,
  "positions": {
   "4sgjzB5Nc49SUB4xnb3MC2H5dVkKvimfFN5AsJuVs5U7": {
    "sym": "CINNA",
@@ -13,8 +13,8 @@
    "tp1_gain": 1.0,
    "moon_x": 5.0,
    "max_hold_h": 24,
-   "mark": 1.414e-05,
-   "cur_price": 1.414e-05
+   "mark": 1.423e-05,
+   "cur_price": 1.423e-05
   },
   "2qEubd7GwtZbCqDu1uQwNC4kNaJLBdRUcWKpckTypump": {
    "sym": "KRYPTO",
@@ -28,23 +28,8 @@
    "tp1_gain": 0.75,
    "moon_x": 5.0,
    "max_hold_h": 24,
-   "mark": 6.958e-05,
-   "cur_price": 6.958e-05
-  },
-  "2d4xZo72fDfFQaHTzqH3yJXWSnyEbh2H99EqJiUPpump": {
-   "sym": "DWH",
-   "qty": 685683.702934,
-   "cost": 60.02,
-   "opened": "2026-09-15T13:46:32Z",
-   "peak": 0.0001442,
-   "entry": 8.753307063180585e-05,
-   "tier": "T3",
-   "stop": 0.3,
-   "tp1_gain": 0.65,
-   "moon_x": 3.0,
-   "max_hold_h": 36,
-   "mark": 0.0001409,
-   "cur_price": 0.0001409
+   "mark": 7.423e-05,
+   "cur_price": 7.423e-05
   },
   "CT9YFpaLeugv5BCXTo7ZmM6ad1eGhQgx9hReAy6RJnC8": {
    "sym": "BCAT",
@@ -652,6 +637,21 @@
    "slip": 0.022,
    "quote": "jup",
    "reason": "T4 chg -28%"
+  },
+  {
+   "t": "2026-09-15T19:21:28Z",
+   "side": "sell",
+   "sym": "DWH",
+   "addr": "2d4xZo72fDfFQaHTzqH3yJXWSnyEbh2H99EqJiUPpump",
+   "price": 8.965e-05,
+   "usd": 59.76,
+   "pnl": -0.26,
+   "peak_x": 1.647,
+   "held_h": 5.6,
+   "frac": 1.0,
+   "slip": 0.0077,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
@@ -2158,6 +2158,10 @@
   {
    "t": "2026-09-15T19:16:28Z",
    "v": 296.59
+  },
+  {
+   "t": "2026-09-15T19:21:29Z",
+   "v": 262.7
   }
  ],
  "started": "2026-09-14T12:02:41Z",
