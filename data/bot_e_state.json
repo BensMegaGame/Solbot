@@ -13,8 +13,8 @@
    "tp1_gain": 0.75,
    "moon_x": 5.0,
    "max_hold_h": 24,
-   "cur_price": 5.103e-05,
-   "mark": 5.103e-05,
+   "cur_price": 5.133e-05,
+   "mark": 5.133e-05,
    "tp1": true
   },
   "2bRoY87nsBq84TTKJKFD5gYxVLPhrTPKK9MaheSLCCLg": {
@@ -44,8 +44,8 @@
    "tp1_gain": 0.4,
    "moon_x": 3.0,
    "max_hold_h": 48,
-   "mark": 0.000463,
-   "cur_price": 0.000463,
+   "mark": 0.0004542,
+   "cur_price": 0.0004542,
    "tp1": true
   },
   "Fuo63YDw3vg68VVCF79gDc9MrP5k8MUjHkKiRG9Y5Nnj": {
@@ -60,8 +60,8 @@
    "tp1_gain": 0.4,
    "moon_x": 3.0,
    "max_hold_h": 48,
-   "mark": 0.0001383,
-   "cur_price": 0.0001383
+   "mark": 0.0001391,
+   "cur_price": 0.0001391
   },
   "7TRk8xVyE2gg6nf9osbct8g6uVsHdc1mYzzhwdPzo6da": {
    "sym": "STANKS",
@@ -75,8 +75,8 @@
    "tp1_gain": 0.65,
    "moon_x": 3.0,
    "max_hold_h": 36,
-   "mark": 7.89e-05,
-   "cur_price": 7.89e-05
+   "mark": 7.287e-05,
+   "cur_price": 7.287e-05
   },
   "7Vv1veMsBcBWAiSP1JTkRKvNeWmwf5Z7KbQuuKH1pump": {
    "sym": "PS500",
@@ -90,23 +90,23 @@
    "tp1_gain": 0.65,
    "moon_x": 3.0,
    "max_hold_h": 36,
-   "mark": 8.029e-05,
-   "cur_price": 8.029e-05
+   "mark": 7.341e-05,
+   "cur_price": 7.341e-05
   },
   "4sgjzB5Nc49SUB4xnb3MC2H5dVkKvimfFN5AsJuVs5U7": {
    "sym": "CINNA",
    "qty": 1416087.406894,
    "cost": 25.02,
    "opened": "2026-09-15T02:12:00Z",
-   "peak": 1.799e-05,
+   "peak": 1.932e-05,
    "entry": 1.766840088979963e-05,
    "tier": "T1",
    "stop": 0.4,
    "tp1_gain": 1.0,
    "moon_x": 5.0,
    "max_hold_h": 24,
-   "mark": 1.799e-05,
-   "cur_price": 1.799e-05
+   "mark": 1.932e-05,
+   "cur_price": 1.932e-05
   }
  },
  "trades": [
@@ -1155,9 +1155,13 @@
   {
    "t": "2026-09-15T02:16:57Z",
    "v": 406.93
+  },
+  {
+   "t": "2026-09-15T02:22:03Z",
+   "v": 399.63
   }
  ],
  "started": "2026-09-14T12:02:41Z",
  "strategy": "overreaction_fade",
- "universe_n": 503
+ "universe_n": 504
 }
