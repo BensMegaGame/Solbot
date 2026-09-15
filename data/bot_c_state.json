@@ -1,17 +1,6 @@
 {
- "cash": 14.666770000000124,
+ "cash": 44.62425100000013,
  "positions": {
-  "hvmfRvb6Kr2WU9K1byQrs6BwkeXKzy7UgCSCqrQpump": {
-   "sym": "USDF",
-   "qty": 11902.147868,
-   "cost": 30.02,
-   "opened": "2026-09-15T04:16:11Z",
-   "peak": 0.002566,
-   "entry": 0.002522233829804071,
-   "mig": 1789444838.0,
-   "cur_price": 0.002525,
-   "mark": 0.002525
-  },
   "DVsLaDtK8B2fLz7Wbv6rfL7i3Z1W3gU1w5MZN8Tpump": {
    "sym": "DANGR",
    "qty": 2490.73704,
@@ -31,8 +20,8 @@
    "peak": 0.000221,
    "entry": 0.0002181468926383779,
    "mig": 1789465002.0,
-   "cur_price": 0.000191,
-   "mark": 0.000191
+   "cur_price": 0.0001708,
+   "mark": 0.0001708
   }
  },
  "trades": [
@@ -1103,6 +1092,21 @@
    "slip": 0.0295,
    "quote": "jup",
    "reason": "postgrad 34min"
+  },
+  {
+   "t": "2026-09-15T10:20:55Z",
+   "side": "sell",
+   "sym": "USDF",
+   "addr": "hvmfRvb6Kr2WU9K1byQrs6BwkeXKzy7UgCSCqrQpump",
+   "price": 0.002546,
+   "usd": 29.96,
+   "pnl": -0.06,
+   "peak_x": 1.017,
+   "held_h": 6.1,
+   "frac": 1.0,
+   "slip": 0.0024,
+   "quote": "jup",
+   "reason": "time"
   }
  ],
  "equity": [
@@ -2057,6 +2061,10 @@
   {
    "t": "2026-09-15T10:15:55Z",
    "v": 101.59
+  },
+  {
+   "t": "2026-09-15T10:20:55Z",
+   "v": 98.71
   }
  ],
  "started": "2026-09-14T14:30:55Z",
