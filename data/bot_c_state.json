@@ -1,17 +1,6 @@
 {
- "cash": 125.70353600000011,
+ "cash": 158.4371910000001,
  "positions": {
-  "8XcATDK56Axr3sDkh9HhzN1AWXUefY4Vdo8PdXopump": {
-   "sym": "OpenAI",
-   "qty": 7912.654976,
-   "cost": 30.02,
-   "opened": "2026-09-14T21:11:04Z",
-   "peak": 0.004181,
-   "entry": 0.0037939225318245444,
-   "mig": 1789418644.0,
-   "cur_price": 0.004181,
-   "mark": 0.004181
-  },
   "R5djwmnzNmsytb8BqTohFDW555Q531jRXNeRwigpump": {
    "sym": "STRATEGY",
    "qty": 6297.836778,
@@ -20,19 +9,19 @@
    "peak": 0.004928,
    "entry": 0.004766716105578943,
    "mig": 1789424082.0,
-   "cur_price": 0.004906,
-   "mark": 0.004906
+   "cur_price": 0.004891,
+   "mark": 0.004891
   },
   "3qFdxC9xvb2vqhFijrPLE4Dn5mH7Ndmagjh15Q1dN6Rb": {
    "sym": "Noiz",
    "qty": 5088.038135,
    "cost": 30.02,
    "opened": "2026-09-15T02:11:11Z",
-   "peak": 0.007145,
+   "peak": 0.007404,
    "entry": 0.005900113010847157,
    "mig": 1789437208.0,
-   "cur_price": 0.007145,
-   "mark": 0.007145
+   "cur_price": 0.007404,
+   "mark": 0.007404
   },
   "QDFTHtokUYRb38e1pR8Ky4uPWNyFJ5268yJVwH2pump": {
    "sym": "MDOR",
@@ -42,8 +31,8 @@
    "peak": 0.01513,
    "entry": 0.015136846417260754,
    "mig": 1789439946.0,
-   "cur_price": 0.01511,
-   "mark": 0.01511
+   "cur_price": 0.01503,
+   "mark": 0.01503
   }
  },
  "trades": [
@@ -841,6 +830,21 @@
    "slip": 0.0036,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-15T03:16:02Z",
+   "side": "sell",
+   "sym": "OpenAI",
+   "addr": "8XcATDK56Axr3sDkh9HhzN1AWXUefY4Vdo8PdXopump",
+   "price": 0.004177,
+   "usd": 32.73,
+   "pnl": 2.71,
+   "peak_x": 1.102,
+   "held_h": 6.1,
+   "frac": 1.0,
+   "slip": 0.0022,
+   "quote": "jup",
+   "reason": "time"
   }
  ],
  "equity": [
@@ -1455,6 +1459,10 @@
   {
    "t": "2026-09-15T03:11:02Z",
    "v": 256.0
+  },
+  {
+   "t": "2026-09-15T03:16:02Z",
+   "v": 256.72
   }
  ],
  "started": "2026-09-14T14:30:55Z",
