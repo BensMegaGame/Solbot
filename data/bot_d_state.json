@@ -1,5 +1,5 @@
 {
- "cash": 95.7500710953227,
+ "cash": 35.73007109532269,
  "positions": {
   "GWTP6M5bxhaJ1k2Kxvf8hhYaHE6jZMhh4cKzFuCpnc83": {
    "sym": "USEFUL",
@@ -9,8 +9,8 @@
    "peak": 0.002056,
    "entry": 0.0009924353088000002,
    "kind": "standard",
-   "cur_price": 0.0007283,
-   "mark": 0.0007283
+   "cur_price": 0.0007328,
+   "mark": 0.0007328
   },
   "5GefefPX1mDs6ZJB1apYmz6fCTCiNJpHturZ9bvFpump": {
    "sym": "Pumpoween",
@@ -33,6 +33,17 @@
    "kind": "standard",
    "cur_price": 0.000354,
    "mark": 0.000354
+  },
+  "5WM8iNEFeiJY6Da71VgrZCKLQQkKacpgMWV7Drghpump": {
+   "sym": "Moof",
+   "qty": 24501.015044,
+   "cost": 60.02,
+   "opened": "2026-09-15T08:31:54Z",
+   "peak": 0.002423,
+   "entry": 0.002449694426627364,
+   "kind": "standard",
+   "cur_price": 0.002423,
+   "mark": 0.002423
   }
  },
  "trades": [
@@ -548,6 +559,18 @@
    "slip": 0.0232,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-15T08:31:54Z",
+   "side": "buy",
+   "sym": "Moof",
+   "addr": "5WM8iNEFeiJY6Da71VgrZCKLQQkKacpgMWV7Drghpump",
+   "price": 0.002423,
+   "fill": 0.002449694427,
+   "usd": 60.02,
+   "slip": 0.0077,
+   "quote": "jup",
+   "reason": "std echte wallets 59% (17)"
   }
  ],
  "equity": [
@@ -3550,6 +3573,10 @@
   {
    "t": "2026-09-15T08:26:09Z",
    "v": 271.96
+  },
+  {
+   "t": "2026-09-15T08:31:56Z",
+   "v": 271.58
   }
  ],
  "started": "2026-09-12T18:11:27Z",
