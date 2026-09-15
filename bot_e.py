@@ -13,7 +13,15 @@ Laeuft live 1:1 wie Bot A/B/D ueber Jupiter-Swaps (normale AMM-Pools, kein Sonde
 import os, time
 from common import *
 
-DS_SEARCH_PAGES_GT = 3          # GeckoTerminal-Seiten fuer breiteres Universum (etablierte Tokens)
+CODEX_KEY = os.environ.get("CODEX_KEY")
+CODEX_URL = "https://graph.codex.io/graphql"
+SOLANA = 1399811149
+# v3: eigener Codex-Call. Vorher kam das Universum zu grossen Teilen aus token-boosts/token-profiles -
+# also aus BEZAHLTER Promotion, genau der Quelle, die bei Bot A das Problem war.
+E_MIN_AGE_D = 2                 # "etabliert": mind. 48 h alt - E's These stand bisher nur im Text, nicht im Code
+E_MIN_LIQ, E_MIN_VOL24 = 15_000, 20_000
+E_MAX_LIQ_OVER_MCAP = 1.5       # Liquiditaet deutlich ueber Marktkapitalisierung = kuenstlich (Lehre aus Bot C)
+DS_SEARCH_PAGES_GT = 8          # GeckoTerminal-Seiten (kostenlos, neutral) - ersetzt die Promo-Feeds
 MAX_UNIVERSE = 500
 DISCOVER_EVERY_S = 20 * 60      # Universum alle 20 Minuten neu zusammenstellen (alles kostenlos)
 COOLDOWN_D = 10
@@ -34,18 +42,54 @@ def tradeable(sym):
 # stop: zusaetzlicher harter Stop ab Einstieg; tp1_gain: Kursgewinn ab Einstieg, bei dem 80% verkauft werden
 # moon_x: Ziel-Vielfaches ab Einstieg fuer die restlichen 20%; max_hold_h: Zeitstop in Stunden
 TIERS = [
-    {"name": "T1", "mcap": (15_000, 35_000),   "window": "m5", "drop": (0.40, 0.50), "liq_max_drop": 0.25,
-     "stop": 0.40, "usd": 25.0, "tp1_gain": 1.00, "moon_x": 5.0, "max_hold_h": 24, "hist_needed_s": 4 * 60},
+    # T1 lief mit dem 5-Minuten-Fenster nie an: -40 % in 5 Min bei 15-35k MCap plus passende
+    # Liquiditaetshistorie kam in der gesamten Laufzeit kein einziges Mal vor. Jetzt 1-Stunden-Fenster.
+    {"name": "T1", "mcap": (15_000, 35_000),   "window": "h1", "drop": (0.40, 0.50), "liq_max_drop": 0.25,
+     "stop": 0.40, "usd": 25.0, "tp1_gain": 1.00, "moon_x": 5.0, "max_hold_h": 24, "hist_needed_s": 50 * 60},
     {"name": "T2", "mcap": (36_000, 60_000),   "window": "h1", "drop": (0.35, 0.45), "liq_max_drop": 0.20,
      "stop": 0.35, "usd": 40.0, "tp1_gain": 0.75, "moon_x": 5.0, "max_hold_h": 24, "hist_needed_s": 50 * 60},
-    {"name": "T3", "mcap": (61_000, 100_000),  "window": "h1", "drop": (0.30, 0.40), "liq_max_drop": 0.20,
-     "stop": 0.30, "usd": 60.0, "tp1_gain": 0.65, "moon_x": 3.0, "max_hold_h": 36, "hist_needed_s": 50 * 60},
+    # T3 ueberarbeitet. Grund ist nicht nur die Bilanz, sondern die Konstruktion: ein Ruecksetzer von
+    # 30-40 % in einer Stunde liegt bei 61-100k MCap noch im normalen Schwankungsbereich - das Fenster
+    # fing also gewoehnliche Volatilitaet statt echter Panik. Jetzt tiefer angesetzt (selektiver),
+    # strengerer Liquiditaetscheck, und die Positionsgroesse an die Risikostaffelung der anderen Stufen
+    # angeglichen (T3 riskierte mit 60 $ bei -30 % mehr als T4 mit 80 $ bei -25 %).
+    {"name": "T3", "mcap": (61_000, 100_000),  "window": "h1", "drop": (0.35, 0.45), "liq_max_drop": 0.12,
+     "stop": 0.35, "usd": 45.0, "tp1_gain": 0.70, "moon_x": 3.0, "max_hold_h": 36, "hist_needed_s": 50 * 60},
     {"name": "T4", "mcap": (101_000, 300_000), "window": "h6", "drop": (0.25, 0.35), "liq_max_drop": 0.15,
      "stop": 0.25, "usd": 80.0, "tp1_gain": 0.40, "moon_x": 3.0, "max_hold_h": 48, "hist_needed_s": 5.5 * 3600},
 ]
 TP1_FRAC = 0.8
+# v3 - Exits proportional zur Stufe statt pauschal. Ein einheitliches Trailing haette die grossen Gewinner
+# gekillt: WOW (T2) lief auf 5,8x, ein fester 25-%-Rueckschlag haette den Trade bei ~1,2x beendet.
+TRAIL_ARM_FRAC = 0.5      # scharf ab der Haelfte des Stufenziels (T1 +50 %, T4 +20 %)
+TRAIL_GIVEBACK_FRAC = 0.9 # Rueckgabe = 90 % des Stufen-Stops: gleiche Schwankungstoleranz wie beim
+                          # Einstiegsstop, nur wandert der Bezugspunkt mit dem Hoechststand mit.
+PEAK_CRASH_EXIT = -0.50   # harte Notbremse: mehr als 50 % unter den Hoechststand -> immer raus,
+                          # auch vor dem Scharfstellen des Trailings und auch nach TP1.
 GT = "https://api.geckoterminal.com/api/v2/networks/solana"
 RC_HARD = ("mint", "freeze", "unlocked", "top 10", "single holder")
+
+Q_E = """
+query($net: [Int!], $before: Int!) {
+  filterTokens(
+    filters: { network: $net, createdAt: { lte: $before }, marketCap: { gte: %s, lte: %s },
+               liquidity: { gte: %s }, volume24: { gte: %s } }
+    rankings: [{ attribute: volume24, direction: DESC }]
+    limit: 200
+  ) { results { token { address } } }
+}""" % (TIERS[0]["mcap"][0], TIERS[-1]["mcap"][1], E_MIN_LIQ, E_MIN_VOL24)
+
+def codex_universe():
+    """None = Fehler (bald erneut versuchen), Liste = Ergebnis. ~1.440 Calls/Monat bei 30-Min-Takt."""
+    if not CODEX_KEY: return None
+    try:
+        r = requests.post(CODEX_URL, headers={"Authorization": CODEX_KEY, "Content-Type": "application/json", **UA},
+                          json={"query": Q_E, "variables": {"net": [SOLANA], "before": int(time.time() - E_MIN_AGE_D * 86400)}}, timeout=30)
+        r.raise_for_status(); d = r.json()
+        if d.get("errors"): print("codex:", str(d["errors"])[:200]); return None
+        return [x["token"]["address"] for x in d["data"]["filterTokens"]["results"]]
+    except Exception as e:
+        print("codex fehler:", e); return None
 
 def batch_pairs(addrs):
     out = {}
@@ -60,13 +104,15 @@ def batch_pairs(addrs):
     return out
 
 def discover():
+    """Nur neutrale Quellen. Die DexScreener-Promo-Endpunkte (token-boosts/token-profiles) und
+    bot_a_seen.json (das daraus entstand) sind bewusst NICHT mehr dabei."""
     addrs = set()
-    for src in ("bot_a_seen.json",):
-        addrs |= set(load(src, {}).keys())
-    addrs |= set(load("bot_b_history.json", {}).keys())
-    for ep in ("/token-profiles/latest/v1", "/token-boosts/latest/v1", "/token-boosts/top/v1"):
-        for t in get(DS + ep) or []:
-            if t.get("chainId") == "solana": addrs.add(t["tokenAddress"])
+    cx = codex_universe()
+    if cx is None: print("Bot E: Codex nicht erreichbar, nutze nur die kostenlosen Quellen")
+    else: addrs |= set(cx)
+    addrs |= set(load("bot_b_history.json", {}).keys())                      # Codex-gefiltert (Bot B)
+    addrs |= {c["addr"] for c in load("bot_d_meta.json", {}).get("cands", []) if c.get("addr")}
+    addrs |= set(load("bot_c_paths.json", {}).keys())                        # migrierte Tokens (Bot C)
     for pg in range(1, DS_SEARCH_PAGES_GT + 1):
         d = get(f"{GT}/pools?page={pg}&sort=h24_volume_usd_desc")
         for pool in (d or {}).get("data", []):
@@ -84,7 +130,8 @@ def liq_change(points, now, window_s):
     """Sucht den aeltesten Punkt, der mind. window_s zurueckliegt (aber nicht mehr als 2x window_s,
     sonst zu ungenau). Gibt (liq_dann, gefunden) zurueck."""
     best = None
-    for t, liq in points:
+    for pt in points:
+        t, liq = pt[0], pt[1]
         age = now - t
         if window_s * 0.85 <= age <= window_s * 2.2:
             if best is None or abs(age - window_s) < abs(now - best[0] - window_s): best = (t, liq)
@@ -106,7 +153,13 @@ def main():
     for a, p in pairs.items():
         liq = (p.get("liquidity") or {}).get("usd") or 0
         pts = liq_hist.setdefault(a, [])
-        pts.append([now, liq]); liq_hist[a] = [x for x in pts if now - x[0] <= 7 * 3600][-100:]
+        pts.append([now, liq, float(p.get("priceUsd") or 0)])
+        liq_hist[a] = [x for x in pts if now - x[0] <= 7 * 3600][-100:]
+    # Tokens, die aus dem Universum gefallen sind, wurden bisher nie geloescht -> Datei wuchs unbegrenzt
+    for a in list(liq_hist):
+        pts = liq_hist[a]
+        if not pts or now - pts[-1][0] > 7 * 3600:
+            if a not in st["positions"]: del liq_hist[a]
 
     # 2) Offene Positionen verwalten
     for a, pos in list(st["positions"].items()):
@@ -119,10 +172,17 @@ def main():
         x = px / pos["entry"] - 1
         held_h = held_seconds(pos) / 3600
         why = None
-        if not pos.get("tp1"):
+        peak_x = pos["peak"] / pos["entry"]
+        from_peak = px / pos["peak"] - 1
+        arm = 1 + pos["tp1_gain"] * TRAIL_ARM_FRAC        # z.B. T1 +50 %, T4 +20 %
+        giveback = -pos["stop"] * TRAIL_GIVEBACK_FRAC     # z.B. T1 -36 %, T4 -22,5 %
+        if from_peak <= PEAK_CRASH_EXIT and peak_x > 1:
+            why = "peak-crash"                            # gilt in jeder Phase, auch nach TP1
+        elif not pos.get("tp1"):
             if x <= -pos["stop"]: why = "stop"
             elif x >= pos["tp1_gain"]:
                 pos["tp1"] = True; pf.sell(a, px, TP1_FRAC, liq, "tp1")
+            elif peak_x >= arm and from_peak <= giveback: why = "trail"
             elif held_h >= pos["max_hold_h"]: why = "time"
         else:
             if px / pos["entry"] >= pos["moon_x"]: why = "moon"
@@ -151,7 +211,12 @@ def main():
         if not (lo <= pc <= hi): 
             checks.append((sym, tier["name"], f"chg {pc:.0f}%")); continue
         liq_now = (p.get("liquidity") or {}).get("usd") or 0
-        if liq_now <= 0: continue
+        if liq_now < E_MIN_LIQ: checks.append((sym, tier["name"], f"liq {liq_now:.0f}")); continue
+        created = p.get("pairCreatedAt")
+        if created and (now - created / 1000) < E_MIN_AGE_D * 86400:
+            checks.append((sym, tier["name"], "zu jung")); continue
+        if mcap > 0 and liq_now / mcap > E_MAX_LIQ_OVER_MCAP:
+            checks.append((sym, tier["name"], f"liq/mcap {liq_now/mcap:.1f} (kuenstlich?)")); cooldown[a] = today + COOLDOWN_D; continue
         liq_then, found = liq_change(liq_hist.get(a, []), now, tier["hist_needed_s"])
         if not found: checks.append((sym, tier["name"], "liq-historie fehlt")); continue
         liq_drop = (liq_then - liq_now) / liq_then if liq_then > 0 else 1.0
