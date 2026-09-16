@@ -1,18 +1,6 @@
 {
- "cash": 387.34933400000034,
- "positions": {
-  "CrRXqzkEdFyLoSp1xpyczHkZDBC9sCWSsfppK4efpump": {
-   "sym": "ARCSOL",
-   "qty": 538839.064853,
-   "cost": 30.02,
-   "opened": "2026-09-16T12:55:43Z",
-   "peak": 5.469e-05,
-   "entry": 5.571236749174768e-05,
-   "mig": 1789561929.0,
-   "cur_price": 5.469e-05,
-   "mark": 5.469e-05
-  }
- },
+ "cash": 409.99153400000034,
+ "positions": {},
  "trades": [
   {
    "t": "2026-09-15T17:10:46Z",
@@ -295,6 +283,21 @@
    "slip": 0.012,
    "quote": "jup",
    "reason": "postgrad 23min"
+  },
+  {
+   "t": "2026-09-16T13:00:45Z",
+   "side": "sell",
+   "sym": "ARCSOL",
+   "addr": "CrRXqzkEdFyLoSp1xpyczHkZDBC9sCWSsfppK4efpump",
+   "price": 4.22e-05,
+   "usd": 22.64,
+   "pnl": -7.38,
+   "peak_x": 0.982,
+   "held_h": 0.1,
+   "frac": 1.0,
+   "slip": 0.0037,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -1277,6 +1280,10 @@
   {
    "t": "2026-09-16T12:55:43Z",
    "v": 416.82
+  },
+  {
+   "t": "2026-09-16T13:00:45Z",
+   "v": 409.99
   }
  ],
  "started": "2026-09-15T16:35:47Z",
