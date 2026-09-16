@@ -1,15 +1,16 @@
 {
- "cash": 27.47799999999998,
+ "cash": 162.41315199999997,
  "positions": {
   "5dvXTZ5qwgafnHtwu3Ls3QrWx1U4LQsFeCuJgkk4QEC6": {
    "sym": "EMBER",
-   "qty": 19895.34337,
-   "cost": 225.02,
+   "qty": 9947.671685,
+   "cost": 112.51,
    "opened": "2026-09-16T17:20:59Z",
-   "peak": 0.01284,
+   "peak": 0.01419,
    "entry": 0.011310184288616278,
-   "mark": 0.01284,
-   "cur_price": 0.01284
+   "mark": 0.01419,
+   "cur_price": 0.01419,
+   "tp1": true
   },
   "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG": {
    "sym": "BIRB",
@@ -18,8 +19,8 @@
    "opened": "2026-09-16T18:05:57Z",
    "peak": 0.05746,
    "entry": 0.05750925129501522,
-   "mark": 0.05691,
-   "cur_price": 0.05691
+   "mark": 0.05698,
+   "cur_price": 0.05698
   }
  },
  "trades": [
@@ -46,6 +47,21 @@
    "slip": 0.0009,
    "quote": "jup",
    "reason": "dip 24h -13% (SOL -2%) 1h +0.8%"
+  },
+  {
+   "t": "2026-09-16T20:01:01Z",
+   "side": "sell",
+   "sym": "EMBER",
+   "addr": "5dvXTZ5qwgafnHtwu3Ls3QrWx1U4LQsFeCuJgkk4QEC6",
+   "price": 0.01419,
+   "usd": 134.94,
+   "pnl": 22.43,
+   "peak_x": 1.255,
+   "held_h": 2.7,
+   "frac": 0.5,
+   "slip": 0.0385,
+   "quote": "jup",
+   "reason": "tp1"
   }
  ],
  "equity": [
@@ -196,6 +212,10 @@
   {
    "t": "2026-09-16T19:56:03Z",
    "v": 527.86
+  },
+  {
+   "t": "2026-09-16T20:01:01Z",
+   "v": 548.79
   }
  ],
  "started": "2026-09-16T16:55:59Z",
