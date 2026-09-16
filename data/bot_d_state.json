@@ -54,7 +54,9 @@
    "entry": 0.0001589314964875613,
    "liq0": 10025.8,
    "cur_price": 0.0001345,
-   "mark": 0.0001345
+   "mark": 0.0001345,
+   "no_px_since": "2026-09-16T04:26:16Z",
+   "no_quote_since": "2026-09-16T04:26:16Z"
   },
   "3C6sZzwq2ietUdjRaNgTwoKw6dBMkKCe5u1rricjEFAU": {
    "sym": "CHAIN",
@@ -64,8 +66,8 @@
    "peak": 0.0003608,
    "entry": 6.784452505011723e-05,
    "liq0": 22443.65,
-   "cur_price": 0.0003299,
-   "mark": 0.0003299,
+   "cur_price": 0.0003436,
+   "mark": 0.0003436,
    "tp1": true
   },
   "8JQXg7t2CQS7QyjqS27dE2HcRyRpn8tVZyxEC7htbXNQ": {
@@ -76,10 +78,8 @@
    "peak": 3.188e-05,
    "entry": 3.245399755225259e-05,
    "liq0": 20054.5,
-   "cur_price": 2.263e-05,
-   "mark": 2.263e-05,
-   "no_px_since": "2026-09-16T04:16:15Z",
-   "no_quote_since": "2026-09-16T04:16:15Z"
+   "cur_price": 2.094e-05,
+   "mark": 2.094e-05
   }
  },
  "trades": [
@@ -940,6 +940,10 @@
   {
    "t": "2026-09-16T04:21:16Z",
    "v": 528.48
+  },
+  {
+   "t": "2026-09-16T04:26:16Z",
+   "v": 529.7
   }
  ],
  "started": "2026-09-15T16:35:51Z",
