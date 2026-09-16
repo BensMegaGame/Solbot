@@ -1,5 +1,5 @@
 {
- "cash": 422.3567920000003,
+ "cash": 430.6478900000003,
  "positions": {
   "J53EGLkGxyC3mh45RVWxYtETEj2T9G3YnUPX5nn6AXGc": {
    "sym": "EBT",
@@ -20,8 +20,8 @@
    "peak": 0.000291,
    "entry": 8.37227799202227e-05,
    "liq0": 23200.72,
-   "cur_price": 0.00023,
-   "mark": 0.00023
+   "cur_price": 0.0002223,
+   "mark": 0.0002223
   },
   "3RTC33FgYgtbhEzXdRgNb2oaVuGPTSyUMkwWPJLx7NBX": {
    "sym": "LEVERSTONK",
@@ -36,17 +36,6 @@
    "no_px_since": "2026-09-16T11:55:53Z",
    "no_quote_since": "2026-09-16T11:55:53Z"
   },
-  "9swyN5J7fUQRYEJv46wHfZN5KHPSfQWctq31ZXHe5zqr": {
-   "sym": "casino",
-   "qty": 253534.040017,
-   "cost": 15.02,
-   "opened": "2026-09-16T08:50:54Z",
-   "peak": 5.652e-05,
-   "entry": 5.9242537999997464e-05,
-   "liq0": 20871.05,
-   "cur_price": 3.663e-05,
-   "mark": 3.663e-05
-  },
   "7xwPE6M7h19FT5U7pd6HejjNmrh3rDSMFCoAwibVCRwT": {
    "sym": "PAIDCAT",
    "qty": 102159.483836,
@@ -55,8 +44,8 @@
    "peak": 0.0001452,
    "entry": 0.00014702501849081485,
    "liq0": 33477.04,
-   "cur_price": 0.0001192,
-   "mark": 0.0001192
+   "cur_price": 0.000121,
+   "mark": 0.000121
   },
   "DWZqne4tLESk3oijs5WDrLwdcoB26Gz5vTfL2nkWpaid": {
    "sym": "DOG",
@@ -66,8 +55,8 @@
    "peak": 0.0001186,
    "entry": 6.0825200791507635e-05,
    "liq0": 19970.8,
-   "cur_price": 0.0001111,
-   "mark": 0.0001111
+   "cur_price": 0.0001047,
+   "mark": 0.0001047
   },
   "9F3CB3jZ3EFQdGDgpQWzGec2ZeWk9KLfVjw7F7hdSTNK": {
    "sym": "KNOB",
@@ -77,8 +66,8 @@
    "peak": 5.278e-05,
    "entry": 5.519582178442475e-05,
    "liq0": 20162.42,
-   "cur_price": 4.521e-05,
-   "mark": 4.521e-05
+   "cur_price": 4.501e-05,
+   "mark": 4.501e-05
   }
  },
  "trades": [
@@ -492,6 +481,21 @@
    "slip": 0.0378,
    "quote": "jup",
    "reason": "longshot"
+  },
+  {
+   "t": "2026-09-16T12:00:51Z",
+   "side": "sell",
+   "sym": "casino",
+   "addr": "9swyN5J7fUQRYEJv46wHfZN5KHPSfQWctq31ZXHe5zqr",
+   "price": 3.436e-05,
+   "usd": 8.29,
+   "pnl": -6.73,
+   "peak_x": 0.954,
+   "held_h": 3.2,
+   "frac": 1.0,
+   "slip": 0.056,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -1426,6 +1430,10 @@
   {
    "t": "2026-09-16T11:55:53Z",
    "v": 553.29
+  },
+  {
+   "t": "2026-09-16T12:00:51Z",
+   "v": 549.46
   }
  ],
  "started": "2026-09-15T16:35:51Z",
