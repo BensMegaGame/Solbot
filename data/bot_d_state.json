@@ -1,5 +1,5 @@
 {
- "cash": 465.9163550000003,
+ "cash": 450.8963550000003,
  "positions": {
   "J53EGLkGxyC3mh45RVWxYtETEj2T9G3YnUPX5nn6AXGc": {
    "sym": "EBT",
@@ -9,8 +9,8 @@
    "peak": 0.0001648,
    "entry": 5.923371667409147e-05,
    "liq0": 21790.81,
-   "cur_price": 6.55e-05,
-   "mark": 6.55e-05
+   "cur_price": 6.391e-05,
+   "mark": 6.391e-05
   },
   "AmPojoiSMGzwMMmrXFzovcnUA8UuwSTBf1myCBbhR4Mf": {
    "sym": "HODL",
@@ -20,8 +20,8 @@
    "peak": 9.449e-05,
    "entry": 9.929043370036056e-05,
    "liq0": 30396.91,
-   "cur_price": 6.669e-05,
-   "mark": 6.669e-05
+   "cur_price": 7.074e-05,
+   "mark": 7.074e-05
   },
   "2s9ycNwMgVCB4SWtXmTu14w1ospd88MVYZdHLVEHLdVC": {
    "sym": "SKYNET",
@@ -39,11 +39,11 @@
    "qty": 179401.591948,
    "cost": 15.02,
    "opened": "2026-09-15T18:30:58Z",
-   "peak": 0.0002016,
+   "peak": 0.000221,
    "entry": 8.37227799202227e-05,
    "liq0": 23200.72,
-   "cur_price": 0.0001852,
-   "mark": 0.0001852
+   "cur_price": 0.000221,
+   "mark": 0.000221
   },
   "3RTC33FgYgtbhEzXdRgNb2oaVuGPTSyUMkwWPJLx7NBX": {
    "sym": "LEVERSTONK",
@@ -53,10 +53,19 @@
    "peak": 0.0001667,
    "entry": 0.0001589314964875613,
    "liq0": 10025.8,
-   "cur_price": 0.0001184,
-   "mark": 0.0001184,
-   "no_px_since": "2026-09-16T08:25:53Z",
-   "no_quote_since": "2026-09-16T08:25:53Z"
+   "cur_price": 0.0001186,
+   "mark": 0.0001186
+  },
+  "9swyN5J7fUQRYEJv46wHfZN5KHPSfQWctq31ZXHe5zqr": {
+   "sym": "casino",
+   "qty": 253534.040017,
+   "cost": 15.02,
+   "opened": "2026-09-16T08:50:54Z",
+   "peak": 5.652e-05,
+   "entry": 5.9242537999997464e-05,
+   "liq0": 20871.05,
+   "cur_price": 5.652e-05,
+   "mark": 5.652e-05
   }
  },
  "trades": [
@@ -392,6 +401,18 @@
    "slip": 0.0058,
    "quote": "jup",
    "reason": "trail"
+  },
+  {
+   "t": "2026-09-16T08:50:54Z",
+   "side": "buy",
+   "sym": "casino",
+   "addr": "9swyN5J7fUQRYEJv46wHfZN5KHPSfQWctq31ZXHe5zqr",
+   "price": 5.652e-05,
+   "fill": 5.9242538e-05,
+   "usd": 15.02,
+   "slip": 0.0869,
+   "quote": "jup",
+   "reason": "longshot"
   }
  ],
  "equity": [
@@ -1174,6 +1195,10 @@
   {
    "t": "2026-09-16T08:45:55Z",
    "v": 550.42
+  },
+  {
+   "t": "2026-09-16T08:50:55Z",
+   "v": 556.38
   }
  ],
  "started": "2026-09-15T16:35:51Z",
