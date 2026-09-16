@@ -1,5 +1,5 @@
 {
- "cash": 444.3451370000003,
+ "cash": 429.3251370000003,
  "positions": {
   "J53EGLkGxyC3mh45RVWxYtETEj2T9G3YnUPX5nn6AXGc": {
    "sym": "EBT",
@@ -20,8 +20,8 @@
    "peak": 0.0001424,
    "entry": 0.00010673293353768815,
    "liq0": 28990.92,
-   "cur_price": 9.4e-05,
-   "mark": 9.4e-05
+   "cur_price": 9.321e-05,
+   "mark": 9.321e-05
   },
   "F8Sc8HoZvJcMrTY6vBsetTqGPv6XQmM2XgVAZo1sSTNK": {
    "sym": "MARINE",
@@ -31,8 +31,8 @@
    "peak": 0.000291,
    "entry": 8.37227799202227e-05,
    "liq0": 23200.72,
-   "cur_price": 0.0002398,
-   "mark": 0.0002398
+   "cur_price": 0.0002389,
+   "mark": 0.0002389
   },
   "3RTC33FgYgtbhEzXdRgNb2oaVuGPTSyUMkwWPJLx7NBX": {
    "sym": "LEVERSTONK",
@@ -43,7 +43,9 @@
    "entry": 0.0001589314964875613,
    "liq0": 10025.8,
    "cur_price": 0.0001345,
-   "mark": 0.0001345
+   "mark": 0.0001345,
+   "no_px_since": "2026-09-16T10:50:47Z",
+   "no_quote_since": "2026-09-16T10:50:54Z"
   },
   "9swyN5J7fUQRYEJv46wHfZN5KHPSfQWctq31ZXHe5zqr": {
    "sym": "casino",
@@ -64,8 +66,19 @@
    "peak": 0.0001452,
    "entry": 0.00014702501849081485,
    "liq0": 33477.04,
-   "cur_price": 0.0001344,
-   "mark": 0.0001344
+   "cur_price": 0.0001249,
+   "mark": 0.0001249
+  },
+  "DWZqne4tLESk3oijs5WDrLwdcoB26Gz5vTfL2nkWpaid": {
+   "sym": "DOG",
+   "qty": 246937.121531,
+   "cost": 15.02,
+   "opened": "2026-09-16T10:50:54Z",
+   "peak": 6e-05,
+   "entry": 6.0825200791507635e-05,
+   "liq0": 19970.8,
+   "cur_price": 6e-05,
+   "mark": 6e-05
   }
  },
  "trades": [
@@ -438,6 +451,18 @@
    "fill": 0.000147025018,
    "usd": 15.02,
    "slip": 0.0106,
+   "quote": "jup",
+   "reason": "longshot"
+  },
+  {
+   "t": "2026-09-16T10:50:54Z",
+   "side": "buy",
+   "sym": "DOG",
+   "addr": "DWZqne4tLESk3oijs5WDrLwdcoB26Gz5vTfL2nkWpaid",
+   "price": 6e-05,
+   "fill": 6.0825201e-05,
+   "usd": 15.02,
+   "slip": 0.0225,
    "quote": "jup",
    "reason": "longshot"
   }
@@ -1318,6 +1343,10 @@
   {
    "t": "2026-09-16T10:45:48Z",
    "v": 554.22
+  },
+  {
+   "t": "2026-09-16T10:50:54Z",
+   "v": 552.78
   }
  ],
  "started": "2026-09-15T16:35:51Z",

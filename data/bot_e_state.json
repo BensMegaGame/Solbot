@@ -1,21 +1,6 @@
 {
- "cash": 71.03803361795582,
+ "cash": 110.70687061795581,
  "positions": {
-  "CT9YFpaLeugv5BCXTo7ZmM6ad1eGhQgx9hReAy6RJnC8": {
-   "sym": "BCAT",
-   "qty": 717479.913636,
-   "cost": 60.02,
-   "opened": "2026-09-15T14:31:38Z",
-   "peak": 8.158e-05,
-   "entry": 8.36539098298019e-05,
-   "tier": "T3",
-   "stop": 0.3,
-   "tp1_gain": 0.65,
-   "moon_x": 3.0,
-   "max_hold_h": 36,
-   "mark": 5.878e-05,
-   "cur_price": 5.878e-05
-  },
   "G1iBvjhZ9wpGUZdQcvhRSqjow3x6xetsnmEBBMm1pump": {
    "sym": "PITCOIN",
    "qty": 484056.00737,
@@ -731,6 +716,21 @@
    "held_h": 7.2,
    "frac": 1.0,
    "slip": 0.006,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-16T10:51:18Z",
+   "side": "sell",
+   "sym": "BCAT",
+   "addr": "CT9YFpaLeugv5BCXTo7ZmM6ad1eGhQgx9hReAy6RJnC8",
+   "price": 5.641e-05,
+   "usd": 39.67,
+   "pnl": -20.35,
+   "peak_x": 0.975,
+   "held_h": 20.3,
+   "frac": 1.0,
+   "slip": 0.0138,
    "quote": "jup",
    "reason": "stop"
   }
@@ -2979,6 +2979,10 @@
   {
    "t": "2026-09-16T10:46:22Z",
    "v": 215.44
+  },
+  {
+   "t": "2026-09-16T10:51:18Z",
+   "v": 212.94
   }
  ],
  "started": "2026-09-14T12:02:41Z",
