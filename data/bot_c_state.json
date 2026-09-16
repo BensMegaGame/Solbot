@@ -1,16 +1,27 @@
 {
- "cash": 379.97153400000036,
+ "cash": 349.9515340000004,
  "positions": {
   "7gKKy2p1SaMkRFPX7caF96YpfuMMpDj82ZpjaffuvaU5": {
    "sym": "PARK",
    "qty": 189084.90756,
    "cost": 30.02,
    "opened": "2026-09-16T13:15:46Z",
-   "peak": 0.0001482,
+   "peak": 0.0001775,
    "entry": 0.00015876465439460904,
    "mig": 1789563226.0,
-   "cur_price": 0.0001389,
-   "mark": 0.0001389
+   "cur_price": 0.0001775,
+   "mark": 0.0001775
+  },
+  "DZ5NKiEL4Y9KaBor5RUHACEvFkDPJ87NMQz9ft7Fpump": {
+   "sym": "PAIDWOJAK",
+   "qty": 383573.555779,
+   "cost": 30.02,
+   "opened": "2026-09-16T13:25:42Z",
+   "peak": 3.816e-05,
+   "entry": 7.826399799389806e-05,
+   "mig": 1789564477.0,
+   "cur_price": 3.816e-05,
+   "mark": 3.816e-05
   }
  },
  "trades": [
@@ -322,6 +333,18 @@
    "slip": 0.0244,
    "quote": "jup",
    "reason": "postgrad 22min"
+  },
+  {
+   "t": "2026-09-16T13:25:42Z",
+   "side": "buy",
+   "sym": "PAIDWOJAK",
+   "addr": "DZ5NKiEL4Y9KaBor5RUHACEvFkDPJ87NMQz9ft7Fpump",
+   "price": 3.816e-05,
+   "fill": 7.8263998e-05,
+   "usd": 30.02,
+   "slip": 0.0156,
+   "quote": "jup",
+   "reason": "postgrad 11min"
   }
  ],
  "equity": [
@@ -1324,6 +1347,10 @@
   {
    "t": "2026-09-16T13:20:40Z",
    "v": 406.24
+  },
+  {
+   "t": "2026-09-16T13:25:43Z",
+   "v": 398.15
   }
  ],
  "started": "2026-09-15T16:35:47Z",
