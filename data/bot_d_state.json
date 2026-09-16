@@ -1,5 +1,5 @@
 {
- "cash": 380.8273840000003,
+ "cash": 390.23944600000027,
  "positions": {
   "J53EGLkGxyC3mh45RVWxYtETEj2T9G3YnUPX5nn6AXGc": {
    "sym": "EBT",
@@ -9,8 +9,8 @@
    "peak": 0.0001648,
    "entry": 5.923371667409147e-05,
    "liq0": 21790.81,
-   "cur_price": 9.996e-05,
-   "mark": 9.996e-05
+   "cur_price": 9.723e-05,
+   "mark": 9.723e-05
   },
   "AmPojoiSMGzwMMmrXFzovcnUA8UuwSTBf1myCBbhR4Mf": {
    "sym": "HODL",
@@ -31,8 +31,8 @@
    "peak": 0.0001424,
    "entry": 0.00010673293353768815,
    "liq0": 28990.92,
-   "cur_price": 0.0001277,
-   "mark": 0.0001277
+   "cur_price": 0.0001254,
+   "mark": 0.0001254
   },
   "F8Sc8HoZvJcMrTY6vBsetTqGPv6XQmM2XgVAZo1sSTNK": {
    "sym": "MARINE",
@@ -42,8 +42,8 @@
    "peak": 0.0002016,
    "entry": 8.37227799202227e-05,
    "liq0": 23200.72,
-   "cur_price": 0.0001165,
-   "mark": 0.0001165
+   "cur_price": 0.0001249,
+   "mark": 0.0001249
   },
   "3RTC33FgYgtbhEzXdRgNb2oaVuGPTSyUMkwWPJLx7NBX": {
    "sym": "LEVERSTONK",
@@ -53,35 +53,20 @@
    "peak": 0.0001667,
    "entry": 0.0001589314964875613,
    "liq0": 10025.8,
-   "cur_price": 0.0001345,
-   "mark": 0.0001345,
-   "no_px_since": "2026-09-16T04:26:16Z",
-   "no_quote_since": "2026-09-16T04:26:16Z"
+   "cur_price": 0.0001213,
+   "mark": 0.0001213
   },
   "3C6sZzwq2ietUdjRaNgTwoKw6dBMkKCe5u1rricjEFAU": {
    "sym": "CHAIN",
    "qty": 146116.43301618,
    "cost": 9.9132,
    "opened": "2026-09-15T20:46:12Z",
-   "peak": 0.0004268,
+   "peak": 0.0004586,
    "entry": 6.784452505011723e-05,
    "liq0": 22443.65,
-   "cur_price": 0.0004268,
-   "mark": 0.0004268,
+   "cur_price": 0.0004586,
+   "mark": 0.0004586,
    "tp1": true
-  },
-  "8JQXg7t2CQS7QyjqS27dE2HcRyRpn8tVZyxEC7htbXNQ": {
-   "sym": "REBME",
-   "qty": 462808.933655,
-   "cost": 15.02,
-   "opened": "2026-09-15T21:26:05Z",
-   "peak": 3.188e-05,
-   "entry": 3.245399755225259e-05,
-   "liq0": 20054.5,
-   "cur_price": 2.094e-05,
-   "mark": 2.094e-05,
-   "no_px_since": "2026-09-16T04:31:16Z",
-   "no_quote_since": "2026-09-16T04:31:16Z"
   }
  },
  "trades": [
@@ -372,6 +357,21 @@
    "slip": 0.035,
    "quote": "jup",
    "reason": "tp1"
+  },
+  {
+   "t": "2026-09-16T04:41:13Z",
+   "side": "sell",
+   "sym": "REBME",
+   "addr": "8JQXg7t2CQS7QyjqS27dE2HcRyRpn8tVZyxEC7htbXNQ",
+   "price": 2.039e-05,
+   "usd": 9.41,
+   "pnl": -5.61,
+   "peak_x": 0.982,
+   "held_h": 7.3,
+   "frac": 1.0,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "liq-drop"
   }
  ],
  "equity": [
@@ -954,6 +954,10 @@
   {
    "t": "2026-09-16T04:36:14Z",
    "v": 542.34
+  },
+  {
+   "t": "2026-09-16T04:41:13Z",
+   "v": 545.96
   }
  ],
  "started": "2026-09-15T16:35:51Z",
