@@ -10,8 +10,8 @@
    "entry": 0.0006893543867276652,
    "entry_liq": 82166.84,
    "entry_vol": 40539.49,
-   "cur_price": 0.0005013,
-   "mark": 0.0005013
+   "cur_price": 0.0005067,
+   "mark": 0.0005067
   },
   "92G6qAymyDNQe4kaBoB9h2fz6mzsYJrEV3T5BetZpump": {
    "sym": "TIT",
@@ -23,7 +23,8 @@
    "entry_liq": 14994.41,
    "entry_vol": 58145.51,
    "cur_price": 2.519e-05,
-   "mark": 2.519e-05
+   "mark": 2.519e-05,
+   "no_quote_since": "2026-09-16T06:10:41Z"
   },
   "7n8kRipxAQBfpGQtcGA2AbkM2HASSVCzqZ5F3QEopump": {
    "sym": "Zoe",
@@ -34,8 +35,8 @@
    "entry": 0.0002774009623007094,
    "entry_liq": 61969.9,
    "entry_vol": 276288.95,
-   "cur_price": 0.000264,
-   "mark": 0.000264
+   "cur_price": 0.000266,
+   "mark": 0.000266
   },
   "CsHrGJ3HpJV76ecFm4vZrpFSLNQaP1dwzj8e2cvkpump": {
    "sym": "PERIHEL",
@@ -4462,6 +4463,10 @@
   {
    "t": "2026-09-16T06:05:40Z",
    "v": 402.39
+  },
+  {
+   "t": "2026-09-16T06:10:41Z",
+   "v": 403.3
   }
  ],
  "started": "2026-09-11T10:50:37Z",
@@ -4472,6 +4477,6 @@
  },
  "streak": 2,
  "half_left": 0,
- "watchlist": 66,
+ "watchlist": 67,
  "strategy": "second_wave"
 }
