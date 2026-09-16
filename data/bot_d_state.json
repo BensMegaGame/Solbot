@@ -1,5 +1,5 @@
 {
- "cash": 432.1396610000003,
+ "cash": 447.86416800000023,
  "positions": {
   "J53EGLkGxyC3mh45RVWxYtETEj2T9G3YnUPX5nn6AXGc": {
    "sym": "EBT",
@@ -20,19 +20,8 @@
    "peak": 0.000291,
    "entry": 8.37227799202227e-05,
    "liq0": 23200.72,
-   "cur_price": 0.0001707,
-   "mark": 0.0001707
-  },
-  "7xwPE6M7h19FT5U7pd6HejjNmrh3rDSMFCoAwibVCRwT": {
-   "sym": "PAIDCAT",
-   "qty": 102159.483836,
-   "cost": 15.02,
-   "opened": "2026-09-16T10:30:50Z",
-   "peak": 0.0001531,
-   "entry": 0.00014702501849081485,
-   "liq0": 33477.04,
-   "cur_price": 9.421e-05,
-   "mark": 9.421e-05
+   "cur_price": 0.0001717,
+   "mark": 0.0001717
   },
   "DWZqne4tLESk3oijs5WDrLwdcoB26Gz5vTfL2nkWpaid": {
    "sym": "DOG",
@@ -42,21 +31,8 @@
    "peak": 0.0001427,
    "entry": 6.0825200791507635e-05,
    "liq0": 19970.8,
-   "cur_price": 7.87e-05,
-   "mark": 7.87e-05,
-   "no_px_since": "2026-09-16T15:35:56Z",
-   "no_quote_since": "2026-09-16T15:35:56Z"
-  },
-  "3UXV8g2fqQ1NN75KqP3tYMngencsH7j5i9g4i3pVccNb": {
-   "sym": "POORGOAT",
-   "qty": 223930.542843,
-   "cost": 15.02,
-   "opened": "2026-09-16T14:21:03Z",
-   "peak": 7.269e-05,
-   "entry": 6.707436962063132e-05,
-   "liq0": 22646.46,
-   "cur_price": 4.399e-05,
-   "mark": 4.399e-05
+   "cur_price": 6.835e-05,
+   "mark": 6.835e-05
   }
  },
  "trades": [
@@ -525,6 +501,36 @@
    "held_h": 19.8,
    "frac": 1.0,
    "slip": 0.0,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-16T15:50:58Z",
+   "side": "sell",
+   "sym": "PAIDCAT",
+   "addr": "7xwPE6M7h19FT5U7pd6HejjNmrh3rDSMFCoAwibVCRwT",
+   "price": 7.381e-05,
+   "usd": 7.45,
+   "pnl": -7.57,
+   "peak_x": 1.041,
+   "held_h": 5.3,
+   "frac": 1.0,
+   "slip": 0.0155,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-16T15:50:58Z",
+   "side": "sell",
+   "sym": "POORGOAT",
+   "addr": "3UXV8g2fqQ1NN75KqP3tYMngencsH7j5i9g4i3pVccNb",
+   "price": 3.844e-05,
+   "usd": 8.28,
+   "pnl": -6.74,
+   "peak_x": 1.084,
+   "held_h": 1.5,
+   "frac": 1.0,
+   "slip": 0.0563,
    "quote": "jup",
    "reason": "stop"
   }
@@ -1645,6 +1651,10 @@
   {
    "t": "2026-09-16T15:45:59Z",
    "v": 516.67
+  },
+  {
+   "t": "2026-09-16T15:50:58Z",
+   "v": 510.54
   }
  ],
  "started": "2026-09-15T16:35:51Z",
