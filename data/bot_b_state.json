@@ -1,5 +1,5 @@
 {
- "cash": 133.21082500000006,
+ "cash": 176.35896400000004,
  "positions": {
   "2DV95bLyBZjZ3Rbcm6c6GGHVpnqBtnNQwaQvzGDbpump": {
    "sym": "KIBA",
@@ -10,20 +10,8 @@
    "entry": 0.0006893543867276652,
    "entry_liq": 82166.84,
    "entry_vol": 40539.49,
-   "cur_price": 0.0005326,
-   "mark": 0.0005326
-  },
-  "92G6qAymyDNQe4kaBoB9h2fz6mzsYJrEV3T5BetZpump": {
-   "sym": "TIT",
-   "qty": 1977157.300821,
-   "cost": 60.02,
-   "opened": "2026-09-15T18:35:49Z",
-   "peak": 2.975e-05,
-   "entry": 3.0356714650411042e-05,
-   "entry_liq": 14994.41,
-   "entry_vol": 58145.51,
-   "cur_price": 2.206e-05,
-   "mark": 2.206e-05
+   "cur_price": 0.0005329,
+   "mark": 0.0005329
   },
   "7n8kRipxAQBfpGQtcGA2AbkM2HASSVCzqZ5F3QEopump": {
    "sym": "Zoe",
@@ -34,8 +22,8 @@
    "entry": 0.0002774009623007094,
    "entry_liq": 61969.9,
    "entry_vol": 276288.95,
-   "cur_price": 0.000231,
-   "mark": 0.000231
+   "cur_price": 0.0002361,
+   "mark": 0.0002361
   },
   "CsHrGJ3HpJV76ecFm4vZrpFSLNQaP1dwzj8e2cvkpump": {
    "sym": "PERIHEL",
@@ -46,8 +34,8 @@
    "entry": 3.325233675336741e-05,
    "entry_liq": 14067.39,
    "entry_vol": 41760,
-   "cur_price": 3.335e-05,
-   "mark": 3.335e-05
+   "cur_price": 3.283e-05,
+   "mark": 3.283e-05
   },
   "7nLukVng5teXze14rum9v57juXLjUp7JJnCveko1pump": {
    "sym": "Martians",
@@ -228,6 +216,21 @@
    "slip": 0.0096,
    "quote": "jup",
    "reason": "ok vol-trend 1.43 buy 0.54"
+  },
+  {
+   "t": "2026-09-16T16:25:51Z",
+   "side": "sell",
+   "sym": "TIT",
+   "addr": "92G6qAymyDNQe4kaBoB9h2fz6mzsYJrEV3T5BetZpump",
+   "price": 2.206e-05,
+   "usd": 43.15,
+   "pnl": -16.87,
+   "peak_x": 0.98,
+   "held_h": 21.8,
+   "frac": 1.0,
+   "slip": 0.0111,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -4978,6 +4981,10 @@
   {
    "t": "2026-09-16T16:20:50Z",
    "v": 385.27
+  },
+  {
+   "t": "2026-09-16T16:25:54Z",
+   "v": 385.0
   }
  ],
  "started": "2026-09-11T10:50:37Z",
@@ -4985,10 +4992,11 @@
   "MSTRdWXMeZxdE8osAQy3fA4rvTY5rgummDSMEx6U7Nz": 20741,
   "ADcF26nFGKMuRZ7va5361H2PCHCDRi2FmeJBkX3Spump": 20725,
   "9PSxYDFLPbSVx2PKjYRMumW14xtxViQU3Qmi7M8NQ32W": 20725,
-  "MRNAzXzhNcaEXJPibHEn8cd4vyekCDiivTyEwswLUCT": 20742
+  "MRNAzXzhNcaEXJPibHEn8cd4vyekCDiivTyEwswLUCT": 20742,
+  "92G6qAymyDNQe4kaBoB9h2fz6mzsYJrEV3T5BetZpump": 20726
  },
- "streak": 2,
- "half_left": 0,
+ "streak": 0,
+ "half_left": 5,
  "watchlist": 69,
  "strategy": "second_wave"
 }

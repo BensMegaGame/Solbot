@@ -1,38 +1,6 @@
 {
- "cash": 109.39434861795583,
- "positions": {
-  "G1iBvjhZ9wpGUZdQcvhRSqjow3x6xetsnmEBBMm1pump": {
-   "sym": "PITCOIN",
-   "qty": 96811.201474,
-   "cost": 16.00399999999999,
-   "opened": "2026-09-16T02:51:43Z",
-   "peak": 0.0002748,
-   "entry": 0.0001653114490506359,
-   "tier": "T4",
-   "stop": 0.25,
-   "tp1_gain": 0.4,
-   "moon_x": 3.0,
-   "max_hold_h": 48,
-   "mark": 0.0002443,
-   "cur_price": 0.0002443,
-   "tp1": true
-  },
-  "F8Sc8HoZvJcMrTY6vBsetTqGPv6XQmM2XgVAZo1sSTNK": {
-   "sym": "MARINE",
-   "qty": 410315.802125,
-   "cost": 80.02,
-   "opened": "2026-09-16T14:57:24Z",
-   "peak": 0.0002575,
-   "entry": 0.00019502051733221435,
-   "tier": "T4",
-   "stop": 0.25,
-   "tp1_gain": 0.4,
-   "moon_x": 3.0,
-   "max_hold_h": 48,
-   "mark": 0.0002374,
-   "cur_price": 0.0002374
-  }
- },
+ "cash": 225.0985656179558,
+ "positions": {},
  "trades": [
   {
    "t": "2026-09-14T12:56:31Z",
@@ -776,6 +744,51 @@
    "slip": 0.0813,
    "quote": "jup",
    "reason": "T4 chg -26%"
+  },
+  {
+   "t": "2026-09-16T16:26:30Z",
+   "side": "sell",
+   "sym": "PITCOIN",
+   "addr": "G1iBvjhZ9wpGUZdQcvhRSqjow3x6xetsnmEBBMm1pump",
+   "price": 0.0002465,
+   "usd": 23.55,
+   "pnl": 7.54,
+   "peak_x": 1.662,
+   "held_h": 13.6,
+   "frac": 1.0,
+   "slip": 0.0127,
+   "quote": "jup",
+   "reason": "trail"
+  },
+  {
+   "t": "2026-09-16T16:26:30Z",
+   "side": "sell",
+   "sym": "MARINE",
+   "addr": "F8Sc8HoZvJcMrTY6vBsetTqGPv6XQmM2XgVAZo1sSTNK",
+   "price": 0.000236,
+   "usd": 46.08,
+   "pnl": 6.07,
+   "peak_x": 1.32,
+   "held_h": 1.5,
+   "frac": 0.5,
+   "slip": 0.0125,
+   "quote": "jup",
+   "reason": "tp1"
+  },
+  {
+   "t": "2026-09-16T16:26:30Z",
+   "side": "sell",
+   "sym": "MARINE",
+   "addr": "F8Sc8HoZvJcMrTY6vBsetTqGPv6XQmM2XgVAZo1sSTNK",
+   "price": 0.000236,
+   "usd": 46.08,
+   "pnl": 6.07,
+   "peak_x": 1.32,
+   "held_h": 1.5,
+   "frac": 1.0,
+   "slip": 0.0125,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
@@ -3290,9 +3303,13 @@
   {
    "t": "2026-09-16T16:22:37Z",
    "v": 230.45
+  },
+  {
+   "t": "2026-09-16T16:26:30Z",
+   "v": 225.1
   }
  ],
  "started": "2026-09-14T12:02:41Z",
- "strategy": "overreaction_fade",
+ "strategy": "largecap_dip",
  "universe_n": 502
 }
