@@ -1,6 +1,18 @@
 {
- "cash": 475.9422530000003,
- "positions": {},
+ "cash": 445.9222530000003,
+ "positions": {
+  "56KcQzfmDWN1G5XuwiC1942hVegZi5Bv57cTm9Gpump": {
+   "sym": "Kite",
+   "qty": 311704.875603,
+   "cost": 30.02,
+   "opened": "2026-09-16T08:25:45Z",
+   "peak": 9.647e-05,
+   "entry": 9.630904855731128e-05,
+   "mig": 1789546322.0,
+   "cur_price": 9.647e-05,
+   "mark": 9.647e-05
+  }
+ },
  "trades": [
   {
    "t": "2026-09-15T17:10:46Z",
@@ -217,6 +229,18 @@
    "slip": 0.002,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-16T08:25:45Z",
+   "side": "buy",
+   "sym": "Kite",
+   "addr": "56KcQzfmDWN1G5XuwiC1942hVegZi5Bv57cTm9Gpump",
+   "price": 9.647e-05,
+   "fill": 9.6309049e-05,
+   "usd": 30.02,
+   "slip": 0.024,
+   "quote": "jup",
+   "reason": "postgrad 14min"
   }
  ],
  "equity": [
@@ -979,6 +1003,10 @@
   {
    "t": "2026-09-16T08:20:42Z",
    "v": 475.94
+  },
+  {
+   "t": "2026-09-16T08:25:45Z",
+   "v": 475.99
   }
  ],
  "started": "2026-09-15T16:35:47Z",
