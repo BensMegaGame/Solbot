@@ -1,5 +1,5 @@
 {
- "cash": 343.0033429411119,
+ "cash": 292.9833429411119,
  "positions": {
   "5GefefPX1mDs6ZJB1apYmz6fCTCiNJpHturZ9bvFpump": {
    "sym": "Pumpoween",
@@ -8,8 +8,8 @@
    "opened": "2026-09-12T21:25:13Z",
    "peak": 0.0007205,
    "entry": 0.0004150532496,
-   "cur_price": 0.0006875,
-   "mark": 0.0006875
+   "cur_price": 0.0007057,
+   "mark": 0.0007057
   },
   "Hy1LfQLL4zLQihmiQKZm7DQzXm5K8aVSfKtdHFYXbKMm": {
    "sym": "AMBA",
@@ -18,9 +18,19 @@
    "opened": "2026-09-13T03:20:17Z",
    "peak": 0.002155,
    "entry": 0.0008846074234799999,
-   "cur_price": 0.001138,
-   "mark": 0.001138,
+   "cur_price": 0.001146,
+   "mark": 0.001146,
    "tp0": true
+  },
+  "4ZYonK7RhCaQ24YmGDwJpz1g8WbjyrLZQ8AcXf28WYPt": {
+   "sym": "POOL",
+   "qty": 71879.67762,
+   "cost": 50.02,
+   "opened": "2026-09-16T02:55:31Z",
+   "peak": 0.0006627,
+   "entry": 0.0006958851466256757,
+   "cur_price": 0.0006627,
+   "mark": 0.0006627
   }
  },
  "trades": [
@@ -567,6 +577,18 @@
    "slip": 0.0204,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-16T02:55:31Z",
+   "side": "buy",
+   "sym": "POOL",
+   "addr": "4ZYonK7RhCaQ24YmGDwJpz1g8WbjyrLZQ8AcXf28WYPt",
+   "price": 0.0006627,
+   "fill": 0.000695885147,
+   "usd": 50.02,
+   "slip": 0.0332,
+   "quote": "jup",
+   "reason": "screener"
   }
  ],
  "equity": [
@@ -4697,6 +4719,10 @@
   {
    "t": "2026-09-16T02:51:02Z",
    "v": 474.77
+  },
+  {
+   "t": "2026-09-16T02:56:02Z",
+   "v": 474.93
   }
  ],
  "started": "2026-09-10T17:17:16Z"
