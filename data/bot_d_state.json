@@ -1,5 +1,5 @@
 {
- "cash": 439.0566030000003,
+ "cash": 424.0366030000003,
  "positions": {
   "J53EGLkGxyC3mh45RVWxYtETEj2T9G3YnUPX5nn6AXGc": {
    "sym": "EBT",
@@ -44,8 +44,8 @@
    "peak": 0.0001531,
    "entry": 0.00014702501849081485,
    "liq0": 33477.04,
-   "cur_price": 0.0001377,
-   "mark": 0.0001377
+   "cur_price": 0.0001302,
+   "mark": 0.0001302
   },
   "DWZqne4tLESk3oijs5WDrLwdcoB26Gz5vTfL2nkWpaid": {
    "sym": "DOG",
@@ -55,8 +55,19 @@
    "peak": 0.0001427,
    "entry": 6.0825200791507635e-05,
    "liq0": 19970.8,
-   "cur_price": 0.000107,
-   "mark": 0.000107
+   "cur_price": 0.0001042,
+   "mark": 0.0001042
+  },
+  "3UXV8g2fqQ1NN75KqP3tYMngencsH7j5i9g4i3pVccNb": {
+   "sym": "POORGOAT",
+   "qty": 223930.542843,
+   "cost": 15.02,
+   "opened": "2026-09-16T14:21:03Z",
+   "peak": 6.38e-05,
+   "entry": 6.707436962063132e-05,
+   "liq0": 22646.46,
+   "cur_price": 6.38e-05,
+   "mark": 6.38e-05
   }
  },
  "trades": [
@@ -500,6 +511,18 @@
    "slip": 0.0065,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-16T14:21:03Z",
+   "side": "buy",
+   "sym": "POORGOAT",
+   "addr": "3UXV8g2fqQ1NN75KqP3tYMngencsH7j5i9g4i3pVccNb",
+   "price": 6.38e-05,
+   "fill": 6.707437e-05,
+   "usd": 15.02,
+   "slip": 0.0858,
+   "quote": "jup",
+   "reason": "longshot"
   }
  ],
  "equity": [
@@ -1546,6 +1569,10 @@
   {
    "t": "2026-09-16T14:15:55Z",
    "v": 538.4
+  },
+  {
+   "t": "2026-09-16T14:21:03Z",
+   "v": 536.21
   }
  ],
  "started": "2026-09-15T16:35:51Z",
