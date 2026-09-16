@@ -1,18 +1,6 @@
 {
- "cash": 413.8732060000001,
- "positions": {
-  "3rGSot1DANawxJYQPhYuNPxrLwX3wjLqnqfRWQSPF7FE": {
-   "sym": "BARRON",
-   "qty": 721715.560761,
-   "cost": 30.02,
-   "opened": "2026-09-16T01:56:10Z",
-   "peak": 9.366e-05,
-   "entry": 4.1595334273167046e-05,
-   "mig": 1789523069.0,
-   "cur_price": 9.366e-05,
-   "mark": 9.366e-05
-  }
- },
+ "cash": 544.9418540000001,
+ "positions": {},
  "trades": [
   {
    "t": "2026-09-15T17:10:46Z",
@@ -106,6 +94,21 @@
    "slip": 0.0175,
    "quote": "jup",
    "reason": "postgrad 12min"
+  },
+  {
+   "t": "2026-09-16T02:06:16Z",
+   "side": "sell",
+   "sym": "BARRON",
+   "addr": "3rGSot1DANawxJYQPhYuNPxrLwX3wjLqnqfRWQSPF7FE",
+   "price": 0.0001879,
+   "usd": 131.07,
+   "pnl": 101.05,
+   "peak_x": 4.517,
+   "held_h": 0.2,
+   "frac": 1.0,
+   "slip": 0.0203,
+   "quote": "jup",
+   "reason": "tp1"
   }
  ],
  "equity": [
@@ -564,6 +567,10 @@
   {
    "t": "2026-09-16T02:01:09Z",
    "v": 481.47
+  },
+  {
+   "t": "2026-09-16T02:06:17Z",
+   "v": 544.94
   }
  ],
  "started": "2026-09-15T16:35:47Z",
