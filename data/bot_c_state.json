@@ -1,6 +1,18 @@
 {
- "cash": 459.37565000000006,
- "positions": {},
+ "cash": 429.3556500000001,
+ "positions": {
+  "27C1aT9gTcMv1U9hA2LkycdHThDri9AS6SstjacCpump": {
+   "sym": "SOLMSG",
+   "qty": 557497.560283,
+   "cost": 30.02,
+   "opened": "2026-09-16T00:16:05Z",
+   "peak": 4.388e-05,
+   "entry": 5.384776927949439e-05,
+   "mig": 1789515773.0,
+   "cur_price": 4.388e-05,
+   "mark": 4.388e-05
+  }
+ },
  "trades": [
   {
    "t": "2026-09-15T17:10:46Z",
@@ -55,6 +67,18 @@
    "slip": 0.0081,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-16T00:16:05Z",
+   "side": "buy",
+   "sym": "SOLMSG",
+   "addr": "27C1aT9gTcMv1U9hA2LkycdHThDri9AS6SstjacCpump",
+   "price": 4.388e-05,
+   "fill": 5.3847769e-05,
+   "usd": 30.02,
+   "slip": 0.0257,
+   "quote": "jup",
+   "reason": "postgrad 33min"
   }
  ],
  "equity": [
@@ -425,6 +449,10 @@
   {
    "t": "2026-09-16T00:10:59Z",
    "v": 459.38
+  },
+  {
+   "t": "2026-09-16T00:16:06Z",
+   "v": 453.82
   }
  ],
  "started": "2026-09-15T16:35:47Z",
