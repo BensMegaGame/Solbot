@@ -1,5 +1,5 @@
 {
- "cash": 445.9222530000003,
+ "cash": 415.9022530000003,
  "positions": {
   "56KcQzfmDWN1G5XuwiC1942hVegZi5Bv57cTm9Gpump": {
    "sym": "Kite",
@@ -9,8 +9,19 @@
    "peak": 0.0002188,
    "entry": 9.630904855731128e-05,
    "mig": 1789546322.0,
-   "cur_price": 0.0001825,
-   "mark": 0.0001825
+   "cur_price": 0.0001622,
+   "mark": 0.0001622
+  },
+  "BF4gJsYy3uxhFivCXgxctHXpGEXwkueSHjJJvzKcDfAU": {
+   "sym": "PAIDWIF",
+   "qty": 383582.381119,
+   "cost": 30.02,
+   "opened": "2026-09-16T08:45:45Z",
+   "peak": 8.236e-05,
+   "entry": 7.826219732101511e-05,
+   "mig": 1789547585.0,
+   "cur_price": 8.236e-05,
+   "mark": 8.236e-05
   }
  },
  "trades": [
@@ -241,6 +252,18 @@
    "slip": 0.024,
    "quote": "jup",
    "reason": "postgrad 14min"
+  },
+  {
+   "t": "2026-09-16T08:45:45Z",
+   "side": "buy",
+   "sym": "PAIDWIF",
+   "addr": "BF4gJsYy3uxhFivCXgxctHXpGEXwkueSHjJJvzKcDfAU",
+   "price": 8.236e-05,
+   "fill": 7.8262197e-05,
+   "usd": 30.02,
+   "slip": 0.0129,
+   "quote": "jup",
+   "reason": "postgrad 13min"
   }
  ],
  "equity": [
@@ -1019,6 +1042,10 @@
   {
    "t": "2026-09-16T08:40:42Z",
    "v": 502.81
+  },
+  {
+   "t": "2026-09-16T08:45:46Z",
+   "v": 498.05
   }
  ],
  "started": "2026-09-15T16:35:47Z",
