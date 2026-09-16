@@ -1,93 +1,75 @@
-"""Bot E – "Overreaction Fade": kauft nach starken, aber (wahrscheinlich) nicht durch einen
-Liquiditaets-Rugpull verursachten Kursstuerzen bei etablierten Solana-Tokens. Vier Stufen nach
-Marktkapitalisierung, jede mit eigenem Zeitfenster, Drop-Spanne, Positionsgroesse und Zielen.
+"""Bot E v4 – "Large-Cap Dip": EINE konzentrierte Position (90 % des Cash) in einem der ~50 groessten
+Solana-Tokens, nachdem dieser in 24 h deutlich staerker gefallen ist als der Gesamtmarkt und der
+Verkaufsdruck sichtbar nachgelassen hat. Harter Stop -10 %, Teilgewinn +15 %, Trailing fuer den Rest.
 
-Sicherheitslogik (wichtig): DexScreener liefert die Kursaenderung (priceChange.m5/h1/h6) fertig,
-aber KEINE historische Liquiditaet. Wir fuehren deshalb selbst eine kleine, rollierende Snapshot-
-Historie pro beobachtetem Token (data/bot_e_liq.json), um zu pruefen, ob die Liquiditaet im selben
-Fenster AEHNLICH STARK gefallen ist wie der Preis (= wahrscheinlich Rugpull, NICHT kaufen) oder
-weitgehend intakt blieb (= wahrscheinlich Ueberreaktion/Panik, Kaufkandidat).
-Ohne genug eigene Historie fuer ein Fenster wird die betroffene Stufe uebersprungen, nicht geraten.
+Warum so: Das alte "Overreaction Fade" (v1-v3) hat auf 60-300k-MCap-Tokens 18 von 29 Trades per Stop
+beendet (-435 $) - dort ist ein -30 % Tag kein Ausrutscher, sondern oft der Anfang vom Ende. Bei
+Tokens mit >30 M MCap und >1 M Liquiditaet gibt es Rugpulls praktisch nicht, Slippage ist ~0 und ein
+Uebertreibungs-Tag wird statistisch deutlich oefter wieder aufgeholt.
 
-Laeuft live 1:1 wie Bot A/B/D ueber Jupiter-Swaps (normale AMM-Pools, kein Sonderweg noetig)."""
+Datenquellen: Codex (Universum = Top-Tokens nach MCap, alle 6 h), DexScreener (Kurs/Change/Liq/Vol,
+jeder Lauf), Jupiter (Fill-Preise wie bei allen Bots). Kein Rugcheck noetig (Universum ist etabliert).
+"""
 import os, time
 from common import *
 
 CODEX_KEY = os.environ.get("CODEX_KEY")
 CODEX_URL = "https://graph.codex.io/graphql"
-SOLANA = 1399811149
-# v3: eigener Codex-Call. Vorher kam das Universum zu grossen Teilen aus token-boosts/token-profiles -
-# also aus BEZAHLTER Promotion, genau der Quelle, die bei Bot A das Problem war.
-E_MIN_AGE_D = 2                 # "etabliert": mind. 48 h alt - E's These stand bisher nur im Text, nicht im Code
-E_MIN_LIQ, E_MIN_VOL24 = 15_000, 20_000
-E_MAX_LIQ_OVER_MCAP = 1.5       # Liquiditaet deutlich ueber Marktkapitalisierung = kuenstlich (Lehre aus Bot C)
-DS_SEARCH_PAGES_GT = 8          # GeckoTerminal-Seiten (kostenlos, neutral) - ersetzt die Promo-Feeds
-MAX_UNIVERSE = 500
-DISCOVER_EVERY_S = 20 * 60      # Universum alle 20 Minuten neu zusammenstellen (alles kostenlos)
-COOLDOWN_D = 10
-MAX_POS_TOTAL, MAX_POS_PER_TIER = 8, 2
-EXCLUDE_SYM = {"USDC", "USDT", "USDS", "PYUSD", "USD1", "DAI", "FDUSD", "USDE", "EURC", "USDG", "USDY",
-               "ETH", "WETH", "BNB", "WBNB", "BTC", "WBTC", "CBBTC", "SOL", "WSOL", "XRP", "ADA", "DOGE",
-               "AVAX", "MATIC", "POL", "DOT", "LINK", "LTC", "TRX", "TON", "SUI", "NEAR", "ATOM"}
-EXCLUDE_SUB = ("USD", "EUR", "GBP", "CHF", "JPY", "XAU")
+SOLANA, SOL_MINT = 1399811149, "So11111111111111111111111111111111111111112"
+
+# ---- Universum ----
+U_MIN_MCAP, U_MIN_LIQ, U_MIN_VOL24 = 10_000_000, 300_000, 200_000   # Testphase: ~Top 100 statt Top 50
+U_LIMIT = 120
+DISCOVER_EVERY_S = 24 * 3600      # Top-50 nach MCap aendert sich kaum: 1 Codex-Call/Tag reicht (~30/Monat)
+EXCLUDE_SYM = {"USDC", "USDT", "USDS", "PYUSD", "USD1", "DAI", "FDUSD", "USDE", "EURC", "USDG", "USDY", "CASH",
+               "SOL", "WSOL", "ETH", "WETH", "BTC", "WBTC", "CBBTC", "TBTC", "WBNB", "BNB",       # Majors (gewrappt)
+               "JITOSOL", "MSOL", "BSOL", "JUPSOL", "INF", "BNSOL", "HSOL", "DSOL", "VSOL", "JLP"}  # LSTs/LP = SOL-Derivate
+EXCLUDE_SUB = ("USD", "EUR", "GBP", "CHF", "JPY", "XAU", "SOL")   # "...SOL" faengt restliche LSTs
+
+# ---- Einstieg (alle Bedingungen muessen gleichzeitig gelten) ----
+DROP_24H = (-30.0, -10.0)   # Token-24h-Aenderung in %: deutlicher Ausverkauf, aber kein Kollaps
+REL_TO_SOL_PP = 6.0         # Token muss mind. 8 Prozentpunkte schlechter als SOL sein (= tokenspezifische Panik,
+                            # nicht einfach "alles faellt")
+SOL_24H_MIN = -12.0         # bei breitem Markt-Crash (SOL < -12 %) gar nicht kaufen - Messer faellt
+STAB_1H_MIN = -1.5          # letzte Stunde >= -1,5 %: Verkaufsdruck laesst nach (kein Fallen-Messer-Kauf)
+BOUNCE_6H = (1.5, 6.0)      # Kurs 1,5-6 % UEBER dem 6h-Tief: die Erholung hat begonnen (Bestaetigung), ist aber
+                            # noch nicht gelaufen. Am Tief selbst wird nicht gekauft (das ist Messer-Fangen).
+MAX_DROP_7D = -35.0         # 7-Tage-Aenderung (GeckoTerminal-Tageskerzen): ein -15 %-Tag in einer -50 %-Woche ist
+                            # Abwaertstrend, keine Uebertreibung -> nicht kaufen
+VOL_TO_MCAP_MIN = 0.03      # 24h-Volumen >= 3 % der MCap: echter Umsatz, keine Duennluft-Drift
+COOLDOWN_D = 5              # gestoppter Token 5 Tage sperren
+MAX_CONSEC_STOPS, PAUSE_D = 3, 3   # 3 Stops in Folge -> 3 Tage Pause (Regime passt nicht)
+
+# ---- Ausstieg ----
+MAX_POS = 2                 # Testphase: 2 Positionen statt 1 -> doppelt so viele Datenpunkte, halbe Varianz
+POS_FRAC = 0.45             # 45 % des Start-Cash je Position (2 x 45 = 90 %)
+STOP = -0.10                # harter Stop ab Einstand
+TP1_GAIN, TP1_FRAC = 0.15, 0.5   # bei +15 % die Haelfte verkaufen
+TRAIL_ARM, TRAIL_GIVEBACK = 0.08, -0.06   # ab +8 % Hoch: Rueckgabe 6 % vom Hoch -> raus
+BREAKEVEN_AFTER_TP1 = True  # nach TP1 Stop auf Einstand ziehen: der Rest kann nichts mehr kosten
+MAX_HOLD_D, FLAT_EXIT_GAIN = 7, 0.03      # nach 7 Tagen raus, wenn unter +3 %
+HIST_KEEP_S = 7 * 3600
 
 def tradeable(sym):
     sym = (sym or "").upper()
     if sym in EXCLUDE_SYM: return False
     return not any(s in sym for s in EXCLUDE_SUB)
 
-# ---- Vier Stufen ----
-# window: dexscreener-Feld (m5/h1/h6); drop: (min, max) als positive Prozentzahl (z.B. 0.40 = -40%)
-# liq_max_drop: max. erlaubter Liquiditaetsrueckgang im selben Fenster (sonst: wahrscheinlich Rug)
-# stop: zusaetzlicher harter Stop ab Einstieg; tp1_gain: Kursgewinn ab Einstieg, bei dem 80% verkauft werden
-# moon_x: Ziel-Vielfaches ab Einstieg fuer die restlichen 20%; max_hold_h: Zeitstop in Stunden
-TIERS = [
-    # T1 lief mit dem 5-Minuten-Fenster nie an: -40 % in 5 Min bei 15-35k MCap plus passende
-    # Liquiditaetshistorie kam in der gesamten Laufzeit kein einziges Mal vor. Jetzt 1-Stunden-Fenster.
-    {"name": "T1", "mcap": (15_000, 35_000),   "window": "h1", "drop": (0.40, 0.50), "liq_max_drop": 0.25,
-     "stop": 0.40, "usd": 25.0, "tp1_gain": 1.00, "moon_x": 5.0, "max_hold_h": 24, "hist_needed_s": 50 * 60},
-    {"name": "T2", "mcap": (36_000, 60_000),   "window": "h1", "drop": (0.35, 0.45), "liq_max_drop": 0.20,
-     "stop": 0.35, "usd": 40.0, "tp1_gain": 0.75, "moon_x": 5.0, "max_hold_h": 24, "hist_needed_s": 50 * 60},
-    # T3 ueberarbeitet. Grund ist nicht nur die Bilanz, sondern die Konstruktion: ein Ruecksetzer von
-    # 30-40 % in einer Stunde liegt bei 61-100k MCap noch im normalen Schwankungsbereich - das Fenster
-    # fing also gewoehnliche Volatilitaet statt echter Panik. Jetzt tiefer angesetzt (selektiver),
-    # strengerer Liquiditaetscheck, und die Positionsgroesse an die Risikostaffelung der anderen Stufen
-    # angeglichen (T3 riskierte mit 60 $ bei -30 % mehr als T4 mit 80 $ bei -25 %).
-    {"name": "T3", "mcap": (61_000, 100_000),  "window": "h1", "drop": (0.35, 0.45), "liq_max_drop": 0.12,
-     "stop": 0.35, "usd": 45.0, "tp1_gain": 0.70, "moon_x": 3.0, "max_hold_h": 36, "hist_needed_s": 50 * 60},
-    {"name": "T4", "mcap": (101_000, 300_000), "window": "h6", "drop": (0.25, 0.35), "liq_max_drop": 0.15,
-     "stop": 0.25, "usd": 80.0, "tp1_gain": 0.40, "moon_x": 3.0, "max_hold_h": 48, "hist_needed_s": 5.5 * 3600},
-]
-TP1_FRAC = 0.8
-# v3 - Exits proportional zur Stufe statt pauschal. Ein einheitliches Trailing haette die grossen Gewinner
-# gekillt: WOW (T2) lief auf 5,8x, ein fester 25-%-Rueckschlag haette den Trade bei ~1,2x beendet.
-TRAIL_ARM_FRAC = 0.5      # scharf ab der Haelfte des Stufenziels (T1 +50 %, T4 +20 %)
-TRAIL_GIVEBACK_FRAC = 0.9 # Rueckgabe = 90 % des Stufen-Stops: gleiche Schwankungstoleranz wie beim
-                          # Einstiegsstop, nur wandert der Bezugspunkt mit dem Hoechststand mit.
-PEAK_CRASH_EXIT = -0.50   # harte Notbremse: mehr als 50 % unter den Hoechststand -> immer raus,
-                          # auch vor dem Scharfstellen des Trailings und auch nach TP1.
-GT = "https://api.geckoterminal.com/api/v2/networks/solana"
-RC_HARD = ("mint", "freeze", "unlocked", "top 10", "single holder")
-
 Q_E = """
-query($net: [Int!], $before: Int!) {
-  filterTokens(
-    filters: { network: $net, createdAt: { lte: $before }, marketCap: { gte: %s, lte: %s },
-               liquidity: { gte: %s }, volume24: { gte: %s } }
-    rankings: [{ attribute: volume24, direction: DESC }]
-    limit: 200
-  ) { results { token { address } } }
-}""" % (TIERS[0]["mcap"][0], TIERS[-1]["mcap"][1], E_MIN_LIQ, E_MIN_VOL24)
+query($net:[Int!]) {
+  filterTokens(filters:{ network:$net, marketCap:{gte:%d}, liquidity:{gte:%d}, volume24:{gte:%d} },
+               rankings:[{attribute:marketCap, direction:DESC}], limit:%d)
+  { results { token { address symbol } } }
+}""" % (U_MIN_MCAP, U_MIN_LIQ, U_MIN_VOL24, U_LIMIT)
 
 def codex_universe():
-    """None = Fehler (bald erneut versuchen), Liste = Ergebnis. ~1.440 Calls/Monat bei 30-Min-Takt."""
     if not CODEX_KEY: return None
     try:
         r = requests.post(CODEX_URL, headers={"Authorization": CODEX_KEY, "Content-Type": "application/json", **UA},
-                          json={"query": Q_E, "variables": {"net": [SOLANA], "before": int(time.time() - E_MIN_AGE_D * 86400)}}, timeout=30)
+                          json={"query": Q_E, "variables": {"net": [SOLANA]}}, timeout=30)
         r.raise_for_status(); d = r.json()
         if d.get("errors"): print("codex:", str(d["errors"])[:200]); return None
-        return [x["token"]["address"] for x in d["data"]["filterTokens"]["results"]]
+        return [x["token"]["address"] for x in d["data"]["filterTokens"]["results"] if tradeable(x["token"]["symbol"])]
     except Exception as e:
         print("codex fehler:", e); return None
 
@@ -103,145 +85,119 @@ def batch_pairs(addrs):
         time.sleep(1.1)
     return out
 
-def discover():
-    """Nur neutrale Quellen. Die DexScreener-Promo-Endpunkte (token-boosts/token-profiles) und
-    bot_a_seen.json (das daraus entstand) sind bewusst NICHT mehr dabei."""
-    addrs = set()
-    cx = codex_universe()
-    if cx is None: print("Bot E: Codex nicht erreichbar, nutze nur die kostenlosen Quellen")
-    else: addrs |= set(cx)
-    addrs |= set(load("bot_b_history.json", {}).keys())                      # Codex-gefiltert (Bot B)
-    addrs |= {c["addr"] for c in load("bot_d_meta.json", {}).get("cands", []) if c.get("addr")}
-    addrs |= set(load("bot_c_paths.json", {}).keys())                        # migrierte Tokens (Bot C)
-    for pg in range(1, DS_SEARCH_PAGES_GT + 1):
-        d = get(f"{GT}/pools?page={pg}&sort=h24_volume_usd_desc")
-        for pool in (d or {}).get("data", []):
-            base = (pool.get("relationships", {}).get("base_token", {}).get("data", {}).get("id") or "").replace("solana_", "")
-            if base: addrs.add(base)
-        time.sleep(1.1)
-    return list(addrs)[:MAX_UNIVERSE]
+GT = "https://api.geckoterminal.com/api/v2/networks/solana"
 
-def tier_for(mcap):
-    for t in TIERS:
-        if t["mcap"][0] <= mcap <= t["mcap"][1]: return t
-    return None
+def change_7d(pool, px):
+    """7-Tage-Aenderung in % aus GeckoTerminal-Tageskerzen (kostenlos). Nur fuer echte Kandidaten aufgerufen."""
+    if not pool: return None
+    d = get(f"{GT}/pools/{pool}/ohlcv/day", {"limit": 9}); time.sleep(2.1)
+    rows = ((d or {}).get("data") or {}).get("attributes", {}).get("ohlcv_list") or []
+    rows = sorted(rows)
+    if len(rows) < 8: return None
+    ref = rows[-8][4]                                # Schlusskurs vor 7 Tagen
+    return (px / ref - 1) * 100 if ref else None
 
-def liq_change(points, now, window_s):
-    """Sucht den aeltesten Punkt, der mind. window_s zurueckliegt (aber nicht mehr als 2x window_s,
-    sonst zu ungenau). Gibt (liq_dann, gefunden) zurueck."""
-    best = None
-    for pt in points:
-        t, liq = pt[0], pt[1]
-        age = now - t
-        if window_s * 0.85 <= age <= window_s * 2.2:
-            if best is None or abs(age - window_s) < abs(now - best[0] - window_s): best = (t, liq)
-    return (best[1], True) if best else (None, False)
+def f(p, *keys):
+    v = p
+    for k in keys: v = (v or {}).get(k)
+    return float(v) if v is not None else None
 
 def main():
     pf = Paper("bot_e"); st = pf.s
-    today = int(time.time() // 86400); now = time.time()
-    liq_hist = load("bot_e_liq.json", {})
-    cooldown = load("bot_e_cooldown.json", {})
-    meta = load("bot_e_meta.json", {})
-    if now - meta.get("last_discover", 0) >= DISCOVER_EVERY_S or "universe" not in meta:
-        meta["universe"] = discover(); meta["last_discover"] = now; save("bot_e_meta.json", meta)
+    now = time.time(); today = int(now // 86400)
+    meta = load("bot_e_meta.json", {}); hist = load("bot_e_hist.json", {}); cooldown = load("bot_e_cooldown.json", {})
+    if now - meta.get("last_discover", 0) >= DISCOVER_EVERY_S or not meta.get("universe"):
+        u = codex_universe()
+        if u: meta["universe"], meta["last_discover"] = u, now
+        elif meta.get("universe"): print("Bot E: Codex nicht erreichbar, nutze altes Universum")
     universe = list(set(meta.get("universe", [])) | set(st["positions"].keys()))
-    pairs = batch_pairs(universe)
-    prices = {}
+    if not universe: print("Bot E: kein Universum (CODEX_KEY?)"); pf.mark({}); pf.commit(); return
+    pairs = batch_pairs(universe + [SOL_MINT])
+    sol = pairs.get(SOL_MINT); sol24 = f(sol, "priceChange", "h24") if sol else None
+    prices, checks = {}, []
 
-    # 1) Snapshots (Liquiditaet) fuer ALLE beobachteten Tokens fortschreiben
+    # 1) eigene Kurs-Historie (fuer 6h-Tief) fortschreiben
     for a, p in pairs.items():
-        liq = (p.get("liquidity") or {}).get("usd") or 0
-        pts = liq_hist.setdefault(a, [])
-        pts.append([now, liq, float(p.get("priceUsd") or 0)])
-        liq_hist[a] = [x for x in pts if now - x[0] <= 7 * 3600][-100:]
-    # Tokens, die aus dem Universum gefallen sind, wurden bisher nie geloescht -> Datei wuchs unbegrenzt
-    for a in list(liq_hist):
-        pts = liq_hist[a]
-        if not pts or now - pts[-1][0] > 7 * 3600:
-            if a not in st["positions"]: del liq_hist[a]
+        px = f(p, "priceUsd") or 0
+        if px > 0:
+            pts = hist.setdefault(a, []); pts.append([now, px])
+            hist[a] = [x for x in pts if now - x[0] <= HIST_KEEP_S][-60:]
+    for a in list(hist):
+        if a not in pairs and a not in st["positions"]: del hist[a]
 
-    # 2) Offene Positionen verwalten
+    # 2) offene Position verwalten
     for a, pos in list(st["positions"].items()):
-        p = pairs.get(a)
-        if not p: continue
-        px = float(p.get("priceUsd") or 0)
-        if px <= 0: continue
-        prices[a] = px; liq = (p.get("liquidity") or {}).get("usd") or 0
+        p = pairs.get(a); px = f(p, "priceUsd") if p else None
+        if not px or px <= 0: continue
+        prices[a] = px; liq = f(p, "liquidity", "usd") or 0
         pos["peak"] = max(pos.get("peak", px), px)
-        x = px / pos["entry"] - 1
-        held_h = held_seconds(pos) / 3600
+        x = px / pos["entry"] - 1; peak_x = pos["peak"] / pos["entry"] - 1; from_peak = px / pos["peak"] - 1
+        held_d = held_seconds(pos) / 86400
         why = None
-        peak_x = pos["peak"] / pos["entry"]
-        from_peak = px / pos["peak"] - 1
-        arm = 1 + pos["tp1_gain"] * TRAIL_ARM_FRAC        # z.B. T1 +50 %, T4 +20 %
-        giveback = -pos["stop"] * TRAIL_GIVEBACK_FRAC     # z.B. T1 -36 %, T4 -22,5 %
-        if from_peak <= PEAK_CRASH_EXIT and peak_x > 1:
-            why = "peak-crash"                            # gilt in jeder Phase, auch nach TP1
-        elif not pos.get("tp1"):
-            if x <= -pos["stop"]: why = "stop"
-            elif x >= pos["tp1_gain"]:
-                pos["tp1"] = True; pf.sell(a, px, TP1_FRAC, liq, "tp1")
-            elif peak_x >= arm and from_peak <= giveback: why = "trail"
-            elif held_h >= pos["max_hold_h"]: why = "time"
-        else:
-            if px / pos["entry"] >= pos["moon_x"]: why = "moon"
-            elif held_h >= pos["max_hold_h"]: why = "time"
+        if not pos.get("tp1"):
+            if x <= STOP: why = "stop"
+            elif x >= TP1_GAIN: pos["tp1"] = True; pf.sell(a, px, TP1_FRAC, liq, "tp1")
+            elif peak_x >= TRAIL_ARM and from_peak <= TRAIL_GIVEBACK: why = "trail"
+            elif held_d >= MAX_HOLD_D and x < FLAT_EXIT_GAIN: why = "time"
+        if not why and pos.get("tp1") and a in st["positions"]:
+            if BREAKEVEN_AFTER_TP1 and x <= 0.0: why = "breakeven"
+            elif from_peak <= TRAIL_GIVEBACK: why = "trail"
+            elif held_d >= MAX_HOLD_D: why = "time"
         if why:
-            pf.sell(a, px, 1.0, liq, why)
-            if why == "stop": cooldown[a] = today + COOLDOWN_D
+            pf.sell(a, px, 1.0, liq, why); meta["last_sell"] = now
+            if why == "stop":
+                cooldown[a] = today + COOLDOWN_D; meta["consec_stops"] = meta.get("consec_stops", 0) + 1
+                if meta["consec_stops"] >= MAX_CONSEC_STOPS:
+                    meta["paused_until"] = today + PAUSE_D; meta["consec_stops"] = 0
+                    print(f"Bot E: {MAX_CONSEC_STOPS} Stops in Folge -> Pause bis Tag {meta['paused_until']}")
+            else: meta["consec_stops"] = 0
 
-    # 3) Neue Kandidaten pruefen
-    per_tier_open = {t["name"]: 0 for t in TIERS}
-    for pos in st["positions"].values(): per_tier_open[pos.get("tier", "")] = per_tier_open.get(pos.get("tier", ""), 0) + 1
-    checks = []
-    for a, p in pairs.items():
-        if a in st["positions"] or cooldown.get(a, 0) > today: continue
-        if len(st["positions"]) >= MAX_POS_TOTAL: break
-        sym = p["baseToken"]["symbol"]
-        if not tradeable(sym): continue
-        mcap = p.get("marketCap") or p.get("fdv") or 0
-        tier = tier_for(mcap)
-        if not tier: continue
-        if per_tier_open.get(tier["name"], 0) >= MAX_POS_PER_TIER: continue
-        pc = (p.get("priceChange") or {}).get(tier["window"])
-        if pc is None: continue
-        pc = float(pc)
-        lo, hi = -tier["drop"][1] * 100, -tier["drop"][0] * 100   # z.B. -50 .. -40
-        if not (lo <= pc <= hi): 
-            checks.append((sym, tier["name"], f"chg {pc:.0f}%")); continue
-        liq_now = (p.get("liquidity") or {}).get("usd") or 0
-        if liq_now < E_MIN_LIQ: checks.append((sym, tier["name"], f"liq {liq_now:.0f}")); continue
-        created = p.get("pairCreatedAt")
-        if created and (now - created / 1000) < E_MIN_AGE_D * 86400:
-            checks.append((sym, tier["name"], "zu jung")); continue
-        if mcap > 0 and liq_now / mcap > E_MAX_LIQ_OVER_MCAP:
-            checks.append((sym, tier["name"], f"liq/mcap {liq_now/mcap:.1f} (kuenstlich?)")); cooldown[a] = today + COOLDOWN_D; continue
-        liq_then, found = liq_change(liq_hist.get(a, []), now, tier["hist_needed_s"])
-        if not found: checks.append((sym, tier["name"], "liq-historie fehlt")); continue
-        liq_drop = (liq_then - liq_now) / liq_then if liq_then > 0 else 1.0
-        if liq_drop > tier["liq_max_drop"]:
-            checks.append((sym, tier["name"], f"liq -{liq_drop*100:.0f}% (wahrsch. rug)")); cooldown[a] = today + COOLDOWN_D; continue
-        px = float(p.get("priceUsd") or 0)
-        if px <= 0: continue
-        ok, risks = rug_ok(a); time.sleep(1.1)
-        if not ok:
-            checks.append((sym, tier["name"], "rugcheck"))
-            if risks != ["rugcheck unavailable"]: cooldown[a] = today + COOLDOWN_D
-            continue
-        if st["cash"] < tier["usd"] + 2: continue
-        if pf.buy(sym, a, px, tier["usd"], liq_now, f"{tier['name']} chg {pc:.0f}%"):
-            pos = st["positions"][a]
-            pos.update(tier=tier["name"], stop=tier["stop"], tp1_gain=tier["tp1_gain"], moon_x=tier["moon_x"], max_hold_h=tier["max_hold_h"])
-            per_tier_open[tier["name"]] = per_tier_open.get(tier["name"], 0) + 1
-            checks.append((sym, tier["name"], f"GEKAUFT chg {pc:.0f}% liq-drop {liq_drop*100:.0f}%"))
-            append_jsonl("bot_e_signals.jsonl", {"t": now_iso(), "addr": a, "sym": sym, "tier": tier["name"], "chg": pc, "liq_drop": round(liq_drop, 3), "mcap": mcap})
+    # 3) Einstieg pruefen (nur wenn keine Position offen)
+    can_buy = len(st["positions"]) < MAX_POS and meta.get("paused_until", 0) <= today
+    if can_buy and sol24 is None: print("Bot E: SOL-Referenz fehlt -> kein Kauf"); can_buy = False
+    if can_buy and sol24 < SOL_24H_MIN: checks.append(("SOL", f"markt {sol24:+.1f}% -> kein Kauf")); can_buy = False
+    if can_buy:
+        cands = []
+        for a, p in pairs.items():
+            if a == SOL_MINT or a in st["positions"] or cooldown.get(a, 0) > today: continue
+            sym = p["baseToken"]["symbol"]
+            if not tradeable(sym): continue
+            c24, c1, c6 = f(p, "priceChange", "h24"), f(p, "priceChange", "h1"), f(p, "priceChange", "h6")
+            mcap = f(p, "marketCap") or f(p, "fdv") or 0; liq = f(p, "liquidity", "usd") or 0
+            vol = f(p, "volume", "h24") or 0; px = f(p, "priceUsd") or 0
+            if None in (c24, c1) or px <= 0: continue
+            if not (DROP_24H[0] <= c24 <= DROP_24H[1]): continue          # normaler Tag - nichts loggen
+            why = None
+            if mcap < U_MIN_MCAP or liq < U_MIN_LIQ: why = f"mcap/liq {mcap/1e6:.0f}M/{liq/1e6:.1f}M"
+            elif c24 > sol24 - REL_TO_SOL_PP: why = f"nur {c24 - sol24:+.0f}pp vs SOL"
+            elif c1 < STAB_1H_MIN: why = f"1h {c1:+.1f}% faellt noch"
+            elif vol / mcap < VOL_TO_MCAP_MIN: why = f"vol/mcap {vol/mcap:.1%}"
+            else:
+                pts = [x[1] for x in hist.get(a, []) if now - x[0] <= 6 * 3600]
+                if len(pts) < 6: why = "historie fehlt"
+                elif not (BOUNCE_6H[0] / 100 <= px / min(pts) - 1 <= BOUNCE_6H[1] / 100): why = f"{px/min(pts)-1:+.1%} ueber 6h-Tief"
+                else:
+                    c7 = change_7d(p.get("pairAddress"), px)
+                    if c7 is None: why = "7d-daten fehlen"
+                    elif c7 < MAX_DROP_7D: why = f"7d {c7:+.0f}% = abwaertstrend"
+            if why: checks.append((sym, f"24h {c24:+.0f}% | {why}")); continue
+            cands.append((c24 - sol24, a, sym, px, liq, c24, c1, mcap))
+        cands.sort()                                                        # staerkste relative Uebertreibung zuerst
+        for rel, a, sym, px, liq, c24, c1, mcap in cands[:MAX_POS - len(st["positions"])]:
+            usd = min(st["cash"] - 1, st["cash"] * POS_FRAC if not st["positions"] else st["cash"] * 0.9)
+            if usd < 20: break
+            if pf.buy(sym, a, px, usd, liq, f"dip 24h {c24:+.0f}% (SOL {sol24:+.0f}%) 1h {c1:+.1f}%"):
+                checks.append((sym, f"GEKAUFT {usd:.0f}$ | 24h {c24:+.0f}% vs SOL {sol24:+.0f}%"))
+                append_jsonl("bot_e_signals.jsonl", {"t": now_iso(), "addr": a, "sym": sym, "c24": c24, "c1": c1,
+                                                     "sol24": sol24, "mcap": mcap, "usd": round(usd, 2)})
 
-    save("bot_e_liq.json", liq_hist); save("bot_e_cooldown.json", {k: v for k, v in cooldown.items() if v > today})
-    st["strategy"] = "overreaction_fade"; st["universe_n"] = len(universe)
+    save("bot_e_meta.json", meta); save("bot_e_hist.json", hist)
+    save("bot_e_cooldown.json", {k: v for k, v in cooldown.items() if v > today})
+    st["strategy"] = "largecap_dip"; st["universe_n"] = len(universe)
     v = pf.mark(prices); pf.commit()
-    print(f"Bot E [overreaction]: equity {v:.2f} | cash {st['cash']:.2f} | positions {len(st['positions'])} | universum {len(universe)}")
-    for sym, tname, why in checks[:12]: print(f"   {sym:<10} {tname:<3} {why}")
+    print(f"Bot E [largecap dip]: equity {v:.2f} | cash {st['cash']:.2f} | positions {len(st['positions'])} "
+          f"| universum {len(universe)} | SOL 24h {sol24 if sol24 is None else round(sol24, 1)}")
+    for sym, why in checks[:12]: print(f"   {sym:<10} {why}")
 
 if __name__ == "__main__":
     main()
