@@ -1,18 +1,6 @@
 {
- "cash": 503.2250240000002,
- "positions": {
-  "J44z27iVWibEzWT2w4MNWjuyQbTPF1gPbWodiCnfpump": {
-   "sym": "BAM",
-   "qty": 244949.579402,
-   "cost": 30.02,
-   "opened": "2026-09-16T05:15:58Z",
-   "peak": 0.0001132,
-   "entry": 0.00012255583403445063,
-   "mig": 1789534979.0,
-   "cur_price": 0.0001132,
-   "mark": 0.0001132
-  }
- },
+ "cash": 520.4030100000002,
+ "positions": {},
  "trades": [
   {
    "t": "2026-09-15T17:10:46Z",
@@ -160,6 +148,21 @@
    "slip": 0.0044,
    "quote": "jup",
    "reason": "postgrad 13min"
+  },
+  {
+   "t": "2026-09-16T05:20:55Z",
+   "side": "sell",
+   "sym": "BAM",
+   "addr": "J44z27iVWibEzWT2w4MNWjuyQbTPF1gPbWodiCnfpump",
+   "price": 6.527e-05,
+   "usd": 17.18,
+   "pnl": -12.84,
+   "peak_x": 0.924,
+   "held_h": 0.1,
+   "frac": 1.0,
+   "slip": 0.0194,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -774,6 +777,10 @@
   {
    "t": "2026-09-16T05:15:58Z",
    "v": 530.95
+  },
+  {
+   "t": "2026-09-16T05:20:55Z",
+   "v": 520.4
   }
  ],
  "started": "2026-09-15T16:35:47Z",
