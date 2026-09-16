@@ -43,8 +43,8 @@
    "tp1_gain": 0.7,
    "moon_x": 3.0,
    "max_hold_h": 36,
-   "mark": 4.859e-05,
-   "cur_price": 4.859e-05
+   "mark": 4.802e-05,
+   "cur_price": 4.802e-05
   },
   "86T4G3zJaBxQAuWAbfXggE5d5XEt4bns3Y41jgVLpump": {
    "sym": "LSM",
@@ -58,8 +58,8 @@
    "tp1_gain": 0.4,
    "moon_x": 3.0,
    "max_hold_h": 48,
-   "mark": 0.0001848,
-   "cur_price": 0.0001848
+   "mark": 0.0001836,
+   "cur_price": 0.0001836
   }
  },
  "trades": [
@@ -2436,9 +2436,13 @@
   {
    "t": "2026-09-15T23:56:30Z",
    "v": 227.63
+  },
+  {
+   "t": "2026-09-16T00:06:59Z",
+   "v": 226.77
   }
  ],
  "started": "2026-09-14T12:02:41Z",
  "strategy": "overreaction_fade",
- "universe_n": 503
+ "universe_n": 504
 }
