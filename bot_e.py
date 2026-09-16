@@ -42,7 +42,9 @@ MAX_CONSEC_STOPS, PAUSE_D = 3, 3   # 3 Stops in Folge -> 3 Tage Pause (Regime pa
 
 # ---- Ausstieg ----
 MAX_POS = 2                 # Testphase: 2 Positionen statt 1 -> doppelt so viele Datenpunkte, halbe Varianz
-POS_FRAC = 0.45             # 45 % des Start-Cash je Position (2 x 45 = 90 %)
+POS_FRAC = 0.45             # 45 % des GESAMTKAPITALS (Cash + offene Positionen) je Position, nicht des freien Cash.
+                            # So ist Position 2 genauso gross wie Position 1, und die Groesse waechst/schrumpft
+                            # mit dem Depot statt mit dem zufaelligen Cash-Rest.
 STOP = -0.10                # harter Stop ab Einstand
 TP1_GAIN, TP1_FRAC = 0.15, 0.5   # bei +15 % die Haelfte verkaufen
 TRAIL_ARM, TRAIL_GIVEBACK = 0.08, -0.06   # ab +8 % Hoch: Rueckgabe 6 % vom Hoch -> raus
@@ -183,8 +185,9 @@ def main():
             if why: checks.append((sym, f"24h {c24:+.0f}% | {why}")); continue
             cands.append((c24 - sol24, a, sym, px, liq, c24, c1, mcap))
         cands.sort()                                                        # staerkste relative Uebertreibung zuerst
+        equity = st["cash"] + sum(p.get("mark", p["entry"]) / p["entry"] * p["usd"] for p in st["positions"].values())
         for rel, a, sym, px, liq, c24, c1, mcap in cands[:MAX_POS - len(st["positions"])]:
-            usd = min(st["cash"] - 1, st["cash"] * POS_FRAC if not st["positions"] else st["cash"] * 0.9)
+            usd = min(st["cash"] - 1, equity * POS_FRAC)
             if usd < 20: break
             if pf.buy(sym, a, px, usd, liq, f"dip 24h {c24:+.0f}% (SOL {sol24:+.0f}%) 1h {c1:+.1f}%"):
                 checks.append((sym, f"GEKAUFT {usd:.0f}$ | 24h {c24:+.0f}% vs SOL {sol24:+.0f}%"))
