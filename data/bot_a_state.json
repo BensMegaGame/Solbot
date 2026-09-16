@@ -1,5 +1,5 @@
 {
- "cash": 120.19838594111187,
+ "cash": 142.24299694111187,
  "positions": {
   "5GefefPX1mDs6ZJB1apYmz6fCTCiNJpHturZ9bvFpump": {
    "sym": "Pumpoween",
@@ -8,8 +8,8 @@
    "opened": "2026-09-12T21:25:13Z",
    "peak": 0.0007205,
    "entry": 0.0004150532496,
-   "cur_price": 0.0005241,
-   "mark": 0.0005241
+   "cur_price": 0.0006051,
+   "mark": 0.0006051
   },
   "Hy1LfQLL4zLQihmiQKZm7DQzXm5K8aVSfKtdHFYXbKMm": {
    "sym": "AMBA",
@@ -18,8 +18,8 @@
    "opened": "2026-09-13T03:20:17Z",
    "peak": 0.002489,
    "entry": 0.0008846074234799999,
-   "cur_price": 0.0008988,
-   "mark": 0.0008988,
+   "cur_price": 0.000871,
+   "mark": 0.000871,
    "tp0": true
   },
   "4ZYonK7RhCaQ24YmGDwJpz1g8WbjyrLZQ8AcXf28WYPt": {
@@ -29,18 +29,19 @@
    "opened": "2026-09-16T02:55:31Z",
    "peak": 0.001059,
    "entry": 0.0006958851466256757,
-   "cur_price": 0.0007196,
-   "mark": 0.0007196
+   "cur_price": 0.0008029,
+   "mark": 0.0008029
   },
   "DvdmEnztCmXwBnAbedD48XVGZJSxq31zNvnyftXdpump": {
    "sym": "pill",
-   "qty": 37091.586966,
-   "cost": 50.02,
+   "qty": 27818.690224500002,
+   "cost": 37.515,
    "opened": "2026-09-16T11:45:08Z",
-   "peak": 0.002034,
+   "peak": 0.002447,
    "entry": 0.0013485537851440767,
-   "cur_price": 0.002034,
-   "mark": 0.002034
+   "cur_price": 0.002447,
+   "mark": 0.002447,
+   "tp0": true
   },
   "4775QEyTS7ECpvhbeEg1a5XUjpK6CtEJwRpw6vvwpump": {
    "sym": "\u30cb\u30fc\u30ca",
@@ -49,8 +50,8 @@
    "opened": "2026-09-16T16:05:19Z",
    "peak": 0.0007168,
    "entry": 0.0002716052443959384,
-   "cur_price": 0.0003846,
-   "mark": 0.0003846,
+   "cur_price": 0.000338,
+   "mark": 0.000338,
    "tp0": true
   },
   "7ghKoBZBAjGSgbxix5K5kFhQzu9mxVmbdPxRT8j27eEo": {
@@ -60,18 +61,18 @@
    "opened": "2026-09-16T21:25:26Z",
    "peak": 0.000124,
    "entry": 0.00012329721702966553,
-   "cur_price": 0.0001211,
-   "mark": 0.0001211
+   "cur_price": 0.0001192,
+   "mark": 0.0001192
   },
   "G4vqe8KAcRGTb7Kc55n9sz43aR4ugTPdSeUnAXZhpump": {
    "sym": "PUMPCAT",
    "qty": 111822.994283,
    "cost": 50.02,
    "opened": "2026-09-16T22:05:46Z",
-   "peak": 0.0004477,
+   "peak": 0.0004794,
    "entry": 0.0004473140816942365,
-   "cur_price": 0.0004477,
-   "mark": 0.0004477
+   "cur_price": 0.0004794,
+   "mark": 0.0004794
   }
  },
  "trades": [
@@ -693,6 +694,21 @@
    "slip": 0.0318,
    "quote": "jup",
    "reason": "screener"
+  },
+  {
+   "t": "2026-09-16T22:25:05Z",
+   "side": "sell",
+   "sym": "pill",
+   "addr": "DvdmEnztCmXwBnAbedD48XVGZJSxq31zNvnyftXdpump",
+   "price": 0.002447,
+   "usd": 22.04,
+   "pnl": 9.54,
+   "peak_x": 1.815,
+   "held_h": 10.7,
+   "frac": 0.25,
+   "slip": 0.0309,
+   "quote": "jup",
+   "reason": "tp0"
   }
  ],
  "equity": [
@@ -5759,6 +5775,10 @@
   {
    "t": "2026-09-16T22:20:52Z",
    "v": 501.47
+  },
+  {
+   "t": "2026-09-16T22:25:50Z",
+   "v": 527.09
   }
  ],
  "started": "2026-09-10T17:17:16Z"
