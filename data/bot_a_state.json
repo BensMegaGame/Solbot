@@ -1,5 +1,5 @@
 {
- "cash": 242.9633429411119,
+ "cash": 192.9433429411119,
  "positions": {
   "5GefefPX1mDs6ZJB1apYmz6fCTCiNJpHturZ9bvFpump": {
    "sym": "Pumpoween",
@@ -8,8 +8,8 @@
    "opened": "2026-09-12T21:25:13Z",
    "peak": 0.0007205,
    "entry": 0.0004150532496,
-   "cur_price": 0.0005064,
-   "mark": 0.0005064
+   "cur_price": 0.0004991,
+   "mark": 0.0004991
   },
   "Hy1LfQLL4zLQihmiQKZm7DQzXm5K8aVSfKtdHFYXbKMm": {
    "sym": "AMBA",
@@ -18,8 +18,8 @@
    "opened": "2026-09-13T03:20:17Z",
    "peak": 0.002489,
    "entry": 0.0008846074234799999,
-   "cur_price": 0.00229,
-   "mark": 0.00229,
+   "cur_price": 0.002009,
+   "mark": 0.002009,
    "tp0": true
   },
   "4ZYonK7RhCaQ24YmGDwJpz1g8WbjyrLZQ8AcXf28WYPt": {
@@ -29,8 +29,8 @@
    "opened": "2026-09-16T02:55:31Z",
    "peak": 0.001059,
    "entry": 0.0006958851466256757,
-   "cur_price": 0.0005022,
-   "mark": 0.0005022
+   "cur_price": 0.0004975,
+   "mark": 0.0004975
   },
   "DvdmEnztCmXwBnAbedD48XVGZJSxq31zNvnyftXdpump": {
    "sym": "pill",
@@ -39,8 +39,18 @@
    "opened": "2026-09-16T11:45:08Z",
    "peak": 0.001644,
    "entry": 0.0013485537851440767,
-   "cur_price": 0.001287,
-   "mark": 0.001287
+   "cur_price": 0.001231,
+   "mark": 0.001231
+  },
+  "4775QEyTS7ECpvhbeEg1a5XUjpK6CtEJwRpw6vvwpump": {
+   "sym": "\u30cb\u30fc\u30ca",
+   "qty": 184164.337884,
+   "cost": 50.02,
+   "opened": "2026-09-16T16:05:19Z",
+   "peak": 0.0002766,
+   "entry": 0.0002716052443959384,
+   "cur_price": 0.0002766,
+   "mark": 0.0002766
   }
  },
  "trades": [
@@ -609,6 +619,18 @@
    "fill": 0.001348553785,
    "usd": 50.02,
    "slip": 0.0322,
+   "quote": "jup",
+   "reason": "screener"
+  },
+  {
+   "t": "2026-09-16T16:05:19Z",
+   "side": "buy",
+   "sym": "\u30cb\u30fc\u30ca",
+   "addr": "4775QEyTS7ECpvhbeEg1a5XUjpK6CtEJwRpw6vvwpump",
+   "price": 0.0002766,
+   "fill": 0.000271605244,
+   "usd": 50.02,
+   "slip": 0.012,
    "quote": "jup",
    "reason": "screener"
   }
@@ -5373,6 +5395,10 @@
   {
    "t": "2026-09-16T16:00:41Z",
    "v": 485.73
+  },
+  {
+   "t": "2026-09-16T16:05:45Z",
+   "v": 471.38
   }
  ],
  "started": "2026-09-10T17:17:16Z"
