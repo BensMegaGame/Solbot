@@ -1,4 +1,4 @@
-"""Bot B v2 – "Zweite Welle": kleine Solana-Tokens, die Woche 1–2 ueberlebt haben und deren
+"""Bot B v2.5 – "Zweite Welle": kleine Solana-Tokens, die Woche 1–2 ueberlebt haben und deren
 Volumen und Kaeuferueberhang anhaltend wachsen. Handelt Spot ueber Jupiter (Paper-Simulation).
 
 Ablauf pro Lauf (stuendlich):
@@ -19,7 +19,7 @@ def tradeable_sym(sym):
     return not any(s in sym for s in EXCLUDE_SUB)
 
 # ---------- Universum ----------
-MIN_AGE_D, MAX_AGE_D   = 14, 56
+MIN_AGE_D, MAX_AGE_D   = 7, 56                # v2.5: ab 7 Tagen (mehr Datenpunkte; 3 Tage eigene Historie bleiben Pflicht)
 MIN_MCAP, MAX_MCAP     = 10_000, 800_000       # v2.2: aufgeweitet (300k war zu eng, siehe log)
 # v2.4: Liquiditaet proportional statt fix. Die alte 50k-Schwelle schloss das gesamte untere Mcap-Fenster
 # aus (0 von 5 beobachteten Tokens unter 100k Cap kamen durch) - und haette dort nur Tokens durchgelassen,
@@ -27,17 +27,19 @@ MIN_MCAP, MAX_MCAP     = 10_000, 800_000       # v2.2: aufgeweitet (300k war zu 
 # Beobachtetes Verhaeltnis in der Watchlist: Median 0,28 / p10 0,17 / p90 0,71.
 MIN_LIQ = 10_000                       # absolute Untergrenze, nur damit 60 $ ohne grossen Impact handelbar sind
 MIN_LIQ_RATIO, MAX_LIQ_RATIO = 0.12, 1.2
-MIN_VOL24              = 40_000
+MIN_VOL24              = 30_000
 # ---------- Einstieg ----------
 MIN_HISTORY_DAYS = 3          # Tage Historie (eigene Snapshots oder GeckoTerminal-Kerzen), bevor gekauft wird
-VOL_TREND_MIN    = 1.20       # 3d-Volumen vs. 3d davor (wenn >= 6 Tage Historie), sonst gegen Vortag
-MIN_BUY_RATIO    = 0.52
-MAX_ABOVE_AVG    = 0.60       # nicht kaufen, wenn Preis > 60 % ueber 7-Tage-Schnitt
+VOL_TREND_MIN    = 1.30       # 3d-Volumen vs. 3d davor (wenn >= 6 Tage Historie), sonst gegen Vortag
+VOL_TREND_MAX    = 4.00       # v2.5: >4x = Blow-off-Spike (PERIHEL kam mit 24x rein und lief sofort -16 %). Wir wollen
+                              # anhaltend wachsendes Interesse, nicht den einen Pump-Tag.
+MIN_BUY_RATIO    = 0.56       # v2.5: 0,52-0,55 ist Rauschen (alle 5 offenen Verlierer lagen dort)
+MAX_ABOVE_AVG    = 0.25       # v2.5: nicht kaufen, wenn Preis > 25 % ueber 7-Tage-Schnitt (60 % hiess: Spitze kaufen)
 # ---------- Position ----------
-ENTRY_USD, ADD_USD, MAX_POS = 60.0, 40.0, 5
+ENTRY_USD, ADD_USD, MAX_POS = 40.0, 25.0, 8   # v2.5
 ADD_AT_X   = 1.25             # Nachkauf bei +25 %, wenn Volumen weiter steigt
 TP1_X, TP1_FRAC = 1.5, 0.30   # v2.1: +50 % -> 30 % raus (vorher 2x/50 %); Rest laeuft ueber Trailing
-TRAIL, HARD_STOP, MAX_HOLD_D = -0.30, -0.35, 30
+TRAIL, HARD_STOP, MAX_HOLD_D = -0.25, -0.25, 30   # v2.5: -35 % Stop bei 60 $ + 3-4 % Slippage je Seite war zu teuer
 LIQ_DROP_EXIT, VOL_DROP_EXIT = -0.40, 0.50
 # ---------- Schutz ----------
 COOLDOWN_D, STREAK_HALVE = 14, 3
@@ -173,6 +175,7 @@ def entry_check(rows, cur):
     if len(vols) >= 6: trend = sum(vols[-3:]) / 3 / max(sum(vols[-6:-3]) / 3, 1)
     else: trend = vols[-1] / max(vols[-2], 1)
     if trend < VOL_TREND_MIN: return False, f"vol-trend {trend:.2f}"
+    if trend > VOL_TREND_MAX: return False, f"vol-trend {trend:.2f} = spike"
     # 3 Nachfrage: Kaeuferueberhang, kein Einbruch in den letzten 6h
     if cur["buy_ratio"] < MIN_BUY_RATIO: return False, f"buy-ratio {cur['buy_ratio']:.2f}"
     if cur["vol6"] * 4 < 0.5 * cur["vol"]: return False, "6h-volumen eingebrochen"
