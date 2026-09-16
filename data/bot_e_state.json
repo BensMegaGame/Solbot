@@ -13,8 +13,8 @@
    "tp1_gain": 0.65,
    "moon_x": 3.0,
    "max_hold_h": 36,
-   "mark": 7.447e-05,
-   "cur_price": 7.447e-05
+   "mark": 6.894e-05,
+   "cur_price": 6.894e-05
   },
   "86T4G3zJaBxQAuWAbfXggE5d5XEt4bns3Y41jgVLpump": {
    "sym": "LSM",
@@ -28,8 +28,8 @@
    "tp1_gain": 0.4,
    "moon_x": 3.0,
    "max_hold_h": 48,
-   "mark": 0.0001431,
-   "cur_price": 0.0001431
+   "mark": 0.0001427,
+   "cur_price": 0.0001427
   },
   "G1iBvjhZ9wpGUZdQcvhRSqjow3x6xetsnmEBBMm1pump": {
    "sym": "PITCOIN",
@@ -43,8 +43,8 @@
    "tp1_gain": 0.4,
    "moon_x": 3.0,
    "max_hold_h": 48,
-   "mark": 0.0001737,
-   "cur_price": 0.0001737
+   "mark": 0.0001716,
+   "cur_price": 0.0001716
   }
  },
  "trades": [
@@ -2611,9 +2611,13 @@
   {
    "t": "2026-09-16T03:06:42Z",
    "v": 209.41
+  },
+  {
+   "t": "2026-09-16T03:12:41Z",
+   "v": 204.26
   }
  ],
  "started": "2026-09-14T12:02:41Z",
  "strategy": "overreaction_fade",
- "universe_n": 502
+ "universe_n": 503
 }

@@ -20,8 +20,8 @@
    "peak": 9.449e-05,
    "entry": 9.929043370036056e-05,
    "liq0": 30396.91,
-   "cur_price": 7.81e-05,
-   "mark": 7.81e-05
+   "cur_price": 8.192e-05,
+   "mark": 8.192e-05
   },
   "2s9ycNwMgVCB4SWtXmTu14w1ospd88MVYZdHLVEHLdVC": {
    "sym": "SKYNET",
@@ -31,8 +31,8 @@
    "peak": 0.0001424,
    "entry": 0.00010673293353768815,
    "liq0": 28990.92,
-   "cur_price": 8.362e-05,
-   "mark": 8.362e-05
+   "cur_price": 8.367e-05,
+   "mark": 8.367e-05
   },
   "F8Sc8HoZvJcMrTY6vBsetTqGPv6XQmM2XgVAZo1sSTNK": {
    "sym": "MARINE",
@@ -54,9 +54,7 @@
    "entry": 0.0001589314964875613,
    "liq0": 10025.8,
    "cur_price": 0.000115,
-   "mark": 0.000115,
-   "no_px_since": "2026-09-16T03:01:16Z",
-   "no_quote_since": "2026-09-16T03:01:16Z"
+   "mark": 0.000115
   },
   "3C6sZzwq2ietUdjRaNgTwoKw6dBMkKCe5u1rricjEFAU": {
    "sym": "CHAIN",
@@ -66,8 +64,8 @@
    "peak": 0.0001816,
    "entry": 6.784452505011723e-05,
    "liq0": 22443.65,
-   "cur_price": 0.0001085,
-   "mark": 0.0001085
+   "cur_price": 0.0001106,
+   "mark": 0.0001106
   },
   "8JQXg7t2CQS7QyjqS27dE2HcRyRpn8tVZyxEC7htbXNQ": {
    "sym": "REBME",
@@ -78,7 +76,9 @@
    "entry": 3.245399755225259e-05,
    "liq0": 20054.5,
    "cur_price": 2.474e-05,
-   "mark": 2.474e-05
+   "mark": 2.474e-05,
+   "no_px_since": "2026-09-16T03:11:22Z",
+   "no_quote_since": "2026-09-16T03:11:22Z"
   }
  },
  "trades": [
@@ -864,6 +864,10 @@
   {
    "t": "2026-09-16T03:06:18Z",
    "v": 464.58
+  },
+  {
+   "t": "2026-09-16T03:11:22Z",
+   "v": 465.63
   }
  ],
  "started": "2026-09-15T16:35:51Z",
