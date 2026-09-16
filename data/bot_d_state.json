@@ -54,7 +54,9 @@
    "entry": 0.0001589314964875613,
    "liq0": 10025.8,
    "cur_price": 0.000115,
-   "mark": 0.000115
+   "mark": 0.000115,
+   "no_px_since": "2026-09-16T03:01:16Z",
+   "no_quote_since": "2026-09-16T03:01:16Z"
   },
   "3C6sZzwq2ietUdjRaNgTwoKw6dBMkKCe5u1rricjEFAU": {
    "sym": "CHAIN",
@@ -64,8 +66,8 @@
    "peak": 0.0001816,
    "entry": 6.784452505011723e-05,
    "liq0": 22443.65,
-   "cur_price": 0.0001193,
-   "mark": 0.0001193
+   "cur_price": 0.0001138,
+   "mark": 0.0001138
   },
   "8JQXg7t2CQS7QyjqS27dE2HcRyRpn8tVZyxEC7htbXNQ": {
    "sym": "REBME",
@@ -76,7 +78,9 @@
    "entry": 3.245399755225259e-05,
    "liq0": 20054.5,
    "cur_price": 2.355e-05,
-   "mark": 2.355e-05
+   "mark": 2.355e-05,
+   "no_px_since": "2026-09-16T03:01:16Z",
+   "no_quote_since": "2026-09-16T03:01:16Z"
   }
  },
  "trades": [
@@ -854,6 +858,10 @@
   {
    "t": "2026-09-16T02:56:18Z",
    "v": 466.52
+  },
+  {
+   "t": "2026-09-16T03:01:16Z",
+   "v": 465.3
   }
  ],
  "started": "2026-09-15T16:35:51Z",
