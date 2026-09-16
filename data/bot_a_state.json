@@ -1,5 +1,5 @@
 {
- "cash": 220.2383859411119,
+ "cash": 170.21838594111188,
  "positions": {
   "5GefefPX1mDs6ZJB1apYmz6fCTCiNJpHturZ9bvFpump": {
    "sym": "Pumpoween",
@@ -18,8 +18,8 @@
    "opened": "2026-09-13T03:20:17Z",
    "peak": 0.002489,
    "entry": 0.0008846074234799999,
-   "cur_price": 0.000876,
-   "mark": 0.000876,
+   "cur_price": 0.0007231,
+   "mark": 0.0007231,
    "tp0": true
   },
   "4ZYonK7RhCaQ24YmGDwJpz1g8WbjyrLZQ8AcXf28WYPt": {
@@ -39,8 +39,8 @@
    "opened": "2026-09-16T11:45:08Z",
    "peak": 0.001644,
    "entry": 0.0013485537851440767,
-   "cur_price": 0.001449,
-   "mark": 0.001449
+   "cur_price": 0.001551,
+   "mark": 0.001551
   },
   "4775QEyTS7ECpvhbeEg1a5XUjpK6CtEJwRpw6vvwpump": {
    "sym": "\u30cb\u30fc\u30ca",
@@ -49,9 +49,19 @@
    "opened": "2026-09-16T16:05:19Z",
    "peak": 0.0007168,
    "entry": 0.0002716052443959384,
-   "cur_price": 0.0005183,
-   "mark": 0.0005183,
+   "cur_price": 0.0005153,
+   "mark": 0.0005153,
    "tp0": true
+  },
+  "7ghKoBZBAjGSgbxix5K5kFhQzu9mxVmbdPxRT8j27eEo": {
+   "sym": "ETAC",
+   "qty": 405686.366692,
+   "cost": 50.02,
+   "opened": "2026-09-16T21:25:26Z",
+   "peak": 0.0001225,
+   "entry": 0.00012329721702966553,
+   "cur_price": 0.0001225,
+   "mark": 0.0001225
   }
  },
  "trades": [
@@ -649,6 +659,18 @@
    "slip": 0.0126,
    "quote": "jup",
    "reason": "tp0"
+  },
+  {
+   "t": "2026-09-16T21:25:26Z",
+   "side": "buy",
+   "sym": "ETAC",
+   "addr": "7ghKoBZBAjGSgbxix5K5kFhQzu9mxVmbdPxRT8j27eEo",
+   "price": 0.0001225,
+   "fill": 0.000123297217,
+   "usd": 50.02,
+   "slip": 0.0739,
+   "quote": "jup",
+   "reason": "screener"
   }
  ],
  "equity": [
@@ -5667,6 +5689,10 @@
   {
    "t": "2026-09-16T21:20:41Z",
    "v": 482.92
+  },
+  {
+   "t": "2026-09-16T21:25:45Z",
+   "v": 479.45
   }
  ],
  "started": "2026-09-10T17:17:16Z"
