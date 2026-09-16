@@ -1,6 +1,18 @@
 {
- "cash": 544.9418540000001,
- "positions": {},
+ "cash": 514.9218540000002,
+ "positions": {
+  "Bqt8VSXVd9W3jtvQRc6BDeJSo25RjSUfdiR4a7fYpump": {
+   "sym": "SNOWFLAKE",
+   "qty": 136371.400205,
+   "cost": 30.02,
+   "opened": "2026-09-16T04:31:08Z",
+   "peak": 0.0002181,
+   "entry": 0.0002201341333657387,
+   "mig": 1789531875.0,
+   "cur_price": 0.0002181,
+   "mark": 0.0002181
+  }
+ },
  "trades": [
   {
    "t": "2026-09-15T17:10:46Z",
@@ -109,6 +121,18 @@
    "slip": 0.0203,
    "quote": "jup",
    "reason": "tp1"
+  },
+  {
+   "t": "2026-09-16T04:31:08Z",
+   "side": "buy",
+   "sym": "SNOWFLAKE",
+   "addr": "Bqt8VSXVd9W3jtvQRc6BDeJSo25RjSUfdiR4a7fYpump",
+   "price": 0.0002181,
+   "fill": 0.000220134133,
+   "usd": 30.02,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "postgrad 20min"
   }
  ],
  "equity": [
@@ -683,6 +707,10 @@
   {
    "t": "2026-09-16T04:26:09Z",
    "v": 544.94
+  },
+  {
+   "t": "2026-09-16T04:31:08Z",
+   "v": 544.66
   }
  ],
  "started": "2026-09-15T16:35:47Z",
