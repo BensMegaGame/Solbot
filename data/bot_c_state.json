@@ -1,6 +1,18 @@
 {
- "cash": 505.35736600000024,
- "positions": {},
+ "cash": 475.33736600000026,
+ "positions": {
+  "t47ebGYK8GjhQU37ktg6SKoQmNLMjobmC2mZfk3pump": {
+   "sym": "SmartPock",
+   "qty": 335336.092645,
+   "cost": 30.02,
+   "opened": "2026-09-16T07:40:47Z",
+   "peak": 8.4e-05,
+   "entry": 8.952212618455106e-05,
+   "mig": 1789543841.0,
+   "cur_price": 8.4e-05,
+   "mark": 8.4e-05
+  }
+ },
  "trades": [
   {
    "t": "2026-09-15T17:10:46Z",
@@ -190,6 +202,18 @@
    "slip": 0.0115,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-16T07:40:47Z",
+   "side": "buy",
+   "sym": "SmartPock",
+   "addr": "t47ebGYK8GjhQU37ktg6SKoQmNLMjobmC2mZfk3pump",
+   "price": 8.4e-05,
+   "fill": 8.9522126e-05,
+   "usd": 30.02,
+   "slip": 0.0146,
+   "quote": "jup",
+   "reason": "postgrad 10min"
   }
  ],
  "equity": [
@@ -916,6 +940,10 @@
   {
    "t": "2026-09-16T07:35:46Z",
    "v": 505.36
+  },
+  {
+   "t": "2026-09-16T07:40:47Z",
+   "v": 503.51
   }
  ],
  "started": "2026-09-15T16:35:47Z",
