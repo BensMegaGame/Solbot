@@ -1,18 +1,6 @@
 {
- "cash": 377.5708740000004,
- "positions": {
-  "7gKKy2p1SaMkRFPX7caF96YpfuMMpDj82ZpjaffuvaU5": {
-   "sym": "PARK",
-   "qty": 189084.90756,
-   "cost": 30.02,
-   "opened": "2026-09-16T13:15:46Z",
-   "peak": 0.0003015,
-   "entry": 0.00015876465439460904,
-   "mig": 1789563226.0,
-   "cur_price": 0.0001492,
-   "mark": 0.0001492
-  }
- },
+ "cash": 401.4885340000004,
+ "positions": {},
  "trades": [
   {
    "t": "2026-09-15T17:10:46Z",
@@ -347,6 +335,21 @@
    "held_h": 0.2,
    "frac": 1.0,
    "slip": 0.0,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-16T14:10:42Z",
+   "side": "sell",
+   "sym": "PARK",
+   "addr": "7gKKy2p1SaMkRFPX7caF96YpfuMMpDj82ZpjaffuvaU5",
+   "price": 0.0001294,
+   "usd": 23.92,
+   "pnl": -6.1,
+   "peak_x": 1.899,
+   "held_h": 0.9,
+   "frac": 1.0,
+   "slip": 0.0161,
    "quote": "jup",
    "reason": "stop"
   }
@@ -1387,6 +1390,10 @@
   {
    "t": "2026-09-16T14:05:50Z",
    "v": 405.78
+  },
+  {
+   "t": "2026-09-16T14:10:43Z",
+   "v": 401.49
   }
  ],
  "started": "2026-09-15T16:35:47Z",
