@@ -1,5 +1,5 @@
 {
- "cash": 189.41434861795582,
+ "cash": 109.39434861795583,
  "positions": {
   "G1iBvjhZ9wpGUZdQcvhRSqjow3x6xetsnmEBBMm1pump": {
    "sym": "PITCOIN",
@@ -16,6 +16,21 @@
    "mark": 0.0002055,
    "cur_price": 0.0002055,
    "tp1": true
+  },
+  "F8Sc8HoZvJcMrTY6vBsetTqGPv6XQmM2XgVAZo1sSTNK": {
+   "sym": "MARINE",
+   "qty": 410315.802125,
+   "cost": 80.02,
+   "opened": "2026-09-16T14:57:24Z",
+   "peak": 0.0001874,
+   "entry": 0.00019502051733221435,
+   "tier": "T4",
+   "stop": 0.25,
+   "tp1_gain": 0.4,
+   "moon_x": 3.0,
+   "max_hold_h": 48,
+   "no_quote_since": "2026-09-16T14:57:24Z",
+   "mark": 0.0
   }
  },
  "trades": [
@@ -749,6 +764,18 @@
    "slip": 0.0073,
    "quote": "jup",
    "reason": "tp1"
+  },
+  {
+   "t": "2026-09-16T14:57:24Z",
+   "side": "buy",
+   "sym": "MARINE",
+   "addr": "F8Sc8HoZvJcMrTY6vBsetTqGPv6XQmM2XgVAZo1sSTNK",
+   "price": 0.0001874,
+   "fill": 0.000195020517,
+   "usd": 80.02,
+   "slip": 0.0813,
+   "quote": "jup",
+   "reason": "T4 chg -26%"
   }
  ],
  "equity": [
@@ -3191,9 +3218,13 @@
   {
    "t": "2026-09-16T14:51:28Z",
    "v": 209.31
+  },
+  {
+   "t": "2026-09-16T14:57:24Z",
+   "v": 129.29
   }
  ],
  "started": "2026-09-14T12:02:41Z",
  "strategy": "overreaction_fade",
- "universe_n": 500
+ "universe_n": 501
 }
