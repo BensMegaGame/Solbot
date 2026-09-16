@@ -10,8 +10,8 @@
    "entry": 0.0006893543867276652,
    "entry_liq": 82166.84,
    "entry_vol": 40539.49,
-   "cur_price": 0.0005257,
-   "mark": 0.0005257
+   "cur_price": 0.0005255,
+   "mark": 0.0005255
   },
   "92G6qAymyDNQe4kaBoB9h2fz6mzsYJrEV3T5BetZpump": {
    "sym": "TIT",
@@ -34,8 +34,8 @@
    "entry": 0.0002774009623007094,
    "entry_liq": 61969.9,
    "entry_vol": 276288.95,
-   "cur_price": 0.0002326,
-   "mark": 0.0002326
+   "cur_price": 0.0002322,
+   "mark": 0.0002322
   },
   "CsHrGJ3HpJV76ecFm4vZrpFSLNQaP1dwzj8e2cvkpump": {
    "sym": "PERIHEL",
@@ -47,7 +47,8 @@
    "entry_liq": 14067.39,
    "entry_vol": 41760,
    "cur_price": 2.871e-05,
-   "mark": 2.871e-05
+   "mark": 2.871e-05,
+   "no_quote_since": "2026-09-16T16:15:51Z"
   },
   "7nLukVng5teXze14rum9v57juXLjUp7JJnCveko1pump": {
    "sym": "Martians",
@@ -58,8 +59,8 @@
    "entry": 0.00036036970038882867,
    "entry_liq": 69381.39,
    "entry_vol": 57940.34,
-   "cur_price": 0.0003173,
-   "mark": 0.0003173
+   "cur_price": 0.0003136,
+   "mark": 0.0003136
   }
  },
  "trades": [
@@ -4970,6 +4971,10 @@
   {
    "t": "2026-09-16T16:10:48Z",
    "v": 377.59
+  },
+  {
+   "t": "2026-09-16T16:15:51Z",
+   "v": 376.87
   }
  ],
  "started": "2026-09-11T10:50:37Z",
@@ -4981,6 +4986,6 @@
  },
  "streak": 2,
  "half_left": 0,
- "watchlist": 68,
+ "watchlist": 69,
  "strategy": "second_wave"
 }
