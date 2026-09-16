@@ -1,18 +1,6 @@
 {
- "cash": 490.38301000000024,
- "positions": {
-  "7LUGk6sHUxPLyZip1Dko8Yp8Y3HKppJqjqZi1UCLpump": {
-   "sym": "AYANE",
-   "qty": 240815.018458,
-   "cost": 30.02,
-   "opened": "2026-09-16T06:55:44Z",
-   "peak": 0.00012,
-   "entry": 0.00012465999916544125,
-   "mig": 1789540991.0,
-   "cur_price": 0.00012,
-   "mark": 0.00012
-  }
- },
+ "cash": 505.35736600000024,
+ "positions": {},
  "trades": [
   {
    "t": "2026-09-15T17:10:46Z",
@@ -187,6 +175,21 @@
    "slip": 0.0123,
    "quote": "jup",
    "reason": "postgrad 12min"
+  },
+  {
+   "t": "2026-09-16T07:00:44Z",
+   "side": "sell",
+   "sym": "AYANE",
+   "addr": "7LUGk6sHUxPLyZip1Dko8Yp8Y3HKppJqjqZi1UCLpump",
+   "price": 7.559e-05,
+   "usd": 14.97,
+   "pnl": -15.05,
+   "peak_x": 0.963,
+   "held_h": 0.1,
+   "frac": 1.0,
+   "slip": 0.0115,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -881,6 +884,10 @@
   {
    "t": "2026-09-16T06:55:44Z",
    "v": 519.28
+  },
+  {
+   "t": "2026-09-16T07:00:45Z",
+   "v": 505.36
   }
  ],
  "started": "2026-09-15T16:35:47Z",
