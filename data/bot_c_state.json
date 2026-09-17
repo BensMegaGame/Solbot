@@ -1,5 +1,5 @@
 {
- "cash": 287.75723100000056,
+ "cash": 257.7372310000006,
  "positions": {
   "FRYHjobpFy4sgUAqViE7siWMoERKKuZSjzGGaD4ypump": {
    "sym": "FlyP",
@@ -9,8 +9,8 @@
    "peak": 0.0001847,
    "entry": 0.00010138210355614463,
    "mig": 1789674305.0,
-   "cur_price": 0.0001847,
-   "mark": 0.0001847
+   "cur_price": 0.0001511,
+   "mark": 0.0001511
   },
   "DsqWokHaPHi6p9TtkEFryf6qBQFxYkUiGss2sFnBpump": {
    "sym": "juicelee",
@@ -20,8 +20,19 @@
    "peak": 6.592e-05,
    "entry": 6.580821671981723e-05,
    "mig": 1789675813.0,
-   "cur_price": 6.592e-05,
-   "mark": 6.592e-05
+   "cur_price": 6.315e-05,
+   "mark": 6.315e-05
+  },
+  "6R44MgLEvsB6yskz1Ugfsx7fZpjpSKXM4fnrkfYUpump": {
+   "sym": "inu",
+   "qty": 481358.317927,
+   "cost": 30.02,
+   "opened": "2026-09-17T20:28:35Z",
+   "peak": 6.755e-05,
+   "entry": 6.236518385988015e-05,
+   "mig": 1789675060.0,
+   "cur_price": 6.755e-05,
+   "mark": 6.755e-05
   }
  },
  "trades": [
@@ -588,6 +599,18 @@
    "slip": 0.0136,
    "quote": "jup",
    "reason": "postgrad 11min"
+  },
+  {
+   "t": "2026-09-17T20:28:35Z",
+   "side": "buy",
+   "sym": "inu",
+   "addr": "6R44MgLEvsB6yskz1Ugfsx7fZpjpSKXM4fnrkfYUpump",
+   "price": 6.755e-05,
+   "fill": 6.2365184e-05,
+   "usd": 30.02,
+   "slip": 0.0247,
+   "quote": "jup",
+   "reason": "postgrad 31min"
   }
  ],
  "equity": [
@@ -3078,6 +3101,10 @@
   {
    "t": "2026-09-17T20:21:41Z",
    "v": 372.52
+  },
+  {
+   "t": "2026-09-17T20:28:35Z",
+   "v": 363.8
   }
  ],
  "started": "2026-09-15T16:35:47Z",
