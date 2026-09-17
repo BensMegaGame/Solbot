@@ -1,6 +1,18 @@
 {
- "cash": 327.6959180000006,
- "positions": {},
+ "cash": 297.6759180000006,
+ "positions": {
+  "DuUbpUi4yJuam1a8LhG3qDxnfRDppeMRTayZyEdQpump": {
+   "sym": "PIMSY",
+   "qty": 502320.976638,
+   "cost": 30.02,
+   "opened": "2026-09-17T20:41:18Z",
+   "peak": 5.004e-05,
+   "entry": 5.9762584873364856e-05,
+   "mig": 1789674836.0,
+   "cur_price": 5.004e-05,
+   "mark": 5.004e-05
+  }
+ },
  "trades": [
   {
    "t": "2026-09-15T17:10:46Z",
@@ -622,6 +634,18 @@
    "slip": 0.0088,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-17T20:41:18Z",
+   "side": "buy",
+   "sym": "PIMSY",
+   "addr": "DuUbpUi4yJuam1a8LhG3qDxnfRDppeMRTayZyEdQpump",
+   "price": 5.004e-05,
+   "fill": 5.9762585e-05,
+   "usd": 30.02,
+   "slip": 0.0182,
+   "quote": "jup",
+   "reason": "postgrad 47min"
   }
  ],
  "equity": [
@@ -3124,6 +3148,10 @@
   {
    "t": "2026-09-17T20:36:17Z",
    "v": 327.7
+  },
+  {
+   "t": "2026-09-17T20:41:19Z",
+   "v": 322.81
   }
  ],
  "started": "2026-09-15T16:35:47Z",

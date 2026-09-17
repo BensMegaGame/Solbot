@@ -1,5 +1,5 @@
 {
- "cash": 172.86158994111182,
+ "cash": 122.8415899411118,
  "positions": {
   "5GefefPX1mDs6ZJB1apYmz6fCTCiNJpHturZ9bvFpump": {
    "sym": "Pumpoween",
@@ -8,8 +8,8 @@
    "opened": "2026-09-12T21:25:13Z",
    "peak": 0.0007295,
    "entry": 0.0004150532496,
-   "cur_price": 0.0006358,
-   "mark": 0.0006358
+   "cur_price": 0.0006384,
+   "mark": 0.0006384
   },
   "Hy1LfQLL4zLQihmiQKZm7DQzXm5K8aVSfKtdHFYXbKMm": {
    "sym": "AMBA",
@@ -18,8 +18,8 @@
    "opened": "2026-09-13T03:20:17Z",
    "peak": 0.002489,
    "entry": 0.0008846074234799999,
-   "cur_price": 0.000892,
-   "mark": 0.000892,
+   "cur_price": 0.000973,
+   "mark": 0.000973,
    "tp0": true
   },
   "4ZYonK7RhCaQ24YmGDwJpz1g8WbjyrLZQ8AcXf28WYPt": {
@@ -29,8 +29,8 @@
    "opened": "2026-09-16T02:55:31Z",
    "peak": 0.001169,
    "entry": 0.0006958851466256757,
-   "cur_price": 0.0006896,
-   "mark": 0.0006896
+   "cur_price": 0.0006843,
+   "mark": 0.0006843
   },
   "DvdmEnztCmXwBnAbedD48XVGZJSxq31zNvnyftXdpump": {
    "sym": "pill",
@@ -39,8 +39,8 @@
    "opened": "2026-09-16T11:45:08Z",
    "peak": 0.003606,
    "entry": 0.0013485537851440767,
-   "cur_price": 0.002405,
-   "mark": 0.002405,
+   "cur_price": 0.002366,
+   "mark": 0.002366,
    "tp0": true
   },
   "5THtNEGTF1y67eRWvcgz3MomDZePCVx1xdskHHeCpump": {
@@ -50,8 +50,8 @@
    "opened": "2026-09-17T04:25:15Z",
    "peak": 0.0002884,
    "entry": 0.00024075348552984524,
-   "cur_price": 0.0001525,
-   "mark": 0.0001525
+   "cur_price": 0.0001505,
+   "mark": 0.0001505
   },
   "A9AHYeqb7nQk7LZUraw7rBCzYRjy2DRvE6NqWfFHKRdH": {
    "sym": "HUHCAT",
@@ -60,8 +60,18 @@
    "opened": "2026-09-17T15:00:50Z",
    "peak": 0.001442,
    "entry": 0.0008410783339787067,
-   "cur_price": 0.0008398,
-   "mark": 0.0008398
+   "cur_price": 0.0007919,
+   "mark": 0.0007919
+  },
+  "DSgjVUFC6NA59YuxiEDSxgs6zP4jjwSuoYJ3uS7WboeH": {
+   "sym": "SATS",
+   "qty": 272405.944496,
+   "cost": 50.02,
+   "opened": "2026-09-17T20:40:22Z",
+   "peak": 0.0001728,
+   "entry": 0.0001836230119447136,
+   "cur_price": 0.0001728,
+   "mark": 0.0001728
   }
  },
  "trades": [
@@ -824,6 +834,18 @@
    "slip": 0.0017,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-17T20:40:22Z",
+   "side": "buy",
+   "sym": "SATS",
+   "addr": "DSgjVUFC6NA59YuxiEDSxgs6zP4jjwSuoYJ3uS7WboeH",
+   "price": 0.0001728,
+   "fill": 0.000183623012,
+   "usd": 50.02,
+   "slip": 0.0794,
+   "quote": "jup",
+   "reason": "screener"
   }
  ],
  "equity": [
@@ -6958,6 +6980,10 @@
   {
    "t": "2026-09-17T20:35:56Z",
    "v": 485.99
+  },
+  {
+   "t": "2026-09-17T20:40:55Z",
+   "v": 482.07
   }
  ],
  "started": "2026-09-10T17:17:16Z"
