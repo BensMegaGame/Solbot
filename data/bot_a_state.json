@@ -1,5 +1,5 @@
 {
- "cash": 118.30871994111183,
+ "cash": 154.48792994111182,
  "positions": {
   "5GefefPX1mDs6ZJB1apYmz6fCTCiNJpHturZ9bvFpump": {
    "sym": "Pumpoween",
@@ -8,8 +8,8 @@
    "opened": "2026-09-12T21:25:13Z",
    "peak": 0.0007295,
    "entry": 0.0004150532496,
-   "cur_price": 0.0007039,
-   "mark": 0.0007039
+   "cur_price": 0.0007003,
+   "mark": 0.0007003
   },
   "Hy1LfQLL4zLQihmiQKZm7DQzXm5K8aVSfKtdHFYXbKMm": {
    "sym": "AMBA",
@@ -18,8 +18,8 @@
    "opened": "2026-09-13T03:20:17Z",
    "peak": 0.002489,
    "entry": 0.0008846074234799999,
-   "cur_price": 0.001297,
-   "mark": 0.001297,
+   "cur_price": 0.001256,
+   "mark": 0.001256,
    "tp0": true
   },
   "4ZYonK7RhCaQ24YmGDwJpz1g8WbjyrLZQ8AcXf28WYPt": {
@@ -39,8 +39,8 @@
    "opened": "2026-09-16T11:45:08Z",
    "peak": 0.003606,
    "entry": 0.0013485537851440767,
-   "cur_price": 0.002266,
-   "mark": 0.002266,
+   "cur_price": 0.002188,
+   "mark": 0.002188,
    "tp0": true
   },
   "4775QEyTS7ECpvhbeEg1a5XUjpK6CtEJwRpw6vvwpump": {
@@ -50,21 +50,9 @@
    "opened": "2026-09-16T16:05:19Z",
    "peak": 0.0007168,
    "entry": 0.0002716052443959384,
-   "cur_price": 0.00016,
-   "mark": 0.00016,
+   "cur_price": 0.0001676,
+   "mark": 0.0001676,
    "tp0": true
-  },
-  "G4vqe8KAcRGTb7Kc55n9sz43aR4ugTPdSeUnAXZhpump": {
-   "sym": "PUMPCAT",
-   "qty": 41933.622856125,
-   "cost": 18.7575,
-   "opened": "2026-09-16T22:05:46Z",
-   "peak": 0.00137,
-   "entry": 0.0004473140816942365,
-   "cur_price": 0.0009281,
-   "mark": 0.0009281,
-   "tp0": true,
-   "tp1": true
   },
   "5THtNEGTF1y67eRWvcgz3MomDZePCVx1xdskHHeCpump": {
    "sym": "Saturween",
@@ -73,18 +61,18 @@
    "opened": "2026-09-17T04:25:15Z",
    "peak": 0.0002884,
    "entry": 0.00024075348552984524,
-   "cur_price": 0.0002324,
-   "mark": 0.0002324
+   "cur_price": 0.0002342,
+   "mark": 0.0002342
   },
   "A9AHYeqb7nQk7LZUraw7rBCzYRjy2DRvE6NqWfFHKRdH": {
    "sym": "HUHCAT",
    "qty": 59471.273934,
    "cost": 50.02,
    "opened": "2026-09-17T15:00:50Z",
-   "peak": 0.0009867,
+   "peak": 0.001058,
    "entry": 0.0008410783339787067,
-   "cur_price": 0.0009867,
-   "mark": 0.0009867
+   "cur_price": 0.001058,
+   "mark": 0.001058
   }
  },
  "trades": [
@@ -817,6 +805,21 @@
    "slip": 0.006,
    "quote": "jup",
    "reason": "screener"
+  },
+  {
+   "t": "2026-09-17T15:50:08Z",
+   "side": "sell",
+   "sym": "PUMPCAT",
+   "addr": "G4vqe8KAcRGTb7Kc55n9sz43aR4ugTPdSeUnAXZhpump",
+   "price": 0.0008616,
+   "usd": 36.18,
+   "pnl": 17.42,
+   "peak_x": 3.063,
+   "held_h": 17.7,
+   "frac": 1.0,
+   "slip": 0.0384,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
@@ -6719,6 +6722,10 @@
   {
    "t": "2026-09-17T15:45:12Z",
    "v": 554.02
+  },
+  {
+   "t": "2026-09-17T15:50:55Z",
+   "v": 552.59
   }
  ],
  "started": "2026-09-10T17:17:16Z"
