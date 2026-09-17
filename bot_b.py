@@ -94,24 +94,18 @@ query($net: [Int!]) {
                marketCap: { gte: %s, lte: %s }, liquidity: { gte: %s } }
     rankings: [{ attribute: volume24, direction: DESC }]
     limit: 200
-  ) { results { token { address symbol } createdAt } }
+  ) { results { token { address symbol } } }
 }""" % (MIN_VOL24, MIN_MCAP, MAX_MCAP, MIN_LIQ)
 
 def codex_aged_candidates():
-    """Kandidaten im Zielalterfenster. Das Alter wird hier gefiltert, NICHT serverseitig: der createdAt-Filter
-    in Codex' filterTokens laesst sich mit den uebrigen Filtern nicht zuverlaessig kombinieren (die Abfrage kam
-    dauerhaft leer zurueck, 'last_fresh_n: 0'). Wir holen daher wie Bot E nur nach MCap/Liquiditaet/Volumen
-    und werfen alles ausserhalb von MIN_AGE_D..MAX_AGE_D selbst weg - ein Feld mehr in der Antwort, sonst gleich."""
-    now = time.time()
+    """Kandidaten nach MCap/Liquiditaet/Volumen - exakt das Abfragemuster, das bei Bot E funktioniert.
+    KEIN Alter in der Abfrage: weder als Filter noch als Ausgabefeld (beides liess die Antwort dauerhaft
+    leer zurueckkommen, 'last_fresh_n: 0'). Das Altersfenster MIN_AGE_D..MAX_AGE_D wird ohnehin weiter
+    unten in der Signal-Logik geprueft - dort steht 'age_d' aus DexScreeners pairCreatedAt zur Verfuegung,
+    das ist die verlaesslichere Quelle. Die Discovery liefert hier also nur den Rohtopf."""
     d = codex(Q_AGED, {"net": [SOLANA_NET]})
     if not d: return set()
-    out = set()
-    for r in (d.get("filterTokens") or {}).get("results") or []:
-        ts = r.get("createdAt")
-        if ts is None: continue
-        age_d = (now - float(ts)) / DAY
-        if MIN_AGE_D <= age_d <= MAX_AGE_D: out.add(r["token"]["address"])
-    return out
+    return {r["token"]["address"] for r in (d.get("filterTokens") or {}).get("results") or []}
 
 GT = "https://api.geckoterminal.com/api/v2/networks/solana"
 
