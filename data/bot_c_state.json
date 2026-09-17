@@ -1,18 +1,6 @@
 {
- "cash": 320.03479300000055,
- "positions": {
-  "61ERPndXPVZHcUyPcKp1pJ1Ces8ZkxUwbkZBy4vmpump": {
-   "sym": "jewallinu",
-   "qty": 132465.715913,
-   "cost": 30.02,
-   "opened": "2026-09-17T19:51:22Z",
-   "peak": 0.0002152,
-   "entry": 0.00022662467637827398,
-   "mig": 1789673820.0,
-   "cur_price": 0.0002152,
-   "mark": 0.0002152
-  }
- },
+ "cash": 347.7972310000005,
+ "positions": {},
  "trades": [
   {
    "t": "2026-09-15T17:10:46Z",
@@ -538,6 +526,21 @@
    "slip": 0.0145,
    "quote": "jup",
    "reason": "postgrad 14min"
+  },
+  {
+   "t": "2026-09-17T19:56:22Z",
+   "side": "sell",
+   "sym": "jewallinu",
+   "addr": "61ERPndXPVZHcUyPcKp1pJ1Ces8ZkxUwbkZBy4vmpump",
+   "price": 0.000181,
+   "usd": 27.76,
+   "pnl": -2.26,
+   "peak_x": 0.95,
+   "held_h": 0.1,
+   "frac": 1.0,
+   "slip": 0.052,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -3004,6 +3007,10 @@
   {
    "t": "2026-09-17T19:51:22Z",
    "v": 348.54
+  },
+  {
+   "t": "2026-09-17T19:56:22Z",
+   "v": 347.8
   }
  ],
  "started": "2026-09-15T16:35:47Z",
