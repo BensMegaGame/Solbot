@@ -1,6 +1,18 @@
 {
- "cash": 401.4885340000004,
- "positions": {},
+ "cash": 371.46853400000043,
+ "positions": {
+  "8v5CpeLXfK3Qkbdq4FsSSfixjB7zCSXVwrTCq12QVgTy": {
+   "sym": "CATS",
+   "qty": 506272.798358,
+   "cost": 30.02,
+   "opened": "2026-09-17T17:06:16Z",
+   "peak": 5.925e-05,
+   "entry": 5.9296095103991735e-05,
+   "mig": 1789664015.0,
+   "cur_price": 5.925e-05,
+   "mark": 5.925e-05
+  }
+ },
  "trades": [
   {
    "t": "2026-09-15T17:10:46Z",
@@ -352,6 +364,18 @@
    "slip": 0.0161,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-17T17:06:16Z",
+   "side": "buy",
+   "sym": "CATS",
+   "addr": "8v5CpeLXfK3Qkbdq4FsSSfixjB7zCSXVwrTCq12QVgTy",
+   "price": 5.925e-05,
+   "fill": 5.9296095e-05,
+   "usd": 30.02,
+   "slip": 0.0133,
+   "quote": "jup",
+   "reason": "postgrad 13min"
   }
  ],
  "equity": [
@@ -2682,6 +2706,10 @@
   {
    "t": "2026-09-17T17:01:07Z",
    "v": 401.49
+  },
+  {
+   "t": "2026-09-17T17:06:17Z",
+   "v": 401.47
   }
  ],
  "started": "2026-09-15T16:35:47Z",
