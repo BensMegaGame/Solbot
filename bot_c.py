@@ -16,7 +16,10 @@ SOLANA = 1399811149
 POLL_MIN = 10                        # Codex-Abfrage hoechstens alle 10 Min (~4.300 Calls/Monat)
 PATH_HOURS = 3                       # Pfad-Logging je Token nach Migration
 # ---- Einstieg ----
-ENTRY_MIN, ENTRY_MAX = 10, 40        # Minuten nach Migration (Startwert; nach analyze_c.py anpassen)
+ENTRY_MIN, ENTRY_MAX = 8, 60         # v2.1: Fenster von 10-40 auf 8-60 Min geweitet. Das ist der richtige Hebel
+                                     # fuer mehr Trades: er kostet nichts an Datenqualitaet. Die Quote-Sicherung
+                                     # dagegen zu lockern wuerde Trades zurueckholen, deren Prozentzahlen frei
+                                     # erfunden sind (SOF stand "bei 2x", ohne dass sich der Markt bewegt hatte).
 # v2.3 - kalibriert an 574 geloggten Pfaden (siehe analyze_c.py):
 # Rug-Quote ohne Filter 38 %. ALLE 14 gekauften Rugs hatten > 189.000 $ Startliquiditaet -
 # eine echte Pump.fun-Migration startet mit ~12-15k. Hohe Liquiditaet = kuenstlich aufgeblasen.
@@ -148,12 +151,17 @@ def main():
         x = px / pos["entry"]; held_h = held_seconds(pos) / 3600
         why = None
         if x <= 1 + STOP: why = "stop"
-        elif x >= TP1_X and not pos.get("tp1"): pos["tp1"] = True; pf.sell(a, px, TP1_FRAC, liq, "tp1"); continue
+        elif x >= TP1_X and not pos.get("tp1"):
+            pos["tp1"] = True; pf.sell(a, px, TP1_FRAC, liq, "tp1")
+            if a not in st["positions"]: cooldown[a] = today + COOLDOWN_D   # v2.1: TP1_FRAC=1.0 schliesst ganz
+            continue
         elif pos.get("tp1") and px / pos["peak"] - 1 <= TRAIL: why = "trail"
         elif held_h >= MAX_HOLD_H: why = "time"
         if why:
             pf.sell(a, px, 1.0, liq, why)
-            if px < pos["entry"]: cooldown[a] = today + COOLDOWN_D
+            cooldown[a] = today + COOLDOWN_D   # v2.1: nach JEDEM Verkauf sperren, nicht nur nach Verlust.
+            # Vorher wurde SOF um 17:21 mit Gewinn geschlossen und in derselben Minute neu gekauft (dann -21 $):
+            # ein Token, den wir gerade verlassen haben, ist kein neuer Kandidat.
     # 4) Einstiege im Zeitfenster
     checks = []
     for a, c in cands.items():
