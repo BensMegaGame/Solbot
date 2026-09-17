@@ -1,18 +1,6 @@
 {
- "cash": 356.2412260000005,
- "positions": {
-  "9n8rBV1L917EUSVDa9KTX2uMxvPfKZxLLtwKnYs8pump": {
-   "sym": "PAIDCAT",
-   "qty": 179126.214017,
-   "cost": 30.02,
-   "opened": "2026-09-17T17:51:16Z",
-   "peak": 0.0001949,
-   "entry": 0.00016759132751586515,
-   "mig": 1789666818.0,
-   "cur_price": 0.0001949,
-   "mark": 0.0001949
-  }
- },
+ "cash": 379.0859260000005,
+ "positions": {},
  "trades": [
   {
    "t": "2026-09-15T17:10:46Z",
@@ -484,6 +472,21 @@
    "slip": 0.0173,
    "quote": "jup",
    "reason": "postgrad 11min"
+  },
+  {
+   "t": "2026-09-17T18:11:11Z",
+   "side": "sell",
+   "sym": "PAIDCAT",
+   "addr": "9n8rBV1L917EUSVDa9KTX2uMxvPfKZxLLtwKnYs8pump",
+   "price": 0.0001278,
+   "usd": 22.84,
+   "pnl": -7.18,
+   "peak_x": 1.163,
+   "held_h": 0.3,
+   "frac": 1.0,
+   "slip": 0.0024,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -2866,6 +2869,10 @@
   {
    "t": "2026-09-17T18:06:11Z",
    "v": 391.15
+  },
+  {
+   "t": "2026-09-17T18:11:11Z",
+   "v": 379.09
   }
  ],
  "started": "2026-09-15T16:35:47Z",
