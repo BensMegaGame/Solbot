@@ -1,6 +1,18 @@
 {
- "cash": 379.0859260000005,
- "positions": {},
+ "cash": 349.0659260000005,
+ "positions": {
+  "96qFRSaUpmvSiFQJ49XYxcym993Yx4hC9WjMwLdYpump": {
+   "sym": "PAIDPONS",
+   "qty": 165209.398221,
+   "cost": 30.02,
+   "opened": "2026-09-17T18:21:13Z",
+   "peak": 0.0002241,
+   "entry": 0.00018170879092388166,
+   "mig": 1789668355.0,
+   "cur_price": 0.0002241,
+   "mark": 0.0002241
+  }
+ },
  "trades": [
   {
    "t": "2026-09-15T17:10:46Z",
@@ -487,6 +499,18 @@
    "slip": 0.0024,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-17T18:21:13Z",
+   "side": "buy",
+   "sym": "PAIDPONS",
+   "addr": "96qFRSaUpmvSiFQJ49XYxcym993Yx4hC9WjMwLdYpump",
+   "price": 0.0002241,
+   "fill": 0.000181708791,
+   "usd": 30.02,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "postgrad 15min"
   }
  ],
  "equity": [
@@ -2877,6 +2901,10 @@
   {
    "t": "2026-09-17T18:16:12Z",
    "v": 379.09
+  },
+  {
+   "t": "2026-09-17T18:21:14Z",
+   "v": 386.09
   }
  ],
  "started": "2026-09-15T16:35:47Z",
