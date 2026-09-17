@@ -1,5 +1,5 @@
 {
- "cash": 122.8415899411118,
+ "cash": 179.2152319411118,
  "positions": {
   "5GefefPX1mDs6ZJB1apYmz6fCTCiNJpHturZ9bvFpump": {
    "sym": "Pumpoween",
@@ -8,8 +8,8 @@
    "opened": "2026-09-12T21:25:13Z",
    "peak": 0.0007295,
    "entry": 0.0004150532496,
-   "cur_price": 0.0006105,
-   "mark": 0.0006105
+   "cur_price": 0.0006048,
+   "mark": 0.0006048
   },
   "Hy1LfQLL4zLQihmiQKZm7DQzXm5K8aVSfKtdHFYXbKMm": {
    "sym": "AMBA",
@@ -34,14 +34,15 @@
   },
   "DvdmEnztCmXwBnAbedD48XVGZJSxq31zNvnyftXdpump": {
    "sym": "pill",
-   "qty": 27818.690224500002,
-   "cost": 37.515,
+   "qty": 13909.345112250001,
+   "cost": 18.7575,
    "opened": "2026-09-16T11:45:08Z",
-   "peak": 0.003635,
+   "peak": 0.004109,
    "entry": 0.0013485537851440767,
-   "cur_price": 0.003635,
-   "mark": 0.003635,
-   "tp0": true
+   "cur_price": 0.004109,
+   "mark": 0.004109,
+   "tp0": true,
+   "tp1": true
   },
   "5THtNEGTF1y67eRWvcgz3MomDZePCVx1xdskHHeCpump": {
    "sym": "Saturween",
@@ -50,8 +51,8 @@
    "opened": "2026-09-17T04:25:15Z",
    "peak": 0.0002884,
    "entry": 0.00024075348552984524,
-   "cur_price": 0.0001898,
-   "mark": 0.0001898
+   "cur_price": 0.0001887,
+   "mark": 0.0001887
   },
   "A9AHYeqb7nQk7LZUraw7rBCzYRjy2DRvE6NqWfFHKRdH": {
    "sym": "HUHCAT",
@@ -60,8 +61,8 @@
    "opened": "2026-09-17T15:00:50Z",
    "peak": 0.001442,
    "entry": 0.0008410783339787067,
-   "cur_price": 0.0005731,
-   "mark": 0.0005731
+   "cur_price": 0.0005083,
+   "mark": 0.0005083
   },
   "DSgjVUFC6NA59YuxiEDSxgs6zP4jjwSuoYJ3uS7WboeH": {
    "sym": "SATS",
@@ -70,8 +71,8 @@
    "opened": "2026-09-17T20:40:22Z",
    "peak": 0.0001918,
    "entry": 0.0001836230119447136,
-   "cur_price": 0.0001611,
-   "mark": 0.0001611
+   "cur_price": 0.0001706,
+   "mark": 0.0001706
   }
  },
  "trades": [
@@ -846,6 +847,21 @@
    "slip": 0.0794,
    "quote": "jup",
    "reason": "screener"
+  },
+  {
+   "t": "2026-09-17T23:40:05Z",
+   "side": "sell",
+   "sym": "pill",
+   "addr": "DvdmEnztCmXwBnAbedD48XVGZJSxq31zNvnyftXdpump",
+   "price": 0.004109,
+   "usd": 56.37,
+   "pnl": 37.62,
+   "peak_x": 3.047,
+   "held_h": 35.9,
+   "frac": 0.5,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "tp1"
   }
  ],
  "equity": [
@@ -7124,6 +7140,10 @@
   {
    "t": "2026-09-17T23:35:55Z",
    "v": 506.14
+  },
+  {
+   "t": "2026-09-17T23:40:53Z",
+   "v": 516.36
   }
  ],
  "started": "2026-09-10T17:17:16Z"
