@@ -1,6 +1,18 @@
 {
- "cash": 347.7972310000005,
- "positions": {},
+ "cash": 317.77723100000054,
+ "positions": {
+  "FRYHjobpFy4sgUAqViE7siWMoERKKuZSjzGGaD4ypump": {
+   "sym": "FlyP",
+   "qty": 296107.48788,
+   "cost": 30.02,
+   "opened": "2026-09-17T20:01:36Z",
+   "peak": 9.144e-05,
+   "entry": 0.00010138210355614463,
+   "mig": 1789674305.0,
+   "cur_price": 9.144e-05,
+   "mark": 9.144e-05
+  }
+ },
  "trades": [
   {
    "t": "2026-09-15T17:10:46Z",
@@ -541,6 +553,18 @@
    "slip": 0.052,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-17T20:01:36Z",
+   "side": "buy",
+   "sym": "FlyP",
+   "addr": "FRYHjobpFy4sgUAqViE7siWMoERKKuZSjzGGaD4ypump",
+   "price": 9.144e-05,
+   "fill": 0.000101382104,
+   "usd": 30.02,
+   "slip": 0.0129,
+   "quote": "jup",
+   "reason": "postgrad 16min"
   }
  ],
  "equity": [
@@ -3011,6 +3035,10 @@
   {
    "t": "2026-09-17T19:56:22Z",
    "v": 347.8
+  },
+  {
+   "t": "2026-09-17T20:01:36Z",
+   "v": 344.85
   }
  ],
  "started": "2026-09-15T16:35:47Z",
