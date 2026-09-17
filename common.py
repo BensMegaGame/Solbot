@@ -17,6 +17,13 @@ HELIUS_KEY = os.environ.get("HELIUS_KEY")
 JUP_QUOTE  = "https://api.jup.ag/swap/v1/quote"
 USDC       = "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
 MAX_IMPACT = 0.10          # Kauf ablehnen, wenn Jupiter > 10 % Price-Impact meldet (macht ein echter Bot auch)
+BUY_DEVIATION = 1.25       # v2.8: KAUF-Sicherung. Jupiter ist die Wahrheit (dort wird gefuellt), DexScreener kann
+                           # bei frisch migrierten Tokens stark hinterherhinken. Weicht der Fill um mehr als 25 %
+                           # vom Referenzkurs ab, passen die beiden Quellen nicht zusammen: der Einstand waere
+                           # dann gegen einen falschen Kurs gemessen und jede spaetere Prozentangabe verfaelscht
+                           # (SOF: Fill 0,000245 vs. Kurs 0,00054 -> Position stand sofort "bei 2x", ohne dass
+                           # sich der Markt bewegt hatte, und der 3x-Ausstieg loeste bei echten 2x aus).
+                           # Beim Kauf ist Aussetzen gratis - es gibt immer einen naechsten Kandidaten.
 MAX_DEVIATION = 6          # Sicherung gegen kaputte Quotes: weicht der Jupiter-Fill um mehr als das 6-fache vom
                            # zuletzt bekannten Kurs ab (z.B. Route ueber einen fast leeren Pool), wird NICHT gehandelt.
 STALE_ZERO_H = 6           # Position ohne Kurs seit > 6 h -> mit 0 bewerten (tot/gerugt), nicht mit Einstand
@@ -132,8 +139,9 @@ class Paper:
                 print(f"  {sym}: impact {impact:.1%} > {MAX_IMPACT:.0%} -> kein Kauf"); return False
             qty = out_raw / 10 ** dec
             fill_px = usd / qty if qty else 0
-            if price and fill_px and not (price / MAX_DEVIATION <= fill_px <= price * MAX_DEVIATION):
-                print(f"  {sym}: Jupiter-Fill {fill_px:.8g} weicht >{MAX_DEVIATION}x von Kurs {price:.8g} ab -> verworfen (kaputte Quote?)"); return False
+            if price and fill_px and not (price / BUY_DEVIATION <= fill_px <= price * BUY_DEVIATION):
+                print(f"  {sym}: Jupiter-Fill {fill_px:.8g} weicht {fill_px/price-1:+.0%} von Kurs {price:.8g} ab -> kein Kauf")
+                return False
             cost = usd + GAS_USD                       # Jupiter-Out enthaelt schon DEX-Fees + Impact
             if cost > self.s["cash"]: return False
             slip = impact; src = "jup"
@@ -165,6 +173,12 @@ class Paper:
             out_raw, slip = q
             fill_px = (out_raw / 1e6) / qty if qty else 0
             ref = pos.get("cur_price") or price
+            # v2.8: Beim VERKAUF wird eine Abweichung nur protokolliert, nicht blockiert. Ein Stop, der wegen einer
+            # Kursabweichung nicht ausgeloest wird, laesst die Position ungeschuetzt weiterlaufen - genau das Risiko,
+            # gegen das der Stop existiert. Nur voellig absurde Quotes (>6x) werden weiter verworfen, denn die sind
+            # nachweislich kaputt und nicht bloss ungenau.
+            if ref and fill_px and not (ref / BUY_DEVIATION <= fill_px <= ref * BUY_DEVIATION):
+                print(f"  {pos['sym']}: Verkauf-Fill {fill_px:.8g} weicht {fill_px/ref-1:+.0%} von Kurs {ref:.8g} ab - wird trotzdem ausgefuehrt")
             if ref and fill_px and not (ref / MAX_DEVIATION <= fill_px <= ref * MAX_DEVIATION):
                 print(f"  {pos['sym']}: Jupiter-Fill {fill_px:.8g} weicht >{MAX_DEVIATION}x von Kurs {ref:.8g} ab -> verworfen (kaputte Quote?)")
                 return False
