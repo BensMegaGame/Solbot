@@ -1,5 +1,5 @@
 {
- "cash": 86.31379394111185,
+ "cash": 113.91156094111186,
  "positions": {
   "5GefefPX1mDs6ZJB1apYmz6fCTCiNJpHturZ9bvFpump": {
    "sym": "Pumpoween",
@@ -18,8 +18,8 @@
    "opened": "2026-09-13T03:20:17Z",
    "peak": 0.002489,
    "entry": 0.0008846074234799999,
-   "cur_price": 0.001311,
-   "mark": 0.001311,
+   "cur_price": 0.001242,
+   "mark": 0.001242,
    "tp0": true
   },
   "4ZYonK7RhCaQ24YmGDwJpz1g8WbjyrLZQ8AcXf28WYPt": {
@@ -29,8 +29,8 @@
    "opened": "2026-09-16T02:55:31Z",
    "peak": 0.001169,
    "entry": 0.0006958851466256757,
-   "cur_price": 0.0008969,
-   "mark": 0.0008969
+   "cur_price": 0.0009082,
+   "mark": 0.0009082
   },
   "DvdmEnztCmXwBnAbedD48XVGZJSxq31zNvnyftXdpump": {
    "sym": "pill",
@@ -50,19 +50,20 @@
    "opened": "2026-09-16T16:05:19Z",
    "peak": 0.0007168,
    "entry": 0.0002716052443959384,
-   "cur_price": 0.0001581,
-   "mark": 0.0001581,
+   "cur_price": 0.0001466,
+   "mark": 0.0001466,
    "tp0": true
   },
   "G4vqe8KAcRGTb7Kc55n9sz43aR4ugTPdSeUnAXZhpump": {
    "sym": "PUMPCAT",
-   "qty": 111822.994283,
-   "cost": 50.02,
+   "qty": 83867.24571225,
+   "cost": 37.515,
    "opened": "2026-09-16T22:05:46Z",
-   "peak": 0.000781,
+   "peak": 0.0009556,
    "entry": 0.0004473140816942365,
-   "cur_price": 0.0005892,
-   "mark": 0.0005892
+   "cur_price": 0.0009556,
+   "mark": 0.0009556,
+   "tp0": true
   },
   "5THtNEGTF1y67eRWvcgz3MomDZePCVx1xdskHHeCpump": {
    "sym": "Saturween",
@@ -71,8 +72,8 @@
    "opened": "2026-09-17T04:25:15Z",
    "peak": 0.0002884,
    "entry": 0.00024075348552984524,
-   "cur_price": 0.0002323,
-   "mark": 0.0002323
+   "cur_price": 0.0002296,
+   "mark": 0.0002296
   }
  },
  "trades": [
@@ -763,6 +764,21 @@
    "slip": 0.0051,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-17T12:10:08Z",
+   "side": "sell",
+   "sym": "PUMPCAT",
+   "addr": "G4vqe8KAcRGTb7Kc55n9sz43aR4ugTPdSeUnAXZhpump",
+   "price": 0.0009556,
+   "usd": 27.6,
+   "pnl": 15.09,
+   "peak_x": 2.136,
+   "held_h": 14.1,
+   "frac": 0.25,
+   "slip": 0.0289,
+   "quote": "jup",
+   "reason": "tp0"
   }
  ],
  "equity": [
@@ -6489,6 +6505,10 @@
   {
    "t": "2026-09-17T12:05:50Z",
    "v": 509.8
+  },
+  {
+   "t": "2026-09-17T12:10:52Z",
+   "v": 547.38
   }
  ],
  "started": "2026-09-10T17:17:16Z"
