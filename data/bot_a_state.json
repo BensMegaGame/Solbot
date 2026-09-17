@@ -1,5 +1,5 @@
 {
- "cash": 154.48792994111182,
+ "cash": 172.86158994111182,
  "positions": {
   "5GefefPX1mDs6ZJB1apYmz6fCTCiNJpHturZ9bvFpump": {
    "sym": "Pumpoween",
@@ -8,8 +8,8 @@
    "opened": "2026-09-12T21:25:13Z",
    "peak": 0.0007295,
    "entry": 0.0004150532496,
-   "cur_price": 0.0006881,
-   "mark": 0.0006881
+   "cur_price": 0.0006804,
+   "mark": 0.0006804
   },
   "Hy1LfQLL4zLQihmiQKZm7DQzXm5K8aVSfKtdHFYXbKMm": {
    "sym": "AMBA",
@@ -18,8 +18,8 @@
    "opened": "2026-09-13T03:20:17Z",
    "peak": 0.002489,
    "entry": 0.0008846074234799999,
-   "cur_price": 0.001166,
-   "mark": 0.001166,
+   "cur_price": 0.001259,
+   "mark": 0.001259,
    "tp0": true
   },
   "4ZYonK7RhCaQ24YmGDwJpz1g8WbjyrLZQ8AcXf28WYPt": {
@@ -39,19 +39,8 @@
    "opened": "2026-09-16T11:45:08Z",
    "peak": 0.003606,
    "entry": 0.0013485537851440767,
-   "cur_price": 0.002027,
-   "mark": 0.002027,
-   "tp0": true
-  },
-  "4775QEyTS7ECpvhbeEg1a5XUjpK6CtEJwRpw6vvwpump": {
-   "sym": "\u30cb\u30fc\u30ca",
-   "qty": 138123.253413,
-   "cost": 37.515,
-   "opened": "2026-09-16T16:05:19Z",
-   "peak": 0.0007168,
-   "entry": 0.0002716052443959384,
-   "cur_price": 0.0001602,
-   "mark": 0.0001602,
+   "cur_price": 0.001929,
+   "mark": 0.001929,
    "tp0": true
   },
   "5THtNEGTF1y67eRWvcgz3MomDZePCVx1xdskHHeCpump": {
@@ -61,8 +50,8 @@
    "opened": "2026-09-17T04:25:15Z",
    "peak": 0.0002884,
    "entry": 0.00024075348552984524,
-   "cur_price": 0.000227,
-   "mark": 0.000227
+   "cur_price": 0.0002238,
+   "mark": 0.0002238
   },
   "A9AHYeqb7nQk7LZUraw7rBCzYRjy2DRvE6NqWfFHKRdH": {
    "sym": "HUHCAT",
@@ -71,8 +60,8 @@
    "opened": "2026-09-17T15:00:50Z",
    "peak": 0.001264,
    "entry": 0.0008410783339787067,
-   "cur_price": 0.001004,
-   "mark": 0.001004
+   "cur_price": 0.001027,
+   "mark": 0.001027
   }
  },
  "trades": [
@@ -820,6 +809,21 @@
    "slip": 0.0384,
    "quote": "jup",
    "reason": "trail"
+  },
+  {
+   "t": "2026-09-17T16:40:06Z",
+   "side": "sell",
+   "sym": "\u30cb\u30fc\u30ca",
+   "addr": "4775QEyTS7ECpvhbeEg1a5XUjpK6CtEJwRpw6vvwpump",
+   "price": 0.0001353,
+   "usd": 18.37,
+   "pnl": -19.14,
+   "peak_x": 2.639,
+   "held_h": 24.6,
+   "frac": 1.0,
+   "slip": 0.0017,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -6762,6 +6766,10 @@
   {
    "t": "2026-09-17T16:35:59Z",
    "v": 537.17
+  },
+  {
+   "t": "2026-09-17T16:40:57Z",
+   "v": 534.43
   }
  ],
  "started": "2026-09-10T17:17:16Z"
