@@ -51,8 +51,11 @@ def codex(query, variables=None):
     except Exception as e:
         print("codex fehler:", e); return None
 
+# v2.1: $after ist Float!, nicht Int! - Codex erwartet fuer createdAt einen Float. Mit Int! brach die
+# GESAMTE Abfrage mit einem Typfehler ab und fetch_migrated() lieferte still eine leere Liste; der Bot
+# arbeitete dann tagelang mit eingefrorenen Kandidaten weiter, ohne dass es auffiel.
 Q_MIGRATED = """
-query($net: [Int!], $after: Int!) {
+query($net: [Int!], $after: Float!) {
   filterTokens(
     filters: { network: $net, launchpadName: ["Pump.fun"], launchpadMigrated: true, createdAt: { gte: $after } }
     rankings: [{ attribute: volume1, direction: DESC }]
@@ -120,7 +123,10 @@ def main():
     # 1) Kandidaten von Codex (max. alle POLL_MIN Minuten), sonst die vom letzten Mal weiterbeobachten
     if now - meta["last_poll"] >= POLL_MIN * 60 - 30:
         fresh = fetch_migrated()
-        if fresh: meta["cands"] = fresh; meta["last_poll"] = now
+        meta["last_poll"] = now                 # v2.1: IMMER setzen, auch bei leerer Antwort - sonst bleibt der
+        if fresh: meta["cands"] = fresh         # Zeitstempel stehen und der stille Ausfall ist im Log unsichtbar
+        else: print("Bot C: WARNUNG - Codex lieferte 0 Kandidaten, arbeite mit Liste von "
+                    f"{(now - max((c.get('mig', 0) for c in meta['cands']), default=now)) / 3600:.1f} h alten Tokens")
     cands = {c["addr"]: c for c in meta["cands"]}
     for a, c in cands.items():
         paths.setdefault(a, {"sym": c["sym"], "mig": c["mig"], "pts": [], "q": {k: c[k] for k in ("top10", "bundler", "sniper", "insider", "holders")}})
