@@ -1,5 +1,5 @@
 {
- "cash": 202.0314370000006,
+ "cash": 202.71450900000062,
  "positions": {
   "6BkJT2Dq8FwqwZmwzSLnADoaKaFKjBad25795nGBpump": {
    "sym": "niggacat",
@@ -9,30 +9,19 @@
    "peak": 0.0001012,
    "entry": 8.761714634614032e-05,
    "mig": 1789681444.0,
-   "cur_price": 8.921e-05,
-   "mark": 8.921e-05
+   "cur_price": 8.891e-05,
+   "mark": 8.891e-05
   },
   "8BBNS7hURKU4whJ9L7BpjnAR8n9bKFiPA4ZKcYs76qHu": {
    "sym": "PCAT",
    "qty": 415988.837405,
    "cost": 30.02,
    "opened": "2026-09-17T22:56:25Z",
-   "peak": 0.0001118,
+   "peak": 0.0001158,
    "entry": 7.21653979642079e-05,
    "mig": 1789685150.0,
-   "cur_price": 0.0001118,
-   "mark": 0.0001118
-  },
-  "2FGnCG48aSBpAgTBdrAZ3URnWF2dg4XMWM6wRLYLpump": {
-   "sym": "SOLPEPE",
-   "qty": 330194.085596,
-   "cost": 30.02,
-   "opened": "2026-09-17T23:06:24Z",
-   "peak": 9.999e-05,
-   "entry": 9.091622566713734e-05,
-   "mig": 1789685828.0,
-   "cur_price": 2.139e-06,
-   "mark": 2.139e-06
+   "cur_price": 0.0001158,
+   "mark": 0.0001158
   }
  },
  "trades": [
@@ -746,6 +735,21 @@
    "slip": 0.0298,
    "quote": "jup",
    "reason": "postgrad 9min"
+  },
+  {
+   "t": "2026-09-17T23:16:27Z",
+   "side": "sell",
+   "sym": "SOLPEPE",
+   "addr": "2FGnCG48aSBpAgTBdrAZ3URnWF2dg4XMWM6wRLYLpump",
+   "price": 2.131e-06,
+   "usd": 0.68,
+   "pnl": -29.34,
+   "peak_x": 1.1,
+   "held_h": 0.2,
+   "frac": 1.0,
+   "slip": 0.0009,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -3372,6 +3376,10 @@
   {
    "t": "2026-09-17T23:11:20Z",
    "v": 279.81
+  },
+  {
+   "t": "2026-09-17T23:16:28Z",
+   "v": 281.35
   }
  ],
  "started": "2026-09-15T16:35:47Z",
