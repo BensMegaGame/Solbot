@@ -31,10 +31,12 @@ MIN_VOL24              = 30_000
 # ---------- Einstieg ----------
 MIN_HISTORY_DAYS = 3          # Tage Historie (eigene Snapshots oder GeckoTerminal-Kerzen), bevor gekauft wird
 VOL_TREND_MIN    = 1.30       # 3d-Volumen vs. 3d davor (wenn >= 6 Tage Historie), sonst gegen Vortag
-VOL_TREND_MAX    = 4.00       # v2.5: >4x = Blow-off-Spike (PERIHEL kam mit 24x rein und lief sofort -16 %). Wir wollen
+VOL_TREND_MAX    = 6.00       # v2.6: von 4 auf 6 gelockert. >6x bleibt Blow-off-Spike (PERIHEL kam mit 24x rein und
+                              # lief sofort -16 %), aber 4-6x war willkuerlich gesetzt - wir wollen
                               # anhaltend wachsendes Interesse, nicht den einen Pump-Tag.
 MIN_BUY_RATIO    = 0.56       # v2.5: 0,52-0,55 ist Rauschen (alle 5 offenen Verlierer lagen dort)
-MAX_ABOVE_AVG    = 0.25       # v2.5: nicht kaufen, wenn Preis > 25 % ueber 7-Tage-Schnitt (60 % hiess: Spitze kaufen)
+MAX_ABOVE_AVG    = 0.40       # v2.6: 40 % statt 25 %. 60 % hiess "Spitze kaufen", 25 % war zu eng fuer Micro-Caps,
+                              # die normal 30 % am Tag schwanken
 # ---------- Position ----------
 ENTRY_USD, ADD_USD, MAX_POS = 40.0, 25.0, 8   # v2.5
 ADD_AT_X   = 1.25             # Nachkauf bei +25 %, wenn Volumen weiter steigt
@@ -147,6 +149,9 @@ def resolve(sym):
     return cache[sym]
 
 # ---------- Signal-Logik ----------
+SHADOW = []   # v2.6: jeder Token, der Alter+Historie passiert, wird mit allen Kennzahlen protokolliert -
+              # auch wenn nicht gekauft wird. So sammeln wir Auswertungsdaten OHNE Kapital zu riskieren:
+              # spaeter laesst sich offline nachrechnen, wie eine lockerere Schwelle abgeschnitten haette.
 def daily(rows):
     """Ein Snapshot je Tag (der letzte des Tages)."""
     by = {}
@@ -162,6 +167,7 @@ def merged_history(own, gt):
 def entry_check(rows, cur):
     """Gibt (ok, grund) zurueck. rows = Tages-Historie (aelteste zuerst), cur = aktueller Snapshot."""
     if not (MIN_AGE_D <= cur["age_d"] <= MAX_AGE_D): return False, "alter"
+    SHADOW.append(cur)          # ab hier: Token ist im Zielfenster -> fuer die Auswertung mitschreiben
     if len(rows) < MIN_HISTORY_DAYS: return False, f"historie {len(rows)}d"
     if not (MIN_MCAP <= cur["mcap"] <= MAX_MCAP): return False, "mcap"
     ratio = cur["liq"] / max(cur["mcap"], 1)
@@ -279,6 +285,11 @@ def main():
             append_jsonl("bot_b_signals.jsonl", {"t": now_iso(), "addr": a, "sym": pos["sym"], "why": why, "risks": risks, **cur})
     save("bot_b_history.json", hist); save("bot_b_gt_cache.json", {k: v for k, v in gt_cache.items() if v["d"] >= today - 1})
     st["watchlist"] = len(hist); st["strategy"] = "second_wave"
+    for c in SHADOW[:60]:
+        append_jsonl("bot_b_shadow.jsonl", {"t": now_iso(), "sym": c.get("sym"), "addr": c.get("addr"),
+            "px": c.get("px"), "vol": c.get("vol"), "liq": c.get("liq"), "mcap": c.get("mcap"),
+            "buy_ratio": c.get("buy_ratio"), "age_d": round(c.get("age_d", 0), 1)})
+
     v = pf.mark(prices); pf.commit()
     passed = [c for c in checks if c[1].startswith("ok")]
     print(f"Bot B [zweite Welle]: equity {v:.2f} | cash {st['cash']:.2f} | positions {len(st['positions'])} | beobachtet {len(hist)} | signale {len(passed)}")
