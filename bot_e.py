@@ -185,7 +185,7 @@ def main():
             if why: checks.append((sym, f"24h {c24:+.0f}% | {why}")); continue
             cands.append((c24 - sol24, a, sym, px, liq, c24, c1, mcap))
         cands.sort()                                                        # staerkste relative Uebertreibung zuerst
-        equity = st["cash"] + sum(p.get("mark", p["entry"]) / p["entry"] * p["usd"] for p in st["positions"].values())
+        equity = st["cash"] + sum(p["qty"] * (p.get("mark") or p.get("cur_price") or p["entry"]) for p in st["positions"].values())
         for rel, a, sym, px, liq, c24, c1, mcap in cands[:MAX_POS - len(st["positions"])]:
             usd = min(st["cash"] - 1, equity * POS_FRAC)
             if usd < 20: break
