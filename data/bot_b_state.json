@@ -11,7 +11,8 @@
    "entry_liq": 14067.39,
    "entry_vol": 41760,
    "cur_price": 3.025e-05,
-   "mark": 3.025e-05
+   "mark": 3.025e-05,
+   "no_quote_since": "2026-09-17T23:51:20Z"
   },
   "7nLukVng5teXze14rum9v57juXLjUp7JJnCveko1pump": {
    "sym": "Martians",
@@ -22,8 +23,8 @@
    "entry": 0.00038529549538297495,
    "entry_liq": 69381.39,
    "entry_vol": 57940.34,
-   "cur_price": 0.0004803,
-   "mark": 0.0004803,
+   "cur_price": 0.000479,
+   "mark": 0.000479,
    "added": true
   },
   "bykrhkExmjWco2mFxKGX3XPmPVaZB9JJp9MkRe8pump": {
@@ -31,12 +32,12 @@
    "qty": 76867.974202,
    "cost": 20.02,
    "opened": "2026-09-17T23:31:13Z",
-   "peak": 0.0002585,
+   "peak": 0.0002598,
    "entry": 0.0002604465670890427,
    "entry_liq": 54529.84,
    "entry_vol": 104136.86,
-   "cur_price": 0.0002585,
-   "mark": 0.0002585
+   "cur_price": 0.0002598,
+   "mark": 0.0002598
   }
  },
  "trades": [
@@ -6559,6 +6560,10 @@
   {
    "t": "2026-09-17T23:46:09Z",
    "v": 396.25
+  },
+  {
+   "t": "2026-09-17T23:51:20Z",
+   "v": 396.06
   }
  ],
  "started": "2026-09-11T10:50:37Z",
@@ -6574,6 +6579,6 @@
  },
  "streak": 0,
  "half_left": 4,
- "watchlist": 300,
+ "watchlist": 308,
  "strategy": "second_wave"
 }
