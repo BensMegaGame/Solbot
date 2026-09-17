@@ -1,5 +1,5 @@
 {
- "cash": 447.86416800000023,
+ "cash": 472.34664900000024,
  "positions": {
   "J53EGLkGxyC3mh45RVWxYtETEj2T9G3YnUPX5nn6AXGc": {
    "sym": "EBT",
@@ -9,19 +9,20 @@
    "peak": 0.0001648,
    "entry": 5.923371667409147e-05,
    "liq0": 21790.81,
-   "cur_price": 8.24e-05,
-   "mark": 8.24e-05
+   "cur_price": 8.296e-05,
+   "mark": 8.296e-05
   },
   "F8Sc8HoZvJcMrTY6vBsetTqGPv6XQmM2XgVAZo1sSTNK": {
    "sym": "MARINE",
-   "qty": 179401.591948,
-   "cost": 15.02,
+   "qty": 118405.05068567998,
+   "cost": 9.9132,
    "opened": "2026-09-15T18:30:58Z",
-   "peak": 0.0003755,
+   "peak": 0.0004217,
    "entry": 8.37227799202227e-05,
    "liq0": 23200.72,
-   "cur_price": 0.0003731,
-   "mark": 0.0003731
+   "cur_price": 0.0004217,
+   "mark": 0.0004217,
+   "tp1": true
   },
   "DWZqne4tLESk3oijs5WDrLwdcoB26Gz5vTfL2nkWpaid": {
    "sym": "DOG",
@@ -31,8 +32,8 @@
    "peak": 0.0001429,
    "entry": 6.0825200791507635e-05,
    "liq0": 19970.8,
-   "cur_price": 8.543e-05,
-   "mark": 8.543e-05
+   "cur_price": 7.718e-05,
+   "mark": 7.718e-05
   }
  },
  "trades": [
@@ -533,6 +534,21 @@
    "slip": 0.0563,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-17T00:26:07Z",
+   "side": "sell",
+   "sym": "MARINE",
+   "addr": "F8Sc8HoZvJcMrTY6vBsetTqGPv6XQmM2XgVAZo1sSTNK",
+   "price": 0.0004217,
+   "usd": 24.48,
+   "pnl": 19.38,
+   "peak_x": 5.037,
+   "held_h": 29.9,
+   "frac": 0.34,
+   "slip": 0.0548,
+   "quote": "jup",
+   "reason": "tp1"
   }
  ],
  "equity": [
@@ -2063,6 +2079,10 @@
   {
    "t": "2026-09-17T00:21:08Z",
    "v": 556.79
+  },
+  {
+   "t": "2026-09-17T00:26:07Z",
+   "v": 562.37
   }
  ],
  "started": "2026-09-15T16:35:51Z",
