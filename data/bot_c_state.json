@@ -1,6 +1,18 @@
 {
- "cash": 321.1462670000006,
- "positions": {},
+ "cash": 291.1262670000006,
+ "positions": {
+  "CSSZ5LBztAVG3KEuvYZanrnMD33tWapGLvYXA5VFpump": {
+   "sym": "DUMP",
+   "qty": 441494.793193,
+   "cost": 30.02,
+   "opened": "2026-09-17T22:01:17Z",
+   "peak": 6.822e-05,
+   "entry": 6.799627189912683e-05,
+   "mig": 1789681761.0,
+   "cur_price": 6.822e-05,
+   "mark": 6.822e-05
+  }
+ },
  "trades": [
   {
    "t": "2026-09-15T17:10:46Z",
@@ -649,6 +661,18 @@
    "slip": 0.0032,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-17T22:01:17Z",
+   "side": "buy",
+   "sym": "DUMP",
+   "addr": "CSSZ5LBztAVG3KEuvYZanrnMD33tWapGLvYXA5VFpump",
+   "price": 6.822e-05,
+   "fill": 6.7996272e-05,
+   "usd": 30.02,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "postgrad 12min"
   }
  ],
  "equity": [
@@ -3215,6 +3239,10 @@
   {
    "t": "2026-09-17T21:56:12Z",
    "v": 321.15
+  },
+  {
+   "t": "2026-09-17T22:01:26Z",
+   "v": 321.25
   }
  ],
  "started": "2026-09-15T16:35:47Z",
