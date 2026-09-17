@@ -1,5 +1,5 @@
 {
- "cash": 235.791896,
+ "cash": 215.771896,
  "positions": {
   "CsHrGJ3HpJV76ecFm4vZrpFSLNQaP1dwzj8e2cvkpump": {
    "sym": "PERIHEL",
@@ -26,6 +26,18 @@
    "cur_price": 0.0004762,
    "mark": 0.0004762,
    "added": true
+  },
+  "bykrhkExmjWco2mFxKGX3XPmPVaZB9JJp9MkRe8pump": {
+   "sym": "Shrek",
+   "qty": 76867.974202,
+   "cost": 20.02,
+   "opened": "2026-09-17T23:31:13Z",
+   "peak": 0.0002548,
+   "entry": 0.0002604465670890427,
+   "entry_liq": 54529.84,
+   "entry_vol": 104136.86,
+   "cur_price": 0.0002548,
+   "mark": 0.0002548
   }
  },
  "trades": [
@@ -278,6 +290,18 @@
    "slip": 0.0,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-17T23:31:13Z",
+   "side": "buy",
+   "sym": "Shrek",
+   "addr": "bykrhkExmjWco2mFxKGX3XPmPVaZB9JJp9MkRe8pump",
+   "price": 0.0002548,
+   "fill": 0.000260446567,
+   "usd": 20.02,
+   "slip": 0.0193,
+   "quote": "jup",
+   "reason": "ok vol-trend 5.62 buy 0.56"
   }
  ],
  "equity": [
@@ -6520,6 +6544,10 @@
   {
    "t": "2026-09-17T23:26:11Z",
    "v": 395.5
+  },
+  {
+   "t": "2026-09-17T23:31:13Z",
+   "v": 395.06
   }
  ],
  "started": "2026-09-11T10:50:37Z",
@@ -6534,7 +6562,7 @@
   "Hsga2MdTiF6sWwjv6atngwXz8cpsYdp11LpPSZNvpump": 20727
  },
  "streak": 0,
- "half_left": 5,
+ "half_left": 4,
  "watchlist": 304,
  "strategy": "second_wave"
 }
