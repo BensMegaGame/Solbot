@@ -1,17 +1,6 @@
 {
- "cash": 261.1062670000006,
+ "cash": 262.0714370000006,
  "positions": {
-  "CSSZ5LBztAVG3KEuvYZanrnMD33tWapGLvYXA5VFpump": {
-   "sym": "DUMP",
-   "qty": 441494.793193,
-   "cost": 30.02,
-   "opened": "2026-09-17T22:01:17Z",
-   "peak": 6.835e-05,
-   "entry": 6.799627189912683e-05,
-   "mig": 1789681761.0,
-   "cur_price": 2.191e-06,
-   "mark": 2.191e-06
-  },
   "6BkJT2Dq8FwqwZmwzSLnADoaKaFKjBad25795nGBpump": {
    "sym": "niggacat",
    "qty": 342626.999987,
@@ -20,8 +9,8 @@
    "peak": 8.581e-05,
    "entry": 8.761714634614032e-05,
    "mig": 1789681444.0,
-   "cur_price": 8.444e-05,
-   "mark": 8.444e-05
+   "cur_price": 8.448e-05,
+   "mark": 8.448e-05
   }
  },
  "trades": [
@@ -696,6 +685,21 @@
    "slip": 0.026,
    "quote": "jup",
    "reason": "postgrad 22min"
+  },
+  {
+   "t": "2026-09-17T22:16:18Z",
+   "side": "sell",
+   "sym": "DUMP",
+   "addr": "CSSZ5LBztAVG3KEuvYZanrnMD33tWapGLvYXA5VFpump",
+   "price": 2.235e-06,
+   "usd": 0.97,
+   "pnl": -29.05,
+   "peak_x": 1.005,
+   "held_h": 0.3,
+   "frac": 1.0,
+   "slip": 0.0028,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -3274,6 +3278,10 @@
   {
    "t": "2026-09-17T22:11:24Z",
    "v": 291.01
+  },
+  {
+   "t": "2026-09-17T22:16:18Z",
+   "v": 291.02
   }
  ],
  "started": "2026-09-15T16:35:47Z",
