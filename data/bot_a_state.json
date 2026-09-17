@@ -1,5 +1,5 @@
 {
- "cash": 112.73619294111185,
+ "cash": 62.71619294111185,
  "positions": {
   "5GefefPX1mDs6ZJB1apYmz6fCTCiNJpHturZ9bvFpump": {
    "sym": "Pumpoween",
@@ -18,8 +18,8 @@
    "opened": "2026-09-13T03:20:17Z",
    "peak": 0.002489,
    "entry": 0.0008846074234799999,
-   "cur_price": 0.0009639,
-   "mark": 0.0009639,
+   "cur_price": 0.0009554,
+   "mark": 0.0009554,
    "tp0": true
   },
   "4ZYonK7RhCaQ24YmGDwJpz1g8WbjyrLZQ8AcXf28WYPt": {
@@ -29,8 +29,8 @@
    "opened": "2026-09-16T02:55:31Z",
    "peak": 0.001169,
    "entry": 0.0006958851466256757,
-   "cur_price": 0.001052,
-   "mark": 0.001052
+   "cur_price": 0.001051,
+   "mark": 0.001051
   },
   "DvdmEnztCmXwBnAbedD48XVGZJSxq31zNvnyftXdpump": {
    "sym": "pill",
@@ -39,8 +39,8 @@
    "opened": "2026-09-16T11:45:08Z",
    "peak": 0.002872,
    "entry": 0.0013485537851440767,
-   "cur_price": 0.002248,
-   "mark": 0.002248,
+   "cur_price": 0.002137,
+   "mark": 0.002137,
    "tp0": true
   },
   "4775QEyTS7ECpvhbeEg1a5XUjpK6CtEJwRpw6vvwpump": {
@@ -50,8 +50,8 @@
    "opened": "2026-09-16T16:05:19Z",
    "peak": 0.0007168,
    "entry": 0.0002716052443959384,
-   "cur_price": 0.000303,
-   "mark": 0.000303,
+   "cur_price": 0.0003154,
+   "mark": 0.0003154,
    "tp0": true
   },
   "G4vqe8KAcRGTb7Kc55n9sz43aR4ugTPdSeUnAXZhpump": {
@@ -61,8 +61,8 @@
    "opened": "2026-09-16T22:05:46Z",
    "peak": 0.0005484,
    "entry": 0.0004473140816942365,
-   "cur_price": 0.0004009,
-   "mark": 0.0004009
+   "cur_price": 0.0003818,
+   "mark": 0.0003818
   },
   "BLGM7XgLpm5uUGJXHTGGQvNYk5jeKSr9kfCdqyq3GR8c": {
    "sym": "ZMINER",
@@ -71,8 +71,18 @@
    "opened": "2026-09-17T03:40:46Z",
    "peak": 0.0001244,
    "entry": 0.00013032324403512198,
-   "cur_price": 6.732e-05,
-   "mark": 6.732e-05
+   "cur_price": 7.051e-05,
+   "mark": 7.051e-05
+  },
+  "5THtNEGTF1y67eRWvcgz3MomDZePCVx1xdskHHeCpump": {
+   "sym": "Saturween",
+   "qty": 207764.385591,
+   "cost": 50.02,
+   "opened": "2026-09-17T04:25:15Z",
+   "peak": 0.0002354,
+   "entry": 0.00024075348552984524,
+   "cur_price": 0.0002354,
+   "mark": 0.0002354
   }
  },
  "trades": [
@@ -734,6 +744,18 @@
    "fill": 0.000130323244,
    "usd": 50.02,
    "slip": 0.0329,
+   "quote": "jup",
+   "reason": "screener"
+  },
+  {
+   "t": "2026-09-17T04:25:15Z",
+   "side": "buy",
+   "sym": "Saturween",
+   "addr": "5THtNEGTF1y67eRWvcgz3MomDZePCVx1xdskHHeCpump",
+   "price": 0.0002354,
+   "fill": 0.000240753486,
+   "usd": 50.02,
+   "slip": 0.012,
    "quote": "jup",
    "reason": "screener"
   }
@@ -6090,6 +6112,10 @@
   {
    "t": "2026-09-17T04:20:52Z",
    "v": 479.29
+  },
+  {
+   "t": "2026-09-17T04:25:16Z",
+   "v": 475.46
   }
  ],
  "started": "2026-09-10T17:17:16Z"
