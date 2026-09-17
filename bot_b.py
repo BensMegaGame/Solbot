@@ -30,9 +30,10 @@ MIN_LIQ_RATIO, MAX_LIQ_RATIO = 0.12, 1.2
 MIN_VOL24              = 30_000
 # ---------- Einstieg ----------
 MIN_HISTORY_DAYS = 3          # Tage Historie (eigene Snapshots oder GeckoTerminal-Kerzen), bevor gekauft wird
-VOL_TREND_MIN    = 1.30       # 3d-Volumen vs. 3d davor (wenn >= 6 Tage Historie), sonst gegen Vortag
-VOL_TREND_MAX    = 6.00       # v2.6: von 4 auf 6 gelockert. >6x bleibt Blow-off-Spike (PERIHEL kam mit 24x rein und
-                              # lief sofort -16 %), aber 4-6x war willkuerlich gesetzt - wir wollen
+VOL_TREND_MIN    = 1.15       # 3d-Volumen vs. 3d davor (wenn >= 6 Tage Historie), sonst gegen Vortag
+VOL_TREND_MAX    = 6.00       # v2.7: >6x bleibt Blow-off-Spike (PERIHEL kam mit 24x rein und lief sofort -16 %).
+                              # Messung aus 5146 Shadow-Zeilen: das Band 1,3-6 war KOMPLETT leer - Tokens schrumpfen
+                              # (Median 0,66) oder explodieren (alle 38 ueber 1,3 lagen zugleich ueber 6). Wir
                               # anhaltend wachsendes Interesse, nicht den einen Pump-Tag.
 MIN_BUY_RATIO    = 0.56       # v2.5: 0,52-0,55 ist Rauschen (alle 5 offenen Verlierer lagen dort)
 MAX_ABOVE_AVG    = 0.40       # v2.6: 40 % statt 25 %. 60 % hiess "Spitze kaufen", 25 % war zu eng fuer Micro-Caps,
