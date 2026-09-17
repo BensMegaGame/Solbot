@@ -1,18 +1,6 @@
 {
- "cash": 377.58399900000046,
- "positions": {
-  "8DFK1PPr6Uwvj69A3wbXgzGg7vMn49ztXdZMUfcGpump": {
-   "sym": "SOF",
-   "qty": 122554.977158,
-   "cost": 30.02,
-   "opened": "2026-09-17T17:21:17Z",
-   "peak": 0.0005398,
-   "entry": 0.00024495129203359645,
-   "mig": 1789664292.0,
-   "cur_price": 0.0002918,
-   "mark": 0.0002918
-  }
- },
+ "cash": 386.2612260000005,
+ "positions": {},
  "trades": [
   {
    "t": "2026-09-15T17:10:46Z",
@@ -455,6 +443,21 @@
    "held_h": 0.1,
    "frac": 1.0,
    "slip": 0.032,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-17T17:31:14Z",
+   "side": "sell",
+   "sym": "SOF",
+   "addr": "8DFK1PPr6Uwvj69A3wbXgzGg7vMn49ztXdZMUfcGpump",
+   "price": 6.321e-05,
+   "usd": 8.68,
+   "pnl": -21.34,
+   "peak_x": 2.204,
+   "held_h": 0.2,
+   "frac": 1.0,
+   "slip": 0.0,
    "quote": "jup",
    "reason": "stop"
   }
@@ -2807,6 +2810,10 @@
   {
    "t": "2026-09-17T17:26:16Z",
    "v": 413.35
+  },
+  {
+   "t": "2026-09-17T17:31:14Z",
+   "v": 386.26
   }
  ],
  "started": "2026-09-15T16:35:47Z",
