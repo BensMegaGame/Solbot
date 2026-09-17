@@ -1,17 +1,6 @@
 {
- "cash": 358.83973700000047,
+ "cash": 377.58399900000046,
  "positions": {
-  "B7eS3BLf5wC4uYsK5MieyPnGEtm3GBxgmaxUwRLapump": {
-   "sym": "ELONPAID",
-   "qty": 337842.988265,
-   "cost": 30.02,
-   "opened": "2026-09-17T17:21:16Z",
-   "peak": 8.201e-05,
-   "entry": 8.885784533865379e-05,
-   "mig": 1789664843.0,
-   "cur_price": 8.201e-05,
-   "mark": 8.201e-05
-  },
   "8DFK1PPr6Uwvj69A3wbXgzGg7vMn49ztXdZMUfcGpump": {
    "sym": "SOF",
    "qty": 122554.977158,
@@ -20,8 +9,8 @@
    "peak": 0.0005398,
    "entry": 0.00024495129203359645,
    "mig": 1789664292.0,
-   "cur_price": 0.0005398,
-   "mark": 0.0005398
+   "cur_price": 0.0002918,
+   "mark": 0.0002918
   }
  },
  "trades": [
@@ -453,6 +442,21 @@
    "slip": 0.0129,
    "quote": "jup",
    "reason": "postgrad 23min"
+  },
+  {
+   "t": "2026-09-17T17:26:16Z",
+   "side": "sell",
+   "sym": "ELONPAID",
+   "addr": "B7eS3BLf5wC4uYsK5MieyPnGEtm3GBxgmaxUwRLapump",
+   "price": 5.98e-05,
+   "usd": 18.74,
+   "pnl": -11.28,
+   "peak_x": 0.923,
+   "held_h": 0.1,
+   "frac": 1.0,
+   "slip": 0.032,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -2799,6 +2803,10 @@
   {
    "t": "2026-09-17T17:21:18Z",
    "v": 452.7
+  },
+  {
+   "t": "2026-09-17T17:26:16Z",
+   "v": 413.35
   }
  ],
  "started": "2026-09-15T16:35:47Z",
