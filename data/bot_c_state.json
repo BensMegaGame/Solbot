@@ -1,5 +1,5 @@
 {
- "cash": 262.0714370000006,
+ "cash": 232.05143700000062,
  "positions": {
   "6BkJT2Dq8FwqwZmwzSLnADoaKaFKjBad25795nGBpump": {
    "sym": "niggacat",
@@ -9,8 +9,19 @@
    "peak": 0.0001012,
    "entry": 8.761714634614032e-05,
    "mig": 1789681444.0,
-   "cur_price": 9.182e-05,
-   "mark": 9.182e-05
+   "cur_price": 9.436e-05,
+   "mark": 9.436e-05
+  },
+  "8BBNS7hURKU4whJ9L7BpjnAR8n9bKFiPA4ZKcYs76qHu": {
+   "sym": "PCAT",
+   "qty": 415988.837405,
+   "cost": 30.02,
+   "opened": "2026-09-17T22:56:25Z",
+   "peak": 8.199e-05,
+   "entry": 7.21653979642079e-05,
+   "mig": 1789685150.0,
+   "cur_price": 8.199e-05,
+   "mark": 8.199e-05
   }
  },
  "trades": [
@@ -700,6 +711,18 @@
    "slip": 0.0028,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-17T22:56:25Z",
+   "side": "buy",
+   "sym": "PCAT",
+   "addr": "8BBNS7hURKU4whJ9L7BpjnAR8n9bKFiPA4ZKcYs76qHu",
+   "price": 8.199e-05,
+   "fill": 7.2165398e-05,
+   "usd": 30.02,
+   "slip": 0.0202,
+   "quote": "jup",
+   "reason": "postgrad 10min"
   }
  ],
  "equity": [
@@ -3310,6 +3333,10 @@
   {
    "t": "2026-09-17T22:51:25Z",
    "v": 293.53
+  },
+  {
+   "t": "2026-09-17T22:56:26Z",
+   "v": 298.49
   }
  ],
  "started": "2026-09-15T16:35:47Z",
