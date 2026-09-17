@@ -68,6 +68,7 @@ def snapshot(p):
     tx = (p.get("txns") or {}).get("h24") or {}
     b, s = tx.get("buys", 0), tx.get("sells", 0)
     return {"d": day_key(), "t": now_iso(), "px": float(p.get("priceUsd") or 0),
+            "sym": (p.get("baseToken") or {}).get("symbol"), "addr": (p.get("baseToken") or {}).get("address"),
             "vol": (p.get("volume") or {}).get("h24") or 0, "vol6": (p.get("volume") or {}).get("h6") or 0,
             "liq": (p.get("liquidity") or {}).get("usd") or 0, "mcap": p.get("marketCap") or p.get("fdv") or 0,
             "buy_ratio": b / (b + s) if b + s else 0,
@@ -167,7 +168,12 @@ def merged_history(own, gt):
 def entry_check(rows, cur):
     """Gibt (ok, grund) zurueck. rows = Tages-Historie (aelteste zuerst), cur = aktueller Snapshot."""
     if not (MIN_AGE_D <= cur["age_d"] <= MAX_AGE_D): return False, "alter"
-    SHADOW.append(cur)          # ab hier: Token ist im Zielfenster -> fuer die Auswertung mitschreiben
+    ok, grund = _signal_inner(rows, cur)
+    cur = dict(cur); cur["ok"], cur["grund"] = ok, grund
+    SHADOW.append(cur)          # v2.6: Token im Zielfenster -> MIT Ablehnungsgrund mitschreiben
+    return ok, grund
+
+def _signal_inner(rows, cur):
     if len(rows) < MIN_HISTORY_DAYS: return False, f"historie {len(rows)}d"
     if not (MIN_MCAP <= cur["mcap"] <= MAX_MCAP): return False, "mcap"
     ratio = cur["liq"] / max(cur["mcap"], 1)
@@ -288,7 +294,8 @@ def main():
     for c in SHADOW[:60]:
         append_jsonl("bot_b_shadow.jsonl", {"t": now_iso(), "sym": c.get("sym"), "addr": c.get("addr"),
             "px": c.get("px"), "vol": c.get("vol"), "liq": c.get("liq"), "mcap": c.get("mcap"),
-            "buy_ratio": c.get("buy_ratio"), "age_d": round(c.get("age_d", 0), 1)})
+            "buy_ratio": c.get("buy_ratio"), "age_d": round(c.get("age_d", 0), 1),
+        "ok": c.get("ok"), "grund": c.get("grund")})
 
     v = pf.mark(prices); pf.commit()
     passed = [c for c in checks if c[1].startswith("ok")]
