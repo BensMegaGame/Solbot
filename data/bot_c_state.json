@@ -1,16 +1,16 @@
 {
- "cash": 371.46853400000043,
+ "cash": 358.01351500000044,
  "positions": {
-  "8v5CpeLXfK3Qkbdq4FsSSfixjB7zCSXVwrTCq12QVgTy": {
-   "sym": "CATS",
-   "qty": 506272.798358,
+  "8DFK1PPr6Uwvj69A3wbXgzGg7vMn49ztXdZMUfcGpump": {
+   "sym": "SOF",
+   "qty": 277619.912964,
    "cost": 30.02,
-   "opened": "2026-09-17T17:06:16Z",
-   "peak": 5.925e-05,
-   "entry": 5.9296095103991735e-05,
-   "mig": 1789664015.0,
-   "cur_price": 5.925e-05,
-   "mark": 5.925e-05
+   "opened": "2026-09-17T17:11:11Z",
+   "peak": 0.0001055,
+   "entry": 0.00010813345368310378,
+   "mig": 1789664292.0,
+   "cur_price": 0.0001055,
+   "mark": 0.0001055
   }
  },
  "trades": [
@@ -374,6 +374,33 @@
    "fill": 5.9296095e-05,
    "usd": 30.02,
    "slip": 0.0133,
+   "quote": "jup",
+   "reason": "postgrad 13min"
+  },
+  {
+   "t": "2026-09-17T17:11:09Z",
+   "side": "sell",
+   "sym": "CATS",
+   "addr": "8v5CpeLXfK3Qkbdq4FsSSfixjB7zCSXVwrTCq12QVgTy",
+   "price": 2.951e-05,
+   "usd": 16.56,
+   "pnl": -13.46,
+   "peak_x": 0.999,
+   "held_h": 0.1,
+   "frac": 1.0,
+   "slip": 0.0108,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-17T17:11:11Z",
+   "side": "buy",
+   "sym": "SOF",
+   "addr": "8DFK1PPr6Uwvj69A3wbXgzGg7vMn49ztXdZMUfcGpump",
+   "price": 0.0001055,
+   "fill": 0.000108133454,
+   "usd": 30.02,
+   "slip": 0.0233,
    "quote": "jup",
    "reason": "postgrad 13min"
   }
@@ -2710,6 +2737,10 @@
   {
    "t": "2026-09-17T17:06:17Z",
    "v": 401.47
+  },
+  {
+   "t": "2026-09-17T17:11:12Z",
+   "v": 387.3
   }
  ],
  "started": "2026-09-15T16:35:47Z",
