@@ -88,22 +88,30 @@ def codex(query, variables=None):
         print("codex fehler:", e); return None
 
 Q_AGED = """
-query($net: [Int!], $after: Int!, $before: Int!) {
+query($net: [Int!]) {
   filterTokens(
-    filters: { network: $net, createdAt: { gte: $after, lte: $before }, volume24: { gte: %s },
+    filters: { network: $net, volume24: { gte: %s },
                marketCap: { gte: %s, lte: %s }, liquidity: { gte: %s } }
     rankings: [{ attribute: volume24, direction: DESC }]
     limit: 200
-  ) { results { token { address symbol } } }
+  ) { results { token { address symbol } createdAt } }
 }""" % (MIN_VOL24, MIN_MCAP, MAX_MCAP, MIN_LIQ)
 
 def codex_aged_candidates():
-    """Direkt die Tokens im Zielalterfenster – ersetzt das 'hoffen, dass GeckoTerminal zufaellig alte zeigt'."""
+    """Kandidaten im Zielalterfenster. Das Alter wird hier gefiltert, NICHT serverseitig: der createdAt-Filter
+    in Codex' filterTokens laesst sich mit den uebrigen Filtern nicht zuverlaessig kombinieren (die Abfrage kam
+    dauerhaft leer zurueck, 'last_fresh_n: 0'). Wir holen daher wie Bot E nur nach MCap/Liquiditaet/Volumen
+    und werfen alles ausserhalb von MIN_AGE_D..MAX_AGE_D selbst weg - ein Feld mehr in der Antwort, sonst gleich."""
     now = time.time()
-    after = int(now - MAX_AGE_D * DAY); before = int(now - MIN_AGE_D * DAY)
-    d = codex(Q_AGED, {"net": [SOLANA_NET], "after": after, "before": before})
+    d = codex(Q_AGED, {"net": [SOLANA_NET]})
     if not d: return set()
-    return {r["token"]["address"] for r in d["filterTokens"]["results"]}
+    out = set()
+    for r in (d.get("filterTokens") or {}).get("results") or []:
+        ts = r.get("createdAt")
+        if ts is None: continue
+        age_d = (now - float(ts)) / DAY
+        if MIN_AGE_D <= age_d <= MAX_AGE_D: out.add(r["token"]["address"])
+    return out
 
 GT = "https://api.geckoterminal.com/api/v2/networks/solana"
 
