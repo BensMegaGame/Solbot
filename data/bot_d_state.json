@@ -1,5 +1,5 @@
 {
- "cash": 559.1916140000003,
+ "cash": 469.0716140000004,
  "positions": {
   "DWZqne4tLESk3oijs5WDrLwdcoB26Gz5vTfL2nkWpaid": {
    "sym": "DOG",
@@ -9,8 +9,74 @@
    "peak": 0.0002774,
    "entry": 6.0825200791507635e-05,
    "liq0": 19970.8,
-   "cur_price": 0.0001448,
-   "mark": 0.0001448
+   "cur_price": 0.0001526,
+   "mark": 0.0001526
+  },
+  "G5im68AmQ8c6C56Kdapufyu8dZddYkMBGoLbqtb98j7": {
+   "sym": "JASON COIN",
+   "qty": 99597.123885,
+   "cost": 15.02,
+   "opened": "2026-09-18T10:41:38Z",
+   "peak": 0.0001489,
+   "entry": 0.0001508075676697539,
+   "liq0": 37289.49,
+   "cur_price": 0.0001489,
+   "mark": 0.0001489
+  },
+  "EC5zBYNL8mrr96SWc2adEXMpZ1ncdKdQvmLULKmm78Q4": {
+   "sym": "STUPID",
+   "qty": 148109.123585,
+   "cost": 15.02,
+   "opened": "2026-09-18T10:41:47Z",
+   "peak": 9.944e-05,
+   "entry": 0.00010141171344775398,
+   "liq0": 28236.56,
+   "cur_price": 9.944e-05,
+   "mark": 9.944e-05
+  },
+  "DsqWokHaPHi6p9TtkEFryf6qBQFxYkUiGss2sFnBpump": {
+   "sym": "juicelee",
+   "qty": 129553.926996,
+   "cost": 15.02,
+   "opened": "2026-09-18T10:42:27Z",
+   "peak": 0.0001065,
+   "entry": 0.00011593627725745237,
+   "liq0": 26665.17,
+   "cur_price": 0.0001065,
+   "mark": 0.0001065
+  },
+  "J53EGLkGxyC3mh45RVWxYtETEj2T9G3YnUPX5nn6AXGc": {
+   "sym": "EBT",
+   "qty": 131614.36367,
+   "cost": 15.02,
+   "opened": "2026-09-18T10:42:31Z",
+   "peak": 0.0001093,
+   "entry": 0.00011412128267139614,
+   "liq0": 30753.77,
+   "cur_price": 0.0001093,
+   "mark": 0.0001093
+  },
+  "DwgyLHfRbNr1zh4c5o4ER7dG5KVPYJ7HCtQPp5swpump": {
+   "sym": "Nap",
+   "qty": 159985.705223,
+   "cost": 15.02,
+   "opened": "2026-09-18T10:42:40Z",
+   "peak": 9.202e-05,
+   "entry": 9.388338776307548e-05,
+   "liq0": 24885.12,
+   "cur_price": 9.202e-05,
+   "mark": 9.202e-05
+  },
+  "3Sv4Jriwo2V7c1wturGVrrpfKc9XbGxewnDHpMLrpbWQ": {
+   "sym": "INDEX",
+   "qty": 323726.690423787,
+   "cost": 15.02,
+   "opened": "2026-09-18T10:42:45Z",
+   "peak": 4.543e-05,
+   "entry": 4.6397162928819636e-05,
+   "liq0": 26088.23,
+   "cur_price": 4.543e-05,
+   "mark": 4.543e-05
   }
  },
  "trades": [
@@ -571,6 +637,78 @@
    "slip": 0.053,
    "quote": "jup",
    "reason": "trail"
+  },
+  {
+   "t": "2026-09-18T10:41:38Z",
+   "side": "buy",
+   "sym": "JASON COIN",
+   "addr": "G5im68AmQ8c6C56Kdapufyu8dZddYkMBGoLbqtb98j7",
+   "price": 0.0001489,
+   "fill": 0.000150807568,
+   "usd": 15.02,
+   "slip": 0.0103,
+   "quote": "jup",
+   "reason": "longshot"
+  },
+  {
+   "t": "2026-09-18T10:41:47Z",
+   "side": "buy",
+   "sym": "STUPID",
+   "addr": "EC5zBYNL8mrr96SWc2adEXMpZ1ncdKdQvmLULKmm78Q4",
+   "price": 9.944e-05,
+   "fill": 0.000101411713,
+   "usd": 15.02,
+   "slip": 0.0361,
+   "quote": "jup",
+   "reason": "longshot"
+  },
+  {
+   "t": "2026-09-18T10:42:27Z",
+   "side": "buy",
+   "sym": "juicelee",
+   "addr": "DsqWokHaPHi6p9TtkEFryf6qBQFxYkUiGss2sFnBpump",
+   "price": 0.0001065,
+   "fill": 0.000115936277,
+   "usd": 15.02,
+   "slip": 0.0097,
+   "quote": "jup",
+   "reason": "longshot"
+  },
+  {
+   "t": "2026-09-18T10:42:31Z",
+   "side": "buy",
+   "sym": "EBT",
+   "addr": "J53EGLkGxyC3mh45RVWxYtETEj2T9G3YnUPX5nn6AXGc",
+   "price": 0.0001093,
+   "fill": 0.000114121283,
+   "usd": 15.02,
+   "slip": 0.0789,
+   "quote": "jup",
+   "reason": "longshot"
+  },
+  {
+   "t": "2026-09-18T10:42:40Z",
+   "side": "buy",
+   "sym": "Nap",
+   "addr": "DwgyLHfRbNr1zh4c5o4ER7dG5KVPYJ7HCtQPp5swpump",
+   "price": 9.202e-05,
+   "fill": 9.3883388e-05,
+   "usd": 15.02,
+   "slip": 0.0183,
+   "quote": "jup",
+   "reason": "longshot"
+  },
+  {
+   "t": "2026-09-18T10:42:45Z",
+   "side": "buy",
+   "sym": "INDEX",
+   "addr": "3Sv4Jriwo2V7c1wturGVrrpfKc9XbGxewnDHpMLrpbWQ",
+   "price": 4.543e-05,
+   "fill": 4.6397163e-05,
+   "usd": 15.02,
+   "slip": 0.0396,
+   "quote": "jup",
+   "reason": "longshot"
   }
  ],
  "equity": [
@@ -3745,6 +3883,10 @@
   {
    "t": "2026-09-18T10:36:39Z",
    "v": 594.95
+  },
+  {
+   "t": "2026-09-18T10:42:52Z",
+   "v": 593.92
   }
  ],
  "started": "2026-09-15T16:35:51Z",
