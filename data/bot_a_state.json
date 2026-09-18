@@ -1,5 +1,5 @@
 {
- "cash": 313.1456269411118,
+ "cash": 348.8885639411118,
  "positions": {
   "5GefefPX1mDs6ZJB1apYmz6fCTCiNJpHturZ9bvFpump": {
    "sym": "Pumpoween",
@@ -11,18 +11,6 @@
    "cur_price": 0.000612,
    "mark": 0.000612
   },
-  "Hy1LfQLL4zLQihmiQKZm7DQzXm5K8aVSfKtdHFYXbKMm": {
-   "sym": "AMBA",
-   "qty": 21310.300478646397,
-   "cost": 18.85125,
-   "opened": "2026-09-13T03:20:17Z",
-   "peak": 0.002716,
-   "entry": 0.0008846074234799999,
-   "cur_price": 0.001835,
-   "mark": 0.001835,
-   "tp0": true,
-   "tp1": true
-  },
   "5THtNEGTF1y67eRWvcgz3MomDZePCVx1xdskHHeCpump": {
    "sym": "Saturween",
    "qty": 207764.385591,
@@ -30,8 +18,8 @@
    "opened": "2026-09-17T04:25:15Z",
    "peak": 0.0002884,
    "entry": 0.00024075348552984524,
-   "cur_price": 0.0001719,
-   "mark": 0.0001719
+   "cur_price": 0.0001724,
+   "mark": 0.0001724
   },
   "A9AHYeqb7nQk7LZUraw7rBCzYRjy2DRvE6NqWfFHKRdH": {
    "sym": "HUHCAT",
@@ -40,8 +28,8 @@
    "opened": "2026-09-17T15:00:50Z",
    "peak": 0.001442,
    "entry": 0.0008410783339787067,
-   "cur_price": 0.0004727,
-   "mark": 0.0004727
+   "cur_price": 0.0004852,
+   "mark": 0.0004852
   },
   "DSgjVUFC6NA59YuxiEDSxgs6zP4jjwSuoYJ3uS7WboeH": {
    "sym": "SATS",
@@ -50,8 +38,8 @@
    "opened": "2026-09-17T20:40:22Z",
    "peak": 0.0002006,
    "entry": 0.0001836230119447136,
-   "cur_price": 0.0001643,
-   "mark": 0.0001643
+   "cur_price": 0.0001675,
+   "mark": 0.0001675
   }
  },
  "trades": [
@@ -913,6 +901,21 @@
    "slip": 0.0098,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-18T06:00:05Z",
+   "side": "sell",
+   "sym": "AMBA",
+   "addr": "Hy1LfQLL4zLQihmiQKZm7DQzXm5K8aVSfKtdHFYXbKMm",
+   "price": 0.001763,
+   "usd": 35.74,
+   "pnl": 16.89,
+   "peak_x": 3.07,
+   "held_h": 122.7,
+   "frac": 1.0,
+   "slip": 0.0019,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
@@ -7495,6 +7498,10 @@
   {
    "t": "2026-09-18T05:56:05Z",
    "v": 534.96
+  },
+  {
+   "t": "2026-09-18T06:01:07Z",
+   "v": 533.31
   }
  ],
  "started": "2026-09-10T17:17:16Z"
