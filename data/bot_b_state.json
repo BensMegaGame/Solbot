@@ -11,8 +11,7 @@
    "entry_liq": 14067.39,
    "entry_vol": 41760,
    "cur_price": 3.37e-05,
-   "mark": 3.37e-05,
-   "no_quote_since": "2026-09-18T18:06:14Z"
+   "mark": 3.37e-05
   },
   "7nLukVng5teXze14rum9v57juXLjUp7JJnCveko1pump": {
    "sym": "Martians",
@@ -23,8 +22,8 @@
    "entry": 0.00038529549538297495,
    "entry_liq": 69381.39,
    "entry_vol": 57940.34,
-   "cur_price": 0.0003405,
-   "mark": 0.0003405,
+   "cur_price": 0.0003407,
+   "mark": 0.0003407,
    "added": true
   },
   "7hGgx1VtNTj193fFXXuMEkp1MRV6JbWYgMBhHRYxaxu2": {
@@ -38,7 +37,8 @@
    "entry_vol": 310614.53,
    "cur_price": 0.0007546,
    "mark": 0.0007546,
-   "added": true
+   "added": true,
+   "no_quote_since": "2026-09-18T18:16:16Z"
   },
   "CEzvF3uFKNKPgCJ9xkgUGk758jjstiUhbkFxaXLFpVF4": {
    "sym": "ABTC",
@@ -51,7 +51,8 @@
    "entry_vol": 126814.37,
    "cur_price": 0.0001256,
    "mark": 0.0001256,
-   "added": true
+   "added": true,
+   "no_quote_since": "2026-09-18T18:16:16Z"
   },
   "E3i7sTY5QYEBh3itepnomZQt7Eh5kzmHFk1vkm2pump": {
    "sym": "cc",
@@ -62,8 +63,8 @@
    "entry": 0.0005601402627098139,
    "entry_liq": 105799.95,
    "entry_vol": 79157.74,
-   "cur_price": 0.0004784,
-   "mark": 0.0004784
+   "cur_price": 0.0004728,
+   "mark": 0.0004728
   }
  },
  "trades": [
@@ -7541,6 +7542,10 @@
   {
    "t": "2026-09-18T18:11:15Z",
    "v": 369.34
+  },
+  {
+   "t": "2026-09-18T18:16:16Z",
+   "v": 369.18
   }
  ],
  "started": "2026-09-11T10:50:37Z",
@@ -7557,6 +7562,6 @@
  },
  "streak": 1,
  "half_left": 1,
- "watchlist": 403,
+ "watchlist": 409,
  "strategy": "second_wave"
 }
