@@ -23,8 +23,8 @@
    "entry": 0.00038529549538297495,
    "entry_liq": 69381.39,
    "entry_vol": 57940.34,
-   "cur_price": 0.0003645,
-   "mark": 0.0003645,
+   "cur_price": 0.0003808,
+   "mark": 0.0003808,
    "added": true
   },
   "7hGgx1VtNTj193fFXXuMEkp1MRV6JbWYgMBhHRYxaxu2": {
@@ -38,7 +38,8 @@
    "entry_vol": 310614.53,
    "cur_price": 0.0008111,
    "mark": 0.0008111,
-   "added": true
+   "added": true,
+   "no_quote_since": "2026-09-18T14:01:13Z"
   },
   "CEzvF3uFKNKPgCJ9xkgUGk758jjstiUhbkFxaXLFpVF4": {
    "sym": "ABTC",
@@ -49,8 +50,8 @@
    "entry": 0.00010106194736476399,
    "entry_liq": 25644.05,
    "entry_vol": 126814.37,
-   "cur_price": 0.0001354,
-   "mark": 0.0001354,
+   "cur_price": 0.0001334,
+   "mark": 0.0001334,
    "added": true
   }
  },
@@ -7313,6 +7314,10 @@
   {
    "t": "2026-09-18T13:56:09Z",
    "v": 377.99
+  },
+  {
+   "t": "2026-09-18T14:01:13Z",
+   "v": 380.7
   }
  ],
  "started": "2026-09-11T10:50:37Z",
@@ -7329,6 +7334,6 @@
  },
  "streak": 1,
  "half_left": 2,
- "watchlist": 355,
+ "watchlist": 368,
  "strategy": "second_wave"
 }
