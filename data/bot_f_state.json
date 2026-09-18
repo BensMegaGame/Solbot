@@ -1,5 +1,5 @@
 {
- "cash": 339.84000000000015,
+ "cash": 299.8000000000002,
  "positions": {
   "G5im68AmQ8c6C56Kdapufyu8dZddYkMBGoLbqtb98j7": {
    "sym": "JASON COIN",
@@ -10,8 +10,8 @@
    "entry": 0.00014471274283336502,
    "base_entry": 0.00014471274283336502,
    "entry_liq": 37090.82,
-   "cur_price": 0.0001599,
-   "mark": 0.0001599
+   "cur_price": 0.0001573,
+   "mark": 0.0001573
   },
   "9Gf5csKmAiSbvoCPAdMxXonDo1V5fq9RQeY8MZEBb3zt": {
    "sym": "PAWSINU",
@@ -22,8 +22,8 @@
    "entry": 6.825373744063673e-05,
    "base_entry": 6.825373744063673e-05,
    "entry_liq": 21688.71,
-   "cur_price": 6.675e-05,
-   "mark": 6.675e-05
+   "cur_price": 6.577e-05,
+   "mark": 6.577e-05
   },
   "EC5zBYNL8mrr96SWc2adEXMpZ1ncdKdQvmLULKmm78Q4": {
    "sym": "STUPID",
@@ -34,20 +34,20 @@
    "entry": 0.00011712349180399688,
    "base_entry": 0.00011712349180399688,
    "entry_liq": 30007.55,
-   "cur_price": 0.0001094,
-   "mark": 0.0001094
+   "cur_price": 0.0001101,
+   "mark": 0.0001101
   },
   "GXL9wD1F5TzVXfZ33fKkBxeuNi7wKMUR25SDEBGEZ9mN": {
    "sym": "NIU",
    "qty": 179742.26921,
    "cost": 20.02,
    "opened": "2026-09-18T10:47:13Z",
-   "peak": 0.0001154,
+   "peak": 0.0001297,
    "entry": 0.00011138170274577896,
    "base_entry": 0.00011138170274577896,
    "entry_liq": 28371.26,
-   "cur_price": 0.0001154,
-   "mark": 0.0001154
+   "cur_price": 0.0001297,
+   "mark": 0.0001297
   },
   "HuDwEgKxqBLNKHBSFiVh8o5tdfzSBmhKochDqRFYCzVf": {
    "sym": "ZINU",
@@ -58,8 +58,8 @@
    "entry": 6.752805758607252e-05,
    "base_entry": 6.752805758607252e-05,
    "entry_liq": 24772.58,
-   "cur_price": 6.649e-05,
-   "mark": 6.649e-05
+   "cur_price": 6.626e-05,
+   "mark": 6.626e-05
   },
   "G1yYYWk9ZL4MWi3NPj68Zdazy5dSQ5UdjifwTp7mva3q": {
    "sym": "RENT",
@@ -82,8 +82,8 @@
    "entry": 9.716547034212771e-05,
    "base_entry": 9.716547034212771e-05,
    "entry_liq": 32084.88,
-   "cur_price": 9.666e-05,
-   "mark": 9.666e-05
+   "cur_price": 9.581e-05,
+   "mark": 9.581e-05
   },
   "ECt8tGM5x2aCJSUVTrUW1VboCZSnUahS5Qswp2BeiomR": {
    "sym": "404INU",
@@ -94,8 +94,32 @@
    "entry": 0.00011356141472636826,
    "base_entry": 0.00011356141472636826,
    "entry_liq": 28660.71,
-   "cur_price": 0.0001086,
-   "mark": 0.0001086
+   "cur_price": 0.0001085,
+   "mark": 0.0001085
+  },
+  "DWZqne4tLESk3oijs5WDrLwdcoB26Gz5vTfL2nkWpaid": {
+   "sym": "DOG",
+   "qty": 127147.204881,
+   "cost": 20.02,
+   "opened": "2026-09-18T10:56:43Z",
+   "peak": 0.0001554,
+   "entry": 0.00015745528986450924,
+   "base_entry": 0.00015745528986450924,
+   "entry_liq": 36662.78,
+   "cur_price": 0.0001554,
+   "mark": 0.0001554
+  },
+  "FhFvXUevhR7qohajBW43oaDVqN4KmAcxgMBqtPZJUZDx": {
+   "sym": "PSYOP",
+   "qty": 181941.514793,
+   "cost": 20.02,
+   "opened": "2026-09-18T10:56:44Z",
+   "peak": 0.0001063,
+   "entry": 0.0001100353595647333,
+   "base_entry": 0.0001100353595647333,
+   "entry_liq": 29361.08,
+   "cur_price": 0.0001063,
+   "mark": 0.0001063
   }
  },
  "trades": [
@@ -194,6 +218,30 @@
    "slip": 0.0843,
    "quote": "jup",
    "reason": "sonde"
+  },
+  {
+   "t": "2026-09-18T10:56:43Z",
+   "side": "buy",
+   "sym": "DOG",
+   "addr": "DWZqne4tLESk3oijs5WDrLwdcoB26Gz5vTfL2nkWpaid",
+   "price": 0.0001554,
+   "fill": 0.00015745529,
+   "usd": 20.02,
+   "slip": 0.011,
+   "quote": "jup",
+   "reason": "sonde"
+  },
+  {
+   "t": "2026-09-18T10:56:44Z",
+   "side": "buy",
+   "sym": "PSYOP",
+   "addr": "FhFvXUevhR7qohajBW43oaDVqN4KmAcxgMBqtPZJUZDx",
+   "price": 0.0001063,
+   "fill": 0.00011003536,
+   "usd": 20.02,
+   "slip": 0.0365,
+   "quote": "jup",
+   "reason": "sonde"
   }
  ],
  "equity": [
@@ -260,6 +308,10 @@
   {
    "t": "2026-09-18T10:51:50Z",
    "v": 498.91
+  },
+  {
+   "t": "2026-09-18T10:56:44Z",
+   "v": 499.75
   }
  ],
  "started": "2026-09-18T09:36:39Z",
