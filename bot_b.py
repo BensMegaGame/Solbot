@@ -1,4 +1,4 @@
-"""Bot B v2.5 – "Zweite Welle": kleine Solana-Tokens, die Woche 1–2 ueberlebt haben und deren
+"""Bot B v2.8 – "Zweite Welle": kleine Solana-Tokens, die Woche 1–2 ueberlebt haben und deren
 Volumen und Kaeuferueberhang anhaltend wachsen. Handelt Spot ueber Jupiter (Paper-Simulation).
 
 Ablauf pro Lauf (stuendlich):
@@ -46,6 +46,7 @@ TRAIL, HARD_STOP, MAX_HOLD_D = -0.25, -0.25, 30   # v2.5: -35 % Stop bei 60 $ + 
 LIQ_DROP_EXIT, VOL_DROP_EXIT = -0.40, 0.50
 # ---------- Schutz ----------
 COOLDOWN_D, STREAK_HALVE = 14, 3
+GT_PER_RUN = 15               # v2.8: max. GeckoTerminal-Nachfuellungen je Lauf (Laufzeitschutz, s. unten)
 
 DAY = 86400
 
@@ -257,7 +258,7 @@ def main():
         if x >= ADD_AT_X and not pos.get("added") and cur["vol"] > pos.get("entry_vol", 0) and st["cash"] >= ADD_USD + 5:
             pos["added"] = True; pf.buy(pos["sym"], a, px, ADD_USD, liq, "add")
     # 4. Einstiege
-    checks = []; gt_cache = load("bot_b_gt_cache.json", {})
+    checks = []; gt_cache = load("bot_b_gt_cache.json", {}); gt_calls = [0]
     grob = {"alter": 0, "mcap": 0, "liq": 0, "vol": 0}
     for a, p in pairs.items():
         if a in st["positions"] or len(st["positions"]) >= MAX_POS: continue
@@ -275,7 +276,14 @@ def main():
         if len(own) < 7 and pool_addr:
             c = gt_cache.get(a)
             if not c or c["d"] != today:
-                c = {"d": today, "rows": gt_history(pool_addr)}; gt_cache[a] = c; time.sleep(2.1)
+                # v2.8 Laufzeitschutz: GeckoTerminal braucht 2,1 s Pause je Token. An einem Tag, an dem
+                # 200 neue Tokens nachgefuellt werden mussten, dauerte EIN Lauf dadurch ~10 Minuten und
+                # kollidierte mit dem 5-Minuten-Takt des Servers. Jetzt hoechstens GT_PER_RUN je Lauf -
+                # der Rest kommt in den naechsten Laeufen, was nichts kostet (die Daten sind Tageskerzen).
+                if gt_calls[0] >= GT_PER_RUN:
+                    checks.append((p["baseToken"]["symbol"], "historie folgt (GT-Limit je Lauf)")); continue
+                c = {"d": today, "rows": gt_history(pool_addr)}; gt_cache[a] = c
+                gt_calls[0] += 1; time.sleep(2.1)
             own = merged_history(own, c["rows"])
         ok, why = entry_check(own, cur)
         checks.append((p["baseToken"]["symbol"], why))
