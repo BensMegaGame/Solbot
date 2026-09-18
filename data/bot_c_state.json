@@ -1,7 +1,57 @@
 {
- "cash": 500.0,
- "positions": {},
- "trades": [],
+ "cash": 379.96000000000004,
+ "positions": {
+  "C2WtD354XEvS9gzpJDLqzqkADq7wUtmJg1UzUdmL5a21": {
+   "sym": "MCCAT",
+   "qty": 262232.075334,
+   "cost": 60.02,
+   "opened": "2026-09-18T10:11:22Z",
+   "peak": 0.0002186,
+   "entry": 0.0002288812301986844,
+   "target": 0.0003419,
+   "entry_liq": 44273.54,
+   "cur_price": 0.0002186,
+   "mark": 0.0002186
+  },
+  "5THtNEGTF1y67eRWvcgz3MomDZePCVx1xdskHHeCpump": {
+   "sym": "Saturween",
+   "qty": 326069.561819,
+   "cost": 60.02,
+   "opened": "2026-09-18T10:11:24Z",
+   "peak": 0.0001798,
+   "entry": 0.00018407115237980073,
+   "target": 0.0002892,
+   "entry_liq": 38546.51,
+   "cur_price": 0.0001798,
+   "mark": 0.0001798
+  }
+ },
+ "trades": [
+  {
+   "t": "2026-09-18T10:11:22Z",
+   "side": "buy",
+   "sym": "MCCAT",
+   "addr": "C2WtD354XEvS9gzpJDLqzqkADq7wUtmJg1UzUdmL5a21",
+   "price": 0.0002186,
+   "fill": 0.00022888123,
+   "usd": 60.02,
+   "slip": 0.0334,
+   "quote": "jup",
+   "reason": "wiederanlauf: lauf 4.9x, jetzt -36% unter hoch"
+  },
+  {
+   "t": "2026-09-18T10:11:24Z",
+   "side": "buy",
+   "sym": "Saturween",
+   "addr": "5THtNEGTF1y67eRWvcgz3MomDZePCVx1xdskHHeCpump",
+   "price": 0.0001798,
+   "fill": 0.000184071152,
+   "usd": 60.02,
+   "slip": 0.0221,
+   "quote": "jup",
+   "reason": "wiederanlauf: lauf 2.2x, jetzt -38% unter hoch"
+  }
+ ],
  "equity": [
   {
    "t": "2026-09-18T09:36:24Z",
@@ -30,6 +80,10 @@
   {
    "t": "2026-09-18T10:06:22Z",
    "v": 500.0
+  },
+  {
+   "t": "2026-09-18T10:11:24Z",
+   "v": 495.91
   }
  ],
  "started": "2026-09-18T09:36:15Z",
