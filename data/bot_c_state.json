@@ -1,5 +1,5 @@
 {
- "cash": 117.65230199999996,
+ "cash": 95.49211499999996,
  "positions": {
   "C2WtD354XEvS9gzpJDLqzqkADq7wUtmJg1UzUdmL5a21": {
    "sym": "MCCAT",
@@ -10,8 +10,8 @@
    "entry": 0.0002288812301986844,
    "target": 0.0003419,
    "entry_liq": 44273.54,
-   "cur_price": 0.0002255,
-   "mark": 0.0002255,
+   "cur_price": 0.0002262,
+   "mark": 0.0002262,
    "tp1": true
   },
   "5THtNEGTF1y67eRWvcgz3MomDZePCVx1xdskHHeCpump": {
@@ -23,8 +23,8 @@
    "entry": 0.00018407115237980073,
    "target": 0.0002892,
    "entry_liq": 38546.51,
-   "cur_price": 0.0002092,
-   "mark": 0.0002092
+   "cur_price": 0.0002121,
+   "mark": 0.0002121
   },
   "CehKYf8jXN2E6dx4aLkekQZ6TGPLihcGkkaWj8PDVmJK": {
    "sym": "40169K",
@@ -35,8 +35,8 @@
    "entry": 0.0001317919465728731,
    "target": 0.0002013,
    "entry_liq": 28942.1,
-   "cur_price": 0.0001273,
-   "mark": 0.0001273
+   "cur_price": 0.0001274,
+   "mark": 0.0001274
   },
   "8rwjpb75Y3r22va4rsYQB13rqqqUhhuPZZhiX29Gk5aH": {
    "sym": "PVE",
@@ -47,8 +47,8 @@
    "entry": 0.00032807179122702626,
    "target": 0.0005075,
    "entry_liq": 58890.2,
-   "cur_price": 0.0003122,
-   "mark": 0.0003122
+   "cur_price": 0.0003135,
+   "mark": 0.0003135
   },
   "E8fsmahzoa4WGZ1dCnGBTzgXRxz9T7nC17KWGkzGxray": {
    "sym": "LYNKS",
@@ -59,20 +59,20 @@
    "entry": 0.00011948030106380532,
    "target": 0.0001953,
    "entry_liq": 32971.33,
-   "cur_price": 0.0001144,
-   "mark": 0.0001144
+   "cur_price": 0.0001289,
+   "mark": 0.0001289
   },
-  "2Lt9MAeEdVyVCviZnEsDj9H3qn8KGjExaGud6yHT5ekj": {
-   "sym": "ZECBALL",
-   "qty": 596300.955091,
+  "BdsfZvhXB6VjnJbzcpWwztiZW1a3wtAznztuVA4j2u64": {
+   "sym": "ABTC",
+   "qty": 452136.018782,
    "cost": 60.02,
-   "opened": "2026-09-18T16:21:19Z",
-   "peak": 9.841e-05,
-   "entry": 0.0001006538719879134,
-   "target": 0.0001629,
-   "entry_liq": 32411.25,
-   "cur_price": 8.355e-05,
-   "mark": 8.355e-05
+   "opened": "2026-09-18T19:11:35Z",
+   "peak": 0.0001267,
+   "entry": 0.00013274766332858562,
+   "target": 0.0001969,
+   "entry_liq": 31691.6,
+   "cur_price": 0.0001267,
+   "mark": 0.0001267
   }
  },
  "trades": [
@@ -270,6 +270,33 @@
    "slip": 0.0168,
    "quote": "jup",
    "reason": "tp1 (altes hoch)"
+  },
+  {
+   "t": "2026-09-18T19:11:33Z",
+   "side": "sell",
+   "sym": "ZECBALL",
+   "addr": "2Lt9MAeEdVyVCviZnEsDj9H3qn8KGjExaGud6yHT5ekj",
+   "price": 6.539e-05,
+   "usd": 37.86,
+   "pnl": -22.16,
+   "peak_x": 0.978,
+   "held_h": 2.8,
+   "frac": 1.0,
+   "slip": 0.0288,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-18T19:11:35Z",
+   "side": "buy",
+   "sym": "ABTC",
+   "addr": "BdsfZvhXB6VjnJbzcpWwztiZW1a3wtAznztuVA4j2u64",
+   "price": 0.0001267,
+   "fill": 0.000132747663,
+   "usd": 60.02,
+   "slip": 0.0364,
+   "quote": "jup",
+   "reason": "wiederanlauf: lauf 2.1x, jetzt -36% unter hoch"
   }
  ],
  "equity": [
@@ -732,6 +759,10 @@
   {
    "t": "2026-09-18T19:06:35Z",
    "v": 437.81
+  },
+  {
+   "t": "2026-09-18T19:11:35Z",
+   "v": 431.72
   }
  ],
  "started": "2026-09-18T09:36:15Z",
@@ -739,7 +770,8 @@
   "DrdwSUzt5ZMqa9Yj1cpvNRRx7zQZP5s9Gm2S8m62STNK": 20717,
   "GKeUT73KRsvWVYNfQPdghxdHTKKGUAESf3t8BZmfXvih": 20717,
   "3uEVodfTeqLsBssjQ5VPEwwdsTwWCJGCd3FVyx7RUNVB": 20717,
-  "DWZqne4tLESk3oijs5WDrLwdcoB26Gz5vTfL2nkWpaid": 20717
+  "DWZqne4tLESk3oijs5WDrLwdcoB26Gz5vTfL2nkWpaid": 20717,
+  "2Lt9MAeEdVyVCviZnEsDj9H3qn8KGjExaGud6yHT5ekj": 20717
  },
  "strategy": "wiederanlauf",
  "watchlist": 302
