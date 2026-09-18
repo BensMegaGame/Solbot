@@ -1,5 +1,5 @@
 {
- "cash": 163.26123799999996,
+ "cash": 178.03492699999995,
  "positions": {
   "CsHrGJ3HpJV76ecFm4vZrpFSLNQaP1dwzj8e2cvkpump": {
    "sym": "PERIHEL",
@@ -22,8 +22,8 @@
    "entry": 0.00038529549538297495,
    "entry_liq": 69381.39,
    "entry_vol": 57940.34,
-   "cur_price": 0.0003465,
-   "mark": 0.0003465,
+   "cur_price": 0.0003471,
+   "mark": 0.0003471,
    "added": true
   },
   "7hGgx1VtNTj193fFXXuMEkp1MRV6JbWYgMBhHRYxaxu2": {
@@ -37,20 +37,7 @@
    "entry_vol": 310614.53,
    "cur_price": 0.0007417,
    "mark": 0.0007417,
-   "added": true,
-   "no_quote_since": "2026-09-18T20:56:23Z"
-  },
-  "E3i7sTY5QYEBh3itepnomZQt7Eh5kzmHFk1vkm2pump": {
-   "sym": "cc",
-   "qty": 35741.047971,
-   "cost": 20.02,
-   "opened": "2026-09-18T17:36:14Z",
-   "peak": 0.0005646,
-   "entry": 0.0005601402627098139,
-   "entry_liq": 105799.95,
-   "entry_vol": 79157.74,
-   "cur_price": 0.0004232,
-   "mark": 0.0004232
+   "added": true
   }
  },
  "trades": [
@@ -405,6 +392,21 @@
    "slip": 0.0684,
    "quote": "jup",
    "reason": "trail"
+  },
+  {
+   "t": "2026-09-18T21:01:17Z",
+   "side": "sell",
+   "sym": "cc",
+   "addr": "E3i7sTY5QYEBh3itepnomZQt7Eh5kzmHFk1vkm2pump",
+   "price": 0.0004168,
+   "usd": 14.77,
+   "pnl": -5.25,
+   "peak_x": 1.008,
+   "held_h": 3.4,
+   "frac": 1.0,
+   "slip": 0.003,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -7675,6 +7677,10 @@
   {
    "t": "2026-09-18T20:56:23Z",
    "v": 355.68
+  },
+  {
+   "t": "2026-09-18T21:01:17Z",
+   "v": 355.46
   }
  ],
  "started": "2026-09-11T10:50:37Z",
@@ -7687,10 +7693,11 @@
   "2DV95bLyBZjZ3Rbcm6c6GGHVpnqBtnNQwaQvzGDbpump": 20726,
   "7n8kRipxAQBfpGQtcGA2AbkM2HASSVCzqZ5F3QEopump": 20726,
   "Hsga2MdTiF6sWwjv6atngwXz8cpsYdp11LpPSZNvpump": 20727,
-  "bykrhkExmjWco2mFxKGX3XPmPVaZB9JJp9MkRe8pump": 20728
+  "bykrhkExmjWco2mFxKGX3XPmPVaZB9JJp9MkRe8pump": 20728,
+  "E3i7sTY5QYEBh3itepnomZQt7Eh5kzmHFk1vkm2pump": 20728
  },
- "streak": 0,
+ "streak": 1,
  "half_left": 1,
- "watchlist": 438,
+ "watchlist": 437,
  "strategy": "second_wave"
 }

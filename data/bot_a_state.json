@@ -1,5 +1,5 @@
 {
- "cash": 245.36094294111183,
+ "cash": 271.21310894111184,
  "positions": {
   "5GefefPX1mDs6ZJB1apYmz6fCTCiNJpHturZ9bvFpump": {
    "sym": "Pumpoween",
@@ -8,8 +8,8 @@
    "opened": "2026-09-12T21:25:13Z",
    "peak": 0.0007295,
    "entry": 0.0004150532496,
-   "cur_price": 0.0006748,
-   "mark": 0.0006748
+   "cur_price": 0.0006648,
+   "mark": 0.0006648
   },
   "5THtNEGTF1y67eRWvcgz3MomDZePCVx1xdskHHeCpump": {
    "sym": "Saturween",
@@ -18,18 +18,19 @@
    "opened": "2026-09-17T04:25:15Z",
    "peak": 0.0002884,
    "entry": 0.00024075348552984524,
-   "cur_price": 0.0002117,
-   "mark": 0.0002117
+   "cur_price": 0.000207,
+   "mark": 0.000207
   },
   "72yxYmhLgDGwdyi2b9GjDynBB6VuG3kDxNKqDbzXh5bi": {
    "sym": "WOW",
-   "qty": 69234.045899,
-   "cost": 50.02,
+   "qty": 51925.53442425,
+   "cost": 37.515,
    "opened": "2026-09-18T07:15:11Z",
-   "peak": 0.001074,
+   "peak": 0.001589,
    "entry": 0.0007224769165299132,
-   "cur_price": 0.0009535,
-   "mark": 0.0009535
+   "cur_price": 0.001589,
+   "mark": 0.001589,
+   "tp0": true
   },
   "6rHkNb7HCtkpvdnVJsBCZHH5dw3AndqEjfmbEGhooR7t": {
    "sym": "SCRIBE",
@@ -38,8 +39,8 @@
    "opened": "2026-09-18T13:25:45Z",
    "peak": 0.0001091,
    "entry": 0.0001254859667485435,
-   "cur_price": 9.345e-05,
-   "mark": 9.345e-05
+   "cur_price": 0.0001008,
+   "mark": 0.0001008
   },
   "Adgt7dseCq71eN6GDuoUgpsNQp81ZNhq24nrF7pxpump": {
    "sym": "Noiz ",
@@ -48,8 +49,8 @@
    "opened": "2026-09-18T15:25:45Z",
    "peak": 0.0002111,
    "entry": 0.00018827581179928744,
-   "cur_price": 0.0001708,
-   "mark": 0.0001708
+   "cur_price": 0.0001672,
+   "mark": 0.0001672
   }
  },
  "trades": [
@@ -992,6 +993,21 @@
    "slip": 0.0553,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-18T21:00:04Z",
+   "side": "sell",
+   "sym": "WOW",
+   "addr": "72yxYmhLgDGwdyi2b9GjDynBB6VuG3kDxNKqDbzXh5bi",
+   "price": 0.001589,
+   "usd": 25.85,
+   "pnl": 13.35,
+   "peak_x": 2.199,
+   "held_h": 13.7,
+   "frac": 0.25,
+   "slip": 0.0563,
+   "quote": "jup",
+   "reason": "tp0"
   }
  ],
  "equity": [
@@ -8290,6 +8306,10 @@
   {
    "t": "2026-09-18T20:55:58Z",
    "v": 519.72
+  },
+  {
+   "t": "2026-09-18T21:00:57Z",
+   "v": 561.85
   }
  ],
  "started": "2026-09-10T17:17:16Z"
