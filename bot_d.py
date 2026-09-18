@@ -80,10 +80,15 @@ COOLDOWN_D = 14
 # "Variable $after of type Int! used in position expecting type Float" und brach damit die GESAMTE
 # Abfrage ab - codex_candidates() lieferte still eine leere Liste. Bot D hat deshalb vom 16.09. 14:50
 # bis zum 18.09. mit einer 42 Stunden alten Kandidatenliste gearbeitet, ohne dass es auffiel.
-Q_CAND = """
-query($net: [Int!], $after: Float!, $before: Float!) {
+def q_cand(now):
+    """Die Zeitstempel stehen als ZAHLEN in der Abfrage, nicht als GraphQL-Variablen.
+    Am 18.09. gemessen: createdAt mit einer Variablen ($after) laesst Codex mit
+    DOWNSTREAM_SERVICE_ERROR abbrechen - dieselbe Abfrage mit einer festen Zahl an derselben
+    Stelle antwortet sauber (20 Treffer). Ein Fehler auf Codex-Seite, den die Zahl umgeht."""
+    return """
+query($net: [Int!]) {
   filterTokens(
-    filters: { network: $net, createdAt: { gte: $after, lte: $before }, volume24: { gte: %s },
+    filters: { network: $net, createdAt: { gte: %d, lte: %d }, volume24: { gte: %s },
                marketCap: { gte: %s, lte: %s }, liquidity: { gte: %s, lte: %s } }
     rankings: [{ attribute: volume24, direction: DESC }]
     limit: 150
@@ -94,7 +99,8 @@ query($net: [Int!], $after: Float!, $before: Float!) {
       token { address symbol }
     }
   }
-}""" % (MIN_VOL24, MIN_MCAP, MAX_MCAP, MIN_LIQ, MAX_LIQ)
+}""" % (int(now - MAX_AGE_H * 3600), int(now - MIN_AGE_H * 3600), MIN_VOL24, MIN_MCAP, MAX_MCAP, MIN_LIQ, MAX_LIQ)
+
 
 def fnum(x, default=0.0):
     try: return float(x) if x is not None else default
@@ -106,8 +112,7 @@ def codex_candidates():
     now = time.time()
     try:
         r = requests.post(CODEX_URL, headers={"Authorization": CODEX_KEY, "Content-Type": "application/json", **UA},
-                          json={"query": Q_CAND, "variables": {"net": [SOLANA], "after": float(now - MAX_AGE_H * 3600),
-                                                                "before": float(now - MIN_AGE_H * 3600)}}, timeout=30)
+                          json={"query": q_cand(now), "variables": {"net": [SOLANA]}}, timeout=30)
         r.raise_for_status(); d = r.json()
         if d.get("errors"): print("codex:", str(d["errors"])[:200]); return None
         out = []
@@ -213,11 +218,18 @@ def batch_pairs(addrs):
     out = {}
     for k in range(0, len(addrs), 30):
         d = get(f"{DS}/latest/dex/tokens/{','.join(addrs[k:k+30])}") or {}
+        aeltestes = {}
         for p in (d.get("pairs") or []):
             if p.get("chainId") != "solana": continue
             a = p["baseToken"]["address"]
+            c = p.get("pairCreatedAt")
+            if c and (a not in aeltestes or c < aeltestes[a]): aeltestes[a] = c
             if a not in out or (p.get("liquidity") or {}).get("usd", 0) > (out[a].get("liquidity") or {}).get("usd", 0):
                 out[a] = p
+        # Das Alter des liquidesten Pools unterschaetzt das Token-Alter, sobald ein Token einen neuen Pool
+        # bekommt (Migration, zweites DEX-Listing). Das AELTESTE bekannte Paar ist die bessere Naeherung.
+        for a, c in aeltestes.items():
+            if a in out: out[a]["_aeltestes_paar_ms"] = c
         time.sleep(1.1)
     return out
 
@@ -299,6 +311,11 @@ def main():
         if len(st["positions"]) >= MAX_POS: break
         why = quality(c)
         if why: checks.append((c["sym"], why)); continue
+        # Sicherheitsnetz gegen einen erneuten Codex-Ausfall - bewusst NUR nach oben (siehe batch_pairs):
+        # ein Pool-Alter kann das Token-Alter unterschaetzen, aber nie ueberschaetzen.
+        created = (pairs.get(a) or {}).get("_aeltestes_paar_ms") or (pairs.get(a) or {}).get("pairCreatedAt")
+        if created and (now - float(created) / 1000) / 3600 > MAX_AGE_H:
+            checks.append((c["sym"], f"aelter als {MAX_AGE_H} h")); continue
         px = prices.get(a); liq = (pairs.get(a, {}).get("liquidity") or {}).get("usd") or 0
         if not px or not (MIN_LIQ <= liq <= MAX_LIQ): checks.append((c["sym"], f"ds-liq {liq:.0f}")); continue
         # Eigener Verlauf der letzten ~1 h: weder in einen Preissturz noch in abfliessende Liquiditaet kaufen.
