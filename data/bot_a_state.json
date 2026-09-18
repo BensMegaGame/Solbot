@@ -1,5 +1,5 @@
 {
- "cash": 292.6440539411118,
+ "cash": 313.1456269411118,
  "positions": {
   "5GefefPX1mDs6ZJB1apYmz6fCTCiNJpHturZ9bvFpump": {
    "sym": "Pumpoween",
@@ -18,8 +18,8 @@
    "opened": "2026-09-13T03:20:17Z",
    "peak": 0.002716,
    "entry": 0.0008846074234799999,
-   "cur_price": 0.00261,
-   "mark": 0.00261,
+   "cur_price": 0.002422,
+   "mark": 0.002422,
    "tp0": true,
    "tp1": true
   },
@@ -30,8 +30,8 @@
    "opened": "2026-09-17T04:25:15Z",
    "peak": 0.0002884,
    "entry": 0.00024075348552984524,
-   "cur_price": 0.0001905,
-   "mark": 0.0001905
+   "cur_price": 0.0002094,
+   "mark": 0.0002094
   },
   "A9AHYeqb7nQk7LZUraw7rBCzYRjy2DRvE6NqWfFHKRdH": {
    "sym": "HUHCAT",
@@ -40,8 +40,8 @@
    "opened": "2026-09-17T15:00:50Z",
    "peak": 0.001442,
    "entry": 0.0008410783339787067,
-   "cur_price": 0.0005103,
-   "mark": 0.0005103
+   "cur_price": 0.0005402,
+   "mark": 0.0005402
   },
   "DSgjVUFC6NA59YuxiEDSxgs6zP4jjwSuoYJ3uS7WboeH": {
    "sym": "SATS",
@@ -50,18 +50,8 @@
    "opened": "2026-09-17T20:40:22Z",
    "peak": 0.0002006,
    "entry": 0.0001836230119447136,
-   "cur_price": 0.0001914,
-   "mark": 0.0001914
-  },
-  "4R2vepDVY7Gdcm2VKuAy6EbBfWsYSEsDJou1QGKuMfnf": {
-   "sym": "POT",
-   "qty": 38666.469016,
-   "cost": 50.02,
-   "opened": "2026-09-18T03:20:56Z",
-   "peak": 0.002266,
-   "entry": 0.0012936273022318631,
-   "cur_price": 0.0008001,
-   "mark": 0.0008001
+   "cur_price": 0.0001919,
+   "mark": 0.0001919
   }
  },
  "trades": [
@@ -908,6 +898,21 @@
    "slip": 0.0625,
    "quote": "jup",
    "reason": "tp2"
+  },
+  {
+   "t": "2026-09-18T03:50:08Z",
+   "side": "sell",
+   "sym": "POT",
+   "addr": "4R2vepDVY7Gdcm2VKuAy6EbBfWsYSEsDJou1QGKuMfnf",
+   "price": 0.0005324,
+   "usd": 20.5,
+   "pnl": -29.52,
+   "peak_x": 1.752,
+   "held_h": 0.5,
+   "frac": 1.0,
+   "slip": 0.0098,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -7386,6 +7391,10 @@
   {
    "t": "2026-09-18T03:45:59Z",
    "v": 575.21
+  },
+  {
+   "t": "2026-09-18T03:51:01Z",
+   "v": 566.61
   }
  ],
  "started": "2026-09-10T17:17:16Z"
