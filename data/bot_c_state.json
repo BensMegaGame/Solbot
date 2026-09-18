@@ -1,18 +1,6 @@
 {
- "cash": 293.5131000000007,
- "positions": {
-  "DDkRu4m2BihseXpkdicfMJ8WZHHhHZ8MKKWEnu1aLive": {
-   "sym": "STREAMED",
-   "qty": 795562.04447,
-   "cost": 30.02,
-   "opened": "2026-09-18T04:21:25Z",
-   "peak": 5.313e-05,
-   "entry": 3.773432909308688e-05,
-   "mig": 1789702109.0,
-   "cur_price": 4.866e-05,
-   "mark": 4.866e-05
-  }
- },
+ "cash": 314.7573290000007,
+ "positions": {},
  "trades": [
   {
    "t": "2026-09-15T17:10:46Z",
@@ -833,6 +821,21 @@
    "held_h": 0.2,
    "frac": 1.0,
    "slip": 0.0043,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-18T04:41:21Z",
+   "side": "sell",
+   "sym": "STREAMED",
+   "addr": "DDkRu4m2BihseXpkdicfMJ8WZHHhHZ8MKKWEnu1aLive",
+   "price": 2.646e-05,
+   "usd": 21.24,
+   "pnl": -8.78,
+   "peak_x": 1.408,
+   "held_h": 0.3,
+   "frac": 1.0,
+   "slip": 0.013,
    "quote": "jup",
    "reason": "stop"
   }
@@ -3721,6 +3724,10 @@
   {
    "t": "2026-09-18T04:36:21Z",
    "v": 332.23
+  },
+  {
+   "t": "2026-09-18T04:41:22Z",
+   "v": 314.76
   }
  ],
  "started": "2026-09-15T16:35:47Z",
