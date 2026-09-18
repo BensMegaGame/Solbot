@@ -1,19 +1,6 @@
 {
- "cash": 139.55267700000007,
+ "cash": 129.32968700000006,
  "positions": {
-  "ChGkEmqxUuggy9NG9X3PEnv1q2bHFNgFhZmxJUowQtco": {
-   "sym": "COLOSSEUM",
-   "qty": 587842.536116,
-   "cost": 60.040000000000006,
-   "opened": "2026-09-18T14:51:53Z",
-   "peak": 0.0001394,
-   "entry": 0.00010213619517345067,
-   "base_entry": 7.736815098365256e-05,
-   "entry_liq": 25739.43,
-   "cur_price": 6.171e-05,
-   "mark": 6.171e-05,
-   "added": true
-  },
   "9w6XCPQDKpiiuQY6MFBfuawUEpxpbNvsVyLq1RJgjupx": {
    "sym": "Uranus",
    "qty": 639392.788541,
@@ -35,8 +22,8 @@
    "entry": 0.0001260934888081534,
    "base_entry": 0.0001260934888081534,
    "entry_liq": 30671.44,
-   "cur_price": 0.0001269,
-   "mark": 0.0001269
+   "cur_price": 0.0001277,
+   "mark": 0.0001277
   },
   "BjthYsyHKCMkEhFoNcANF4VVU4UPTLQjLxiH7jXjQdjS": {
    "sym": "SAT",
@@ -61,7 +48,32 @@
    "base_entry": 0.00011963625170441274,
    "entry_liq": 32666.7,
    "cur_price": 9.744e-05,
-   "mark": 9.744e-05
+   "mark": 9.744e-05,
+   "no_quote_since": "2026-09-18T22:21:51Z"
+  },
+  "FkDqBb1Vz6iZH9aSD5RBV5ctPQGrF2Ye6NVJ4sXncYMF": {
+   "sym": "INUTILITY",
+   "qty": 193361.463209,
+   "cost": 20.02,
+   "opened": "2026-09-18T22:21:48Z",
+   "peak": 9.888e-05,
+   "entry": 0.00010353665962054103,
+   "base_entry": 0.00010353665962054103,
+   "entry_liq": 32307.71,
+   "cur_price": 9.888e-05,
+   "mark": 9.888e-05
+  },
+  "DDndHihssMMJnd3je9Fxukq4M9PdxwQ2XqF8cZgkZu1s": {
+   "sym": "COINU",
+   "qty": 187131.999622,
+   "cost": 20.02,
+   "opened": "2026-09-18T22:21:51Z",
+   "peak": 0.0001023,
+   "entry": 0.00010698330611781891,
+   "base_entry": 0.00010698330611781891,
+   "entry_liq": 30462.8,
+   "cur_price": 0.0001023,
+   "mark": 0.0001023
   }
  },
  "trades": [
@@ -616,6 +628,45 @@
    "slip": 0.0038,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-18T22:21:46Z",
+   "side": "sell",
+   "sym": "COLOSSEUM",
+   "addr": "ChGkEmqxUuggy9NG9X3PEnv1q2bHFNgFhZmxJUowQtco",
+   "price": 5.192e-05,
+   "usd": 29.82,
+   "pnl": -30.22,
+   "peak_x": 1.365,
+   "held_h": 7.5,
+   "frac": 1.0,
+   "slip": 0.007,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-18T22:21:48Z",
+   "side": "buy",
+   "sym": "INUTILITY",
+   "addr": "FkDqBb1Vz6iZH9aSD5RBV5ctPQGrF2Ye6NVJ4sXncYMF",
+   "price": 9.888e-05,
+   "fill": 0.00010353666,
+   "usd": 20.02,
+   "slip": 0.0337,
+   "quote": "jup",
+   "reason": "sonde"
+  },
+  {
+   "t": "2026-09-18T22:21:51Z",
+   "side": "buy",
+   "sym": "COINU",
+   "addr": "DDndHihssMMJnd3je9Fxukq4M9PdxwQ2XqF8cZgkZu1s",
+   "price": 0.0001023,
+   "fill": 0.000106983306,
+   "usd": 20.02,
+   "slip": 0.0441,
+   "quote": "jup",
+   "reason": "sonde"
   }
  ],
  "equity": [
@@ -1230,6 +1281,10 @@
   {
    "t": "2026-09-18T22:16:47Z",
    "v": 276.92
+  },
+  {
+   "t": "2026-09-18T22:21:51Z",
+   "v": 268.81
   }
  ],
  "started": "2026-09-18T09:36:39Z",
@@ -1249,7 +1304,8 @@
   "HuDwEgKxqBLNKHBSFiVh8o5tdfzSBmhKochDqRFYCzVf": 20728,
   "536Y2Cf53iJ64N8JsQHnVPkCTPoXLhAHx5dCRX7XW7fM": 20728,
   "C4proDKqPKSdvTjhi8AGEWtLuea1kKT4k8RCvM9riYPw": 20728,
-  "CYxv8mm44tqjYu6fvTMiZSrAWaM7QKwTSto179xuK7tS": 20728
+  "CYxv8mm44tqjYu6fvTMiZSrAWaM7QKwTSto179xuK7tS": 20728,
+  "ChGkEmqxUuggy9NG9X3PEnv1q2bHFNgFhZmxJUowQtco": 20728
  },
  "strategy": "momentum_runner"
 }
