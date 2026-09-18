@@ -1,29 +1,29 @@
 {
- "cash": 419.9200000000001,
+ "cash": 339.84000000000015,
  "positions": {
   "G5im68AmQ8c6C56Kdapufyu8dZddYkMBGoLbqtb98j7": {
    "sym": "JASON COIN",
    "qty": 138343.034677,
    "cost": 20.02,
    "opened": "2026-09-18T10:47:09Z",
-   "peak": 0.0001474,
+   "peak": 0.0001599,
    "entry": 0.00014471274283336502,
    "base_entry": 0.00014471274283336502,
    "entry_liq": 37090.82,
-   "cur_price": 0.0001474,
-   "mark": 0.0001474
+   "cur_price": 0.0001599,
+   "mark": 0.0001599
   },
   "9Gf5csKmAiSbvoCPAdMxXonDo1V5fq9RQeY8MZEBb3zt": {
    "sym": "PAWSINU",
    "qty": 293317.270976,
    "cost": 20.02,
    "opened": "2026-09-18T10:47:11Z",
-   "peak": 6.489e-05,
+   "peak": 6.675e-05,
    "entry": 6.825373744063673e-05,
    "base_entry": 6.825373744063673e-05,
    "entry_liq": 21688.71,
-   "cur_price": 6.489e-05,
-   "mark": 6.489e-05
+   "cur_price": 6.675e-05,
+   "mark": 6.675e-05
   },
   "EC5zBYNL8mrr96SWc2adEXMpZ1ncdKdQvmLULKmm78Q4": {
    "sym": "STUPID",
@@ -34,20 +34,68 @@
    "entry": 0.00011712349180399688,
    "base_entry": 0.00011712349180399688,
    "entry_liq": 30007.55,
-   "cur_price": 0.0001128,
-   "mark": 0.0001128
+   "cur_price": 0.0001094,
+   "mark": 0.0001094
   },
   "GXL9wD1F5TzVXfZ33fKkBxeuNi7wKMUR25SDEBGEZ9mN": {
    "sym": "NIU",
    "qty": 179742.26921,
    "cost": 20.02,
    "opened": "2026-09-18T10:47:13Z",
-   "peak": 0.000102,
+   "peak": 0.0001154,
    "entry": 0.00011138170274577896,
    "base_entry": 0.00011138170274577896,
    "entry_liq": 28371.26,
-   "cur_price": 0.000102,
-   "mark": 0.000102
+   "cur_price": 0.0001154,
+   "mark": 0.0001154
+  },
+  "HuDwEgKxqBLNKHBSFiVh8o5tdfzSBmhKochDqRFYCzVf": {
+   "sym": "ZINU",
+   "qty": 296469.359784,
+   "cost": 20.02,
+   "opened": "2026-09-18T10:51:46Z",
+   "peak": 6.649e-05,
+   "entry": 6.752805758607252e-05,
+   "base_entry": 6.752805758607252e-05,
+   "entry_liq": 24772.58,
+   "cur_price": 6.649e-05,
+   "mark": 6.649e-05
+  },
+  "G1yYYWk9ZL4MWi3NPj68Zdazy5dSQ5UdjifwTp7mva3q": {
+   "sym": "RENT",
+   "qty": 356741.950825,
+   "cost": 20.02,
+   "opened": "2026-09-18T10:51:47Z",
+   "peak": 5.369e-05,
+   "entry": 5.611899568778448e-05,
+   "base_entry": 5.611899568778448e-05,
+   "entry_liq": 19993.2,
+   "cur_price": 5.369e-05,
+   "mark": 5.369e-05
+  },
+  "536Y2Cf53iJ64N8JsQHnVPkCTPoXLhAHx5dCRX7XW7fM": {
+   "sym": "SME",
+   "qty": 206040.272635,
+   "cost": 20.02,
+   "opened": "2026-09-18T10:51:49Z",
+   "peak": 9.666e-05,
+   "entry": 9.716547034212771e-05,
+   "base_entry": 9.716547034212771e-05,
+   "entry_liq": 32084.88,
+   "cur_price": 9.666e-05,
+   "mark": 9.666e-05
+  },
+  "ECt8tGM5x2aCJSUVTrUW1VboCZSnUahS5Qswp2BeiomR": {
+   "sym": "404INU",
+   "qty": 176292.273641,
+   "cost": 20.02,
+   "opened": "2026-09-18T10:51:50Z",
+   "peak": 0.0001086,
+   "entry": 0.00011356141472636826,
+   "base_entry": 0.00011356141472636826,
+   "entry_liq": 28660.71,
+   "cur_price": 0.0001086,
+   "mark": 0.0001086
   }
  },
  "trades": [
@@ -96,6 +144,54 @@
    "fill": 0.000111381703,
    "usd": 20.02,
    "slip": 0.0113,
+   "quote": "jup",
+   "reason": "sonde"
+  },
+  {
+   "t": "2026-09-18T10:51:46Z",
+   "side": "buy",
+   "sym": "ZINU",
+   "addr": "HuDwEgKxqBLNKHBSFiVh8o5tdfzSBmhKochDqRFYCzVf",
+   "price": 6.649e-05,
+   "fill": 6.7528058e-05,
+   "usd": 20.02,
+   "slip": 0.042,
+   "quote": "jup",
+   "reason": "sonde"
+  },
+  {
+   "t": "2026-09-18T10:51:47Z",
+   "side": "buy",
+   "sym": "RENT",
+   "addr": "G1yYYWk9ZL4MWi3NPj68Zdazy5dSQ5UdjifwTp7mva3q",
+   "price": 5.369e-05,
+   "fill": 5.6118996e-05,
+   "usd": 20.02,
+   "slip": 0.0533,
+   "quote": "jup",
+   "reason": "sonde"
+  },
+  {
+   "t": "2026-09-18T10:51:49Z",
+   "side": "buy",
+   "sym": "SME",
+   "addr": "536Y2Cf53iJ64N8JsQHnVPkCTPoXLhAHx5dCRX7XW7fM",
+   "price": 9.666e-05,
+   "fill": 9.716547e-05,
+   "usd": 20.02,
+   "slip": 0.0056,
+   "quote": "jup",
+   "reason": "sonde"
+  },
+  {
+   "t": "2026-09-18T10:51:50Z",
+   "side": "buy",
+   "sym": "404INU",
+   "addr": "ECt8tGM5x2aCJSUVTrUW1VboCZSnUahS5Qswp2BeiomR",
+   "price": 0.0001086,
+   "fill": 0.000113561415,
+   "usd": 20.02,
+   "slip": 0.0843,
    "quote": "jup",
    "reason": "sonde"
   }
@@ -160,6 +256,10 @@
   {
    "t": "2026-09-18T10:47:13Z",
    "v": 496.96
+  },
+  {
+   "t": "2026-09-18T10:51:50Z",
+   "v": 498.91
   }
  ],
  "started": "2026-09-18T09:36:39Z",
