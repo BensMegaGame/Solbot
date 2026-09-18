@@ -1,17 +1,17 @@
 {
- "cash": 92.50734700000001,
+ "cash": 72.34814499999996,
  "positions": {
   "C2WtD354XEvS9gzpJDLqzqkADq7wUtmJg1UzUdmL5a21": {
    "sym": "MCCAT",
    "qty": 262232.075334,
    "cost": 60.02,
    "opened": "2026-09-18T10:11:22Z",
-   "peak": 0.0002676,
+   "peak": 0.0002774,
    "entry": 0.0002288812301986844,
    "target": 0.0003419,
    "entry_liq": 44273.54,
-   "cur_price": 0.0002676,
-   "mark": 0.0002676
+   "cur_price": 0.0002774,
+   "mark": 0.0002774
   },
   "5THtNEGTF1y67eRWvcgz3MomDZePCVx1xdskHHeCpump": {
    "sym": "Saturween",
@@ -22,32 +22,8 @@
    "entry": 0.00018407115237980073,
    "target": 0.0002892,
    "entry_liq": 38546.51,
-   "cur_price": 0.0001628,
-   "mark": 0.0001628
-  },
-  "3uEVodfTeqLsBssjQ5VPEwwdsTwWCJGCd3FVyx7RUNVB": {
-   "sym": "ISG",
-   "qty": 265491.584738,
-   "cost": 60.02,
-   "opened": "2026-09-18T10:16:23Z",
-   "peak": 0.0002475,
-   "entry": 0.00022607119566230566,
-   "target": 0.0003461,
-   "entry_liq": 43905.73,
-   "cur_price": 0.0002215,
-   "mark": 0.0002215
-  },
-  "DWZqne4tLESk3oijs5WDrLwdcoB26Gz5vTfL2nkWpaid": {
-   "sym": "DOG",
-   "qty": 354220.179942,
-   "cost": 60.02,
-   "opened": "2026-09-18T10:16:24Z",
-   "peak": 0.0001666,
-   "entry": 0.00016944263313803203,
-   "target": 0.0002774,
-   "entry_liq": 37822.36,
-   "cur_price": 0.0001322,
-   "mark": 0.0001322
+   "cur_price": 0.0001638,
+   "mark": 0.0001638
   },
   "CehKYf8jXN2E6dx4aLkekQZ6TGPLihcGkkaWj8PDVmJK": {
    "sym": "40169K",
@@ -58,8 +34,8 @@
    "entry": 0.0001317919465728731,
    "target": 0.0002013,
    "entry_liq": 28942.1,
-   "cur_price": 0.0001314,
-   "mark": 0.0001314
+   "cur_price": 0.0001313,
+   "mark": 0.0001313
   },
   "8rwjpb75Y3r22va4rsYQB13rqqqUhhuPZZhiX29Gk5aH": {
    "sym": "PVE",
@@ -70,8 +46,32 @@
    "entry": 0.00032807179122702626,
    "target": 0.0005075,
    "entry_liq": 58890.2,
-   "cur_price": 0.0003211,
-   "mark": 0.0003211
+   "cur_price": 0.0003212,
+   "mark": 0.0003212
+  },
+  "E8fsmahzoa4WGZ1dCnGBTzgXRxz9T7nC17KWGkzGxray": {
+   "sym": "LYNKS",
+   "qty": 502342.222656,
+   "cost": 60.02,
+   "opened": "2026-09-18T16:21:17Z",
+   "peak": 0.0001192,
+   "entry": 0.00011948030106380532,
+   "target": 0.0001953,
+   "entry_liq": 32971.33,
+   "cur_price": 0.0001192,
+   "mark": 0.0001192
+  },
+  "2Lt9MAeEdVyVCviZnEsDj9H3qn8KGjExaGud6yHT5ekj": {
+   "sym": "ZECBALL",
+   "qty": 596300.955091,
+   "cost": 60.02,
+   "opened": "2026-09-18T16:21:19Z",
+   "peak": 9.841e-05,
+   "entry": 0.0001006538719879134,
+   "target": 0.0001629,
+   "entry_liq": 32411.25,
+   "cur_price": 9.841e-05,
+   "mark": 9.841e-05
   }
  },
  "trades": [
@@ -200,6 +200,60 @@
    "slip": 0.0032,
    "quote": "jup",
    "reason": "wiederanlauf: lauf 3.2x, jetzt -36% unter hoch"
+  },
+  {
+   "t": "2026-09-18T16:21:15Z",
+   "side": "sell",
+   "sym": "ISG",
+   "addr": "3uEVodfTeqLsBssjQ5VPEwwdsTwWCJGCd3FVyx7RUNVB",
+   "price": 0.0002209,
+   "usd": 55.9,
+   "pnl": -4.12,
+   "peak_x": 1.095,
+   "held_h": 6.1,
+   "frac": 1.0,
+   "slip": 0.0549,
+   "quote": "jup",
+   "reason": "totes kapital"
+  },
+  {
+   "t": "2026-09-18T16:21:16Z",
+   "side": "sell",
+   "sym": "DOG",
+   "addr": "DWZqne4tLESk3oijs5WDrLwdcoB26Gz5vTfL2nkWpaid",
+   "price": 0.000126,
+   "usd": 43.98,
+   "pnl": -16.04,
+   "peak_x": 0.983,
+   "held_h": 6.1,
+   "frac": 1.0,
+   "slip": 0.0146,
+   "quote": "jup",
+   "reason": "totes kapital"
+  },
+  {
+   "t": "2026-09-18T16:21:17Z",
+   "side": "buy",
+   "sym": "LYNKS",
+   "addr": "E8fsmahzoa4WGZ1dCnGBTzgXRxz9T7nC17KWGkzGxray",
+   "price": 0.0001192,
+   "fill": 0.000119480301,
+   "usd": 60.02,
+   "slip": 0.0079,
+   "quote": "jup",
+   "reason": "wiederanlauf: lauf 3.2x, jetzt -39% unter hoch"
+  },
+  {
+   "t": "2026-09-18T16:21:19Z",
+   "side": "buy",
+   "sym": "ZECBALL",
+   "addr": "2Lt9MAeEdVyVCviZnEsDj9H3qn8KGjExaGud6yHT5ekj",
+   "price": 9.841e-05,
+   "fill": 0.000100653872,
+   "usd": 60.02,
+   "slip": 0.0225,
+   "quote": "jup",
+   "reason": "wiederanlauf: lauf 2.1x, jetzt -40% unter hoch"
   }
  ],
  "equity": [
@@ -526,13 +580,19 @@
   {
    "t": "2026-09-18T16:16:16Z",
    "v": 439.99
+  },
+  {
+   "t": "2026-09-18T16:21:19Z",
+   "v": 435.62
   }
  ],
  "started": "2026-09-18T09:36:15Z",
  "cooldown": {
   "DrdwSUzt5ZMqa9Yj1cpvNRRx7zQZP5s9Gm2S8m62STNK": 20717,
-  "GKeUT73KRsvWVYNfQPdghxdHTKKGUAESf3t8BZmfXvih": 20717
+  "GKeUT73KRsvWVYNfQPdghxdHTKKGUAESf3t8BZmfXvih": 20717,
+  "3uEVodfTeqLsBssjQ5VPEwwdsTwWCJGCd3FVyx7RUNVB": 20717,
+  "DWZqne4tLESk3oijs5WDrLwdcoB26Gz5vTfL2nkWpaid": 20717
  },
  "strategy": "wiederanlauf",
- "watchlist": 290
+ "watchlist": 291
 }
