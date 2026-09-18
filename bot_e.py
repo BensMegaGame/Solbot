@@ -20,7 +20,7 @@ SOLANA, SOL_MINT = 1399811149, "So11111111111111111111111111111111111111112"
 # ---- Universum ----
 U_MIN_MCAP, U_MIN_LIQ, U_MIN_VOL24 = 10_000_000, 300_000, 200_000   # Testphase: ~Top 100 statt Top 50
 U_LIMIT = 120
-DISCOVER_EVERY_S = 24 * 3600      # Top-50 nach MCap aendert sich kaum: 1 Codex-Call/Tag reicht (~30/Monat)
+DISCOVER_EVERY_S = 12 * 3600      # Top-100 nach MCap aendert sich kaum; 2 Codex-Calls/Tag (~60/Monat)
 EXCLUDE_SYM = {"USDC", "USDT", "USDS", "PYUSD", "USD1", "DAI", "FDUSD", "USDE", "EURC", "USDG", "USDY", "CASH",
                "SOL", "WSOL", "ETH", "WETH", "BTC", "WBTC", "CBBTC", "TBTC", "WBNB", "BNB",       # Majors (gewrappt)
                "JITOSOL", "MSOL", "BSOL", "JUPSOL", "INF", "BNSOL", "HSOL", "DSOL", "VSOL", "JLP"}  # LSTs/LP = SOL-Derivate
