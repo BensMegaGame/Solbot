@@ -1,199 +1,280 @@
-"""Bot C v2 – "Post-Graduation Momentum" (Pump.fun -> Raydium/PumpSwap, Paper via echte Jupiter-Quotes).
-Kauft NICHT auf der Bonding Curve, sondern ENTRY_MIN..ENTRY_MAX Minuten NACH der Migration – dann ist der
-Token ueber Jupiter handelbar und der erste Dump der Curve-Kaeufer ist meist durch.
+"""Bot C v3 – "Wiederanlauf": kauft Tokens, die bereits einen Lauf von mindestens 2x HINTER sich haben,
+danach deutlich zurueckgesetzt sind und sich gerade stabilisieren. Ziel ist das alte Hoch, nicht der Mond.
 
-Datensammlung (wichtig): Fuer JEDEN migrierten Token (gekauft oder nicht) wird der Preis-/Liq-Pfad der ersten
-PATH_HOURS Stunden in data/bot_c_paths.json gespeichert. analyze_c.py wertet damit aus, welches Einstiegs-
-fenster und welche Haltezeit statistisch am besten waren -> ENTRY_MIN/ENTRY_MAX/Exits danach anpassen.
+WARUM DIE ALTE STRATEGIE WEG IST. Bot C hat bis zum 18.09. Pump.fun-Tokens 8-60 Minuten nach der
+Migration gekauft. An 2.085 eigenen Pfaden gemessen ist die Graduation aber ein DUMP-Ereignis:
+Median-Kursaenderung ab 12 Min nach Migration +30 Min -1,2 % | +1 h -9,1 % | +2 h -47,1 % | +3 h -61,3 %.
+47,4 % verlieren binnen 3 h ueber 70 %, nur 20,2 % stehen nach 3 h ueber Wasser. Bilanz: 21 von 23
+Trades im Verlust. Das war kein Ausfuehrungs-, sondern ein Thesenproblem - kein Stop dreht -61 % Median.
 
-Codex-Budget: 1 Aufruf je POLL_MIN Minuten (Kandidaten). Kurse kommen von DexScreener (kostenlos)."""
+WARUM DIESE STRATEGIE. Die Idee "zweite Welle" ist richtig, nur nicht bei graduierten Tokens, sondern
+bei Tokens, die ihren Lauf bewiesen haben. An 120 eigenen 60-Stunden-Pfaden gemessen (bot_d_paths.json):
+
+                                        Wiederanlauf      gleiche Population, Einstieg am Anfang
+   Median-Hoch nach Einstieg                2,30x                      1,39x
+   erreicht >= 2x                             59 %                       38 %
+   Ende ueber Einstieg                        76 %                       51 %
+   erreicht das alte Hoch wieder              79 %                          -
+
+Backtest mit den Exits dieser Datei: +37,8 % ROI je eingesetztem Dollar, ohne die drei besten Tokens
++22,3 %, 23 von 34 Positionen im Gewinn. Ich habe vier Ausloeser- und fuenf Exit-Varianten gerechnet -
+alle 20 Kombinationen positiv (+20 % bis +47 %). Das ist ein Plateau, keine einzelne gefundene Zelle.
+
+DAS PROFIL IST BEWUSST DAS GEGENTEIL VON BOT F: hier 68 % Trefferquote mit kleinen Vielfachen, dort
+22 % mit grossen. Die beiden Bots ergaenzen sich, sie konkurrieren nicht.
+
+Drei gemessene Detailentscheidungen:
+ - Stabilisierung verlangen (Kurs >= Kurs vor 30 Min): +41,3 % statt +37,8 %. Kein Griff ins Messer.
+ - Pump.fun-Herkunft NICHT ausschliessen: +37,3 % gegen +37,8 %, also neutral. Sobald ein Token einen
+   2x-Lauf bewiesen hat, spielt seine Herkunft keine Rolle mehr - der Lauf selbst ist der Filter.
+   (Bot F schliesst sie aus, weil er UNBEWIESENE Tokens kauft - dort sind sie messbar schlechter.)
+ - Bei mehr Signalen als Plaetzen den FLACHSTEN Ruecksetzer zuerst: mit 6 Plaetzen +44,6 %, waehrend
+   "staerkster vorheriger Lauf zuerst" nur +0,8 % und "tiefster Ruecksetzer zuerst" +9,0 % ergibt.
+   Ein flacher Ruecksetzer heisst: der Token haelt sich.
+
+KEIN CODEX-AUFRUF. Die Beobachtungsliste kommt aus den Kandidatenlisten von Bot D und Bot F, die
+ohnehin erzeugt werden, plus der eigenen Kurshistorie. Nur DexScreener (kostenlos) und Jupiter (Fills).
+
+WARMLAUF: Der Ausloeser braucht einen selbst beobachteten 2x-Lauf. Die Historie wird beim ersten Lauf
+einmalig aus bot_d_paths.json vorbefuellt (echte eigene Beobachtungen), der Ruecksetzer und die
+Stabilisierung muessen aber im Live-Kurs vorliegen. Trotzdem: die ersten Tage bleibt es hier ruhig.
+"""
 import os, time
 from common import *
 
-CODEX_KEY = os.environ.get("CODEX_KEY")
-CODEX_URL = "https://graph.codex.io/graphql"
-SOLANA = 1399811149
-POLL_MIN = 10                        # Codex-Abfrage hoechstens alle 10 Min (~4.300 Calls/Monat)
-PATH_HOURS = 3                       # Pfad-Logging je Token nach Migration
-# ---- Einstieg ----
-ENTRY_MIN, ENTRY_MAX = 8, 60         # v2.1: Fenster von 10-40 auf 8-60 Min geweitet. Das ist der richtige Hebel
-                                     # fuer mehr Trades: er kostet nichts an Datenqualitaet. Die Quote-Sicherung
-                                     # dagegen zu lockern wuerde Trades zurueckholen, deren Prozentzahlen frei
-                                     # erfunden sind (SOF stand "bei 2x", ohne dass sich der Markt bewegt hatte).
-# v2.3 - kalibriert an 574 geloggten Pfaden (siehe analyze_c.py):
-# Rug-Quote ohne Filter 38 %. ALLE 14 gekauften Rugs hatten > 189.000 $ Startliquiditaet -
-# eine echte Pump.fun-Migration startet mit ~12-15k. Hohe Liquiditaet = kuenstlich aufgeblasen.
-# v3.1 an 1.130 Pfaden nachgerechnet: die Untergrenze lag bei 15k genau dort, wo die EHRLICHEN
-# Migrationen starten (12-15k) - sie schloss also die Zielgruppe aus, nicht die Rugs.
-# EV je Trade: 15-50k = -3,0 % | 10-50k = +3,3 % | 8-50k = +3,9 % | 5-50k = +2,6 % | 3-50k = +0,8 %.
-# Die OBERgrenze bleibt der wichtigste Filter (alle gekauften Rugs hatten > 189k).
-MIN_LIQ, MAX_LIQ = 8_000, 50_000
-MAX_HOLDERS = 600                      # Rugs hatten im Median 1.674 Holder, Ueberlebende 277 (Fake-Holder)
-MAX_INSIDER_STRICT = 2.0
-MIN_BUYS_1H, MIN_UBUYS_1H = 20, 12
-MAX_SELL_RATIO = 0.9
-MAX_TOP10, MAX_BUNDLER, MAX_SNIPER, MAX_INSIDER = 35.0, 10.0, 15.0, MAX_INSIDER_STRICT
-MIN_OBS = 2                          # mind. 2 eigene Pfad-Punkte, und der Preis darf zuletzt nicht gefallen sein
-# ---- Position / Exits ----
-POS_USD, MAX_POS = 30.0, 8
-# Exits ebenfalls aus den Pfaddaten (rug-ehrlich gerechnet, inkl. Gebuehren):
-# alt (Stop -30 %, TP 1.5x/halb) ergab EV -8 %; neu (enger Stop, hohes Ziel, ganz raus) ergab EV +5 %.
-# Enger Stop hilft, weil die meisten Tokens nach dem Einstieg weiter fallen statt sich zu erholen.
-TP1_X, TP1_FRAC = 3.0, 1.0           # bei 3x KOMPLETT raus (Teilverkauf war messbar schlechter)
-TRAIL, STOP, MAX_HOLD_H = -0.25, -0.15, 3
+# ---------- Beobachtungsliste ----------
+WATCH_SOURCES = ("bot_f_meta.json", "bot_d_meta.json")   # deren Codex-Kandidaten mitbenutzen
+MAX_WATCH = 300
+HIST_KEEP_D = 10                 # Tage, die ein Token ohne Kurs in der Historie bleibt
+PTS_KEEP_H = 8                   # Stunden rollierende Kurspunkte (fuer die Stabilisierungspruefung)
+SEED_FILE = "bot_d_paths.json"   # einmaliges Vorbefuellen der Historie
+
+# ---------- Ausloeser (alle Bedingungen gleichzeitig) ----------
+RUN_X = 2.0                      # beobachteter Lauf: Hoch >= 2x ueber dem ersten beobachteten Kurs
+PULLBACK = -0.35                 # aktueller Kurs >= 35 % unter diesem Hoch
+PULLBACK_FLOOR = -0.60           # ... aber nicht tiefer als 60 %. Gemessen ist das neutral (identisches
+                                 # Ergebnis bei -60 %, +43,9 % statt +41,2 % bei -50 %, also eine einzige
+                                 # Position Unterschied = Rauschen). Die Grenze steht als Vernunftschranke
+                                 # gegen einen Rug im Gange, nicht als gemessener Vorteil.
+STAB_MIN = 30                    # Kurs >= Kurs vor 30 Minuten (Stabilisierung)
+LIQ_KEEP = 0.60                  # Liquiditaet noch >= 60 % vom Stand beim Hoch (Rug-Schutz)
+MIN_LIQ = 8_000
+MIN_MCAP, MAX_MCAP = 10_000, 1_000_000   # Die gemessene Population startete bei MCap <= 150k und lief
+                                         # 2x-10x; nach dem Ruecksetzer liegen die Einstiegs-MCaps damit
+                                         # bei etwa 30k-750k. 1 Mio. deckt das ab, 2 Mio. waere Extrapolation.
+REENTRY_PEAK_X = 1.05            # nach einem Verkauf erst wieder kaufen, wenn ein NEUES Hoch >5 % darueber
 COOLDOWN_D = 3
 
-def codex(query, variables=None):
-    if not CODEX_KEY: return None
-    try:
-        r = requests.post(CODEX_URL, json={"query": query, "variables": variables or {}},
-                          headers={"Authorization": CODEX_KEY, "Content-Type": "application/json", **UA}, timeout=30)
-        r.raise_for_status(); out = r.json()
-        if out.get("errors"): print("codex:", str(out["errors"])[:200]); return None
-        return out.get("data")
-    except Exception as e:
-        print("codex fehler:", e); return None
+# ---------- Position ----------
+POS_USD, MAX_POS = 60.0, 6       # 6 x 60 $ = 360 $ im Markt, 140 $ Puffer
+MAX_BUYS_PER_RUN = 2
 
-# v2.1: $after ist Float!, nicht Int! - Codex erwartet fuer createdAt einen Float. Mit Int! brach die
-# GESAMTE Abfrage mit einem Typfehler ab und fetch_migrated() lieferte still eine leere Liste; der Bot
-# arbeitete dann tagelang mit eingefrorenen Kandidaten weiter, ohne dass es auffiel.
-Q_MIGRATED = """
-query($net: [Int!], $after: Float!) {
-  filterTokens(
-    filters: { network: $net, launchpadName: ["Pump.fun"], launchpadMigrated: true, createdAt: { gte: $after } }
-    rankings: [{ attribute: volume1, direction: DESC }]
-    limit: 100
-  ) {
-    results {
-      liquidity volume1 buyCount1 sellCount1 uniqueBuys1 holders
-      top10HoldersPercent bundlerHeldPercentage sniperHeldPercentage insiderHeldPercentage
-      token { address symbol launchpad { migratedAt completedAt } }
-    }
-  }
-}"""
+# ---------- Ausstieg (Variante A aus dem Backtest) ----------
+STOP = -0.30                     # auf den Einstand
+TP_FRAC = 0.5                    # Haelfte am alten Hoch - dort war die Nachfrage zuletzt erschoepft
+TRAIL_ARM_X, TRAIL_GIVE = 2.0, -0.25   # ab 2x ab Einstand: 25 % Rueckgabe vom Hoch beendet die Position
+DEAD_AFTER_H, DEAD_PEAK_X = 6, 1.10    # nach 6 h ohne 1,1x ist der Platz mehr wert als die Hoffnung
+MAX_HOLD_H = 48
+LIQ_DROP_EXIT = -0.35
+DEAD_PRICE_H = 12                # 12 h ohne Kurs -> abschreiben, Platz freigeben
 
-def fnum(x, default=0.0):
-    try: return float(x) if x is not None else default
-    except Exception: return default
-
-def fetch_migrated():
-    d = codex(Q_MIGRATED, {"net": [SOLANA], "after": int(time.time() - 3 * 86400)})
-    if not d: return []
-    out = []
-    for r in d["filterTokens"]["results"]:
-        t = r["token"]; lp = t.get("launchpad") or {}
-        mig = fnum(lp.get("migratedAt")) or fnum(lp.get("completedAt"))
-        if not mig: continue
-        out.append({"addr": t["address"], "sym": t.get("symbol") or "?", "mig": mig,
-                    "liq": fnum(r.get("liquidity")), "buys1": int(fnum(r.get("buyCount1"))), "sells1": int(fnum(r.get("sellCount1"))),
-                    "ubuys1": int(fnum(r.get("uniqueBuys1"))), "holders": int(fnum(r.get("holders"))),
-                    "top10": fnum(r.get("top10HoldersPercent"), None), "bundler": fnum(r.get("bundlerHeldPercentage"), None),
-                    "sniper": fnum(r.get("sniperHeldPercentage"), None), "insider": fnum(r.get("insiderHeldPercentage"), None)})
-    return out
 
 def batch_pairs(addrs):
+    """DexScreener-Kurse fuer bis zu 30 Adressen je Aufruf; je Token das liquideste Paar."""
     out = {}
     for k in range(0, len(addrs), 30):
-        d = get(f"{DS}/latest/dex/tokens/{','.join(addrs[k:k+30])}") or {}
+        chunk = addrs[k:k + 30]
+        if not chunk: continue
+        d = get(f"{DS}/latest/dex/tokens/{','.join(chunk)}") or {}
         for p in (d.get("pairs") or []):
             if p.get("chainId") != "solana": continue
-            a = p["baseToken"]["address"]
-            if a not in out or (p.get("liquidity") or {}).get("usd", 0) > (out[a].get("liquidity") or {}).get("usd", 0):
+            a = (p.get("baseToken") or {}).get("address")
+            if not a: continue
+            liq = ((p.get("liquidity") or {}).get("usd") or 0)
+            if a not in out or liq > ((out[a].get("liquidity") or {}).get("usd") or 0):
                 out[a] = p
         time.sleep(1.1)
     return out
 
-def quality(c):
-    if c["liq"] < MIN_LIQ: return f"liq {c['liq']:.0f}"
-    if c["liq"] > MAX_LIQ: return f"liq {c['liq']:.0f} zu hoch (fake?)"
-    if c["holders"] > MAX_HOLDERS: return f"holders {c['holders']}"
-    if c["buys1"] < MIN_BUYS_1H: return f"buys1 {c['buys1']}"
-    if c["ubuys1"] < MIN_UBUYS_1H: return f"ubuys1 {c['ubuys1']}"
-    if c["buys1"] and c["sells1"] / c["buys1"] > MAX_SELL_RATIO: return f"sell-ratio {c['sells1']/c['buys1']:.2f}"
-    if c["top10"] is not None and c["top10"] > MAX_TOP10: return f"top10 {c['top10']:.0f}%"
-    if c["bundler"] is not None and c["bundler"] > MAX_BUNDLER: return f"bundler {c['bundler']:.0f}%"
-    if c["sniper"] is not None and c["sniper"] > MAX_SNIPER: return f"sniper {c['sniper']:.0f}%"
-    if c["insider"] is not None and c["insider"] > MAX_INSIDER: return f"insider {c['insider']:.0f}%"
-    return None
+
+def num(v, default=0.0):
+    try: return float(v) if v is not None else default
+    except (TypeError, ValueError): return default
+
+
+def px_of(p): return num((p or {}).get("priceUsd"))
+def liq_of(p): return num(((p or {}).get("liquidity") or {}).get("usd"))
+def mcap_of(p): return num((p or {}).get("marketCap")) or num((p or {}).get("fdv"))
+
+
+def watchlist(hist, positions):
+    """Kandidaten der anderen Bots + alles, was wir schon beobachten. Kein eigener Codex-Aufruf."""
+    addrs = set(positions)
+    # Tokens mit beobachtetem Lauf haben Vorrang - sie sind der eigentliche Grund fuer diesen Bot
+    laeufer = [a for a, h in hist.items() if h.get("peak") and h.get("p0") and h["peak"] / h["p0"] >= RUN_X]
+    addrs |= set(laeufer)
+    for f in WATCH_SOURCES:
+        for c in (load(f, {}).get("cands") or []):
+            a = c.get("addr") if isinstance(c, dict) else None
+            if a: addrs.add(a)
+    addrs |= set(hist)
+    # Reihenfolge: Positionen, dann Laeufer, dann der Rest - damit die Kappung nie einen Laeufer trifft
+    ordered = list(positions) + [a for a in laeufer if a not in positions]
+    ordered += [a for a in addrs if a not in set(ordered)]
+    return ordered[:MAX_WATCH]
+
+
+def seed_history(hist):
+    """Einmalig: echte eigene Beobachtungen aus Bot Ds Pfadlog als Startpunkt (p0/peak)."""
+    src = load(SEED_FILE, {})
+    if not src: return 0
+    n = 0
+    for a, v in src.items():
+        if a in hist: continue
+        pts = [p for p in (v.get("pts") or []) if p[1] and p[1] > 0]
+        if len(pts) < 10: continue
+        peak = max(pts, key=lambda p: p[1])
+        hist[a] = {"sym": v.get("sym") or "?", "p0": pts[0][1], "t0": time.time(),
+                   "peak": peak[1], "liq_at_peak": peak[2] or 0, "pts": [], "seeded": True}
+        n += 1
+    return n
+
 
 def main():
     pf = Paper("bot_c"); st = pf.s
-    st["strategy"] = "post_graduation"; st["codex"] = bool(CODEX_KEY)
-    for k in ("lev", "last_bar", "liquidations", "last_poll"): st.pop(k, None)
+    st.setdefault("cooldown", {})
     now = time.time(); today = int(now // 86400)
-    paths = load("bot_c_paths.json", {}); cooldown = load("bot_c_cooldown.json", {})
-    meta = load("bot_c_meta.json", {"cands": [], "last_poll": 0})
-    # 1) Kandidaten von Codex (max. alle POLL_MIN Minuten), sonst die vom letzten Mal weiterbeobachten
-    if now - meta["last_poll"] >= POLL_MIN * 60 - 30:
-        fresh = fetch_migrated()
-        meta["last_poll"] = now                 # v2.1: IMMER setzen, auch bei leerer Antwort - sonst bleibt der
-        if fresh: meta["cands"] = fresh         # Zeitstempel stehen und der stille Ausfall ist im Log unsichtbar
-        else: print("Bot C: WARNUNG - Codex lieferte 0 Kandidaten, arbeite mit Liste von "
-                    f"{(now - max((c.get('mig', 0) for c in meta['cands']), default=now)) / 3600:.1f} h alten Tokens")
-    cands = {c["addr"]: c for c in meta["cands"]}
-    for a, c in cands.items():
-        paths.setdefault(a, {"sym": c["sym"], "mig": c["mig"], "pts": [], "q": {k: c[k] for k in ("top10", "bundler", "sniper", "insider", "holders")}})
-    # 2) Kurse (DexScreener) fuer Kandidaten + Positionen; Pfade fortschreiben
-    watch = [a for a, p in paths.items() if now - p["mig"] <= PATH_HOURS * 3600]
-    pairs = batch_pairs(list(set(watch) | set(st["positions"].keys())))
-    prices = {}
+    hist = load("bot_c_hist.json", {})
+    meta = load("bot_c_meta.json", {})
+
+    if not meta.get("seeded"):
+        n = seed_history(hist)
+        meta["seeded"] = True; meta["seed_n"] = n
+        print(f"Bot C: Historie einmalig mit {n} beobachteten Tokens aus {SEED_FILE} vorbefuellt")
+
+    addrs = watchlist(hist, st["positions"])
+    if len(addrs) < 5:
+        print("Bot C: WARNUNG - Beobachtungsliste fast leer. Laufen bot_d.py und bot_f.py? "
+              "Bot C bezieht seine Kandidaten aus data/bot_f_meta.json und data/bot_d_meta.json.")
+    pairs = batch_pairs(addrs) if addrs else {}
+    prices = {a: px_of(p) for a, p in pairs.items() if px_of(p) > 0}
+    log = []
+
+    # 1) Historie fortschreiben: p0 und peak sind bleibend, die Punktreihe rollt
     for a, p in pairs.items():
-        px = float(p.get("priceUsd") or 0); liq = (p.get("liquidity") or {}).get("usd") or 0
-        if px > 0: prices[a] = px
-        if a in paths and now - paths[a]["mig"] <= PATH_HOURS * 3600:
-            paths[a]["pts"].append([round((now - paths[a]["mig"]) / 60, 1), px, liq])
-    # 3) Positionen verwalten
+        px = px_of(p)
+        if px <= 0: continue
+        liq = liq_of(p)
+        h = hist.setdefault(a, {"sym": (p.get("baseToken") or {}).get("symbol") or "?",
+                                "p0": px, "t0": now, "peak": px, "liq_at_peak": liq, "pts": []})
+        h["sym"] = (p.get("baseToken") or {}).get("symbol") or h.get("sym") or "?"
+        h.setdefault("p0", px); h.setdefault("t0", now)
+        if px > h.get("peak", 0):
+            h["peak"] = px; h["liq_at_peak"] = liq; h["peak_t"] = now
+        pts = h.setdefault("pts", []); pts.append([now, px])
+        h["pts"] = [x for x in pts if now - x[0] <= PTS_KEEP_H * 3600][-120:]
+        h["last"] = now
+    for a in list(hist):
+        if a in st["positions"]: continue
+        if now - hist[a].get("last", hist[a].get("t0", now)) > HIST_KEEP_D * 86400: del hist[a]
+
+    # 2) Offene Positionen: Ausstieg hat Vorrang
     for a, pos in list(st["positions"].items()):
         px = prices.get(a)
-        if not px: continue
-        liq = (pairs[a].get("liquidity") or {}).get("usd") or 0
+        if not px:
+            seit = pos.get("no_quote_since") or pos["opened"]
+            if (now - parse_iso(seit)) / 3600 >= DEAD_PRICE_H and pos.get("qty", 0) > 0:
+                verlust = round(pos.get("cost", 0.0), 2)
+                pos["qty"] = 0.0; pos["cost"] = 0.0
+                st["trades"].append({"t": now_iso(), "side": "sell", "sym": pos["sym"], "addr": a,
+                                     "price": 0.0, "usd": 0.0, "pnl": -verlust, "frac": 1.0,
+                                     "reason": "abgeschrieben (kein kurs)"})
+                del st["positions"][a]
+                st["cooldown"][a] = today + COOLDOWN_D
+                log.append((pos["sym"], f"abgeschrieben - {DEAD_PRICE_H} h ohne Kurs, -{verlust:.0f} $"))
+            continue
+        liq = liq_of(pairs.get(a))
         pos["peak"] = max(pos.get("peak", px), px)
-        x = px / pos["entry"]; held_h = held_seconds(pos) / 3600
+        x = px / pos["entry"] - 1
+        peak_x = pos["peak"] / pos["entry"]
+        from_peak = px / pos["peak"] - 1
+        held_h = held_seconds(pos) / 3600
+        ziel = pos.get("target")            # das alte Hoch
         why = None
-        if x <= 1 + STOP: why = "stop"
-        elif x >= TP1_X and not pos.get("tp1"):
-            pos["tp1"] = True; pf.sell(a, px, TP1_FRAC, liq, "tp1")
-            if a not in st["positions"]: cooldown[a] = today + COOLDOWN_D   # v2.1: TP1_FRAC=1.0 schliesst ganz
+        if x <= STOP: why = "stop"
+        elif liq and pos.get("entry_liq") and liq / pos["entry_liq"] - 1 <= LIQ_DROP_EXIT: why = "liq-drop"
+        elif held_h >= DEAD_AFTER_H and peak_x < DEAD_PEAK_X: why = "totes kapital"
+        elif peak_x >= TRAIL_ARM_X and from_peak <= TRAIL_GIVE: why = "trail"
+        elif held_h >= MAX_HOLD_H: why = "zeit"
+        if not why and ziel and not pos.get("tp1") and px >= ziel:
+            pos["tp1"] = True
+            if pf.sell(a, px, TP_FRAC, liq, "tp1 (altes hoch)"):
+                log.append((pos["sym"], f"altes Hoch erreicht bei {x+1:.2f}x - Haelfte raus"))
             continue
-        elif pos.get("tp1") and px / pos["peak"] - 1 <= TRAIL: why = "trail"
-        elif held_h >= MAX_HOLD_H: why = "time"
         if why:
-            pf.sell(a, px, 1.0, liq, why)
-            cooldown[a] = today + COOLDOWN_D   # v2.1: nach JEDEM Verkauf sperren, nicht nur nach Verlust.
-            # Vorher wurde SOF um 17:21 mit Gewinn geschlossen und in derselben Minute neu gekauft (dann -21 $):
-            # ein Token, den wir gerade verlassen haben, ist kein neuer Kandidat.
-    # 4) Einstiege im Zeitfenster
-    checks = []
-    for a, c in cands.items():
-        if a in st["positions"] or cooldown.get(a, 0) > today or len(st["positions"]) >= MAX_POS: continue
-        age_min = (now - c["mig"]) / 60
-        if not (ENTRY_MIN <= age_min <= ENTRY_MAX): continue
-        why = quality(c)
-        if why: checks.append((c["sym"], why)); continue
-        pts = [p for p in paths.get(a, {}).get("pts", []) if p[1] > 0]
-        if len(pts) < MIN_OBS: checks.append((c["sym"], f"beobachte ({len(pts)})")); continue
-        if pts[-1][1] < pts[-2][1]: checks.append((c["sym"], "preis faellt")); continue
-        px = prices.get(a); liq = (pairs.get(a, {}).get("liquidity") or {}).get("usd") or 0
-        if not px or liq < MIN_LIQ: checks.append((c["sym"], "kein ds-kurs/liq")); continue
-        ok, risks = rug_ok(a); time.sleep(1.1)
-        if not ok:
-            checks.append((c["sym"], "rugcheck"))
-            if risks != ["rugcheck unavailable"]: cooldown[a] = today + COOLDOWN_D
-            continue
+            if pf.sell(a, px, 1.0, liq, why):
+                st["cooldown"][a] = today + COOLDOWN_D
+                h = hist.get(a)
+                if h: h["peak_at_sell"] = h.get("peak")
+                log.append((pos["sym"], f"{why} bei {x+1:.2f}x (Hoch {peak_x:.2f}x)"))
+
+    # 3) Signale sammeln
+    kand = []
+    for a, p in pairs.items():
+        if a in st["positions"] or st["cooldown"].get(a, 0) > today: continue
+        if len(st["positions"]) >= MAX_POS: break
+        h = hist.get(a)
+        if not h or not h.get("p0") or not h.get("peak"): continue
+        run_x = h["peak"] / h["p0"]
+        if run_x < RUN_X: continue
+        px = px_of(p); liq = liq_of(p); mcap = mcap_of(p)
+        if px <= 0: continue
+        pull = px / h["peak"] - 1
+        if pull > PULLBACK: continue                                 # noch nicht genug zurueckgesetzt
+        if pull < PULLBACK_FLOOR: continue                           # Absturz statt Ruecksetzer
+        if h.get("peak_at_sell") and h["peak"] < h["peak_at_sell"] * REENTRY_PEAK_X: continue
+        if liq < MIN_LIQ: continue
+        if not (MIN_MCAP <= mcap <= MAX_MCAP): continue
+        if h.get("liq_at_peak") and liq < LIQ_KEEP * h["liq_at_peak"]: continue
+        pts = h.get("pts") or []
+        ref = None
+        for t, q in pts:                                             # Kurs vor >= STAB_MIN Minuten
+            if now - t >= STAB_MIN * 60: ref = q
+        if ref is None: continue                                     # noch keine 30 Min eigene Punkte
+        if px < ref: continue                                        # faellt noch -> kein Griff ins Messer
+        kand.append({"addr": a, "sym": h["sym"], "px": px, "liq": liq, "pull": pull,
+                     "run_x": run_x, "target": h["peak"]})
+
+    # flachster Ruecksetzer zuerst (gemessen die beste Reihenfolge bei begrenzten Plaetzen)
+    kand.sort(key=lambda c: -c["pull"])
+    kaeufe = 0
+    for c in kand:
+        if kaeufe >= MAX_BUYS_PER_RUN or len(st["positions"]) >= MAX_POS: break
         if st["cash"] < POS_USD + 2: break
-        if pf.buy(c["sym"], a, px, POS_USD, liq, f"postgrad {age_min:.0f}min"):
-            st["positions"][a]["mig"] = c["mig"]
-            checks.append((c["sym"], f"GEKAUFT {age_min:.0f}min nach migration, liq {liq:.0f}"))
-            append_jsonl("bot_c_signals.jsonl", {"t": now_iso(), "addr": a, "sym": c["sym"], "age_min": round(age_min, 1), "liq": liq, **{k: c[k] for k in ("buys1", "ubuys1", "holders", "top10", "bundler", "sniper", "insider")}})
-    # 5) Pfade aelter als 7 Tage archivieren (analyze_c.py liest bot_c_paths.json UND das Archiv)
-    for a in list(paths):
-        if now - paths[a]["mig"] > 7 * 86400:
-            append_jsonl("bot_c_paths_archive.jsonl", {"addr": a, **paths[a]}); del paths[a]
-    save("bot_c_paths.json", paths); save("bot_c_meta.json", meta)
-    save("bot_c_cooldown.json", {k: v for k, v in cooldown.items() if v > today})
+        ok, risks = rug_ok(c["addr"]); time.sleep(1.1)
+        if not ok:
+            log.append((c["sym"], "rugcheck")); st["cooldown"][c["addr"]] = today + COOLDOWN_D; continue
+        grund = f"wiederanlauf: lauf {c['run_x']:.1f}x, jetzt {c['pull']:+.0%} unter hoch"
+        if pf.buy(c["sym"], c["addr"], c["px"], POS_USD, c["liq"], grund):
+            pos = st["positions"][c["addr"]]
+            pos["target"] = c["target"]; pos["entry_liq"] = c["liq"]
+            kaeufe += 1
+            log.append((c["sym"], f"GEKAUFT {POS_USD:.0f} $ | Lauf {c['run_x']:.1f}x, {c['pull']:+.0%} unter Hoch, "
+                                  f"Ziel {c['target']:.6g}"))
+            append_jsonl("bot_c_signals.jsonl", {"t": now_iso(), "addr": c["addr"], "sym": c["sym"],
+                                                 "px": c["px"], "run_x": round(c["run_x"], 2),
+                                                 "pull": round(c["pull"], 3), "target": c["target"],
+                                                 "liq": c["liq"]})
+
+    st["cooldown"] = {k: v for k, v in st["cooldown"].items() if v > today}
+    st["strategy"] = "wiederanlauf"; st["watchlist"] = len(hist)
+    save("bot_c_hist.json", hist); save("bot_c_meta.json", meta)
     v = pf.mark(prices); pf.commit()
-    print(f"Bot C [post-grad{'' if CODEX_KEY else ', ohne Codex'}]: equity {v:.2f} | cash {st['cash']:.2f} | positions {len(st['positions'])} | kandidaten {len(cands)} | pfade {len(paths)}")
-    for sym, why in checks[:12]: print(f"   {sym:<10} {why}")
+    laeufer = sum(1 for h in hist.values() if h.get("peak") and h.get("p0") and h["peak"] / h["p0"] >= RUN_X)
+    print(f"Bot C [wiederanlauf]: equity {v:.2f} | cash {st['cash']:.2f} | positionen {len(st['positions'])}"
+          f" | beobachtet {len(hist)} (davon {laeufer} mit >={RUN_X}x-Lauf) | signale {len(kand)}")
+    for sym, txt in log[:12]: print(f"   {sym:<12} {txt}")
+
 
 if __name__ == "__main__":
     main()
