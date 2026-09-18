@@ -1,26 +1,15 @@
 {
- "cash": 84.01355698456604,
+ "cash": 387.0503499845661,
  "positions": {
   "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG": {
    "sym": "BIRB",
    "qty": 4303.690179,
    "cost": 247.50200000000004,
    "opened": "2026-09-16T18:05:57Z",
-   "peak": 0.06292,
+   "peak": 0.06298,
    "entry": 0.05750925129501522,
-   "mark": 0.06284,
-   "cur_price": 0.06284,
-   "no_quote_since": "2026-09-18T21:06:49Z"
-  },
-  "5dvXTZ5qwgafnHtwu3Ls3QrWx1U4LQsFeCuJgkk4QEC6": {
-   "sym": "EMBER",
-   "qty": 23814.972919,
-   "cost": 286.87792182240315,
-   "opened": "2026-09-18T18:21:59Z",
-   "peak": 0.01352,
-   "entry": 0.012046115811180577,
-   "mark": 0.01288,
-   "cur_price": 0.01288
+   "mark": 0.06298,
+   "cur_price": 0.06298
   }
  },
  "trades": [
@@ -173,6 +162,21 @@
    "slip": 0.0003,
    "quote": "jup",
    "reason": "dip 24h -10% (SOL +11%) 1h -1.1%"
+  },
+  {
+   "t": "2026-09-18T21:36:48Z",
+   "side": "sell",
+   "sym": "EMBER",
+   "addr": "5dvXTZ5qwgafnHtwu3Ls3QrWx1U4LQsFeCuJgkk4QEC6",
+   "price": 0.01266,
+   "usd": 303.04,
+   "pnl": 16.16,
+   "peak_x": 1.122,
+   "held_h": 3.2,
+   "frac": 1.0,
+   "slip": 0.0012,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
@@ -1939,9 +1943,13 @@
   {
    "t": "2026-09-18T21:31:54Z",
    "v": 661.19
+  },
+  {
+   "t": "2026-09-18T21:36:48Z",
+   "v": 658.1
   }
  ],
  "started": "2026-09-16T16:55:59Z",
  "strategy": "largecap_dip",
- "universe_n": 67
+ "universe_n": 79
 }
