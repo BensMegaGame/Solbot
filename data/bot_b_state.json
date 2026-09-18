@@ -1,5 +1,5 @@
 {
- "cash": 158.01492699999994,
+ "cash": 189.29409999999996,
  "positions": {
   "CsHrGJ3HpJV76ecFm4vZrpFSLNQaP1dwzj8e2cvkpump": {
    "sym": "PERIHEL",
@@ -11,8 +11,7 @@
    "entry_liq": 14067.39,
    "entry_vol": 41760,
    "cur_price": 3.467e-05,
-   "mark": 3.467e-05,
-   "no_quote_since": "2026-09-18T23:01:17Z"
+   "mark": 3.467e-05
   },
   "7nLukVng5teXze14rum9v57juXLjUp7JJnCveko1pump": {
    "sym": "Martians",
@@ -27,19 +26,6 @@
    "mark": 0.0003478,
    "added": true
   },
-  "7hGgx1VtNTj193fFXXuMEkp1MRV6JbWYgMBhHRYxaxu2": {
-   "sym": "FRIES",
-   "qty": 53401.066904814,
-   "cost": 45.04,
-   "opened": "2026-09-18T00:02:07Z",
-   "peak": 0.0009984,
-   "entry": 0.0008434288416050305,
-   "entry_liq": 112979.65,
-   "entry_vol": 310614.53,
-   "cur_price": 0.0006469,
-   "mark": 0.0006469,
-   "added": true
-  },
   "4Ee7xRodjp7kBGTZsHj9FE87UQWJuPke7ENzzGWBbFCc": {
    "sym": "ZODL",
    "qty": 40176.791895332,
@@ -49,8 +35,8 @@
    "entry": 0.0004982976254588922,
    "entry_liq": 110665.36,
    "entry_vol": 104268.64,
-   "cur_price": 0.0005916,
-   "mark": 0.0005916
+   "cur_price": 0.0005569,
+   "mark": 0.0005569
   }
  },
  "trades": [
@@ -432,6 +418,21 @@
    "slip": 0.0276,
    "quote": "jup",
    "reason": "ok vol-trend 5.17 buy 0.56"
+  },
+  {
+   "t": "2026-09-18T23:06:14Z",
+   "side": "sell",
+   "sym": "FRIES",
+   "addr": "7hGgx1VtNTj193fFXXuMEkp1MRV6JbWYgMBhHRYxaxu2",
+   "price": 0.0006322,
+   "usd": 31.28,
+   "pnl": -13.76,
+   "peak_x": 1.184,
+   "held_h": 23.1,
+   "frac": 1.0,
+   "slip": 0.0369,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -7802,6 +7803,10 @@
   {
    "t": "2026-09-18T23:01:17Z",
    "v": 355.67
+  },
+  {
+   "t": "2026-09-18T23:06:14Z",
+   "v": 351.01
   }
  ],
  "started": "2026-09-11T10:50:37Z",
@@ -7815,10 +7820,11 @@
   "7n8kRipxAQBfpGQtcGA2AbkM2HASSVCzqZ5F3QEopump": 20726,
   "Hsga2MdTiF6sWwjv6atngwXz8cpsYdp11LpPSZNvpump": 20727,
   "bykrhkExmjWco2mFxKGX3XPmPVaZB9JJp9MkRe8pump": 20728,
-  "E3i7sTY5QYEBh3itepnomZQt7Eh5kzmHFk1vkm2pump": 20728
+  "E3i7sTY5QYEBh3itepnomZQt7Eh5kzmHFk1vkm2pump": 20728,
+  "7hGgx1VtNTj193fFXXuMEkp1MRV6JbWYgMBhHRYxaxu2": 20728
  },
- "streak": 1,
+ "streak": 2,
  "half_left": 0,
- "watchlist": 444,
+ "watchlist": 454,
  "strategy": "second_wave"
 }

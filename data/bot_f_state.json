@@ -1,5 +1,5 @@
 {
- "cash": 129.32968700000006,
+ "cash": 89.30968700000005,
  "positions": {
   "9w6XCPQDKpiiuQY6MFBfuawUEpxpbNvsVyLq1RJgjupx": {
    "sym": "Uranus",
@@ -10,20 +10,21 @@
    "entry": 3.131095683090622e-05,
    "base_entry": 3.131095683090622e-05,
    "entry_liq": 20605.0,
-   "cur_price": 1.84e-05,
-   "mark": 1.84e-05
+   "cur_price": 1.809e-05,
+   "mark": 1.809e-05
   },
   "y2sCF2KcPxZ5o4bmwJ3M9P82k2h5excdet64z62Ffav": {
    "sym": "ZATOSHI",
-   "qty": 158771.084766,
-   "cost": 20.02,
+   "qty": 364556.53714200004,
+   "cost": 60.040000000000006,
    "opened": "2026-09-18T14:56:51Z",
-   "peak": 0.0001811,
-   "entry": 0.0001260934888081534,
+   "peak": 0.0001897,
+   "entry": 0.00016469324750200147,
    "base_entry": 0.0001260934888081534,
    "entry_liq": 30671.44,
-   "cur_price": 0.0001811,
-   "mark": 0.0001811
+   "cur_price": 0.0001897,
+   "mark": 0.0001897,
+   "added": true
   },
   "BjthYsyHKCMkEhFoNcANF4VVU4UPTLQjLxiH7jXjQdjS": {
    "sym": "SAT",
@@ -34,8 +35,8 @@
    "entry": 7.578128298371587e-05,
    "base_entry": 5.60078397413124e-05,
    "entry_liq": 22152.97,
-   "cur_price": 4.623e-05,
-   "mark": 4.623e-05,
+   "cur_price": 4.632e-05,
+   "mark": 4.632e-05,
    "added": true
   },
   "4ibpLuuz5D7xQpgbkHqG419HFRkTW8JUDE5ASrCi9FK9": {
@@ -60,8 +61,8 @@
    "entry": 0.00010353665962054103,
    "base_entry": 0.00010353665962054103,
    "entry_liq": 32307.71,
-   "cur_price": 6.912e-05,
-   "mark": 6.912e-05
+   "cur_price": 7.164e-05,
+   "mark": 7.164e-05
   },
   "DDndHihssMMJnd3je9Fxukq4M9PdxwQ2XqF8cZgkZu1s": {
    "sym": "COINU",
@@ -72,8 +73,8 @@
    "entry": 0.00010698330611781891,
    "base_entry": 0.00010698330611781891,
    "entry_liq": 30462.8,
-   "cur_price": 8.612e-05,
-   "mark": 8.612e-05
+   "cur_price": 8.062e-05,
+   "mark": 8.062e-05
   }
  },
  "trades": [
@@ -667,6 +668,18 @@
    "slip": 0.0441,
    "quote": "jup",
    "reason": "sonde"
+  },
+  {
+   "t": "2026-09-18T23:06:47Z",
+   "side": "buy",
+   "sym": "ZATOSHI",
+   "addr": "y2sCF2KcPxZ5o4bmwJ3M9P82k2h5excdet64z62Ffav",
+   "price": 0.0001897,
+   "fill": 0.000194474388,
+   "usd": 40.02,
+   "slip": 0.0122,
+   "quote": "jup",
+   "reason": "nachlage bei 1.50x"
   }
  ],
  "equity": [
@@ -1317,6 +1330,10 @@
   {
    "t": "2026-09-18T23:01:51Z",
    "v": 250.1
+  },
+  {
+   "t": "2026-09-18T23:06:47Z",
+   "v": 249.82
   }
  ],
  "started": "2026-09-18T09:36:39Z",
