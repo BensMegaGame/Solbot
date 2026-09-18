@@ -1,18 +1,6 @@
 {
- "cash": 315.91938900000065,
- "positions": {
-  "GsN18GJ2zWoMh32QENu3rwH3iPYzF3SmJxaAnaAopump": {
-   "sym": "SXM",
-   "qty": 635266.487598,
-   "cost": 30.02,
-   "opened": "2026-09-18T02:16:26Z",
-   "peak": 4.602e-05,
-   "entry": 4.7255758939068756e-05,
-   "mig": 1789696742.0,
-   "cur_price": 4.202e-05,
-   "mark": 4.202e-05
-  }
- },
+ "cash": 340.24965200000065,
+ "positions": {},
  "trades": [
   {
    "t": "2026-09-15T17:10:46Z",
@@ -781,6 +769,21 @@
    "slip": 0.0136,
    "quote": "jup",
    "reason": "postgrad 17min"
+  },
+  {
+   "t": "2026-09-18T02:26:24Z",
+   "side": "sell",
+   "sym": "SXM",
+   "addr": "GsN18GJ2zWoMh32QENu3rwH3iPYzF3SmJxaAnaAopump",
+   "price": 3.899e-05,
+   "usd": 24.33,
+   "pnl": -5.69,
+   "peak_x": 0.974,
+   "held_h": 0.2,
+   "frac": 1.0,
+   "slip": 0.007,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -3559,6 +3562,10 @@
   {
    "t": "2026-09-18T02:21:28Z",
    "v": 342.61
+  },
+  {
+   "t": "2026-09-18T02:26:25Z",
+   "v": 340.25
   }
  ],
  "started": "2026-09-15T16:35:47Z",
