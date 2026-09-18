@@ -1,5 +1,5 @@
 {
- "cash": 118.41288900000004,
+ "cash": 92.50734700000001,
  "positions": {
   "C2WtD354XEvS9gzpJDLqzqkADq7wUtmJg1UzUdmL5a21": {
    "sym": "MCCAT",
@@ -10,8 +10,8 @@
    "entry": 0.0002288812301986844,
    "target": 0.0003419,
    "entry_liq": 44273.54,
-   "cur_price": 0.0002351,
-   "mark": 0.0002351
+   "cur_price": 0.0002399,
+   "mark": 0.0002399
   },
   "5THtNEGTF1y67eRWvcgz3MomDZePCVx1xdskHHeCpump": {
    "sym": "Saturween",
@@ -22,8 +22,8 @@
    "entry": 0.00018407115237980073,
    "target": 0.0002892,
    "entry_liq": 38546.51,
-   "cur_price": 0.0001569,
-   "mark": 0.0001569
+   "cur_price": 0.0001554,
+   "mark": 0.0001554
   },
   "3uEVodfTeqLsBssjQ5VPEwwdsTwWCJGCd3FVyx7RUNVB": {
    "sym": "ISG",
@@ -34,8 +34,8 @@
    "entry": 0.00022607119566230566,
    "target": 0.0003461,
    "entry_liq": 43905.73,
-   "cur_price": 0.0002302,
-   "mark": 0.0002302
+   "cur_price": 0.0002308,
+   "mark": 0.0002308
   },
   "DWZqne4tLESk3oijs5WDrLwdcoB26Gz5vTfL2nkWpaid": {
    "sym": "DOG",
@@ -46,20 +46,8 @@
    "entry": 0.00016944263313803203,
    "target": 0.0002774,
    "entry_liq": 37822.36,
-   "cur_price": 0.0001399,
-   "mark": 0.0001399
-  },
-  "GKeUT73KRsvWVYNfQPdghxdHTKKGUAESf3t8BZmfXvih": {
-   "sym": "GROK",
-   "qty": 103939.701888,
-   "cost": 60.02,
-   "opened": "2026-09-18T10:21:21Z",
-   "peak": 0.0006754,
-   "entry": 0.0005774501841911614,
-   "target": 0.0009611,
-   "entry_liq": 68373.33,
-   "cur_price": 0.0004918,
-   "mark": 0.0004918
+   "cur_price": 0.0001417,
+   "mark": 0.0001417
   },
   "CehKYf8jXN2E6dx4aLkekQZ6TGPLihcGkkaWj8PDVmJK": {
    "sym": "40169K",
@@ -72,6 +60,18 @@
    "entry_liq": 28942.1,
    "cur_price": 0.0001318,
    "mark": 0.0001318
+  },
+  "8rwjpb75Y3r22va4rsYQB13rqqqUhhuPZZhiX29Gk5aH": {
+   "sym": "PVE",
+   "qty": 182947.76206,
+   "cost": 60.02,
+   "opened": "2026-09-18T15:56:23Z",
+   "peak": 0.0003234,
+   "entry": 0.00032807179122702626,
+   "target": 0.0005075,
+   "entry_liq": 58890.2,
+   "cur_price": 0.0003234,
+   "mark": 0.0003234
   }
  },
  "trades": [
@@ -173,6 +173,33 @@
    "slip": 0.0022,
    "quote": "jup",
    "reason": "wiederanlauf: lauf 2.4x, jetzt -36% unter hoch"
+  },
+  {
+   "t": "2026-09-18T15:56:21Z",
+   "side": "sell",
+   "sym": "GROK",
+   "addr": "GKeUT73KRsvWVYNfQPdghxdHTKKGUAESf3t8BZmfXvih",
+   "price": 0.0003612,
+   "usd": 34.11,
+   "pnl": -25.91,
+   "peak_x": 1.17,
+   "held_h": 5.6,
+   "frac": 1.0,
+   "slip": 0.0121,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-18T15:56:23Z",
+   "side": "buy",
+   "sym": "PVE",
+   "addr": "8rwjpb75Y3r22va4rsYQB13rqqqUhhuPZZhiX29Gk5aH",
+   "price": 0.0003234,
+   "fill": 0.000328071791,
+   "usd": 60.02,
+   "slip": 0.0032,
+   "quote": "jup",
+   "reason": "wiederanlauf: lauf 3.2x, jetzt -36% unter hoch"
   }
  ],
  "equity": [
@@ -479,11 +506,16 @@
   {
    "t": "2026-09-18T15:51:27Z",
    "v": 453.04
+  },
+  {
+   "t": "2026-09-18T15:56:23Z",
+   "v": 436.75
   }
  ],
  "started": "2026-09-18T09:36:15Z",
  "cooldown": {
-  "DrdwSUzt5ZMqa9Yj1cpvNRRx7zQZP5s9Gm2S8m62STNK": 20717
+  "DrdwSUzt5ZMqa9Yj1cpvNRRx7zQZP5s9Gm2S8m62STNK": 20717,
+  "GKeUT73KRsvWVYNfQPdghxdHTKKGUAESf3t8BZmfXvih": 20717
  },
  "strategy": "wiederanlauf",
  "watchlist": 290
