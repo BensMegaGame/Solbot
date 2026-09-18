@@ -1,6 +1,18 @@
 {
- "cash": 292.69454500000074,
- "positions": {},
+ "cash": 262.67454500000076,
+ "positions": {
+  "2669rK4Wj3REXqeFuvGsLAV1ZseN9CoSvG1kSPGhpump": {
+   "sym": "Neko",
+   "qty": 554059.335275,
+   "cost": 30.02,
+   "opened": "2026-09-18T08:56:20Z",
+   "peak": 6.008e-05,
+   "entry": 5.418192256448486e-05,
+   "mig": 1789718199.0,
+   "cur_price": 6.008e-05,
+   "mark": 6.008e-05
+  }
+ },
  "trades": [
   {
    "t": "2026-09-15T17:10:46Z",
@@ -892,6 +904,18 @@
    "slip": 0.0272,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-18T08:56:20Z",
+   "side": "buy",
+   "sym": "Neko",
+   "addr": "2669rK4Wj3REXqeFuvGsLAV1ZseN9CoSvG1kSPGhpump",
+   "price": 6.008e-05,
+   "fill": 5.4181923e-05,
+   "usd": 30.02,
+   "slip": 0.0188,
+   "quote": "jup",
+   "reason": "postgrad 60min"
   }
  ],
  "equity": [
@@ -3982,6 +4006,10 @@
   {
    "t": "2026-09-18T08:51:19Z",
    "v": 292.69
+  },
+  {
+   "t": "2026-09-18T08:56:21Z",
+   "v": 295.96
   }
  ],
  "started": "2026-09-15T16:35:47Z",
