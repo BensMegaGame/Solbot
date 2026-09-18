@@ -1,5 +1,5 @@
 {
- "cash": 126.68165700000009,
+ "cash": 137.4565320000001,
  "positions": {
   "HuDwEgKxqBLNKHBSFiVh8o5tdfzSBmhKochDqRFYCzVf": {
    "sym": "ZINU",
@@ -10,8 +10,8 @@
    "entry": 6.752805758607252e-05,
    "base_entry": 6.752805758607252e-05,
    "entry_liq": 24772.58,
-   "cur_price": 4.199e-05,
-   "mark": 4.199e-05
+   "cur_price": 3.962e-05,
+   "mark": 3.962e-05
   },
   "536Y2Cf53iJ64N8JsQHnVPkCTPoXLhAHx5dCRX7XW7fM": {
    "sym": "SME",
@@ -22,8 +22,8 @@
    "entry": 0.00013513845658603998,
    "base_entry": 9.716547034212771e-05,
    "entry_liq": 32084.88,
-   "cur_price": 0.0001299,
-   "mark": 0.0001299,
+   "cur_price": 0.0001296,
+   "mark": 0.0001296,
    "added": true
   },
   "ChGkEmqxUuggy9NG9X3PEnv1q2bHFNgFhZmxJUowQtco": {
@@ -35,8 +35,8 @@
    "entry": 0.00010213619517345067,
    "base_entry": 7.736815098365256e-05,
    "entry_liq": 25739.43,
-   "cur_price": 0.0001061,
-   "mark": 0.0001061,
+   "cur_price": 0.0001026,
+   "mark": 0.0001026,
    "added": true
   },
   "9w6XCPQDKpiiuQY6MFBfuawUEpxpbNvsVyLq1RJgjupx": {
@@ -48,8 +48,8 @@
    "entry": 3.131095683090622e-05,
    "base_entry": 3.131095683090622e-05,
    "entry_liq": 20605.0,
-   "cur_price": 3.567e-05,
-   "mark": 3.567e-05
+   "cur_price": 3.584e-05,
+   "mark": 3.584e-05
   },
   "y2sCF2KcPxZ5o4bmwJ3M9P82k2h5excdet64z62Ffav": {
    "sym": "ZATOSHI",
@@ -60,8 +60,8 @@
    "entry": 0.0001260934888081534,
    "base_entry": 0.0001260934888081534,
    "entry_liq": 30671.44,
-   "cur_price": 0.0001288,
-   "mark": 0.0001288
+   "cur_price": 0.0001228,
+   "mark": 0.0001228
   },
   "BjthYsyHKCMkEhFoNcANF4VVU4UPTLQjLxiH7jXjQdjS": {
    "sym": "SAT",
@@ -72,21 +72,9 @@
    "entry": 7.578128298371587e-05,
    "base_entry": 5.60078397413124e-05,
    "entry_liq": 22152.97,
-   "cur_price": 6.798e-05,
-   "mark": 6.798e-05,
+   "cur_price": 6.816e-05,
+   "mark": 6.816e-05,
    "added": true
-  },
-  "B8D4XFEMEXb9BUq2wEHjn72krH6HEwBadx4fUvYUgmHG": {
-   "sym": "sats",
-   "qty": 380338.746437,
-   "cost": 20.02,
-   "opened": "2026-09-18T15:46:57Z",
-   "peak": 5.985e-05,
-   "entry": 5.2637287648304716e-05,
-   "base_entry": 5.2637287648304716e-05,
-   "entry_liq": 20682.83,
-   "cur_price": 2.9e-05,
-   "mark": 2.9e-05
   }
  },
  "trades": [
@@ -528,6 +516,21 @@
    "held_h": 8.1,
    "frac": 1.0,
    "slip": 0.0371,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-18T19:01:58Z",
+   "side": "sell",
+   "sym": "sats",
+   "addr": "B8D4XFEMEXb9BUq2wEHjn72krH6HEwBadx4fUvYUgmHG",
+   "price": 2.871e-05,
+   "usd": 10.77,
+   "pnl": -9.25,
+   "peak_x": 1.137,
+   "held_h": 3.3,
+   "frac": 1.0,
+   "slip": 0.0291,
    "quote": "jup",
    "reason": "stop"
   }
@@ -984,6 +987,10 @@
   {
    "t": "2026-09-18T18:56:56Z",
    "v": 367.36
+  },
+  {
+   "t": "2026-09-18T19:01:58Z",
+   "v": 363.51
   }
  ],
  "started": "2026-09-18T09:36:39Z",
@@ -998,7 +1005,8 @@
   "8v5CpeLXfK3Qkbdq4FsSSfixjB7zCSXVwrTCq12QVgTy": 20728,
   "EC5zBYNL8mrr96SWc2adEXMpZ1ncdKdQvmLULKmm78Q4": 20728,
   "9Gf5csKmAiSbvoCPAdMxXonDo1V5fq9RQeY8MZEBb3zt": 20728,
-  "GXL9wD1F5TzVXfZ33fKkBxeuNi7wKMUR25SDEBGEZ9mN": 20728
+  "GXL9wD1F5TzVXfZ33fKkBxeuNi7wKMUR25SDEBGEZ9mN": 20728,
+  "B8D4XFEMEXb9BUq2wEHjn72krH6HEwBadx4fUvYUgmHG": 20728
  },
  "strategy": "momentum_runner"
 }
