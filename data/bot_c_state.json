@@ -1,27 +1,16 @@
 {
- "cash": 280.2096520000007,
+ "cash": 293.5131000000007,
  "positions": {
   "DDkRu4m2BihseXpkdicfMJ8WZHHhHZ8MKKWEnu1aLive": {
    "sym": "STREAMED",
    "qty": 795562.04447,
    "cost": 30.02,
    "opened": "2026-09-18T04:21:25Z",
-   "peak": 3.734e-05,
+   "peak": 5.313e-05,
    "entry": 3.773432909308688e-05,
    "mig": 1789702109.0,
-   "cur_price": 3.6e-05,
-   "mark": 3.6e-05
-  },
-  "5iSDtRH9RtYBaGvRQjpvaUV5Pr8caBrUYz3KzZ5zpump": {
-   "sym": "ATOM",
-   "qty": 442976.25148,
-   "cost": 30.02,
-   "opened": "2026-09-18T04:21:26Z",
-   "peak": 7.554e-05,
-   "entry": 6.7768870000823e-05,
-   "mig": 1789703999.0,
-   "cur_price": 6.594e-05,
-   "mark": 6.594e-05
+   "cur_price": 5.313e-05,
+   "mark": 5.313e-05
   }
  },
  "trades": [
@@ -831,6 +820,21 @@
    "slip": 0.0121,
    "quote": "jup",
    "reason": "postgrad 21min"
+  },
+  {
+   "t": "2026-09-18T04:31:22Z",
+   "side": "sell",
+   "sym": "ATOM",
+   "addr": "5iSDtRH9RtYBaGvRQjpvaUV5Pr8caBrUYz3KzZ5zpump",
+   "price": 3.993e-05,
+   "usd": 13.3,
+   "pnl": -16.72,
+   "peak_x": 1.115,
+   "held_h": 0.2,
+   "frac": 1.0,
+   "slip": 0.0043,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -3709,6 +3713,10 @@
   {
    "t": "2026-09-18T04:26:20Z",
    "v": 338.06
+  },
+  {
+   "t": "2026-09-18T04:31:23Z",
+   "v": 335.78
   }
  ],
  "started": "2026-09-15T16:35:47Z",
