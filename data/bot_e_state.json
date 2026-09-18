@@ -1,5 +1,5 @@
 {
- "cash": 45.01456994363048,
+ "cash": 195.67546694363045,
  "positions": {
   "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG": {
    "sym": "BIRB",
@@ -14,13 +14,14 @@
   },
   "Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump": {
    "sym": "CATE",
-   "qty": 3610.942893,
-   "cost": 242.8215160563695,
+   "qty": 1805.4714465,
+   "cost": 121.41075802818474,
    "opened": "2026-09-17T20:41:36Z",
-   "peak": 0.0756,
+   "peak": 0.0844,
    "entry": 0.0672460139225939,
-   "mark": 0.0756,
-   "cur_price": 0.0756
+   "mark": 0.0844,
+   "cur_price": 0.0844,
+   "tp1": true
   }
  },
  "trades": [
@@ -89,6 +90,21 @@
    "slip": 0.0007,
    "quote": "jup",
    "reason": "dip 24h -16% (SOL +3%) 1h -0.3%"
+  },
+  {
+   "t": "2026-09-18T07:26:42Z",
+   "side": "sell",
+   "sym": "CATE",
+   "addr": "Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump",
+   "price": 0.0844,
+   "usd": 150.66,
+   "pnl": 29.25,
+   "peak_x": 1.255,
+   "held_h": 10.8,
+   "frac": 0.5,
+   "slip": 0.0008,
+   "quote": "jup",
+   "reason": "tp1"
   }
  ],
  "equity": [
@@ -1175,6 +1191,10 @@
   {
    "t": "2026-09-18T07:21:36Z",
    "v": 573.77
+  },
+  {
+   "t": "2026-09-18T07:26:42Z",
+   "v": 603.83
   }
  ],
  "started": "2026-09-16T16:55:59Z",
