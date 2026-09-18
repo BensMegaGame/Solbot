@@ -1,18 +1,6 @@
 {
- "cash": 114.69264300000006,
+ "cash": 124.59346400000007,
  "positions": {
-  "9w6XCPQDKpiiuQY6MFBfuawUEpxpbNvsVyLq1RJgjupx": {
-   "sym": "Uranus",
-   "qty": 639392.788541,
-   "cost": 20.02,
-   "opened": "2026-09-18T14:51:56Z",
-   "peak": 4.086e-05,
-   "entry": 3.131095683090622e-05,
-   "base_entry": 3.131095683090622e-05,
-   "entry_liq": 20605.0,
-   "cur_price": 1.731e-05,
-   "mark": 1.731e-05
-  },
   "y2sCF2KcPxZ5o4bmwJ3M9P82k2h5excdet64z62Ffav": {
    "sym": "ZATOSHI",
    "qty": 364556.53714200004,
@@ -22,8 +10,8 @@
    "entry": 0.00016469324750200147,
    "base_entry": 0.0001260934888081534,
    "entry_liq": 30671.44,
-   "cur_price": 0.0002132,
-   "mark": 0.0002132,
+   "cur_price": 0.0001916,
+   "mark": 0.0001916,
    "added": true
   },
   "4ibpLuuz5D7xQpgbkHqG419HFRkTW8JUDE5ASrCi9FK9": {
@@ -60,8 +48,8 @@
    "entry": 0.00010698330611781891,
    "base_entry": 0.00010698330611781891,
    "entry_liq": 30462.8,
-   "cur_price": 8.868e-05,
-   "mark": 8.868e-05
+   "cur_price": 9.126e-05,
+   "mark": 9.126e-05
   }
  },
  "trades": [
@@ -680,6 +668,21 @@
    "held_h": 8.1,
    "frac": 1.0,
    "slip": 0.1,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-18T23:46:49Z",
+   "side": "sell",
+   "sym": "Uranus",
+   "addr": "9w6XCPQDKpiiuQY6MFBfuawUEpxpbNvsVyLq1RJgjupx",
+   "price": 1.624e-05,
+   "usd": 9.9,
+   "pnl": -10.12,
+   "peak_x": 1.305,
+   "held_h": 8.9,
+   "frac": 1.0,
+   "slip": 0.0226,
    "quote": "jup",
    "reason": "stop"
   }
@@ -1364,6 +1367,10 @@
   {
    "t": "2026-09-18T23:41:55Z",
    "v": 248.18
+  },
+  {
+   "t": "2026-09-18T23:46:49Z",
+   "v": 239.62
   }
  ],
  "started": "2026-09-18T09:36:39Z",
@@ -1385,7 +1392,8 @@
   "C4proDKqPKSdvTjhi8AGEWtLuea1kKT4k8RCvM9riYPw": 20728,
   "CYxv8mm44tqjYu6fvTMiZSrAWaM7QKwTSto179xuK7tS": 20728,
   "ChGkEmqxUuggy9NG9X3PEnv1q2bHFNgFhZmxJUowQtco": 20728,
-  "BjthYsyHKCMkEhFoNcANF4VVU4UPTLQjLxiH7jXjQdjS": 20728
+  "BjthYsyHKCMkEhFoNcANF4VVU4UPTLQjLxiH7jXjQdjS": 20728,
+  "9w6XCPQDKpiiuQY6MFBfuawUEpxpbNvsVyLq1RJgjupx": 20728
  },
  "strategy": "momentum_runner"
 }
