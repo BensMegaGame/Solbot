@@ -1,5 +1,5 @@
 {
- "cash": 298.8685639411118,
+ "cash": 322.2035949411118,
  "positions": {
   "5GefefPX1mDs6ZJB1apYmz6fCTCiNJpHturZ9bvFpump": {
    "sym": "Pumpoween",
@@ -18,18 +18,8 @@
    "opened": "2026-09-17T04:25:15Z",
    "peak": 0.0002884,
    "entry": 0.00024075348552984524,
-   "cur_price": 0.0001888,
-   "mark": 0.0001888
-  },
-  "A9AHYeqb7nQk7LZUraw7rBCzYRjy2DRvE6NqWfFHKRdH": {
-   "sym": "HUHCAT",
-   "qty": 59471.273934,
-   "cost": 50.02,
-   "opened": "2026-09-17T15:00:50Z",
-   "peak": 0.001442,
-   "entry": 0.0008410783339787067,
-   "cur_price": 0.0004294,
-   "mark": 0.0004294
+   "cur_price": 0.0001861,
+   "mark": 0.0001861
   },
   "DSgjVUFC6NA59YuxiEDSxgs6zP4jjwSuoYJ3uS7WboeH": {
    "sym": "SATS",
@@ -38,18 +28,18 @@
    "opened": "2026-09-17T20:40:22Z",
    "peak": 0.0002006,
    "entry": 0.0001836230119447136,
-   "cur_price": 0.0001483,
-   "mark": 0.0001483
+   "cur_price": 0.0001473,
+   "mark": 0.0001473
   },
   "72yxYmhLgDGwdyi2b9GjDynBB6VuG3kDxNKqDbzXh5bi": {
    "sym": "WOW",
    "qty": 69234.045899,
    "cost": 50.02,
    "opened": "2026-09-18T07:15:11Z",
-   "peak": 0.0008715,
+   "peak": 0.0008899,
    "entry": 0.0007224769165299132,
-   "cur_price": 0.000846,
-   "mark": 0.000846
+   "cur_price": 0.0008899,
+   "mark": 0.0008899
   }
  },
  "trades": [
@@ -938,6 +928,21 @@
    "slip": 0.0849,
    "quote": "jup",
    "reason": "screener"
+  },
+  {
+   "t": "2026-09-18T13:15:05Z",
+   "side": "sell",
+   "sym": "HUHCAT",
+   "addr": "A9AHYeqb7nQk7LZUraw7rBCzYRjy2DRvE6NqWfFHKRdH",
+   "price": 0.0003942,
+   "usd": 23.34,
+   "pnl": -26.68,
+   "peak_x": 1.714,
+   "held_h": 22.2,
+   "frac": 1.0,
+   "slip": 0.0101,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -7864,6 +7869,10 @@
   {
    "t": "2026-09-18T13:10:50Z",
    "v": 535.22
+  },
+  {
+   "t": "2026-09-18T13:15:52Z",
+   "v": 535.23
   }
  ],
  "started": "2026-09-10T17:17:16Z"
