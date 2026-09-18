@@ -1,6 +1,29 @@
 {
- "cash": 340.24965200000065,
- "positions": {},
+ "cash": 280.2096520000007,
+ "positions": {
+  "DDkRu4m2BihseXpkdicfMJ8WZHHhHZ8MKKWEnu1aLive": {
+   "sym": "STREAMED",
+   "qty": 795562.04447,
+   "cost": 30.02,
+   "opened": "2026-09-18T04:21:25Z",
+   "peak": 3.734e-05,
+   "entry": 3.773432909308688e-05,
+   "mig": 1789702109.0,
+   "cur_price": 3.734e-05,
+   "mark": 3.734e-05
+  },
+  "5iSDtRH9RtYBaGvRQjpvaUV5Pr8caBrUYz3KzZ5zpump": {
+   "sym": "ATOM",
+   "qty": 442976.25148,
+   "cost": 30.02,
+   "opened": "2026-09-18T04:21:26Z",
+   "peak": 7.554e-05,
+   "entry": 6.7768870000823e-05,
+   "mig": 1789703999.0,
+   "cur_price": 7.554e-05,
+   "mark": 7.554e-05
+  }
+ },
  "trades": [
   {
    "t": "2026-09-15T17:10:46Z",
@@ -784,6 +807,30 @@
    "slip": 0.007,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-18T04:21:25Z",
+   "side": "buy",
+   "sym": "STREAMED",
+   "addr": "DDkRu4m2BihseXpkdicfMJ8WZHHhHZ8MKKWEnu1aLive",
+   "price": 3.734e-05,
+   "fill": 3.7734329e-05,
+   "usd": 30.02,
+   "slip": 0.0184,
+   "quote": "jup",
+   "reason": "postgrad 53min"
+  },
+  {
+   "t": "2026-09-18T04:21:26Z",
+   "side": "buy",
+   "sym": "ATOM",
+   "addr": "5iSDtRH9RtYBaGvRQjpvaUV5Pr8caBrUYz3KzZ5zpump",
+   "price": 7.554e-05,
+   "fill": 6.776887e-05,
+   "usd": 30.02,
+   "slip": 0.0121,
+   "quote": "jup",
+   "reason": "postgrad 21min"
   }
  ],
  "equity": [
@@ -3654,6 +3701,10 @@
   {
    "t": "2026-09-18T04:16:23Z",
    "v": 340.25
+  },
+  {
+   "t": "2026-09-18T04:21:27Z",
+   "v": 343.38
   }
  ],
  "started": "2026-09-15T16:35:47Z",
