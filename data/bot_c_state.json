@@ -1,5 +1,5 @@
 {
- "cash": 139.88000000000005,
+ "cash": 118.41288900000004,
  "positions": {
   "C2WtD354XEvS9gzpJDLqzqkADq7wUtmJg1UzUdmL5a21": {
    "sym": "MCCAT",
@@ -10,8 +10,8 @@
    "entry": 0.0002288812301986844,
    "target": 0.0003419,
    "entry_liq": 44273.54,
-   "cur_price": 0.0002417,
-   "mark": 0.0002417
+   "cur_price": 0.0002408,
+   "mark": 0.0002408
   },
   "5THtNEGTF1y67eRWvcgz3MomDZePCVx1xdskHHeCpump": {
    "sym": "Saturween",
@@ -22,8 +22,8 @@
    "entry": 0.00018407115237980073,
    "target": 0.0002892,
    "entry_liq": 38546.51,
-   "cur_price": 0.0001869,
-   "mark": 0.0001869
+   "cur_price": 0.0001894,
+   "mark": 0.0001894
   },
   "3uEVodfTeqLsBssjQ5VPEwwdsTwWCJGCd3FVyx7RUNVB": {
    "sym": "ISG",
@@ -34,8 +34,8 @@
    "entry": 0.00022607119566230566,
    "target": 0.0003461,
    "entry_liq": 43905.73,
-   "cur_price": 0.0001817,
-   "mark": 0.0001817
+   "cur_price": 0.0001782,
+   "mark": 0.0001782
   },
   "DWZqne4tLESk3oijs5WDrLwdcoB26Gz5vTfL2nkWpaid": {
    "sym": "DOG",
@@ -46,8 +46,8 @@
    "entry": 0.00016944263313803203,
    "target": 0.0002774,
    "entry_liq": 37822.36,
-   "cur_price": 0.0001531,
-   "mark": 0.0001531
+   "cur_price": 0.0001562,
+   "mark": 0.0001562
   },
   "GKeUT73KRsvWVYNfQPdghxdHTKKGUAESf3t8BZmfXvih": {
    "sym": "GROK",
@@ -58,20 +58,20 @@
    "entry": 0.0005774501841911614,
    "target": 0.0009611,
    "entry_liq": 68373.33,
-   "cur_price": 0.0005141,
-   "mark": 0.0005141
+   "cur_price": 0.0005075,
+   "mark": 0.0005075
   },
-  "DrdwSUzt5ZMqa9Yj1cpvNRRx7zQZP5s9Gm2S8m62STNK": {
-   "sym": "STINK",
-   "qty": 432878.109096,
+  "CehKYf8jXN2E6dx4aLkekQZ6TGPLihcGkkaWj8PDVmJK": {
+   "sym": "40169K",
+   "qty": 455414.777312,
    "cost": 60.02,
-   "opened": "2026-09-18T10:21:23Z",
-   "peak": 0.0001463,
-   "entry": 0.00013865335007432608,
-   "target": 0.0002414,
-   "entry_liq": 33159.04,
-   "cur_price": 0.0001186,
-   "mark": 0.0001186
+   "opened": "2026-09-18T12:26:27Z",
+   "peak": 0.0001283,
+   "entry": 0.0001317919465728731,
+   "target": 0.0002013,
+   "entry_liq": 28942.1,
+   "cur_price": 0.0001283,
+   "mark": 0.0001283
   }
  },
  "trades": [
@@ -146,6 +146,33 @@
    "slip": 0.0106,
    "quote": "jup",
    "reason": "wiederanlauf: lauf 2.9x, jetzt -44% unter hoch"
+  },
+  {
+   "t": "2026-09-18T12:26:20Z",
+   "side": "sell",
+   "sym": "STINK",
+   "addr": "DrdwSUzt5ZMqa9Yj1cpvNRRx7zQZP5s9Gm2S8m62STNK",
+   "price": 9.163e-05,
+   "usd": 38.55,
+   "pnl": -21.47,
+   "peak_x": 1.055,
+   "held_h": 2.1,
+   "frac": 1.0,
+   "slip": 0.0105,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-18T12:26:27Z",
+   "side": "buy",
+   "sym": "40169K",
+   "addr": "CehKYf8jXN2E6dx4aLkekQZ6TGPLihcGkkaWj8PDVmJK",
+   "price": 0.0001283,
+   "fill": 0.000131791947,
+   "usd": 60.02,
+   "slip": 0.0022,
+   "quote": "jup",
+   "reason": "wiederanlauf: lauf 2.4x, jetzt -36% unter hoch"
   }
  ],
  "equity": [
@@ -284,10 +311,16 @@
   {
    "t": "2026-09-18T12:21:26Z",
    "v": 471.45
+  },
+  {
+   "t": "2026-09-18T12:26:27Z",
+   "v": 457.13
   }
  ],
  "started": "2026-09-18T09:36:15Z",
- "cooldown": {},
+ "cooldown": {
+  "DrdwSUzt5ZMqa9Yj1cpvNRRx7zQZP5s9Gm2S8m62STNK": 20717
+ },
  "strategy": "wiederanlauf",
  "watchlist": 254
 }
