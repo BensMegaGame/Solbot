@@ -1,5 +1,5 @@
 {
- "cash": 250.04476900000017,
+ "cash": 210.02476900000016,
  "positions": {
   "G5im68AmQ8c6C56Kdapufyu8dZddYkMBGoLbqtb98j7": {
    "sym": "JASON COIN",
@@ -10,8 +10,8 @@
    "entry": 0.00014471274283336502,
    "base_entry": 0.00014471274283336502,
    "entry_liq": 37090.82,
-   "cur_price": 0.0001169,
-   "mark": 0.0001169
+   "cur_price": 0.0001115,
+   "mark": 0.0001115
   },
   "9Gf5csKmAiSbvoCPAdMxXonDo1V5fq9RQeY8MZEBb3zt": {
    "sym": "PAWSINU",
@@ -22,20 +22,21 @@
    "entry": 6.825373744063673e-05,
    "base_entry": 6.825373744063673e-05,
    "entry_liq": 21688.71,
-   "cur_price": 9.361e-05,
-   "mark": 9.361e-05
+   "cur_price": 7.495e-05,
+   "mark": 7.495e-05
   },
   "EC5zBYNL8mrr96SWc2adEXMpZ1ncdKdQvmLULKmm78Q4": {
    "sym": "STUPID",
-   "qty": 170930.696239,
-   "cost": 20.02,
+   "qty": 369672.99115400005,
+   "cost": 60.040000000000006,
    "opened": "2026-09-18T10:47:12Z",
-   "peak": 0.0001496,
-   "entry": 0.00011712349180399688,
+   "peak": 0.0001929,
+   "entry": 0.00016241381284733423,
    "base_entry": 0.00011712349180399688,
    "entry_liq": 30007.55,
-   "cur_price": 0.000139,
-   "mark": 0.000139
+   "cur_price": 0.0001929,
+   "mark": 0.0001929,
+   "added": true
   },
   "GXL9wD1F5TzVXfZ33fKkBxeuNi7wKMUR25SDEBGEZ9mN": {
    "sym": "NIU",
@@ -46,8 +47,8 @@
    "entry": 0.0001561123901753912,
    "base_entry": 0.00011138170274577896,
    "entry_liq": 28371.26,
-   "cur_price": 0.0002657,
-   "mark": 0.0002657,
+   "cur_price": 0.0002211,
+   "mark": 0.0002211,
    "added": true
   },
   "HuDwEgKxqBLNKHBSFiVh8o5tdfzSBmhKochDqRFYCzVf": {
@@ -59,8 +60,8 @@
    "entry": 6.752805758607252e-05,
    "base_entry": 6.752805758607252e-05,
    "entry_liq": 24772.58,
-   "cur_price": 8.305e-05,
-   "mark": 8.305e-05
+   "cur_price": 8.464e-05,
+   "mark": 8.464e-05
   },
   "G1yYYWk9ZL4MWi3NPj68Zdazy5dSQ5UdjifwTp7mva3q": {
    "sym": "RENT",
@@ -71,8 +72,8 @@
    "entry": 5.611899568778448e-05,
    "base_entry": 5.611899568778448e-05,
    "entry_liq": 19993.2,
-   "cur_price": 4.629e-05,
-   "mark": 4.629e-05
+   "cur_price": 4.683e-05,
+   "mark": 4.683e-05
   },
   "536Y2Cf53iJ64N8JsQHnVPkCTPoXLhAHx5dCRX7XW7fM": {
    "sym": "SME",
@@ -95,8 +96,8 @@
    "entry": 0.00015745528986450924,
    "base_entry": 0.00015745528986450924,
    "entry_liq": 36662.78,
-   "cur_price": 0.0001433,
-   "mark": 0.0001433
+   "cur_price": 0.0001479,
+   "mark": 0.0001479
   },
   "FhFvXUevhR7qohajBW43oaDVqN4KmAcxgMBqtPZJUZDx": {
    "sym": "PSYOP",
@@ -107,8 +108,8 @@
    "entry": 0.0001100353595647333,
    "base_entry": 0.0001100353595647333,
    "entry_liq": 29361.08,
-   "cur_price": 7.606e-05,
-   "mark": 7.606e-05
+   "cur_price": 7.801e-05,
+   "mark": 7.801e-05
   },
   "51mZoUpp9sZ5vHTW5SzvpLLNr3QfpTtk7D3vgWDuzxY1": {
    "sym": "ROOM",
@@ -119,8 +120,8 @@
    "entry": 6.678746963729305e-05,
    "base_entry": 6.678746963729305e-05,
    "entry_liq": 24740.39,
-   "cur_price": 3.973e-05,
-   "mark": 3.973e-05
+   "cur_price": 4.318e-05,
+   "mark": 4.318e-05
   }
  },
  "trades": [
@@ -282,6 +283,18 @@
    "slip": 0.0155,
    "quote": "jup",
    "reason": "nachlage bei 1.82x"
+  },
+  {
+   "t": "2026-09-18T14:26:49Z",
+   "side": "buy",
+   "sym": "STUPID",
+   "addr": "EC5zBYNL8mrr96SWc2adEXMpZ1ncdKdQvmLULKmm78Q4",
+   "price": 0.0001929,
+   "fill": 0.000201366297,
+   "usd": 40.02,
+   "slip": 0.0231,
+   "quote": "jup",
+   "reason": "nachlage bei 1.65x"
   }
  ],
  "equity": [
@@ -516,6 +529,10 @@
   {
    "t": "2026-09-18T14:21:49Z",
    "v": 529.72
+  },
+  {
+   "t": "2026-09-18T14:26:49Z",
+   "v": 516.51
   }
  ],
  "started": "2026-09-18T09:36:39Z",
