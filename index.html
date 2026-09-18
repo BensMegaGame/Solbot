@@ -72,8 +72,11 @@ const START = 500;
 const CHART_FROM = '2026-09-12T00:00:00Z';   // Grafik erst ab hier (vorher GitHub-Actions-Testphase ohne Server)
 const V2_AT = '2026-09-14T13:00:00Z';        // v2: Jupiter-Quotes, fail-closed Rugcheck, ehrliches Marking, neue Kandidatenquellen
 const V3_AT = '2026-09-15T11:00:00Z';        // v3: Bot C+D neu aufgesetzt, Bot E proportionale Exits + neutrale Quellen
-const V4_AT = '2026-09-16T17:00:00Z';
-const V5_AT = '2026-09-18T12:00:00Z';        // v5: Bot C neu als Wiederanlauf (Reset), Bot F startet        // v4: Bot E neu als Large-Cap Dip (Reset), Bot B v2.5 (Spike-Sperre, 40 $ x 8)
+const V4_AT = '2026-09-16T17:00:00Z';        // v4: Bot E neu als Large-Cap Dip (Reset), Bot B v2.5 (Spike-Sperre, 40 $ x 8)
+// v5: Bot C komplett neu (Wiederanlauf-Strategie, Reset auf 500 $), Bot F startet (Momentum Runner, 500 $),
+// Bot D Codex-Bugfix (Int! -> Float!), Bot E Codex-Takt 12 h, Bot B Laufzeitschutz.
+// Zeitpunkt beim Hochladen anpassen, falls es spaeter wird - ein Marker in der Zukunft wird nicht gezeichnet.
+const V5_AT = '2026-09-18T09:40:00Z';
 async function j(p){ try{ const r=await fetch(p+'?t='+Date.now()); if(!r.ok) return null; return await r.json(); }catch(e){ return null } }
 
 function summarize(id, s){
@@ -109,7 +112,7 @@ function drawChart(a, b, c, d, e, f){
   g.fillText(new Date(t0).toLocaleDateString('de-DE'), L, H-6); const endLabel=new Date(t1).toLocaleDateString('de-DE'); g.fillText(endLabel, W-R-g.measureText(endLabel).width, H-6);
   for(const [pts,col] of series){ if(!pts.length) continue; g.strokeStyle=col.trim(); g.lineWidth=2; g.beginPath(); pts.forEach((p,i)=>i?g.lineTo(X(p.t),Y(p.v)):g.moveTo(X(p.t),Y(p.v))); g.stroke(); }
   // v2-Marker: gestrichelte Linie ab dem Update
-  for(const [at,label] of [[V2_AT,'v2'],[V3_AT,'v3'],[V4_AT,'v4 B+E'],[V5_AT,'v5 C+F']]){
+  for(const [at,label] of [[V2_AT,'v2'],[V3_AT,'v3'],[V4_AT,'v4 B+E'],[V5_AT,'v5: Bot C neu + Bot F']]){
     if(Date.parse(at)<t0 || Date.parse(at)>t1) continue;
     const x=X(at); g.save(); g.setLineDash([4,4]); g.strokeStyle='#8a94a6'; g.lineWidth=1; g.beginPath(); g.moveTo(x,T); g.lineTo(x,H-B); g.stroke(); g.restore();
     g.fillStyle='#5f6b67'; g.font='bold 11px Georgia'; g.fillText(label, x+4, T+10); }
@@ -167,7 +170,7 @@ function strategyOverview(){
   if(b&&b.strategy==='second_wave') document.getElementById('b-strat').textContent='Zweite Welle'+(b.watchlist?` · ${b.watchlist} beobachtet`:''); else if(cfg) document.getElementById('b-strat').textContent=cfg.strategy;
   if(c&&c.strategy==='post_graduation') document.getElementById('c-strat').textContent='Post-Graduation'+(c.codex===false?' · ohne Codex':''); else if(c&&c.strategy==='graduation') document.getElementById('c-strat').textContent='Graduation (Pump.fun)'; else if(cfgc) document.getElementById('c-strat').textContent=cfgc.strategy+' '+cfgc.lev+'x';
   const last=[a,b,c,d,e].filter(Boolean).flatMap(s=>s.equity).map(p=>p.t).sort().pop();
-  document.getElementById('sub').textContent = last ? 'Letzter Lauf: '+new Date(last).toLocaleString('de-DE')+' · aktualisiert alle 5 Minuten · v4 seit 16.09.' : 'Noch kein Lauf – der erste Durchgang startet automatisch nach dem Hochladen.';
+  document.getElementById('sub').textContent = last ? 'Letzter Lauf: '+new Date(last).toLocaleString('de-DE')+' · aktualisiert alle 5 Minuten · v5 seit 18.09.: Bot C neu, Bot F neu' : 'Noch kein Lauf – der erste Durchgang startet automatisch nach dem Hochladen.';
   summarize('a',a); summarize('b',b); summarize('c',c); summarize('d',d); summarize('e',e); summarize('f',f); if(d&&d.helius===false) document.getElementById('d-strat').textContent+=' · ohne Helius'; drawChart(a,b,c,d,e,f); positions(a,b,c,d,e,f); trades(a,b,c,d,e,f);  strategyOverview();
 })();
 </script>
