@@ -76,8 +76,12 @@ LIQ_EXIT_DROP = -0.35                  # Liquiditaet 35 % unter Einstiegsstand -
 DEAD_AFTER_H, DEAD_BELOW = 36, -0.20   # nach 36 h immer noch >20 % im Minus -> Kapital freigeben
 COOLDOWN_D = 14
 
+# v2.4: $after/$before sind Float!, NICHT Int!. Codex meldete bei Int! den Typfehler
+# "Variable $after of type Int! used in position expecting type Float" und brach damit die GESAMTE
+# Abfrage ab - codex_candidates() lieferte still eine leere Liste. Bot D hat deshalb vom 16.09. 14:50
+# bis zum 18.09. mit einer 42 Stunden alten Kandidatenliste gearbeitet, ohne dass es auffiel.
 Q_CAND = """
-query($net: [Int!], $after: Int!, $before: Int!) {
+query($net: [Int!], $after: Float!, $before: Float!) {
   filterTokens(
     filters: { network: $net, createdAt: { gte: $after, lte: $before }, volume24: { gte: %s },
                marketCap: { gte: %s, lte: %s }, liquidity: { gte: %s, lte: %s } }
@@ -102,8 +106,8 @@ def codex_candidates():
     now = time.time()
     try:
         r = requests.post(CODEX_URL, headers={"Authorization": CODEX_KEY, "Content-Type": "application/json", **UA},
-                          json={"query": Q_CAND, "variables": {"net": [SOLANA], "after": int(now - MAX_AGE_H * 3600),
-                                                                "before": int(now - MIN_AGE_H * 3600)}}, timeout=30)
+                          json={"query": Q_CAND, "variables": {"net": [SOLANA], "after": float(now - MAX_AGE_H * 3600),
+                                                                "before": float(now - MIN_AGE_H * 3600)}}, timeout=30)
         r.raise_for_status(); d = r.json()
         if d.get("errors"): print("codex:", str(d["errors"])[:200]); return None
         out = []
@@ -228,7 +232,10 @@ def main():
     # 1) Kandidaten (alle 30 Min neu)
     if now - meta.get("last_discover", 0) >= DISCOVER_EVERY_S:
         fresh = codex_candidates()
-        if fresh is None: print("Bot D: Codex-Abfrage fehlgeschlagen, erneuter Versuch beim naechsten Lauf")
+        if fresh is None:
+            alter_h = (now - meta.get("last_discover", now)) / 3600
+            print(f"Bot D: Codex-Abfrage fehlgeschlagen. Kandidatenliste ist {alter_h:.1f} h alt "
+                  f"({len(meta.get('cands', []))} Tokens) - ab ~2 h nicht mehr aussagekraeftig.")
         else:
             meta["last_discover"] = now
             if fresh: meta["cands"] = fresh
