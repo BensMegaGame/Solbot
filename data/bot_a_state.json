@@ -1,5 +1,5 @@
 {
- "cash": 228.4646709411118,
+ "cash": 178.44467094111178,
  "positions": {
   "5GefefPX1mDs6ZJB1apYmz6fCTCiNJpHturZ9bvFpump": {
    "sym": "Pumpoween",
@@ -8,8 +8,8 @@
    "opened": "2026-09-12T21:25:13Z",
    "peak": 0.0007295,
    "entry": 0.0004150532496,
-   "cur_price": 0.0006073,
-   "mark": 0.0006073
+   "cur_price": 0.0006083,
+   "mark": 0.0006083
   },
   "Hy1LfQLL4zLQihmiQKZm7DQzXm5K8aVSfKtdHFYXbKMm": {
    "sym": "AMBA",
@@ -18,8 +18,8 @@
    "opened": "2026-09-13T03:20:17Z",
    "peak": 0.002489,
    "entry": 0.0008846074234799999,
-   "cur_price": 0.0008519,
-   "mark": 0.0008519,
+   "cur_price": 0.000864,
+   "mark": 0.000864,
    "tp0": true
   },
   "4ZYonK7RhCaQ24YmGDwJpz1g8WbjyrLZQ8AcXf28WYPt": {
@@ -39,8 +39,8 @@
    "opened": "2026-09-17T04:25:15Z",
    "peak": 0.0002884,
    "entry": 0.00024075348552984524,
-   "cur_price": 0.000204,
-   "mark": 0.000204
+   "cur_price": 0.0001897,
+   "mark": 0.0001897
   },
   "A9AHYeqb7nQk7LZUraw7rBCzYRjy2DRvE6NqWfFHKRdH": {
    "sym": "HUHCAT",
@@ -49,8 +49,8 @@
    "opened": "2026-09-17T15:00:50Z",
    "peak": 0.001442,
    "entry": 0.0008410783339787067,
-   "cur_price": 0.000566,
-   "mark": 0.000566
+   "cur_price": 0.0005309,
+   "mark": 0.0005309
   },
   "DSgjVUFC6NA59YuxiEDSxgs6zP4jjwSuoYJ3uS7WboeH": {
    "sym": "SATS",
@@ -61,6 +61,16 @@
    "entry": 0.0001836230119447136,
    "cur_price": 0.0001862,
    "mark": 0.0001862
+  },
+  "4R2vepDVY7Gdcm2VKuAy6EbBfWsYSEsDJou1QGKuMfnf": {
+   "sym": "POT",
+   "qty": 38666.469016,
+   "cost": 50.02,
+   "opened": "2026-09-18T03:20:56Z",
+   "peak": 0.001369,
+   "entry": 0.0012936273022318631,
+   "cur_price": 0.001369,
+   "mark": 0.001369
   }
  },
  "trades": [
@@ -865,6 +875,18 @@
    "slip": 0.014,
    "quote": "jup",
    "reason": "trail"
+  },
+  {
+   "t": "2026-09-18T03:20:56Z",
+   "side": "buy",
+   "sym": "POT",
+   "addr": "4R2vepDVY7Gdcm2VKuAy6EbBfWsYSEsDJou1QGKuMfnf",
+   "price": 0.001369,
+   "fill": 0.001293627302,
+   "usd": 50.02,
+   "slip": 0.0098,
+   "quote": "jup",
+   "reason": "screener"
   }
  ],
  "equity": [
@@ -7319,6 +7341,10 @@
   {
    "t": "2026-09-18T03:16:04Z",
    "v": 524.04
+  },
+  {
+   "t": "2026-09-18T03:21:04Z",
+   "v": 522.54
   }
  ],
  "started": "2026-09-10T17:17:16Z"
