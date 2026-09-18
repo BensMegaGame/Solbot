@@ -1,5 +1,5 @@
 {
- "cash": 170.73189599999998,
+ "cash": 185.04321599999997,
  "positions": {
   "CsHrGJ3HpJV76ecFm4vZrpFSLNQaP1dwzj8e2cvkpump": {
    "sym": "PERIHEL",
@@ -11,8 +11,7 @@
    "entry_liq": 14067.39,
    "entry_vol": 41760,
    "cur_price": 3.307e-05,
-   "mark": 3.307e-05,
-   "no_quote_since": "2026-09-18T06:26:16Z"
+   "mark": 3.307e-05
   },
   "7nLukVng5teXze14rum9v57juXLjUp7JJnCveko1pump": {
    "sym": "Martians",
@@ -23,21 +22,9 @@
    "entry": 0.00038529549538297495,
    "entry_liq": 69381.39,
    "entry_vol": 57940.34,
-   "cur_price": 0.0004544,
-   "mark": 0.0004544,
+   "cur_price": 0.0004539,
+   "mark": 0.0004539,
    "added": true
-  },
-  "bykrhkExmjWco2mFxKGX3XPmPVaZB9JJp9MkRe8pump": {
-   "sym": "Shrek",
-   "qty": 76867.974202,
-   "cost": 20.02,
-   "opened": "2026-09-17T23:31:13Z",
-   "peak": 0.0002675,
-   "entry": 0.0002604465670890427,
-   "entry_liq": 54529.84,
-   "entry_vol": 104136.86,
-   "cur_price": 0.0002061,
-   "mark": 0.0002061
   },
   "7hGgx1VtNTj193fFXXuMEkp1MRV6JbWYgMBhHRYxaxu2": {
    "sym": "FRIES",
@@ -339,6 +326,21 @@
    "slip": 0.0237,
    "quote": "jup",
    "reason": "add"
+  },
+  {
+   "t": "2026-09-18T06:31:19Z",
+   "side": "sell",
+   "sym": "Shrek",
+   "addr": "bykrhkExmjWco2mFxKGX3XPmPVaZB9JJp9MkRe8pump",
+   "price": 0.0001867,
+   "usd": 14.31,
+   "pnl": -5.71,
+   "peak_x": 1.027,
+   "held_h": 7.0,
+   "frac": 1.0,
+   "slip": 0.0133,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -6913,6 +6915,10 @@
   {
    "t": "2026-09-18T06:26:16Z",
    "v": 390.06
+  },
+  {
+   "t": "2026-09-18T06:31:19Z",
+   "v": 388.42
   }
  ],
  "started": "2026-09-11T10:50:37Z",
@@ -6924,10 +6930,11 @@
   "92G6qAymyDNQe4kaBoB9h2fz6mzsYJrEV3T5BetZpump": 20726,
   "2DV95bLyBZjZ3Rbcm6c6GGHVpnqBtnNQwaQvzGDbpump": 20726,
   "7n8kRipxAQBfpGQtcGA2AbkM2HASSVCzqZ5F3QEopump": 20726,
-  "Hsga2MdTiF6sWwjv6atngwXz8cpsYdp11LpPSZNvpump": 20727
+  "Hsga2MdTiF6sWwjv6atngwXz8cpsYdp11LpPSZNvpump": 20727,
+  "bykrhkExmjWco2mFxKGX3XPmPVaZB9JJp9MkRe8pump": 20728
  },
- "streak": 0,
+ "streak": 1,
  "half_left": 3,
- "watchlist": 333,
+ "watchlist": 332,
  "strategy": "second_wave"
 }
