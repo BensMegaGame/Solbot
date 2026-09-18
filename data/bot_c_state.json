@@ -1,6 +1,18 @@
 {
- "cash": 314.7573290000007,
- "positions": {},
+ "cash": 284.7373290000007,
+ "positions": {
+  "AUi8h8QpkvovmT45ehmnRJJxgnJzXqN5UQtm9r6ipump": {
+   "sym": "Zmusebook",
+   "qty": 279826.344991,
+   "cost": 30.02,
+   "opened": "2026-09-18T05:26:27Z",
+   "peak": 0.000107,
+   "entry": 0.00010728082089971023,
+   "mig": 1789708630.0,
+   "cur_price": 0.000107,
+   "mark": 0.000107
+  }
+ },
  "trades": [
   {
    "t": "2026-09-15T17:10:46Z",
@@ -838,6 +850,18 @@
    "slip": 0.013,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-18T05:26:27Z",
+   "side": "buy",
+   "sym": "Zmusebook",
+   "addr": "AUi8h8QpkvovmT45ehmnRJJxgnJzXqN5UQtm9r6ipump",
+   "price": 0.000107,
+   "fill": 0.000107280821,
+   "usd": 30.02,
+   "slip": 0.0248,
+   "quote": "jup",
+   "reason": "postgrad 9min"
   }
  ],
  "equity": [
@@ -3760,6 +3784,10 @@
   {
    "t": "2026-09-18T05:21:26Z",
    "v": 314.76
+  },
+  {
+   "t": "2026-09-18T05:26:28Z",
+   "v": 314.68
   }
  ],
  "started": "2026-09-15T16:35:47Z",
