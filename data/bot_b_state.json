@@ -1,5 +1,5 @@
 {
- "cash": 185.04321599999997,
+ "cash": 165.02321599999996,
  "positions": {
   "CsHrGJ3HpJV76ecFm4vZrpFSLNQaP1dwzj8e2cvkpump": {
    "sym": "PERIHEL",
@@ -22,8 +22,8 @@
    "entry": 0.00038529549538297495,
    "entry_liq": 69381.39,
    "entry_vol": 57940.34,
-   "cur_price": 0.0003903,
-   "mark": 0.0003903,
+   "cur_price": 0.0003778,
+   "mark": 0.0003778,
    "added": true
   },
   "7hGgx1VtNTj193fFXXuMEkp1MRV6JbWYgMBhHRYxaxu2": {
@@ -38,6 +38,18 @@
    "cur_price": 0.0007632,
    "mark": 0.0007632,
    "added": true
+  },
+  "CEzvF3uFKNKPgCJ9xkgUGk758jjstiUhbkFxaXLFpVF4": {
+   "sym": "ABTC",
+   "qty": 235370.082086,
+   "cost": 20.02,
+   "opened": "2026-09-18T07:06:19Z",
+   "peak": 8.126e-05,
+   "entry": 8.505753926994448e-05,
+   "entry_liq": 25644.05,
+   "entry_vol": 126814.37,
+   "cur_price": 8.126e-05,
+   "mark": 8.126e-05
   }
  },
  "trades": [
@@ -341,6 +353,18 @@
    "slip": 0.0133,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-18T07:06:19Z",
+   "side": "buy",
+   "sym": "ABTC",
+   "addr": "CEzvF3uFKNKPgCJ9xkgUGk758jjstiUhbkFxaXLFpVF4",
+   "price": 8.126e-05,
+   "fill": 8.5057539e-05,
+   "usd": 20.02,
+   "slip": 0.0858,
+   "quote": "jup",
+   "reason": "ok vol-trend 1.87 buy 0.57"
   }
  ],
  "equity": [
@@ -6943,6 +6967,10 @@
   {
    "t": "2026-09-18T07:01:18Z",
    "v": 371.63
+  },
+  {
+   "t": "2026-09-18T07:06:19Z",
+   "v": 367.98
   }
  ],
  "started": "2026-09-11T10:50:37Z",
@@ -6958,7 +6986,7 @@
   "bykrhkExmjWco2mFxKGX3XPmPVaZB9JJp9MkRe8pump": 20728
  },
  "streak": 1,
- "half_left": 3,
+ "half_left": 2,
  "watchlist": 337,
  "strategy": "second_wave"
 }
