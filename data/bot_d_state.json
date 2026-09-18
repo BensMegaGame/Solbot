@@ -1,5 +1,5 @@
 {
- "cash": 354.39927100000057,
+ "cash": 362.85375500000055,
  "positions": {
   "DWZqne4tLESk3oijs5WDrLwdcoB26Gz5vTfL2nkWpaid": {
    "sym": "DOG",
@@ -9,8 +9,8 @@
    "peak": 0.0002774,
    "entry": 6.0825200791507635e-05,
    "liq0": 19970.8,
-   "cur_price": 0.0001458,
-   "mark": 0.0001458
+   "cur_price": 0.0001483,
+   "mark": 0.0001483
   },
   "G5im68AmQ8c6C56Kdapufyu8dZddYkMBGoLbqtb98j7": {
    "sym": "JASON COIN",
@@ -20,8 +20,8 @@
    "peak": 0.0001817,
    "entry": 0.0001508075676697539,
    "liq0": 37289.49,
-   "cur_price": 0.0001363,
-   "mark": 0.0001363
+   "cur_price": 0.0001367,
+   "mark": 0.0001367
   },
   "J53EGLkGxyC3mh45RVWxYtETEj2T9G3YnUPX5nn6AXGc": {
    "sym": "EBT",
@@ -42,8 +42,8 @@
    "peak": 9.434e-05,
    "entry": 9.388338776307548e-05,
    "liq0": 24885.12,
-   "cur_price": 6.26e-05,
-   "mark": 6.26e-05
+   "cur_price": 6.72e-05,
+   "mark": 6.72e-05
   },
   "3Sv4Jriwo2V7c1wturGVrrpfKc9XbGxewnDHpMLrpbWQ": {
    "sym": "INDEX",
@@ -64,8 +64,8 @@
    "peak": 0.0001669,
    "entry": 0.00014878978923819406,
    "liq0": 36039.97,
-   "cur_price": 0.0001371,
-   "mark": 0.0001371
+   "cur_price": 0.000135,
+   "mark": 0.000135
   },
   "5Zspimi8VD6LctJLtaSjLqaSUvmh3Rs849iPtGocpump": {
    "sym": "MIZO",
@@ -75,8 +75,8 @@
    "peak": 6.078e-05,
    "entry": 6.0650355586829245e-05,
    "liq0": 23698.77,
-   "cur_price": 5.449e-05,
-   "mark": 5.449e-05
+   "cur_price": 5.452e-05,
+   "mark": 5.452e-05
   },
   "8jkhbnbZJjajwdNxNrfQSqjMUH5wJXY8tDXWgtDJgrF1": {
    "sym": "BONERO",
@@ -86,19 +86,8 @@
    "peak": 0.0001079,
    "entry": 6.247727910483139e-05,
    "liq0": 21833.89,
-   "cur_price": 8.882e-05,
-   "mark": 8.882e-05
-  },
-  "BaxP2dCmFRJfFTnY5jVcGdL9uRPJDrgD8yUikGHH7RYS": {
-   "sym": "BULLGATES",
-   "qty": 261707.036781,
-   "cost": 15.02,
-   "opened": "2026-09-18T10:46:56Z",
-   "peak": 5.503e-05,
-   "entry": 5.739241934319458e-05,
-   "liq0": 20805.64,
-   "cur_price": 3.535e-05,
-   "mark": 3.535e-05
+   "cur_price": 8.913e-05,
+   "mark": 8.913e-05
   },
   "6LaVMJTguCzq93zpyF51hDunMWtW5n4ViCRrq96VognV": {
    "sym": "REVINU",
@@ -119,8 +108,8 @@
    "peak": 9.38e-05,
    "entry": 5.501527308380902e-05,
    "liq0": 18779.83,
-   "cur_price": 7.53e-05,
-   "mark": 7.53e-05
+   "cur_price": 7.361e-05,
+   "mark": 7.361e-05
   },
   "7ghKoBZBAjGSgbxix5K5kFhQzu9mxVmbdPxRT8j27eEo": {
    "sym": "ETAC",
@@ -130,8 +119,8 @@
    "peak": 9.862e-05,
    "entry": 9.24536282737261e-05,
    "liq0": 29736.46,
-   "cur_price": 9.862e-05,
-   "mark": 9.862e-05
+   "cur_price": 9.551e-05,
+   "mark": 9.551e-05
   },
   "2AecSw3gw4BwkqKLVMfX9qgmCrk8jjKCYbDdKrdzjyBN": {
    "sym": "MINER",
@@ -141,8 +130,8 @@
    "peak": 6.625e-05,
    "entry": 6.939092766198538e-05,
    "liq0": 24485.17,
-   "cur_price": 5.268e-05,
-   "mark": 5.268e-05
+   "cur_price": 4.786e-05,
+   "mark": 4.786e-05
   }
  },
  "trades": [
@@ -926,6 +915,21 @@
    "held_h": 6.9,
    "frac": 1.0,
    "slip": 0.0294,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-18T17:46:43Z",
+   "side": "sell",
+   "sym": "BULLGATES",
+   "addr": "BaxP2dCmFRJfFTnY5jVcGdL9uRPJDrgD8yUikGHH7RYS",
+   "price": 3.418e-05,
+   "usd": 8.45,
+   "pnl": -6.57,
+   "peak_x": 0.959,
+   "held_h": 7.0,
+   "frac": 1.0,
+   "slip": 0.049,
    "quote": "jup",
    "reason": "stop"
   }
@@ -4442,6 +4446,10 @@
   {
    "t": "2026-09-18T17:41:37Z",
    "v": 561.47
+  },
+  {
+   "t": "2026-09-18T17:46:46Z",
+   "v": 559.92
   }
  ],
  "started": "2026-09-15T16:35:51Z",

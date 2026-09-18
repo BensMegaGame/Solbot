@@ -25,7 +25,8 @@
    "entry_vol": 57940.34,
    "cur_price": 0.0003614,
    "mark": 0.0003614,
-   "added": true
+   "added": true,
+   "no_quote_since": "2026-09-18T17:46:18Z"
   },
   "7hGgx1VtNTj193fFXXuMEkp1MRV6JbWYgMBhHRYxaxu2": {
    "sym": "FRIES",
@@ -49,8 +50,8 @@
    "entry": 0.00010106194736476399,
    "entry_liq": 25644.05,
    "entry_vol": 126814.37,
-   "cur_price": 0.0001408,
-   "mark": 0.0001408,
+   "cur_price": 0.0001397,
+   "mark": 0.0001397,
    "added": true
   },
   "E3i7sTY5QYEBh3itepnomZQt7Eh5kzmHFk1vkm2pump": {
@@ -62,8 +63,8 @@
    "entry": 0.0005601402627098139,
    "entry_liq": 105799.95,
    "entry_vol": 79157.74,
-   "cur_price": 0.0005582,
-   "mark": 0.0005582
+   "cur_price": 0.0005435,
+   "mark": 0.0005435
   }
  },
  "trades": [
@@ -7517,6 +7518,10 @@
   {
    "t": "2026-09-18T17:41:12Z",
    "v": 383.91
+  },
+  {
+   "t": "2026-09-18T17:46:18Z",
+   "v": 382.89
   }
  ],
  "started": "2026-09-11T10:50:37Z",
@@ -7533,6 +7538,6 @@
  },
  "streak": 1,
  "half_left": 1,
- "watchlist": 396,
+ "watchlist": 405,
  "strategy": "second_wave"
 }
