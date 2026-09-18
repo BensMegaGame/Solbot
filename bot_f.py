@@ -79,10 +79,15 @@ MAX_HOLD_H = 72
 DEAD_PRICE_H = 12                     # 12 h ohne Kurs -> abschreiben, damit der Platz frei wird
 COOLDOWN_D = 14
 
-Q_F = """
-query($net: [Int!], $after: Float!, $before: Float!) {
+def q_f(now):
+    """Die Zeitstempel stehen als ZAHLEN in der Abfrage, nicht als GraphQL-Variablen.
+    Am 18.09. gemessen: createdAt mit einer Variablen ($after) laesst Codex mit
+    DOWNSTREAM_SERVICE_ERROR abbrechen - dieselbe Abfrage mit einer festen Zahl an derselben
+    Stelle antwortet sauber (20 Treffer). Ein Fehler auf Codex-Seite, den die Zahl umgeht."""
+    return """
+query($net: [Int!]) {
   filterTokens(
-    filters: { network: $net, createdAt: { gte: $after, lte: $before }, volume24: { gte: %s },
+    filters: { network: $net, createdAt: { gte: %d, lte: %d }, volume24: { gte: %s },
                marketCap: { gte: %s, lte: %s }, liquidity: { gte: %s, lte: %s } }
     rankings: [{ attribute: volume24, direction: DESC }]
     limit: 150
@@ -93,7 +98,8 @@ query($net: [Int!], $after: Float!, $before: Float!) {
       token { address symbol }
     }
   }
-}""" % (MIN_VOL24, MIN_MCAP, MAX_MCAP, MIN_LIQ, MAX_LIQ)
+}""" % (int(now - MAX_AGE_H * 3600), int(now - MIN_AGE_H * 3600), MIN_VOL24, MIN_MCAP, MAX_MCAP, MIN_LIQ, MAX_LIQ)
+
 # $after/$before sind Float!, nicht Int! - mit Int! bricht die Abfrage komplett ab und liefert still
 # eine leere Liste. Genau daran hingen Bot C und Bot D am 17.09. ueber 24 h mit eingefrorenen Kandidaten.
 
@@ -109,9 +115,7 @@ def codex_candidates():
     now = time.time()
     try:
         r = requests.post(CODEX_URL, headers={"Authorization": CODEX_KEY, "Content-Type": "application/json", **UA},
-                          json={"query": Q_F, "variables": {"net": [SOLANA],
-                                                            "after": float(now - MAX_AGE_H * 3600),
-                                                            "before": float(now - MIN_AGE_H * 3600)}}, timeout=30)
+                          json={"query": q_f(now), "variables": {"net": [SOLANA]}}, timeout=30)
         r.raise_for_status(); d = r.json()
         if d.get("errors"):
             print("Bot F codex:", str(d["errors"])[:200]); return None
@@ -156,13 +160,21 @@ def batch_pairs(addrs):
         chunk = addrs[k:k + 30]
         if not chunk: continue
         d = get(f"{DS}/latest/dex/tokens/{','.join(chunk)}") or {}
+        aeltestes = {}
         for p in (d.get("pairs") or []):
             if p.get("chainId") != "solana": continue
             a = (p.get("baseToken") or {}).get("address")
             if not a: continue
+            c = p.get("pairCreatedAt")
+            if c and (a not in aeltestes or c < aeltestes[a]): aeltestes[a] = c
             liq = ((p.get("liquidity") or {}).get("usd") or 0)
             if a not in out or liq > ((out[a].get("liquidity") or {}).get("usd") or 0):
                 out[a] = p
+        # Das Alter des liquidesten Pools unterschaetzt das Token-Alter, sobald ein Token einen neuen
+        # Pool bekommt (Migration, zweites DEX-Listing). Das AELTESTE bekannte Paar ist die bessere
+        # Naeherung. Exakt waere nur das Mint-Datum (Codex createdAt bzw. ein Helius-Aufruf je Token).
+        for a, c in aeltestes.items():
+            if a in out: out[a]["_aeltestes_paar_ms"] = c
         time.sleep(1.1)
     return out
 
@@ -263,6 +275,12 @@ def main():
         px = prices.get(a)
         if not px: continue
         p = pairs.get(a)
+        # Sicherheitsnetz gegen einen erneuten Codex-Ausfall - bewusst NUR nach oben. Ein Pool-Alter kann
+        # das Token-Alter unterschaetzen (neuer Pool bei Migration), aber nie ueberschaetzen: ist schon das
+        # AELTESTE bekannte Paar aelter als MAX_AGE_H, ist es auch das Token. Nach unten wird nicht
+        # abgelehnt, sonst wuerden Tokens mit frischem Zweitpool faelschlich aussortiert.
+        created = (p or {}).get("_aeltestes_paar_ms") or (p or {}).get("pairCreatedAt")
+        if created and (now - float(created) / 1000) / 3600 > MAX_AGE_H: continue
         c1 = chg_1h(p)
         if c1 is not None and c1 < MAX_DROP_1H: continue
         ok, risks = rug_ok(a); time.sleep(1.1)
