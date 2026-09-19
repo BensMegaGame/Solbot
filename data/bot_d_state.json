@@ -1,5 +1,5 @@
 {
- "cash": 271.4343370000008,
+ "cash": 279.96961200000084,
  "positions": {
   "J53EGLkGxyC3mh45RVWxYtETEj2T9G3YnUPX5nn6AXGc": {
    "sym": "EBT",
@@ -20,19 +20,8 @@
    "peak": 5.202e-05,
    "entry": 4.6397162928819636e-05,
    "liq0": 26088.23,
-   "cur_price": 4.057e-05,
-   "mark": 4.057e-05
-  },
-  "CdAoD87kYKHbtRFawiSqQJMX1pbKisoG7Ha1oJ47kB26": {
-   "sym": "DKNG",
-   "qty": 100947.787324,
-   "cost": 15.02,
-   "opened": "2026-09-18T10:46:43Z",
-   "peak": 0.0001669,
-   "entry": 0.00014878978923819406,
-   "liq0": 36039.97,
-   "cur_price": 8.955e-05,
-   "mark": 8.955e-05
+   "cur_price": 4.062e-05,
+   "mark": 4.062e-05
   },
   "8jkhbnbZJjajwdNxNrfQSqjMUH5wJXY8tDXWgtDJgrF1": {
    "sym": "BONERO",
@@ -64,8 +53,8 @@
    "peak": 0.000263,
    "entry": 9.24536282737261e-05,
    "liq0": 29736.46,
-   "cur_price": 0.0001529,
-   "mark": 0.0001529
+   "cur_price": 0.000151,
+   "mark": 0.000151
   },
   "6WGQvs889hdtZWLVG8Cc94ttK9TBT3rfUKJ5Tokepump": {
    "sym": "anon",
@@ -86,8 +75,8 @@
    "peak": 8.699e-05,
    "entry": 7.541678838855976e-05,
    "liq0": 25465.17,
-   "cur_price": 5.264e-05,
-   "mark": 5.264e-05
+   "cur_price": 5.249e-05,
+   "mark": 5.249e-05
   },
   "5oYh831YeK7cJ3YFLF1bAyCTDqPLzxETdQev5exy8TGA": {
    "sym": "HOODCAT",
@@ -97,8 +86,8 @@
    "peak": 0.0001941,
    "entry": 9.53958756412974e-05,
    "liq0": 27173.26,
-   "cur_price": 0.000183,
-   "mark": 0.000183
+   "cur_price": 0.0001866,
+   "mark": 0.0001866
   },
   "6rHkNb7HCtkpvdnVJsBCZHH5dw3AndqEjfmbEGhooR7t": {
    "sym": "SCRIBE",
@@ -119,8 +108,8 @@
    "peak": 0.0001928,
    "entry": 0.00015633686584042144,
    "liq0": 37875.52,
-   "cur_price": 0.0001295,
-   "mark": 0.0001295
+   "cur_price": 0.000118,
+   "mark": 0.000118
   },
   "8pCYnTGuzeLEs5PQkB9pofFrKetSgxySYffCXDwQy8hf": {
    "sym": "Apu",
@@ -152,8 +141,8 @@
    "peak": 8.524e-05,
    "entry": 6.871690878708447e-05,
    "liq0": 23137.39,
-   "cur_price": 7.279e-05,
-   "mark": 7.279e-05
+   "cur_price": 7.28e-05,
+   "mark": 7.28e-05
   }
  },
  "trades": [
@@ -1273,6 +1262,21 @@
    "held_h": 2.8,
    "frac": 1.0,
    "slip": 0.0058,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-19T15:01:43Z",
+   "side": "sell",
+   "sym": "DKNG",
+   "addr": "CdAoD87kYKHbtRFawiSqQJMX1pbKisoG7Ha1oJ47kB26",
+   "price": 8.458e-05,
+   "usd": 8.54,
+   "pnl": -6.48,
+   "peak_x": 1.122,
+   "held_h": 28.3,
+   "frac": 1.0,
+   "slip": 0.0053,
    "quote": "jup",
    "reason": "stop"
   }
@@ -5809,6 +5813,10 @@
   {
    "t": "2026-09-19T14:56:45Z",
    "v": 493.49
+  },
+  {
+   "t": "2026-09-19T15:01:44Z",
+   "v": 492.13
   }
  ],
  "started": "2026-09-15T16:35:51Z",
