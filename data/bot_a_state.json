@@ -1,5 +1,5 @@
 {
- "cash": 410.9156129411118,
+ "cash": 360.89561294111184,
  "positions": {
   "5GefefPX1mDs6ZJB1apYmz6fCTCiNJpHturZ9bvFpump": {
    "sym": "Pumpoween",
@@ -30,6 +30,16 @@
    "entry": 0.0001254859667485435,
    "cur_price": 0.0001061,
    "mark": 0.0001061
+  },
+  "B3jjDNkBw48utaFxRRSWxg4oUkN23YxodChdEf4bxhQS": {
+   "sym": "BITDOG",
+   "qty": 142314.040476,
+   "cost": 50.02,
+   "opened": "2026-09-19T10:20:24Z",
+   "peak": 0.0003361,
+   "entry": 0.0003514762129772813,
+   "cur_price": 0.0003361,
+   "mark": 0.0003361
   }
  },
  "trades": [
@@ -1032,6 +1042,18 @@
    "slip": 0.0063,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-19T10:20:24Z",
+   "side": "buy",
+   "sym": "BITDOG",
+   "addr": "B3jjDNkBw48utaFxRRSWxg4oUkN23YxodChdEf4bxhQS",
+   "price": 0.0003361,
+   "fill": 0.000351476213,
+   "usd": 50.02,
+   "slip": 0.0139,
+   "quote": "jup",
+   "reason": "screener"
   }
  ],
  "equity": [
@@ -8970,6 +8992,10 @@
   {
    "t": "2026-09-19T10:15:51Z",
    "v": 559.87
+  },
+  {
+   "t": "2026-09-19T10:20:52Z",
+   "v": 557.68
   }
  ],
  "started": "2026-09-10T17:17:16Z"
