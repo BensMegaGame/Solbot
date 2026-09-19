@@ -1,5 +1,5 @@
 {
- "cash": 30.636617999999864,
+ "cash": 10.725175999999855,
  "positions": {
   "5THtNEGTF1y67eRWvcgz3MomDZePCVx1xdskHHeCpump": {
    "sym": "Saturween",
@@ -10,8 +10,8 @@
    "entry": 0.00018407115237980073,
    "target": 0.0002892,
    "entry_liq": 38546.51,
-   "cur_price": 0.0001454,
-   "mark": 0.0001454
+   "cur_price": 0.0001418,
+   "mark": 0.0001418
   },
   "DtUntDyWcRpzTVt8JiW8fXvUt3WDGGw6kdiD7fjNMFzJ": {
    "sym": "STONKAT",
@@ -22,8 +22,8 @@
    "entry": 0.00010215793014527518,
    "target": 0.0001494,
    "entry_liq": 33649.22,
-   "cur_price": 8.896e-05,
-   "mark": 8.896e-05,
+   "cur_price": 8.866e-05,
+   "mark": 8.866e-05,
    "tp1": true
   },
   "2s9ycNwMgVCB4SWtXmTu14w1ospd88MVYZdHLVEHLdVC": {
@@ -35,8 +35,8 @@
    "entry": 0.00016527893881963633,
    "target": 0.0002413,
    "entry_liq": 36736.43,
-   "cur_price": 0.0003468,
-   "mark": 0.0003468,
+   "cur_price": 0.0003103,
+   "mark": 0.0003103,
    "tp1": true
   },
   "41WU7d3EzacMHkpgHNnF7eG9aXjvbPqASXVLpGqkoTpa": {
@@ -48,20 +48,8 @@
    "entry": 0.0003368196152328185,
    "target": 0.0005244,
    "entry_liq": 49233.12,
-   "cur_price": 0.0003834,
-   "mark": 0.0003834
-  },
-  "8StnEDgfxfvxpCUUMH9ChXaqAkGGtxvnfxCAYHYnPXja": {
-   "sym": "FLOPPY",
-   "qty": 153270.173915,
-   "cost": 60.02,
-   "opened": "2026-09-19T14:16:36Z",
-   "peak": 0.0003739,
-   "entry": 0.0003915960846582302,
-   "target": 0.0005827,
-   "entry_liq": 56080.28,
-   "cur_price": 0.000277,
-   "mark": 0.000277
+   "cur_price": 0.0003725,
+   "mark": 0.0003725
   },
   "F7CTvENFnkDJysMhaFFicDT2FwnbW2oasFZGG6WJnar7": {
    "sym": "STONK5",
@@ -72,8 +60,20 @@
    "entry": 9.391107136115313e-05,
    "target": 0.0001595,
    "entry_liq": 27541.3,
-   "cur_price": 9.272e-05,
-   "mark": 9.272e-05
+   "cur_price": 8.816e-05,
+   "mark": 8.816e-05
+  },
+  "GADj8JQ8iQLQD5S6ScvncJWmGs7PkwHnXsBrEUns6ue5": {
+   "sym": "POKECOIN",
+   "qty": 1174362.668595,
+   "cost": 60.02,
+   "opened": "2026-09-19T17:46:35Z",
+   "peak": 4.866e-05,
+   "entry": 5.1108572849822915e-05,
+   "target": 0.0001018,
+   "entry_liq": 22290.8,
+   "cur_price": 4.866e-05,
+   "mark": 4.866e-05
   }
  },
  "trades": [
@@ -571,6 +571,33 @@
    "slip": 0.0172,
    "quote": "jup",
    "reason": "wiederanlauf: lauf 2.9x, jetzt -42% unter hoch"
+  },
+  {
+   "t": "2026-09-19T17:46:33Z",
+   "side": "sell",
+   "sym": "FLOPPY",
+   "addr": "8StnEDgfxfvxpCUUMH9ChXaqAkGGtxvnfxCAYHYnPXja",
+   "price": 0.0002737,
+   "usd": 40.11,
+   "pnl": -19.91,
+   "peak_x": 0.955,
+   "held_h": 3.5,
+   "frac": 1.0,
+   "slip": 0.0009,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-19T17:46:35Z",
+   "side": "buy",
+   "sym": "POKECOIN",
+   "addr": "GADj8JQ8iQLQD5S6ScvncJWmGs7PkwHnXsBrEUns6ue5",
+   "price": 4.866e-05,
+   "fill": 5.1108573e-05,
+   "usd": 60.02,
+   "slip": 0.0335,
+   "quote": "jup",
+   "reason": "wiederanlauf: lauf 2.1x, jetzt -52% unter hoch"
   }
  ],
  "equity": [
@@ -2117,6 +2144,10 @@
   {
    "t": "2026-09-19T17:41:27Z",
    "v": 337.18
+  },
+  {
+   "t": "2026-09-19T17:46:35Z",
+   "v": 319.22
   }
  ],
  "started": "2026-09-18T09:36:15Z",
@@ -2134,7 +2165,9 @@
   "9LAcK5XfutibvzXAqNMjVCL5FRuSTv2TVNxnLK5QExUt": 20718,
   "C2WtD354XEvS9gzpJDLqzqkADq7wUtmJg1UzUdmL5a21": 20718,
   "E8fsmahzoa4WGZ1dCnGBTzgXRxz9T7nC17KWGkzGxray": 20718,
-  "CehKYf8jXN2E6dx4aLkekQZ6TGPLihcGkkaWj8PDVmJK": 20718
+  "CehKYf8jXN2E6dx4aLkekQZ6TGPLihcGkkaWj8PDVmJK": 20718,
+  "8StnEDgfxfvxpCUUMH9ChXaqAkGGtxvnfxCAYHYnPXja": 20718,
+  "7wCM5K4ziHmrbjGe5QFhBqBME2fH82dn4Wfx8vhKSTNK": 20718
  },
  "strategy": "wiederanlauf",
  "watchlist": 375
