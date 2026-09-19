@@ -1,5 +1,5 @@
 {
- "cash": 17.92414299999988,
+ "cash": 58.06935599999988,
  "positions": {
   "5THtNEGTF1y67eRWvcgz3MomDZePCVx1xdskHHeCpump": {
    "sym": "Saturween",
@@ -10,8 +10,8 @@
    "entry": 0.00018407115237980073,
    "target": 0.0002892,
    "entry_liq": 38546.51,
-   "cur_price": 0.0001308,
-   "mark": 0.0001308
+   "cur_price": 0.0001558,
+   "mark": 0.0001558
   },
   "CehKYf8jXN2E6dx4aLkekQZ6TGPLihcGkkaWj8PDVmJK": {
    "sym": "40169K",
@@ -22,20 +22,8 @@
    "entry": 0.0001317919465728731,
    "target": 0.0002013,
    "entry_liq": 28942.1,
-   "cur_price": 0.0001001,
-   "mark": 0.0001001
-  },
-  "E8fsmahzoa4WGZ1dCnGBTzgXRxz9T7nC17KWGkzGxray": {
-   "sym": "LYNKS",
-   "qty": 502342.222656,
-   "cost": 60.02,
-   "opened": "2026-09-18T16:21:17Z",
-   "peak": 0.0001562,
-   "entry": 0.00011948030106380532,
-   "target": 0.0001953,
-   "entry_liq": 32971.33,
-   "cur_price": 0.0001052,
-   "mark": 0.0001052
+   "cur_price": 0.0001002,
+   "mark": 0.0001002
   },
   "DtUntDyWcRpzTVt8JiW8fXvUt3WDGGw6kdiD7fjNMFzJ": {
    "sym": "STONKAT",
@@ -46,8 +34,8 @@
    "entry": 0.00010215793014527518,
    "target": 0.0001494,
    "entry_liq": 33649.22,
-   "cur_price": 0.0001018,
-   "mark": 0.0001018,
+   "cur_price": 0.0001008,
+   "mark": 0.0001008,
    "tp1": true
   },
   "2s9ycNwMgVCB4SWtXmTu14w1ospd88MVYZdHLVEHLdVC": {
@@ -59,8 +47,8 @@
    "entry": 0.00016527893881963633,
    "target": 0.0002413,
    "entry_liq": 36736.43,
-   "cur_price": 0.0001732,
-   "mark": 0.0001732
+   "cur_price": 0.0001686,
+   "mark": 0.0001686
   },
   "41WU7d3EzacMHkpgHNnF7eG9aXjvbPqASXVLpGqkoTpa": {
    "sym": "GAY",
@@ -71,8 +59,8 @@
    "entry": 0.0003368196152328185,
    "target": 0.0005244,
    "entry_liq": 49233.12,
-   "cur_price": 0.0004052,
-   "mark": 0.0004052
+   "cur_price": 0.0004029,
+   "mark": 0.0004029
   }
  },
  "trades": [
@@ -501,6 +489,21 @@
    "slip": 0.0236,
    "quote": "jup",
    "reason": "wiederanlauf: lauf 6.7x, jetzt -37% unter hoch"
+  },
+  {
+   "t": "2026-09-19T11:11:32Z",
+   "side": "sell",
+   "sym": "LYNKS",
+   "addr": "E8fsmahzoa4WGZ1dCnGBTzgXRxz9T7nC17KWGkzGxray",
+   "price": 8.1e-05,
+   "usd": 40.15,
+   "pnl": -19.87,
+   "peak_x": 1.307,
+   "held_h": 18.8,
+   "frac": 1.0,
+   "slip": 0.0052,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -1731,6 +1734,10 @@
   {
    "t": "2026-09-19T11:06:34Z",
    "v": 324.01
+  },
+  {
+   "t": "2026-09-19T11:11:32Z",
+   "v": 317.14
   }
  ],
  "started": "2026-09-18T09:36:15Z",
@@ -1746,7 +1753,8 @@
   "GXL9wD1F5TzVXfZ33fKkBxeuNi7wKMUR25SDEBGEZ9mN": 20717,
   "zzjkh1hLbvsFJXWLfE6h4JNbcnRj4eteuKRw42PN2tC": 20718,
   "9LAcK5XfutibvzXAqNMjVCL5FRuSTv2TVNxnLK5QExUt": 20718,
-  "C2WtD354XEvS9gzpJDLqzqkADq7wUtmJg1UzUdmL5a21": 20718
+  "C2WtD354XEvS9gzpJDLqzqkADq7wUtmJg1UzUdmL5a21": 20718,
+  "E8fsmahzoa4WGZ1dCnGBTzgXRxz9T7nC17KWGkzGxray": 20718
  },
  "strategy": "wiederanlauf",
  "watchlist": 349
