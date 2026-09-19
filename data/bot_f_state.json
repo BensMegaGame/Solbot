@@ -1,5 +1,5 @@
 {
- "cash": 139.30534100000003,
+ "cash": 99.28534100000002,
  "positions": {
   "7GuTYEM2bF7fWF7zKfJ8UWMrs7i6xeoDMFJYnGXDH9ke": {
    "sym": "HABIBINU",
@@ -16,15 +16,16 @@
   },
   "6Ax9mQt3oxsrxDjAF5p1Ljc7NPPHmXWsSsPgnhRJfN8A": {
    "sym": "SDOG",
-   "qty": 241964.425879,
-   "cost": 20.02,
+   "qty": 524356.5625789999,
+   "cost": 60.040000000000006,
    "opened": "2026-09-19T10:46:52Z",
-   "peak": 0.0001082,
-   "entry": 8.27394354656559e-05,
+   "peak": 0.0001331,
+   "entry": 0.00011450223814249362,
    "base_entry": 8.27394354656559e-05,
    "entry_liq": 26009.95,
-   "cur_price": 0.0001082,
-   "mark": 0.0001082
+   "cur_price": 0.0001331,
+   "mark": 0.0001331,
+   "added": true
   },
   "7gnye7MymAa2iN8iZsZvH6ybjxeUiaxSoavxgeqG8kkh": {
    "sym": "microsoft",
@@ -35,8 +36,8 @@
    "entry": 9.769900981324227e-05,
    "base_entry": 9.769900981324227e-05,
    "entry_liq": 30247.89,
-   "cur_price": 9.044e-05,
-   "mark": 9.044e-05
+   "cur_price": 8.832e-05,
+   "mark": 8.832e-05
   }
  },
  "trades": [
@@ -807,6 +808,18 @@
    "slip": 0.0134,
    "quote": "jup",
    "reason": "sonde"
+  },
+  {
+   "t": "2026-09-19T12:46:48Z",
+   "side": "buy",
+   "sym": "SDOG",
+   "addr": "6Ax9mQt3oxsrxDjAF5p1Ljc7NPPHmXWsSsPgnhRJfN8A",
+   "price": 0.0001331,
+   "fill": 0.000141717827,
+   "usd": 40.02,
+   "slip": 0.0388,
+   "quote": "jup",
+   "reason": "nachlage bei 1.61x"
   }
  ],
  "equity": [
@@ -2113,6 +2126,10 @@
   {
    "t": "2026-09-19T12:41:47Z",
    "v": 202.16
+  },
+  {
+   "t": "2026-09-19T12:46:48Z",
+   "v": 205.31
   }
  ],
  "started": "2026-09-18T09:36:39Z",
