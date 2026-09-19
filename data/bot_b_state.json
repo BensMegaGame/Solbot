@@ -1,18 +1,6 @@
 {
- "cash": 277.14801499999993,
+ "cash": 289.8085049999999,
  "positions": {
-  "4Ee7xRodjp7kBGTZsHj9FE87UQWJuPke7ENzzGWBbFCc": {
-   "sym": "ZODL",
-   "qty": 40176.791895332,
-   "cost": 20.02,
-   "opened": "2026-09-18T21:36:17Z",
-   "peak": 0.0005957,
-   "entry": 0.0004982976254588922,
-   "entry_liq": 110665.36,
-   "entry_vol": 104268.64,
-   "cur_price": 0.0004233,
-   "mark": 0.0004233
-  },
   "2s9ycNwMgVCB4SWtXmTu14w1ospd88MVYZdHLVEHLdVC": {
    "sym": "SKYNET",
    "qty": 128314.477151,
@@ -23,7 +11,8 @@
    "entry_liq": 35734.54,
    "entry_vol": 128155.97,
    "cur_price": 0.0002005,
-   "mark": 0.0002005
+   "mark": 0.0002005,
+   "no_quote_since": "2026-09-19T14:56:21Z"
   },
   "7TKRV4SneC6xLRaAt21a6d1kheAzXHGKP9WDzri9aD2e": {
    "sym": "SHINJUKU",
@@ -487,6 +476,21 @@
    "slip": 0.0123,
    "quote": "jup",
    "reason": "these: vol"
+  },
+  {
+   "t": "2026-09-19T14:56:21Z",
+   "side": "sell",
+   "sym": "ZODL",
+   "addr": "4Ee7xRodjp7kBGTZsHj9FE87UQWJuPke7ENzzGWBbFCc",
+   "price": 0.0003226,
+   "usd": 12.66,
+   "pnl": -7.36,
+   "peak_x": 1.195,
+   "held_h": 17.3,
+   "frac": 1.0,
+   "slip": 0.0003,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -8617,6 +8621,10 @@
   {
    "t": "2026-09-19T14:51:21Z",
    "v": 338.68
+  },
+  {
+   "t": "2026-09-19T14:56:21Z",
+   "v": 334.34
   }
  ],
  "started": "2026-09-11T10:50:37Z",
@@ -8633,10 +8641,11 @@
   "E3i7sTY5QYEBh3itepnomZQt7Eh5kzmHFk1vkm2pump": 20728,
   "7hGgx1VtNTj193fFXXuMEkp1MRV6JbWYgMBhHRYxaxu2": 20728,
   "CsHrGJ3HpJV76ecFm4vZrpFSLNQaP1dwzj8e2cvkpump": 20729,
-  "7nLukVng5teXze14rum9v57juXLjUp7JJnCveko1pump": 20729
+  "7nLukVng5teXze14rum9v57juXLjUp7JJnCveko1pump": 20729,
+  "4Ee7xRodjp7kBGTZsHj9FE87UQWJuPke7ENzzGWBbFCc": 20729
  },
- "streak": 1,
+ "streak": 2,
  "half_left": 3,
- "watchlist": 545,
+ "watchlist": 542,
  "strategy": "second_wave"
 }
