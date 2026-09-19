@@ -1,5 +1,5 @@
 {
- "cash": 357.33588900000063,
+ "cash": 342.31588900000065,
  "positions": {
   "G5im68AmQ8c6C56Kdapufyu8dZddYkMBGoLbqtb98j7": {
    "sym": "JASON COIN",
@@ -9,8 +9,8 @@
    "peak": 0.0002327,
    "entry": 0.0001508075676697539,
    "liq0": 37289.49,
-   "cur_price": 0.0001063,
-   "mark": 0.0001063
+   "cur_price": 0.0001036,
+   "mark": 0.0001036
   },
   "J53EGLkGxyC3mh45RVWxYtETEj2T9G3YnUPX5nn6AXGc": {
    "sym": "EBT",
@@ -31,8 +31,8 @@
    "peak": 5.202e-05,
    "entry": 4.6397162928819636e-05,
    "liq0": 26088.23,
-   "cur_price": 3.569e-05,
-   "mark": 3.569e-05
+   "cur_price": 3.57e-05,
+   "mark": 3.57e-05
   },
   "CdAoD87kYKHbtRFawiSqQJMX1pbKisoG7Ha1oJ47kB26": {
    "sym": "DKNG",
@@ -53,8 +53,8 @@
    "peak": 0.0002055,
    "entry": 6.247727910483139e-05,
    "liq0": 21833.89,
-   "cur_price": 8.596e-05,
-   "mark": 8.596e-05
+   "cur_price": 8.819e-05,
+   "mark": 8.819e-05
   },
   "Bz5N9wrcxDw2YTf8tQkG8PJzdbUW89ZNWLWbdqA2pump": {
    "sym": "\uc288\ubc14\uc624",
@@ -64,8 +64,8 @@
    "peak": 9.38e-05,
    "entry": 5.501527308380902e-05,
    "liq0": 18779.83,
-   "cur_price": 4.474e-05,
-   "mark": 4.474e-05
+   "cur_price": 4.351e-05,
+   "mark": 4.351e-05
   },
   "7ghKoBZBAjGSgbxix5K5kFhQzu9mxVmbdPxRT8j27eEo": {
    "sym": "ETAC",
@@ -75,8 +75,8 @@
    "peak": 0.000263,
    "entry": 9.24536282737261e-05,
    "liq0": 29736.46,
-   "cur_price": 0.0001856,
-   "mark": 0.0001856
+   "cur_price": 0.0001844,
+   "mark": 0.0001844
   },
   "25k6xgPB6MDsHgTaNaECHXLvxCuJL1sL3q4aRC9Tw4Yd": {
    "sym": "CLAX",
@@ -86,10 +86,8 @@
    "peak": 8.18e-05,
    "entry": 7.444312402208797e-05,
    "liq0": 22552.89,
-   "cur_price": 4.702e-05,
-   "mark": 4.702e-05,
-   "no_px_since": "2026-09-19T11:11:41Z",
-   "no_quote_since": "2026-09-19T11:11:41Z"
+   "cur_price": 4.665e-05,
+   "mark": 4.665e-05
   },
   "6WGQvs889hdtZWLVG8Cc94ttK9TBT3rfUKJ5Tokepump": {
    "sym": "anon",
@@ -110,8 +108,19 @@
    "peak": 8.137e-05,
    "entry": 7.541678838855976e-05,
    "liq0": 25465.17,
-   "cur_price": 8.046e-05,
-   "mark": 8.046e-05
+   "cur_price": 7.81e-05,
+   "mark": 7.81e-05
+  },
+  "AeDgbAv64t53GiBPemV2geVB1pZkdBLPumjn25HWXpUo": {
+   "sym": "STOCKCAT",
+   "qty": 257445.136804,
+   "cost": 15.02,
+   "opened": "2026-09-19T11:16:46Z",
+   "peak": 5.574e-05,
+   "entry": 5.834252760204647e-05,
+   "liq0": 20526.28,
+   "cur_price": 5.574e-05,
+   "mark": 5.574e-05
   }
  },
  "trades": [
@@ -1075,6 +1084,18 @@
    "fill": 7.5416788e-05,
    "usd": 15.02,
    "slip": 0.0239,
+   "quote": "jup",
+   "reason": "longshot"
+  },
+  {
+   "t": "2026-09-19T11:16:46Z",
+   "side": "buy",
+   "sym": "STOCKCAT",
+   "addr": "AeDgbAv64t53GiBPemV2geVB1pZkdBLPumjn25HWXpUo",
+   "price": 5.574e-05,
+   "fill": 5.8342528e-05,
+   "usd": 15.02,
+   "slip": 0.0323,
    "quote": "jup",
    "reason": "longshot"
   }
@@ -5431,6 +5452,10 @@
   {
    "t": "2026-09-19T11:11:41Z",
    "v": 502.07
+  },
+  {
+   "t": "2026-09-19T11:16:46Z",
+   "v": 500.59
   }
  ],
  "started": "2026-09-15T16:35:51Z",
