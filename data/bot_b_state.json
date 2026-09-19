@@ -24,8 +24,7 @@
    "entry_liq": 110665.36,
    "entry_vol": 104268.64,
    "cur_price": 0.0004898,
-   "mark": 0.0004898,
-   "no_quote_since": "2026-09-19T09:46:09Z"
+   "mark": 0.0004898
   },
   "2s9ycNwMgVCB4SWtXmTu14w1ospd88MVYZdHLVEHLdVC": {
    "sym": "SKYNET",
@@ -37,7 +36,8 @@
    "entry_liq": 35734.54,
    "entry_vol": 128155.97,
    "cur_price": 0.0001611,
-   "mark": 0.0001611
+   "mark": 0.0001611,
+   "no_quote_since": "2026-09-19T09:51:09Z"
   }
  },
  "trades": [
@@ -8347,6 +8347,10 @@
   {
    "t": "2026-09-19T09:46:09Z",
    "v": 335.87
+  },
+  {
+   "t": "2026-09-19T09:51:09Z",
+   "v": 335.87
   }
  ],
  "started": "2026-09-11T10:50:37Z",
@@ -8366,6 +8370,6 @@
  },
  "streak": 0,
  "half_left": 4,
- "watchlist": 504,
+ "watchlist": 502,
  "strategy": "second_wave"
 }
