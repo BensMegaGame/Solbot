@@ -1,5 +1,5 @@
 {
- "cash": 95.98205600000006,
+ "cash": 111.89109700000006,
  "positions": {
   "y2sCF2KcPxZ5o4bmwJ3M9P82k2h5excdet64z62Ffav": {
    "sym": "ZATOSHI",
@@ -10,21 +10,9 @@
    "entry": 0.00016469324750200147,
    "base_entry": 0.0001260934888081534,
    "entry_liq": 30671.44,
-   "cur_price": 0.0001362,
-   "mark": 0.0001362,
+   "cur_price": 0.0001364,
+   "mark": 0.0001364,
    "added": true
-  },
-  "FkDqBb1Vz6iZH9aSD5RBV5ctPQGrF2Ye6NVJ4sXncYMF": {
-   "sym": "INUTILITY",
-   "qty": 193361.463209,
-   "cost": 20.02,
-   "opened": "2026-09-18T22:21:48Z",
-   "peak": 0.0001041,
-   "entry": 0.00010353665962054103,
-   "base_entry": 0.00010353665962054103,
-   "entry_liq": 32307.71,
-   "cur_price": 8.62e-05,
-   "mark": 8.62e-05
   },
   "DDndHihssMMJnd3je9Fxukq4M9PdxwQ2XqF8cZgkZu1s": {
    "sym": "COINU",
@@ -35,8 +23,8 @@
    "entry": 0.00014534814783594144,
    "base_entry": 0.00010698330611781891,
    "entry_liq": 30462.8,
-   "cur_price": 0.0002124,
-   "mark": 0.0002124,
+   "cur_price": 0.0002047,
+   "mark": 0.0002047,
    "added": true
   }
  },
@@ -700,6 +688,21 @@
    "slip": 0.0412,
    "quote": "jup",
    "reason": "nachlage bei 1.54x"
+  },
+  {
+   "t": "2026-09-19T02:21:52Z",
+   "side": "sell",
+   "sym": "INUTILITY",
+   "addr": "FkDqBb1Vz6iZH9aSD5RBV5ctPQGrF2Ye6NVJ4sXncYMF",
+   "price": 8.603e-05,
+   "usd": 15.91,
+   "pnl": -4.11,
+   "peak_x": 1.005,
+   "held_h": 4.0,
+   "frac": 1.0,
+   "slip": 0.0028,
+   "quote": "jup",
+   "reason": "totes kapital"
   }
  ],
  "equity": [
@@ -1506,6 +1509,10 @@
   {
    "t": "2026-09-19T02:16:51Z",
    "v": 250.04
+  },
+  {
+   "t": "2026-09-19T02:21:52Z",
+   "v": 246.17
   }
  ],
  "started": "2026-09-18T09:36:39Z",
@@ -1529,7 +1536,8 @@
   "ChGkEmqxUuggy9NG9X3PEnv1q2bHFNgFhZmxJUowQtco": 20728,
   "BjthYsyHKCMkEhFoNcANF4VVU4UPTLQjLxiH7jXjQdjS": 20728,
   "9w6XCPQDKpiiuQY6MFBfuawUEpxpbNvsVyLq1RJgjupx": 20728,
-  "4ibpLuuz5D7xQpgbkHqG419HFRkTW8JUDE5ASrCi9FK9": 20729
+  "4ibpLuuz5D7xQpgbkHqG419HFRkTW8JUDE5ASrCi9FK9": 20729,
+  "FkDqBb1Vz6iZH9aSD5RBV5ctPQGrF2Ye6NVJ4sXncYMF": 20729
  },
  "strategy": "momentum_runner"
 }
