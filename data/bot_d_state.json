@@ -1,5 +1,5 @@
 {
- "cash": 314.1707990000007,
+ "cash": 307.88607300000075,
  "positions": {
   "J53EGLkGxyC3mh45RVWxYtETEj2T9G3YnUPX5nn6AXGc": {
    "sym": "EBT",
@@ -9,8 +9,8 @@
    "peak": 0.0001263,
    "entry": 0.00011412128267139614,
    "liq0": 30753.77,
-   "cur_price": 7.846e-05,
-   "mark": 7.846e-05
+   "cur_price": 7.844e-05,
+   "mark": 7.844e-05
   },
   "3Sv4Jriwo2V7c1wturGVrrpfKc9XbGxewnDHpMLrpbWQ": {
    "sym": "INDEX",
@@ -31,8 +31,8 @@
    "peak": 0.0001669,
    "entry": 0.00014878978923819406,
    "liq0": 36039.97,
-   "cur_price": 0.0001031,
-   "mark": 0.0001031
+   "cur_price": 0.0001028,
+   "mark": 0.0001028
   },
   "8jkhbnbZJjajwdNxNrfQSqjMUH5wJXY8tDXWgtDJgrF1": {
    "sym": "BONERO",
@@ -42,8 +42,8 @@
    "peak": 0.0002055,
    "entry": 6.247727910483139e-05,
    "liq0": 21833.89,
-   "cur_price": 0.0001458,
-   "mark": 0.0001458
+   "cur_price": 0.0001405,
+   "mark": 0.0001405
   },
   "Bz5N9wrcxDw2YTf8tQkG8PJzdbUW89ZNWLWbdqA2pump": {
    "sym": "\uc288\ubc14\uc624",
@@ -53,8 +53,8 @@
    "peak": 9.38e-05,
    "entry": 5.501527308380902e-05,
    "liq0": 18779.83,
-   "cur_price": 6.657e-05,
-   "mark": 6.657e-05
+   "cur_price": 6.751e-05,
+   "mark": 6.751e-05
   },
   "7ghKoBZBAjGSgbxix5K5kFhQzu9mxVmbdPxRT8j27eEo": {
    "sym": "ETAC",
@@ -64,19 +64,8 @@
    "peak": 0.000263,
    "entry": 9.24536282737261e-05,
    "liq0": 29736.46,
-   "cur_price": 0.0001507,
-   "mark": 0.0001507
-  },
-  "25k6xgPB6MDsHgTaNaECHXLvxCuJL1sL3q4aRC9Tw4Yd": {
-   "sym": "CLAX",
-   "qty": 201764.772735,
-   "cost": 15.02,
-   "opened": "2026-09-18T18:21:51Z",
-   "peak": 8.18e-05,
-   "entry": 7.444312402208797e-05,
-   "liq0": 22552.89,
-   "cur_price": 4.637e-05,
-   "mark": 4.637e-05
+   "cur_price": 0.0001722,
+   "mark": 0.0001722
   },
   "6WGQvs889hdtZWLVG8Cc94ttK9TBT3rfUKJ5Tokepump": {
    "sym": "anon",
@@ -97,8 +86,8 @@
    "peak": 8.699e-05,
    "entry": 7.541678838855976e-05,
    "liq0": 25465.17,
-   "cur_price": 6.87e-05,
-   "mark": 6.87e-05
+   "cur_price": 6.98e-05,
+   "mark": 6.98e-05
   },
   "6TszfeLBfrBR5RMPSChMGPHfkwuNrQZDxV1ogr9chxCL": {
    "sym": "TSUTSUJI",
@@ -130,8 +119,19 @@
    "peak": 9.93e-05,
    "entry": 0.00010264950878066206,
    "liq0": 28500.64,
-   "cur_price": 9.432e-05,
-   "mark": 9.432e-05
+   "cur_price": 9.42e-05,
+   "mark": 9.42e-05
+  },
+  "SPqTn8KkooByR41x3SsaNxGxXDqPFFRXR2Kkt8TJhSK": {
+   "sym": "ANSEM",
+   "qty": 96074.588161,
+   "cost": 15.02,
+   "opened": "2026-09-19T12:51:45Z",
+   "peak": 0.0001518,
+   "entry": 0.00015633686584042144,
+   "liq0": 37875.52,
+   "cur_price": 0.0001518,
+   "mark": 0.0001518
   }
  },
  "trades": [
@@ -1173,6 +1173,33 @@
    "fill": 0.000102649509,
    "usd": 15.02,
    "slip": 0.0356,
+   "quote": "jup",
+   "reason": "longshot"
+  },
+  {
+   "t": "2026-09-19T12:51:41Z",
+   "side": "sell",
+   "sym": "CLAX",
+   "addr": "25k6xgPB6MDsHgTaNaECHXLvxCuJL1sL3q4aRC9Tw4Yd",
+   "price": 4.388e-05,
+   "usd": 8.74,
+   "pnl": -6.28,
+   "peak_x": 1.099,
+   "held_h": 18.5,
+   "frac": 1.0,
+   "slip": 0.0118,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-19T12:51:45Z",
+   "side": "buy",
+   "sym": "ANSEM",
+   "addr": "SPqTn8KkooByR41x3SsaNxGxXDqPFFRXR2Kkt8TJhSK",
+   "price": 0.0001518,
+   "fill": 0.000156336866,
+   "usd": 15.02,
+   "slip": 0.0114,
    "quote": "jup",
    "reason": "longshot"
   }
@@ -5605,6 +5632,10 @@
   {
    "t": "2026-09-19T12:46:37Z",
    "v": 501.76
+  },
+  {
+   "t": "2026-09-19T12:51:45Z",
+   "v": 503.35
   }
  ],
  "started": "2026-09-15T16:35:51Z",
