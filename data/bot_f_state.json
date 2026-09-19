@@ -1,5 +1,5 @@
 {
- "cash": 139.91255700000002,
+ "cash": 139.30534100000003,
  "positions": {
   "7GuTYEM2bF7fWF7zKfJ8UWMrs7i6xeoDMFJYnGXDH9ke": {
    "sym": "HABIBINU",
@@ -14,29 +14,29 @@
    "mark": 0.0001041,
    "no_quote_since": "2026-09-19T10:36:48Z"
   },
-  "7rUNV1HjfCzbtGi3ZbKQ5hYXVjzbAfyCTcgTULQxCwki": {
-   "sym": "$EPEP",
-   "qty": 211560.511345,
-   "cost": 20.02,
-   "opened": "2026-09-19T07:56:53Z",
-   "peak": 0.0001072,
-   "entry": 9.46301361852572e-05,
-   "base_entry": 9.46301361852572e-05,
-   "entry_liq": 38659.77,
-   "cur_price": 9.91e-05,
-   "mark": 9.91e-05
-  },
   "6Ax9mQt3oxsrxDjAF5p1Ljc7NPPHmXWsSsPgnhRJfN8A": {
    "sym": "SDOG",
    "qty": 241964.425879,
    "cost": 20.02,
    "opened": "2026-09-19T10:46:52Z",
-   "peak": 9.092e-05,
+   "peak": 9.293e-05,
    "entry": 8.27394354656559e-05,
    "base_entry": 8.27394354656559e-05,
    "entry_liq": 26009.95,
-   "cur_price": 8.703e-05,
-   "mark": 8.703e-05
+   "cur_price": 9.293e-05,
+   "mark": 9.293e-05
+  },
+  "7gnye7MymAa2iN8iZsZvH6ybjxeUiaxSoavxgeqG8kkh": {
+   "sym": "microsoft",
+   "qty": 204915.075785,
+   "cost": 20.02,
+   "opened": "2026-09-19T12:01:52Z",
+   "peak": 9.531e-05,
+   "entry": 9.769900981324227e-05,
+   "base_entry": 9.769900981324227e-05,
+   "entry_liq": 30247.89,
+   "cur_price": 9.531e-05,
+   "mark": 9.531e-05
   }
  },
  "trades": [
@@ -778,6 +778,33 @@
    "fill": 8.2739435e-05,
    "usd": 20.02,
    "slip": 0.0384,
+   "quote": "jup",
+   "reason": "sonde"
+  },
+  {
+   "t": "2026-09-19T12:01:51Z",
+   "side": "sell",
+   "sym": "$EPEP",
+   "addr": "7rUNV1HjfCzbtGi3ZbKQ5hYXVjzbAfyCTcgTULQxCwki",
+   "price": 9.616e-05,
+   "usd": 19.41,
+   "pnl": -0.61,
+   "peak_x": 1.133,
+   "held_h": 4.1,
+   "frac": 1.0,
+   "slip": 0.007,
+   "quote": "jup",
+   "reason": "totes kapital"
+  },
+  {
+   "t": "2026-09-19T12:01:52Z",
+   "side": "buy",
+   "sym": "microsoft",
+   "addr": "7gnye7MymAa2iN8iZsZvH6ybjxeUiaxSoavxgeqG8kkh",
+   "price": 9.531e-05,
+   "fill": 9.769901e-05,
+   "usd": 20.02,
+   "slip": 0.0134,
    "quote": "jup",
    "reason": "sonde"
   }
@@ -2050,6 +2077,10 @@
   {
    "t": "2026-09-19T11:56:49Z",
    "v": 200.07
+  },
+  {
+   "t": "2026-09-19T12:01:52Z",
+   "v": 199.46
   }
  ],
  "started": "2026-09-18T09:36:39Z",
@@ -2076,7 +2107,8 @@
   "4ibpLuuz5D7xQpgbkHqG419HFRkTW8JUDE5ASrCi9FK9": 20729,
   "FkDqBb1Vz6iZH9aSD5RBV5ctPQGrF2Ye6NVJ4sXncYMF": 20729,
   "y2sCF2KcPxZ5o4bmwJ3M9P82k2h5excdet64z62Ffav": 20729,
-  "DDndHihssMMJnd3je9Fxukq4M9PdxwQ2XqF8cZgkZu1s": 20729
+  "DDndHihssMMJnd3je9Fxukq4M9PdxwQ2XqF8cZgkZu1s": 20729,
+  "7rUNV1HjfCzbtGi3ZbKQ5hYXVjzbAfyCTcgTULQxCwki": 20729
  },
  "strategy": "momentum_runner"
 }

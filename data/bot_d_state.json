@@ -1,5 +1,5 @@
 {
- "cash": 336.31255100000067,
+ "cash": 344.2107990000007,
  "positions": {
   "J53EGLkGxyC3mh45RVWxYtETEj2T9G3YnUPX5nn6AXGc": {
    "sym": "EBT",
@@ -31,8 +31,8 @@
    "peak": 0.0001669,
    "entry": 0.00014878978923819406,
    "liq0": 36039.97,
-   "cur_price": 0.0001006,
-   "mark": 0.0001006
+   "cur_price": 0.0001016,
+   "mark": 0.0001016
   },
   "8jkhbnbZJjajwdNxNrfQSqjMUH5wJXY8tDXWgtDJgrF1": {
    "sym": "BONERO",
@@ -42,8 +42,8 @@
    "peak": 0.0002055,
    "entry": 6.247727910483139e-05,
    "liq0": 21833.89,
-   "cur_price": 9.24e-05,
-   "mark": 9.24e-05
+   "cur_price": 8.889e-05,
+   "mark": 8.889e-05
   },
   "Bz5N9wrcxDw2YTf8tQkG8PJzdbUW89ZNWLWbdqA2pump": {
    "sym": "\uc288\ubc14\uc624",
@@ -53,8 +53,8 @@
    "peak": 9.38e-05,
    "entry": 5.501527308380902e-05,
    "liq0": 18779.83,
-   "cur_price": 4.636e-05,
-   "mark": 4.636e-05
+   "cur_price": 4.573e-05,
+   "mark": 4.573e-05
   },
   "7ghKoBZBAjGSgbxix5K5kFhQzu9mxVmbdPxRT8j27eEo": {
    "sym": "ETAC",
@@ -64,8 +64,8 @@
    "peak": 0.000263,
    "entry": 9.24536282737261e-05,
    "liq0": 29736.46,
-   "cur_price": 0.0002118,
-   "mark": 0.0002118
+   "cur_price": 0.0002189,
+   "mark": 0.0002189
   },
   "25k6xgPB6MDsHgTaNaECHXLvxCuJL1sL3q4aRC9Tw4Yd": {
    "sym": "CLAX",
@@ -97,19 +97,8 @@
    "peak": 8.137e-05,
    "entry": 7.541678838855976e-05,
    "liq0": 25465.17,
-   "cur_price": 7.592e-05,
-   "mark": 7.592e-05
-  },
-  "AeDgbAv64t53GiBPemV2geVB1pZkdBLPumjn25HWXpUo": {
-   "sym": "STOCKCAT",
-   "qty": 257445.136804,
-   "cost": 15.02,
-   "opened": "2026-09-19T11:16:46Z",
-   "peak": 6.203e-05,
-   "entry": 5.834252760204647e-05,
-   "liq0": 20526.28,
-   "cur_price": 4.161e-05,
-   "mark": 4.161e-05
+   "cur_price": 7.672e-05,
+   "mark": 7.672e-05
   },
   "6TszfeLBfrBR5RMPSChMGPHfkwuNrQZDxV1ogr9chxCL": {
    "sym": "TSUTSUJI",
@@ -119,8 +108,8 @@
    "peak": 7.465e-05,
    "entry": 7.822422761908371e-05,
    "liq0": 26881.36,
-   "cur_price": 6.679e-05,
-   "mark": 6.679e-05
+   "cur_price": 6.584e-05,
+   "mark": 6.584e-05
   }
  },
  "trades": [
@@ -1125,6 +1114,21 @@
    "slip": 0.0432,
    "quote": "jup",
    "reason": "longshot"
+  },
+  {
+   "t": "2026-09-19T12:01:41Z",
+   "side": "sell",
+   "sym": "STOCKCAT",
+   "addr": "AeDgbAv64t53GiBPemV2geVB1pZkdBLPumjn25HWXpUo",
+   "price": 3.216e-05,
+   "usd": 7.9,
+   "pnl": -7.12,
+   "peak_x": 1.063,
+   "held_h": 0.7,
+   "frac": 1.0,
+   "slip": 0.0468,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -5515,6 +5519,10 @@
   {
    "t": "2026-09-19T11:56:39Z",
    "v": 499.12
+  },
+  {
+   "t": "2026-09-19T12:01:42Z",
+   "v": 496.52
   }
  ],
  "started": "2026-09-15T16:35:51Z",
