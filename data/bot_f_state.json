@@ -1,19 +1,6 @@
 {
- "cash": 99.28534100000002,
+ "cash": 113.97392100000002,
  "positions": {
-  "7GuTYEM2bF7fWF7zKfJ8UWMrs7i6xeoDMFJYnGXDH9ke": {
-   "sym": "HABIBINU",
-   "qty": 174225.206473,
-   "cost": 20.02,
-   "opened": "2026-09-19T07:56:52Z",
-   "peak": 0.0001089,
-   "entry": 0.00011490874601490306,
-   "base_entry": 0.00011490874601490306,
-   "entry_liq": 29618.63,
-   "cur_price": 0.0001041,
-   "mark": 0.0001041,
-   "no_quote_since": "2026-09-19T10:36:48Z"
-  },
   "6Ax9mQt3oxsrxDjAF5p1Ljc7NPPHmXWsSsPgnhRJfN8A": {
    "sym": "SDOG",
    "qty": 524356.5625789999,
@@ -23,8 +10,8 @@
    "entry": 0.00011450223814249362,
    "base_entry": 8.27394354656559e-05,
    "entry_liq": 26009.95,
-   "cur_price": 0.0001202,
-   "mark": 0.0001202,
+   "cur_price": 0.0001154,
+   "mark": 0.0001154,
    "added": true
   },
   "7gnye7MymAa2iN8iZsZvH6ybjxeUiaxSoavxgeqG8kkh": {
@@ -36,8 +23,8 @@
    "entry": 9.769900981324227e-05,
    "base_entry": 9.769900981324227e-05,
    "entry_liq": 30247.89,
-   "cur_price": 5.616e-05,
-   "mark": 5.616e-05
+   "cur_price": 5.43e-05,
+   "mark": 5.43e-05
   }
  },
  "trades": [
@@ -820,6 +807,21 @@
    "slip": 0.0388,
    "quote": "jup",
    "reason": "nachlage bei 1.61x"
+  },
+  {
+   "t": "2026-09-19T14:01:53Z",
+   "side": "sell",
+   "sym": "HABIBINU",
+   "addr": "7GuTYEM2bF7fWF7zKfJ8UWMrs7i6xeoDMFJYnGXDH9ke",
+   "price": 8.11e-05,
+   "usd": 14.69,
+   "pnl": -5.33,
+   "peak_x": 0.948,
+   "held_h": 6.1,
+   "frac": 1.0,
+   "slip": 0.0568,
+   "quote": "jup",
+   "reason": "totes kapital"
   }
  ],
  "equity": [
@@ -2186,6 +2188,10 @@
   {
    "t": "2026-09-19T13:56:48Z",
    "v": 191.96
+  },
+  {
+   "t": "2026-09-19T14:01:53Z",
+   "v": 185.61
   }
  ],
  "started": "2026-09-18T09:36:39Z",
@@ -2213,7 +2219,8 @@
   "FkDqBb1Vz6iZH9aSD5RBV5ctPQGrF2Ye6NVJ4sXncYMF": 20729,
   "y2sCF2KcPxZ5o4bmwJ3M9P82k2h5excdet64z62Ffav": 20729,
   "DDndHihssMMJnd3je9Fxukq4M9PdxwQ2XqF8cZgkZu1s": 20729,
-  "7rUNV1HjfCzbtGi3ZbKQ5hYXVjzbAfyCTcgTULQxCwki": 20729
+  "7rUNV1HjfCzbtGi3ZbKQ5hYXVjzbAfyCTcgTULQxCwki": 20729,
+  "7GuTYEM2bF7fWF7zKfJ8UWMrs7i6xeoDMFJYnGXDH9ke": 20729
  },
  "strategy": "momentum_runner"
 }
