@@ -1,5 +1,5 @@
 {
- "cash": 49.6389669999999,
+ "cash": 31.62077999999989,
  "positions": {
   "C2WtD354XEvS9gzpJDLqzqkADq7wUtmJg1UzUdmL5a21": {
    "sym": "MCCAT",
@@ -10,8 +10,8 @@
    "entry": 0.0002288812301986844,
    "target": 0.0003419,
    "entry_liq": 44273.54,
-   "cur_price": 0.0004046,
-   "mark": 0.0004046,
+   "cur_price": 0.0004057,
+   "mark": 0.0004057,
    "tp1": true
   },
   "5THtNEGTF1y67eRWvcgz3MomDZePCVx1xdskHHeCpump": {
@@ -23,8 +23,8 @@
    "entry": 0.00018407115237980073,
    "target": 0.0002892,
    "entry_liq": 38546.51,
-   "cur_price": 0.0001688,
-   "mark": 0.0001688
+   "cur_price": 0.000165,
+   "mark": 0.000165
   },
   "CehKYf8jXN2E6dx4aLkekQZ6TGPLihcGkkaWj8PDVmJK": {
    "sym": "40169K",
@@ -47,20 +47,33 @@
    "entry": 0.00011948030106380532,
    "target": 0.0001953,
    "entry_liq": 32971.33,
-   "cur_price": 0.0001063,
-   "mark": 0.0001063
+   "cur_price": 0.0001049,
+   "mark": 0.0001049
   },
   "DtUntDyWcRpzTVt8JiW8fXvUt3WDGGw6kdiD7fjNMFzJ": {
    "sym": "STONKAT",
-   "qty": 587521.692292,
-   "cost": 60.02,
+   "qty": 293760.846146,
+   "cost": 30.01,
    "opened": "2026-09-18T22:26:27Z",
-   "peak": 0.0001459,
+   "peak": 0.0001507,
    "entry": 0.00010215793014527518,
    "target": 0.0001494,
    "entry_liq": 33649.22,
-   "cur_price": 0.0001459,
-   "mark": 0.0001459
+   "cur_price": 0.0001507,
+   "mark": 0.0001507,
+   "tp1": true
+  },
+  "2s9ycNwMgVCB4SWtXmTu14w1ospd88MVYZdHLVEHLdVC": {
+   "sym": "SKYNET",
+   "qty": 363143.667479,
+   "cost": 60.02,
+   "opened": "2026-09-19T07:31:26Z",
+   "peak": 0.000156,
+   "entry": 0.00016527893881963633,
+   "target": 0.0002413,
+   "entry_liq": 36736.43,
+   "cur_price": 0.000156,
+   "mark": 0.000156
   }
  },
  "trades": [
@@ -435,6 +448,33 @@
    "slip": 0.0081,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-19T07:31:25Z",
+   "side": "sell",
+   "sym": "STONKAT",
+   "addr": "DtUntDyWcRpzTVt8JiW8fXvUt3WDGGw6kdiD7fjNMFzJ",
+   "price": 0.0001507,
+   "usd": 42.0,
+   "pnl": 11.99,
+   "peak_x": 1.475,
+   "held_h": 9.1,
+   "frac": 0.5,
+   "slip": 0.004,
+   "quote": "jup",
+   "reason": "tp1 (altes hoch)"
+  },
+  {
+   "t": "2026-09-19T07:31:26Z",
+   "side": "buy",
+   "sym": "SKYNET",
+   "addr": "2s9ycNwMgVCB4SWtXmTu14w1ospd88MVYZdHLVEHLdVC",
+   "price": 0.000156,
+   "fill": 0.000165278939,
+   "usd": 60.02,
+   "slip": 0.0135,
+   "quote": "jup",
+   "reason": "wiederanlauf: lauf 2.3x, jetzt -35% unter hoch"
   }
  ],
  "equity": [
@@ -1489,6 +1529,10 @@
   {
    "t": "2026-09-19T07:26:24Z",
    "v": 342.48
+  },
+  {
+   "t": "2026-09-19T07:31:26Z",
+   "v": 337.86
   }
  ],
  "started": "2026-09-18T09:36:15Z",
