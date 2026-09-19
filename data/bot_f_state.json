@@ -1,19 +1,6 @@
 {
- "cash": 128.77003600000003,
+ "cash": 139.91255700000002,
  "positions": {
-  "DDndHihssMMJnd3je9Fxukq4M9PdxwQ2XqF8cZgkZu1s": {
-   "sym": "COINU",
-   "qty": 413077.159179,
-   "cost": 60.040000000000006,
-   "opened": "2026-09-18T22:21:51Z",
-   "peak": 0.0002446,
-   "entry": 0.00014534814783594144,
-   "base_entry": 0.00010698330611781891,
-   "entry_liq": 30462.8,
-   "cur_price": 8.855e-05,
-   "mark": 8.855e-05,
-   "added": true
-  },
   "7GuTYEM2bF7fWF7zKfJ8UWMrs7i6xeoDMFJYnGXDH9ke": {
    "sym": "HABIBINU",
    "qty": 174225.206473,
@@ -36,8 +23,20 @@
    "entry": 9.46301361852572e-05,
    "base_entry": 9.46301361852572e-05,
    "entry_liq": 38659.77,
-   "cur_price": 8.892e-05,
-   "mark": 8.892e-05
+   "cur_price": 8.898e-05,
+   "mark": 8.898e-05
+  },
+  "6Ax9mQt3oxsrxDjAF5p1Ljc7NPPHmXWsSsPgnhRJfN8A": {
+   "sym": "SDOG",
+   "qty": 241964.425879,
+   "cost": 20.02,
+   "opened": "2026-09-19T10:46:52Z",
+   "peak": 7.789e-05,
+   "entry": 8.27394354656559e-05,
+   "base_entry": 8.27394354656559e-05,
+   "entry_liq": 26009.95,
+   "cur_price": 7.789e-05,
+   "mark": 7.789e-05
   }
  },
  "trades": [
@@ -752,6 +751,33 @@
    "fill": 9.4630136e-05,
    "usd": 20.02,
    "slip": 0.0321,
+   "quote": "jup",
+   "reason": "sonde"
+  },
+  {
+   "t": "2026-09-19T10:46:50Z",
+   "side": "sell",
+   "sym": "COINU",
+   "addr": "DDndHihssMMJnd3je9Fxukq4M9PdxwQ2XqF8cZgkZu1s",
+   "price": 7.859e-05,
+   "usd": 31.16,
+   "pnl": -28.88,
+   "peak_x": 1.683,
+   "held_h": 12.4,
+   "frac": 1.0,
+   "slip": 0.0535,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-19T10:46:52Z",
+   "side": "buy",
+   "sym": "SDOG",
+   "addr": "6Ax9mQt3oxsrxDjAF5p1Ljc7NPPHmXWsSsPgnhRJfN8A",
+   "price": 7.789e-05,
+   "fill": 8.2739435e-05,
+   "usd": 20.02,
+   "slip": 0.0384,
    "quote": "jup",
    "reason": "sonde"
   }
@@ -1964,6 +1990,10 @@
   {
    "t": "2026-09-19T10:41:52Z",
    "v": 202.3
+  },
+  {
+   "t": "2026-09-19T10:46:52Z",
+   "v": 195.72
   }
  ],
  "started": "2026-09-18T09:36:39Z",
@@ -1989,7 +2019,8 @@
   "9w6XCPQDKpiiuQY6MFBfuawUEpxpbNvsVyLq1RJgjupx": 20728,
   "4ibpLuuz5D7xQpgbkHqG419HFRkTW8JUDE5ASrCi9FK9": 20729,
   "FkDqBb1Vz6iZH9aSD5RBV5ctPQGrF2Ye6NVJ4sXncYMF": 20729,
-  "y2sCF2KcPxZ5o4bmwJ3M9P82k2h5excdet64z62Ffav": 20729
+  "y2sCF2KcPxZ5o4bmwJ3M9P82k2h5excdet64z62Ffav": 20729,
+  "DDndHihssMMJnd3je9Fxukq4M9PdxwQ2XqF8cZgkZu1s": 20729
  },
  "strategy": "momentum_runner"
 }
