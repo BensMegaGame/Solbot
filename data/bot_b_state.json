@@ -12,8 +12,7 @@
    "entry_vol": 57940.34,
    "cur_price": 0.0003464,
    "mark": 0.0003464,
-   "added": true,
-   "no_quote_since": "2026-09-19T00:51:15Z"
+   "added": true
   },
   "4Ee7xRodjp7kBGTZsHj9FE87UQWJuPke7ENzzGWBbFCc": {
    "sym": "ZODL",
@@ -25,7 +24,8 @@
    "entry_liq": 110665.36,
    "entry_vol": 104268.64,
    "cur_price": 0.0005684,
-   "mark": 0.0005684
+   "mark": 0.0005684,
+   "no_quote_since": "2026-09-19T00:56:15Z"
   }
  },
  "trades": [
@@ -7895,6 +7895,10 @@
   {
    "t": "2026-09-19T00:51:15Z",
    "v": 343.21
+  },
+  {
+   "t": "2026-09-19T00:56:15Z",
+   "v": 343.21
   }
  ],
  "started": "2026-09-11T10:50:37Z",
@@ -7914,6 +7918,6 @@
  },
  "streak": 0,
  "half_left": 5,
- "watchlist": 438,
+ "watchlist": 437,
  "strategy": "second_wave"
 }
