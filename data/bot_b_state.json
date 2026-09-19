@@ -11,7 +11,8 @@
    "entry_liq": 110665.36,
    "entry_vol": 104268.64,
    "cur_price": 0.0004251,
-   "mark": 0.0004251
+   "mark": 0.0004251,
+   "no_quote_since": "2026-09-19T14:31:25Z"
   },
   "2s9ycNwMgVCB4SWtXmTu14w1ospd88MVYZdHLVEHLdVC": {
    "sym": "SKYNET",
@@ -22,9 +23,8 @@
    "entry": 0.0001560229246497302,
    "entry_liq": 35734.54,
    "entry_vol": 128155.97,
-   "cur_price": 0.0002075,
-   "mark": 0.0002075,
-   "no_quote_since": "2026-09-19T14:26:21Z"
+   "cur_price": 0.0002072,
+   "mark": 0.0002072
   },
   "7TKRV4SneC6xLRaAt21a6d1kheAzXHGKP9WDzri9aD2e": {
    "sym": "SHINJUKU",
@@ -8597,6 +8597,10 @@
   {
    "t": "2026-09-19T14:26:21Z",
    "v": 339.65
+  },
+  {
+   "t": "2026-09-19T14:31:25Z",
+   "v": 339.62
   }
  ],
  "started": "2026-09-11T10:50:37Z",
@@ -8617,6 +8621,6 @@
  },
  "streak": 1,
  "half_left": 3,
- "watchlist": 534,
+ "watchlist": 548,
  "strategy": "second_wave"
 }
