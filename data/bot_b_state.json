@@ -1,19 +1,6 @@
 {
- "cash": 203.87905899999993,
+ "cash": 277.14801499999993,
  "positions": {
-  "7nLukVng5teXze14rum9v57juXLjUp7JJnCveko1pump": {
-   "sym": "Martians",
-   "qty": 220713.714588,
-   "cost": 85.04,
-   "opened": "2026-09-16T13:35:43Z",
-   "peak": 0.0005061,
-   "entry": 0.00038529549538297495,
-   "entry_liq": 69381.39,
-   "entry_vol": 57940.34,
-   "cur_price": 0.0003355,
-   "mark": 0.0003355,
-   "added": true
-  },
   "4Ee7xRodjp7kBGTZsHj9FE87UQWJuPke7ENzzGWBbFCc": {
    "sym": "ZODL",
    "qty": 40176.791895332,
@@ -24,7 +11,8 @@
    "entry_liq": 110665.36,
    "entry_vol": 104268.64,
    "cur_price": 0.0004571,
-   "mark": 0.0004571
+   "mark": 0.0004571,
+   "no_quote_since": "2026-09-19T13:36:16Z"
   },
   "2s9ycNwMgVCB4SWtXmTu14w1ospd88MVYZdHLVEHLdVC": {
    "sym": "SKYNET",
@@ -36,7 +24,8 @@
    "entry_liq": 35734.54,
    "entry_vol": 128155.97,
    "cur_price": 0.0001894,
-   "mark": 0.0001894
+   "mark": 0.0001894,
+   "no_quote_since": "2026-09-19T13:36:16Z"
   },
   "7TKRV4SneC6xLRaAt21a6d1kheAzXHGKP9WDzri9aD2e": {
    "sym": "SHINJUKU",
@@ -47,8 +36,8 @@
    "entry": 0.00016290958139845993,
    "entry_liq": 41787.08,
    "entry_vol": 39110.13,
-   "cur_price": 0.0001558,
-   "mark": 0.0001558
+   "cur_price": 0.0001582,
+   "mark": 0.0001582
   }
  },
  "trades": [
@@ -484,6 +473,21 @@
    "slip": 0.0097,
    "quote": "jup",
    "reason": "ok vol-trend 1.23 buy 0.56"
+  },
+  {
+   "t": "2026-09-19T13:36:16Z",
+   "side": "sell",
+   "sym": "Martians",
+   "addr": "7nLukVng5teXze14rum9v57juXLjUp7JJnCveko1pump",
+   "price": 0.000336,
+   "usd": 73.27,
+   "pnl": -11.77,
+   "peak_x": 1.314,
+   "held_h": 72.0,
+   "frac": 1.0,
+   "slip": 0.0123,
+   "quote": "jup",
+   "reason": "these: vol"
   }
  ],
  "equity": [
@@ -8550,6 +8554,10 @@
   {
    "t": "2026-09-19T13:31:18Z",
    "v": 339.74
+  },
+  {
+   "t": "2026-09-19T13:36:16Z",
+   "v": 339.26
   }
  ],
  "started": "2026-09-11T10:50:37Z",
@@ -8565,9 +8573,10 @@
   "bykrhkExmjWco2mFxKGX3XPmPVaZB9JJp9MkRe8pump": 20728,
   "E3i7sTY5QYEBh3itepnomZQt7Eh5kzmHFk1vkm2pump": 20728,
   "7hGgx1VtNTj193fFXXuMEkp1MRV6JbWYgMBhHRYxaxu2": 20728,
-  "CsHrGJ3HpJV76ecFm4vZrpFSLNQaP1dwzj8e2cvkpump": 20729
+  "CsHrGJ3HpJV76ecFm4vZrpFSLNQaP1dwzj8e2cvkpump": 20729,
+  "7nLukVng5teXze14rum9v57juXLjUp7JJnCveko1pump": 20729
  },
- "streak": 0,
+ "streak": 1,
  "half_left": 3,
  "watchlist": 538,
  "strategy": "second_wave"
