@@ -1,18 +1,6 @@
 {
- "cash": 57.25642999999985,
+ "cash": 37.02868899999985,
  "positions": {
-  "5THtNEGTF1y67eRWvcgz3MomDZePCVx1xdskHHeCpump": {
-   "sym": "Saturween",
-   "qty": 326069.561819,
-   "cost": 60.02,
-   "opened": "2026-09-18T10:11:24Z",
-   "peak": 0.0002835,
-   "entry": 0.00018407115237980073,
-   "target": 0.0002892,
-   "entry_liq": 38546.51,
-   "cur_price": 0.0001317,
-   "mark": 0.0001317
-  },
   "DtUntDyWcRpzTVt8JiW8fXvUt3WDGGw6kdiD7fjNMFzJ": {
    "sym": "STONKAT",
    "qty": 293760.846146,
@@ -22,8 +10,8 @@
    "entry": 0.00010215793014527518,
    "target": 0.0001494,
    "entry_liq": 33649.22,
-   "cur_price": 8.911e-05,
-   "mark": 8.911e-05,
+   "cur_price": 9.054e-05,
+   "mark": 9.054e-05,
    "tp1": true
   },
   "41WU7d3EzacMHkpgHNnF7eG9aXjvbPqASXVLpGqkoTpa": {
@@ -35,8 +23,8 @@
    "entry": 0.0003368196152328185,
    "target": 0.0005244,
    "entry_liq": 49233.12,
-   "cur_price": 0.000358,
-   "mark": 0.000358
+   "cur_price": 0.0003583,
+   "mark": 0.0003583
   },
   "F7CTvENFnkDJysMhaFFicDT2FwnbW2oasFZGG6WJnar7": {
    "sym": "STONK5",
@@ -47,8 +35,8 @@
    "entry": 9.391107136115313e-05,
    "target": 0.0001595,
    "entry_liq": 27541.3,
-   "cur_price": 6.87e-05,
-   "mark": 6.87e-05
+   "cur_price": 7.195e-05,
+   "mark": 7.195e-05
   },
   "GADj8JQ8iQLQD5S6ScvncJWmGs7PkwHnXsBrEUns6ue5": {
    "sym": "POKECOIN",
@@ -61,6 +49,18 @@
    "entry_liq": 22290.8,
    "cur_price": 3.901e-05,
    "mark": 3.901e-05
+  },
+  "27tNoYYhtovz1EmCQz3VufMMuDh6Nrv35QRX2vAyBNeA": {
+   "sym": "JEV",
+   "qty": 527240.575155,
+   "cost": 60.02,
+   "opened": "2026-09-19T20:51:28Z",
+   "peak": 0.0001087,
+   "entry": 0.00011383797611243239,
+   "target": 0.0001685,
+   "entry_liq": 28300.85,
+   "cur_price": 0.0001087,
+   "mark": 0.0001087
   }
  },
  "trades": [
@@ -600,6 +600,33 @@
    "slip": 0.0011,
    "quote": "jup",
    "reason": "trail"
+  },
+  {
+   "t": "2026-09-19T20:51:27Z",
+   "side": "sell",
+   "sym": "Saturween",
+   "addr": "5THtNEGTF1y67eRWvcgz3MomDZePCVx1xdskHHeCpump",
+   "price": 0.0001257,
+   "usd": 39.79,
+   "pnl": -20.23,
+   "peak_x": 1.54,
+   "held_h": 34.7,
+   "frac": 1.0,
+   "slip": 0.0093,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-19T20:51:28Z",
+   "side": "buy",
+   "sym": "JEV",
+   "addr": "27tNoYYhtovz1EmCQz3VufMMuDh6Nrv35QRX2vAyBNeA",
+   "price": 0.0001087,
+   "fill": 0.000113837976,
+   "usd": 60.02,
+   "slip": 0.0864,
+   "quote": "jup",
+   "reason": "wiederanlauf: lauf 3.0x, jetzt -35% unter hoch"
   }
  ],
  "equity": [
@@ -2294,6 +2321,10 @@
   {
    "t": "2026-09-19T20:46:30Z",
    "v": 279.89
+  },
+  {
+   "t": "2026-09-19T20:51:28Z",
+   "v": 276.58
   }
  ],
  "started": "2026-09-18T09:36:15Z",
@@ -2314,7 +2345,8 @@
   "CehKYf8jXN2E6dx4aLkekQZ6TGPLihcGkkaWj8PDVmJK": 20718,
   "8StnEDgfxfvxpCUUMH9ChXaqAkGGtxvnfxCAYHYnPXja": 20718,
   "7wCM5K4ziHmrbjGe5QFhBqBME2fH82dn4Wfx8vhKSTNK": 20718,
-  "2s9ycNwMgVCB4SWtXmTu14w1ospd88MVYZdHLVEHLdVC": 20718
+  "2s9ycNwMgVCB4SWtXmTu14w1ospd88MVYZdHLVEHLdVC": 20718,
+  "5THtNEGTF1y67eRWvcgz3MomDZePCVx1xdskHHeCpump": 20718
  },
  "strategy": "wiederanlauf",
  "watchlist": 385
