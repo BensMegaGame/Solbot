@@ -1,5 +1,5 @@
 {
- "cash": 113.97392100000002,
+ "cash": 127.74584500000002,
  "positions": {
   "6Ax9mQt3oxsrxDjAF5p1Ljc7NPPHmXWsSsPgnhRJfN8A": {
    "sym": "SDOG",
@@ -10,21 +10,9 @@
    "entry": 0.00011450223814249362,
    "base_entry": 8.27394354656559e-05,
    "entry_liq": 26009.95,
-   "cur_price": 9.788e-05,
-   "mark": 9.788e-05,
+   "cur_price": 9.785e-05,
+   "mark": 9.785e-05,
    "added": true
-  },
-  "7gnye7MymAa2iN8iZsZvH6ybjxeUiaxSoavxgeqG8kkh": {
-   "sym": "microsoft",
-   "qty": 204915.075785,
-   "cost": 20.02,
-   "opened": "2026-09-19T12:01:52Z",
-   "peak": 9.697e-05,
-   "entry": 9.769900981324227e-05,
-   "base_entry": 9.769900981324227e-05,
-   "entry_liq": 30247.89,
-   "cur_price": 6.889e-05,
-   "mark": 6.889e-05
   }
  },
  "trades": [
@@ -820,6 +808,21 @@
    "held_h": 6.1,
    "frac": 1.0,
    "slip": 0.0568,
+   "quote": "jup",
+   "reason": "totes kapital"
+  },
+  {
+   "t": "2026-09-19T16:01:52Z",
+   "side": "sell",
+   "sym": "microsoft",
+   "addr": "7gnye7MymAa2iN8iZsZvH6ybjxeUiaxSoavxgeqG8kkh",
+   "price": 6.917e-05,
+   "usd": 13.77,
+   "pnl": -6.25,
+   "peak_x": 0.993,
+   "held_h": 4.0,
+   "frac": 1.0,
+   "slip": 0.0013,
    "quote": "jup",
    "reason": "totes kapital"
   }
@@ -2284,6 +2287,10 @@
   {
    "t": "2026-09-19T15:56:51Z",
    "v": 179.41
+  },
+  {
+   "t": "2026-09-19T16:01:52Z",
+   "v": 179.05
   }
  ],
  "started": "2026-09-18T09:36:39Z",
@@ -2312,7 +2319,8 @@
   "y2sCF2KcPxZ5o4bmwJ3M9P82k2h5excdet64z62Ffav": 20729,
   "DDndHihssMMJnd3je9Fxukq4M9PdxwQ2XqF8cZgkZu1s": 20729,
   "7rUNV1HjfCzbtGi3ZbKQ5hYXVjzbAfyCTcgTULQxCwki": 20729,
-  "7GuTYEM2bF7fWF7zKfJ8UWMrs7i6xeoDMFJYnGXDH9ke": 20729
+  "7GuTYEM2bF7fWF7zKfJ8UWMrs7i6xeoDMFJYnGXDH9ke": 20729,
+  "7gnye7MymAa2iN8iZsZvH6ybjxeUiaxSoavxgeqG8kkh": 20729
  },
  "strategy": "momentum_runner"
 }
