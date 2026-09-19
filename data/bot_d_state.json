@@ -1,5 +1,5 @@
 {
- "cash": 297.25003100000083,
+ "cash": 282.23003100000085,
  "positions": {
   "3Sv4Jriwo2V7c1wturGVrrpfKc9XbGxewnDHpMLrpbWQ": {
    "sym": "INDEX",
@@ -42,8 +42,8 @@
    "peak": 0.000263,
    "entry": 9.24536282737261e-05,
    "liq0": 29736.46,
-   "cur_price": 0.0001378,
-   "mark": 0.0001378
+   "cur_price": 0.0001402,
+   "mark": 0.0001402
   },
   "6WGQvs889hdtZWLVG8Cc94ttK9TBT3rfUKJ5Tokepump": {
    "sym": "anon",
@@ -64,8 +64,8 @@
    "peak": 8.699e-05,
    "entry": 7.541678838855976e-05,
    "liq0": 25465.17,
-   "cur_price": 4.992e-05,
-   "mark": 4.992e-05
+   "cur_price": 4.627e-05,
+   "mark": 4.627e-05
   },
   "5oYh831YeK7cJ3YFLF1bAyCTDqPLzxETdQev5exy8TGA": {
    "sym": "HOODCAT",
@@ -75,8 +75,8 @@
    "peak": 0.0002168,
    "entry": 9.53958756412974e-05,
    "liq0": 27173.26,
-   "cur_price": 0.0001404,
-   "mark": 0.0001404
+   "cur_price": 0.000137,
+   "mark": 0.000137
   },
   "6rHkNb7HCtkpvdnVJsBCZHH5dw3AndqEjfmbEGhooR7t": {
    "sym": "SCRIBE",
@@ -86,8 +86,8 @@
    "peak": 0.0001232,
    "entry": 0.00010264950878066206,
    "liq0": 28500.64,
-   "cur_price": 9.871e-05,
-   "mark": 9.871e-05
+   "cur_price": 9.852e-05,
+   "mark": 9.852e-05
   },
   "SPqTn8KkooByR41x3SsaNxGxXDqPFFRXR2Kkt8TJhSK": {
    "sym": "ANSEM",
@@ -97,8 +97,8 @@
    "peak": 0.0001928,
    "entry": 0.00015633686584042144,
    "liq0": 37875.52,
-   "cur_price": 9.99e-05,
-   "mark": 9.99e-05
+   "cur_price": 9.495e-05,
+   "mark": 9.495e-05
   },
   "D3Z5RXPGWtvAc7UxFSeN4itLBPHyNVhVLRzXBMmUpump": {
    "sym": "BABYCATE",
@@ -108,8 +108,8 @@
    "peak": 3.492e-05,
    "entry": 3.499949729477539e-05,
    "liq0": 23657.66,
-   "cur_price": 3.104e-05,
-   "mark": 3.104e-05
+   "cur_price": 3.172e-05,
+   "mark": 3.172e-05
   },
   "4ijnHeHgNnXmg45rhUV6aETFSbTwvjJG2Zmd1MePMevW": {
    "sym": "BCC",
@@ -119,8 +119,19 @@
    "peak": 8.524e-05,
    "entry": 6.871690878708447e-05,
    "liq0": 23137.39,
-   "cur_price": 4.313e-05,
-   "mark": 4.313e-05
+   "cur_price": 4.2e-05,
+   "mark": 4.2e-05
+  },
+  "Hdky1Lz84WL7cPWVk7StFWrXVXvdXwPrAcfjJoUrpump": {
+   "sym": "ROBUX",
+   "qty": 240610.716875,
+   "cost": 15.02,
+   "opened": "2026-09-19T16:16:44Z",
+   "peak": 5.913e-05,
+   "entry": 6.242448464090259e-05,
+   "liq0": 22479.31,
+   "cur_price": 5.913e-05,
+   "mark": 5.913e-05
   }
  },
  "trades": [
@@ -1287,6 +1298,18 @@
    "slip": 0.008,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-19T16:16:44Z",
+   "side": "buy",
+   "sym": "ROBUX",
+   "addr": "Hdky1Lz84WL7cPWVk7StFWrXVXvdXwPrAcfjJoUrpump",
+   "price": 5.913e-05,
+   "fill": 6.2424485e-05,
+   "usd": 15.02,
+   "slip": 0.032,
+   "quote": "jup",
+   "reason": "longshot"
   }
  ],
  "equity": [
@@ -5881,6 +5904,10 @@
   {
    "t": "2026-09-19T16:11:43Z",
    "v": 466.65
+  },
+  {
+   "t": "2026-09-19T16:16:45Z",
+   "v": 464.53
   }
  ],
  "started": "2026-09-15T16:35:51Z",
