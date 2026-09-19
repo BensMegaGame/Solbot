@@ -1,5 +1,5 @@
 {
- "cash": 136.00205600000007,
+ "cash": 95.98205600000006,
  "positions": {
   "y2sCF2KcPxZ5o4bmwJ3M9P82k2h5excdet64z62Ffav": {
    "sym": "ZATOSHI",
@@ -10,8 +10,8 @@
    "entry": 0.00016469324750200147,
    "base_entry": 0.0001260934888081534,
    "entry_liq": 30671.44,
-   "cur_price": 0.0001361,
-   "mark": 0.0001361,
+   "cur_price": 0.0001404,
+   "mark": 0.0001404,
    "added": true
   },
   "FkDqBb1Vz6iZH9aSD5RBV5ctPQGrF2Ye6NVJ4sXncYMF": {
@@ -28,15 +28,16 @@
   },
   "DDndHihssMMJnd3je9Fxukq4M9PdxwQ2XqF8cZgkZu1s": {
    "sym": "COINU",
-   "qty": 187131.999622,
-   "cost": 20.02,
+   "qty": 413077.159179,
+   "cost": 60.040000000000006,
    "opened": "2026-09-18T22:21:51Z",
-   "peak": 0.0001575,
-   "entry": 0.00010698330611781891,
+   "peak": 0.0001647,
+   "entry": 0.00014534814783594144,
    "base_entry": 0.00010698330611781891,
    "entry_liq": 30462.8,
-   "cur_price": 0.0001575,
-   "mark": 0.0001575
+   "cur_price": 0.0001647,
+   "mark": 0.0001647,
+   "added": true
   }
  },
  "trades": [
@@ -687,6 +688,18 @@
    "slip": 0.0019,
    "quote": "jup",
    "reason": "totes kapital"
+  },
+  {
+   "t": "2026-09-19T01:51:56Z",
+   "side": "buy",
+   "sym": "COINU",
+   "addr": "DDndHihssMMJnd3je9Fxukq4M9PdxwQ2XqF8cZgkZu1s",
+   "price": 0.0001647,
+   "fill": 0.000177122626,
+   "usd": 40.02,
+   "slip": 0.0412,
+   "quote": "jup",
+   "reason": "nachlage bei 1.54x"
   }
  ],
  "equity": [
@@ -1469,6 +1482,10 @@
   {
    "t": "2026-09-19T01:46:49Z",
    "v": 233.39
+  },
+  {
+   "t": "2026-09-19T01:51:56Z",
+   "v": 233.49
   }
  ],
  "started": "2026-09-18T09:36:39Z",
