@@ -1,5 +1,5 @@
 {
- "cash": 223.89905899999994,
+ "cash": 203.87905899999993,
  "positions": {
   "7nLukVng5teXze14rum9v57juXLjUp7JJnCveko1pump": {
    "sym": "Martians",
@@ -10,8 +10,8 @@
    "entry": 0.00038529549538297495,
    "entry_liq": 69381.39,
    "entry_vol": 57940.34,
-   "cur_price": 0.0003092,
-   "mark": 0.0003092,
+   "cur_price": 0.0003031,
+   "mark": 0.0003031,
    "added": true
   },
   "4Ee7xRodjp7kBGTZsHj9FE87UQWJuPke7ENzzGWBbFCc": {
@@ -23,9 +23,8 @@
    "entry": 0.0004982976254588922,
    "entry_liq": 110665.36,
    "entry_vol": 104268.64,
-   "cur_price": 0.0004603,
-   "mark": 0.0004603,
-   "no_quote_since": "2026-09-19T11:21:21Z"
+   "cur_price": 0.0004586,
+   "mark": 0.0004586
   },
   "2s9ycNwMgVCB4SWtXmTu14w1ospd88MVYZdHLVEHLdVC": {
    "sym": "SKYNET",
@@ -37,8 +36,19 @@
    "entry_liq": 35734.54,
    "entry_vol": 128155.97,
    "cur_price": 0.0001702,
-   "mark": 0.0001702,
-   "no_quote_since": "2026-09-19T11:21:21Z"
+   "mark": 0.0001702
+  },
+  "7TKRV4SneC6xLRaAt21a6d1kheAzXHGKP9WDzri9aD2e": {
+   "sym": "SHINJUKU",
+   "qty": 122890.255,
+   "cost": 20.02,
+   "opened": "2026-09-19T11:26:21Z",
+   "peak": 0.0001609,
+   "entry": 0.00016290958139845993,
+   "entry_liq": 41787.08,
+   "entry_vol": 39110.13,
+   "cur_price": 0.0001609,
+   "mark": 0.0001609
   }
  },
  "trades": [
@@ -462,6 +472,18 @@
    "slip": 0.0123,
    "quote": "jup",
    "reason": "ok vol-trend 1.81 buy 0.56"
+  },
+  {
+   "t": "2026-09-19T11:26:21Z",
+   "side": "buy",
+   "sym": "SHINJUKU",
+   "addr": "7TKRV4SneC6xLRaAt21a6d1kheAzXHGKP9WDzri9aD2e",
+   "price": 0.0001609,
+   "fill": 0.000162909581,
+   "usd": 20.02,
+   "slip": 0.0097,
+   "quote": "jup",
+   "reason": "ok vol-trend 1.23 buy 0.56"
   }
  ],
  "equity": [
@@ -8424,6 +8446,10 @@
   {
    "t": "2026-09-19T11:21:21Z",
    "v": 332.48
+  },
+  {
+   "t": "2026-09-19T11:26:21Z",
+   "v": 330.81
   }
  ],
  "started": "2026-09-11T10:50:37Z",
@@ -8442,7 +8468,7 @@
   "CsHrGJ3HpJV76ecFm4vZrpFSLNQaP1dwzj8e2cvkpump": 20729
  },
  "streak": 0,
- "half_left": 4,
- "watchlist": 514,
+ "half_left": 3,
+ "watchlist": 515,
  "strategy": "second_wave"
 }
