@@ -1,5 +1,5 @@
 {
- "cash": 364.17352794111184,
+ "cash": 410.9156129411118,
  "positions": {
   "5GefefPX1mDs6ZJB1apYmz6fCTCiNJpHturZ9bvFpump": {
    "sym": "Pumpoween",
@@ -18,8 +18,8 @@
    "opened": "2026-09-17T04:25:15Z",
    "peak": 0.000297,
    "entry": 0.00024075348552984524,
-   "cur_price": 0.0002163,
-   "mark": 0.0002163
+   "cur_price": 0.0002169,
+   "mark": 0.0002169
   },
   "6rHkNb7HCtkpvdnVJsBCZHH5dw3AndqEjfmbEGhooR7t": {
    "sym": "SCRIBE",
@@ -28,18 +28,8 @@
    "opened": "2026-09-18T13:25:45Z",
    "peak": 0.0001244,
    "entry": 0.0001254859667485435,
-   "cur_price": 0.0001188,
-   "mark": 0.0001188
-  },
-  "Adgt7dseCq71eN6GDuoUgpsNQp81ZNhq24nrF7pxpump": {
-   "sym": "Noiz ",
-   "qty": 265674.063609,
-   "cost": 50.02,
-   "opened": "2026-09-18T15:25:45Z",
-   "peak": 0.0002111,
-   "entry": 0.00018827581179928744,
-   "cur_price": 0.0001806,
-   "mark": 0.0001806
+   "cur_price": 0.0001189,
+   "mark": 0.0001189
   }
  },
  "trades": [
@@ -1027,6 +1017,21 @@
    "slip": 0.0562,
    "quote": "jup",
    "reason": "trail"
+  },
+  {
+   "t": "2026-09-19T05:25:05Z",
+   "side": "sell",
+   "sym": "Noiz ",
+   "addr": "Adgt7dseCq71eN6GDuoUgpsNQp81ZNhq24nrF7pxpump",
+   "price": 5.737e-05,
+   "usd": 46.74,
+   "pnl": -3.28,
+   "peak_x": 1.121,
+   "held_h": 14.0,
+   "frac": 1.0,
+   "slip": 0.0063,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -8729,6 +8734,10 @@
   {
    "t": "2026-09-19T05:21:03Z",
    "v": 579.02
+  },
+  {
+   "t": "2026-09-19T05:26:03Z",
+   "v": 577.95
   }
  ],
  "started": "2026-09-10T17:17:16Z"
