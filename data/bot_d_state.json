@@ -1,17 +1,6 @@
 {
- "cash": 342.31588900000065,
+ "cash": 351.33255100000065,
  "positions": {
-  "G5im68AmQ8c6C56Kdapufyu8dZddYkMBGoLbqtb98j7": {
-   "sym": "JASON COIN",
-   "qty": 99597.123885,
-   "cost": 15.02,
-   "opened": "2026-09-18T10:41:38Z",
-   "peak": 0.0002327,
-   "entry": 0.0001508075676697539,
-   "liq0": 37289.49,
-   "cur_price": 9.31e-05,
-   "mark": 9.31e-05
-  },
   "J53EGLkGxyC3mh45RVWxYtETEj2T9G3YnUPX5nn6AXGc": {
    "sym": "EBT",
    "qty": 131614.36367,
@@ -53,8 +42,8 @@
    "peak": 0.0002055,
    "entry": 6.247727910483139e-05,
    "liq0": 21833.89,
-   "cur_price": 8.815e-05,
-   "mark": 8.815e-05
+   "cur_price": 9.008e-05,
+   "mark": 9.008e-05
   },
   "Bz5N9wrcxDw2YTf8tQkG8PJzdbUW89ZNWLWbdqA2pump": {
    "sym": "\uc288\ubc14\uc624",
@@ -75,8 +64,8 @@
    "peak": 0.000263,
    "entry": 9.24536282737261e-05,
    "liq0": 29736.46,
-   "cur_price": 0.0001889,
-   "mark": 0.0001889
+   "cur_price": 0.0001912,
+   "mark": 0.0001912
   },
   "25k6xgPB6MDsHgTaNaECHXLvxCuJL1sL3q4aRC9Tw4Yd": {
    "sym": "CLAX",
@@ -110,19 +99,19 @@
    "peak": 8.137e-05,
    "entry": 7.541678838855976e-05,
    "liq0": 25465.17,
-   "cur_price": 7.556e-05,
-   "mark": 7.556e-05
+   "cur_price": 7.593e-05,
+   "mark": 7.593e-05
   },
   "AeDgbAv64t53GiBPemV2geVB1pZkdBLPumjn25HWXpUo": {
    "sym": "STOCKCAT",
    "qty": 257445.136804,
    "cost": 15.02,
    "opened": "2026-09-19T11:16:46Z",
-   "peak": 5.958e-05,
+   "peak": 6.024e-05,
    "entry": 5.834252760204647e-05,
    "liq0": 20526.28,
-   "cur_price": 5.958e-05,
-   "mark": 5.958e-05
+   "cur_price": 6.024e-05,
+   "mark": 6.024e-05
   }
  },
  "trades": [
@@ -1100,6 +1089,21 @@
    "slip": 0.0323,
    "quote": "jup",
    "reason": "longshot"
+  },
+  {
+   "t": "2026-09-19T11:31:45Z",
+   "side": "sell",
+   "sym": "JASON COIN",
+   "addr": "G5im68AmQ8c6C56Kdapufyu8dZddYkMBGoLbqtb98j7",
+   "price": 9.048e-05,
+   "usd": 9.02,
+   "pnl": -6.0,
+   "peak_x": 1.543,
+   "held_h": 24.8,
+   "frac": 1.0,
+   "slip": 0.0118,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -5466,6 +5470,10 @@
   {
    "t": "2026-09-19T11:26:44Z",
    "v": 501.43
+  },
+  {
+   "t": "2026-09-19T11:31:46Z",
+   "v": 502.26
   }
  ],
  "started": "2026-09-15T16:35:51Z",
