@@ -1,19 +1,6 @@
 {
- "cash": 298.7680219999999,
+ "cash": 319.5104529999999,
  "positions": {
-  "2s9ycNwMgVCB4SWtXmTu14w1ospd88MVYZdHLVEHLdVC": {
-   "sym": "SKYNET",
-   "qty": 89820.1340057,
-   "cost": 14.014,
-   "opened": "2026-09-19T07:06:12Z",
-   "peak": 0.0003213,
-   "entry": 0.0001560229246497302,
-   "entry_liq": 35734.54,
-   "entry_vol": 128155.97,
-   "cur_price": 0.0002605,
-   "mark": 0.0002605,
-   "tp1": true
-  },
   "7TKRV4SneC6xLRaAt21a6d1kheAzXHGKP9WDzri9aD2e": {
    "sym": "SHINJUKU",
    "qty": 122890.255,
@@ -505,6 +492,21 @@
    "slip": 0.0416,
    "quote": "jup",
    "reason": "tp1"
+  },
+  {
+   "t": "2026-09-19T20:46:16Z",
+   "side": "sell",
+   "sym": "SKYNET",
+   "addr": "2s9ycNwMgVCB4SWtXmTu14w1ospd88MVYZdHLVEHLdVC",
+   "price": 0.0002391,
+   "usd": 20.74,
+   "pnl": 6.73,
+   "peak_x": 2.059,
+   "held_h": 13.7,
+   "frac": 1.0,
+   "slip": 0.0244,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
@@ -8915,6 +8917,10 @@
   {
    "t": "2026-09-19T20:41:20Z",
    "v": 339.32
+  },
+  {
+   "t": "2026-09-19T20:46:16Z",
+   "v": 336.67
   }
  ],
  "started": "2026-09-11T10:50:37Z",
@@ -8934,8 +8940,8 @@
   "7nLukVng5teXze14rum9v57juXLjUp7JJnCveko1pump": 20729,
   "4Ee7xRodjp7kBGTZsHj9FE87UQWJuPke7ENzzGWBbFCc": 20729
  },
- "streak": 2,
+ "streak": 0,
  "half_left": 3,
- "watchlist": 596,
+ "watchlist": 595,
  "strategy": "second_wave"
 }
