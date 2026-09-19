@@ -1,18 +1,17 @@
 {
- "cash": 127.74584500000002,
+ "cash": 139.48872300000002,
  "positions": {
-  "6Ax9mQt3oxsrxDjAF5p1Ljc7NPPHmXWsSsPgnhRJfN8A": {
-   "sym": "SDOG",
-   "qty": 524356.5625789999,
-   "cost": 60.040000000000006,
-   "opened": "2026-09-19T10:46:52Z",
-   "peak": 0.0001815,
-   "entry": 0.00011450223814249362,
-   "base_entry": 8.27394354656559e-05,
-   "entry_liq": 26009.95,
-   "cur_price": 7.927e-05,
-   "mark": 7.927e-05,
-   "added": true
+  "SPqTn8KkooByR41x3SsaNxGxXDqPFFRXR2Kkt8TJhSK": {
+   "sym": "ANSEM",
+   "qty": 312641.563365,
+   "cost": 20.02,
+   "opened": "2026-09-19T22:16:45Z",
+   "peak": 6.253e-05,
+   "entry": 6.40349919713881e-05,
+   "base_entry": 6.40349919713881e-05,
+   "entry_liq": 23638.88,
+   "cur_price": 6.253e-05,
+   "mark": 6.253e-05
   }
  },
  "trades": [
@@ -825,6 +824,33 @@
    "slip": 0.0013,
    "quote": "jup",
    "reason": "totes kapital"
+  },
+  {
+   "t": "2026-09-19T22:16:44Z",
+   "side": "sell",
+   "sym": "SDOG",
+   "addr": "6Ax9mQt3oxsrxDjAF5p1Ljc7NPPHmXWsSsPgnhRJfN8A",
+   "price": 6.293e-05,
+   "usd": 31.76,
+   "pnl": -28.28,
+   "peak_x": 1.585,
+   "held_h": 11.5,
+   "frac": 1.0,
+   "slip": 0.0068,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-19T22:16:45Z",
+   "side": "buy",
+   "sym": "ANSEM",
+   "addr": "SPqTn8KkooByR41x3SsaNxGxXDqPFFRXR2Kkt8TJhSK",
+   "price": 6.253e-05,
+   "fill": 6.4034992e-05,
+   "usd": 20.02,
+   "slip": 0.0248,
+   "quote": "jup",
+   "reason": "sonde"
   }
  ],
  "equity": [
@@ -2587,6 +2613,10 @@
   {
    "t": "2026-09-19T22:11:40Z",
    "v": 169.31
+  },
+  {
+   "t": "2026-09-19T22:16:45Z",
+   "v": 159.04
   }
  ],
  "started": "2026-09-18T09:36:39Z",
@@ -2616,7 +2646,8 @@
   "DDndHihssMMJnd3je9Fxukq4M9PdxwQ2XqF8cZgkZu1s": 20729,
   "7rUNV1HjfCzbtGi3ZbKQ5hYXVjzbAfyCTcgTULQxCwki": 20729,
   "7GuTYEM2bF7fWF7zKfJ8UWMrs7i6xeoDMFJYnGXDH9ke": 20729,
-  "7gnye7MymAa2iN8iZsZvH6ybjxeUiaxSoavxgeqG8kkh": 20729
+  "7gnye7MymAa2iN8iZsZvH6ybjxeUiaxSoavxgeqG8kkh": 20729,
+  "6Ax9mQt3oxsrxDjAF5p1Ljc7NPPHmXWsSsPgnhRJfN8A": 20729
  },
  "strategy": "momentum_runner"
 }
