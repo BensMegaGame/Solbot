@@ -1,5 +1,5 @@
 {
- "cash": 14.932471999999855,
+ "cash": 47.20397499999985,
  "positions": {
   "DtUntDyWcRpzTVt8JiW8fXvUt3WDGGw6kdiD7fjNMFzJ": {
    "sym": "STONKAT",
@@ -23,8 +23,8 @@
    "entry": 0.0003368196152328185,
    "target": 0.0005244,
    "entry_liq": 49233.12,
-   "cur_price": 0.0003871,
-   "mark": 0.0003871
+   "cur_price": 0.0003857,
+   "mark": 0.0003857
   },
   "F7CTvENFnkDJysMhaFFicDT2FwnbW2oasFZGG6WJnar7": {
    "sym": "STONK5",
@@ -38,18 +38,6 @@
    "cur_price": 7.164e-05,
    "mark": 7.164e-05
   },
-  "GADj8JQ8iQLQD5S6ScvncJWmGs7PkwHnXsBrEUns6ue5": {
-   "sym": "POKECOIN",
-   "qty": 1174362.668595,
-   "cost": 60.02,
-   "opened": "2026-09-19T17:46:35Z",
-   "peak": 4.883e-05,
-   "entry": 5.1108572849822915e-05,
-   "target": 0.0001018,
-   "entry_liq": 22290.8,
-   "cur_price": 3.617e-05,
-   "mark": 3.617e-05
-  },
   "F8Sc8HoZvJcMrTY6vBsetTqGPv6XQmM2XgVAZo1sSTNK": {
    "sym": "MARINE",
    "qty": 162451.364018,
@@ -59,8 +47,8 @@
    "entry": 0.0003694644262472899,
    "target": 0.0005549,
    "entry_liq": 52636.57,
-   "cur_price": 0.0003543,
-   "mark": 0.0003543
+   "cur_price": 0.0003272,
+   "mark": 0.0003272
   }
  },
  "trades": [
@@ -654,6 +642,21 @@
    "slip": 0.0321,
    "quote": "jup",
    "reason": "wiederanlauf: lauf 6.0x, jetzt -36% unter hoch"
+  },
+  {
+   "t": "2026-09-19T21:26:20Z",
+   "side": "sell",
+   "sym": "POKECOIN",
+   "addr": "GADj8JQ8iQLQD5S6ScvncJWmGs7PkwHnXsBrEUns6ue5",
+   "price": 2.895e-05,
+   "usd": 32.27,
+   "pnl": -27.75,
+   "peak_x": 0.955,
+   "held_h": 3.7,
+   "frac": 1.0,
+   "slip": 0.0595,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -2376,6 +2379,10 @@
   {
    "t": "2026-09-19T21:21:23Z",
    "v": 257.34
+  },
+  {
+   "t": "2026-09-19T21:26:21Z",
+   "v": 242.48
   }
  ],
  "started": "2026-09-18T09:36:15Z",
@@ -2398,7 +2405,8 @@
   "7wCM5K4ziHmrbjGe5QFhBqBME2fH82dn4Wfx8vhKSTNK": 20718,
   "2s9ycNwMgVCB4SWtXmTu14w1ospd88MVYZdHLVEHLdVC": 20718,
   "5THtNEGTF1y67eRWvcgz3MomDZePCVx1xdskHHeCpump": 20718,
-  "27tNoYYhtovz1EmCQz3VufMMuDh6Nrv35QRX2vAyBNeA": 20718
+  "27tNoYYhtovz1EmCQz3VufMMuDh6Nrv35QRX2vAyBNeA": 20718,
+  "GADj8JQ8iQLQD5S6ScvncJWmGs7PkwHnXsBrEUns6ue5": 20718
  },
  "strategy": "wiederanlauf",
  "watchlist": 388
