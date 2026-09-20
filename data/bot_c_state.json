@@ -10,8 +10,8 @@
    "entry": 0.00010215793014527518,
    "target": 0.0001494,
    "entry_liq": 33649.22,
-   "cur_price": 9.652e-05,
-   "mark": 9.652e-05,
+   "cur_price": 9.756e-05,
+   "mark": 9.756e-05,
    "tp1": true
   },
   "F8Sc8HoZvJcMrTY6vBsetTqGPv6XQmM2XgVAZo1sSTNK": {
@@ -23,8 +23,8 @@
    "entry": 0.0003694644262472899,
    "target": 0.0005549,
    "entry_liq": 52636.57,
-   "cur_price": 0.000423,
-   "mark": 0.000423,
+   "cur_price": 0.0004051,
+   "mark": 0.0004051,
    "tp1": true
   },
   "9WZriUAVGezWRY5VJYqN7co2CfSyQm5hQgucTkN8pump": {
@@ -36,8 +36,8 @@
    "entry": 0.00014268510192937077,
    "target": 0.0002202,
    "entry_liq": 31469.13,
-   "cur_price": 0.0001415,
-   "mark": 0.0001415
+   "cur_price": 0.0001425,
+   "mark": 0.0001425
   }
  },
  "trades": [
@@ -3625,6 +3625,10 @@
   {
    "t": "2026-09-20T20:06:35Z",
    "v": 172.62
+  },
+  {
+   "t": "2026-09-20T20:11:32Z",
+   "v": 171.9
   }
  ],
  "started": "2026-09-18T09:36:15Z",
@@ -3658,6 +3662,14 @@
   "41WU7d3EzacMHkpgHNnF7eG9aXjvbPqASXVLpGqkoTpa": 20719,
   "GBLYwo4vvqGDPkVJqwWfrvtPavEWb5zALmPphxQbJaLG": 20719
  },
- "strategy": "wiederanlauf",
- "watchlist": 462
+ "strategy": "rueckschlag_umsatzschub",
+ "watchlist": 462,
+ "coverage": {
+  "t": "2026-09-20T20:11:32Z",
+  "kurse": 3,
+  "von": 3,
+  "kerzen": 3,
+  "offen": 4,
+  "markt": true
+ }
 }
