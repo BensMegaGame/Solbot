@@ -1,4 +1,4 @@
-"""Bot E v4 – "Large-Cap Dip": EINE konzentrierte Position (90 % des Cash) in einem der ~50 groessten
+"""Bot E v4.1 – "Large-Cap Dip": EINE konzentrierte Position (90 % des Cash) in einem der ~50 groessten
 Solana-Tokens, nachdem dieser in 24 h deutlich staerker gefallen ist als der Gesamtmarkt und der
 Verkaufsdruck sichtbar nachgelassen hat. Harter Stop -10 %, Teilgewinn +15 %, Trailing fuer den Rest.
 
@@ -75,16 +75,53 @@ def codex_universe():
     except Exception as e:
         print("codex fehler:", e); return None
 
-def batch_pairs(addrs):
-    out = {}
-    for k in range(0, len(addrs), 30):
-        d = get(f"{DS}/latest/dex/tokens/{','.join(addrs[k:k+30])}") or {}
-        for p in (d.get("pairs") or []):
-            if p.get("chainId") != "solana": continue
-            a = p["baseToken"]["address"]
-            if a not in out or (p.get("liquidity") or {}).get("usd", 0) > (out[a].get("liquidity") or {}).get("usd", 0):
-                out[a] = p
+# v4.1 - Kurse ueber feste PAAR-Adressen statt ueber Token-Adressen.
+# Bis 20.09. fragte Bot E DexScreener mit /latest/dex/tokens/<30 Tokens> ab. Diese Antwort enthaelt aber
+# hoechstens 30 PAARE insgesamt - und Large Caps haben Dutzende Paare je Token. Folge (gemessen an 40 Laeufen):
+# nur 41-47 der 72 Tokens bekamen einen Kurs, 14 nie, und SOL selbst nur in 2 von 40 Laeufen. Ohne SOL-Kurs
+# gilt "SOL-Referenz fehlt -> kein Kauf" - Bot E war deshalb seit dem 18.09. praktisch blind.
+# Jetzt: je Token einmal das liquideste Paar suchen (/token-pairs, 1 Token je Abfrage, alle 12 h neu),
+# danach jeden Lauf genau diese Paare abfragen (/latest/dex/pairs, 30 Paare je Abfrage = 30 Tokens).
+SOL_REF_PAIRS = ["58oQChx4yWmvKdwLLZzBi4ChoCc2fqCUWBkwMihLYQo2",   # Raydium SOL/USDC
+                 "Czfq3xZZDmsdGdUyrNLtRhGc47cXcZtLG4crryfu44zE"]   # Orca SOL/USDC (Reserve)
+
+def _liq(p): return float(((p or {}).get("liquidity") or {}).get("usd") or 0)
+
+def best_pair(token):
+    """Liquidestes Solana-Paar, in dem der Token BASIS ist (sonst waere priceUsd der Kurs des Gegenstuecks)."""
+    d = get(f"{DS}/token-pairs/v1/solana/{token}")
+    time.sleep(0.3)                                   # Limit 300/Min
+    if isinstance(d, dict): d = d.get("pairs")          # Format-Absicherung (Liste laut Doku)
+    pairs = [p for p in (d or []) if p.get("chainId") == "solana"
+             and (p.get("baseToken") or {}).get("address") == token and p.get("pairAddress")]
+    return max(pairs, key=_liq) if pairs else None
+
+def fetch_pairs(pair_addrs):
+    out = []
+    for k in range(0, len(pair_addrs), 30):
+        d = get(f"{DS}/latest/dex/pairs/solana/{','.join(pair_addrs[k:k+30])}") or {}
+        out += [p for p in (d.get("pairs") or []) if p and p.get("chainId") == "solana"]
         time.sleep(1.1)
+    return out
+
+def batch_pairs(addrs, meta):
+    """{token: paar} fuer alle addrs, plus SOL unter SOL_MINT. Paar-Adressen werden in meta["pair_of"] gemerkt."""
+    pair_of = meta.setdefault("pair_of", {})
+    out = {}
+    known = [pair_of[a] for a in addrs if pair_of.get(a)]
+    for p in fetch_pairs(known) + fetch_pairs(SOL_REF_PAIRS):   # getrennt: ein fehlerhaftes Paar stoert nicht die anderen
+        a = (p.get("baseToken") or {}).get("address")
+        if a == SOL_MINT:
+            if _liq(p) > _liq(out.get(SOL_MINT)): out[SOL_MINT] = p
+        elif a in addrs and pair_of.get(a) == p.get("pairAddress"):
+            out[a] = p
+    for a in addrs:                                   # neu im Universum oder Paar verschwunden -> einmal suchen
+        if a in out: continue
+        p = best_pair(a)
+        if p: pair_of[a] = p["pairAddress"]; out[a] = p
+    if SOL_MINT not in out:                           # Reserve fuer die Referenz: liquidestes SOL-Paar suchen
+        p = best_pair(SOL_MINT)
+        if p: out[SOL_MINT] = p
     return out
 
 GT = "https://api.geckoterminal.com/api/v2/networks/solana"
@@ -110,11 +147,11 @@ def main():
     meta = load("bot_e_meta.json", {}); hist = load("bot_e_hist.json", {}); cooldown = load("bot_e_cooldown.json", {})
     if now - meta.get("last_discover", 0) >= DISCOVER_EVERY_S or not meta.get("universe"):
         u = codex_universe()
-        if u: meta["universe"], meta["last_discover"] = u, now
+        if u: meta["universe"], meta["last_discover"], meta["pair_of"] = u, now, {}   # Paare neu suchen (Liquiditaet wandert)
         elif meta.get("universe"): print("Bot E: Codex nicht erreichbar, nutze altes Universum")
     universe = list(set(meta.get("universe", [])) | set(st["positions"].keys()))
     if not universe: print("Bot E: kein Universum (CODEX_KEY?)"); pf.mark({}); pf.commit(); return
-    pairs = batch_pairs(universe + [SOL_MINT])
+    pairs = batch_pairs(universe, meta)
     sol = pairs.get(SOL_MINT); sol24 = f(sol, "priceChange", "h24") if sol else None
     prices, checks = {}, []
 
@@ -123,9 +160,9 @@ def main():
         px = f(p, "priceUsd") or 0
         if px > 0:
             pts = hist.setdefault(a, []); pts.append([now, px])
-            hist[a] = [x for x in pts if now - x[0] <= HIST_KEEP_S][-60:]
+            hist[a] = [x for x in pts if now - x[0] <= HIST_KEEP_S][-90:]   # 60 Punkte waren nur 5 h statt 6 h
     for a in list(hist):
-        if a not in pairs and a not in st["positions"]: del hist[a]
+        if a not in universe and a != SOL_MINT: del hist[a]   # nur bei Austritt aus dem Universum loeschen
 
     # 2) offene Position verwalten
     for a, pos in list(st["positions"].items()):
@@ -197,9 +234,11 @@ def main():
     save("bot_e_meta.json", meta); save("bot_e_hist.json", hist)
     save("bot_e_cooldown.json", {k: v for k, v in cooldown.items() if v > today})
     st["strategy"] = "largecap_dip"; st["universe_n"] = len(universe)
+    st["coverage"] = {"t": now_iso(), "kurse": sum(1 for a in universe if a in pairs), "von": len(universe),
+                      "sol": sol24 is not None}
     v = pf.mark(prices); pf.commit()
     print(f"Bot E [largecap dip]: equity {v:.2f} | cash {st['cash']:.2f} | positions {len(st['positions'])} "
-          f"| universum {len(universe)} | SOL 24h {sol24 if sol24 is None else round(sol24, 1)}")
+          f"| kurse {st['coverage']['kurse']}/{len(universe)} | SOL 24h {sol24 if sol24 is None else round(sol24, 1)}")
     for sym, why in checks[:12]: print(f"   {sym:<10} {why}")
 
 if __name__ == "__main__":
