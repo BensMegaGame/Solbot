@@ -1,5 +1,5 @@
 {
- "cash": 3.597871999999839,
+ "cash": 50.38958899999984,
  "positions": {
   "DtUntDyWcRpzTVt8JiW8fXvUt3WDGGw6kdiD7fjNMFzJ": {
    "sym": "STONKAT",
@@ -10,8 +10,8 @@
    "entry": 0.00010215793014527518,
    "target": 0.0001494,
    "entry_liq": 33649.22,
-   "cur_price": 8.905e-05,
-   "mark": 8.905e-05,
+   "cur_price": 8.887e-05,
+   "mark": 8.887e-05,
    "tp1": true
   },
   "F8Sc8HoZvJcMrTY6vBsetTqGPv6XQmM2XgVAZo1sSTNK": {
@@ -27,29 +27,17 @@
    "mark": 0.0004054,
    "tp1": true
   },
-  "GBLYwo4vvqGDPkVJqwWfrvtPavEWb5zALmPphxQbJaLG": {
-   "sym": "AGI",
-   "qty": 279503.956357,
-   "cost": 60.02,
-   "opened": "2026-09-20T09:41:29Z",
-   "peak": 0.0002085,
-   "entry": 0.00021473756859219086,
-   "target": 0.0004721,
-   "entry_liq": 40800.21,
-   "cur_price": 0.0001754,
-   "mark": 0.0001754
-  },
   "9WZriUAVGezWRY5VJYqN7co2CfSyQm5hQgucTkN8pump": {
    "sym": "bullworld",
    "qty": 420646.578994,
    "cost": 60.02,
    "opened": "2026-09-20T15:16:22Z",
-   "peak": 0.0001431,
+   "peak": 0.0001445,
    "entry": 0.00014268510192937077,
    "target": 0.0002202,
    "entry_liq": 31469.13,
-   "cur_price": 0.0001431,
-   "mark": 0.0001431
+   "cur_price": 0.0001445,
+   "mark": 0.0001445
   }
  },
  "trades": [
@@ -808,6 +796,21 @@
    "slip": 0.0145,
    "quote": "jup",
    "reason": "wiederanlauf: lauf 3.4x, jetzt -36% unter hoch"
+  },
+  {
+   "t": "2026-09-20T15:46:19Z",
+   "side": "sell",
+   "sym": "AGI",
+   "addr": "GBLYwo4vvqGDPkVJqwWfrvtPavEWb5zALmPphxQbJaLG",
+   "price": 0.0001754,
+   "usd": 46.79,
+   "pnl": -13.23,
+   "peak_x": 0.971,
+   "held_h": 6.1,
+   "frac": 1.0,
+   "slip": 0.003,
+   "quote": "jup",
+   "reason": "totes kapital"
   }
  ],
  "equity": [
@@ -3410,6 +3413,10 @@
   {
    "t": "2026-09-20T15:41:20Z",
    "v": 171.91
+  },
+  {
+   "t": "2026-09-20T15:46:19Z",
+   "v": 170.21
   }
  ],
  "started": "2026-09-18T09:36:15Z",
@@ -3440,7 +3447,8 @@
   "H1q6vF9X2ewo7XxqJ2qb2uTdwkjDLAWF1Y3SefRAUTGZ": 20719,
   "4rkGWJNSUPBcMicXMRAzohEyeJLFG8gUjwiWaz7Pddr3": 20719,
   "wXbiXbyVLX5tpcPvWvowYFHjDi4ikkGiG5RsLcXGgPf": 20719,
-  "41WU7d3EzacMHkpgHNnF7eG9aXjvbPqASXVLpGqkoTpa": 20719
+  "41WU7d3EzacMHkpgHNnF7eG9aXjvbPqASXVLpGqkoTpa": 20719,
+  "GBLYwo4vvqGDPkVJqwWfrvtPavEWb5zALmPphxQbJaLG": 20719
  },
  "strategy": "wiederanlauf",
  "watchlist": 447
