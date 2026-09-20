@@ -1,17 +1,17 @@
 {
- "cash": 139.48872300000002,
+ "cash": 130.30157200000002,
  "positions": {
-  "SPqTn8KkooByR41x3SsaNxGxXDqPFFRXR2Kkt8TJhSK": {
-   "sym": "ANSEM",
-   "qty": 312641.563365,
+  "FKWAyaxNccZCgT142vdMT6658geBEJb7cdNNkMb86Kwo": {
+   "sym": "INURANUS",
+   "qty": 339204.52839,
    "cost": 20.02,
-   "opened": "2026-09-19T22:16:45Z",
-   "peak": 7.528e-05,
-   "entry": 6.40349919713881e-05,
-   "base_entry": 6.40349919713881e-05,
-   "entry_liq": 23638.88,
-   "cur_price": 3.563e-05,
-   "mark": 3.563e-05
+   "opened": "2026-09-20T11:36:55Z",
+   "peak": 5.75e-05,
+   "entry": 5.9020438480060706e-05,
+   "base_entry": 5.9020438480060706e-05,
+   "entry_liq": 24118.06,
+   "cur_price": 5.75e-05,
+   "mark": 5.75e-05
   }
  },
  "trades": [
@@ -849,6 +849,33 @@
    "fill": 6.4034992e-05,
    "usd": 20.02,
    "slip": 0.0248,
+   "quote": "jup",
+   "reason": "sonde"
+  },
+  {
+   "t": "2026-09-20T11:36:54Z",
+   "side": "sell",
+   "sym": "ANSEM",
+   "addr": "SPqTn8KkooByR41x3SsaNxGxXDqPFFRXR2Kkt8TJhSK",
+   "price": 3.487e-05,
+   "usd": 10.83,
+   "pnl": -9.19,
+   "peak_x": 1.176,
+   "held_h": 13.3,
+   "frac": 1.0,
+   "slip": 0.0063,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-20T11:36:55Z",
+   "side": "buy",
+   "sym": "INURANUS",
+   "addr": "FKWAyaxNccZCgT142vdMT6658geBEJb7cdNNkMb86Kwo",
+   "price": 5.75e-05,
+   "fill": 5.9020438e-05,
+   "usd": 20.02,
+   "slip": 0.0159,
    "quote": "jup",
    "reason": "sonde"
   }
@@ -3253,6 +3280,10 @@
   {
    "t": "2026-09-20T11:31:51Z",
    "v": 150.63
+  },
+  {
+   "t": "2026-09-20T11:36:55Z",
+   "v": 149.81
   }
  ],
  "started": "2026-09-18T09:36:39Z",
@@ -3283,7 +3314,8 @@
   "7rUNV1HjfCzbtGi3ZbKQ5hYXVjzbAfyCTcgTULQxCwki": 20729,
   "7GuTYEM2bF7fWF7zKfJ8UWMrs7i6xeoDMFJYnGXDH9ke": 20729,
   "7gnye7MymAa2iN8iZsZvH6ybjxeUiaxSoavxgeqG8kkh": 20729,
-  "6Ax9mQt3oxsrxDjAF5p1Ljc7NPPHmXWsSsPgnhRJfN8A": 20729
+  "6Ax9mQt3oxsrxDjAF5p1Ljc7NPPHmXWsSsPgnhRJfN8A": 20729,
+  "SPqTn8KkooByR41x3SsaNxGxXDqPFFRXR2Kkt8TJhSK": 20730
  },
  "strategy": "momentum_runner"
 }
