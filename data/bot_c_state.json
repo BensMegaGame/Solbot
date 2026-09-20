@@ -1,5 +1,5 @@
 {
- "cash": 24.605358999999844,
+ "cash": 3.597871999999839,
  "positions": {
   "DtUntDyWcRpzTVt8JiW8fXvUt3WDGGw6kdiD7fjNMFzJ": {
    "sym": "STONKAT",
@@ -14,18 +14,6 @@
    "mark": 9.267e-05,
    "tp1": true
   },
-  "41WU7d3EzacMHkpgHNnF7eG9aXjvbPqASXVLpGqkoTpa": {
-   "sym": "GAY",
-   "qty": 178196.27268,
-   "cost": 60.02,
-   "opened": "2026-09-19T10:11:30Z",
-   "peak": 0.0005117,
-   "entry": 0.0003368196152328185,
-   "target": 0.0005244,
-   "entry_liq": 49233.12,
-   "cur_price": 0.0002521,
-   "mark": 0.0002521
-  },
   "F8Sc8HoZvJcMrTY6vBsetTqGPv6XQmM2XgVAZo1sSTNK": {
    "sym": "MARINE",
    "qty": 81225.682009,
@@ -35,8 +23,8 @@
    "entry": 0.0003694644262472899,
    "target": 0.0005549,
    "entry_liq": 52636.57,
-   "cur_price": 0.0003766,
-   "mark": 0.0003766,
+   "cur_price": 0.0003909,
+   "mark": 0.0003909,
    "tp1": true
   },
   "GBLYwo4vvqGDPkVJqwWfrvtPavEWb5zALmPphxQbJaLG": {
@@ -50,6 +38,18 @@
    "entry_liq": 40800.21,
    "cur_price": 0.0001818,
    "mark": 0.0001818
+  },
+  "9WZriUAVGezWRY5VJYqN7co2CfSyQm5hQgucTkN8pump": {
+   "sym": "bullworld",
+   "qty": 420646.578994,
+   "cost": 60.02,
+   "opened": "2026-09-20T15:16:22Z",
+   "peak": 0.0001405,
+   "entry": 0.00014268510192937077,
+   "target": 0.0002202,
+   "entry_liq": 31469.13,
+   "cur_price": 0.0001405,
+   "mark": 0.0001405
   }
  },
  "trades": [
@@ -781,6 +781,33 @@
    "slip": 0.0862,
    "quote": "jup",
    "reason": "wiederanlauf: lauf 3.4x, jetzt -57% unter hoch"
+  },
+  {
+   "t": "2026-09-20T15:16:20Z",
+   "side": "sell",
+   "sym": "GAY",
+   "addr": "41WU7d3EzacMHkpgHNnF7eG9aXjvbPqASXVLpGqkoTpa",
+   "price": 0.0002243,
+   "usd": 39.01,
+   "pnl": -21.01,
+   "peak_x": 1.519,
+   "held_h": 29.1,
+   "frac": 1.0,
+   "slip": 0.0368,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-20T15:16:22Z",
+   "side": "buy",
+   "sym": "bullworld",
+   "addr": "9WZriUAVGezWRY5VJYqN7co2CfSyQm5hQgucTkN8pump",
+   "price": 0.0001405,
+   "fill": 0.000142685102,
+   "usd": 60.02,
+   "slip": 0.0145,
+   "quote": "jup",
+   "reason": "wiederanlauf: lauf 3.4x, jetzt -36% unter hoch"
   }
  ],
  "equity": [
@@ -3359,6 +3386,10 @@
   {
    "t": "2026-09-20T15:11:22Z",
    "v": 178.15
+  },
+  {
+   "t": "2026-09-20T15:16:22Z",
+   "v": 172.49
   }
  ],
  "started": "2026-09-18T09:36:15Z",
@@ -3388,7 +3419,8 @@
   "2bDQvnvwd7rNbm4o3JNdN6z9c7MVzp4yqHJPNXPiSTNK": 20719,
   "H1q6vF9X2ewo7XxqJ2qb2uTdwkjDLAWF1Y3SefRAUTGZ": 20719,
   "4rkGWJNSUPBcMicXMRAzohEyeJLFG8gUjwiWaz7Pddr3": 20719,
-  "wXbiXbyVLX5tpcPvWvowYFHjDi4ikkGiG5RsLcXGgPf": 20719
+  "wXbiXbyVLX5tpcPvWvowYFHjDi4ikkGiG5RsLcXGgPf": 20719,
+  "41WU7d3EzacMHkpgHNnF7eG9aXjvbPqASXVLpGqkoTpa": 20719
  },
  "strategy": "wiederanlauf",
  "watchlist": 446
