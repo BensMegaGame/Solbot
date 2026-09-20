@@ -1,5 +1,5 @@
 {
- "cash": 370.2951509411119,
+ "cash": 320.2751509411119,
  "positions": {
   "5GefefPX1mDs6ZJB1apYmz6fCTCiNJpHturZ9bvFpump": {
    "sym": "Pumpoween",
@@ -18,8 +18,8 @@
    "opened": "2026-09-18T13:25:45Z",
    "peak": 0.0006655,
    "entry": 0.0001254859667485435,
-   "cur_price": 0.0006375,
-   "mark": 0.0006375,
+   "cur_price": 0.0005308,
+   "mark": 0.0005308,
    "tp0": true,
    "tp1": true
   },
@@ -40,8 +40,8 @@
    "opened": "2026-09-20T07:10:35Z",
    "peak": 0.003265,
    "entry": 0.002418474532937626,
-   "cur_price": 0.003265,
-   "mark": 0.003265
+   "cur_price": 0.003122,
+   "mark": 0.003122
   },
   "6LrDt7nBiHraUuk9PZoUL8Qy9WX6pnSpDz1RkWWRR7hN": {
    "sym": "INU",
@@ -50,8 +50,18 @@
    "opened": "2026-09-20T08:20:42Z",
    "peak": 0.001127,
    "entry": 0.0011133469268269946,
-   "cur_price": 0.001078,
-   "mark": 0.001078
+   "cur_price": 0.001057,
+   "mark": 0.001057
+  },
+  "91ryaCo5yGpYZM3bs6GUPs97VWJQj7RozBmqPULgpump": {
+   "sym": "TIGRINO",
+   "qty": 21905.770024,
+   "cost": 50.02,
+   "opened": "2026-09-20T11:25:21Z",
+   "peak": 0.002295,
+   "entry": 0.0022834166498232203,
+   "cur_price": 0.002295,
+   "mark": 0.002295
   }
  },
  "trades": [
@@ -1135,6 +1145,18 @@
    "slip": 0.0653,
    "quote": "jup",
    "reason": "tp1"
+  },
+  {
+   "t": "2026-09-20T11:25:21Z",
+   "side": "buy",
+   "sym": "TIGRINO",
+   "addr": "91ryaCo5yGpYZM3bs6GUPs97VWJQj7RozBmqPULgpump",
+   "price": 0.002295,
+   "fill": 0.00228341665,
+   "usd": 50.02,
+   "slip": 0.0106,
+   "quote": "jup",
+   "reason": "screener"
   }
  ],
  "equity": [
@@ -10277,6 +10299,10 @@
   {
    "t": "2026-09-20T11:20:53Z",
    "v": 707.98
+  },
+  {
+   "t": "2026-09-20T11:25:52Z",
+   "v": 688.39
   }
  ],
  "started": "2026-09-10T17:17:16Z"
