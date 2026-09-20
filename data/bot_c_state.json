@@ -1,5 +1,5 @@
 {
- "cash": 51.718872999999846,
+ "cash": 31.32920099999985,
  "positions": {
   "DtUntDyWcRpzTVt8JiW8fXvUt3WDGGw6kdiD7fjNMFzJ": {
    "sym": "STONKAT",
@@ -39,17 +39,17 @@
    "mark": 0.0004513,
    "tp1": true
   },
-  "2bDQvnvwd7rNbm4o3JNdN6z9c7MVzp4yqHJPNXPiSTNK": {
-   "sym": "BITCAT",
-   "qty": 419813.259708,
+  "H1q6vF9X2ewo7XxqJ2qb2uTdwkjDLAWF1Y3SefRAUTGZ": {
+   "sym": "WET",
+   "qty": 408462.874286,
    "cost": 60.02,
-   "opened": "2026-09-19T23:41:23Z",
-   "peak": 0.000151,
-   "entry": 0.00014296832844619238,
-   "target": 0.0002867,
-   "entry_liq": 37869.89,
-   "cur_price": 0.0001011,
-   "mark": 0.0001011
+   "opened": "2026-09-20T03:36:42Z",
+   "peak": 0.0001436,
+   "entry": 0.0001469411390323196,
+   "target": 0.0002602,
+   "entry_liq": 34043.4,
+   "cur_price": 0.0001436,
+   "mark": 0.0001436
   }
  },
  "trades": [
@@ -727,6 +727,33 @@
    "slip": 0.0,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-20T03:36:41Z",
+   "side": "sell",
+   "sym": "BITCAT",
+   "addr": "2bDQvnvwd7rNbm4o3JNdN6z9c7MVzp4yqHJPNXPiSTNK",
+   "price": 9.815e-05,
+   "usd": 39.63,
+   "pnl": -20.39,
+   "peak_x": 1.056,
+   "held_h": 3.9,
+   "frac": 1.0,
+   "slip": 0.0539,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-20T03:36:42Z",
+   "side": "buy",
+   "sym": "WET",
+   "addr": "H1q6vF9X2ewo7XxqJ2qb2uTdwkjDLAWF1Y3SefRAUTGZ",
+   "price": 0.0001436,
+   "fill": 0.000146941139,
+   "usd": 60.02,
+   "slip": 0.0542,
+   "quote": "jup",
+   "reason": "wiederanlauf: lauf 2.0x, jetzt -45% unter hoch"
   }
  ],
  "equity": [
@@ -2745,6 +2772,10 @@
   {
    "t": "2026-09-20T03:31:41Z",
    "v": 207.94
+  },
+  {
+   "t": "2026-09-20T03:36:42Z",
+   "v": 203.77
   }
  ],
  "started": "2026-09-18T09:36:15Z",
@@ -2770,7 +2801,8 @@
   "27tNoYYhtovz1EmCQz3VufMMuDh6Nrv35QRX2vAyBNeA": 20718,
   "GADj8JQ8iQLQD5S6ScvncJWmGs7PkwHnXsBrEUns6ue5": 20718,
   "F7CTvENFnkDJysMhaFFicDT2FwnbW2oasFZGG6WJnar7": 20718,
-  "4i5FqkfYDAPcEVcXyuVyaaBcz3bpwJPqDkmaF36kpump": 20719
+  "4i5FqkfYDAPcEVcXyuVyaaBcz3bpwJPqDkmaF36kpump": 20719,
+  "2bDQvnvwd7rNbm4o3JNdN6z9c7MVzp4yqHJPNXPiSTNK": 20719
  },
  "strategy": "wiederanlauf",
  "watchlist": 401
