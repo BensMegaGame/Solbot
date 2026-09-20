@@ -1,5 +1,5 @@
 {
- "cash": 360.4540889411119,
+ "cash": 310.4340889411119,
  "positions": {
   "5GefefPX1mDs6ZJB1apYmz6fCTCiNJpHturZ9bvFpump": {
    "sym": "Pumpoween",
@@ -39,8 +39,18 @@
    "opened": "2026-09-20T07:10:35Z",
    "peak": 0.002764,
    "entry": 0.002418474532937626,
-   "cur_price": 0.002764,
-   "mark": 0.002764
+   "cur_price": 0.00265,
+   "mark": 0.00265
+  },
+  "6LrDt7nBiHraUuk9PZoUL8Qy9WX6pnSpDz1RkWWRR7hN": {
+   "sym": "INU",
+   "qty": 44927.595159,
+   "cost": 50.02,
+   "opened": "2026-09-20T08:20:42Z",
+   "peak": 0.001052,
+   "entry": 0.0011133469268269946,
+   "cur_price": 0.001052,
+   "mark": 0.001052
   }
  },
  "trades": [
@@ -1095,6 +1105,18 @@
    "fill": 0.002418474533,
    "usd": 50.02,
    "slip": 0.0251,
+   "quote": "jup",
+   "reason": "screener"
+  },
+  {
+   "t": "2026-09-20T08:20:42Z",
+   "side": "buy",
+   "sym": "INU",
+   "addr": "6LrDt7nBiHraUuk9PZoUL8Qy9WX6pnSpDz1RkWWRR7hN",
+   "price": 0.001052,
+   "fill": 0.001113346927,
+   "usd": 50.02,
+   "slip": 0.0328,
    "quote": "jup",
    "reason": "screener"
   }
@@ -10091,6 +10113,10 @@
   {
    "t": "2026-09-20T08:15:58Z",
    "v": 620.22
+  },
+  {
+   "t": "2026-09-20T08:20:57Z",
+   "v": 615.11
   }
  ],
  "started": "2026-09-10T17:17:16Z"
