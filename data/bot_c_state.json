@@ -1,5 +1,5 @@
 {
- "cash": 31.32920099999985,
+ "cash": 24.605358999999844,
  "positions": {
   "DtUntDyWcRpzTVt8JiW8fXvUt3WDGGw6kdiD7fjNMFzJ": {
    "sym": "STONKAT",
@@ -10,8 +10,8 @@
    "entry": 0.00010215793014527518,
    "target": 0.0001494,
    "entry_liq": 33649.22,
-   "cur_price": 0.0001228,
-   "mark": 0.0001228,
+   "cur_price": 0.0001213,
+   "mark": 0.0001213,
    "tp1": true
   },
   "41WU7d3EzacMHkpgHNnF7eG9aXjvbPqASXVLpGqkoTpa": {
@@ -39,17 +39,17 @@
    "mark": 0.0004083,
    "tp1": true
   },
-  "H1q6vF9X2ewo7XxqJ2qb2uTdwkjDLAWF1Y3SefRAUTGZ": {
-   "sym": "WET",
-   "qty": 408462.874286,
+  "GBLYwo4vvqGDPkVJqwWfrvtPavEWb5zALmPphxQbJaLG": {
+   "sym": "AGI",
+   "qty": 279503.956357,
    "cost": 60.02,
-   "opened": "2026-09-20T03:36:42Z",
-   "peak": 0.0001476,
-   "entry": 0.0001469411390323196,
-   "target": 0.0002602,
-   "entry_liq": 34043.4,
-   "cur_price": 0.0001351,
-   "mark": 0.0001351
+   "opened": "2026-09-20T09:41:29Z",
+   "peak": 0.0002049,
+   "entry": 0.00021473756859219086,
+   "target": 0.0004721,
+   "entry_liq": 40800.21,
+   "cur_price": 0.0002049,
+   "mark": 0.0002049
   }
  },
  "trades": [
@@ -754,6 +754,33 @@
    "slip": 0.0542,
    "quote": "jup",
    "reason": "wiederanlauf: lauf 2.0x, jetzt -45% unter hoch"
+  },
+  {
+   "t": "2026-09-20T09:41:24Z",
+   "side": "sell",
+   "sym": "WET",
+   "addr": "H1q6vF9X2ewo7XxqJ2qb2uTdwkjDLAWF1Y3SefRAUTGZ",
+   "price": 0.0001344,
+   "usd": 53.3,
+   "pnl": -6.72,
+   "peak_x": 1.004,
+   "held_h": 6.1,
+   "frac": 1.0,
+   "slip": 0.0153,
+   "quote": "jup",
+   "reason": "totes kapital"
+  },
+  {
+   "t": "2026-09-20T09:41:29Z",
+   "side": "buy",
+   "sym": "AGI",
+   "addr": "GBLYwo4vvqGDPkVJqwWfrvtPavEWb5zALmPphxQbJaLG",
+   "price": 0.0002049,
+   "fill": 0.000214737569,
+   "usd": 60.02,
+   "slip": 0.0862,
+   "quote": "jup",
+   "reason": "wiederanlauf: lauf 3.4x, jetzt -57% unter hoch"
   }
  ],
  "equity": [
@@ -3064,6 +3091,10 @@
   {
    "t": "2026-09-20T09:36:26Z",
    "v": 223.73
+  },
+  {
+   "t": "2026-09-20T09:41:30Z",
+   "v": 218.66
   }
  ],
  "started": "2026-09-18T09:36:15Z",
@@ -3090,8 +3121,11 @@
   "GADj8JQ8iQLQD5S6ScvncJWmGs7PkwHnXsBrEUns6ue5": 20718,
   "F7CTvENFnkDJysMhaFFicDT2FwnbW2oasFZGG6WJnar7": 20718,
   "4i5FqkfYDAPcEVcXyuVyaaBcz3bpwJPqDkmaF36kpump": 20719,
-  "2bDQvnvwd7rNbm4o3JNdN6z9c7MVzp4yqHJPNXPiSTNK": 20719
+  "2bDQvnvwd7rNbm4o3JNdN6z9c7MVzp4yqHJPNXPiSTNK": 20719,
+  "H1q6vF9X2ewo7XxqJ2qb2uTdwkjDLAWF1Y3SefRAUTGZ": 20719,
+  "4rkGWJNSUPBcMicXMRAzohEyeJLFG8gUjwiWaz7Pddr3": 20719,
+  "wXbiXbyVLX5tpcPvWvowYFHjDi4ikkGiG5RsLcXGgPf": 20719
  },
  "strategy": "wiederanlauf",
- "watchlist": 419
+ "watchlist": 420
 }
