@@ -11,19 +11,20 @@
    "entry_liq": 41787.08,
    "entry_vol": 39110.13,
    "cur_price": 0.0001451,
-   "mark": 0.0001451
+   "mark": 0.0001451,
+   "no_quote_since": "2026-09-20T09:26:11Z"
   },
   "EpEfnZxQyiBXppSKi8sncc8w4corn1UJbF9G91fQpump": {
    "sym": "PEPENOM",
    "qty": 90779.452601,
    "cost": 20.02,
    "opened": "2026-09-20T04:46:25Z",
-   "peak": 0.0002687,
+   "peak": 0.0002723,
    "entry": 0.00022053448689532488,
    "entry_liq": 92361.83,
    "entry_vol": 133147.87,
-   "cur_price": 0.0002687,
-   "mark": 0.0002687
+   "cur_price": 0.0002723,
+   "mark": 0.0002723
   }
  },
  "trades": [
@@ -9549,6 +9550,10 @@
   {
    "t": "2026-09-20T09:21:11Z",
    "v": 341.71
+  },
+  {
+   "t": "2026-09-20T09:26:11Z",
+   "v": 342.04
   }
  ],
  "started": "2026-09-11T10:50:37Z",
@@ -9570,6 +9575,6 @@
  },
  "streak": 0,
  "half_left": 2,
- "watchlist": 673,
+ "watchlist": 674,
  "strategy": "second_wave"
 }
