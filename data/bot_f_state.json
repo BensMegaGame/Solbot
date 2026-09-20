@@ -1,17 +1,18 @@
 {
- "cash": 130.30157200000002,
+ "cash": 90.28157200000001,
  "positions": {
   "FKWAyaxNccZCgT142vdMT6658geBEJb7cdNNkMb86Kwo": {
    "sym": "INURANUS",
-   "qty": 339204.52839,
-   "cost": 20.02,
+   "qty": 834761.416927,
+   "cost": 60.040000000000006,
    "opened": "2026-09-20T11:36:55Z",
-   "peak": 7.089e-05,
-   "entry": 5.9020438480060706e-05,
+   "peak": 8.895e-05,
+   "entry": 7.192474254622924e-05,
    "base_entry": 5.9020438480060706e-05,
    "entry_liq": 24118.06,
-   "cur_price": 6.734e-05,
-   "mark": 6.734e-05
+   "cur_price": 8.895e-05,
+   "mark": 8.895e-05,
+   "added": true
   }
  },
  "trades": [
@@ -878,6 +879,18 @@
    "slip": 0.0159,
    "quote": "jup",
    "reason": "sonde"
+  },
+  {
+   "t": "2026-09-20T13:41:40Z",
+   "side": "buy",
+   "sym": "INURANUS",
+   "addr": "FKWAyaxNccZCgT142vdMT6658geBEJb7cdNNkMb86Kwo",
+   "price": 8.895e-05,
+   "fill": 8.075763e-05,
+   "usd": 40.02,
+   "slip": 0.0296,
+   "quote": "jup",
+   "reason": "nachlage bei 1.51x"
   }
  ],
  "equity": [
@@ -3380,6 +3393,10 @@
   {
    "t": "2026-09-20T13:36:56Z",
    "v": 153.14
+  },
+  {
+   "t": "2026-09-20T13:41:40Z",
+   "v": 164.53
   }
  ],
  "started": "2026-09-18T09:36:39Z",
