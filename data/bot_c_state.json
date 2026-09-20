@@ -1,5 +1,5 @@
 {
- "cash": 29.854425999999854,
+ "cash": 12.964743999999847,
  "positions": {
   "DtUntDyWcRpzTVt8JiW8fXvUt3WDGGw6kdiD7fjNMFzJ": {
    "sym": "STONKAT",
@@ -28,15 +28,16 @@
   },
   "F8Sc8HoZvJcMrTY6vBsetTqGPv6XQmM2XgVAZo1sSTNK": {
    "sym": "MARINE",
-   "qty": 162451.364018,
-   "cost": 60.02,
+   "qty": 81225.682009,
+   "cost": 30.01,
    "opened": "2026-09-19T21:21:22Z",
-   "peak": 0.0005174,
+   "peak": 0.0005591,
    "entry": 0.0003694644262472899,
    "target": 0.0005549,
    "entry_liq": 52636.57,
-   "cur_price": 0.0005174,
-   "mark": 0.0005174
+   "cur_price": 0.0005591,
+   "mark": 0.0005591,
+   "tp1": true
   },
   "2bDQvnvwd7rNbm4o3JNdN6z9c7MVzp4yqHJPNXPiSTNK": {
    "sym": "BITCAT",
@@ -47,8 +48,20 @@
    "entry": 0.00014296832844619238,
    "target": 0.0002867,
    "entry_liq": 37869.89,
-   "cur_price": 0.0001504,
-   "mark": 0.0001504
+   "cur_price": 0.0001426,
+   "mark": 0.0001426
+  },
+  "4i5FqkfYDAPcEVcXyuVyaaBcz3bpwJPqDkmaF36kpump": {
+   "sym": "Aiden",
+   "qty": 61930.246941,
+   "cost": 60.02,
+   "opened": "2026-09-20T00:08:18Z",
+   "peak": 0.0009739,
+   "entry": 0.0009691548631669455,
+   "target": 0.001561,
+   "entry_liq": 104302.34,
+   "cur_price": 0.0009739,
+   "mark": 0.0009739
   }
  },
  "trades": [
@@ -684,6 +697,33 @@
    "slip": 0.085,
    "quote": "jup",
    "reason": "wiederanlauf: lauf 3.3x, jetzt -52% unter hoch"
+  },
+  {
+   "t": "2026-09-20T00:08:17Z",
+   "side": "sell",
+   "sym": "MARINE",
+   "addr": "F8Sc8HoZvJcMrTY6vBsetTqGPv6XQmM2XgVAZo1sSTNK",
+   "price": 0.0005591,
+   "usd": 43.13,
+   "pnl": 13.12,
+   "peak_x": 1.513,
+   "held_h": 2.8,
+   "frac": 0.5,
+   "slip": 0.0037,
+   "quote": "jup",
+   "reason": "tp1 (altes hoch)"
+  },
+  {
+   "t": "2026-09-20T00:08:18Z",
+   "side": "buy",
+   "sym": "Aiden",
+   "addr": "4i5FqkfYDAPcEVcXyuVyaaBcz3bpwJPqDkmaF36kpump",
+   "price": 0.0009739,
+   "fill": 0.000969154863,
+   "usd": 60.02,
+   "slip": 0.0185,
+   "quote": "jup",
+   "reason": "wiederanlauf: lauf 13.7x, jetzt -38% unter hoch"
   }
  ],
  "equity": [
@@ -2534,6 +2574,10 @@
   {
    "t": "2026-09-20T00:03:01Z",
    "v": 256.14
+  },
+  {
+   "t": "2026-09-20T00:08:18Z",
+   "v": 257.65
   }
  ],
  "started": "2026-09-18T09:36:15Z",
