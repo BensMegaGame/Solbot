@@ -10,8 +10,8 @@
    "entry": 7.192474254622924e-05,
    "base_entry": 5.9020438480060706e-05,
    "entry_liq": 24118.06,
-   "cur_price": 6.91e-05,
-   "mark": 6.91e-05,
+   "cur_price": 6.659e-05,
+   "mark": 6.659e-05,
    "added": true
   }
  },
@@ -3713,6 +3713,10 @@
   {
    "t": "2026-09-20T20:16:51Z",
    "v": 147.96
+  },
+  {
+   "t": "2026-09-20T20:21:43Z",
+   "v": 145.87
   }
  ],
  "started": "2026-09-18T09:36:39Z",
@@ -3748,11 +3752,11 @@
  },
  "strategy": "rueckschlag_lotterie",
  "coverage": {
-  "t": "2026-09-20T20:16:51Z",
+  "t": "2026-09-20T20:21:43Z",
   "kurse": 1,
   "von": 1,
   "kerzen": 1,
-  "offen": 2,
+  "offen": 0,
   "markt": true,
   "gestoppt": true
  }
