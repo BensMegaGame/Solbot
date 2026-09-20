@@ -1,5 +1,5 @@
 {
- "cash": 12.964743999999847,
+ "cash": 51.718872999999846,
  "positions": {
   "DtUntDyWcRpzTVt8JiW8fXvUt3WDGGw6kdiD7fjNMFzJ": {
    "sym": "STONKAT",
@@ -10,8 +10,8 @@
    "entry": 0.00010215793014527518,
    "target": 0.0001494,
    "entry_liq": 33649.22,
-   "cur_price": 7.969e-05,
-   "mark": 7.969e-05,
+   "cur_price": 7.982e-05,
+   "mark": 7.982e-05,
    "tp1": true
   },
   "41WU7d3EzacMHkpgHNnF7eG9aXjvbPqASXVLpGqkoTpa": {
@@ -23,8 +23,8 @@
    "entry": 0.0003368196152328185,
    "target": 0.0005244,
    "entry_liq": 49233.12,
-   "cur_price": 0.0002711,
-   "mark": 0.0002711
+   "cur_price": 0.0002704,
+   "mark": 0.0002704
   },
   "F8Sc8HoZvJcMrTY6vBsetTqGPv6XQmM2XgVAZo1sSTNK": {
    "sym": "MARINE",
@@ -35,8 +35,8 @@
    "entry": 0.0003694644262472899,
    "target": 0.0005549,
    "entry_liq": 52636.57,
-   "cur_price": 0.0005488,
-   "mark": 0.0005488,
+   "cur_price": 0.0005212,
+   "mark": 0.0005212,
    "tp1": true
   },
   "2bDQvnvwd7rNbm4o3JNdN6z9c7MVzp4yqHJPNXPiSTNK": {
@@ -50,18 +50,6 @@
    "entry_liq": 37869.89,
    "cur_price": 0.0001373,
    "mark": 0.0001373
-  },
-  "4i5FqkfYDAPcEVcXyuVyaaBcz3bpwJPqDkmaF36kpump": {
-   "sym": "Aiden",
-   "qty": 61930.246941,
-   "cost": 60.02,
-   "opened": "2026-09-20T00:08:18Z",
-   "peak": 0.0009739,
-   "entry": 0.0009691548631669455,
-   "target": 0.001561,
-   "entry_liq": 104302.34,
-   "cur_price": 0.0007046,
-   "mark": 0.0007046
   }
  },
  "trades": [
@@ -724,6 +712,21 @@
    "slip": 0.0185,
    "quote": "jup",
    "reason": "wiederanlauf: lauf 13.7x, jetzt -38% unter hoch"
+  },
+  {
+   "t": "2026-09-20T00:41:24Z",
+   "side": "sell",
+   "sym": "Aiden",
+   "addr": "4i5FqkfYDAPcEVcXyuVyaaBcz3bpwJPqDkmaF36kpump",
+   "price": 0.0006373,
+   "usd": 38.75,
+   "pnl": -21.27,
+   "peak_x": 1.005,
+   "held_h": 0.6,
+   "frac": 1.0,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -2602,6 +2605,10 @@
   {
    "t": "2026-09-20T00:36:28Z",
    "v": 230.54
+  },
+  {
+   "t": "2026-09-20T00:41:24Z",
+   "v": 223.33
   }
  ],
  "started": "2026-09-18T09:36:15Z",
@@ -2626,7 +2633,8 @@
   "5THtNEGTF1y67eRWvcgz3MomDZePCVx1xdskHHeCpump": 20718,
   "27tNoYYhtovz1EmCQz3VufMMuDh6Nrv35QRX2vAyBNeA": 20718,
   "GADj8JQ8iQLQD5S6ScvncJWmGs7PkwHnXsBrEUns6ue5": 20718,
-  "F7CTvENFnkDJysMhaFFicDT2FwnbW2oasFZGG6WJnar7": 20718
+  "F7CTvENFnkDJysMhaFFicDT2FwnbW2oasFZGG6WJnar7": 20718,
+  "4i5FqkfYDAPcEVcXyuVyaaBcz3bpwJPqDkmaF36kpump": 20719
  },
  "strategy": "wiederanlauf",
  "watchlist": 394
