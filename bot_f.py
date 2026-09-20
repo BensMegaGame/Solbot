@@ -1,308 +1,334 @@
-"""Bot F – "Momentum Runner" v2: kleine Sonde in viele Kandidaten, EINE Nachlage in die, die schon
-laufen, und Gewinner erst spaet abgeben. Kalibriert per Backtest auf 120 eigenen 60-Stunden-Kursverlaeufen
-(data/bot_d_paths.json, bereinigt, ohne Pump.fun-Herkunft).
+"""Bot F v3 – "Rueckschlag-Lotterie": dieselbe Mechanik wie Bot C, aber bewusst riskant:
+kleinere Coins (Rang 150-400 statt 30-200), nur 3 Positionen zu je einem Drittel des Kapitals,
+kein Stop. Hoch gewinnen oder deutlich verlieren - genau das ist die Aufgabe dieses Bots.
 
-BACKTEST-ERGEBNIS dieser Einstellungen gegen die Alternativen (ROI je eingesetztem Dollar):
-   Bot D Regeln (60 $ einmalig, Trail -40 % ab 5x):  +13,3 %   ohne die 5 besten Tokens: -4,8 %
-   Bot F v1 (Trail ab 2x, zwei Nachlagen):           -6,4 %    ohne die 5 besten Tokens: -17,3 %
-   DIESE Einstellung:                                +35,5 %   ohne die 5 besten Tokens: +11,0 %
-   Holdout (Adressen per Hash in zwei Haelften):     +36,3 % / +35,0 %  -> nicht auf Ausreisser gefittet
-Profil: 26 von 120 Positionen im Gewinn (22 %), Durchschnittsgewinn +74 $ gegen -6,80 $ Durchschnitts-
-verlust, groesster Einzelverlust -30 $. Die Trefferquote ist NIEDRIG und soll das auch sein.
+WARUM DIESE TAKTIK UND KEINE ANDERE: Von allen in diesem Projekt gemessenen Ansaetzen ist der
+Rueckschlagkauf der einzige, der in zwei getrennten Zeitraeumen positiv blieb. Momentum, Rang-
+Aufsteiger, Pump.fun-Graduation, Umsatzschub allein und alle Micro-Cap-Varianten (rund 40 getestete
+Regeln) sind in mindestens einem Zeitraum klar negativ. Riskanter wird hier deshalb ueber die
+DOSIS (kleinere Coins, weniger Positionen, kein Stop), nicht ueber eine andere Idee.
 
-DIE VIER ENTSCHEIDUNGEN, DIE DEN UNTERSCHIED MACHEN (alle am Pfaddatensatz gemessen):
+GEMESSEN (665 Solana-Coins, 365 Tage, getrennt nach Halbjahren, Rang 200-600 als Naeherung
+dieses Bereichs): +3,9 %/Woche im ersten, +6,5 %/Woche im zweiten Halbjahr, im Jahr +237 %.
 
-1) KEINE PUMP.FUN-HERKUNFT. Graduierte Pump.fun-Tokens sind auch Tage spaeter die schlechteste
-   Teilmenge: Median-Endkurs 0,45x gegen 1,02x beim Rest, nur 20 % ueber Wasser gegen 55 %.
-   Auf dieser Teilmenge allein ergibt selbst die beste Regel -5,8 % (ohne Top-3: -37,8 %).
-   Der Ausschluss ueber die Adress-Endung "pump" hebt den ROI von +16,7 % auf +24,5 % - gratis,
-   ohne zusaetzliche Abfrage.
+DREI EHRLICHE WARNUNGEN, die zu dieser Zahl gehoeren:
+ 1) Der Marktfilter laesst nur 19 von 38 Wochen ueberhaupt zu. Die Auswertung steht also auf
+    19 Wochen, nicht auf einem Jahr. Das ist WENIG.
+ 2) Der Schnitt haengt an wenigen Wochen: ohne die zwei besten Wochen bleibt im ersten Halbjahr
+    -19,7 %/Woche. Die Trefferquote liegt bei 40 %. Dieser Bot lebt von Ausreissern.
+ 3) CoinGecko kennt nur Coins, die es HEUTE noch gibt. Im Bereich Rang 150-400 sind im letzten
+    Jahr viele Coins verschwunden; sie fehlen in der Messung. Das Ergebnis ist dadurch zu gut.
+Deshalb gilt hier eine harte Abbruchregel: faellt das Kapital unter 300 $ (-40 %), stoppt der
+Bot den Handel von selbst und verwaltet nur noch offene Positionen.
 
-2) TRAILING ERST AB 3x. Das war der Fehler in v1. Ein Token, das 2x erreicht, laeuft in 69 % der
-   Faelle weiter auf 3x - ein Trailing ab 2x verkauft genau in diese Fortsetzung hinein.
-   Gemessen: Trail ab 2,0x = +3,9 %, ab 2,5x = +10,2 %, ab 3,0x = +22,9 %, ab 4,0x = +19,7 %.
-   3x ist die Mitte des Plateaus, kein Randwert.
+Regeln im Einzelnen (identisch zu Bot C, nur anders dosiert):
+ - Kauf: am tiefsten unter dem 90-Tage-Hoch, mindestens 15 % darunter
+ - 24h-Umsatz mindestens 1,3x des eigenen 30-Tage-Schnitts (jemand kauft wieder)
+ - letzte 7 Tage besser als -25 % (kein freier Fall)
+ - nur wenn SOL ueber seinem 20-Tage-Durchschnitt steht, sonst Cash
+ - Verkauf nach 7 Tagen, KEIN Stop (ein Stop verschlechtert das Ergebnis messbar)
+ - Bot C und Bot F halten nie denselben Coin: die Rangbereiche ueberschneiden sich nicht, und
+   Bot F ueberspringt zusaetzlich jeden Coin, der in Bot Cs Universum oder Bestand steht.
 
-3) EINE Nachlage, nicht zwei, und bei 1,5x statt 2x. Genau hier lag meine Fehlannahme: ich hielt
-   "spaeter = sicherer" fuer besser. Gemessen ist das Gegenteil richtig, weil die Bestaetigung bei 2x
-   zu teuer bezahlt wird: eine Nachlage bei 1,5x = +27,8 %, bei 2,0x = +18,3 %, zwei Nachlagen
-   (1,5x + 3x) = +22,9 %, keine Nachlage = +20,9 % - aber mit halbem Gewinn in Dollar (+455 statt +895).
-   Die Nachlage loest bei 46 % aller Positionen aus.
-
-4) TOTES KAPITAL SCHNELL FREIGEBEN. Nach 4 h ohne 1,15x raus. Gemessen +27,5 % gegen +19,9 %
-   bei 4 h/1,25x und +22,7 % ohne die Regel. Nicht der Verlust ist das Problem, sondern der
-   blockierte Platz: 57 % aller Tokens kommen nie ueber 1,1x, und sie zeigen das binnen Stunden.
-
-Datenquellen: Codex (Kandidaten + Holder/Sniper/Bundler/Insider), DexScreener (Kurse, jeder Lauf),
-RugCheck (harte Risiken), Jupiter (Fills ueber common.Paper). Keine zusaetzliche API noetig.
+Datenquellen: Codex (Rangliste), DexScreener (Kurse ueber feste Paar-Adressen), GeckoTerminal
+(Tageskerzen), Jupiter (Fill-Preise ueber common.Paper).
 """
-import os, time
+import os, time, statistics
 from common import *
 
 CODEX_KEY = os.environ.get("CODEX_KEY")
 CODEX_URL = "https://graph.codex.io/graphql"
-SOLANA = 1399811149
+SOLANA, SOL_MINT = 1399811149, "So11111111111111111111111111111111111111112"
+GT = "https://api.geckoterminal.com/api/v2/networks/solana"
 
-# ---------- Universum (identisch zu Bot D: dort 22 Verkaeufe, KEIN Totalverlust, schlimmster -8,50 $) ----------
-MIN_AGE_H, MAX_AGE_H = 12, 7 * 24     # unter 12 h halten Stops nicht (Bot C: Stop -15 %, realisiert -48 %)
-MIN_MCAP, MAX_MCAP = 15_000, 150_000   # NICHT weiter oeffnen: alle 158 Backtest-Pfade lagen bei MCap
-MIN_LIQ, MAX_LIQ = 10_000, 50_000      # 25,6k-149,3k und Liquiditaet 10,0k-49,5k. Oberhalb davon gibt es
-                                       # keine Messung, die +35,5 % stuetzt - das waere stille Extrapolation.
-MAX_LIQ_OVER_MCAP = 1.0               # Liquiditaet ueber der MCap = kuenstlich aufgeblasen
-MIN_HOLDERS, MAX_HOLDERS = 30, 2000
-MIN_BUYS_24H, MAX_SELL_RATIO = 30, 0.90
-MAX_TOP10, MAX_BUNDLER, MAX_SNIPER, MAX_INSIDER = 45.0, 10.0, 15.0, 3.0
-MIN_VOL24 = 25_000
-SKIP_PUMPFUN = True                   # Entscheidung 1: Adressen auf "pump" ausschliessen
-MAX_DROP_1H = -12.0                   # faellt gerade hart -> nicht ins Messer greifen.
-                                      # Vernunftschranke, nicht gemessen (die Pfade beginnen erst beim Kauf).
-DISCOVER_EVERY_S = 15 * 60            # 2.880 Codex-Calls/Monat. 60 Min wuerden fachlich genauso
-                                      # reichen (ein Token bleibt im 12h-7d-Fenster ueber sechs Tage kaufbar),
-                                      # aber das Budget ist nach Bot Cs Umbau frei - also genutzt.
+# ---------- Universum: Rang 30-200 nach MCap ----------
+RANG_VON, RANG_BIS = 150, 400
+U_LIMIT = 420                  # so viele holt Codex; daraus wird die Rangliste gebildet
+U_MIN_LIQ = 100_000            # kleinere Coins, aber ein 160-$-Kauf muss ohne grossen Impact durchgehen
+U_MIN_VOL24 = 50_000
+DISCOVER_EVERY_S = 12 * 3600   # 2 Codex-Calls/Tag
+EXCLUDE_SYM = {"USDC", "USDT", "USDS", "PYUSD", "USD1", "DAI", "FDUSD", "USDE", "EURC", "USDG", "USDY", "CASH",
+               "SOL", "WSOL", "ETH", "WETH", "BTC", "WBTC", "CBBTC", "TBTC", "WBNB", "BNB",
+               "JITOSOL", "MSOL", "BSOL", "JUPSOL", "INF", "BNSOL", "HSOL", "DSOL", "VSOL", "JLP"}
+EXCLUDE_SUB = ("USD", "EUR", "GBP", "CHF", "JPY", "XAU", "SOL")
 
-# ---------- Position: Sonde + EINE Nachlage ----------
-PROBE_USD = 20.0
-ADD_X, ADD_USD = 1.5, 40.0            # Entscheidung 3
-MAX_POS = 10                          # 10 Sonden = 200 $; der Rest ist Reserve fuer Nachlagen
-MAX_BUYS_PER_RUN = 4
-ADD_RESERVE = 120.0                   # so viel Cash bleibt fuer Nachlagen reserviert und wird nicht
-                                      # in neue Sonden gesteckt - eine Nachlage ist wertvoller als
-                                      # eine weitere Sonde (46 % Ausloesequote, 11:1 Auszahlung)
+# ---------- Einstieg ----------
+SCHUB_MIN = 1.3                # 24h-Umsatz >= 1,3x des eigenen 30-Tage-Schnitts
+MOM7_MIN = -0.25               # letzte 7 Tage besser als -25 %
+HOCH_TAGE = 90                 # Bezugshoch
+MAX_VOM_HOCH = -0.15           # mindestens 15 % unter dem 90-Tage-Hoch, sonst ist es kein Rueckschlag
+SOL_MA_TAGE = 20               # Marktfilter
+MAX_POS = 3                    # 3 Positionen zu je einem Drittel des Gesamtkapitals
+POS_FRAC = 0.33
+MAX_BUYS_PER_RUN = 1           # gestaffelt einsteigen statt alles in einer Minute
+COOLDOWN_D = 7                 # ein verkaufter Coin ist 7 Tage gesperrt
+STOP_UNTER = 300.0             # Abbruchregel: faellt das Gesamtkapital darunter (-40 %), keine neuen
+                               # Kaeufe mehr. Offene Positionen laufen regulaer aus. Der Bot schaltet
+                               # sich selbst ab, statt eine widerlegte Regel weiter zu bezahlen.
 
 # ---------- Ausstieg ----------
-STOP = -0.45                          # auf den gemischten Einstand; Plateau reicht bis -60 %, -45 % ist innen
-DEAD_AFTER_H, DEAD_PEAK_X = 4, 1.15   # Entscheidung 4
-TP_X, TP_FRAC = 5.0, 0.5              # bei 5x die Haelfte: Einsatz mehrfach zurueck, Rest laeuft frei
-TRAIL_ARM_X, TRAIL_GIVE = 3.0, -0.28  # Entscheidung 2
-LIQ_DROP_EXIT = -0.35
-MAX_HOLD_H = 72
-DEAD_PRICE_H = 12                     # 12 h ohne Kurs -> abschreiben, damit der Platz frei wird
-COOLDOWN_D = 14
+HALTE_D = 7                    # getestete Haltedauer
+LIQ_EXIT_DROP = -0.50          # Notbremse: Liquiditaet halbiert -> raus (kam im Test nie vor, schuetzt aber)
+DEAD_PRICE_H = 24              # 24 h ohne Kurs -> abschreiben
 
-def q_f(now):
-    """Die Zeitstempel stehen als ZAHLEN in der Abfrage, nicht als GraphQL-Variablen.
-    Am 18.09. gemessen: createdAt mit einer Variablen ($after) laesst Codex mit
-    DOWNSTREAM_SERVICE_ERROR abbrechen - dieselbe Abfrage mit einer festen Zahl an derselben
-    Stelle antwortet sauber (20 Treffer). Ein Fehler auf Codex-Seite, den die Zahl umgeht."""
-    return """
-query($net: [Int!]) {
-  filterTokens(
-    filters: { network: $net, createdAt: { gte: %d, lte: %d }, volume24: { gte: %s },
-               marketCap: { gte: %s, lte: %s }, liquidity: { gte: %s, lte: %s } }
-    rankings: [{ attribute: volume24, direction: DESC }]
-    limit: 150
-  ) {
-    results {
-      liquidity marketCap volume24 buyCount24 sellCount24 holders
-      top10HoldersPercent bundlerHeldPercentage sniperHeldPercentage insiderHeldPercentage
-      token { address symbol }
-    }
-  }
-}""" % (int(now - MAX_AGE_H * 3600), int(now - MIN_AGE_H * 3600), MIN_VOL24, MIN_MCAP, MAX_MCAP, MIN_LIQ, MAX_LIQ)
-
-# $after/$before sind Float!, nicht Int! - mit Int! bricht die Abfrage komplett ab und liefert still
-# eine leere Liste. Genau daran hingen Bot C und Bot D am 17.09. ueber 24 h mit eingefrorenen Kandidaten.
+# ---------- Laufzeitschutz (run_paper.sh bricht nach 240 s ab) ----------
+GT_PER_RUN = 12                # so viele Tageskerzen-Abrufe je Lauf (je ~2,1 s)
+PAIR_LOOKUPS_PER_RUN = 25      # so viele Paar-Suchen je Lauf (je ~0,4 s)
+DAILY_MAX_AGE_S = 20 * 3600    # Tageskerzen hoechstens 20 h alt verwenden
 
 
-def fnum(x, default=0.0):
-    try: return float(x) if x is not None else default
-    except (TypeError, ValueError): return default
+def tradeable(sym):
+    sym = (sym or "").upper()
+    if sym in EXCLUDE_SYM: return False
+    return not any(s in sym for s in EXCLUDE_SUB)
 
 
-def codex_candidates():
-    """None = Fehler (spaeter erneut versuchen), Liste = Ergebnis (ggf. leer)."""
+Q_C = """
+query($net:[Int!]) {
+  filterTokens(filters:{ network:$net, liquidity:{gte:%d}, volume24:{gte:%d} },
+               rankings:[{attribute:marketCap, direction:DESC}], limit:%d)
+  { results { marketCap token { address symbol } } }
+}""" % (U_MIN_LIQ, U_MIN_VOL24, U_LIMIT)
+
+
+def codex_universe():
+    """Liste [(addr, sym)] in MCap-Reihenfolge, bereits auf Rang RANG_VON..RANG_BIS geschnitten.
+    None = Codex-Fehler (altes Universum weiterverwenden)."""
     if not CODEX_KEY: return None
-    now = time.time()
     try:
         r = requests.post(CODEX_URL, headers={"Authorization": CODEX_KEY, "Content-Type": "application/json", **UA},
-                          json={"query": q_f(now), "variables": {"net": [SOLANA]}}, timeout=30)
+                          json={"query": Q_C, "variables": {"net": [SOLANA]}}, timeout=30)
         r.raise_for_status(); d = r.json()
-        if d.get("errors"):
-            print("Bot F codex:", str(d["errors"])[:200]); return None
-        out = []
+        if d.get("errors"): print("Bot F codex:", str(d["errors"])[:200]); return None
+        reihe = []
         for x in ((d.get("data") or {}).get("filterTokens") or {}).get("results") or []:
             t = x.get("token") or {}
             if not t.get("address"): continue
-            out.append({"addr": t["address"], "sym": t.get("symbol") or "?",
-                        "liq": fnum(x.get("liquidity")), "mcap": fnum(x.get("marketCap")),
-                        "vol": fnum(x.get("volume24")),
-                        "buys": int(fnum(x.get("buyCount24"))), "sells": int(fnum(x.get("sellCount24"))),
-                        "holders": int(fnum(x.get("holders"))),
-                        "top10": fnum(x.get("top10HoldersPercent"), None),
-                        "bundler": fnum(x.get("bundlerHeldPercentage"), None),
-                        "sniper": fnum(x.get("sniperHeldPercentage"), None),
-                        "insider": fnum(x.get("insiderHeldPercentage"), None)})
-        return out
+            reihe.append((t["address"], (t.get("symbol") or "?").upper()))
+        # Die Rangliste zaehlt ALLE Tokens (auch Stablecoins/LSTs), damit "Rang 30" dasselbe bedeutet
+        # wie in der Auswertung. Erst danach wird aussortiert, was nicht handelbar ist.
+        aus = [(a, s) for i, (a, s) in enumerate(reihe, 1) if RANG_VON <= i <= RANG_BIS and tradeable(s)]
+        return aus
     except Exception as e:
         print("Bot F codex fehler:", e); return None
 
 
-def quality(c):
-    """Grund fuer Ablehnung, oder None wenn sauber."""
-    if SKIP_PUMPFUN and c["addr"].endswith("pump"): return "pump.fun-herkunft"
-    if not (MIN_LIQ <= c["liq"] <= MAX_LIQ): return f"liq {c['liq']:.0f}"
-    if c["mcap"] > 0 and c["liq"] / c["mcap"] > MAX_LIQ_OVER_MCAP: return "liq>mcap"
-    if not (MIN_MCAP <= c["mcap"] <= MAX_MCAP): return f"mcap {c['mcap']:.0f}"
-    if not (MIN_HOLDERS <= c["holders"] <= MAX_HOLDERS): return f"holders {c['holders']}"
-    if c["buys"] < MIN_BUYS_24H: return f"buys24 {c['buys']}"
-    if c["buys"] and c["sells"] / c["buys"] > MAX_SELL_RATIO: return f"sell-ratio {c['sells']/c['buys']:.2f}"
-    if c["top10"] is not None and c["top10"] > MAX_TOP10: return f"top10 {c['top10']:.0f}%"
-    if c["bundler"] is not None and c["bundler"] > MAX_BUNDLER: return f"bundler {c['bundler']:.0f}%"
-    if c["sniper"] is not None and c["sniper"] > MAX_SNIPER: return f"sniper {c['sniper']:.0f}%"
-    if c["insider"] is not None and c["insider"] > MAX_INSIDER: return f"insider {c['insider']:.1f}%"
-    return None
+# ---------------- DexScreener ueber feste Paar-Adressen ----------------
+# Die Abfrage /latest/dex/tokens/<30 Tokens> liefert insgesamt nur ~30 PAARE. Grosse Coins haben
+# Dutzende Paare und verdraengen dabei die anderen Tokens (bei Bot E bekam so nur die Haelfte des
+# Universums einen Kurs). Deshalb: je Token einmal das liquideste Paar suchen, danach die Paare
+# direkt abfragen - dort liefert jede Adresse genau ein Ergebnis.
+SOL_REF_PAIRS = ["58oQChx4yWmvKdwLLZzBi4ChoCc2fqCUWBkwMihLYQo2",   # Raydium SOL/USDC
+                 "Czfq3xZZDmsdGdUyrNLtRhGc47cXcZtLG4crryfu44zE"]   # Orca SOL/USDC (Reserve)
 
 
-def batch_pairs(addrs):
-    """DexScreener-Kurse fuer bis zu 30 Adressen je Aufruf; je Token das liquideste Paar."""
-    out = {}
-    for k in range(0, len(addrs), 30):
-        chunk = addrs[k:k + 30]
-        if not chunk: continue
-        d = get(f"{DS}/latest/dex/tokens/{','.join(chunk)}") or {}
-        aeltestes = {}
-        for p in (d.get("pairs") or []):
-            if p.get("chainId") != "solana": continue
-            a = (p.get("baseToken") or {}).get("address")
-            if not a: continue
-            c = p.get("pairCreatedAt")
-            if c and (a not in aeltestes or c < aeltestes[a]): aeltestes[a] = c
-            liq = ((p.get("liquidity") or {}).get("usd") or 0)
-            if a not in out or liq > ((out[a].get("liquidity") or {}).get("usd") or 0):
-                out[a] = p
-        # Das Alter des liquidesten Pools unterschaetzt das Token-Alter, sobald ein Token einen neuen
-        # Pool bekommt (Migration, zweites DEX-Listing). Das AELTESTE bekannte Paar ist die bessere
-        # Naeherung. Exakt waere nur das Mint-Datum (Codex createdAt bzw. ein Helius-Aufruf je Token).
-        for a, c in aeltestes.items():
-            if a in out: out[a]["_aeltestes_paar_ms"] = c
+def _liq(p): return float(((p or {}).get("liquidity") or {}).get("usd") or 0)
+def px_of(p):
+    try: return float((p or {}).get("priceUsd") or 0)
+    except (TypeError, ValueError): return 0.0
+def vol24_of(p):
+    try: return float(((p or {}).get("volume") or {}).get("h24") or 0)
+    except (TypeError, ValueError): return 0.0
+
+
+def best_pair(token):
+    """Liquidestes Solana-Paar, in dem der Token BASIS ist (sonst waere priceUsd der Kurs des Gegenstuecks)."""
+    d = get(f"{DS}/token-pairs/v1/solana/{token}")
+    time.sleep(0.4)
+    if isinstance(d, dict): d = d.get("pairs")
+    paare = [p for p in (d or []) if p.get("chainId") == "solana"
+             and (p.get("baseToken") or {}).get("address") == token and p.get("pairAddress")]
+    return max(paare, key=_liq) if paare else None
+
+
+def fetch_pairs(pair_addrs):
+    out = []
+    for k in range(0, len(pair_addrs), 30):
+        d = get(f"{DS}/latest/dex/pairs/solana/{','.join(pair_addrs[k:k+30])}") or {}
+        out += [p for p in (d.get("pairs") or []) if p and p.get("chainId") == "solana"]
         time.sleep(1.1)
     return out
 
 
-def px_of(p):
-    try: return float((p or {}).get("priceUsd") or 0)
-    except (TypeError, ValueError): return 0.0
+def kurse(addrs, meta):
+    """{token: paar} plus SOL unter SOL_MINT. Unbekannte Paare werden gedrosselt nachgeschlagen."""
+    pair_of = meta.setdefault("pair_of", {})
+    out = {}
+    bekannt = [pair_of[a] for a in addrs if pair_of.get(a)]
+    for p in fetch_pairs(bekannt) + fetch_pairs(SOL_REF_PAIRS):
+        a = (p.get("baseToken") or {}).get("address")
+        if a == SOL_MINT:
+            if _liq(p) > _liq(out.get(SOL_MINT)): out[SOL_MINT] = p
+        elif a in addrs and pair_of.get(a) == p.get("pairAddress"):
+            out[a] = p
+    offen = [a for a in addrs if a not in out][:PAIR_LOOKUPS_PER_RUN]
+    for a in offen:
+        p = best_pair(a)
+        if p: pair_of[a] = p["pairAddress"]; out[a] = p
+    if SOL_MINT not in out:
+        p = best_pair(SOL_MINT)
+        if p: out[SOL_MINT] = p
+    return out
 
 
-def liq_of(p):
-    try: return float(((p or {}).get("liquidity") or {}).get("usd") or 0)
-    except (TypeError, ValueError): return 0.0
+# ---------------- GeckoTerminal: Tageskerzen (Hoch, Umsatzschnitt, SOL-Durchschnitt) ----------------
+def tageskerzen(pool, limit=100):
+    """[(zeit, schlusskurs, umsatz_usd), ...] aufsteigend. None bei Fehler."""
+    d = get(f"{GT}/pools/{pool}/ohlcv/day", {"limit": limit}); time.sleep(2.1)
+    rows = ((d or {}).get("data") or {}).get("attributes", {}).get("ohlcv_list") or []
+    if not rows: return None
+    return [(int(r[0]), float(r[4]), float(r[5])) for r in sorted(rows)]
 
 
-def chg_1h(p):
-    try: return float(((p or {}).get("priceChange") or {}).get("h1"))
-    except (TypeError, ValueError): return None
+def daily_pflegen(addrs, pairs, cache, now):
+    """Aktualisiert hoechstens GT_PER_RUN Eintraege je Lauf. Aelteste zuerst."""
+    faellig = []
+    for a in addrs:
+        p = pairs.get(a)
+        if not p or not p.get("pairAddress"): continue
+        c = cache.get(a)
+        if not c or now - c.get("t", 0) >= DAILY_MAX_AGE_S: faellig.append((c.get("t", 0) if c else 0, a, p["pairAddress"]))
+    faellig.sort()
+    for _, a, pool in faellig[:GT_PER_RUN]:
+        k = tageskerzen(pool)
+        if k: cache[a] = {"t": now, "k": [[x[0], x[1], x[2]] for x in k[-HOCH_TAGE:]]}
+        else: cache[a] = {"t": now, "k": (cache.get(a) or {}).get("k") or []}
+    return len(faellig)
+
+
+def markt_ok(cache, px_sol, now):
+    """SOL ueber seinem 20-Tage-Durchschnitt? None = unbekannt (dann wird nicht gekauft)."""
+    c = cache.get(SOL_MINT)
+    if not c or not c.get("k") or not px_sol: return None
+    schluss = [x[1] for x in c["k"]][-SOL_MA_TAGE:]
+    if len(schluss) < SOL_MA_TAGE * 0.8: return None
+    return px_sol > statistics.mean(schluss)
+
+
+def signal(a, p, cache, now):
+    """(vom_hoch, schub) wenn der Coin alle Bedingungen erfuellt, sonst (None, grund)."""
+    k = (cache.get(a) or {}).get("k") or []
+    if len(k) < 35: return None, "zu wenig historie"
+    px = px_of(p)
+    if px <= 0: return None, "kein kurs"
+    schluss = [x[1] for x in k]
+    hoch = max(max(schluss), px)
+    vom_hoch = px / hoch - 1
+    if vom_hoch > MAX_VOM_HOCH: return None, f"nur {vom_hoch:+.0%} unter Hoch"
+    if len(schluss) >= 8 and schluss[-8] > 0:
+        mom7 = px / schluss[-8] - 1
+        if mom7 <= MOM7_MIN: return None, f"7d {mom7:+.0%} (Absturz)"
+    umsaetze = [x[2] for x in k[-30:] if x[2] > 0]
+    if len(umsaetze) < 20: return None, "zu wenig umsatzdaten"
+    schnitt = statistics.mean(umsaetze)
+    schub = (vol24_of(p) / schnitt) if schnitt > 0 else 0
+    if schub < SCHUB_MIN: return None, f"umsatz {schub:.1f}x"
+    return (vom_hoch, schub), "ok"
 
 
 def main():
     pf = Paper("bot_f"); st = pf.s
     st.setdefault("cooldown", {})
     now = time.time(); today = int(now // 86400)
-    meta = load("bot_f_meta.json", {"cands": [], "last_discover": 0})
+    meta = load("bot_f_meta.json", {"universe": [], "last_discover": 0})
+    cache = load("bot_f_daily.json", {})
 
-    # 1) Kandidaten. Zeitstempel IMMER setzen, damit ein stiller Ausfall im Log sichtbar wird.
-    if now - meta.get("last_discover", 0) >= DISCOVER_EVERY_S:
-        fresh = codex_candidates()
-        meta["last_discover"] = now
-        if fresh is None:
-            print("Bot F: Codex-Fehler, nutze vorherige Kandidatenliste")
-        else:
-            meta["cands"] = fresh
-            if not fresh: print("Bot F: WARNUNG - Codex lieferte 0 Kandidaten")
-    cands = {c["addr"]: c for c in meta.get("cands", []) if c.get("addr")}
+    # 1) Universum (Rang 30-200), alle 12 h
+    if now - meta.get("last_discover", 0) >= DISCOVER_EVERY_S or not meta.get("universe"):
+        u = codex_universe()
+        if u:
+            meta["universe"], meta["last_discover"] = u, now
+            gueltig = {a for a, _ in u} | set(st["positions"])
+            meta["pair_of"] = {k: v for k, v in (meta.get("pair_of") or {}).items() if k in gueltig}
+        elif meta.get("universe"):
+            print("Bot F: Codex nicht erreichbar, nutze altes Universum")
+    universe = meta.get("universe", [])
+    syms = {a: s for a, s in universe}
+    addrs = list(dict.fromkeys([a for a, _ in universe] + list(st["positions"])))
+    if not addrs:
+        print("Bot F: kein Universum (CODEX_KEY?)"); pf.mark({}); pf.commit(); return
 
-    # 2) Kurse fuer Kandidaten UND offene Positionen
-    addrs = list(dict.fromkeys(list(cands) + list(st["positions"])))
-    pairs = batch_pairs(addrs) if addrs else {}
+    # 2) Kurse + Tageskerzen
+    pairs = kurse(addrs + [SOL_MINT], meta)
     prices = {a: px_of(p) for a, p in pairs.items() if px_of(p) > 0}
+    offen_daily = daily_pflegen([SOL_MINT] + addrs, pairs, cache, now)
 
-    # 3) Offene Positionen: Ausstieg hat immer Vorrang vor Einstieg
     log = []
+    # 3) Positionen: Zeitausstieg, Notbremse, Totalausfall
     for a, pos in list(st["positions"].items()):
         px = prices.get(a)
         if not px:
-            seit = pos.get("no_quote_since") or pos["opened"]
+            seit = pos.get("no_px_since") or pos["opened"]
+            pos.setdefault("no_px_since", now_iso())
             if (now - parse_iso(seit)) / 3600 >= DEAD_PRICE_H and pos.get("qty", 0) > 0:
-                verlust = round(pos.get("cost", 0.0), 2)      # Einstand zuerst sichern
+                verlust = round(pos.get("cost", 0.0), 2)
                 pos["qty"] = 0.0; pos["cost"] = 0.0
-                st["trades"].append({"t": now_iso(), "side": "sell", "sym": pos["sym"], "addr": a,
-                                     "price": 0.0, "usd": 0.0, "pnl": -verlust, "frac": 1.0,
-                                     "reason": "abgeschrieben (kein kurs)"})
-                del st["positions"][a]
-                st["cooldown"][a] = today + COOLDOWN_D
-                log.append((pos["sym"], f"abgeschrieben - {DEAD_PRICE_H} h ohne Kurs, -{verlust:.0f} $"))
+                st["trades"].append({"t": now_iso(), "side": "sell", "sym": pos["sym"], "addr": a, "price": 0.0,
+                                     "usd": 0.0, "pnl": -verlust, "frac": 1.0, "reason": "abgeschrieben (kein kurs)"})
+                del st["positions"][a]; st["cooldown"][a] = today + COOLDOWN_D
+                log.append((pos["sym"], f"abgeschrieben - {DEAD_PRICE_H} h ohne Kurs"))
             continue
-        liq = liq_of(pairs.get(a))
-        pos["peak"] = max(pos.get("peak", px), px)
-        base = pos.get("base_entry") or pos["entry"]     # Erstkurs: Bezug fuer Nachlage und Ziele
-        x_entry = px / pos["entry"] - 1                  # gegen gemischten Einstand -> schuetzt echtes Kapital
-        x_base = px / base                               # gegen Erstkurs -> misst den Lauf
-        peak_x = pos["peak"] / base
-        from_peak = px / pos["peak"] - 1
-        held_h = held_seconds(pos) / 3600
-        why = None
-        if x_entry <= STOP: why = "stop"
-        elif liq and pos.get("entry_liq") and liq / pos["entry_liq"] - 1 <= LIQ_DROP_EXIT: why = "liq-drop"
-        elif held_h >= DEAD_AFTER_H and peak_x < DEAD_PEAK_X: why = "totes kapital"
-        elif peak_x >= TRAIL_ARM_X and from_peak <= TRAIL_GIVE: why = "trail"
-        elif held_h >= MAX_HOLD_H: why = "zeit"
-        if not why and x_base >= TP_X and not pos.get("tp1"):
-            pos["tp1"] = True
-            if pf.sell(a, px, TP_FRAC, liq, "tp1"):
-                log.append((pos["sym"], f"TP bei {x_base:.1f}x - Haelfte raus"))
-            continue
-        if why:
-            if pf.sell(a, px, 1.0, liq, why):
-                st["cooldown"][a] = today + COOLDOWN_D
-                log.append((pos["sym"], f"{why} bei {x_base:.2f}x (Hoch {peak_x:.2f}x)"))
-            continue
-        # Nachlage: genau einmal, nur in einen Token, der den Lauf bereits gezeigt hat
-        if not pos.get("added") and x_base >= ADD_X:
-            if st["cash"] >= ADD_USD:
-                if pf.buy(pos["sym"], a, px, ADD_USD, liq, f"nachlage bei {x_base:.2f}x"):
-                    pos["added"] = True; pos["base_entry"] = base
-                    log.append((pos["sym"], f"NACHGELEGT {ADD_USD:.0f} $ bei {x_base:.2f}x"))
-            else:
-                log.append((pos["sym"], f"Nachlage bei {x_base:.2f}x faellt aus - Cash {st['cash']:.0f} $"))
+        pos.pop("no_px_since", None)
+        liq = _liq(pairs.get(a))
+        gehalten_d = held_seconds(pos) / 86400
+        warum = None
+        if gehalten_d >= HALTE_D: warum = "haltedauer"
+        elif liq and pos.get("entry_liq") and liq / pos["entry_liq"] - 1 <= LIQ_EXIT_DROP: warum = "liq-einbruch"
+        if warum and pf.sell(a, px, 1.0, liq, warum):
+            st["cooldown"][a] = today + COOLDOWN_D
+            log.append((pos["sym"], f"{warum} bei {px/pos['entry']-1:+.1%} nach {gehalten_d:.1f} Tagen"))
 
-    # 4) Neue Sonden
+    # 4) Einstieg
+    gruen = markt_ok(cache, prices.get(SOL_MINT), now)
     kaeufe = 0
-    for a, c in cands.items():
-        if kaeufe >= MAX_BUYS_PER_RUN or len(st["positions"]) >= MAX_POS: break
-        if a in st["positions"] or st["cooldown"].get(a, 0) > today: continue
-        if st["cash"] - PROBE_USD < ADD_RESERVE: break     # Reserve gehoert den Nachlagen
-        if quality(c): continue
-        px = prices.get(a)
-        if not px: continue
-        p = pairs.get(a)
-        # Sicherheitsnetz gegen einen erneuten Codex-Ausfall - bewusst NUR nach oben. Ein Pool-Alter kann
-        # das Token-Alter unterschaetzen (neuer Pool bei Migration), aber nie ueberschaetzen: ist schon das
-        # AELTESTE bekannte Paar aelter als MAX_AGE_H, ist es auch das Token. Nach unten wird nicht
-        # abgelehnt, sonst wuerden Tokens mit frischem Zweitpool faelschlich aussortiert.
-        created = (p or {}).get("_aeltestes_paar_ms") or (p or {}).get("pairCreatedAt")
-        if created and (now - float(created) / 1000) / 3600 > MAX_AGE_H: continue
-        c1 = chg_1h(p)
-        if c1 is not None and c1 < MAX_DROP_1H: continue
-        ok, risks = rug_ok(a); time.sleep(1.1)
-        if not ok: continue
-        liq = liq_of(p) or c["liq"]
-        if pf.buy(c["sym"], a, px, PROBE_USD, liq, "sonde"):
-            pos = st["positions"][a]
-            pos["base_entry"] = pos["entry"]; pos["entry_liq"] = liq
-            kaeufe += 1
-            log.append((c["sym"], f"SONDE {PROBE_USD:.0f} $ | mcap {c['mcap']/1000:.0f}k liq {liq/1000:.0f}k"))
-            append_jsonl("bot_f_signals.jsonl", {"t": now_iso(), "addr": a, "sym": c["sym"], "px": px,
-                                                 "mcap": c["mcap"], "liq": liq, "holders": c["holders"],
-                                                 "buys": c["buys"], "sells": c["sells"]})
+    equity_jetzt = st["cash"] + sum(q["qty"] * (q.get("mark") or q.get("cur_price") or q["entry"])
+                                    for q in st["positions"].values())
+    if equity_jetzt < STOP_UNTER:
+        log.append(("ABBRUCH", f"Kapital {equity_jetzt:.0f} $ unter {STOP_UNTER:.0f} $ - keine neuen Kaeufe mehr"))
+    elif gruen is None:
+        log.append(("MARKT", "SOL-Durchschnitt noch unbekannt -> kein Kauf"))
+    elif not gruen:
+        log.append(("MARKT", "SOL unter 20-Tage-Schnitt -> kein Kauf, Cash halten"))
+    else:
+        c_meta = load("bot_c_meta.json", {})
+        c_state = load("bot_c_state.json", {})
+        tabu = {a for a, _ in (c_meta.get("universe") or [])} | set((c_state.get("positions") or {}))
+        kand = []
+        for a, s in universe:
+            if a in st["positions"] or st["cooldown"].get(a, 0) > today: continue
+            if a in tabu: continue                     # nie denselben Coin wie Bot C halten
+            p = pairs.get(a)
+            if not p: continue
+            sig, grund = signal(a, p, cache, now)
+            if sig: kand.append((sig[0], sig[1], a, s, p))
+        kand.sort()                                   # am tiefsten unter dem Hoch zuerst
+        equity = st["cash"] + sum(q["qty"] * (q.get("mark") or q.get("cur_price") or q["entry"])
+                                  for q in st["positions"].values())
+        for vom_hoch, schub, a, s, p in kand:
+            if kaeufe >= MAX_BUYS_PER_RUN or len(st["positions"]) >= MAX_POS: break
+            usd = min(st["cash"] - 1, equity * POS_FRAC)
+            if usd < 20: break
+            liq = _liq(p)
+            if pf.buy(s, a, px_of(p), usd, liq, f"rueckschlag {vom_hoch:+.0%} vom 90d-Hoch, umsatz {schub:.1f}x"):
+                st["positions"][a]["entry_liq"] = liq
+                kaeufe += 1
+                log.append((s, f"GEKAUFT {usd:.0f} $ | {vom_hoch:+.0%} unter Hoch, Umsatz {schub:.1f}x"))
+                append_jsonl("bot_f_signals.jsonl", {"t": now_iso(), "addr": a, "sym": s, "px": px_of(p),
+                                                     "vom_hoch": round(vom_hoch, 3), "schub": round(schub, 2),
+                                                     "liq": round(liq), "usd": round(usd, 2)})
+        if not kand: log.append(("MARKT", "gruen, aber kein Coin erfuellt Rueckschlag + Umsatzschub"))
 
     st["cooldown"] = {k: v for k, v in st["cooldown"].items() if v > today}
-    st["strategy"] = "momentum_runner"
-    save("bot_f_meta.json", meta)
+    st["strategy"] = "rueckschlag_lotterie"
+    st["coverage"] = {"t": now_iso(), "kurse": sum(1 for a in addrs if a in pairs), "von": len(addrs),
+                      "kerzen": sum(1 for a in addrs if (cache.get(a) or {}).get("k")), "offen": offen_daily,
+                      "markt": gruen, "gestoppt": equity_jetzt < STOP_UNTER}
+    save("bot_f_meta.json", meta); save("bot_f_daily.json", cache)
     v = pf.mark(prices); pf.commit()
-    nachgelegt = sum(1 for p in st["positions"].values() if p.get("added"))
-    print(f"Bot F [momentum runner]: equity {v:.2f} | cash {st['cash']:.2f} | positionen {len(st['positions'])}"
-          f" (davon nachgelegt {nachgelegt}) | kandidaten {len(cands)}")
-    for sym, txt in log[:15]: print(f"   {sym:<12} {txt}")
+    print(f"Bot F [rueckschlag-lotterie]: equity {v:.2f} | cash {st['cash']:.2f} | positionen {len(st['positions'])}/{MAX_POS}"
+          f" | universum {len(universe)} | kurse {st['coverage']['kurse']}/{len(addrs)}"
+          f" | kerzen {st['coverage']['kerzen']} (offen {offen_daily}) | markt {gruen}")
+    for sym, txt in log[:12]: print(f"   {sym:<12} {txt}")
 
 
 if __name__ == "__main__":
