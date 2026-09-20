@@ -1,5 +1,5 @@
 {
- "cash": 299.49045299999995,
+ "cash": 274.47045299999996,
  "positions": {
   "7TKRV4SneC6xLRaAt21a6d1kheAzXHGKP9WDzri9aD2e": {
    "sym": "SHINJUKU",
@@ -15,16 +15,16 @@
   },
   "EpEfnZxQyiBXppSKi8sncc8w4corn1UJbF9G91fQpump": {
    "sym": "PEPENOM",
-   "qty": 90779.452601,
-   "cost": 20.02,
+   "qty": 176689.699472,
+   "cost": 45.04,
    "opened": "2026-09-20T04:46:25Z",
-   "peak": 0.0002743,
-   "entry": 0.00022053448689532488,
+   "peak": 0.0002832,
+   "entry": 0.00025491016247462393,
    "entry_liq": 92361.83,
    "entry_vol": 133147.87,
-   "cur_price": 0.0002743,
-   "mark": 0.0002743,
-   "no_quote_since": "2026-09-20T09:51:07Z"
+   "cur_price": 0.0002832,
+   "mark": 0.0002832,
+   "added": true
   }
  },
  "trades": [
@@ -532,6 +532,18 @@
    "slip": 0.01,
    "quote": "jup",
    "reason": "ok vol-trend 1.18 buy 0.75"
+  },
+  {
+   "t": "2026-09-20T09:56:08Z",
+   "side": "buy",
+   "sym": "PEPENOM",
+   "addr": "EpEfnZxQyiBXppSKi8sncc8w4corn1UJbF9G91fQpump",
+   "price": 0.0002832,
+   "fill": 0.000291234176,
+   "usd": 25.02,
+   "slip": 0.0093,
+   "quote": "jup",
+   "reason": "add"
   }
  ],
  "equity": [
@@ -9574,6 +9586,10 @@
   {
    "t": "2026-09-20T09:51:07Z",
    "v": 342.42
+  },
+  {
+   "t": "2026-09-20T09:56:08Z",
+   "v": 342.54
   }
  ],
  "started": "2026-09-11T10:50:37Z",
