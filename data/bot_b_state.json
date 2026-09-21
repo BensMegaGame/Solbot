@@ -12,20 +12,20 @@
    "entry_vol": 133147.87,
    "cur_price": 0.0003306,
    "mark": 0.0003306,
-   "added": true
+   "added": true,
+   "no_quote_since": "2026-09-21T01:21:33Z"
   },
   "EgP1f5J9LDn1fuTMfrrgT5ZRMiLBitYdkmDs818BS44k": {
    "sym": "BRA",
    "qty": 129494.309309613,
    "cost": 20.02,
    "opened": "2026-09-21T00:11:44Z",
-   "peak": 0.0001589,
+   "peak": 0.0001598,
    "entry": 0.00015460138832922303,
    "entry_liq": 56129.77,
    "entry_vol": 32701.08,
-   "cur_price": 0.0001589,
-   "mark": 0.0001589,
-   "no_quote_since": "2026-09-21T01:16:37Z"
+   "cur_price": 0.0001598,
+   "mark": 0.0001598
   }
  },
  "trades": [
@@ -10354,6 +10354,10 @@
   {
    "t": "2026-09-21T01:16:37Z",
    "v": 347.99
+  },
+  {
+   "t": "2026-09-21T01:21:33Z",
+   "v": 348.11
   }
  ],
  "started": "2026-09-11T10:50:37Z",
@@ -10376,6 +10380,6 @@
  },
  "streak": 1,
  "half_left": 1,
- "watchlist": 748,
+ "watchlist": 747,
  "strategy": "second_wave"
 }
