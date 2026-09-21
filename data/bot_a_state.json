@@ -1,15 +1,16 @@
 {
- "cash": 379.08477694111195,
+ "cash": 401.47105694111195,
  "positions": {
   "5GefefPX1mDs6ZJB1apYmz6fCTCiNJpHturZ9bvFpump": {
    "sym": "Pumpoween",
-   "qty": 121116.98932232622,
-   "cost": 50.269999999999996,
+   "qty": 90837.74199174467,
+   "cost": 37.7025,
    "opened": "2026-09-12T21:25:13Z",
-   "peak": 0.0007389,
+   "peak": 0.0007508,
    "entry": 0.0004150532496,
-   "cur_price": 0.000728,
-   "mark": 0.000728
+   "cur_price": 0.0007508,
+   "mark": 0.0007508,
+   "tp0": true
   },
   "B3jjDNkBw48utaFxRRSWxg4oUkN23YxodChdEf4bxhQS": {
    "sym": "BITDOG",
@@ -18,8 +19,8 @@
    "opened": "2026-09-19T10:20:24Z",
    "peak": 0.0005905,
    "entry": 0.0003514762129772813,
-   "cur_price": 0.0002644,
-   "mark": 0.0002644
+   "cur_price": 0.0002638,
+   "mark": 0.0002638
   },
   "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": {
    "sym": "baton",
@@ -28,8 +29,8 @@
    "opened": "2026-09-20T07:10:35Z",
    "peak": 0.003719,
    "entry": 0.002418474532937626,
-   "cur_price": 0.002214,
-   "mark": 0.002214
+   "cur_price": 0.002174,
+   "mark": 0.002174
   },
   "6LrDt7nBiHraUuk9PZoUL8Qy9WX6pnSpDz1RkWWRR7hN": {
    "sym": "INU",
@@ -49,8 +50,8 @@
    "opened": "2026-09-21T14:00:24Z",
    "peak": 0.0003089,
    "entry": 0.0003176648712464451,
-   "cur_price": 0.0002321,
-   "mark": 0.0002321
+   "cur_price": 0.0002475,
+   "mark": 0.0002475
   }
  },
  "trades": [
@@ -1245,6 +1246,21 @@
    "slip": 0.0144,
    "quote": "jup",
    "reason": "screener"
+  },
+  {
+   "t": "2026-09-21T14:45:02Z",
+   "side": "sell",
+   "sym": "Pumpoween",
+   "addr": "5GefefPX1mDs6ZJB1apYmz6fCTCiNJpHturZ9bvFpump",
+   "price": 0.0007508,
+   "usd": 22.39,
+   "pnl": 9.82,
+   "peak_x": 1.809,
+   "held_h": 209.3,
+   "frac": 0.25,
+   "slip": 0.0146,
+   "quote": "jup",
+   "reason": "tp0"
   }
  ],
  "equity": [
@@ -11699,6 +11715,10 @@
   {
    "t": "2026-09-21T14:40:49Z",
    "v": 638.71
+  },
+  {
+   "t": "2026-09-21T14:45:48Z",
+   "v": 642.64
   }
  ],
  "started": "2026-09-10T17:17:16Z"
