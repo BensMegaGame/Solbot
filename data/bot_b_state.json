@@ -1,5 +1,5 @@
 {
- "cash": 269.001832,
+ "cash": 283.55540199999996,
  "positions": {
   "EpEfnZxQyiBXppSKi8sncc8w4corn1UJbF9G91fQpump": {
    "sym": "PEPENOM",
@@ -10,21 +10,9 @@
    "entry": 0.00025491016247462393,
    "entry_liq": 92361.83,
    "entry_vol": 133147.87,
-   "cur_price": 0.0003272,
-   "mark": 0.0003272,
+   "cur_price": 0.0003238,
+   "mark": 0.0003238,
    "added": true
-  },
-  "EgP1f5J9LDn1fuTMfrrgT5ZRMiLBitYdkmDs818BS44k": {
-   "sym": "BRA",
-   "qty": 129494.309309613,
-   "cost": 20.02,
-   "opened": "2026-09-21T00:11:44Z",
-   "peak": 0.0001598,
-   "entry": 0.00015460138832922303,
-   "entry_liq": 56129.77,
-   "entry_vol": 32701.08,
-   "cur_price": 0.0001422,
-   "mark": 0.0001422
   }
  },
  "trades": [
@@ -571,6 +559,21 @@
    "slip": 0.0318,
    "quote": "jup",
    "reason": "ok vol-trend 1.41 buy 0.63"
+  },
+  {
+   "t": "2026-09-21T01:46:30Z",
+   "side": "sell",
+   "sym": "BRA",
+   "addr": "EgP1f5J9LDn1fuTMfrrgT5ZRMiLBitYdkmDs818BS44k",
+   "price": 0.0001155,
+   "usd": 14.55,
+   "pnl": -5.47,
+   "peak_x": 1.034,
+   "held_h": 1.6,
+   "frac": 1.0,
+   "slip": 0.0327,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -10373,6 +10376,10 @@
   {
    "t": "2026-09-21T01:41:33Z",
    "v": 345.23
+  },
+  {
+   "t": "2026-09-21T01:46:30Z",
+   "v": 340.77
   }
  ],
  "started": "2026-09-11T10:50:37Z",
@@ -10391,10 +10398,11 @@
   "CsHrGJ3HpJV76ecFm4vZrpFSLNQaP1dwzj8e2cvkpump": 20729,
   "7nLukVng5teXze14rum9v57juXLjUp7JJnCveko1pump": 20729,
   "4Ee7xRodjp7kBGTZsHj9FE87UQWJuPke7ENzzGWBbFCc": 20729,
-  "7TKRV4SneC6xLRaAt21a6d1kheAzXHGKP9WDzri9aD2e": 20730
+  "7TKRV4SneC6xLRaAt21a6d1kheAzXHGKP9WDzri9aD2e": 20730,
+  "EgP1f5J9LDn1fuTMfrrgT5ZRMiLBitYdkmDs818BS44k": 20731
  },
- "streak": 1,
+ "streak": 2,
  "half_left": 1,
- "watchlist": 741,
+ "watchlist": 739,
  "strategy": "second_wave"
 }
