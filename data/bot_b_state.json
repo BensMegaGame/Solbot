@@ -10,11 +10,10 @@
    "entry": 0.00025491016247462393,
    "entry_liq": 92361.83,
    "entry_vol": 133147.87,
-   "cur_price": 0.0003654,
-   "mark": 0.0003654,
+   "cur_price": 0.0003851,
+   "mark": 0.0003851,
    "added": true,
-   "tp1": true,
-   "no_quote_since": "2026-09-21T21:31:11Z"
+   "tp1": true
   },
   "93ew6KrBKyMEGgzh78AdFBFtSPNyvXcC3Fn7iX5r28F9": {
    "sym": "NOLA",
@@ -26,7 +25,8 @@
    "entry_liq": 18640.54,
    "entry_vol": 40770.34,
    "cur_price": 3.524e-05,
-   "mark": 3.524e-05
+   "mark": 3.524e-05,
+   "no_quote_since": "2026-09-21T21:36:12Z"
   }
  },
  "trades": [
@@ -11396,6 +11396,10 @@
   {
    "t": "2026-09-21T21:31:11Z",
    "v": 342.2
+  },
+  {
+   "t": "2026-09-21T21:36:12Z",
+   "v": 344.64
   }
  ],
  "started": "2026-09-11T10:50:37Z",
@@ -11420,6 +11424,6 @@
  },
  "streak": 0,
  "half_left": 4,
- "watchlist": 924,
+ "watchlist": 923,
  "strategy": "second_wave"
 }
