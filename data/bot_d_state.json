@@ -1,5 +1,5 @@
 {
- "cash": 247.6750610000008,
+ "cash": 258.9525610000008,
  "positions": {
   "4ijnHeHgNnXmg45rhUV6aETFSbTwvjJG2Zmd1MePMevW": {
    "sym": "BCC",
@@ -9,8 +9,8 @@
    "peak": 0.0002447,
    "entry": 6.871690878708447e-05,
    "liq0": 23137.39,
-   "cur_price": 9.937e-05,
-   "mark": 9.937e-05
+   "cur_price": 9.616e-05,
+   "mark": 9.616e-05
   },
   "AQVcP67EpMyu4cBZZjqMu91cVsWy1aX98JmcZm1FyY9": {
    "sym": "AQUA",
@@ -20,19 +20,8 @@
    "peak": 0.0004925,
    "entry": 0.00013098995157442874,
    "liq0": 39116.19,
-   "cur_price": 0.0003732,
-   "mark": 0.0003732
-  },
-  "UZ9ZtoBnc5J8fSvnckaKf4WEg8GBMhZQjSK1Qb8STNK": {
-   "sym": "RAYINU",
-   "qty": 203121.612967,
-   "cost": 15.02,
-   "opened": "2026-09-20T05:26:49Z",
-   "peak": 0.0001338,
-   "entry": 7.394584840383388e-05,
-   "liq0": 23319.74,
-   "cur_price": 6.209e-05,
-   "mark": 6.209e-05
+   "cur_price": 0.0003601,
+   "mark": 0.0003601
   },
   "Hk8Uiq8CeNdmZzu1aPaT7MhvujtJifFS9kKhfpXmpaid": {
    "sym": "BOAR",
@@ -75,8 +64,8 @@
    "peak": 5.728e-05,
    "entry": 4.4149310642482685e-05,
    "liq0": 22152.18,
-   "cur_price": 4.529e-05,
-   "mark": 4.529e-05
+   "cur_price": 4.507e-05,
+   "mark": 4.507e-05
   },
   "A7iQ8N5jKDrg1YUxJ7v8aN5AtkwJaUTNhq1jZ8YLFrAJ": {
    "sym": "ALX",
@@ -98,7 +87,9 @@
    "entry": 5.283396298106178e-05,
    "liq0": 21279.88,
    "cur_price": 5.498e-05,
-   "mark": 5.498e-05
+   "mark": 5.498e-05,
+   "no_px_since": "2026-09-21T20:46:52Z",
+   "no_quote_since": "2026-09-21T20:46:53Z"
   },
   "536Y2Cf53iJ64N8JsQHnVPkCTPoXLhAHx5dCRX7XW7fM": {
    "sym": "SME",
@@ -108,8 +99,8 @@
    "peak": 0.0001062,
    "entry": 6.280615975374175e-05,
    "liq0": 26558.66,
-   "cur_price": 0.0001029,
-   "mark": 0.0001029
+   "cur_price": 0.0001003,
+   "mark": 0.0001003
   }
  },
  "trades": [
@@ -2362,6 +2353,21 @@
    "slip": 0.0033,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-21T20:46:52Z",
+   "side": "sell",
+   "sym": "RAYINU",
+   "addr": "UZ9ZtoBnc5J8fSvnckaKf4WEg8GBMhZQjSK1Qb8STNK",
+   "price": 5.826e-05,
+   "usd": 11.28,
+   "pnl": -3.74,
+   "peak_x": 1.809,
+   "held_h": 39.3,
+   "frac": 1.0,
+   "slip": 0.0577,
+   "quote": "jup",
+   "reason": "tot"
   }
  ],
  "equity": [
@@ -9476,6 +9482,10 @@
   {
    "t": "2026-09-21T20:41:51Z",
    "v": 440.0
+  },
+  {
+   "t": "2026-09-21T20:46:53Z",
+   "v": 435.76
   }
  ],
  "started": "2026-09-15T16:35:51Z",
