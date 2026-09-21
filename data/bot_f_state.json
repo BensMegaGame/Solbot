@@ -9,8 +9,8 @@
    "peak": 0.00948,
    "entry": 0.009653046488540318,
    "entry_liq": 27635.81,
-   "cur_price": 0.009602,
-   "mark": 0.009602
+   "cur_price": 0.009629,
+   "mark": 0.009629
   },
   "DKu9kykSfbN5LBfFXtNNDPaX35o4Fv6vJ9FKk7pZpump": {
    "sym": "AVA",
@@ -20,8 +20,8 @@
    "peak": 0.0109,
    "entry": 0.011027612370757188,
    "entry_liq": 1460707.39,
-   "cur_price": 0.011,
-   "mark": 0.011
+   "cur_price": 0.01098,
+   "mark": 0.01098
   },
   "3jUf2RTyXp867piSB2dt8uUcNiLDW58asjGtXkRAkBbe": {
    "sym": "GUN",
@@ -653,17 +653,21 @@
   {
    "t": "2026-09-21T08:42:36Z",
    "v": 490.36
+  },
+  {
+   "t": "2026-09-21T08:47:27Z",
+   "v": 490.52
   }
  ],
  "started": "2026-09-20T20:41:43Z",
  "cooldown": {},
  "strategy": "rueckschlag_lotterie",
  "coverage": {
-  "t": "2026-09-21T08:42:36Z",
-  "kurse": 64,
+  "t": "2026-09-21T08:47:27Z",
+  "kurse": 68,
   "von": 251,
-  "kerzen": 64,
-  "offen": 6,
+  "kerzen": 68,
+  "offen": 4,
   "markt": true,
   "gestoppt": false
  }
