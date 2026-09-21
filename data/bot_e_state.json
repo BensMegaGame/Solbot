@@ -1,25 +1,15 @@
 {
- "cash": 60.97839700596285,
+ "cash": 363.6117790059629,
  "positions": {
-  "DtR4D9FtVoTX2569gaL837ZgrB6wNjj6tkmnX9Rdk9B2": {
-   "sym": "aura",
-   "qty": 25784.782907,
-   "cost": 291.8733575402317,
-   "opened": "2026-09-21T04:36:56Z",
-   "peak": 0.01269,
-   "entry": 0.011319597244349671,
-   "mark": 0.01235,
-   "cur_price": 0.01235
-  },
   "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump": {
    "sym": "MANIFEST",
    "qty": 23669.437861,
    "cost": 317.6441480783759,
    "opened": "2026-09-21T18:31:57Z",
-   "peak": 0.01354,
+   "peak": 0.01364,
    "entry": 0.013420012335897355,
-   "mark": 0.01354,
-   "cur_price": 0.01354
+   "mark": 0.01364,
+   "cur_price": 0.01364
   }
  },
  "trades": [
@@ -310,6 +300,21 @@
    "slip": 0.0061,
    "quote": "jup",
    "reason": "dip 24h -15% (SOL +6%) 1h -1.2%"
+  },
+  {
+   "t": "2026-09-21T19:21:59Z",
+   "side": "sell",
+   "sym": "aura",
+   "addr": "DtR4D9FtVoTX2569gaL837ZgrB6wNjj6tkmnX9Rdk9B2",
+   "price": 0.01174,
+   "usd": 302.63,
+   "pnl": 10.76,
+   "peak_x": 1.121,
+   "held_h": 14.8,
+   "frac": 1.0,
+   "slip": 0.0034,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
@@ -5424,13 +5429,17 @@
   {
    "t": "2026-09-21T19:16:56Z",
    "v": 699.9
+  },
+  {
+   "t": "2026-09-21T19:21:59Z",
+   "v": 686.46
   }
  ],
  "started": "2026-09-16T16:55:59Z",
  "strategy": "largecap_dip",
  "universe_n": 64,
  "coverage": {
-  "t": "2026-09-21T19:16:56Z",
+  "t": "2026-09-21T19:21:59Z",
   "kurse": 64,
   "von": 64,
   "sol": true
