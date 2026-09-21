@@ -1,5 +1,5 @@
 {
- "cash": 297.67243599999995,
+ "cash": 277.65243599999997,
  "positions": {
   "EpEfnZxQyiBXppSKi8sncc8w4corn1UJbF9G91fQpump": {
    "sym": "PEPENOM",
@@ -15,6 +15,18 @@
    "added": true,
    "tp1": true,
    "no_quote_since": "2026-09-21T21:06:18Z"
+  },
+  "93ew6KrBKyMEGgzh78AdFBFtSPNyvXcC3Fn7iX5r28F9": {
+   "sym": "NOLA",
+   "qty": 549302.216736,
+   "cost": 20.02,
+   "opened": "2026-09-21T21:21:14Z",
+   "peak": 3.524e-05,
+   "entry": 3.644623922867183e-05,
+   "entry_liq": 18640.54,
+   "entry_vol": 40770.34,
+   "cur_price": 3.524e-05,
+   "mark": 3.524e-05
   }
  },
  "trades": [
@@ -618,6 +630,18 @@
    "slip": 0.051,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-21T21:21:14Z",
+   "side": "buy",
+   "sym": "NOLA",
+   "addr": "93ew6KrBKyMEGgzh78AdFBFtSPNyvXcC3Fn7iX5r28F9",
+   "price": 3.524e-05,
+   "fill": 3.6446239e-05,
+   "usd": 20.02,
+   "slip": 0.0464,
+   "quote": "jup",
+   "reason": "ok vol-trend 1.26 buy 0.56"
   }
  ],
  "equity": [
@@ -11360,6 +11384,10 @@
   {
    "t": "2026-09-21T21:16:15Z",
    "v": 343.95
+  },
+  {
+   "t": "2026-09-21T21:21:14Z",
+   "v": 343.29
   }
  ],
  "started": "2026-09-11T10:50:37Z",
@@ -11383,7 +11411,7 @@
   "2s9ycNwMgVCB4SWtXmTu14w1ospd88MVYZdHLVEHLdVC": 20731
  },
  "streak": 0,
- "half_left": 5,
- "watchlist": 926,
+ "half_left": 4,
+ "watchlist": 925,
  "strategy": "second_wave"
 }
