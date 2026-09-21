@@ -1,5 +1,5 @@
 {
- "cash": 239.2399400000008,
+ "cash": 247.6750610000008,
  "positions": {
   "4ijnHeHgNnXmg45rhUV6aETFSbTwvjJG2Zmd1MePMevW": {
    "sym": "BCC",
@@ -20,8 +20,8 @@
    "peak": 0.0004925,
    "entry": 0.00013098995157442874,
    "liq0": 39116.19,
-   "cur_price": 0.0003758,
-   "mark": 0.0003758
+   "cur_price": 0.0003616,
+   "mark": 0.0003616
   },
   "UZ9ZtoBnc5J8fSvnckaKf4WEg8GBMhZQjSK1Qb8STNK": {
    "sym": "RAYINU",
@@ -31,8 +31,8 @@
    "peak": 0.0001338,
    "entry": 7.394584840383388e-05,
    "liq0": 23319.74,
-   "cur_price": 7.519e-05,
-   "mark": 7.519e-05
+   "cur_price": 7.128e-05,
+   "mark": 7.128e-05
   },
   "Hk8Uiq8CeNdmZzu1aPaT7MhvujtJifFS9kKhfpXmpaid": {
    "sym": "BOAR",
@@ -42,19 +42,8 @@
    "peak": 0.0001339,
    "entry": 0.00010000262491177597,
    "liq0": 34183.36,
-   "cur_price": 8.678e-05,
-   "mark": 8.678e-05
-  },
-  "4775QEyTS7ECpvhbeEg1a5XUjpK6CtEJwRpw6vvwpump": {
-   "sym": "\u30cb\u30fc\u30ca",
-   "qty": 206548.969116,
-   "cost": 15.02,
-   "opened": "2026-09-20T13:01:39Z",
-   "peak": 9.48e-05,
-   "entry": 7.271883304130468e-05,
-   "liq0": 24705.18,
-   "cur_price": 4.549e-05,
-   "mark": 4.549e-05
+   "cur_price": 8.379e-05,
+   "mark": 8.379e-05
   },
   "7KJ72c9LSXAy7uF3gwpD5sUwU3WaUCsc4TocZ4JzsyEu": {
    "sym": "GMICHI",
@@ -64,8 +53,8 @@
    "peak": 0.0001993,
    "entry": 0.00012107082388398747,
    "liq0": 34791.9,
-   "cur_price": 0.0001376,
-   "mark": 0.0001376
+   "cur_price": 0.0001355,
+   "mark": 0.0001355
   },
   "8oopSSqdoBu89mxXusBe3njEXsFfUMzD9T7vY9SuM449": {
    "sym": "SWOGE",
@@ -75,8 +64,8 @@
    "peak": 0.0002056,
    "entry": 6.920216964407245e-05,
    "liq0": 21171.81,
-   "cur_price": 0.000125,
-   "mark": 0.000125
+   "cur_price": 0.0001148,
+   "mark": 0.0001148
   },
   "9LuwgFQemAoV9rgVBBtwbRSxBmamcRRbysEK8yL2pump": {
    "sym": "BRAIN",
@@ -119,8 +108,8 @@
    "peak": 9.226e-05,
    "entry": 6.280615975374175e-05,
    "liq0": 26558.66,
-   "cur_price": 9.038e-05,
-   "mark": 9.038e-05
+   "cur_price": 8.966e-05,
+   "mark": 8.966e-05
   }
  },
  "trades": [
@@ -2358,6 +2347,21 @@
    "slip": 0.0034,
    "quote": "jup",
    "reason": "trail"
+  },
+  {
+   "t": "2026-09-21T19:06:53Z",
+   "side": "sell",
+   "sym": "\u30cb\u30fc\u30ca",
+   "addr": "4775QEyTS7ECpvhbeEg1a5XUjpK6CtEJwRpw6vvwpump",
+   "price": 4.162e-05,
+   "usd": 8.44,
+   "pnl": -6.58,
+   "peak_x": 1.304,
+   "held_h": 30.1,
+   "frac": 1.0,
+   "slip": 0.0033,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -9392,6 +9396,10 @@
   {
    "t": "2026-09-21T19:01:52Z",
    "v": 444.9
+  },
+  {
+   "t": "2026-09-21T19:06:55Z",
+   "v": 438.42
   }
  ],
  "started": "2026-09-15T16:35:51Z",
