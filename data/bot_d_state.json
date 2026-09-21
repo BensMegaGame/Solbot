@@ -1,5 +1,5 @@
 {
- "cash": 184.2204670000008,
+ "cash": 169.2004670000008,
  "positions": {
   "D3Z5RXPGWtvAc7UxFSeN4itLBPHyNVhVLRzXBMmUpump": {
    "sym": "BABYCATE",
@@ -42,8 +42,8 @@
    "peak": 0.000218,
    "entry": 0.00014422346696862378,
    "liq0": 41800.65,
-   "cur_price": 0.0001714,
-   "mark": 0.0001714
+   "cur_price": 0.0001688,
+   "mark": 0.0001688
   },
   "67buYJjYX5usoVtefwS5vXJvELK2ijxD334igCjXsNh4": {
    "sym": "SI",
@@ -53,8 +53,8 @@
    "peak": 0.0002163,
    "entry": 7.81461507229702e-05,
    "liq0": 26739.09,
-   "cur_price": 0.0001258,
-   "mark": 0.0001258
+   "cur_price": 0.0001256,
+   "mark": 0.0001256
   },
   "UZ9ZtoBnc5J8fSvnckaKf4WEg8GBMhZQjSK1Qb8STNK": {
    "sym": "RAYINU",
@@ -64,8 +64,8 @@
    "peak": 0.0001338,
    "entry": 7.394584840383388e-05,
    "liq0": 23319.74,
-   "cur_price": 8.547e-05,
-   "mark": 8.547e-05
+   "cur_price": 8.166e-05,
+   "mark": 8.166e-05
   },
   "Hk8Uiq8CeNdmZzu1aPaT7MhvujtJifFS9kKhfpXmpaid": {
    "sym": "BOAR",
@@ -86,8 +86,8 @@
    "peak": 8.716e-05,
    "entry": 7.271883304130468e-05,
    "liq0": 24705.18,
-   "cur_price": 7.028e-05,
-   "mark": 7.028e-05
+   "cur_price": 6.908e-05,
+   "mark": 6.908e-05
   },
   "7KJ72c9LSXAy7uF3gwpD5sUwU3WaUCsc4TocZ4JzsyEu": {
    "sym": "GMICHI",
@@ -110,8 +110,8 @@
    "peak": 0.0002056,
    "entry": 6.920216964407245e-05,
    "liq0": 21171.81,
-   "cur_price": 9.1e-05,
-   "mark": 9.1e-05
+   "cur_price": 8.386e-05,
+   "mark": 8.386e-05
   },
   "9LuwgFQemAoV9rgVBBtwbRSxBmamcRRbysEK8yL2pump": {
    "sym": "BRAIN",
@@ -121,8 +121,8 @@
    "peak": 5.186e-05,
    "entry": 4.4149310642482685e-05,
    "liq0": 22152.18,
-   "cur_price": 5.05e-05,
-   "mark": 5.05e-05
+   "cur_price": 5.035e-05,
+   "mark": 5.035e-05
   },
   "A7iQ8N5jKDrg1YUxJ7v8aN5AtkwJaUTNhq1jZ8YLFrAJ": {
    "sym": "ALX",
@@ -132,8 +132,8 @@
    "peak": 8.178e-05,
    "entry": 4.16409416867135e-05,
    "liq0": 18129.15,
-   "cur_price": 3.928e-05,
-   "mark": 3.928e-05
+   "cur_price": 3.653e-05,
+   "mark": 3.653e-05
   },
   "GNq9jVow6MayA3xM2AfGygh58gMu1vY6wajiXDXZCZu": {
    "sym": "PMARCA",
@@ -143,10 +143,19 @@
    "peak": 6.367e-05,
    "entry": 5.283396298106178e-05,
    "liq0": 21279.88,
-   "cur_price": 6.213e-05,
-   "mark": 6.213e-05,
-   "no_px_since": "2026-09-21T01:46:46Z",
-   "no_quote_since": "2026-09-21T01:46:46Z"
+   "cur_price": 6.157e-05,
+   "mark": 6.157e-05
+  },
+  "5EpyCB2dhxpBtm4B7Ff51FguE14WEzPrFTuXbRh86ssD": {
+   "sym": "ANT",
+   "qty": 97680.327728,
+   "cost": 15.02,
+   "opened": "2026-09-21T01:56:50Z",
+   "peak": 0.0001469,
+   "entry": 0.00015376688786123438,
+   "liq0": 33527.92,
+   "cur_price": 0.0001469,
+   "mark": 0.0001469
   }
  },
  "trades": [
@@ -2231,6 +2240,18 @@
    "slip": 0.0375,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-21T01:56:50Z",
+   "side": "buy",
+   "sym": "ANT",
+   "addr": "5EpyCB2dhxpBtm4B7Ff51FguE14WEzPrFTuXbRh86ssD",
+   "price": 0.0001469,
+   "fill": 0.000153766888,
+   "usd": 15.02,
+   "slip": 0.0283,
+   "quote": "jup",
+   "reason": "longshot"
   }
  ],
  "equity": [
@@ -8441,6 +8462,10 @@
   {
    "t": "2026-09-21T01:51:48Z",
    "v": 402.54
+  },
+  {
+   "t": "2026-09-21T01:56:51Z",
+   "v": 397.78
   }
  ],
  "started": "2026-09-15T16:35:51Z",
