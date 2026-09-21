@@ -1,5 +1,5 @@
 {
- "cash": 333.0202876245705,
+ "cash": 41.146930084338806,
  "positions": {
   "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp": {
    "sym": "CARDS",
@@ -8,8 +8,18 @@
    "opened": "2026-09-20T10:11:43Z",
    "peak": 0.1797,
    "entry": 0.16891226124476696,
-   "mark": 0.1781,
-   "cur_price": 0.1781
+   "mark": 0.1779,
+   "cur_price": 0.1779
+  },
+  "DtR4D9FtVoTX2569gaL837ZgrB6wNjj6tkmnX9Rdk9B2": {
+   "sym": "aura",
+   "qty": 25784.782907,
+   "cost": 291.8733575402317,
+   "opened": "2026-09-21T04:36:56Z",
+   "peak": 0.0113,
+   "entry": 0.011319597244349671,
+   "no_quote_since": "2026-09-21T04:36:56Z",
+   "mark": 0.0
   }
  },
  "trades": [
@@ -246,6 +256,18 @@
    "slip": 0.0065,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-21T04:36:56Z",
+   "side": "buy",
+   "sym": "aura",
+   "addr": "DtR4D9FtVoTX2569gaL837ZgrB6wNjj6tkmnX9Rdk9B2",
+   "price": 0.0113,
+   "fill": 0.011319597244,
+   "usd": 291.87,
+   "slip": 0.0061,
+   "quote": "jup",
+   "reason": "dip 24h -12% (SOL +2%) 1h +1.5%"
   }
  ],
  "equity": [
@@ -4652,13 +4674,17 @@
   {
    "t": "2026-09-21T04:31:52Z",
    "v": 648.56
+  },
+  {
+   "t": "2026-09-21T04:36:56Z",
+   "v": 356.34
   }
  ],
  "started": "2026-09-16T16:55:59Z",
  "strategy": "largecap_dip",
  "universe_n": 63,
  "coverage": {
-  "t": "2026-09-21T04:31:52Z",
+  "t": "2026-09-21T04:36:56Z",
   "kurse": 63,
   "von": 63,
   "sol": true
