@@ -1,19 +1,19 @@
 {
- "cash": 283.55540199999996,
+ "cash": 303.78748799999994,
  "positions": {
   "EpEfnZxQyiBXppSKi8sncc8w4corn1UJbF9G91fQpump": {
    "sym": "PEPENOM",
-   "qty": 176689.699472,
-   "cost": 45.04,
+   "qty": 123682.78963040002,
+   "cost": 31.528,
    "opened": "2026-09-20T04:46:25Z",
-   "peak": 0.0003769,
+   "peak": 0.000387,
    "entry": 0.00025491016247462393,
    "entry_liq": 92361.83,
    "entry_vol": 133147.87,
-   "cur_price": 0.0003769,
-   "mark": 0.0003769,
+   "cur_price": 0.000387,
+   "mark": 0.000387,
    "added": true,
-   "no_quote_since": "2026-09-21T11:16:20Z"
+   "tp1": true
   }
  },
  "trades": [
@@ -575,6 +575,21 @@
    "slip": 0.0327,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-21T11:31:19Z",
+   "side": "sell",
+   "sym": "PEPENOM",
+   "addr": "EpEfnZxQyiBXppSKi8sncc8w4corn1UJbF9G91fQpump",
+   "price": 0.000387,
+   "usd": 20.23,
+   "pnl": 6.72,
+   "peak_x": 1.518,
+   "held_h": 30.7,
+   "frac": 0.3,
+   "slip": 0.0133,
+   "quote": "jup",
+   "reason": "tp1"
   }
  ],
  "equity": [
@@ -10845,6 +10860,10 @@
   {
    "t": "2026-09-21T11:26:21Z",
    "v": 350.15
+  },
+  {
+   "t": "2026-09-21T11:31:19Z",
+   "v": 351.65
   }
  ],
  "started": "2026-09-11T10:50:37Z",
@@ -10868,6 +10887,6 @@
  },
  "streak": 2,
  "half_left": 1,
- "watchlist": 831,
+ "watchlist": 832,
  "strategy": "second_wave"
 }
