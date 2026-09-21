@@ -1,52 +1,40 @@
-"""Bot F v3 – "Rueckschlag-Lotterie": dieselbe Mechanik wie Bot C, aber bewusst riskant:
-kleinere Coins (Rang 150-400 statt 30-200), nur 3 Positionen zu je einem Drittel des Kapitals,
-kein Stop. Hoch gewinnen oder deutlich verlieren - genau das ist die Aufgabe dieses Bots.
+"""Bot F v4 – "Rueckschlag klein": dieselbe Regel wie Bot C, aber eine Etage tiefer (Rang 150-400
+statt 30-200) und damit deutlich riskanter. Drei Positionen, 14 Tage Haltedauer, kein Stop,
+Kauf nur wenn SOL ueber seinem 10-Tage-Durchschnitt steht.
 
-WARUM DIESE TAKTIK UND KEINE ANDERE: Von allen in diesem Projekt gemessenen Ansaetzen ist der
-Rueckschlagkauf der einzige, der in zwei getrennten Zeitraeumen positiv blieb. Momentum, Rang-
-Aufsteiger, Pump.fun-Graduation, Umsatzschub allein und alle Micro-Cap-Varianten (rund 40 getestete
-Regeln) sind in mindestens einem Zeitraum klar negativ. Riskanter wird hier deshalb ueber die
-DOSIS (kleinere Coins, weniger Positionen, kein Stop), nicht ueber eine andere Idee.
+WARUM DIESELBE REGEL UND KEINE ANDERE: Von allem, was in diesem Projekt gemessen wurde, ist der
+Rueckschlagkauf der einzige Ansatz, der in zwei getrennten Zeitraeumen positiv blieb. Momentum,
+Rang-Aufsteiger, Pump.fun-Graduation, Umsatzschub allein und rund 40 Micro-Cap-Varianten sind in
+mindestens einem Zeitraum klar negativ. Riskanter wird hier ueber die DOSIS (kleinere Coins),
+nicht ueber eine ausgedachte zweite Idee.
 
-GEMESSEN (665 Solana-Coins, 365 Tage, getrennt nach Halbjahren, Rang 200-600 als Naeherung
-dieses Bereichs): +3,9 %/Woche im ersten, +6,5 %/Woche im zweiten Halbjahr, im Jahr +237 %.
+GEMESSEN (Rang 150-400, 3 Positionen, 14 Tage, MA10): +1,8 %/Woche im ersten, +3,5 %/Woche im
+zweiten Halbjahr. ABER: der Median der aktiven Wochen liegt bei -8,8 % bzw. -1,6 %, die schlimmste
+Woche bei -38,5 %. Das heisst: die meisten Wochen sind negativ, wenige grosse Wochen tragen alles.
+Genau das ist hier die Aufgabe - Bot C ist die solide Variante derselben Idee (dort sind auch die
+Mediane positiv). Zusaetzlich gilt: CoinGecko kennt nur heute noch existierende Coins; im Bereich
+Rang 150-400 sind im letzten Jahr viele verschwunden, das Ergebnis faellt dadurch zu gut aus.
 
-DREI EHRLICHE WARNUNGEN, die zu dieser Zahl gehoeren:
- 1) Der Marktfilter laesst nur 19 von 38 Wochen ueberhaupt zu. Die Auswertung steht also auf
-    19 Wochen, nicht auf einem Jahr. Das ist WENIG.
- 2) Der Schnitt haengt an wenigen Wochen: ohne die zwei besten Wochen bleibt im ersten Halbjahr
-    -19,7 %/Woche. Die Trefferquote liegt bei 40 %. Dieser Bot lebt von Ausreissern.
- 3) CoinGecko kennt nur Coins, die es HEUTE noch gibt. Im Bereich Rang 150-400 sind im letzten
-    Jahr viele Coins verschwunden; sie fehlen in der Messung. Das Ergebnis ist dadurch zu gut.
-Deshalb gilt hier eine harte Abbruchregel: faellt das Kapital unter 300 $ (-40 %), stoppt der
-Bot den Handel von selbst und verwaltet nur noch offene Positionen.
+Deshalb hat Bot F als einziger Bot eine ABBRUCHREGEL: faellt das Kapital unter 300 $ (-40 %),
+stellt er neue Kaeufe selbst ein und verwaltet nur noch offene Positionen.
 
-Regeln im Einzelnen (identisch zu Bot C, nur anders dosiert):
- - Kauf: am tiefsten unter dem 90-Tage-Hoch, mindestens 15 % darunter
- - 24h-Umsatz mindestens 1,3x des eigenen 30-Tage-Schnitts (jemand kauft wieder)
- - letzte 7 Tage besser als -25 % (kein freier Fall)
- - nur wenn SOL ueber seinem 20-Tage-Durchschnitt steht, sonst Cash
- - Verkauf nach 7 Tagen, KEIN Stop (ein Stop verschlechtert das Ergebnis messbar)
- - Bot C und Bot F halten nie denselben Coin: die Rangbereiche ueberschneiden sich nicht, und
-   Bot F ueberspringt zusaetzlich jeden Coin, der in Bot Cs Universum oder Bestand steht.
+Bot C und Bot F halten nie denselben Coin: die Rangbereiche ueberschneiden sich nicht, und Bot F
+ueberspringt zusaetzlich jeden Coin, der in Bot Cs Universum oder Bestand steht.
 
-Datenquellen: Codex (Rangliste), DexScreener (Kurse ueber feste Paar-Adressen), GeckoTerminal
-(Tageskerzen), Jupiter (Fill-Preise ueber common.Paper).
+Datenquellen: CoinGecko (Rangliste), DexScreener (Kurse ueber feste Paar-Adressen),
+GeckoTerminal (Tageskerzen), Jupiter (Fill-Preise ueber common.Paper).
 """
 import os, time, statistics
 from common import *
 
-CODEX_KEY = os.environ.get("CODEX_KEY")
-CODEX_URL = "https://graph.codex.io/graphql"
 SOLANA, SOL_MINT = 1399811149, "So11111111111111111111111111111111111111112"
 GT = "https://api.geckoterminal.com/api/v2/networks/solana"
 
 # ---------- Universum: Rang 30-200 nach MCap ----------
 RANG_VON, RANG_BIS = 150, 400
-U_LIMIT = 420                  # so viele holt Codex; daraus wird die Rangliste gebildet
 U_MIN_LIQ = 100_000            # kleinere Coins, aber ein 160-$-Kauf muss ohne grossen Impact durchgehen
 U_MIN_VOL24 = 50_000
-DISCOVER_EVERY_S = 12 * 3600   # 2 Codex-Calls/Tag
+DISCOVER_EVERY_S = 12 * 3600   # Rangliste 2x taeglich
 EXCLUDE_SYM = {"USDC", "USDT", "USDS", "PYUSD", "USD1", "DAI", "FDUSD", "USDE", "EURC", "USDG", "USDY", "CASH",
                "SOL", "WSOL", "ETH", "WETH", "BTC", "WBTC", "CBBTC", "TBTC", "WBNB", "BNB",
                "JITOSOL", "MSOL", "BSOL", "JUPSOL", "INF", "BNSOL", "HSOL", "DSOL", "VSOL", "JLP"}
@@ -57,7 +45,7 @@ SCHUB_MIN = 1.3                # 24h-Umsatz >= 1,3x des eigenen 30-Tage-Schnitts
 MOM7_MIN = -0.25               # letzte 7 Tage besser als -25 %
 HOCH_TAGE = 90                 # Bezugshoch
 MAX_VOM_HOCH = -0.15           # mindestens 15 % unter dem 90-Tage-Hoch, sonst ist es kein Rueckschlag
-SOL_MA_TAGE = 20               # Marktfilter
+SOL_MA_TAGE = 10               # Marktfilter
 MAX_POS = 3                    # 3 Positionen zu je einem Drittel des Gesamtkapitals
 POS_FRAC = 0.33
 MAX_BUYS_PER_RUN = 1           # gestaffelt einsteigen statt alles in einer Minute
@@ -67,7 +55,7 @@ STOP_UNTER = 300.0             # Abbruchregel: faellt das Gesamtkapital darunter
                                # sich selbst ab, statt eine widerlegte Regel weiter zu bezahlen.
 
 # ---------- Ausstieg ----------
-HALTE_D = 7                    # getestete Haltedauer
+HALTE_D = 14                   # getestete Haltedauer
 LIQ_EXIT_DROP = -0.50          # Notbremse: Liquiditaet halbiert -> raus (kam im Test nie vor, schuetzt aber)
 DEAD_PRICE_H = 24              # 24 h ohne Kurs -> abschreiben
 
@@ -83,34 +71,60 @@ def tradeable(sym):
     return not any(s in sym for s in EXCLUDE_SUB)
 
 
-Q_C = """
-query($net:[Int!]) {
-  filterTokens(filters:{ network:$net, liquidity:{gte:%d}, volume24:{gte:%d} },
-               rankings:[{attribute:marketCap, direction:DESC}], limit:%d)
-  { results { marketCap token { address symbol } } }
-}""" % (U_MIN_LIQ, U_MIN_VOL24, U_LIMIT)
+BOT = "Bot F"
+# ---------------------------------------------------------------- Universum ueber CoinGecko
+# Bis 20.09. kam die Rangliste von Codex. Ergebnis live: "universum 0" - die Abfrage mit hohem
+# Limit lieferte nichts. Wichtiger noch: die Backtest-Rangliste stammte aus CoinGecko. Wenn der Bot
+# live nach einer anderen Rangliste handelt als die, an der die Regel gemessen wurde, misst man
+# zwei verschiedene Dinge. Deshalb jetzt dieselbe Quelle wie im Backtest. Codex wird hier nicht mehr gebraucht.
+CG = "https://api.coingecko.com/api/v3"
+CG_KEY = os.environ.get("COINGECKO_KEY")
+CG_HDR = {**UA, **({"x-cg-demo-api-key": CG_KEY} if CG_KEY else {})}
+ADDR_CACHE_S = 24 * 3600
 
 
-def codex_universe():
-    """Liste [(addr, sym)] in MCap-Reihenfolge, bereits auf Rang RANG_VON..RANG_BIS geschnitten.
-    None = Codex-Fehler (altes Universum weiterverwenden)."""
-    if not CODEX_KEY: return None
+def cg_get(pfad, params):
     try:
-        r = requests.post(CODEX_URL, headers={"Authorization": CODEX_KEY, "Content-Type": "application/json", **UA},
-                          json={"query": Q_C, "variables": {"net": [SOLANA]}}, timeout=30)
-        r.raise_for_status(); d = r.json()
-        if d.get("errors"): print("Bot F codex:", str(d["errors"])[:200]); return None
-        reihe = []
-        for x in ((d.get("data") or {}).get("filterTokens") or {}).get("results") or []:
-            t = x.get("token") or {}
-            if not t.get("address"): continue
-            reihe.append((t["address"], (t.get("symbol") or "?").upper()))
-        # Die Rangliste zaehlt ALLE Tokens (auch Stablecoins/LSTs), damit "Rang 30" dasselbe bedeutet
-        # wie in der Auswertung. Erst danach wird aussortiert, was nicht handelbar ist.
-        aus = [(a, s) for i, (a, s) in enumerate(reihe, 1) if RANG_VON <= i <= RANG_BIS and tradeable(s)]
-        return aus
+        r = requests.get(f"{CG}{pfad}", params=params, headers=CG_HDR, timeout=40)
+        if r.status_code != 200:
+            print(f"{BOT}: CoinGecko {r.status_code} bei {pfad}"); return None
+        return r.json()
     except Exception as e:
-        print("Bot F codex fehler:", e); return None
+        print(f"{BOT}: CoinGecko Fehler: {e}"); return None
+
+
+def solana_adressen(meta, now):
+    """{coingecko_id: solana-mint}. Wird hoechstens einmal taeglich neu geholt."""
+    c = load("cg_solana_addr.json", {})
+    if c.get("t", 0) and now - c["t"] < ADDR_CACHE_S and c.get("a"): return c["a"]
+    lst = cg_get("/coins/list", {"include_platform": "true"})
+    if not lst: return c.get("a") or {}
+    a = {x["id"]: (x.get("platforms") or {}).get("solana") for x in lst}
+    a = {k: v for k, v in a.items() if v}
+    save("cg_solana_addr.json", {"t": now, "a": a})
+    return a
+
+
+def universum_laden(meta, now):
+    """[(addr, sym)] fuer Rang RANG_VON..RANG_BIS. Rang = Platz unter den handelbaren Solana-Coins
+    nach Marktkapitalisierung - genau wie in der Auswertung. None = Fehler."""
+    adr = solana_adressen(meta, now)
+    if not adr: return None
+    reihe = []
+    for seite in range(1, 4):
+        res = cg_get("/coins/markets", {"vs_currency": "usd", "category": "solana-ecosystem",
+                                        "order": "market_cap_desc", "per_page": 250, "page": seite})
+        if res is None: break
+        for x in res:
+            a = adr.get(x["id"]); sym = (x.get("symbol") or "").upper()
+            if a and tradeable(sym) and (x.get("total_volume") or 0) >= U_MIN_VOL24:
+                reihe.append((a, sym))
+        if len(reihe) >= RANG_BIS or len(res) < 250: break
+        time.sleep(2.2)
+    if len(reihe) < RANG_VON:
+        print(f"{BOT}: CoinGecko lieferte nur {len(reihe)} Coins - zu wenig fuer Rang {RANG_VON}")
+        return None
+    return reihe[RANG_VON - 1:RANG_BIS]
 
 
 # ---------------- DexScreener ueber feste Paar-Adressen ----------------
@@ -235,18 +249,18 @@ def main():
 
     # 1) Universum (Rang 30-200), alle 12 h
     if now - meta.get("last_discover", 0) >= DISCOVER_EVERY_S or not meta.get("universe"):
-        u = codex_universe()
+        u = universum_laden(meta, now)
         if u:
             meta["universe"], meta["last_discover"] = u, now
             gueltig = {a for a, _ in u} | set(st["positions"])
             meta["pair_of"] = {k: v for k, v in (meta.get("pair_of") or {}).items() if k in gueltig}
         elif meta.get("universe"):
-            print("Bot F: Codex nicht erreichbar, nutze altes Universum")
+            print("Bot F: Rangliste nicht erreichbar, nutze alte Liste")
     universe = meta.get("universe", [])
     syms = {a: s for a, s in universe}
     addrs = list(dict.fromkeys([a for a, _ in universe] + list(st["positions"])))
     if not addrs:
-        print("Bot F: kein Universum (CODEX_KEY?)"); pf.mark({}); pf.commit(); return
+        print("Bot F: kein Universum (COINGECKO_KEY?)"); pf.mark({}); pf.commit(); return
 
     # 2) Kurse + Tageskerzen
     pairs = kurse(addrs + [SOL_MINT], meta)
@@ -286,9 +300,9 @@ def main():
     if equity_jetzt < STOP_UNTER:
         log.append(("ABBRUCH", f"Kapital {equity_jetzt:.0f} $ unter {STOP_UNTER:.0f} $ - keine neuen Kaeufe mehr"))
     elif gruen is None:
-        log.append(("MARKT", "SOL-Durchschnitt noch unbekannt -> kein Kauf"))
+        log.append(("MARKT", f"SOL-{SOL_MA_TAGE}-Tage-Schnitt noch unbekannt -> kein Kauf"))
     elif not gruen:
-        log.append(("MARKT", "SOL unter 20-Tage-Schnitt -> kein Kauf, Cash halten"))
+        log.append(("MARKT", f"SOL unter {SOL_MA_TAGE}-Tage-Schnitt -> kein Kauf, Cash halten"))
     else:
         c_meta = load("bot_c_meta.json", {})
         c_state = load("bot_c_state.json", {})
