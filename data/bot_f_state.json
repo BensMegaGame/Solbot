@@ -1,5 +1,5 @@
 {
- "cash": 334.98,
+ "cash": 170.93622273124154,
  "positions": {
   "6dKCoWjpj5MFU5gWDEFdpUUeBasBLK3wLEwhUzQPAa1e": {
    "sym": "CHEX",
@@ -9,8 +9,19 @@
    "peak": 0.00948,
    "entry": 0.009653046488540318,
    "entry_liq": 27635.81,
-   "cur_price": 0.00948,
-   "mark": 0.00948
+   "cur_price": 0.009461,
+   "mark": 0.009461
+  },
+  "DKu9kykSfbN5LBfFXtNNDPaX35o4Fv6vJ9FKk7pZpump": {
+   "sym": "AVA",
+   "qty": 14875.729374,
+   "cost": 164.04377726875848,
+   "opened": "2026-09-21T08:38:39Z",
+   "peak": 0.0109,
+   "entry": 0.011027612370757188,
+   "entry_liq": 1460707.39,
+   "cur_price": 0.0109,
+   "mark": 0.0109
   }
  },
  "trades": [
@@ -25,6 +36,18 @@
    "slip": 0.0267,
    "quote": "jup",
    "reason": "rueckschlag -47% vom 90d-Hoch, umsatz 2.9x"
+  },
+  {
+   "t": "2026-09-21T08:38:39Z",
+   "side": "buy",
+   "sym": "AVA",
+   "addr": "DKu9kykSfbN5LBfFXtNNDPaX35o4Fv6vJ9FKk7pZpump",
+   "price": 0.0109,
+   "fill": 0.011027612371,
+   "usd": 164.04,
+   "slip": 0.0085,
+   "quote": "jup",
+   "reason": "rueckschlag -44% vom 90d-Hoch, umsatz 2.4x"
   }
  ],
  "equity": [
@@ -599,17 +622,21 @@
   {
    "t": "2026-09-21T08:34:33Z",
    "v": 497.04
+  },
+  {
+   "t": "2026-09-21T08:38:39Z",
+   "v": 494.82
   }
  ],
  "started": "2026-09-20T20:41:43Z",
  "cooldown": {},
  "strategy": "rueckschlag_lotterie",
  "coverage": {
-  "t": "2026-09-21T08:34:33Z",
-  "kurse": 52,
+  "t": "2026-09-21T08:38:39Z",
+  "kurse": 58,
   "von": 251,
-  "kerzen": 47,
-  "offen": 17,
+  "kerzen": 58,
+  "offen": 11,
   "markt": true,
   "gestoppt": false
  }
