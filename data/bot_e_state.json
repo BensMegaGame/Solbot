@@ -1,15 +1,16 @@
 {
- "cash": 363.6117790059629,
+ "cash": 546.5278600059629,
  "positions": {
   "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump": {
    "sym": "MANIFEST",
-   "qty": 23669.437861,
-   "cost": 317.6441480783759,
+   "qty": 11834.7189305,
+   "cost": 158.82207403918795,
    "opened": "2026-09-21T18:31:57Z",
-   "peak": 0.01514,
+   "peak": 0.01551,
    "entry": 0.013420012335897355,
-   "mark": 0.01514,
-   "cur_price": 0.01514
+   "mark": 0.01551,
+   "cur_price": 0.01551,
+   "tp1": true
   }
  },
  "trades": [
@@ -315,6 +316,21 @@
    "slip": 0.0034,
    "quote": "jup",
    "reason": "trail"
+  },
+  {
+   "t": "2026-09-21T22:37:05Z",
+   "side": "sell",
+   "sym": "MANIFEST",
+   "addr": "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump",
+   "price": 0.01551,
+   "usd": 182.92,
+   "pnl": 24.09,
+   "peak_x": 1.156,
+   "held_h": 4.1,
+   "frac": 0.5,
+   "slip": 0.0008,
+   "quote": "jup",
+   "reason": "tp1"
   }
  ],
  "equity": [
@@ -5585,13 +5601,17 @@
   {
    "t": "2026-09-21T22:32:04Z",
    "v": 721.97
+  },
+  {
+   "t": "2026-09-21T22:37:05Z",
+   "v": 730.08
   }
  ],
  "started": "2026-09-16T16:55:59Z",
  "strategy": "largecap_dip",
  "universe_n": 76,
  "coverage": {
-  "t": "2026-09-21T22:32:04Z",
+  "t": "2026-09-21T22:37:05Z",
   "kurse": 76,
   "von": 76,
   "sol": true

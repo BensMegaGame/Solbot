@@ -26,20 +26,20 @@
    "entry_liq": 18640.54,
    "entry_vol": 40770.34,
    "cur_price": 3.485e-05,
-   "mark": 3.485e-05
+   "mark": 3.485e-05,
+   "no_quote_since": "2026-09-21T22:36:22Z"
   },
   "2UVDQZ4CB66CmJ3kXZx3ba6nzJbBhbpJsxRFT6J29c9z": {
    "sym": "BITCORN",
    "qty": 37178.019614,
    "cost": 20.02,
    "opened": "2026-09-21T22:26:28Z",
-   "peak": 0.00052,
+   "peak": 0.000549,
    "entry": 0.0005384902210461242,
    "entry_liq": 69945.5,
    "entry_vol": 287087.29,
-   "cur_price": 0.00052,
-   "mark": 0.00052,
-   "no_quote_since": "2026-09-21T22:31:20Z"
+   "cur_price": 0.000549,
+   "mark": 0.000549
   }
  },
  "trades": [
@@ -11469,6 +11469,10 @@
   {
    "t": "2026-09-21T22:31:20Z",
    "v": 343.5
+  },
+  {
+   "t": "2026-09-21T22:36:22Z",
+   "v": 344.58
   }
  ],
  "started": "2026-09-11T10:50:37Z",
@@ -11493,6 +11497,6 @@
  },
  "streak": 0,
  "half_left": 3,
- "watchlist": 941,
+ "watchlist": 939,
  "strategy": "second_wave"
 }
