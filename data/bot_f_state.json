@@ -566,18 +566,22 @@
   {
    "t": "2026-09-21T08:23:41Z",
    "v": 500.0
+  },
+  {
+   "t": "2026-09-21T08:28:29Z",
+   "v": 500.0
   }
  ],
  "started": "2026-09-20T20:41:43Z",
  "cooldown": {},
  "strategy": "rueckschlag_lotterie",
  "coverage": {
-  "t": "2026-09-21T08:23:41Z",
-  "kurse": 31,
+  "t": "2026-09-21T08:28:29Z",
+  "kurse": 43,
   "von": 251,
-  "kerzen": 24,
+  "kerzen": 35,
   "offen": 20,
-  "markt": null,
+  "markt": true,
   "gestoppt": false
  }
 }
