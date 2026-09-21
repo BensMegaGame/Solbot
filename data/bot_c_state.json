@@ -558,8 +558,21 @@
   {
    "t": "2026-09-21T08:11:24Z",
    "v": 500.0
+  },
+  {
+   "t": "2026-09-21T08:17:16Z",
+   "v": 500.0
   }
  ],
  "started": "2026-09-20T20:41:21Z",
- "cooldown": {}
+ "cooldown": {},
+ "strategy": "rueckschlag_umsatzschub",
+ "coverage": {
+  "t": "2026-09-21T08:17:16Z",
+  "kurse": 24,
+  "von": 171,
+  "kerzen": 10,
+  "offen": 25,
+  "markt": null
+ }
 }
