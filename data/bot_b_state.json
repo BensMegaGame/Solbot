@@ -1,5 +1,5 @@
 {
- "cash": 283.76748799999996,
+ "cash": 297.67243599999995,
  "positions": {
   "EpEfnZxQyiBXppSKi8sncc8w4corn1UJbF9G91fQpump": {
    "sym": "PEPENOM",
@@ -10,24 +10,10 @@
    "entry": 0.00025491016247462393,
    "entry_liq": 92361.83,
    "entry_vol": 133147.87,
-   "cur_price": 0.0003798,
-   "mark": 0.0003798,
+   "cur_price": 0.0003819,
+   "mark": 0.0003819,
    "added": true,
-   "tp1": true,
-   "no_quote_since": "2026-09-21T20:16:15Z"
-  },
-  "2s9ycNwMgVCB4SWtXmTu14w1ospd88MVYZdHLVEHLdVC": {
-   "sym": "SKYNET",
-   "qty": 100890.677107,
-   "cost": 20.02,
-   "opened": "2026-09-21T16:31:03Z",
-   "peak": 0.0002051,
-   "entry": 0.00019843260620372002,
-   "entry_liq": 41798.32,
-   "entry_vol": 66490.02,
-   "cur_price": 0.0001639,
-   "mark": 0.0001639,
-   "no_quote_since": "2026-09-21T20:21:14Z"
+   "tp1": true
   }
  },
  "trades": [
@@ -616,6 +602,21 @@
    "slip": 0.0348,
    "quote": "jup",
    "reason": "ok vol-trend 1.25 buy 0.56"
+  },
+  {
+   "t": "2026-09-21T20:31:13Z",
+   "side": "sell",
+   "sym": "SKYNET",
+   "addr": "2s9ycNwMgVCB4SWtXmTu14w1ospd88MVYZdHLVEHLdVC",
+   "price": 0.0001421,
+   "usd": 13.9,
+   "pnl": -6.12,
+   "peak_x": 1.034,
+   "held_h": 4.0,
+   "frac": 1.0,
+   "slip": 0.051,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -11318,6 +11319,10 @@
   {
    "t": "2026-09-21T20:26:16Z",
    "v": 347.28
+  },
+  {
+   "t": "2026-09-21T20:31:13Z",
+   "v": 344.91
   }
  ],
  "started": "2026-09-11T10:50:37Z",
@@ -11337,10 +11342,11 @@
   "7nLukVng5teXze14rum9v57juXLjUp7JJnCveko1pump": 20729,
   "4Ee7xRodjp7kBGTZsHj9FE87UQWJuPke7ENzzGWBbFCc": 20729,
   "7TKRV4SneC6xLRaAt21a6d1kheAzXHGKP9WDzri9aD2e": 20730,
-  "EgP1f5J9LDn1fuTMfrrgT5ZRMiLBitYdkmDs818BS44k": 20731
+  "EgP1f5J9LDn1fuTMfrrgT5ZRMiLBitYdkmDs818BS44k": 20731,
+  "2s9ycNwMgVCB4SWtXmTu14w1ospd88MVYZdHLVEHLdVC": 20731
  },
- "streak": 2,
- "half_left": 0,
+ "streak": 0,
+ "half_left": 5,
  "watchlist": 905,
  "strategy": "second_wave"
 }
