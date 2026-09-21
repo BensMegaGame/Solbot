@@ -1,5 +1,5 @@
 {
- "cash": 170.93622273124154,
+ "cash": 7.626079813033158,
  "positions": {
   "6dKCoWjpj5MFU5gWDEFdpUUeBasBLK3wLEwhUzQPAa1e": {
    "sym": "CHEX",
@@ -9,8 +9,8 @@
    "peak": 0.00948,
    "entry": 0.009653046488540318,
    "entry_liq": 27635.81,
-   "cur_price": 0.009461,
-   "mark": 0.009461
+   "cur_price": 0.009602,
+   "mark": 0.009602
   },
   "DKu9kykSfbN5LBfFXtNNDPaX35o4Fv6vJ9FKk7pZpump": {
    "sym": "AVA",
@@ -20,8 +20,19 @@
    "peak": 0.0109,
    "entry": 0.011027612370757188,
    "entry_liq": 1460707.39,
-   "cur_price": 0.0109,
-   "mark": 0.0109
+   "cur_price": 0.011,
+   "mark": 0.011
+  },
+  "3jUf2RTyXp867piSB2dt8uUcNiLDW58asjGtXkRAkBbe": {
+   "sym": "GUN",
+   "qty": 52544.559526921,
+   "cost": 163.31014291820838,
+   "opened": "2026-09-21T08:42:36Z",
+   "peak": 0.002949,
+   "entry": 0.0031080314382412335,
+   "entry_liq": 15411.63,
+   "cur_price": 0.002949,
+   "mark": 0.002949
   }
  },
  "trades": [
@@ -48,6 +59,18 @@
    "slip": 0.0085,
    "quote": "jup",
    "reason": "rueckschlag -44% vom 90d-Hoch, umsatz 2.4x"
+  },
+  {
+   "t": "2026-09-21T08:42:36Z",
+   "side": "buy",
+   "sym": "GUN",
+   "addr": "3jUf2RTyXp867piSB2dt8uUcNiLDW58asjGtXkRAkBbe",
+   "price": 0.002949,
+   "fill": 0.003108031438,
+   "usd": 163.31,
+   "slip": 0.0579,
+   "quote": "jup",
+   "reason": "rueckschlag -41% vom 90d-Hoch, umsatz 9.6x"
   }
  ],
  "equity": [
@@ -626,17 +649,21 @@
   {
    "t": "2026-09-21T08:38:39Z",
    "v": 494.82
+  },
+  {
+   "t": "2026-09-21T08:42:36Z",
+   "v": 490.36
   }
  ],
  "started": "2026-09-20T20:41:43Z",
  "cooldown": {},
  "strategy": "rueckschlag_lotterie",
  "coverage": {
-  "t": "2026-09-21T08:38:39Z",
-  "kurse": 58,
+  "t": "2026-09-21T08:42:36Z",
+  "kurse": 64,
   "von": 251,
-  "kerzen": 58,
-  "offen": 11,
+  "kerzen": 64,
+  "offen": 6,
   "markt": true,
   "gestoppt": false
  }

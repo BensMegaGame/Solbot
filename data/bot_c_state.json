@@ -1,5 +1,5 @@
 {
- "cash": 334.98,
+ "cash": 170.38773379108238,
  "positions": {
   "CortexFv3fRcLKTgACr7aLqckGh5eP7TP3z9JHoKqMc6": {
    "sym": "CX",
@@ -11,6 +11,17 @@
    "entry_liq": 822860.2,
    "cur_price": 0.04032,
    "mark": 0.04032
+  },
+  "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump": {
+   "sym": "NEET",
+   "qty": 4993.112877,
+   "cost": 164.59226620891764,
+   "opened": "2026-09-21T08:41:36Z",
+   "peak": 0.03237,
+   "entry": 0.03296385847135289,
+   "entry_liq": 1890130.03,
+   "cur_price": 0.03237,
+   "mark": 0.03237
   }
  },
  "trades": [
@@ -25,6 +36,18 @@
    "slip": 0.0097,
    "quote": "jup",
    "reason": "rueckschlag -58% vom 90d-Hoch, umsatz 1.9x"
+  },
+  {
+   "t": "2026-09-21T08:41:36Z",
+   "side": "buy",
+   "sym": "NEET",
+   "addr": "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump",
+   "price": 0.03237,
+   "fill": 0.032963858471,
+   "usd": 164.59,
+   "slip": 0.006,
+   "quote": "jup",
+   "reason": "rueckschlag -30% vom 90d-Hoch, umsatz 2.2x"
   }
  ],
  "equity": [
@@ -603,17 +626,21 @@
   {
    "t": "2026-09-21T08:36:41Z",
    "v": 498.7
+  },
+  {
+   "t": "2026-09-21T08:41:36Z",
+   "v": 495.74
   }
  ],
  "started": "2026-09-20T20:41:21Z",
  "cooldown": {},
  "strategy": "rueckschlag_umsatzschub",
  "coverage": {
-  "t": "2026-09-21T08:36:41Z",
-  "kurse": 91,
+  "t": "2026-09-21T08:41:36Z",
+  "kurse": 100,
   "von": 171,
   "kerzen": 170,
-  "offen": 3,
+  "offen": 0,
   "markt": true
  }
 }
