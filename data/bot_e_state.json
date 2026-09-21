@@ -1,15 +1,16 @@
 {
- "cash": 41.146930084338806,
+ "cash": 213.9353960843388,
  "positions": {
   "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp": {
    "sym": "CARDS",
-   "qty": 1771.716615,
-   "cost": 299.26465972457424,
+   "qty": 885.8583075,
+   "cost": 149.63232986228712,
    "opened": "2026-09-20T10:11:43Z",
-   "peak": 0.1941,
+   "peak": 0.1957,
    "entry": 0.16891226124476696,
-   "mark": 0.1935,
-   "cur_price": 0.1935
+   "mark": 0.1957,
+   "cur_price": 0.1957,
+   "tp1": true
   },
   "DtR4D9FtVoTX2569gaL837ZgrB6wNjj6tkmnX9Rdk9B2": {
    "sym": "aura",
@@ -18,8 +19,8 @@
    "opened": "2026-09-21T04:36:56Z",
    "peak": 0.0122,
    "entry": 0.011319597244349671,
-   "mark": 0.0116,
-   "cur_price": 0.0116
+   "mark": 0.01164,
+   "cur_price": 0.01164
   }
  },
  "trades": [
@@ -268,6 +269,21 @@
    "slip": 0.0061,
    "quote": "jup",
    "reason": "dip 24h -12% (SOL +2%) 1h +1.5%"
+  },
+  {
+   "t": "2026-09-21T13:22:00Z",
+   "side": "sell",
+   "sym": "CARDS",
+   "addr": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp",
+   "price": 0.1957,
+   "usd": 172.79,
+   "pnl": 23.16,
+   "peak_x": 1.159,
+   "held_h": 27.2,
+   "frac": 0.5,
+   "slip": 0.0008,
+   "quote": "jup",
+   "reason": "tp1"
   }
  ],
  "equity": [
@@ -5094,13 +5110,17 @@
   {
    "t": "2026-09-21T13:16:58Z",
    "v": 683.08
+  },
+  {
+   "t": "2026-09-21T13:22:00Z",
+   "v": 687.43
   }
  ],
  "started": "2026-09-16T16:55:59Z",
  "strategy": "largecap_dip",
  "universe_n": 64,
  "coverage": {
-  "t": "2026-09-21T13:16:58Z",
+  "t": "2026-09-21T13:22:00Z",
   "kurse": 64,
   "von": 64,
   "sol": true
