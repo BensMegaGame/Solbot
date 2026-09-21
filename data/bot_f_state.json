@@ -1,7 +1,32 @@
 {
- "cash": 500.0,
- "positions": {},
- "trades": [],
+ "cash": 334.98,
+ "positions": {
+  "6dKCoWjpj5MFU5gWDEFdpUUeBasBLK3wLEwhUzQPAa1e": {
+   "sym": "CHEX",
+   "qty": 17095.1212341,
+   "cost": 165.02,
+   "opened": "2026-09-21T08:34:33Z",
+   "peak": 0.00948,
+   "entry": 0.009653046488540318,
+   "entry_liq": 27635.81,
+   "cur_price": 0.00948,
+   "mark": 0.00948
+  }
+ },
+ "trades": [
+  {
+   "t": "2026-09-21T08:34:33Z",
+   "side": "buy",
+   "sym": "CHEX",
+   "addr": "6dKCoWjpj5MFU5gWDEFdpUUeBasBLK3wLEwhUzQPAa1e",
+   "price": 0.00948,
+   "fill": 0.009653046489,
+   "usd": 165.02,
+   "slip": 0.0267,
+   "quote": "jup",
+   "reason": "rueckschlag -47% vom 90d-Hoch, umsatz 2.9x"
+  }
+ ],
  "equity": [
   {
    "t": "2026-09-20T20:41:43Z",
@@ -570,17 +595,21 @@
   {
    "t": "2026-09-21T08:28:29Z",
    "v": 500.0
+  },
+  {
+   "t": "2026-09-21T08:34:33Z",
+   "v": 497.04
   }
  ],
  "started": "2026-09-20T20:41:43Z",
  "cooldown": {},
  "strategy": "rueckschlag_lotterie",
  "coverage": {
-  "t": "2026-09-21T08:28:29Z",
-  "kurse": 43,
+  "t": "2026-09-21T08:34:33Z",
+  "kurse": 52,
   "von": 251,
-  "kerzen": 35,
-  "offen": 20,
+  "kerzen": 47,
+  "offen": 17,
   "markt": true,
   "gestoppt": false
  }
