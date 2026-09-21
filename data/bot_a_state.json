@@ -1,5 +1,5 @@
 {
- "cash": 410.58536294111195,
+ "cash": 379.08477694111195,
  "positions": {
   "5GefefPX1mDs6ZJB1apYmz6fCTCiNJpHturZ9bvFpump": {
    "sym": "Pumpoween",
@@ -8,8 +8,8 @@
    "opened": "2026-09-12T21:25:13Z",
    "peak": 0.0007389,
    "entry": 0.0004150532496,
-   "cur_price": 0.0006744,
-   "mark": 0.0006744
+   "cur_price": 0.0006815,
+   "mark": 0.0006815
   },
   "B3jjDNkBw48utaFxRRSWxg4oUkN23YxodChdEf4bxhQS": {
    "sym": "BITDOG",
@@ -18,8 +18,8 @@
    "opened": "2026-09-19T10:20:24Z",
    "peak": 0.0005905,
    "entry": 0.0003514762129772813,
-   "cur_price": 0.0002065,
-   "mark": 0.0002065
+   "cur_price": 0.0002168,
+   "mark": 0.0002168
   },
   "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": {
    "sym": "baton",
@@ -28,8 +28,8 @@
    "opened": "2026-09-20T07:10:35Z",
    "peak": 0.003719,
    "entry": 0.002418474532937626,
-   "cur_price": 0.002366,
-   "mark": 0.002366
+   "cur_price": 0.002376,
+   "mark": 0.002376
   },
   "6LrDt7nBiHraUuk9PZoUL8Qy9WX6pnSpDz1RkWWRR7hN": {
    "sym": "INU",
@@ -38,20 +38,19 @@
    "opened": "2026-09-20T08:20:42Z",
    "peak": 0.00227,
    "entry": 0.0011133469268269946,
-   "cur_price": 0.001581,
-   "mark": 0.001581,
+   "cur_price": 0.00158,
+   "mark": 0.00158,
    "tp0": true
   },
-  "91ryaCo5yGpYZM3bs6GUPs97VWJQj7RozBmqPULgpump": {
-   "sym": "TIGRINO",
-   "qty": 16429.327518000002,
-   "cost": 37.515,
-   "opened": "2026-09-20T11:25:21Z",
-   "peak": 0.00433,
-   "entry": 0.0022834166498232203,
-   "cur_price": 0.001221,
-   "mark": 0.001221,
-   "tp0": true
+  "Gt9brNVXP7gdGtUqZLcJAhbZTjLEcKrA53F18fRSEeAp": {
+   "sym": "\u3164",
+   "qty": 157461.540534,
+   "cost": 50.02,
+   "opened": "2026-09-21T14:00:24Z",
+   "peak": 0.0003089,
+   "entry": 0.0003176648712464451,
+   "cur_price": 0.0003089,
+   "mark": 0.0003089
   }
  },
  "trades": [
@@ -1219,6 +1218,33 @@
    "slip": 0.0531,
    "quote": "jup",
    "reason": "tp0"
+  },
+  {
+   "t": "2026-09-21T14:00:07Z",
+   "side": "sell",
+   "sym": "TIGRINO",
+   "addr": "91ryaCo5yGpYZM3bs6GUPs97VWJQj7RozBmqPULgpump",
+   "price": 0.001125,
+   "usd": 18.52,
+   "pnl": -19.0,
+   "peak_x": 1.896,
+   "held_h": 26.6,
+   "frac": 1.0,
+   "slip": 0.0249,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-21T14:00:24Z",
+   "side": "buy",
+   "sym": "\u3164",
+   "addr": "Gt9brNVXP7gdGtUqZLcJAhbZTjLEcKrA53F18fRSEeAp",
+   "price": 0.0003089,
+   "fill": 0.000317664871,
+   "usd": 50.02,
+   "slip": 0.0144,
+   "quote": "jup",
+   "reason": "screener"
   }
  ],
  "equity": [
@@ -11637,6 +11663,10 @@
   {
    "t": "2026-09-21T13:55:50Z",
    "v": 643.92
+  },
+  {
+   "t": "2026-09-21T14:00:49Z",
+   "v": 643.5
   }
  ],
  "started": "2026-09-10T17:17:16Z"
