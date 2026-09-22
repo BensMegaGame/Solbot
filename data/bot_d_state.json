@@ -1,5 +1,5 @@
 {
- "cash": 233.18987000000078,
+ "cash": 240.30478800000077,
  "positions": {
   "4ijnHeHgNnXmg45rhUV6aETFSbTwvjJG2Zmd1MePMevW": {
    "sym": "BCC",
@@ -20,8 +20,8 @@
    "peak": 0.0004925,
    "entry": 0.00013098995157442874,
    "liq0": 39116.19,
-   "cur_price": 0.0003953,
-   "mark": 0.0003953
+   "cur_price": 0.0004069,
+   "mark": 0.0004069
   },
   "Hk8Uiq8CeNdmZzu1aPaT7MhvujtJifFS9kKhfpXmpaid": {
    "sym": "BOAR",
@@ -31,8 +31,8 @@
    "peak": 0.000135,
    "entry": 0.00010000262491177597,
    "liq0": 34183.36,
-   "cur_price": 0.0001053,
-   "mark": 0.0001053
+   "cur_price": 0.0001077,
+   "mark": 0.0001077
   },
   "8oopSSqdoBu89mxXusBe3njEXsFfUMzD9T7vY9SuM449": {
    "sym": "SWOGE",
@@ -42,8 +42,8 @@
    "peak": 0.0002056,
    "entry": 6.920216964407245e-05,
    "liq0": 21171.81,
-   "cur_price": 9.099e-05,
-   "mark": 9.099e-05
+   "cur_price": 8.907e-05,
+   "mark": 8.907e-05
   },
   "9LuwgFQemAoV9rgVBBtwbRSxBmamcRRbysEK8yL2pump": {
    "sym": "BRAIN",
@@ -53,8 +53,8 @@
    "peak": 5.962e-05,
    "entry": 4.4149310642482685e-05,
    "liq0": 22152.18,
-   "cur_price": 4.734e-05,
-   "mark": 4.734e-05
+   "cur_price": 4.662e-05,
+   "mark": 4.662e-05
   },
   "GNq9jVow6MayA3xM2AfGygh58gMu1vY6wajiXDXZCZu": {
    "sym": "PMARCA",
@@ -64,10 +64,8 @@
    "peak": 6.805e-05,
    "entry": 5.283396298106178e-05,
    "liq0": 21279.88,
-   "cur_price": 5.953e-05,
-   "mark": 5.953e-05,
-   "no_px_since": "2026-09-22T13:11:47Z",
-   "no_quote_since": "2026-09-22T13:11:47Z"
+   "cur_price": 5.879e-05,
+   "mark": 5.879e-05
   },
   "536Y2Cf53iJ64N8JsQHnVPkCTPoXLhAHx5dCRX7XW7fM": {
    "sym": "SME",
@@ -80,17 +78,6 @@
    "cur_price": 6.638e-05,
    "mark": 6.638e-05
   },
-  "AP5YnCZRFHayveJ1zSSWeGpB1Hps4v8pLJ6ASmXLMD6M": {
-   "sym": "SUICAT",
-   "qty": 95005.349699,
-   "cost": 15.02,
-   "opened": "2026-09-22T08:26:54Z",
-   "peak": 0.0001987,
-   "entry": 0.00015809636033746525,
-   "liq0": 39802.82,
-   "cur_price": 9.904e-05,
-   "mark": 9.904e-05
-  },
   "D4sBdmPaDKxKThQW3Eh721R9M335VcCThn31w7CRtdkN": {
    "sym": "TRUMPTV",
    "qty": 143457.850267,
@@ -99,19 +86,19 @@
    "peak": 0.0001178,
    "entry": 0.00010469974262157957,
    "liq0": 29627.57,
-   "cur_price": 0.0001123,
-   "mark": 0.0001123
+   "cur_price": 0.0001107,
+   "mark": 0.0001107
   },
   "7gKKy2p1SaMkRFPX7caF96YpfuMMpDj82ZpjaffuvaU5": {
    "sym": "PARK",
    "qty": 233992.665303,
    "cost": 15.02,
    "opened": "2026-09-22T10:46:51Z",
-   "peak": 0.000101,
+   "peak": 0.0001031,
    "entry": 6.419004621598039e-05,
    "liq0": 22379.11,
-   "cur_price": 9.412e-05,
-   "mark": 9.412e-05
+   "cur_price": 0.0001031,
+   "mark": 0.0001031
   }
  },
  "trades": [
@@ -2445,6 +2432,21 @@
    "slip": 0.0172,
    "quote": "jup",
    "reason": "longshot"
+  },
+  {
+   "t": "2026-09-22T13:26:43Z",
+   "side": "sell",
+   "sym": "SUICAT",
+   "addr": "AP5YnCZRFHayveJ1zSSWeGpB1Hps4v8pLJ6ASmXLMD6M",
+   "price": 7.964e-05,
+   "usd": 7.11,
+   "pnl": -7.91,
+   "peak_x": 1.257,
+   "held_h": 5.0,
+   "frac": 1.0,
+   "slip": 0.0583,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -10359,6 +10361,10 @@
   {
    "t": "2026-09-22T13:21:46Z",
    "v": 425.63
+  },
+  {
+   "t": "2026-09-22T13:26:44Z",
+   "v": 426.03
   }
  ],
  "started": "2026-09-15T16:35:51Z",
