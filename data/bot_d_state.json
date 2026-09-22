@@ -1,5 +1,5 @@
 {
- "cash": 248.2098700000008,
+ "cash": 233.18987000000078,
  "positions": {
   "4ijnHeHgNnXmg45rhUV6aETFSbTwvjJG2Zmd1MePMevW": {
    "sym": "BCC",
@@ -65,9 +65,7 @@
    "entry": 5.283396298106178e-05,
    "liq0": 21279.88,
    "cur_price": 5.886e-05,
-   "mark": 5.886e-05,
-   "no_px_since": "2026-09-22T10:41:49Z",
-   "no_quote_since": "2026-09-22T10:41:50Z"
+   "mark": 5.886e-05
   },
   "536Y2Cf53iJ64N8JsQHnVPkCTPoXLhAHx5dCRX7XW7fM": {
    "sym": "SME",
@@ -77,8 +75,8 @@
    "peak": 0.0001062,
    "entry": 6.280615975374175e-05,
    "liq0": 26558.66,
-   "cur_price": 5.705e-05,
-   "mark": 5.705e-05
+   "cur_price": 5.693e-05,
+   "mark": 5.693e-05
   },
   "AP5YnCZRFHayveJ1zSSWeGpB1Hps4v8pLJ6ASmXLMD6M": {
    "sym": "SUICAT",
@@ -88,8 +86,8 @@
    "peak": 0.0001987,
    "entry": 0.00015809636033746525,
    "liq0": 39802.82,
-   "cur_price": 0.0001588,
-   "mark": 0.0001588
+   "cur_price": 0.0001637,
+   "mark": 0.0001637
   },
   "D4sBdmPaDKxKThQW3Eh721R9M335VcCThn31w7CRtdkN": {
    "sym": "TRUMPTV",
@@ -99,8 +97,19 @@
    "peak": 0.0001058,
    "entry": 0.00010469974262157957,
    "liq0": 29627.57,
-   "cur_price": 9.263e-05,
-   "mark": 9.263e-05
+   "cur_price": 9.117e-05,
+   "mark": 9.117e-05
+  },
+  "7gKKy2p1SaMkRFPX7caF96YpfuMMpDj82ZpjaffuvaU5": {
+   "sym": "PARK",
+   "qty": 233992.665303,
+   "cost": 15.02,
+   "opened": "2026-09-22T10:46:51Z",
+   "peak": 6.299e-05,
+   "entry": 6.419004621598039e-05,
+   "liq0": 22379.11,
+   "cur_price": 6.299e-05,
+   "mark": 6.299e-05
   }
  },
  "trades": [
@@ -2420,6 +2429,18 @@
    "fill": 0.000104699743,
    "usd": 15.02,
    "slip": 0.0218,
+   "quote": "jup",
+   "reason": "longshot"
+  },
+  {
+   "t": "2026-09-22T10:46:51Z",
+   "side": "buy",
+   "sym": "PARK",
+   "addr": "7gKKy2p1SaMkRFPX7caF96YpfuMMpDj82ZpjaffuvaU5",
+   "price": 6.299e-05,
+   "fill": 6.4190046e-05,
+   "usd": 15.02,
+   "slip": 0.0172,
    "quote": "jup",
    "reason": "longshot"
   }
@@ -10208,6 +10229,10 @@
   {
    "t": "2026-09-22T10:41:50Z",
    "v": 413.49
+  },
+  {
+   "t": "2026-09-22T10:46:51Z",
+   "v": 413.44
   }
  ],
  "started": "2026-09-15T16:35:51Z",
