@@ -1,5 +1,5 @@
 {
- "cash": 358.911795941112,
+ "cash": 308.89179594111204,
  "positions": {
   "5GefefPX1mDs6ZJB1apYmz6fCTCiNJpHturZ9bvFpump": {
    "sym": "Pumpoween",
@@ -8,8 +8,8 @@
    "opened": "2026-09-12T21:25:13Z",
    "peak": 0.0008701,
    "entry": 0.0004150532496,
-   "cur_price": 0.0006501,
-   "mark": 0.0006501,
+   "cur_price": 0.0006504,
+   "mark": 0.0006504,
    "tp0": true
   },
   "B3jjDNkBw48utaFxRRSWxg4oUkN23YxodChdEf4bxhQS": {
@@ -19,8 +19,8 @@
    "opened": "2026-09-19T10:20:24Z",
    "peak": 0.0005905,
    "entry": 0.0003514762129772813,
-   "cur_price": 0.0002148,
-   "mark": 0.0002148
+   "cur_price": 0.0002208,
+   "mark": 0.0002208
   },
   "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": {
    "sym": "baton",
@@ -29,8 +29,8 @@
    "opened": "2026-09-20T07:10:35Z",
    "peak": 0.003719,
    "entry": 0.002418474532937626,
-   "cur_price": 0.001892,
-   "mark": 0.001892
+   "cur_price": 0.001933,
+   "mark": 0.001933
   },
   "6LrDt7nBiHraUuk9PZoUL8Qy9WX6pnSpDz1RkWWRR7hN": {
    "sym": "INU",
@@ -39,8 +39,8 @@
    "opened": "2026-09-20T08:20:42Z",
    "peak": 0.00227,
    "entry": 0.0011133469268269946,
-   "cur_price": 0.0007531,
-   "mark": 0.0007531,
+   "cur_price": 0.0007494,
+   "mark": 0.0007494,
    "tp0": true
   },
   "DFQHUegJWE29Xu3BUxPezqi77uyHURRyxJpdtyvLpump": {
@@ -50,8 +50,8 @@
    "opened": "2026-09-21T21:55:43Z",
    "peak": 0.0001382,
    "entry": 0.0001242547757563107,
-   "cur_price": 8.568e-05,
-   "mark": 8.568e-05
+   "cur_price": 8.639e-05,
+   "mark": 8.639e-05
   },
   "4JHXtNwMogExmcxXB1Ykb1A9s6yyAWKYG7xRurnT14Ws": {
    "sym": "BABYCATE",
@@ -60,8 +60,18 @@
    "opened": "2026-09-22T00:10:51Z",
    "peak": 0.0002998,
    "entry": 0.0002684859957574503,
-   "cur_price": 0.0001918,
-   "mark": 0.0001918
+   "cur_price": 0.0001915,
+   "mark": 0.0001915
+  },
+  "C3b3fpyRWsJf3bo6vay2vo1bQ7CezwumZwTrP82Lpump": {
+   "sym": "Tokens",
+   "qty": 412658.023335,
+   "cost": 50.02,
+   "opened": "2026-09-22T06:30:22Z",
+   "peak": 0.0001181,
+   "entry": 0.00012121417050309781,
+   "cur_price": 0.0001181,
+   "mark": 0.0001181
   }
  },
  "trades": [
@@ -1394,6 +1404,18 @@
    "slip": 0.0041,
    "quote": "jup",
    "reason": "trail"
+  },
+  {
+   "t": "2026-09-22T06:30:22Z",
+   "side": "buy",
+   "sym": "Tokens",
+   "addr": "C3b3fpyRWsJf3bo6vay2vo1bQ7CezwumZwTrP82Lpump",
+   "price": 0.0001181,
+   "fill": 0.000121214171,
+   "usd": 50.02,
+   "slip": 0.0263,
+   "quote": "jup",
+   "reason": "screener"
   }
  ],
  "equity": [
@@ -12604,6 +12626,10 @@
   {
    "t": "2026-09-22T06:25:57Z",
    "v": 583.27
+  },
+  {
+   "t": "2026-09-22T06:30:57Z",
+   "v": 583.82
   }
  ],
  "started": "2026-09-10T17:17:16Z"
