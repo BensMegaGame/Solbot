@@ -1,5 +1,5 @@
 {
- "cash": 258.13252299999994,
+ "cash": 271.19060599999995,
  "positions": {
   "EpEfnZxQyiBXppSKi8sncc8w4corn1UJbF9G91fQpump": {
    "sym": "PEPENOM",
@@ -10,11 +10,10 @@
    "entry": 0.00025491016247462393,
    "entry_liq": 92361.83,
    "entry_vol": 133147.87,
-   "cur_price": 0.0003903,
-   "mark": 0.0003903,
+   "cur_price": 0.0003842,
+   "mark": 0.0003842,
    "added": true,
-   "tp1": true,
-   "no_quote_since": "2026-09-22T16:01:04Z"
+   "tp1": true
   },
   "2UVDQZ4CB66CmJ3kXZx3ba6nzJbBhbpJsxRFT6J29c9z": {
    "sym": "BITCORN",
@@ -28,20 +27,8 @@
    "cur_price": 0.0008598,
    "mark": 0.0008598,
    "added": true,
-   "tp1": true
-  },
-  "2hkhFLWQKUcvUNh7eUkfZVz3rYfxXqFNeVLYMotrzFky": {
-   "sym": "ALICE",
-   "qty": 31747.145086301,
-   "cost": 20.02,
-   "opened": "2026-09-22T03:06:17Z",
-   "peak": 0.0006657,
-   "entry": 0.0006306078844437164,
-   "entry_liq": 87414.11,
-   "entry_vol": 173294.8,
-   "cur_price": 0.0005079,
-   "mark": 0.0005079,
-   "no_quote_since": "2026-09-22T15:36:10Z"
+   "tp1": true,
+   "no_quote_since": "2026-09-22T16:06:03Z"
   }
  },
  "trades": [
@@ -723,6 +710,21 @@
    "slip": 0.0013,
    "quote": "jup",
    "reason": "tp1"
+  },
+  {
+   "t": "2026-09-22T16:06:03Z",
+   "side": "sell",
+   "sym": "ALICE",
+   "addr": "2hkhFLWQKUcvUNh7eUkfZVz3rYfxXqFNeVLYMotrzFky",
+   "price": 0.0004212,
+   "usd": 13.06,
+   "pnl": -6.96,
+   "peak_x": 1.056,
+   "held_h": 13.0,
+   "frac": 1.0,
+   "slip": 0.058,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -12365,6 +12367,10 @@
   {
    "t": "2026-09-22T16:01:04Z",
    "v": 366.79
+  },
+  {
+   "t": "2026-09-22T16:06:03Z",
+   "v": 362.97
   }
  ],
  "started": "2026-09-11T10:50:37Z",
@@ -12386,9 +12392,10 @@
   "7TKRV4SneC6xLRaAt21a6d1kheAzXHGKP9WDzri9aD2e": 20730,
   "EgP1f5J9LDn1fuTMfrrgT5ZRMiLBitYdkmDs818BS44k": 20731,
   "2s9ycNwMgVCB4SWtXmTu14w1ospd88MVYZdHLVEHLdVC": 20731,
-  "93ew6KrBKyMEGgzh78AdFBFtSPNyvXcC3Fn7iX5r28F9": 20732
+  "93ew6KrBKyMEGgzh78AdFBFtSPNyvXcC3Fn7iX5r28F9": 20732,
+  "2hkhFLWQKUcvUNh7eUkfZVz3rYfxXqFNeVLYMotrzFky": 20732
  },
- "streak": 1,
+ "streak": 2,
  "half_left": 2,
  "watchlist": 1024,
  "strategy": "second_wave"
