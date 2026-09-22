@@ -1,5 +1,5 @@
 {
- "cash": 288.97259300000076,
+ "cash": 300.42283800000075,
  "positions": {
   "Hk8Uiq8CeNdmZzu1aPaT7MhvujtJifFS9kKhfpXmpaid": {
    "sym": "BOAR",
@@ -9,8 +9,8 @@
    "peak": 0.000135,
    "entry": 0.00010000262491177597,
    "liq0": 34183.36,
-   "cur_price": 0.000112,
-   "mark": 0.000112
+   "cur_price": 0.0001105,
+   "mark": 0.0001105
   },
   "8oopSSqdoBu89mxXusBe3njEXsFfUMzD9T7vY9SuM449": {
    "sym": "SWOGE",
@@ -20,8 +20,8 @@
    "peak": 0.0002056,
    "entry": 6.920216964407245e-05,
    "liq0": 21171.81,
-   "cur_price": 7.212e-05,
-   "mark": 7.212e-05
+   "cur_price": 7.921e-05,
+   "mark": 7.921e-05
   },
   "9LuwgFQemAoV9rgVBBtwbRSxBmamcRRbysEK8yL2pump": {
    "sym": "BRAIN",
@@ -34,19 +34,6 @@
    "cur_price": 5.098e-05,
    "mark": 5.098e-05
   },
-  "GNq9jVow6MayA3xM2AfGygh58gMu1vY6wajiXDXZCZu": {
-   "sym": "PMARCA",
-   "qty": 284286.832797,
-   "cost": 15.02,
-   "opened": "2026-09-20T22:16:43Z",
-   "peak": 6.805e-05,
-   "entry": 5.283396298106178e-05,
-   "liq0": 21279.88,
-   "cur_price": 4.844e-05,
-   "mark": 4.844e-05,
-   "no_px_since": "2026-09-22T16:51:47Z",
-   "no_quote_since": "2026-09-22T16:51:48Z"
-  },
   "536Y2Cf53iJ64N8JsQHnVPkCTPoXLhAHx5dCRX7XW7fM": {
    "sym": "SME",
    "qty": 239148.51758,
@@ -55,8 +42,8 @@
    "peak": 0.0001062,
    "entry": 6.280615975374175e-05,
    "liq0": 26558.66,
-   "cur_price": 5.56e-05,
-   "mark": 5.56e-05
+   "cur_price": 5.559e-05,
+   "mark": 5.559e-05
   },
   "D4sBdmPaDKxKThQW3Eh721R9M335VcCThn31w7CRtdkN": {
    "sym": "TRUMPTV",
@@ -66,8 +53,8 @@
    "peak": 0.0001285,
    "entry": 0.00010469974262157957,
    "liq0": 29627.57,
-   "cur_price": 7.431e-05,
-   "mark": 7.431e-05
+   "cur_price": 6.586e-05,
+   "mark": 6.586e-05
   },
   "7gKKy2p1SaMkRFPX7caF96YpfuMMpDj82ZpjaffuvaU5": {
    "sym": "PARK",
@@ -77,8 +64,8 @@
    "peak": 0.0001667,
    "entry": 6.419004621598039e-05,
    "liq0": 22379.11,
-   "cur_price": 9.653e-05,
-   "mark": 9.653e-05
+   "cur_price": 9.786e-05,
+   "mark": 9.786e-05
   }
  },
  "trades": [
@@ -2457,6 +2444,21 @@
    "slip": 0.0588,
    "quote": "jup",
    "reason": "time"
+  },
+  {
+   "t": "2026-09-22T17:11:51Z",
+   "side": "sell",
+   "sym": "PMARCA",
+   "addr": "GNq9jVow6MayA3xM2AfGygh58gMu1vY6wajiXDXZCZu",
+   "price": 4.087e-05,
+   "usd": 11.45,
+   "pnl": -3.57,
+   "peak_x": 1.288,
+   "held_h": 42.9,
+   "frac": 1.0,
+   "slip": 0.0122,
+   "quote": "jup",
+   "reason": "tot"
   }
  ],
  "equity": [
@@ -10551,6 +10553,10 @@
   {
    "t": "2026-09-22T17:06:51Z",
    "v": 399.11
+  },
+  {
+   "t": "2026-09-22T17:11:51Z",
+   "v": 397.2
   }
  ],
  "started": "2026-09-15T16:35:51Z",
