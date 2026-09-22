@@ -1,5 +1,5 @@
 {
- "cash": 450.29786194111205,
+ "cash": 400.27786194111206,
  "positions": {
   "5GefefPX1mDs6ZJB1apYmz6fCTCiNJpHturZ9bvFpump": {
    "sym": "Pumpoween",
@@ -29,8 +29,8 @@
    "opened": "2026-09-20T07:10:35Z",
    "peak": 0.003719,
    "entry": 0.002418474532937626,
-   "cur_price": 0.00207,
-   "mark": 0.00207
+   "cur_price": 0.00202,
+   "mark": 0.00202
   },
   "DFQHUegJWE29Xu3BUxPezqi77uyHURRyxJpdtyvLpump": {
    "sym": "PUMPCAT",
@@ -39,8 +39,8 @@
    "opened": "2026-09-21T21:55:43Z",
    "peak": 0.0001382,
    "entry": 0.0001242547757563107,
-   "cur_price": 0.0001125,
-   "mark": 0.0001125
+   "cur_price": 0.0001158,
+   "mark": 0.0001158
   },
   "4JHXtNwMogExmcxXB1Ykb1A9s6yyAWKYG7xRurnT14Ws": {
    "sym": "BABYCATE",
@@ -49,8 +49,18 @@
    "opened": "2026-09-22T00:10:51Z",
    "peak": 0.0002998,
    "entry": 0.0002684859957574503,
-   "cur_price": 0.0002283,
-   "mark": 0.0002283
+   "cur_price": 0.0002336,
+   "mark": 0.0002336
+  },
+  "BP4Wic5LNKsqpmiREW6uNVEC16juvFCSd4WzVBatpump": {
+   "sym": "fomopay",
+   "qty": 22056.290504,
+   "cost": 50.02,
+   "opened": "2026-09-22T19:35:47Z",
+   "peak": 0.002019,
+   "entry": 0.0022678337497834765,
+   "cur_price": 0.002019,
+   "mark": 0.002019
   }
  },
  "trades": [
@@ -1455,6 +1465,18 @@
    "slip": 0.0165,
    "quote": "jup",
    "reason": "trail"
+  },
+  {
+   "t": "2026-09-22T19:35:47Z",
+   "side": "buy",
+   "sym": "fomopay",
+   "addr": "BP4Wic5LNKsqpmiREW6uNVEC16juvFCSd4WzVBatpump",
+   "price": 0.002019,
+   "fill": 0.00226783375,
+   "usd": 50.02,
+   "slip": 0.0211,
+   "quote": "jup",
+   "reason": "screener"
   }
  ],
  "equity": [
@@ -13293,6 +13315,10 @@
   {
    "t": "2026-09-22T19:30:56Z",
    "v": 679.35
+  },
+  {
+   "t": "2026-09-22T19:35:56Z",
+   "v": 675.15
   }
  ],
  "started": "2026-09-10T17:17:16Z"
