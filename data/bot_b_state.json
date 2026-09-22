@@ -13,7 +13,8 @@
    "cur_price": 0.0003903,
    "mark": 0.0003903,
    "added": true,
-   "tp1": true
+   "tp1": true,
+   "no_quote_since": "2026-09-22T16:01:04Z"
   },
   "2UVDQZ4CB66CmJ3kXZx3ba6nzJbBhbpJsxRFT6J29c9z": {
    "sym": "BITCORN",
@@ -24,11 +25,10 @@
    "entry": 0.0006124893986089687,
    "entry_liq": 69945.5,
    "entry_vol": 287087.29,
-   "cur_price": 0.0008482,
-   "mark": 0.0008482,
+   "cur_price": 0.0008598,
+   "mark": 0.0008598,
    "added": true,
-   "tp1": true,
-   "no_quote_since": "2026-09-22T15:56:05Z"
+   "tp1": true
   },
   "2hkhFLWQKUcvUNh7eUkfZVz3rYfxXqFNeVLYMotrzFky": {
    "sym": "ALICE",
@@ -12361,6 +12361,10 @@
   {
    "t": "2026-09-22T15:56:05Z",
    "v": 366.19
+  },
+  {
+   "t": "2026-09-22T16:01:04Z",
+   "v": 366.79
   }
  ],
  "started": "2026-09-11T10:50:37Z",
@@ -12386,6 +12390,6 @@
  },
  "streak": 1,
  "half_left": 2,
- "watchlist": 1027,
+ "watchlist": 1024,
  "strategy": "second_wave"
 }
