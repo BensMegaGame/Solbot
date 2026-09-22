@@ -1,5 +1,5 @@
 {
- "cash": 238.26529199999996,
+ "cash": 258.13252299999994,
  "positions": {
   "EpEfnZxQyiBXppSKi8sncc8w4corn1UJbF9G91fQpump": {
    "sym": "PEPENOM",
@@ -18,17 +18,17 @@
   },
   "2UVDQZ4CB66CmJ3kXZx3ba6nzJbBhbpJsxRFT6J29c9z": {
    "sym": "BITCORN",
-   "qty": 73535.966667,
-   "cost": 45.04,
+   "qty": 51475.176666900006,
+   "cost": 31.528,
    "opened": "2026-09-21T22:26:28Z",
-   "peak": 0.000791,
+   "peak": 0.0009265,
    "entry": 0.0006124893986089687,
    "entry_liq": 69945.5,
    "entry_vol": 287087.29,
-   "cur_price": 0.000791,
-   "mark": 0.000791,
+   "cur_price": 0.0009265,
+   "mark": 0.0009265,
    "added": true,
-   "no_quote_since": "2026-09-22T15:01:05Z"
+   "tp1": true
   },
   "2hkhFLWQKUcvUNh7eUkfZVz3rYfxXqFNeVLYMotrzFky": {
    "sym": "ALICE",
@@ -708,6 +708,21 @@
    "slip": 0.0147,
    "quote": "jup",
    "reason": "ok vol-trend 1.75 buy 0.56"
+  },
+  {
+   "t": "2026-09-22T15:06:07Z",
+   "side": "sell",
+   "sym": "BITCORN",
+   "addr": "2UVDQZ4CB66CmJ3kXZx3ba6nzJbBhbpJsxRFT6J29c9z",
+   "price": 0.0009265,
+   "usd": 19.87,
+   "pnl": 6.36,
+   "peak_x": 1.513,
+   "held_h": 16.7,
+   "frac": 0.3,
+   "slip": 0.0013,
+   "quote": "jup",
+   "reason": "tp1"
   }
  ],
  "equity": [
@@ -12302,6 +12317,10 @@
   {
    "t": "2026-09-22T15:01:05Z",
    "v": 365.53
+  },
+  {
+   "t": "2026-09-22T15:06:08Z",
+   "v": 374.92
   }
  ],
  "started": "2026-09-11T10:50:37Z",
@@ -12327,6 +12346,6 @@
  },
  "streak": 1,
  "half_left": 2,
- "watchlist": 1017,
+ "watchlist": 1029,
  "strategy": "second_wave"
 }
