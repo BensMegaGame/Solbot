@@ -1,5 +1,5 @@
 {
- "cash": 300.42283800000075,
+ "cash": 308.95331600000077,
  "positions": {
   "Hk8Uiq8CeNdmZzu1aPaT7MhvujtJifFS9kKhfpXmpaid": {
    "sym": "BOAR",
@@ -9,8 +9,8 @@
    "peak": 0.000135,
    "entry": 0.00010000262491177597,
    "liq0": 34183.36,
-   "cur_price": 0.0001105,
-   "mark": 0.0001105
+   "cur_price": 0.0001103,
+   "mark": 0.0001103
   },
   "8oopSSqdoBu89mxXusBe3njEXsFfUMzD9T7vY9SuM449": {
    "sym": "SWOGE",
@@ -31,8 +31,8 @@
    "peak": 5.962e-05,
    "entry": 4.4149310642482685e-05,
    "liq0": 22152.18,
-   "cur_price": 5.098e-05,
-   "mark": 5.098e-05
+   "cur_price": 5.035e-05,
+   "mark": 5.035e-05
   },
   "536Y2Cf53iJ64N8JsQHnVPkCTPoXLhAHx5dCRX7XW7fM": {
    "sym": "SME",
@@ -45,17 +45,6 @@
    "cur_price": 5.559e-05,
    "mark": 5.559e-05
   },
-  "D4sBdmPaDKxKThQW3Eh721R9M335VcCThn31w7CRtdkN": {
-   "sym": "TRUMPTV",
-   "qty": 143457.850267,
-   "cost": 15.02,
-   "opened": "2026-09-22T09:36:53Z",
-   "peak": 0.0001285,
-   "entry": 0.00010469974262157957,
-   "liq0": 29627.57,
-   "cur_price": 6.715e-05,
-   "mark": 6.715e-05
-  },
   "7gKKy2p1SaMkRFPX7caF96YpfuMMpDj82ZpjaffuvaU5": {
    "sym": "PARK",
    "qty": 233992.665303,
@@ -64,8 +53,8 @@
    "peak": 0.0001667,
    "entry": 6.419004621598039e-05,
    "liq0": 22379.11,
-   "cur_price": 9.643e-05,
-   "mark": 9.643e-05
+   "cur_price": 9.854e-05,
+   "mark": 9.854e-05
   }
  },
  "trades": [
@@ -2459,6 +2448,21 @@
    "slip": 0.0122,
    "quote": "jup",
    "reason": "tot"
+  },
+  {
+   "t": "2026-09-22T17:21:54Z",
+   "side": "sell",
+   "sym": "TRUMPTV",
+   "addr": "D4sBdmPaDKxKThQW3Eh721R9M335VcCThn31w7CRtdkN",
+   "price": 5.961e-05,
+   "usd": 8.53,
+   "pnl": -6.49,
+   "peak_x": 1.227,
+   "held_h": 7.8,
+   "frac": 1.0,
+   "slip": 0.0116,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -10561,6 +10565,10 @@
   {
    "t": "2026-09-22T17:16:52Z",
    "v": 396.71
+  },
+  {
+   "t": "2026-09-22T17:21:54Z",
+   "v": 395.86
   }
  ],
  "started": "2026-09-15T16:35:51Z",
