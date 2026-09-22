@@ -1,5 +1,5 @@
 {
- "cash": 391.8951043532796,
+ "cash": 76.46542608925381,
  "positions": {
   "4MMQY9bwkxxTtsK3W227Q5ABT6yFY8Pmn9Ze7wmAXKY8": {
    "sym": "ALLINU",
@@ -8,8 +8,18 @@
    "opened": "2026-09-22T02:02:08Z",
    "peak": 0.01606,
    "entry": 0.016084984232788462,
-   "mark": 0.0155,
-   "cur_price": 0.0155
+   "mark": 0.01557,
+   "cur_price": 0.01557
+  },
+  "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump": {
+   "sym": "neet",
+   "qty": 10604.111379,
+   "cost": 315.42967826402577,
+   "opened": "2026-09-22T02:47:06Z",
+   "peak": 0.02962,
+   "entry": 0.029745979365012266,
+   "no_quote_since": "2026-09-22T02:47:06Z",
+   "mark": 0.0
   }
  },
  "trades": [
@@ -357,6 +367,18 @@
    "slip": 0.0316,
    "quote": "jup",
    "reason": "dip 24h -27% (SOL +6%) 1h +0.6%"
+  },
+  {
+   "t": "2026-09-22T02:47:06Z",
+   "side": "buy",
+   "sym": "neet",
+   "addr": "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump",
+   "price": 0.02962,
+   "fill": 0.029745979365,
+   "usd": 315.43,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "dip 24h -10% (SOL +5%) 1h +0.2%"
   }
  ],
  "equity": [
@@ -5827,13 +5849,17 @@
   {
    "t": "2026-09-22T02:42:01Z",
    "v": 700.91
+  },
+  {
+   "t": "2026-09-22T02:47:06Z",
+   "v": 386.88
   }
  ],
  "started": "2026-09-16T16:55:59Z",
  "strategy": "largecap_dip",
  "universe_n": 76,
  "coverage": {
-  "t": "2026-09-22T02:42:01Z",
+  "t": "2026-09-22T02:47:06Z",
   "kurse": 76,
   "von": 76,
   "sol": true
