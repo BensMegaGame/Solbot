@@ -13,7 +13,8 @@
    "cur_price": 0.0003899,
    "mark": 0.0003899,
    "added": true,
-   "tp1": true
+   "tp1": true,
+   "no_quote_since": "2026-09-22T00:17:35Z"
   },
   "93ew6KrBKyMEGgzh78AdFBFtSPNyvXcC3Fn7iX5r28F9": {
    "sym": "NOLA",
@@ -37,8 +38,8 @@
    "entry": 0.0006124893986089687,
    "entry_liq": 69945.5,
    "entry_vol": 287087.29,
-   "cur_price": 0.0005786,
-   "mark": 0.0005786,
+   "cur_price": 0.0005739,
+   "mark": 0.0005739,
    "added": true
   }
  },
@@ -11561,6 +11562,10 @@
   {
    "t": "2026-09-22T00:12:50Z",
    "v": 346.1
+  },
+  {
+   "t": "2026-09-22T00:17:35Z",
+   "v": 345.76
   }
  ],
  "started": "2026-09-11T10:50:37Z",
@@ -11585,6 +11590,6 @@
  },
  "streak": 0,
  "half_left": 3,
- "watchlist": 920,
+ "watchlist": 914,
  "strategy": "second_wave"
 }
