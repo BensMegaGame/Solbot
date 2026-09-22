@@ -1,5 +1,5 @@
 {
- "cash": 296.29372094111204,
+ "cash": 246.27372094111203,
  "positions": {
   "5GefefPX1mDs6ZJB1apYmz6fCTCiNJpHturZ9bvFpump": {
    "sym": "Pumpoween",
@@ -19,8 +19,8 @@
    "opened": "2026-09-19T10:20:24Z",
    "peak": 0.0005905,
    "entry": 0.0003514762129772813,
-   "cur_price": 0.0002142,
-   "mark": 0.0002142
+   "cur_price": 0.0002129,
+   "mark": 0.0002129
   },
   "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": {
    "sym": "baton",
@@ -29,8 +29,8 @@
    "opened": "2026-09-20T07:10:35Z",
    "peak": 0.003719,
    "entry": 0.002418474532937626,
-   "cur_price": 0.001995,
-   "mark": 0.001995
+   "cur_price": 0.001953,
+   "mark": 0.001953
   },
   "6LrDt7nBiHraUuk9PZoUL8Qy9WX6pnSpDz1RkWWRR7hN": {
    "sym": "INU",
@@ -39,8 +39,8 @@
    "opened": "2026-09-20T08:20:42Z",
    "peak": 0.00227,
    "entry": 0.0011133469268269946,
-   "cur_price": 0.0007303,
-   "mark": 0.0007303,
+   "cur_price": 0.0007076,
+   "mark": 0.0007076,
    "tp0": true
   },
   "DFQHUegJWE29Xu3BUxPezqi77uyHURRyxJpdtyvLpump": {
@@ -50,8 +50,8 @@
    "opened": "2026-09-21T21:55:43Z",
    "peak": 0.0001382,
    "entry": 0.0001242547757563107,
-   "cur_price": 9.891e-05,
-   "mark": 9.891e-05
+   "cur_price": 9.575e-05,
+   "mark": 9.575e-05
   },
   "4JHXtNwMogExmcxXB1Ykb1A9s6yyAWKYG7xRurnT14Ws": {
    "sym": "BABYCATE",
@@ -60,8 +60,18 @@
    "opened": "2026-09-22T00:10:51Z",
    "peak": 0.0002998,
    "entry": 0.0002684859957574503,
-   "cur_price": 0.0001957,
-   "mark": 0.0001957
+   "cur_price": 0.0001958,
+   "mark": 0.0001958
+  },
+  "ESr3bceJxEaMgRunL8ruQMTSuZQ9gyLV8GCMxy61pump": {
+   "sym": "BUFFETT",
+   "qty": 223157.643542,
+   "cost": 50.02,
+   "opened": "2026-09-22T05:30:23Z",
+   "peak": 0.0002614,
+   "entry": 0.00022414647872272343,
+   "cur_price": 0.0002614,
+   "mark": 0.0002614
   }
  },
  "trades": [
@@ -1337,6 +1347,18 @@
    "slip": 0.0593,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-22T05:30:23Z",
+   "side": "buy",
+   "sym": "BUFFETT",
+   "addr": "ESr3bceJxEaMgRunL8ruQMTSuZQ9gyLV8GCMxy61pump",
+   "price": 0.0002614,
+   "fill": 0.000224146479,
+   "usd": 50.02,
+   "slip": 0.0188,
+   "quote": "jup",
+   "reason": "screener"
   }
  ],
  "equity": [
@@ -12499,6 +12521,10 @@
   {
    "t": "2026-09-22T05:25:56Z",
    "v": 528.37
+  },
+  {
+   "t": "2026-09-22T05:30:57Z",
+   "v": 533.61
   }
  ],
  "started": "2026-09-10T17:17:16Z"
