@@ -1,17 +1,6 @@
 {
- "cash": 232.2999625897096,
+ "cash": 83.18925509059426,
  "positions": {
-  "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump": {
-   "sym": "neet",
-   "qty": 5302.0556895,
-   "cost": 157.71483913201288,
-   "opened": "2026-09-22T02:47:06Z",
-   "peak": 0.0374,
-   "entry": 0.029745979365012266,
-   "mark": 0.0358,
-   "cur_price": 0.0358,
-   "tp1": true
-  },
   "HgBRWfYxEfvPhtqkaeymCQtHCrKE46qQ43pKe8HCpump": {
    "sym": "Bert",
    "qty": 20172.624334,
@@ -19,8 +8,18 @@
    "opened": "2026-09-22T16:11:55Z",
    "peak": 0.01608,
    "entry": 0.015579167008521173,
-   "mark": 0.01582,
-   "cur_price": 0.01582
+   "mark": 0.01583,
+   "cur_price": 0.01583
+  },
+  "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx": {
+   "sym": "STONK",
+   "qty": 1000.080154457,
+   "cost": 329.2074134991153,
+   "opened": "2026-09-22T18:52:02Z",
+   "peak": 0.328,
+   "entry": 0.3291810281725474,
+   "no_quote_since": "2026-09-22T18:52:02Z",
+   "mark": 0.0
   }
  },
  "trades": [
@@ -422,6 +421,33 @@
    "slip": 0.0,
    "quote": "jup",
    "reason": "tp1"
+  },
+  {
+   "t": "2026-09-22T18:51:59Z",
+   "side": "sell",
+   "sym": "neet",
+   "addr": "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump",
+   "price": 0.03417,
+   "usd": 180.1,
+   "pnl": 22.38,
+   "peak_x": 1.257,
+   "held_h": 16.1,
+   "frac": 1.0,
+   "slip": 0.0015,
+   "quote": "jup",
+   "reason": "trail"
+  },
+  {
+   "t": "2026-09-22T18:52:02Z",
+   "side": "buy",
+   "sym": "STONK",
+   "addr": "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx",
+   "price": 0.328,
+   "fill": 0.329181028173,
+   "usd": 329.21,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "dip 24h -16% (SOL -0%) 1h +1.0%"
   }
  ],
  "equity": [
@@ -6664,13 +6690,17 @@
   {
    "t": "2026-09-22T18:46:55Z",
    "v": 741.24
+  },
+  {
+   "t": "2026-09-22T18:52:02Z",
+   "v": 402.52
   }
  ],
  "started": "2026-09-16T16:55:59Z",
  "strategy": "largecap_dip",
  "universe_n": 81,
  "coverage": {
-  "t": "2026-09-22T18:46:55Z",
+  "t": "2026-09-22T18:52:02Z",
   "kurse": 81,
   "von": 81,
   "sol": true
