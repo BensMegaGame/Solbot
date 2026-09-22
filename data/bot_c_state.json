@@ -20,8 +20,8 @@
    "peak": 0.03237,
    "entry": 0.03296385847135289,
    "entry_liq": 1890130.03,
-   "cur_price": 0.03326,
-   "mark": 0.03326
+   "cur_price": 0.03335,
+   "mark": 0.03335
   },
   "BZLbGTNCSFfoth2GYDtwr7e4imWzpR5jqcUuGEwr646K": {
    "sym": "IO",
@@ -31,8 +31,8 @@
    "peak": 0.1472,
    "entry": 0.1481267446354331,
    "entry_liq": 68794.66,
-   "cur_price": 0.1555,
-   "mark": 0.1555
+   "cur_price": 0.1559,
+   "mark": 0.1559
   }
  },
  "trades": [
@@ -2393,13 +2393,17 @@
   {
    "t": "2026-09-22T20:56:43Z",
    "v": 515.72
+  },
+  {
+   "t": "2026-09-22T21:01:37Z",
+   "v": 516.61
   }
  ],
  "started": "2026-09-20T20:41:21Z",
  "cooldown": {},
  "strategy": "rueckschlag_umsatzschub",
  "coverage": {
-  "t": "2026-09-22T20:56:42Z",
+  "t": "2026-09-22T21:01:37Z",
   "kurse": 132,
   "von": 171,
   "kerzen": 167,
