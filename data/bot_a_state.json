@@ -1,17 +1,6 @@
 {
- "cash": 400.27786194111206,
+ "cash": 464.58367894111205,
  "positions": {
-  "5GefefPX1mDs6ZJB1apYmz6fCTCiNJpHturZ9bvFpump": {
-   "sym": "Pumpoween",
-   "qty": 90837.74199174467,
-   "cost": 37.7025,
-   "opened": "2026-09-12T21:25:13Z",
-   "peak": 0.0008701,
-   "entry": 0.0004150532496,
-   "cur_price": 0.0007161,
-   "mark": 0.0007161,
-   "tp0": true
-  },
   "B3jjDNkBw48utaFxRRSWxg4oUkN23YxodChdEf4bxhQS": {
    "sym": "BITDOG",
    "qty": 142314.040476,
@@ -19,8 +8,8 @@
    "opened": "2026-09-19T10:20:24Z",
    "peak": 0.0005905,
    "entry": 0.0003514762129772813,
-   "cur_price": 0.0002523,
-   "mark": 0.0002523
+   "cur_price": 0.0002519,
+   "mark": 0.0002519
   },
   "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": {
    "sym": "baton",
@@ -29,8 +18,8 @@
    "opened": "2026-09-20T07:10:35Z",
    "peak": 0.003719,
    "entry": 0.002418474532937626,
-   "cur_price": 0.001904,
-   "mark": 0.001904
+   "cur_price": 0.001865,
+   "mark": 0.001865
   },
   "DFQHUegJWE29Xu3BUxPezqi77uyHURRyxJpdtyvLpump": {
    "sym": "PUMPCAT",
@@ -39,8 +28,8 @@
    "opened": "2026-09-21T21:55:43Z",
    "peak": 0.0001382,
    "entry": 0.0001242547757563107,
-   "cur_price": 0.0001184,
-   "mark": 0.0001184
+   "cur_price": 0.0001197,
+   "mark": 0.0001197
   },
   "4JHXtNwMogExmcxXB1Ykb1A9s6yyAWKYG7xRurnT14Ws": {
    "sym": "BABYCATE",
@@ -49,8 +38,8 @@
    "opened": "2026-09-22T00:10:51Z",
    "peak": 0.0002998,
    "entry": 0.0002684859957574503,
-   "cur_price": 0.0002003,
-   "mark": 0.0002003
+   "cur_price": 0.0002033,
+   "mark": 0.0002033
   },
   "BP4Wic5LNKsqpmiREW6uNVEC16juvFCSd4WzVBatpump": {
    "sym": "fomopay",
@@ -59,8 +48,8 @@
    "opened": "2026-09-22T19:35:47Z",
    "peak": 0.002019,
    "entry": 0.0022678337497834765,
-   "cur_price": 0.001359,
-   "mark": 0.001359
+   "cur_price": 0.001371,
+   "mark": 0.001371
   }
  },
  "trades": [
@@ -1477,6 +1466,21 @@
    "slip": 0.0211,
    "quote": "jup",
    "reason": "screener"
+  },
+  {
+   "t": "2026-09-22T21:30:02Z",
+   "side": "sell",
+   "sym": "Pumpoween",
+   "addr": "5GefefPX1mDs6ZJB1apYmz6fCTCiNJpHturZ9bvFpump",
+   "price": 0.0007172,
+   "usd": 64.31,
+   "pnl": 26.6,
+   "peak_x": 2.096,
+   "held_h": 240.1,
+   "frac": 1.0,
+   "slip": 0.0125,
+   "quote": "jup",
+   "reason": "time"
   }
  ],
  "equity": [
@@ -13407,6 +13411,10 @@
   {
    "t": "2026-09-22T21:25:58Z",
    "v": 655.57
+  },
+  {
+   "t": "2026-09-22T21:30:55Z",
+   "v": 655.31
   }
  ],
  "started": "2026-09-10T17:17:16Z"
