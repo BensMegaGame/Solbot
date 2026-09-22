@@ -1,5 +1,5 @@
 {
- "cash": 83.18925509059426,
+ "cash": 376.7480790905943,
  "positions": {
   "HgBRWfYxEfvPhtqkaeymCQtHCrKE46qQ43pKe8HCpump": {
    "sym": "Bert",
@@ -8,18 +8,8 @@
    "opened": "2026-09-22T16:11:55Z",
    "peak": 0.01608,
    "entry": 0.015579167008521173,
-   "mark": 0.01532,
-   "cur_price": 0.01532
-  },
-  "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx": {
-   "sym": "STONK",
-   "qty": 1000.080154457,
-   "cost": 329.2074134991153,
-   "opened": "2026-09-22T18:52:02Z",
-   "peak": 0.3322,
-   "entry": 0.3291810281725474,
-   "mark": 0.2963,
-   "cur_price": 0.2963
+   "mark": 0.01531,
+   "cur_price": 0.01531
   }
  },
  "trades": [
@@ -448,6 +438,21 @@
    "slip": 0.0,
    "quote": "jup",
    "reason": "dip 24h -16% (SOL -0%) 1h +1.0%"
+  },
+  {
+   "t": "2026-09-22T23:21:51Z",
+   "side": "sell",
+   "sym": "STONK",
+   "addr": "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx",
+   "price": 0.2946,
+   "usd": 293.56,
+   "pnl": -35.65,
+   "peak_x": 1.009,
+   "held_h": 4.5,
+   "frac": 1.0,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -6906,13 +6911,17 @@
   {
    "t": "2026-09-22T23:16:50Z",
    "v": 688.56
+  },
+  {
+   "t": "2026-09-22T23:21:51Z",
+   "v": 685.59
   }
  ],
  "started": "2026-09-16T16:55:59Z",
  "strategy": "largecap_dip",
  "universe_n": 74,
  "coverage": {
-  "t": "2026-09-22T23:16:50Z",
+  "t": "2026-09-22T23:21:51Z",
   "kurse": 74,
   "von": 74,
   "sol": true
