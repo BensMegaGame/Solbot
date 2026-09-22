@@ -1,15 +1,16 @@
 {
- "cash": 48.97669358970961,
+ "cash": 232.2999625897096,
  "positions": {
   "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump": {
    "sym": "neet",
-   "qty": 10604.111379,
-   "cost": 315.42967826402577,
+   "qty": 5302.0556895,
+   "cost": 157.71483913201288,
    "opened": "2026-09-22T02:47:06Z",
-   "peak": 0.03294,
+   "peak": 0.03446,
    "entry": 0.029745979365012266,
-   "mark": 0.03268,
-   "cur_price": 0.03268
+   "mark": 0.03446,
+   "cur_price": 0.03446,
+   "tp1": true
   },
   "HgBRWfYxEfvPhtqkaeymCQtHCrKE46qQ43pKe8HCpump": {
    "sym": "Bert",
@@ -406,6 +407,21 @@
    "slip": 0.0032,
    "quote": "jup",
    "reason": "dip 24h -16% (SOL -1%) 1h +0.7%"
+  },
+  {
+   "t": "2026-09-22T18:16:56Z",
+   "side": "sell",
+   "sym": "neet",
+   "addr": "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump",
+   "price": 0.03446,
+   "usd": 183.32,
+   "pnl": 25.61,
+   "peak_x": 1.158,
+   "held_h": 15.5,
+   "frac": 0.5,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "tp1"
   }
  ],
  "equity": [
@@ -6620,13 +6636,17 @@
   {
    "t": "2026-09-22T18:11:51Z",
    "v": 718.48
+  },
+  {
+   "t": "2026-09-22T18:16:56Z",
+   "v": 737.97
   }
  ],
  "started": "2026-09-16T16:55:59Z",
  "strategy": "largecap_dip",
  "universe_n": 81,
  "coverage": {
-  "t": "2026-09-22T18:11:51Z",
+  "t": "2026-09-22T18:16:56Z",
   "kurse": 81,
   "von": 81,
   "sol": true
