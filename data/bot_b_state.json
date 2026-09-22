@@ -13,7 +13,8 @@
    "cur_price": 0.0003906,
    "mark": 0.0003906,
    "added": true,
-   "tp1": true
+   "tp1": true,
+   "no_quote_since": "2026-09-22T01:01:23Z"
   },
   "93ew6KrBKyMEGgzh78AdFBFtSPNyvXcC3Fn7iX5r28F9": {
    "sym": "NOLA",
@@ -25,7 +26,8 @@
    "entry_liq": 18640.54,
    "entry_vol": 40770.34,
    "cur_price": 4.983e-05,
-   "mark": 4.983e-05
+   "mark": 4.983e-05,
+   "no_quote_since": "2026-09-22T01:01:23Z"
   },
   "2UVDQZ4CB66CmJ3kXZx3ba6nzJbBhbpJsxRFT6J29c9z": {
    "sym": "BITCORN",
@@ -38,7 +40,8 @@
    "entry_vol": 287087.29,
    "cur_price": 0.0006518,
    "mark": 0.0006518,
-   "added": true
+   "added": true,
+   "no_quote_since": "2026-09-22T01:01:23Z"
   }
  },
  "trades": [
@@ -11595,6 +11598,10 @@
   },
   {
    "t": "2026-09-22T00:56:17Z",
+   "v": 356.23
+  },
+  {
+   "t": "2026-09-22T01:01:23Z",
    "v": 356.23
   }
  ],
