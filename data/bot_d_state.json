@@ -1,17 +1,6 @@
 {
- "cash": 320.4820810000008,
+ "cash": 331.9443360000008,
  "positions": {
-  "Hk8Uiq8CeNdmZzu1aPaT7MhvujtJifFS9kKhfpXmpaid": {
-   "sym": "BOAR",
-   "qty": 150196.057486,
-   "cost": 15.02,
-   "opened": "2026-09-20T10:01:38Z",
-   "peak": 0.000135,
-   "entry": 0.00010000262491177597,
-   "liq0": 34183.36,
-   "cur_price": 8.332e-05,
-   "mark": 8.332e-05
-  },
   "8oopSSqdoBu89mxXusBe3njEXsFfUMzD9T7vY9SuM449": {
    "sym": "SWOGE",
    "qty": 217045.218051,
@@ -20,8 +9,8 @@
    "peak": 0.0002056,
    "entry": 6.920216964407245e-05,
    "liq0": 21171.81,
-   "cur_price": 7.15e-05,
-   "mark": 7.15e-05
+   "cur_price": 6.266e-05,
+   "mark": 6.266e-05
   },
   "536Y2Cf53iJ64N8JsQHnVPkCTPoXLhAHx5dCRX7XW7fM": {
    "sym": "SME",
@@ -42,8 +31,8 @@
    "peak": 0.0001667,
    "entry": 6.419004621598039e-05,
    "liq0": 22379.11,
-   "cur_price": 0.0001009,
-   "mark": 0.0001009
+   "cur_price": 9.749e-05,
+   "mark": 9.749e-05
   }
  },
  "trades": [
@@ -2465,6 +2454,21 @@
    "held_h": 48.8,
    "frac": 1.0,
    "slip": 0.0041,
+   "quote": "jup",
+   "reason": "tot"
+  },
+  {
+   "t": "2026-09-22T23:01:47Z",
+   "side": "sell",
+   "sym": "BOAR",
+   "addr": "Hk8Uiq8CeNdmZzu1aPaT7MhvujtJifFS9kKhfpXmpaid",
+   "price": 7.666e-05,
+   "usd": 11.46,
+   "pnl": -3.56,
+   "peak_x": 1.35,
+   "held_h": 61.0,
+   "frac": 1.0,
+   "slip": 0.0017,
    "quote": "jup",
    "reason": "tot"
   }
@@ -10841,6 +10845,10 @@
   {
    "t": "2026-09-22T22:56:44Z",
    "v": 384.63
+  },
+  {
+   "t": "2026-09-22T23:01:48Z",
+   "v": 380.87
   }
  ],
  "started": "2026-09-15T16:35:51Z",
