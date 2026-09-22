@@ -13,7 +13,8 @@
    "cur_price": 0.0003792,
    "mark": 0.0003792,
    "added": true,
-   "tp1": true
+   "tp1": true,
+   "no_quote_since": "2026-09-22T18:46:11Z"
   },
   "2UVDQZ4CB66CmJ3kXZx3ba6nzJbBhbpJsxRFT6J29c9z": {
    "sym": "BITCORN",
@@ -24,11 +25,10 @@
    "entry": 0.0006124893986089687,
    "entry_liq": 69945.5,
    "entry_vol": 287087.29,
-   "cur_price": 0.0007452,
-   "mark": 0.0007452,
+   "cur_price": 0.0007538,
+   "mark": 0.0007538,
    "added": true,
-   "tp1": true,
-   "no_quote_since": "2026-09-22T18:41:06Z"
+   "tp1": true
   }
  },
  "trades": [
@@ -12495,6 +12495,10 @@
   {
    "t": "2026-09-22T18:41:06Z",
    "v": 356.45
+  },
+  {
+   "t": "2026-09-22T18:46:11Z",
+   "v": 356.89
   }
  ],
  "started": "2026-09-11T10:50:37Z",
@@ -12521,6 +12525,6 @@
  },
  "streak": 2,
  "half_left": 2,
- "watchlist": 1051,
+ "watchlist": 1062,
  "strategy": "second_wave"
 }
