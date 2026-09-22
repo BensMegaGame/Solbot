@@ -10,8 +10,8 @@
    "entry": 0.00025491016247462393,
    "entry_liq": 92361.83,
    "entry_vol": 133147.87,
-   "cur_price": 0.0003763,
-   "mark": 0.0003763,
+   "cur_price": 0.0003802,
+   "mark": 0.0003802,
    "added": true,
    "tp1": true
   },
@@ -27,7 +27,8 @@
    "cur_price": 0.0007675,
    "mark": 0.0007675,
    "added": true,
-   "tp1": true
+   "tp1": true,
+   "no_quote_since": "2026-09-22T19:11:20Z"
   }
  },
  "trades": [
@@ -12514,6 +12515,10 @@
   {
    "t": "2026-09-22T19:06:13Z",
    "v": 357.24
+  },
+  {
+   "t": "2026-09-22T19:11:20Z",
+   "v": 357.72
   }
  ],
  "started": "2026-09-11T10:50:37Z",
@@ -12540,6 +12545,6 @@
  },
  "streak": 2,
  "half_left": 2,
- "watchlist": 1058,
+ "watchlist": 1057,
  "strategy": "second_wave"
 }
