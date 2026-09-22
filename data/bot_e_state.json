@@ -1,6 +1,17 @@
 {
- "cash": 712.5729170059628,
- "positions": {},
+ "cash": 391.8951043532796,
+ "positions": {
+  "4MMQY9bwkxxTtsK3W227Q5ABT6yFY8Pmn9Ze7wmAXKY8": {
+   "sym": "ALLINU",
+   "qty": 19936.470438,
+   "cost": 320.67781265268326,
+   "opened": "2026-09-22T02:02:08Z",
+   "peak": 0.0159,
+   "entry": 0.016084984232788462,
+   "no_quote_since": "2026-09-22T02:02:08Z",
+   "mark": 0.0
+  }
+ },
  "trades": [
   {
    "t": "2026-09-16T17:20:59Z",
@@ -334,6 +345,18 @@
    "slip": 0.0005,
    "quote": "jup",
    "reason": "trail"
+  },
+  {
+   "t": "2026-09-22T02:02:08Z",
+   "side": "buy",
+   "sym": "ALLINU",
+   "addr": "4MMQY9bwkxxTtsK3W227Q5ABT6yFY8Pmn9Ze7wmAXKY8",
+   "price": 0.0159,
+   "fill": 0.016084984233,
+   "usd": 320.68,
+   "slip": 0.0316,
+   "quote": "jup",
+   "reason": "dip 24h -27% (SOL +6%) 1h +0.6%"
   }
  ],
  "equity": [
@@ -5768,13 +5791,17 @@
   {
    "t": "2026-09-22T01:57:00Z",
    "v": 712.57
+  },
+  {
+   "t": "2026-09-22T02:02:08Z",
+   "v": 391.9
   }
  ],
  "started": "2026-09-16T16:55:59Z",
  "strategy": "largecap_dip",
  "universe_n": 76,
  "coverage": {
-  "t": "2026-09-22T01:57:00Z",
+  "t": "2026-09-22T02:02:08Z",
   "kurse": 76,
   "von": 76,
   "sol": true
