@@ -1,5 +1,5 @@
 {
- "cash": 278.2498700000008,
+ "cash": 263.2298700000008,
  "positions": {
   "4ijnHeHgNnXmg45rhUV6aETFSbTwvjJG2Zmd1MePMevW": {
    "sym": "BCC",
@@ -20,8 +20,8 @@
    "peak": 0.0004925,
    "entry": 0.00013098995157442874,
    "liq0": 39116.19,
-   "cur_price": 0.000411,
-   "mark": 0.000411
+   "cur_price": 0.0004095,
+   "mark": 0.0004095
   },
   "Hk8Uiq8CeNdmZzu1aPaT7MhvujtJifFS9kKhfpXmpaid": {
    "sym": "BOAR",
@@ -42,8 +42,8 @@
    "peak": 0.0002056,
    "entry": 6.920216964407245e-05,
    "liq0": 21171.81,
-   "cur_price": 8.942e-05,
-   "mark": 8.942e-05
+   "cur_price": 8.844e-05,
+   "mark": 8.844e-05
   },
   "9LuwgFQemAoV9rgVBBtwbRSxBmamcRRbysEK8yL2pump": {
    "sym": "BRAIN",
@@ -75,8 +75,19 @@
    "peak": 0.0001062,
    "entry": 6.280615975374175e-05,
    "liq0": 26558.66,
-   "cur_price": 5.514e-05,
-   "mark": 5.514e-05
+   "cur_price": 5.429e-05,
+   "mark": 5.429e-05
+  },
+  "AP5YnCZRFHayveJ1zSSWeGpB1Hps4v8pLJ6ASmXLMD6M": {
+   "sym": "SUICAT",
+   "qty": 95005.349699,
+   "cost": 15.02,
+   "opened": "2026-09-22T08:26:54Z",
+   "peak": 0.0001482,
+   "entry": 0.00015809636033746525,
+   "liq0": 39802.82,
+   "cur_price": 0.0001482,
+   "mark": 0.0001482
   }
  },
  "trades": [
@@ -2374,6 +2385,18 @@
    "slip": 0.0501,
    "quote": "jup",
    "reason": "tot"
+  },
+  {
+   "t": "2026-09-22T08:26:54Z",
+   "side": "buy",
+   "sym": "SUICAT",
+   "addr": "AP5YnCZRFHayveJ1zSSWeGpB1Hps4v8pLJ6ASmXLMD6M",
+   "price": 0.0001482,
+   "fill": 0.00015809636,
+   "usd": 15.02,
+   "slip": 0.0409,
+   "quote": "jup",
+   "reason": "longshot"
   }
  ],
  "equity": [
@@ -10048,6 +10071,10 @@
   {
    "t": "2026-09-22T08:21:46Z",
    "v": 422.69
+  },
+  {
+   "t": "2026-09-22T08:26:59Z",
+   "v": 421.16
   }
  ],
  "started": "2026-09-15T16:35:51Z",
