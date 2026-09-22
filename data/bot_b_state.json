@@ -27,7 +27,8 @@
    "entry_vol": 287087.29,
    "cur_price": 0.0006209,
    "mark": 0.0006209,
-   "added": true
+   "added": true,
+   "no_quote_since": "2026-09-22T09:36:12Z"
   },
   "2hkhFLWQKUcvUNh7eUkfZVz3rYfxXqFNeVLYMotrzFky": {
    "sym": "ALICE",
@@ -39,8 +40,7 @@
    "entry_liq": 87414.11,
    "entry_vol": 173294.8,
    "cur_price": 0.000575,
-   "mark": 0.000575,
-   "no_quote_since": "2026-09-22T09:31:14Z"
+   "mark": 0.000575
   }
  },
  "trades": [
@@ -12037,6 +12037,10 @@
   {
    "t": "2026-09-22T09:31:14Z",
    "v": 351.03
+  },
+  {
+   "t": "2026-09-22T09:36:12Z",
+   "v": 351.03
   }
  ],
  "started": "2026-09-11T10:50:37Z",
@@ -12062,6 +12066,6 @@
  },
  "streak": 1,
  "half_left": 2,
- "watchlist": 978,
+ "watchlist": 983,
  "strategy": "second_wave"
 }

@@ -1,5 +1,5 @@
 {
- "cash": 263.2298700000008,
+ "cash": 248.2098700000008,
  "positions": {
   "4ijnHeHgNnXmg45rhUV6aETFSbTwvjJG2Zmd1MePMevW": {
    "sym": "BCC",
@@ -9,8 +9,8 @@
    "peak": 0.0002447,
    "entry": 6.871690878708447e-05,
    "liq0": 23137.39,
-   "cur_price": 6.382e-05,
-   "mark": 6.382e-05
+   "cur_price": 6.494e-05,
+   "mark": 6.494e-05
   },
   "AQVcP67EpMyu4cBZZjqMu91cVsWy1aX98JmcZm1FyY9": {
    "sym": "AQUA",
@@ -20,8 +20,8 @@
    "peak": 0.0004925,
    "entry": 0.00013098995157442874,
    "liq0": 39116.19,
-   "cur_price": 0.0004149,
-   "mark": 0.0004149
+   "cur_price": 0.0004126,
+   "mark": 0.0004126
   },
   "Hk8Uiq8CeNdmZzu1aPaT7MhvujtJifFS9kKhfpXmpaid": {
    "sym": "BOAR",
@@ -31,8 +31,8 @@
    "peak": 0.000135,
    "entry": 0.00010000262491177597,
    "liq0": 34183.36,
-   "cur_price": 0.0001099,
-   "mark": 0.0001099
+   "cur_price": 0.000111,
+   "mark": 0.000111
   },
   "8oopSSqdoBu89mxXusBe3njEXsFfUMzD9T7vY9SuM449": {
    "sym": "SWOGE",
@@ -53,8 +53,8 @@
    "peak": 5.962e-05,
    "entry": 4.4149310642482685e-05,
    "liq0": 22152.18,
-   "cur_price": 4.905e-05,
-   "mark": 4.905e-05
+   "cur_price": 4.849e-05,
+   "mark": 4.849e-05
   },
   "GNq9jVow6MayA3xM2AfGygh58gMu1vY6wajiXDXZCZu": {
    "sym": "PMARCA",
@@ -86,8 +86,19 @@
    "peak": 0.0001987,
    "entry": 0.00015809636033746525,
    "liq0": 39802.82,
-   "cur_price": 0.0001987,
-   "mark": 0.0001987
+   "cur_price": 0.0001865,
+   "mark": 0.0001865
+  },
+  "D4sBdmPaDKxKThQW3Eh721R9M335VcCThn31w7CRtdkN": {
+   "sym": "TRUMPTV",
+   "qty": 143457.850267,
+   "cost": 15.02,
+   "opened": "2026-09-22T09:36:53Z",
+   "peak": 0.0001024,
+   "entry": 0.00010469974262157957,
+   "liq0": 29627.57,
+   "cur_price": 0.0001024,
+   "mark": 0.0001024
   }
  },
  "trades": [
@@ -2395,6 +2406,18 @@
    "fill": 0.00015809636,
    "usd": 15.02,
    "slip": 0.0409,
+   "quote": "jup",
+   "reason": "longshot"
+  },
+  {
+   "t": "2026-09-22T09:36:53Z",
+   "side": "buy",
+   "sym": "TRUMPTV",
+   "addr": "D4sBdmPaDKxKThQW3Eh721R9M335VcCThn31w7CRtdkN",
+   "price": 0.0001024,
+   "fill": 0.000104699743,
+   "usd": 15.02,
+   "slip": 0.0218,
    "quote": "jup",
    "reason": "longshot"
   }
@@ -10127,6 +10150,10 @@
   {
    "t": "2026-09-22T09:31:51Z",
    "v": 428.71
+  },
+  {
+   "t": "2026-09-22T09:36:54Z",
+   "v": 427.18
   }
  ],
  "started": "2026-09-15T16:35:51Z",
