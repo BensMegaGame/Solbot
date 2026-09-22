@@ -6,15 +6,14 @@
    "qty": 123682.78963040002,
    "cost": 31.528,
    "opened": "2026-09-20T04:46:25Z",
-   "peak": 0.0004031,
+   "peak": 0.0004049,
    "entry": 0.00025491016247462393,
    "entry_liq": 92361.83,
    "entry_vol": 133147.87,
-   "cur_price": 0.0003979,
-   "mark": 0.0003979,
+   "cur_price": 0.0004049,
+   "mark": 0.0004049,
    "added": true,
-   "tp1": true,
-   "no_quote_since": "2026-09-22T12:46:11Z"
+   "tp1": true
   },
   "2UVDQZ4CB66CmJ3kXZx3ba6nzJbBhbpJsxRFT6J29c9z": {
    "sym": "BITCORN",
@@ -27,7 +26,8 @@
    "entry_vol": 287087.29,
    "cur_price": 0.0006202,
    "mark": 0.0006202,
-   "added": true
+   "added": true,
+   "no_quote_since": "2026-09-22T12:51:08Z"
   },
   "2hkhFLWQKUcvUNh7eUkfZVz3rYfxXqFNeVLYMotrzFky": {
    "sym": "ALICE",
@@ -12192,6 +12192,10 @@
   {
    "t": "2026-09-22T12:46:11Z",
    "v": 353.64
+  },
+  {
+   "t": "2026-09-22T12:51:08Z",
+   "v": 354.5
   }
  ],
  "started": "2026-09-11T10:50:37Z",
@@ -12217,6 +12221,6 @@
  },
  "streak": 1,
  "half_left": 2,
- "watchlist": 1004,
+ "watchlist": 1003,
  "strategy": "second_wave"
 }
