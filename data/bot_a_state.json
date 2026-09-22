@@ -1,5 +1,5 @@
 {
- "cash": 405.19416594111203,
+ "cash": 450.29786194111205,
  "positions": {
   "5GefefPX1mDs6ZJB1apYmz6fCTCiNJpHturZ9bvFpump": {
    "sym": "Pumpoween",
@@ -19,8 +19,8 @@
    "opened": "2026-09-19T10:20:24Z",
    "peak": 0.0005905,
    "entry": 0.0003514762129772813,
-   "cur_price": 0.0002761,
-   "mark": 0.0002761
+   "cur_price": 0.000277,
+   "mark": 0.000277
   },
   "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": {
    "sym": "baton",
@@ -29,8 +29,8 @@
    "opened": "2026-09-20T07:10:35Z",
    "peak": 0.003719,
    "entry": 0.002418474532937626,
-   "cur_price": 0.00228,
-   "mark": 0.00228
+   "cur_price": 0.002255,
+   "mark": 0.002255
   },
   "DFQHUegJWE29Xu3BUxPezqi77uyHURRyxJpdtyvLpump": {
    "sym": "PUMPCAT",
@@ -39,8 +39,8 @@
    "opened": "2026-09-21T21:55:43Z",
    "peak": 0.0001382,
    "entry": 0.0001242547757563107,
-   "cur_price": 0.0001224,
-   "mark": 0.0001224
+   "cur_price": 0.0001221,
+   "mark": 0.0001221
   },
   "4JHXtNwMogExmcxXB1Ykb1A9s6yyAWKYG7xRurnT14Ws": {
    "sym": "BABYCATE",
@@ -49,20 +49,8 @@
    "opened": "2026-09-22T00:10:51Z",
    "peak": 0.0002998,
    "entry": 0.0002684859957574503,
-   "cur_price": 0.0002196,
-   "mark": 0.0002196
-  },
-  "C3b3fpyRWsJf3bo6vay2vo1bQ7CezwumZwTrP82Lpump": {
-   "sym": "Tokens",
-   "qty": 154746.75875062498,
-   "cost": 18.7575,
-   "opened": "2026-09-22T06:30:22Z",
-   "peak": 0.0005056,
-   "entry": 0.00012121417050309781,
-   "cur_price": 0.0003633,
-   "mark": 0.0003633,
-   "tp0": true,
-   "tp1": true
+   "cur_price": 0.0002208,
+   "mark": 0.0002208
   }
  },
  "trades": [
@@ -1452,6 +1440,21 @@
    "slip": 0.0069,
    "quote": "jup",
    "reason": "tp1"
+  },
+  {
+   "t": "2026-09-22T14:20:07Z",
+   "side": "sell",
+   "sym": "Tokens",
+   "addr": "C3b3fpyRWsJf3bo6vay2vo1bQ7CezwumZwTrP82Lpump",
+   "price": 0.000323,
+   "usd": 45.1,
+   "pnl": 26.35,
+   "peak_x": 4.171,
+   "held_h": 7.8,
+   "frac": 1.0,
+   "slip": 0.0165,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
@@ -13038,6 +13041,10 @@
   {
    "t": "2026-09-22T14:15:46Z",
    "v": 702.29
+  },
+  {
+   "t": "2026-09-22T14:20:45Z",
+   "v": 690.89
   }
  ],
  "started": "2026-09-10T17:17:16Z"
