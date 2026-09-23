@@ -1,5 +1,5 @@
 {
- "cash": 316.92433600000084,
+ "cash": 327.43422200000083,
  "positions": {
   "8oopSSqdoBu89mxXusBe3njEXsFfUMzD9T7vY9SuM449": {
    "sym": "SWOGE",
@@ -12,17 +12,6 @@
    "cur_price": 6.52e-05,
    "mark": 6.52e-05
   },
-  "536Y2Cf53iJ64N8JsQHnVPkCTPoXLhAHx5dCRX7XW7fM": {
-   "sym": "SME",
-   "qty": 239148.51758,
-   "cost": 15.02,
-   "opened": "2026-09-21T08:32:36Z",
-   "peak": 0.0001062,
-   "entry": 6.280615975374175e-05,
-   "liq0": 26558.66,
-   "cur_price": 5.168e-05,
-   "mark": 5.168e-05
-  },
   "7gKKy2p1SaMkRFPX7caF96YpfuMMpDj82ZpjaffuvaU5": {
    "sym": "PARK",
    "qty": 233992.665303,
@@ -31,8 +20,8 @@
    "peak": 0.0001667,
    "entry": 6.419004621598039e-05,
    "liq0": 22379.11,
-   "cur_price": 0.0001343,
-   "mark": 0.0001343
+   "cur_price": 0.0001363,
+   "mark": 0.0001363
   },
   "Cf5oefTR54C986wvG49wRYwKkoCaRHDnhuZpd96dpump": {
    "sym": "MSC",
@@ -42,8 +31,8 @@
    "peak": 4.366e-05,
    "entry": 4.473869864942604e-05,
    "liq0": 20552.15,
-   "cur_price": 3.871e-05,
-   "mark": 3.871e-05
+   "cur_price": 4e-05,
+   "mark": 4e-05
   }
  },
  "trades": [
@@ -2494,6 +2483,21 @@
    "slip": 0.0244,
    "quote": "jup",
    "reason": "longshot"
+  },
+  {
+   "t": "2026-09-23T00:28:20Z",
+   "side": "sell",
+   "sym": "SME",
+   "addr": "536Y2Cf53iJ64N8JsQHnVPkCTPoXLhAHx5dCRX7XW7fM",
+   "price": 4.788e-05,
+   "usd": 10.51,
+   "pnl": -4.51,
+   "peak_x": 1.691,
+   "held_h": 39.9,
+   "frac": 1.0,
+   "slip": 0.0803,
+   "quote": "jup",
+   "reason": "tot"
   }
  ],
  "equity": [
@@ -10936,6 +10940,10 @@
   {
    "t": "2026-09-23T00:23:17Z",
    "v": 387.86
+  },
+  {
+   "t": "2026-09-23T00:28:20Z",
+   "v": 386.91
   }
  ],
  "started": "2026-09-15T16:35:51Z",
