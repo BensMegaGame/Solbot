@@ -1,6 +1,19 @@
 {
- "cash": 349.255429,
- "positions": {},
+ "cash": 329.235429,
+ "positions": {
+  "3bHzNdUb9Ko2EZyYvg2okPHQt1tJP8CFLZfkKrvBNtAc": {
+   "sym": "KNOWER",
+   "qty": 41330.12506,
+   "cost": 20.02,
+   "opened": "2026-09-23T14:36:05Z",
+   "peak": 0.0004632,
+   "entry": 0.0004843924370162552,
+   "entry_liq": 116129.46,
+   "entry_vol": 210572.17,
+   "cur_price": 0.0004632,
+   "mark": 0.0004632
+  }
+ },
  "trades": [
   {
    "t": "2026-09-14T12:13:02Z",
@@ -752,6 +765,18 @@
    "slip": 0.0009,
    "quote": "jup",
    "reason": "these: vol"
+  },
+  {
+   "t": "2026-09-23T14:36:05Z",
+   "side": "buy",
+   "sym": "KNOWER",
+   "addr": "3bHzNdUb9Ko2EZyYvg2okPHQt1tJP8CFLZfkKrvBNtAc",
+   "price": 0.0004632,
+   "fill": 0.000484392437,
+   "usd": 20.02,
+   "slip": 0.049,
+   "quote": "jup",
+   "reason": "ok vol-trend 2.94 buy 0.56"
   }
  ],
  "equity": [
@@ -13474,6 +13499,10 @@
   {
    "t": "2026-09-23T14:31:05Z",
    "v": 349.26
+  },
+  {
+   "t": "2026-09-23T14:36:05Z",
+   "v": 348.38
   }
  ],
  "started": "2026-09-11T10:50:37Z",
@@ -13502,7 +13531,7 @@
   "EpEfnZxQyiBXppSKi8sncc8w4corn1UJbF9G91fQpump": 20733
  },
  "streak": 2,
- "half_left": 1,
+ "half_left": 0,
  "watchlist": 1185,
  "strategy": "second_wave"
 }
