@@ -31,8 +31,8 @@
    "peak": 0.1472,
    "entry": 0.1481267446354331,
    "entry_liq": 68794.66,
-   "cur_price": 0.1597,
-   "mark": 0.1597
+   "cur_price": 0.1601,
+   "mark": 0.1601
   }
  },
  "trades": [
@@ -2597,17 +2597,21 @@
   {
    "t": "2026-09-23T01:11:43Z",
    "v": 543.86
+  },
+  {
+   "t": "2026-09-23T01:17:43Z",
+   "v": 544.3
   }
  ],
  "started": "2026-09-20T20:41:21Z",
  "cooldown": {},
  "strategy": "rueckschlag_umsatzschub",
  "coverage": {
-  "t": "2026-09-23T01:11:43Z",
+  "t": "2026-09-23T01:17:43Z",
   "kurse": 130,
   "von": 171,
   "kerzen": 167,
-  "offen": 0,
+  "offen": 17,
   "markt": true
  }
 }
