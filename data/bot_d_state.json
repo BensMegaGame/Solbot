@@ -1,5 +1,5 @@
 {
- "cash": 154.9781030000008,
+ "cash": 164.2564020000008,
  "positions": {
   "7gKKy2p1SaMkRFPX7caF96YpfuMMpDj82ZpjaffuvaU5": {
    "sym": "PARK",
@@ -9,8 +9,8 @@
    "peak": 0.0001695,
    "entry": 6.419004621598039e-05,
    "liq0": 22379.11,
-   "cur_price": 0.0001095,
-   "mark": 0.0001095
+   "cur_price": 0.000106,
+   "mark": 0.000106
   },
   "Cf5oefTR54C986wvG49wRYwKkoCaRHDnhuZpd96dpump": {
    "sym": "MSC",
@@ -31,8 +31,8 @@
    "peak": 0.000221,
    "entry": 0.00015825070168787572,
    "liq0": 46924.76,
-   "cur_price": 0.0002098,
-   "mark": 0.0002098
+   "cur_price": 0.0002127,
+   "mark": 0.0002127
   },
   "4KTPWjufFmBrw1roDYk2rvdBA2jjdvHFN6jBm2vaKVx7": {
    "sym": "*",
@@ -53,8 +53,8 @@
    "peak": 9.592e-05,
    "entry": 4.2787429816571836e-05,
    "liq0": 21940.66,
-   "cur_price": 5.119e-05,
-   "mark": 5.119e-05
+   "cur_price": 5.053e-05,
+   "mark": 5.053e-05
   },
   "3J1MYQPC2VFPfwzshXLiKYwyUF5xo9xxzH1dNjpd62kF": {
    "sym": "KEK",
@@ -67,17 +67,6 @@
    "cur_price": 9.068e-05,
    "mark": 9.068e-05
   },
-  "DXLzxcDbEwmVhoK5m8UcJM44TRcE9TCBPxNr4FkLEC2a": {
-   "sym": "WCAT",
-   "qty": 311469.039846,
-   "cost": 15.02,
-   "opened": "2026-09-23T07:26:46Z",
-   "peak": 7.62e-05,
-   "entry": 4.822309147460163e-05,
-   "liq0": 21542.06,
-   "cur_price": 2.97e-05,
-   "mark": 2.97e-05
-  },
   "9XeLTsQGL9ixYLMZUwkiGAR2oQwmCsDmv6HRvRQDXLPh": {
    "sym": "BULLFART",
    "qty": 274514.477633,
@@ -86,8 +75,8 @@
    "peak": 0.0001744,
    "entry": 5.471478273025849e-05,
    "liq0": 21266.08,
-   "cur_price": 9.765e-05,
-   "mark": 9.765e-05
+   "cur_price": 7.709e-05,
+   "mark": 7.709e-05
   },
   "AKyGUS7ueqtm4oUVBRxCNoyK7BV39HcfrXk4d6Gxpump": {
    "sym": "PUMO",
@@ -97,8 +86,8 @@
    "peak": 8.713e-05,
    "entry": 5.567990986991119e-05,
    "liq0": 19472.35,
-   "cur_price": 5.523e-05,
-   "mark": 5.523e-05
+   "cur_price": 4.672e-05,
+   "mark": 4.672e-05
   },
   "zYiF3rA8aWYUuDek3Z3po9NF4V5UDky5nji7Wr6pump": {
    "sym": "BillSmith",
@@ -108,8 +97,8 @@
    "peak": 7.383e-05,
    "entry": 5.010464612571669e-05,
    "liq0": 18505.63,
-   "cur_price": 4.361e-05,
-   "mark": 4.361e-05
+   "cur_price": 4.249e-05,
+   "mark": 4.249e-05
   },
   "9ekRaDZHa5VTFiR37CakbnnN7HoqwqC83SaMmAc8pump": {
    "sym": "PUMPPO",
@@ -119,19 +108,19 @@
    "peak": 0.0001229,
    "entry": 0.00010489939142271243,
    "liq0": 26964.87,
-   "cur_price": 0.0001206,
-   "mark": 0.0001206
+   "cur_price": 0.0001183,
+   "mark": 0.0001183
   },
   "AD7cjPhebfrtXSNmBRs6rxnawF87zCeUE2Mxc4ZmWmrH": {
    "sym": "TYGR",
    "qty": 235985.659475,
    "cost": 15.02,
    "opened": "2026-09-23T13:56:48Z",
-   "peak": 7.234e-05,
+   "peak": 7.855e-05,
    "entry": 6.364793535935686e-05,
    "liq0": 22359.41,
-   "cur_price": 6.988e-05,
-   "mark": 6.988e-05
+   "cur_price": 7.855e-05,
+   "mark": 7.855e-05
   }
  },
  "trades": [
@@ -2892,6 +2881,21 @@
    "held_h": 2.8,
    "frac": 1.0,
    "slip": 0.0323,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-23T14:51:40Z",
+   "side": "sell",
+   "sym": "WCAT",
+   "addr": "DXLzxcDbEwmVhoK5m8UcJM44TRcE9TCBPxNr4FkLEC2a",
+   "price": 2.735e-05,
+   "usd": 9.28,
+   "pnl": -5.74,
+   "peak_x": 1.58,
+   "held_h": 7.4,
+   "frac": 1.0,
+   "slip": 0.0332,
    "quote": "jup",
    "reason": "stop"
   }
@@ -12028,6 +12032,10 @@
   {
    "t": "2026-09-23T14:46:47Z",
    "v": 360.88
+  },
+  {
+   "t": "2026-09-23T14:51:41Z",
+   "v": 353.57
   }
  ],
  "started": "2026-09-15T16:35:51Z",
