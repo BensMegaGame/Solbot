@@ -1,5 +1,5 @@
 {
- "cash": 164.2564020000008,
+ "cash": 171.7471930000008,
  "positions": {
   "7gKKy2p1SaMkRFPX7caF96YpfuMMpDj82ZpjaffuvaU5": {
    "sym": "PARK",
@@ -9,8 +9,8 @@
    "peak": 0.0001695,
    "entry": 6.419004621598039e-05,
    "liq0": 22379.11,
-   "cur_price": 0.000106,
-   "mark": 0.000106
+   "cur_price": 0.0001062,
+   "mark": 0.0001062
   },
   "Cf5oefTR54C986wvG49wRYwKkoCaRHDnhuZpd96dpump": {
    "sym": "MSC",
@@ -20,8 +20,8 @@
    "peak": 9.563e-05,
    "entry": 4.473869864942604e-05,
    "liq0": 20552.15,
-   "cur_price": 5.509e-05,
-   "mark": 5.509e-05
+   "cur_price": 5.471e-05,
+   "mark": 5.471e-05
   },
   "runupS9JpTdB169taDKykxa2y8fqxghqeJYCqr9cAk3": {
    "sym": "RUNUP",
@@ -31,8 +31,8 @@
    "peak": 0.000221,
    "entry": 0.00015825070168787572,
    "liq0": 46924.76,
-   "cur_price": 0.0002127,
-   "mark": 0.0002127
+   "cur_price": 0.0001841,
+   "mark": 0.0001841
   },
   "4KTPWjufFmBrw1roDYk2rvdBA2jjdvHFN6jBm2vaKVx7": {
    "sym": "*",
@@ -53,8 +53,8 @@
    "peak": 9.592e-05,
    "entry": 4.2787429816571836e-05,
    "liq0": 21940.66,
-   "cur_price": 5.053e-05,
-   "mark": 5.053e-05
+   "cur_price": 5.637e-05,
+   "mark": 5.637e-05
   },
   "3J1MYQPC2VFPfwzshXLiKYwyUF5xo9xxzH1dNjpd62kF": {
    "sym": "KEK",
@@ -75,19 +75,8 @@
    "peak": 0.0001744,
    "entry": 5.471478273025849e-05,
    "liq0": 21266.08,
-   "cur_price": 7.709e-05,
-   "mark": 7.709e-05
-  },
-  "AKyGUS7ueqtm4oUVBRxCNoyK7BV39HcfrXk4d6Gxpump": {
-   "sym": "PUMO",
-   "qty": 269756.183785,
-   "cost": 15.02,
-   "opened": "2026-09-23T10:56:40Z",
-   "peak": 8.713e-05,
-   "entry": 5.567990986991119e-05,
-   "liq0": 19472.35,
-   "cur_price": 4.672e-05,
-   "mark": 4.672e-05
+   "cur_price": 7.686e-05,
+   "mark": 7.686e-05
   },
   "zYiF3rA8aWYUuDek3Z3po9NF4V5UDky5nji7Wr6pump": {
    "sym": "BillSmith",
@@ -98,7 +87,9 @@
    "entry": 5.010464612571669e-05,
    "liq0": 18505.63,
    "cur_price": 4.249e-05,
-   "mark": 4.249e-05
+   "mark": 4.249e-05,
+   "no_px_since": "2026-09-23T14:56:39Z",
+   "no_quote_since": "2026-09-23T14:56:39Z"
   },
   "9ekRaDZHa5VTFiR37CakbnnN7HoqwqC83SaMmAc8pump": {
    "sym": "PUMPPO",
@@ -119,8 +110,8 @@
    "peak": 7.855e-05,
    "entry": 6.364793535935686e-05,
    "liq0": 22359.41,
-   "cur_price": 7.855e-05,
-   "mark": 7.855e-05
+   "cur_price": 6.946e-05,
+   "mark": 6.946e-05
   }
  },
  "trades": [
@@ -2896,6 +2887,21 @@
    "held_h": 7.4,
    "frac": 1.0,
    "slip": 0.0332,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-23T14:56:39Z",
+   "side": "sell",
+   "sym": "PUMO",
+   "addr": "AKyGUS7ueqtm4oUVBRxCNoyK7BV39HcfrXk4d6Gxpump",
+   "price": 2.78e-05,
+   "usd": 7.49,
+   "pnl": -7.53,
+   "peak_x": 1.565,
+   "held_h": 4.0,
+   "frac": 1.0,
+   "slip": 0.0001,
    "quote": "jup",
    "reason": "stop"
   }
@@ -12036,6 +12042,10 @@
   {
    "t": "2026-09-23T14:51:41Z",
    "v": 353.57
+  },
+  {
+   "t": "2026-09-23T14:56:39Z",
+   "v": 345.5
   }
  ],
  "started": "2026-09-15T16:35:51Z",
