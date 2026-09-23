@@ -1,5 +1,5 @@
 {
- "cash": 236.9982700000009,
+ "cash": 221.9782700000009,
  "positions": {
   "8oopSSqdoBu89mxXusBe3njEXsFfUMzD9T7vY9SuM449": {
    "sym": "SWOGE",
@@ -9,8 +9,8 @@
    "peak": 0.0002056,
    "entry": 6.920216964407245e-05,
    "liq0": 21171.81,
-   "cur_price": 9.467e-05,
-   "mark": 9.467e-05
+   "cur_price": 8.369e-05,
+   "mark": 8.369e-05
   },
   "7gKKy2p1SaMkRFPX7caF96YpfuMMpDj82ZpjaffuvaU5": {
    "sym": "PARK",
@@ -31,8 +31,8 @@
    "peak": 6.404e-05,
    "entry": 4.473869864942604e-05,
    "liq0": 20552.15,
-   "cur_price": 6.358e-05,
-   "mark": 6.358e-05
+   "cur_price": 5.749e-05,
+   "mark": 5.749e-05
   },
   "runupS9JpTdB169taDKykxa2y8fqxghqeJYCqr9cAk3": {
    "sym": "RUNUP",
@@ -42,8 +42,8 @@
    "peak": 0.000204,
    "entry": 0.00015825070168787572,
    "liq0": 46924.76,
-   "cur_price": 0.0001485,
-   "mark": 0.0001485
+   "cur_price": 0.0001489,
+   "mark": 0.0001489
   },
   "4KTPWjufFmBrw1roDYk2rvdBA2jjdvHFN6jBm2vaKVx7": {
    "sym": "*",
@@ -53,8 +53,8 @@
    "peak": 4.254e-05,
    "entry": 2.0061343551629507e-05,
    "liq0": 26085.35,
-   "cur_price": 2.412e-05,
-   "mark": 2.412e-05
+   "cur_price": 2.432e-05,
+   "mark": 2.432e-05
   },
   "FiyPnPU7nPgx73A94pntqUPhyfBPhMM54u25DWMzTwkH": {
    "sym": "APED",
@@ -64,8 +64,8 @@
    "peak": 5.214e-05,
    "entry": 4.2787429816571836e-05,
    "liq0": 21940.66,
-   "cur_price": 4.64e-05,
-   "mark": 4.64e-05
+   "cur_price": 4.408e-05,
+   "mark": 4.408e-05
   },
   "3J1MYQPC2VFPfwzshXLiKYwyUF5xo9xxzH1dNjpd62kF": {
    "sym": "KEK",
@@ -86,8 +86,19 @@
    "peak": 4.692e-05,
    "entry": 4.822309147460163e-05,
    "liq0": 21542.06,
-   "cur_price": 4.215e-05,
-   "mark": 4.215e-05
+   "cur_price": 4.188e-05,
+   "mark": 4.188e-05
+  },
+  "3y4KW6Yere8NAjVSPVVWEXkUoDfXV8b6t3EDGS2W5wP2": {
+   "sym": "BAKARI",
+   "qty": 120430.166985,
+   "cost": 15.02,
+   "opened": "2026-09-23T07:56:48Z",
+   "peak": 0.000123,
+   "entry": 0.00012471958128124818,
+   "liq0": 32723.42,
+   "cur_price": 0.000123,
+   "mark": 0.000123
   }
  },
  "trades": [
@@ -2665,6 +2676,18 @@
    "fill": 4.8223091e-05,
    "usd": 15.02,
    "slip": 0.0,
+   "quote": "jup",
+   "reason": "longshot"
+  },
+  {
+   "t": "2026-09-23T07:56:48Z",
+   "side": "buy",
+   "sym": "BAKARI",
+   "addr": "3y4KW6Yere8NAjVSPVVWEXkUoDfXV8b6t3EDGS2W5wP2",
+   "price": 0.000123,
+   "fill": 0.000124719581,
+   "usd": 15.02,
+   "slip": 0.0104,
    "quote": "jup",
    "reason": "longshot"
   }
@@ -11469,6 +11492,10 @@
   {
    "t": "2026-09-23T07:51:46Z",
    "v": 387.97
+  },
+  {
+   "t": "2026-09-23T07:56:49Z",
+   "v": 382.62
   }
  ],
  "started": "2026-09-15T16:35:51Z",
