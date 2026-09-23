@@ -1,5 +1,5 @@
 {
- "cash": 243.4451890000009,
+ "cash": 252.0182700000009,
  "positions": {
   "8oopSSqdoBu89mxXusBe3njEXsFfUMzD9T7vY9SuM449": {
    "sym": "SWOGE",
@@ -9,8 +9,8 @@
    "peak": 0.0002056,
    "entry": 6.920216964407245e-05,
    "liq0": 21171.81,
-   "cur_price": 5.804e-05,
-   "mark": 5.804e-05
+   "cur_price": 5.872e-05,
+   "mark": 5.872e-05
   },
   "7gKKy2p1SaMkRFPX7caF96YpfuMMpDj82ZpjaffuvaU5": {
    "sym": "PARK",
@@ -20,8 +20,8 @@
    "peak": 0.0001695,
    "entry": 6.419004621598039e-05,
    "liq0": 22379.11,
-   "cur_price": 0.0001349,
-   "mark": 0.0001349
+   "cur_price": 0.0001347,
+   "mark": 0.0001347
   },
   "Cf5oefTR54C986wvG49wRYwKkoCaRHDnhuZpd96dpump": {
    "sym": "MSC",
@@ -31,8 +31,8 @@
    "peak": 6.404e-05,
    "entry": 4.473869864942604e-05,
    "liq0": 20552.15,
-   "cur_price": 5.809e-05,
-   "mark": 5.809e-05
+   "cur_price": 6.059e-05,
+   "mark": 6.059e-05
   },
   "runupS9JpTdB169taDKykxa2y8fqxghqeJYCqr9cAk3": {
    "sym": "RUNUP",
@@ -42,8 +42,8 @@
    "peak": 0.000204,
    "entry": 0.00015825070168787572,
    "liq0": 46924.76,
-   "cur_price": 0.0001608,
-   "mark": 0.0001608
+   "cur_price": 0.0001601,
+   "mark": 0.0001601
   },
   "4KTPWjufFmBrw1roDYk2rvdBA2jjdvHFN6jBm2vaKVx7": {
    "sym": "*",
@@ -64,19 +64,8 @@
    "peak": 5.214e-05,
    "entry": 4.2787429816571836e-05,
    "liq0": 21940.66,
-   "cur_price": 4.978e-05,
-   "mark": 4.978e-05
-  },
-  "DEuwDKst8JDNRcuRjth6Vhpk98FSZwenv1TZZvz1a8ua": {
-   "sym": "SOL",
-   "qty": 203509.425097,
-   "cost": 15.02,
-   "opened": "2026-09-23T06:21:45Z",
-   "peak": 7.195e-05,
-   "entry": 7.380493553475924e-05,
-   "liq0": 28215.5,
-   "cur_price": 4.46e-05,
-   "mark": 4.46e-05
+   "cur_price": 4.981e-05,
+   "mark": 4.981e-05
   },
   "3J1MYQPC2VFPfwzshXLiKYwyUF5xo9xxzH1dNjpd62kF": {
    "sym": "KEK",
@@ -2640,6 +2629,21 @@
    "slip": 0.0253,
    "quote": "jup",
    "reason": "longshot"
+  },
+  {
+   "t": "2026-09-23T07:01:39Z",
+   "side": "sell",
+   "sym": "SOL",
+   "addr": "DEuwDKst8JDNRcuRjth6Vhpk98FSZwenv1TZZvz1a8ua",
+   "price": 4.348e-05,
+   "usd": 8.57,
+   "pnl": -6.45,
+   "peak_x": 0.975,
+   "held_h": 0.7,
+   "frac": 1.0,
+   "slip": 0.0409,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -11398,6 +11402,10 @@
   {
    "t": "2026-09-23T06:56:43Z",
    "v": 382.75
+  },
+  {
+   "t": "2026-09-23T07:01:39Z",
+   "v": 383.13
   }
  ],
  "started": "2026-09-15T16:35:51Z",
