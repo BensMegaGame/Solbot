@@ -1,5 +1,5 @@
 {
- "cash": 171.7471930000008,
+ "cash": 141.70719300000079,
  "positions": {
   "7gKKy2p1SaMkRFPX7caF96YpfuMMpDj82ZpjaffuvaU5": {
    "sym": "PARK",
@@ -20,8 +20,8 @@
    "peak": 9.563e-05,
    "entry": 4.473869864942604e-05,
    "liq0": 20552.15,
-   "cur_price": 5.471e-05,
-   "mark": 5.471e-05
+   "cur_price": 5.639e-05,
+   "mark": 5.639e-05
   },
   "runupS9JpTdB169taDKykxa2y8fqxghqeJYCqr9cAk3": {
    "sym": "RUNUP",
@@ -31,8 +31,8 @@
    "peak": 0.000221,
    "entry": 0.00015825070168787572,
    "liq0": 46924.76,
-   "cur_price": 0.0001841,
-   "mark": 0.0001841
+   "cur_price": 0.0001879,
+   "mark": 0.0001879
   },
   "4KTPWjufFmBrw1roDYk2rvdBA2jjdvHFN6jBm2vaKVx7": {
    "sym": "*",
@@ -53,8 +53,8 @@
    "peak": 9.592e-05,
    "entry": 4.2787429816571836e-05,
    "liq0": 21940.66,
-   "cur_price": 5.637e-05,
-   "mark": 5.637e-05
+   "cur_price": 5.644e-05,
+   "mark": 5.644e-05
   },
   "3J1MYQPC2VFPfwzshXLiKYwyUF5xo9xxzH1dNjpd62kF": {
    "sym": "KEK",
@@ -75,8 +75,8 @@
    "peak": 0.0001744,
    "entry": 5.471478273025849e-05,
    "liq0": 21266.08,
-   "cur_price": 7.686e-05,
-   "mark": 7.686e-05
+   "cur_price": 8.552e-05,
+   "mark": 8.552e-05
   },
   "zYiF3rA8aWYUuDek3Z3po9NF4V5UDky5nji7Wr6pump": {
    "sym": "BillSmith",
@@ -99,8 +99,8 @@
    "peak": 0.0001229,
    "entry": 0.00010489939142271243,
    "liq0": 26964.87,
-   "cur_price": 0.0001183,
-   "mark": 0.0001183
+   "cur_price": 0.0001187,
+   "mark": 0.0001187
   },
   "AD7cjPhebfrtXSNmBRs6rxnawF87zCeUE2Mxc4ZmWmrH": {
    "sym": "TYGR",
@@ -110,8 +110,30 @@
    "peak": 7.855e-05,
    "entry": 6.364793535935686e-05,
    "liq0": 22359.41,
-   "cur_price": 6.946e-05,
-   "mark": 6.946e-05
+   "cur_price": 7.547e-05,
+   "mark": 7.547e-05
+  },
+  "44J1LiJu17k25UDCjoJ3H2EMbbne5dmqn576J4ZNyBYT": {
+   "sym": "MINECOIN",
+   "qty": 103554.087277,
+   "cost": 15.02,
+   "opened": "2026-09-23T15:01:48Z",
+   "peak": 0.0001418,
+   "entry": 0.00014504497499767964,
+   "liq0": 36899.21,
+   "cur_price": 0.0001418,
+   "mark": 0.0001418
+  },
+  "L2pnNX8eBbNLYYH2Sr3riBksJJSpauQueazTJ8epump": {
+   "sym": "HACKA",
+   "qty": 111674.306616,
+   "cost": 15.02,
+   "opened": "2026-09-23T15:01:52Z",
+   "peak": 0.0001334,
+   "entry": 0.00013449826065764018,
+   "liq0": 31357.67,
+   "cur_price": 0.0001334,
+   "mark": 0.0001334
   }
  },
  "trades": [
@@ -2904,6 +2926,30 @@
    "slip": 0.0001,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-23T15:01:48Z",
+   "side": "buy",
+   "sym": "MINECOIN",
+   "addr": "44J1LiJu17k25UDCjoJ3H2EMbbne5dmqn576J4ZNyBYT",
+   "price": 0.0001418,
+   "fill": 0.000145044975,
+   "usd": 15.02,
+   "slip": 0.0465,
+   "quote": "jup",
+   "reason": "longshot"
+  },
+  {
+   "t": "2026-09-23T15:01:52Z",
+   "side": "buy",
+   "sym": "HACKA",
+   "addr": "L2pnNX8eBbNLYYH2Sr3riBksJJSpauQueazTJ8epump",
+   "price": 0.0001334,
+   "fill": 0.000134498261,
+   "usd": 15.02,
+   "slip": 0.0132,
+   "quote": "jup",
+   "reason": "longshot"
   }
  ],
  "equity": [
@@ -12046,6 +12092,10 @@
   {
    "t": "2026-09-23T14:56:39Z",
    "v": 345.5
+  },
+  {
+   "t": "2026-09-23T15:01:53Z",
+   "v": 349.85
   }
  ],
  "started": "2026-09-15T16:35:51Z",
