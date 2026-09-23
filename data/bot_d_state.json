@@ -1,5 +1,5 @@
 {
- "cash": 297.39422200000087,
+ "cash": 282.3742220000009,
  "positions": {
   "8oopSSqdoBu89mxXusBe3njEXsFfUMzD9T7vY9SuM449": {
    "sym": "SWOGE",
@@ -9,8 +9,8 @@
    "peak": 0.0002056,
    "entry": 6.920216964407245e-05,
    "liq0": 21171.81,
-   "cur_price": 7.123e-05,
-   "mark": 7.123e-05
+   "cur_price": 6.723e-05,
+   "mark": 6.723e-05
   },
   "7gKKy2p1SaMkRFPX7caF96YpfuMMpDj82ZpjaffuvaU5": {
    "sym": "PARK",
@@ -20,8 +20,8 @@
    "peak": 0.0001695,
    "entry": 6.419004621598039e-05,
    "liq0": 22379.11,
-   "cur_price": 0.0001584,
-   "mark": 0.0001584
+   "cur_price": 0.0001597,
+   "mark": 0.0001597
   },
   "Cf5oefTR54C986wvG49wRYwKkoCaRHDnhuZpd96dpump": {
    "sym": "MSC",
@@ -31,8 +31,8 @@
    "peak": 4.366e-05,
    "entry": 4.473869864942604e-05,
    "liq0": 20552.15,
-   "cur_price": 3.485e-05,
-   "mark": 3.485e-05
+   "cur_price": 3.472e-05,
+   "mark": 3.472e-05
   },
   "runupS9JpTdB169taDKykxa2y8fqxghqeJYCqr9cAk3": {
    "sym": "RUNUP",
@@ -42,8 +42,8 @@
    "peak": 0.000204,
    "entry": 0.00015825070168787572,
    "liq0": 46924.76,
-   "cur_price": 0.0001483,
-   "mark": 0.0001483
+   "cur_price": 0.0001481,
+   "mark": 0.0001481
   },
   "4KTPWjufFmBrw1roDYk2rvdBA2jjdvHFN6jBm2vaKVx7": {
    "sym": "*",
@@ -53,8 +53,19 @@
    "peak": 4.254e-05,
    "entry": 2.0061343551629507e-05,
    "liq0": 26085.35,
-   "cur_price": 3.158e-05,
-   "mark": 3.158e-05
+   "cur_price": 2.835e-05,
+   "mark": 2.835e-05
+  },
+  "ERgezJ3dtnivUSsi5c5b85ie53YyQBebqGNngibktiBT": {
+   "sym": "DEGODS",
+   "qty": 199441.592687,
+   "cost": 15.02,
+   "opened": "2026-09-23T02:57:00Z",
+   "peak": 7.391e-05,
+   "entry": 7.531026902483733e-05,
+   "liq0": 23582.51,
+   "cur_price": 7.391e-05,
+   "mark": 7.391e-05
   }
  },
  "trades": [
@@ -2542,6 +2553,18 @@
    "fill": 2.0061344e-05,
    "usd": 15.02,
    "slip": 0.0134,
+   "quote": "jup",
+   "reason": "longshot"
+  },
+  {
+   "t": "2026-09-23T02:57:00Z",
+   "side": "buy",
+   "sym": "DEGODS",
+   "addr": "ERgezJ3dtnivUSsi5c5b85ie53YyQBebqGNngibktiBT",
+   "price": 7.391e-05,
+   "fill": 7.5310269e-05,
+   "usd": 15.02,
+   "slip": 0.0,
    "quote": "jup",
    "reason": "longshot"
   }
@@ -11106,6 +11129,10 @@
   {
    "t": "2026-09-23T02:51:55Z",
    "v": 399.34
+  },
+  {
+   "t": "2026-09-23T02:57:01Z",
+   "v": 396.01
   }
  ],
  "started": "2026-09-15T16:35:51Z",
