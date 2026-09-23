@@ -1,5 +1,5 @@
 {
- "cash": 246.13884824663782,
+ "cash": 430.7418172466378,
  "positions": {
   "HgBRWfYxEfvPhtqkaeymCQtHCrKE46qQ43pKe8HCpump": {
    "sym": "Bert",
@@ -8,19 +8,8 @@
    "opened": "2026-09-22T16:11:55Z",
    "peak": 0.01608,
    "entry": 0.015579167008521173,
-   "mark": 0.01543,
-   "cur_price": 0.01543
-  },
-  "98kfF7rmsg1QDUEoCqNE7g7M1FdrTt92TEp2CLzypump": {
-   "sym": "PAID",
-   "qty": 14530.7328235,
-   "cost": 155.72039442197823,
-   "opened": "2026-09-23T01:12:05Z",
-   "peak": 0.01332,
-   "entry": 0.010716623608283373,
-   "mark": 0.01278,
-   "cur_price": 0.01278,
-   "tp1": true
+   "mark": 0.01551,
+   "cur_price": 0.01551
   }
  },
  "trades": [
@@ -491,6 +480,21 @@
    "slip": 0.0008,
    "quote": "jup",
    "reason": "tp1"
+  },
+  {
+   "t": "2026-09-23T03:21:54Z",
+   "side": "sell",
+   "sym": "PAID",
+   "addr": "98kfF7rmsg1QDUEoCqNE7g7M1FdrTt92TEp2CLzypump",
+   "price": 0.01249,
+   "usd": 184.6,
+   "pnl": 28.88,
+   "peak_x": 1.243,
+   "held_h": 2.2,
+   "frac": 1.0,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
@@ -7141,13 +7145,17 @@
   {
    "t": "2026-09-23T03:17:01Z",
    "v": 743.11
+  },
+  {
+   "t": "2026-09-23T03:21:54Z",
+   "v": 743.62
   }
  ],
  "started": "2026-09-16T16:55:59Z",
  "strategy": "largecap_dip",
  "universe_n": 74,
  "coverage": {
-  "t": "2026-09-23T03:17:01Z",
+  "t": "2026-09-23T03:21:54Z",
   "kurse": 74,
   "von": 74,
   "sol": true
