@@ -1,5 +1,5 @@
 {
- "cash": 431.8646259411121,
+ "cash": 381.8446259411121,
  "positions": {
   "B3jjDNkBw48utaFxRRSWxg4oUkN23YxodChdEf4bxhQS": {
    "sym": "BITDOG",
@@ -8,8 +8,8 @@
    "opened": "2026-09-19T10:20:24Z",
    "peak": 0.0005905,
    "entry": 0.0003514762129772813,
-   "cur_price": 0.0004451,
-   "mark": 0.0004451
+   "cur_price": 0.0004341,
+   "mark": 0.0004341
   },
   "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": {
    "sym": "baton",
@@ -18,8 +18,8 @@
    "opened": "2026-09-20T07:10:35Z",
    "peak": 0.003719,
    "entry": 0.002418474532937626,
-   "cur_price": 0.001289,
-   "mark": 0.001289
+   "cur_price": 0.001283,
+   "mark": 0.001283
   },
   "DFQHUegJWE29Xu3BUxPezqi77uyHURRyxJpdtyvLpump": {
    "sym": "PUMPCAT",
@@ -28,8 +28,8 @@
    "opened": "2026-09-21T21:55:43Z",
    "peak": 0.000267,
    "entry": 0.0001242547757563107,
-   "cur_price": 0.0002515,
-   "mark": 0.0002515,
+   "cur_price": 0.0002494,
+   "mark": 0.0002494,
    "tp0": true
   },
   "4JHXtNwMogExmcxXB1Ykb1A9s6yyAWKYG7xRurnT14Ws": {
@@ -39,8 +39,8 @@
    "opened": "2026-09-22T00:10:51Z",
    "peak": 0.000304,
    "entry": 0.0002684859957574503,
-   "cur_price": 0.0002754,
-   "mark": 0.0002754
+   "cur_price": 0.000275,
+   "mark": 0.000275
   },
   "EWgq2xUb6eVCApeQombkPxd6uFjM8j9zRUXFS9MjKTiv": {
    "sym": "CTO",
@@ -49,8 +49,8 @@
    "opened": "2026-09-23T00:45:46Z",
    "peak": 0.0008404,
    "entry": 0.0003508809823602153,
-   "cur_price": 0.0004422,
-   "mark": 0.0004422,
+   "cur_price": 0.000456,
+   "mark": 0.000456,
    "tp0": true
   },
   "77xuWiXF7PKZRW2jDD4Tkyw3M3qQkZADYNnG7h3xrndj": {
@@ -60,8 +60,18 @@
    "opened": "2026-09-23T13:10:14Z",
    "peak": 0.0002765,
    "entry": 0.0002722544160002062,
-   "cur_price": 0.0002359,
-   "mark": 0.0002359
+   "cur_price": 0.000225,
+   "mark": 0.000225
+  },
+  "26Kg27kpPHBN2MHqgrsJh3LzMZboxZyUpbeVonmpZwVm": {
+   "sym": "UCAT",
+   "qty": 298090.136869,
+   "cost": 50.02,
+   "opened": "2026-09-23T17:10:21Z",
+   "peak": 0.0001697,
+   "entry": 0.00016780159358973363,
+   "cur_price": 0.0001697,
+   "mark": 0.0001697
   }
  },
  "trades": [
@@ -1562,6 +1572,18 @@
    "slip": 0.0135,
    "quote": "jup",
    "reason": "tp0"
+  },
+  {
+   "t": "2026-09-23T17:10:21Z",
+   "side": "buy",
+   "sym": "UCAT",
+   "addr": "26Kg27kpPHBN2MHqgrsJh3LzMZboxZyUpbeVonmpZwVm",
+   "price": 0.0001697,
+   "fill": 0.000167801594,
+   "usd": 50.02,
+   "slip": 0.0292,
+   "quote": "jup",
+   "reason": "screener"
   }
  ],
  "equity": [
@@ -14436,6 +14458,10 @@
   {
    "t": "2026-09-23T17:05:54Z",
    "v": 739.73
+  },
+  {
+   "t": "2026-09-23T17:10:53Z",
+   "v": 737.37
   }
  ],
  "started": "2026-09-10T17:17:16Z"
