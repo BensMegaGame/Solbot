@@ -31,8 +31,8 @@
    "peak": 0.002949,
    "entry": 0.0031080314382412335,
    "entry_liq": 15411.63,
-   "cur_price": 0.003159,
-   "mark": 0.003159
+   "cur_price": 0.003102,
+   "mark": 0.003102
   }
  },
  "trades": [
@@ -2577,17 +2577,21 @@
   {
    "t": "2026-09-23T00:49:00Z",
    "v": 500.47
+  },
+  {
+   "t": "2026-09-23T00:52:51Z",
+   "v": 497.47
   }
  ],
  "started": "2026-09-20T20:41:43Z",
  "cooldown": {},
  "strategy": "rueckschlag_lotterie",
  "coverage": {
-  "t": "2026-09-23T00:49:00Z",
+  "t": "2026-09-23T00:52:51Z",
   "kurse": 68,
   "von": 251,
   "kerzen": 71,
-  "offen": 8,
+  "offen": 0,
   "markt": true,
   "gestoppt": false
  }
