@@ -13,7 +13,8 @@
    "cur_price": 0.0004298,
    "mark": 0.0004298,
    "added": true,
-   "tp1": true
+   "tp1": true,
+   "no_quote_since": "2026-09-23T07:11:04Z"
   },
   "7Y7V1a4m2nWK7BMgbka5B4vR1pDvCK7yva3Hnrqkraze": {
    "sym": "Nasduck",
@@ -25,7 +26,8 @@
    "entry_liq": 105561.1,
    "entry_vol": 275514.69,
    "cur_price": 0.0004997,
-   "mark": 0.0004997
+   "mark": 0.0004997,
+   "no_quote_since": "2026-09-23T07:11:04Z"
   }
  },
  "trades": [
@@ -13114,6 +13116,10 @@
   },
   {
    "t": "2026-09-23T07:06:04Z",
+   "v": 357.9
+  },
+  {
+   "t": "2026-09-23T07:11:04Z",
    "v": 357.9
   }
  ],
