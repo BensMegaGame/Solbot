@@ -1,5 +1,5 @@
 {
- "cash": 344.40847894111215,
+ "cash": 399.91226994111213,
  "positions": {
   "DFQHUegJWE29Xu3BUxPezqi77uyHURRyxJpdtyvLpump": {
    "sym": "PUMPCAT",
@@ -8,8 +8,8 @@
    "opened": "2026-09-21T21:55:43Z",
    "peak": 0.0002962,
    "entry": 0.0001242547757563107,
-   "cur_price": 0.0001511,
-   "mark": 0.0001511,
+   "cur_price": 0.0001499,
+   "mark": 0.0001499,
    "tp0": true
   },
   "4JHXtNwMogExmcxXB1Ykb1A9s6yyAWKYG7xRurnT14Ws": {
@@ -19,8 +19,8 @@
    "opened": "2026-09-22T00:10:51Z",
    "peak": 0.000304,
    "entry": 0.0002684859957574503,
-   "cur_price": 0.000222,
-   "mark": 0.000222
+   "cur_price": 0.0002177,
+   "mark": 0.0002177
   },
   "EWgq2xUb6eVCApeQombkPxd6uFjM8j9zRUXFS9MjKTiv": {
    "sym": "CTO",
@@ -40,8 +40,8 @@
    "opened": "2026-09-23T17:10:21Z",
    "peak": 0.0002323,
    "entry": 0.00016780159358973363,
-   "cur_price": 0.0001249,
-   "mark": 0.0001249
+   "cur_price": 0.0001247,
+   "mark": 0.0001247
   },
   "GY9mZfyPpxXxBXBxS2hB2XjhP3kfUsywTvgveozxpump": {
    "sym": "ELON",
@@ -50,19 +50,20 @@
    "opened": "2026-09-24T00:55:45Z",
    "peak": 0.001088,
    "entry": 0.000961174597325251,
-   "cur_price": 0.0008996,
-   "mark": 0.0008996
+   "cur_price": 0.0009261,
+   "mark": 0.0009261
   },
   "BxftAowY2dVa2h9KMqDTPk4oMxzU9k6uVbZuoorXpump": {
    "sym": "Holdoween",
-   "qty": 116846.5903605,
-   "cost": 37.515,
+   "qty": 58423.29518025,
+   "cost": 18.7575,
    "opened": "2026-09-24T07:25:23Z",
-   "peak": 0.0009151,
+   "peak": 0.0009722,
    "entry": 0.00032106200004858635,
-   "cur_price": 0.0009151,
-   "mark": 0.0009151,
-   "tp0": true
+   "cur_price": 0.0009722,
+   "mark": 0.0009722,
+   "tp0": true,
+   "tp1": true
   },
   "8Vte25yt28L8BfLXm8DrzjSYEyaKX8yry6hRKRmX7FGd": {
    "sym": "UPTOBER",
@@ -71,8 +72,8 @@
    "opened": "2026-09-24T15:45:28Z",
    "peak": 0.0003629,
    "entry": 0.0002667016296841616,
-   "cur_price": 0.0003629,
-   "mark": 0.0003629
+   "cur_price": 0.0003598,
+   "mark": 0.0003598
   }
  },
  "trades": [
@@ -1681,6 +1682,21 @@
    "slip": 0.0133,
    "quote": "jup",
    "reason": "screener"
+  },
+  {
+   "t": "2026-09-24T16:40:08Z",
+   "side": "sell",
+   "sym": "Holdoween",
+   "addr": "BxftAowY2dVa2h9KMqDTPk4oMxzU9k6uVbZuoorXpump",
+   "price": 0.0009722,
+   "usd": 55.5,
+   "pnl": 36.75,
+   "peak_x": 3.028,
+   "held_h": 9.2,
+   "frac": 0.5,
+   "slip": 0.01,
+   "quote": "jup",
+   "reason": "tp1"
   }
  ],
  "equity": [
@@ -15683,6 +15699,10 @@
   {
    "t": "2026-09-24T16:36:00Z",
    "v": 727.9
+  },
+  {
+   "t": "2026-09-24T16:40:57Z",
+   "v": 732.85
   }
  ],
  "started": "2026-09-10T17:17:16Z"
