@@ -1,5 +1,5 @@
 {
- "cash": 270.2888230000001,
+ "cash": 250.26882300000008,
  "positions": {
   "4ChT49V1iazP2XUGtycGkEsS6pRMqvGfUbqvRC9Z91ZT": {
    "sym": "MOS",
@@ -12,7 +12,8 @@
    "entry_vol": 113317.25,
    "cur_price": 0.0009245,
    "mark": 0.0009245,
-   "added": true
+   "added": true,
+   "no_quote_since": "2026-09-24T19:56:07Z"
   },
   "G5W6LwkLeoj6rZqBP1y3KT8k6Cz6rXGJmMNU3TArXtXw": {
    "sym": "STEALF",
@@ -26,6 +27,18 @@
    "cur_price": 0.0002802,
    "mark": 0.0002802,
    "no_quote_since": "2026-09-24T19:36:25Z"
+  },
+  "EpFTb2XcGiMyGLykZ9VYmyPWz2AHEwAggqSbwJpypump": {
+   "sym": "Imagine",
+   "qty": 80693.024755,
+   "cost": 20.02,
+   "opened": "2026-09-24T19:56:07Z",
+   "peak": 0.0002427,
+   "entry": 0.00024810075047731426,
+   "entry_liq": 52895.29,
+   "entry_vol": 81095.37,
+   "cur_price": 0.0002427,
+   "mark": 0.0002427
   }
  },
  "trades": [
@@ -854,6 +867,18 @@
    "slip": 0.0203,
    "quote": "jup",
    "reason": "add"
+  },
+  {
+   "t": "2026-09-24T19:56:07Z",
+   "side": "buy",
+   "sym": "Imagine",
+   "addr": "EpFTb2XcGiMyGLykZ9VYmyPWz2AHEwAggqSbwJpypump",
+   "price": 0.0002427,
+   "fill": 0.00024810075,
+   "usd": 20.02,
+   "slip": 0.0225,
+   "quote": "jup",
+   "reason": "ok vol-trend 3.47 buy 0.59"
   }
  ],
  "equity": [
@@ -14984,6 +15009,10 @@
   {
    "t": "2026-09-24T19:51:09Z",
    "v": 332.23
+  },
+  {
+   "t": "2026-09-24T19:56:07Z",
+   "v": 331.8
   }
  ],
  "started": "2026-09-11T10:50:37Z",
@@ -15014,7 +15043,7 @@
   "2pWXsELtCwtcKUyvNC6igngswUSQjVpJdY4hA4cTdjaL": 20750
  },
  "streak": 0,
- "half_left": 3,
- "watchlist": 1355,
+ "half_left": 2,
+ "watchlist": 1353,
  "strategy": "second_wave"
 }
