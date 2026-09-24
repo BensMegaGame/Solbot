@@ -11,7 +11,8 @@
    "entry_liq": 217108.63,
    "entry_vol": 113317.25,
    "cur_price": 0.001023,
-   "mark": 0.001023
+   "mark": 0.001023,
+   "no_quote_since": "2026-09-24T15:46:21Z"
   },
   "G5W6LwkLeoj6rZqBP1y3KT8k6Cz6rXGJmMNU3TArXtXw": {
    "sym": "STEALF",
@@ -22,9 +23,8 @@
    "entry": 0.0002827501488740582,
    "entry_liq": 117321.82,
    "entry_vol": 48004.91,
-   "cur_price": 0.0002895,
-   "mark": 0.0002895,
-   "no_quote_since": "2026-09-24T15:36:22Z"
+   "cur_price": 0.0002904,
+   "mark": 0.0002904
   }
  },
  "trades": [
@@ -14771,6 +14771,10 @@
   {
    "t": "2026-09-24T15:41:17Z",
    "v": 340.15
+  },
+  {
+   "t": "2026-09-24T15:46:21Z",
+   "v": 340.21
   }
  ],
  "started": "2026-09-11T10:50:37Z",
@@ -14802,6 +14806,6 @@
  },
  "streak": 0,
  "half_left": 3,
- "watchlist": 1324,
+ "watchlist": 1333,
  "strategy": "second_wave"
 }
