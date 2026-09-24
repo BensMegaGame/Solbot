@@ -1,5 +1,5 @@
 {
- "cash": 399.91226994111213,
+ "cash": 449.9192129411121,
  "positions": {
   "DFQHUegJWE29Xu3BUxPezqi77uyHURRyxJpdtyvLpump": {
    "sym": "PUMPCAT",
@@ -8,8 +8,8 @@
    "opened": "2026-09-21T21:55:43Z",
    "peak": 0.0002962,
    "entry": 0.0001242547757563107,
-   "cur_price": 0.0001495,
-   "mark": 0.0001495,
+   "cur_price": 0.0001476,
+   "mark": 0.0001476,
    "tp0": true
   },
   "4JHXtNwMogExmcxXB1Ykb1A9s6yyAWKYG7xRurnT14Ws": {
@@ -19,8 +19,8 @@
    "opened": "2026-09-22T00:10:51Z",
    "peak": 0.000304,
    "entry": 0.0002684859957574503,
-   "cur_price": 0.0002117,
-   "mark": 0.0002117
+   "cur_price": 0.000214,
+   "mark": 0.000214
   },
   "EWgq2xUb6eVCApeQombkPxd6uFjM8j9zRUXFS9MjKTiv": {
    "sym": "CTO",
@@ -40,8 +40,8 @@
    "opened": "2026-09-23T17:10:21Z",
    "peak": 0.0002323,
    "entry": 0.00016780159358973363,
-   "cur_price": 0.0001295,
-   "mark": 0.0001295
+   "cur_price": 0.0001334,
+   "mark": 0.0001334
   },
   "GY9mZfyPpxXxBXBxS2hB2XjhP3kfUsywTvgveozxpump": {
    "sym": "ELON",
@@ -50,20 +50,8 @@
    "opened": "2026-09-24T00:55:45Z",
    "peak": 0.001088,
    "entry": 0.000961174597325251,
-   "cur_price": 0.0008451,
-   "mark": 0.0008451
-  },
-  "BxftAowY2dVa2h9KMqDTPk4oMxzU9k6uVbZuoorXpump": {
-   "sym": "Holdoween",
-   "qty": 58423.29518025,
-   "cost": 18.7575,
-   "opened": "2026-09-24T07:25:23Z",
-   "peak": 0.001351,
-   "entry": 0.00032106200004858635,
-   "cur_price": 0.00101,
-   "mark": 0.00101,
-   "tp0": true,
-   "tp1": true
+   "cur_price": 0.0008381,
+   "mark": 0.0008381
   },
   "8Vte25yt28L8BfLXm8DrzjSYEyaKX8yry6hRKRmX7FGd": {
    "sym": "UPTOBER",
@@ -72,8 +60,8 @@
    "opened": "2026-09-24T15:45:28Z",
    "peak": 0.0003664,
    "entry": 0.0002667016296841616,
-   "cur_price": 0.0003428,
-   "mark": 0.0003428
+   "cur_price": 0.0003326,
+   "mark": 0.0003326
   }
  },
  "trades": [
@@ -1697,6 +1685,21 @@
    "slip": 0.01,
    "quote": "jup",
    "reason": "tp1"
+  },
+  {
+   "t": "2026-09-24T17:40:08Z",
+   "side": "sell",
+   "sym": "Holdoween",
+   "addr": "BxftAowY2dVa2h9KMqDTPk4oMxzU9k6uVbZuoorXpump",
+   "price": 0.0008759,
+   "usd": 50.01,
+   "pnl": 31.25,
+   "peak_x": 4.208,
+   "held_h": 10.2,
+   "frac": 1.0,
+   "slip": 0.0123,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
@@ -15747,6 +15750,10 @@
   {
    "t": "2026-09-24T17:35:50Z",
    "v": 725.18
+  },
+  {
+   "t": "2026-09-24T17:40:51Z",
+   "v": 714.92
   }
  ],
  "started": "2026-09-10T17:17:16Z"
