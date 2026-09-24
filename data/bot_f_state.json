@@ -9,8 +9,8 @@
    "peak": 0.00948,
    "entry": 0.009653046488540318,
    "entry_liq": 27635.81,
-   "cur_price": 0.01048,
-   "mark": 0.01048
+   "cur_price": 0.01053,
+   "mark": 0.01053
   },
   "DKu9kykSfbN5LBfFXtNNDPaX35o4Fv6vJ9FKk7pZpump": {
    "sym": "AVA",
@@ -3909,17 +3909,21 @@
   {
    "t": "2026-09-24T04:32:16Z",
    "v": 494.37
+  },
+  {
+   "t": "2026-09-24T04:37:23Z",
+   "v": 495.22
   }
  ],
  "started": "2026-09-20T20:41:43Z",
  "cooldown": {},
  "strategy": "rueckschlag_lotterie",
  "coverage": {
-  "t": "2026-09-24T04:32:16Z",
+  "t": "2026-09-24T04:37:23Z",
   "kurse": 74,
   "von": 251,
   "kerzen": 78,
-  "offen": 0,
+  "offen": 3,
   "markt": true,
   "gestoppt": false
  }
