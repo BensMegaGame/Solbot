@@ -1,5 +1,5 @@
 {
- "cash": 383.2007999411121,
+ "cash": 333.1807999411121,
  "positions": {
   "B3jjDNkBw48utaFxRRSWxg4oUkN23YxodChdEf4bxhQS": {
    "sym": "BITDOG",
@@ -8,8 +8,8 @@
    "opened": "2026-09-19T10:20:24Z",
    "peak": 0.0005905,
    "entry": 0.0003514762129772813,
-   "cur_price": 0.0003153,
-   "mark": 0.0003153
+   "cur_price": 0.0003157,
+   "mark": 0.0003157
   },
   "DFQHUegJWE29Xu3BUxPezqi77uyHURRyxJpdtyvLpump": {
    "sym": "PUMPCAT",
@@ -18,8 +18,8 @@
    "opened": "2026-09-21T21:55:43Z",
    "peak": 0.0002962,
    "entry": 0.0001242547757563107,
-   "cur_price": 0.0001976,
-   "mark": 0.0001976,
+   "cur_price": 0.0001882,
+   "mark": 0.0001882,
    "tp0": true
   },
   "4JHXtNwMogExmcxXB1Ykb1A9s6yyAWKYG7xRurnT14Ws": {
@@ -39,8 +39,8 @@
    "opened": "2026-09-23T00:45:46Z",
    "peak": 0.0008404,
    "entry": 0.0003508809823602153,
-   "cur_price": 0.0002731,
-   "mark": 0.0002731,
+   "cur_price": 0.0002637,
+   "mark": 0.0002637,
    "tp0": true
   },
   "26Kg27kpPHBN2MHqgrsJh3LzMZboxZyUpbeVonmpZwVm": {
@@ -50,8 +50,8 @@
    "opened": "2026-09-23T17:10:21Z",
    "peak": 0.0002323,
    "entry": 0.00016780159358973363,
-   "cur_price": 0.0001174,
-   "mark": 0.0001174
+   "cur_price": 0.0001216,
+   "mark": 0.0001216
   },
   "GY9mZfyPpxXxBXBxS2hB2XjhP3kfUsywTvgveozxpump": {
    "sym": "ELON",
@@ -60,8 +60,18 @@
    "opened": "2026-09-24T00:55:45Z",
    "peak": 0.001035,
    "entry": 0.000961174597325251,
-   "cur_price": 0.001006,
-   "mark": 0.001006
+   "cur_price": 0.00101,
+   "mark": 0.00101
+  },
+  "BxftAowY2dVa2h9KMqDTPk4oMxzU9k6uVbZuoorXpump": {
+   "sym": "Holdoween",
+   "qty": 155795.453814,
+   "cost": 50.02,
+   "opened": "2026-09-24T07:25:23Z",
+   "peak": 0.0003136,
+   "entry": 0.00032106200004858635,
+   "cur_price": 0.0003136,
+   "mark": 0.0003136
   }
  },
  "trades": [
@@ -1614,6 +1624,18 @@
    "fill": 0.000961174597,
    "usd": 50.02,
    "slip": 0.0201,
+   "quote": "jup",
+   "reason": "screener"
+  },
+  {
+   "t": "2026-09-24T07:25:23Z",
+   "side": "buy",
+   "sym": "Holdoween",
+   "addr": "BxftAowY2dVa2h9KMqDTPk4oMxzU9k6uVbZuoorXpump",
+   "price": 0.0003136,
+   "fill": 0.000321062,
+   "usd": 50.02,
+   "slip": 0.0099,
    "quote": "jup",
    "reason": "screener"
   }
@@ -15174,6 +15196,10 @@
   {
    "t": "2026-09-24T07:20:52Z",
    "v": 643.92
+  },
+  {
+   "t": "2026-09-24T07:25:53Z",
+   "v": 640.44
   }
  ],
  "started": "2026-09-10T17:17:16Z"
