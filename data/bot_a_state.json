@@ -1,5 +1,5 @@
 {
- "cash": 433.2207999411121,
+ "cash": 383.2007999411121,
  "positions": {
   "B3jjDNkBw48utaFxRRSWxg4oUkN23YxodChdEf4bxhQS": {
    "sym": "BITDOG",
@@ -18,8 +18,8 @@
    "opened": "2026-09-21T21:55:43Z",
    "peak": 0.0002962,
    "entry": 0.0001242547757563107,
-   "cur_price": 0.0002341,
-   "mark": 0.0002341,
+   "cur_price": 0.0002229,
+   "mark": 0.0002229,
    "tp0": true
   },
   "4JHXtNwMogExmcxXB1Ykb1A9s6yyAWKYG7xRurnT14Ws": {
@@ -29,8 +29,8 @@
    "opened": "2026-09-22T00:10:51Z",
    "peak": 0.000304,
    "entry": 0.0002684859957574503,
-   "cur_price": 0.0002185,
-   "mark": 0.0002185
+   "cur_price": 0.0002173,
+   "mark": 0.0002173
   },
   "EWgq2xUb6eVCApeQombkPxd6uFjM8j9zRUXFS9MjKTiv": {
    "sym": "CTO",
@@ -39,8 +39,8 @@
    "opened": "2026-09-23T00:45:46Z",
    "peak": 0.0008404,
    "entry": 0.0003508809823602153,
-   "cur_price": 0.0002592,
-   "mark": 0.0002592,
+   "cur_price": 0.0002552,
+   "mark": 0.0002552,
    "tp0": true
   },
   "26Kg27kpPHBN2MHqgrsJh3LzMZboxZyUpbeVonmpZwVm": {
@@ -50,8 +50,18 @@
    "opened": "2026-09-23T17:10:21Z",
    "peak": 0.0002323,
    "entry": 0.00016780159358973363,
-   "cur_price": 0.0001155,
-   "mark": 0.0001155
+   "cur_price": 0.0001136,
+   "mark": 0.0001136
+  },
+  "GY9mZfyPpxXxBXBxS2hB2XjhP3kfUsywTvgveozxpump": {
+   "sym": "ELON",
+   "qty": 52040.4931,
+   "cost": 50.02,
+   "opened": "2026-09-24T00:55:45Z",
+   "peak": 0.000983,
+   "entry": 0.000961174597325251,
+   "cur_price": 0.000983,
+   "mark": 0.000983
   }
  },
  "trades": [
@@ -1594,6 +1604,18 @@
    "slip": 0.0,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-24T00:55:45Z",
+   "side": "buy",
+   "sym": "ELON",
+   "addr": "GY9mZfyPpxXxBXBxS2hB2XjhP3kfUsywTvgveozxpump",
+   "price": 0.000983,
+   "fill": 0.000961174597,
+   "usd": 50.02,
+   "slip": 0.0201,
+   "quote": "jup",
+   "reason": "screener"
   }
  ],
  "equity": [
@@ -14840,6 +14862,10 @@
   {
    "t": "2026-09-24T00:50:51Z",
    "v": 655.68
+  },
+  {
+   "t": "2026-09-24T00:55:50Z",
+   "v": 652.21
   }
  ],
  "started": "2026-09-10T17:17:16Z"
