@@ -20,8 +20,8 @@
    "peak": 0.0109,
    "entry": 0.011027612370757188,
    "entry_liq": 1460707.39,
-   "cur_price": 0.009814,
-   "mark": 0.009814
+   "cur_price": 0.009805,
+   "mark": 0.009805
   },
   "3jUf2RTyXp867piSB2dt8uUcNiLDW58asjGtXkRAkBbe": {
    "sym": "GUN",
@@ -31,8 +31,8 @@
    "peak": 0.002949,
    "entry": 0.0031080314382412335,
    "entry_liq": 15411.63,
-   "cur_price": 0.003094,
-   "mark": 0.003094
+   "cur_price": 0.003105,
+   "mark": 0.003105
   }
  },
  "trades": [
@@ -4505,17 +4505,21 @@
   {
    "t": "2026-09-24T16:58:09Z",
    "v": 499.45
+  },
+  {
+   "t": "2026-09-24T17:03:31Z",
+   "v": 499.89
   }
  ],
  "started": "2026-09-20T20:41:43Z",
  "cooldown": {},
  "strategy": "rueckschlag_lotterie",
  "coverage": {
-  "t": "2026-09-24T16:58:09Z",
+  "t": "2026-09-24T17:03:31Z",
   "kurse": 73,
   "von": 251,
   "kerzen": 79,
-  "offen": 4,
+  "offen": 1,
   "markt": true,
   "gestoppt": false
  }
