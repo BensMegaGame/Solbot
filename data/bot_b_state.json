@@ -1,18 +1,18 @@
 {
- "cash": 295.3088230000001,
+ "cash": 270.2888230000001,
  "positions": {
   "4ChT49V1iazP2XUGtycGkEsS6pRMqvGfUbqvRC9Z91ZT": {
    "sym": "MOS",
-   "qty": 23794.105755874,
-   "cost": 20.02,
+   "qty": 45543.526219309,
+   "cost": 45.04,
    "opened": "2026-09-23T20:06:12Z",
-   "peak": 0.001023,
-   "entry": 0.0008413848457010286,
+   "peak": 0.001126,
+   "entry": 0.0009889440660153467,
    "entry_liq": 217108.63,
    "entry_vol": 113317.25,
-   "cur_price": 0.001023,
-   "mark": 0.001023,
-   "no_quote_since": "2026-09-24T15:46:21Z"
+   "cur_price": 0.001126,
+   "mark": 0.001126,
+   "added": true
   },
   "G5W6LwkLeoj6rZqBP1y3KT8k6Cz6rXGJmMNU3TArXtXw": {
    "sym": "STEALF",
@@ -842,6 +842,18 @@
    "slip": 0.0039,
    "quote": "jup",
    "reason": "ok vol-trend 2.08 buy 0.56"
+  },
+  {
+   "t": "2026-09-24T16:06:17Z",
+   "side": "buy",
+   "sym": "MOS",
+   "addr": "4ChT49V1iazP2XUGtycGkEsS6pRMqvGfUbqvRC9Z91ZT",
+   "price": 0.001126,
+   "fill": 0.00115037548,
+   "usd": 25.02,
+   "slip": 0.0203,
+   "quote": "jup",
+   "reason": "add"
   }
  ],
  "equity": [
@@ -14788,6 +14800,10 @@
   {
    "t": "2026-09-24T16:01:18Z",
    "v": 340.21
+  },
+  {
+   "t": "2026-09-24T16:06:17Z",
+   "v": 342.13
   }
  ],
  "started": "2026-09-11T10:50:37Z",
@@ -14819,6 +14835,6 @@
  },
  "streak": 0,
  "half_left": 3,
- "watchlist": 1332,
+ "watchlist": 1333,
  "strategy": "second_wave"
 }
