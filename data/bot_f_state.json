@@ -1,7 +1,32 @@
 {
- "cash": 500.0,
- "positions": {},
- "trades": [],
+ "cash": 399.98,
+ "positions": {
+  "HTmQz7My6MehV7bjhJ6jde8nDND1yvsz68d24LP7YgUQ": {
+   "sym": "GP",
+   "qty": 5212.487507,
+   "cost": 100.02,
+   "opened": "2026-09-25T15:56:50Z",
+   "peak": 0.01776,
+   "entry": 0.019188535198536256,
+   "pair": "8S2XFMPBNnUNBuzKTb1ZFC1B2DMJSRUFZQsbpSwFXhkx",
+   "cur_price": 0.01776,
+   "mark": 0.01776
+  }
+ },
+ "trades": [
+  {
+   "t": "2026-09-25T15:56:50Z",
+   "side": "buy",
+   "sym": "GP",
+   "addr": "HTmQz7My6MehV7bjhJ6jde8nDND1yvsz68d24LP7YgUQ",
+   "price": 0.01776,
+   "fill": 0.019188535199,
+   "usd": 100.02,
+   "slip": 0.0175,
+   "quote": "jup",
+   "reason": "nach virtuellem stop (E) -10.8%"
+  }
+ ],
  "equity": [
   {
    "t": "2026-09-25T09:22:03Z",
@@ -318,6 +343,10 @@
   {
    "t": "2026-09-25T15:51:52Z",
    "v": 500.0
+  },
+  {
+   "t": "2026-09-25T15:56:50Z",
+   "v": 492.55
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -325,8 +354,8 @@
  "cooldown": {},
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-09-25T15:51:52Z",
-  "virtuell": 3,
+  "t": "2026-09-25T15:56:50Z",
+  "virtuell": 2,
   "neu": 0,
   "gestoppt": false
  }
