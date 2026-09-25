@@ -1,4 +1,4 @@
-"""Bot E v4.1 – "Large-Cap Dip": EINE konzentrierte Position (90 % des Cash) in einem der ~50 groessten
+"""Bot E v4.2 – "Large-Cap Dip": EINE konzentrierte Position (90 % des Cash) in einem der ~50 groessten
 Solana-Tokens, nachdem dieser in 24 h deutlich staerker gefallen ist als der Gesamtmarkt und der
 Verkaufsdruck sichtbar nachgelassen hat. Harter Stop -10 %, Teilgewinn +15 %, Trailing fuer den Rest.
 
@@ -191,12 +191,14 @@ def main():
                     print(f"Bot E: {MAX_CONSEC_STOPS} Stops in Folge -> Pause bis Tag {meta['paused_until']}")
             else: meta["consec_stops"] = 0
 
-    # 3) Einstieg pruefen (nur wenn keine Position offen)
+    # 3) Einstieg pruefen. Kandidaten werden seit v4.2 auch bei vollem Depot ermittelt und fuer Bot F
+    #    gespeichert (data/signale_e.json); GEKAUFT wird genau wie vorher nur, wenn can_buy gilt.
     can_buy = len(st["positions"]) < MAX_POS and meta.get("paused_until", 0) <= today
-    if can_buy and sol24 is None: print("Bot E: SOL-Referenz fehlt -> kein Kauf"); can_buy = False
-    if can_buy and sol24 < SOL_24H_MIN: checks.append(("SOL", f"markt {sol24:+.1f}% -> kein Kauf")); can_buy = False
-    if can_buy:
-        cands = []
+    markt_ok = True
+    if sol24 is None: print("Bot E: SOL-Referenz fehlt -> kein Kauf"); can_buy = markt_ok = False
+    elif sol24 < SOL_24H_MIN: checks.append(("SOL", f"markt {sol24:+.1f}% -> kein Kauf")); can_buy = markt_ok = False
+    cands = []
+    if markt_ok:
         for a, p in pairs.items():
             if a == SOL_MINT or a in st["positions"] or cooldown.get(a, 0) > today: continue
             sym = p["baseToken"]["symbol"]
@@ -222,6 +224,10 @@ def main():
             if why: checks.append((sym, f"24h {c24:+.0f}% | {why}")); continue
             cands.append((c24 - sol24, a, sym, px, liq, c24, c1, mcap))
         cands.sort()                                                        # staerkste relative Uebertreibung zuerst
+    save("signale_e.json", {"t": now, "bot": "E", "kand": [{"addr": a, "sym": sym, "px": px, "liq": round(liq),
+                                                            "pair": (pairs.get(a) or {}).get("pairAddress")}
+                                                           for _, a, sym, px, liq, _, _, _ in cands]})
+    if can_buy:
         equity = st["cash"] + sum(p["qty"] * (p.get("mark") or p.get("cur_price") or p["entry"]) for p in st["positions"].values())
         for rel, a, sym, px, liq, c24, c1, mcap in cands[:MAX_POS - len(st["positions"])]:
             usd = min(st["cash"] - 1, equity * POS_FRAC)
