@@ -1,15 +1,16 @@
 {
- "cash": 336.84827797327796,
+ "cash": 424.805562973278,
  "positions": {
   "739dnZEG4yaBWFsY8L8ZwrfhGG6dhtCSercW8Umspump": {
    "sym": "CLAW",
-   "qty": 13482.693293,
-   "cost": 148.54318902672202,
+   "qty": 6741.3466465,
+   "cost": 74.27159451336101,
    "opened": "2026-09-25T11:10:44Z",
-   "peak": 0.01247,
+   "peak": 0.01302,
    "entry": 0.011017323156334297,
-   "cur_price": 0.01232,
-   "mark": 0.01232
+   "cur_price": 0.01302,
+   "mark": 0.01302,
+   "tp1": true
   }
  },
  "trades": [
@@ -51,6 +52,21 @@
    "slip": 0.0082,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-25T19:05:51Z",
+   "side": "sell",
+   "sym": "CLAW",
+   "addr": "739dnZEG4yaBWFsY8L8ZwrfhGG6dhtCSercW8Umspump",
+   "price": 0.01302,
+   "usd": 87.96,
+   "pnl": 13.69,
+   "peak_x": 1.182,
+   "held_h": 7.9,
+   "frac": 0.5,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "tp1"
   }
  ],
  "equity": [
@@ -521,6 +537,10 @@
   {
    "t": "2026-09-25T19:00:52Z",
    "v": 502.96
+  },
+  {
+   "t": "2026-09-25T19:05:51Z",
+   "v": 512.58
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -528,7 +548,7 @@
  "strategy": "dip_weites_netz",
  "universe_n": 144,
  "coverage": {
-  "t": "2026-09-25T19:00:52Z",
+  "t": "2026-09-25T19:05:51Z",
   "kurse": 124,
   "von": 144,
   "ohne_pool": 20,
