@@ -1,7 +1,31 @@
 {
- "cash": 500.0,
- "positions": {},
- "trades": [],
+ "cash": 349.98,
+ "positions": {
+  "5dvXTZ5qwgafnHtwu3Ls3QrWx1U4LQsFeCuJgkk4QEC6": {
+   "sym": "EMBER",
+   "qty": 10614.286522,
+   "cost": 150.02,
+   "opened": "2026-09-25T10:30:42Z",
+   "peak": 0.01394,
+   "entry": 0.014133780889469757,
+   "cur_price": 0.01394,
+   "mark": 0.01394
+  }
+ },
+ "trades": [
+  {
+   "t": "2026-09-25T10:30:42Z",
+   "side": "buy",
+   "sym": "EMBER",
+   "addr": "5dvXTZ5qwgafnHtwu3Ls3QrWx1U4LQsFeCuJgkk4QEC6",
+   "price": 0.01394,
+   "fill": 0.014133780889,
+   "usd": 150.02,
+   "slip": 0.0028,
+   "quote": "jup",
+   "reason": "dip 24h -15% (SOL +5%) 1h +1.7%"
+  }
+ ],
  "equity": [
   {
    "t": "2026-09-25T09:21:37Z",
@@ -58,6 +82,10 @@
   {
    "t": "2026-09-25T10:25:38Z",
    "v": 500.0
+  },
+  {
+   "t": "2026-09-25T10:30:42Z",
+   "v": 497.94
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -65,11 +93,11 @@
  "strategy": "dip_weites_netz",
  "universe_n": 143,
  "coverage": {
-  "t": "2026-09-25T10:25:38Z",
+  "t": "2026-09-25T10:30:42Z",
   "kurse": 124,
   "von": 143,
   "ohne_pool": 19,
   "sol": true,
-  "kandidaten": 0
+  "kandidaten": 1
  }
 }
