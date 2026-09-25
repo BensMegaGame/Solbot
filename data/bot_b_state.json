@@ -25,7 +25,8 @@
    "entry_liq": 117321.82,
    "entry_vol": 48004.91,
    "cur_price": 0.000308,
-   "mark": 0.000308
+   "mark": 0.000308,
+   "no_quote_since": "2026-09-25T01:46:19Z"
   },
   "EpFTb2XcGiMyGLykZ9VYmyPWz2AHEwAggqSbwJpypump": {
    "sym": "Imagine",
@@ -36,9 +37,8 @@
    "entry": 0.00024810075047731426,
    "entry_liq": 52895.29,
    "entry_vol": 81095.37,
-   "cur_price": 0.000225,
-   "mark": 0.000225,
-   "no_quote_since": "2026-09-25T01:16:21Z"
+   "cur_price": 0.0002282,
+   "mark": 0.0002282
   }
  },
  "trades": [
@@ -15289,6 +15289,10 @@
   {
    "t": "2026-09-25T01:41:19Z",
    "v": 326.79
+  },
+  {
+   "t": "2026-09-25T01:46:19Z",
+   "v": 327.04
   }
  ],
  "started": "2026-09-11T10:50:37Z",
@@ -15320,6 +15324,6 @@
  },
  "streak": 0,
  "half_left": 2,
- "watchlist": 1360,
+ "watchlist": 1363,
  "strategy": "second_wave"
 }
