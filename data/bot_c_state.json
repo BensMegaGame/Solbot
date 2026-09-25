@@ -9,8 +9,8 @@
    "peak": 0.04032,
    "entry": 0.04063920393053882,
    "entry_liq": 822860.2,
-   "cur_price": 0.03962,
-   "mark": 0.03962
+   "cur_price": 0.03968,
+   "mark": 0.03968
   },
   "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump": {
    "sym": "NEET",
@@ -20,8 +20,8 @@
    "peak": 0.03237,
    "entry": 0.03296385847135289,
    "entry_liq": 1890130.03,
-   "cur_price": 0.0525,
-   "mark": 0.0525
+   "cur_price": 0.0521,
+   "mark": 0.0521
   },
   "BZLbGTNCSFfoth2GYDtwr7e4imWzpR5jqcUuGEwr646K": {
    "sym": "IO",
@@ -31,8 +31,8 @@
    "peak": 0.1472,
    "entry": 0.1481267446354331,
    "entry_liq": 68794.66,
-   "cur_price": 0.1549,
-   "mark": 0.1549
+   "cur_price": 0.1554,
+   "mark": 0.1554
   }
  },
  "trades": [
@@ -5049,17 +5049,21 @@
   {
    "t": "2026-09-25T04:16:45Z",
    "v": 600.89
+  },
+  {
+   "t": "2026-09-25T04:21:58Z",
+   "v": 599.69
   }
  ],
  "started": "2026-09-20T20:41:21Z",
  "cooldown": {},
  "strategy": "rueckschlag_umsatzschub",
  "coverage": {
-  "t": "2026-09-25T04:16:45Z",
+  "t": "2026-09-25T04:21:57Z",
   "kurse": 133,
   "von": 171,
   "kerzen": 168,
-  "offen": 0,
+  "offen": 1,
   "markt": true
  }
 }
