@@ -1,18 +1,6 @@
 {
- "cash": 399.98,
- "positions": {
-  "HTmQz7My6MehV7bjhJ6jde8nDND1yvsz68d24LP7YgUQ": {
-   "sym": "GP",
-   "qty": 5212.487507,
-   "cost": 100.02,
-   "opened": "2026-09-25T15:56:50Z",
-   "peak": 0.01776,
-   "entry": 0.019188535198536256,
-   "pair": "8S2XFMPBNnUNBuzKTb1ZFC1B2DMJSRUFZQsbpSwFXhkx",
-   "cur_price": 0.01776,
-   "mark": 0.01776
-  }
- },
+ "cash": 488.41182200000003,
+ "positions": {},
  "trades": [
   {
    "t": "2026-09-25T15:56:50Z",
@@ -25,6 +13,21 @@
    "slip": 0.0175,
    "quote": "jup",
    "reason": "nach virtuellem stop (E) -10.8%"
+  },
+  {
+   "t": "2026-09-25T16:01:57Z",
+   "side": "sell",
+   "sym": "GP",
+   "addr": "HTmQz7My6MehV7bjhJ6jde8nDND1yvsz68d24LP7YgUQ",
+   "price": 0.01591,
+   "usd": 88.43,
+   "pnl": -11.59,
+   "peak_x": 0.926,
+   "held_h": 0.1,
+   "frac": 1.0,
+   "slip": 0.0223,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -347,14 +350,20 @@
   {
    "t": "2026-09-25T15:56:50Z",
    "v": 492.55
+  },
+  {
+   "t": "2026-09-25T16:01:57Z",
+   "v": 488.41
   }
  ],
  "started": "2026-09-25T09:22:03Z",
  "version": "f5",
- "cooldown": {},
+ "cooldown": {
+  "HTmQz7My6MehV7bjhJ6jde8nDND1yvsz68d24LP7YgUQ": 20726
+ },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-09-25T15:56:50Z",
+  "t": "2026-09-25T16:01:57Z",
   "virtuell": 2,
   "neu": 0,
   "gestoppt": false
