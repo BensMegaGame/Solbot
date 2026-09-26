@@ -1,16 +1,6 @@
 {
- "cash": 399.96000000000004,
+ "cash": 423.48091400000004,
  "positions": {
-  "BxftAowY2dVa2h9KMqDTPk4oMxzU9k6uVbZuoorXpump": {
-   "sym": "Holdoween",
-   "qty": 30007.177621,
-   "cost": 50.02,
-   "opened": "2026-09-25T13:41:02Z",
-   "peak": 0.002799,
-   "entry": 0.0016669345125279087,
-   "cur_price": 0.0008654,
-   "mark": 0.0008654
-  },
   "7GUnr7krtQhJwd6ASY2VUprd9t4c64zcgCsjdmZepump": {
    "sym": "NPC",
    "qty": 46475.892911,
@@ -18,8 +8,8 @@
    "opened": "2026-09-26T19:06:29Z",
    "peak": 0.001175,
    "entry": 0.0010762568907667221,
-   "cur_price": 0.0008246,
-   "mark": 0.0008246
+   "cur_price": 0.0009779,
+   "mark": 0.0009779
   }
  },
  "trades": [
@@ -46,6 +36,21 @@
    "slip": 0.0098,
    "quote": "jup",
    "reason": "screener pump.fun"
+  },
+  {
+   "t": "2026-09-26T22:16:02Z",
+   "side": "sell",
+   "sym": "Holdoween",
+   "addr": "BxftAowY2dVa2h9KMqDTPk4oMxzU9k6uVbZuoorXpump",
+   "price": 0.0007944,
+   "usd": 23.52,
+   "pnl": -26.5,
+   "peak_x": 1.679,
+   "held_h": 32.6,
+   "frac": 1.0,
+   "slip": 0.0114,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -1612,6 +1617,10 @@
   {
    "t": "2026-09-26T22:11:37Z",
    "v": 464.25
+  },
+  {
+   "t": "2026-09-26T22:16:39Z",
+   "v": 468.93
   }
  ],
  "started": "2026-09-25T13:40:52Z",
