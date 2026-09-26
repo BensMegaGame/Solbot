@@ -1,5 +1,5 @@
 {
- "cash": 303.836816000001,
+ "cash": 311.76896900000105,
  "positions": {
   "AD7cjPhebfrtXSNmBRs6rxnawF87zCeUE2Mxc4ZmWmrH": {
    "sym": "TYGR",
@@ -9,8 +9,8 @@
    "peak": 0.0002298,
    "entry": 6.364793535935686e-05,
    "liq0": 22359.41,
-   "cur_price": 0.0001586,
-   "mark": 0.0001586
+   "cur_price": 0.0001582,
+   "mark": 0.0001582
   },
   "CjkD1qwNPVP9VKshVn2BzqxiPtmdSnwA8SNV9HJBpump": {
    "sym": "FXFUN",
@@ -20,8 +20,8 @@
    "peak": 0.0001906,
    "entry": 5.311407769882578e-05,
    "liq0": 19388.68,
-   "cur_price": 8.96e-05,
-   "mark": 8.96e-05
+   "cur_price": 8.698e-05,
+   "mark": 8.698e-05
   },
   "7Xgc5RacHtGzfhw2HukUBk5V986yBbvshr7rrCoopump": {
    "sym": "DRMR",
@@ -31,8 +31,8 @@
    "peak": 0.0001442,
    "entry": 5.913391355326949e-05,
    "liq0": 20126.59,
-   "cur_price": 0.000102,
-   "mark": 0.000102
+   "cur_price": 9.441e-05,
+   "mark": 9.441e-05
   },
   "FZ74HJakyyewkm7Yd9gYEvgWksvVKuAkZvRyZ9TEZg2t": {
    "sym": "TIX",
@@ -53,30 +53,19 @@
    "peak": 0.0001082,
    "entry": 6.750764582225515e-05,
    "liq0": 22329.97,
-   "cur_price": 6.634e-05,
-   "mark": 6.634e-05
+   "cur_price": 6.428e-05,
+   "mark": 6.428e-05
   },
   "FDfxBRSc3MraBGcGmkHgfkvwHTUDMEA2hRV2cRNbpeg": {
    "sym": "UNPEG",
    "qty": 98908.000958,
    "cost": 15.02,
    "opened": "2026-09-26T09:47:12Z",
-   "peak": 0.000341,
+   "peak": 0.0003686,
    "entry": 0.00015185829108383303,
    "liq0": 36144.2,
-   "cur_price": 0.0003102,
-   "mark": 0.0003102
-  },
-  "9N9tAT19ncQvxtjpQNevrGP3zmWRNrAZZtonTygMpump": {
-   "sym": "ETCH",
-   "qty": 317293.320714,
-   "cost": 15.02,
-   "opened": "2026-09-26T12:02:06Z",
-   "peak": 5.294e-05,
-   "entry": 4.733790161797525e-05,
-   "liq0": 19585.86,
-   "cur_price": 2.916e-05,
-   "mark": 2.916e-05
+   "cur_price": 0.0003686,
+   "mark": 0.0003686
   },
   "DCn6wwTDbEC6A5vEoTuKQsHZUaDrRFzBYCYj3nd2pump": {
    "sym": "UBI",
@@ -94,11 +83,11 @@
    "qty": 381437.059196,
    "cost": 15.02,
    "opened": "2026-09-26T13:07:09Z",
-   "peak": 3.929e-05,
+   "peak": 4.156e-05,
    "entry": 3.937740090503904e-05,
    "liq0": 18307.52,
-   "cur_price": 3.929e-05,
-   "mark": 3.929e-05
+   "cur_price": 4.156e-05,
+   "mark": 4.156e-05
   }
  },
  "trades": [
@@ -4472,6 +4461,21 @@
    "slip": 0.0147,
    "quote": "jup",
    "reason": "longshot"
+  },
+  {
+   "t": "2026-09-26T13:17:01Z",
+   "side": "sell",
+   "sym": "ETCH",
+   "addr": "9N9tAT19ncQvxtjpQNevrGP3zmWRNrAZZtonTygMpump",
+   "price": 2.622e-05,
+   "usd": 7.93,
+   "pnl": -7.09,
+   "peak_x": 1.118,
+   "held_h": 1.2,
+   "frac": 1.0,
+   "slip": 0.0087,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -16986,6 +16990,10 @@
   {
    "t": "2026-09-26T13:12:02Z",
    "v": 489.76
+  },
+  {
+   "t": "2026-09-26T13:17:02Z",
+   "v": 491.86
   }
  ],
  "started": "2026-09-15T16:35:51Z",
