@@ -1,5 +1,5 @@
 {
- "cash": 344.5514489411122,
+ "cash": 362.71257294111217,
  "positions": {
   "DFQHUegJWE29Xu3BUxPezqi77uyHURRyxJpdtyvLpump": {
    "sym": "PUMPCAT",
@@ -8,8 +8,8 @@
    "opened": "2026-09-21T21:55:43Z",
    "peak": 0.0002962,
    "entry": 0.0001242547757563107,
-   "cur_price": 0.0001328,
-   "mark": 0.0001328,
+   "cur_price": 0.0001296,
+   "mark": 0.0001296,
    "tp0": true
   },
   "4JHXtNwMogExmcxXB1Ykb1A9s6yyAWKYG7xRurnT14Ws": {
@@ -19,19 +19,8 @@
    "opened": "2026-09-22T00:10:51Z",
    "peak": 0.000304,
    "entry": 0.0002684859957574503,
-   "cur_price": 0.000188,
-   "mark": 0.000188
-  },
-  "EWgq2xUb6eVCApeQombkPxd6uFjM8j9zRUXFS9MjKTiv": {
-   "sym": "CTO",
-   "qty": 106916.59533,
-   "cost": 37.515,
-   "opened": "2026-09-23T00:45:46Z",
-   "peak": 0.0008404,
-   "entry": 0.0003508809823602153,
-   "cur_price": 0.0002321,
-   "mark": 0.0002321,
-   "tp0": true
+   "cur_price": 0.0001875,
+   "mark": 0.0001875
   },
   "GY9mZfyPpxXxBXBxS2hB2XjhP3kfUsywTvgveozxpump": {
    "sym": "ELON",
@@ -40,8 +29,8 @@
    "opened": "2026-09-24T00:55:45Z",
    "peak": 0.001088,
    "entry": 0.000961174597325251,
-   "cur_price": 0.0009081,
-   "mark": 0.0009081
+   "cur_price": 0.0009583,
+   "mark": 0.0009583
   },
   "8Vte25yt28L8BfLXm8DrzjSYEyaKX8yry6hRKRmX7FGd": {
    "sym": "UPTOBER",
@@ -50,8 +39,8 @@
    "opened": "2026-09-24T15:45:28Z",
    "peak": 0.0003664,
    "entry": 0.0002667016296841616,
-   "cur_price": 0.0002686,
-   "mark": 0.0002686
+   "cur_price": 0.0002792,
+   "mark": 0.0002792
   },
   "G2KB6Yvhs2ojSVtQ8AmCLAMR6wLxzAscS8nNERcYtUVD": {
    "sym": "LOOMI",
@@ -60,8 +49,8 @@
    "opened": "2026-09-25T00:35:18Z",
    "peak": 0.0002352,
    "entry": 0.00014010803621476766,
-   "cur_price": 8.335e-05,
-   "mark": 8.335e-05
+   "cur_price": 8.332e-05,
+   "mark": 8.332e-05
   },
   "AQVcP67EpMyu4cBZZjqMu91cVsWy1aX98JmcZm1FyY9": {
    "sym": "AQUA",
@@ -70,8 +59,8 @@
    "opened": "2026-09-25T09:40:46Z",
    "peak": 0.002091,
    "entry": 0.0019474828702160348,
-   "cur_price": 0.001552,
-   "mark": 0.001552
+   "cur_price": 0.001504,
+   "mark": 0.001504
   }
  },
  "trades": [
@@ -1774,6 +1763,21 @@
    "held_h": 4.5,
    "frac": 1.0,
    "slip": 0.0,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-26T00:00:05Z",
+   "side": "sell",
+   "sym": "CTO",
+   "addr": "EWgq2xUb6eVCApeQombkPxd6uFjM8j9zRUXFS9MjKTiv",
+   "price": 0.0001722,
+   "usd": 18.16,
+   "pnl": -19.35,
+   "peak_x": 2.395,
+   "held_h": 71.2,
+   "frac": 1.0,
+   "slip": 0.0004,
    "quote": "jup",
    "reason": "stop"
   }
@@ -17282,6 +17286,10 @@
   {
    "t": "2026-09-25T23:56:08Z",
    "v": 611.74
+  },
+  {
+   "t": "2026-09-26T00:01:07Z",
+   "v": 607.38
   }
  ],
  "started": "2026-09-10T17:17:16Z"
