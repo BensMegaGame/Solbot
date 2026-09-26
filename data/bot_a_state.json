@@ -1,17 +1,6 @@
 {
- "cash": 676.1104859411122,
+ "cash": 694.3123629411122,
  "positions": {
-  "DFQHUegJWE29Xu3BUxPezqi77uyHURRyxJpdtyvLpump": {
-   "sym": "PUMPCAT",
-   "qty": 301919.98473825003,
-   "cost": 37.515,
-   "opened": "2026-09-21T21:55:43Z",
-   "peak": 0.0002962,
-   "entry": 0.0001242547757563107,
-   "cur_price": 7.331e-05,
-   "mark": 7.331e-05,
-   "tp0": true
-  },
   "4JHXtNwMogExmcxXB1Ykb1A9s6yyAWKYG7xRurnT14Ws": {
    "sym": "BABYCATE",
    "qty": 186303.944304,
@@ -19,8 +8,8 @@
    "opened": "2026-09-22T00:10:51Z",
    "peak": 0.000304,
    "entry": 0.0002684859957574503,
-   "cur_price": 0.0001882,
-   "mark": 0.0001882
+   "cur_price": 0.0001894,
+   "mark": 0.0001894
   },
   "8Vte25yt28L8BfLXm8DrzjSYEyaKX8yry6hRKRmX7FGd": {
    "sym": "UPTOBER",
@@ -29,8 +18,8 @@
    "opened": "2026-09-24T15:45:28Z",
    "peak": 0.0003664,
    "entry": 0.0002667016296841616,
-   "cur_price": 0.0001962,
-   "mark": 0.0001962
+   "cur_price": 0.0001943,
+   "mark": 0.0001943
   },
   "AQVcP67EpMyu4cBZZjqMu91cVsWy1aX98JmcZm1FyY9": {
    "sym": "AQUA",
@@ -39,8 +28,8 @@
    "opened": "2026-09-25T09:40:46Z",
    "peak": 0.002091,
    "entry": 0.0019474828702160348,
-   "cur_price": 0.001209,
-   "mark": 0.001209
+   "cur_price": 0.001257,
+   "mark": 0.001257
   },
   "SPqTn8KkooByR41x3SsaNxGxXDqPFFRXR2Kkt8TJhSK": {
    "sym": "ANSEM",
@@ -49,8 +38,8 @@
    "opened": "2026-09-26T06:31:07Z",
    "peak": 0.0002067,
    "entry": 0.0001422287013076096,
-   "cur_price": 0.0001283,
-   "mark": 0.0001283
+   "cur_price": 0.000133,
+   "mark": 0.000133
   }
  },
  "trades": [
@@ -1924,6 +1913,21 @@
    "held_h": 1.8,
    "frac": 1.0,
    "slip": 0.009,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-26T12:00:02Z",
+   "side": "sell",
+   "sym": "PUMPCAT",
+   "addr": "DFQHUegJWE29Xu3BUxPezqi77uyHURRyxJpdtyvLpump",
+   "price": 6.047e-05,
+   "usd": 18.2,
+   "pnl": -19.31,
+   "peak_x": 2.384,
+   "held_h": 110.1,
+   "frac": 1.0,
+   "slip": 0.0088,
    "quote": "jup",
    "reason": "stop"
   }
@@ -18008,6 +18012,10 @@
   {
    "t": "2026-09-26T11:56:07Z",
    "v": 846.28
+  },
+  {
+   "t": "2026-09-26T12:01:06Z",
+   "v": 845.1
   }
  ],
  "started": "2026-09-10T17:17:16Z"
