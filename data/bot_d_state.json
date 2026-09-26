@@ -1,5 +1,5 @@
 {
- "cash": 317.65409100000096,
+ "cash": 326.42210700000095,
  "positions": {
   "AD7cjPhebfrtXSNmBRs6rxnawF87zCeUE2Mxc4ZmWmrH": {
    "sym": "TYGR",
@@ -20,8 +20,8 @@
    "peak": 0.0003101,
    "entry": 5.738039811212343e-05,
    "liq0": 22559.17,
-   "cur_price": 0.0002197,
-   "mark": 0.0002197,
+   "cur_price": 0.0003013,
+   "mark": 0.0003013,
    "tp1": true
   },
   "CjkD1qwNPVP9VKshVn2BzqxiPtmdSnwA8SNV9HJBpump": {
@@ -32,8 +32,8 @@
    "peak": 0.0001906,
    "entry": 5.311407769882578e-05,
    "liq0": 19388.68,
-   "cur_price": 9.158e-05,
-   "mark": 9.158e-05
+   "cur_price": 8.74e-05,
+   "mark": 8.74e-05
   },
   "7Xgc5RacHtGzfhw2HukUBk5V986yBbvshr7rrCoopump": {
    "sym": "DRMR",
@@ -43,8 +43,8 @@
    "peak": 0.0001442,
    "entry": 5.913391355326949e-05,
    "liq0": 20126.59,
-   "cur_price": 8.957e-05,
-   "mark": 8.957e-05
+   "cur_price": 9.013e-05,
+   "mark": 9.013e-05
   },
   "FZ74HJakyyewkm7Yd9gYEvgWksvVKuAkZvRyZ9TEZg2t": {
    "sym": "TIX",
@@ -56,17 +56,6 @@
    "liq0": 20743.33,
    "cur_price": 8.737e-05,
    "mark": 8.737e-05
-  },
-  "GfCV4VcL9F8GAHttQmzXKK7J9HEdjgHZhj5dEfZVpump": {
-   "sym": "LONGFORD",
-   "qty": 294710.971618,
-   "cost": 15.02,
-   "opened": "2026-09-25T13:51:47Z",
-   "peak": 6.982e-05,
-   "entry": 5.0965187748316e-05,
-   "liq0": 18411.48,
-   "cur_price": 3.206e-05,
-   "mark": 3.206e-05
   },
   "EvKf2GtfbDMyZQzZ8VN7uFFoK9FxzsXJmqACaS8H5LX2": {
    "sym": "PYRO",
@@ -87,8 +76,8 @@
    "peak": 7.122e-05,
    "entry": 6.750764582225515e-05,
    "liq0": 22329.97,
-   "cur_price": 5.59e-05,
-   "mark": 5.59e-05
+   "cur_price": 5.451e-05,
+   "mark": 5.451e-05
   }
  },
  "trades": [
@@ -4367,6 +4356,21 @@
    "held_h": 2.8,
    "frac": 1.0,
    "slip": 0.0152,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-26T03:27:11Z",
+   "side": "sell",
+   "sym": "LONGFORD",
+   "addr": "GfCV4VcL9F8GAHttQmzXKK7J9HEdjgHZhj5dEfZVpump",
+   "price": 3.017e-05,
+   "usd": 8.77,
+   "pnl": -6.25,
+   "peak_x": 1.37,
+   "held_h": 13.6,
+   "frac": 1.0,
+   "slip": 0.012,
    "quote": "jup",
    "reason": "stop"
   }
@@ -16411,6 +16415,10 @@
   {
    "t": "2026-09-26T03:22:12Z",
    "v": 497.96
+  },
+  {
+   "t": "2026-09-26T03:27:12Z",
+   "v": 510.03
   }
  ],
  "started": "2026-09-15T16:35:51Z",
