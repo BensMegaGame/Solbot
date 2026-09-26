@@ -1,5 +1,5 @@
 {
- "cash": 318.856816000001,
+ "cash": 303.836816000001,
  "positions": {
   "AD7cjPhebfrtXSNmBRs6rxnawF87zCeUE2Mxc4ZmWmrH": {
    "sym": "TYGR",
@@ -31,8 +31,8 @@
    "peak": 0.0001442,
    "entry": 5.913391355326949e-05,
    "liq0": 20126.59,
-   "cur_price": 0.0001099,
-   "mark": 0.0001099
+   "cur_price": 0.0001048,
+   "mark": 0.0001048
   },
   "FZ74HJakyyewkm7Yd9gYEvgWksvVKuAkZvRyZ9TEZg2t": {
    "sym": "TIX",
@@ -53,19 +53,19 @@
    "peak": 0.0001082,
    "entry": 6.750764582225515e-05,
    "liq0": 22329.97,
-   "cur_price": 5.912e-05,
-   "mark": 5.912e-05
+   "cur_price": 6.97e-05,
+   "mark": 6.97e-05
   },
   "FDfxBRSc3MraBGcGmkHgfkvwHTUDMEA2hRV2cRNbpeg": {
    "sym": "UNPEG",
    "qty": 98908.000958,
    "cost": 15.02,
    "opened": "2026-09-26T09:47:12Z",
-   "peak": 0.0002604,
+   "peak": 0.000341,
    "entry": 0.00015185829108383303,
    "liq0": 36144.2,
-   "cur_price": 0.0002604,
-   "mark": 0.0002604
+   "cur_price": 0.000341,
+   "mark": 0.000341
   },
   "9N9tAT19ncQvxtjpQNevrGP3zmWRNrAZZtonTygMpump": {
    "sym": "ETCH",
@@ -75,8 +75,8 @@
    "peak": 5.294e-05,
    "entry": 4.733790161797525e-05,
    "liq0": 19585.86,
-   "cur_price": 3.248e-05,
-   "mark": 3.248e-05
+   "cur_price": 3.796e-05,
+   "mark": 3.796e-05
   },
   "DCn6wwTDbEC6A5vEoTuKQsHZUaDrRFzBYCYj3nd2pump": {
    "sym": "UBI",
@@ -86,8 +86,19 @@
    "peak": 4.142e-05,
    "entry": 4.294457153090809e-05,
    "liq0": 18292.42,
-   "cur_price": 3.031e-05,
-   "mark": 3.031e-05
+   "cur_price": 3.095e-05,
+   "mark": 3.095e-05
+  },
+  "DmB3oUjBpsXscdqcx4eYPaMaJRhRJ1oovwvjgzj7BoNA": {
+   "sym": "roon",
+   "qty": 381437.059196,
+   "cost": 15.02,
+   "opened": "2026-09-26T13:07:09Z",
+   "peak": 3.828e-05,
+   "entry": 3.937740090503904e-05,
+   "liq0": 18307.52,
+   "cur_price": 3.828e-05,
+   "mark": 3.828e-05
   }
  },
  "trades": [
@@ -4447,6 +4458,18 @@
    "fill": 4.2944572e-05,
    "usd": 15.02,
    "slip": 0.0325,
+   "quote": "jup",
+   "reason": "longshot"
+  },
+  {
+   "t": "2026-09-26T13:07:09Z",
+   "side": "buy",
+   "sym": "roon",
+   "addr": "DmB3oUjBpsXscdqcx4eYPaMaJRhRJ1oovwvjgzj7BoNA",
+   "price": 3.828e-05,
+   "fill": 3.9377401e-05,
+   "usd": 15.02,
+   "slip": 0.0147,
    "quote": "jup",
    "reason": "longshot"
   }
@@ -16955,6 +16978,10 @@
   {
    "t": "2026-09-26T13:02:03Z",
    "v": 485.47
+  },
+  {
+   "t": "2026-09-26T13:07:10Z",
+   "v": 496.04
   }
  ],
  "started": "2026-09-15T16:35:51Z",
