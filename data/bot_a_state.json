@@ -1,5 +1,5 @@
 {
- "cash": 362.71257294111217,
+ "cash": 386.38468194111215,
  "positions": {
   "DFQHUegJWE29Xu3BUxPezqi77uyHURRyxJpdtyvLpump": {
    "sym": "PUMPCAT",
@@ -8,8 +8,8 @@
    "opened": "2026-09-21T21:55:43Z",
    "peak": 0.0002962,
    "entry": 0.0001242547757563107,
-   "cur_price": 0.0001297,
-   "mark": 0.0001297,
+   "cur_price": 0.0001333,
+   "mark": 0.0001333,
    "tp0": true
   },
   "4JHXtNwMogExmcxXB1Ykb1A9s6yyAWKYG7xRurnT14Ws": {
@@ -19,18 +19,19 @@
    "opened": "2026-09-22T00:10:51Z",
    "peak": 0.000304,
    "entry": 0.0002684859957574503,
-   "cur_price": 0.000192,
-   "mark": 0.000192
+   "cur_price": 0.0002213,
+   "mark": 0.0002213
   },
   "GY9mZfyPpxXxBXBxS2hB2XjhP3kfUsywTvgveozxpump": {
    "sym": "ELON",
-   "qty": 52040.4931,
-   "cost": 50.02,
+   "qty": 39030.369825,
+   "cost": 37.515,
    "opened": "2026-09-24T00:55:45Z",
-   "peak": 0.001479,
+   "peak": 0.001764,
    "entry": 0.000961174597325251,
-   "cur_price": 0.001438,
-   "mark": 0.001438
+   "cur_price": 0.001764,
+   "mark": 0.001764,
+   "tp0": true
   },
   "8Vte25yt28L8BfLXm8DrzjSYEyaKX8yry6hRKRmX7FGd": {
    "sym": "UPTOBER",
@@ -39,8 +40,8 @@
    "opened": "2026-09-24T15:45:28Z",
    "peak": 0.0003664,
    "entry": 0.0002667016296841616,
-   "cur_price": 0.0003037,
-   "mark": 0.0003037
+   "cur_price": 0.0003094,
+   "mark": 0.0003094
   },
   "G2KB6Yvhs2ojSVtQ8AmCLAMR6wLxzAscS8nNERcYtUVD": {
    "sym": "LOOMI",
@@ -49,8 +50,8 @@
    "opened": "2026-09-25T00:35:18Z",
    "peak": 0.0002352,
    "entry": 0.00014010803621476766,
-   "cur_price": 8.483e-05,
-   "mark": 8.483e-05
+   "cur_price": 8.515e-05,
+   "mark": 8.515e-05
   },
   "AQVcP67EpMyu4cBZZjqMu91cVsWy1aX98JmcZm1FyY9": {
    "sym": "AQUA",
@@ -59,8 +60,8 @@
    "opened": "2026-09-25T09:40:46Z",
    "peak": 0.002091,
    "entry": 0.0019474828702160348,
-   "cur_price": 0.001515,
-   "mark": 0.001515
+   "cur_price": 0.001493,
+   "mark": 0.001493
   }
  },
  "trades": [
@@ -1780,6 +1781,21 @@
    "slip": 0.0004,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-26T00:25:05Z",
+   "side": "sell",
+   "sym": "ELON",
+   "addr": "GY9mZfyPpxXxBXBxS2hB2XjhP3kfUsywTvgveozxpump",
+   "price": 0.001764,
+   "usd": 23.67,
+   "pnl": 11.17,
+   "peak_x": 1.835,
+   "held_h": 47.5,
+   "frac": 0.25,
+   "slip": 0.0098,
+   "quote": "jup",
+   "reason": "tp0"
   }
  ],
  "equity": [
@@ -17306,6 +17322,10 @@
   {
    "t": "2026-09-26T00:21:05Z",
    "v": 638.63
+  },
+  {
+   "t": "2026-09-26T00:26:09Z",
+   "v": 663.48
   }
  ],
  "started": "2026-09-10T17:17:16Z"
