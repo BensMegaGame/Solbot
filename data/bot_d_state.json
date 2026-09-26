@@ -1,5 +1,5 @@
 {
- "cash": 302.781524000001,
+ "cash": 333.876816000001,
  "positions": {
   "AD7cjPhebfrtXSNmBRs6rxnawF87zCeUE2Mxc4ZmWmrH": {
    "sym": "TYGR",
@@ -9,20 +9,8 @@
    "peak": 0.0002298,
    "entry": 6.364793535935686e-05,
    "liq0": 22359.41,
-   "cur_price": 0.0001947,
-   "mark": 0.0001947
-  },
-  "4AdFwKHbivTpGjBjenyYxbdtrUdZ6uVGwjhofmh2KN3x": {
-   "sym": "hyENA",
-   "qty": 172762.83062082,
-   "cost": 9.9132,
-   "opened": "2026-09-24T08:21:54Z",
-   "peak": 0.0003101,
-   "entry": 5.738039811212343e-05,
-   "liq0": 22559.17,
-   "cur_price": 0.0002437,
-   "mark": 0.0002437,
-   "tp1": true
+   "cur_price": 0.0001886,
+   "mark": 0.0001886
   },
   "CjkD1qwNPVP9VKshVn2BzqxiPtmdSnwA8SNV9HJBpump": {
    "sym": "FXFUN",
@@ -32,8 +20,8 @@
    "peak": 0.0001906,
    "entry": 5.311407769882578e-05,
    "liq0": 19388.68,
-   "cur_price": 9.591e-05,
-   "mark": 9.591e-05
+   "cur_price": 9.767e-05,
+   "mark": 9.767e-05
   },
   "7Xgc5RacHtGzfhw2HukUBk5V986yBbvshr7rrCoopump": {
    "sym": "DRMR",
@@ -43,8 +31,8 @@
    "peak": 0.0001442,
    "entry": 5.913391355326949e-05,
    "liq0": 20126.59,
-   "cur_price": 9.012e-05,
-   "mark": 9.012e-05
+   "cur_price": 9.646e-05,
+   "mark": 9.646e-05
   },
   "FZ74HJakyyewkm7Yd9gYEvgWksvVKuAkZvRyZ9TEZg2t": {
    "sym": "TIX",
@@ -65,8 +53,8 @@
    "peak": 0.0001082,
    "entry": 6.750764582225515e-05,
    "liq0": 22329.97,
-   "cur_price": 6.205e-05,
-   "mark": 6.205e-05
+   "cur_price": 5.391e-05,
+   "mark": 5.391e-05
   },
   "FDfxBRSc3MraBGcGmkHgfkvwHTUDMEA2hRV2cRNbpeg": {
    "sym": "UNPEG",
@@ -76,19 +64,19 @@
    "peak": 0.0002134,
    "entry": 0.00015185829108383303,
    "liq0": 36144.2,
-   "cur_price": 0.0002009,
-   "mark": 0.0002009
+   "cur_price": 0.0001923,
+   "mark": 0.0001923
   },
   "9N9tAT19ncQvxtjpQNevrGP3zmWRNrAZZtonTygMpump": {
    "sym": "ETCH",
    "qty": 317293.320714,
    "cost": 15.02,
    "opened": "2026-09-26T12:02:06Z",
-   "peak": 4.667e-05,
+   "peak": 5.129e-05,
    "entry": 4.733790161797525e-05,
    "liq0": 19585.86,
-   "cur_price": 4.627e-05,
-   "mark": 4.627e-05
+   "cur_price": 5.129e-05,
+   "mark": 5.129e-05
   }
  },
  "trades": [
@@ -4423,6 +4411,21 @@
    "slip": 0.0251,
    "quote": "jup",
    "reason": "longshot"
+  },
+  {
+   "t": "2026-09-26T12:11:59Z",
+   "side": "sell",
+   "sym": "hyENA",
+   "addr": "4AdFwKHbivTpGjBjenyYxbdtrUdZ6uVGwjhofmh2KN3x",
+   "price": 0.0001849,
+   "usd": 31.1,
+   "pnl": 21.18,
+   "peak_x": 5.404,
+   "held_h": 51.8,
+   "frac": 1.0,
+   "slip": 0.0328,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
@@ -16885,6 +16888,10 @@
   {
    "t": "2026-09-26T12:07:01Z",
    "v": 505.68
+  },
+  {
+   "t": "2026-09-26T12:12:00Z",
+   "v": 494.27
   }
  ],
  "started": "2026-09-15T16:35:51Z",
