@@ -1,5 +1,5 @@
 {
- "cash": 634.2494639411123,
+ "cash": 584.2294639411123,
  "positions": {
   "8Vte25yt28L8BfLXm8DrzjSYEyaKX8yry6hRKRmX7FGd": {
    "sym": "UPTOBER",
@@ -8,8 +8,8 @@
    "opened": "2026-09-24T15:45:28Z",
    "peak": 0.0003664,
    "entry": 0.0002667016296841616,
-   "cur_price": 0.0002076,
-   "mark": 0.0002076
+   "cur_price": 0.0002097,
+   "mark": 0.0002097
   },
   "AQVcP67EpMyu4cBZZjqMu91cVsWy1aX98JmcZm1FyY9": {
    "sym": "AQUA",
@@ -18,8 +18,8 @@
    "opened": "2026-09-25T09:40:46Z",
    "peak": 0.002091,
    "entry": 0.0019474828702160348,
-   "cur_price": 0.001264,
-   "mark": 0.001264
+   "cur_price": 0.001266,
+   "mark": 0.001266
   },
   "7GUnr7krtQhJwd6ASY2VUprd9t4c64zcgCsjdmZepump": {
    "sym": "NPC",
@@ -28,18 +28,28 @@
    "opened": "2026-09-26T19:05:25Z",
    "peak": 0.001221,
    "entry": 0.001079617423636668,
-   "cur_price": 0.0009338,
-   "mark": 0.0009338
+   "cur_price": 0.0009652,
+   "mark": 0.0009652
   },
   "HgcxVs6kJhPAaGqnPNGaa7zYgNT49hJrLufiqcNMuYZT": {
    "sym": "FEELSGOOD",
    "qty": 23157.407907,
    "cost": 50.02,
    "opened": "2026-09-26T20:01:05Z",
-   "peak": 0.002284,
+   "peak": 0.002407,
    "entry": 0.0021599999534006567,
-   "cur_price": 0.002284,
-   "mark": 0.002284
+   "cur_price": 0.002407,
+   "mark": 0.002407
+  },
+  "7cXWSNTq71PZREBmGCBvZirkNwoGokWBQz9fWferViiV": {
+   "sym": "ASTEROID",
+   "qty": 26887.107659,
+   "cost": 50.02,
+   "opened": "2026-09-26T20:25:28Z",
+   "peak": 0.00168,
+   "entry": 0.001860371172473684,
+   "cur_price": 0.00168,
+   "mark": 0.00168
   }
  },
  "trades": [
@@ -1982,6 +1992,18 @@
    "fill": 0.002159999953,
    "usd": 50.02,
    "slip": 0.041,
+   "quote": "jup",
+   "reason": "screener"
+  },
+  {
+   "t": "2026-09-26T20:25:28Z",
+   "side": "buy",
+   "sym": "ASTEROID",
+   "addr": "7cXWSNTq71PZREBmGCBvZirkNwoGokWBQz9fWferViiV",
+   "price": 0.00168,
+   "fill": 0.001860371172,
+   "usd": 50.02,
+   "slip": 0.0209,
    "quote": "jup",
    "reason": "screener"
   }
@@ -18470,6 +18492,10 @@
   {
    "t": "2026-09-26T20:21:05Z",
    "v": 801.81
+  },
+  {
+   "t": "2026-09-26T20:26:09Z",
+   "v": 801.7
   }
  ],
  "started": "2026-09-10T17:17:16Z"
