@@ -9,8 +9,8 @@
    "peak": 0.04077,
    "entry": 0.03874984634486468,
    "pair": "5wNu5QhdpRGrL37ffcd6TMMqZugQgxwafgz477rShtHy",
-   "cur_price": 0.03787,
-   "mark": 0.03787
+   "cur_price": 0.03728,
+   "mark": 0.03728
   }
  },
  "trades": [
@@ -2697,6 +2697,10 @@
   {
    "t": "2026-09-27T15:48:59Z",
    "v": 507.18
+  },
+  {
+   "t": "2026-09-27T15:51:43Z",
+   "v": 505.63
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -2707,9 +2711,9 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-09-27T15:48:59Z",
+  "t": "2026-09-27T15:51:43Z",
   "virtuell": 7,
-  "neu": 1,
+  "neu": 0,
   "gestoppt": false
  }
 }
