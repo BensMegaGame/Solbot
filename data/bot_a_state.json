@@ -1,5 +1,5 @@
 {
- "cash": 542.7495339411123,
+ "cash": 564.1358139411122,
  "positions": {
   "8Vte25yt28L8BfLXm8DrzjSYEyaKX8yry6hRKRmX7FGd": {
    "sym": "UPTOBER",
@@ -8,18 +8,8 @@
    "opened": "2026-09-24T15:45:28Z",
    "peak": 0.0003664,
    "entry": 0.0002667016296841616,
-   "cur_price": 0.0002267,
-   "mark": 0.0002267
-  },
-  "7GUnr7krtQhJwd6ASY2VUprd9t4c64zcgCsjdmZepump": {
-   "sym": "NPC",
-   "qty": 46331.227067,
-   "cost": 50.02,
-   "opened": "2026-09-26T19:05:25Z",
-   "peak": 0.001221,
-   "entry": 0.001079617423636668,
-   "cur_price": 0.0006044,
-   "mark": 0.0006044
+   "cur_price": 0.0002294,
+   "mark": 0.0002294
   },
   "4G5YDqDvwgwSS3nLPDGDpGuetbG7rZYzNSBb1U4Tqbzi": {
    "sym": "ARENA",
@@ -28,8 +18,8 @@
    "opened": "2026-09-26T22:51:00Z",
    "peak": 0.0009712,
    "entry": 0.0008596854338541273,
-   "cur_price": 0.0007088,
-   "mark": 0.0007088
+   "cur_price": 0.0007316,
+   "mark": 0.0007316
   },
   "44J1LiJu17k25UDCjoJ3H2EMbbne5dmqn576J4ZNyBYT": {
    "sym": "MINECOIN",
@@ -38,8 +28,8 @@
    "opened": "2026-09-27T01:00:11Z",
    "peak": 0.0001582,
    "entry": 0.0001334414243914618,
-   "cur_price": 0.0001156,
-   "mark": 0.0001156
+   "cur_price": 0.0001139,
+   "mark": 0.0001139
   },
   "CbouD8khLcz1Y1QngvRtQufUimSRKpHkvGn6y1n8pump": {
    "sym": "UTILITY",
@@ -48,8 +38,8 @@
    "opened": "2026-09-27T01:45:11Z",
    "peak": 0.0002555,
    "entry": 0.000259749666741619,
-   "cur_price": 0.0002473,
-   "mark": 0.0002473
+   "cur_price": 0.0002443,
+   "mark": 0.0002443
   }
  },
  "trades": [
@@ -2087,6 +2077,21 @@
    "slip": 0.0132,
    "quote": "jup",
    "reason": "screener"
+  },
+  {
+   "t": "2026-09-27T02:50:03Z",
+   "side": "sell",
+   "sym": "NPC",
+   "addr": "7GUnr7krtQhJwd6ASY2VUprd9t4c64zcgCsjdmZepump",
+   "price": 0.0004568,
+   "usd": 21.39,
+   "pnl": -28.63,
+   "peak_x": 1.131,
+   "held_h": 7.7,
+   "frac": 1.0,
+   "slip": 0.0123,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -18881,6 +18886,10 @@
   {
    "t": "2026-09-27T02:46:02Z",
    "v": 745.47
+  },
+  {
+   "t": "2026-09-27T02:51:06Z",
+   "v": 739.47
   }
  ],
  "started": "2026-09-10T17:17:16Z"
