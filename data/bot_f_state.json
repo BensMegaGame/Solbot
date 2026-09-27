@@ -1,6 +1,18 @@
 {
- "cash": 509.4976696,
- "positions": {},
+ "cash": 407.57813568,
+ "positions": {
+  "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump": {
+   "sym": "neet",
+   "qty": 2630.19195,
+   "cost": 101.91953392,
+   "opened": "2026-09-27T03:57:12Z",
+   "peak": 0.03865,
+   "entry": 0.03874984634486468,
+   "pair": "5wNu5QhdpRGrL37ffcd6TMMqZugQgxwafgz477rShtHy",
+   "cur_price": 0.03865,
+   "mark": 0.03865
+  }
+ },
  "trades": [
   {
    "t": "2026-09-25T15:56:50Z",
@@ -55,6 +67,18 @@
    "slip": 0.0028,
    "quote": "jup",
    "reason": "tp"
+  },
+  {
+   "t": "2026-09-27T03:57:12Z",
+   "side": "buy",
+   "sym": "neet",
+   "addr": "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump",
+   "price": 0.03865,
+   "fill": 0.038749846345,
+   "usd": 101.92,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "nach virtuellem stop (E) -11.0%"
   }
  ],
  "equity": [
@@ -2101,6 +2125,10 @@
   {
    "t": "2026-09-27T03:52:14Z",
    "v": 509.5
+  },
+  {
+   "t": "2026-09-27T03:57:12Z",
+   "v": 509.24
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -2111,8 +2139,8 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-09-27T03:52:14Z",
-  "virtuell": 7,
+  "t": "2026-09-27T03:57:12Z",
+  "virtuell": 6,
   "neu": 0,
   "gestoppt": false
  }
