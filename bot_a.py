@@ -43,7 +43,7 @@ def passes(m):
             and m["price"] > 0)
 
 def main():
-    pf = Paper("bot_a")
+    pf = Paper("bot_a", rebuy_sperre_h=24)
     prices = {}
     today = int(time.time() // 86400)
     cooldown = load("bot_a_cooldown.json", {})
@@ -70,7 +70,7 @@ def main():
     seen = load("bot_a_seen.json", {})
     for addr in candidates():
         if addr in pf.s["positions"] or len(pf.s["positions"]) >= MAX_POS: continue
-        if cooldown.get(addr, 0) > today: continue
+        if cooldown.get(addr, 0) > today or pf.gesperrt(addr): continue
         p = solana_pair(addr)
         if not p: continue
         m = metrics(p)
