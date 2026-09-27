@@ -203,7 +203,7 @@ def versionswechsel():
 
 def main():
     versionswechsel()
-    pf = Paper("bot_c"); st = pf.s; st["version"] = VERSION
+    pf = Paper("bot_c", rebuy_sperre_h=24); st = pf.s; st["version"] = VERSION
     now = time.time(); today = int(now // 86400)
     meta = load("bot_c_meta.json", {}); hist = load("bot_c_hist.json", {}); cooldown = load("bot_c_cooldown.json", {})
 
@@ -294,7 +294,7 @@ def main():
     # 5) Kaufen
     if markt_ok and meta.get("paused_until", 0) <= today:
         equity = st["cash"] + sum(q["qty"] * (q.get("mark") or q.get("cur_price") or q["entry"]) for q in st["positions"].values())
-        for rel, a, sym, px, liq, c24, c1, mcap, pr in cands[:max(0, MAX_POS - len(st["positions"]))]:
+        for rel, a, sym, px, liq, c24, c1, mcap, pr in [k for k in cands if not pf.gesperrt(k[1])][:max(0, MAX_POS - len(st["positions"]))]:
             usd = min(st["cash"] - 1, equity * POS_FRAC)
             if usd < 20: break
             if pf.buy(sym, a, px, usd, liq, f"dip 24h {c24:+.0f}% (SOL {sol24:+.0f}%) 1h {c1:+.1f}%"):
