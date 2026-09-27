@@ -72,7 +72,7 @@ def versionswechsel():
 
 def main():
     versionswechsel()
-    pf = Paper("bot_f"); st = pf.s; st["version"] = VERSION
+    pf = Paper("bot_f", rebuy_sperre_h=24); st = pf.s; st["version"] = VERSION
     st.setdefault("cooldown", {})
     now = time.time(); today = int(now // 86400)
     meta = load("bot_f_meta.json", {}); virt = meta.setdefault("virtuell", {})
@@ -139,7 +139,7 @@ def main():
         del virt[a]
         liq = _liq(p)
         if gestoppt: continue
-        if a in st["positions"] or st["cooldown"].get(a, 0) > today: continue
+        if a in st["positions"] or st["cooldown"].get(a, 0) > today or pf.gesperrt(a): continue
         if liq < MIN_LIQ: log.append((v["sym"], f"stop getroffen, aber liq {liq/1e3:.0f}k zu klein")); continue
         usd = min(st["cash"] - 1, equity * POS_FRAC)
         if usd < 20: log.append((v["sym"], "stop getroffen, aber kein Cash")); continue
