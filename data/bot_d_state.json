@@ -1,5 +1,5 @@
 {
- "cash": 296.2632110000012,
+ "cash": 281.2432110000012,
  "positions": {
   "FZ74HJakyyewkm7Yd9gYEvgWksvVKuAkZvRyZ9TEZg2t": {
    "sym": "TIX",
@@ -31,8 +31,8 @@
    "peak": 0.0001536,
    "entry": 7.165973281096488e-05,
    "liq0": 25902.47,
-   "cur_price": 8.687e-05,
-   "mark": 8.687e-05
+   "cur_price": 9.121e-05,
+   "mark": 9.121e-05
   },
   "4AdFwKHbivTpGjBjenyYxbdtrUdZ6uVGwjhofmh2KN3x": {
    "sym": "hyENA",
@@ -42,8 +42,8 @@
    "peak": 0.0001306,
    "entry": 8.074085087961137e-05,
    "liq0": 32285.61,
-   "cur_price": 9.247e-05,
-   "mark": 9.247e-05
+   "cur_price": 9.949e-05,
+   "mark": 9.949e-05
   },
   "ARPwPPWbaj3FYBf6k1Lt2jqRkv9JJUg3Hxav5aHKTEem": {
    "sym": "P(DOOM)",
@@ -53,8 +53,8 @@
    "peak": 0.0002346,
    "entry": 5.1036012918639984e-05,
    "liq0": 21503.08,
-   "cur_price": 6.227e-05,
-   "mark": 6.227e-05
+   "cur_price": 6.168e-05,
+   "mark": 6.168e-05
   },
   "HhcfXbZ2rukoKx8oAH8rfkmzXbwvfdh6MMLZjneg4rWk": {
    "sym": "COPCAT",
@@ -86,8 +86,8 @@
    "peak": 0.0001337,
    "entry": 4.599960146449388e-05,
    "liq0": 17941.05,
-   "cur_price": 0.0001076,
-   "mark": 0.0001076
+   "cur_price": 0.0001115,
+   "mark": 0.0001115
   },
   "HUv6tJ6MpNfCJUdRW47M5ZQfG8e3MsayLDZAXYZA2sxG": {
    "sym": "DELREY",
@@ -97,8 +97,8 @@
    "peak": 0.0001109,
    "entry": 6.816272408336656e-05,
    "liq0": 22271.3,
-   "cur_price": 9.812e-05,
-   "mark": 9.812e-05
+   "cur_price": 0.0001019,
+   "mark": 0.0001019
   },
   "B4pLeAps53ZmSJbCrRAaafxv4iRnDGNjQwZKLXYJX1zK": {
    "sym": "CUMINU",
@@ -108,8 +108,8 @@
    "peak": 8.432e-05,
    "entry": 7.07358189717808e-05,
    "liq0": 23748.73,
-   "cur_price": 6.475e-05,
-   "mark": 6.475e-05
+   "cur_price": 7.593e-05,
+   "mark": 7.593e-05
   },
   "AtcYMQbuqYuwxC3nfCm6yFMiYH9SJLJYYpBcE3jjpump": {
    "sym": "avatar",
@@ -119,8 +119,8 @@
    "peak": 4.47e-05,
    "entry": 4.4812438267535e-05,
    "liq0": 19361.44,
-   "cur_price": 4.47e-05,
-   "mark": 4.47e-05
+   "cur_price": 4.362e-05,
+   "mark": 4.362e-05
   },
   "3eYTViXTUBCVhn1TSVZAAbajRLPKs4tuV6DwL4oTpump": {
    "sym": "Pumpkinu",
@@ -130,8 +130,19 @@
    "peak": 0.0001272,
    "entry": 5.846899063716668e-05,
    "liq0": 20736.56,
-   "cur_price": 9.913e-05,
-   "mark": 9.913e-05
+   "cur_price": 9.847e-05,
+   "mark": 9.847e-05
+  },
+  "79FCJqG2DrYzH2G3eCQedRoWRbjri7MSgMkyGeZ7cLrm": {
+   "sym": "TETSUOAI",
+   "qty": 337229.110725,
+   "cost": 15.02,
+   "opened": "2026-09-27T12:41:51Z",
+   "peak": 4.358e-05,
+   "entry": 4.453945262231039e-05,
+   "liq0": 18141.42,
+   "cur_price": 4.358e-05,
+   "mark": 4.358e-05
   }
  },
  "trades": [
@@ -5030,6 +5041,18 @@
    "slip": 0.0079,
    "quote": "jup",
    "reason": "time"
+  },
+  {
+   "t": "2026-09-27T12:41:51Z",
+   "side": "buy",
+   "sym": "TETSUOAI",
+   "addr": "79FCJqG2DrYzH2G3eCQedRoWRbjri7MSgMkyGeZ7cLrm",
+   "price": 4.358e-05,
+   "fill": 4.4539453e-05,
+   "usd": 15.02,
+   "slip": 0.0202,
+   "quote": "jup",
+   "reason": "longshot"
   }
  ],
  "equity": [
@@ -18668,6 +18691,10 @@
   {
    "t": "2026-09-27T12:36:44Z",
    "v": 549.6
+  },
+  {
+   "t": "2026-09-27T12:41:52Z",
+   "v": 555.27
   }
  ],
  "started": "2026-09-15T16:35:51Z",
