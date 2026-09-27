@@ -1,5 +1,5 @@
 {
- "cash": 282.6872360000012,
+ "cash": 289.9100550000012,
  "positions": {
   "CjkD1qwNPVP9VKshVn2BzqxiPtmdSnwA8SNV9HJBpump": {
    "sym": "FXFUN",
@@ -42,8 +42,8 @@
    "peak": 0.0001536,
    "entry": 7.165973281096488e-05,
    "liq0": 25902.47,
-   "cur_price": 7.631e-05,
-   "mark": 7.631e-05
+   "cur_price": 7.491e-05,
+   "mark": 7.491e-05
   },
   "4AdFwKHbivTpGjBjenyYxbdtrUdZ6uVGwjhofmh2KN3x": {
    "sym": "hyENA",
@@ -56,17 +56,6 @@
    "cur_price": 8.967e-05,
    "mark": 8.967e-05
   },
-  "2Ngvnnkwrwq5u4RYV5WYKJ2wiQoEkKaVCc4LuuhYSTNK": {
-   "sym": "STONKBLEND",
-   "qty": 327833.443503,
-   "cost": 15.02,
-   "opened": "2026-09-26T20:27:14Z",
-   "peak": 4.548e-05,
-   "entry": 4.581594799940706e-05,
-   "liq0": 20360.38,
-   "cur_price": 2.97e-05,
-   "mark": 2.97e-05
-  },
   "ARPwPPWbaj3FYBf6k1Lt2jqRkv9JJUg3Hxav5aHKTEem": {
    "sym": "P(DOOM)",
    "qty": 294301.986794,
@@ -75,8 +64,8 @@
    "peak": 0.0002346,
    "entry": 5.1036012918639984e-05,
    "liq0": 21503.08,
-   "cur_price": 4.058e-05,
-   "mark": 4.058e-05
+   "cur_price": 4.229e-05,
+   "mark": 4.229e-05
   },
   "HhcfXbZ2rukoKx8oAH8rfkmzXbwvfdh6MMLZjneg4rWk": {
    "sym": "COPCAT",
@@ -97,8 +86,8 @@
    "peak": 8.344e-05,
    "entry": 5.100685926442331e-05,
    "liq0": 18940.82,
-   "cur_price": 5.038e-05,
-   "mark": 5.038e-05
+   "cur_price": 4.528e-05,
+   "mark": 4.528e-05
   },
   "6hzyHMwR1S2wAbPfDjTcQtM5fTq4XZBWFTRSdTsvZ2DH": {
    "sym": "tinycat",
@@ -108,8 +97,8 @@
    "peak": 0.0001049,
    "entry": 4.599960146449388e-05,
    "liq0": 17941.05,
-   "cur_price": 4.407e-05,
-   "mark": 4.407e-05
+   "cur_price": 4.511e-05,
+   "mark": 4.511e-05
   },
   "HUv6tJ6MpNfCJUdRW47M5ZQfG8e3MsayLDZAXYZA2sxG": {
    "sym": "DELREY",
@@ -119,8 +108,8 @@
    "peak": 7.004e-05,
    "entry": 6.816272408336656e-05,
    "liq0": 22271.3,
-   "cur_price": 6.277e-05,
-   "mark": 6.277e-05
+   "cur_price": 6.328e-05,
+   "mark": 6.328e-05
   },
   "B4pLeAps53ZmSJbCrRAaafxv4iRnDGNjQwZKLXYJX1zK": {
    "sym": "CUMINU",
@@ -130,8 +119,8 @@
    "peak": 7.324e-05,
    "entry": 7.07358189717808e-05,
    "liq0": 23748.73,
-   "cur_price": 6.584e-05,
-   "mark": 6.584e-05
+   "cur_price": 7.266e-05,
+   "mark": 7.266e-05
   }
  },
  "trades": [
@@ -4976,6 +4965,21 @@
    "slip": 0.0252,
    "quote": "jup",
    "reason": "longshot"
+  },
+  {
+   "t": "2026-09-27T05:02:03Z",
+   "side": "sell",
+   "sym": "STONKBLEND",
+   "addr": "2Ngvnnkwrwq5u4RYV5WYKJ2wiQoEkKaVCc4LuuhYSTNK",
+   "price": 2.243e-05,
+   "usd": 7.22,
+   "pnl": -7.8,
+   "peak_x": 0.993,
+   "held_h": 8.6,
+   "frac": 1.0,
+   "slip": 0.0241,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -18246,6 +18250,10 @@
   {
    "t": "2026-09-27T04:57:04Z",
    "v": 498.1
+  },
+  {
+   "t": "2026-09-27T05:02:03Z",
+   "v": 496.2
   }
  ],
  "started": "2026-09-15T16:35:51Z",
