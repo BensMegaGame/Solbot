@@ -1,5 +1,5 @@
 {
- "cash": 491.50571794111227,
+ "cash": 516.4438219411122,
  "positions": {
   "CbouD8khLcz1Y1QngvRtQufUimSRKpHkvGn6y1n8pump": {
    "sym": "UTILITY",
@@ -8,8 +8,8 @@
    "opened": "2026-09-27T01:45:11Z",
    "peak": 0.0005413,
    "entry": 0.000259749666741619,
-   "cur_price": 0.0003844,
-   "mark": 0.0003844,
+   "cur_price": 0.0004226,
+   "mark": 0.0004226,
    "tp0": true
   },
   "HSUMi4rMgjrx7zRUabw3ogGu1pa5hmF2eVcXj9Apump": {
@@ -19,18 +19,8 @@
    "opened": "2026-09-27T13:00:52Z",
    "peak": 0.0008143,
    "entry": 0.0008169234171411898,
-   "cur_price": 0.0007707,
-   "mark": 0.0007707
-  },
-  "C61oA922BKGFkQMEE27QYkAd15NsRh9T6H462LYHk4DU": {
-   "sym": "POKESTRTGY",
-   "qty": 382476.572543,
-   "cost": 50.02,
-   "opened": "2026-09-27T21:00:45Z",
-   "peak": 0.0001299,
-   "entry": 0.00013077925183084643,
-   "cur_price": 9.079e-05,
-   "mark": 9.079e-05
+   "cur_price": 0.0007712,
+   "mark": 0.0007712
   },
   "5NhN6zzDkzwXFGPFqtpTopV4ttBeZ6CWy1oRL9Rkpump": {
    "sym": "Bagwork",
@@ -39,8 +29,8 @@
    "opened": "2026-09-27T21:10:33Z",
    "peak": 0.0001584,
    "entry": 0.00017082701279978683,
-   "cur_price": 0.0001584,
-   "mark": 0.0001584
+   "cur_price": 0.0001522,
+   "mark": 0.0001522
   }
  },
  "trades": [
@@ -2216,6 +2206,21 @@
    "slip": 0.0125,
    "quote": "jup",
    "reason": "screener"
+  },
+  {
+   "t": "2026-09-27T21:15:03Z",
+   "side": "sell",
+   "sym": "POKESTRTGY",
+   "addr": "C61oA922BKGFkQMEE27QYkAd15NsRh9T6H462LYHk4DU",
+   "price": 5.878e-05,
+   "usd": 24.94,
+   "pnl": -25.08,
+   "peak_x": 0.993,
+   "held_h": 0.2,
+   "frac": 1.0,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -19894,12 +19899,17 @@
   {
    "t": "2026-09-27T21:10:56Z",
    "v": 675.32
+  },
+  {
+   "t": "2026-09-27T21:15:55Z",
+   "v": 669.27
   }
  ],
  "started": "2026-09-10T17:17:16Z",
  "verkauft_am": {
   "9GTFD2DHo1KHd73smcpJtdTEvA6C5zzXxoWzjnb51c8": 1790514305.4277997,
   "4G5YDqDvwgwSS3nLPDGDpGuetbG7rZYzNSBb1U4Tqbzi": 1790536201.7235372,
-  "44J1LiJu17k25UDCjoJ3H2EMbbne5dmqn576J4ZNyBYT": 1790540102.6698318
+  "44J1LiJu17k25UDCjoJ3H2EMbbne5dmqn576J4ZNyBYT": 1790540102.6698318,
+  "C61oA922BKGFkQMEE27QYkAd15NsRh9T6H462LYHk4DU": 1790543703.9737918
  }
 }
