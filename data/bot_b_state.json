@@ -1,5 +1,5 @@
 {
- "cash": 395.79252600000007,
+ "cash": 345.7725260000001,
  "positions": {
   "CbouD8khLcz1Y1QngvRtQufUimSRKpHkvGn6y1n8pump": {
    "sym": "UTILITY",
@@ -8,8 +8,18 @@
    "opened": "2026-09-27T01:46:18Z",
    "peak": 0.0004094,
    "entry": 0.0002598001940788963,
-   "cur_price": 0.0003591,
-   "mark": 0.0003591
+   "cur_price": 0.0003503,
+   "mark": 0.0003503
+  },
+  "HSUMi4rMgjrx7zRUabw3ogGu1pa5hmF2eVcXj9Apump": {
+   "sym": "goon",
+   "qty": 61343.811293,
+   "cost": 50.02,
+   "opened": "2026-09-27T13:01:11Z",
+   "peak": 0.0008143,
+   "entry": 0.0008154041776290453,
+   "cur_price": 0.0008143,
+   "mark": 0.0008143
   }
  },
  "trades": [
@@ -78,6 +88,18 @@
    "slip": 0.0106,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-27T13:01:11Z",
+   "side": "buy",
+   "sym": "goon",
+   "addr": "HSUMi4rMgjrx7zRUabw3ogGu1pa5hmF2eVcXj9Apump",
+   "price": 0.0008143,
+   "fill": 0.000815404178,
+   "usd": 50.02,
+   "slip": 0.0144,
+   "quote": "jup",
+   "reason": "screener pump.fun"
   }
  ],
  "equity": [
@@ -2352,6 +2374,10 @@
   {
    "t": "2026-09-27T12:56:30Z",
    "v": 464.93
+  },
+  {
+   "t": "2026-09-27T13:01:33Z",
+   "v": 463.17
   }
  ],
  "started": "2026-09-25T13:40:52Z",
