@@ -234,7 +234,7 @@ def batch_pairs(addrs):
     return out
 
 def main():
-    pf = Paper("bot_d"); st = pf.s
+    pf = Paper("bot_d", rebuy_sperre_h=24); st = pf.s
     st["strategy"] = "smallcap_longshots"; st["helius"] = bool(HELIUS); st["codex"] = bool(CODEX_KEY)
     now = time.time(); today = int(now // 86400)
     cooldown = load("bot_d_cooldown.json", {}); wcache = load("bot_d_wallets.json", {})
@@ -307,7 +307,7 @@ def main():
     # 4) Einstiege
     checks = []; bought = 0
     for a, c in cands.items():
-        if a in st["positions"] or cooldown.get(a, 0) > today: continue
+        if a in st["positions"] or cooldown.get(a, 0) > today or pf.gesperrt(a): continue
         if len(st["positions"]) >= MAX_POS: break
         why = quality(c)
         if why: checks.append((c["sym"], why)); continue
