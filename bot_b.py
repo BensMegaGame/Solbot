@@ -73,7 +73,7 @@ def versionswechsel():
 
 def main():
     versionswechsel()
-    pf = Paper("bot_b"); pf.s["version"] = VERSION; pf.s["strategy"] = "a_pumpfun"
+    pf = Paper("bot_b", rebuy_sperre_h=24); pf.s["version"] = VERSION; pf.s["strategy"] = "a_pumpfun"
     prices = {}
     today = int(time.time() // 86400)
     cooldown = load("bot_b_cooldown.json", {})
@@ -100,7 +100,7 @@ def main():
     kand = candidates()
     for addr in kand:
         if addr in pf.s["positions"] or len(pf.s["positions"]) >= MAX_POS: continue
-        if cooldown.get(addr, 0) > today: continue
+        if cooldown.get(addr, 0) > today or pf.gesperrt(addr): continue
         p = solana_pair(addr)
         if not p: continue
         m = metrics(p)
