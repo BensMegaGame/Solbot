@@ -1,5 +1,5 @@
 {
- "cash": 146.72279058510867,
+ "cash": 232.7428655851087,
  "positions": {
   "CortexFv3fRcLKTgACr7aLqckGh5eP7TP3z9JHoKqMc6": {
    "sym": "CX",
@@ -18,19 +18,8 @@
    "opened": "2026-09-26T19:06:55Z",
    "peak": 0.01358,
    "entry": 0.013326690876079706,
-   "cur_price": 0.01261,
-   "mark": 0.01261
-  },
-  "J8PSdNP3QewKq2Z1JJJFDMaqF7KcaiJhR7gbr5KZpump": {
-   "sym": "TRIPLET",
-   "qty": 8659.301015,
-   "cost": 76.77058562306085,
-   "opened": "2026-09-26T22:16:50Z",
-   "peak": 0.01061,
-   "entry": 0.008865679284052566,
-   "cur_price": 0.01009,
-   "mark": 0.01009,
-   "tp1": true
+   "cur_price": 0.0126,
+   "mark": 0.0126
   }
  },
  "trades": [
@@ -207,6 +196,21 @@
    "slip": 0.0073,
    "quote": "jup",
    "reason": "tp1"
+  },
+  {
+   "t": "2026-09-27T17:46:24Z",
+   "side": "sell",
+   "sym": "TRIPLET",
+   "addr": "J8PSdNP3QewKq2Z1JJJFDMaqF7KcaiJhR7gbr5KZpump",
+   "price": 0.009924,
+   "usd": 86.02,
+   "pnl": 9.25,
+   "peak_x": 1.197,
+   "held_h": 19.5,
+   "frac": 1.0,
+   "slip": 0.0058,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
@@ -2917,6 +2921,10 @@
   {
    "t": "2026-09-27T17:41:30Z",
    "v": 528.04
+  },
+  {
+   "t": "2026-09-27T17:46:24Z",
+   "v": 526.57
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -2924,11 +2932,14 @@
  "strategy": "dip_weites_netz",
  "universe_n": 142,
  "coverage": {
-  "t": "2026-09-27T17:41:30Z",
+  "t": "2026-09-27T17:46:24Z",
   "kurse": 124,
   "von": 143,
   "ohne_pool": 22,
   "sol": true,
   "kandidaten": 0
+ },
+ "verkauft_am": {
+  "J8PSdNP3QewKq2Z1JJJFDMaqF7KcaiJhR7gbr5KZpump": 1790531184.9254415
  }
 }
