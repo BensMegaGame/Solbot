@@ -1,5 +1,5 @@
 {
- "cash": 498.45823194111233,
+ "cash": 519.4967089411123,
  "positions": {
   "4G5YDqDvwgwSS3nLPDGDpGuetbG7rZYzNSBb1U4Tqbzi": {
    "sym": "ARENA",
@@ -8,8 +8,8 @@
    "opened": "2026-09-26T22:51:00Z",
    "peak": 0.0009716,
    "entry": 0.0008596854338541273,
-   "cur_price": 0.0008819,
-   "mark": 0.0008819
+   "cur_price": 0.0009096,
+   "mark": 0.0009096
   },
   "44J1LiJu17k25UDCjoJ3H2EMbbne5dmqn576J4ZNyBYT": {
    "sym": "MINECOIN",
@@ -18,8 +18,8 @@
    "opened": "2026-09-27T01:00:11Z",
    "peak": 0.0001582,
    "entry": 0.0001334414243914618,
-   "cur_price": 9.211e-05,
-   "mark": 9.211e-05
+   "cur_price": 9.216e-05,
+   "mark": 9.216e-05
   },
   "CbouD8khLcz1Y1QngvRtQufUimSRKpHkvGn6y1n8pump": {
    "sym": "UTILITY",
@@ -28,18 +28,8 @@
    "opened": "2026-09-27T01:45:11Z",
    "peak": 0.0004101,
    "entry": 0.000259749666741619,
-   "cur_price": 0.0003503,
-   "mark": 0.0003503
-  },
-  "9GTFD2DHo1KHd73smcpJtdTEvA6C5zzXxoWzjnb51c8": {
-   "sym": "ACAT",
-   "qty": 64616.472015,
-   "cost": 50.02,
-   "opened": "2026-09-27T09:30:12Z",
-   "peak": 0.0008128,
-   "entry": 0.0007741060203408879,
-   "cur_price": 0.0003989,
-   "mark": 0.0003989
+   "cur_price": 0.0003199,
+   "mark": 0.0003199
   },
   "HSUMi4rMgjrx7zRUabw3ogGu1pa5hmF2eVcXj9Apump": {
    "sym": "goon",
@@ -2141,6 +2131,21 @@
    "slip": 0.0162,
    "quote": "jup",
    "reason": "screener"
+  },
+  {
+   "t": "2026-09-27T13:05:05Z",
+   "side": "sell",
+   "sym": "ACAT",
+   "addr": "9GTFD2DHo1KHd73smcpJtdTEvA6C5zzXxoWzjnb51c8",
+   "price": 0.0003552,
+   "usd": 21.04,
+   "pnl": -28.98,
+   "peak_x": 1.05,
+   "held_h": 3.6,
+   "frac": 1.0,
+   "slip": 0.0538,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -19427,7 +19432,14 @@
   {
    "t": "2026-09-27T13:00:58Z",
    "v": 727.39
+  },
+  {
+   "t": "2026-09-27T13:05:55Z",
+   "v": 718.43
   }
  ],
- "started": "2026-09-10T17:17:16Z"
+ "started": "2026-09-10T17:17:16Z",
+ "verkauft_am": {
+  "9GTFD2DHo1KHd73smcpJtdTEvA6C5zzXxoWzjnb51c8": 1790514305.4277997
+ }
 }
