@@ -1,17 +1,6 @@
 {
- "cash": 259.87005500000123,
+ "cash": 296.2632110000012,
  "positions": {
-  "CjkD1qwNPVP9VKshVn2BzqxiPtmdSnwA8SNV9HJBpump": {
-   "sym": "FXFUN",
-   "qty": 282787.551827,
-   "cost": 15.02,
-   "opened": "2026-09-24T11:36:52Z",
-   "peak": 0.0001906,
-   "entry": 5.311407769882578e-05,
-   "liq0": 19388.68,
-   "cur_price": 0.0001304,
-   "mark": 0.0001304
-  },
   "FZ74HJakyyewkm7Yd9gYEvgWksvVKuAkZvRyZ9TEZg2t": {
    "sym": "TIX",
    "qty": 253637.19505,
@@ -31,8 +20,8 @@
    "peak": 0.0007131,
    "entry": 0.00015185829108383303,
    "liq0": 36144.2,
-   "cur_price": 0.0004413,
-   "mark": 0.0004413
+   "cur_price": 0.0004408,
+   "mark": 0.0004408
   },
   "3pVv9iav75CfaVb2YFLtX1ijYDXSEPLmweWxUYp8q8nG": {
    "sym": "STEVEWILLDOIT",
@@ -42,8 +31,8 @@
    "peak": 0.0001536,
    "entry": 7.165973281096488e-05,
    "liq0": 25902.47,
-   "cur_price": 0.0001005,
-   "mark": 0.0001005
+   "cur_price": 9.655e-05,
+   "mark": 9.655e-05
   },
   "4AdFwKHbivTpGjBjenyYxbdtrUdZ6uVGwjhofmh2KN3x": {
    "sym": "hyENA",
@@ -53,8 +42,8 @@
    "peak": 0.0001306,
    "entry": 8.074085087961137e-05,
    "liq0": 32285.61,
-   "cur_price": 7.435e-05,
-   "mark": 7.435e-05
+   "cur_price": 7.429e-05,
+   "mark": 7.429e-05
   },
   "ARPwPPWbaj3FYBf6k1Lt2jqRkv9JJUg3Hxav5aHKTEem": {
    "sym": "P(DOOM)",
@@ -64,8 +53,8 @@
    "peak": 0.0002346,
    "entry": 5.1036012918639984e-05,
    "liq0": 21503.08,
-   "cur_price": 6.158e-05,
-   "mark": 6.158e-05
+   "cur_price": 6.232e-05,
+   "mark": 6.232e-05
   },
   "HhcfXbZ2rukoKx8oAH8rfkmzXbwvfdh6MMLZjneg4rWk": {
    "sym": "COPCAT",
@@ -97,8 +86,8 @@
    "peak": 0.0001089,
    "entry": 4.599960146449388e-05,
    "liq0": 17941.05,
-   "cur_price": 8.576e-05,
-   "mark": 8.576e-05
+   "cur_price": 9.034e-05,
+   "mark": 9.034e-05
   },
   "HUv6tJ6MpNfCJUdRW47M5ZQfG8e3MsayLDZAXYZA2sxG": {
    "sym": "DELREY",
@@ -108,8 +97,8 @@
    "peak": 0.0001109,
    "entry": 6.816272408336656e-05,
    "liq0": 22271.3,
-   "cur_price": 8.496e-05,
-   "mark": 8.496e-05
+   "cur_price": 8.121e-05,
+   "mark": 8.121e-05
   },
   "B4pLeAps53ZmSJbCrRAaafxv4iRnDGNjQwZKLXYJX1zK": {
    "sym": "CUMINU",
@@ -119,8 +108,8 @@
    "peak": 8.432e-05,
    "entry": 7.07358189717808e-05,
    "liq0": 23748.73,
-   "cur_price": 6.196e-05,
-   "mark": 6.196e-05
+   "cur_price": 6.117e-05,
+   "mark": 6.117e-05
   },
   "AtcYMQbuqYuwxC3nfCm6yFMiYH9SJLJYYpBcE3jjpump": {
    "sym": "avatar",
@@ -138,13 +127,11 @@
    "qty": 256888.306713,
    "cost": 15.02,
    "opened": "2026-09-27T09:41:56Z",
-   "peak": 8.063e-05,
+   "peak": 8.88e-05,
    "entry": 5.846899063716668e-05,
    "liq0": 20736.56,
-   "cur_price": 8.063e-05,
-   "mark": 8.063e-05,
-   "no_px_since": "2026-09-27T11:31:55Z",
-   "no_quote_since": "2026-09-27T11:31:56Z"
+   "cur_price": 8.88e-05,
+   "mark": 8.88e-05
   }
  },
  "trades": [
@@ -5028,6 +5015,21 @@
    "slip": 0.0125,
    "quote": "jup",
    "reason": "longshot"
+  },
+  {
+   "t": "2026-09-27T11:36:56Z",
+   "side": "sell",
+   "sym": "FXFUN",
+   "addr": "CjkD1qwNPVP9VKshVn2BzqxiPtmdSnwA8SNV9HJBpump",
+   "price": 0.0001296,
+   "usd": 36.39,
+   "pnl": 21.37,
+   "peak_x": 3.589,
+   "held_h": 72.0,
+   "frac": 1.0,
+   "slip": 0.0079,
+   "quote": "jup",
+   "reason": "time"
   }
  ],
  "equity": [
@@ -18614,10 +18616,17 @@
   {
    "t": "2026-09-27T11:31:56Z",
    "v": 537.28
+  },
+  {
+   "t": "2026-09-27T11:36:57Z",
+   "v": 538.73
   }
  ],
  "started": "2026-09-15T16:35:51Z",
  "strategy": "smallcap_longshots",
  "helius": true,
- "codex": true
+ "codex": true,
+ "verkauft_am": {
+  "CjkD1qwNPVP9VKshVn2BzqxiPtmdSnwA8SNV9HJBpump": 1790509016.832631
+ }
 }
