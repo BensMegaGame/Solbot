@@ -1,5 +1,5 @@
 {
- "cash": 416.3064586213251,
+ "cash": 77.93463901254984,
  "positions": {
   "DKu9kykSfbN5LBfFXtNNDPaX35o4Fv6vJ9FKk7pZpump": {
    "sym": "AVA",
@@ -8,8 +8,18 @@
    "opened": "2026-09-23T03:52:01Z",
    "peak": 0.01038,
    "entry": 0.010057842513774276,
-   "mark": 0.01001,
-   "cur_price": 0.01001
+   "mark": 0.01,
+   "cur_price": 0.01
+  },
+  "FeR8VBqNRSUD5NtXAj2n3j1dAHkZHfyDktKuLXD4pump": {
+   "sym": "jellyjelly",
+   "qty": 5722.659205,
+   "cost": 338.37181960877524,
+   "opened": "2026-09-27T09:37:08Z",
+   "peak": 0.05917,
+   "entry": 0.0591284239524753,
+   "no_quote_since": "2026-09-27T09:37:08Z",
+   "mark": 0.0
   }
  },
  "trades": [
@@ -591,6 +601,18 @@
    "slip": 0.0,
    "quote": "jup",
    "reason": "trail"
+  },
+  {
+   "t": "2026-09-27T09:37:08Z",
+   "side": "buy",
+   "sym": "jellyjelly",
+   "addr": "FeR8VBqNRSUD5NtXAj2n3j1dAHkZHfyDktKuLXD4pump",
+   "price": 0.05917,
+   "fill": 0.059128423952,
+   "usd": 338.37,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "dip 24h -13% (SOL +4%) 1h +0.4%"
   }
  ],
  "equity": [
@@ -12149,13 +12171,17 @@
   {
    "t": "2026-09-27T09:32:04Z",
    "v": 751.89
+  },
+  {
+   "t": "2026-09-27T09:37:08Z",
+   "v": 413.19
   }
  ],
  "started": "2026-09-16T16:55:59Z",
  "strategy": "largecap_dip",
  "universe_n": 73,
  "coverage": {
-  "t": "2026-09-27T09:32:04Z",
+  "t": "2026-09-27T09:37:08Z",
   "kurse": 73,
   "von": 73,
   "sol": true
