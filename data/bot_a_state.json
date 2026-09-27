@@ -1,16 +1,6 @@
 {
- "cash": 567.6229689411123,
+ "cash": 591.5457179411122,
  "positions": {
-  "44J1LiJu17k25UDCjoJ3H2EMbbne5dmqn576J4ZNyBYT": {
-   "sym": "MINECOIN",
-   "qty": 374846.118648,
-   "cost": 50.02,
-   "opened": "2026-09-27T01:00:11Z",
-   "peak": 0.0001582,
-   "entry": 0.0001334414243914618,
-   "cur_price": 7.465e-05,
-   "mark": 7.465e-05
-  },
   "CbouD8khLcz1Y1QngvRtQufUimSRKpHkvGn6y1n8pump": {
    "sym": "UTILITY",
    "qty": 144427.519275,
@@ -18,8 +8,8 @@
    "opened": "2026-09-27T01:45:11Z",
    "peak": 0.0005413,
    "entry": 0.000259749666741619,
-   "cur_price": 0.0004295,
-   "mark": 0.0004295,
+   "cur_price": 0.0004337,
+   "mark": 0.0004337,
    "tp0": true
   },
   "HSUMi4rMgjrx7zRUabw3ogGu1pa5hmF2eVcXj9Apump": {
@@ -29,8 +19,8 @@
    "opened": "2026-09-27T13:00:52Z",
    "peak": 0.0008143,
    "entry": 0.0008169234171411898,
-   "cur_price": 0.0006575,
-   "mark": 0.0006575
+   "cur_price": 0.0006747,
+   "mark": 0.0006747
   }
  },
  "trades": [
@@ -2165,6 +2155,21 @@
    "held_h": 20.3,
    "frac": 1.0,
    "slip": 0.0025,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-27T20:15:02Z",
+   "side": "sell",
+   "sym": "MINECOIN",
+   "addr": "44J1LiJu17k25UDCjoJ3H2EMbbne5dmqn576J4ZNyBYT",
+   "price": 6.659e-05,
+   "usd": 23.92,
+   "pnl": -26.1,
+   "peak_x": 1.186,
+   "held_h": 19.2,
+   "frac": 1.0,
+   "slip": 0.024,
    "quote": "jup",
    "reason": "stop"
   }
@@ -19797,11 +19802,16 @@
   {
    "t": "2026-09-27T20:10:59Z",
    "v": 697.9
+  },
+  {
+   "t": "2026-09-27T20:16:00Z",
+   "v": 695.5
   }
  ],
  "started": "2026-09-10T17:17:16Z",
  "verkauft_am": {
   "9GTFD2DHo1KHd73smcpJtdTEvA6C5zzXxoWzjnb51c8": 1790514305.4277997,
-  "4G5YDqDvwgwSS3nLPDGDpGuetbG7rZYzNSBb1U4Tqbzi": 1790536201.7235372
+  "4G5YDqDvwgwSS3nLPDGDpGuetbG7rZYzNSBb1U4Tqbzi": 1790536201.7235372,
+  "44J1LiJu17k25UDCjoJ3H2EMbbne5dmqn576J4ZNyBYT": 1790540102.6698318
  }
 }
