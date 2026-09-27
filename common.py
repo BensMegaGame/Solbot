@@ -119,14 +119,26 @@ def solana_pair(addr):
 class Paper:
     """Simuliertes Portfolio. buy()/sell() sind die einzigen Stellen, die
     fuer echte Trades ausgetauscht werden muessten (Jupiter Swap API)."""
-    def __init__(self, bot, quotes=True):
+    def __init__(self, bot, quotes=True, rebuy_sperre_h=0):
         self.bot = bot; self.quotes = quotes      # quotes=False: Token ohne Jupiter-Route (z.B. Bonding Curve)
+        # Wiederkauf-Sperre (27.09.): nach einem VOLLSTAENDIGEN Verkauf darf derselbe Coin rebuy_sperre_h Stunden
+        # lang nicht wieder gekauft werden - egal ob mit Gewinn oder Verlust. Gemessen: alle 9 Wiederkaeufe
+        # innerhalb weniger Stunden (A, D) endeten im Minus, u.a. ALX 27 s nach +10x -> -26,6 $.
+        # 0 = aus (Bot E: kauft ohnehin nie in derselben Minute wieder, seine spaeteren Wiederkaeufe liefen gemischt).
+        self.rebuy_s = rebuy_sperre_h * 3600
         self.file = f"{bot}_state.json"
         self.s = load(self.file, {"cash": START_CAPITAL, "positions": {}, "trades": [],
                                    "equity": [], "started": now_iso()})
 
+    def gesperrt(self, addr):
+        """True, solange der Coin nach einem vollstaendigen Verkauf noch fuer Wiederkaeufe gesperrt ist."""
+        t = (self.s.get("verkauft_am") or {}).get(addr)
+        return bool(self.rebuy_s and t and time.time() - t < self.rebuy_s)
+
     def buy(self, sym, addr, price, usd, liquidity, reason):
         if usd > self.s["cash"] or usd <= 0: return False
+        if self.gesperrt(addr):
+            print(f"  {sym}: vor weniger als {self.rebuy_s/3600:.0f} h verkauft -> kein Wiederkauf"); return False
         src = "est"
         q = None
         if self.quotes and JUP_KEY:
@@ -199,6 +211,8 @@ class Paper:
                                  "frac": frac, "slip": round(slip, 4), "quote": src, "reason": reason})
         if pos["qty"] <= 1e-9 or frac >= 0.999:
             del self.s["positions"][addr]
+            va = self.s.setdefault("verkauft_am", {}); va[addr] = time.time()
+            self.s["verkauft_am"] = {k: t for k, t in va.items() if time.time() - t < 7 * 86400}
         return True
 
     def mark(self, prices):
