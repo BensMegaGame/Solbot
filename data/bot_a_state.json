@@ -1,5 +1,5 @@
 {
- "cash": 591.5457179411122,
+ "cash": 541.5257179411122,
  "positions": {
   "CbouD8khLcz1Y1QngvRtQufUimSRKpHkvGn6y1n8pump": {
    "sym": "UTILITY",
@@ -8,8 +8,8 @@
    "opened": "2026-09-27T01:45:11Z",
    "peak": 0.0005413,
    "entry": 0.000259749666741619,
-   "cur_price": 0.0003891,
-   "mark": 0.0003891,
+   "cur_price": 0.0003886,
+   "mark": 0.0003886,
    "tp0": true
   },
   "HSUMi4rMgjrx7zRUabw3ogGu1pa5hmF2eVcXj9Apump": {
@@ -19,8 +19,18 @@
    "opened": "2026-09-27T13:00:52Z",
    "peak": 0.0008143,
    "entry": 0.0008169234171411898,
-   "cur_price": 0.0006885,
-   "mark": 0.0006885
+   "cur_price": 0.0006808,
+   "mark": 0.0006808
+  },
+  "C61oA922BKGFkQMEE27QYkAd15NsRh9T6H462LYHk4DU": {
+   "sym": "POKESTRTGY",
+   "qty": 382476.572543,
+   "cost": 50.02,
+   "opened": "2026-09-27T21:00:45Z",
+   "peak": 0.0001299,
+   "entry": 0.00013077925183084643,
+   "cur_price": 0.0001299,
+   "mark": 0.0001299
   }
  },
  "trades": [
@@ -2172,6 +2182,18 @@
    "slip": 0.024,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-27T21:00:45Z",
+   "side": "buy",
+   "sym": "POKESTRTGY",
+   "addr": "C61oA922BKGFkQMEE27QYkAd15NsRh9T6H462LYHk4DU",
+   "price": 0.0001299,
+   "fill": 0.000130779252,
+   "usd": 50.02,
+   "slip": 0.0146,
+   "quote": "jup",
+   "reason": "screener"
   }
  ],
  "equity": [
@@ -19838,6 +19860,10 @@
   {
    "t": "2026-09-27T20:55:56Z",
    "v": 689.9
+  },
+  {
+   "t": "2026-09-27T21:00:56Z",
+   "v": 689.02
   }
  ],
  "started": "2026-09-10T17:17:16Z",
