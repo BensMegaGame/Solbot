@@ -1,5 +1,5 @@
 {
- "cash": 95.49435537648178,
+ "cash": 0.980000000000004,
  "positions": {
   "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump": {
    "sym": "neet",
@@ -9,8 +9,8 @@
    "peak": 0.04383,
    "entry": 0.03874984634486468,
    "pair": "5wNu5QhdpRGrL37ffcd6TMMqZugQgxwafgz477rShtHy",
-   "cur_price": 0.04332,
-   "mark": 0.04332
+   "cur_price": 0.04288,
+   "mark": 0.04288
   },
   "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump": {
    "sym": "MANIFEST",
@@ -20,8 +20,8 @@
    "peak": 0.01252,
    "entry": 0.012049542767064443,
    "pair": "2DVbU5h8JCd37gaXAJUZ4t77HsjJW22LLduTZk7GSa43",
-   "cur_price": 0.01242,
-   "mark": 0.01242
+   "cur_price": 0.01247,
+   "mark": 0.01247
   },
   "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump": {
    "sym": "Buttcoin",
@@ -42,8 +42,19 @@
    "peak": 0.05374,
    "entry": 0.053403772165294655,
    "pair": "BxRhW4q1wTRwJkJ1C4NR4yJCRL2uusoju4g1bVenspZK",
-   "cur_price": 0.05344,
-   "mark": 0.05344
+   "cur_price": 0.05346,
+   "mark": 0.05346
+  },
+  "CortexFv3fRcLKTgACr7aLqckGh5eP7TP3z9JHoKqMc6": {
+   "sym": "CX",
+   "qty": 2996.853477507,
+   "cost": 94.51435537648177,
+   "opened": "2026-09-28T14:22:05Z",
+   "peak": 0.03127,
+   "entry": 0.031537863324270915,
+   "pair": "AtK4fYMF1mFosQn6qRiMJoE1hsjpCFwpTy1TKpE5Ez6E",
+   "cur_price": 0.03127,
+   "mark": 0.03127
   }
  },
  "trades": [
@@ -175,6 +186,18 @@
    "slip": 0.0008,
    "quote": "jup",
    "reason": "nach virtuellem stop (E) -10.1%"
+  },
+  {
+   "t": "2026-09-28T14:22:05Z",
+   "side": "buy",
+   "sym": "CX",
+   "addr": "CortexFv3fRcLKTgACr7aLqckGh5eP7TP3z9JHoKqMc6",
+   "price": 0.03127,
+   "fill": 0.031537863324,
+   "usd": 94.51,
+   "slip": 0.0029,
+   "quote": "jup",
+   "reason": "nach virtuellem stop (C) -10.0%"
   }
  ],
  "equity": [
@@ -3873,6 +3896,10 @@
   {
    "t": "2026-09-28T14:17:09Z",
    "v": 510.96
+  },
+  {
+   "t": "2026-09-28T14:22:05Z",
+   "v": 509.45
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -3884,8 +3911,8 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-09-28T14:17:09Z",
-  "virtuell": 7,
+  "t": "2026-09-28T14:22:05Z",
+  "virtuell": 6,
   "neu": 0,
   "gestoppt": false
  },
