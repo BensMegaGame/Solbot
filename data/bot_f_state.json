@@ -9,8 +9,8 @@
    "peak": 0.04077,
    "entry": 0.03874984634486468,
    "pair": "5wNu5QhdpRGrL37ffcd6TMMqZugQgxwafgz477rShtHy",
-   "cur_price": 0.03502,
-   "mark": 0.03502
+   "cur_price": 0.03486,
+   "mark": 0.03486
   },
   "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump": {
    "sym": "MANIFEST",
@@ -31,8 +31,8 @@
    "peak": 0.08494,
    "entry": 0.08499362210451014,
    "pair": "HMzvsEEmtzHhvZNw9uwbaG85HCTmFnkbhzUx16cy7ca3",
-   "cur_price": 0.07551,
-   "mark": 0.07551
+   "cur_price": 0.07581,
+   "mark": 0.07581
   },
   "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump": {
    "sym": "Buttcoin",
@@ -3534,6 +3534,10 @@
   {
    "t": "2026-09-28T07:47:01Z",
    "v": 483.71
+  },
+  {
+   "t": "2026-09-28T07:52:09Z",
+   "v": 483.65
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -3544,9 +3548,9 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-09-28T07:47:01Z",
-  "virtuell": 5,
-  "neu": 0,
+  "t": "2026-09-28T07:52:09Z",
+  "virtuell": 6,
+  "neu": 1,
   "gestoppt": false
  }
 }
