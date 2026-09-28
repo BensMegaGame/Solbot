@@ -1,6 +1,17 @@
 {
- "cash": 509.90376458510866,
- "positions": {},
+ "cash": 356.912635209576,
+ "positions": {
+  "CTPoyCwkjMvoJwU4xvZZqoD8tiYk6yDchySiN5gGpump": {
+   "sym": "FONE",
+   "qty": 20934.216016,
+   "cost": 152.9911293755326,
+   "opened": "2026-09-28T10:11:53Z",
+   "peak": 0.00728,
+   "entry": 0.007308185281865901,
+   "cur_price": 0.00728,
+   "mark": 0.00728
+  }
+ },
  "trades": [
   {
    "t": "2026-09-25T10:30:42Z",
@@ -220,6 +231,18 @@
    "slip": 0.0017,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-28T10:11:53Z",
+   "side": "buy",
+   "sym": "FONE",
+   "addr": "CTPoyCwkjMvoJwU4xvZZqoD8tiYk6yDchySiN5gGpump",
+   "price": 0.00728,
+   "fill": 0.007308185282,
+   "usd": 152.99,
+   "slip": 0.0063,
+   "quote": "jup",
+   "reason": "dip 24h -15% (SOL -5%) 1h -1.2%"
   }
  ],
  "equity": [
@@ -3718,6 +3741,10 @@
   {
    "t": "2026-09-28T10:06:49Z",
    "v": 509.9
+  },
+  {
+   "t": "2026-09-28T10:11:53Z",
+   "v": 509.31
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -3725,12 +3752,12 @@
  "strategy": "dip_weites_netz",
  "universe_n": 142,
  "coverage": {
-  "t": "2026-09-28T10:06:49Z",
+  "t": "2026-09-28T10:11:53Z",
   "kurse": 125,
   "von": 142,
   "ohne_pool": 22,
   "sol": true,
-  "kandidaten": 0
+  "kandidaten": 1
  },
  "verkauft_am": {
   "J8PSdNP3QewKq2Z1JJJFDMaqF7KcaiJhR7gbr5KZpump": 1790531184.9254415,
