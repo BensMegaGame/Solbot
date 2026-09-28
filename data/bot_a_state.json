@@ -1,5 +1,5 @@
 {
- "cash": 514.9843459411122,
+ "cash": 464.96434594111224,
  "positions": {
   "CbouD8khLcz1Y1QngvRtQufUimSRKpHkvGn6y1n8pump": {
    "sym": "UTILITY",
@@ -8,8 +8,8 @@
    "opened": "2026-09-27T01:45:11Z",
    "peak": 0.0006495,
    "entry": 0.000259749666741619,
-   "cur_price": 0.0006495,
-   "mark": 0.0006495,
+   "cur_price": 0.0005834,
+   "mark": 0.0005834,
    "tp0": true
   },
   "EGTFrUPym8JnEMAddZjuhBkcSGEGTM75qymxUZgTpump": {
@@ -19,8 +19,18 @@
    "opened": "2026-09-28T16:40:34Z",
    "peak": 0.0001161,
    "entry": 0.0001167214381152407,
-   "cur_price": 0.0001094,
-   "mark": 0.0001094
+   "cur_price": 0.0001074,
+   "mark": 0.0001074
+  },
+  "F9SAHZVQ7U1mgx8V9Xk1a1EgPtrEVsxQJZa9CUw8uQSp": {
+   "sym": "LOOT",
+   "qty": 372149.091502,
+   "cost": 50.02,
+   "opened": "2026-09-28T17:05:12Z",
+   "peak": 0.0001277,
+   "entry": 0.00013440849686914037,
+   "cur_price": 0.0001277,
+   "mark": 0.0001277
   }
  },
  "trades": [
@@ -2251,6 +2261,18 @@
    "fill": 0.000116721438,
    "usd": 50.02,
    "slip": 0.0301,
+   "quote": "jup",
+   "reason": "screener"
+  },
+  {
+   "t": "2026-09-28T17:05:12Z",
+   "side": "buy",
+   "sym": "LOOT",
+   "addr": "F9SAHZVQ7U1mgx8V9Xk1a1EgPtrEVsxQJZa9CUw8uQSp",
+   "price": 0.0001277,
+   "fill": 0.000134408497,
+   "usd": 50.02,
+   "slip": 0.0525,
    "quote": "jup",
    "reason": "screener"
   }
@@ -20883,6 +20905,10 @@
   {
    "t": "2026-09-28T17:00:52Z",
    "v": 655.67
+  },
+  {
+   "t": "2026-09-28T17:05:50Z",
+   "v": 642.77
   }
  ],
  "started": "2026-09-10T17:17:16Z",
