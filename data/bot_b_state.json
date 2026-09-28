@@ -1,5 +1,5 @@
 {
- "cash": 341.9917940000001,
+ "cash": 366.2802640000001,
  "positions": {
   "CbouD8khLcz1Y1QngvRtQufUimSRKpHkvGn6y1n8pump": {
    "sym": "UTILITY",
@@ -8,19 +8,9 @@
    "opened": "2026-09-27T01:46:18Z",
    "peak": 0.0005363,
    "entry": 0.0002598001940788963,
-   "cur_price": 0.0004797,
-   "mark": 0.0004797,
+   "cur_price": 0.0004792,
+   "mark": 0.0004792,
    "tp0": true
-  },
-  "5NhN6zzDkzwXFGPFqtpTopV4ttBeZ6CWy1oRL9Rkpump": {
-   "sym": "Bagwork",
-   "qty": 292030.769061,
-   "cost": 50.02,
-   "opened": "2026-09-27T21:11:14Z",
-   "peak": 0.0001883,
-   "entry": 0.00017128332114056007,
-   "cur_price": 8.803e-05,
-   "mark": 8.803e-05
   }
  },
  "trades": [
@@ -141,6 +131,21 @@
    "held_h": 23.8,
    "frac": 1.0,
    "slip": 0.0132,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-28T13:00:59Z",
+   "side": "sell",
+   "sym": "Bagwork",
+   "addr": "5NhN6zzDkzwXFGPFqtpTopV4ttBeZ6CWy1oRL9Rkpump",
+   "price": 8.427e-05,
+   "usd": 24.29,
+   "pnl": -25.73,
+   "peak_x": 1.099,
+   "held_h": 15.8,
+   "frac": 1.0,
+   "slip": 0.0146,
    "quote": "jup",
    "reason": "stop"
   }
@@ -3569,12 +3574,17 @@
   {
    "t": "2026-09-28T12:56:33Z",
    "v": 436.97
+  },
+  {
+   "t": "2026-09-28T13:01:36Z",
+   "v": 435.48
   }
  ],
  "started": "2026-09-25T13:40:52Z",
  "version": "b3",
  "strategy": "a_pumpfun",
  "verkauft_am": {
-  "HSUMi4rMgjrx7zRUabw3ogGu1pa5hmF2eVcXj9Apump": 1790599860.126998
+  "HSUMi4rMgjrx7zRUabw3ogGu1pa5hmF2eVcXj9Apump": 1790599860.126998,
+  "5NhN6zzDkzwXFGPFqtpTopV4ttBeZ6CWy1oRL9Rkpump": 1790600459.2181978
  }
 }
