@@ -20,8 +20,8 @@
    "peak": 0.0001306,
    "entry": 8.074085087961137e-05,
    "liq0": 32285.61,
-   "cur_price": 7.389e-05,
-   "mark": 7.389e-05
+   "cur_price": 7.262e-05,
+   "mark": 7.262e-05
   },
   "ARPwPPWbaj3FYBf6k1Lt2jqRkv9JJUg3Hxav5aHKTEem": {
    "sym": "P(DOOM)",
@@ -31,8 +31,8 @@
    "peak": 0.0002346,
    "entry": 5.1036012918639984e-05,
    "liq0": 21503.08,
-   "cur_price": 0.0001023,
-   "mark": 0.0001023
+   "cur_price": 9.976e-05,
+   "mark": 9.976e-05
   },
   "6hzyHMwR1S2wAbPfDjTcQtM5fTq4XZBWFTRSdTsvZ2DH": {
    "sym": "tinycat",
@@ -42,8 +42,8 @@
    "peak": 0.000224,
    "entry": 4.599960146449388e-05,
    "liq0": 17941.05,
-   "cur_price": 0.0001063,
-   "mark": 0.0001063
+   "cur_price": 0.0001083,
+   "mark": 0.0001083
   },
   "3eYTViXTUBCVhn1TSVZAAbajRLPKs4tuV6DwL4oTpump": {
    "sym": "Pumpkinu",
@@ -54,7 +54,9 @@
    "entry": 5.846899063716668e-05,
    "liq0": 20736.56,
    "cur_price": 0.0001211,
-   "mark": 0.0001211
+   "mark": 0.0001211,
+   "no_px_since": "2026-09-28T02:21:59Z",
+   "no_quote_since": "2026-09-28T02:21:59Z"
   },
   "79FCJqG2DrYzH2G3eCQedRoWRbjri7MSgMkyGeZ7cLrm": {
    "sym": "TETSUOAI",
@@ -77,10 +79,8 @@
    "peak": 0.0002247,
    "entry": 7.007619438245421e-05,
    "liq0": 22997.98,
-   "cur_price": 9.019e-05,
-   "mark": 9.019e-05,
-   "no_px_since": "2026-09-28T02:17:02Z",
-   "no_quote_since": "2026-09-28T02:17:03Z"
+   "cur_price": 9.79e-05,
+   "mark": 9.79e-05
   },
   "5iqjhP5ig6JWdXQf6hYAwojZeMf11pTCvH87gCQtpump": {
    "sym": "TTP",
@@ -90,8 +90,8 @@
    "peak": 0.0002037,
    "entry": 0.00015426029056095619,
    "liq0": 40384.9,
-   "cur_price": 0.0001968,
-   "mark": 0.0001968
+   "cur_price": 0.0001966,
+   "mark": 0.0001966
   },
   "bh6GbasUGwX7t6oS5J61F41UGTtujYnzsKoy6Y1d8Cb": {
    "sym": "MICHAEL",
@@ -101,8 +101,8 @@
    "peak": 4.463e-05,
    "entry": 4.563106598095387e-05,
    "liq0": 18061.39,
-   "cur_price": 3.039e-05,
-   "mark": 3.039e-05
+   "cur_price": 3.074e-05,
+   "mark": 3.074e-05
   }
  },
  "trades": [
@@ -19652,6 +19652,10 @@
   {
    "t": "2026-09-28T02:17:03Z",
    "v": 494.71
+  },
+  {
+   "t": "2026-09-28T02:21:59Z",
+   "v": 496.13
   }
  ],
  "started": "2026-09-15T16:35:51Z",
