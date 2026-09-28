@@ -1,5 +1,5 @@
 {
- "cash": 433.40384022050995,
+ "cash": 92.003686942213,
  "positions": {
   "FeR8VBqNRSUD5NtXAj2n3j1dAHkZHfyDktKuLXD4pump": {
    "sym": "jellyjelly",
@@ -8,8 +8,18 @@
    "opened": "2026-09-27T09:37:08Z",
    "peak": 0.0595,
    "entry": 0.0591284239524753,
-   "mark": 0.05683,
-   "cur_price": 0.05683
+   "mark": 0.05738,
+   "cur_price": 0.05738
+  },
+  "KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS": {
+   "sym": "KMNO",
+   "qty": 7982.3448,
+   "cost": 341.40015327829695,
+   "opened": "2026-09-28T23:27:06Z",
+   "peak": 0.0427,
+   "entry": 0.04276940696401601,
+   "no_quote_since": "2026-09-28T23:27:06Z",
+   "mark": 0.0
   }
  },
  "trades": [
@@ -645,6 +655,18 @@
    "slip": 0.0,
    "quote": "jup",
    "reason": "trail"
+  },
+  {
+   "t": "2026-09-28T23:27:06Z",
+   "side": "buy",
+   "sym": "KMNO",
+   "addr": "KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS",
+   "price": 0.0427,
+   "fill": 0.042769406964,
+   "usd": 341.4,
+   "slip": 0.0003,
+   "quote": "jup",
+   "reason": "dip 24h -12% (SOL -3%) 1h +1.8%"
   }
  ],
  "equity": [
@@ -14019,13 +14041,17 @@
   {
    "t": "2026-09-28T23:22:01Z",
    "v": 758.62
+  },
+  {
+   "t": "2026-09-28T23:27:06Z",
+   "v": 420.37
   }
  ],
  "started": "2026-09-16T16:55:59Z",
  "strategy": "largecap_dip",
  "universe_n": 82,
  "coverage": {
-  "t": "2026-09-28T23:22:01Z",
+  "t": "2026-09-28T23:27:06Z",
   "kurse": 82,
   "von": 82,
   "sol": true
