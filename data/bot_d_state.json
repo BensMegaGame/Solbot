@@ -31,8 +31,8 @@
    "peak": 0.0002346,
    "entry": 5.1036012918639984e-05,
    "liq0": 21503.08,
-   "cur_price": 0.0001162,
-   "mark": 0.0001162
+   "cur_price": 0.0001061,
+   "mark": 0.0001061
   },
   "6hzyHMwR1S2wAbPfDjTcQtM5fTq4XZBWFTRSdTsvZ2DH": {
    "sym": "tinycat",
@@ -54,7 +54,9 @@
    "entry": 5.846899063716668e-05,
    "liq0": 20736.56,
    "cur_price": 0.0001223,
-   "mark": 0.0001223
+   "mark": 0.0001223,
+   "no_px_since": "2026-09-28T01:37:04Z",
+   "no_quote_since": "2026-09-28T01:37:04Z"
   },
   "79FCJqG2DrYzH2G3eCQedRoWRbjri7MSgMkyGeZ7cLrm": {
    "sym": "TETSUOAI",
@@ -77,10 +79,8 @@
    "peak": 0.0002247,
    "entry": 7.007619438245421e-05,
    "liq0": 22997.98,
-   "cur_price": 0.0001247,
-   "mark": 0.0001247,
-   "no_px_since": "2026-09-28T01:32:04Z",
-   "no_quote_since": "2026-09-28T01:32:04Z"
+   "cur_price": 0.0001203,
+   "mark": 0.0001203
   },
   "5iqjhP5ig6JWdXQf6hYAwojZeMf11pTCvH87gCQtpump": {
    "sym": "TTP",
@@ -90,8 +90,8 @@
    "peak": 0.0002025,
    "entry": 0.00015426029056095619,
    "liq0": 40384.9,
-   "cur_price": 0.0001972,
-   "mark": 0.0001972
+   "cur_price": 0.0001965,
+   "mark": 0.0001965
   },
   "bh6GbasUGwX7t6oS5J61F41UGTtujYnzsKoy6Y1d8Cb": {
    "sym": "MICHAEL",
@@ -101,8 +101,8 @@
    "peak": 4.463e-05,
    "entry": 4.563106598095387e-05,
    "liq0": 18061.39,
-   "cur_price": 2.98e-05,
-   "mark": 2.98e-05
+   "cur_price": 3.023e-05,
+   "mark": 3.023e-05
   }
  },
  "trades": [
@@ -19616,6 +19616,10 @@
   {
    "t": "2026-09-28T01:32:04Z",
    "v": 516.52
+  },
+  {
+   "t": "2026-09-28T01:37:04Z",
+   "v": 512.68
   }
  ],
  "started": "2026-09-15T16:35:51Z",
