@@ -1,5 +1,5 @@
 {
- "cash": 107.97114704786723,
+ "cash": 192.91471504786722,
  "positions": {
   "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump": {
    "sym": "neet",
@@ -9,8 +9,8 @@
    "peak": 0.04077,
    "entry": 0.03874984634486468,
    "pair": "5wNu5QhdpRGrL37ffcd6TMMqZugQgxwafgz477rShtHy",
-   "cur_price": 0.03491,
-   "mark": 0.03491
+   "cur_price": 0.03487,
+   "mark": 0.03487
   },
   "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump": {
    "sym": "MANIFEST",
@@ -23,17 +23,6 @@
    "cur_price": 0.01173,
    "mark": 0.01173
   },
-  "Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump": {
-   "sym": "CATE",
-   "qty": 1185.870279,
-   "cost": 100.791410358296,
-   "opened": "2026-09-27T21:31:53Z",
-   "peak": 0.08494,
-   "entry": 0.08499362210451014,
-   "pair": "HMzvsEEmtzHhvZNw9uwbaG85HCTmFnkbhzUx16cy7ca3",
-   "cur_price": 0.07444,
-   "mark": 0.07444
-  },
   "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump": {
    "sym": "Buttcoin",
    "qty": 7949.593032,
@@ -42,8 +31,8 @@
    "peak": 0.01259,
    "entry": 0.012333049858134775,
    "pair": "FFcYgSSgWHforA9rXXkA48p8YFoz8TSW85Jpo3CQHDyS",
-   "cur_price": 0.01217,
-   "mark": 0.01217
+   "cur_price": 0.01227,
+   "mark": 0.01227
   }
  },
  "trades": [
@@ -148,6 +137,21 @@
    "slip": 0.0,
    "quote": "jup",
    "reason": "nach virtuellem stop (E) -10.8%"
+  },
+  {
+   "t": "2026-09-28T08:06:58Z",
+   "side": "sell",
+   "sym": "CATE",
+   "addr": "Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump",
+   "price": 0.07186,
+   "usd": 84.94,
+   "pnl": -15.85,
+   "peak_x": 0.999,
+   "held_h": 10.6,
+   "frac": 1.0,
+   "slip": 0.0046,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -3546,19 +3550,27 @@
   {
    "t": "2026-09-28T08:02:01Z",
    "v": 482.91
+  },
+  {
+   "t": "2026-09-28T08:06:58Z",
+   "v": 480.27
   }
  ],
  "started": "2026-09-25T09:22:03Z",
  "version": "f5",
  "cooldown": {
   "HTmQz7My6MehV7bjhJ6jde8nDND1yvsz68d24LP7YgUQ": 20726,
-  "5dvXTZ5qwgafnHtwu3Ls3QrWx1U4LQsFeCuJgkk4QEC6": 20727
+  "5dvXTZ5qwgafnHtwu3Ls3QrWx1U4LQsFeCuJgkk4QEC6": 20727,
+  "Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump": 20729
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-09-28T08:02:01Z",
+  "t": "2026-09-28T08:06:58Z",
   "virtuell": 6,
   "neu": 0,
   "gestoppt": false
+ },
+ "verkauft_am": {
+  "Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump": 1790582818.8553665
  }
 }
