@@ -1,5 +1,5 @@
 {
- "cash": 206.01387426340403,
+ "cash": 107.97114704786723,
  "positions": {
   "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump": {
    "sym": "neet",
@@ -9,8 +9,8 @@
    "peak": 0.04077,
    "entry": 0.03874984634486468,
    "pair": "5wNu5QhdpRGrL37ffcd6TMMqZugQgxwafgz477rShtHy",
-   "cur_price": 0.03527,
-   "mark": 0.03527
+   "cur_price": 0.03502,
+   "mark": 0.03502
   },
   "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump": {
    "sym": "MANIFEST",
@@ -31,8 +31,19 @@
    "peak": 0.08494,
    "entry": 0.08499362210451014,
    "pair": "HMzvsEEmtzHhvZNw9uwbaG85HCTmFnkbhzUx16cy7ca3",
-   "cur_price": 0.07735,
-   "mark": 0.07735
+   "cur_price": 0.07771,
+   "mark": 0.07771
+  },
+  "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump": {
+   "sym": "Buttcoin",
+   "qty": 7949.593032,
+   "cost": 98.0427272155368,
+   "opened": "2026-09-28T03:31:56Z",
+   "peak": 0.01233,
+   "entry": 0.012333049858134775,
+   "pair": "FFcYgSSgWHforA9rXXkA48p8YFoz8TSW85Jpo3CQHDyS",
+   "cur_price": 0.01233,
+   "mark": 0.01233
   }
  },
  "trades": [
@@ -125,6 +136,18 @@
    "slip": 0.0048,
    "quote": "jup",
    "reason": "nach virtuellem stop (E) -11.2%"
+  },
+  {
+   "t": "2026-09-28T03:31:56Z",
+   "side": "buy",
+   "sym": "Buttcoin",
+   "addr": "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump",
+   "price": 0.01233,
+   "fill": 0.012333049858,
+   "usd": 98.04,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "nach virtuellem stop (E) -10.8%"
   }
  ],
  "equity": [
@@ -3303,6 +3326,10 @@
   {
    "t": "2026-09-28T03:26:57Z",
    "v": 490.11
+  },
+  {
+   "t": "2026-09-28T03:31:56Z",
+   "v": 489.86
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -3313,8 +3340,8 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-09-28T03:26:57Z",
-  "virtuell": 6,
+  "t": "2026-09-28T03:31:56Z",
+  "virtuell": 5,
   "neu": 0,
   "gestoppt": false
  }
