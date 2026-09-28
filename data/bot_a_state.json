@@ -1,5 +1,5 @@
 {
- "cash": 565.0043459411122,
+ "cash": 514.9843459411122,
  "positions": {
   "CbouD8khLcz1Y1QngvRtQufUimSRKpHkvGn6y1n8pump": {
    "sym": "UTILITY",
@@ -8,9 +8,19 @@
    "opened": "2026-09-27T01:45:11Z",
    "peak": 0.0005413,
    "entry": 0.000259749666741619,
-   "cur_price": 0.0004501,
-   "mark": 0.0004501,
+   "cur_price": 0.0004552,
+   "mark": 0.0004552,
    "tp0": true
+  },
+  "EGTFrUPym8JnEMAddZjuhBkcSGEGTM75qymxUZgTpump": {
+   "sym": "Lobby",
+   "qty": 428541.669874,
+   "cost": 50.02,
+   "opened": "2026-09-28T16:40:34Z",
+   "peak": 0.0001072,
+   "entry": 0.0001167214381152407,
+   "cur_price": 0.0001072,
+   "mark": 0.0001072
   }
  },
  "trades": [
@@ -2231,6 +2241,18 @@
    "slip": 0.0159,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-28T16:40:34Z",
+   "side": "buy",
+   "sym": "Lobby",
+   "addr": "EGTFrUPym8JnEMAddZjuhBkcSGEGTM75qymxUZgTpump",
+   "price": 0.0001072,
+   "fill": 0.000116721438,
+   "usd": 50.02,
+   "slip": 0.0301,
+   "quote": "jup",
+   "reason": "screener"
   }
  ],
  "equity": [
@@ -20841,6 +20863,10 @@
   {
    "t": "2026-09-28T16:35:50Z",
    "v": 630.01
+  },
+  {
+   "t": "2026-09-28T16:40:52Z",
+   "v": 626.67
   }
  ],
  "started": "2026-09-10T17:17:16Z",
