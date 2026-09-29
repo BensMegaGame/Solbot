@@ -1,5 +1,5 @@
 {
- "cash": 64.15616700000106,
+ "cash": 72.77312700000107,
  "positions": {
   "FDfxBRSc3MraBGcGmkHgfkvwHTUDMEA2hRV2cRNbpeg": {
    "sym": "UNPEG",
@@ -31,8 +31,8 @@
    "peak": 0.0002313,
    "entry": 0.00015426029056095619,
    "liq0": 40384.9,
-   "cur_price": 0.0001622,
-   "mark": 0.0001622
+   "cur_price": 0.0001562,
+   "mark": 0.0001562
   },
   "6uAuFimUT9stEBo3Nr8B4bMHDYLoro3SS9UeVP1a9Myz": {
    "sym": "REMUS",
@@ -55,8 +55,8 @@
    "peak": 0.0002317,
    "entry": 4.899210344924658e-05,
    "liq0": 20239.65,
-   "cur_price": 0.0001089,
-   "mark": 0.0001089
+   "cur_price": 0.0001084,
+   "mark": 0.0001084
   },
   "7ESoDXqwqKUQBWdeqygNCFZroAtemHxyK8EPcjgPV777": {
    "sym": "LUCKY",
@@ -79,8 +79,8 @@
    "peak": 0.0003295,
    "entry": 0.00015785662475849564,
    "liq0": 39087.18,
-   "cur_price": 0.0001361,
-   "mark": 0.0001361
+   "cur_price": 0.0001408,
+   "mark": 0.0001408
   },
   "HzaCANKGkhNcQGb1VWL8f4tHJYrCmaXrPWk9eHR7GYYX": {
    "sym": "SATOSHINU",
@@ -93,17 +93,6 @@
    "cur_price": 0.0002972,
    "mark": 0.0002972
   },
-  "92BVgXufGjaMUyANA97dvg8LqNb5VMg2wgRfve9tPdCG": {
-   "sym": "DELREY",
-   "qty": 108983.671557,
-   "cost": 15.02,
-   "opened": "2026-09-28T23:26:56Z",
-   "peak": 0.0001476,
-   "entry": 0.00013781881070270538,
-   "liq0": 34816.91,
-   "cur_price": 8.442e-05,
-   "mark": 8.442e-05
-  },
   "BZFYNPeQAEW3HWQ4DNsTVahC1n4ZjTgn6jB2nnBbB96W": {
    "sym": "SAPLING",
    "qty": 181132.807463,
@@ -112,8 +101,8 @@
    "peak": 9.992e-05,
    "entry": 8.292258155976595e-05,
    "liq0": 27615.28,
-   "cur_price": 7.359e-05,
-   "mark": 7.359e-05
+   "cur_price": 7.449e-05,
+   "mark": 7.449e-05
   },
   "HL8LrvYgmmHoLH9TvqqSv8Sy6yBGjXjZmpv2RpitpvUX": {
    "sym": "YAPCAT",
@@ -123,8 +112,8 @@
    "peak": 4.67e-05,
    "entry": 4.7045501927131633e-05,
    "liq0": 18424.23,
-   "cur_price": 3.898e-05,
-   "mark": 3.898e-05
+   "cur_price": 3.761e-05,
+   "mark": 3.761e-05
   },
   "zVbJ3eRjhRbvKWAxP8xrXZAeAcSqk3vtTjCzzVAAphi": {
    "sym": "PHI",
@@ -134,8 +123,8 @@
    "peak": 0.0001575,
    "entry": 4.98812653293327e-05,
    "liq0": 19167.65,
-   "cur_price": 3.193e-05,
-   "mark": 3.193e-05
+   "cur_price": 3.202e-05,
+   "mark": 3.202e-05
   },
   "AmaM7N43JBicpcHDbVKyGeuTjtnNhJ2yZTdWqoZpCX8b": {
    "sym": "KARDASHEV",
@@ -145,8 +134,8 @@
    "peak": 7.503e-05,
    "entry": 4.7366939627826596e-05,
    "liq0": 19209.53,
-   "cur_price": 3.634e-05,
-   "mark": 3.634e-05
+   "cur_price": 3.503e-05,
+   "mark": 3.503e-05
   },
   "EU5WWxWBjDzfs3pvb6N7yuc6gBfo5Ltao6qfdXDiH2U3": {
    "sym": "SLATE",
@@ -180,8 +169,8 @@
    "peak": 6.591e-05,
    "entry": 6.958039416713999e-05,
    "liq0": 23396.39,
-   "cur_price": 6.591e-05,
-   "mark": 6.591e-05
+   "cur_price": 6.499e-05,
+   "mark": 6.499e-05
   }
  },
  "trades": [
@@ -6211,6 +6200,21 @@
    "slip": 0.0421,
    "quote": "jup",
    "reason": "longshot"
+  },
+  {
+   "t": "2026-09-29T05:11:34Z",
+   "side": "sell",
+   "sym": "DELREY",
+   "addr": "92BVgXufGjaMUyANA97dvg8LqNb5VMg2wgRfve9tPdCG",
+   "price": 8.211e-05,
+   "usd": 8.62,
+   "pnl": -6.4,
+   "peak_x": 1.071,
+   "held_h": 5.7,
+   "frac": 1.0,
+   "slip": 0.0088,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -21793,6 +21797,10 @@
   {
    "t": "2026-09-29T05:06:37Z",
    "v": 301.35
+  },
+  {
+   "t": "2026-09-29T05:11:35Z",
+   "v": 299.61
   }
  ],
  "started": "2026-09-15T16:35:51Z",
@@ -21838,6 +21846,7 @@
   "4RLhqc1jfpMLhtALMeUeVeJ5vySyL6eQca4cBjgCpump": 1790640403.9055698,
   "CMuvWQ6qQbSt7NUQdPGcVKCoDgETieuqS68qu6BaeVgR": 1790641601.7229898,
   "5u21uHjzfqcG9LYK9HNxZCthLHnzkCjqc14GPjSeVnid": 1790646116.655744,
-  "DS6ePhDssKU2aW4Wyw424CRC7fYDHygmNu4cyMCc5vq4": 1790651808.6357927
+  "DS6ePhDssKU2aW4Wyw424CRC7fYDHygmNu4cyMCc5vq4": 1790651808.6357927,
+  "92BVgXufGjaMUyANA97dvg8LqNb5VMg2wgRfve9tPdCG": 1790658694.795057
  }
 }
