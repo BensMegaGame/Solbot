@@ -1,5 +1,5 @@
 {
- "cash": 464.6307279411123,
+ "cash": 414.6107279411123,
  "positions": {
   "CbouD8khLcz1Y1QngvRtQufUimSRKpHkvGn6y1n8pump": {
    "sym": "UTILITY",
@@ -8,8 +8,8 @@
    "opened": "2026-09-27T01:45:11Z",
    "peak": 0.0006495,
    "entry": 0.000259749666741619,
-   "cur_price": 0.0002975,
-   "mark": 0.0002975,
+   "cur_price": 0.0002865,
+   "mark": 0.0002865,
    "tp0": true
   },
   "EGTFrUPym8JnEMAddZjuhBkcSGEGTM75qymxUZgTpump": {
@@ -19,8 +19,18 @@
    "opened": "2026-09-28T16:40:34Z",
    "peak": 0.0001944,
    "entry": 0.0001167214381152407,
-   "cur_price": 0.0001524,
-   "mark": 0.0001524
+   "cur_price": 0.0001661,
+   "mark": 0.0001661
+  },
+  "6nSM2HxvaetyDrUYjjAUKwgWGi8CGjmboLee7wcHeKN4": {
+   "sym": "ZSHIB ",
+   "qty": 293129.840302,
+   "cost": 50.02,
+   "opened": "2026-09-29T16:25:45Z",
+   "peak": 0.0001658,
+   "entry": 0.0001706411054857683,
+   "cur_price": 0.0001658,
+   "mark": 0.0001658
   }
  },
  "trades": [
@@ -2307,6 +2317,18 @@
    "slip": 0.0003,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-29T16:25:45Z",
+   "side": "buy",
+   "sym": "ZSHIB ",
+   "addr": "6nSM2HxvaetyDrUYjjAUKwgWGi8CGjmboLee7wcHeKN4",
+   "price": 0.0001658,
+   "fill": 0.000170641105,
+   "usd": 50.02,
+   "slip": 0.0336,
+   "quote": "jup",
+   "reason": "screener"
   }
  ],
  "equity": [
@@ -22057,6 +22079,10 @@
   {
    "t": "2026-09-29T16:20:48Z",
    "v": 572.91
+  },
+  {
+   "t": "2026-09-29T16:25:50Z",
+   "v": 575.77
   }
  ],
  "started": "2026-09-10T17:17:16Z",
