@@ -6,11 +6,11 @@
    "qty": 8363.209543,
    "cost": 100.77285105829999,
    "opened": "2026-09-27T21:16:54Z",
-   "peak": 0.01266,
+   "peak": 0.0127,
    "entry": 0.012049542767064443,
    "pair": "2DVbU5h8JCd37gaXAJUZ4t77HsjJW22LLduTZk7GSa43",
-   "cur_price": 0.01265,
-   "mark": 0.01265
+   "cur_price": 0.0127,
+   "mark": 0.0127
   },
   "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump": {
    "sym": "Buttcoin",
@@ -20,8 +20,8 @@
    "peak": 0.01304,
    "entry": 0.012333049858134775,
    "pair": "FFcYgSSgWHforA9rXXkA48p8YFoz8TSW85Jpo3CQHDyS",
-   "cur_price": 0.01213,
-   "mark": 0.01213
+   "cur_price": 0.01214,
+   "mark": 0.01214
   },
   "METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m": {
    "sym": "MPLX",
@@ -31,8 +31,8 @@
    "peak": 0.05781,
    "entry": 0.053403772165294655,
    "pair": "BxRhW4q1wTRwJkJ1C4NR4yJCRL2uusoju4g1bVenspZK",
-   "cur_price": 0.0561,
-   "mark": 0.0561
+   "cur_price": 0.05617,
+   "mark": 0.05617
   },
   "CortexFv3fRcLKTgACr7aLqckGh5eP7TP3z9JHoKqMc6": {
    "sym": "CX",
@@ -5420,6 +5420,10 @@
   {
    "t": "2026-09-29T21:56:58Z",
    "v": 519.75
+  },
+  {
+   "t": "2026-09-29T22:01:54Z",
+   "v": 520.37
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -5432,7 +5436,7 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-09-29T21:56:58Z",
+  "t": "2026-09-29T22:01:54Z",
   "virtuell": 5,
   "neu": 0,
   "gestoppt": false
