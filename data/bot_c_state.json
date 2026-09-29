@@ -1,5 +1,5 @@
 {
- "cash": 160.92004580026253,
+ "cash": 248.82265080026252,
  "positions": {
   "DtR4D9FtVoTX2569gaL837ZgrB6wNjj6tkmnX9Rdk9B2": {
    "sym": "AURA",
@@ -8,8 +8,8 @@
    "opened": "2026-09-28T19:16:41Z",
    "peak": 0.009332,
    "entry": 0.008728589011914114,
-   "cur_price": 0.009074,
-   "mark": 0.009074
+   "cur_price": 0.009075,
+   "mark": 0.009075
   },
   "ABt79MkRXUsoHuV2CVQT32YMXQhTparKFjmidQxgiQ6E": {
    "sym": "ORDER",
@@ -20,17 +20,6 @@
    "entry": 0.03921590082987403,
    "cur_price": 0.04021,
    "mark": 0.04021
-  },
-  "CTPoyCwkjMvoJwU4xvZZqoD8tiYk6yDchySiN5gGpump": {
-   "sym": "FONE",
-   "qty": 12978.12567,
-   "cost": 84.87944945587269,
-   "opened": "2026-09-29T17:11:37Z",
-   "peak": 0.00766,
-   "entry": 0.006540193215425436,
-   "cur_price": 0.007246,
-   "mark": 0.007246,
-   "tp1": true
   }
  },
  "trades": [
@@ -372,6 +361,21 @@
    "slip": 0.0,
    "quote": "jup",
    "reason": "tp1"
+  },
+  {
+   "t": "2026-09-29T19:41:40Z",
+   "side": "sell",
+   "sym": "FONE",
+   "addr": "CTPoyCwkjMvoJwU4xvZZqoD8tiYk6yDchySiN5gGpump",
+   "price": 0.006965,
+   "usd": 87.9,
+   "pnl": 3.02,
+   "peak_x": 1.171,
+   "held_h": 2.5,
+   "frac": 1.0,
+   "slip": 0.0024,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
@@ -5478,6 +5482,10 @@
   {
    "t": "2026-09-29T19:36:41Z",
    "v": 587.84
+  },
+  {
+   "t": "2026-09-29T19:41:40Z",
+   "v": 581.73
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -5485,7 +5493,7 @@
  "strategy": "dip_weites_netz",
  "universe_n": 138,
  "coverage": {
-  "t": "2026-09-29T19:36:41Z",
+  "t": "2026-09-29T19:41:40Z",
   "kurse": 119,
   "von": 138,
   "ohne_pool": 25,
@@ -5496,6 +5504,6 @@
   "J8PSdNP3QewKq2Z1JJJFDMaqF7KcaiJhR7gbr5KZpump": 1790638301.6729922,
   "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump": 1790542894.5052063,
   "CortexFv3fRcLKTgACr7aLqckGh5eP7TP3z9JHoKqMc6": 1790588806.7478034,
-  "CTPoyCwkjMvoJwU4xvZZqoD8tiYk6yDchySiN5gGpump": 1790603801.882615
+  "CTPoyCwkjMvoJwU4xvZZqoD8tiYk6yDchySiN5gGpump": 1790710900.5814083
  }
 }
