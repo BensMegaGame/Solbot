@@ -20,19 +20,19 @@
    "peak": 0.01304,
    "entry": 0.012333049858134775,
    "pair": "FFcYgSSgWHforA9rXXkA48p8YFoz8TSW85Jpo3CQHDyS",
-   "cur_price": 0.01262,
-   "mark": 0.01262
+   "cur_price": 0.01261,
+   "mark": 0.01261
   },
   "METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m": {
    "sym": "MPLX",
    "qty": 1824.222442,
    "cost": 97.42035967138544,
    "opened": "2026-09-28T10:07:07Z",
-   "peak": 0.05589,
+   "peak": 0.05614,
    "entry": 0.053403772165294655,
    "pair": "BxRhW4q1wTRwJkJ1C4NR4yJCRL2uusoju4g1bVenspZK",
-   "cur_price": 0.05584,
-   "mark": 0.05584
+   "cur_price": 0.05614,
+   "mark": 0.05614
   },
   "CortexFv3fRcLKTgACr7aLqckGh5eP7TP3z9JHoKqMc6": {
    "sym": "CX",
@@ -42,8 +42,8 @@
    "peak": 0.03204,
    "entry": 0.031537863324270915,
    "pair": "AtK4fYMF1mFosQn6qRiMJoE1hsjpCFwpTy1TKpE5Ez6E",
-   "cur_price": 0.03177,
-   "mark": 0.03177
+   "cur_price": 0.03173,
+   "mark": 0.03173
   }
  },
  "trades": [
@@ -4988,6 +4988,10 @@
   {
    "t": "2026-09-29T12:56:45Z",
    "v": 522.35
+  },
+  {
+   "t": "2026-09-29T13:01:46Z",
+   "v": 522.7
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -5000,7 +5004,7 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-09-29T12:56:45Z",
+  "t": "2026-09-29T13:01:46Z",
   "virtuell": 6,
   "neu": 0,
   "gestoppt": false
