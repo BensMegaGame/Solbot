@@ -6,10 +6,10 @@
    "qty": 17811.587354,
    "cost": 155.47002566287279,
    "opened": "2026-09-28T19:16:41Z",
-   "peak": 0.009121,
+   "peak": 0.009128,
    "entry": 0.008728589011914114,
-   "cur_price": 0.009121,
-   "mark": 0.009121
+   "cur_price": 0.009128,
+   "mark": 0.009128
   },
   "ABt79MkRXUsoHuV2CVQT32YMXQhTparKFjmidQxgiQ6E": {
    "sym": "ORDER",
@@ -18,8 +18,8 @@
    "opened": "2026-09-29T04:11:42Z",
    "peak": 0.04027,
    "entry": 0.03921590082987403,
-   "cur_price": 0.04027,
-   "mark": 0.04027
+   "cur_price": 0.04021,
+   "mark": 0.04021
   }
  },
  "trades": [
@@ -5004,16 +5004,20 @@
   {
    "t": "2026-09-29T10:31:33Z",
    "v": 566.99
+  },
+  {
+   "t": "2026-09-29T10:36:33Z",
+   "v": 566.86
   }
  ],
  "started": "2026-09-25T09:21:19Z",
  "version": "c6",
  "strategy": "dip_weites_netz",
- "universe_n": 137,
+ "universe_n": 138,
  "coverage": {
-  "t": "2026-09-29T10:31:33Z",
-  "kurse": 118,
-  "von": 137,
+  "t": "2026-09-29T10:36:33Z",
+  "kurse": 119,
+  "von": 138,
   "ohne_pool": 25,
   "sol": true,
   "kandidaten": 0
