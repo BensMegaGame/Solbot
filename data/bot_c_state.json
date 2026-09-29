@@ -1,5 +1,5 @@
 {
- "cash": 63.255789800262534,
+ "cash": 160.92004580026253,
  "positions": {
   "DtR4D9FtVoTX2569gaL837ZgrB6wNjj6tkmnX9Rdk9B2": {
    "sym": "AURA",
@@ -8,8 +8,8 @@
    "opened": "2026-09-28T19:16:41Z",
    "peak": 0.009332,
    "entry": 0.008728589011914114,
-   "cur_price": 0.009005,
-   "mark": 0.009005
+   "cur_price": 0.009052,
+   "mark": 0.009052
   },
   "ABt79MkRXUsoHuV2CVQT32YMXQhTparKFjmidQxgiQ6E": {
    "sym": "ORDER",
@@ -23,13 +23,14 @@
   },
   "CTPoyCwkjMvoJwU4xvZZqoD8tiYk6yDchySiN5gGpump": {
    "sym": "FONE",
-   "qty": 25956.25134,
-   "cost": 169.75889891174538,
+   "qty": 12978.12567,
+   "cost": 84.87944945587269,
    "opened": "2026-09-29T17:11:37Z",
-   "peak": 0.007474,
+   "peak": 0.007528,
    "entry": 0.006540193215425436,
-   "cur_price": 0.007474,
-   "mark": 0.007474
+   "cur_price": 0.007528,
+   "mark": 0.007528,
+   "tp1": true
   }
  },
  "trades": [
@@ -356,6 +357,21 @@
    "slip": 0.0028,
    "quote": "jup",
    "reason": "dip 24h -11% (SOL -1%) 1h -0.9%"
+  },
+  {
+   "t": "2026-09-29T19:06:41Z",
+   "side": "sell",
+   "sym": "FONE",
+   "addr": "CTPoyCwkjMvoJwU4xvZZqoD8tiYk6yDchySiN5gGpump",
+   "price": 0.007528,
+   "usd": 97.66,
+   "pnl": 12.78,
+   "peak_x": 1.151,
+   "held_h": 1.9,
+   "frac": 0.5,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "tp1"
   }
  ],
  "equity": [
@@ -5434,6 +5450,10 @@
   {
    "t": "2026-09-29T19:01:41Z",
    "v": 588.57
+  },
+  {
+   "t": "2026-09-29T19:06:41Z",
+   "v": 590.77
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -5441,7 +5461,7 @@
  "strategy": "dip_weites_netz",
  "universe_n": 138,
  "coverage": {
-  "t": "2026-09-29T19:01:41Z",
+  "t": "2026-09-29T19:06:41Z",
   "kurse": 118,
   "von": 138,
   "ohne_pool": 25,
