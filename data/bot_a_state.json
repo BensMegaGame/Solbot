@@ -1,5 +1,5 @@
 {
- "cash": 438.6402559411123,
+ "cash": 464.6307279411123,
  "positions": {
   "CbouD8khLcz1Y1QngvRtQufUimSRKpHkvGn6y1n8pump": {
    "sym": "UTILITY",
@@ -8,8 +8,8 @@
    "opened": "2026-09-27T01:45:11Z",
    "peak": 0.0006495,
    "entry": 0.000259749666741619,
-   "cur_price": 0.0002643,
-   "mark": 0.0002643,
+   "cur_price": 0.0002803,
+   "mark": 0.0002803,
    "tp0": true
   },
   "EGTFrUPym8JnEMAddZjuhBkcSGEGTM75qymxUZgTpump": {
@@ -21,16 +21,6 @@
    "entry": 0.0001167214381152407,
    "cur_price": 0.0001508,
    "mark": 0.0001508
-  },
-  "pwfAeX3kpWpkuumA6iodJxtVcGAen6BkRPToR2VqLp9": {
-   "sym": "AMERICA",
-   "qty": 27734.824229,
-   "cost": 50.02,
-   "opened": "2026-09-29T03:30:18Z",
-   "peak": 0.001982,
-   "entry": 0.0018035088157399694,
-   "cur_price": 0.0004376,
-   "mark": 0.0004376
   }
  },
  "trades": [
@@ -2302,6 +2292,21 @@
    "slip": 0.0267,
    "quote": "jup",
    "reason": "screener"
+  },
+  {
+   "t": "2026-09-29T14:00:06Z",
+   "side": "sell",
+   "sym": "AMERICA",
+   "addr": "pwfAeX3kpWpkuumA6iodJxtVcGAen6BkRPToR2VqLp9",
+   "price": 0.0009016,
+   "usd": 25.99,
+   "pnl": -24.03,
+   "peak_x": 1.099,
+   "held_h": 10.5,
+   "frac": 1.0,
+   "slip": 0.0003,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -21936,6 +21941,10 @@
   {
    "t": "2026-09-29T13:55:45Z",
    "v": 553.57
+  },
+  {
+   "t": "2026-09-29T14:00:49Z",
+   "v": 569.74
   }
  ],
  "started": "2026-09-10T17:17:16Z",
@@ -21946,6 +21955,7 @@
   "C61oA922BKGFkQMEE27QYkAd15NsRh9T6H462LYHk4DU": 1790543703.9737918,
   "HSUMi4rMgjrx7zRUabw3ogGu1pa5hmF2eVcXj9Apump": 1790599804.0311115,
   "5NhN6zzDkzwXFGPFqtpTopV4ttBeZ6CWy1oRL9Rkpump": 1790600404.4279613,
-  "F9SAHZVQ7U1mgx8V9Xk1a1EgPtrEVsxQJZa9CUw8uQSp": 1790628005.15018
+  "F9SAHZVQ7U1mgx8V9Xk1a1EgPtrEVsxQJZa9CUw8uQSp": 1790628005.15018,
+  "pwfAeX3kpWpkuumA6iodJxtVcGAen6BkRPToR2VqLp9": 1790690406.3725064
  }
 }
