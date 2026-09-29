@@ -9,8 +9,8 @@
    "peak": 0.04563,
    "entry": 0.03874984634486468,
    "pair": "5wNu5QhdpRGrL37ffcd6TMMqZugQgxwafgz477rShtHy",
-   "cur_price": 0.04497,
-   "mark": 0.04497
+   "cur_price": 0.04523,
+   "mark": 0.04523
   },
   "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump": {
    "sym": "MANIFEST",
@@ -20,8 +20,8 @@
    "peak": 0.01259,
    "entry": 0.012049542767064443,
    "pair": "2DVbU5h8JCd37gaXAJUZ4t77HsjJW22LLduTZk7GSa43",
-   "cur_price": 0.01207,
-   "mark": 0.01207
+   "cur_price": 0.01195,
+   "mark": 0.01195
   },
   "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump": {
    "sym": "Buttcoin",
@@ -31,19 +31,19 @@
    "peak": 0.01304,
    "entry": 0.012333049858134775,
    "pair": "FFcYgSSgWHforA9rXXkA48p8YFoz8TSW85Jpo3CQHDyS",
-   "cur_price": 0.01206,
-   "mark": 0.01206
+   "cur_price": 0.01208,
+   "mark": 0.01208
   },
   "METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m": {
    "sym": "MPLX",
    "qty": 1824.222442,
    "cost": 97.42035967138544,
    "opened": "2026-09-28T10:07:07Z",
-   "peak": 0.05484,
+   "peak": 0.05488,
    "entry": 0.053403772165294655,
    "pair": "BxRhW4q1wTRwJkJ1C4NR4yJCRL2uusoju4g1bVenspZK",
-   "cur_price": 0.05473,
-   "mark": 0.05473
+   "cur_price": 0.05488,
+   "mark": 0.05488
   },
   "CortexFv3fRcLKTgACr7aLqckGh5eP7TP3z9JHoKqMc6": {
    "sym": "CX",
@@ -53,8 +53,8 @@
    "peak": 0.03204,
    "entry": 0.031537863324270915,
    "pair": "AtK4fYMF1mFosQn6qRiMJoE1hsjpCFwpTy1TKpE5Ez6E",
-   "cur_price": 0.03175,
-   "mark": 0.03175
+   "cur_price": 0.03167,
+   "mark": 0.03167
   }
  },
  "trades": [
@@ -4760,6 +4760,10 @@
   {
    "t": "2026-09-29T08:16:46Z",
    "v": 511.07
+  },
+  {
+   "t": "2026-09-29T08:21:46Z",
+   "v": 510.94
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -4771,7 +4775,7 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-09-29T08:16:46Z",
+  "t": "2026-09-29T08:21:46Z",
   "virtuell": 4,
   "neu": 0,
   "gestoppt": false
