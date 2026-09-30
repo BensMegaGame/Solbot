@@ -1,5 +1,5 @@
 {
- "cash": 66.12713000000109,
+ "cash": 51.10713000000109,
  "positions": {
   "HzaCANKGkhNcQGb1VWL8f4tHJYrCmaXrPWk9eHR7GYYX": {
    "sym": "SATOSHINU",
@@ -31,8 +31,8 @@
    "peak": 0.4593,
    "entry": 0.11583580456846894,
    "liq0": 41522.97,
-   "cur_price": 0.1135,
-   "mark": 0.1135
+   "cur_price": 0.1134,
+   "mark": 0.1134
   },
   "Eyvmi7QVpSXWbB7WLqf5ksfbRugaiFudubeLtpEDsnkh": {
    "sym": "SEECAT",
@@ -53,8 +53,8 @@
    "peak": 0.0006613,
    "entry": 0.00014469590936210696,
    "liq0": 42243.37,
-   "cur_price": 0.0002536,
-   "mark": 0.0002536
+   "cur_price": 0.0002398,
+   "mark": 0.0002398
   },
   "ERv3fy6BgLG9MootmyQKg39fXraqYw6F3UucKgDLpump": {
    "sym": "PUMPTOBER",
@@ -64,8 +64,8 @@
    "peak": 0.0001123,
    "entry": 9.831225717447288e-05,
    "liq0": 26942.63,
-   "cur_price": 9.464e-05,
-   "mark": 9.464e-05
+   "cur_price": 9.291e-05,
+   "mark": 9.291e-05
   },
   "2GYMvnSv37djKecDshE8bYe2sRypcETeAF8G9h6un4J2": {
    "sym": "SpaceXSI",
@@ -75,10 +75,8 @@
    "peak": 0.0002905,
    "entry": 6.487848270657301e-05,
    "liq0": 24548.79,
-   "cur_price": 0.0001757,
-   "mark": 0.0001757,
-   "no_px_since": "2026-09-30T22:47:29Z",
-   "no_quote_since": "2026-09-30T22:47:30Z"
+   "cur_price": 0.0001749,
+   "mark": 0.0001749
   },
   "HGKEwiD1kJVae2rVDkeevn3JRxzPSukHkJLhAxMMNPK4": {
    "sym": "XSI",
@@ -89,7 +87,9 @@
    "entry": 7.867964133491157e-05,
    "liq0": 28103.41,
    "cur_price": 8.337e-05,
-   "mark": 8.337e-05
+   "mark": 8.337e-05,
+   "no_px_since": "2026-09-30T22:52:21Z",
+   "no_quote_since": "2026-09-30T22:52:24Z"
   },
   "8zWcEgUZvQKcHgtUoYTnaC6AHX7FmtWVV9WeM4kPuXMR": {
    "sym": "COVERT",
@@ -99,8 +99,19 @@
    "peak": 0.0001421,
    "entry": 6.30258700214488e-05,
    "liq0": 21872.1,
-   "cur_price": 6.779e-05,
-   "mark": 6.779e-05
+   "cur_price": 6.542e-05,
+   "mark": 6.542e-05
+  },
+  "Bd9thw3PAeyHeBGSi4R1ARBuptpG5rM4fhB8BRWJkq1e": {
+   "sym": "glungus",
+   "qty": 255922.038023,
+   "cost": 15.02,
+   "opened": "2026-09-30T22:52:24Z",
+   "peak": 5.732e-05,
+   "entry": 5.86897483156575e-05,
+   "liq0": 19966.28,
+   "cur_price": 5.732e-05,
+   "mark": 5.732e-05
   }
  },
  "trades": [
@@ -6993,6 +7004,18 @@
    "slip": 0.0002,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-30T22:52:24Z",
+   "side": "buy",
+   "sym": "glungus",
+   "addr": "Bd9thw3PAeyHeBGSi4R1ARBuptpG5rM4fhB8BRWJkq1e",
+   "price": 5.732e-05,
+   "fill": 5.8689748e-05,
+   "usd": 15.02,
+   "slip": 0.0216,
+   "quote": "jup",
+   "reason": "longshot"
   }
  ],
  "equity": [
@@ -24575,6 +24598,10 @@
   {
    "t": "2026-09-30T22:47:30Z",
    "v": 274.8
+  },
+  {
+   "t": "2026-09-30T22:52:24Z",
+   "v": 271.99
   }
  ],
  "started": "2026-09-15T16:35:51Z",
