@@ -1,16 +1,6 @@
 {
- "cash": 382.72765994111234,
+ "cash": 407.3205399411123,
  "positions": {
-  "EGTFrUPym8JnEMAddZjuhBkcSGEGTM75qymxUZgTpump": {
-   "sym": "Lobby",
-   "qty": 428541.669874,
-   "cost": 50.02,
-   "opened": "2026-09-28T16:40:34Z",
-   "peak": 0.0001944,
-   "entry": 0.0001167214381152407,
-   "cur_price": 6.242e-05,
-   "mark": 6.242e-05
-  },
   "6nSM2HxvaetyDrUYjjAUKwgWGi8CGjmboLee7wcHeKN4": {
    "sym": "ZSHIB ",
    "qty": 293129.840302,
@@ -28,8 +18,8 @@
    "opened": "2026-09-30T03:45:17Z",
    "peak": 0.0001137,
    "entry": 0.00011485267417062143,
-   "cur_price": 7.244e-05,
-   "mark": 7.244e-05
+   "cur_price": 7.521e-05,
+   "mark": 7.521e-05
   }
  },
  "trades": [
@@ -2355,13 +2345,24 @@
    "slip": 0.0124,
    "quote": "jup",
    "reason": "screener"
+  },
+  {
+   "t": "2026-09-30T06:45:02Z",
+   "side": "sell",
+   "sym": "Lobby",
+   "addr": "EGTFrUPym8JnEMAddZjuhBkcSGEGTM75qymxUZgTpump",
+   "price": 5.803e-05,
+   "usd": 24.59,
+   "pnl": -25.43,
+   "peak_x": 1.666,
+   "held_h": 38.1,
+   "frac": 1.0,
+   "slip": 0.0107,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-12T22:05:54Z",
-   "v": 388.21
-  },
   {
    "t": "2026-09-12T22:10:52Z",
    "v": 389.15
@@ -22357,6 +22358,10 @@
   {
    "t": "2026-09-30T06:41:00Z",
    "v": 492.76
+  },
+  {
+   "t": "2026-09-30T06:45:59Z",
+   "v": 491.81
   }
  ],
  "started": "2026-09-10T17:17:16Z",
@@ -22369,6 +22374,7 @@
   "5NhN6zzDkzwXFGPFqtpTopV4ttBeZ6CWy1oRL9Rkpump": 1790600404.4279613,
   "F9SAHZVQ7U1mgx8V9Xk1a1EgPtrEVsxQJZa9CUw8uQSp": 1790628005.15018,
   "pwfAeX3kpWpkuumA6iodJxtVcGAen6BkRPToR2VqLp9": 1790690406.3725064,
-  "CbouD8khLcz1Y1QngvRtQufUimSRKpHkvGn6y1n8pump": 1790734502.6623058
+  "CbouD8khLcz1Y1QngvRtQufUimSRKpHkvGn6y1n8pump": 1790734502.6623058,
+  "EGTFrUPym8JnEMAddZjuhBkcSGEGTM75qymxUZgTpump": 1790750702.0015838
  }
 }
