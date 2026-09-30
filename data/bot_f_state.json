@@ -1,5 +1,5 @@
 {
- "cash": 122.67311500000001,
+ "cash": 19.320204126142016,
  "positions": {
   "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump": {
    "sym": "MANIFEST",
@@ -9,8 +9,8 @@
    "peak": 0.0127,
    "entry": 0.012049542767064443,
    "pair": "2DVbU5h8JCd37gaXAJUZ4t77HsjJW22LLduTZk7GSa43",
-   "cur_price": 0.01217,
-   "mark": 0.01217
+   "cur_price": 0.0121,
+   "mark": 0.0121
   },
   "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump": {
    "sym": "Buttcoin",
@@ -31,8 +31,8 @@
    "peak": 0.05781,
    "entry": 0.053403772165294655,
    "pair": "BxRhW4q1wTRwJkJ1C4NR4yJCRL2uusoju4g1bVenspZK",
-   "cur_price": 0.05646,
-   "mark": 0.05646
+   "cur_price": 0.05645,
+   "mark": 0.05645
   },
   "CortexFv3fRcLKTgACr7aLqckGh5eP7TP3z9JHoKqMc6": {
    "sym": "CX",
@@ -44,6 +44,17 @@
    "pair": "AtK4fYMF1mFosQn6qRiMJoE1hsjpCFwpTy1TKpE5Ez6E",
    "cur_price": 0.02998,
    "mark": 0.02998
+  },
+  "69LjZUUzxj3Cb3Fxeo1X4QpYEQTboApkhXTysPpbpump": {
+   "sym": "CODEC",
+   "qty": 10866.321828,
+   "cost": 103.352910873858,
+   "opened": "2026-09-30T04:52:25Z",
+   "peak": 0.00949,
+   "entry": 0.009511305896309958,
+   "pair": "HH4D2z7SkBtoS2DAwzs1XCwSRWYbk14KNueU1KhmZcEV",
+   "cur_price": 0.00949,
+   "mark": 0.00949
   }
  },
  "trades": [
@@ -202,6 +213,18 @@
    "slip": 0.0045,
    "quote": "jup",
    "reason": "tp"
+  },
+  {
+   "t": "2026-09-30T04:52:25Z",
+   "side": "buy",
+   "sym": "CODEC",
+   "addr": "69LjZUUzxj3Cb3Fxeo1X4QpYEQTboApkhXTysPpbpump",
+   "price": 0.00949,
+   "fill": 0.009511305896,
+   "usd": 103.35,
+   "slip": 0.0072,
+   "quote": "jup",
+   "reason": "nach virtuellem stop (C) -10.4%"
   }
  ],
  "equity": [
@@ -5748,6 +5771,10 @@
   {
    "t": "2026-09-30T04:47:26Z",
    "v": 516.66
+  },
+  {
+   "t": "2026-09-30T04:52:25Z",
+   "v": 515.83
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -5759,8 +5786,8 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-09-30T04:47:26Z",
-  "virtuell": 8,
+  "t": "2026-09-30T04:52:25Z",
+  "virtuell": 7,
   "neu": 0,
   "gestoppt": false
  },

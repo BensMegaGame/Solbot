@@ -1,5 +1,5 @@
 {
- "cash": 39.402916000001085,
+ "cash": 70.31258400000108,
  "positions": {
   "5iqjhP5ig6JWdXQf6hYAwojZeMf11pTCvH87gCQtpump": {
    "sym": "TTP",
@@ -9,8 +9,8 @@
    "peak": 0.0002313,
    "entry": 0.00015426029056095619,
    "liq0": 40384.9,
-   "cur_price": 0.000138,
-   "mark": 0.000138
+   "cur_price": 0.0001376,
+   "mark": 0.0001376
   },
   "rsE4qbZ6Decdu1stnoHnC7QrNtqjuzuAuD9xnNGpump": {
    "sym": "OMNINU",
@@ -20,8 +20,8 @@
    "peak": 0.0004728,
    "entry": 0.00015785662475849564,
    "liq0": 39087.18,
-   "cur_price": 0.0001678,
-   "mark": 0.0001678
+   "cur_price": 0.0001661,
+   "mark": 0.0001661
   },
   "HzaCANKGkhNcQGb1VWL8f4tHJYrCmaXrPWk9eHR7GYYX": {
    "sym": "SATOSHINU",
@@ -31,8 +31,8 @@
    "peak": 0.0003634,
    "entry": 0.0001503119243677605,
    "liq0": 39353.11,
-   "cur_price": 0.0002017,
-   "mark": 0.0002017
+   "cur_price": 0.0002061,
+   "mark": 0.0002061
   },
   "BZFYNPeQAEW3HWQ4DNsTVahC1n4ZjTgn6jB2nnBbB96W": {
    "sym": "SAPLING",
@@ -42,8 +42,8 @@
    "peak": 0.0001457,
    "entry": 8.292258155976595e-05,
    "liq0": 27615.28,
-   "cur_price": 0.0001302,
-   "mark": 0.0001302
+   "cur_price": 0.0001251,
+   "mark": 0.0001251
   },
   "EU5WWxWBjDzfs3pvb6N7yuc6gBfo5Ltao6qfdXDiH2U3": {
    "sym": "SLATE",
@@ -53,8 +53,8 @@
    "peak": 0.4593,
    "entry": 0.11583580456846894,
    "liq0": 41522.97,
-   "cur_price": 0.195,
-   "mark": 0.195
+   "cur_price": 0.1944,
+   "mark": 0.1944
   },
   "Eyvmi7QVpSXWbB7WLqf5ksfbRugaiFudubeLtpEDsnkh": {
    "sym": "SEECAT",
@@ -64,8 +64,8 @@
    "peak": 0.0001145,
    "entry": 6.61627317167466e-05,
    "liq0": 20910.35,
-   "cur_price": 8.506e-05,
-   "mark": 8.506e-05
+   "cur_price": 8.137e-05,
+   "mark": 8.137e-05
   },
   "AD7cjPhebfrtXSNmBRs6rxnawF87zCeUE2Mxc4ZmWmrH": {
    "sym": "TYGR",
@@ -75,8 +75,8 @@
    "peak": 0.0001052,
    "entry": 6.958039416713999e-05,
    "liq0": 23396.39,
-   "cur_price": 5.239e-05,
-   "mark": 5.239e-05
+   "cur_price": 5.162e-05,
+   "mark": 5.162e-05
   },
   "5NhN6zzDkzwXFGPFqtpTopV4ttBeZ6CWy1oRL9Rkpump": {
    "sym": "Bagwork",
@@ -97,8 +97,8 @@
    "peak": 0.0005105,
    "entry": 0.0001525188995526973,
    "liq0": 37752.03,
-   "cur_price": 0.0001234,
-   "mark": 0.0001234
+   "cur_price": 0.0001132,
+   "mark": 0.0001132
   },
   "BHdfzHB5NHU4wfF7P46cJkA4PogmHYfnp51ijLSgpHa4": {
    "sym": "ZSHIB",
@@ -108,31 +108,19 @@
    "peak": 0.0003037,
    "entry": 0.00013803948139364674,
    "liq0": 32084.22,
-   "cur_price": 0.0002717,
-   "mark": 0.0002717
-  },
-  "4zfwqBtYpDjdiocYL91bc4h2qoeuD13MwgbiZWbECPTE": {
-   "sym": "ZCOIN",
-   "qty": 71959.8140481,
-   "cost": 9.9132,
-   "opened": "2026-09-30T01:57:07Z",
-   "peak": 0.0008695,
-   "entry": 0.0001377602225788651,
-   "liq0": 33729.93,
-   "cur_price": 0.0005898,
-   "mark": 0.0005898,
-   "tp1": true
+   "cur_price": 0.0002613,
+   "mark": 0.0002613
   },
   "H4KUxsEgCp2yDpFvyDuGM5k6XevSKKrrKUxZ3Zr6nyJc": {
    "sym": "COCKROACH",
    "qty": 103803.902033,
    "cost": 15.02,
    "opened": "2026-09-30T03:27:20Z",
-   "peak": 0.0001999,
+   "peak": 0.0002371,
    "entry": 0.00014469590936210696,
    "liq0": 42243.37,
-   "cur_price": 0.0001841,
-   "mark": 0.0001841
+   "cur_price": 0.0002371,
+   "mark": 0.0002371
   }
  },
  "trades": [
@@ -6614,6 +6602,21 @@
    "slip": 0.0001,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-30T04:52:18Z",
+   "side": "sell",
+   "sym": "ZCOIN",
+   "addr": "4zfwqBtYpDjdiocYL91bc4h2qoeuD13MwgbiZWbECPTE",
+   "price": 0.0004453,
+   "usd": 30.91,
+   "pnl": 21.0,
+   "peak_x": 6.312,
+   "held_h": 2.9,
+   "frac": 1.0,
+   "slip": 0.0558,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
@@ -23332,6 +23335,10 @@
   {
    "t": "2026-09-30T04:47:19Z",
    "v": 281.65
+  },
+  {
+   "t": "2026-09-30T04:52:19Z",
+   "v": 271.72
   }
  ],
  "started": "2026-09-15T16:35:51Z",
@@ -23394,6 +23401,7 @@
   "7MYpDaZ1Uorg1QtkjWK25X2K4UoNk88854jfopAXxNKs": 1790721403.1474676,
   "9UtaRjir5Q4HRG8d8Z8F7jRgHGLBBwp7PR4rgBnoyr3z": 1790724109.150569,
   "DXrrBJMjK3xAV7YvuWAg42aeJHck3GmJmcN78HfDpump": 1790733424.1395652,
-  "EdYKmD6gwazdMQBeadHpSuSeTpjtnbxkpfXCax3Lpump": 1790741838.3125627
+  "EdYKmD6gwazdMQBeadHpSuSeTpjtnbxkpfXCax3Lpump": 1790741838.3125627,
+  "4zfwqBtYpDjdiocYL91bc4h2qoeuD13MwgbiZWbECPTE": 1790743938.7614083
  }
 }
