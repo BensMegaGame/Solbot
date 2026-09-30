@@ -1,5 +1,5 @@
 {
- "cash": 432.7476599411123,
+ "cash": 382.72765994111234,
  "positions": {
   "EGTFrUPym8JnEMAddZjuhBkcSGEGTM75qymxUZgTpump": {
    "sym": "Lobby",
@@ -8,8 +8,8 @@
    "opened": "2026-09-28T16:40:34Z",
    "peak": 0.0001944,
    "entry": 0.0001167214381152407,
-   "cur_price": 0.000113,
-   "mark": 0.000113
+   "cur_price": 0.0001139,
+   "mark": 0.0001139
   },
   "6nSM2HxvaetyDrUYjjAUKwgWGi8CGjmboLee7wcHeKN4": {
    "sym": "ZSHIB ",
@@ -18,8 +18,18 @@
    "opened": "2026-09-29T16:25:45Z",
    "peak": 0.0002657,
    "entry": 0.0001706411054857683,
-   "cur_price": 0.000131,
-   "mark": 0.000131
+   "cur_price": 0.0001428,
+   "mark": 0.0001428
+  },
+  "82ezhRLKdKwkSC9jkM3js1yf93VbmvLXNMPkBmompump": {
+   "sym": "SI",
+   "qty": 435514.45677,
+   "cost": 50.02,
+   "opened": "2026-09-30T03:45:17Z",
+   "peak": 0.0001076,
+   "entry": 0.00011485267417062143,
+   "cur_price": 0.0001076,
+   "mark": 0.0001076
   }
  },
  "trades": [
@@ -2333,13 +2343,21 @@
    "slip": 0.0056,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-30T03:45:17Z",
+   "side": "buy",
+   "sym": "SI",
+   "addr": "82ezhRLKdKwkSC9jkM3js1yf93VbmvLXNMPkBmompump",
+   "price": 0.0001076,
+   "fill": 0.000114852674,
+   "usd": 50.02,
+   "slip": 0.0124,
+   "quote": "jup",
+   "reason": "screener"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-12T19:05:55Z",
-   "v": 394.58
-  },
   {
    "t": "2026-09-12T19:10:55Z",
    "v": 388.81
@@ -22335,6 +22353,10 @@
   {
    "t": "2026-09-30T03:41:04Z",
    "v": 519.57
+  },
+  {
+   "t": "2026-09-30T03:46:03Z",
+   "v": 520.26
   }
  ],
  "started": "2026-09-10T17:17:16Z",
