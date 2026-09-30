@@ -42,8 +42,8 @@
    "peak": 0.03204,
    "entry": 0.031537863324270915,
    "pair": "AtK4fYMF1mFosQn6qRiMJoE1hsjpCFwpTy1TKpE5Ez6E",
-   "cur_price": 0.02992,
-   "mark": 0.02992
+   "cur_price": 0.02988,
+   "mark": 0.02988
   },
   "69LjZUUzxj3Cb3Fxeo1X4QpYEQTboApkhXTysPpbpump": {
    "sym": "CODEC",
@@ -53,8 +53,8 @@
    "peak": 0.009567,
    "entry": 0.009511305896309958,
    "pair": "HH4D2z7SkBtoS2DAwzs1XCwSRWYbk14KNueU1KhmZcEV",
-   "cur_price": 0.008836,
-   "mark": 0.008836
+   "cur_price": 0.009111,
+   "mark": 0.009111
   }
  },
  "trades": [
@@ -5827,6 +5827,10 @@
   {
    "t": "2026-09-30T05:57:15Z",
    "v": 506.27
+  },
+  {
+   "t": "2026-09-30T06:02:13Z",
+   "v": 509.13
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -5838,9 +5842,9 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-09-30T05:57:15Z",
+  "t": "2026-09-30T06:02:13Z",
   "virtuell": 7,
-  "neu": 1,
+  "neu": 0,
   "gestoppt": false
  },
  "verkauft_am": {
