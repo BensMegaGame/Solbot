@@ -1,5 +1,5 @@
 {
- "cash": 65.88465100000109,
+ "cash": 50.86465100000109,
  "positions": {
   "HzaCANKGkhNcQGb1VWL8f4tHJYrCmaXrPWk9eHR7GYYX": {
    "sym": "SATOSHINU",
@@ -9,8 +9,8 @@
    "peak": 0.0003634,
    "entry": 0.0001503119243677605,
    "liq0": 39353.11,
-   "cur_price": 0.0001583,
-   "mark": 0.0001583
+   "cur_price": 0.000162,
+   "mark": 0.000162
   },
   "BZFYNPeQAEW3HWQ4DNsTVahC1n4ZjTgn6jB2nnBbB96W": {
    "sym": "SAPLING",
@@ -31,8 +31,8 @@
    "peak": 0.4593,
    "entry": 0.11583580456846894,
    "liq0": 41522.97,
-   "cur_price": 0.1122,
-   "mark": 0.1122
+   "cur_price": 0.1104,
+   "mark": 0.1104
   },
   "Eyvmi7QVpSXWbB7WLqf5ksfbRugaiFudubeLtpEDsnkh": {
    "sym": "SEECAT",
@@ -42,8 +42,8 @@
    "peak": 0.0001252,
    "entry": 6.61627317167466e-05,
    "liq0": 20910.35,
-   "cur_price": 0.0001156,
-   "mark": 0.0001156
+   "cur_price": 0.0001151,
+   "mark": 0.0001151
   },
   "H4KUxsEgCp2yDpFvyDuGM5k6XevSKKrrKUxZ3Zr6nyJc": {
    "sym": "COCKROACH",
@@ -53,8 +53,8 @@
    "peak": 0.0006613,
    "entry": 0.00014469590936210696,
    "liq0": 42243.37,
-   "cur_price": 0.0004344,
-   "mark": 0.0004344
+   "cur_price": 0.0003502,
+   "mark": 0.0003502
   },
   "ERv3fy6BgLG9MootmyQKg39fXraqYw6F3UucKgDLpump": {
    "sym": "PUMPTOBER",
@@ -64,8 +64,8 @@
    "peak": 0.0001123,
    "entry": 9.831225717447288e-05,
    "liq0": 26942.63,
-   "cur_price": 0.0001073,
-   "mark": 0.0001073
+   "cur_price": 9.065e-05,
+   "mark": 9.065e-05
   },
   "2GYMvnSv37djKecDshE8bYe2sRypcETeAF8G9h6un4J2": {
    "sym": "SpaceXSI",
@@ -75,8 +75,8 @@
    "peak": 0.000286,
    "entry": 6.487848270657301e-05,
    "liq0": 24548.79,
-   "cur_price": 0.0001537,
-   "mark": 0.0001537
+   "cur_price": 0.0001653,
+   "mark": 0.0001653
   },
   "HGKEwiD1kJVae2rVDkeevn3JRxzPSukHkJLhAxMMNPK4": {
    "sym": "XSI",
@@ -86,10 +86,8 @@
    "peak": 0.0001727,
    "entry": 7.867964133491157e-05,
    "liq0": 28103.41,
-   "cur_price": 7.983e-05,
-   "mark": 7.983e-05,
-   "no_px_since": "2026-09-30T20:47:03Z",
-   "no_quote_since": "2026-09-30T20:47:07Z"
+   "cur_price": 7.92e-05,
+   "mark": 7.92e-05
   },
   "148fJTrVybPyQqzTxNzfLQq5sxVkMfmV2cLpAyVnNCX3": {
    "sym": "ZAZA",
@@ -110,8 +108,19 @@
    "peak": 0.0001421,
    "entry": 6.30258700214488e-05,
    "liq0": 21872.1,
-   "cur_price": 5.904e-05,
-   "mark": 5.904e-05
+   "cur_price": 5.804e-05,
+   "mark": 5.804e-05
+  },
+  "8UFTUH7j2iujEw91FjfaQSLEyqwMzjrJJLSfnM3Mq5aN": {
+   "sym": "STACHIO",
+   "qty": 129231.513187,
+   "cost": 15.02,
+   "opened": "2026-09-30T20:52:04Z",
+   "peak": 0.000122,
+   "entry": 0.00011622552138862466,
+   "liq0": 29954.45,
+   "cur_price": 0.000122,
+   "mark": 0.000122
   }
  },
  "trades": [
@@ -6962,6 +6971,18 @@
    "slip": 0.0633,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-09-30T20:52:04Z",
+   "side": "buy",
+   "sym": "STACHIO",
+   "addr": "8UFTUH7j2iujEw91FjfaQSLEyqwMzjrJJLSfnM3Mq5aN",
+   "price": 0.000122,
+   "fill": 0.000116225521,
+   "usd": 15.02,
+   "slip": 0.0111,
+   "quote": "jup",
+   "reason": "longshot"
   }
  ],
  "equity": [
@@ -24448,6 +24469,10 @@
   {
    "t": "2026-09-30T20:47:07Z",
    "v": 284.75
+  },
+  {
+   "t": "2026-09-30T20:52:05Z",
+   "v": 276.56
   }
  ],
  "started": "2026-09-15T16:35:51Z",
