@@ -1,17 +1,6 @@
 {
- "cash": 414.6107279411123,
+ "cash": 432.7476599411123,
  "positions": {
-  "CbouD8khLcz1Y1QngvRtQufUimSRKpHkvGn6y1n8pump": {
-   "sym": "UTILITY",
-   "qty": 144427.519275,
-   "cost": 37.515,
-   "opened": "2026-09-27T01:45:11Z",
-   "peak": 0.0006495,
-   "entry": 0.000259749666741619,
-   "cur_price": 0.0001316,
-   "mark": 0.0001316,
-   "tp0": true
-  },
   "EGTFrUPym8JnEMAddZjuhBkcSGEGTM75qymxUZgTpump": {
    "sym": "Lobby",
    "qty": 428541.669874,
@@ -19,8 +8,8 @@
    "opened": "2026-09-28T16:40:34Z",
    "peak": 0.0001944,
    "entry": 0.0001167214381152407,
-   "cur_price": 0.0001201,
-   "mark": 0.0001201
+   "cur_price": 0.0001169,
+   "mark": 0.0001169
   },
   "6nSM2HxvaetyDrUYjjAUKwgWGi8CGjmboLee7wcHeKN4": {
    "sym": "ZSHIB ",
@@ -29,8 +18,8 @@
    "opened": "2026-09-29T16:25:45Z",
    "peak": 0.0002657,
    "entry": 0.0001706411054857683,
-   "cur_price": 0.0001252,
-   "mark": 0.0001252
+   "cur_price": 0.000125,
+   "mark": 0.000125
   }
  },
  "trades": [
@@ -2329,13 +2318,24 @@
    "slip": 0.0336,
    "quote": "jup",
    "reason": "screener"
+  },
+  {
+   "t": "2026-09-30T02:15:02Z",
+   "side": "sell",
+   "sym": "UTILITY",
+   "addr": "CbouD8khLcz1Y1QngvRtQufUimSRKpHkvGn6y1n8pump",
+   "price": 0.0001264,
+   "usd": 18.14,
+   "pnl": -19.38,
+   "peak_x": 2.5,
+   "held_h": 72.5,
+   "frac": 1.0,
+   "slip": 0.0056,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-12T17:40:50Z",
-   "v": 423.53
-  },
   {
    "t": "2026-09-12T17:45:49Z",
    "v": 422.99
@@ -22331,6 +22331,10 @@
   {
    "t": "2026-09-30T02:11:02Z",
    "v": 521.79
+  },
+  {
+   "t": "2026-09-30T02:16:02Z",
+   "v": 519.49
   }
  ],
  "started": "2026-09-10T17:17:16Z",
@@ -22342,6 +22346,7 @@
   "HSUMi4rMgjrx7zRUabw3ogGu1pa5hmF2eVcXj9Apump": 1790599804.0311115,
   "5NhN6zzDkzwXFGPFqtpTopV4ttBeZ6CWy1oRL9Rkpump": 1790600404.4279613,
   "F9SAHZVQ7U1mgx8V9Xk1a1EgPtrEVsxQJZa9CUw8uQSp": 1790628005.15018,
-  "pwfAeX3kpWpkuumA6iodJxtVcGAen6BkRPToR2VqLp9": 1790690406.3725064
+  "pwfAeX3kpWpkuumA6iodJxtVcGAen6BkRPToR2VqLp9": 1790690406.3725064,
+  "CbouD8khLcz1Y1QngvRtQufUimSRKpHkvGn6y1n8pump": 1790734502.6623058
  }
 }
