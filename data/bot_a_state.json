@@ -1,18 +1,6 @@
 {
- "cash": 461.9476359411123,
+ "cash": 498.84408294111233,
  "positions": {
-  "6nSM2HxvaetyDrUYjjAUKwgWGi8CGjmboLee7wcHeKN4": {
-   "sym": "ZSHIB ",
-   "qty": 109923.69011324999,
-   "cost": 18.7575,
-   "opened": "2026-09-29T16:25:45Z",
-   "peak": 0.0005563,
-   "entry": 0.0001706411054857683,
-   "cur_price": 0.0003836,
-   "mark": 0.0003836,
-   "tp0": true,
-   "tp1": true
-  },
   "2yu92oYzBWLAdVpu8BoaLzmM1oxPsHoboay2BXmeDDZr": {
    "sym": "FROINK",
    "qty": 273585.834735,
@@ -20,8 +8,8 @@
    "opened": "2026-09-30T15:10:25Z",
    "peak": 0.0002067,
    "entry": 0.00018283110325668085,
-   "cur_price": 0.0001371,
-   "mark": 0.0001371
+   "cur_price": 0.0001365,
+   "mark": 0.0001365
   }
  },
  "trades": [
@@ -2419,13 +2407,24 @@
    "slip": 0.0349,
    "quote": "jup",
    "reason": "tp1"
+  },
+  {
+   "t": "2026-09-30T18:55:01Z",
+   "side": "sell",
+   "sym": "ZSHIB ",
+   "addr": "6nSM2HxvaetyDrUYjjAUKwgWGi8CGjmboLee7wcHeKN4",
+   "price": 0.0003428,
+   "usd": 36.9,
+   "pnl": 18.14,
+   "peak_x": 3.26,
+   "held_h": 26.5,
+   "frac": 1.0,
+   "slip": 0.0369,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-13T10:15:44Z",
-   "v": 361.41
-  },
   {
    "t": "2026-09-13T10:20:47Z",
    "v": 359.43
@@ -22421,6 +22420,10 @@
   {
    "t": "2026-09-30T18:51:15Z",
    "v": 541.62
+  },
+  {
+   "t": "2026-09-30T18:56:17Z",
+   "v": 536.19
   }
  ],
  "started": "2026-09-10T17:17:16Z",
@@ -22435,6 +22438,7 @@
   "pwfAeX3kpWpkuumA6iodJxtVcGAen6BkRPToR2VqLp9": 1790690406.3725064,
   "CbouD8khLcz1Y1QngvRtQufUimSRKpHkvGn6y1n8pump": 1790734502.6623058,
   "EGTFrUPym8JnEMAddZjuhBkcSGEGTM75qymxUZgTpump": 1790750702.0015838,
-  "82ezhRLKdKwkSC9jkM3js1yf93VbmvLXNMPkBmompump": 1790782803.476681
+  "82ezhRLKdKwkSC9jkM3js1yf93VbmvLXNMPkBmompump": 1790782803.476681,
+  "6nSM2HxvaetyDrUYjjAUKwgWGi8CGjmboLee7wcHeKN4": 1790794501.8046067
  }
 }
