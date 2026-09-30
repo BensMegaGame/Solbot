@@ -1,17 +1,6 @@
 {
- "cash": 308.84289800000016,
- "positions": {
-  "82ezhRLKdKwkSC9jkM3js1yf93VbmvLXNMPkBmompump": {
-   "sym": "SI",
-   "qty": 436022.152555,
-   "cost": 50.02,
-   "opened": "2026-09-30T03:46:22Z",
-   "peak": 0.0001137,
-   "entry": 0.00011471894193194798,
-   "cur_price": 5.89e-05,
-   "mark": 5.89e-05
-  }
- },
+ "cash": 331.18989800000014,
+ "positions": {},
  "trades": [
   {
    "t": "2026-09-25T13:41:02Z",
@@ -199,6 +188,21 @@
    "held_h": 38.0,
    "frac": 1.0,
    "slip": 0.0027,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-09-30T15:40:58Z",
+   "side": "sell",
+   "sym": "SI",
+   "addr": "82ezhRLKdKwkSC9jkM3js1yf93VbmvLXNMPkBmompump",
+   "price": 5.156e-05,
+   "usd": 22.35,
+   "pnl": -27.67,
+   "peak_x": 0.991,
+   "held_h": 11.9,
+   "frac": 1.0,
+   "slip": 0.0057,
    "quote": "jup",
    "reason": "stop"
   }
@@ -6059,6 +6063,10 @@
   {
    "t": "2026-09-30T15:36:32Z",
    "v": 334.52
+  },
+  {
+   "t": "2026-09-30T15:41:33Z",
+   "v": 331.19
   }
  ],
  "started": "2026-09-25T13:40:52Z",
@@ -6068,6 +6076,7 @@
   "HSUMi4rMgjrx7zRUabw3ogGu1pa5hmF2eVcXj9Apump": 1790599860.126998,
   "5NhN6zzDkzwXFGPFqtpTopV4ttBeZ6CWy1oRL9Rkpump": 1790600459.2181978,
   "CbouD8khLcz1Y1QngvRtQufUimSRKpHkvGn6y1n8pump": 1790734262.735175,
-  "EGTFrUPym8JnEMAddZjuhBkcSGEGTM75qymxUZgTpump": 1790750461.2133102
+  "EGTFrUPym8JnEMAddZjuhBkcSGEGTM75qymxUZgTpump": 1790750461.2133102,
+  "82ezhRLKdKwkSC9jkM3js1yf93VbmvLXNMPkBmompump": 1790782858.683111
  }
 }
