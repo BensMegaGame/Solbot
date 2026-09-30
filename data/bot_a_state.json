@@ -1,5 +1,5 @@
 {
- "cash": 448.82408294111235,
+ "cash": 398.80408294111237,
  "positions": {
   "2yu92oYzBWLAdVpu8BoaLzmM1oxPsHoboay2BXmeDDZr": {
    "sym": "FROINK",
@@ -8,8 +8,8 @@
    "opened": "2026-09-30T15:10:25Z",
    "peak": 0.0002067,
    "entry": 0.00018283110325668085,
-   "cur_price": 0.0001478,
-   "mark": 0.0001478
+   "cur_price": 0.0001514,
+   "mark": 0.0001514
   },
   "8DXqVUopcdviLvujTcpwEqkKzB43Arp6E1axzsEE5Btq": {
    "sym": "moin",
@@ -18,8 +18,18 @@
    "opened": "2026-09-30T19:16:00Z",
    "peak": 0.0001691,
    "entry": 0.00011203985486064304,
-   "cur_price": 0.0001253,
-   "mark": 0.0001253
+   "cur_price": 0.0001208,
+   "mark": 0.0001208
+  },
+  "59PXVfJ28HLYpdYLz8rt8ziE9EWbK4mS8xvq38NUQ1Be": {
+   "sym": "REPOING",
+   "qty": 280102.534324,
+   "cost": 50.02,
+   "opened": "2026-09-30T21:00:34Z",
+   "peak": 0.0001756,
+   "entry": 0.00017857746314476722,
+   "cur_price": 0.0001756,
+   "mark": 0.0001756
   }
  },
  "trades": [
@@ -2444,13 +2454,21 @@
    "slip": 0.0128,
    "quote": "jup",
    "reason": "screener"
+  },
+  {
+   "t": "2026-09-30T21:00:34Z",
+   "side": "buy",
+   "sym": "REPOING",
+   "addr": "59PXVfJ28HLYpdYLz8rt8ziE9EWbK4mS8xvq38NUQ1Be",
+   "price": 0.0001756,
+   "fill": 0.000178577463,
+   "usd": 50.02,
+   "slip": 0.0169,
+   "quote": "jup",
+   "reason": "screener"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-13T12:20:47Z",
-   "v": 338.46
-  },
   {
    "t": "2026-09-13T12:25:49Z",
    "v": 344.46
@@ -22446,6 +22464,10 @@
   {
    "t": "2026-09-30T20:56:04Z",
    "v": 545.2
+  },
+  {
+   "t": "2026-09-30T21:01:05Z",
+   "v": 543.34
   }
  ],
  "started": "2026-09-10T17:17:16Z",
