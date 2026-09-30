@@ -1,5 +1,5 @@
 {
- "cash": 19.320204126142016,
+ "cash": 99.21505312614202,
  "positions": {
   "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump": {
    "sym": "MANIFEST",
@@ -9,8 +9,8 @@
    "peak": 0.0127,
    "entry": 0.012049542767064443,
    "pair": "2DVbU5h8JCd37gaXAJUZ4t77HsjJW22LLduTZk7GSa43",
-   "cur_price": 0.01224,
-   "mark": 0.01224
+   "cur_price": 0.01227,
+   "mark": 0.01227
   },
   "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump": {
    "sym": "Buttcoin",
@@ -20,8 +20,8 @@
    "peak": 0.01304,
    "entry": 0.012333049858134775,
    "pair": "FFcYgSSgWHforA9rXXkA48p8YFoz8TSW85Jpo3CQHDyS",
-   "cur_price": 0.012,
-   "mark": 0.012
+   "cur_price": 0.01212,
+   "mark": 0.01212
   },
   "METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m": {
    "sym": "MPLX",
@@ -44,17 +44,6 @@
    "pair": "AtK4fYMF1mFosQn6qRiMJoE1hsjpCFwpTy1TKpE5Ez6E",
    "cur_price": 0.02971,
    "mark": 0.02971
-  },
-  "69LjZUUzxj3Cb3Fxeo1X4QpYEQTboApkhXTysPpbpump": {
-   "sym": "CODEC",
-   "qty": 10866.321828,
-   "cost": 103.352910873858,
-   "opened": "2026-09-30T04:52:25Z",
-   "peak": 0.009567,
-   "entry": 0.009511305896309958,
-   "pair": "HH4D2z7SkBtoS2DAwzs1XCwSRWYbk14KNueU1KhmZcEV",
-   "cur_price": 0.009281,
-   "mark": 0.009281
   }
  },
  "trades": [
@@ -225,6 +214,21 @@
    "slip": 0.0072,
    "quote": "jup",
    "reason": "nach virtuellem stop (C) -10.4%"
+  },
+  {
+   "t": "2026-09-30T08:52:07Z",
+   "side": "sell",
+   "sym": "CODEC",
+   "addr": "69LjZUUzxj3Cb3Fxeo1X4QpYEQTboApkhXTysPpbpump",
+   "price": 0.007119,
+   "usd": 79.89,
+   "pnl": -23.46,
+   "peak_x": 1.006,
+   "held_h": 4.0,
+   "frac": 1.0,
+   "slip": 0.0002,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -5963,6 +5967,10 @@
   {
    "t": "2026-09-30T08:47:11Z",
    "v": 508.76
+  },
+  {
+   "t": "2026-09-30T08:52:07Z",
+   "v": 489.01
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -5970,17 +5978,19 @@
  "cooldown": {
   "5dvXTZ5qwgafnHtwu3Ls3QrWx1U4LQsFeCuJgkk4QEC6": 20727,
   "Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump": 20729,
-  "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump": 20730
+  "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump": 20730,
+  "69LjZUUzxj3Cb3Fxeo1X4QpYEQTboApkhXTysPpbpump": 20731
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-09-30T08:47:11Z",
+  "t": "2026-09-30T08:52:07Z",
   "virtuell": 7,
   "neu": 0,
   "gestoppt": false
  },
  "verkauft_am": {
   "Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump": 1790582818.8553665,
-  "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump": 1790683008.339179
+  "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump": 1790683008.339179,
+  "69LjZUUzxj3Cb3Fxeo1X4QpYEQTboApkhXTysPpbpump": 1790758327.3477426
  }
 }
