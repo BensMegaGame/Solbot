@@ -9,8 +9,8 @@
    "peak": 0.0003634,
    "entry": 0.0001503119243677605,
    "liq0": 39353.11,
-   "cur_price": 0.0001736,
-   "mark": 0.0001736
+   "cur_price": 0.000173,
+   "mark": 0.000173
   },
   "BZFYNPeQAEW3HWQ4DNsTVahC1n4ZjTgn6jB2nnBbB96W": {
    "sym": "SAPLING",
@@ -31,8 +31,8 @@
    "peak": 0.4593,
    "entry": 0.11583580456846894,
    "liq0": 41522.97,
-   "cur_price": 0.1094,
-   "mark": 0.1094
+   "cur_price": 0.1098,
+   "mark": 0.1098
   },
   "Eyvmi7QVpSXWbB7WLqf5ksfbRugaiFudubeLtpEDsnkh": {
    "sym": "SEECAT",
@@ -53,8 +53,8 @@
    "peak": 0.0006613,
    "entry": 0.00014469590936210696,
    "liq0": 42243.37,
-   "cur_price": 0.0003657,
-   "mark": 0.0003657
+   "cur_price": 0.0003594,
+   "mark": 0.0003594
   },
   "ERv3fy6BgLG9MootmyQKg39fXraqYw6F3UucKgDLpump": {
    "sym": "PUMPTOBER",
@@ -64,8 +64,8 @@
    "peak": 0.0001123,
    "entry": 9.831225717447288e-05,
    "liq0": 26942.63,
-   "cur_price": 9.09e-05,
-   "mark": 9.09e-05
+   "cur_price": 9.688e-05,
+   "mark": 9.688e-05
   },
   "2GYMvnSv37djKecDshE8bYe2sRypcETeAF8G9h6un4J2": {
    "sym": "SpaceXSI",
@@ -76,7 +76,9 @@
    "entry": 6.487848270657301e-05,
    "liq0": 24548.79,
    "cur_price": 0.0001871,
-   "mark": 0.0001871
+   "mark": 0.0001871,
+   "no_px_since": "2026-09-30T21:07:04Z",
+   "no_quote_since": "2026-09-30T21:07:05Z"
   },
   "HGKEwiD1kJVae2rVDkeevn3JRxzPSukHkJLhAxMMNPK4": {
    "sym": "XSI",
@@ -86,10 +88,8 @@
    "peak": 0.0001727,
    "entry": 7.867964133491157e-05,
    "liq0": 28103.41,
-   "cur_price": 7.92e-05,
-   "mark": 7.92e-05,
-   "no_px_since": "2026-09-30T20:57:03Z",
-   "no_quote_since": "2026-09-30T20:57:04Z"
+   "cur_price": 7.368e-05,
+   "mark": 7.368e-05
   },
   "148fJTrVybPyQqzTxNzfLQq5sxVkMfmV2cLpAyVnNCX3": {
    "sym": "ZAZA",
@@ -110,8 +110,8 @@
    "peak": 0.0001421,
    "entry": 6.30258700214488e-05,
    "liq0": 21872.1,
-   "cur_price": 6.408e-05,
-   "mark": 6.408e-05
+   "cur_price": 6.842e-05,
+   "mark": 6.842e-05
   },
   "8UFTUH7j2iujEw91FjfaQSLEyqwMzjrJJLSfnM3Mq5aN": {
    "sym": "STACHIO",
@@ -121,8 +121,8 @@
    "peak": 0.000122,
    "entry": 0.00011622552138862466,
    "liq0": 29954.45,
-   "cur_price": 9.977e-05,
-   "mark": 9.977e-05
+   "cur_price": 0.000121,
+   "mark": 0.000121
   }
  },
  "trades": [
@@ -24483,6 +24483,10 @@
   {
    "t": "2026-09-30T21:02:08Z",
    "v": 282.54
+  },
+  {
+   "t": "2026-09-30T21:07:05Z",
+   "v": 285.51
   }
  ],
  "started": "2026-09-15T16:35:51Z",
