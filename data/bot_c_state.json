@@ -1,16 +1,6 @@
 {
- "cash": 231.02838181527613,
+ "cash": 386.78364481527615,
  "positions": {
-  "DtR4D9FtVoTX2569gaL837ZgrB6wNjj6tkmnX9Rdk9B2": {
-   "sym": "AURA",
-   "qty": 17811.587354,
-   "cost": 155.47002566287279,
-   "opened": "2026-09-28T19:16:41Z",
-   "peak": 0.009798,
-   "entry": 0.008728589011914114,
-   "cur_price": 0.009798,
-   "mark": 0.009798
-  },
   "ABt79MkRXUsoHuV2CVQT32YMXQhTparKFjmidQxgiQ6E": {
    "sym": "ORDER",
    "qty": 4259.2154630029,
@@ -428,6 +418,21 @@
    "held_h": 9.6,
    "frac": 1.0,
    "slip": 0.0072,
+   "quote": "jup",
+   "reason": "trail"
+  },
+  {
+   "t": "2026-10-01T07:56:49Z",
+   "side": "sell",
+   "sym": "AURA",
+   "addr": "DtR4D9FtVoTX2569gaL837ZgrB6wNjj6tkmnX9Rdk9B2",
+   "price": 0.008798,
+   "usd": 155.76,
+   "pnl": 0.29,
+   "peak_x": 1.123,
+   "held_h": 60.7,
+   "frac": 1.0,
+   "slip": 0.0064,
    "quote": "jup",
    "reason": "trail"
   }
@@ -7276,6 +7281,10 @@
   {
    "t": "2026-10-01T07:51:52Z",
    "v": 577.36
+  },
+  {
+   "t": "2026-10-01T07:56:51Z",
+   "v": 558.6
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -7283,7 +7292,7 @@
  "strategy": "dip_weites_netz",
  "universe_n": 143,
  "coverage": {
-  "t": "2026-10-01T07:51:52Z",
+  "t": "2026-10-01T07:56:51Z",
   "kurse": 123,
   "von": 143,
   "ohne_pool": 27,
@@ -7295,6 +7304,7 @@
   "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump": 1790542894.5052063,
   "CortexFv3fRcLKTgACr7aLqckGh5eP7TP3z9JHoKqMc6": 1790588806.7478034,
   "CTPoyCwkjMvoJwU4xvZZqoD8tiYk6yDchySiN5gGpump": 1790710900.5814083,
-  "69LjZUUzxj3Cb3Fxeo1X4QpYEQTboApkhXTysPpbpump": 1790743923.13752
+  "69LjZUUzxj3Cb3Fxeo1X4QpYEQTboApkhXTysPpbpump": 1790743923.13752,
+  "DtR4D9FtVoTX2569gaL837ZgrB6wNjj6tkmnX9Rdk9B2": 1790841409.378621
  }
 }
