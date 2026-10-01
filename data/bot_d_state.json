@@ -1,5 +1,5 @@
 {
- "cash": 194.1372570000011,
+ "cash": 202.23923300000112,
  "positions": {
   "BZFYNPeQAEW3HWQ4DNsTVahC1n4ZjTgn6jB2nnBbB96W": {
    "sym": "SAPLING",
@@ -31,8 +31,8 @@
    "peak": 0.0002905,
    "entry": 6.487848270657301e-05,
    "liq0": 24548.79,
-   "cur_price": 0.0001218,
-   "mark": 0.0001218
+   "cur_price": 9.452e-05,
+   "mark": 9.452e-05
   },
   "Cb2pMbsRRvaeZoxpRqnTP6k6hLziSUf5pnqW9Jx5T3Wz": {
    "sym": "SGI",
@@ -42,8 +42,8 @@
    "peak": 0.0001789,
    "entry": 4.262424552156961e-05,
    "liq0": 20856.5,
-   "cur_price": 4.483e-05,
-   "mark": 4.483e-05
+   "cur_price": 4.708e-05,
+   "mark": 4.708e-05
   },
   "HgoScXAo4zFv5kDb6axGrwuz95FaVEcLskyDVZfo297z": {
    "sym": "MARTIANS",
@@ -64,19 +64,8 @@
    "peak": 9.067e-05,
    "entry": 5.5779007721810004e-05,
    "liq0": 20953.82,
-   "cur_price": 7.464e-05,
-   "mark": 7.464e-05
-  },
-  "2F3VSnTdEJAKjWmSahfRG43RZFdkCDzSPySNdpz8pump": {
-   "sym": "Picomatch",
-   "qty": 303109.735737,
-   "cost": 15.02,
-   "opened": "2026-10-01T15:56:41Z",
-   "peak": 4.904e-05,
-   "entry": 4.955301077175707e-05,
-   "liq0": 18842.84,
-   "cur_price": 3.386e-05,
-   "mark": 3.386e-05
+   "cur_price": 7.462e-05,
+   "mark": 7.462e-05
   },
   "D2xcPgLVxvX8j2886h5wagQn7YVVGN8q1FEbobi8pump": {
    "sym": "LINU",
@@ -87,7 +76,9 @@
    "entry": 5.388900509768603e-05,
    "liq0": 23305.67,
    "cur_price": 4.082e-05,
-   "mark": 4.082e-05
+   "mark": 4.082e-05,
+   "no_px_since": "2026-10-01T20:16:53Z",
+   "no_quote_since": "2026-10-01T20:16:54Z"
   },
   "H5Kugtkfc5vrm3oSdX6FDkxuutRK1S3GW7Rr7UgnoDhP": {
    "sym": "PUTIN",
@@ -97,8 +88,8 @@
    "peak": 0.0001686,
    "entry": 0.00010108667859267137,
    "liq0": 29239.86,
-   "cur_price": 6.222e-05,
-   "mark": 6.222e-05
+   "cur_price": 6.797e-05,
+   "mark": 6.797e-05
   }
  },
  "trades": [
@@ -7328,6 +7319,21 @@
    "held_h": 26.4,
    "frac": 1.0,
    "slip": 0.0404,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-10-01T20:16:53Z",
+   "side": "sell",
+   "sym": "Picomatch",
+   "addr": "2F3VSnTdEJAKjWmSahfRG43RZFdkCDzSPySNdpz8pump",
+   "price": 2.706e-05,
+   "usd": 8.1,
+   "pnl": -6.92,
+   "peak_x": 0.99,
+   "held_h": 4.3,
+   "frac": 1.0,
+   "slip": 0.0131,
    "quote": "jup",
    "reason": "stop"
   }
@@ -25940,6 +25946,10 @@
   {
    "t": "2026-10-01T20:11:54Z",
    "v": 363.07
+  },
+  {
+   "t": "2026-10-01T20:16:54Z",
+   "v": 356.24
   }
  ],
  "started": "2026-09-15T16:35:51Z",
@@ -26029,6 +26039,7 @@
   "EbJJKtnawGPhfgthRrwsyDgrCc1smGUUYbK5WNAK5E1N": 1790874402.9981124,
   "H4KUxsEgCp2yDpFvyDuGM5k6XevSKKrrKUxZ3Zr6nyJc": 1790876801.632703,
   "6hjaMcRPvB4DEGpHqgHxmgipb2vrGQWMewZBAVSLpump": 1790878603.0697634,
-  "8zWcEgUZvQKcHgtUoYTnaC6AHX7FmtWVV9WeM4kPuXMR": 1790880701.7435906
+  "8zWcEgUZvQKcHgtUoYTnaC6AHX7FmtWVV9WeM4kPuXMR": 1790880701.7435906,
+  "2F3VSnTdEJAKjWmSahfRG43RZFdkCDzSPySNdpz8pump": 1790885813.3076797
  }
 }
