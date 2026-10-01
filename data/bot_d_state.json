@@ -6,11 +6,11 @@
    "qty": 181132.807463,
    "cost": 15.02,
    "opened": "2026-09-29T00:01:54Z",
-   "peak": 0.0003081,
+   "peak": 0.0003087,
    "entry": 8.292258155976595e-05,
    "liq0": 27615.28,
-   "cur_price": 0.0003081,
-   "mark": 0.0003081
+   "cur_price": 0.0003087,
+   "mark": 0.0003087
   },
   "Eyvmi7QVpSXWbB7WLqf5ksfbRugaiFudubeLtpEDsnkh": {
    "sym": "SEECAT",
@@ -32,7 +32,9 @@
    "entry": 6.487848270657301e-05,
    "liq0": 24548.79,
    "cur_price": 0.000119,
-   "mark": 0.000119
+   "mark": 0.000119,
+   "no_px_since": "2026-10-01T19:06:45Z",
+   "no_quote_since": "2026-10-01T19:06:46Z"
   },
   "Cb2pMbsRRvaeZoxpRqnTP6k6hLziSUf5pnqW9Jx5T3Wz": {
    "sym": "SGI",
@@ -42,8 +44,8 @@
    "peak": 0.0001789,
    "entry": 4.262424552156961e-05,
    "liq0": 20856.5,
-   "cur_price": 4.359e-05,
-   "mark": 4.359e-05
+   "cur_price": 3.71e-05,
+   "mark": 3.71e-05
   },
   "HgoScXAo4zFv5kDb6axGrwuz95FaVEcLskyDVZfo297z": {
    "sym": "MARTIANS",
@@ -64,8 +66,8 @@
    "peak": 8.039e-05,
    "entry": 5.5779007721810004e-05,
    "liq0": 20953.82,
-   "cur_price": 4.533e-05,
-   "mark": 4.533e-05
+   "cur_price": 5e-05,
+   "mark": 5e-05
   },
   "2F3VSnTdEJAKjWmSahfRG43RZFdkCDzSPySNdpz8pump": {
    "sym": "Picomatch",
@@ -75,8 +77,8 @@
    "peak": 4.904e-05,
    "entry": 4.955301077175707e-05,
    "liq0": 18842.84,
-   "cur_price": 4.367e-05,
-   "mark": 4.367e-05
+   "cur_price": 4.316e-05,
+   "mark": 4.316e-05
   },
   "D2xcPgLVxvX8j2886h5wagQn7YVVGN8q1FEbobi8pump": {
    "sym": "LINU",
@@ -97,8 +99,8 @@
    "peak": 0.0001686,
    "entry": 0.00010108667859267137,
    "liq0": 29239.86,
-   "cur_price": 0.0001442,
-   "mark": 0.0001442
+   "cur_price": 0.0001459,
+   "mark": 0.0001459
   }
  },
  "trades": [
@@ -25884,6 +25886,10 @@
   {
    "t": "2026-10-01T19:01:43Z",
    "v": 376.97
+  },
+  {
+   "t": "2026-10-01T19:06:46Z",
+   "v": 376.14
   }
  ],
  "started": "2026-09-15T16:35:51Z",
