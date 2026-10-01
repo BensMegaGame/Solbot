@@ -9,8 +9,8 @@
    "peak": 0.0003634,
    "entry": 0.0001503119243677605,
    "liq0": 39353.11,
-   "cur_price": 0.0001936,
-   "mark": 0.0001936
+   "cur_price": 0.0001953,
+   "mark": 0.0001953
   },
   "BZFYNPeQAEW3HWQ4DNsTVahC1n4ZjTgn6jB2nnBbB96W": {
    "sym": "SAPLING",
@@ -20,8 +20,8 @@
    "peak": 0.0002431,
    "entry": 8.292258155976595e-05,
    "liq0": 27615.28,
-   "cur_price": 0.000148,
-   "mark": 0.000148
+   "cur_price": 0.0001503,
+   "mark": 0.0001503
   },
   "Eyvmi7QVpSXWbB7WLqf5ksfbRugaiFudubeLtpEDsnkh": {
    "sym": "SEECAT",
@@ -31,8 +31,8 @@
    "peak": 0.0001462,
    "entry": 6.61627317167466e-05,
    "liq0": 20910.35,
-   "cur_price": 0.0001374,
-   "mark": 0.0001374
+   "cur_price": 0.0001323,
+   "mark": 0.0001323
   },
   "H4KUxsEgCp2yDpFvyDuGM5k6XevSKKrrKUxZ3Zr6nyJc": {
    "sym": "COCKROACH",
@@ -42,8 +42,8 @@
    "peak": 0.0006613,
    "entry": 0.00014469590936210696,
    "liq0": 42243.37,
-   "cur_price": 0.0001933,
-   "mark": 0.0001933
+   "cur_price": 0.000194,
+   "mark": 0.000194
   },
   "ERv3fy6BgLG9MootmyQKg39fXraqYw6F3UucKgDLpump": {
    "sym": "PUMPTOBER",
@@ -53,8 +53,8 @@
    "peak": 0.0001123,
    "entry": 9.831225717447288e-05,
    "liq0": 26942.63,
-   "cur_price": 0.0001026,
-   "mark": 0.0001026
+   "cur_price": 0.0001039,
+   "mark": 0.0001039
   },
   "2GYMvnSv37djKecDshE8bYe2sRypcETeAF8G9h6un4J2": {
    "sym": "SpaceXSI",
@@ -65,7 +65,9 @@
    "entry": 6.487848270657301e-05,
    "liq0": 24548.79,
    "cur_price": 0.0001414,
-   "mark": 0.0001414
+   "mark": 0.0001414,
+   "no_px_since": "2026-10-01T01:22:14Z",
+   "no_quote_since": "2026-10-01T01:22:15Z"
   },
   "HGKEwiD1kJVae2rVDkeevn3JRxzPSukHkJLhAxMMNPK4": {
    "sym": "XSI",
@@ -86,19 +88,19 @@
    "peak": 0.0001421,
    "entry": 6.30258700214488e-05,
    "liq0": 21872.1,
-   "cur_price": 5.139e-05,
-   "mark": 5.139e-05
+   "cur_price": 5.125e-05,
+   "mark": 5.125e-05
   },
   "EbJJKtnawGPhfgthRrwsyDgrCc1smGUUYbK5WNAK5E1N": {
    "sym": "Gingitsune",
    "qty": 282949.161175,
    "cost": 15.02,
    "opened": "2026-10-01T00:32:19Z",
-   "peak": 6.045e-05,
+   "peak": 6.237e-05,
    "entry": 5.308374104247775e-05,
    "liq0": 19506.22,
-   "cur_price": 5.817e-05,
-   "mark": 5.817e-05
+   "cur_price": 6.237e-05,
+   "mark": 6.237e-05
   },
   "82MP84Vjfxd21VHup3jjfJFcsr8SAji9MHy7VHCeSTNK": {
    "sym": "CROOK",
@@ -108,8 +110,8 @@
    "peak": 0.000189,
    "entry": 0.00015154924986246997,
    "liq0": 38638.74,
-   "cur_price": 0.0001778,
-   "mark": 0.0001778
+   "cur_price": 0.0001609,
+   "mark": 0.0001609
   }
  },
  "trades": [
@@ -24770,6 +24772,10 @@
   {
    "t": "2026-10-01T01:17:12Z",
    "v": 247.76
+  },
+  {
+   "t": "2026-10-01T01:22:15Z",
+   "v": 246.94
   }
  ],
  "started": "2026-09-15T16:35:51Z",
