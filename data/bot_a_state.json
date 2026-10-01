@@ -1,16 +1,6 @@
 {
- "cash": 398.7982679411124,
+ "cash": 422.4816979411124,
  "positions": {
-  "2yu92oYzBWLAdVpu8BoaLzmM1oxPsHoboay2BXmeDDZr": {
-   "sym": "FROINK",
-   "qty": 273585.834735,
-   "cost": 50.02,
-   "opened": "2026-09-30T15:10:25Z",
-   "peak": 0.0002067,
-   "entry": 0.00018283110325668085,
-   "cur_price": 0.0001024,
-   "mark": 0.0001024
-  },
   "8DXqVUopcdviLvujTcpwEqkKzB43Arp6E1axzsEE5Btq": {
    "sym": "moin",
    "qty": 334836.20669325,
@@ -18,8 +8,8 @@
    "opened": "2026-09-30T19:16:00Z",
    "peak": 0.0002373,
    "entry": 0.00011203985486064304,
-   "cur_price": 0.0001328,
-   "mark": 0.0001328,
+   "cur_price": 0.0001369,
+   "mark": 0.0001369,
    "tp0": true
   },
   "59PXVfJ28HLYpdYLz8rt8ziE9EWbK4mS8xvq38NUQ1Be": {
@@ -40,8 +30,8 @@
    "opened": "2026-10-01T03:36:08Z",
    "peak": 0.001496,
    "entry": 0.0009183161944225855,
-   "cur_price": 0.001435,
-   "mark": 0.001435
+   "cur_price": 0.00141,
+   "mark": 0.00141
   }
  },
  "trades": [
@@ -2520,13 +2510,24 @@
    "slip": 0.0113,
    "quote": "jup",
    "reason": "tp0"
+  },
+  {
+   "t": "2026-10-01T08:50:02Z",
+   "side": "sell",
+   "sym": "FROINK",
+   "addr": "2yu92oYzBWLAdVpu8BoaLzmM1oxPsHoboay2BXmeDDZr",
+   "price": 8.976e-05,
+   "usd": 23.68,
+   "pnl": -26.34,
+   "peak_x": 1.131,
+   "held_h": 17.7,
+   "frac": 1.0,
+   "slip": 0.0141,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-14T00:10:52Z",
-   "v": 360.53
-  },
   {
    "t": "2026-09-14T00:15:53Z",
    "v": 361.58
@@ -22522,6 +22523,10 @@
   {
    "t": "2026-10-01T08:46:05Z",
    "v": 604.86
+  },
+  {
+   "t": "2026-10-01T08:51:03Z",
+   "v": 600.54
   }
  ],
  "started": "2026-09-10T17:17:16Z",
@@ -22537,6 +22542,7 @@
   "CbouD8khLcz1Y1QngvRtQufUimSRKpHkvGn6y1n8pump": 1790734502.6623058,
   "EGTFrUPym8JnEMAddZjuhBkcSGEGTM75qymxUZgTpump": 1790750702.0015838,
   "82ezhRLKdKwkSC9jkM3js1yf93VbmvLXNMPkBmompump": 1790782803.476681,
-  "6nSM2HxvaetyDrUYjjAUKwgWGi8CGjmboLee7wcHeKN4": 1790794501.8046067
+  "6nSM2HxvaetyDrUYjjAUKwgWGi8CGjmboLee7wcHeKN4": 1790794501.8046067,
+  "2yu92oYzBWLAdVpu8BoaLzmM1oxPsHoboay2BXmeDDZr": 1790844602.9584477
  }
 }
