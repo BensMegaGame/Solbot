@@ -20,8 +20,8 @@
    "peak": 0.05781,
    "entry": 0.053403772165294655,
    "pair": "BxRhW4q1wTRwJkJ1C4NR4yJCRL2uusoju4g1bVenspZK",
-   "cur_price": 0.05435,
-   "mark": 0.05435
+   "cur_price": 0.05439,
+   "mark": 0.05439
   },
   "CortexFv3fRcLKTgACr7aLqckGh5eP7TP3z9JHoKqMc6": {
    "sym": "CX",
@@ -39,11 +39,11 @@
    "qty": 12351.562122,
    "cost": 98.23505312614202,
    "opened": "2026-10-01T08:17:14Z",
-   "peak": 0.007928,
+   "peak": 0.00793,
    "entry": 0.007953249326348005,
    "pair": "3KFCgJ5R3zshW8hTDbzjSrrKSRYmKvsMfhc4Vo4iddxD",
-   "cur_price": 0.00791,
-   "mark": 0.00791
+   "cur_price": 0.00793,
+   "mark": 0.00793
   }
  },
  "trades": [
@@ -7242,6 +7242,10 @@
   {
    "t": "2026-10-01T10:47:09Z",
    "v": 506.33
+  },
+  {
+   "t": "2026-10-01T10:52:06Z",
+   "v": 506.65
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -7254,7 +7258,7 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-10-01T10:47:09Z",
+  "t": "2026-10-01T10:52:06Z",
   "virtuell": 8,
   "neu": 0,
   "gestoppt": false
