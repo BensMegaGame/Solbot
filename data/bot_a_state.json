@@ -1,5 +1,5 @@
 {
- "cash": 425.22657094111236,
+ "cash": 375.2065709411124,
  "positions": {
   "2yu92oYzBWLAdVpu8BoaLzmM1oxPsHoboay2BXmeDDZr": {
    "sym": "FROINK",
@@ -8,8 +8,8 @@
    "opened": "2026-09-30T15:10:25Z",
    "peak": 0.0002067,
    "entry": 0.00018283110325668085,
-   "cur_price": 0.0001033,
-   "mark": 0.0001033
+   "cur_price": 0.0001012,
+   "mark": 0.0001012
   },
   "8DXqVUopcdviLvujTcpwEqkKzB43Arp6E1axzsEE5Btq": {
    "sym": "moin",
@@ -18,8 +18,8 @@
    "opened": "2026-09-30T19:16:00Z",
    "peak": 0.0002373,
    "entry": 0.00011203985486064304,
-   "cur_price": 0.0001356,
-   "mark": 0.0001356,
+   "cur_price": 0.0001352,
+   "mark": 0.0001352,
    "tp0": true
   },
   "59PXVfJ28HLYpdYLz8rt8ziE9EWbK4mS8xvq38NUQ1Be": {
@@ -29,8 +29,18 @@
    "opened": "2026-09-30T21:00:34Z",
    "peak": 0.0002487,
    "entry": 0.00017857746314476722,
-   "cur_price": 0.000215,
-   "mark": 0.000215
+   "cur_price": 0.0001769,
+   "mark": 0.0001769
+  },
+  "H8WTvo3ZXSYHJAcYqzCforbG8coR1FDAX2kHFfqHBAGS": {
+   "sym": "BAGSPAY",
+   "qty": 54469.256127462,
+   "cost": 50.02,
+   "opened": "2026-10-01T03:36:08Z",
+   "peak": 0.0009009,
+   "entry": 0.0009183161944225855,
+   "cur_price": 0.0009009,
+   "mark": 0.0009009
   }
  },
  "trades": [
@@ -2482,13 +2492,21 @@
    "slip": 0.0069,
    "quote": "jup",
    "reason": "tp0"
+  },
+  {
+   "t": "2026-10-01T03:36:08Z",
+   "side": "buy",
+   "sym": "BAGSPAY",
+   "addr": "H8WTvo3ZXSYHJAcYqzCforbG8coR1FDAX2kHFfqHBAGS",
+   "price": 0.0009009,
+   "fill": 0.000918316194,
+   "usd": 50.02,
+   "slip": 0.0186,
+   "quote": "jup",
+   "reason": "screener"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-13T18:55:46Z",
-   "v": 379.43
-  },
   {
    "t": "2026-09-13T19:00:45Z",
    "v": 381.51
@@ -22484,6 +22502,10 @@
   {
    "t": "2026-10-01T03:31:14Z",
    "v": 559.11
+  },
+  {
+   "t": "2026-10-01T03:36:13Z",
+   "v": 546.78
   }
  ],
  "started": "2026-09-10T17:17:16Z",
