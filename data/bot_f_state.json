@@ -1,5 +1,5 @@
 {
- "cash": 125.84794000000001,
+ "cash": 24.308221451038094,
  "positions": {
   "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump": {
    "sym": "Buttcoin",
@@ -9,8 +9,8 @@
    "peak": 0.01304,
    "entry": 0.012333049858134775,
    "pair": "FFcYgSSgWHforA9rXXkA48p8YFoz8TSW85Jpo3CQHDyS",
-   "cur_price": 0.01164,
-   "mark": 0.01164
+   "cur_price": 0.01146,
+   "mark": 0.01146
   },
   "METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m": {
    "sym": "MPLX",
@@ -31,8 +31,8 @@
    "peak": 0.03204,
    "entry": 0.031537863324270915,
    "pair": "AtK4fYMF1mFosQn6qRiMJoE1hsjpCFwpTy1TKpE5Ez6E",
-   "cur_price": 0.03065,
-   "mark": 0.03065
+   "cur_price": 0.03063,
+   "mark": 0.03063
   },
   "J8PSdNP3QewKq2Z1JJJFDMaqF7KcaiJhR7gbr5KZpump": {
    "sym": "TRIPLET",
@@ -42,8 +42,19 @@
    "peak": 0.00794,
    "entry": 0.007953249326348005,
    "pair": "3KFCgJ5R3zshW8hTDbzjSrrKSRYmKvsMfhc4Vo4iddxD",
-   "cur_price": 0.00794,
-   "mark": 0.00794
+   "cur_price": 0.00789,
+   "mark": 0.00789
+  },
+  "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP": {
+   "sym": "SI",
+   "qty": 2740.725479,
+   "cost": 101.53971854896191,
+   "opened": "2026-10-01T11:02:11Z",
+   "peak": 0.03594,
+   "entry": 0.037048481990254054,
+   "pair": "AG1EhPjsBrkxQWkViuLXF6pQnHwfr9f9sdNneeoykcEJ",
+   "cur_price": 0.03594,
+   "mark": 0.03594
   }
  },
  "trades": [
@@ -256,6 +267,18 @@
    "slip": 0.0004,
    "quote": "jup",
    "reason": "tp"
+  },
+  {
+   "t": "2026-10-01T11:02:11Z",
+   "side": "buy",
+   "sym": "SI",
+   "addr": "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP",
+   "price": 0.03594,
+   "fill": 0.03704848199,
+   "usd": 101.54,
+   "slip": 0.0023,
+   "quote": "jup",
+   "reason": "nach virtuellem stop (E) -10.5%"
   }
  ],
  "equity": [
@@ -7250,6 +7273,10 @@
   {
    "t": "2026-10-01T10:57:08Z",
    "v": 507.6
+  },
+  {
+   "t": "2026-10-01T11:02:11Z",
+   "v": 502.45
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -7262,8 +7289,8 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-10-01T10:57:08Z",
-  "virtuell": 8,
+  "t": "2026-10-01T11:02:11Z",
+  "virtuell": 7,
   "neu": 0,
   "gestoppt": false
  },
