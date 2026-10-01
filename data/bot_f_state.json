@@ -1,5 +1,5 @@
 {
- "cash": 24.308221451038094,
+ "cash": 147.5094864510381,
  "positions": {
   "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump": {
    "sym": "Buttcoin",
@@ -9,8 +9,8 @@
    "peak": 0.01304,
    "entry": 0.012333049858134775,
    "pair": "FFcYgSSgWHforA9rXXkA48p8YFoz8TSW85Jpo3CQHDyS",
-   "cur_price": 0.01151,
-   "mark": 0.01151
+   "cur_price": 0.01146,
+   "mark": 0.01146
   },
   "METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m": {
    "sym": "MPLX",
@@ -20,8 +20,8 @@
    "peak": 0.05781,
    "entry": 0.053403772165294655,
    "pair": "BxRhW4q1wTRwJkJ1C4NR4yJCRL2uusoju4g1bVenspZK",
-   "cur_price": 0.05411,
-   "mark": 0.05411
+   "cur_price": 0.05412,
+   "mark": 0.05412
   },
   "CortexFv3fRcLKTgACr7aLqckGh5eP7TP3z9JHoKqMc6": {
    "sym": "CX",
@@ -31,8 +31,8 @@
    "peak": 0.0326,
    "entry": 0.031537863324270915,
    "pair": "AtK4fYMF1mFosQn6qRiMJoE1hsjpCFwpTy1TKpE5Ez6E",
-   "cur_price": 0.03233,
-   "mark": 0.03233
+   "cur_price": 0.03203,
+   "mark": 0.03203
   },
   "J8PSdNP3QewKq2Z1JJJFDMaqF7KcaiJhR7gbr5KZpump": {
    "sym": "TRIPLET",
@@ -42,19 +42,8 @@
    "peak": 0.007976,
    "entry": 0.007953249326348005,
    "pair": "3KFCgJ5R3zshW8hTDbzjSrrKSRYmKvsMfhc4Vo4iddxD",
-   "cur_price": 0.007844,
-   "mark": 0.007844
-  },
-  "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP": {
-   "sym": "SI",
-   "qty": 2740.725479,
-   "cost": 101.53971854896191,
-   "opened": "2026-10-01T11:02:11Z",
-   "peak": 0.04436,
-   "entry": 0.037048481990254054,
-   "pair": "AG1EhPjsBrkxQWkViuLXF6pQnHwfr9f9sdNneeoykcEJ",
-   "cur_price": 0.04436,
-   "mark": 0.04436
+   "cur_price": 0.007839,
+   "mark": 0.007839
   }
  },
  "trades": [
@@ -279,6 +268,21 @@
    "slip": 0.0023,
    "quote": "jup",
    "reason": "nach virtuellem stop (E) -10.5%"
+  },
+  {
+   "t": "2026-10-01T12:37:18Z",
+   "side": "sell",
+   "sym": "SI",
+   "addr": "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP",
+   "price": 0.04595,
+   "usd": 123.2,
+   "pnl": 21.66,
+   "peak_x": 1.24,
+   "held_h": 1.6,
+   "frac": 1.0,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "tp"
   }
  ],
  "equity": [
@@ -7349,6 +7353,10 @@
   {
    "t": "2026-10-01T12:32:10Z",
    "v": 529.87
+  },
+  {
+   "t": "2026-10-01T12:37:18Z",
+   "v": 530.15
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -7357,11 +7365,12 @@
   "Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump": 20729,
   "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump": 20730,
   "69LjZUUzxj3Cb3Fxeo1X4QpYEQTboApkhXTysPpbpump": 20731,
-  "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump": 20732
+  "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump": 20732,
+  "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP": 20732
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-10-01T12:32:10Z",
+  "t": "2026-10-01T12:37:18Z",
   "virtuell": 7,
   "neu": 0,
   "gestoppt": false
@@ -7370,6 +7379,7 @@
   "Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump": 1790582818.8553665,
   "Ce2gx9KGXJ6C9Mp5b5x1sn9Mg87JwEbrQby4Zqo3pump": 1790683008.339179,
   "69LjZUUzxj3Cb3Fxeo1X4QpYEQTboApkhXTysPpbpump": 1790758327.3477426,
-  "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump": 1790851034.1640382
+  "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump": 1790851034.1640382,
+  "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP": 1790858238.501664
  }
 }
