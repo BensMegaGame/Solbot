@@ -1,5 +1,5 @@
 {
- "cash": 322.4416979411124,
+ "cash": 340.5910089411124,
  "positions": {
   "8DXqVUopcdviLvujTcpwEqkKzB43Arp6E1axzsEE5Btq": {
    "sym": "moin",
@@ -8,19 +8,8 @@
    "opened": "2026-09-30T19:16:00Z",
    "peak": 0.0002373,
    "entry": 0.00011203985486064304,
-   "cur_price": 8.297e-05,
-   "mark": 8.297e-05,
-   "tp0": true
-  },
-  "59PXVfJ28HLYpdYLz8rt8ziE9EWbK4mS8xvq38NUQ1Be": {
-   "sym": "REPOING",
-   "qty": 210076.900743,
-   "cost": 37.515,
-   "opened": "2026-09-30T21:00:34Z",
-   "peak": 0.0003504,
-   "entry": 0.00017857746314476722,
-   "cur_price": 9.01e-05,
-   "mark": 9.01e-05,
+   "cur_price": 8.277e-05,
+   "mark": 8.277e-05,
    "tp0": true
   },
   "H8WTvo3ZXSYHJAcYqzCforbG8coR1FDAX2kHFfqHBAGS": {
@@ -30,8 +19,8 @@
    "opened": "2026-10-01T03:36:08Z",
    "peak": 0.001496,
    "entry": 0.0009183161944225855,
-   "cur_price": 0.0007035,
-   "mark": 0.0007035
+   "cur_price": 0.000727,
+   "mark": 0.000727
   },
   "H4KUxsEgCp2yDpFvyDuGM5k6XevSKKrrKUxZ3Zr6nyJc": {
    "sym": "COCKROACH",
@@ -40,18 +29,18 @@
    "opened": "2026-10-01T15:55:30Z",
    "peak": 0.002318,
    "entry": 0.0017274260532663798,
-   "cur_price": 0.001267,
-   "mark": 0.001267
+   "cur_price": 0.001219,
+   "mark": 0.001219
   },
   "6iAj2oywQMiD9NeyTcW1S7UtG7e3jSK7Ud5ZJDqJpump": {
    "sym": "HI",
    "qty": 121913.954572,
    "cost": 50.02,
    "opened": "2026-10-01T22:35:34Z",
-   "peak": 0.000538,
+   "peak": 0.0005404,
    "entry": 0.00041028937315341674,
-   "cur_price": 0.000538,
-   "mark": 0.000538
+   "cur_price": 0.0005404,
+   "mark": 0.0005404
   }
  },
  "trades": [
@@ -2569,13 +2558,24 @@
    "slip": 0.0217,
    "quote": "jup",
    "reason": "screener"
+  },
+  {
+   "t": "2026-10-02T07:05:03Z",
+   "side": "sell",
+   "sym": "REPOING",
+   "addr": "59PXVfJ28HLYpdYLz8rt8ziE9EWbK4mS8xvq38NUQ1Be",
+   "price": 8.793e-05,
+   "usd": 18.15,
+   "pnl": -19.37,
+   "peak_x": 1.962,
+   "held_h": 34.1,
+   "frac": 1.0,
+   "slip": 0.0159,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-14T22:20:54Z",
-   "v": 461.11
-  },
   {
    "t": "2026-09-14T22:25:52Z",
    "v": 459.77
@@ -22571,6 +22571,10 @@
   {
    "t": "2026-10-02T07:01:08Z",
    "v": 509.75
+  },
+  {
+   "t": "2026-10-02T07:06:09Z",
+   "v": 509.08
   }
  ],
  "started": "2026-09-10T17:17:16Z",
@@ -22587,6 +22591,7 @@
   "EGTFrUPym8JnEMAddZjuhBkcSGEGTM75qymxUZgTpump": 1790750702.0015838,
   "82ezhRLKdKwkSC9jkM3js1yf93VbmvLXNMPkBmompump": 1790782803.476681,
   "6nSM2HxvaetyDrUYjjAUKwgWGi8CGjmboLee7wcHeKN4": 1790794501.8046067,
-  "2yu92oYzBWLAdVpu8BoaLzmM1oxPsHoboay2BXmeDDZr": 1790844602.9584477
+  "2yu92oYzBWLAdVpu8BoaLzmM1oxPsHoboay2BXmeDDZr": 1790844602.9584477,
+  "59PXVfJ28HLYpdYLz8rt8ziE9EWbK4mS8xvq38NUQ1Be": 1790924703.901213
  }
 }
