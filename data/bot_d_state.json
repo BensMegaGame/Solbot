@@ -1,5 +1,5 @@
 {
- "cash": 274.94985300000116,
+ "cash": 259.9298530000012,
  "positions": {
   "2GYMvnSv37djKecDshE8bYe2sRypcETeAF8G9h6un4J2": {
    "sym": "SpaceXSI",
@@ -42,8 +42,8 @@
    "peak": 9.739e-05,
    "entry": 5.5779007721810004e-05,
    "liq0": 20953.82,
-   "cur_price": 4.234e-05,
-   "mark": 4.234e-05
+   "cur_price": 4.258e-05,
+   "mark": 4.258e-05
   },
   "D2xcPgLVxvX8j2886h5wagQn7YVVGN8q1FEbobi8pump": {
    "sym": "LINU",
@@ -75,8 +75,8 @@
    "peak": 9.918e-05,
    "entry": 9.912092277457996e-05,
    "liq0": 29815.97,
-   "cur_price": 9.415e-05,
-   "mark": 9.415e-05
+   "cur_price": 9.14e-05,
+   "mark": 9.14e-05
   },
   "GzahJ2WwEtyVvUAetrmK2zvvfhD887WtuH8hFFuh5nwn": {
    "sym": "GRIFFIN",
@@ -86,8 +86,19 @@
    "peak": 0.0001667,
    "entry": 0.00012505036696277996,
    "liq0": 36346.94,
-   "cur_price": 0.0001659,
-   "mark": 0.0001659
+   "cur_price": 0.0001372,
+   "mark": 0.0001372
+  },
+  "AYRTq6bfnNzWMY5ACWTRUtMCwV8PAhux3wm84q5mpump": {
+   "sym": "lowkjelly",
+   "qty": 348060.091908,
+   "cost": 15.02,
+   "opened": "2026-10-02T06:42:10Z",
+   "peak": 4.244e-05,
+   "entry": 4.31534678901657e-05,
+   "liq0": 18033.09,
+   "cur_price": 4.244e-05,
+   "mark": 4.244e-05
   }
  },
  "trades": [
@@ -7455,6 +7466,18 @@
    "fill": 0.000125050367,
    "usd": 15.02,
    "slip": 0.0113,
+   "quote": "jup",
+   "reason": "longshot"
+  },
+  {
+   "t": "2026-10-02T06:42:10Z",
+   "side": "buy",
+   "sym": "lowkjelly",
+   "addr": "AYRTq6bfnNzWMY5ACWTRUtMCwV8PAhux3wm84q5mpump",
+   "price": 4.244e-05,
+   "fill": 4.3153468e-05,
+   "usd": 15.02,
+   "slip": 0.0146,
    "quote": "jup",
    "reason": "longshot"
   }
@@ -26567,6 +26590,10 @@
   {
    "t": "2026-10-02T06:37:10Z",
    "v": 412.7
+  },
+  {
+   "t": "2026-10-02T06:42:11Z",
+   "v": 408.65
   }
  ],
  "started": "2026-09-15T16:35:51Z",
