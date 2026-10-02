@@ -1,5 +1,5 @@
 {
- "cash": 7.20376954269959,
+ "cash": 99.8597805426996,
  "positions": {
   "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump": {
    "sym": "Buttcoin",
@@ -31,8 +31,8 @@
    "peak": 0.008482,
    "entry": 0.007953249326348005,
    "pair": "3KFCgJ5R3zshW8hTDbzjSrrKSRYmKvsMfhc4Vo4iddxD",
-   "cur_price": 0.007629,
-   "mark": 0.007629
+   "cur_price": 0.007693,
+   "mark": 0.007693
   },
   "KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS": {
    "sym": "KMNO",
@@ -42,8 +42,8 @@
    "peak": 0.04197,
    "entry": 0.04078398934594881,
    "pair": "3ndjN1nJVUKGrJBc1hhVpER6kWTZKHdyDrPyCJyX3CXK",
-   "cur_price": 0.03994,
-   "mark": 0.03994
+   "cur_price": 0.03985,
+   "mark": 0.03985
   },
   "1zJX5gRnjLgmTpq5sVwkq69mNDQkCemqoasyjaPW6jm": {
    "sym": "KLED",
@@ -55,17 +55,6 @@
    "pair": "4SBYWY5UuxybWuj8FwHdFXUN6mbtACrqbJwiZ9mXworP",
    "cur_price": 0.01405,
    "mark": 0.01405
-  },
-  "98kfF7rmsg1QDUEoCqNE7g7M1FdrTt92TEp2CLzypump": {
-   "sym": "PAID",
-   "qty": 11940.084935,
-   "cost": 110.80501045730041,
-   "opened": "2026-10-02T13:17:02Z",
-   "peak": 0.009651,
-   "entry": 0.009280085615848293,
-   "pair": "Gc5hVCBydc6k3Z7oc2cQEW4GThFQi2Fqk5HfKABqa2q8",
-   "cur_price": 0.007901,
-   "mark": 0.007901
   }
  },
  "trades": [
@@ -356,6 +345,21 @@
    "slip": 0.0034,
    "quote": "jup",
    "reason": "nach virtuellem stop (C) -11.3%"
+  },
+  {
+   "t": "2026-10-02T22:17:31Z",
+   "side": "sell",
+   "sym": "PAID",
+   "addr": "98kfF7rmsg1QDUEoCqNE7g7M1FdrTt92TEp2CLzypump",
+   "price": 0.007737,
+   "usd": 92.66,
+   "pnl": -18.15,
+   "peak_x": 1.04,
+   "held_h": 9.0,
+   "frac": 1.0,
+   "slip": 0.0028,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -9042,6 +9046,10 @@
   {
    "t": "2026-10-02T22:12:31Z",
    "v": 519.0
+  },
+  {
+   "t": "2026-10-02T22:17:31Z",
+   "v": 517.87
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -9052,11 +9060,12 @@
   "69LjZUUzxj3Cb3Fxeo1X4QpYEQTboApkhXTysPpbpump": 20731,
   "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump": 20732,
   "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP": 20732,
-  "METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m": 20733
+  "METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m": 20733,
+  "98kfF7rmsg1QDUEoCqNE7g7M1FdrTt92TEp2CLzypump": 20733
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-10-02T22:12:31Z",
+  "t": "2026-10-02T22:17:31Z",
   "virtuell": 5,
   "neu": 0,
   "gestoppt": false
@@ -9067,6 +9076,7 @@
   "69LjZUUzxj3Cb3Fxeo1X4QpYEQTboApkhXTysPpbpump": 1790758327.3477426,
   "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump": 1790851034.1640382,
   "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP": 1790858238.501664,
-  "METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m": 1790940124.2568412
+  "METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m": 1790940124.2568412,
+  "98kfF7rmsg1QDUEoCqNE7g7M1FdrTt92TEp2CLzypump": 1790979451.1662142
  }
 }
