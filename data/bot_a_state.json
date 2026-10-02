@@ -1,5 +1,5 @@
 {
- "cash": 163.4159669411124,
+ "cash": 137.6624239411124,
  "positions": {
   "8DXqVUopcdviLvujTcpwEqkKzB43Arp6E1axzsEE5Btq": {
    "sym": "moin",
@@ -8,19 +8,9 @@
    "opened": "2026-09-30T19:16:00Z",
    "peak": 0.0002373,
    "entry": 0.00011203985486064304,
-   "cur_price": 7.589e-05,
-   "mark": 7.589e-05,
+   "cur_price": 7.804e-05,
+   "mark": 7.804e-05,
    "tp0": true
-  },
-  "H8WTvo3ZXSYHJAcYqzCforbG8coR1FDAX2kHFfqHBAGS": {
-   "sym": "BAGSPAY",
-   "qty": 54469.256127462,
-   "cost": 50.02,
-   "opened": "2026-10-01T03:36:08Z",
-   "peak": 0.001496,
-   "entry": 0.0009183161944225855,
-   "cur_price": 0.0004979,
-   "mark": 0.0004979
   },
   "H4KUxsEgCp2yDpFvyDuGM5k6XevSKKrrKUxZ3Zr6nyJc": {
    "sym": "COCKROACH",
@@ -29,8 +19,8 @@
    "opened": "2026-10-01T15:55:30Z",
    "peak": 0.002318,
    "entry": 0.0017274260532663798,
-   "cur_price": 0.001393,
-   "mark": 0.001393
+   "cur_price": 0.001455,
+   "mark": 0.001455
   },
   "6iAj2oywQMiD9NeyTcW1S7UtG7e3jSK7Ud5ZJDqJpump": {
    "sym": "HI",
@@ -39,8 +29,8 @@
    "opened": "2026-10-01T22:35:34Z",
    "peak": 0.0005404,
    "entry": 0.00041028937315341674,
-   "cur_price": 0.0003967,
-   "mark": 0.0003967
+   "cur_price": 0.000398,
+   "mark": 0.000398
   },
   "3kmygWKZBkCYrgZHKfiuB9UFKTcDLTFFsKo3BWpmpump": {
    "sym": "PARASITE",
@@ -49,8 +39,8 @@
    "opened": "2026-10-02T09:45:26Z",
    "peak": 0.001891,
    "entry": 0.0009386180633959557,
-   "cur_price": 0.0007505,
-   "mark": 0.0007505,
+   "cur_price": 0.0006684,
+   "mark": 0.0006684,
    "tp0": true
   },
   "Bd9thw3PAeyHeBGSi4R1ARBuptpG5rM4fhB8BRWJkq1e": {
@@ -60,8 +50,8 @@
    "opened": "2026-10-02T13:30:08Z",
    "peak": 0.0001199,
    "entry": 0.00012058418887334101,
-   "cur_price": 0.000103,
-   "mark": 0.000103
+   "cur_price": 0.0001026,
+   "mark": 0.0001026
   },
   "3iUTyNYW6xKv5kZUjtbrEDTsuJTrSVwvB3bQtxkLpump": {
    "sym": "bukangi",
@@ -70,8 +60,8 @@
    "opened": "2026-10-02T13:40:42Z",
    "peak": 0.0004055,
    "entry": 0.0003429823127826605,
-   "cur_price": 0.0003816,
-   "mark": 0.0003816
+   "cur_price": 0.0003698,
+   "mark": 0.0003698
   },
   "3sL58KKh2QdNSfN9VRz8bHGGU5zStdfManVHCTkhpump": {
    "sym": "PI",
@@ -80,8 +70,18 @@
    "opened": "2026-10-02T14:45:58Z",
    "peak": 0.0001049,
    "entry": 0.00010944386683478897,
-   "cur_price": 0.0001013,
-   "mark": 0.0001013
+   "cur_price": 9.906e-05,
+   "mark": 9.906e-05
+  },
+  "6e8LLHkqCTa4mzGuL1PoUxSfeHmDeceJ3DaJSSUNg937": {
+   "sym": "ARTHUR",
+   "qty": 35954.63098,
+   "cost": 50.02,
+   "opened": "2026-10-02T16:40:14Z",
+   "peak": 0.001379,
+   "entry": 0.0013911977021214307,
+   "cur_price": 0.001379,
+   "mark": 0.001379
   }
  },
  "trades": [
@@ -2677,13 +2677,36 @@
    "slip": 0.0001,
    "quote": "jup",
    "reason": "tp0"
+  },
+  {
+   "t": "2026-10-02T16:40:04Z",
+   "side": "sell",
+   "sym": "BAGSPAY",
+   "addr": "H8WTvo3ZXSYHJAcYqzCforbG8coR1FDAX2kHFfqHBAGS",
+   "price": 0.0004563,
+   "usd": 24.27,
+   "pnl": -25.75,
+   "peak_x": 1.629,
+   "held_h": 37.1,
+   "frac": 1.0,
+   "slip": 0.0219,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-10-02T16:40:14Z",
+   "side": "buy",
+   "sym": "ARTHUR",
+   "addr": "6e8LLHkqCTa4mzGuL1PoUxSfeHmDeceJ3DaJSSUNg937",
+   "price": 0.001379,
+   "fill": 0.001391197702,
+   "usd": 50.02,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "screener"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-15T07:55:56Z",
-   "v": 469.83
-  },
   {
    "t": "2026-09-15T08:00:56Z",
    "v": 469.39
@@ -22679,6 +22702,10 @@
   {
    "t": "2026-10-02T16:35:11Z",
    "v": 479.32
+  },
+  {
+   "t": "2026-10-02T16:40:16Z",
+   "v": 472.51
   }
  ],
  "started": "2026-09-10T17:17:16Z",
@@ -22696,6 +22723,7 @@
   "82ezhRLKdKwkSC9jkM3js1yf93VbmvLXNMPkBmompump": 1790782803.476681,
   "6nSM2HxvaetyDrUYjjAUKwgWGi8CGjmboLee7wcHeKN4": 1790794501.8046067,
   "2yu92oYzBWLAdVpu8BoaLzmM1oxPsHoboay2BXmeDDZr": 1790844602.9584477,
-  "59PXVfJ28HLYpdYLz8rt8ziE9EWbK4mS8xvq38NUQ1Be": 1790924703.901213
+  "59PXVfJ28HLYpdYLz8rt8ziE9EWbK4mS8xvq38NUQ1Be": 1790924703.901213,
+  "H8WTvo3ZXSYHJAcYqzCforbG8coR1FDAX2kHFfqHBAGS": 1790959204.0813868
  }
 }
