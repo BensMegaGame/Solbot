@@ -1,5 +1,5 @@
 {
- "cash": 281.16989800000016,
+ "cash": 231.14989800000015,
  "positions": {
   "6iAj2oywQMiD9NeyTcW1S7UtG7e3jSK7Ud5ZJDqJpump": {
    "sym": "HI",
@@ -8,8 +8,18 @@
    "opened": "2026-10-01T22:36:36Z",
    "peak": 0.0005223,
    "entry": 0.00040447405991730396,
-   "cur_price": 0.0003978,
-   "mark": 0.0003978
+   "cur_price": 0.0003923,
+   "mark": 0.0003923
+  },
+  "3kmygWKZBkCYrgZHKfiuB9UFKTcDLTFFsKo3BWpmpump": {
+   "sym": "PARASITE",
+   "qty": 52824.553552,
+   "cost": 50.02,
+   "opened": "2026-10-02T09:46:09Z",
+   "peak": 0.0009218,
+   "entry": 0.0009469081447278259,
+   "cur_price": 0.0009218,
+   "mark": 0.0009218
   }
  },
  "trades": [
@@ -226,6 +236,18 @@
    "fill": 0.00040447406,
    "usd": 50.02,
    "slip": 0.0238,
+   "quote": "jup",
+   "reason": "screener pump.fun"
+  },
+  {
+   "t": "2026-10-02T09:46:09Z",
+   "side": "buy",
+   "sym": "PARASITE",
+   "addr": "3kmygWKZBkCYrgZHKfiuB9UFKTcDLTFFsKo3BWpmpump",
+   "price": 0.0009218,
+   "fill": 0.000946908145,
+   "usd": 50.02,
+   "slip": 0.019,
    "quote": "jup",
    "reason": "screener pump.fun"
   }
@@ -8106,6 +8128,10 @@
   {
    "t": "2026-10-02T09:41:37Z",
    "v": 330.36
+  },
+  {
+   "t": "2026-10-02T09:46:39Z",
+   "v": 328.36
   }
  ],
  "started": "2026-09-25T13:40:52Z",
