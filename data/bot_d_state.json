@@ -1,5 +1,5 @@
 {
- "cash": 289.96985300000114,
+ "cash": 274.94985300000116,
  "positions": {
   "2GYMvnSv37djKecDshE8bYe2sRypcETeAF8G9h6un4J2": {
    "sym": "SpaceXSI",
@@ -20,8 +20,8 @@
    "peak": 0.0001789,
    "entry": 4.262424552156961e-05,
    "liq0": 20856.5,
-   "cur_price": 4.352e-05,
-   "mark": 4.352e-05
+   "cur_price": 4.355e-05,
+   "mark": 4.355e-05
   },
   "HgoScXAo4zFv5kDb6axGrwuz95FaVEcLskyDVZfo297z": {
    "sym": "MARTIANS",
@@ -31,8 +31,8 @@
    "peak": 9.76e-05,
    "entry": 8.32648803632644e-05,
    "liq0": 30631.03,
-   "cur_price": 7.578e-05,
-   "mark": 7.578e-05
+   "cur_price": 7.607e-05,
+   "mark": 7.607e-05
   },
   "BieyucCGJcFEPnb6x8bDZp65bedTyK2xihB3Ewgk9hKJ": {
    "sym": "GROKIPEDIA",
@@ -42,8 +42,8 @@
    "peak": 9.739e-05,
    "entry": 5.5779007721810004e-05,
    "liq0": 20953.82,
-   "cur_price": 4.232e-05,
-   "mark": 4.232e-05
+   "cur_price": 4.265e-05,
+   "mark": 4.265e-05
   },
   "D2xcPgLVxvX8j2886h5wagQn7YVVGN8q1FEbobi8pump": {
    "sym": "LINU",
@@ -64,8 +64,8 @@
    "peak": 0.0001695,
    "entry": 0.0001582723020461295,
    "liq0": 34976.82,
-   "cur_price": 0.0001483,
-   "mark": 0.0001483
+   "cur_price": 0.0001477,
+   "mark": 0.0001477
   },
   "ASN6XAyWyn1psSbGKNQ7D81byp1CRTYd8Q9aA2DW9M3n": {
    "sym": "pumpfolio",
@@ -75,8 +75,19 @@
    "peak": 9.918e-05,
    "entry": 9.912092277457996e-05,
    "liq0": 29815.97,
-   "cur_price": 8.883e-05,
-   "mark": 8.883e-05
+   "cur_price": 8.944e-05,
+   "mark": 8.944e-05
+  },
+  "GzahJ2WwEtyVvUAetrmK2zvvfhD887WtuH8hFFuh5nwn": {
+   "sym": "GRIFFIN",
+   "qty": 120111.602747,
+   "cost": 15.02,
+   "opened": "2026-10-02T06:12:00Z",
+   "peak": 0.0001227,
+   "entry": 0.00012505036696277996,
+   "liq0": 36346.94,
+   "cur_price": 0.0001227,
+   "mark": 0.0001227
   }
  },
  "trades": [
@@ -7434,6 +7445,18 @@
    "slip": 0.0145,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-10-02T06:12:00Z",
+   "side": "buy",
+   "sym": "GRIFFIN",
+   "addr": "GzahJ2WwEtyVvUAetrmK2zvvfhD887WtuH8hFFuh5nwn",
+   "price": 0.0001227,
+   "fill": 0.000125050367,
+   "usd": 15.02,
+   "slip": 0.0113,
+   "quote": "jup",
+   "reason": "longshot"
   }
  ],
  "equity": [
@@ -26520,6 +26543,10 @@
   {
    "t": "2026-10-02T06:06:53Z",
    "v": 406.01
+  },
+  {
+   "t": "2026-10-02T06:12:01Z",
+   "v": 405.92
   }
  ],
  "started": "2026-09-15T16:35:51Z",
