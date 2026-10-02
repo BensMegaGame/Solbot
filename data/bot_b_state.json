@@ -1,5 +1,5 @@
 {
- "cash": 181.12989800000014,
+ "cash": 131.10989800000013,
  "positions": {
   "6iAj2oywQMiD9NeyTcW1S7UtG7e3jSK7Ud5ZJDqJpump": {
    "sym": "HI",
@@ -8,8 +8,8 @@
    "opened": "2026-10-01T22:36:36Z",
    "peak": 0.0005223,
    "entry": 0.00040447405991730396,
-   "cur_price": 0.0004083,
-   "mark": 0.0004083
+   "cur_price": 0.0003726,
+   "mark": 0.0003726
   },
   "3kmygWKZBkCYrgZHKfiuB9UFKTcDLTFFsKo3BWpmpump": {
    "sym": "PARASITE",
@@ -18,18 +18,28 @@
    "opened": "2026-10-02T09:46:09Z",
    "peak": 0.001426,
    "entry": 0.0009469081447278259,
-   "cur_price": 0.001158,
-   "mark": 0.001158
+   "cur_price": 0.001281,
+   "mark": 0.001281
   },
   "3iUTyNYW6xKv5kZUjtbrEDTsuJTrSVwvB3bQtxkLpump": {
    "sym": "bukangi",
    "qty": 145858.718702,
    "cost": 50.02,
    "opened": "2026-10-02T13:41:33Z",
-   "peak": 0.0003896,
+   "peak": 0.0003984,
    "entry": 0.00034293459071304817,
-   "cur_price": 0.0003868,
-   "mark": 0.0003868
+   "cur_price": 0.0003984,
+   "mark": 0.0003984
+  },
+  "3sL58KKh2QdNSfN9VRz8bHGGU5zStdfManVHCTkhpump": {
+   "sym": "PI",
+   "qty": 450495.828942,
+   "cost": 50.02,
+   "opened": "2026-10-02T14:41:33Z",
+   "peak": 0.0001053,
+   "entry": 0.00011103321448607669,
+   "cur_price": 0.0001053,
+   "mark": 0.0001053
   }
  },
  "trades": [
@@ -270,6 +280,18 @@
    "fill": 0.000342934591,
    "usd": 50.02,
    "slip": 0.0009,
+   "quote": "jup",
+   "reason": "screener pump.fun"
+  },
+  {
+   "t": "2026-10-02T14:41:33Z",
+   "side": "buy",
+   "sym": "PI",
+   "addr": "3sL58KKh2QdNSfN9VRz8bHGGU5zStdfManVHCTkhpump",
+   "price": 0.0001053,
+   "fill": 0.000111033214,
+   "usd": 50.02,
+   "slip": 0.0523,
    "quote": "jup",
    "reason": "screener pump.fun"
   }
@@ -8386,6 +8408,10 @@
   {
    "t": "2026-10-02T14:36:41Z",
    "v": 349.21
+  },
+  {
+   "t": "2026-10-02T14:41:42Z",
+   "v": 350.4
   }
  ],
  "started": "2026-09-25T13:40:52Z",
