@@ -31,8 +31,8 @@
    "peak": 0.008482,
    "entry": 0.007953249326348005,
    "pair": "3KFCgJ5R3zshW8hTDbzjSrrKSRYmKvsMfhc4Vo4iddxD",
-   "cur_price": 0.007569,
-   "mark": 0.007569
+   "cur_price": 0.00762,
+   "mark": 0.00762
   },
   "KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS": {
    "sym": "KMNO",
@@ -42,8 +42,8 @@
    "peak": 0.04197,
    "entry": 0.04078398934594881,
    "pair": "3ndjN1nJVUKGrJBc1hhVpER6kWTZKHdyDrPyCJyX3CXK",
-   "cur_price": 0.04065,
-   "mark": 0.04065
+   "cur_price": 0.04057,
+   "mark": 0.04057
   },
   "1zJX5gRnjLgmTpq5sVwkq69mNDQkCemqoasyjaPW6jm": {
    "sym": "KLED",
@@ -9138,6 +9138,10 @@
   {
    "t": "2026-10-03T00:07:30Z",
    "v": 517.08
+  },
+  {
+   "t": "2026-10-03T00:12:31Z",
+   "v": 517.5
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -9152,7 +9156,7 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-10-03T00:07:30Z",
+  "t": "2026-10-03T00:12:31Z",
   "virtuell": 6,
   "neu": 0,
   "gestoppt": false
