@@ -9,19 +9,19 @@
    "peak": 0.0002352,
    "entry": 0.0001582723020461295,
    "liq0": 34976.82,
-   "cur_price": 0.0001678,
-   "mark": 0.0001678
+   "cur_price": 0.0001602,
+   "mark": 0.0001602
   },
   "CoN8oLvyWTjtSBFTEjUWLz25BXJmGjTvNcYh81D3pump": {
    "sym": "MAMESUKE",
    "qty": 136670.964733,
    "cost": 15.02,
    "opened": "2026-10-02T07:17:06Z",
-   "peak": 0.0001374,
+   "peak": 0.0001382,
    "entry": 0.00010989898278206368,
    "liq0": 28881.75,
-   "cur_price": 0.0001374,
-   "mark": 0.0001374
+   "cur_price": 0.0001382,
+   "mark": 0.0001382
   },
   "Eqj36zHPTboNDYfX24sXvWf9e1wqY7kr823hbSY1pump": {
    "sym": "CUH",
@@ -31,8 +31,8 @@
    "peak": 8.05e-05,
    "entry": 4.8761266551632894e-05,
    "liq0": 18878.83,
-   "cur_price": 4.674e-05,
-   "mark": 4.674e-05
+   "cur_price": 4.46e-05,
+   "mark": 4.46e-05
   },
   "5Mv6c7taXXkKn4byivDALNJJZ5NGu3aB9WJVXgSVFt3p": {
    "sym": "STONKR",
@@ -42,8 +42,8 @@
    "peak": 0.0001973,
    "entry": 0.00012261332030385873,
    "liq0": 31519.78,
-   "cur_price": 0.0001733,
-   "mark": 0.0001733
+   "cur_price": 0.0001729,
+   "mark": 0.0001729
   },
   "7r1v5rZcGnyzVs1jei7FeMEiZVf4GhQgLYXjZHmMUDGQ": {
    "sym": "HOURS",
@@ -53,8 +53,8 @@
    "peak": 5.332e-05,
    "entry": 4.729457822575378e-05,
    "liq0": 20901.48,
-   "cur_price": 5.145e-05,
-   "mark": 5.145e-05
+   "cur_price": 5.14e-05,
+   "mark": 5.14e-05
   },
   "2bs4mEZsUuNGkYeFsGuQ2YP8rTyNkqnwR3MerHZEGRSE": {
    "sym": "callinu",
@@ -64,8 +64,8 @@
    "peak": 5.461e-05,
    "entry": 4.9300734385211855e-05,
    "liq0": 20782.14,
-   "cur_price": 3.571e-05,
-   "mark": 3.571e-05
+   "cur_price": 3.464e-05,
+   "mark": 3.464e-05
   },
   "CC5D6puFmcsnGaJh7kNXeAcRpL2SZzQfoQezvx45uKjt": {
    "sym": "WORLD",
@@ -75,8 +75,8 @@
    "peak": 5.607e-05,
    "entry": 5.752244193636827e-05,
    "liq0": 24523.52,
-   "cur_price": 4.974e-05,
-   "mark": 4.974e-05
+   "cur_price": 4.928e-05,
+   "mark": 4.928e-05
   },
   "8r5faMhtYbc7gp411LQt9oqzQybRfy6LG2FJauTsfnKg": {
    "sym": "ORBIT",
@@ -86,8 +86,8 @@
    "peak": 0.000292,
    "entry": 6.137149993223808e-05,
    "liq0": 23767.84,
-   "cur_price": 0.0001583,
-   "mark": 0.0001583
+   "cur_price": 0.0001596,
+   "mark": 0.0001596
   },
   "ADvfRzYxQgybAd7z7pkAvL5jeSgqF2pbk5RRAR2zDMJR": {
    "sym": "HOOKDOG",
@@ -98,7 +98,9 @@
    "entry": 6.1837789954465e-05,
    "liq0": 25297.65,
    "cur_price": 0.0001023,
-   "mark": 0.0001023
+   "mark": 0.0001023,
+   "no_px_since": "2026-10-03T11:57:32Z",
+   "no_quote_since": "2026-10-03T11:57:35Z"
   },
   "8BDK38na8kAQBS6tfCtJ8EghX7bMnDYfEf2PWUeiL86u": {
    "sym": "QCAT",
@@ -108,8 +110,8 @@
    "peak": 0.0001262,
    "entry": 0.00011333368224981217,
    "liq0": 31469.23,
-   "cur_price": 0.0001262,
-   "mark": 0.0001262
+   "cur_price": 9.445e-05,
+   "mark": 9.445e-05
   }
  },
  "trades": [
@@ -8181,10 +8183,6 @@
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-16T03:16:21Z",
-   "v": 465.76
-  },
   {
    "t": "2026-09-16T03:21:16Z",
    "v": 464.91
@@ -28180,6 +28178,10 @@
   {
    "t": "2026-10-03T11:52:43Z",
    "v": 286.44
+  },
+  {
+   "t": "2026-10-03T11:57:35Z",
+   "v": 280.77
   }
  ],
  "started": "2026-09-15T16:35:51Z",
