@@ -1,5 +1,5 @@
 {
- "cash": 151.118775000001,
+ "cash": 136.09877500000098,
  "positions": {
   "2GYMvnSv37djKecDshE8bYe2sRypcETeAF8G9h6un4J2": {
    "sym": "SpaceXSI",
@@ -9,8 +9,8 @@
    "peak": 0.0002905,
    "entry": 6.487848270657301e-05,
    "liq0": 24548.79,
-   "cur_price": 8.874e-05,
-   "mark": 8.874e-05
+   "cur_price": 8.836e-05,
+   "mark": 8.836e-05
   },
   "D2xcPgLVxvX8j2886h5wagQn7YVVGN8q1FEbobi8pump": {
    "sym": "LINU",
@@ -31,8 +31,8 @@
    "peak": 0.0002352,
    "entry": 0.0001582723020461295,
    "liq0": 34976.82,
-   "cur_price": 0.0001849,
-   "mark": 0.0001849
+   "cur_price": 0.0001853,
+   "mark": 0.0001853
   },
   "CoN8oLvyWTjtSBFTEjUWLz25BXJmGjTvNcYh81D3pump": {
    "sym": "MAMESUKE",
@@ -53,8 +53,8 @@
    "peak": 0.0003456,
    "entry": 0.00011608596305776485,
    "liq0": 35699.15,
-   "cur_price": 0.0001252,
-   "mark": 0.0001252
+   "cur_price": 0.0001249,
+   "mark": 0.0001249
   },
   "68RUKJSkhT7Z9itn2tUhCzR7t2pbBahqjgG8qbkB5Dux": {
    "sym": "SGI",
@@ -64,8 +64,8 @@
    "peak": 0.0001633,
    "entry": 0.0001257981192042145,
    "liq0": 35250.2,
-   "cur_price": 0.0001171,
-   "mark": 0.0001171
+   "cur_price": 0.0001299,
+   "mark": 0.0001299
   },
   "AZ9NHodnyb6wPYian1Fd9HF1mfvPNkJEecExVT1Sevjg": {
    "sym": "SHINU",
@@ -75,8 +75,8 @@
    "peak": 0.0001395,
    "entry": 0.00014304122700381454,
    "liq0": 38890.91,
-   "cur_price": 0.0001196,
-   "mark": 0.0001196
+   "cur_price": 0.0001209,
+   "mark": 0.0001209
   },
   "Eqj36zHPTboNDYfX24sXvWf9e1wqY7kr823hbSY1pump": {
    "sym": "CUH",
@@ -86,8 +86,8 @@
    "peak": 8.05e-05,
    "entry": 4.8761266551632894e-05,
    "liq0": 18878.83,
-   "cur_price": 5.772e-05,
-   "mark": 5.772e-05
+   "cur_price": 5.873e-05,
+   "mark": 5.873e-05
   },
   "8svf3G1X4mnAX3Xm71jFXgiHydbvc5XKQKicbnokRUky": {
    "sym": "COMMIE",
@@ -97,8 +97,19 @@
    "peak": 7.603e-05,
    "entry": 7.965549488613508e-05,
    "liq0": 28521.33,
-   "cur_price": 7.162e-05,
-   "mark": 7.162e-05
+   "cur_price": 7.11e-05,
+   "mark": 7.11e-05
+  },
+  "JCsKWhELRJ8MhEZjUDdCL49mntw8fx27bKAgCMgSGhcQ": {
+   "sym": "SAM",
+   "qty": 121927.559212,
+   "cost": 15.02,
+   "opened": "2026-10-03T00:32:35Z",
+   "peak": 0.0001182,
+   "entry": 0.00012318790023413956,
+   "liq0": 30494.51,
+   "cur_price": 0.0001182,
+   "mark": 0.0001182
   }
  },
  "trades": [
@@ -7937,6 +7948,18 @@
    "fill": 7.9655495e-05,
    "usd": 15.02,
    "slip": 0.0847,
+   "quote": "jup",
+   "reason": "longshot"
+  },
+  {
+   "t": "2026-10-03T00:32:35Z",
+   "side": "buy",
+   "sym": "SAM",
+   "addr": "JCsKWhELRJ8MhEZjUDdCL49mntw8fx27bKAgCMgSGhcQ",
+   "price": 0.0001182,
+   "fill": 0.0001231879,
+   "usd": 15.02,
+   "slip": 0.0197,
    "quote": "jup",
    "reason": "longshot"
   }
@@ -27905,6 +27928,10 @@
   {
    "t": "2026-10-03T00:27:27Z",
    "v": 289.37
+  },
+  {
+   "t": "2026-10-03T00:32:35Z",
+   "v": 290.55
   }
  ],
  "started": "2026-09-15T16:35:51Z",
