@@ -1,17 +1,6 @@
 {
- "cash": 106.04684500000099,
+ "cash": 124.51446900000099,
  "positions": {
-  "2GYMvnSv37djKecDshE8bYe2sRypcETeAF8G9h6un4J2": {
-   "sym": "SpaceXSI",
-   "qty": 231509.729781,
-   "cost": 15.02,
-   "opened": "2026-09-30T07:22:11Z",
-   "peak": 0.0002905,
-   "entry": 6.487848270657301e-05,
-   "liq0": 24548.79,
-   "cur_price": 8.423e-05,
-   "mark": 8.423e-05
-  },
   "6ZEaWsvHJ5qeXgaDodZGvPZj3Nxs9ErCt2NkYYt1LFPv": {
    "sym": "PeaqX",
    "qty": 94899.73802,
@@ -20,8 +9,8 @@
    "peak": 0.0002352,
    "entry": 0.0001582723020461295,
    "liq0": 34976.82,
-   "cur_price": 0.0001697,
-   "mark": 0.0001697
+   "cur_price": 0.0001636,
+   "mark": 0.0001636
   },
   "CoN8oLvyWTjtSBFTEjUWLz25BXJmGjTvNcYh81D3pump": {
    "sym": "MAMESUKE",
@@ -42,8 +31,8 @@
    "peak": 0.0002249,
    "entry": 0.0001257981192042145,
    "liq0": 35250.2,
-   "cur_price": 0.0001928,
-   "mark": 0.0001928
+   "cur_price": 0.0002065,
+   "mark": 0.0002065
   },
   "Eqj36zHPTboNDYfX24sXvWf9e1wqY7kr823hbSY1pump": {
    "sym": "CUH",
@@ -64,8 +53,8 @@
    "peak": 0.0001684,
    "entry": 0.00012261332030385873,
    "liq0": 31519.78,
-   "cur_price": 0.0001339,
-   "mark": 0.0001339
+   "cur_price": 0.0001361,
+   "mark": 0.0001361
   },
   "7r1v5rZcGnyzVs1jei7FeMEiZVf4GhQgLYXjZHmMUDGQ": {
    "sym": "HOURS",
@@ -75,8 +64,8 @@
    "peak": 4.894e-05,
    "entry": 4.729457822575378e-05,
    "liq0": 20901.48,
-   "cur_price": 4.564e-05,
-   "mark": 4.564e-05
+   "cur_price": 4.263e-05,
+   "mark": 4.263e-05
   },
   "2bs4mEZsUuNGkYeFsGuQ2YP8rTyNkqnwR3MerHZEGRSE": {
    "sym": "callinu",
@@ -97,8 +86,8 @@
    "peak": 5.607e-05,
    "entry": 5.752244193636827e-05,
    "liq0": 24523.52,
-   "cur_price": 5.33e-05,
-   "mark": 5.33e-05
+   "cur_price": 5.366e-05,
+   "mark": 5.366e-05
   },
   "8r5faMhtYbc7gp411LQt9oqzQybRfy6LG2FJauTsfnKg": {
    "sym": "ORBIT",
@@ -108,8 +97,8 @@
    "peak": 8.06e-05,
    "entry": 6.137149993223808e-05,
    "liq0": 23767.84,
-   "cur_price": 8.06e-05,
-   "mark": 8.06e-05
+   "cur_price": 6.711e-05,
+   "mark": 6.711e-05
   }
  },
  "trades": [
@@ -8097,13 +8086,24 @@
    "slip": 0.0448,
    "quote": "jup",
    "reason": "longshot"
+  },
+  {
+   "t": "2026-10-03T07:22:30Z",
+   "side": "sell",
+   "sym": "SpaceXSI",
+   "addr": "2GYMvnSv37djKecDshE8bYe2sRypcETeAF8G9h6un4J2",
+   "price": 8.159e-05,
+   "usd": 18.47,
+   "pnl": 3.45,
+   "peak_x": 4.478,
+   "held_h": 72.0,
+   "frac": 1.0,
+   "slip": 0.0169,
+   "quote": "jup",
+   "reason": "time"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-15T22:41:04Z",
-   "v": 473.31
-  },
   {
    "t": "2026-09-15T22:46:07Z",
    "v": 472.61
@@ -28099,6 +28099,10 @@
   {
    "t": "2026-10-03T07:17:32Z",
    "v": 270.93
+  },
+  {
+   "t": "2026-10-03T07:22:31Z",
+   "v": 267.06
   }
  ],
  "started": "2026-09-15T16:35:51Z",
@@ -28215,6 +28219,7 @@
   "AZ9NHodnyb6wPYian1Fd9HF1mfvPNkJEecExVT1Sevjg": 1790996237.5081518,
   "BizeLNXEQjrTjmtQbNA6Qi22h5HKQe9Gjwys3ZkT1Nc9": 1791002546.1504781,
   "8svf3G1X4mnAX3Xm71jFXgiHydbvc5XKQKicbnokRUky": 1791005550.3938303,
-  "D2xcPgLVxvX8j2886h5wagQn7YVVGN8q1FEbobi8pump": 1791006750.6811018
+  "D2xcPgLVxvX8j2886h5wagQn7YVVGN8q1FEbobi8pump": 1791006750.6811018,
+  "2GYMvnSv37djKecDshE8bYe2sRypcETeAF8G9h6un4J2": 1791012150.9886792
  }
 }
