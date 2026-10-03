@@ -1,5 +1,5 @@
 {
- "cash": 21.13007500000102,
+ "cash": 29.29249800000102,
  "positions": {
   "6ZEaWsvHJ5qeXgaDodZGvPZj3Nxs9ErCt2NkYYt1LFPv": {
    "sym": "PeaqX",
@@ -9,8 +9,8 @@
    "peak": 0.0002352,
    "entry": 0.0001582723020461295,
    "liq0": 34976.82,
-   "cur_price": 0.0001591,
-   "mark": 0.0001591
+   "cur_price": 0.0001565,
+   "mark": 0.0001565
   },
   "CoN8oLvyWTjtSBFTEjUWLz25BXJmGjTvNcYh81D3pump": {
    "sym": "MAMESUKE",
@@ -20,8 +20,8 @@
    "peak": 0.0002629,
    "entry": 0.00010989898278206368,
    "liq0": 28881.75,
-   "cur_price": 0.0002538,
-   "mark": 0.0002538
+   "cur_price": 0.0002541,
+   "mark": 0.0002541
   },
   "5Mv6c7taXXkKn4byivDALNJJZ5NGu3aB9WJVXgSVFt3p": {
    "sym": "STONKR",
@@ -31,8 +31,8 @@
    "peak": 0.0002288,
    "entry": 0.00012261332030385873,
    "liq0": 31519.78,
-   "cur_price": 0.0001893,
-   "mark": 0.0001893
+   "cur_price": 0.0002019,
+   "mark": 0.0002019
   },
   "7r1v5rZcGnyzVs1jei7FeMEiZVf4GhQgLYXjZHmMUDGQ": {
    "sym": "HOURS",
@@ -64,8 +64,8 @@
    "peak": 0.000292,
    "entry": 6.137149993223808e-05,
    "liq0": 23767.84,
-   "cur_price": 0.0001143,
-   "mark": 0.0001143
+   "cur_price": 0.0001246,
+   "mark": 0.0001246
   },
   "5YX2yE8M3TZMD9RDnSpEY6maVjxfeSNE9G6v26AZwdyt": {
    "sym": "WDYM",
@@ -76,18 +76,9 @@
    "entry": 3.699619968379502e-05,
    "liq0": 20631.17,
    "cur_price": 2.728e-05,
-   "mark": 2.728e-05
-  },
-  "2bQBNJfkGLsCkKEHJUgdFnPoQvDqpW6SYoJ6Zfrtpump": {
-   "sym": "REP",
-   "qty": 296231.932006,
-   "cost": 15.02,
-   "opened": "2026-10-03T15:17:13Z",
-   "peak": 6.243e-05,
-   "entry": 5.070351429803245e-05,
-   "liq0": 19011.96,
-   "cur_price": 3.157e-05,
-   "mark": 3.157e-05
+   "mark": 2.728e-05,
+   "no_px_since": "2026-10-03T18:07:20Z",
+   "no_quote_since": "2026-10-03T18:07:21Z"
   },
   "GjrhXcr8YzUZBbu5rifdqM5CPBS4LFJveq3ZiY2u3g5G": {
    "sym": "Meridian",
@@ -97,8 +88,8 @@
    "peak": 9.082e-05,
    "entry": 7.888148623695331e-05,
    "liq0": 27425.44,
-   "cur_price": 8.492e-05,
-   "mark": 8.492e-05
+   "cur_price": 8.488e-05,
+   "mark": 8.488e-05
   },
   "3st8R9eftjF5GnuhaeeMNGSKMFQbBxFpKg1ZrKh9tBaV": {
    "sym": "MIND",
@@ -108,8 +99,8 @@
    "peak": 8.363e-05,
    "entry": 5.4047378656228185e-05,
    "liq0": 19326.62,
-   "cur_price": 4.755e-05,
-   "mark": 4.755e-05
+   "cur_price": 4.59e-05,
+   "mark": 4.59e-05
   },
   "GWDAwqnTrrcLnxf49Mc1DHB7oEY7gQw2tbiRrqqee4N1": {
    "sym": "AI",
@@ -120,18 +111,20 @@
    "entry": 6.55738567450931e-05,
    "liq0": 23101.72,
    "cur_price": 5.622e-05,
-   "mark": 5.622e-05
+   "mark": 5.622e-05,
+   "no_px_since": "2026-10-03T18:07:20Z",
+   "no_quote_since": "2026-10-03T18:07:21Z"
   },
   "8Y6pHi3cMhxhtHuzgGAsWgAJMyw3zaQLeFFf3qvRpump": {
    "sym": "PRINTR",
    "qty": 133713.117765,
    "cost": 15.02,
    "opened": "2026-10-03T17:52:25Z",
-   "peak": 0.0001117,
+   "peak": 0.0001162,
    "entry": 0.00011233004099416453,
    "liq0": 31782.35,
-   "cur_price": 0.0001117,
-   "mark": 0.0001117
+   "cur_price": 0.0001162,
+   "mark": 0.0001162
   }
  },
  "trades": [
@@ -8386,13 +8379,24 @@
    "slip": 0.0059,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-10-03T18:07:20Z",
+   "side": "sell",
+   "sym": "REP",
+   "addr": "2bQBNJfkGLsCkKEHJUgdFnPoQvDqpW6SYoJ6Zfrtpump",
+   "price": 3.015e-05,
+   "usd": 8.16,
+   "pnl": -6.86,
+   "peak_x": 1.231,
+   "held_h": 2.8,
+   "frac": 1.0,
+   "slip": 0.0181,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-16T09:25:51Z",
-   "v": 559.62
-  },
   {
    "t": "2026-09-16T09:30:54Z",
    "v": 557.59
@@ -28388,6 +28392,10 @@
   {
    "t": "2026-10-03T18:02:19Z",
    "v": 239.35
+  },
+  {
+   "t": "2026-10-03T18:07:21Z",
+   "v": 242.16
   }
  ],
  "started": "2026-09-15T16:35:51Z",
@@ -28513,6 +28521,7 @@
   "Eqj36zHPTboNDYfX24sXvWf9e1wqY7kr823hbSY1pump": 1791046040.8755372,
   "ADvfRzYxQgybAd7z7pkAvL5jeSgqF2pbk5RRAR2zDMJR": 1791046629.820469,
   "2bs4mEZsUuNGkYeFsGuQ2YP8rTyNkqnwR3MerHZEGRSE": 1791048129.976612,
-  "GWGUDFY1dDxQoAMsWfg6zfhvYNF1toKPHMVT3DFBwMJq": 1791050240.1195786
+  "GWGUDFY1dDxQoAMsWfg6zfhvYNF1toKPHMVT3DFBwMJq": 1791050240.1195786,
+  "2bQBNJfkGLsCkKEHJUgdFnPoQvDqpW6SYoJ6Zfrtpump": 1791050840.7215395
  }
 }
