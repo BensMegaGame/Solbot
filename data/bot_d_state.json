@@ -1,5 +1,5 @@
 {
- "cash": 29.247132000001013,
+ "cash": 36.689786000001014,
  "positions": {
   "6ZEaWsvHJ5qeXgaDodZGvPZj3Nxs9ErCt2NkYYt1LFPv": {
    "sym": "PeaqX",
@@ -20,8 +20,8 @@
    "peak": 0.0002372,
    "entry": 0.00010989898278206368,
    "liq0": 28881.75,
-   "cur_price": 0.0002195,
-   "mark": 0.0002195
+   "cur_price": 0.0002224,
+   "mark": 0.0002224
   },
   "Eqj36zHPTboNDYfX24sXvWf9e1wqY7kr823hbSY1pump": {
    "sym": "CUH",
@@ -31,8 +31,8 @@
    "peak": 8.05e-05,
    "entry": 4.8761266551632894e-05,
    "liq0": 18878.83,
-   "cur_price": 3.77e-05,
-   "mark": 3.77e-05
+   "cur_price": 3.753e-05,
+   "mark": 3.753e-05
   },
   "5Mv6c7taXXkKn4byivDALNJJZ5NGu3aB9WJVXgSVFt3p": {
    "sym": "STONKR",
@@ -42,8 +42,8 @@
    "peak": 0.0002288,
    "entry": 0.00012261332030385873,
    "liq0": 31519.78,
-   "cur_price": 0.000203,
-   "mark": 0.000203
+   "cur_price": 0.000204,
+   "mark": 0.000204
   },
   "7r1v5rZcGnyzVs1jei7FeMEiZVf4GhQgLYXjZHmMUDGQ": {
    "sym": "HOURS",
@@ -53,8 +53,8 @@
    "peak": 0.0001061,
    "entry": 4.729457822575378e-05,
    "liq0": 20901.48,
-   "cur_price": 8.073e-05,
-   "mark": 8.073e-05
+   "cur_price": 7.881e-05,
+   "mark": 7.881e-05
   },
   "2bs4mEZsUuNGkYeFsGuQ2YP8rTyNkqnwR3MerHZEGRSE": {
    "sym": "callinu",
@@ -86,8 +86,8 @@
    "peak": 0.000292,
    "entry": 6.137149993223808e-05,
    "liq0": 23767.84,
-   "cur_price": 0.0001143,
-   "mark": 0.0001143
+   "cur_price": 0.000124,
+   "mark": 0.000124
   },
   "ADvfRzYxQgybAd7z7pkAvL5jeSgqF2pbk5RRAR2zDMJR": {
    "sym": "HOOKDOG",
@@ -100,17 +100,6 @@
    "cur_price": 7.035e-05,
    "mark": 7.035e-05
   },
-  "2Zp29FcxqTpt3JfQ68Fn94DzWCMiBiCVjXkuAG5W64UJ": {
-   "sym": "AMD",
-   "qty": 206962.693503,
-   "cost": 15.02,
-   "opened": "2026-10-03T13:02:22Z",
-   "peak": 0.0001321,
-   "entry": 7.25734659989931e-05,
-   "liq0": 25592.11,
-   "cur_price": 4.882e-05,
-   "mark": 4.882e-05
-  },
   "5YX2yE8M3TZMD9RDnSpEY6maVjxfeSNE9G6v26AZwdyt": {
    "sym": "WDYM",
    "qty": 405987.645444,
@@ -120,7 +109,9 @@
    "entry": 3.699619968379502e-05,
    "liq0": 20631.17,
    "cur_price": 4.094e-05,
-   "mark": 4.094e-05
+   "mark": 4.094e-05,
+   "no_px_since": "2026-10-03T15:57:10Z",
+   "no_quote_since": "2026-10-03T15:57:11Z"
   },
   "GWGUDFY1dDxQoAMsWfg6zfhvYNF1toKPHMVT3DFBwMJq": {
    "sym": "POOPYBOT",
@@ -130,8 +121,8 @@
    "peak": 0.0001913,
    "entry": 0.00013525797724223745,
    "liq0": 34195.85,
-   "cur_price": 0.0001585,
-   "mark": 0.0001585
+   "cur_price": 0.0001533,
+   "mark": 0.0001533
   },
   "2bQBNJfkGLsCkKEHJUgdFnPoQvDqpW6SYoJ6Zfrtpump": {
    "sym": "REP",
@@ -141,19 +132,19 @@
    "peak": 6.243e-05,
    "entry": 5.070351429803245e-05,
    "liq0": 19011.96,
-   "cur_price": 5.872e-05,
-   "mark": 5.872e-05
+   "cur_price": 5.877e-05,
+   "mark": 5.877e-05
   },
   "GjrhXcr8YzUZBbu5rifdqM5CPBS4LFJveq3ZiY2u3g5G": {
    "sym": "Meridian",
    "qty": 190412.233802,
    "cost": 15.02,
    "opened": "2026-10-03T15:22:12Z",
-   "peak": 8.767e-05,
+   "peak": 8.927e-05,
    "entry": 7.888148623695331e-05,
    "liq0": 27425.44,
-   "cur_price": 8.756e-05,
-   "mark": 8.756e-05
+   "cur_price": 8.927e-05,
+   "mark": 8.927e-05
   }
  },
  "trades": [
@@ -8297,13 +8288,24 @@
    "slip": 0.0226,
    "quote": "jup",
    "reason": "longshot"
+  },
+  {
+   "t": "2026-10-03T15:57:10Z",
+   "side": "sell",
+   "sym": "AMD",
+   "addr": "2Zp29FcxqTpt3JfQ68Fn94DzWCMiBiCVjXkuAG5W64UJ",
+   "price": 3.689e-05,
+   "usd": 7.44,
+   "pnl": -7.58,
+   "peak_x": 1.82,
+   "held_h": 2.9,
+   "frac": 1.0,
+   "slip": 0.0322,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-16T07:15:52Z",
-   "v": 543.3
-  },
   {
    "t": "2026-09-16T07:20:54Z",
    "v": 542.88
@@ -28299,6 +28301,10 @@
   {
    "t": "2026-10-03T15:52:12Z",
    "v": 287.18
+  },
+  {
+   "t": "2026-10-03T15:57:11Z",
+   "v": 286.51
   }
  ],
  "started": "2026-09-15T16:35:51Z",
@@ -28419,6 +28425,7 @@
   "2GYMvnSv37djKecDshE8bYe2sRypcETeAF8G9h6un4J2": 1791012150.9886792,
   "pFftuUXhSNjVa1qZ8c9Ew6CQ7WNaoafWeh8SokvnXMx": 1791022050.2220984,
   "68RUKJSkhT7Z9itn2tUhCzR7t2pbBahqjgG8qbkB5Dux": 1791027759.8103034,
-  "8BDK38na8kAQBS6tfCtJ8EghX7bMnDYfEf2PWUeiL86u": 1791030140.5389426
+  "8BDK38na8kAQBS6tfCtJ8EghX7bMnDYfEf2PWUeiL86u": 1791030140.5389426,
+  "2Zp29FcxqTpt3JfQ68Fn94DzWCMiBiCVjXkuAG5W64UJ": 1791043030.3985643
  }
 }
