@@ -9,8 +9,8 @@
    "peak": 0.0002352,
    "entry": 0.0001582723020461295,
    "liq0": 34976.82,
-   "cur_price": 0.0001787,
-   "mark": 0.0001787
+   "cur_price": 0.0001804,
+   "mark": 0.0001804
   },
   "CoN8oLvyWTjtSBFTEjUWLz25BXJmGjTvNcYh81D3pump": {
    "sym": "MAMESUKE",
@@ -42,19 +42,19 @@
    "peak": 0.0002192,
    "entry": 0.00012261332030385873,
    "liq0": 31519.78,
-   "cur_price": 0.0001998,
-   "mark": 0.0001998
+   "cur_price": 0.0001963,
+   "mark": 0.0001963
   },
   "7r1v5rZcGnyzVs1jei7FeMEiZVf4GhQgLYXjZHmMUDGQ": {
    "sym": "HOURS",
    "qty": 317583.971852,
    "cost": 15.02,
    "opened": "2026-10-03T02:47:18Z",
-   "peak": 7.322e-05,
+   "peak": 9.964e-05,
    "entry": 4.729457822575378e-05,
    "liq0": 20901.48,
-   "cur_price": 7.245e-05,
-   "mark": 7.245e-05
+   "cur_price": 9.964e-05,
+   "mark": 9.964e-05
   },
   "2bs4mEZsUuNGkYeFsGuQ2YP8rTyNkqnwR3MerHZEGRSE": {
    "sym": "callinu",
@@ -64,19 +64,19 @@
    "peak": 5.461e-05,
    "entry": 4.9300734385211855e-05,
    "liq0": 20782.14,
-   "cur_price": 4.623e-05,
-   "mark": 4.623e-05
+   "cur_price": 4.284e-05,
+   "mark": 4.284e-05
   },
   "CC5D6puFmcsnGaJh7kNXeAcRpL2SZzQfoQezvx45uKjt": {
    "sym": "WORLD",
    "qty": 261115.479357,
    "cost": 15.02,
    "opened": "2026-10-03T06:27:39Z",
-   "peak": 5.929e-05,
+   "peak": 5.986e-05,
    "entry": 5.752244193636827e-05,
    "liq0": 24523.52,
-   "cur_price": 5.929e-05,
-   "mark": 5.929e-05
+   "cur_price": 5.986e-05,
+   "mark": 5.986e-05
   },
   "8r5faMhtYbc7gp411LQt9oqzQybRfy6LG2FJauTsfnKg": {
    "sym": "ORBIT",
@@ -86,8 +86,8 @@
    "peak": 0.000292,
    "entry": 6.137149993223808e-05,
    "liq0": 23767.84,
-   "cur_price": 0.0001032,
-   "mark": 0.0001032
+   "cur_price": 9.524e-05,
+   "mark": 9.524e-05
   },
   "ADvfRzYxQgybAd7z7pkAvL5jeSgqF2pbk5RRAR2zDMJR": {
    "sym": "HOOKDOG",
@@ -98,7 +98,9 @@
    "entry": 6.1837789954465e-05,
    "liq0": 25297.65,
    "cur_price": 7.738e-05,
-   "mark": 7.738e-05
+   "mark": 7.738e-05,
+   "no_px_since": "2026-10-03T14:07:16Z",
+   "no_quote_since": "2026-10-03T14:07:17Z"
   },
   "2Zp29FcxqTpt3JfQ68Fn94DzWCMiBiCVjXkuAG5W64UJ": {
    "sym": "AMD",
@@ -108,8 +110,8 @@
    "peak": 0.0001321,
    "entry": 7.25734659989931e-05,
    "liq0": 25592.11,
-   "cur_price": 0.0001043,
-   "mark": 0.0001043
+   "cur_price": 0.0001064,
+   "mark": 0.0001064
   },
   "5YX2yE8M3TZMD9RDnSpEY6maVjxfeSNE9G6v26AZwdyt": {
    "sym": "WDYM",
@@ -119,10 +121,8 @@
    "peak": 3.623e-05,
    "entry": 3.699619968379502e-05,
    "liq0": 20631.17,
-   "cur_price": 2.924e-05,
-   "mark": 2.924e-05,
-   "no_px_since": "2026-10-03T13:57:14Z",
-   "no_quote_since": "2026-10-03T13:57:15Z"
+   "cur_price": 3.011e-05,
+   "mark": 3.011e-05
   }
  },
  "trades": [
@@ -8233,10 +8233,6 @@
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-16T05:26:02Z",
-   "v": 557.58
-  },
   {
    "t": "2026-09-16T05:31:03Z",
    "v": 556.12
@@ -28232,6 +28228,10 @@
   {
    "t": "2026-10-03T14:02:21Z",
    "v": 285.96
+  },
+  {
+   "t": "2026-10-03T14:07:17Z",
+   "v": 292.28
   }
  ],
  "started": "2026-09-15T16:35:51Z",
