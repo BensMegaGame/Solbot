@@ -1,5 +1,5 @@
 {
- "cash": 140.927617000001,
+ "cash": 151.106845000001,
  "positions": {
   "2GYMvnSv37djKecDshE8bYe2sRypcETeAF8G9h6un4J2": {
    "sym": "SpaceXSI",
@@ -12,17 +12,6 @@
    "cur_price": 7.608e-05,
    "mark": 7.608e-05
   },
-  "D2xcPgLVxvX8j2886h5wagQn7YVVGN8q1FEbobi8pump": {
-   "sym": "LINU",
-   "qty": 278721.048436,
-   "cost": 15.02,
-   "opened": "2026-10-01T17:51:44Z",
-   "peak": 0.0001371,
-   "entry": 5.388900509768603e-05,
-   "liq0": 23305.67,
-   "cur_price": 4.179e-05,
-   "mark": 4.179e-05
-  },
   "6ZEaWsvHJ5qeXgaDodZGvPZj3Nxs9ErCt2NkYYt1LFPv": {
    "sym": "PeaqX",
    "qty": 94899.73802,
@@ -31,8 +20,8 @@
    "peak": 0.0002352,
    "entry": 0.0001582723020461295,
    "liq0": 34976.82,
-   "cur_price": 0.0001612,
-   "mark": 0.0001612
+   "cur_price": 0.0001633,
+   "mark": 0.0001633
   },
   "CoN8oLvyWTjtSBFTEjUWLz25BXJmGjTvNcYh81D3pump": {
    "sym": "MAMESUKE",
@@ -53,8 +42,8 @@
    "peak": 0.0001952,
    "entry": 0.0001257981192042145,
    "liq0": 35250.2,
-   "cur_price": 0.0001533,
-   "mark": 0.0001533
+   "cur_price": 0.0001502,
+   "mark": 0.0001502
   },
   "Eqj36zHPTboNDYfX24sXvWf9e1wqY7kr823hbSY1pump": {
    "sym": "CUH",
@@ -75,8 +64,8 @@
    "peak": 0.0001684,
    "entry": 0.00012261332030385873,
    "liq0": 31519.78,
-   "cur_price": 0.0001684,
-   "mark": 0.0001684
+   "cur_price": 0.0001664,
+   "mark": 0.0001664
   },
   "7r1v5rZcGnyzVs1jei7FeMEiZVf4GhQgLYXjZHmMUDGQ": {
    "sym": "HOURS",
@@ -86,8 +75,8 @@
    "peak": 4.866e-05,
    "entry": 4.729457822575378e-05,
    "liq0": 20901.48,
-   "cur_price": 4.798e-05,
-   "mark": 4.798e-05
+   "cur_price": 4.803e-05,
+   "mark": 4.803e-05
   }
  },
  "trades": [
@@ -8024,13 +8013,24 @@
    "slip": 0.0546,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-10-03T05:52:30Z",
+   "side": "sell",
+   "sym": "LINU",
+   "addr": "D2xcPgLVxvX8j2886h5wagQn7YVVGN8q1FEbobi8pump",
+   "price": 3.928e-05,
+   "usd": 10.18,
+   "pnl": -4.84,
+   "peak_x": 2.544,
+   "held_h": 36.0,
+   "frac": 1.0,
+   "slip": 0.0686,
+   "quote": "jup",
+   "reason": "tot"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-15T21:10:57Z",
-   "v": 465.84
-  },
   {
    "t": "2026-09-15T21:15:59Z",
    "v": 469.07
@@ -28026,6 +28026,10 @@
   {
    "t": "2026-10-03T05:47:30Z",
    "v": 269.44
+  },
+  {
+   "t": "2026-10-03T05:52:31Z",
+   "v": 267.58
   }
  ],
  "started": "2026-09-15T16:35:51Z",
@@ -28141,6 +28145,7 @@
   "JCsKWhELRJ8MhEZjUDdCL49mntw8fx27bKAgCMgSGhcQ": 1790993524.1475253,
   "AZ9NHodnyb6wPYian1Fd9HF1mfvPNkJEecExVT1Sevjg": 1790996237.5081518,
   "BizeLNXEQjrTjmtQbNA6Qi22h5HKQe9Gjwys3ZkT1Nc9": 1791002546.1504781,
-  "8svf3G1X4mnAX3Xm71jFXgiHydbvc5XKQKicbnokRUky": 1791005550.3938303
+  "8svf3G1X4mnAX3Xm71jFXgiHydbvc5XKQKicbnokRUky": 1791005550.3938303,
+  "D2xcPgLVxvX8j2886h5wagQn7YVVGN8q1FEbobi8pump": 1791006750.6811018
  }
 }
