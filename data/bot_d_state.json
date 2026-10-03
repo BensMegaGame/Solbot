@@ -1,5 +1,5 @@
 {
- "cash": 110.610872000001,
+ "cash": 95.590872000001,
  "positions": {
   "6ZEaWsvHJ5qeXgaDodZGvPZj3Nxs9ErCt2NkYYt1LFPv": {
    "sym": "PeaqX",
@@ -17,11 +17,11 @@
    "qty": 136670.964733,
    "cost": 15.02,
    "opened": "2026-10-02T07:17:06Z",
-   "peak": 0.0001366,
+   "peak": 0.0001374,
    "entry": 0.00010989898278206368,
    "liq0": 28881.75,
-   "cur_price": 0.0001366,
-   "mark": 0.0001366
+   "cur_price": 0.0001374,
+   "mark": 0.0001374
   },
   "Eqj36zHPTboNDYfX24sXvWf9e1wqY7kr823hbSY1pump": {
    "sym": "CUH",
@@ -42,8 +42,8 @@
    "peak": 0.0001973,
    "entry": 0.00012261332030385873,
    "liq0": 31519.78,
-   "cur_price": 0.0001863,
-   "mark": 0.0001863
+   "cur_price": 0.0001733,
+   "mark": 0.0001733
   },
   "7r1v5rZcGnyzVs1jei7FeMEiZVf4GhQgLYXjZHmMUDGQ": {
    "sym": "HOURS",
@@ -64,8 +64,8 @@
    "peak": 5.461e-05,
    "entry": 4.9300734385211855e-05,
    "liq0": 20782.14,
-   "cur_price": 3.89e-05,
-   "mark": 3.89e-05
+   "cur_price": 3.571e-05,
+   "mark": 3.571e-05
   },
   "CC5D6puFmcsnGaJh7kNXeAcRpL2SZzQfoQezvx45uKjt": {
    "sym": "WORLD",
@@ -75,8 +75,8 @@
    "peak": 5.607e-05,
    "entry": 5.752244193636827e-05,
    "liq0": 24523.52,
-   "cur_price": 4.953e-05,
-   "mark": 4.953e-05
+   "cur_price": 4.974e-05,
+   "mark": 4.974e-05
   },
   "8r5faMhtYbc7gp411LQt9oqzQybRfy6LG2FJauTsfnKg": {
    "sym": "ORBIT",
@@ -86,8 +86,8 @@
    "peak": 0.000292,
    "entry": 6.137149993223808e-05,
    "liq0": 23767.84,
-   "cur_price": 0.0001553,
-   "mark": 0.0001553
+   "cur_price": 0.0001583,
+   "mark": 0.0001583
   },
   "ADvfRzYxQgybAd7z7pkAvL5jeSgqF2pbk5RRAR2zDMJR": {
    "sym": "HOOKDOG",
@@ -99,6 +99,17 @@
    "liq0": 25297.65,
    "cur_price": 0.0001023,
    "mark": 0.0001023
+  },
+  "8BDK38na8kAQBS6tfCtJ8EghX7bMnDYfEf2PWUeiL86u": {
+   "sym": "QCAT",
+   "qty": 132529.003751,
+   "cost": 15.02,
+   "opened": "2026-10-03T11:52:42Z",
+   "peak": 0.0001262,
+   "entry": 0.00011333368224981217,
+   "liq0": 31469.23,
+   "cur_price": 0.0001262,
+   "mark": 0.0001262
   }
  },
  "trades": [
@@ -8155,13 +8166,21 @@
    "slip": 0.015,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-10-03T11:52:42Z",
+   "side": "buy",
+   "sym": "QCAT",
+   "addr": "8BDK38na8kAQBS6tfCtJ8EghX7bMnDYfEf2PWUeiL86u",
+   "price": 0.0001262,
+   "fill": 0.000113333682,
+   "usd": 15.02,
+   "slip": 0.0136,
+   "quote": "jup",
+   "reason": "longshot"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-16T03:11:22Z",
-   "v": 465.63
-  },
   {
    "t": "2026-09-16T03:16:21Z",
    "v": 465.76
@@ -28157,6 +28176,10 @@
   {
    "t": "2026-10-03T11:47:37Z",
    "v": 286.4
+  },
+  {
+   "t": "2026-10-03T11:52:43Z",
+   "v": 286.44
   }
  ],
  "started": "2026-09-15T16:35:51Z",
