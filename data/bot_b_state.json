@@ -1,18 +1,6 @@
 {
- "cash": 241.14867900000013,
+ "cash": 278.0588050000001,
  "positions": {
-  "6iAj2oywQMiD9NeyTcW1S7UtG7e3jSK7Ud5ZJDqJpump": {
-   "sym": "HI",
-   "qty": 46375.0382505,
-   "cost": 18.7575,
-   "opened": "2026-10-01T22:36:36Z",
-   "peak": 0.001536,
-   "entry": 0.00040447405991730396,
-   "cur_price": 0.00106,
-   "mark": 0.00106,
-   "tp0": true,
-   "tp1": true
-  },
   "3iUTyNYW6xKv5kZUjtbrEDTsuJTrSVwvB3bQtxkLpump": {
    "sym": "bukangi",
    "qty": 145858.718702,
@@ -20,8 +8,8 @@
    "opened": "2026-10-02T13:41:33Z",
    "peak": 0.000418,
    "entry": 0.00034293459071304817,
-   "cur_price": 0.0003649,
-   "mark": 0.0003649
+   "cur_price": 0.0003617,
+   "mark": 0.0003617
   },
   "3sL58KKh2QdNSfN9VRz8bHGGU5zStdfManVHCTkhpump": {
    "sym": "PI",
@@ -30,8 +18,8 @@
    "opened": "2026-10-02T14:41:33Z",
    "peak": 0.0001254,
    "entry": 0.00011103321448607669,
-   "cur_price": 7.224e-05,
-   "mark": 7.224e-05
+   "cur_price": 7.228e-05,
+   "mark": 7.228e-05
   }
  },
  "trades": [
@@ -346,6 +334,21 @@
    "slip": 0.0014,
    "quote": "jup",
    "reason": "tp1"
+  },
+  {
+   "t": "2026-10-03T08:36:12Z",
+   "side": "sell",
+   "sym": "HI",
+   "addr": "6iAj2oywQMiD9NeyTcW1S7UtG7e3jSK7Ud5ZJDqJpump",
+   "price": 0.0007594,
+   "usd": 36.91,
+   "pnl": 18.15,
+   "peak_x": 3.798,
+   "held_h": 34.0,
+   "frac": 1.0,
+   "slip": 0.0116,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
@@ -9320,6 +9323,10 @@
   {
    "t": "2026-10-03T08:32:05Z",
    "v": 376.07
+  },
+  {
+   "t": "2026-10-03T08:37:06Z",
+   "v": 363.38
   }
  ],
  "started": "2026-09-25T13:40:52Z",
@@ -9331,6 +9338,7 @@
   "CbouD8khLcz1Y1QngvRtQufUimSRKpHkvGn6y1n8pump": 1790734262.735175,
   "EGTFrUPym8JnEMAddZjuhBkcSGEGTM75qymxUZgTpump": 1790750461.2133102,
   "82ezhRLKdKwkSC9jkM3js1yf93VbmvLXNMPkBmompump": 1790782858.683111,
-  "3kmygWKZBkCYrgZHKfiuB9UFKTcDLTFFsKo3BWpmpump": 1790965266.749998
+  "3kmygWKZBkCYrgZHKfiuB9UFKTcDLTFFsKo3BWpmpump": 1790965266.749998,
+  "6iAj2oywQMiD9NeyTcW1S7UtG7e3jSK7Ud5ZJDqJpump": 1791016572.3623521
  }
 }
