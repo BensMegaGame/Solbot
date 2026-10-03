@@ -1,5 +1,5 @@
 {
- "cash": 121.06684500000098,
+ "cash": 106.04684500000099,
  "positions": {
   "2GYMvnSv37djKecDshE8bYe2sRypcETeAF8G9h6un4J2": {
    "sym": "SpaceXSI",
@@ -9,8 +9,8 @@
    "peak": 0.0002905,
    "entry": 6.487848270657301e-05,
    "liq0": 24548.79,
-   "cur_price": 8.82e-05,
-   "mark": 8.82e-05
+   "cur_price": 8.843e-05,
+   "mark": 8.843e-05
   },
   "6ZEaWsvHJ5qeXgaDodZGvPZj3Nxs9ErCt2NkYYt1LFPv": {
    "sym": "PeaqX",
@@ -20,8 +20,8 @@
    "peak": 0.0002352,
    "entry": 0.0001582723020461295,
    "liq0": 34976.82,
-   "cur_price": 0.0001759,
-   "mark": 0.0001759
+   "cur_price": 0.0001783,
+   "mark": 0.0001783
   },
   "CoN8oLvyWTjtSBFTEjUWLz25BXJmGjTvNcYh81D3pump": {
    "sym": "MAMESUKE",
@@ -31,19 +31,19 @@
    "peak": 0.0001249,
    "entry": 0.00010989898278206368,
    "liq0": 28881.75,
-   "cur_price": 0.0001108,
-   "mark": 0.0001108
+   "cur_price": 0.0001105,
+   "mark": 0.0001105
   },
   "68RUKJSkhT7Z9itn2tUhCzR7t2pbBahqjgG8qbkB5Dux": {
    "sym": "SGI",
    "qty": 119397.651531,
    "cost": 15.02,
    "opened": "2026-10-02T22:22:24Z",
-   "peak": 0.0002064,
+   "peak": 0.0002243,
    "entry": 0.0001257981192042145,
    "liq0": 35250.2,
-   "cur_price": 0.0002064,
-   "mark": 0.0002064
+   "cur_price": 0.0002243,
+   "mark": 0.0002243
   },
   "Eqj36zHPTboNDYfX24sXvWf9e1wqY7kr823hbSY1pump": {
    "sym": "CUH",
@@ -53,8 +53,8 @@
    "peak": 8.05e-05,
    "entry": 4.8761266551632894e-05,
    "liq0": 18878.83,
-   "cur_price": 4.281e-05,
-   "mark": 4.281e-05
+   "cur_price": 4.39e-05,
+   "mark": 4.39e-05
   },
   "5Mv6c7taXXkKn4byivDALNJJZ5NGu3aB9WJVXgSVFt3p": {
    "sym": "STONKR",
@@ -64,8 +64,8 @@
    "peak": 0.0001684,
    "entry": 0.00012261332030385873,
    "liq0": 31519.78,
-   "cur_price": 0.000136,
-   "mark": 0.000136
+   "cur_price": 0.0001345,
+   "mark": 0.0001345
   },
   "7r1v5rZcGnyzVs1jei7FeMEiZVf4GhQgLYXjZHmMUDGQ": {
    "sym": "HOURS",
@@ -86,8 +86,8 @@
    "peak": 5.16e-05,
    "entry": 4.9300734385211855e-05,
    "liq0": 20782.14,
-   "cur_price": 4.719e-05,
-   "mark": 4.719e-05
+   "cur_price": 4.837e-05,
+   "mark": 4.837e-05
   },
   "CC5D6puFmcsnGaJh7kNXeAcRpL2SZzQfoQezvx45uKjt": {
    "sym": "WORLD",
@@ -97,8 +97,19 @@
    "peak": 5.607e-05,
    "entry": 5.752244193636827e-05,
    "liq0": 24523.52,
-   "cur_price": 5.286e-05,
-   "mark": 5.286e-05
+   "cur_price": 5.372e-05,
+   "mark": 5.372e-05
+  },
+  "8r5faMhtYbc7gp411LQt9oqzQybRfy6LG2FJauTsfnKg": {
+   "sym": "ORBIT",
+   "qty": 244739.00779,
+   "cost": 15.02,
+   "opened": "2026-10-03T07:02:37Z",
+   "peak": 5.999e-05,
+   "entry": 6.137149993223808e-05,
+   "liq0": 23767.84,
+   "cur_price": 5.999e-05,
+   "mark": 5.999e-05
   }
  },
  "trades": [
@@ -8074,13 +8085,21 @@
    "slip": 0.0244,
    "quote": "jup",
    "reason": "longshot"
+  },
+  {
+   "t": "2026-10-03T07:02:37Z",
+   "side": "buy",
+   "sym": "ORBIT",
+   "addr": "8r5faMhtYbc7gp411LQt9oqzQybRfy6LG2FJauTsfnKg",
+   "price": 5.999e-05,
+   "fill": 6.13715e-05,
+   "usd": 15.02,
+   "slip": 0.0448,
+   "quote": "jup",
+   "reason": "longshot"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-15T22:21:04Z",
-   "v": 457.26
-  },
   {
    "t": "2026-09-15T22:26:07Z",
    "v": 460.24
@@ -28076,6 +28095,10 @@
   {
    "t": "2026-10-03T06:57:23Z",
    "v": 270.48
+  },
+  {
+   "t": "2026-10-03T07:02:37Z",
+   "v": 273.26
   }
  ],
  "started": "2026-09-15T16:35:51Z",
