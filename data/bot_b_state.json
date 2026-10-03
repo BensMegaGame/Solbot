@@ -1,5 +1,5 @@
 {
- "cash": 278.0588050000001,
+ "cash": 228.0388050000001,
  "positions": {
   "3iUTyNYW6xKv5kZUjtbrEDTsuJTrSVwvB3bQtxkLpump": {
    "sym": "bukangi",
@@ -8,8 +8,8 @@
    "opened": "2026-10-02T13:41:33Z",
    "peak": 0.0004451,
    "entry": 0.00034293459071304817,
-   "cur_price": 0.0003199,
-   "mark": 0.0003199
+   "cur_price": 0.0003257,
+   "mark": 0.0003257
   },
   "3sL58KKh2QdNSfN9VRz8bHGGU5zStdfManVHCTkhpump": {
    "sym": "PI",
@@ -20,6 +20,16 @@
    "entry": 0.00011103321448607669,
    "cur_price": 6.971e-05,
    "mark": 6.971e-05
+  },
+  "DvNcJZTiSMD1RBCtZ2J31mh7s42CVCwrzGapv1Lypump": {
+   "sym": "MICRO",
+   "qty": 193410.963879,
+   "cost": 50.02,
+   "opened": "2026-10-03T15:16:17Z",
+   "peak": 0.0002528,
+   "entry": 0.0002586202922358272,
+   "cur_price": 0.0002528,
+   "mark": 0.0002528
   }
  },
  "trades": [
@@ -349,6 +359,18 @@
    "slip": 0.0116,
    "quote": "jup",
    "reason": "trail"
+  },
+  {
+   "t": "2026-10-03T15:16:17Z",
+   "side": "buy",
+   "sym": "MICRO",
+   "addr": "DvNcJZTiSMD1RBCtZ2J31mh7s42CVCwrzGapv1Lypump",
+   "price": 0.0002528,
+   "fill": 0.000258620292,
+   "usd": 50.02,
+   "slip": 0.0233,
+   "quote": "jup",
+   "reason": "screener pump.fun"
   }
  ],
  "equity": [
@@ -9643,6 +9665,10 @@
   {
    "t": "2026-10-03T15:11:49Z",
    "v": 356.12
+  },
+  {
+   "t": "2026-10-03T15:16:48Z",
+   "v": 355.84
   }
  ],
  "started": "2026-09-25T13:40:52Z",
