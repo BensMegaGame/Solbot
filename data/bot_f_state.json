@@ -9,8 +9,8 @@
    "peak": 0.01304,
    "entry": 0.012333049858134775,
    "pair": "FFcYgSSgWHforA9rXXkA48p8YFoz8TSW85Jpo3CQHDyS",
-   "cur_price": 0.01103,
-   "mark": 0.01103
+   "cur_price": 0.01104,
+   "mark": 0.01104
   },
   "CortexFv3fRcLKTgACr7aLqckGh5eP7TP3z9JHoKqMc6": {
    "sym": "CX",
@@ -31,8 +31,8 @@
    "peak": 0.008482,
    "entry": 0.007953249326348005,
    "pair": "3KFCgJ5R3zshW8hTDbzjSrrKSRYmKvsMfhc4Vo4iddxD",
-   "cur_price": 0.00755,
-   "mark": 0.00755
+   "cur_price": 0.007565,
+   "mark": 0.007565
   },
   "KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS": {
    "sym": "KMNO",
@@ -42,8 +42,8 @@
    "peak": 0.04197,
    "entry": 0.04078398934594881,
    "pair": "3ndjN1nJVUKGrJBc1hhVpER6kWTZKHdyDrPyCJyX3CXK",
-   "cur_price": 0.03977,
-   "mark": 0.03977
+   "cur_price": 0.0398,
+   "mark": 0.0398
   }
  },
  "trades": [
@@ -9826,6 +9826,10 @@
   {
    "t": "2026-10-03T14:22:19Z",
    "v": 518.25
+  },
+  {
+   "t": "2026-10-03T14:27:21Z",
+   "v": 518.6
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -9841,7 +9845,7 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-10-03T14:22:19Z",
+  "t": "2026-10-03T14:27:21Z",
   "virtuell": 7,
   "neu": 0,
   "gestoppt": false
