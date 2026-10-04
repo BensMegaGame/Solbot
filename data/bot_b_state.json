@@ -1,5 +1,5 @@
 {
- "cash": 250.94976900000012,
+ "cash": 268.8357090000001,
  "positions": {
   "3iUTyNYW6xKv5kZUjtbrEDTsuJTrSVwvB3bQtxkLpump": {
    "sym": "bukangi",
@@ -8,8 +8,8 @@
    "opened": "2026-10-02T13:41:33Z",
    "peak": 0.0004451,
    "entry": 0.00034293459071304817,
-   "cur_price": 0.000286,
-   "mark": 0.000286
+   "cur_price": 0.0002748,
+   "mark": 0.0002748
   },
   "3sL58KKh2QdNSfN9VRz8bHGGU5zStdfManVHCTkhpump": {
    "sym": "PI",
@@ -20,17 +20,6 @@
    "entry": 0.00011103321448607669,
    "cur_price": 9.052e-05,
    "mark": 9.052e-05
-  },
-  "DvNcJZTiSMD1RBCtZ2J31mh7s42CVCwrzGapv1Lypump": {
-   "sym": "MICRO",
-   "qty": 145058.22290925,
-   "cost": 37.515,
-   "opened": "2026-10-03T15:16:17Z",
-   "peak": 0.0004908,
-   "entry": 0.0002586202922358272,
-   "cur_price": 0.0001354,
-   "mark": 0.0001354,
-   "tp0": true
   }
  },
  "trades": [
@@ -387,6 +376,21 @@
    "slip": 0.0115,
    "quote": "jup",
    "reason": "tp0"
+  },
+  {
+   "t": "2026-10-04T19:06:18Z",
+   "side": "sell",
+   "sym": "MICRO",
+   "addr": "DvNcJZTiSMD1RBCtZ2J31mh7s42CVCwrzGapv1Lypump",
+   "price": 0.0001225,
+   "usd": 17.89,
+   "pnl": -19.63,
+   "peak_x": 1.898,
+   "held_h": 27.8,
+   "frac": 1.0,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -11017,6 +11021,10 @@
   {
    "t": "2026-10-04T19:01:59Z",
    "v": 353.09
+  },
+  {
+   "t": "2026-10-04T19:07:03Z",
+   "v": 349.7
   }
  ],
  "started": "2026-09-25T13:40:52Z",
@@ -11029,6 +11037,7 @@
   "EGTFrUPym8JnEMAddZjuhBkcSGEGTM75qymxUZgTpump": 1790750461.2133102,
   "82ezhRLKdKwkSC9jkM3js1yf93VbmvLXNMPkBmompump": 1790782858.683111,
   "3kmygWKZBkCYrgZHKfiuB9UFKTcDLTFFsKo3BWpmpump": 1790965266.749998,
-  "6iAj2oywQMiD9NeyTcW1S7UtG7e3jSK7Ud5ZJDqJpump": 1791016572.3623521
+  "6iAj2oywQMiD9NeyTcW1S7UtG7e3jSK7Ud5ZJDqJpump": 1791016572.3623521,
+  "DvNcJZTiSMD1RBCtZ2J31mh7s42CVCwrzGapv1Lypump": 1791140778.0502505
  }
 }
