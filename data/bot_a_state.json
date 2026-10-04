@@ -1,5 +1,5 @@
 {
- "cash": 44.086205941112354,
+ "cash": 17.004159941112356,
  "positions": {
   "H4KUxsEgCp2yDpFvyDuGM5k6XevSKKrrKUxZ3Zr6nyJc": {
    "sym": "COCKROACH",
@@ -8,8 +8,8 @@
    "opened": "2026-10-01T15:55:30Z",
    "peak": 0.002318,
    "entry": 0.0017274260532663798,
-   "cur_price": 0.001782,
-   "mark": 0.001782
+   "cur_price": 0.00183,
+   "mark": 0.00183
   },
   "Bd9thw3PAeyHeBGSi4R1ARBuptpG5rM4fhB8BRWJkq1e": {
    "sym": "glungus",
@@ -18,8 +18,8 @@
    "opened": "2026-10-02T13:30:08Z",
    "peak": 0.0001843,
    "entry": 0.00012058418887334101,
-   "cur_price": 0.00015,
-   "mark": 0.00015
+   "cur_price": 0.0001476,
+   "mark": 0.0001476
   },
   "3iUTyNYW6xKv5kZUjtbrEDTsuJTrSVwvB3bQtxkLpump": {
    "sym": "bukangi",
@@ -28,8 +28,8 @@
    "opened": "2026-10-02T13:40:42Z",
    "peak": 0.0004437,
    "entry": 0.0003429823127826605,
-   "cur_price": 0.0002736,
-   "mark": 0.0002736
+   "cur_price": 0.0002739,
+   "mark": 0.0002739
   },
   "3sL58KKh2QdNSfN9VRz8bHGGU5zStdfManVHCTkhpump": {
    "sym": "PI",
@@ -38,8 +38,8 @@
    "opened": "2026-10-02T14:45:58Z",
    "peak": 0.0001254,
    "entry": 0.00010944386683478897,
-   "cur_price": 8.612e-05,
-   "mark": 8.612e-05
+   "cur_price": 8.538e-05,
+   "mark": 8.538e-05
   },
   "Cy5TzDyJ4mo6MBAbpwUcAgdfNiXYKrYUPrvhPGVU6XMR": {
    "sym": "XMR20",
@@ -53,13 +53,24 @@
   },
   "6zzzG49KX5nksnqfogs31dwoMYSHaJXkropKbv1QZVga": {
    "sym": "Malfoid",
-   "qty": 358307.425945,
-   "cost": 50.02,
+   "qty": 268730.56945875,
+   "cost": 37.515,
    "opened": "2026-10-04T00:50:22Z",
-   "peak": 0.0002296,
+   "peak": 0.0002583,
    "entry": 0.00013960079076808763,
-   "cur_price": 0.0002287,
-   "mark": 0.0002287
+   "cur_price": 0.0002583,
+   "mark": 0.0002583,
+   "tp0": true
+  },
+  "8RfgokotF4CW3BAAd6Pzy4ap9AHiZq236C63oB8J7nre": {
+   "sym": ".si",
+   "qty": 453435.481818,
+   "cost": 50.02,
+   "opened": "2026-10-04T19:26:02Z",
+   "peak": 0.0001036,
+   "entry": 0.00011031337865190939,
+   "cur_price": 0.0001036,
+   "mark": 0.0001036
   }
  },
  "trades": [
@@ -2904,13 +2915,36 @@
    "slip": 0.0087,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-10-04T19:25:07Z",
+   "side": "sell",
+   "sym": "Malfoid",
+   "addr": "6zzzG49KX5nksnqfogs31dwoMYSHaJXkropKbv1QZVga",
+   "price": 0.0002583,
+   "usd": 22.94,
+   "pnl": 10.43,
+   "peak_x": 1.85,
+   "held_h": 18.6,
+   "frac": 0.25,
+   "slip": 0.0117,
+   "quote": "jup",
+   "reason": "tp0"
+  },
+  {
+   "t": "2026-10-04T19:26:02Z",
+   "side": "buy",
+   "sym": ".si",
+   "addr": "8RfgokotF4CW3BAAd6Pzy4ap9AHiZq236C63oB8J7nre",
+   "price": 0.0001036,
+   "fill": 0.000110313379,
+   "usd": 50.02,
+   "slip": 0.0526,
+   "quote": "jup",
+   "reason": "screener"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-17T10:40:49Z",
-   "v": 505.98
-  },
   {
    "t": "2026-09-17T10:45:48Z",
    "v": 507.56
@@ -22906,6 +22940,10 @@
   {
    "t": "2026-10-04T19:21:10Z",
    "v": 367.75
+  },
+  {
+   "t": "2026-10-04T19:26:10Z",
+   "v": 375.21
   }
  ],
  "started": "2026-09-10T17:17:16Z",
