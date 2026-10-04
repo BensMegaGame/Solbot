@@ -1,5 +1,5 @@
 {
- "cash": 19.225683000001027,
+ "cash": 4.205683000001027,
  "positions": {
   "CoN8oLvyWTjtSBFTEjUWLz25BXJmGjTvNcYh81D3pump": {
    "sym": "MAMESUKE",
@@ -20,8 +20,8 @@
    "peak": 0.0002288,
    "entry": 0.00012261332030385873,
    "liq0": 31519.78,
-   "cur_price": 7.399e-05,
-   "mark": 7.399e-05
+   "cur_price": 7.666e-05,
+   "mark": 7.666e-05
   },
   "7r1v5rZcGnyzVs1jei7FeMEiZVf4GhQgLYXjZHmMUDGQ": {
    "sym": "HOURS",
@@ -31,8 +31,8 @@
    "peak": 0.0001458,
    "entry": 4.729457822575378e-05,
    "liq0": 20901.48,
-   "cur_price": 8.485e-05,
-   "mark": 8.485e-05
+   "cur_price": 8.505e-05,
+   "mark": 8.505e-05
   },
   "CC5D6puFmcsnGaJh7kNXeAcRpL2SZzQfoQezvx45uKjt": {
    "sym": "WORLD",
@@ -42,8 +42,8 @@
    "peak": 7.597e-05,
    "entry": 5.752244193636827e-05,
    "liq0": 24523.52,
-   "cur_price": 6.302e-05,
-   "mark": 6.302e-05
+   "cur_price": 6.388e-05,
+   "mark": 6.388e-05
   },
   "8r5faMhtYbc7gp411LQt9oqzQybRfy6LG2FJauTsfnKg": {
    "sym": "ORBIT",
@@ -86,8 +86,8 @@
    "peak": 5.071e-05,
    "entry": 4.534654609018459e-05,
    "liq0": 20410.54,
-   "cur_price": 4.106e-05,
-   "mark": 4.106e-05
+   "cur_price": 3.965e-05,
+   "mark": 3.965e-05
   },
   "CscZaq5twomhUkvCY8Jdd1tge32L4Yj9FbkFFEZQpump": {
    "sym": "PLAGUE",
@@ -97,8 +97,19 @@
    "peak": 9.343e-05,
    "entry": 6.434488605452641e-05,
    "liq0": 21417,
-   "cur_price": 6.488e-05,
-   "mark": 6.488e-05
+   "cur_price": 6.416e-05,
+   "mark": 6.416e-05
+  },
+  "5BjfgmtfqvNpAWx1CnZynoWLWNMnrwHLhTFzQ81vkEc8": {
+   "sym": "ClapCat",
+   "qty": 101961.541912,
+   "cost": 15.02,
+   "opened": "2026-10-04T04:12:14Z",
+   "peak": 0.0001491,
+   "entry": 0.0001473104439021069,
+   "liq0": 35346.21,
+   "cur_price": 0.0001491,
+   "mark": 0.0001491
   }
  },
  "trades": [
@@ -8506,13 +8517,21 @@
    "slip": 0.0045,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-10-04T04:12:14Z",
+   "side": "buy",
+   "sym": "ClapCat",
+   "addr": "5BjfgmtfqvNpAWx1CnZynoWLWNMnrwHLhTFzQ81vkEc8",
+   "price": 0.0001491,
+   "fill": 0.000147310444,
+   "usd": 15.02,
+   "slip": 0.0103,
+   "quote": "jup",
+   "reason": "longshot"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-16T19:30:53Z",
-   "v": 533.0
-  },
   {
    "t": "2026-09-16T19:35:53Z",
    "v": 530.91
@@ -28508,6 +28527,10 @@
   {
    "t": "2026-10-04T04:07:06Z",
    "v": 206.36
+  },
+  {
+   "t": "2026-10-04T04:12:15Z",
+   "v": 206.53
   }
  ],
  "started": "2026-09-15T16:35:51Z",
