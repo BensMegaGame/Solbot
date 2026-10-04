@@ -1,5 +1,5 @@
 {
- "cash": 16.18951000000103,
+ "cash": 12.205158000001031,
  "positions": {
   "CoN8oLvyWTjtSBFTEjUWLz25BXJmGjTvNcYh81D3pump": {
    "sym": "MAMESUKE",
@@ -9,8 +9,8 @@
    "peak": 0.0002629,
    "entry": 0.00010989898278206368,
    "liq0": 28881.75,
-   "cur_price": 0.0001362,
-   "mark": 0.0001362
+   "cur_price": 0.0001344,
+   "mark": 0.0001344
   },
   "7r1v5rZcGnyzVs1jei7FeMEiZVf4GhQgLYXjZHmMUDGQ": {
    "sym": "HOURS",
@@ -20,19 +20,8 @@
    "peak": 0.0001458,
    "entry": 4.729457822575378e-05,
    "liq0": 20901.48,
-   "cur_price": 6.685e-05,
-   "mark": 6.685e-05
-  },
-  "CC5D6puFmcsnGaJh7kNXeAcRpL2SZzQfoQezvx45uKjt": {
-   "sym": "WORLD",
-   "qty": 261115.479357,
-   "cost": 15.02,
-   "opened": "2026-10-03T06:27:39Z",
-   "peak": 7.597e-05,
-   "entry": 5.752244193636827e-05,
-   "liq0": 24523.52,
-   "cur_price": 4.283e-05,
-   "mark": 4.283e-05
+   "cur_price": 6.701e-05,
+   "mark": 6.701e-05
   },
   "8r5faMhtYbc7gp411LQt9oqzQybRfy6LG2FJauTsfnKg": {
    "sym": "ORBIT",
@@ -42,8 +31,8 @@
    "peak": 0.000292,
    "entry": 6.137149993223808e-05,
    "liq0": 23767.84,
-   "cur_price": 0.0001337,
-   "mark": 0.0001337
+   "cur_price": 0.0001348,
+   "mark": 0.0001348
   },
   "GjrhXcr8YzUZBbu5rifdqM5CPBS4LFJveq3ZiY2u3g5G": {
    "sym": "Meridian",
@@ -53,8 +42,8 @@
    "peak": 0.0001683,
    "entry": 7.888148623695331e-05,
    "liq0": 27425.44,
-   "cur_price": 0.0001584,
-   "mark": 0.0001584
+   "cur_price": 0.0001557,
+   "mark": 0.0001557
   },
   "26uqr1EAd5o9czpp3CxWGRPBgzya2733WC7faQX4mqNA": {
    "sym": "TRUMPTY",
@@ -75,8 +64,19 @@
    "peak": 0.0001193,
    "entry": 4.534654609018459e-05,
    "liq0": 20410.54,
-   "cur_price": 8.694e-05,
-   "mark": 8.694e-05
+   "cur_price": 8.096e-05,
+   "mark": 8.096e-05
+  },
+  "GvZ9UXZm8U14uZNi7hBN5cY2iUta7stArZE486yHe2nA": {
+   "sym": "PERKOS",
+   "qty": 281383.657304,
+   "cost": 15.02,
+   "opened": "2026-10-04T18:32:24Z",
+   "peak": 5.193e-05,
+   "entry": 5.3379077320658894e-05,
+   "liq0": 18991.78,
+   "cur_price": 5.193e-05,
+   "mark": 5.193e-05
   }
  },
  "trades": [
@@ -8595,13 +8595,36 @@
    "slip": 0.0018,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-10-04T18:32:21Z",
+   "side": "sell",
+   "sym": "WORLD",
+   "addr": "CC5D6puFmcsnGaJh7kNXeAcRpL2SZzQfoQezvx45uKjt",
+   "price": 4.234e-05,
+   "usd": 11.04,
+   "pnl": -3.98,
+   "peak_x": 1.321,
+   "held_h": 36.1,
+   "frac": 1.0,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "tot"
+  },
+  {
+   "t": "2026-10-04T18:32:24Z",
+   "side": "buy",
+   "sym": "PERKOS",
+   "addr": "GvZ9UXZm8U14uZNi7hBN5cY2iUta7stArZE486yHe2nA",
+   "price": 5.193e-05,
+   "fill": 5.3379077e-05,
+   "usd": 15.02,
+   "slip": 0.0259,
+   "quote": "jup",
+   "reason": "longshot"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-17T09:51:08Z",
-   "v": 566.91
-  },
   {
    "t": "2026-09-17T09:56:10Z",
    "v": 569.34
@@ -28597,6 +28620,10 @@
   {
    "t": "2026-10-04T18:27:19Z",
    "v": 172.74
+  },
+  {
+   "t": "2026-10-04T18:32:24Z",
+   "v": 169.76
   }
  ],
  "started": "2026-09-15T16:35:51Z",
@@ -28604,8 +28631,6 @@
  "helius": true,
  "codex": true,
  "verkauft_am": {
-  "B4pLeAps53ZmSJbCrRAaafxv4iRnDGNjQwZKLXYJX1zK": 1790524892.9857385,
-  "HhcfXbZ2rukoKx8oAH8rfkmzXbwvfdh6MMLZjneg4rWk": 1790525487.780485,
   "7nG5dJxuuUFXqxE4J8LecUZwP2m2HD6m83Xhae6jpzU1": 1790534195.9998329,
   "AtcYMQbuqYuwxC3nfCm6yFMiYH9SJLJYYpBcE3jjpump": 1790537512.8641803,
   "99WxCfiVSpFKpALnFhhT7uh1YKjjsQztLkRvGrDUPeng": 1790537512.8974636,
@@ -28731,6 +28756,7 @@
   "5BjfgmtfqvNpAWx1CnZynoWLWNMnrwHLhTFzQ81vkEc8": 1791107175.944764,
   "CscZaq5twomhUkvCY8Jdd1tge32L4Yj9FbkFFEZQpump": 1791114367.7625754,
   "6VsnbKz6erJRTPiiD34Msq7eWmmgZHDnh4Bxan4MpGjm": 1791124623.031852,
-  "AXC2XcQiVx6UfCgLHjpRBU4nupF4WdsptydKQCvxsRuU": 1791127324.5843177
+  "AXC2XcQiVx6UfCgLHjpRBU4nupF4WdsptydKQCvxsRuU": 1791127324.5843177,
+  "CC5D6puFmcsnGaJh7kNXeAcRpL2SZzQfoQezvx45uKjt": 1791138741.493213
  }
 }
