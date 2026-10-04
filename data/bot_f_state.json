@@ -17,11 +17,11 @@
    "qty": 12351.562122,
    "cost": 98.23505312614202,
    "opened": "2026-10-01T08:17:14Z",
-   "peak": 0.008482,
+   "peak": 0.0085,
    "entry": 0.007953249326348005,
    "pair": "3KFCgJ5R3zshW8hTDbzjSrrKSRYmKvsMfhc4Vo4iddxD",
-   "cur_price": 0.008173,
-   "mark": 0.008173
+   "cur_price": 0.0085,
+   "mark": 0.0085
   },
   "KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS": {
    "sym": "KMNO",
@@ -31,8 +31,8 @@
    "peak": 0.04197,
    "entry": 0.04078398934594881,
    "pair": "3ndjN1nJVUKGrJBc1hhVpER6kWTZKHdyDrPyCJyX3CXK",
-   "cur_price": 0.04033,
-   "mark": 0.04033
+   "cur_price": 0.04034,
+   "mark": 0.04034
   },
   "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx": {
    "sym": "STONK",
@@ -42,8 +42,8 @@
    "peak": 0.2195,
    "entry": 0.1849501678992567,
    "pair": "zxTpi4BtaWX3mgdAPoezkMD1hxx8CdeCfrqXMWvSCLX",
-   "cur_price": 0.2177,
-   "mark": 0.2177
+   "cur_price": 0.2186,
+   "mark": 0.2186
   },
   "Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump": {
    "sym": "CATE",
@@ -53,8 +53,8 @@
    "peak": 0.06514,
    "entry": 0.060737758893799225,
    "pair": "HMzvsEEmtzHhvZNw9uwbaG85HCTmFnkbhzUx16cy7ca3",
-   "cur_price": 0.06193,
-   "mark": 0.06193
+   "cur_price": 0.06233,
+   "mark": 0.06233
   }
  },
  "trades": [
@@ -11440,6 +11440,10 @@
   {
    "t": "2026-10-04T22:58:01Z",
    "v": 541.4
+  },
+  {
+   "t": "2026-10-04T23:02:36Z",
+   "v": 546.64
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -11455,7 +11459,7 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-10-04T22:58:01Z",
+  "t": "2026-10-04T23:02:36Z",
   "virtuell": 5,
   "neu": 0,
   "gestoppt": false
