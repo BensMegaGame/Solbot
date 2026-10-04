@@ -20,8 +20,8 @@
    "peak": 0.008482,
    "entry": 0.007953249326348005,
    "pair": "3KFCgJ5R3zshW8hTDbzjSrrKSRYmKvsMfhc4Vo4iddxD",
-   "cur_price": 0.007399,
-   "mark": 0.007399
+   "cur_price": 0.00744,
+   "mark": 0.00744
   },
   "KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS": {
    "sym": "KMNO",
@@ -31,8 +31,8 @@
    "peak": 0.04197,
    "entry": 0.04078398934594881,
    "pair": "3ndjN1nJVUKGrJBc1hhVpER6kWTZKHdyDrPyCJyX3CXK",
-   "cur_price": 0.0405,
-   "mark": 0.0405
+   "cur_price": 0.0404,
+   "mark": 0.0404
   }
  },
  "trades": [
@@ -10350,6 +10350,10 @@
   {
    "t": "2026-10-04T01:12:15Z",
    "v": 512.23
+  },
+  {
+   "t": "2026-10-04T01:17:22Z",
+   "v": 512.48
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -10365,9 +10369,9 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-10-04T01:12:15Z",
-  "virtuell": 7,
-  "neu": 0,
+  "t": "2026-10-04T01:17:22Z",
+  "virtuell": 8,
+  "neu": 1,
   "gestoppt": false
  },
  "verkauft_am": {
