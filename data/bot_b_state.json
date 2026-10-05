@@ -1,5 +1,5 @@
 {
- "cash": 215.48385100000013,
+ "cash": 240.69374200000013,
  "positions": {
   "3sL58KKh2QdNSfN9VRz8bHGGU5zStdfManVHCTkhpump": {
    "sym": "PI",
@@ -8,8 +8,8 @@
    "opened": "2026-10-02T14:41:33Z",
    "peak": 0.0001254,
    "entry": 0.00011103321448607669,
-   "cur_price": 7.28e-05,
-   "mark": 7.28e-05
+   "cur_price": 7.41e-05,
+   "mark": 7.41e-05
   },
   "5tCju6YNxHq5zrA6tGndr6F7TK42mpUFmeE31cSFpump": {
    "sym": "swordcat",
@@ -18,19 +18,9 @@
    "opened": "2026-10-04T22:46:45Z",
    "peak": 0.004887,
    "entry": 0.0018124251616424172,
-   "cur_price": 0.004012,
-   "mark": 0.004012,
+   "cur_price": 0.004122,
+   "mark": 0.004122,
    "tp0": true
-  },
-  "6hTLdzZaaCjmqtn7RtaEMQsCbXT5Pg8q76tRViEGpump": {
-   "sym": "ABU",
-   "qty": 84316.338542,
-   "cost": 50.02,
-   "opened": "2026-10-05T08:21:30Z",
-   "peak": 0.0007376,
-   "entry": 0.0005932420793519614,
-   "cur_price": 0.0003322,
-   "mark": 0.0003322
   }
  },
  "trades": [
@@ -454,6 +444,21 @@
    "held_h": 75.5,
    "frac": 1.0,
    "slip": 0.0,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-10-05T21:32:19Z",
+   "side": "sell",
+   "sym": "ABU",
+   "addr": "6hTLdzZaaCjmqtn7RtaEMQsCbXT5Pg8q76tRViEGpump",
+   "price": 0.000288,
+   "usd": 25.21,
+   "pnl": -24.81,
+   "peak_x": 1.243,
+   "held_h": 13.2,
+   "frac": 1.0,
+   "slip": 0.0032,
    "quote": "jup",
    "reason": "stop"
   }
@@ -12354,6 +12359,10 @@
   {
    "t": "2026-10-05T21:28:42Z",
    "v": 359.33
+  },
+  {
+   "t": "2026-10-05T21:33:35Z",
+   "v": 359.4
   }
  ],
  "started": "2026-09-25T13:40:52Z",
@@ -12366,6 +12375,7 @@
   "3kmygWKZBkCYrgZHKfiuB9UFKTcDLTFFsKo3BWpmpump": 1790965266.749998,
   "6iAj2oywQMiD9NeyTcW1S7UtG7e3jSK7Ud5ZJDqJpump": 1791016572.3623521,
   "DvNcJZTiSMD1RBCtZ2J31mh7s42CVCwrzGapv1Lypump": 1791140778.0502505,
-  "3iUTyNYW6xKv5kZUjtbrEDTsuJTrSVwvB3bQtxkLpump": 1791220279.4312065
+  "3iUTyNYW6xKv5kZUjtbrEDTsuJTrSVwvB3bQtxkLpump": 1791220279.4312065,
+  "6hTLdzZaaCjmqtn7RtaEMQsCbXT5Pg8q76tRViEGpump": 1791235939.195925
  }
 }
