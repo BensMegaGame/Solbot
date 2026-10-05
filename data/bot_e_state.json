@@ -1,5 +1,5 @@
 {
- "cash": 75.86655230500259,
+ "cash": 358.9190583050026,
  "positions": {
   "KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS": {
    "sym": "KMNO",
@@ -8,18 +8,8 @@
    "opened": "2026-09-28T23:27:06Z",
    "peak": 0.04555,
    "entry": 0.04276940696401601,
-   "mark": 0.04102,
-   "cur_price": 0.04102
-  },
-  "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP": {
-   "sym": "SI",
-   "qty": 10015.876035,
-   "cost": 327.00673786700213,
-   "opened": "2026-10-05T18:52:42Z",
-   "peak": 0.03341,
-   "entry": 0.03264884037345238,
-   "mark": 0.02955,
-   "cur_price": 0.02955
+   "mark": 0.04113,
+   "cur_price": 0.04113
   }
  },
  "trades": [
@@ -775,13 +765,24 @@
    "slip": 0.0234,
    "quote": "jup",
    "reason": "dip 24h -21% (SOL -1%) 1h +0.5%"
+  },
+  {
+   "t": "2026-10-05T20:21:52Z",
+   "side": "sell",
+   "sym": "SI",
+   "addr": "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP",
+   "price": 0.02882,
+   "usd": 283.05,
+   "pnl": -43.95,
+   "peak_x": 1.023,
+   "held_h": 1.5,
+   "frac": 1.0,
+   "slip": 0.0164,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-18T11:36:39Z",
-   "v": 588.99
-  },
   {
    "t": "2026-09-18T11:41:38Z",
    "v": 605.43
@@ -20777,13 +20778,17 @@
   {
    "t": "2026-10-05T20:12:46Z",
    "v": 699.27
+  },
+  {
+   "t": "2026-10-05T20:21:52Z",
+   "v": 687.23
   }
  ],
  "started": "2026-09-16T16:55:59Z",
  "strategy": "largecap_dip",
  "universe_n": 71,
  "coverage": {
-  "t": "2026-10-05T20:12:46Z",
+  "t": "2026-10-05T20:21:52Z",
   "kurse": 71,
   "von": 71,
   "sol": true
@@ -20793,6 +20798,6 @@
   "FeR8VBqNRSUD5NtXAj2n3j1dAHkZHfyDktKuLXD4pump": 1790886716.290654,
   "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump": 1791074838.837212,
   "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx": 1791166062.1501272,
-  "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP": 1791217945.9693115
+  "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP": 1791231712.0463984
  }
 }
