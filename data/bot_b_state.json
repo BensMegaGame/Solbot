@@ -1,16 +1,6 @@
 {
- "cash": 190.69017900000011,
+ "cash": 215.48385100000013,
  "positions": {
-  "3iUTyNYW6xKv5kZUjtbrEDTsuJTrSVwvB3bQtxkLpump": {
-   "sym": "bukangi",
-   "qty": 145858.718702,
-   "cost": 50.02,
-   "opened": "2026-10-02T13:41:33Z",
-   "peak": 0.0004451,
-   "entry": 0.00034293459071304817,
-   "cur_price": 0.0001805,
-   "mark": 0.0001805
-  },
   "3sL58KKh2QdNSfN9VRz8bHGGU5zStdfManVHCTkhpump": {
    "sym": "PI",
    "qty": 450495.828942,
@@ -18,8 +8,8 @@
    "opened": "2026-10-02T14:41:33Z",
    "peak": 0.0001254,
    "entry": 0.00011103321448607669,
-   "cur_price": 6.523e-05,
-   "mark": 6.523e-05
+   "cur_price": 6.906e-05,
+   "mark": 6.906e-05
   },
   "5tCju6YNxHq5zrA6tGndr6F7TK42mpUFmeE31cSFpump": {
    "sym": "swordcat",
@@ -28,8 +18,8 @@
    "opened": "2026-10-04T22:46:45Z",
    "peak": 0.003342,
    "entry": 0.0018124251616424172,
-   "cur_price": 0.002097,
-   "mark": 0.002097,
+   "cur_price": 0.001964,
+   "mark": 0.001964,
    "tp0": true
   },
   "6hTLdzZaaCjmqtn7RtaEMQsCbXT5Pg8q76tRViEGpump": {
@@ -39,8 +29,8 @@
    "opened": "2026-10-05T08:21:30Z",
    "peak": 0.0007376,
    "entry": 0.0005932420793519614,
-   "cur_price": 0.0005074,
-   "mark": 0.0005074
+   "cur_price": 0.0004993,
+   "mark": 0.0004993
   }
  },
  "trades": [
@@ -451,6 +441,21 @@
    "slip": 0.0087,
    "quote": "jup",
    "reason": "screener pump.fun"
+  },
+  {
+   "t": "2026-10-05T17:11:19Z",
+   "side": "sell",
+   "sym": "bukangi",
+   "addr": "3iUTyNYW6xKv5kZUjtbrEDTsuJTrSVwvB3bQtxkLpump",
+   "price": 0.0001713,
+   "usd": 24.79,
+   "pnl": -25.23,
+   "peak_x": 1.298,
+   "held_h": 75.5,
+   "frac": 1.0,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -12141,19 +12146,22 @@
   {
    "t": "2026-10-05T17:07:12Z",
    "v": 332.59
+  },
+  {
+   "t": "2026-10-05T17:12:11Z",
+   "v": 329.35
   }
  ],
  "started": "2026-09-25T13:40:52Z",
  "version": "b3",
  "strategy": "a_pumpfun",
  "verkauft_am": {
-  "HSUMi4rMgjrx7zRUabw3ogGu1pa5hmF2eVcXj9Apump": 1790599860.126998,
-  "5NhN6zzDkzwXFGPFqtpTopV4ttBeZ6CWy1oRL9Rkpump": 1790600459.2181978,
   "CbouD8khLcz1Y1QngvRtQufUimSRKpHkvGn6y1n8pump": 1790734262.735175,
   "EGTFrUPym8JnEMAddZjuhBkcSGEGTM75qymxUZgTpump": 1790750461.2133102,
   "82ezhRLKdKwkSC9jkM3js1yf93VbmvLXNMPkBmompump": 1790782858.683111,
   "3kmygWKZBkCYrgZHKfiuB9UFKTcDLTFFsKo3BWpmpump": 1790965266.749998,
   "6iAj2oywQMiD9NeyTcW1S7UtG7e3jSK7Ud5ZJDqJpump": 1791016572.3623521,
-  "DvNcJZTiSMD1RBCtZ2J31mh7s42CVCwrzGapv1Lypump": 1791140778.0502505
+  "DvNcJZTiSMD1RBCtZ2J31mh7s42CVCwrzGapv1Lypump": 1791140778.0502505,
+  "3iUTyNYW6xKv5kZUjtbrEDTsuJTrSVwvB3bQtxkLpump": 1791220279.4312065
  }
 }
