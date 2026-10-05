@@ -1,5 +1,5 @@
 {
- "cash": 132.5307369769762,
+ "cash": 24.144732618069597,
  "positions": {
   "CortexFv3fRcLKTgACr7aLqckGh5eP7TP3z9JHoKqMc6": {
    "sym": "CX",
@@ -20,8 +20,8 @@
    "peak": 0.0085,
    "entry": 0.007953249326348005,
    "pair": "3KFCgJ5R3zshW8hTDbzjSrrKSRYmKvsMfhc4Vo4iddxD",
-   "cur_price": 0.007643,
-   "mark": 0.007643
+   "cur_price": 0.007618,
+   "mark": 0.007618
   },
   "KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS": {
    "sym": "KMNO",
@@ -31,8 +31,8 @@
    "peak": 0.04197,
    "entry": 0.04078398934594881,
    "pair": "3ndjN1nJVUKGrJBc1hhVpER6kWTZKHdyDrPyCJyX3CXK",
-   "cur_price": 0.04054,
-   "mark": 0.04054
+   "cur_price": 0.04052,
+   "mark": 0.04052
   },
   "Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump": {
    "sym": "CATE",
@@ -42,8 +42,19 @@
    "peak": 0.06598,
    "entry": 0.060737758893799225,
    "pair": "HMzvsEEmtzHhvZNw9uwbaG85HCTmFnkbhzUx16cy7ca3",
-   "cur_price": 0.06396,
-   "mark": 0.06396
+   "cur_price": 0.06481,
+   "mark": 0.06481
+  },
+  "CbcyNo7m1amFWqEQm2m4PLv1UNvpcL3C1Ujm6AkzpKoU": {
+   "sym": "e/acc",
+   "qty": 11656.297982,
+   "cost": 108.38600435890659,
+   "opened": "2026-10-05T15:57:21Z",
+   "peak": 0.009256,
+   "entry": 0.009298492928567841,
+   "pair": "4JAnKFddd5fFTk5PxDj3PpTWJuTEfSWQEjZJcgKQ9KwW",
+   "cur_price": 0.009256,
+   "mark": 0.009256
   }
  },
  "trades": [
@@ -418,6 +429,18 @@
    "slip": 0.0,
    "quote": "jup",
    "reason": "tp"
+  },
+  {
+   "t": "2026-10-05T15:57:21Z",
+   "side": "buy",
+   "sym": "e/acc",
+   "addr": "CbcyNo7m1amFWqEQm2m4PLv1UNvpcL3C1Ujm6AkzpKoU",
+   "price": 0.009256,
+   "fill": 0.009298492929,
+   "usd": 108.39,
+   "slip": 0.0029,
+   "quote": "jup",
+   "reason": "nach virtuellem stop (E) -11.5%"
   }
  ],
  "equity": [
@@ -12256,6 +12279,10 @@
   {
    "t": "2026-10-05T15:52:27Z",
    "v": 541.83
+  },
+  {
+   "t": "2026-10-05T15:57:21Z",
+   "v": 542.42
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -12271,8 +12298,8 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-10-05T15:52:27Z",
-  "virtuell": 5,
+  "t": "2026-10-05T15:57:21Z",
+  "virtuell": 4,
   "neu": 0,
   "gestoppt": false
  },
