@@ -1,17 +1,6 @@
 {
- "cash": 5.173909000001032,
+ "cash": 16.776098000001035,
  "positions": {
-  "7r1v5rZcGnyzVs1jei7FeMEiZVf4GhQgLYXjZHmMUDGQ": {
-   "sym": "HOURS",
-   "qty": 317583.971852,
-   "cost": 15.02,
-   "opened": "2026-10-03T02:47:18Z",
-   "peak": 0.0001458,
-   "entry": 4.729457822575378e-05,
-   "liq0": 20901.48,
-   "cur_price": 3.82e-05,
-   "mark": 3.82e-05
-  },
   "8r5faMhtYbc7gp411LQt9oqzQybRfy6LG2FJauTsfnKg": {
    "sym": "ORBIT",
    "qty": 244739.00779,
@@ -31,8 +20,8 @@
    "peak": 0.0001683,
    "entry": 7.888148623695331e-05,
    "liq0": 27425.44,
-   "cur_price": 7.298e-05,
-   "mark": 7.298e-05
+   "cur_price": 7.141e-05,
+   "mark": 7.141e-05
   },
   "26uqr1EAd5o9czpp3CxWGRPBgzya2733WC7faQX4mqNA": {
    "sym": "TRUMPTY",
@@ -42,8 +31,8 @@
    "peak": 0.0001059,
    "entry": 8.846569921948532e-05,
    "liq0": 27312.81,
-   "cur_price": 9.842e-05,
-   "mark": 9.842e-05
+   "cur_price": 9.751e-05,
+   "mark": 9.751e-05
   },
   "GvZ9UXZm8U14uZNi7hBN5cY2iUta7stArZE486yHe2nA": {
    "sym": "PERKOS",
@@ -53,8 +42,8 @@
    "peak": 0.0001002,
    "entry": 5.3379077320658894e-05,
    "liq0": 18991.78,
-   "cur_price": 7.294e-05,
-   "mark": 7.294e-05
+   "cur_price": 7.349e-05,
+   "mark": 7.349e-05
   },
   "Eo7hAPND5wNHwqEEFp1qZ9cfDVsjtBkQi1hn782jd1bV": {
    "sym": "Yugi",
@@ -64,8 +53,8 @@
    "peak": 5.683e-05,
    "entry": 5.78373838647124e-05,
    "liq0": 20067.21,
-   "cur_price": 4.11e-05,
-   "mark": 4.11e-05
+   "cur_price": 4.019e-05,
+   "mark": 4.019e-05
   },
   "G8G5QMuo9Ro4vRdapHH2WhHxhyVR2gf9cB9sps78F7w3": {
    "sym": "BAGGIE",
@@ -75,8 +64,8 @@
    "peak": 0.0001274,
    "entry": 0.00013424851504189241,
    "liq0": 25478.31,
-   "cur_price": 0.0001248,
-   "mark": 0.0001248
+   "cur_price": 0.000125,
+   "mark": 0.000125
   }
  },
  "trades": [
@@ -8676,13 +8665,24 @@
    "slip": 0.0503,
    "quote": "jup",
    "reason": "longshot"
+  },
+  {
+   "t": "2026-10-05T07:52:24Z",
+   "side": "sell",
+   "sym": "HOURS",
+   "addr": "7r1v5rZcGnyzVs1jei7FeMEiZVf4GhQgLYXjZHmMUDGQ",
+   "price": 3.742e-05,
+   "usd": 11.6,
+   "pnl": -3.42,
+   "peak_x": 3.083,
+   "held_h": 53.1,
+   "frac": 1.0,
+   "slip": 0.0156,
+   "quote": "jup",
+   "reason": "tot"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-17T23:11:29Z",
-   "v": 566.83
-  },
   {
    "t": "2026-09-17T23:16:37Z",
    "v": 568.49
@@ -28678,6 +28678,10 @@
   {
    "t": "2026-10-05T07:47:30Z",
    "v": 118.08
+  },
+  {
+   "t": "2026-10-05T07:52:27Z",
+   "v": 117.04
   }
  ],
  "started": "2026-09-15T16:35:51Z",
@@ -28801,6 +28805,7 @@
   "AXC2XcQiVx6UfCgLHjpRBU4nupF4WdsptydKQCvxsRuU": 1791127324.5843177,
   "CC5D6puFmcsnGaJh7kNXeAcRpL2SZzQfoQezvx45uKjt": 1791138741.493213,
   "FWwnHcbPSrnuhQ5kFQEBu7fWsMemWskvLK9zqX4Fnjh5": 1791184352.772339,
-  "CoN8oLvyWTjtSBFTEjUWLz25BXJmGjTvNcYh81D3pump": 1791184653.2477257
+  "CoN8oLvyWTjtSBFTEjUWLz25BXJmGjTvNcYh81D3pump": 1791184653.2477257,
+  "7r1v5rZcGnyzVs1jei7FeMEiZVf4GhQgLYXjZHmMUDGQ": 1791186744.5059302
  }
 }
