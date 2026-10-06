@@ -1,5 +1,5 @@
 {
- "cash": 113.8726046180696,
+ "cash": 11.263089822032669,
  "positions": {
   "CortexFv3fRcLKTgACr7aLqckGh5eP7TP3z9JHoKqMc6": {
    "sym": "CX",
@@ -20,8 +20,8 @@
    "peak": 0.0085,
    "entry": 0.007953249326348005,
    "pair": "3KFCgJ5R3zshW8hTDbzjSrrKSRYmKvsMfhc4Vo4iddxD",
-   "cur_price": 0.007281,
-   "mark": 0.007281
+   "cur_price": 0.007313,
+   "mark": 0.007313
   },
   "KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS": {
    "sym": "KMNO",
@@ -42,8 +42,19 @@
    "peak": 0.06743,
    "entry": 0.060737758893799225,
    "pair": "HMzvsEEmtzHhvZNw9uwbaG85HCTmFnkbhzUx16cy7ca3",
-   "cur_price": 0.06137,
-   "mark": 0.06137
+   "cur_price": 0.06169,
+   "mark": 0.06169
+  },
+  "C1mBfBoDkwWfd6uTFZp62ARHLjeVp3bDpCDMfMZtPngE": {
+   "sym": "HOOKED",
+   "qty": 13789.198787,
+   "cost": 102.60951479603693,
+   "opened": "2026-10-06T02:22:42Z",
+   "peak": 0.007374,
+   "entry": 0.007441296363989893,
+   "pair": "FtiotJckV2ZG4S1YgJDJLiXKKDAnKWXgQxo7vxsjPwPe",
+   "cur_price": 0.007374,
+   "mark": 0.007374
   }
  },
  "trades": [
@@ -445,6 +456,18 @@
    "slip": 0.0061,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-10-06T02:22:42Z",
+   "side": "buy",
+   "sym": "HOOKED",
+   "addr": "C1mBfBoDkwWfd6uTFZp62ARHLjeVp3bDpCDMfMZtPngE",
+   "price": 0.007374,
+   "fill": 0.007441296364,
+   "usd": 102.61,
+   "slip": 0.0012,
+   "quote": "jup",
+   "reason": "nach virtuellem stop (C) -10.2%"
   }
  ],
  "equity": [
@@ -12783,6 +12806,10 @@
   {
    "t": "2026-10-06T02:17:44Z",
    "v": 512.95
+  },
+  {
+   "t": "2026-10-06T02:22:42Z",
+   "v": 512.96
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -12797,8 +12824,8 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-10-06T02:17:44Z",
-  "virtuell": 5,
+  "t": "2026-10-06T02:22:42Z",
+  "virtuell": 4,
   "neu": 0,
   "gestoppt": false
  },
