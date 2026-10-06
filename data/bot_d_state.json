@@ -1,17 +1,6 @@
 {
- "cash": 24.861011000001035,
+ "cash": 43.05868000000103,
  "positions": {
-  "8r5faMhtYbc7gp411LQt9oqzQybRfy6LG2FJauTsfnKg": {
-   "sym": "ORBIT",
-   "qty": 244739.00779,
-   "cost": 15.02,
-   "opened": "2026-10-03T07:02:37Z",
-   "peak": 0.000292,
-   "entry": 6.137149993223808e-05,
-   "liq0": 23767.84,
-   "cur_price": 7.571e-05,
-   "mark": 7.571e-05
-  },
   "26uqr1EAd5o9czpp3CxWGRPBgzya2733WC7faQX4mqNA": {
    "sym": "TRUMPTY",
    "qty": 169783.318648,
@@ -20,8 +9,8 @@
    "peak": 0.0001112,
    "entry": 8.846569921948532e-05,
    "liq0": 27312.81,
-   "cur_price": 9.807e-05,
-   "mark": 9.807e-05
+   "cur_price": 9.823e-05,
+   "mark": 9.823e-05
   },
   "GvZ9UXZm8U14uZNi7hBN5cY2iUta7stArZE486yHe2nA": {
    "sym": "PERKOS",
@@ -31,8 +20,8 @@
    "peak": 0.0002075,
    "entry": 5.3379077320658894e-05,
    "liq0": 18991.78,
-   "cur_price": 7.385e-05,
-   "mark": 7.385e-05
+   "cur_price": 7.333e-05,
+   "mark": 7.333e-05
   },
   "G8G5QMuo9Ro4vRdapHH2WhHxhyVR2gf9cB9sps78F7w3": {
    "sym": "BAGGIE",
@@ -8742,13 +8731,24 @@
    "slip": 0.0011,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-10-06T07:07:18Z",
+   "side": "sell",
+   "sym": "ORBIT",
+   "addr": "8r5faMhtYbc7gp411LQt9oqzQybRfy6LG2FJauTsfnKg",
+   "price": 7.571e-05,
+   "usd": 18.2,
+   "pnl": 3.18,
+   "peak_x": 4.758,
+   "held_h": 72.1,
+   "frac": 1.0,
+   "slip": 0.0168,
+   "quote": "jup",
+   "reason": "time"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-18T22:26:36Z",
-   "v": 538.3
-  },
   {
    "t": "2026-09-18T22:31:33Z",
    "v": 535.94
@@ -28744,6 +28744,10 @@
   {
    "t": "2026-10-06T07:02:16Z",
    "v": 96.36
+  },
+  {
+   "t": "2026-10-06T07:07:18Z",
+   "v": 95.91
   }
  ],
  "started": "2026-09-15T16:35:51Z",
@@ -28849,6 +28853,7 @@
   "Eo7hAPND5wNHwqEEFp1qZ9cfDVsjtBkQi1hn782jd1bV": 1791194843.2251391,
   "2RSsw9tntE1RmoiPnNFiu93EzQu2eLnCAzvZiqMSoatH": 1791211043.5125396,
   "GjrhXcr8YzUZBbu5rifdqM5CPBS4LFJveq3ZiY2u3g5G": 1791226656.544652,
-  "9MR3EaeFvb5bgNnQvrr4mvNc5VywEDAvQFTSmCps3ejp": 1791269230.3506966
+  "9MR3EaeFvb5bgNnQvrr4mvNc5VywEDAvQFTSmCps3ejp": 1791269230.3506966,
+  "8r5faMhtYbc7gp411LQt9oqzQybRfy6LG2FJauTsfnKg": 1791270438.0954416
  }
 }
