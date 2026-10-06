@@ -1,16 +1,6 @@
 {
- "cash": 54.5769194156922,
+ "cash": 234.7242234156922,
  "positions": {
-  "6NwarBvDkXhByqVp2Qkq5i9XbtA2B3Bwe8SWGu9vpump": {
-   "sym": "CUPSEY",
-   "qty": 24228.061143,
-   "cost": 173.87960052911723,
-   "opened": "2026-10-06T13:12:21Z",
-   "peak": 0.007828,
-   "entry": 0.007176785608342198,
-   "cur_price": 0.007378,
-   "mark": 0.007378
-  },
   "C1mBfBoDkwWfd6uTFZp62ARHLjeVp3bDpCDMfMZtPngE": {
    "sym": "HOOKED",
    "qty": 23601.010301,
@@ -18,8 +8,8 @@
    "opened": "2026-10-06T20:57:19Z",
    "peak": 0.007602,
    "entry": 0.00745109929212068,
-   "cur_price": 0.00715,
-   "mark": 0.00715
+   "cur_price": 0.00718,
+   "mark": 0.00718
   },
   "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump": {
    "sym": "MANIFEST",
@@ -644,6 +634,21 @@
    "slip": 0.0085,
    "quote": "jup",
    "reason": "dip 24h -10% (SOL -0%) 1h +1.5%"
+  },
+  {
+   "t": "2026-10-06T23:02:29Z",
+   "side": "sell",
+   "sym": "CUPSEY",
+   "addr": "6NwarBvDkXhByqVp2Qkq5i9XbtA2B3Bwe8SWGu9vpump",
+   "price": 0.007352,
+   "usd": 180.15,
+   "pnl": 6.27,
+   "peak_x": 1.091,
+   "held_h": 9.8,
+   "frac": 1.0,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
@@ -13974,6 +13979,10 @@
   {
    "t": "2026-10-06T22:57:23Z",
    "v": 578.34
+  },
+  {
+   "t": "2026-10-06T23:02:29Z",
+   "v": 580.44
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -13981,7 +13990,7 @@
  "strategy": "dip_weites_netz",
  "universe_n": 154,
  "coverage": {
-  "t": "2026-10-06T22:57:23Z",
+  "t": "2026-10-06T23:02:29Z",
   "kurse": 133,
   "von": 154,
   "ohne_pool": 27,
@@ -13990,12 +13999,12 @@
  },
  "verkauft_am": {
   "J8PSdNP3QewKq2Z1JJJFDMaqF7KcaiJhR7gbr5KZpump": 1791091629.0214255,
-  "CTPoyCwkjMvoJwU4xvZZqoD8tiYk6yDchySiN5gGpump": 1790710900.5814083,
   "69LjZUUzxj3Cb3Fxeo1X4QpYEQTboApkhXTysPpbpump": 1790743923.13752,
   "DtR4D9FtVoTX2569gaL837ZgrB6wNjj6tkmnX9Rdk9B2": 1790841409.378621,
   "ABt79MkRXUsoHuV2CVQT32YMXQhTparKFjmidQxgiQ6E": 1791259917.8351939,
   "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": 1791282147.6697707,
   "G7iK3prSzAA4vzcJWvsLUEsdCqzR7PnMzJV61vSdFSNW": 1791312428.467149,
-  "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump": 1791315428.5320141
+  "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump": 1791315428.5320141,
+  "6NwarBvDkXhByqVp2Qkq5i9XbtA2B3Bwe8SWGu9vpump": 1791327749.8368418
  }
 }
