@@ -1,5 +1,5 @@
 {
- "cash": 407.2842511938969,
+ "cash": 231.43078004678296,
  "positions": {
   "6NwarBvDkXhByqVp2Qkq5i9XbtA2B3Bwe8SWGu9vpump": {
    "sym": "CUPSEY",
@@ -8,8 +8,18 @@
    "opened": "2026-10-06T13:12:21Z",
    "peak": 0.007658,
    "entry": 0.007176785608342198,
-   "cur_price": 0.007381,
-   "mark": 0.007381
+   "cur_price": 0.007444,
+   "mark": 0.007444
+  },
+  "C1mBfBoDkwWfd6uTFZp62ARHLjeVp3bDpCDMfMZtPngE": {
+   "sym": "HOOKED",
+   "qty": 23601.010301,
+   "cost": 175.85347114711396,
+   "opened": "2026-10-06T20:57:19Z",
+   "peak": 0.007368,
+   "entry": 0.00745109929212068,
+   "cur_price": 0.007368,
+   "mark": 0.007368
   }
  },
  "trades": [
@@ -600,6 +610,18 @@
    "slip": 0.0067,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-10-06T20:57:19Z",
+   "side": "buy",
+   "sym": "HOOKED",
+   "addr": "C1mBfBoDkwWfd6uTFZp62ARHLjeVp3bDpCDMfMZtPngE",
+   "price": 0.007368,
+   "fill": 0.007451099292,
+   "usd": 175.85,
+   "slip": 0.0005,
+   "quote": "jup",
+   "reason": "dip 24h -15% (SOL +0%) 1h +9.7%"
   }
  ],
  "equity": [
@@ -13830,6 +13852,10 @@
   {
    "t": "2026-10-06T20:52:17Z",
    "v": 586.11
+  },
+  {
+   "t": "2026-10-06T20:57:19Z",
+   "v": 585.68
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -13837,12 +13863,12 @@
  "strategy": "dip_weites_netz",
  "universe_n": 153,
  "coverage": {
-  "t": "2026-10-06T20:52:17Z",
+  "t": "2026-10-06T20:57:19Z",
   "kurse": 132,
   "von": 153,
   "ohne_pool": 27,
   "sol": true,
-  "kandidaten": 0
+  "kandidaten": 1
  },
  "verkauft_am": {
   "J8PSdNP3QewKq2Z1JJJFDMaqF7KcaiJhR7gbr5KZpump": 1791091629.0214255,
