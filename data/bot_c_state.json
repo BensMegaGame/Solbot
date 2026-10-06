@@ -1,5 +1,5 @@
 {
- "cash": 300.1721062779109,
+ "cash": 132.77587772301413,
  "positions": {
   "G7iK3prSzAA4vzcJWvsLUEsdCqzR7PnMzJV61vSdFSNW": {
    "sym": "NST",
@@ -19,8 +19,18 @@
    "opened": "2026-10-05T06:07:22Z",
    "peak": 0.009577,
    "entry": 0.009261061945194483,
-   "cur_price": 0.009109,
-   "mark": 0.009109
+   "cur_price": 0.009052,
+   "mark": 0.009052
+  },
+  "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": {
+   "sym": "BATON",
+   "qty": 23074.591703,
+   "cost": 167.3962285548968,
+   "opened": "2026-10-06T04:31:59Z",
+   "peak": 0.007097,
+   "entry": 0.007254569472322801,
+   "cur_price": 0.007097,
+   "mark": 0.007097
   }
  },
  "trades": [
@@ -527,6 +537,18 @@
    "slip": 0.0,
    "quote": "jup",
    "reason": "time"
+  },
+  {
+   "t": "2026-10-06T04:31:59Z",
+   "side": "buy",
+   "sym": "BATON",
+   "addr": "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump",
+   "price": 0.007097,
+   "fill": 0.007254569472,
+   "usd": 167.4,
+   "slip": 0.0105,
+   "quote": "jup",
+   "reason": "dip 24h -29% (SOL -0%) 1h +2.0%"
   }
  ],
  "equity": [
@@ -12969,6 +12991,10 @@
   {
    "t": "2026-10-06T04:27:00Z",
    "v": 557.92
+  },
+  {
+   "t": "2026-10-06T04:31:59Z",
+   "v": 553.29
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -12976,12 +13002,12 @@
  "strategy": "dip_weites_netz",
  "universe_n": 151,
  "coverage": {
-  "t": "2026-10-06T04:27:00Z",
+  "t": "2026-10-06T04:31:59Z",
   "kurse": 131,
   "von": 151,
   "ohne_pool": 28,
   "sol": true,
-  "kandidaten": 0
+  "kandidaten": 1
  },
  "verkauft_am": {
   "J8PSdNP3QewKq2Z1JJJFDMaqF7KcaiJhR7gbr5KZpump": 1791091629.0214255,
