@@ -6,10 +6,10 @@
    "qty": 24228.061143,
    "cost": 173.87960052911723,
    "opened": "2026-10-06T13:12:21Z",
-   "peak": 0.007688,
+   "peak": 0.007828,
    "entry": 0.007176785608342198,
-   "cur_price": 0.007688,
-   "mark": 0.007688
+   "cur_price": 0.007828,
+   "mark": 0.007828
   },
   "C1mBfBoDkwWfd6uTFZp62ARHLjeVp3bDpCDMfMZtPngE": {
    "sym": "HOOKED",
@@ -18,8 +18,8 @@
    "opened": "2026-10-06T20:57:19Z",
    "peak": 0.007602,
    "entry": 0.00745109929212068,
-   "cur_price": 0.007451,
-   "mark": 0.007451
+   "cur_price": 0.007599,
+   "mark": 0.007599
   }
  },
  "trades": [
@@ -13932,6 +13932,10 @@
   {
    "t": "2026-10-06T22:32:20Z",
    "v": 593.55
+  },
+  {
+   "t": "2026-10-06T22:37:21Z",
+   "v": 600.43
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -13939,11 +13943,11 @@
  "strategy": "dip_weites_netz",
  "universe_n": 154,
  "coverage": {
-  "t": "2026-10-06T22:32:20Z",
+  "t": "2026-10-06T22:37:21Z",
   "kurse": 133,
   "von": 154,
   "ohne_pool": 27,
-  "sol": true,
+  "sol": false,
   "kandidaten": 0
  },
  "verkauft_am": {

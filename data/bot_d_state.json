@@ -1,17 +1,6 @@
 {
- "cash": 12.175586000001037,
+ "cash": 22.996151000001035,
  "positions": {
-  "G8G5QMuo9Ro4vRdapHH2WhHxhyVR2gf9cB9sps78F7w3": {
-   "sym": "BAGGIE",
-   "qty": 111882.05691,
-   "cost": 15.02,
-   "opened": "2026-10-05T07:17:35Z",
-   "peak": 0.0001772,
-   "entry": 0.00013424851504189241,
-   "liq0": 25478.31,
-   "cur_price": 0.0001217,
-   "mark": 0.0001217
-  },
   "GyWkSn2ah7dqLyPeZAjEZmfxuU2H4nwfGvgJhfYDVegn": {
    "sym": "bul",
    "qty": 106490.867059,
@@ -20,8 +9,8 @@
    "peak": 0.0004172,
    "entry": 0.0001410449592046081,
    "liq0": 34022.85,
-   "cur_price": 0.0001839,
-   "mark": 0.0001839
+   "cur_price": 0.0001858,
+   "mark": 0.0001858
   },
   "C4ru2YKwoa2FCKRQzUoKzzD4jxCtw8sP4WVVo1dRpump": {
    "sym": "KURA",
@@ -31,8 +20,8 @@
    "peak": 0.00012,
    "entry": 7.94765736049955e-05,
    "liq0": 24322.56,
-   "cur_price": 9.214e-05,
-   "mark": 9.214e-05
+   "cur_price": 9.004e-05,
+   "mark": 9.004e-05
   },
   "EC7JXhzfSDe9BhU1tnfyzvv1eUUaTQQi4TTnrSHKsaET": {
    "sym": "BLU",
@@ -42,8 +31,8 @@
    "peak": 8.697e-05,
    "entry": 6.319759631261014e-05,
    "liq0": 23076.87,
-   "cur_price": 5.465e-05,
-   "mark": 5.465e-05
+   "cur_price": 5.562e-05,
+   "mark": 5.562e-05
   }
  },
  "trades": [
@@ -8877,13 +8866,24 @@
    "slip": 0.0277,
    "quote": "jup",
    "reason": "longshot"
+  },
+  {
+   "t": "2026-10-06T22:37:32Z",
+   "side": "sell",
+   "sym": "BAGGIE",
+   "addr": "G8G5QMuo9Ro4vRdapHH2WhHxhyVR2gf9cB9sps78F7w3",
+   "price": 0.0001037,
+   "usd": 10.82,
+   "pnl": -4.2,
+   "peak_x": 1.32,
+   "held_h": 39.3,
+   "frac": 1.0,
+   "slip": 0.0515,
+   "quote": "jup",
+   "reason": "tot"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-19T13:56:39Z",
-   "v": 503.3
-  },
   {
    "t": "2026-09-19T14:01:44Z",
    "v": 506.6
@@ -28879,6 +28879,10 @@
   {
    "t": "2026-10-06T22:32:32Z",
    "v": 75.78
+  },
+  {
+   "t": "2026-10-06T22:37:32Z",
+   "v": 73.02
   }
  ],
  "started": "2026-09-15T16:35:51Z",
@@ -28887,7 +28891,6 @@
  "codex": true,
  "verkauft_am": {
   "FDfxBRSc3MraBGcGmkHgfkvwHTUDMEA2hRV2cRNbpeg": 1790800324.1049767,
-  "7MYpDaZ1Uorg1QtkjWK25X2K4UoNk88854jfopAXxNKs": 1790721403.1474676,
   "9UtaRjir5Q4HRG8d8Z8F7jRgHGLBBwp7PR4rgBnoyr3z": 1790724109.150569,
   "DXrrBJMjK3xAV7YvuWAg42aeJHck3GmJmcN78HfDpump": 1790733424.1395652,
   "EdYKmD6gwazdMQBeadHpSuSeTpjtnbxkpfXCax3Lpump": 1790741838.3125627,
@@ -28978,6 +28981,7 @@
   "EHwZjQen7jjfU3SVSHrpkWZCGqRRyTYq3gWbHQXojB3A": 1791284258.6187508,
   "26uqr1EAd5o9czpp3CxWGRPBgzya2733WC7faQX4mqNA": 1791311538.9629557,
   "26ZixeXtGBQe3DBrN4448oZaY5rnhwPrZNhAjZPopump": 1791313626.904615,
-  "GvZ9UXZm8U14uZNi7hBN5cY2iUta7stArZE486yHe2nA": 1791322348.1594265
+  "GvZ9UXZm8U14uZNi7hBN5cY2iUta7stArZE486yHe2nA": 1791322348.1594265,
+  "G8G5QMuo9Ro4vRdapHH2WhHxhyVR2gf9cB9sps78F7w3": 1791326252.20741
  }
 }
