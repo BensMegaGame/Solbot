@@ -8,8 +8,8 @@
    "opened": "2026-10-06T13:12:21Z",
    "peak": 0.007828,
    "entry": 0.007176785608342198,
-   "cur_price": 0.007828,
-   "mark": 0.007828
+   "cur_price": 0.007471,
+   "mark": 0.007471
   },
   "C1mBfBoDkwWfd6uTFZp62ARHLjeVp3bDpCDMfMZtPngE": {
    "sym": "HOOKED",
@@ -18,8 +18,8 @@
    "opened": "2026-10-06T20:57:19Z",
    "peak": 0.007602,
    "entry": 0.00745109929212068,
-   "cur_price": 0.007599,
-   "mark": 0.007599
+   "cur_price": 0.0075,
+   "mark": 0.0075
   }
  },
  "trades": [
@@ -13936,6 +13936,10 @@
   {
    "t": "2026-10-06T22:37:21Z",
    "v": 600.43
+  },
+  {
+   "t": "2026-10-06T22:42:19Z",
+   "v": 589.45
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -13943,11 +13947,11 @@
  "strategy": "dip_weites_netz",
  "universe_n": 154,
  "coverage": {
-  "t": "2026-10-06T22:37:21Z",
+  "t": "2026-10-06T22:42:19Z",
   "kurse": 133,
   "von": 154,
   "ohne_pool": 27,
-  "sol": false,
+  "sol": true,
   "kandidaten": 0
  },
  "verkauft_am": {
