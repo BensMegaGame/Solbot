@@ -1,5 +1,5 @@
 {
- "cash": 43.05868000000103,
+ "cash": 13.018680000001034,
  "positions": {
   "26uqr1EAd5o9czpp3CxWGRPBgzya2733WC7faQX4mqNA": {
    "sym": "TRUMPTY",
@@ -20,8 +20,8 @@
    "peak": 0.0002075,
    "entry": 5.3379077320658894e-05,
    "liq0": 18991.78,
-   "cur_price": 7.333e-05,
-   "mark": 7.333e-05
+   "cur_price": 7.463e-05,
+   "mark": 7.463e-05
   },
   "G8G5QMuo9Ro4vRdapHH2WhHxhyVR2gf9cB9sps78F7w3": {
    "sym": "BAGGIE",
@@ -33,6 +33,28 @@
    "liq0": 25478.31,
    "cur_price": 0.0001389,
    "mark": 0.0001389
+  },
+  "EHwZjQen7jjfU3SVSHrpkWZCGqRRyTYq3gWbHQXojB3A": {
+   "sym": "STUDS",
+   "qty": 185198.030481,
+   "cost": 15.02,
+   "opened": "2026-10-06T07:17:20Z",
+   "peak": 8.153e-05,
+   "entry": 8.110237436645389e-05,
+   "liq0": 26776.15,
+   "cur_price": 8.153e-05,
+   "mark": 8.153e-05
+  },
+  "GyWkSn2ah7dqLyPeZAjEZmfxuU2H4nwfGvgJhfYDVegn": {
+   "sym": "bul",
+   "qty": 106490.867059,
+   "cost": 15.02,
+   "opened": "2026-10-06T07:17:25Z",
+   "peak": 0.0001391,
+   "entry": 0.0001410449592046081,
+   "liq0": 34022.85,
+   "cur_price": 0.0001391,
+   "mark": 0.0001391
   }
  },
  "trades": [
@@ -8746,13 +8768,33 @@
    "slip": 0.0168,
    "quote": "jup",
    "reason": "time"
+  },
+  {
+   "t": "2026-10-06T07:17:20Z",
+   "side": "buy",
+   "sym": "STUDS",
+   "addr": "EHwZjQen7jjfU3SVSHrpkWZCGqRRyTYq3gWbHQXojB3A",
+   "price": 8.153e-05,
+   "fill": 8.1102374e-05,
+   "usd": 15.02,
+   "slip": 0.0172,
+   "quote": "jup",
+   "reason": "longshot"
+  },
+  {
+   "t": "2026-10-06T07:17:25Z",
+   "side": "buy",
+   "sym": "bul",
+   "addr": "GyWkSn2ah7dqLyPeZAjEZmfxuU2H4nwfGvgJhfYDVegn",
+   "price": 0.0001391,
+   "fill": 0.000141044959,
+   "usd": 15.02,
+   "slip": 0.0121,
+   "quote": "jup",
+   "reason": "longshot"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-18T22:36:38Z",
-   "v": 539.06
-  },
   {
    "t": "2026-09-18T22:41:37Z",
    "v": 539.58
@@ -28748,6 +28790,10 @@
   {
    "t": "2026-10-06T07:12:18Z",
    "v": 95.91
+  },
+  {
+   "t": "2026-10-06T07:17:30Z",
+   "v": 96.15
   }
  ],
  "started": "2026-09-15T16:35:51Z",
