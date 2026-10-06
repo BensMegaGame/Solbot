@@ -1,5 +1,5 @@
 {
- "cash": 8.523395000001035,
+ "cash": 16.041289000001036,
  "positions": {
   "GvZ9UXZm8U14uZNi7hBN5cY2iUta7stArZE486yHe2nA": {
    "sym": "PERKOS",
@@ -20,8 +20,8 @@
    "peak": 0.0001772,
    "entry": 0.00013424851504189241,
    "liq0": 25478.31,
-   "cur_price": 0.0001336,
-   "mark": 0.0001336
+   "cur_price": 0.0001335,
+   "mark": 0.0001335
   },
   "GyWkSn2ah7dqLyPeZAjEZmfxuU2H4nwfGvgJhfYDVegn": {
    "sym": "bul",
@@ -31,19 +31,8 @@
    "peak": 0.0004172,
    "entry": 0.0001410449592046081,
    "liq0": 34022.85,
-   "cur_price": 0.0002534,
-   "mark": 0.0002534
-  },
-  "26ZixeXtGBQe3DBrN4448oZaY5rnhwPrZNhAjZPopump": {
-   "sym": "SOLBORN",
-   "qty": 225670.570763,
-   "cost": 15.02,
-   "opened": "2026-10-06T10:57:42Z",
-   "peak": 0.0001052,
-   "entry": 6.655719418450027e-05,
-   "liq0": 24475.52,
-   "cur_price": 4.727e-05,
-   "mark": 4.727e-05
+   "cur_price": 0.0002498,
+   "mark": 0.0002498
   },
   "C4ru2YKwoa2FCKRQzUoKzzD4jxCtw8sP4WVVo1dRpump": {
    "sym": "KURA",
@@ -53,8 +42,8 @@
    "peak": 0.00012,
    "entry": 7.94765736049955e-05,
    "liq0": 24322.56,
-   "cur_price": 0.000108,
-   "mark": 0.000108
+   "cur_price": 0.0001084,
+   "mark": 0.0001084
   }
  },
  "trades": [
@@ -8846,13 +8835,24 @@
    "slip": 0.0267,
    "quote": "jup",
    "reason": "longshot"
+  },
+  {
+   "t": "2026-10-06T19:07:06Z",
+   "side": "sell",
+   "sym": "SOLBORN",
+   "addr": "26ZixeXtGBQe3DBrN4448oZaY5rnhwPrZNhAjZPopump",
+   "price": 3.062e-05,
+   "usd": 7.52,
+   "pnl": -7.5,
+   "peak_x": 1.581,
+   "held_h": 8.2,
+   "frac": 1.0,
+   "slip": 0.0073,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-19T10:26:34Z",
-   "v": 494.81
-  },
   {
    "t": "2026-09-19T10:31:42Z",
    "v": 496.32
@@ -28848,6 +28848,10 @@
   {
    "t": "2026-10-06T19:02:13Z",
    "v": 97.43
+  },
+  {
+   "t": "2026-10-06T19:07:12Z",
+   "v": 93.96
   }
  ],
  "started": "2026-09-15T16:35:51Z",
@@ -28948,6 +28952,7 @@
   "9MR3EaeFvb5bgNnQvrr4mvNc5VywEDAvQFTSmCps3ejp": 1791269230.3506966,
   "8r5faMhtYbc7gp411LQt9oqzQybRfy6LG2FJauTsfnKg": 1791270438.0954416,
   "EHwZjQen7jjfU3SVSHrpkWZCGqRRyTYq3gWbHQXojB3A": 1791284258.6187508,
-  "26uqr1EAd5o9czpp3CxWGRPBgzya2733WC7faQX4mqNA": 1791311538.9629557
+  "26uqr1EAd5o9czpp3CxWGRPBgzya2733WC7faQX4mqNA": 1791311538.9629557,
+  "26ZixeXtGBQe3DBrN4448oZaY5rnhwPrZNhAjZPopump": 1791313626.904615
  }
 }
