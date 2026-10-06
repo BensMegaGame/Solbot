@@ -1,5 +1,5 @@
 {
- "cash": 13.018680000001034,
+ "cash": 4.971060000001035,
  "positions": {
   "26uqr1EAd5o9czpp3CxWGRPBgzya2733WC7faQX4mqNA": {
    "sym": "TRUMPTY",
@@ -20,8 +20,8 @@
    "peak": 0.0002075,
    "entry": 5.3379077320658894e-05,
    "liq0": 18991.78,
-   "cur_price": 5.888e-05,
-   "mark": 5.888e-05
+   "cur_price": 5.803e-05,
+   "mark": 5.803e-05
   },
   "G8G5QMuo9Ro4vRdapHH2WhHxhyVR2gf9cB9sps78F7w3": {
    "sym": "BAGGIE",
@@ -34,17 +34,6 @@
    "cur_price": 0.000138,
    "mark": 0.000138
   },
-  "EHwZjQen7jjfU3SVSHrpkWZCGqRRyTYq3gWbHQXojB3A": {
-   "sym": "STUDS",
-   "qty": 185198.030481,
-   "cost": 15.02,
-   "opened": "2026-10-06T07:17:20Z",
-   "peak": 8.153e-05,
-   "entry": 8.110237436645389e-05,
-   "liq0": 26776.15,
-   "cur_price": 5.545e-05,
-   "mark": 5.545e-05
-  },
   "GyWkSn2ah7dqLyPeZAjEZmfxuU2H4nwfGvgJhfYDVegn": {
    "sym": "bul",
    "qty": 106490.867059,
@@ -53,8 +42,19 @@
    "peak": 0.000231,
    "entry": 0.0001410449592046081,
    "liq0": 34022.85,
-   "cur_price": 0.0002243,
-   "mark": 0.0002243
+   "cur_price": 0.0002129,
+   "mark": 0.0002129
+  },
+  "26ZixeXtGBQe3DBrN4448oZaY5rnhwPrZNhAjZPopump": {
+   "sym": "SOLBORN",
+   "qty": 225670.570763,
+   "cost": 15.02,
+   "opened": "2026-10-06T10:57:42Z",
+   "peak": 6.491e-05,
+   "entry": 6.655719418450027e-05,
+   "liq0": 24475.52,
+   "cur_price": 6.491e-05,
+   "mark": 6.491e-05
   }
  },
  "trades": [
@@ -8792,13 +8792,36 @@
    "slip": 0.0121,
    "quote": "jup",
    "reason": "longshot"
+  },
+  {
+   "t": "2026-10-06T10:57:38Z",
+   "side": "sell",
+   "sym": "STUDS",
+   "addr": "EHwZjQen7jjfU3SVSHrpkWZCGqRRyTYq3gWbHQXojB3A",
+   "price": 3.785e-05,
+   "usd": 6.97,
+   "pnl": -8.05,
+   "peak_x": 1.005,
+   "held_h": 3.7,
+   "frac": 1.0,
+   "slip": 0.0018,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-10-06T10:57:42Z",
+   "side": "buy",
+   "sym": "SOLBORN",
+   "addr": "26ZixeXtGBQe3DBrN4448oZaY5rnhwPrZNhAjZPopump",
+   "price": 6.491e-05,
+   "fill": 6.6557194e-05,
+   "usd": 15.02,
+   "slip": 0.0242,
+   "quote": "jup",
+   "reason": "longshot"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-19T02:16:42Z",
-   "v": 540.94
-  },
   {
    "t": "2026-09-19T02:21:42Z",
    "v": 542.55
@@ -28794,6 +28817,10 @@
   {
    "t": "2026-10-06T10:52:43Z",
    "v": 96.79
+  },
+  {
+   "t": "2026-10-06T10:57:46Z",
+   "v": 91.67
   }
  ],
  "started": "2026-09-15T16:35:51Z",
@@ -28801,9 +28828,7 @@
  "helius": true,
  "codex": true,
  "verkauft_am": {
-  "HL8LrvYgmmHoLH9TvqqSv8Sy6yBGjXjZmpv2RpitpvUX": 1790671296.6921566,
   "FDfxBRSc3MraBGcGmkHgfkvwHTUDMEA2hRV2cRNbpeg": 1790800324.1049767,
-  "6qBR7sk15ZVdt1vx6j1JgtkuurK8WrapugFptWQCyzL6": 1790679101.6586616,
   "59PXVfJ28HLYpdYLz8rt8ziE9EWbK4mS8xvq38NUQ1Be": 1790686597.9260416,
   "CLsGDf5QSp62QsxSGYuZetaA4WEGmKuq7XvKwkFcpump": 1790688696.3516276,
   "AmaM7N43JBicpcHDbVKyGeuTjtnNhJ2yZTdWqoZpCX8b": 1790692892.2050316,
@@ -28900,6 +28925,7 @@
   "2RSsw9tntE1RmoiPnNFiu93EzQu2eLnCAzvZiqMSoatH": 1791211043.5125396,
   "GjrhXcr8YzUZBbu5rifdqM5CPBS4LFJveq3ZiY2u3g5G": 1791226656.544652,
   "9MR3EaeFvb5bgNnQvrr4mvNc5VywEDAvQFTSmCps3ejp": 1791269230.3506966,
-  "8r5faMhtYbc7gp411LQt9oqzQybRfy6LG2FJauTsfnKg": 1791270438.0954416
+  "8r5faMhtYbc7gp411LQt9oqzQybRfy6LG2FJauTsfnKg": 1791270438.0954416,
+  "EHwZjQen7jjfU3SVSHrpkWZCGqRRyTYq3gWbHQXojB3A": 1791284258.6187508
  }
 }
