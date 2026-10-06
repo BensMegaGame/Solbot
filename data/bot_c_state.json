@@ -1,17 +1,6 @@
 {
- "cash": 149.6924871938969,
+ "cash": 262.2486831938969,
  "positions": {
-  "G7iK3prSzAA4vzcJWvsLUEsdCqzR7PnMzJV61vSdFSNW": {
-   "sym": "NST",
-   "qty": 56.00961371,
-   "cost": 84.26030290002731,
-   "opened": "2026-10-01T18:46:35Z",
-   "peak": 2.17,
-   "entry": 1.5043900023360348,
-   "cur_price": 2.042,
-   "mark": 2.042,
-   "tp1": true
-  },
   "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump": {
    "sym": "BUTTCOIN",
    "qty": 17474.117405,
@@ -19,8 +8,8 @@
    "opened": "2026-10-05T06:07:22Z",
    "peak": 0.009577,
    "entry": 0.009261061945194483,
-   "cur_price": 0.008499,
-   "mark": 0.008499
+   "cur_price": 0.008458,
+   "mark": 0.008458
   },
   "6NwarBvDkXhByqVp2Qkq5i9XbtA2B3Bwe8SWGu9vpump": {
    "sym": "CUPSEY",
@@ -29,8 +18,8 @@
    "opened": "2026-10-06T13:12:21Z",
    "peak": 0.007658,
    "entry": 0.007176785608342198,
-   "cur_price": 0.007118,
-   "mark": 0.007118
+   "cur_price": 0.007125,
+   "mark": 0.007125
   }
  },
  "trades": [
@@ -591,6 +580,21 @@
    "slip": 0.0013,
    "quote": "jup",
    "reason": "dip 24h -12% (SOL -0%) 1h -1.2%"
+  },
+  {
+   "t": "2026-10-06T18:47:08Z",
+   "side": "sell",
+   "sym": "NST",
+   "addr": "G7iK3prSzAA4vzcJWvsLUEsdCqzR7PnMzJV61vSdFSNW",
+   "price": 2.018,
+   "usd": 112.56,
+   "pnl": 28.3,
+   "peak_x": 1.442,
+   "held_h": 120.0,
+   "frac": 1.0,
+   "slip": 0.0044,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
@@ -13717,6 +13721,10 @@
   {
    "t": "2026-10-06T18:42:06Z",
    "v": 585.03
+  },
+  {
+   "t": "2026-10-06T18:47:08Z",
+   "v": 582.67
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -13724,7 +13732,7 @@
  "strategy": "dip_weites_netz",
  "universe_n": 153,
  "coverage": {
-  "t": "2026-10-06T18:42:06Z",
+  "t": "2026-10-06T18:47:08Z",
   "kurse": 131,
   "von": 153,
   "ohne_pool": 27,
@@ -13737,6 +13745,7 @@
   "69LjZUUzxj3Cb3Fxeo1X4QpYEQTboApkhXTysPpbpump": 1790743923.13752,
   "DtR4D9FtVoTX2569gaL837ZgrB6wNjj6tkmnX9Rdk9B2": 1790841409.378621,
   "ABt79MkRXUsoHuV2CVQT32YMXQhTparKFjmidQxgiQ6E": 1791259917.8351939,
-  "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": 1791282147.6697707
+  "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": 1791282147.6697707,
+  "G7iK3prSzAA4vzcJWvsLUEsdCqzR7PnMzJV61vSdFSNW": 1791312428.467149
  }
 }
