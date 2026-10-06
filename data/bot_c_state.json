@@ -1,5 +1,5 @@
 {
- "cash": 231.42534472301412,
+ "cash": 323.57208772301414,
  "positions": {
   "G7iK3prSzAA4vzcJWvsLUEsdCqzR7PnMzJV61vSdFSNW": {
    "sym": "NST",
@@ -8,8 +8,8 @@
    "opened": "2026-10-01T18:46:35Z",
    "peak": 1.9,
    "entry": 1.5043900023360348,
-   "cur_price": 1.85,
-   "mark": 1.85,
+   "cur_price": 1.89,
+   "mark": 1.89,
    "tp1": true
   },
   "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump": {
@@ -19,19 +19,8 @@
    "opened": "2026-10-05T06:07:22Z",
    "peak": 0.009577,
    "entry": 0.009261061945194483,
-   "cur_price": 0.008968,
-   "mark": 0.008968
-  },
-  "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": {
-   "sym": "BATON",
-   "qty": 11537.2958515,
-   "cost": 83.6981142774484,
-   "opened": "2026-10-06T04:31:59Z",
-   "peak": 0.008652,
-   "entry": 0.007254569472322801,
-   "cur_price": 0.008396,
-   "mark": 0.008396,
-   "tp1": true
+   "cur_price": 0.008932,
+   "mark": 0.008932
   }
  },
  "trades": [
@@ -565,6 +554,21 @@
    "slip": 0.0012,
    "quote": "jup",
    "reason": "tp1"
+  },
+  {
+   "t": "2026-10-06T10:22:27Z",
+   "side": "sell",
+   "sym": "BATON",
+   "addr": "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump",
+   "price": 0.008107,
+   "usd": 92.15,
+   "pnl": 8.45,
+   "peak_x": 1.193,
+   "held_h": 5.8,
+   "frac": 1.0,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
@@ -13287,6 +13291,10 @@
   {
    "t": "2026-10-06T10:17:23Z",
    "v": 588.62
+  },
+  {
+   "t": "2026-10-06T10:22:27Z",
+   "v": 585.51
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -13294,10 +13302,10 @@
  "strategy": "dip_weites_netz",
  "universe_n": 151,
  "coverage": {
-  "t": "2026-10-06T10:17:23Z",
+  "t": "2026-10-06T10:22:27Z",
   "kurse": 129,
   "von": 151,
-  "ohne_pool": 27,
+  "ohne_pool": 26,
   "sol": true,
   "kandidaten": 0
  },
@@ -13306,6 +13314,7 @@
   "CTPoyCwkjMvoJwU4xvZZqoD8tiYk6yDchySiN5gGpump": 1790710900.5814083,
   "69LjZUUzxj3Cb3Fxeo1X4QpYEQTboApkhXTysPpbpump": 1790743923.13752,
   "DtR4D9FtVoTX2569gaL837ZgrB6wNjj6tkmnX9Rdk9B2": 1790841409.378621,
-  "ABt79MkRXUsoHuV2CVQT32YMXQhTparKFjmidQxgiQ6E": 1791259917.8351939
+  "ABt79MkRXUsoHuV2CVQT32YMXQhTparKFjmidQxgiQ6E": 1791259917.8351939,
+  "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": 1791282147.6697707
  }
 }
