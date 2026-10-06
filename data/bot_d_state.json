@@ -1,17 +1,6 @@
 {
- "cash": 16.041289000001036,
+ "cash": 12.175586000001037,
  "positions": {
-  "GvZ9UXZm8U14uZNi7hBN5cY2iUta7stArZE486yHe2nA": {
-   "sym": "PERKOS",
-   "qty": 281383.657304,
-   "cost": 15.02,
-   "opened": "2026-10-04T18:32:24Z",
-   "peak": 0.0002075,
-   "entry": 5.3379077320658894e-05,
-   "liq0": 18991.78,
-   "cur_price": 4.385e-05,
-   "mark": 4.385e-05
-  },
   "G8G5QMuo9Ro4vRdapHH2WhHxhyVR2gf9cB9sps78F7w3": {
    "sym": "BAGGIE",
    "qty": 111882.05691,
@@ -31,8 +20,8 @@
    "peak": 0.0004172,
    "entry": 0.0001410449592046081,
    "liq0": 34022.85,
-   "cur_price": 0.0001822,
-   "mark": 0.0001822
+   "cur_price": 0.0001787,
+   "mark": 0.0001787
   },
   "C4ru2YKwoa2FCKRQzUoKzzD4jxCtw8sP4WVVo1dRpump": {
    "sym": "KURA",
@@ -42,8 +31,19 @@
    "peak": 0.00012,
    "entry": 7.94765736049955e-05,
    "liq0": 24322.56,
-   "cur_price": 6.416e-05,
-   "mark": 6.416e-05
+   "cur_price": 6.592e-05,
+   "mark": 6.592e-05
+  },
+  "EC7JXhzfSDe9BhU1tnfyzvv1eUUaTQQi4TTnrSHKsaET": {
+   "sym": "BLU",
+   "qty": 237667.267054,
+   "cost": 15.02,
+   "opened": "2026-10-06T21:32:30Z",
+   "peak": 6.105e-05,
+   "entry": 6.319759631261014e-05,
+   "liq0": 23076.87,
+   "cur_price": 6.105e-05,
+   "mark": 6.105e-05
   }
  },
  "trades": [
@@ -8850,13 +8850,36 @@
    "slip": 0.0073,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-10-06T21:32:28Z",
+   "side": "sell",
+   "sym": "PERKOS",
+   "addr": "GvZ9UXZm8U14uZNi7hBN5cY2iUta7stArZE486yHe2nA",
+   "price": 4.019e-05,
+   "usd": 11.15,
+   "pnl": -3.87,
+   "peak_x": 3.887,
+   "held_h": 51.0,
+   "frac": 1.0,
+   "slip": 0.0121,
+   "quote": "jup",
+   "reason": "tot"
+  },
+  {
+   "t": "2026-10-06T21:32:30Z",
+   "side": "buy",
+   "sym": "BLU",
+   "addr": "EC7JXhzfSDe9BhU1tnfyzvv1eUUaTQQi4TTnrSHKsaET",
+   "price": 6.105e-05,
+   "fill": 6.3197596e-05,
+   "usd": 15.02,
+   "slip": 0.0277,
+   "quote": "jup",
+   "reason": "longshot"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-19T12:51:45Z",
-   "v": 503.35
-  },
   {
    "t": "2026-09-19T12:56:39Z",
    "v": 502.06
@@ -28852,6 +28875,10 @@
   {
    "t": "2026-10-06T21:27:34Z",
    "v": 73.22
+  },
+  {
+   "t": "2026-10-06T21:32:31Z",
+   "v": 71.49
   }
  ],
  "started": "2026-09-15T16:35:51Z",
@@ -28860,9 +28887,6 @@
  "codex": true,
  "verkauft_am": {
   "FDfxBRSc3MraBGcGmkHgfkvwHTUDMEA2hRV2cRNbpeg": 1790800324.1049767,
-  "5HpB4gU9M7xtHC2fLK1FXP7UuDQUvJTRD6guwPKPJUGi": 1790712110.7387426,
-  "7ukDd3E3PSupATuK4yvJ49jyZr8nNrkXKcq8pioiq98F": 1790712709.7895818,
-  "8ALHRuN5q4MHRaKPdiXi7cHyVWicZVwQx2TBTCH8GZ4h": 1790712709.8302753,
   "7MYpDaZ1Uorg1QtkjWK25X2K4UoNk88854jfopAXxNKs": 1790721403.1474676,
   "9UtaRjir5Q4HRG8d8Z8F7jRgHGLBBwp7PR4rgBnoyr3z": 1790724109.150569,
   "DXrrBJMjK3xAV7YvuWAg42aeJHck3GmJmcN78HfDpump": 1790733424.1395652,
@@ -28953,6 +28977,7 @@
   "8r5faMhtYbc7gp411LQt9oqzQybRfy6LG2FJauTsfnKg": 1791270438.0954416,
   "EHwZjQen7jjfU3SVSHrpkWZCGqRRyTYq3gWbHQXojB3A": 1791284258.6187508,
   "26uqr1EAd5o9czpp3CxWGRPBgzya2733WC7faQX4mqNA": 1791311538.9629557,
-  "26ZixeXtGBQe3DBrN4448oZaY5rnhwPrZNhAjZPopump": 1791313626.904615
+  "26ZixeXtGBQe3DBrN4448oZaY5rnhwPrZNhAjZPopump": 1791313626.904615,
+  "GvZ9UXZm8U14uZNi7hBN5cY2iUta7stArZE486yHe2nA": 1791322348.1594265
  }
 }
