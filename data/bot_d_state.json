@@ -1,17 +1,6 @@
 {
- "cash": 4.971060000001035,
+ "cash": 8.523395000001035,
  "positions": {
-  "26uqr1EAd5o9czpp3CxWGRPBgzya2733WC7faQX4mqNA": {
-   "sym": "TRUMPTY",
-   "qty": 169783.318648,
-   "cost": 15.02,
-   "opened": "2026-10-03T18:27:28Z",
-   "peak": 0.0001123,
-   "entry": 8.846569921948532e-05,
-   "liq0": 27312.81,
-   "cur_price": 0.0001122,
-   "mark": 0.0001122
-  },
   "GvZ9UXZm8U14uZNi7hBN5cY2iUta7stArZE486yHe2nA": {
    "sym": "PERKOS",
    "qty": 281383.657304,
@@ -20,8 +9,8 @@
    "peak": 0.0002075,
    "entry": 5.3379077320658894e-05,
    "liq0": 18991.78,
-   "cur_price": 5.924e-05,
-   "mark": 5.924e-05
+   "cur_price": 5.996e-05,
+   "mark": 5.996e-05
   },
   "G8G5QMuo9Ro4vRdapHH2WhHxhyVR2gf9cB9sps78F7w3": {
    "sym": "BAGGIE",
@@ -31,8 +20,8 @@
    "peak": 0.0001772,
    "entry": 0.00013424851504189241,
    "liq0": 25478.31,
-   "cur_price": 0.0001263,
-   "mark": 0.0001263
+   "cur_price": 0.0001244,
+   "mark": 0.0001244
   },
   "GyWkSn2ah7dqLyPeZAjEZmfxuU2H4nwfGvgJhfYDVegn": {
    "sym": "bul",
@@ -42,8 +31,8 @@
    "peak": 0.0004172,
    "entry": 0.0001410449592046081,
    "liq0": 34022.85,
-   "cur_price": 0.0002607,
-   "mark": 0.0002607
+   "cur_price": 0.0002765,
+   "mark": 0.0002765
   },
   "26ZixeXtGBQe3DBrN4448oZaY5rnhwPrZNhAjZPopump": {
    "sym": "SOLBORN",
@@ -53,8 +42,19 @@
    "peak": 0.0001052,
    "entry": 6.655719418450027e-05,
    "liq0": 24475.52,
-   "cur_price": 6.021e-05,
-   "mark": 6.021e-05
+   "cur_price": 5.675e-05,
+   "mark": 5.675e-05
+  },
+  "C4ru2YKwoa2FCKRQzUoKzzD4jxCtw8sP4WVVo1dRpump": {
+   "sym": "KURA",
+   "qty": 188986.506573,
+   "cost": 15.02,
+   "opened": "2026-10-06T18:32:21Z",
+   "peak": 7.699e-05,
+   "entry": 7.94765736049955e-05,
+   "liq0": 24322.56,
+   "cur_price": 7.699e-05,
+   "mark": 7.699e-05
   }
  },
  "trades": [
@@ -8819,13 +8819,36 @@
    "slip": 0.0242,
    "quote": "jup",
    "reason": "longshot"
+  },
+  {
+   "t": "2026-10-06T18:32:18Z",
+   "side": "sell",
+   "sym": "TRUMPTY",
+   "addr": "26uqr1EAd5o9czpp3CxWGRPBgzya2733WC7faQX4mqNA",
+   "price": 0.0001122,
+   "usd": 18.57,
+   "pnl": 3.55,
+   "peak_x": 1.269,
+   "held_h": 72.1,
+   "frac": 1.0,
+   "slip": 0.0355,
+   "quote": "jup",
+   "reason": "time"
+  },
+  {
+   "t": "2026-10-06T18:32:21Z",
+   "side": "buy",
+   "sym": "KURA",
+   "addr": "C4ru2YKwoa2FCKRQzUoKzzD4jxCtw8sP4WVVo1dRpump",
+   "price": 7.699e-05,
+   "fill": 7.9476574e-05,
+   "usd": 15.02,
+   "slip": 0.0267,
+   "quote": "jup",
+   "reason": "longshot"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-19T09:51:33Z",
-   "v": 505.67
-  },
   {
    "t": "2026-09-19T09:56:33Z",
    "v": 502.77
@@ -28821,6 +28844,10 @@
   {
    "t": "2026-10-06T18:27:22Z",
    "v": 96.17
+  },
+  {
+   "t": "2026-10-06T18:32:26Z",
+   "v": 96.11
   }
  ],
  "started": "2026-09-15T16:35:51Z",
@@ -28829,12 +28856,6 @@
  "codex": true,
  "verkauft_am": {
   "FDfxBRSc3MraBGcGmkHgfkvwHTUDMEA2hRV2cRNbpeg": 1790800324.1049767,
-  "59PXVfJ28HLYpdYLz8rt8ziE9EWbK4mS8xvq38NUQ1Be": 1790686597.9260416,
-  "CLsGDf5QSp62QsxSGYuZetaA4WEGmKuq7XvKwkFcpump": 1790688696.3516276,
-  "AmaM7N43JBicpcHDbVKyGeuTjtnNhJ2yZTdWqoZpCX8b": 1790692892.2050316,
-  "6uAuFimUT9stEBo3Nr8B4bMHDYLoro3SS9UeVP1a9Myz": 1790699498.273558,
-  "zVbJ3eRjhRbvKWAxP8xrXZAeAcSqk3vtTjCzzVAAphi": 1790700701.440502,
-  "CZWyKU9MghRchXXw6x34aPN7MGeQR8QJKwymX6cpump": 1790701313.5114393,
   "5HpB4gU9M7xtHC2fLK1FXP7UuDQUvJTRD6guwPKPJUGi": 1790712110.7387426,
   "7ukDd3E3PSupATuK4yvJ49jyZr8nNrkXKcq8pioiq98F": 1790712709.7895818,
   "8ALHRuN5q4MHRaKPdiXi7cHyVWicZVwQx2TBTCH8GZ4h": 1790712709.8302753,
@@ -28926,6 +28947,7 @@
   "GjrhXcr8YzUZBbu5rifdqM5CPBS4LFJveq3ZiY2u3g5G": 1791226656.544652,
   "9MR3EaeFvb5bgNnQvrr4mvNc5VywEDAvQFTSmCps3ejp": 1791269230.3506966,
   "8r5faMhtYbc7gp411LQt9oqzQybRfy6LG2FJauTsfnKg": 1791270438.0954416,
-  "EHwZjQen7jjfU3SVSHrpkWZCGqRRyTYq3gWbHQXojB3A": 1791284258.6187508
+  "EHwZjQen7jjfU3SVSHrpkWZCGqRRyTYq3gWbHQXojB3A": 1791284258.6187508,
+  "26uqr1EAd5o9czpp3CxWGRPBgzya2733WC7faQX4mqNA": 1791311538.9629557
  }
 }
