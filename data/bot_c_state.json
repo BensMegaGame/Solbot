@@ -1,16 +1,6 @@
 {
- "cash": 262.2486831938969,
+ "cash": 407.2842511938969,
  "positions": {
-  "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump": {
-   "sym": "BUTTCOIN",
-   "qty": 17474.117405,
-   "cost": 161.82888372530607,
-   "opened": "2026-10-05T06:07:22Z",
-   "peak": 0.009577,
-   "entry": 0.009261061945194483,
-   "cur_price": 0.008415,
-   "mark": 0.008415
-  },
   "6NwarBvDkXhByqVp2Qkq5i9XbtA2B3Bwe8SWGu9vpump": {
    "sym": "CUPSEY",
    "qty": 24228.061143,
@@ -18,8 +8,8 @@
    "opened": "2026-10-06T13:12:21Z",
    "peak": 0.007658,
    "entry": 0.007176785608342198,
-   "cur_price": 0.00713,
-   "mark": 0.00713
+   "cur_price": 0.007116,
+   "mark": 0.007116
   }
  },
  "trades": [
@@ -595,6 +585,21 @@
    "slip": 0.0044,
    "quote": "jup",
    "reason": "trail"
+  },
+  {
+   "t": "2026-10-06T19:37:08Z",
+   "side": "sell",
+   "sym": "BUTTCOIN",
+   "addr": "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump",
+   "price": 0.008319,
+   "usd": 145.04,
+   "pnl": -16.79,
+   "peak_x": 1.034,
+   "held_h": 37.5,
+   "frac": 1.0,
+   "slip": 0.0067,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -13761,6 +13766,10 @@
   {
    "t": "2026-10-06T19:32:03Z",
    "v": 582.04
+  },
+  {
+   "t": "2026-10-06T19:37:08Z",
+   "v": 579.69
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -13768,7 +13777,7 @@
  "strategy": "dip_weites_netz",
  "universe_n": 153,
  "coverage": {
-  "t": "2026-10-06T19:32:03Z",
+  "t": "2026-10-06T19:37:08Z",
   "kurse": 131,
   "von": 153,
   "ohne_pool": 27,
@@ -13782,6 +13791,7 @@
   "DtR4D9FtVoTX2569gaL837ZgrB6wNjj6tkmnX9Rdk9B2": 1790841409.378621,
   "ABt79MkRXUsoHuV2CVQT32YMXQhTparKFjmidQxgiQ6E": 1791259917.8351939,
   "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": 1791282147.6697707,
-  "G7iK3prSzAA4vzcJWvsLUEsdCqzR7PnMzJV61vSdFSNW": 1791312428.467149
+  "G7iK3prSzAA4vzcJWvsLUEsdCqzR7PnMzJV61vSdFSNW": 1791312428.467149,
+  "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump": 1791315428.5320141
  }
 }
