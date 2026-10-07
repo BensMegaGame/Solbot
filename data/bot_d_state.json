@@ -1,17 +1,6 @@
 {
- "cash": 7.976151000001035,
+ "cash": 16.493035000001036,
  "positions": {
-  "GyWkSn2ah7dqLyPeZAjEZmfxuU2H4nwfGvgJhfYDVegn": {
-   "sym": "bul",
-   "qty": 106490.867059,
-   "cost": 15.02,
-   "opened": "2026-10-06T07:17:25Z",
-   "peak": 0.0004172,
-   "entry": 0.0001410449592046081,
-   "liq0": 34022.85,
-   "cur_price": 9.834e-05,
-   "mark": 9.834e-05
-  },
   "C4ru2YKwoa2FCKRQzUoKzzD4jxCtw8sP4WVVo1dRpump": {
    "sym": "KURA",
    "qty": 188986.506573,
@@ -20,8 +9,8 @@
    "peak": 0.00012,
    "entry": 7.94765736049955e-05,
    "liq0": 24322.56,
-   "cur_price": 5.364e-05,
-   "mark": 5.364e-05
+   "cur_price": 6.454e-05,
+   "mark": 6.454e-05
   },
   "EC7JXhzfSDe9BhU1tnfyzvv1eUUaTQQi4TTnrSHKsaET": {
    "sym": "BLU",
@@ -31,8 +20,8 @@
    "peak": 0.0001089,
    "entry": 6.319759631261014e-05,
    "liq0": 23076.87,
-   "cur_price": 7.535e-05,
-   "mark": 7.535e-05
+   "cur_price": 7.557e-05,
+   "mark": 7.557e-05
   },
   "EhLyndhdN7K1VQokfGifFeedMztb73k57WS7Xq9mxsad": {
    "sym": "AGENCYBOOK",
@@ -42,8 +31,8 @@
    "peak": 0.0001205,
    "entry": 6.624415833926531e-05,
    "liq0": 21605.56,
-   "cur_price": 6.461e-05,
-   "mark": 6.461e-05
+   "cur_price": 6.074e-05,
+   "mark": 6.074e-05
   }
  },
  "trades": [
@@ -8904,13 +8893,24 @@
    "slip": 0.0174,
    "quote": "jup",
    "reason": "longshot"
+  },
+  {
+   "t": "2026-10-07T05:27:37Z",
+   "side": "sell",
+   "sym": "bul",
+   "addr": "GyWkSn2ah7dqLyPeZAjEZmfxuU2H4nwfGvgJhfYDVegn",
+   "price": 8.216e-05,
+   "usd": 8.52,
+   "pnl": -6.5,
+   "peak_x": 2.958,
+   "held_h": 22.2,
+   "frac": 1.0,
+   "slip": 0.0068,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-19T20:46:39Z",
-   "v": 522.02
-  },
   {
    "t": "2026-09-19T20:51:43Z",
    "v": 538.05
@@ -28906,6 +28906,10 @@
   {
    "t": "2026-10-07T05:22:28Z",
    "v": 61.14
+  },
+  {
+   "t": "2026-10-07T05:27:41Z",
+   "v": 60.42
   }
  ],
  "started": "2026-09-15T16:35:51Z",
@@ -28914,10 +28918,6 @@
  "codex": true,
  "verkauft_am": {
   "FDfxBRSc3MraBGcGmkHgfkvwHTUDMEA2hRV2cRNbpeg": 1790800324.1049767,
-  "9UtaRjir5Q4HRG8d8Z8F7jRgHGLBBwp7PR4rgBnoyr3z": 1790724109.150569,
-  "DXrrBJMjK3xAV7YvuWAg42aeJHck3GmJmcN78HfDpump": 1790733424.1395652,
-  "EdYKmD6gwazdMQBeadHpSuSeTpjtnbxkpfXCax3Lpump": 1790741838.3125627,
-  "4zfwqBtYpDjdiocYL91bc4h2qoeuD13MwgbiZWbECPTE": 1790743938.7614083,
   "HGN8K3x5ZLfYNjvE8b1hCqqu7RwupuKU6EkEhemzpump": 1790746324.0905566,
   "AD7cjPhebfrtXSNmBRs6rxnawF87zCeUE2Mxc4ZmWmrH": 1790754720.8311436,
   "J47Jmw8ndwu6Vt6ZubD9C9VUVHi6uWsBE2XPsEjmpump": 1790774525.7037435,
@@ -29005,6 +29005,7 @@
   "26uqr1EAd5o9czpp3CxWGRPBgzya2733WC7faQX4mqNA": 1791311538.9629557,
   "26ZixeXtGBQe3DBrN4448oZaY5rnhwPrZNhAjZPopump": 1791313626.904615,
   "GvZ9UXZm8U14uZNi7hBN5cY2iUta7stArZE486yHe2nA": 1791322348.1594265,
-  "G8G5QMuo9Ro4vRdapHH2WhHxhyVR2gf9cB9sps78F7w3": 1791326252.20741
+  "G8G5QMuo9Ro4vRdapHH2WhHxhyVR2gf9cB9sps78F7w3": 1791326252.20741,
+  "GyWkSn2ah7dqLyPeZAjEZmfxuU2H4nwfGvgJhfYDVegn": 1791350857.7530107
  }
 }
