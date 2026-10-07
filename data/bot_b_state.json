@@ -1,5 +1,5 @@
 {
- "cash": 188.0854770000001,
+ "cash": 138.0654770000001,
  "positions": {
   "5tCju6YNxHq5zrA6tGndr6F7TK42mpUFmeE31cSFpump": {
    "sym": "swordcat",
@@ -8,8 +8,8 @@
    "opened": "2026-10-04T22:46:45Z",
    "peak": 0.004887,
    "entry": 0.0018124251616424172,
-   "cur_price": 0.002003,
-   "mark": 0.002003,
+   "cur_price": 0.002088,
+   "mark": 0.002088,
    "tp0": true
   },
   "9XKzy4KahcZaGJPJtz1PtqGPB3CiseoBrx7TcQhEpump": {
@@ -19,8 +19,8 @@
    "opened": "2026-10-06T21:51:44Z",
    "peak": 0.003492,
    "entry": 0.0014174783957938517,
-   "cur_price": 0.002014,
-   "mark": 0.002014,
+   "cur_price": 0.00187,
+   "mark": 0.00187,
    "tp0": true
   },
   "HbPDWSqu8hpVMX6gMjwMDGe5rVgicWo3Qh3Jaojypump": {
@@ -30,8 +30,18 @@
    "opened": "2026-10-07T02:06:59Z",
    "peak": 0.0003536,
    "entry": 0.0002651876337450656,
-   "cur_price": 0.000326,
-   "mark": 0.000326
+   "cur_price": 0.0003138,
+   "mark": 0.0003138
+  },
+  "CscZaq5twomhUkvCY8Jdd1tge32L4Yj9FbkFFEZQpump": {
+   "sym": "PLAGUE",
+   "qty": 72227.146672,
+   "cost": 50.02,
+   "opened": "2026-10-07T17:37:09Z",
+   "peak": 0.0006806,
+   "entry": 0.0006925373949375609,
+   "cur_price": 0.0006806,
+   "mark": 0.0006806
   }
  },
  "trades": [
@@ -526,6 +536,18 @@
    "slip": 0.0,
    "quote": "jup",
    "reason": "tp0"
+  },
+  {
+   "t": "2026-10-07T17:37:09Z",
+   "side": "buy",
+   "sym": "PLAGUE",
+   "addr": "CscZaq5twomhUkvCY8Jdd1tge32L4Yj9FbkFFEZQpump",
+   "price": 0.0006806,
+   "fill": 0.000692537395,
+   "usd": 50.02,
+   "slip": 0.0087,
+   "quote": "jup",
+   "reason": "screener pump.fun"
   }
  ],
  "equity": [
@@ -14540,6 +14562,10 @@
   {
    "t": "2026-10-07T17:32:15Z",
    "v": 344.34
+  },
+  {
+   "t": "2026-10-07T17:37:16Z",
+   "v": 339.12
   }
  ],
  "started": "2026-09-25T13:40:52Z",

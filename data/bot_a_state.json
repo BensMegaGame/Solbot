@@ -1,5 +1,5 @@
 {
- "cash": 87.59247094111228,
+ "cash": 37.57247094111228,
  "positions": {
   "Cy5TzDyJ4mo6MBAbpwUcAgdfNiXYKrYUPrvhPGVU6XMR": {
    "sym": "XMR20",
@@ -8,8 +8,8 @@
    "opened": "2026-10-03T21:10:12Z",
    "peak": 0.0004308,
    "entry": 0.0002665955138867013,
-   "cur_price": 0.0002933,
-   "mark": 0.0002933
+   "cur_price": 0.0002905,
+   "mark": 0.0002905
   },
   "6zzzG49KX5nksnqfogs31dwoMYSHaJXkropKbv1QZVga": {
    "sym": "Malfoid",
@@ -18,8 +18,8 @@
    "opened": "2026-10-04T00:50:22Z",
    "peak": 0.0003823,
    "entry": 0.00013960079076808763,
-   "cur_price": 0.0002143,
-   "mark": 0.0002143,
+   "cur_price": 0.0002108,
+   "mark": 0.0002108,
    "tp0": true
   },
   "5tCju6YNxHq5zrA6tGndr6F7TK42mpUFmeE31cSFpump": {
@@ -29,8 +29,8 @@
    "opened": "2026-10-05T18:11:01Z",
    "peak": 0.004946,
    "entry": 0.002362839836173397,
-   "cur_price": 0.002003,
-   "mark": 0.002003,
+   "cur_price": 0.002068,
+   "mark": 0.002068,
    "tp0": true
   },
   "HbPDWSqu8hpVMX6gMjwMDGe5rVgicWo3Qh3Jaojypump": {
@@ -40,8 +40,8 @@
    "opened": "2026-10-07T08:05:50Z",
    "peak": 0.0003453,
    "entry": 0.00025164606873002916,
-   "cur_price": 0.0003176,
-   "mark": 0.0003176
+   "cur_price": 0.0003166,
+   "mark": 0.0003166
   },
   "F5WvFdG9sCfhv3bVYAMJNWiwpx5e3X2uvpXDtLtdsDJs": {
    "sym": "Ash",
@@ -50,8 +50,18 @@
    "opened": "2026-10-07T17:20:47Z",
    "peak": 0.0002063,
    "entry": 0.0002087590677052117,
-   "cur_price": 0.0002024,
-   "mark": 0.0002024
+   "cur_price": 0.0002028,
+   "mark": 0.0002028
+  },
+  "CscZaq5twomhUkvCY8Jdd1tge32L4Yj9FbkFFEZQpump": {
+   "sym": "PLAGUE",
+   "qty": 72032.804746,
+   "cost": 50.02,
+   "opened": "2026-10-07T17:36:09Z",
+   "peak": 0.0006991,
+   "entry": 0.0006944058360128984,
+   "cur_price": 0.0006991,
+   "mark": 0.0006991
   }
  },
  "trades": [
@@ -3148,13 +3158,21 @@
    "slip": 0.0138,
    "quote": "jup",
    "reason": "screener"
+  },
+  {
+   "t": "2026-10-07T17:36:09Z",
+   "side": "buy",
+   "sym": "PLAGUE",
+   "addr": "CscZaq5twomhUkvCY8Jdd1tge32L4Yj9FbkFFEZQpump",
+   "price": 0.0006991,
+   "fill": 0.000694405836,
+   "usd": 50.02,
+   "slip": 0.0028,
+   "quote": "jup",
+   "reason": "screener"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-20T08:55:54Z",
-   "v": 603.3
-  },
   {
    "t": "2026-09-20T09:00:53Z",
    "v": 601.36
@@ -23150,6 +23168,10 @@
   {
    "t": "2026-10-07T17:31:18Z",
    "v": 343.64
+  },
+  {
+   "t": "2026-10-07T17:36:18Z",
+   "v": 343.44
   }
  ],
  "started": "2026-09-10T17:17:16Z",
