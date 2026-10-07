@@ -1,5 +1,5 @@
 {
- "cash": 76.35782066074921,
+ "cash": 388.65662066074924,
  "positions": {
   "BPxxfRCXkUVhig4HS1Lh7kZqV6SPJhzfEk4x6fVBjPCy": {
    "sym": "BP",
@@ -10,16 +10,6 @@
    "entry": 1.0802421522269203,
    "mark": 1.1,
    "cur_price": 1.1
-  },
-  "KENJSUYLASHUMfHyy5o4Hp2FdNqZg1AsUPhfH2kYvEP": {
-   "sym": "GRIFFAIN",
-   "qty": 18307.741289,
-   "cost": 302.44753960700217,
-   "opened": "2026-10-07T13:57:44Z",
-   "peak": 0.01811,
-   "entry": 0.01652019956108536,
-   "mark": 0.01704,
-   "cur_price": 0.01704
   }
  },
  "trades": [
@@ -829,13 +819,24 @@
    "slip": 0.0046,
    "quote": "jup",
    "reason": "dip 24h -17% (SOL -4%) 1h +5.3%"
+  },
+  {
+   "t": "2026-10-07T16:07:36Z",
+   "side": "sell",
+   "sym": "GRIFFAIN",
+   "addr": "KENJSUYLASHUMfHyy5o4Hp2FdNqZg1AsUPhfH2kYvEP",
+   "price": 0.01698,
+   "usd": 312.3,
+   "pnl": 9.85,
+   "peak_x": 1.096,
+   "held_h": 2.2,
+   "frac": 1.0,
+   "slip": 0.0042,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-20T07:26:46Z",
-   "v": 666.67
-  },
   {
    "t": "2026-09-20T07:31:46Z",
    "v": 666.24
@@ -20831,13 +20832,17 @@
   {
    "t": "2026-10-07T16:02:33Z",
    "v": 703.96
+  },
+  {
+   "t": "2026-10-07T16:07:36Z",
+   "v": 704.29
   }
  ],
  "started": "2026-09-16T16:55:59Z",
  "strategy": "largecap_dip",
  "universe_n": 71,
  "coverage": {
-  "t": "2026-10-07T16:02:33Z",
+  "t": "2026-10-07T16:07:36Z",
   "kurse": 71,
   "von": 71,
   "sol": true
@@ -20847,6 +20852,7 @@
   "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump": 1791074838.837212,
   "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx": 1791166062.1501272,
   "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP": 1791231712.0463984,
-  "KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS": 1791242863.5933638
+  "KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS": 1791242863.5933638,
+  "KENJSUYLASHUMfHyy5o4Hp2FdNqZg1AsUPhfH2kYvEP": 1791389256.9326508
  }
 }
