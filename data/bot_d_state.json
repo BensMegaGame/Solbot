@@ -1,5 +1,5 @@
 {
- "cash": 9.471439000001038,
+ "cash": 14.498133000001037,
  "positions": {
   "EC7JXhzfSDe9BhU1tnfyzvv1eUUaTQQi4TTnrSHKsaET": {
    "sym": "BLU",
@@ -9,8 +9,8 @@
    "peak": 0.0001089,
    "entry": 6.319759631261014e-05,
    "liq0": 23076.87,
-   "cur_price": 4.818e-05,
-   "mark": 4.818e-05
+   "cur_price": 4.777e-05,
+   "mark": 4.777e-05
   },
   "EhLyndhdN7K1VQokfGifFeedMztb73k57WS7Xq9mxsad": {
    "sym": "AGENCYBOOK",
@@ -20,21 +20,8 @@
    "peak": 0.0001205,
    "entry": 6.624415833926531e-05,
    "liq0": 21605.56,
-   "cur_price": 6.227e-05,
-   "mark": 6.227e-05
-  },
-  "7bRUmUp3pQiadAVoNiENDM2npTBfaD2ViuQdrE1bCqFF": {
-   "sym": "COW",
-   "qty": 308186.722129,
-   "cost": 15.02,
-   "opened": "2026-10-07T08:02:36Z",
-   "peak": 4.817e-05,
-   "entry": 4.8736687603669595e-05,
-   "liq0": 21542.22,
-   "cur_price": 2.928e-05,
-   "mark": 2.928e-05,
-   "no_px_since": "2026-10-07T11:27:29Z",
-   "no_quote_since": "2026-10-07T11:27:39Z"
+   "cur_price": 6.222e-05,
+   "mark": 6.222e-05
   }
  },
  "trades": [
@@ -8937,13 +8924,24 @@
    "slip": 0.0598,
    "quote": "jup",
    "reason": "longshot"
+  },
+  {
+   "t": "2026-10-07T11:52:20Z",
+   "side": "sell",
+   "sym": "COW",
+   "addr": "7bRUmUp3pQiadAVoNiENDM2npTBfaD2ViuQdrE1bCqFF",
+   "price": 1.693e-05,
+   "usd": 5.03,
+   "pnl": -9.99,
+   "peak_x": 0.988,
+   "held_h": 3.8,
+   "frac": 1.0,
+   "slip": 0.0093,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-20T03:11:49Z",
-   "v": 454.57
-  },
   {
    "t": "2026-09-20T03:16:52Z",
    "v": 455.33
@@ -28939,6 +28937,10 @@
   {
    "t": "2026-10-07T11:47:24Z",
    "v": 44.06
+  },
+  {
+   "t": "2026-10-07T11:52:21Z",
+   "v": 39.96
   }
  ],
  "started": "2026-09-15T16:35:51Z",
@@ -29034,6 +29036,7 @@
   "GvZ9UXZm8U14uZNi7hBN5cY2iUta7stArZE486yHe2nA": 1791322348.1594265,
   "G8G5QMuo9Ro4vRdapHH2WhHxhyVR2gf9cB9sps78F7w3": 1791326252.20741,
   "GyWkSn2ah7dqLyPeZAjEZmfxuU2H4nwfGvgJhfYDVegn": 1791350857.7530107,
-  "C4ru2YKwoa2FCKRQzUoKzzD4jxCtw8sP4WVVo1dRpump": 1791360152.1050162
+  "C4ru2YKwoa2FCKRQzUoKzzD4jxCtw8sP4WVVo1dRpump": 1791360152.1050162,
+  "7bRUmUp3pQiadAVoNiENDM2npTBfaD2ViuQdrE1bCqFF": 1791373940.2392917
  }
 }
