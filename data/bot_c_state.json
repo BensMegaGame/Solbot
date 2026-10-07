@@ -1,5 +1,5 @@
 {
- "cash": 209.93265219156214,
+ "cash": 354.35292219156213,
  "positions": {
   "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump": {
    "sym": "MANIFEST",
@@ -8,18 +8,8 @@
    "opened": "2026-10-06T22:47:24Z",
    "peak": 0.01102,
    "entry": 0.010976877329465314,
-   "cur_price": 0.01041,
-   "mark": 0.01041
-  },
-  "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": {
-   "sym": "BATON",
-   "qty": 18224.385317,
-   "cost": 161.25853126621237,
-   "opened": "2026-10-07T21:27:17Z",
-   "peak": 0.008738,
-   "entry": 0.008848503170956763,
-   "cur_price": 0.008001,
-   "mark": 0.008001
+   "cur_price": 0.01047,
+   "mark": 0.01047
   }
  },
  "trades": [
@@ -703,6 +693,21 @@
    "slip": 0.0111,
    "quote": "jup",
    "reason": "dip 24h -12% (SOL -4%) 1h +2.3%"
+  },
+  {
+   "t": "2026-10-07T22:17:09Z",
+   "side": "sell",
+   "sym": "BATON",
+   "addr": "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump",
+   "price": 0.007945,
+   "usd": 144.42,
+   "pnl": -16.84,
+   "peak_x": 0.988,
+   "held_h": 0.8,
+   "frac": 1.0,
+   "slip": 0.0032,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -15149,6 +15154,10 @@
   {
    "t": "2026-10-07T22:12:06Z",
    "v": 523.47
+  },
+  {
+   "t": "2026-10-07T22:17:09Z",
+   "v": 523.04
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -15156,7 +15165,7 @@
  "strategy": "dip_weites_netz",
  "universe_n": 150,
  "coverage": {
-  "t": "2026-10-07T22:12:06Z",
+  "t": "2026-10-07T22:17:09Z",
   "kurse": 132,
   "von": 150,
   "ohne_pool": 150,
@@ -15167,7 +15176,7 @@
   "J8PSdNP3QewKq2Z1JJJFDMaqF7KcaiJhR7gbr5KZpump": 1791091629.0214255,
   "DtR4D9FtVoTX2569gaL837ZgrB6wNjj6tkmnX9Rdk9B2": 1790841409.378621,
   "ABt79MkRXUsoHuV2CVQT32YMXQhTparKFjmidQxgiQ6E": 1791259917.8351939,
-  "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": 1791282147.6697707,
+  "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": 1791411429.881256,
   "G7iK3prSzAA4vzcJWvsLUEsdCqzR7PnMzJV61vSdFSNW": 1791312428.467149,
   "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump": 1791315428.5320141,
   "6NwarBvDkXhByqVp2Qkq5i9XbtA2B3Bwe8SWGu9vpump": 1791327749.8368418,
