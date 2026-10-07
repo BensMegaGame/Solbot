@@ -1,5 +1,5 @@
 {
- "cash": 81.7760138768981,
+ "cash": 357.1458958768981,
  "positions": {
   "BPxxfRCXkUVhig4HS1Lh7kZqV6SPJhzfEk4x6fVBjPCy": {
    "sym": "BP",
@@ -8,18 +8,8 @@
    "opened": "2026-10-07T06:32:40Z",
    "peak": 1.12,
    "entry": 1.0802421522269203,
-   "mark": 1.096,
-   "cur_price": 1.096
-  },
-  "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx": {
-   "sym": "STONK",
-   "qty": 1762.854891345,
-   "cost": 306.88060678385114,
-   "opened": "2026-10-07T17:57:42Z",
-   "peak": 0.1769,
-   "entry": 0.17408160381806093,
-   "mark": 0.1604,
-   "cur_price": 0.1604
+   "mark": 1.091,
+   "cur_price": 1.091
   }
  },
  "trades": [
@@ -856,13 +846,24 @@
    "slip": 0.002,
    "quote": "jup",
    "reason": "dip 24h -18% (SOL -4%) 1h +0.2%"
+  },
+  {
+   "t": "2026-10-07T21:57:27Z",
+   "side": "sell",
+   "sym": "STONK",
+   "addr": "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx",
+   "price": 0.1561,
+   "usd": 275.37,
+   "pnl": -31.51,
+   "peak_x": 1.016,
+   "held_h": 4.0,
+   "frac": 1.0,
+   "slip": 0.0051,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-20T13:16:34Z",
-   "v": 665.72
-  },
   {
    "t": "2026-09-20T13:21:34Z",
    "v": 665.16
@@ -20858,13 +20859,17 @@
   {
    "t": "2026-10-07T21:52:25Z",
    "v": 679.03
+  },
+  {
+   "t": "2026-10-07T21:57:27Z",
+   "v": 670.2
   }
  ],
  "started": "2026-09-16T16:55:59Z",
  "strategy": "largecap_dip",
  "universe_n": 71,
  "coverage": {
-  "t": "2026-10-07T21:52:25Z",
+  "t": "2026-10-07T21:57:27Z",
   "kurse": 71,
   "von": 71,
   "sol": true
@@ -20872,7 +20877,7 @@
  "verkauft_am": {
   "FeR8VBqNRSUD5NtXAj2n3j1dAHkZHfyDktKuLXD4pump": 1790886716.290654,
   "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump": 1791074838.837212,
-  "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx": 1791166062.1501272,
+  "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx": 1791410247.295016,
   "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP": 1791231712.0463984,
   "KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS": 1791242863.5933638,
   "KENJSUYLASHUMfHyy5o4Hp2FdNqZg1AsUPhfH2kYvEP": 1791389256.9326508
