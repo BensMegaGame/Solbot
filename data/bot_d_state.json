@@ -1,18 +1,6 @@
 {
- "cash": 8.778473000001043,
- "positions": {
-  "F458Huat36hKjLPc7dmL4uEixBAgX7fUjxWwnUEkpump": {
-   "sym": "MASHUP",
-   "qty": 220488.419692,
-   "cost": 15.02,
-   "opened": "2026-10-07T18:37:39Z",
-   "peak": 0.0001143,
-   "entry": 6.812149146418401e-05,
-   "liq0": 24479.84,
-   "cur_price": 4.266e-05,
-   "mark": 4.266e-05
-  }
- },
+ "cash": 15.878205000001042,
+ "positions": {},
  "trades": [
   {
    "t": "2026-09-15T18:21:04Z",
@@ -8997,13 +8985,24 @@
    "slip": 0.0,
    "quote": "jup",
    "reason": "longshot"
+  },
+  {
+   "t": "2026-10-07T23:12:19Z",
+   "side": "sell",
+   "sym": "MASHUP",
+   "addr": "F458Huat36hKjLPc7dmL4uEixBAgX7fUjxWwnUEkpump",
+   "price": 3.029e-05,
+   "usd": 7.1,
+   "pnl": -7.92,
+   "peak_x": 1.678,
+   "held_h": 4.6,
+   "frac": 1.0,
+   "slip": 0.0048,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-20T14:31:37Z",
-   "v": 441.64
-  },
   {
    "t": "2026-09-20T14:36:37Z",
    "v": 435.51
@@ -28999,6 +28998,10 @@
   {
    "t": "2026-10-07T23:07:16Z",
    "v": 18.18
+  },
+  {
+   "t": "2026-10-07T23:12:20Z",
+   "v": 15.88
   }
  ],
  "started": "2026-09-15T16:35:51Z",
@@ -29006,13 +29009,6 @@
  "helius": true,
  "codex": true,
  "verkauft_am": {
-  "FDfxBRSc3MraBGcGmkHgfkvwHTUDMEA2hRV2cRNbpeg": 1790800324.1049767,
-  "EnHrbkhScpdWTCL37XyPGsCJxms2gE66gkVZUGX3UVGR": 1790793155.8090022,
-  "G6autZruJLEzYKRh84qTsbVhrTvLEbjBYdHnBQH1zitp": 1790799134.836069,
-  "Av6wmbqNiowHpmHx7J2j9mnuUcoey4fdkTkFwgVzpump": 1790800626.2878497,
-  "4o1365dbQMW9qCGtYq5uSsbFtJyG9Amy7VjcksYGpump": 1790800925.741068,
-  "8UFTUH7j2iujEw91FjfaQSLEyqwMzjrJJLSfnM3Mq5aN": 1790803923.3262813,
-  "148fJTrVybPyQqzTxNzfLQq5sxVkMfmV2cLpAyVnNCX3": 1790806336.7436426,
   "EU5WWxWBjDzfs3pvb6N7yuc6gBfo5Ltao6qfdXDiH2U3": 1790813232.8177905,
   "Bd9thw3PAeyHeBGSi4R1ARBuptpG5rM4fhB8BRWJkq1e": 1790814431.9002633,
   "ERv3fy6BgLG9MootmyQKg39fXraqYw6F3UucKgDLpump": 1790819537.5973687,
@@ -29092,6 +29088,7 @@
   "7bRUmUp3pQiadAVoNiENDM2npTBfaD2ViuQdrE1bCqFF": 1791373940.2392917,
   "EC7JXhzfSDe9BhU1tnfyzvv1eUUaTQQi4TTnrSHKsaET": 1791384752.4177961,
   "EhLyndhdN7K1VQokfGifFeedMztb73k57WS7Xq9mxsad": 1791387430.8166642,
-  "8gJvjpL68h8TzxaMf2UWNThkSCgD6WS4EATMDszLpump": 1791395852.6628745
+  "8gJvjpL68h8TzxaMf2UWNThkSCgD6WS4EATMDszLpump": 1791395852.6628745,
+  "F458Huat36hKjLPc7dmL4uEixBAgX7fUjxWwnUEkpump": 1791414739.6887403
  }
 }
