@@ -1,6 +1,18 @@
 {
- "cash": 23.798473000001042,
- "positions": {},
+ "cash": 8.778473000001043,
+ "positions": {
+  "F458Huat36hKjLPc7dmL4uEixBAgX7fUjxWwnUEkpump": {
+   "sym": "MASHUP",
+   "qty": 220488.419692,
+   "cost": 15.02,
+   "opened": "2026-10-07T18:37:39Z",
+   "peak": 7.04e-05,
+   "entry": 6.812149146418401e-05,
+   "liq0": 24479.84,
+   "cur_price": 7.04e-05,
+   "mark": 7.04e-05
+  }
+ },
  "trades": [
   {
    "t": "2026-09-15T18:21:04Z",
@@ -8973,13 +8985,21 @@
    "slip": 0.0007,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-10-07T18:37:39Z",
+   "side": "buy",
+   "sym": "MASHUP",
+   "addr": "F458Huat36hKjLPc7dmL4uEixBAgX7fUjxWwnUEkpump",
+   "price": 7.04e-05,
+   "fill": 6.8121491e-05,
+   "usd": 15.02,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "longshot"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-20T09:56:35Z",
-   "v": 398.4
-  },
   {
    "t": "2026-09-20T10:01:39Z",
    "v": 405.45
@@ -28975,6 +28995,10 @@
   {
    "t": "2026-10-07T18:32:33Z",
    "v": 23.8
+  },
+  {
+   "t": "2026-10-07T18:37:45Z",
+   "v": 24.3
   }
  ],
  "started": "2026-09-15T16:35:51Z",
