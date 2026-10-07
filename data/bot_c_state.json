@@ -1,5 +1,5 @@
 {
- "cash": 391.4391174156922,
+ "cash": 222.31783045777453,
  "positions": {
   "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump": {
    "sym": "MANIFEST",
@@ -8,8 +8,18 @@
    "opened": "2026-10-06T22:47:24Z",
    "peak": 0.01102,
    "entry": 0.010976877329465314,
-   "cur_price": 0.01069,
-   "mark": 0.01069
+   "cur_price": 0.01071,
+   "mark": 0.01071
+  },
+  "MukLDtJ8Cx9DxLbeyLRSWPSposTMWuwHANbuaudpump": {
+   "sym": "OTC",
+   "qty": 19028.653348,
+   "cost": 169.12128695791765,
+   "opened": "2026-10-07T04:32:22Z",
+   "peak": 0.00881,
+   "entry": 0.008887717058322106,
+   "cur_price": 0.00881,
+   "mark": 0.00881
   }
  },
  "trades": [
@@ -654,6 +664,18 @@
    "slip": 0.0086,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-10-07T04:32:22Z",
+   "side": "buy",
+   "sym": "OTC",
+   "addr": "MukLDtJ8Cx9DxLbeyLRSWPSposTMWuwHANbuaudpump",
+   "price": 0.00881,
+   "fill": 0.008887717058,
+   "usd": 169.12,
+   "slip": 0.0085,
+   "quote": "jup",
+   "reason": "dip 24h -15% (SOL -2%) 1h -0.0%"
   }
  ],
  "equity": [
@@ -14248,6 +14270,10 @@
   {
    "t": "2026-10-07T04:27:17Z",
    "v": 563.67
+  },
+  {
+   "t": "2026-10-07T04:32:22Z",
+   "v": 562.51
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -14255,12 +14281,12 @@
  "strategy": "dip_weites_netz",
  "universe_n": 153,
  "coverage": {
-  "t": "2026-10-07T04:27:17Z",
+  "t": "2026-10-07T04:32:22Z",
   "kurse": 133,
   "von": 153,
   "ohne_pool": 27,
   "sol": true,
-  "kandidaten": 0
+  "kandidaten": 1
  },
  "verkauft_am": {
   "J8PSdNP3QewKq2Z1JJJFDMaqF7KcaiJhR7gbr5KZpump": 1791091629.0214255,
