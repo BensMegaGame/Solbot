@@ -9,7 +9,8 @@
    "peak": 1.12,
    "entry": 1.0802421522269203,
    "mark": 1.085,
-   "cur_price": 1.085
+   "cur_price": 1.085,
+   "no_quote_since": "2026-10-07T20:01:47Z"
   },
   "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx": {
    "sym": "STONK",
@@ -19,7 +20,8 @@
    "peak": 0.1769,
    "entry": 0.17408160381806093,
    "mark": 0.1761,
-   "cur_price": 0.1761
+   "cur_price": 0.1761,
+   "no_quote_since": "2026-10-07T20:01:47Z"
   }
  },
  "trades": [
@@ -859,10 +861,6 @@
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-20T11:21:51Z",
-   "v": 663.65
-  },
   {
    "t": "2026-09-20T11:26:46Z",
    "v": 663.65
@@ -20858,16 +20856,20 @@
   {
    "t": "2026-10-07T19:57:54Z",
    "v": 703.55
+  },
+  {
+   "t": "2026-10-07T20:01:47Z",
+   "v": 703.55
   }
  ],
  "started": "2026-09-16T16:55:59Z",
  "strategy": "largecap_dip",
  "universe_n": 71,
  "coverage": {
-  "t": "2026-10-07T19:57:54Z",
-  "kurse": 61,
+  "t": "2026-10-07T20:01:47Z",
+  "kurse": 2,
   "von": 71,
-  "sol": true
+  "sol": false
  },
  "verkauft_am": {
   "FeR8VBqNRSUD5NtXAj2n3j1dAHkZHfyDktKuLXD4pump": 1790886716.290654,
