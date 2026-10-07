@@ -1,17 +1,6 @@
 {
- "cash": 8.083912000001039,
+ "cash": 16.52532700000104,
  "positions": {
-  "EhLyndhdN7K1VQokfGifFeedMztb73k57WS7Xq9mxsad": {
-   "sym": "AGENCYBOOK",
-   "qty": 226736.973894,
-   "cost": 15.02,
-   "opened": "2026-10-06T22:57:37Z",
-   "peak": 0.0001205,
-   "entry": 6.624415833926531e-05,
-   "liq0": 21605.56,
-   "cur_price": 4.052e-05,
-   "mark": 4.052e-05
-  },
   "8gJvjpL68h8TzxaMf2UWNThkSCgD6WS4EATMDszLpump": {
    "sym": "DEXPAD",
    "qty": 293822.261658,
@@ -20,8 +9,8 @@
    "peak": 5.011e-05,
    "entry": 5.111933968258271e-05,
    "liq0": 19277.68,
-   "cur_price": 4.424e-05,
-   "mark": 4.424e-05
+   "cur_price": 4.291e-05,
+   "mark": 4.291e-05
   }
  },
  "trades": [
@@ -8966,13 +8955,24 @@
    "slip": 0.0162,
    "quote": "jup",
    "reason": "longshot"
+  },
+  {
+   "t": "2026-10-07T15:37:10Z",
+   "side": "sell",
+   "sym": "AGENCYBOOK",
+   "addr": "EhLyndhdN7K1VQokfGifFeedMztb73k57WS7Xq9mxsad",
+   "price": 3.741e-05,
+   "usd": 8.44,
+   "pnl": -6.58,
+   "peak_x": 1.819,
+   "held_h": 16.7,
+   "frac": 1.0,
+   "slip": 0.003,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-20T06:56:41Z",
-   "v": 401.0
-  },
   {
    "t": "2026-09-20T07:01:44Z",
    "v": 409.4
@@ -28968,6 +28968,10 @@
   {
    "t": "2026-10-07T15:32:18Z",
    "v": 30.27
+  },
+  {
+   "t": "2026-10-07T15:37:15Z",
+   "v": 29.13
   }
  ],
  "started": "2026-09-15T16:35:51Z",
@@ -29064,6 +29068,7 @@
   "GyWkSn2ah7dqLyPeZAjEZmfxuU2H4nwfGvgJhfYDVegn": 1791350857.7530107,
   "C4ru2YKwoa2FCKRQzUoKzzD4jxCtw8sP4WVVo1dRpump": 1791360152.1050162,
   "7bRUmUp3pQiadAVoNiENDM2npTBfaD2ViuQdrE1bCqFF": 1791373940.2392917,
-  "EC7JXhzfSDe9BhU1tnfyzvv1eUUaTQQi4TTnrSHKsaET": 1791384752.4177961
+  "EC7JXhzfSDe9BhU1tnfyzvv1eUUaTQQi4TTnrSHKsaET": 1791384752.4177961,
+  "EhLyndhdN7K1VQokfGifFeedMztb73k57WS7Xq9mxsad": 1791387430.8166642
  }
 }
