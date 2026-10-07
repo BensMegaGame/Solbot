@@ -20,8 +20,8 @@
    "peak": 0.04197,
    "entry": 0.04078398934594881,
    "pair": "3ndjN1nJVUKGrJBc1hhVpER6kWTZKHdyDrPyCJyX3CXK",
-   "cur_price": 0.038,
-   "mark": 0.038
+   "cur_price": 0.03802,
+   "mark": 0.03802
   },
   "Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump": {
    "sym": "CATE",
@@ -31,8 +31,8 @@
    "peak": 0.06995,
    "entry": 0.060737758893799225,
    "pair": "HMzvsEEmtzHhvZNw9uwbaG85HCTmFnkbhzUx16cy7ca3",
-   "cur_price": 0.05845,
-   "mark": 0.05845
+   "cur_price": 0.05821,
+   "mark": 0.05821
   },
   "BPxxfRCXkUVhig4HS1Lh7kZqV6SPJhzfEk4x6fVBjPCy": {
    "sym": "BP",
@@ -42,19 +42,19 @@
    "peak": 1.12,
    "entry": 1.0259289796719882,
    "pair": "6qz7THwQvcjF3HyDGLuKaLBUk6EyJKeZXZMWLAeiwfjd",
-   "cur_price": 1.074,
-   "mark": 1.074
+   "cur_price": 1.075,
+   "mark": 1.075
   },
   "MukLDtJ8Cx9DxLbeyLRSWPSposTMWuwHANbuaudpump": {
    "sym": "OTC",
    "qty": 13427.57168,
    "cost": 105.93714142747434,
    "opened": "2026-10-07T12:07:33Z",
-   "peak": 0.00798,
+   "peak": 0.008153,
    "entry": 0.007889523433731865,
    "pair": "DA4pM4xSDY4M9V4CgAKKBVH1pw1yscTQQa5nEkGHuKpt",
-   "cur_price": 0.007965,
-   "mark": 0.007965
+   "cur_price": 0.008153,
+   "mark": 0.008153
   }
  },
  "trades": [
@@ -14516,6 +14516,10 @@
   {
    "t": "2026-10-07T12:47:30Z",
    "v": 525.52
+  },
+  {
+   "t": "2026-10-07T12:52:32Z",
+   "v": 527.8
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -14530,7 +14534,7 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-10-07T12:47:30Z",
+  "t": "2026-10-07T12:52:32Z",
   "virtuell": 4,
   "neu": 0,
   "gestoppt": false
