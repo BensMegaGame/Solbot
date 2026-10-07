@@ -1,5 +1,5 @@
 {
- "cash": 222.31783045777453,
+ "cash": 371.1911834577745,
  "positions": {
   "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump": {
    "sym": "MANIFEST",
@@ -10,16 +10,6 @@
    "entry": 0.010976877329465314,
    "cur_price": 0.01061,
    "mark": 0.01061
-  },
-  "MukLDtJ8Cx9DxLbeyLRSWPSposTMWuwHANbuaudpump": {
-   "sym": "OTC",
-   "qty": 19028.653348,
-   "cost": 169.12128695791765,
-   "opened": "2026-10-07T04:32:22Z",
-   "peak": 0.009273,
-   "entry": 0.008887717058322106,
-   "cur_price": 0.008088,
-   "mark": 0.008088
   }
  },
  "trades": [
@@ -676,6 +666,21 @@
    "slip": 0.0085,
    "quote": "jup",
    "reason": "dip 24h -15% (SOL -2%) 1h -0.0%"
+  },
+  {
+   "t": "2026-10-07T12:07:15Z",
+   "side": "sell",
+   "sym": "OTC",
+   "addr": "MukLDtJ8Cx9DxLbeyLRSWPSposTMWuwHANbuaudpump",
+   "price": 0.007811,
+   "usd": 148.87,
+   "pnl": -20.25,
+   "peak_x": 1.043,
+   "held_h": 7.6,
+   "frac": 1.0,
+   "slip": 0.003,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -14634,6 +14639,10 @@
   {
    "t": "2026-10-07T12:02:16Z",
    "v": 547.16
+  },
+  {
+   "t": "2026-10-07T12:07:15Z",
+   "v": 542.13
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -14641,7 +14650,7 @@
  "strategy": "dip_weites_netz",
  "universe_n": 150,
  "coverage": {
-  "t": "2026-10-07T12:02:16Z",
+  "t": "2026-10-07T12:07:15Z",
   "kurse": 133,
   "von": 151,
   "ohne_pool": 26,
@@ -14650,13 +14659,13 @@
  },
  "verkauft_am": {
   "J8PSdNP3QewKq2Z1JJJFDMaqF7KcaiJhR7gbr5KZpump": 1791091629.0214255,
-  "69LjZUUzxj3Cb3Fxeo1X4QpYEQTboApkhXTysPpbpump": 1790743923.13752,
   "DtR4D9FtVoTX2569gaL837ZgrB6wNjj6tkmnX9Rdk9B2": 1790841409.378621,
   "ABt79MkRXUsoHuV2CVQT32YMXQhTparKFjmidQxgiQ6E": 1791259917.8351939,
   "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": 1791282147.6697707,
   "G7iK3prSzAA4vzcJWvsLUEsdCqzR7PnMzJV61vSdFSNW": 1791312428.467149,
   "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump": 1791315428.5320141,
   "6NwarBvDkXhByqVp2Qkq5i9XbtA2B3Bwe8SWGu9vpump": 1791327749.8368418,
-  "C1mBfBoDkwWfd6uTFZp62ARHLjeVp3bDpCDMfMZtPngE": 1791329545.182054
+  "C1mBfBoDkwWfd6uTFZp62ARHLjeVp3bDpCDMfMZtPngE": 1791329545.182054,
+  "MukLDtJ8Cx9DxLbeyLRSWPSposTMWuwHANbuaudpump": 1791374835.433693
  }
 }
