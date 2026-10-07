@@ -1,18 +1,6 @@
 {
- "cash": 16.52532700000104,
- "positions": {
-  "8gJvjpL68h8TzxaMf2UWNThkSCgD6WS4EATMDszLpump": {
-   "sym": "DEXPAD",
-   "qty": 293822.261658,
-   "cost": 15.02,
-   "opened": "2026-10-07T14:52:36Z",
-   "peak": 6.504e-05,
-   "entry": 5.111933968258271e-05,
-   "liq0": 19277.68,
-   "cur_price": 3.332e-05,
-   "mark": 3.332e-05
-  }
- },
+ "cash": 23.798473000001042,
+ "positions": {},
  "trades": [
   {
    "t": "2026-09-15T18:21:04Z",
@@ -8970,13 +8958,24 @@
    "slip": 0.003,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-10-07T17:57:32Z",
+   "side": "sell",
+   "sym": "DEXPAD",
+   "addr": "8gJvjpL68h8TzxaMf2UWNThkSCgD6WS4EATMDszLpump",
+   "price": 2.608e-05,
+   "usd": 7.27,
+   "pnl": -7.75,
+   "peak_x": 1.272,
+   "held_h": 3.1,
+   "frac": 1.0,
+   "slip": 0.0007,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-20T09:16:42Z",
-   "v": 400.35
-  },
   {
    "t": "2026-09-20T09:21:37Z",
    "v": 407.43
@@ -28972,6 +28971,10 @@
   {
    "t": "2026-10-07T17:52:32Z",
    "v": 26.32
+  },
+  {
+   "t": "2026-10-07T17:57:33Z",
+   "v": 23.8
   }
  ],
  "started": "2026-09-15T16:35:51Z",
@@ -28980,11 +28983,6 @@
  "codex": true,
  "verkauft_am": {
   "FDfxBRSc3MraBGcGmkHgfkvwHTUDMEA2hRV2cRNbpeg": 1790800324.1049767,
-  "5NhN6zzDkzwXFGPFqtpTopV4ttBeZ6CWy1oRL9Rkpump": 1790784124.602823,
-  "BHdfzHB5NHU4wfF7P46cJkA4PogmHYfnp51ijLSgpHa4": 1790785325.9256737,
-  "G4hRkB6Cbc2C9VAwdVCP9tKp2PLBdxiNkwEpiYHbpump": 1790788019.361267,
-  "rsE4qbZ6Decdu1stnoHnC7QrNtqjuzuAuD9xnNGpump": 1790790721.7481341,
-  "5iqjhP5ig6JWdXQf6hYAwojZeMf11pTCvH87gCQtpump": 1790791028.7768404,
   "EnHrbkhScpdWTCL37XyPGsCJxms2gE66gkVZUGX3UVGR": 1790793155.8090022,
   "G6autZruJLEzYKRh84qTsbVhrTvLEbjBYdHnBQH1zitp": 1790799134.836069,
   "Av6wmbqNiowHpmHx7J2j9mnuUcoey4fdkTkFwgVzpump": 1790800626.2878497,
@@ -29069,6 +29067,7 @@
   "C4ru2YKwoa2FCKRQzUoKzzD4jxCtw8sP4WVVo1dRpump": 1791360152.1050162,
   "7bRUmUp3pQiadAVoNiENDM2npTBfaD2ViuQdrE1bCqFF": 1791373940.2392917,
   "EC7JXhzfSDe9BhU1tnfyzvv1eUUaTQQi4TTnrSHKsaET": 1791384752.4177961,
-  "EhLyndhdN7K1VQokfGifFeedMztb73k57WS7Xq9mxsad": 1791387430.8166642
+  "EhLyndhdN7K1VQokfGifFeedMztb73k57WS7Xq9mxsad": 1791387430.8166642,
+  "8gJvjpL68h8TzxaMf2UWNThkSCgD6WS4EATMDszLpump": 1791395852.6628745
  }
 }
