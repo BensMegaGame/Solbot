@@ -1,5 +1,5 @@
 {
- "cash": 53.40073694111234,
+ "cash": 84.29068794111231,
  "positions": {
   "Cy5TzDyJ4mo6MBAbpwUcAgdfNiXYKrYUPrvhPGVU6XMR": {
    "sym": "XMR20",
@@ -8,8 +8,8 @@
    "opened": "2026-10-03T21:10:12Z",
    "peak": 0.0004308,
    "entry": 0.0002665955138867013,
-   "cur_price": 0.0002036,
-   "mark": 0.0002036
+   "cur_price": 0.0002315,
+   "mark": 0.0002315
   },
   "6zzzG49KX5nksnqfogs31dwoMYSHaJXkropKbv1QZVga": {
    "sym": "Malfoid",
@@ -29,30 +29,31 @@
    "opened": "2026-10-05T18:11:01Z",
    "peak": 0.004946,
    "entry": 0.002362839836173397,
-   "cur_price": 0.002075,
-   "mark": 0.002075,
+   "cur_price": 0.00211,
+   "mark": 0.00211,
    "tp0": true
   },
   "6VsnbKz6erJRTPiiD34Msq7eWmmgZHDnh4Bxan4MpGjm": {
    "sym": "SOUVENIR",
-   "qty": 213535.55011199997,
-   "cost": 37.515,
+   "qty": 106767.77505599998,
+   "cost": 18.7575,
    "opened": "2026-10-05T21:50:33Z",
-   "peak": 0.0004926,
+   "peak": 0.0005283,
    "entry": 0.00017568503221277807,
-   "cur_price": 0.0002911,
-   "mark": 0.0002911,
-   "tp0": true
+   "cur_price": 0.0005283,
+   "mark": 0.0005283,
+   "tp0": true,
+   "tp1": true
   },
-  "GDeKVeV3cs6UCTRDmHqZHugBmUbLLRW7hi9P91XXeLNT": {
-   "sym": "USEFUL",
-   "qty": 306015.842655,
+  "HbPDWSqu8hpVMX6gMjwMDGe5rVgicWo3Qh3Jaojypump": {
+   "sym": "Frank",
+   "qty": 198771.235539,
    "cost": 50.02,
-   "opened": "2026-10-06T02:15:37Z",
-   "peak": 0.0001748,
-   "entry": 0.00016345558963884162,
-   "cur_price": 8.345e-05,
-   "mark": 8.345e-05
+   "opened": "2026-10-07T08:05:50Z",
+   "peak": 0.0002491,
+   "entry": 0.00025164606873002916,
+   "cur_price": 0.0002491,
+   "mark": 0.0002491
   }
  },
  "trades": [
@@ -3080,13 +3081,51 @@
    "slip": 0.046,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-10-07T08:05:06Z",
+   "side": "sell",
+   "sym": "SOUVENIR",
+   "addr": "6VsnbKz6erJRTPiiD34Msq7eWmmgZHDnh4Bxan4MpGjm",
+   "price": 0.0005283,
+   "usd": 57.29,
+   "pnl": 38.54,
+   "peak_x": 3.007,
+   "held_h": 34.2,
+   "frac": 0.5,
+   "slip": 0.0357,
+   "quote": "jup",
+   "reason": "tp1"
+  },
+  {
+   "t": "2026-10-07T08:05:07Z",
+   "side": "sell",
+   "sym": "USEFUL",
+   "addr": "GDeKVeV3cs6UCTRDmHqZHugBmUbLLRW7hi9P91XXeLNT",
+   "price": 8.035e-05,
+   "usd": 23.62,
+   "pnl": -26.4,
+   "peak_x": 1.069,
+   "held_h": 29.8,
+   "frac": 1.0,
+   "slip": 0.0497,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-10-07T08:05:50Z",
+   "side": "buy",
+   "sym": "Frank",
+   "addr": "HbPDWSqu8hpVMX6gMjwMDGe5rVgicWo3Qh3Jaojypump",
+   "price": 0.0002491,
+   "fill": 0.000251646069,
+   "usd": 50.02,
+   "slip": 0.0242,
+   "quote": "jup",
+   "reason": "screener"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-19T23:25:54Z",
-   "v": 621.66
-  },
   {
    "t": "2026-09-19T23:30:49Z",
    "v": 615.02
@@ -23082,6 +23121,10 @@
   {
    "t": "2026-10-07T08:01:17Z",
    "v": 266.77
+  },
+  {
+   "t": "2026-10-07T08:06:19Z",
+   "v": 321.67
   }
  ],
  "started": "2026-09-10T17:17:16Z",
@@ -23103,6 +23146,7 @@
   "3iUTyNYW6xKv5kZUjtbrEDTsuJTrSVwvB3bQtxkLpump": 1791220504.17942,
   "H4KUxsEgCp2yDpFvyDuGM5k6XevSKKrrKUxZ3Zr6nyJc": 1791252902.5468917,
   "Bd9thw3PAeyHeBGSi4R1ARBuptpG5rM4fhB8BRWJkq1e": 1791303002.590002,
-  "3sL58KKh2QdNSfN9VRz8bHGGU5zStdfManVHCTkhpump": 1791356402.5160732
+  "3sL58KKh2QdNSfN9VRz8bHGGU5zStdfManVHCTkhpump": 1791356402.5160732,
+  "GDeKVeV3cs6UCTRDmHqZHugBmUbLLRW7hi9P91XXeLNT": 1791360307.7108133
  }
 }
