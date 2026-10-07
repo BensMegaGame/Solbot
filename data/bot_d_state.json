@@ -1,17 +1,6 @@
 {
- "cash": 14.498133000001037,
+ "cash": 8.083912000001039,
  "positions": {
-  "EC7JXhzfSDe9BhU1tnfyzvv1eUUaTQQi4TTnrSHKsaET": {
-   "sym": "BLU",
-   "qty": 237667.267054,
-   "cost": 15.02,
-   "opened": "2026-10-06T21:32:30Z",
-   "peak": 0.0001089,
-   "entry": 6.319759631261014e-05,
-   "liq0": 23076.87,
-   "cur_price": 4.008e-05,
-   "mark": 4.008e-05
-  },
   "EhLyndhdN7K1VQokfGifFeedMztb73k57WS7Xq9mxsad": {
    "sym": "AGENCYBOOK",
    "qty": 226736.973894,
@@ -20,8 +9,19 @@
    "peak": 0.0001205,
    "entry": 6.624415833926531e-05,
    "liq0": 21605.56,
-   "cur_price": 4.825e-05,
-   "mark": 4.825e-05
+   "cur_price": 4.96e-05,
+   "mark": 4.96e-05
+  },
+  "8gJvjpL68h8TzxaMf2UWNThkSCgD6WS4EATMDszLpump": {
+   "sym": "DEXPAD",
+   "qty": 293822.261658,
+   "cost": 15.02,
+   "opened": "2026-10-07T14:52:36Z",
+   "peak": 4.998e-05,
+   "entry": 5.111933968258271e-05,
+   "liq0": 19277.68,
+   "cur_price": 4.998e-05,
+   "mark": 4.998e-05
   }
  },
  "trades": [
@@ -8939,13 +8939,36 @@
    "slip": 0.0093,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-10-07T14:52:32Z",
+   "side": "sell",
+   "sym": "BLU",
+   "addr": "EC7JXhzfSDe9BhU1tnfyzvv1eUUaTQQi4TTnrSHKsaET",
+   "price": 3.711e-05,
+   "usd": 8.61,
+   "pnl": -6.41,
+   "peak_x": 1.723,
+   "held_h": 17.3,
+   "frac": 1.0,
+   "slip": 0.0214,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-10-07T14:52:36Z",
+   "side": "buy",
+   "sym": "DEXPAD",
+   "addr": "8gJvjpL68h8TzxaMf2UWNThkSCgD6WS4EATMDszLpump",
+   "price": 4.998e-05,
+   "fill": 5.111934e-05,
+   "usd": 15.02,
+   "slip": 0.0162,
+   "quote": "jup",
+   "reason": "longshot"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-20T06:11:42Z",
-   "v": 413.69
-  },
   {
    "t": "2026-09-20T06:16:42Z",
    "v": 408.54
@@ -28941,6 +28964,10 @@
   {
    "t": "2026-10-07T14:47:36Z",
    "v": 34.96
+  },
+  {
+   "t": "2026-10-07T14:52:42Z",
+   "v": 34.02
   }
  ],
  "started": "2026-09-15T16:35:51Z",
@@ -28949,7 +28976,6 @@
  "codex": true,
  "verkauft_am": {
   "FDfxBRSc3MraBGcGmkHgfkvwHTUDMEA2hRV2cRNbpeg": 1790800324.1049767,
-  "J47Jmw8ndwu6Vt6ZubD9C9VUVHi6uWsBE2XPsEjmpump": 1790774525.7037435,
   "5NhN6zzDkzwXFGPFqtpTopV4ttBeZ6CWy1oRL9Rkpump": 1790784124.602823,
   "BHdfzHB5NHU4wfF7P46cJkA4PogmHYfnp51ijLSgpHa4": 1790785325.9256737,
   "G4hRkB6Cbc2C9VAwdVCP9tKp2PLBdxiNkwEpiYHbpump": 1790788019.361267,
@@ -29037,6 +29063,7 @@
   "G8G5QMuo9Ro4vRdapHH2WhHxhyVR2gf9cB9sps78F7w3": 1791326252.20741,
   "GyWkSn2ah7dqLyPeZAjEZmfxuU2H4nwfGvgJhfYDVegn": 1791350857.7530107,
   "C4ru2YKwoa2FCKRQzUoKzzD4jxCtw8sP4WVVo1dRpump": 1791360152.1050162,
-  "7bRUmUp3pQiadAVoNiENDM2npTBfaD2ViuQdrE1bCqFF": 1791373940.2392917
+  "7bRUmUp3pQiadAVoNiENDM2npTBfaD2ViuQdrE1bCqFF": 1791373940.2392917,
+  "EC7JXhzfSDe9BhU1tnfyzvv1eUUaTQQi4TTnrSHKsaET": 1791384752.4177961
  }
 }
