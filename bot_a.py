@@ -1,4 +1,12 @@
-"""Bot A – Micro-Cap-Lotterie (Solana). Einstieg per Screener, feste Ausstiegsregeln."""
+"""Bot A – Micro-Cap-Lotterie (Solana). Einstieg per Screener, feste Ausstiegsregeln.
+
+v3 (08.10.) Ausstieg neu: bei 1,8x die HAELFTE verkaufen, danach Trailing -35 % vom Hoechststand fuer den Rest,
+spaetestens bei 8x alles raus.
+Grund (94 Positionen ausgewertet): 12 Positionen stiegen auf 1,8x und mehr, verkauften ein Viertel und fielen
+dann mit dem Rest bis auf den Stop bei -50 % zurueck (z.B. HI 2,76x -> -9 $). Mit dem Trailing nach 1,8x liegt
+der schlechteste Verkauf bei 1,8 x 0,65 = 1,17x - ueber dem Einstand. -35 % statt enger, weil Micro-Caps auf dem
+Weg zu 3-10x fast immer 15-20 % Ruecksetzer haben und die grossen Treffer A tragen (15 Positionen >= 3x: +1.227 $).
+"""
 import time
 from common import *
 
@@ -9,13 +17,11 @@ MIN_LIQ_RATIO, MIN_BUY_RATIO = 0.05, 0.45
 # Positionen
 POS_USD, MAX_POS = 50.0, 8          # 50 $ pro Ticket, max. 8 offene
 # Ausstieg
-USE_TP0 = True                      # Testflag: fruehes Zwischenziel (v2.1)
-TP0_X, TP0_FRAC = 1.8, 0.25         # bei 1.8x ein Viertel raus (faengt Spikes ein, die sonst als Stop enden)
-TP1_X, TP1_FRAC = 3.0, 0.5          # bei 3x die Haelfte (des Rests) raus
-TP2_X = 10.0                        # Rest bei 10x
-STOP = -0.5                         # oder -50 %
-TRAIL = -0.35                       # nach TP1: Rest raus wenn 35 % unter Hoch
-MAX_HOLD_D = 10                     # Zeitstop
+TP0_X, TP0_FRAC = 1.8, 0.5          # v3: bei 1,8x die Haelfte raus
+TRAIL = -0.35                       # v3: danach Rest raus, sobald 35 % unter dem Hoechststand
+TP_REST_X = 8.0                     # v3: oder spaetestens bei 8x komplett raus (Memecoin-Gipfel fallen oft binnen Minuten)
+STOP = -0.5                         # vor dem ersten Verkauf: -50 %
+MAX_HOLD_D = 10                     # Zeitstop - nur solange noch nichts verkauft wurde (Laeufer schuetzt das Trailing)
 COOLDOWN_D = 14                     # Tage Sperre nach Verkauf mit Verlust (verhindert sofortiges Rebuy)
 
 
@@ -55,15 +61,15 @@ def main():
         pos["peak"] = max(pos.get("peak", px), px)
         x = px / pos["entry"]; held_d = held_seconds(pos) / 86400
         why = None
-        if x <= 1 + STOP: why = "stop"
-        elif x >= TP2_X: why = "tp2"
-        elif x >= TP1_X and not pos.get("tp1"): pos["tp1"] = True; pf.sell(addr, px, TP1_FRAC, m["liq"], "tp1")
-        elif USE_TP0 and x >= TP0_X and not pos.get("tp0"): pos["tp0"] = True; pf.sell(addr, px, TP0_FRAC, m["liq"], "tp0")
-        elif pos.get("tp1") and px / pos["peak"] - 1 <= TRAIL: why = "trail"
-        elif held_d >= MAX_HOLD_D: why = "time"
+        if not pos.get("tp0"):
+            if x <= 1 + STOP: why = "stop"
+            elif x >= TP0_X: pos["tp0"] = True; pf.sell(addr, px, TP0_FRAC, m["liq"], "tp0")
+            elif held_d >= MAX_HOLD_D: why = "time"
+        elif x >= TP_REST_X: why = "tp8x"
+        elif px / pos["peak"] - 1 <= TRAIL: why = "trail"
         if why:
             pf.sell(addr, px, 1.0, m["liq"], why)
-            if why in ("stop", "trail") or px < pos["entry"]:   # jeder Verlust-Exit sperrt den Token
+            if why == "stop" or px < pos["entry"]:   # nur Verlust-Exits sperren den Token 14 Tage (sonst 24 h, common.py)
                 cooldown[addr] = today + COOLDOWN_D
         time.sleep(1.1)
     # 2) neue Kandidaten
