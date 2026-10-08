@@ -1,5 +1,5 @@
 {
- "cash": 197.5632219411123,
+ "cash": 250.17919894111228,
  "positions": {
   "Cy5TzDyJ4mo6MBAbpwUcAgdfNiXYKrYUPrvhPGVU6XMR": {
    "sym": "XMR20",
@@ -11,17 +11,6 @@
    "cur_price": 0.0002435,
    "mark": 0.0002435
   },
-  "5tCju6YNxHq5zrA6tGndr6F7TK42mpUFmeE31cSFpump": {
-   "sym": "swordcat",
-   "qty": 15877.08122475,
-   "cost": 37.515,
-   "opened": "2026-10-05T18:11:01Z",
-   "peak": 0.004946,
-   "entry": 0.002362839836173397,
-   "cur_price": 0.003233,
-   "mark": 0.003233,
-   "tp0": true
-  },
   "HbPDWSqu8hpVMX6gMjwMDGe5rVgicWo3Qh3Jaojypump": {
    "sym": "Frank",
    "qty": 74539.21332712499,
@@ -29,8 +18,8 @@
    "opened": "2026-10-07T08:05:50Z",
    "peak": 0.001041,
    "entry": 0.00025164606873002916,
-   "cur_price": 0.0006819,
-   "mark": 0.0006819,
+   "cur_price": 0.0006956,
+   "mark": 0.0006956,
    "tp0": true,
    "tp1": true
   }
@@ -3243,13 +3232,24 @@
    "slip": 0.0065,
    "quote": "jup",
    "reason": "trail"
+  },
+  {
+   "t": "2026-10-08T18:55:03Z",
+   "side": "sell",
+   "sym": "swordcat",
+   "addr": "5tCju6YNxHq5zrA6tGndr6F7TK42mpUFmeE31cSFpump",
+   "price": 0.003196,
+   "usd": 52.62,
+   "pnl": 15.1,
+   "peak_x": 2.093,
+   "held_h": 72.7,
+   "frac": 1.0,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-21T10:15:53Z",
-   "v": 663.67
-  },
   {
    "t": "2026-09-21T10:20:51Z",
    "v": 663.31
@@ -23245,6 +23245,10 @@
   {
    "t": "2026-10-08T18:51:06Z",
    "v": 345.41
+  },
+  {
+   "t": "2026-10-08T18:56:04Z",
+   "v": 347.72
   }
  ],
  "started": "2026-09-10T17:17:16Z",
@@ -23269,6 +23273,7 @@
   "9XKzy4KahcZaGJPJtz1PtqGPB3CiseoBrx7TcQhEpump": 1791437108.8575494,
   "F5WvFdG9sCfhv3bVYAMJNWiwpx5e3X2uvpXDtLtdsDJs": 1791465607.4259741,
   "CscZaq5twomhUkvCY8Jdd1tge32L4Yj9FbkFFEZQpump": 1791475207.9126725,
-  "6zzzG49KX5nksnqfogs31dwoMYSHaJXkropKbv1QZVga": 1791476703.9641342
+  "6zzzG49KX5nksnqfogs31dwoMYSHaJXkropKbv1QZVga": 1791476703.9641342,
+  "5tCju6YNxHq5zrA6tGndr6F7TK42mpUFmeE31cSFpump": 1791485703.6851861
  }
 }
