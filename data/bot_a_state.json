@@ -1,5 +1,5 @@
 {
- "cash": 113.90504894111228,
+ "cash": 134.76167794111228,
  "positions": {
   "Cy5TzDyJ4mo6MBAbpwUcAgdfNiXYKrYUPrvhPGVU6XMR": {
    "sym": "XMR20",
@@ -8,8 +8,8 @@
    "opened": "2026-10-03T21:10:12Z",
    "peak": 0.0004308,
    "entry": 0.0002665955138867013,
-   "cur_price": 0.0002743,
-   "mark": 0.0002743
+   "cur_price": 0.0002758,
+   "mark": 0.0002758
   },
   "6zzzG49KX5nksnqfogs31dwoMYSHaJXkropKbv1QZVga": {
    "sym": "Malfoid",
@@ -29,8 +29,8 @@
    "opened": "2026-10-05T18:11:01Z",
    "peak": 0.004946,
    "entry": 0.002362839836173397,
-   "cur_price": 0.003834,
-   "mark": 0.003834,
+   "cur_price": 0.003815,
+   "mark": 0.003815,
    "tp0": true
   },
   "HbPDWSqu8hpVMX6gMjwMDGe5rVgicWo3Qh3Jaojypump": {
@@ -40,20 +40,10 @@
    "opened": "2026-10-07T08:05:50Z",
    "peak": 0.0009315,
    "entry": 0.00025164606873002916,
-   "cur_price": 0.0008556,
-   "mark": 0.0008556,
+   "cur_price": 0.0009137,
+   "mark": 0.0009137,
    "tp0": true,
    "tp1": true
-  },
-  "CscZaq5twomhUkvCY8Jdd1tge32L4Yj9FbkFFEZQpump": {
-   "sym": "PLAGUE",
-   "qty": 72032.804746,
-   "cost": 50.02,
-   "opened": "2026-10-07T17:36:09Z",
-   "peak": 0.0007032,
-   "entry": 0.0006944058360128984,
-   "cur_price": 0.0003485,
-   "mark": 0.0003485
   }
  },
  "trades": [
@@ -3234,13 +3224,24 @@
    "slip": 0.0131,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-10-08T16:00:07Z",
+   "side": "sell",
+   "sym": "PLAGUE",
+   "addr": "CscZaq5twomhUkvCY8Jdd1tge32L4Yj9FbkFFEZQpump",
+   "price": 0.0002892,
+   "usd": 20.86,
+   "pnl": -29.16,
+   "peak_x": 1.013,
+   "held_h": 22.4,
+   "frac": 1.0,
+   "slip": 0.0175,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-21T07:21:01Z",
-   "v": 676.47
-  },
   {
    "t": "2026-09-21T07:26:04Z",
    "v": 676.81
@@ -23236,6 +23237,10 @@
   {
    "t": "2026-10-08T15:56:06Z",
    "v": 376.8
+  },
+  {
+   "t": "2026-10-08T16:01:09Z",
+   "v": 376.86
   }
  ],
  "started": "2026-09-10T17:17:16Z",
@@ -23258,6 +23263,7 @@
   "GDeKVeV3cs6UCTRDmHqZHugBmUbLLRW7hi9P91XXeLNT": 1791360307.7108133,
   "6VsnbKz6erJRTPiiD34Msq7eWmmgZHDnh4Bxan4MpGjm": 1791362406.1118076,
   "9XKzy4KahcZaGJPJtz1PtqGPB3CiseoBrx7TcQhEpump": 1791437108.8575494,
-  "F5WvFdG9sCfhv3bVYAMJNWiwpx5e3X2uvpXDtLtdsDJs": 1791465607.4259741
+  "F5WvFdG9sCfhv3bVYAMJNWiwpx5e3X2uvpXDtLtdsDJs": 1791465607.4259741,
+  "CscZaq5twomhUkvCY8Jdd1tge32L4Yj9FbkFFEZQpump": 1791475207.9126725
  }
 }
