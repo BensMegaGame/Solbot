@@ -1,5 +1,5 @@
 {
- "cash": 89.64693700000001,
+ "cash": 0.980000000000004,
  "positions": {
   "CortexFv3fRcLKTgACr7aLqckGh5eP7TP3z9JHoKqMc6": {
    "sym": "CX",
@@ -9,8 +9,8 @@
    "peak": 0.03731,
    "entry": 0.031537863324270915,
    "pair": "AtK4fYMF1mFosQn6qRiMJoE1hsjpCFwpTy1TKpE5Ez6E",
-   "cur_price": 0.03673,
-   "mark": 0.03673
+   "cur_price": 0.03641,
+   "mark": 0.03641
   },
   "KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS": {
    "sym": "KMNO",
@@ -20,8 +20,8 @@
    "peak": 0.04197,
    "entry": 0.04078398934594881,
    "pair": "3ndjN1nJVUKGrJBc1hhVpER6kWTZKHdyDrPyCJyX3CXK",
-   "cur_price": 0.03739,
-   "mark": 0.03739
+   "cur_price": 0.03729,
+   "mark": 0.03729
   },
   "BPxxfRCXkUVhig4HS1Lh7kZqV6SPJhzfEk4x6fVBjPCy": {
    "sym": "BP",
@@ -42,8 +42,8 @@
    "peak": 0.007093,
    "entry": 0.007064305558621279,
    "pair": "HH4D2z7SkBtoS2DAwzs1XCwSRWYbk14KNueU1KhmZcEV",
-   "cur_price": 0.006508,
-   "mark": 0.006508
+   "cur_price": 0.006531,
+   "mark": 0.006531
   },
   "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump": {
    "sym": "MANIFEST",
@@ -53,8 +53,19 @@
    "peak": 0.01007,
    "entry": 0.00993663443285207,
    "pair": "2DVbU5h8JCd37gaXAJUZ4t77HsjJW22LLduTZk7GSa43",
-   "cur_price": 0.01002,
-   "mark": 0.01002
+   "cur_price": 0.009982,
+   "mark": 0.009982
+  },
+  "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE": {
+   "sym": "ORCA",
+   "qty": 34.384908,
+   "cost": 88.666937,
+   "opened": "2026-10-08T12:32:18Z",
+   "peak": 2.57,
+   "entry": 2.5786585498498353,
+   "pair": "Hxw77h9fEx598afiiZunwHaX3vYu9UskDk9EpPNZp1mG",
+   "cur_price": 2.57,
+   "mark": 2.57
   }
  },
  "trades": [
@@ -603,6 +614,18 @@
    "slip": 0.0082,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-10-08T12:32:18Z",
+   "side": "buy",
+   "sym": "ORCA",
+   "addr": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+   "price": 2.57,
+   "fill": 2.57865854985,
+   "usd": 88.67,
+   "slip": 0.0013,
+   "quote": "jup",
+   "reason": "nach virtuellem stop (E) -10.5%"
   }
  ],
  "equity": [
@@ -15733,6 +15756,10 @@
   {
    "t": "2026-10-08T12:27:26Z",
    "v": 523.86
+  },
+  {
+   "t": "2026-10-08T12:32:18Z",
+   "v": 522.61
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -15748,8 +15775,8 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-10-08T12:27:26Z",
-  "virtuell": 3,
+  "t": "2026-10-08T12:32:18Z",
+  "virtuell": 2,
   "neu": 0,
   "gestoppt": false
  },

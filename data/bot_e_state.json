@@ -1,5 +1,5 @@
 {
- "cash": 55.53553227457701,
+ "cash": 325.89257927457703,
  "positions": {
   "BPxxfRCXkUVhig4HS1Lh7kZqV6SPJhzfEk4x6fVBjPCy": {
    "sym": "BP",
@@ -10,16 +10,6 @@
    "entry": 1.0802421522269203,
    "mark": 1.012,
    "cur_price": 1.012
-  },
-  "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE": {
-   "sym": "ORCA",
-   "qty": 105.075951,
-   "cost": 301.6103636023211,
-   "opened": "2026-10-07T23:37:32Z",
-   "peak": 3.066,
-   "entry": 2.8704033675823797,
-   "mark": 2.59,
-   "cur_price": 2.59
   }
  },
  "trades": [
@@ -883,13 +873,24 @@
    "slip": 0.0026,
    "quote": "jup",
    "reason": "dip 24h -12% (SOL -4%) 1h -0.5%"
+  },
+  {
+   "t": "2026-10-08T12:32:16Z",
+   "side": "sell",
+   "sym": "ORCA",
+   "addr": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+   "price": 2.57,
+   "usd": 270.36,
+   "pnl": -31.25,
+   "peak_x": 1.068,
+   "held_h": 12.9,
+   "frac": 1.0,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-21T03:51:52Z",
-   "v": 649.63
-  },
   {
    "t": "2026-09-21T03:56:51Z",
    "v": 649.63
@@ -20885,13 +20886,17 @@
   {
    "t": "2026-10-08T12:27:25Z",
    "v": 618.07
+  },
+  {
+   "t": "2026-10-08T12:32:16Z",
+   "v": 616.28
   }
  ],
  "started": "2026-09-16T16:55:59Z",
  "strategy": "largecap_dip",
  "universe_n": 65,
  "coverage": {
-  "t": "2026-10-08T12:27:25Z",
+  "t": "2026-10-08T12:32:16Z",
   "kurse": 65,
   "von": 65,
   "sol": true
@@ -20902,6 +20907,7 @@
   "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx": 1791410247.295016,
   "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP": 1791231712.0463984,
   "KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS": 1791242863.5933638,
-  "KENJSUYLASHUMfHyy5o4Hp2FdNqZg1AsUPhfH2kYvEP": 1791389256.9326508
+  "KENJSUYLASHUMfHyy5o4Hp2FdNqZg1AsUPhfH2kYvEP": 1791389256.9326508,
+  "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE": 1791462736.6473026
  }
 }
