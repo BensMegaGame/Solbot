@@ -1,18 +1,25 @@
-"""Bot D v3 – "Small-Cap Longshots" (alle Positionen klein, viele Tickets, Paper via echte Jupiter-Quotes).
+"""Bot D v4 – "Datensammler": kauft NICHTS mehr, sammelt nur noch Daten fuer die Fruehkaeufer-Analyse.
 
-Warum der Umbau: v2 handelte 60-$-Standardpositionen auf 2-14 Tage alte Micro-Caps und lag klar im Minus.
-v3 uebernimmt die Lehren aus Bot C's 574 geloggten Pfaden:
-  - LIQUIDITAETS-OBERGRENZE ist der wichtigste Filter. Alle gekauften Rugs dort hatten > 189.000 $
-    Startliquiditaet - kuenstlich aufgeblasen, um Mindest-Liquiditaetsfilter zu triggern.
-  - Zu viele Holder sind ein WARNSIGNAL, kein Guetesiegel (Rugs: Median 1.674, Ueberlebende: 277).
-  - Rugger optimieren top10/bundler nach unten, um Filter zu bestehen. Deshalb Plausibilitaetsfenster
-    (min UND max) statt nur Obergrenzen.
-Alle Positionen laufen in Longshot-Groesse: kleiner Einsatz, viele Tickets, hohe Ziele.
+WARUM: Als Handels-Bot ist D gescheitert (500 $ -> ~96 $, 295 Positionen, 11 % Gewinner, 78 % per Stop).
+Wertvoll waren seine Daten. Ab v4 sammelt er gezielt das, was fuer die Frage "gibt es Wallets, die immer
+wieder frueh in spaetere Gewinner einsteigen?" noetig ist - fuer Gewinner UND Verlierer, sonst ist die
+Auswertung wertlos (Bots, die ueberall frueh kaufen, saehen sonst wie Genies aus).
 
-Datensammlung fuer spaeter:
-  - bot_d_paths.json: Preis-/Liquiditaetspfad jedes Kandidaten (fuer analyze_d.py, wie bei Bot C)
-  - bot_d_smart.json: welche Wallet fruehzeitig in welchen Token kaufte + wie der Token lief
-    -> Grundlage fuer die spaetere "Smart Money"-Strategie. Sammelt ab sofort, aendert das Handeln NICHT.
+Pro Kandidat (Codex, 12 h - 7 Tage alt, MCap 15-150k, wie bisher):
+  1) FRUEHKAEUFER (einmal je Coin): die ersten 100 Transaktionen ab Start ueber Helius
+     getTransactionsForAddress (aelteste zuerst, ~10 Credits je Coin). Aus den Token-Kontostaenden
+     vorher/nachher: welche Wallet kaufte, wie viele Sekunden und Slots nach dem Start, wie viel.
+     Kaeufe im Start-Slot oder dem naechsten gelten als Sniper/Insider und werden spaeter ausgeklammert.
+     Falls die Methode im Helius-Plan fehlt: Ausweichweg ueber getSignaturesForAddress + getTransaction.
+  2) ERGEBNIS: Kurs ab Entdeckung 7 Tage lang (bis 72 h alle 5 Min, danach stuendlich). Gewinner = mind. 2x
+     ueber dem ersten gesehenen Kurs innerhalb von 7 Tagen.
+  3) WALLET-RANGLISTE (data/bot_d_top_wallets.json): je Wallet die Coins, in denen sie frueh (nicht als
+     Sniper) gekauft hat, und wie viele davon Gewinner wurden - verglichen mit der Gewinnerquote aller Coins.
+     Das ist eine BEOBACHTUNG, noch keine Strategie: ob eine Wallet wirklich besser ist, wird erst mit
+     zeitlich getrennten Daten geprueft.
+
+Offene Positionen aus v3 werden noch nach den alten Regeln verkauft. Die teuren Helius-Abfragen von v3
+(Enhanced Transactions, 100 Credits je Abfrage, und die Wallet-Echtheitspruefung) entfallen.
 """
 import os, time, statistics
 from common import *
@@ -23,7 +30,16 @@ CODEX_URL = "https://graph.codex.io/graphql"
 SOLANA = 1399811149
 RC = "https://api.rugcheck.xyz/v1/tokens"
 DISCOVER_EVERY_S = 30 * 60             # Codex hoechstens alle 30 Min (~1.440 Calls/Monat)
-PATH_HOURS = 72                        # Pfad-Logging je Kandidat (Tage-Strategie, daher laenger als bei C)
+PATH_HOURS = 7 * 24                    # v4: 7 Tage Kursverlauf je Kandidat (Gewinner/Verlierer sicher bestimmen)
+DICHT_H = 72                           # bis 72 h alle 5 Min, danach stuendlich
+HANDEL = False                         # v4: keine Kaeufe mehr - reiner Datensammler
+FRUEH_PRO_LAUF = 8                     # so viele Coins je Lauf auf Fruehkaeufer pruefen (Laufzeit + Credits)
+FRUEH_TX = 100                         # die ersten 100 Transaktionen ab Start
+FRUEH_MAX_KAEUFER = 40                 # hoechstens 40 verschiedene Kaeufer je Coin speichern
+SNIPER_SLOTS = 1                       # Kauf im Start-Slot oder dem naechsten = Sniper/Insider
+GEWINNER_X = 2.0                       # Gewinner = mind. 2x ueber dem ersten gesehenen Kurs (7 Tage)
+MIN_COINS_WALLET = 3                   # Wallet erst ab 3 auswertbaren Coins in die Rangliste
+FALLBACK_SEITEN = 25                   # Ausweichweg: hoechstens 25 x 1000 Signaturen zurueckblaettern
 
 # ---- Universum: ganz kleine Caps ----
 MIN_AGE_H, MAX_AGE_H = 12, 7 * 24      # 12 Stunden bis 7 Tage
@@ -233,21 +249,123 @@ def batch_pairs(addrs):
         time.sleep(1.1)
     return out
 
+# ---------- v4: Fruehkaeufer ----------
+def _kaeufer_aus_tx(tx, mint):
+    """(wallet, menge) wenn der Gebuehrenzahler dieser Transaktion den Token GEKAUFT hat (Kontostand gestiegen)."""
+    meta = tx.get("meta") or {}
+    if meta.get("err") is not None: return None
+    keys = ((tx.get("transaction") or {}).get("message") or {}).get("accountKeys") or []
+    if not keys: return None
+    payer = keys[0] if isinstance(keys[0], str) else (keys[0] or {}).get("pubkey")
+    vor = sum(float((b.get("uiTokenAmount") or {}).get("uiAmount") or 0) for b in meta.get("preTokenBalances") or []
+              if b.get("mint") == mint and b.get("owner") == payer)
+    nach = sum(float((b.get("uiTokenAmount") or {}).get("uiAmount") or 0) for b in meta.get("postTokenBalances") or []
+               if b.get("mint") == mint and b.get("owner") == payer)
+    return (payer, round(nach - vor, 4)) if nach - vor > 0 else None
+
+
+def erste_transaktionen(mint, credits):
+    """Die aeltesten ~FRUEH_TX Transaktionen des Mints, aelteste zuerst. (liste, weg) oder (None, fehler)."""
+    try:
+        r = helius_rpc("getTransactionsForAddress", [mint, {"transactionDetails": "full", "sortOrder": "asc",
+                       "limit": FRUEH_TX, "encoding": "json", "maxSupportedTransactionVersion": 0}])
+        credits["n"] += 10
+        data = (r or {}).get("data") if isinstance(r, dict) else None
+        if data is not None: return data, "gtfa"
+    except Exception as e:
+        fehler = str(e)[:80]
+    else:
+        fehler = "leere antwort"
+    # Ausweichweg: Signaturen bis zum Anfang zurueckblaettern (1 Credit je 1000), dann die aeltesten einzeln holen
+    try:
+        vor, aelteste = None, []
+        for _ in range(FALLBACK_SEITEN):
+            opt = {"limit": 1000, **({"before": vor} if vor else {})}
+            sigs = helius_rpc("getSignaturesForAddress", [mint, opt]) or []; credits["n"] += 1
+            if not sigs: break
+            aelteste = sigs; vor = sigs[-1]["signature"]
+            if len(sigs) < 1000: break
+        else:
+            return None, f"zu viele transaktionen ({fehler})"
+        ziel = list(reversed(aelteste))[:min(FRUEH_TX, 60)]
+        out = []
+        for sg in ziel:
+            tx = helius_rpc("getTransaction", [sg["signature"], {"encoding": "json", "maxSupportedTransactionVersion": 0}])
+            credits["n"] += 1
+            if tx: out.append(tx)
+        return out, "fallback"
+    except Exception as e:
+        return None, f"fehler {fehler} / {str(e)[:60]}"
+
+
+def fruehkaeufer(mint, credits):
+    """{t0, slot0, via, n_tx, kaeufer: [[wallet, sek_nach_start, slots_nach_start, menge], ...]} oder None."""
+    txs, via = erste_transaktionen(mint, credits)
+    if not txs: return {"fehler": via}
+    txs = [t for t in txs if t.get("slot") is not None]
+    if not txs: return {"fehler": "keine slots"}
+    t0 = min((t.get("blockTime") or 0) for t in txs) or None
+    slot0 = min(t["slot"] for t in txs)
+    gesehen, kaeufer = set(), []
+    for t in sorted(txs, key=lambda x: (x["slot"], x.get("transactionIndex") or 0)):
+        k = _kaeufer_aus_tx(t, mint)
+        if not k or k[0] in gesehen: continue
+        gesehen.add(k[0])
+        kaeufer.append([k[0], int((t.get("blockTime") or t0 or 0) - (t0 or 0)), int(t["slot"] - slot0), k[1]])
+        if len(kaeufer) >= FRUEH_MAX_KAEUFER: break
+    return {"t0": t0, "slot0": slot0, "via": via, "n_tx": len(txs), "kaeufer": kaeufer}
+
+
+def ergebnis(e, now):
+    """'gewinner' | 'verlierer' | None (noch offen). Gewinner = mind. GEWINNER_X ueber dem ersten Kurs in 7 Tagen."""
+    if not e.get("px0"): return None
+    if e.get("peak", 0) / e["px0"] >= GEWINNER_X: return "gewinner"
+    if now - e.get("seit", now) >= PATH_HOURS * 3600: return "verlierer"
+    return None
+
+
+def rangliste(early, now):
+    """Top-Wallets: Coins, in denen die Wallet frueh (kein Sniper) kaufte, und wie viele davon Gewinner wurden."""
+    w = {}
+    fertig = gew = 0
+    for mint, e in early.items():
+        erg = ergebnis(e, now)
+        if not erg or not e.get("kaeufer"): continue
+        fertig += 1; gew += erg == "gewinner"
+        x = e.get("peak", 0) / e["px0"]
+        for wallet, dt, dslot, _ in e["kaeufer"]:
+            if dslot <= SNIPER_SLOTS: continue
+            r = w.setdefault(wallet, {"coins": 0, "gewinner": 0, "x": []})
+            r["coins"] += 1; r["gewinner"] += erg == "gewinner"; r["x"].append(x)
+    basis = gew / fertig if fertig else None
+    kand = [(r["gewinner"], r["gewinner"] / r["coins"], r["coins"], sum(r["x"]) / len(r["x"]))
+            for r in w.values() if r["coins"] >= MIN_COINS_WALLET]
+    kand.sort(key=lambda k: (-k[0], -k[1], -k[3]))
+    top = [{"name": f"Wallet {chr(65 + i)}", "coins": c, "gewinner": g, "verlierer": c - g,
+            "quote": round(q, 3), "avg_peak_x": round(x, 2)} for i, (g, q, c, x) in enumerate(kand[:3])]
+    return {"t": now_iso(), "coins_ausgewertet": fertig, "coins_gewinner": gew,
+            "basisquote": round(basis, 3) if basis is not None else None,
+            "wallets_ab_3_coins": len(kand), "wallets_gesamt": len(w), "top": top,
+            "hinweis": "Beobachtung, keine Strategie: noch nicht zeitlich getrennt geprueft."}
+
+
 def main():
     pf = Paper("bot_d", rebuy_sperre_h=24); st = pf.s
-    st["strategy"] = "smallcap_longshots"; st["helius"] = bool(HELIUS); st["codex"] = bool(CODEX_KEY)
+    st["strategy"] = "datensammler"; st["helius"] = bool(HELIUS); st["codex"] = bool(CODEX_KEY)
     now = time.time(); today = int(now // 86400)
-    cooldown = load("bot_d_cooldown.json", {}); wcache = load("bot_d_wallets.json", {})
-    smart = load("bot_d_smart.json", {}); paths = load("bot_d_paths.json", {})
+    cooldown = load("bot_d_cooldown.json", {})
+    paths = load("bot_d_paths.json", {}); early = load("bot_d_early.json", {})
     meta = load("bot_d_meta.json", {"cands": [], "last_discover": 0})
+    tag = time.strftime("%Y-%m-%d", time.gmtime(now))
+    if meta.get("credits_tag") != tag: meta["credits_tag"], meta["credits_heute"] = tag, 0
+    credits = {"n": 0}
 
     # 1) Kandidaten (alle 30 Min neu)
     if now - meta.get("last_discover", 0) >= DISCOVER_EVERY_S:
         fresh = codex_candidates()
         if fresh is None:
             alter_h = (now - meta.get("last_discover", now)) / 3600
-            print(f"Bot D: Codex-Abfrage fehlgeschlagen. Kandidatenliste ist {alter_h:.1f} h alt "
-                  f"({len(meta.get('cands', []))} Tokens) - ab ~2 h nicht mehr aussagekraeftig.")
+            print(f"Bot D: Codex-Abfrage fehlgeschlagen. Kandidatenliste ist {alter_h:.1f} h alt")
         else:
             meta["last_discover"] = now
             if fresh: meta["cands"] = fresh
@@ -257,22 +375,28 @@ def main():
         paths.setdefault(a, {"sym": c["sym"], "first": now, "pts": [],
                              "q": {k: c[k] for k in ("liq", "mcap", "holders", "top10", "bundler", "sniper", "insider")}})
 
-    # 2) Kurse + Pfade fortschreiben
-    watch = [a for a, p in paths.items() if now - p["first"] <= PATH_HOURS * 3600]
+    # 2) Kurse + Pfade (bis 72 h alle 5 Min, danach stuendlich; insgesamt 7 Tage)
+    def faellig(p):
+        alter = now - p["first"]
+        if alter > PATH_HOURS * 3600: return False
+        if alter <= DICHT_H * 3600 or not p["pts"]: return True
+        return (alter / 60 - p["pts"][-1][0]) >= 55
+    watch = [a for a, p in paths.items() if faellig(p)]
     pairs = batch_pairs(list(set(watch) | set(st["positions"].keys())))
     prices = {}
     for a, p in pairs.items():
         px = float(p.get("priceUsd") or 0); liq = (p.get("liquidity") or {}).get("usd") or 0
         if px > 0: prices[a] = px
-        if a in paths and now - paths[a]["first"] <= PATH_HOURS * 3600:
+        if a in watch:
             paths[a]["pts"].append([round((now - paths[a]["first"]) / 60, 1), px, liq])
+        e = early.get(a)
+        if e is not None and px > 0 and now - e.get("seit", now) <= PATH_HOURS * 3600:
+            e.setdefault("px0", px); e["peak"] = max(e.get("peak", px), px); e["last"] = px
 
-    # 3) Positionen verwalten
+    # 3) offene Positionen aus v3 noch abwickeln (keine neuen Kaeufe)
     for a, pos in list(st["positions"].items()):
         px = prices.get(a)
         if not px:
-            # Kein Kurs: merken, wann das begann. Bleibt es dabei, ist der Token tot (typisch nach einem Rug)
-            # und die Position wuerde sonst dauerhaft einen der MAX_POS Plaetze blockieren.
             pos.setdefault("no_px_since", now_iso())
             if (now - parse_iso(pos["no_px_since"])) / 3600 >= ORPHAN_HOURS:
                 qty = pos["qty"]; entry = pos["entry"]
@@ -280,15 +404,13 @@ def main():
                                      "price": 0.0, "usd": 0.0, "pnl": round(-qty * entry, 2), "peak_x":
                                      round(pos.get("peak", entry) / entry, 3), "held_h": round(held_seconds(pos) / 3600, 1),
                                      "frac": 1.0, "quote": "none", "reason": "abgeschrieben"})
-                del st["positions"][a]; cooldown[a] = today + COOLDOWN_D
-                print(f"  {pos['sym']}: seit {ORPHAN_HOURS} h kein Kurs -> als Totalverlust abgeschrieben")
+                del st["positions"][a]
             continue
         pos.pop("no_px_since", None)
         liq = (pairs[a].get("liquidity") or {}).get("usd") or 0
         pos["peak"] = max(pos.get("peak", px), px)
         x = px / pos["entry"]; held_d = held_seconds(pos) / 86400
-        liq0 = pos.get("liq0") or liq
-        pos.setdefault("liq0", liq0)
+        liq0 = pos.get("liq0") or liq; pos.setdefault("liq0", liq0)
         why = None
         if x <= 1 + STOP: why = "stop"
         elif liq0 and liq / liq0 - 1 <= LIQ_EXIT_DROP: why = "liq-drop"
@@ -300,74 +422,45 @@ def main():
             pos["tp1"] = True; pf.sell(a, px, TP1_FRAC, liq, "tp1"); continue
         elif pos.get("tp1") and px / pos["peak"] - 1 <= TRAIL: why = "trail"
         elif held_d >= MAX_HOLD_D: why = "time"
-        if why:
-            pf.sell(a, px, 1.0, liq, why)
-            if px < pos["entry"]: cooldown[a] = today + COOLDOWN_D
+        if why: pf.sell(a, px, 1.0, liq, why)
 
-    # 4) Einstiege
-    checks = []; bought = 0
-    for a, c in cands.items():
-        if a in st["positions"] or cooldown.get(a, 0) > today or pf.gesperrt(a): continue
-        if len(st["positions"]) >= MAX_POS: break
-        why = quality(c)
-        if why: checks.append((c["sym"], why)); continue
-        # Sicherheitsnetz gegen einen erneuten Codex-Ausfall - bewusst NUR nach oben (siehe batch_pairs):
-        # ein Pool-Alter kann das Token-Alter unterschaetzen, aber nie ueberschaetzen.
-        created = (pairs.get(a) or {}).get("_aeltestes_paar_ms") or (pairs.get(a) or {}).get("pairCreatedAt")
-        if created and (now - float(created) / 1000) / 3600 > MAX_AGE_H:
-            checks.append((c["sym"], f"aelter als {MAX_AGE_H} h")); continue
-        px = prices.get(a); liq = (pairs.get(a, {}).get("liquidity") or {}).get("usd") or 0
-        if not px or not (MIN_LIQ <= liq <= MAX_LIQ): checks.append((c["sym"], f"ds-liq {liq:.0f}")); continue
-        # Eigener Verlauf der letzten ~1 h: weder in einen Preissturz noch in abfliessende Liquiditaet kaufen.
-        pts = [x for x in paths.get(a, {}).get("pts", []) if x[1] > 0 and x[2] > 0][-13:]
-        if len(pts) >= 4:
-            px_chg = pts[-1][1] / pts[0][1] - 1
-            liq_chg = pts[-1][2] / pts[0][2] - 1
-            if px_chg <= MAX_PRE_BUY_DROP: checks.append((c["sym"], f"preis {px_chg:+.0%} in 1h")); continue
-            if liq_chg <= MAX_PRE_BUY_LIQ_DROP:
-                checks.append((c["sym"], f"liq {liq_chg:+.0%} in 1h (rug-vorlauf)")); cooldown[a] = today + 2; continue
-        # Datensammlung laeuft VOR der Kaufentscheidung und unabhaengig von ihr
-        buys = collect_buyers(a, c["sym"], smart)
-        if not rug_strict(a):
-            checks.append((c["sym"], "rugcheck")); cooldown[a] = today + COOLDOWN_D; time.sleep(1.1); continue
-        time.sleep(1.1)
-        hq, reason = holder_quality(a, wcache, smart, c["sym"], buys)
-        if hq is False: cooldown[a] = today + 3; checks.append((c["sym"], reason)); continue
-        if st["cash"] < POS_USD + 2: break
-        if bought >= MAX_BUYS_PER_RUN:
-            checks.append((c["sym"], "ok, aber Kauflimit dieses Laufs erreicht")); break
-        if pf.buy(c["sym"], a, px, POS_USD, liq, "longshot"):
-            bought += 1
-            st["positions"][a]["liq0"] = liq
-            checks.append((c["sym"], f"GEKAUFT liq {liq:.0f} mcap {c['mcap']:.0f} holders {c['holders']}"))
-            append_jsonl("bot_d_signals.jsonl", {"t": now_iso(), "addr": a, "sym": c["sym"], "liq": liq,
-                                                 **{k: c[k] for k in ("mcap", "vol", "holders", "top10", "bundler", "sniper", "insider")}})
+    # 4) Fruehkaeufer: jeder Kandidat genau einmal (Gewinner UND Verlierer)
+    neu, wege, fehler = 0, {}, 0
+    if HELIUS:
+        offen = [a for a in cands if a not in early][:FRUEH_PRO_LAUF]
+        for a in offen:
+            r = fruehkaeufer(a, credits)
+            if r.get("fehler"):
+                fehler += 1
+                early[a] = {"sym": cands[a]["sym"], "seit": paths.get(a, {}).get("first", now), "fehler": r["fehler"]}
+                print(f"  {cands[a]['sym']}: Fruehkaeufer nicht ermittelbar ({r['fehler']})")
+                continue
+            early[a] = {"sym": cands[a]["sym"], "seit": paths.get(a, {}).get("first", now), **r}
+            if a in prices: early[a].setdefault("px0", prices[a]); early[a]["peak"] = prices[a]
+            neu += 1; wege[r["via"]] = wege.get(r["via"], 0) + 1
+            time.sleep(0.3)
+    meta["credits_heute"] = meta.get("credits_heute", 0) + credits["n"]
 
-    # 5) Smart-Money-Performance nachtragen (wie liefen die Tokens, die eine Wallet gekauft hat?)
-    for w, rec in smart.items():
-        if w == "_stats" or "tokens" not in rec: continue
-        for mint, info in rec["tokens"].items():
-            if mint in prices and prices[mint] > 0:
-                info.setdefault("px0", prices[mint])
-                info["px_last"] = prices[mint]
-                if info.get("px0"): info["x"] = round(prices[mint] / info["px0"], 3)
-    if len(smart) > 6000:     # ausduennen: Wallets behalten, die in den meisten Tokens auftauchen
-        stats = smart.get("_stats")
-        keep = dict(sorted(((k, v) for k, v in smart.items() if k != "_stats"),
-                           key=lambda kv: -len(kv[1].get("tokens", {})))[:4500])
-        if stats: keep["_stats"] = stats
-        smart = keep
+    # 5) Rangliste fuers Dashboard
+    top = rangliste(early, now)
+    save("bot_d_top_wallets.json", top)
 
-    # 6) Pfade aufraeumen
+    # 6) Pfade aufraeumen (nach 7 Tagen + 1 Tag ins Archiv)
     for a in list(paths):
         if now - paths[a]["first"] > PATH_HOURS * 3600 + 86400:
             append_jsonl("bot_d_paths_archive.jsonl", {"addr": a, **paths[a]}); del paths[a]
 
-    save("bot_d_paths.json", paths); save("bot_d_meta.json", meta); save("bot_d_smart.json", smart)
-    save("bot_d_wallets.json", wcache); save("bot_d_cooldown.json", {k: v for k, v in cooldown.items() if v > today})
+    save("bot_d_paths.json", paths); save("bot_d_meta.json", meta); save("bot_d_early.json", early)
+    save("bot_d_cooldown.json", {k: v for k, v in cooldown.items() if v > today})
+    st["coverage"] = {"t": now_iso(), "kandidaten": len(cands), "pfade": len(paths),
+                      "kurse": sum(1 for a in watch if a in pairs), "von": len(watch),
+                      "fruehkaeufer_neu": neu, "fruehkaeufer_fehler": fehler, "weg": wege,
+                      "coins_mit_fruehkaeufern": sum(1 for e in early.values() if e.get("kaeufer")),
+                      "coins_ausgewertet": top["coins_ausgewertet"], "credits_heute": meta["credits_heute"]}
     v = pf.mark(prices); pf.commit()
-    print(f"Bot D [smallcap-longshots]: equity {v:.2f} | cash {st['cash']:.2f} | positions {len(st['positions'])}/{MAX_POS} | kandidaten {len(cands)} | pfade {len(paths)} | wallets {len(smart)}")
-    for sym, why in checks[:12]: print(f"   {sym:<12} {why}")
+    print(f"Bot D [datensammler]: kandidaten {len(cands)} | pfade {len(paths)} | kurse {st['coverage']['kurse']}/{len(watch)}"
+          f" | fruehkaeufer neu {neu} {wege} fehler {fehler} | coins mit fruehkaeufern {st['coverage']['coins_mit_fruehkaeufern']}"
+          f" | ausgewertet {top['coins_ausgewertet']} | credits heute ~{meta['credits_heute']} | offene alt-positionen {len(st['positions'])}")
 
 if __name__ == "__main__":
     main()
