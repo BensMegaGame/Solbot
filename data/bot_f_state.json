@@ -1,5 +1,5 @@
 {
- "cash": 23.801707695328105,
+ "cash": 0.9800000000000004,
  "positions": {
   "CortexFv3fRcLKTgACr7aLqckGh5eP7TP3z9JHoKqMc6": {
    "sym": "CX",
@@ -9,8 +9,8 @@
    "peak": 0.03703,
    "entry": 0.031537863324270915,
    "pair": "AtK4fYMF1mFosQn6qRiMJoE1hsjpCFwpTy1TKpE5Ez6E",
-   "cur_price": 0.03649,
-   "mark": 0.03649
+   "cur_price": 0.03615,
+   "mark": 0.03615
   },
   "KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS": {
    "sym": "KMNO",
@@ -20,8 +20,8 @@
    "peak": 0.04197,
    "entry": 0.04078398934594881,
    "pair": "3ndjN1nJVUKGrJBc1hhVpER6kWTZKHdyDrPyCJyX3CXK",
-   "cur_price": 0.03759,
-   "mark": 0.03759
+   "cur_price": 0.03756,
+   "mark": 0.03756
   },
   "BPxxfRCXkUVhig4HS1Lh7kZqV6SPJhzfEk4x6fVBjPCy": {
    "sym": "BP",
@@ -42,8 +42,8 @@
    "peak": 0.008349,
    "entry": 0.007889523433731865,
    "pair": "DA4pM4xSDY4M9V4CgAKKBVH1pw1yscTQQa5nEkGHuKpt",
-   "cur_price": 0.007321,
-   "mark": 0.007321
+   "cur_price": 0.007392,
+   "mark": 0.007392
   },
   "69LjZUUzxj3Cb3Fxeo1X4QpYEQTboApkhXTysPpbpump": {
    "sym": "CODEC",
@@ -55,6 +55,17 @@
    "pair": "HH4D2z7SkBtoS2DAwzs1XCwSRWYbk14KNueU1KhmZcEV",
    "cur_price": 0.007004,
    "mark": 0.007004
+  },
+  "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump": {
+   "sym": "MANIFEST",
+   "qty": 2296.724092,
+   "cost": 22.821707695328104,
+   "opened": "2026-10-08T10:37:15Z",
+   "peak": 0.009841,
+   "entry": 0.00993663443285207,
+   "pair": "2DVbU5h8JCd37gaXAJUZ4t77HsjJW22LLduTZk7GSa43",
+   "cur_price": 0.009841,
+   "mark": 0.009841
   }
  },
  "trades": [
@@ -576,6 +587,18 @@
    "slip": 0.0016,
    "quote": "jup",
    "reason": "nach virtuellem stop (C) -12.1%"
+  },
+  {
+   "t": "2026-10-08T10:37:15Z",
+   "side": "buy",
+   "sym": "MANIFEST",
+   "addr": "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump",
+   "price": 0.009841,
+   "fill": 0.009936634433,
+   "usd": 22.82,
+   "slip": 0.0076,
+   "quote": "jup",
+   "reason": "nach virtuellem stop (C) -10.0%"
   }
  ],
  "equity": [
@@ -15614,6 +15637,10 @@
   {
    "t": "2026-10-08T10:32:09Z",
    "v": 546.59
+  },
+  {
+   "t": "2026-10-08T10:37:15Z",
+   "v": 546.23
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -15628,8 +15655,8 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-10-08T10:32:09Z",
-  "virtuell": 4,
+  "t": "2026-10-08T10:37:15Z",
+  "virtuell": 3,
   "neu": 0,
   "gestoppt": false
  },
