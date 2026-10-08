@@ -6,11 +6,11 @@
    "qty": 2996.853477507,
    "cost": 94.51435537648177,
    "opened": "2026-09-28T14:22:05Z",
-   "peak": 0.03724,
+   "peak": 0.03731,
    "entry": 0.031537863324270915,
    "pair": "AtK4fYMF1mFosQn6qRiMJoE1hsjpCFwpTy1TKpE5Ez6E",
-   "cur_price": 0.03724,
-   "mark": 0.03724
+   "cur_price": 0.03731,
+   "mark": 0.03731
   },
   "KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS": {
    "sym": "KMNO",
@@ -42,8 +42,8 @@
    "peak": 0.007093,
    "entry": 0.007064305558621279,
    "pair": "HH4D2z7SkBtoS2DAwzs1XCwSRWYbk14KNueU1KhmZcEV",
-   "cur_price": 0.006471,
-   "mark": 0.006471
+   "cur_price": 0.006529,
+   "mark": 0.006529
   },
   "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump": {
    "sym": "MANIFEST",
@@ -53,8 +53,8 @@
    "peak": 0.01007,
    "entry": 0.00993663443285207,
    "pair": "2DVbU5h8JCd37gaXAJUZ4t77HsjJW22LLduTZk7GSa43",
-   "cur_price": 0.009931,
-   "mark": 0.009931
+   "cur_price": 0.009983,
+   "mark": 0.009983
   }
  },
  "trades": [
@@ -15709,6 +15709,10 @@
   {
    "t": "2026-10-08T11:57:19Z",
    "v": 527.9
+  },
+  {
+   "t": "2026-10-08T12:02:24Z",
+   "v": 529.12
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -15724,7 +15728,7 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-10-08T11:57:19Z",
+  "t": "2026-10-08T12:02:24Z",
   "virtuell": 3,
   "neu": 0,
   "gestoppt": false
