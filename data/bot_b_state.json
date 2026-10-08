@@ -1,5 +1,5 @@
 {
- "cash": 238.0761090000001,
+ "cash": 262.9563720000001,
  "positions": {
   "5tCju6YNxHq5zrA6tGndr6F7TK42mpUFmeE31cSFpump": {
    "sym": "swordcat",
@@ -8,8 +8,8 @@
    "opened": "2026-10-04T22:46:45Z",
    "peak": 0.004887,
    "entry": 0.0018124251616424172,
-   "cur_price": 0.003848,
-   "mark": 0.003848,
+   "cur_price": 0.003842,
+   "mark": 0.003842,
    "tp0": true
   },
   "HbPDWSqu8hpVMX6gMjwMDGe5rVgicWo3Qh3Jaojypump": {
@@ -19,20 +19,10 @@
    "opened": "2026-10-07T02:06:59Z",
    "peak": 0.0008432,
    "entry": 0.0002651876337450656,
-   "cur_price": 0.0007776,
-   "mark": 0.0007776,
+   "cur_price": 0.0007473,
+   "mark": 0.0007473,
    "tp0": true,
    "tp1": true
-  },
-  "CscZaq5twomhUkvCY8Jdd1tge32L4Yj9FbkFFEZQpump": {
-   "sym": "PLAGUE",
-   "qty": 72227.146672,
-   "cost": 50.02,
-   "opened": "2026-10-07T17:37:09Z",
-   "peak": 0.0006806,
-   "entry": 0.0006925373949375609,
-   "cur_price": 0.0003632,
-   "mark": 0.0003632
   }
  },
  "trades": [
@@ -582,6 +572,21 @@
    "held_h": 31.6,
    "frac": 1.0,
    "slip": 0.0441,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-10-08T13:31:04Z",
+   "side": "sell",
+   "sym": "PLAGUE",
+   "addr": "CscZaq5twomhUkvCY8Jdd1tge32L4Yj9FbkFFEZQpump",
+   "price": 0.0003442,
+   "usd": 24.88,
+   "pnl": -25.14,
+   "peak_x": 0.983,
+   "held_h": 19.9,
+   "frac": 1.0,
+   "slip": 0.0138,
    "quote": "jup",
    "reason": "stop"
   }
@@ -15554,6 +15559,10 @@
   {
    "t": "2026-10-08T13:26:37Z",
    "v": 398.96
+  },
+  {
+   "t": "2026-10-08T13:31:36Z",
+   "v": 395.34
   }
  ],
  "started": "2026-09-25T13:40:52Z",
@@ -15566,6 +15575,7 @@
   "3iUTyNYW6xKv5kZUjtbrEDTsuJTrSVwvB3bQtxkLpump": 1791220279.4312065,
   "6hTLdzZaaCjmqtn7RtaEMQsCbXT5Pg8q76tRViEGpump": 1791235939.195925,
   "3sL58KKh2QdNSfN9VRz8bHGGU5zStdfManVHCTkhpump": 1791348080.836646,
-  "9XKzy4KahcZaGJPJtz1PtqGPB3CiseoBrx7TcQhEpump": 1791437173.7695968
+  "9XKzy4KahcZaGJPJtz1PtqGPB3CiseoBrx7TcQhEpump": 1791437173.7695968,
+  "CscZaq5twomhUkvCY8Jdd1tge32L4Yj9FbkFFEZQpump": 1791466264.3647668
  }
 }
