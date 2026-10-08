@@ -9004,10 +9004,6 @@
  ],
  "equity": [
   {
-   "t": "2026-09-21T07:26:41Z",
-   "v": 404.68
-  },
-  {
    "t": "2026-09-21T07:31:44Z",
    "v": 404.73
   },
@@ -29002,10 +28998,14 @@
   {
    "t": "2026-10-08T16:02:12Z",
    "v": 15.88
+  },
+  {
+   "t": "2026-10-08T16:07:32Z",
+   "v": 15.88
   }
  ],
  "started": "2026-09-15T16:35:51Z",
- "strategy": "smallcap_longshots",
+ "strategy": "datensammler",
  "helius": true,
  "codex": true,
  "verkauft_am": {
@@ -29090,5 +29090,20 @@
   "EhLyndhdN7K1VQokfGifFeedMztb73k57WS7Xq9mxsad": 1791387430.8166642,
   "8gJvjpL68h8TzxaMf2UWNThkSCgD6WS4EATMDszLpump": 1791395852.6628745,
   "F458Huat36hKjLPc7dmL4uEixBAgX7fUjxWwnUEkpump": 1791414739.6887403
+ },
+ "coverage": {
+  "t": "2026-10-08T16:07:32Z",
+  "kandidaten": 59,
+  "pfade": 282,
+  "kurse": 207,
+  "von": 281,
+  "fruehkaeufer_neu": 1,
+  "fruehkaeufer_fehler": 7,
+  "weg": {
+   "fallback": 1
+  },
+  "coins_mit_fruehkaeufern": 1,
+  "coins_ausgewertet": 0,
+  "credits_heute": 324
  }
 }

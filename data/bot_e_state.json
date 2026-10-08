@@ -1,16 +1,6 @@
 {
- "cash": 47.25579111450338,
+ "cash": 323.6967841145034,
  "positions": {
-  "BPxxfRCXkUVhig4HS1Lh7kZqV6SPJhzfEk4x6fVBjPCy": {
-   "sym": "BP",
-   "qty": 286.94309086,
-   "cost": 309.96802203725116,
-   "opened": "2026-10-07T06:32:40Z",
-   "peak": 1.12,
-   "entry": 1.0802421522269203,
-   "mark": 0.9827,
-   "cur_price": 0.9827
-  },
   "Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump": {
    "sym": "CATE",
    "qty": 5241.231166,
@@ -18,8 +8,8 @@
    "opened": "2026-10-08T14:32:15Z",
    "peak": 0.05398,
    "entry": 0.053162468766422215,
-   "mark": 0.0523,
-   "cur_price": 0.0523
+   "mark": 0.05337,
+   "cur_price": 0.05337
   }
  },
  "trades": [
@@ -910,13 +900,24 @@
    "slip": 0.0054,
    "quote": "jup",
    "reason": "dip 24h -12% (SOL -3%) 1h +2.4%"
+  },
+  {
+   "t": "2026-10-08T16:07:37Z",
+   "side": "sell",
+   "sym": "BP",
+   "addr": "BPxxfRCXkUVhig4HS1Lh7kZqV6SPJhzfEk4x6fVBjPCy",
+   "price": 0.9632,
+   "usd": 276.44,
+   "pnl": -33.53,
+   "peak_x": 1.037,
+   "held_h": 33.6,
+   "frac": 1.0,
+   "slip": 0.0022,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-21T07:26:46Z",
-   "v": 650.3
-  },
   {
    "t": "2026-09-21T07:31:50Z",
    "v": 649.35
@@ -20912,13 +20913,17 @@
   {
    "t": "2026-10-08T16:02:17Z",
    "v": 603.35
+  },
+  {
+   "t": "2026-10-08T16:07:37Z",
+   "v": 603.42
   }
  ],
  "started": "2026-09-16T16:55:59Z",
  "strategy": "largecap_dip",
  "universe_n": 65,
  "coverage": {
-  "t": "2026-10-08T16:02:17Z",
+  "t": "2026-10-08T16:07:37Z",
   "kurse": 65,
   "von": 65,
   "sol": true
@@ -20930,6 +20935,7 @@
   "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP": 1791231712.0463984,
   "KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS": 1791242863.5933638,
   "KENJSUYLASHUMfHyy5o4Hp2FdNqZg1AsUPhfH2kYvEP": 1791389256.9326508,
-  "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE": 1791462736.6473026
+  "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE": 1791462736.6473026,
+  "BPxxfRCXkUVhig4HS1Lh7kZqV6SPJhzfEk4x6fVBjPCy": 1791475657.9070976
  }
 }
