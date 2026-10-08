@@ -1,5 +1,5 @@
 {
- "cash": 325.89257927457703,
+ "cash": 47.25579111450338,
  "positions": {
   "BPxxfRCXkUVhig4HS1Lh7kZqV6SPJhzfEk4x6fVBjPCy": {
    "sym": "BP",
@@ -8,8 +8,18 @@
    "opened": "2026-10-07T06:32:40Z",
    "peak": 1.12,
    "entry": 1.0802421522269203,
-   "mark": 1.022,
-   "cur_price": 1.022
+   "mark": 1.037,
+   "cur_price": 1.037
+  },
+  "Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump": {
+   "sym": "CATE",
+   "qty": 5241.231166,
+   "cost": 278.63678816007365,
+   "opened": "2026-10-08T14:32:15Z",
+   "peak": 0.05287,
+   "entry": 0.053162468766422215,
+   "no_quote_since": "2026-10-08T14:32:15Z",
+   "mark": 0.0
   }
  },
  "trades": [
@@ -888,13 +898,21 @@
    "slip": 0.0,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-10-08T14:32:15Z",
+   "side": "buy",
+   "sym": "CATE",
+   "addr": "Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump",
+   "price": 0.05287,
+   "fill": 0.053162468766,
+   "usd": 278.64,
+   "slip": 0.0054,
+   "quote": "jup",
+   "reason": "dip 24h -12% (SOL -3%) 1h +2.4%"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-21T05:51:48Z",
-   "v": 648.19
-  },
   {
    "t": "2026-09-21T05:56:48Z",
    "v": 645.75
@@ -20890,13 +20908,17 @@
   {
    "t": "2026-10-08T14:27:11Z",
    "v": 619.15
+  },
+  {
+   "t": "2026-10-08T14:32:15Z",
+   "v": 344.82
   }
  ],
  "started": "2026-09-16T16:55:59Z",
  "strategy": "largecap_dip",
  "universe_n": 65,
  "coverage": {
-  "t": "2026-10-08T14:27:11Z",
+  "t": "2026-10-08T14:32:15Z",
   "kurse": 65,
   "von": 65,
   "sol": true
