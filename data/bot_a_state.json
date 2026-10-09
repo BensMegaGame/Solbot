@@ -1,5 +1,5 @@
 {
- "cash": 279.39368494111227,
+ "cash": 332.00227694111226,
  "positions": {
   "Cy5TzDyJ4mo6MBAbpwUcAgdfNiXYKrYUPrvhPGVU6XMR": {
    "sym": "XMR20",
@@ -13,13 +13,14 @@
   },
   "6hTLdzZaaCjmqtn7RtaEMQsCbXT5Pg8q76tRViEGpump": {
    "sym": "ABU",
-   "qty": 294853.532505,
-   "cost": 50.02,
+   "qty": 147426.7662525,
+   "cost": 25.01,
    "opened": "2026-10-08T20:55:34Z",
-   "peak": 0.0002596,
+   "peak": 0.0003571,
    "entry": 0.0001696435500536246,
-   "cur_price": 0.0002289,
-   "mark": 0.0002289
+   "cur_price": 0.0003571,
+   "mark": 0.0003571,
+   "tp0": true
   }
  },
  "trades": [
@@ -3314,13 +3315,24 @@
    "slip": 0.0146,
    "quote": "jup",
    "reason": "trail"
+  },
+  {
+   "t": "2026-10-09T05:30:04Z",
+   "side": "sell",
+   "sym": "ABU",
+   "addr": "6hTLdzZaaCjmqtn7RtaEMQsCbXT5Pg8q76tRViEGpump",
+   "price": 0.0003571,
+   "usd": 52.61,
+   "pnl": 27.6,
+   "peak_x": 2.105,
+   "held_h": 8.6,
+   "frac": 0.5,
+   "slip": 0.0023,
+   "quote": "jup",
+   "reason": "tp0"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-21T20:50:57Z",
-   "v": 602.61
-  },
   {
    "t": "2026-09-21T20:55:56Z",
    "v": 582.1
@@ -23316,6 +23328,10 @@
   {
    "t": "2026-10-09T05:26:16Z",
    "v": 389.8
+  },
+  {
+   "t": "2026-10-09T05:31:18Z",
+   "v": 427.56
   }
  ],
  "started": "2026-09-10T17:17:16Z",
