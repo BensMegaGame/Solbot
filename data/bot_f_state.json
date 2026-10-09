@@ -1,5 +1,5 @@
 {
- "cash": 89.77142900000001,
+ "cash": 0.980000000000004,
  "positions": {
   "CortexFv3fRcLKTgACr7aLqckGh5eP7TP3z9JHoKqMc6": {
    "sym": "CX",
@@ -20,8 +20,8 @@
    "peak": 0.04197,
    "entry": 0.04078398934594881,
    "pair": "3ndjN1nJVUKGrJBc1hhVpER6kWTZKHdyDrPyCJyX3CXK",
-   "cur_price": 0.03656,
-   "mark": 0.03656
+   "cur_price": 0.03648,
+   "mark": 0.03648
   },
   "BPxxfRCXkUVhig4HS1Lh7kZqV6SPJhzfEk4x6fVBjPCy": {
    "sym": "BP",
@@ -53,8 +53,19 @@
    "peak": 0.01087,
    "entry": 0.00993663443285207,
    "pair": "2DVbU5h8JCd37gaXAJUZ4t77HsjJW22LLduTZk7GSa43",
-   "cur_price": 0.009668,
-   "mark": 0.009668
+   "cur_price": 0.009749,
+   "mark": 0.009749
+  },
+  "6NwarBvDkXhByqVp2Qkq5i9XbtA2B3Bwe8SWGu9vpump": {
+   "sym": "CUPSEY",
+   "qty": 14290.409567,
+   "cost": 88.79142900000001,
+   "opened": "2026-10-09T03:26:53Z",
+   "peak": 0.006191,
+   "entry": 0.006213357887589227,
+   "pair": "DPzKoJVewaH1wpchD3gWKeeGm7G2mXkBW48uRniAgbVx",
+   "cur_price": 0.006191,
+   "mark": 0.006191
   }
  },
  "trades": [
@@ -630,6 +641,18 @@
    "slip": 0.0004,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-10-09T03:26:53Z",
+   "side": "buy",
+   "sym": "CUPSEY",
+   "addr": "6NwarBvDkXhByqVp2Qkq5i9XbtA2B3Bwe8SWGu9vpump",
+   "price": 0.006191,
+   "fill": 0.006213357888,
+   "usd": 88.79,
+   "slip": 0.0028,
+   "quote": "jup",
+   "reason": "nach virtuellem stop (C) -12.8%"
   }
  ],
  "equity": [
@@ -16476,6 +16499,10 @@
   {
    "t": "2026-10-09T03:21:52Z",
    "v": 526.12
+  },
+  {
+   "t": "2026-10-09T03:26:53Z",
+   "v": 525.78
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -16491,8 +16518,8 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-10-09T03:21:52Z",
-  "virtuell": 3,
+  "t": "2026-10-09T03:26:53Z",
+  "virtuell": 2,
   "neu": 0,
   "gestoppt": false
  },
