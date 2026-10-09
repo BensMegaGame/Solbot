@@ -1,5 +1,5 @@
 {
- "cash": 198.37982194111225,
+ "cash": 243.42868694111226,
  "positions": {
   "Cy5TzDyJ4mo6MBAbpwUcAgdfNiXYKrYUPrvhPGVU6XMR": {
    "sym": "XMR20",
@@ -8,18 +8,19 @@
    "opened": "2026-10-03T21:10:12Z",
    "peak": 0.0004308,
    "entry": 0.0002665955138867013,
-   "cur_price": 0.0002453,
-   "mark": 0.0002453
+   "cur_price": 0.0002451,
+   "mark": 0.0002451
   },
   "HMYd9tosnUXuNHmq7pXmoePRVBLBBjA3JBfydq6upump": {
    "sym": "SI276",
-   "qty": 52167.115632,
-   "cost": 50.02,
+   "qty": 26083.557816,
+   "cost": 25.01,
    "opened": "2026-10-08T19:25:50Z",
-   "peak": 0.001457,
+   "peak": 0.001726,
    "entry": 0.0009588415881156571,
-   "cur_price": 0.001457,
-   "mark": 0.001457
+   "cur_price": 0.001726,
+   "mark": 0.001726,
+   "tp0": true
   },
   "6hTLdzZaaCjmqtn7RtaEMQsCbXT5Pg8q76tRViEGpump": {
    "sym": "ABU",
@@ -28,8 +29,8 @@
    "opened": "2026-10-08T20:55:34Z",
    "peak": 0.0002596,
    "entry": 0.0001696435500536246,
-   "cur_price": 0.0001807,
-   "mark": 0.0001807
+   "cur_price": 0.000197,
+   "mark": 0.000197
   }
  },
  "trades": [
@@ -3294,13 +3295,24 @@
    "slip": 0.0199,
    "quote": "jup",
    "reason": "screener"
+  },
+  {
+   "t": "2026-10-09T00:20:03Z",
+   "side": "sell",
+   "sym": "SI276",
+   "addr": "HMYd9tosnUXuNHmq7pXmoePRVBLBBjA3JBfydq6upump",
+   "price": 0.001726,
+   "usd": 45.05,
+   "pnl": 20.04,
+   "peak_x": 1.8,
+   "held_h": 4.9,
+   "frac": 0.5,
+   "slip": 0.0043,
+   "quote": "jup",
+   "reason": "tp0"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-21T15:40:54Z",
-   "v": 641.23
-  },
   {
    "t": "2026-09-21T15:45:46Z",
    "v": 639.73
@@ -23296,6 +23308,10 @@
   {
    "t": "2026-10-09T00:16:10Z",
    "v": 373.69
+  },
+  {
+   "t": "2026-10-09T00:21:12Z",
+   "v": 392.52
   }
  ],
  "started": "2026-09-10T17:17:16Z",
