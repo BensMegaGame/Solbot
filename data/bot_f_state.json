@@ -28,11 +28,11 @@
    "qty": 102.731325714,
    "cost": 105.39504417011469,
    "opened": "2026-10-07T02:17:48Z",
-   "peak": 1.17,
+   "peak": 1.18,
    "entry": 1.0259289796719882,
    "pair": "6qz7THwQvcjF3HyDGLuKaLBUk6EyJKeZXZMWLAeiwfjd",
-   "cur_price": 1.17,
-   "mark": 1.17
+   "cur_price": 1.18,
+   "mark": 1.18
   },
   "69LjZUUzxj3Cb3Fxeo1X4QpYEQTboApkhXTysPpbpump": {
    "sym": "CODEC",
@@ -53,8 +53,8 @@
    "peak": 0.01087,
    "entry": 0.00993663443285207,
    "pair": "2DVbU5h8JCd37gaXAJUZ4t77HsjJW22LLduTZk7GSa43",
-   "cur_price": 0.009955,
-   "mark": 0.009955
+   "cur_price": 0.00995,
+   "mark": 0.00995
   },
   "6NwarBvDkXhByqVp2Qkq5i9XbtA2B3Bwe8SWGu9vpump": {
    "sym": "CUPSEY",
@@ -64,8 +64,8 @@
    "peak": 0.006288,
    "entry": 0.006213357887589227,
    "pair": "DPzKoJVewaH1wpchD3gWKeeGm7G2mXkBW48uRniAgbVx",
-   "cur_price": 0.006213,
-   "mark": 0.006213
+   "cur_price": 0.006219,
+   "mark": 0.006219
   }
  },
  "trades": [
@@ -16659,6 +16659,10 @@
   {
    "t": "2026-10-09T06:41:49Z",
    "v": 544.66
+  },
+  {
+   "t": "2026-10-09T06:47:03Z",
+   "v": 545.77
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -16674,7 +16678,7 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-10-09T06:41:49Z",
+  "t": "2026-10-09T06:47:03Z",
   "virtuell": 2,
   "neu": 0,
   "gestoppt": false
