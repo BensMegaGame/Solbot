@@ -1,7 +1,32 @@
 {
- "cash": 500.0,
- "positions": {},
- "trades": [],
+ "cash": 349.98,
+ "positions": {
+  "ZEUS1aR7aX8DFFJf5QjWj2ftDDdNTroMNGo8YoQm3Gq": {
+   "sym": "ZEUS",
+   "qty": 16258.429867,
+   "cost": 150.02,
+   "opened": "2026-10-09T07:16:29Z",
+   "peak": 0.009027,
+   "entry": 0.009227213281185169,
+   "pair": "Dsxt7wUigQU5puH9nHjmfwnUenMycAgsFtrkfggLh8P1",
+   "cur_price": 0.009027,
+   "mark": 0.009027
+  }
+ },
+ "trades": [
+  {
+   "t": "2026-10-09T07:16:29Z",
+   "side": "buy",
+   "sym": "ZEUS",
+   "addr": "ZEUS1aR7aX8DFFJf5QjWj2ftDDdNTroMNGo8YoQm3Gq",
+   "price": 0.009027,
+   "fill": 0.009227213281,
+   "usd": 150.02,
+   "slip": 0.0059,
+   "quote": "jup",
+   "reason": "tiefer dip 24h -42% (SOL -4%) 1h +3.7%"
+  }
+ ],
  "equity": [
   {
    "t": "2026-10-08T16:06:18Z",
@@ -730,18 +755,22 @@
   {
    "t": "2026-10-09T07:11:24Z",
    "v": 500.0
+  },
+  {
+   "t": "2026-10-09T07:16:29Z",
+   "v": 496.74
   }
  ],
  "started": "2026-10-08T16:06:06Z",
  "version": "b4",
  "strategy": "tiefer_dip",
  "coverage": {
-  "t": "2026-10-09T07:11:24Z",
+  "t": "2026-10-09T07:16:29Z",
   "kurse": 202,
   "von": 209,
   "sol": true,
-  "sol24": -4.4,
-  "kandidaten": 0,
+  "sol24": -4.3,
+  "kandidaten": 1,
   "gestoppt": false
  }
 }
