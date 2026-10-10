@@ -1,5 +1,5 @@
 {
- "cash": 265.9199689411123,
+ "cash": 286.4644969411123,
  "positions": {
   "Cy5TzDyJ4mo6MBAbpwUcAgdfNiXYKrYUPrvhPGVU6XMR": {
    "sym": "XMR20",
@@ -11,16 +11,6 @@
    "cur_price": 0.0001662,
    "mark": 0.0001662
   },
-  "HMYd9tosnUXuNHmq7pXmoePRVBLBBjA3JBfydq6upump": {
-   "sym": "SI276",
-   "qty": 33626.337535,
-   "cost": 50.02,
-   "opened": "2026-10-10T01:00:45Z",
-   "peak": 0.001464,
-   "entry": 0.0014875244723852737,
-   "cur_price": 0.0007439,
-   "mark": 0.0007439
-  },
   "6hTLdzZaaCjmqtn7RtaEMQsCbXT5Pg8q76tRViEGpump": {
    "sym": "ABU",
    "qty": 154543.312334,
@@ -28,8 +18,8 @@
    "opened": "2026-10-10T06:10:23Z",
    "peak": 0.0003723,
    "entry": 0.0003236633099457352,
-   "cur_price": 0.0003325,
-   "mark": 0.0003325
+   "cur_price": 0.0003321,
+   "mark": 0.0003321
   }
  },
  "trades": [
@@ -3378,13 +3368,24 @@
    "slip": 0.0106,
    "quote": "jup",
    "reason": "screener"
+  },
+  {
+   "t": "2026-10-10T09:35:03Z",
+   "side": "sell",
+   "sym": "SI276",
+   "addr": "HMYd9tosnUXuNHmq7pXmoePRVBLBBjA3JBfydq6upump",
+   "price": 0.0006138,
+   "usd": 20.54,
+   "pnl": -29.48,
+   "peak_x": 0.984,
+   "held_h": 8.6,
+   "frac": 1.0,
+   "slip": 0.0012,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-23T00:56:00Z",
-   "v": 690.33
-  },
   {
    "t": "2026-09-23T01:00:59Z",
    "v": 746.03
@@ -23380,16 +23381,14 @@
   {
    "t": "2026-10-10T09:31:05Z",
    "v": 373.5
+  },
+  {
+   "t": "2026-10-10T09:36:05Z",
+   "v": 368.97
   }
  ],
  "started": "2026-09-10T17:17:16Z",
  "verkauft_am": {
-  "59PXVfJ28HLYpdYLz8rt8ziE9EWbK4mS8xvq38NUQ1Be": 1790924703.901213,
-  "H8WTvo3ZXSYHJAcYqzCforbG8coR1FDAX2kHFfqHBAGS": 1790959204.0813868,
-  "3kmygWKZBkCYrgZHKfiuB9UFKTcDLTFFsKo3BWpmpump": 1790965206.037983,
-  "8DXqVUopcdviLvujTcpwEqkKzB43Arp6E1axzsEE5Btq": 1790970602.923748,
-  "6e8LLHkqCTa4mzGuL1PoUxSfeHmDeceJ3DaJSSUNg937": 1790982307.377439,
-  "6iAj2oywQMiD9NeyTcW1S7UtG7e3jSK7Ud5ZJDqJpump": 1791018903.576156,
   "GFkfaUEJApu9Jf2AmAN2hgk5SteXRXJ19opJoL5bZwKw": 1791028208.423136,
   "9aqmJjCnnMQv42TXLk921ceUkN35nea2QP969n1caqjj": 1791048606.6846573,
   "2GYMvnSv37djKecDshE8bYe2sRypcETeAF8G9h6un4J2": 1791117011.2576685,
@@ -23407,7 +23406,7 @@
   "6zzzG49KX5nksnqfogs31dwoMYSHaJXkropKbv1QZVga": 1791476703.9641342,
   "5tCju6YNxHq5zrA6tGndr6F7TK42mpUFmeE31cSFpump": 1791485703.6851861,
   "HbPDWSqu8hpVMX6gMjwMDGe5rVgicWo3Qh3Jaojypump": 1791486303.5666833,
-  "HMYd9tosnUXuNHmq7pXmoePRVBLBBjA3JBfydq6upump": 1791507604.1528766,
+  "HMYd9tosnUXuNHmq7pXmoePRVBLBBjA3JBfydq6upump": 1791624903.4006932,
   "6hTLdzZaaCjmqtn7RtaEMQsCbXT5Pg8q76tRViEGpump": 1791525603.604616
  }
 }
