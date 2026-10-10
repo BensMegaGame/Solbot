@@ -20,8 +20,8 @@
    "peak": 0.01087,
    "entry": 0.00993663443285207,
    "pair": "2DVbU5h8JCd37gaXAJUZ4t77HsjJW22LLduTZk7GSa43",
-   "cur_price": 0.009001,
-   "mark": 0.009001
+   "cur_price": 0.009,
+   "mark": 0.009
   },
   "6NwarBvDkXhByqVp2Qkq5i9XbtA2B3Bwe8SWGu9vpump": {
    "sym": "CUPSEY",
@@ -31,8 +31,8 @@
    "peak": 0.006666,
    "entry": 0.006213357887589227,
    "pair": "DPzKoJVewaH1wpchD3gWKeeGm7G2mXkBW48uRniAgbVx",
-   "cur_price": 0.006259,
-   "mark": 0.006259
+   "cur_price": 0.006206,
+   "mark": 0.006206
   }
  },
  "trades": [
@@ -17991,6 +17991,10 @@
   {
    "t": "2026-10-10T10:11:58Z",
    "v": 562.03
+  },
+  {
+   "t": "2026-10-10T10:16:44Z",
+   "v": 561.27
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -18008,7 +18012,7 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-10-10T10:11:58Z",
+  "t": "2026-10-10T10:16:44Z",
   "virtuell": 2,
   "neu": 0,
   "gestoppt": false
