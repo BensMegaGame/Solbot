@@ -1,10 +1,35 @@
 {
- "t": "2026-10-10T09:16:38Z",
- "coins_ausgewertet": 10,
- "coins_gewinner": 10,
+ "t": "2026-10-10T09:21:39Z",
+ "coins_ausgewertet": 13,
+ "coins_gewinner": 13,
  "basisquote": 1.0,
- "wallets_ab_3_coins": 0,
- "wallets_gesamt": 109,
- "top": [],
+ "wallets_ab_3_coins": 3,
+ "wallets_gesamt": 210,
+ "top": [
+  {
+   "name": "Wallet A",
+   "coins": 4,
+   "gewinner": 4,
+   "verlierer": 0,
+   "quote": 1.0,
+   "avg_peak_x": 2.67
+  },
+  {
+   "name": "Wallet B",
+   "coins": 3,
+   "gewinner": 3,
+   "verlierer": 0,
+   "quote": 1.0,
+   "avg_peak_x": 2.62
+  },
+  {
+   "name": "Wallet C",
+   "coins": 3,
+   "gewinner": 3,
+   "verlierer": 0,
+   "quote": 1.0,
+   "avg_peak_x": 2.57
+  }
+ ],
  "hinweis": "Beobachtung, keine Strategie: noch nicht zeitlich getrennt geprueft."
 }
