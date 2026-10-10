@@ -1,16 +1,6 @@
 {
- "cash": 236.4444969411123,
+ "cash": 256.7510869411123,
  "positions": {
-  "Cy5TzDyJ4mo6MBAbpwUcAgdfNiXYKrYUPrvhPGVU6XMR": {
-   "sym": "XMR20",
-   "qty": 187625.062668,
-   "cost": 50.02,
-   "opened": "2026-10-03T21:10:12Z",
-   "peak": 0.0004308,
-   "entry": 0.0002665955138867013,
-   "cur_price": 0.0001361,
-   "mark": 0.0001361
-  },
   "6hTLdzZaaCjmqtn7RtaEMQsCbXT5Pg8q76tRViEGpump": {
    "sym": "ABU",
    "qty": 154543.312334,
@@ -18,8 +8,8 @@
    "opened": "2026-10-10T06:10:23Z",
    "peak": 0.0004115,
    "entry": 0.0003236633099457352,
-   "cur_price": 0.0003263,
-   "mark": 0.0003263
+   "cur_price": 0.0003261,
+   "mark": 0.0003261
   },
   "HbPDWSqu8hpVMX6gMjwMDGe5rVgicWo3Qh3Jaojypump": {
    "sym": "Frank",
@@ -28,8 +18,8 @@
    "opened": "2026-10-10T13:45:42Z",
    "peak": 0.0004086,
    "entry": 0.0003424425459943001,
-   "cur_price": 0.0004086,
-   "mark": 0.0004086
+   "cur_price": 0.0003829,
+   "mark": 0.0003829
   }
  },
  "trades": [
@@ -3405,13 +3395,24 @@
    "slip": 0.0116,
    "quote": "jup",
    "reason": "screener"
+  },
+  {
+   "t": "2026-10-10T15:40:02Z",
+   "side": "sell",
+   "sym": "XMR20",
+   "addr": "Cy5TzDyJ4mo6MBAbpwUcAgdfNiXYKrYUPrvhPGVU6XMR",
+   "price": 0.0001129,
+   "usd": 20.31,
+   "pnl": -29.71,
+   "peak_x": 1.616,
+   "held_h": 162.5,
+   "frac": 1.0,
+   "slip": 0.0413,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-23T07:00:42Z",
-   "v": 673.74
-  },
   {
    "t": "2026-09-23T07:05:45Z",
    "v": 683.42
@@ -23407,11 +23408,14 @@
   {
    "t": "2026-10-10T15:36:06Z",
    "v": 372.09
+  },
+  {
+   "t": "2026-10-10T15:41:09Z",
+   "v": 363.08
   }
  ],
  "started": "2026-09-10T17:17:16Z",
  "verkauft_am": {
-  "GFkfaUEJApu9Jf2AmAN2hgk5SteXRXJ19opJoL5bZwKw": 1791028208.423136,
   "9aqmJjCnnMQv42TXLk921ceUkN35nea2QP969n1caqjj": 1791048606.6846573,
   "2GYMvnSv37djKecDshE8bYe2sRypcETeAF8G9h6un4J2": 1791117011.2576685,
   "DvNcJZTiSMD1RBCtZ2J31mh7s42CVCwrzGapv1Lypump": 1791140706.937803,
@@ -23429,6 +23433,7 @@
   "5tCju6YNxHq5zrA6tGndr6F7TK42mpUFmeE31cSFpump": 1791485703.6851861,
   "HbPDWSqu8hpVMX6gMjwMDGe5rVgicWo3Qh3Jaojypump": 1791486303.5666833,
   "HMYd9tosnUXuNHmq7pXmoePRVBLBBjA3JBfydq6upump": 1791624903.4006932,
-  "6hTLdzZaaCjmqtn7RtaEMQsCbXT5Pg8q76tRViEGpump": 1791525603.604616
+  "6hTLdzZaaCjmqtn7RtaEMQsCbXT5Pg8q76tRViEGpump": 1791525603.604616,
+  "Cy5TzDyJ4mo6MBAbpwUcAgdfNiXYKrYUPrvhPGVU6XMR": 1791646802.7030625
  }
 }
