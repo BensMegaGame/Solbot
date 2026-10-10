@@ -1,27 +1,41 @@
 """Test: liefert Codex die ERSTEN Trades eines Coins (ab dem Start)? Nur Lesen, kauft nichts, kein Helius.
 
-Aufruf im Solbot-Ordner (dort, wo data/ liegt):
-    set -a; . ../.env; set +a; python3 testcodex.py
+Aufruf (keine Sonderzeichen noetig): im Solbot-Ordner
+    cd data
+    python3 testcodex.py
+Das Skript findet den Solbot-Ordner selbst und laedt den CODEX_KEY selbst aus der .env-Datei.
 
 Nimmt automatisch 4 Coins aus data/bot_d_early.json:
   - 2, fuer die Helius die Fruehkaeufer schon kennt (Vergleich: findet Codex dieselben Wallets?)
   - 2, bei denen Helius gescheitert ist (viele Transaktionen - genau die brauchen wir)
-und fragt je Coin bei Codex ab (insgesamt ~16 Abfragen):
-  1) Startzeit des Coins (createdAt)
-  2) die aeltesten 50 Trades (getTokenEvents, direction ASC) - einmal normal, einmal mit crossPools
-  3) die Pools des Coins
-Ergebnis auf dem Bildschirm und in data/codex_test.json (landet beim naechsten Lauf auf GitHub).
+und fragt je Coin bei Codex ab (insgesamt ~16 Abfragen). Ergebnis auf dem Bildschirm und in
+data/codex_test.json (landet beim naechsten Bot-Lauf auf GitHub).
 """
 import json, os, time
 import requests
 
+# Solbot-Ordner finden (dort, wo data/ liegt) - egal, ob aus solbot/ oder solbot/data/ gestartet
+HIER = os.path.dirname(os.path.abspath(__file__))
+SOLBOT = os.path.dirname(HIER) if os.path.basename(HIER) == "data" else HIER
+os.chdir(SOLBOT)
+
+# CODEX_KEY selbst aus der .env laden (wie run_paper.sh: ../.env), falls nicht schon gesetzt
+if not os.environ.get("CODEX_KEY"):
+    for env in (os.path.join(os.path.dirname(SOLBOT), ".env"), os.path.join(SOLBOT, ".env"), os.path.expanduser("~/.env")):
+        if os.path.exists(env):
+            for zeile in open(env):
+                zeile = zeile.strip()
+                if zeile.startswith("export "): zeile = zeile[7:]
+                if "=" in zeile and not zeile.startswith("#"):
+                    k, v = zeile.split("=", 1)
+                    os.environ.setdefault(k.strip(), v.strip().strip('"').strip("'"))
 KEY = os.environ.get("CODEX_KEY")
 URL = "https://graph.codex.io/graphql"
 NET = 1399811149
 if not KEY:
-    raise SystemExit("CODEX_KEY fehlt. Vorher:  set -a; . ../.env; set +a")
+    raise SystemExit("CODEX_KEY nicht gefunden - weder in der Umgebung noch in einer .env-Datei neben dem Solbot-Ordner.")
 if not os.path.exists("data/bot_d_early.json"):
-    raise SystemExit("Bitte im Solbot-Ordner starten (dort, wo data/ liegt).")
+    raise SystemExit(f"data/bot_d_early.json nicht gefunden in {SOLBOT}")
 
 
 def q(query):
