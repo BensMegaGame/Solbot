@@ -1,4 +1,4 @@
-"""Bot D v4 – "Datensammler": kauft NICHTS mehr, sammelt nur noch Daten fuer die Fruehkaeufer-Analyse.
+"""Bot D v4.1 – "Datensammler": kauft NICHTS mehr, sammelt nur noch Daten fuer die Fruehkaeufer-Analyse.
 
 WARUM: Als Handels-Bot ist D gescheitert (500 $ -> ~96 $, 295 Positionen, 11 % Gewinner, 78 % per Stop).
 Wertvoll waren seine Daten. Ab v4 sammelt er gezielt das, was fuer die Frage "gibt es Wallets, die immer
@@ -6,7 +6,9 @@ wieder frueh in spaetere Gewinner einsteigen?" noetig ist - fuer Gewinner UND Ve
 Auswertung wertlos (Bots, die ueberall frueh kaufen, saehen sonst wie Genies aus).
 
 Pro Kandidat (Codex, 12 h - 7 Tage alt, MCap 15-150k, wie bisher):
-  1) FRUEHKAEUFER (einmal je Coin): die ersten 100 Transaktionen ab Start ueber Helius
+  1) FRUEHKAEUFER (einmal je Coin), seit v4.1 vorrangig ueber CODEX: die ersten 100 Trades des pump.fun-Startpools
+     (Bonding Curve) - auch bei sehr aktiven Coins. Nur ohne pump.fun-Startpool wie bisher die ersten 100 Transaktionen
+     ab Start ueber Helius
      getTransactionsForAddress (aelteste zuerst, ~10 Credits je Coin). Aus den Token-Kontostaenden
      vorher/nachher: welche Wallet kaufte, wie viele Sekunden und Slots nach dem Start, wie viel.
      Kaeufe im Start-Slot oder dem naechsten gelten als Sniper/Insider und werden spaeter ausgeklammert.
@@ -34,6 +36,9 @@ PATH_HOURS = 7 * 24                    # v4: 7 Tage Kursverlauf je Kandidat (Gew
 DICHT_H = 72                           # bis 72 h alle 5 Min, danach stuendlich
 HANDEL = False                         # v4: keine Kaeufe mehr - reiner Datensammler
 FRUEH_PRO_LAUF = 8                     # so viele Coins je Lauf auf Fruehkaeufer pruefen (Laufzeit + Credits)
+CODEX_FRUEH_MAX_TAG = 250              # v4.1: hoechstens so viele Codex-Abfragen je Tag fuer Fruehkaeufer (Monatsbudget 10.000)
+CODEX_EVENTS = 100                     # die ersten 100 Trades des Startpools
+NEU_VERSUCH_D = 3                      # v4.1: Coins, bei denen Helius scheiterte, werden erneut versucht (solange < 3 Tage alt)
 FRUEH_TX = 100                         # die ersten 100 Transaktionen ab Start
 FRUEH_MAX_KAEUFER = 40                 # hoechstens 40 verschiedene Kaeufer je Coin speichern
 SNIPER_SLOTS = 1                       # Kauf im Start-Slot oder dem naechsten = Sniper/Insider
@@ -316,6 +321,53 @@ def fruehkaeufer(mint, credits):
     return {"t0": t0, "slot0": slot0, "via": via, "n_tx": len(txs), "kaeufer": kaeufer}
 
 
+
+# ---------- v4.1: Fruehkaeufer ueber Codex aus dem STARTPOOL ----------
+# Test am 10.10. (testcodex.py): Codex nimmt bei einer Token-Adresse den groessten Pool (bei pump.fun-Coins der Pool
+# NACH dem Umzug) - erster Trade 13-55 min nach Start, 0 von 40 Wallets wie Helius. Fragt man dagegen den
+# pump.fun-Pool (Bonding Curve) direkt ab: erster Trade 0 min nach Start, 30 von 40 Wallets wie Helius - und das
+# auch bei Coins, an denen Helius scheiterte (zu viele Transaktionen). Kosten: 1 Codex-Abfrage je Coin, plus 1,
+# falls DexScreener den Startpool nicht kennt. Nicht-pump.fun-Coins: weiter ueber Helius.
+def _codex(query):
+    r = requests.post(CODEX_URL, json={"query": query}, timeout=40,
+                      headers={"Authorization": CODEX_KEY, "Content-Type": "application/json", **UA})
+    d = r.json()
+    if d.get("errors"): raise RuntimeError(json.dumps(d["errors"])[:160])
+    return d.get("data") or {}
+
+def startpool(mint, codex_n):
+    """Adresse des pump.fun-Startpools (Bonding Curve) oder None. Erst DexScreener (kostenlos), dann Codex."""
+    d = get(f"{DS}/token-pairs/v1/solana/{mint}")
+    if isinstance(d, dict): d = d.get("pairs")
+    for p in d or []:
+        if (p.get("dexId") or "").lower() in ("pumpfun", "pump.fun", "pump") and p.get("pairAddress"):
+            return p["pairAddress"]
+    if not CODEX_KEY: return None
+    codex_n["n"] += 1
+    res = (_codex('{ listPairsWithMetadataForToken(tokenAddress: "%s", networkId: %d) { results { pair { address } exchange { name } } } }'
+                  % (mint, SOLANA)).get("listPairsWithMetadataForToken") or {}).get("results") or []
+    for x in res:
+        if ((x.get("exchange") or {}).get("name") or "").lower() in ("pump", "pump.fun"):
+            return (x.get("pair") or {}).get("address")
+    return None
+
+def fruehkaeufer_codex(mint, pool, codex_n):
+    codex_n["n"] += 1
+    items = ((_codex('{ getTokenEvents(query: {address: "%s", networkId: %d}, direction: ASC, limit: %d) '
+                     '{ items { timestamp blockNumber maker eventDisplayType token0SwapValueUsd token1SwapValueUsd } } }'
+                     % (pool, SOLANA, CODEX_EVENTS)).get("getTokenEvents") or {}).get("items") or [])
+    if not items: return {"fehler": "codex: keine trades im startpool"}
+    t0 = items[0].get("timestamp"); slot0 = items[0].get("blockNumber") or 0
+    gesehen, kaeufer = set(), []
+    for x in items:
+        w = x.get("maker")
+        if x.get("eventDisplayType") != "Buy" or not w or w in gesehen: continue
+        gesehen.add(w)
+        usd = max(float(x.get("token0SwapValueUsd") or 0), float(x.get("token1SwapValueUsd") or 0))
+        kaeufer.append([w, int((x.get("timestamp") or t0) - t0), int((x.get("blockNumber") or slot0) - slot0), round(usd, 2)])
+        if len(kaeufer) >= FRUEH_MAX_KAEUFER: break
+    return {"t0": t0, "slot0": slot0, "via": "codex", "pool": pool, "n_tx": len(items), "kaeufer": kaeufer}
+
 def ergebnis(e, now):
     """'gewinner' | 'verlierer' | None (noch offen). Gewinner = mind. GEWINNER_X ueber dem ersten Kurs in 7 Tagen."""
     if not e.get("px0"): return None
@@ -426,20 +478,36 @@ def main():
 
     # 4) Fruehkaeufer: jeder Kandidat genau einmal (Gewinner UND Verlierer)
     neu, wege, fehler = 0, {}, 0
-    if HELIUS:
-        offen = [a for a in cands if a not in early][:FRUEH_PRO_LAUF]
-        for a in offen:
-            r = fruehkaeufer(a, credits)
-            if r.get("fehler"):
-                fehler += 1
-                early[a] = {"sym": cands[a]["sym"], "seit": paths.get(a, {}).get("first", now), "fehler": r["fehler"]}
-                print(f"  {cands[a]['sym']}: Fruehkaeufer nicht ermittelbar ({r['fehler']})")
-                continue
-            early[a] = {"sym": cands[a]["sym"], "seit": paths.get(a, {}).get("first", now), **r}
-            if a in prices: early[a].setdefault("px0", prices[a]); early[a]["peak"] = prices[a]
-            neu += 1; wege[r["via"]] = wege.get(r["via"], 0) + 1
-            time.sleep(0.3)
+    if meta.get("codex_tag") != tag: meta["codex_tag"], meta["codex_heute"] = tag, 0
+    codex_n = {"n": 0}
+    # neue Kandidaten zuerst, danach Coins, bei denen es frueher scheiterte (noch keine 3 Tage alt)
+    nochmal = [a for a, e in early.items() if not e.get("kaeufer") and not e.get("codex_versucht")
+               and now - e.get("seit", now) < NEU_VERSUCH_D * 86400]
+    offen = ([a for a in cands if a not in early] + nochmal)[:FRUEH_PRO_LAUF]
+    for a in offen:
+        sym = (early.get(a) or {}).get("sym") or (cands.get(a) or {}).get("sym") or "?"
+        alt = early.get(a) or {"sym": sym, "seit": paths.get(a, {}).get("first", now)}
+        r, pool = None, None
+        if CODEX_KEY and meta["codex_heute"] + codex_n["n"] + 2 <= CODEX_FRUEH_MAX_TAG:
+            try:
+                pool = startpool(a, codex_n)
+                if pool: r = fruehkaeufer_codex(a, pool, codex_n)
+            except Exception as ex:
+                r = {"fehler": f"codex: {str(ex)[:80]}"}
+            alt["codex_versucht"] = True
+        if (r is None or r.get("fehler")) and HELIUS and not pool and not alt.get("fehler"):
+            r = fruehkaeufer(a, credits)               # kein pump.fun-Startpool -> Helius wie bisher
+        if r is None: continue                         # Codex-Tagesbudget erschoepft -> spaeter
+        if r.get("fehler"):
+            fehler += 1; alt["fehler"] = r["fehler"]; early[a] = alt
+            print(f"  {sym}: Fruehkaeufer nicht ermittelbar ({r['fehler']})")
+            continue
+        alt.pop("fehler", None); alt.update(r); early[a] = alt
+        if a in prices: alt.setdefault("px0", prices[a]); alt.setdefault("peak", prices[a])
+        neu += 1; wege[r["via"]] = wege.get(r["via"], 0) + 1
+        time.sleep(0.3)
     meta["credits_heute"] = meta.get("credits_heute", 0) + credits["n"]
+    meta["codex_heute"] = meta.get("codex_heute", 0) + codex_n["n"]
 
     # 5) Rangliste fuers Dashboard
     top = rangliste(early, now)
@@ -456,11 +524,12 @@ def main():
                       "kurse": sum(1 for a in watch if a in pairs), "von": len(watch),
                       "fruehkaeufer_neu": neu, "fruehkaeufer_fehler": fehler, "weg": wege,
                       "coins_mit_fruehkaeufern": sum(1 for e in early.values() if e.get("kaeufer")),
-                      "coins_ausgewertet": top["coins_ausgewertet"], "credits_heute": meta["credits_heute"]}
+                      "coins_ausgewertet": top["coins_ausgewertet"], "credits_heute": meta["credits_heute"],
+                      "codex_heute": meta["codex_heute"]}
     v = pf.mark(prices); pf.commit()
     print(f"Bot D [datensammler]: kandidaten {len(cands)} | pfade {len(paths)} | kurse {st['coverage']['kurse']}/{len(watch)}"
           f" | fruehkaeufer neu {neu} {wege} fehler {fehler} | coins mit fruehkaeufern {st['coverage']['coins_mit_fruehkaeufern']}"
-          f" | ausgewertet {top['coins_ausgewertet']} | credits heute ~{meta['credits_heute']} | offene alt-positionen {len(st['positions'])}")
+          f" | ausgewertet {top['coins_ausgewertet']} | credits heute ~{meta['credits_heute']} | codex heute {meta['codex_heute']} | offene alt-positionen {len(st['positions'])}")
 
 if __name__ == "__main__":
     main()
