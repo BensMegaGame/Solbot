@@ -38,7 +38,7 @@
   "fehler": "zu viele transaktionen (leere antwort)",
   "px0": 9.858e-05,
   "peak": 0.0001194,
-  "last": 3.878e-05,
+  "last": 3.508e-05,
   "codex_versucht": true
  },
  "DZaQRdmPHNaqNsMVqRU8P4q5f2mErab4GipPghowFvaz": {
@@ -302,7 +302,7 @@
   "fehler": "zu viele transaktionen (leere antwort)",
   "px0": 0.003098,
   "peak": 0.003098,
-  "last": 2.615e-05,
+  "last": 2.694e-05,
   "codex_versucht": true
  },
  "CioPfvQWpVF2eTzpBj72x2zPyqgJRgvi36PqdLCCpump": {
@@ -844,7 +844,7 @@
   "seit": 1791423425.408521,
   "px0": 6.216e-05,
   "peak": 0.0001305,
-  "last": 5.907e-05,
+  "last": 6.075e-05,
   "codex_versucht": true,
   "t0": 1791377531,
   "slot0": 454228335,
@@ -1161,7 +1161,7 @@
   ],
   "px0": 4.357e-05,
   "peak": 0.0001382,
-  "last": 0.0001207
+  "last": 0.000119
  },
  "Fa7yZLtXLZ5sE77gfjEHodcL4pXHcRWWqqztMy1Lpump": {
   "sym": "Exlipse",
@@ -2203,7 +2203,7 @@
   "seit": 1791434831.504167,
   "px0": 5.543e-05,
   "peak": 5.543e-05,
-  "last": 4.069e-06,
+  "last": 3.976e-05,
   "codex_versucht": true,
   "t0": 1791381591,
   "slot0": 454243412,
@@ -2458,7 +2458,7 @@
   "seit": 1791442918.3857408,
   "px0": 0.0001062,
   "peak": 0.0003669,
-  "last": 0.0002029,
+  "last": 0.0002042,
   "codex_versucht": true,
   "t0": 1791398592,
   "slot0": 454306554,
@@ -3059,7 +3059,7 @@
   "seit": 1791438713.1898468,
   "px0": 0.0001177,
   "peak": 0.0003474,
-  "last": 0.0001918,
+  "last": 0.0001976,
   "codex_versucht": true,
   "t0": 1791490207,
   "slot0": 454647546,
@@ -3312,10 +3312,11 @@
  "FyGhuKZgCDUBbGJkG2qx1pX2ZfRpgtnEwiZcneKspump": {
   "sym": "FortniteOG",
   "seit": 1791476183.6914225,
-  "fehler": "zu viele transaktionen (leere antwort)",
+  "fehler": "codex: keine trades im startpool",
   "px0": 5.805e-05,
   "peak": 0.0002193,
-  "last": 5.011e-05
+  "last": 4.992e-05,
+  "codex_versucht": true
  },
  "3ykvcjrzbb5nyJRnzHVEA12sQsZfnTijwxUusN4f8R3R": {
   "sym": "HOOKI",
@@ -3458,7 +3459,8 @@
   "fehler": "zu viele transaktionen (leere antwort)",
   "px0": 0.000108,
   "peak": 0.0001995,
-  "last": 0.0001475
+  "last": 0.0001475,
+  "codex_versucht": true
  },
  "HCHL2NsA33g5vpFyJLiV89ahcDRbbBKWBLzBuSa9pump": {
   "sym": "RULR",
@@ -3482,7 +3484,8 @@
   "fehler": "zu viele transaktionen (leere antwort)",
   "px0": 0.0001014,
   "peak": 0.0001448,
-  "last": 9.833e-05
+  "last": 9.833e-05,
+  "codex_versucht": true
  },
  "6hTLdzZaaCjmqtn7RtaEMQsCbXT5Pg8q76tRViEGpump": {
   "sym": "ABU",
@@ -3498,7 +3501,8 @@
   "fehler": "zu viele transaktionen (leere antwort)",
   "px0": 0.0001379,
   "peak": 0.0001975,
-  "last": 9.066e-05
+  "last": 9.043e-05,
+  "codex_versucht": true
  },
  "7bC8ugu1ZJn21MhA4ht483nX8brLNesa8R7XLimpFyhq": {
   "sym": "SPLICE",
@@ -3569,23 +3573,518 @@
   "fehler": "fehler leere antwort / 429 Client Error: Too Many Requests for url: https://mainnet",
   "px0": 7.415e-05,
   "peak": 8.881e-05,
-  "last": 3.244e-06
+  "last": 3.244e-06,
+  "codex_versucht": true
  },
  "6FhVPctYg363pQbs4iSvqyHe2cJzfsvFD96gePy6pump": {
   "sym": "EXFIL",
   "seit": 1791415328.3563073,
-  "fehler": "zu viele transaktionen (leere antwort)",
   "px0": 0.000129,
   "peak": 0.0004061,
-  "last": 0.0002009
+  "last": 0.0002084,
+  "codex_versucht": true,
+  "t0": 1790943280,
+  "slot0": 452607108,
+  "via": "codex",
+  "pool": "5uegRZVRoDf5nRpDRjDVHtrHUf1mFBnus23TGMGjxxfr",
+  "n_tx": 100,
+  "kaeufer": [
+   [
+    "GvkpJ3edA2ZYiMvnjekbdPY2P8wHMLJnLSHqmVrhfzh4",
+    0,
+    0,
+    121.62
+   ],
+   [
+    "3cwAWrYuC1XfYfZANA6jmA6nSCZcvLdsBJYMXfHwvUTJ",
+    0,
+    1,
+    121.62
+   ],
+   [
+    "Eeg5a3hKMZX8CYhHnwY6dVqK6PNxjVeuKtjK47PuZQvb",
+    0,
+    2,
+    121.62
+   ],
+   [
+    "Hv3fPDH9bd1VNK1BjRQyjCYUK9HrXwLGfJ37mEeUJdrJ",
+    0,
+    2,
+    121.62
+   ],
+   [
+    "8DS2pqspcQkTBmnkSqbXHsUH3fvwwJfM1mG9brPpzMDD",
+    0,
+    2,
+    121.62
+   ],
+   [
+    "6anjqMeWigQFo5wpciARAunVQUXTqoat8w8fFWarCkpc",
+    0,
+    2,
+    121.62
+   ],
+   [
+    "37V1znU2AxgHM67xjwHdvtg7ASKEii7nQU9kp5FM8PXN",
+    0,
+    2,
+    121.62
+   ],
+   [
+    "6MgkzHqVYC17fpKe3WftmXkpyFQ7iVovDMTAMdvNiuaY",
+    4,
+    16,
+    121.62
+   ],
+   [
+    "4erBGZPGPUAaph2M3Qgr4vYc2vPZYvpzESQ99A1vpYZa",
+    4,
+    16,
+    121.62
+   ],
+   [
+    "77shyvx7LWiejVuqZQont2pqdMR4EvofLmwaB3FAjpJC",
+    4,
+    16,
+    121.62
+   ],
+   [
+    "BNXnvKbBkCWbgpjBvUjQx965yp67RGthZPTnhZXnbKfY",
+    4,
+    16,
+    121.62
+   ],
+   [
+    "EF6uQJMuiBVEKtdz93epoWjwyg9sHbTCuTzkPdHuDfcx",
+    20,
+    75,
+    121.61
+   ],
+   [
+    "8dG39hyjEhvBbBymd3X6STH7gESYjw61hT52yn2xsV4P",
+    2190,
+    8180,
+    122.07
+   ],
+   [
+    "BuGacsFWAqk8LZk7SPcJ2iqdGdUnPyTqvwSVUU48ao5o",
+    2190,
+    8180,
+    122.07
+   ],
+   [
+    "4KQGocKQW25nJ8xT9GPNW5Uqy2t7eFs2NzwcXqiyuY1X",
+    2190,
+    8180,
+    122.07
+   ],
+   [
+    "FZU56d9iPqohXM5XBrYYBZLi2UoUnZT4V5Qf2631tEzb",
+    2190,
+    8180,
+    122.07
+   ],
+   [
+    "3aEoBZFwEPB6LeSixoWucBWXFpjRxTESi4vkssZHB6JU",
+    2190,
+    8180,
+    122.07
+   ],
+   [
+    "AFnQ25GGbyRXpcbN175reWWybvgFQuhewXmAyk1NtL9a",
+    2190,
+    8180,
+    122.07
+   ],
+   [
+    "nya666pQkP3PzWxi7JngU3rRMHuc7zbLK8c8wxQ4qpT",
+    2191,
+    8181,
+    122.07
+   ],
+   [
+    "H6gcQdG568wYrzC1r2x1YvhNA9f3TUd5Sn9kf6D3ohMP",
+    2208,
+    8249,
+    122.07
+   ],
+   [
+    "84uAG3uy9dAW2oEuLfmFbg64hzSRKAVjjWoDcGmQHQnt",
+    2208,
+    8249,
+    122.07
+   ],
+   [
+    "7Ut1gh36seBkUiYuPx3rNQbuLE7QLT53YJRo3wsGAZRZ",
+    2208,
+    8249,
+    122.07
+   ],
+   [
+    "87AwAEKShQ7UESLXWQbKV3LYhpgKPmd6J4wC9SWFGSjp",
+    2214,
+    8272,
+    122.08
+   ],
+   [
+    "rnmpJGT2Dc8MNswrEPnbncbiVRQ7uQoSKjnbNK6WRBB",
+    2264,
+    8461,
+    121.99
+   ],
+   [
+    "9w9kjr6iRgCvUam3s2nXxW6wGJRWjHRbnFwfyPdDxziP",
+    2264,
+    8461,
+    121.99
+   ],
+   [
+    "Da1Erpm3FoS2f3Sto7FfVVnd8S2acvQyxY52VDmpH2iQ",
+    2265,
+    8462,
+    121.99
+   ],
+   [
+    "A5XRgech459NofuBNNbXVWTcKKEXxVXyRPyKPi1wVtXP",
+    2265,
+    8462,
+    121.99
+   ],
+   [
+    "BeULA2AXgcH6fKRUF5h1SZdfCVcCtenkYmJPVyFyyo7f",
+    2268,
+    8476,
+    121.99
+   ],
+   [
+    "omegoMAe1AMY5MFKQQr3JwXVy8F4eCvmBAfcpo8XAfq",
+    2268,
+    8476,
+    121.99
+   ],
+   [
+    "ALngXnYyafrUiK7viCzT3rMmjcA2cZvWPeKTtFdg6gDA",
+    2318,
+    8659,
+    122.07
+   ],
+   [
+    "4G9RznKvrtBWn2sRETcAsnSRkectXiDsFP5imBbSiFM2",
+    2318,
+    8659,
+    122.07
+   ],
+   [
+    "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
+    2318,
+    8659,
+    122.07
+   ],
+   [
+    "EwMndgvbgdXuTCvT7bRGX8wPKVevyq7QZNVqWvFqFVsh",
+    2318,
+    8659,
+    122.07
+   ],
+   [
+    "2FdJD3EVx4yv13157M9awWTxiU1ShtMMbwNZhyD3UySs",
+    2318,
+    8659,
+    122.07
+   ],
+   [
+    "8U65cSFjtmQmYuFTokbZh6S9BQHuT2gMtQRUo93vcmQZ",
+    2318,
+    8659,
+    122.07
+   ],
+   [
+    "HVE8996rtqG8N2sCNaTJZdLBbKW2SrSg2uXjJtNqPGDJ",
+    2318,
+    8659,
+    122.07
+   ],
+   [
+    "EVY25SLH5ymiGKaXh8s7GH9fp9Rrxx8v6Lg5uNRHXdhd",
+    2318,
+    8659,
+    122.07
+   ],
+   [
+    "DJ3YWkKWyrLtqFnjcGUsVmiT9AXt9H6Ra29oKapKHR8X",
+    2318,
+    8659,
+    122.07
+   ],
+   [
+    "BaKbPLfDRDqLtZYFewVpeqjT1PULo9wjfSNnFfnoK9LZ",
+    2318,
+    8659,
+    122.07
+   ],
+   [
+    "GcjzWtULkoHfQr5NwB2uhRXNz5XqrYvGS2oNUr7veCtb",
+    2318,
+    8659,
+    122.07
+   ]
+  ]
  },
  "CZiwA6eLUthZFLvTVEWG9v1K9Pc7p3eiBKRba2G7pump": {
   "sym": "BOMBERS",
   "seit": 1791446533.6768098,
-  "fehler": "fehler leere antwort / 429 Client Error: Too Many Requests for url: https://mainnet",
   "px0": 0.00014,
   "peak": 0.0003222,
-  "last": 0.0002025
+  "last": 0.0002007,
+  "codex_versucht": true,
+  "t0": 1791271850,
+  "slot0": 453834733,
+  "via": "codex",
+  "pool": "6WRW7U6fFgT4QnzJoMmX41uUC4xMYheQkT1BCCFYJ7kA",
+  "n_tx": 100,
+  "kaeufer": [
+   [
+    "5hqKWJMEG9KPim3LyyJw2YVUeGMaQaKvrV8XqNsAZEw3",
+    0,
+    0,
+    120.04
+   ],
+   [
+    "FiFawHqxeTVBhv6YbqbLwDVuvokRpPUM1bNwAyxhGc6W",
+    0,
+    0,
+    120.04
+   ],
+   [
+    "9qz7cWBqYBP2TnGfzMmxX64G4PQip7HtogjPBBnMhWpw",
+    0,
+    0,
+    120.04
+   ],
+   [
+    "M8CcrseQEamQgz8TzLZkX7guSLSLW2eNrs9B4b11kiV",
+    0,
+    0,
+    120.04
+   ],
+   [
+    "8T4XXALtGjvJytQ2zvFSBaZYexxqd1fzpC1n8ATSbkWc",
+    2,
+    5,
+    120.04
+   ],
+   [
+    "HtJ9i3BsmakoqAQXXU74zGvPibRpspXETrtP9gZXvqFe",
+    2,
+    5,
+    120.04
+   ],
+   [
+    "5QY3MBvLEsP4xjE4SNYJYPuwvJgoBUrDnvSaZUNsNHZT",
+    2,
+    8,
+    120.04
+   ],
+   [
+    "WnPsaKx84i8BoP2a2YdiPqBEz9VZhdmEW4UKYCcjwxt",
+    3,
+    9,
+    120.04
+   ],
+   [
+    "39nduMYSoWBE1pUiQty7xB5hWrMy9CprKtNdLCKfLSnS",
+    3,
+    9,
+    120.04
+   ],
+   [
+    "GV3LVViWota4Qod83uz7R1BTdWLABYpLYzcrueojSLED",
+    3,
+    9,
+    120.04
+   ],
+   [
+    "8QvkXm4V7wSg9CTfqdM5sLu2aji3qZTV5AXwJDoZL7ec",
+    3,
+    11,
+    120.04
+   ],
+   [
+    "APVTyjSc8osA8YJLX4XLv3zdYpGvVV9RNeahGNwha4h3",
+    22,
+    80,
+    120.04
+   ],
+   [
+    "3m6Gjt6QWwQNZjtgXA2F6fuWACJePBSWyGRrUSiF54ZL",
+    22,
+    81,
+    120.04
+   ],
+   [
+    "4VbhBYRH4QGhEY8zn2qa64xzwrFXwcip9Eq45HdrTbdQ",
+    22,
+    82,
+    120.04
+   ],
+   [
+    "BeDTnhSvjHi1arpv3GqPB2SVY3cBRTe3WLxSeuymtCRm",
+    24,
+    88,
+    120.04
+   ],
+   [
+    "LivF8GikFDeekGrBcB6nHVNUHcBPNYTVzeoD2WQ5dfx",
+    24,
+    88,
+    120.04
+   ],
+   [
+    "5wMwcahjGMEp8ozrBNYLNPDt8gXn1Tvv84pqvSSFCCzt",
+    29,
+    107,
+    120.04
+   ],
+   [
+    "9wd1UE5VsnJwxWFLJ6QPXzj7co97BEjB9wMCVZRtaA8i",
+    31,
+    114,
+    120.04
+   ],
+   [
+    "H1xshmCRBDLzKsfYzMCutKkAzr1zdDN2CWDZyr49Uz8H",
+    31,
+    114,
+    120.04
+   ],
+   [
+    "5DpobCyU17cgagSfPkuEdEhBP7BCdZwhtFcNdMQkrszS",
+    31,
+    114,
+    120.04
+   ],
+   [
+    "D7g2AzdDnbwwBGuHRD5NSSvLe1tJGoKzmvTX3nx6uoPJ",
+    31,
+    114,
+    120.04
+   ],
+   [
+    "7W8SEZv79hk4445o56Fd6RzhbUsozkzGXi8vkc7vNRr8",
+    31,
+    114,
+    120.04
+   ],
+   [
+    "AnPEzrbmfSRcGdjPigzFoYvwiqSNUWDYvjhz8Gt4sF7z",
+    31,
+    115,
+    120.04
+   ],
+   [
+    "DnWZJD25pt6Ziih6TGud7YwXsZDDx4CikVfZN9MmXAu7",
+    31,
+    115,
+    120.04
+   ],
+   [
+    "BXEwt3AVbymoRRFNS4fLWTjvno59ZNM9YJywZzHoGN9U",
+    31,
+    115,
+    120.04
+   ],
+   [
+    "DrAN7AjgkYVsU1AiLr1h6hf82Q2BmYHRunaYea9y4n9c",
+    52,
+    192,
+    120.04
+   ],
+   [
+    "FF4rM5TFTHxtNLEFKJH9HuciLHvF3LN6wwy7jzZxY9d4",
+    54,
+    198,
+    120.04
+   ],
+   [
+    "ftdTVePhFKhTNEHu6fzx5NTqrLfj58K1SxcLfHDQXQo",
+    63,
+    232,
+    120.03
+   ],
+   [
+    "8CbGyztL7mLNKGsFe82DdS6KJxPukpKMPDiP1mHfTNjj",
+    75,
+    278,
+    120.04
+   ],
+   [
+    "7wMkkbuxGWtCFB2CLNFsPekn26RaRXLJ4o5G4Epf6qDQ",
+    88,
+    326,
+    120.04
+   ],
+   [
+    "4KPXspS3eCGvny1MjJ4oTG1oQRgLvxNXpWq3fnU4ayCE",
+    88,
+    326,
+    120.04
+   ],
+   [
+    "GzHYH4P8eXqyARPrFebkdLYnm7zxaEPXBpBQUP9gqVBV",
+    88,
+    329,
+    120.04
+   ],
+   [
+    "HgfMv5NAeJc5GmXbBd6HePxbuu6rzhrzhp8JpCKCLrk4",
+    122,
+    455,
+    120.03
+   ],
+   [
+    "8jmHweJ8NwsUC9insrcKu5cDh8eLMZ2rqztvbzBU2LHX",
+    122,
+    456,
+    120.03
+   ],
+   [
+    "4FpuSLX6TLffEk9U9jQ9pwbwd4Aw2NCRBFZYQdf4X4Uk",
+    122,
+    456,
+    120.03
+   ],
+   [
+    "7kvkJLntNEPRLxFYFEFAYu8Zn7SqsxPuEpwDWiytp9XR",
+    123,
+    458,
+    120.03
+   ],
+   [
+    "3vnqjU9PQxLayncdx7DtoJCqTizCDmnKBu5HLeNvrY9p",
+    123,
+    459,
+    120.03
+   ],
+   [
+    "AnTyYQobMEMd4e633FysGGg3PNDDhzSSXZZXJSJ9kr5M",
+    133,
+    493,
+    120.03
+   ],
+   [
+    "2pWXVLrVzmRrhNoNy6fJ7qHQoh4AkBrtMsYrRXMSiTsH",
+    138,
+    514,
+    120.03
+   ],
+   [
+    "3MzjpNh3JMQnYBxD6z2MEcsPtt1UNXVJy8rqHGtV8jAs",
+    140,
+    520,
+    120.03
+   ]
+  ]
  },
  "3oKUDGkNqbfKKrYNALjCX3kPsvDTjawnsf9v4dkneUC7": {
   "sym": "SEC",
@@ -3593,7 +4092,8 @@
   "fehler": "fehler 429 Client Error: Too Many Requests for url: https://mainnet.helius-rpc.com/?api / 429 Client Error: Too Many Requests for url: https://mainnet",
   "px0": 7.883e-05,
   "peak": 7.883e-05,
-  "last": 6.597e-05
+  "last": 6.602e-05,
+  "codex_versucht": true
  },
  "9dSMwFfPezQ8WPcW1uZV7ns4rcviEj2LssSAg75WBLXd": {
   "sym": "Aiden",
@@ -3641,7 +4141,7 @@
   "fehler": "zu viele transaktionen (leere antwort)",
   "px0": 4.571e-05,
   "peak": 0.0001447,
-  "last": 6.195e-05
+  "last": 5.974e-05
  },
  "H7TuvDxEKygh27zGfGcjKG8JGWgrbyKpPtvJEpGosfas": {
   "sym": "CLAUDIA",
@@ -3673,7 +4173,7 @@
   "fehler": "zu viele transaktionen (leere antwort)",
   "px0": 5.521e-05,
   "peak": 6.264e-05,
-  "last": 2.047e-05
+  "last": 2.25e-05
  },
  "AMC1qwR9KhiyrQBRPrxnfo4JfMeMZqEBvt5tgTytNNoc": {
   "sym": "AMC",
@@ -4181,7 +4681,7 @@
   "fehler": "fehler leere antwort / 429 Client Error: Too Many Requests for url: https://mainnet",
   "px0": 0.0001514,
   "peak": 0.0001518,
-  "last": 4.038e-05
+  "last": 4.016e-05
  },
  "6MnQ921sqsShymdoqPv2RfhL5g2Hk2hoqPvgpDGcpump": {
   "sym": "APP",
@@ -4213,7 +4713,7 @@
   "fehler": "zu viele transaktionen (leere antwort)",
   "px0": 6.701e-05,
   "peak": 0.000198,
-  "last": 9.836e-05
+  "last": 9.715e-05
  },
  "3iBohACVmao9UcDjBCv7fpNaPnVMTJ5LmVZWT8LYt1By": {
   "sym": "DBC",
@@ -4814,7 +5314,7 @@
   ],
   "px0": 5.745e-05,
   "peak": 0.00017,
-  "last": 5.963e-05
+  "last": 5.865e-05
  },
  "HaQdrXRUoxxk1qLFZJNrSyzWNjn16o1r1np5h6jipump": {
   "sym": "SharkTank",
@@ -4891,7 +5391,7 @@
   "fehler": "zu viele transaktionen (leere antwort)",
   "px0": 0.000125,
   "peak": 0.0001861,
-  "last": 6.784e-05
+  "last": 6.714e-05
  },
  "DTZJdzvBkmfVXv1JhL6wUC68k2ktnCXHYG6dz4ACS984": {
   "sym": "BLASTAR",
@@ -4926,7 +5426,7 @@
   "fehler": "zu viele transaktionen (leere antwort)",
   "px0": 0.0001119,
   "peak": 0.0002794,
-  "last": 0.000141
+  "last": 0.0001266
  },
  "7thxAzq4B9KwPe4NqMNAntF2Njgqb9FTKQb4z6fYpump": {
   "sym": "Gunner",
@@ -4934,7 +5434,7 @@
   "fehler": "zu viele transaktionen (leere antwort)",
   "px0": 8.454e-05,
   "peak": 0.0001195,
-  "last": 2.534e-05
+  "last": 2.68e-05
  },
  "4oqeXR2DrZ4iBboq5GDTMvJQz792VTydtXs1Zfcn6NRH": {
   "sym": "HeToo",
@@ -4942,7 +5442,7 @@
   "fehler": "zu viele transaktionen (leere antwort)",
   "px0": 4.679e-05,
   "peak": 4.679e-05,
-  "last": 1.807e-05
+  "last": 1.644e-05
  },
  "C4ru2YKwoa2FCKRQzUoKzzD4jxCtw8sP4WVVo1dRpump": {
   "sym": "KURA",
@@ -5005,7 +5505,7 @@
   ],
   "px0": 7.048e-05,
   "peak": 0.0001115,
-  "last": 6.182e-05
+  "last": 6.155e-05
  },
  "6c1yyJi2uy5kQ1CWcECMFPHp2SspfH1rxDr1Ecnjy9G": {
   "sym": "CONDO",
@@ -5291,7 +5791,7 @@
   ],
   "px0": 7.563e-05,
   "peak": 8.872e-05,
-  "last": 7.609e-05
+  "last": 7.626e-05
  },
  "Ca5VuKu5NyyFkixnewTnokmzXpmNuG8Mk5odwHJypRNq": {
   "sym": "4206066",
@@ -5299,7 +5799,7 @@
   "fehler": "zu viele transaktionen (leere antwort)",
   "px0": 7.615e-05,
   "peak": 7.703e-05,
-  "last": 2.066e-05
+  "last": 2.093e-05
  },
  "Aqv8Gj8MesSzuEsgigq4kEDWVRFHgPUZq4Po4Q1Mpump": {
   "sym": "SM",
@@ -5307,7 +5807,7 @@
   "fehler": "zu viele transaktionen (leere antwort)",
   "px0": 0.000151,
   "peak": 0.0001812,
-  "last": 5.289e-05
+  "last": 5.24e-05
  },
  "9r2xnY8ArbHogFoZ2VLz6HUEnDAN9B2wJ1kUQcNwpump": {
   "sym": "WOSE",
@@ -5408,7 +5908,7 @@
   "fehler": "zu viele transaktionen (leere antwort)",
   "px0": 7.656e-05,
   "peak": 0.0002685,
-  "last": 0.0001317
+  "last": 0.0001367
  },
  "HXqxTwCzREUXNK4CbNDgNEUEh2jLzFKdC4tvTuojpump": {
   "sym": "ZKDARK",
@@ -5585,7 +6085,7 @@
   "fehler": "zu viele transaktionen (leere antwort)",
   "px0": 6.566e-05,
   "peak": 0.0001048,
-  "last": 8.227e-05
+  "last": 8.183e-05
  },
  "8cp1WhUDxTbfX8nDe1kAB1ogPUyQvUSKgzFz365LbQyZ": {
   "sym": "CAESAR",
@@ -5851,7 +6351,7 @@
   "fehler": "zu viele transaktionen (leere antwort)",
   "px0": 5.166e-05,
   "peak": 0.0001471,
-  "last": 6.629e-05
+  "last": 6.743e-05
  },
  "9oxWMhM4QN1hLGNutaTFcBjMjJce6QxrvVxAcGW6pump": {
   "sym": "Pack",
@@ -5884,7 +6384,7 @@
   ],
   "px0": 6.339e-05,
   "peak": 7.165e-05,
-  "last": 1.919e-05
+  "last": 1.938e-05
  },
  "DdmbM4XGDaBQHttm7XTf1rLfkyLtmLix9T19Qj9qarT": {
   "sym": "RMPL",
@@ -5900,7 +6400,7 @@
   "fehler": "zu viele transaktionen (leere antwort)",
   "px0": 0.0001239,
   "peak": 0.0002798,
-  "last": 9.136e-05
+  "last": 9.03e-05
  },
  "2WNiZqRefcndEA9c1T6A1bdie31pbBGdFQpyR52h9TWr": {
   "sym": "BUNKER",
@@ -5908,7 +6408,7 @@
   "fehler": "zu viele transaktionen (leere antwort)",
   "px0": 0.0001408,
   "peak": 0.0001633,
-  "last": 2.882e-05
+  "last": 2.678e-05
  },
  "FZCKFJtMvqounLLsYSqZo445rwaiRYvyVU7Snx74FdZw": {
   "sym": "Nidal",
@@ -5963,7 +6463,7 @@
   ],
   "px0": 5.252e-05,
   "peak": 0.0001084,
-  "last": 6.88e-05
+  "last": 6.81e-05
  },
  "8TUn4HHBybSR4oatWshpeM7i1keT5esWCZE6zc8EB1uC": {
   "sym": "SHIELD",
@@ -5971,7 +6471,7 @@
   "fehler": "fehler leere antwort / 429 Client Error: Too Many Requests for url: https://mainnet",
   "px0": 5.511e-05,
   "peak": 0.0002691,
-  "last": 0.0001506
+  "last": 0.000116
  },
  "FeAWY9L9hr82TvTuEyi328V9FP7GxVuGLx7xNg6kzWVa": {
   "sym": "CHONK",
@@ -5987,7 +6487,7 @@
   "fehler": "fehler 429 Client Error: Too Many Requests for url: https://mainnet.helius-rpc.com/?api / 429 Client Error: Too Many Requests for url: https://mainnet",
   "px0": 5.999e-05,
   "peak": 0.0001495,
-  "last": 0.0001038
+  "last": 0.0001027
  },
  "CAmp5hUNFvU5UH8BEFzVAsEAfoLi2HxGeoEJriZc7BZ6": {
   "sym": "unbound",
@@ -5995,7 +6495,7 @@
   "fehler": "zu viele transaktionen (leere antwort)",
   "px0": 0.0001472,
   "peak": 0.0001922,
-  "last": 7.175e-05
+  "last": 6.732e-05
  },
  "55WCUhCV8jAKwc5SbsH3agTVAYn7x7RnQZmHk8Cameme": {
   "sym": "LMEOW",
@@ -6011,7 +6511,7 @@
   "fehler": "zu viele transaktionen (leere antwort)",
   "px0": 7.768e-05,
   "peak": 0.0002229,
-  "last": 4.873e-05
+  "last": 5.385e-05
  },
  "7oEChWwjq2mXjzAH8NuAVAudncD5jZ2Ec7hmXapvYxY7": {
   "sym": "Shigella",
@@ -6122,7 +6622,7 @@
   "fehler": "zu viele transaktionen (leere antwort)",
   "px0": 9.631e-05,
   "peak": 0.0001086,
-  "last": 6.999e-05
+  "last": 7.11e-05
  },
  "4QV31UeJJyUVWP2f1qgEz8gUPkf6WyPZyAmGdT8UD8Ld": {
   "sym": "OP_CAT",
@@ -6375,7 +6875,7 @@
   ],
   "px0": 5.027e-05,
   "peak": 5.791e-05,
-  "last": 3.239e-05
+  "last": 3.217e-05
  },
  "J1L4kUDSq2pNFyM2uPc7KcdWnu527cNZBSoJvePHpump": {
   "sym": "PHILJEAN",
@@ -6534,7 +7034,7 @@
   "fehler": "zu viele transaktionen (leere antwort)",
   "px0": 0.0001121,
   "peak": 0.0001477,
-  "last": 0.0001205
+  "last": 0.00012
  },
  "2iPzs2s7GVbK48ttJCNpaCgKdyz3Su7S5DWTW8QKXxYN": {
   "sym": "bazucat",
@@ -6542,7 +7042,7 @@
   "fehler": "zu viele transaktionen (leere antwort)",
   "px0": 5.848e-05,
   "peak": 0.0001371,
-  "last": 6.898e-05
+  "last": 6.392e-05
  },
  "J97QTGSBWPqZzaUyHaMVBLVKNn4RXse9kZgtycoVpump": {
   "sym": "POKECRAFT",
@@ -6668,8 +7168,8 @@
    ]
   ],
   "px0": 4.705e-05,
-  "peak": 0.0007621,
-  "last": 0.0007621
+  "peak": 0.0007745,
+  "last": 0.0007745
  },
  "DzJ2zo62XcjBkcJaAvgPAnzeZ95SbUSFwEfgFzZuDR7": {
   "sym": "SATOSHIBA",
@@ -6685,7 +7185,7 @@
   "fehler": "zu viele transaktionen (leere antwort)",
   "px0": 0.0001223,
   "peak": 0.0001677,
-  "last": 0.0001415
+  "last": 0.0001371
  },
  "4BCyeFuXvHMmqfRAEVPX7ZSkngoMeLCKHRq4Aye2yDGn": {
   "sym": "botpfp",
@@ -6693,7 +7193,7 @@
   "fehler": "zu viele transaktionen (leere antwort)",
   "px0": 6.718e-05,
   "peak": 6.718e-05,
-  "last": 2.541e-05
+  "last": 2.565e-05
  },
  "DQpmkWRMetuPVaioD4GYxsDsdm9VLWohWuMW85Dqpump": {
   "sym": "kumo",
@@ -6717,7 +7217,7 @@
   "fehler": "zu viele transaktionen (leere antwort)",
   "px0": 9.334e-05,
   "peak": 0.0001818,
-  "last": 6.23e-05
+  "last": 5.882e-05
  },
  "F8VSKhCXTc35u5J7QxSa5kSmQU42zeuYLHNNjJT3Ktud": {
   "sym": "VCAT",
@@ -6894,7 +7394,7 @@
   "fehler": "zu viele transaktionen (leere antwort)",
   "px0": 5.349e-05,
   "peak": 0.0001034,
-  "last": 3.344e-05
+  "last": 3.385e-05
  },
  "8ZCmwpW3MtC5UpNcZf7U4HMvRNTo71syU11BDiAFpump": {
   "sym": "Gary",
@@ -6902,7 +7402,7 @@
   "fehler": "zu viele transaktionen (leere antwort)",
   "px0": 9.696e-05,
   "peak": 0.000152,
-  "last": 9.738e-05
+  "last": 0.0001066
  },
  "7pYdm6bXhVf1J9Qv1fyWB9nkxdnG5RhFKA9yjW1Dpump": {
   "sym": "open/acc",
@@ -6910,7 +7410,7 @@
   "fehler": "zu viele transaktionen (leere antwort)",
   "px0": 8.164e-05,
   "peak": 0.0001919,
-  "last": 4.763e-05
+  "last": 4.474e-05
  },
  "69okNLgixyKsS6AhWeQTPMMqpAMeCYjgw97fET84McJW": {
   "sym": "Eve",
@@ -6953,7 +7453,7 @@
   ],
   "px0": 5.894e-05,
   "peak": 0.000227,
-  "last": 0.000227
+  "last": 0.0001953
  },
  "6VsnbKz6erJRTPiiD34Msq7eWmmgZHDnh4Bxan4MpGjm": {
   "sym": "SOUVENIR",
@@ -7013,7 +7513,7 @@
   "fehler": "zu viele transaktionen (leere antwort)",
   "px0": 0.0001382,
   "peak": 0.0002563,
-  "last": 0.0001444
+  "last": 0.0001532
  },
  "DsvjNM2YAmfPoccgkEKQBManpHqf6h6ZrN387anvWSU2": {
   "sym": "BER",
@@ -7309,7 +7809,7 @@
   ],
   "px0": 5.173e-05,
   "peak": 9.872e-05,
-  "last": 4.853e-05
+  "last": 4.902e-05
  },
  "Ar3ip7MiCfxFPcHVvdbNSFRkP1A52FxQ9NLa6zCMEN43": {
   "sym": "QFART",
@@ -7341,7 +7841,7 @@
   "fehler": "zu viele transaktionen (leere antwort)",
   "px0": 0.0001318,
   "peak": 0.0001987,
-  "last": 7.11e-05
+  "last": 7.3e-05
  },
  "89PmWtV1ZuFusUJJ2Vxd3i5PtK7RvdrnBs3P9i7wpump": {
   "sym": "BUNDLED",
@@ -7357,7 +7857,7 @@
   "fehler": "zu viele transaktionen (leere antwort)",
   "px0": 0.0001476,
   "peak": 0.0001947,
-  "last": 0.0001328
+  "last": 0.0001327
  },
  "8uZieiVy2AanCpYkfxR1quKSbzPKuMUaNYwQ61mrT3iu": {
   "sym": "REA",
@@ -7365,7 +7865,7 @@
   "fehler": "zu viele transaktionen (leere antwort)",
   "px0": 4.672e-05,
   "peak": 6.985e-05,
-  "last": 2.585e-05
+  "last": 2.581e-05
  },
  "5iBXD3xQDgH6DnLaY9wC4dcXfWfrF6BpVdotFtKWpump": {
   "sym": "MARU",
@@ -7373,7 +7873,7 @@
   "fehler": "zu viele transaktionen (leere antwort)",
   "px0": 0.0001787,
   "peak": 0.0002644,
-  "last": 3.164e-05
+  "last": 2.976e-05
  },
  "5ySrg1R3Mgvg5jioqLneg3bd5WEjNCeooQTSgjiopump": {
   "sym": "COW",
@@ -7491,8 +7991,8 @@
   "seit": 1791585989.2869892,
   "fehler": "zu viele transaktionen (leere antwort)",
   "px0": 5.442e-05,
-  "peak": 5.764e-05,
-  "last": 5.715e-05
+  "peak": 6.96e-05,
+  "last": 6.96e-05
  },
  "CscZaq5twomhUkvCY8Jdd1tge32L4Yj9FbkFFEZQpump": {
   "sym": "PLAGUE",
@@ -7500,7 +8000,7 @@
   "fehler": "zu viele transaktionen (leere antwort)",
   "px0": 0.0001487,
   "peak": 0.0001645,
-  "last": 0.000149
+  "last": 0.0001604
  },
  "DdcLYo8T6gniuLjYPsAHqASC1ViTaMyPwKEVWFqYpump": {
   "sym": "MogCat",
@@ -7537,7 +8037,7 @@
   ],
   "px0": 0.000121,
   "peak": 0.000121,
-  "last": 9.084e-05
+  "last": 9.462e-05
  },
  "2Dx7XJQp2LGdq14nP98swmtUhfhHz8FVs98bt11Mpump": {
   "sym": "ALOIS",
@@ -7640,7 +8140,7 @@
   ],
   "px0": 5.931e-05,
   "peak": 0.0001259,
-  "last": 6.389e-05
+  "last": 5.672e-05
  },
  "7vMkPxLwaH26qSZ2CgHhzvrgz9wUWMvT256vbUWfarm": {
   "sym": "QCAT",
@@ -7735,7 +8235,7 @@
   "fehler": "zu viele transaktionen (leere antwort)",
   "px0": 0.00011,
   "peak": 0.0003206,
-  "last": 0.0002168
+  "last": 0.0002052
  },
  "DendBuwMu2afwavjNJPaozFoJJ7u9fLyk2LD1oCwjupx": {
   "sym": "JCAT",
@@ -7796,7 +8296,7 @@
   ],
   "px0": 3.502e-05,
   "peak": 6.506e-05,
-  "last": 6.506e-05
+  "last": 6.39e-05
  },
  "6r7wR9TSNqBSTmEPXeXXYZLcSaaqGVLZNGDwkAgdN35U": {
   "sym": "LCAT",
@@ -7812,7 +8312,7 @@
   "fehler": "zu viele transaktionen (leere antwort)",
   "px0": 0.0001363,
   "peak": 0.0002372,
-  "last": 0.0002265
+  "last": 0.0002176
  },
  "7KWJEZ9gUA839LqaSj2wgEhsTLCxghfsqFdimrDC98WY": {
   "sym": "DIP",
@@ -7820,7 +8320,7 @@
   "fehler": "zu viele transaktionen (leere antwort)",
   "px0": 4.916e-05,
   "peak": 5.165e-05,
-  "last": 3.759e-05
+  "last": 3.732e-05
  },
  "4zHofAZWJxqB5zrQrPZ8yh4FWxi7TCXQTM9gLv9STUK4": {
   "sym": "C3PO",
@@ -7881,7 +8381,7 @@
   ],
   "px0": 4.716e-05,
   "peak": 8.289e-05,
-  "last": 6.169e-05
+  "last": 6.474e-05
  },
  "CMVdeRerz8fRT65jRJX5CP1CqTRVkZkuH3DZrA5Fpump": {
   "sym": "SNOOP",
@@ -7889,7 +8389,7 @@
   "fehler": "zu viele transaktionen (leere antwort)",
   "px0": 0.0001157,
   "peak": 0.0001157,
-  "last": 6.91e-05
+  "last": 6.275e-05
  },
  "9pZL5BtFgYFeSGrGMeMf8sKyNX1Mg4R7LjfbpLkJAYT": {
   "sym": "Jarvis",
@@ -7909,15 +8409,15 @@
   "fehler": "zu viele transaktionen (leere antwort)",
   "px0": 9.603e-05,
   "peak": 9.614e-05,
-  "last": 6.191e-05
+  "last": 6.227e-05
  },
  "9vHPLDY6wa9ZkNBNZoWcv2AABdiNj97tpHc3u56npump": {
   "sym": "MEMECHAN",
   "seit": 1791618683.0838203,
   "fehler": "zu viele transaktionen (leere antwort)",
   "px0": 0.0001443,
-  "peak": 0.0001706,
-  "last": 0.0001659
+  "peak": 0.0001825,
+  "last": 0.0001825
  },
  "V2KaLPiiMwMGNVQ9fTGoHmPZU3ucjT29H5EbkaWpump": {
   "sym": "WAIF",
@@ -7925,7 +8425,7 @@
   "fehler": "zu viele transaktionen (leere antwort)",
   "px0": 0.0001436,
   "peak": 0.0001457,
-  "last": 0.0001404
+  "last": 0.0001393
  },
  "6VLPHFDDHHadQJgNQfoio4995DQNwV1MqnG2S13FJfwP": {
   "sym": "Agency",
@@ -8178,7 +8678,7 @@
   ],
   "px0": 8.314e-05,
   "peak": 8.441e-05,
-  "last": 8.296e-05
+  "last": 8.278e-05
  },
  "Dg6AAUZbLLPovuvirSX3WAqCX2iWEhMAYhQp366hpump": {
   "sym": "1010",
@@ -8197,6 +8697,6 @@
   ],
   "px0": 4.474e-05,
   "peak": 6.384e-05,
-  "last": 4.474e-05
+  "last": 6.384e-05
  }
 }
