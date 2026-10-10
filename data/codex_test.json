@@ -1,0 +1,283 @@
+{
+ "t": "2026-10-10T09:11:14Z",
+ "coins": [
+  {
+   "sym": "BER",
+   "addr": "DsvjNM2YAmfPoccgkEKQBManpHqf6h6ZrN387anvWSU2",
+   "art": "Helius kennt Fruehkaeufer",
+   "createdAt": 1791526558,
+   "helius_t0": 1791526557,
+   "pools": [
+    [
+     "PumpSwap",
+     "ENncTccghow5WMV75gvAX5FB2UnWD2DCcHtTpFJmG3jh",
+     "3530"
+    ],
+    [
+     "Pump",
+     "E4RGfQS9x1H4SrDvsQh5QbvRhyNQ1wFjpKPBdzd8ySsc",
+     "0"
+    ]
+   ],
+   "fehler": {
+    "created": null,
+    "pools": null
+   },
+   "crossPools": {
+    "fehler": "[{\"message\": \"This is not available on your plan\", \"extensions\": {\"code\": \"NOT_AUTHORIZED\", \"serviceName\": \"tokens\"}, \"path\": [\"getTokenEvents\"]}]"
+   },
+   "Pool Pump": {
+    "n": 50,
+    "kaeufe": 38,
+    "wallets": 30,
+    "erster_trade": 1791526557,
+    "min_nach_start": -0.016666666666666666,
+    "gleich_wie_helius": 30,
+    "beispiel": [
+     {
+      "timestamp": 1791526557,
+      "blockNumber": 454782899,
+      "maker": "Yo7WXis8Uz1jQH8nYLZ7CJVWfazLQDo7yB6qWkML6Fp",
+      "eventDisplayType": "Buy",
+      "transactionHash": "29KH5D17ZyERaH4Gic5KfoBx3Vj3PM65HYh2i1gA2Um2CKtzgvcMXGvnisWzrzojkdm7kp6496ZmhHGn4fwi7VSh"
+     },
+     {
+      "timestamp": 1791526557,
+      "blockNumber": 454782899,
+      "maker": "BMqiUj9iWUGPQxn2q6UFM48GGSQBT1ayq9TuPNW4G9vE",
+      "eventDisplayType": "Buy",
+      "transactionHash": "s83BQpPYzB6v6rwXJpzShs73fXFdscHYDMQurqGDSGf8U9uYrGbNg2nGEPG8ZMmEVexpAx1KxYbzXwJxvzs6MXZ"
+     },
+     {
+      "timestamp": 1791526557,
+      "blockNumber": 454782899,
+      "maker": "EcKDGScoPHL8CPvibwj6gT7dDW2nx9ux1TxTbSLFiA2L",
+      "eventDisplayType": "Buy",
+      "transactionHash": "4WLhg2zViBpMkGvNG7TiZQHUFbYuU6jyN6jV63GNbxYA63CRiEgaxa74JQur76HYJg95wWtHj5sBk4BsYTJxoeev"
+     }
+    ]
+   }
+  },
+  {
+   "sym": "memecoin",
+   "addr": "CN9YrdTFSNQipTdQxtGgwTnv3KzR3tj8gDCaR9Hmeme",
+   "art": "Helius kennt Fruehkaeufer",
+   "createdAt": 1787341691,
+   "helius_t0": 1787341689,
+   "pools": [
+    [
+     "meme.fun",
+     "ChGu45jJBhB8qfTWmn7NbnVRGNNsuHJSB2xFU75tz2K7",
+     "6932"
+    ],
+    [
+     "Raydium CLMM",
+     "HCMTMfDKWDeLcYnTz9ibXnxXpQ8uwVbGmuBYUzmZLywh",
+     "50"
+    ],
+    [
+     "Meteora DAMM",
+     "3zXA3NpNFo3hFZuP6EeGEFgsi6rCbnwgqWYzVhnZoCoe",
+     "0"
+    ],
+    [
+     "Meteora DAMM",
+     "5nro6qF9EM5zKDkp9VQh6T8JWe8NTu4v24vTwurcLbjz",
+     "0"
+    ],
+    [
+     "Meteora",
+     "DJkZpZEEV5ogGjQ8HvCbYQufND1RaApiA7YcgwbUxTqK",
+     "1"
+    ],
+    [
+     "Meteora DAMM",
+     "2b4pYxCJiNzAdV1JwAVL7Sjk6MWuBNYww538b3uiTC85",
+     "0"
+    ]
+   ],
+   "fehler": {
+    "created": null,
+    "pools": null
+   },
+   "crossPools": {
+    "fehler": "[{\"message\": \"This is not available on your plan\", \"extensions\": {\"code\": \"NOT_AUTHORIZED\", \"serviceName\": \"tokens\"}, \"path\": [\"getTokenEvents\"]}]"
+   },
+   "Pool meme.fun": {
+    "n": 50,
+    "kaeufe": 34,
+    "wallets": 23,
+    "erster_trade": 1790912956,
+    "min_nach_start": 59521.083333333336,
+    "gleich_wie_helius": 3,
+    "beispiel": [
+     {
+      "timestamp": 1790912956,
+      "blockNumber": 452493668,
+      "maker": "8ahdQudVF2Ftiwe6z2PbunJ4vP6T4cuvPZ2jNGTHgpmY",
+      "eventDisplayType": "Buy",
+      "transactionHash": "2fax7sbovvznLtZQYsA5HSFRShNGHP5Vzbkg8HwHSS9sWCPh3kjDh44KQ8zNLE3ii6X2rRoKHQdhWXH3ZRBmmmzE"
+     },
+     {
+      "timestamp": 1790913528,
+      "blockNumber": 452495794,
+      "maker": "8ahdQudVF2Ftiwe6z2PbunJ4vP6T4cuvPZ2jNGTHgpmY",
+      "eventDisplayType": "Buy",
+      "transactionHash": "3mxSDTAHtAJjKYAFN2isUv26LDMdZAB6dDkqZjWkSEbgzzt5jTpQaQxMGeqJ88WsijWiTBDqU5ch3QWqHnsKG9No"
+     },
+     {
+      "timestamp": 1790913938,
+      "blockNumber": 452497323,
+      "maker": "8ahdQudVF2Ftiwe6z2PbunJ4vP6T4cuvPZ2jNGTHgpmY",
+      "eventDisplayType": "Sell",
+      "transactionHash": "37T7UBdmuRCaH7nHsxq2LzpvFaAyK7YBVWpCd3VCzn42etrKAvgbRt2z7MGZWRmZQNbQX4JSDEDsyfR8VFhnPTox"
+     }
+    ]
+   }
+  },
+  {
+   "sym": "ABU",
+   "addr": "6hTLdzZaaCjmqtn7RtaEMQsCbXT5Pg8q76tRViEGpump",
+   "art": "Helius gescheitert",
+   "createdAt": 1790980155,
+   "helius_t0": null,
+   "pools": [
+    [
+     "PumpSwap",
+     "2qWF4dn1JnqhCpAYJQnKVaKezzuUiG4xdnbnCSK1Pgcw",
+     "29490"
+    ],
+    [
+     "Meteora",
+     "DPZnfC5Yq7WBZWNjfF7tmPvKk4hz4sTGximoiaX5Dn5z",
+     "420"
+    ],
+    [
+     "Meteora DAMM",
+     "DHN8TDqtKE76deWFUXYNSYgdkPE1hdaTKy6cKuZRj3Rj",
+     "13"
+    ],
+    [
+     "Raydium CLMM",
+     "7kphoVtNyowY4cKq4cnEYNMxtXv6U7bouKVk46WYgmTP",
+     "0"
+    ],
+    [
+     "Raydium CLMM",
+     "FGqoWjxrugpqHUJLBavaHmBV92fbq2fY3RFwn2jaD1Nz",
+     "6"
+    ],
+    [
+     "Meteora",
+     "Hi1wXzdq19sB4ovugqFjeUsRo94gvyZmDDVysZe1zQ8D",
+     "39"
+    ],
+    [
+     "Pump",
+     "HzdoqVqSa7ajSHXrCarJpdLMembn9hKk3dKWjEZJEz4N",
+     "0"
+    ]
+   ],
+   "fehler": {
+    "created": null,
+    "pools": null
+   },
+   "crossPools": {
+    "fehler": "[{\"message\": \"This is not available on your plan\", \"extensions\": {\"code\": \"NOT_AUTHORIZED\", \"serviceName\": \"tokens\"}, \"path\": [\"getTokenEvents\"]}]"
+   },
+   "Pool Pump": {
+    "n": 50,
+    "kaeufe": 43,
+    "wallets": 41,
+    "erster_trade": 1790980154,
+    "min_nach_start": -0.016666666666666666,
+    "gleich_wie_helius": null,
+    "beispiel": [
+     {
+      "timestamp": 1790980154,
+      "blockNumber": 452744773,
+      "maker": "89i6PfXzDLRi3k3pe1TP9cVABtrJ4gTHPJTLTrjgRYF6",
+      "eventDisplayType": "Buy",
+      "transactionHash": "5FE7yGwwta5caAdzMY2Cb2p3J1Bx42ZNhRJPZdbD2quwN7ho87tusfGT2uV2PRG4tKz8oGge2igektWEKCQMnHnp"
+     },
+     {
+      "timestamp": 1790980154,
+      "blockNumber": 452744773,
+      "maker": "3MTTBGi8SCUfAVVcYDJRCJTgkFLj7CqaLEA3nHFq7TqT",
+      "eventDisplayType": "Buy",
+      "transactionHash": "2GPk9csceyxcD9ashVedXc6nf737g6eyPsG7rpmfpto88xptTJ62eJPWGPaiHXWvxrip5iSGsXd4fJjAjNtUkuvp"
+     },
+     {
+      "timestamp": 1790980154,
+      "blockNumber": 452744773,
+      "maker": "5pcTjZxMDfFkzuiztKWMfNs746ixvAiUbpc7PzjphJgL",
+      "eventDisplayType": "Buy",
+      "transactionHash": "5WPgGQLDKdZqvwee4LijzL9jt2dL277dyge4ydan76cG3VfyYCKjEdgPvw3agbyTQueHu3hkSELM9HhZmp8LuMHh"
+     }
+    ]
+   }
+  },
+  {
+   "sym": "FortniteOG",
+   "addr": "FyGhuKZgCDUBbGJkG2qx1pX2ZfRpgtnEwiZcneKspump",
+   "art": "Helius gescheitert",
+   "createdAt": 1791383716,
+   "helius_t0": null,
+   "pools": [
+    [
+     "PumpSwap",
+     "HyQRVmHALNwcLC7d92y5wdfibVzZWRw31fi8Y9pWxEou",
+     "10205"
+    ],
+    [
+     "Meteora",
+     "Ez3znNNFTSkChUYsbgN8hb5BSaWQsPZ1s8FLrdn4oXWk",
+     "0"
+    ],
+    [
+     "Pump",
+     "B5wuB3NEQgAG8KYMUF5Pdp26eahHh2aNN9edSgYgsju5",
+     "0"
+    ]
+   ],
+   "fehler": {
+    "created": null,
+    "pools": null
+   },
+   "crossPools": {
+    "fehler": "[{\"message\": \"This is not available on your plan\", \"extensions\": {\"code\": \"NOT_AUTHORIZED\", \"serviceName\": \"tokens\"}, \"path\": [\"getTokenEvents\"]}]"
+   },
+   "Pool Pump": {
+    "n": 50,
+    "kaeufe": 30,
+    "wallets": 27,
+    "erster_trade": 1791383715,
+    "min_nach_start": -0.016666666666666666,
+    "gleich_wie_helius": null,
+    "beispiel": [
+     {
+      "timestamp": 1791383715,
+      "blockNumber": 454251305,
+      "maker": "9YLFkgGMZXNsPZrD8Zcmu1aYoZd3vY9hPKZCignArmQb",
+      "eventDisplayType": "Buy",
+      "transactionHash": "2K39H31ugr1TNTCH9Phxw3SxwjTpG2SifvEx6vma7VzPdir1vqYwvs1CM9h1Nehn9Msa6a9KiC34CqaNuKLeKayx"
+     },
+     {
+      "timestamp": 1791383715,
+      "blockNumber": 454251305,
+      "maker": "3msz71HwdUZcjcwVJRk6mWK4Jwojz9u2UyfPGgwnhK1g",
+      "eventDisplayType": "Buy",
+      "transactionHash": "2eWk9wZpBtDMGmJnRkNY9pv3gXqqLHTbMbPER7EB9BLDHU7GtKjFqfwGxauJSaAtb762VJQd6owERmPda4TQAsH5"
+     },
+     {
+      "timestamp": 1791383715,
+      "blockNumber": 454251305,
+      "maker": "2wNVDusr8eBn7Gbk3mut7TmT7RuWoeGrVRirRuJu55CT",
+      "eventDisplayType": "Buy",
+      "transactionHash": "2Q7pySd13ZYoq4SVChyMNnwY8fCpryVvBqKTeBfKiyEmTbByuhg7FJdgcP322J6gUXDvT7wT471J9PRoDBKjoYKE"
+     }
+    ]
+   }
+  }
+ ]
+}
