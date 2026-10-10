@@ -54,7 +54,7 @@ def q(query):
 EV = "items { timestamp blockNumber maker eventDisplayType transactionHash }"
 
 def events(addr, cross=False):
-    extra = ", crossPools: true" if cross else ""
+    extra = ", symbolType: TOKEN, crossPools: true" if cross else ""
     d, err = q('{ getTokenEvents(query: {address: "%s", networkId: %d%s}, direction: ASC, limit: 50) { %s } }'
                % (addr, NET, extra, EV))
     return ((d or {}).get("getTokenEvents") or {}).get("items") or [], err
@@ -87,9 +87,10 @@ for art, a in auswahl:
     print(f"  Pools: {pl if pl else ''} {'FEHLER ' + err_p if err_p else ''}")
     zeile = {"sym": e.get("sym"), "addr": a, "art": art, "createdAt": t_create, "helius_t0": e.get("t0"), "pools": pl,
              "fehler": {"created": err_c, "pools": err_p}}
-    for cross in (False, True):
-        items, err = events(a, cross)
-        name = "crossPools" if cross else "normal"
+    launch = [p for p in pl if (p[0] or "").lower() in ("pump", "pump.fun", "meme.fun", "letsbonk", "bonk", "moonshot", "believe", "launchlab")]
+    varianten = [("crossPools", a, True)] + [(f"Pool {p[0]}", p[1], False) for p in launch[:2]]
+    for name, adresse, cross in varianten:
+        items, err = events(adresse, cross)
         if err: print(f"  Events {name}: FEHLER {err}"); zeile[name] = {"fehler": err}; continue
         if not items: print(f"  Events {name}: keine"); zeile[name] = {"n": 0}; continue
         t_first = items[0].get("timestamp")
