@@ -1,6 +1,17 @@
 {
- "cash": 527.0152242517058,
- "positions": {},
+ "cash": 368.89065697619407,
+ "positions": {
+  "GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump": {
+   "sym": "JEANPHIL",
+   "qty": 15460.081562,
+   "cost": 158.12456727551177,
+   "opened": "2026-10-11T17:36:23Z",
+   "peak": 0.01019,
+   "entry": 0.010227925812770157,
+   "cur_price": 0.01019,
+   "mark": 0.01019
+  }
+ },
  "trades": [
   {
    "t": "2026-09-25T10:30:42Z",
@@ -823,6 +834,18 @@
    "slip": 0.0073,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-10-11T17:36:23Z",
+   "side": "buy",
+   "sym": "JEANPHIL",
+   "addr": "GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump",
+   "price": 0.01019,
+   "fill": 0.010227925813,
+   "usd": 158.12,
+   "slip": 0.0081,
+   "quote": "jup",
+   "reason": "dip 24h -12% (SOL +2%) 1h -1.4%"
   }
  ],
  "equity": [
@@ -19653,6 +19676,10 @@
   {
    "t": "2026-10-11T17:31:21Z",
    "v": 527.02
+  },
+  {
+   "t": "2026-10-11T17:36:23Z",
+   "v": 526.43
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -19660,12 +19687,12 @@
  "strategy": "dip_weites_netz",
  "universe_n": 155,
  "coverage": {
-  "t": "2026-10-11T17:31:21Z",
+  "t": "2026-10-11T17:36:23Z",
   "kurse": 136,
   "von": 155,
   "ohne_pool": 119,
   "sol": true,
-  "kandidaten": 0
+  "kandidaten": 1
  },
  "verkauft_am": {
   "ABt79MkRXUsoHuV2CVQT32YMXQhTparKFjmidQxgiQ6E": 1791259917.8351939,
