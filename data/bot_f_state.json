@@ -1,5 +1,5 @@
 {
- "cash": 237.02259924342317,
+ "cash": 121.59775609551652,
  "positions": {
   "CortexFv3fRcLKTgACr7aLqckGh5eP7TP3z9JHoKqMc6": {
    "sym": "CX",
@@ -20,8 +20,8 @@
    "peak": 0.01087,
    "entry": 0.00993663443285207,
    "pair": "2DVbU5h8JCd37gaXAJUZ4t77HsjJW22LLduTZk7GSa43",
-   "cur_price": 0.009183,
-   "mark": 0.009183
+   "cur_price": 0.009239,
+   "mark": 0.009239
   },
   "6NwarBvDkXhByqVp2Qkq5i9XbtA2B3Bwe8SWGu9vpump": {
    "sym": "CUPSEY",
@@ -31,8 +31,8 @@
    "peak": 0.00667,
    "entry": 0.006213357887589227,
    "pair": "DPzKoJVewaH1wpchD3gWKeeGm7G2mXkBW48uRniAgbVx",
-   "cur_price": 0.006158,
-   "mark": 0.006158
+   "cur_price": 0.006162,
+   "mark": 0.006162
   },
   "C1mBfBoDkwWfd6uTFZp62ARHLjeVp3bDpCDMfMZtPngE": {
    "sym": "HOOKED",
@@ -42,8 +42,19 @@
    "peak": 0.006305,
    "entry": 0.005465271848938845,
    "pair": "FtiotJckV2ZG4S1YgJDJLiXKKDAnKWXgQxo7vxsjPwPe",
-   "cur_price": 0.006063,
-   "mark": 0.006063
+   "cur_price": 0.006003,
+   "mark": 0.006003
+  },
+  "GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump": {
+   "sym": "JEANPHIL",
+   "qty": 12587.053733,
+   "cost": 115.42484314790666,
+   "opened": "2026-10-11T21:51:39Z",
+   "peak": 0.009069,
+   "entry": 0.009170123969940047,
+   "pair": "4R8CiMnJWDNoes3fQi1ccPFJygPXazaHaWpHrN3rZeNj",
+   "cur_price": 0.009069,
+   "mark": 0.009069
   }
  },
  "trades": [
@@ -688,6 +699,18 @@
    "slip": 0.0001,
    "quote": "jup",
    "reason": "nach virtuellem stop (C) -15.2%"
+  },
+  {
+   "t": "2026-10-11T21:51:39Z",
+   "side": "buy",
+   "sym": "JEANPHIL",
+   "addr": "GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump",
+   "price": 0.009069,
+   "fill": 0.00917012397,
+   "usd": 115.42,
+   "slip": 0.0085,
+   "quote": "jup",
+   "reason": "nach virtuellem stop (C) -11.0%"
   }
  ],
  "equity": [
@@ -19722,6 +19745,10 @@
   {
    "t": "2026-10-11T21:46:38Z",
    "v": 577.02
+  },
+  {
+   "t": "2026-10-11T21:51:39Z",
+   "v": 574.7
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -19738,8 +19765,8 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-10-11T21:46:38Z",
-  "virtuell": 4,
+  "t": "2026-10-11T21:51:39Z",
+  "virtuell": 3,
   "neu": 0,
   "gestoppt": false
  },
