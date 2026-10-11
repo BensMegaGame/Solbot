@@ -1,18 +1,6 @@
 {
- "cash": 460.7418070738654,
- "positions": {
-  "8nnaeWCw8mUypcGAgbmSuzAT85uWx4UN12adDrMhXrGF": {
-   "sym": "HOTBOT",
-   "qty": 18841.7974955,
-   "cost": 79.51023723011403,
-   "opened": "2026-10-11T05:56:27Z",
-   "peak": 0.005523,
-   "entry": 0.004219885987475639,
-   "cur_price": 0.005523,
-   "mark": 0.005523,
-   "tp1": true
-  }
- },
+ "cash": 553.2773660738654,
+ "positions": {},
  "trades": [
   {
    "t": "2026-09-25T10:30:42Z",
@@ -793,6 +781,21 @@
    "slip": 0.002,
    "quote": "jup",
    "reason": "tp1"
+  },
+  {
+   "t": "2026-10-11T09:21:22Z",
+   "side": "sell",
+   "sym": "HOTBOT",
+   "addr": "8nnaeWCw8mUypcGAgbmSuzAT85uWx4UN12adDrMhXrGF",
+   "price": 0.005057,
+   "usd": 92.54,
+   "pnl": 13.03,
+   "peak_x": 1.309,
+   "held_h": 3.4,
+   "frac": 1.0,
+   "slip": 0.0024,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
@@ -19227,6 +19230,10 @@
   {
    "t": "2026-10-11T09:16:21Z",
    "v": 564.81
+  },
+  {
+   "t": "2026-10-11T09:21:22Z",
+   "v": 553.28
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -19234,7 +19241,7 @@
  "strategy": "dip_weites_netz",
  "universe_n": 154,
  "coverage": {
-  "t": "2026-10-11T09:16:21Z",
+  "t": "2026-10-11T09:21:22Z",
   "kurse": 135,
   "von": 154,
   "ohne_pool": 120,
@@ -19242,7 +19249,6 @@
   "kandidaten": 0
  },
  "verkauft_am": {
-  "J8PSdNP3QewKq2Z1JJJFDMaqF7KcaiJhR7gbr5KZpump": 1791091629.0214255,
   "ABt79MkRXUsoHuV2CVQT32YMXQhTparKFjmidQxgiQ6E": 1791259917.8351939,
   "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": 1791411429.881256,
   "G7iK3prSzAA4vzcJWvsLUEsdCqzR7PnMzJV61vSdFSNW": 1791312428.467149,
@@ -19251,6 +19257,7 @@
   "C1mBfBoDkwWfd6uTFZp62ARHLjeVp3bDpCDMfMZtPngE": 1791329545.182054,
   "MukLDtJ8Cx9DxLbeyLRSWPSposTMWuwHANbuaudpump": 1791374835.433693,
   "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump": 1791456109.5787556,
-  "GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump": 1791635482.6701186
+  "GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump": 1791635482.6701186,
+  "8nnaeWCw8mUypcGAgbmSuzAT85uWx4UN12adDrMhXrGF": 1791710482.6342764
  }
 }
