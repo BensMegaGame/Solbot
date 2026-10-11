@@ -6,11 +6,11 @@
    "qty": 28159.49208,
    "cost": 142.8899729,
    "opened": "2026-10-11T14:21:20Z",
-   "peak": 0.005452,
+   "peak": 0.005617,
    "entry": 0.005074309312613142,
    "pair": "FtiotJckV2ZG4S1YgJDJLiXKKDAnKWXgQxo7vxsjPwPe",
-   "cur_price": 0.005452,
-   "mark": 0.005452
+   "cur_price": 0.005617,
+   "mark": 0.005617
   }
  },
  "trades": [
@@ -3442,17 +3442,21 @@
   {
    "t": "2026-10-11T14:36:18Z",
    "v": 486.87
+  },
+  {
+   "t": "2026-10-11T14:41:20Z",
+   "v": 491.52
   }
  ],
  "started": "2026-10-08T16:06:06Z",
  "version": "b4",
  "strategy": "tiefer_dip",
  "coverage": {
-  "t": "2026-10-11T14:36:18Z",
+  "t": "2026-10-11T14:41:20Z",
   "kurse": 191,
   "von": 200,
   "sol": true,
-  "sol24": -0.7,
+  "sol24": -1.0,
   "kandidaten": 0,
   "gestoppt": false
  },
