@@ -1,6 +1,17 @@
 {
- "cash": 530.0015815340935,
- "positions": {},
+ "cash": 370.9811070738654,
+ "positions": {
+  "8nnaeWCw8mUypcGAgbmSuzAT85uWx4UN12adDrMhXrGF": {
+   "sym": "HOTBOT",
+   "qty": 37683.594991,
+   "cost": 159.02047446022806,
+   "opened": "2026-10-11T05:56:27Z",
+   "peak": 0.004223,
+   "entry": 0.004219885987475639,
+   "cur_price": 0.004223,
+   "mark": 0.004223
+  }
+ },
  "trades": [
   {
    "t": "2026-09-25T10:30:42Z",
@@ -754,6 +765,18 @@
    "slip": 0.0,
    "quote": "jup",
    "reason": "trail"
+  },
+  {
+   "t": "2026-10-11T05:56:27Z",
+   "side": "buy",
+   "sym": "HOTBOT",
+   "addr": "8nnaeWCw8mUypcGAgbmSuzAT85uWx4UN12adDrMhXrGF",
+   "price": 0.004223,
+   "fill": 0.004219885987,
+   "usd": 159.02,
+   "slip": 0.0048,
+   "quote": "jup",
+   "reason": "dip 24h -27% (SOL -1%) 1h +0.1%"
   }
  ],
  "equity": [
@@ -19024,6 +19047,10 @@
   {
    "t": "2026-10-11T05:51:23Z",
    "v": 530.0
+  },
+  {
+   "t": "2026-10-11T05:56:27Z",
+   "v": 530.12
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -19031,12 +19058,12 @@
  "strategy": "dip_weites_netz",
  "universe_n": 154,
  "coverage": {
-  "t": "2026-10-11T05:51:23Z",
+  "t": "2026-10-11T05:56:27Z",
   "kurse": 135,
   "von": 154,
   "ohne_pool": 120,
   "sol": true,
-  "kandidaten": 0
+  "kandidaten": 1
  },
  "verkauft_am": {
   "J8PSdNP3QewKq2Z1JJJFDMaqF7KcaiJhR7gbr5KZpump": 1791091629.0214255,
