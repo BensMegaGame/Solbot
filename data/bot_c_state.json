@@ -1,17 +1,6 @@
 {
- "cash": 356.4990068833358,
- "positions": {
-  "ZEUS1aR7aX8DFFJf5QjWj2ftDDdNTroMNGo8YoQm3Gq": {
-   "sym": "ZEUS",
-   "qty": 14592.846712,
-   "cost": 152.81386009285822,
-   "opened": "2026-10-12T09:11:29Z",
-   "peak": 0.01046,
-   "entry": 0.010471833433787542,
-   "cur_price": 0.009663,
-   "mark": 0.009663
-  }
- },
+ "cash": 490.7503668833358,
+ "positions": {},
  "trades": [
   {
    "t": "2026-09-25T10:30:42Z",
@@ -873,6 +862,21 @@
    "slip": 0.0198,
    "quote": "jup",
    "reason": "dip 24h -12% (SOL +2%) 1h -1.4%"
+  },
+  {
+   "t": "2026-10-12T16:36:25Z",
+   "side": "sell",
+   "sym": "ZEUS",
+   "addr": "ZEUS1aR7aX8DFFJf5QjWj2ftDDdNTroMNGo8YoQm3Gq",
+   "price": 0.009269,
+   "usd": 134.25,
+   "pnl": -18.56,
+   "peak_x": 0.999,
+   "held_h": 7.4,
+   "frac": 1.0,
+   "slip": 0.0032,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -20807,6 +20811,10 @@
   {
    "t": "2026-10-12T16:31:26Z",
    "v": 497.51
+  },
+  {
+   "t": "2026-10-12T16:36:25Z",
+   "v": 490.75
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -20814,7 +20822,7 @@
  "strategy": "dip_weites_netz",
  "universe_n": 151,
  "coverage": {
-  "t": "2026-10-12T16:31:26Z",
+  "t": "2026-10-12T16:36:25Z",
   "kurse": 130,
   "von": 151,
   "ohne_pool": 115,
@@ -20831,6 +20839,7 @@
   "MukLDtJ8Cx9DxLbeyLRSWPSposTMWuwHANbuaudpump": 1791374835.433693,
   "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump": 1791456109.5787556,
   "GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump": 1791755480.8251784,
-  "8nnaeWCw8mUypcGAgbmSuzAT85uWx4UN12adDrMhXrGF": 1791710482.6342764
+  "8nnaeWCw8mUypcGAgbmSuzAT85uWx4UN12adDrMhXrGF": 1791710482.6342764,
+  "ZEUS1aR7aX8DFFJf5QjWj2ftDDdNTroMNGo8YoQm3Gq": 1791822985.4868221
  }
 }
