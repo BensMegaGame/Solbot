@@ -9,8 +9,8 @@
    "peak": 0.008576,
    "entry": 0.008403773057765167,
    "pair": "4R8CiMnJWDNoes3fQi1ccPFJygPXazaHaWpHrN3rZeNj",
-   "cur_price": 0.008207,
-   "mark": 0.008207
+   "cur_price": 0.008133,
+   "mark": 0.008133
   }
  },
  "trades": [
@@ -4536,17 +4536,21 @@
   {
    "t": "2026-10-12T12:31:11Z",
    "v": 497.41
+  },
+  {
+   "t": "2026-10-12T12:36:12Z",
+   "v": 496.09
   }
  ],
  "started": "2026-10-08T16:06:06Z",
  "version": "b4",
  "strategy": "tiefer_dip",
  "coverage": {
-  "t": "2026-10-12T12:31:11Z",
+  "t": "2026-10-12T12:36:12Z",
   "kurse": 195,
   "von": 203,
   "sol": true,
-  "sol24": 1.1,
+  "sol24": 0.8,
   "kandidaten": 0,
   "gestoppt": false
  },
