@@ -1,5 +1,5 @@
 {
- "cash": 99.81912000000001,
+ "cash": 192.08573,
  "positions": {
   "CortexFv3fRcLKTgACr7aLqckGh5eP7TP3z9JHoKqMc6": {
    "sym": "CX",
@@ -20,8 +20,8 @@
    "peak": 0.01107,
    "entry": 0.00993663443285207,
    "pair": "2DVbU5h8JCd37gaXAJUZ4t77HsjJW22LLduTZk7GSa43",
-   "cur_price": 0.009745,
-   "mark": 0.009745
+   "cur_price": 0.009777,
+   "mark": 0.009777
   },
   "6NwarBvDkXhByqVp2Qkq5i9XbtA2B3Bwe8SWGu9vpump": {
    "sym": "CUPSEY",
@@ -31,19 +31,8 @@
    "peak": 0.00667,
    "entry": 0.006213357887589227,
    "pair": "DPzKoJVewaH1wpchD3gWKeeGm7G2mXkBW48uRniAgbVx",
-   "cur_price": 0.00629,
-   "mark": 0.00629
-  },
-  "C1mBfBoDkwWfd6uTFZp62ARHLjeVp3bDpCDMfMZtPngE": {
-   "sym": "HOOKED",
-   "qty": 20636.900757,
-   "cost": 112.78627275657684,
-   "opened": "2026-10-11T11:46:41Z",
-   "peak": 0.006307,
-   "entry": 0.005465271848938845,
-   "pair": "FtiotJckV2ZG4S1YgJDJLiXKKDAnKWXgQxo7vxsjPwPe",
-   "cur_price": 0.004826,
-   "mark": 0.004826
+   "cur_price": 0.006383,
+   "mark": 0.006383
   },
   "ZEUS1aR7aX8DFFJf5QjWj2ftDDdNTroMNGo8YoQm3Gq": {
    "sym": "ZEUS",
@@ -53,8 +42,8 @@
    "peak": 0.01036,
    "entry": 0.009404107615910415,
    "pair": "Dsxt7wUigQU5puH9nHjmfwnUenMycAgsFtrkfggLh8P1",
-   "cur_price": 0.009603,
-   "mark": 0.009603
+   "cur_price": 0.009423,
+   "mark": 0.009423
   }
  },
  "trades": [
@@ -765,13 +754,24 @@
    "slip": 0.0138,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-10-12T19:16:34Z",
+   "side": "sell",
+   "sym": "HOOKED",
+   "addr": "C1mBfBoDkwWfd6uTFZp62ARHLjeVp3bDpCDMfMZtPngE",
+   "price": 0.004485,
+   "usd": 92.27,
+   "pnl": -20.52,
+   "peak_x": 1.154,
+   "held_h": 31.5,
+   "frac": 1.0,
+   "slip": 0.0034,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-25T10:36:02Z",
-   "v": 500.0
-  },
   {
    "t": "2026-09-25T10:41:10Z",
    "v": 500.0
@@ -20767,6 +20767,10 @@
   {
    "t": "2026-10-12T19:11:39Z",
    "v": 515.58
+  },
+  {
+   "t": "2026-10-12T19:16:34Z",
+   "v": 507.73
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -20779,17 +20783,18 @@
   "BPxxfRCXkUVhig4HS1Lh7kZqV6SPJhzfEk4x6fVBjPCy": 20740,
   "KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS": 20740,
   "GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump": 20743,
-  "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP": 20743
+  "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP": 20743,
+  "C1mBfBoDkwWfd6uTFZp62ARHLjeVp3bDpCDMfMZtPngE": 20743
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-10-12T19:11:39Z",
+  "t": "2026-10-12T19:16:34Z",
   "virtuell": 2,
   "neu": 0,
   "gestoppt": false
  },
  "verkauft_am": {
-  "C1mBfBoDkwWfd6uTFZp62ARHLjeVp3bDpCDMfMZtPngE": 1791258146.9348798,
+  "C1mBfBoDkwWfd6uTFZp62ARHLjeVp3bDpCDMfMZtPngE": 1791832594.5983312,
   "J8PSdNP3QewKq2Z1JJJFDMaqF7KcaiJhR7gbr5KZpump": 1791338269.0220356,
   "Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump": 1791385959.2100573,
   "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": 1791421046.1126525,
