@@ -9,8 +9,8 @@
    "peak": 0.03731,
    "entry": 0.031537863324270915,
    "pair": "AtK4fYMF1mFosQn6qRiMJoE1hsjpCFwpTy1TKpE5Ez6E",
-   "cur_price": 0.03354,
-   "mark": 0.03354
+   "cur_price": 0.03346,
+   "mark": 0.03346
   },
   "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump": {
    "sym": "MANIFEST",
@@ -20,8 +20,8 @@
    "peak": 0.01107,
    "entry": 0.00993663443285207,
    "pair": "2DVbU5h8JCd37gaXAJUZ4t77HsjJW22LLduTZk7GSa43",
-   "cur_price": 0.008669,
-   "mark": 0.008669
+   "cur_price": 0.008674,
+   "mark": 0.008674
   },
   "6NwarBvDkXhByqVp2Qkq5i9XbtA2B3Bwe8SWGu9vpump": {
    "sym": "CUPSEY",
@@ -42,8 +42,8 @@
    "peak": 0.01036,
    "entry": 0.009404107615910415,
    "pair": "Dsxt7wUigQU5puH9nHjmfwnUenMycAgsFtrkfggLh8P1",
-   "cur_price": 0.008846,
-   "mark": 0.008846
+   "cur_price": 0.00866,
+   "mark": 0.00866
   },
   "G7iK3prSzAA4vzcJWvsLUEsdCqzR7PnMzJV61vSdFSNW": {
    "sym": "NST",
@@ -795,10 +795,6 @@
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-25T15:21:55Z",
-   "v": 500.0
-  },
   {
    "t": "2026-09-25T15:27:03Z",
    "v": 500.0
@@ -20794,14 +20790,15 @@
   {
    "t": "2026-10-12T23:56:50Z",
    "v": 490.36
+  },
+  {
+   "t": "2026-10-13T00:01:52Z",
+   "v": 488.14
   }
  ],
  "started": "2026-09-25T09:22:03Z",
  "version": "f5",
  "cooldown": {
-  "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": 20739,
-  "MukLDtJ8Cx9DxLbeyLRSWPSposTMWuwHANbuaudpump": 20739,
-  "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE": 20739,
   "69LjZUUzxj3Cb3Fxeo1X4QpYEQTboApkhXTysPpbpump": 20740,
   "BPxxfRCXkUVhig4HS1Lh7kZqV6SPJhzfEk4x6fVBjPCy": 20740,
   "KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS": 20740,
@@ -20811,7 +20808,7 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-10-12T23:56:50Z",
+  "t": "2026-10-13T00:01:52Z",
   "virtuell": 1,
   "neu": 0,
   "gestoppt": false
