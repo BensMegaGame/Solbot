@@ -1,5 +1,5 @@
 {
- "cash": 330.25258422900004,
+ "cash": 187.45166388442357,
  "positions": {
   "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82": {
    "sym": "BOME",
@@ -9,8 +9,19 @@
    "peak": 0.000798,
    "entry": 0.0007736917420326662,
    "pair": "DSUvc5qf5LJHHV5e2tD184ixotSnCnwj7i4jJa4Xsrmt",
-   "cur_price": 0.0007962,
-   "mark": 0.0007962
+   "cur_price": 0.0007967,
+   "mark": 0.0007967
+  },
+  "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP": {
+   "sym": "SI",
+   "qty": 8663.317603,
+   "cost": 142.80092034457647,
+   "opened": "2026-10-13T04:56:31Z",
+   "peak": 0.01645,
+   "entry": 0.016483398957360895,
+   "pair": "AG1EhPjsBrkxQWkViuLXF6pQnHwfr9f9sdNneeoykcEJ",
+   "cur_price": 0.01645,
+   "mark": 0.01645
   }
  },
  "trades": [
@@ -121,6 +132,18 @@
    "slip": 0.0079,
    "quote": "jup",
    "reason": "tiefer dip 24h -30% (SOL -4%) 1h -1.9%"
+  },
+  {
+   "t": "2026-10-13T04:56:31Z",
+   "side": "buy",
+   "sym": "SI",
+   "addr": "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP",
+   "price": 0.01645,
+   "fill": 0.016483398957,
+   "usd": 142.8,
+   "slip": 0.026,
+   "quote": "jup",
+   "reason": "tiefer dip 24h -31% (SOL -4%) 1h -1.3%"
   }
  ],
  "equity": [
@@ -5347,18 +5370,22 @@
   {
    "t": "2026-10-13T04:51:29Z",
    "v": 475.94
+  },
+  {
+   "t": "2026-10-13T04:56:31Z",
+   "v": 475.74
   }
  ],
  "started": "2026-10-08T16:06:06Z",
  "version": "b4",
  "strategy": "tiefer_dip",
  "coverage": {
-  "t": "2026-10-13T04:51:29Z",
+  "t": "2026-10-13T04:56:31Z",
   "kurse": 197,
   "von": 206,
   "sol": true,
   "sol24": -4.4,
-  "kandidaten": 0,
+  "kandidaten": 1,
   "gestoppt": false
  },
  "verkauft_am": {
