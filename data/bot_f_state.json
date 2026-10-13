@@ -1,5 +1,5 @@
 {
- "cash": 113.34775485620425,
+ "cash": 16.451621587897705,
  "positions": {
   "CortexFv3fRcLKTgACr7aLqckGh5eP7TP3z9JHoKqMc6": {
    "sym": "CX",
@@ -9,8 +9,8 @@
    "peak": 0.03731,
    "entry": 0.031537863324270915,
    "pair": "AtK4fYMF1mFosQn6qRiMJoE1hsjpCFwpTy1TKpE5Ez6E",
-   "cur_price": 0.03321,
-   "mark": 0.03321
+   "cur_price": 0.03317,
+   "mark": 0.03317
   },
   "6NwarBvDkXhByqVp2Qkq5i9XbtA2B3Bwe8SWGu9vpump": {
    "sym": "CUPSEY",
@@ -20,8 +20,8 @@
    "peak": 0.00667,
    "entry": 0.006213357887589227,
    "pair": "DPzKoJVewaH1wpchD3gWKeeGm7G2mXkBW48uRniAgbVx",
-   "cur_price": 0.005631,
-   "mark": 0.005631
+   "cur_price": 0.005565,
+   "mark": 0.005565
   },
   "ZEUS1aR7aX8DFFJf5QjWj2ftDDdNTroMNGo8YoQm3Gq": {
    "sym": "ZEUS",
@@ -31,8 +31,8 @@
    "peak": 0.01036,
    "entry": 0.009404107615910415,
    "pair": "Dsxt7wUigQU5puH9nHjmfwnUenMycAgsFtrkfggLh8P1",
-   "cur_price": 0.008734,
-   "mark": 0.008734
+   "cur_price": 0.008653,
+   "mark": 0.008653
   },
   "G7iK3prSzAA4vzcJWvsLUEsdCqzR7PnMzJV61vSdFSNW": {
    "sym": "NST",
@@ -42,8 +42,19 @@
    "peak": 1.54,
    "entry": 1.5523471729911038,
    "pair": "caWWda11Ye4Xme9D5GKo67Hb8g5mJv1SzKAwrLRnggQ",
-   "cur_price": 1.54,
-   "mark": 1.54
+   "cur_price": 1.51,
+   "mark": 1.51
+  },
+  "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82": {
+   "sym": "BOME",
+   "qty": 128513.356841,
+   "cost": 96.89613326830654,
+   "opened": "2026-10-13T00:56:48Z",
+   "peak": 0.000747,
+   "entry": 0.0007539771401986558,
+   "pair": "DSUvc5qf5LJHHV5e2tD184ixotSnCnwj7i4jJa4Xsrmt",
+   "cur_price": 0.000747,
+   "mark": 0.000747
   }
  },
  "trades": [
@@ -796,13 +807,21 @@
    "slip": 0.0,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-10-13T00:56:48Z",
+   "side": "buy",
+   "sym": "BOME",
+   "addr": "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82",
+   "price": 0.000747,
+   "fill": 0.00075397714,
+   "usd": 96.9,
+   "slip": 0.004,
+   "quote": "jup",
+   "reason": "nach virtuellem stop (E) -11.1%"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-25T16:16:09Z",
-   "v": 488.41
-  },
   {
    "t": "2026-09-25T16:21:10Z",
    "v": 488.41
@@ -20798,6 +20817,10 @@
   {
    "t": "2026-10-13T00:51:47Z",
    "v": 484.38
+  },
+  {
+   "t": "2026-10-13T00:56:48Z",
+   "v": 479.66
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -20813,8 +20836,8 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-10-13T00:51:47Z",
-  "virtuell": 1,
+  "t": "2026-10-13T00:56:48Z",
+  "virtuell": 0,
   "neu": 0,
   "gestoppt": false
  },
