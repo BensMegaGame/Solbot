@@ -9,19 +9,19 @@
    "peak": 0.0008031,
    "entry": 0.0007736917420326662,
    "pair": "DSUvc5qf5LJHHV5e2tD184ixotSnCnwj7i4jJa4Xsrmt",
-   "cur_price": 0.0007959,
-   "mark": 0.0007959
+   "cur_price": 0.000791,
+   "mark": 0.000791
   },
   "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP": {
    "sym": "SI",
    "qty": 8663.317603,
    "cost": 142.80092034457647,
    "opened": "2026-10-13T04:56:31Z",
-   "peak": 0.01737,
+   "peak": 0.01748,
    "entry": 0.016483398957360895,
    "pair": "AG1EhPjsBrkxQWkViuLXF6pQnHwfr9f9sdNneeoykcEJ",
-   "cur_price": 0.01696,
-   "mark": 0.01696
+   "cur_price": 0.01748,
+   "mark": 0.01748
   }
  },
  "trades": [
@@ -5430,17 +5430,21 @@
   {
    "t": "2026-10-13T06:06:21Z",
    "v": 480.01
+  },
+  {
+   "t": "2026-10-13T06:11:21Z",
+   "v": 483.62
   }
  ],
  "started": "2026-10-08T16:06:06Z",
  "version": "b4",
  "strategy": "tiefer_dip",
  "coverage": {
-  "t": "2026-10-13T06:06:21Z",
+  "t": "2026-10-13T06:11:21Z",
   "kurse": 196,
   "von": 206,
   "sol": true,
-  "sol24": -3.8,
+  "sol24": -3.7,
   "kandidaten": 0,
   "gestoppt": false
  },
