@@ -1,17 +1,6 @@
 {
- "cash": 308.2939584390125,
- "positions": {
-  "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82": {
-   "sym": "BOME",
-   "qty": 299345.969666,
-   "cost": 252.2768750864648,
-   "opened": "2026-10-12T16:31:46Z",
-   "peak": 0.0008497,
-   "entry": 0.0008427602194475734,
-   "mark": 0.0007595,
-   "cur_price": 0.0007595
-  }
- },
+ "cash": 532.7848964390125,
+ "positions": {},
  "trades": [
   {
    "t": "2026-09-16T17:20:59Z",
@@ -1011,13 +1000,24 @@
    "slip": 0.0042,
    "quote": "jup",
    "reason": "dip 24h -26% (SOL -3%) 1h +1.3%"
+  },
+  {
+   "t": "2026-10-13T00:51:45Z",
+   "side": "sell",
+   "sym": "BOME",
+   "addr": "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82",
+   "price": 0.0007582,
+   "usd": 224.49,
+   "pnl": -27.79,
+   "peak_x": 1.008,
+   "held_h": 8.3,
+   "frac": 1.0,
+   "slip": 0.0065,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-25T16:11:24Z",
-   "v": 750.2
-  },
   {
    "t": "2026-09-25T16:16:08Z",
    "v": 751.51
@@ -21013,13 +21013,17 @@
   {
    "t": "2026-10-13T00:46:45Z",
    "v": 535.65
+  },
+  {
+   "t": "2026-10-13T00:51:45Z",
+   "v": 532.78
   }
  ],
  "started": "2026-09-16T16:55:59Z",
  "strategy": "largecap_dip",
  "universe_n": 65,
  "coverage": {
-  "t": "2026-10-13T00:46:45Z",
+  "t": "2026-10-13T00:51:45Z",
   "kurse": 65,
   "von": 65,
   "sol": true
@@ -21027,10 +21031,10 @@
  "verkauft_am": {
   "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx": 1791410247.295016,
   "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP": 1791767204.6112287,
-  "KMNo3nJsBXfcpJTVhZcXLW7RmTwTt4GVFE7suUBo9sS": 1791242863.5933638,
   "KENJSUYLASHUMfHyy5o4Hp2FdNqZg1AsUPhfH2kYvEP": 1791776204.015781,
   "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE": 1791462736.6473026,
   "BPxxfRCXkUVhig4HS1Lh7kZqV6SPJhzfEk4x6fVBjPCy": 1791475657.9070976,
-  "Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump": 1791486098.572706
+  "Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump": 1791486098.572706,
+  "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82": 1791852705.6583858
  }
 }
