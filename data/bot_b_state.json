@@ -1,5 +1,5 @@
 {
- "cash": 187.45166388442357,
+ "cash": 333.85307488442356,
  "positions": {
   "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82": {
    "sym": "BOME",
@@ -9,19 +9,8 @@
    "peak": 0.0008077,
    "entry": 0.0007736917420326662,
    "pair": "DSUvc5qf5LJHHV5e2tD184ixotSnCnwj7i4jJa4Xsrmt",
-   "cur_price": 0.0008028,
-   "mark": 0.0008028
-  },
-  "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP": {
-   "sym": "SI",
-   "qty": 8663.317603,
-   "cost": 142.80092034457647,
-   "opened": "2026-10-13T04:56:31Z",
-   "peak": 0.01844,
-   "entry": 0.016483398957360895,
-   "pair": "AG1EhPjsBrkxQWkViuLXF6pQnHwfr9f9sdNneeoykcEJ",
-   "cur_price": 0.01761,
-   "mark": 0.01761
+   "cur_price": 0.0007921,
+   "mark": 0.0007921
   }
  },
  "trades": [
@@ -144,6 +133,21 @@
    "slip": 0.026,
    "quote": "jup",
    "reason": "tiefer dip 24h -31% (SOL -4%) 1h -1.3%"
+  },
+  {
+   "t": "2026-10-13T15:01:11Z",
+   "side": "sell",
+   "sym": "SI",
+   "addr": "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP",
+   "price": 0.01684,
+   "usd": 146.4,
+   "pnl": 3.6,
+   "peak_x": 1.119,
+   "held_h": 10.1,
+   "frac": 1.0,
+   "slip": 0.0012,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
@@ -5854,13 +5858,17 @@
   {
    "t": "2026-10-13T14:56:08Z",
    "v": 486.9
+  },
+  {
+   "t": "2026-10-13T15:01:11Z",
+   "v": 478.79
   }
  ],
  "started": "2026-10-08T16:06:06Z",
  "version": "b4",
  "strategy": "tiefer_dip",
  "coverage": {
-  "t": "2026-10-13T14:56:08Z",
+  "t": "2026-10-13T15:01:11Z",
   "kurse": 195,
   "von": 205,
   "sol": true,
@@ -5871,6 +5879,7 @@
  "verkauft_am": {
   "ZEUS1aR7aX8DFFJf5QjWj2ftDDdNTroMNGo8YoQm3Gq": 1791575775.0275497,
   "C1mBfBoDkwWfd6uTFZp62ARHLjeVp3bDpCDMfMZtPngE": 1791741674.4180765,
-  "GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump": 1791850584.6070988
+  "GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump": 1791850584.6070988,
+  "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP": 1791903671.2552521
  }
 }
