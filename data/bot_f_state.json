@@ -31,8 +31,8 @@
    "peak": 0.01036,
    "entry": 0.009404107615910415,
    "pair": "Dsxt7wUigQU5puH9nHjmfwnUenMycAgsFtrkfggLh8P1",
-   "cur_price": 0.008628,
-   "mark": 0.008628
+   "cur_price": 0.008765,
+   "mark": 0.008765
   },
   "G7iK3prSzAA4vzcJWvsLUEsdCqzR7PnMzJV61vSdFSNW": {
    "sym": "NST",
@@ -42,8 +42,8 @@
    "peak": 1.58,
    "entry": 1.5523471729911038,
    "pair": "caWWda11Ye4Xme9D5GKo67Hb8g5mJv1SzKAwrLRnggQ",
-   "cur_price": 1.56,
-   "mark": 1.56
+   "cur_price": 1.54,
+   "mark": 1.54
   },
   "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82": {
    "sym": "BOME",
@@ -53,8 +53,8 @@
    "peak": 0.0008031,
    "entry": 0.0007539771401986558,
    "pair": "DSUvc5qf5LJHHV5e2tD184ixotSnCnwj7i4jJa4Xsrmt",
-   "cur_price": 0.000781,
-   "mark": 0.000781
+   "cur_price": 0.0007807,
+   "mark": 0.0007807
   }
  },
  "trades": [
@@ -822,10 +822,6 @@
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-26T01:57:28Z",
-   "v": 488.41
-  },
   {
    "t": "2026-09-26T02:02:26Z",
    "v": 488.41
@@ -20821,6 +20817,10 @@
   {
    "t": "2026-10-13T10:31:43Z",
    "v": 497.61
+  },
+  {
+   "t": "2026-10-13T10:36:38Z",
+   "v": 497.78
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -20836,7 +20836,7 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-10-13T10:31:43Z",
+  "t": "2026-10-13T10:36:38Z",
   "virtuell": 1,
   "neu": 0,
   "gestoppt": false
