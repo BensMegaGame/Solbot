@@ -1,6 +1,17 @@
 {
- "cash": 331.9628009411123,
- "positions": {},
+ "cash": 281.9428009411123,
+ "positions": {
+  "7jNwX4Me9zGEjmWY7zARDG2LYjVs1WXD6DZ1JvSfpump": {
+   "sym": "HUMPH",
+   "qty": 63937.500181,
+   "cost": 50.02,
+   "opened": "2026-10-14T11:10:13Z",
+   "peak": 0.0007776,
+   "entry": 0.0007823264884989076,
+   "cur_price": 0.0007776,
+   "mark": 0.0007776
+  }
+ },
  "trades": [
   {
    "t": "2026-09-10T18:51:47Z",
@@ -3530,13 +3541,21 @@
    "slip": 0.0201,
    "quote": "jup",
    "reason": "trail"
+  },
+  {
+   "t": "2026-10-14T11:10:13Z",
+   "side": "buy",
+   "sym": "HUMPH",
+   "addr": "7jNwX4Me9zGEjmWY7zARDG2LYjVs1WXD6DZ1JvSfpump",
+   "price": 0.0007776,
+   "fill": 0.000782326488,
+   "usd": 50.02,
+   "slip": 0.0115,
+   "quote": "jup",
+   "reason": "screener"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-27T02:31:02Z",
-   "v": 747.1
-  },
   {
    "t": "2026-09-27T02:36:03Z",
    "v": 745.87
@@ -23532,6 +23551,10 @@
   {
    "t": "2026-10-14T11:05:51Z",
    "v": 331.96
+  },
+  {
+   "t": "2026-10-14T11:10:56Z",
+   "v": 331.66
   }
  ],
  "started": "2026-09-10T17:17:16Z",
