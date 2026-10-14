@@ -42,8 +42,8 @@
    "peak": 1.58,
    "entry": 1.5523471729911038,
    "pair": "caWWda11Ye4Xme9D5GKo67Hb8g5mJv1SzKAwrLRnggQ",
-   "cur_price": 1.48,
-   "mark": 1.48
+   "cur_price": 1.47,
+   "mark": 1.47
   },
   "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82": {
    "sym": "BOME",
@@ -822,10 +822,6 @@
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-27T05:22:10Z",
-   "v": 511.13
-  },
   {
    "t": "2026-09-27T05:27:13Z",
    "v": 511.18
@@ -20821,6 +20817,10 @@
   {
    "t": "2026-10-14T13:56:26Z",
    "v": 494.45
+  },
+  {
+   "t": "2026-10-14T14:01:34Z",
+   "v": 493.82
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -20833,9 +20833,9 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-10-14T13:56:26Z",
-  "virtuell": 1,
-  "neu": 0,
+  "t": "2026-10-14T14:01:34Z",
+  "virtuell": 2,
+  "neu": 1,
   "gestoppt": false
  },
  "verkauft_am": {
