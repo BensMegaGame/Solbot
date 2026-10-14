@@ -1,16 +1,6 @@
 {
- "cash": 276.2841939411123,
+ "cash": 301.02767494111225,
  "positions": {
-  "DzMwArmdzPqcqgvyqAmTxy79XdA9NwK9mMteqWLJpump": {
-   "sym": "Normie",
-   "qty": 58863.584108,
-   "cost": 50.02,
-   "opened": "2026-10-13T14:30:14Z",
-   "peak": 0.0009859,
-   "entry": 0.0008497613721282376,
-   "cur_price": 0.0004281,
-   "mark": 0.0004281
-  },
   "9g4Pib6AM3oVdP9YA7ZcssAXAuhoUzkjR8w27doYpump": {
    "sym": "Pepper",
    "qty": 64287.9127565,
@@ -18,8 +8,8 @@
    "opened": "2026-10-13T17:15:32Z",
    "peak": 0.0007776,
    "entry": 0.0003890311401884999,
-   "cur_price": 0.0006924,
-   "mark": 0.0006924,
+   "cur_price": 0.0006699,
+   "mark": 0.0006699,
    "tp0": true
   }
  },
@@ -3522,13 +3512,24 @@
    "slip": 0.0019,
    "quote": "jup",
    "reason": "tp0"
+  },
+  {
+   "t": "2026-10-14T05:20:02Z",
+   "side": "sell",
+   "sym": "Normie",
+   "addr": "DzMwArmdzPqcqgvyqAmTxy79XdA9NwK9mMteqWLJpump",
+   "price": 0.0004221,
+   "usd": 24.74,
+   "pnl": -25.28,
+   "peak_x": 1.16,
+   "held_h": 14.8,
+   "frac": 1.0,
+   "slip": 0.0184,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-26T20:41:00Z",
-   "v": 787.63
-  },
   {
    "t": "2026-09-26T20:45:59Z",
    "v": 802.46
@@ -23524,6 +23525,10 @@
   {
    "t": "2026-10-14T05:16:09Z",
    "v": 346.0
+  },
+  {
+   "t": "2026-10-14T05:21:05Z",
+   "v": 344.09
   }
  ],
  "started": "2026-09-10T17:17:16Z",
@@ -23540,6 +23545,7 @@
   "HMYd9tosnUXuNHmq7pXmoePRVBLBBjA3JBfydq6upump": 1791624903.4006932,
   "6hTLdzZaaCjmqtn7RtaEMQsCbXT5Pg8q76tRViEGpump": 1791755402.3997371,
   "Cy5TzDyJ4mo6MBAbpwUcAgdfNiXYKrYUPrvhPGVU6XMR": 1791646802.7030625,
-  "6WCtKQfkWurd77tCCAYWuL5TwyAvuovTzworfnfupump": 1791739504.49663
+  "6WCtKQfkWurd77tCCAYWuL5TwyAvuovTzworfnfupump": 1791739504.49663,
+  "DzMwArmdzPqcqgvyqAmTxy79XdA9NwK9mMteqWLJpump": 1791955202.2748756
  }
 }
