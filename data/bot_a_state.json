@@ -1,18 +1,6 @@
 {
- "cash": 301.02767494111225,
- "positions": {
-  "9g4Pib6AM3oVdP9YA7ZcssAXAuhoUzkjR8w27doYpump": {
-   "sym": "Pepper",
-   "qty": 64287.9127565,
-   "cost": 25.01,
-   "opened": "2026-10-13T17:15:32Z",
-   "peak": 0.0007776,
-   "entry": 0.0003890311401884999,
-   "cur_price": 0.0005157,
-   "mark": 0.0005157,
-   "tp0": true
-  }
- },
+ "cash": 331.9628009411123,
+ "positions": {},
  "trades": [
   {
    "t": "2026-09-10T18:51:47Z",
@@ -3527,13 +3515,24 @@
    "slip": 0.0184,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-10-14T07:40:02Z",
+   "side": "sell",
+   "sym": "Pepper",
+   "addr": "9g4Pib6AM3oVdP9YA7ZcssAXAuhoUzkjR8w27doYpump",
+   "price": 0.0004943,
+   "usd": 30.94,
+   "pnl": 5.93,
+   "peak_x": 1.999,
+   "held_h": 14.4,
+   "frac": 1.0,
+   "slip": 0.0201,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-26T23:01:01Z",
-   "v": 782.55
-  },
   {
    "t": "2026-09-26T23:06:03Z",
    "v": 784.61
@@ -23529,11 +23528,14 @@
   {
    "t": "2026-10-14T07:36:08Z",
    "v": 334.18
+  },
+  {
+   "t": "2026-10-14T07:41:08Z",
+   "v": 331.96
   }
  ],
  "started": "2026-09-10T17:17:16Z",
  "verkauft_am": {
-  "3sL58KKh2QdNSfN9VRz8bHGGU5zStdfManVHCTkhpump": 1791356402.5160732,
   "GDeKVeV3cs6UCTRDmHqZHugBmUbLLRW7hi9P91XXeLNT": 1791360307.7108133,
   "6VsnbKz6erJRTPiiD34Msq7eWmmgZHDnh4Bxan4MpGjm": 1791362406.1118076,
   "9XKzy4KahcZaGJPJtz1PtqGPB3CiseoBrx7TcQhEpump": 1791437108.8575494,
@@ -23546,6 +23548,7 @@
   "6hTLdzZaaCjmqtn7RtaEMQsCbXT5Pg8q76tRViEGpump": 1791755402.3997371,
   "Cy5TzDyJ4mo6MBAbpwUcAgdfNiXYKrYUPrvhPGVU6XMR": 1791646802.7030625,
   "6WCtKQfkWurd77tCCAYWuL5TwyAvuovTzworfnfupump": 1791739504.49663,
-  "DzMwArmdzPqcqgvyqAmTxy79XdA9NwK9mMteqWLJpump": 1791955202.2748756
+  "DzMwArmdzPqcqgvyqAmTxy79XdA9NwK9mMteqWLJpump": 1791955202.2748756,
+  "9g4Pib6AM3oVdP9YA7ZcssAXAuhoUzkjR8w27doYpump": 1791963602.1966062
  }
 }
