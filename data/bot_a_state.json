@@ -1,5 +1,5 @@
 {
- "cash": 281.9428009411123,
+ "cash": 231.92280094111229,
  "positions": {
   "7jNwX4Me9zGEjmWY7zARDG2LYjVs1WXD6DZ1JvSfpump": {
    "sym": "HUMPH",
@@ -8,8 +8,18 @@
    "opened": "2026-10-14T11:10:13Z",
    "peak": 0.0009773,
    "entry": 0.0007823264884989076,
-   "cur_price": 0.0005812,
-   "mark": 0.0005812
+   "cur_price": 0.0005606,
+   "mark": 0.0005606
+  },
+  "Ek6mmnhJXUhv5jDZ57aBaw5dzjCYSJnbDTW1EMKBpump": {
+   "sym": "$GEAR",
+   "qty": 55573.489083,
+   "cost": 50.02,
+   "opened": "2026-10-14T15:40:13Z",
+   "peak": 0.000877,
+   "entry": 0.0009000694544352657,
+   "cur_price": 0.000877,
+   "mark": 0.000877
   }
  },
  "trades": [
@@ -3553,13 +3563,21 @@
    "slip": 0.0115,
    "quote": "jup",
    "reason": "screener"
+  },
+  {
+   "t": "2026-10-14T15:40:13Z",
+   "side": "buy",
+   "sym": "$GEAR",
+   "addr": "Ek6mmnhJXUhv5jDZ57aBaw5dzjCYSJnbDTW1EMKBpump",
+   "price": 0.000877,
+   "fill": 0.000900069454,
+   "usd": 50.02,
+   "slip": 0.0017,
+   "quote": "jup",
+   "reason": "screener"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-27T07:01:01Z",
-   "v": 730.6
-  },
   {
    "t": "2026-09-27T07:06:01Z",
    "v": 728.9
@@ -23555,6 +23573,10 @@
   {
    "t": "2026-10-14T15:35:55Z",
    "v": 319.1
+  },
+  {
+   "t": "2026-10-14T15:40:56Z",
+   "v": 316.5
   }
  ],
  "started": "2026-09-10T17:17:16Z",
