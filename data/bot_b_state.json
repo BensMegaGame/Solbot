@@ -1,5 +1,5 @@
 {
- "cash": 278.7772945634699,
+ "cash": 363.67115356346994,
  "positions": {
   "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82": {
    "sym": "BOME",
@@ -9,20 +9,8 @@
    "peak": 0.0008137,
    "entry": 0.0007736917420326662,
    "pair": "DSUvc5qf5LJHHV5e2tD184ixotSnCnwj7i4jJa4Xsrmt",
-   "cur_price": 0.0006954,
-   "mark": 0.0006954
-  },
-  "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": {
-   "sym": "baton",
-   "qty": 8283.222444,
-   "cost": 68.95165516047683,
-   "opened": "2026-10-15T02:41:21Z",
-   "peak": 0.01131,
-   "entry": 0.008324254917290354,
-   "pair": "Cb7ZRgPLhji3Th7htXyKEqbXvNjPpeTvckXuWakBUhXu",
-   "cur_price": 0.0105,
-   "mark": 0.0105,
-   "tp1": true
+   "cur_price": 0.000698,
+   "mark": 0.000698
   }
  },
  "trades": [
@@ -187,6 +175,21 @@
    "slip": 0.0112,
    "quote": "jup",
    "reason": "tp1"
+  },
+  {
+   "t": "2026-10-15T16:31:05Z",
+   "side": "sell",
+   "sym": "baton",
+   "addr": "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump",
+   "price": 0.01019,
+   "usd": 84.89,
+   "pnl": 15.94,
+   "peak_x": 1.359,
+   "held_h": 13.8,
+   "frac": 1.0,
+   "slip": 0.0006,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
@@ -8273,13 +8276,17 @@
   {
    "t": "2026-10-15T16:26:05Z",
    "v": 492.99
+  },
+  {
+   "t": "2026-10-15T16:31:05Z",
+   "v": 491.39
   }
  ],
  "started": "2026-10-08T16:06:06Z",
  "version": "b4",
  "strategy": "tiefer_dip",
  "coverage": {
-  "t": "2026-10-15T16:26:05Z",
+  "t": "2026-10-15T16:31:05Z",
   "kurse": 190,
   "von": 203,
   "sol": true,
@@ -8291,6 +8298,7 @@
   "ZEUS1aR7aX8DFFJf5QjWj2ftDDdNTroMNGo8YoQm3Gq": 1791575775.0275497,
   "C1mBfBoDkwWfd6uTFZp62ARHLjeVp3bDpCDMfMZtPngE": 1791741674.4180765,
   "GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump": 1791850584.6070988,
-  "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP": 1791903671.2552521
+  "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP": 1791903671.2552521,
+  "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": 1792081865.5302145
  }
 }
