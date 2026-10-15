@@ -9,8 +9,8 @@
    "peak": 0.0008137,
    "entry": 0.0007736917420326662,
    "pair": "DSUvc5qf5LJHHV5e2tD184ixotSnCnwj7i4jJa4Xsrmt",
-   "cur_price": 0.0006751,
-   "mark": 0.0006751
+   "cur_price": 0.0006753,
+   "mark": 0.0006753
   },
   "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": {
    "sym": "baton",
@@ -20,8 +20,8 @@
    "peak": 0.008881,
    "entry": 0.008324254917290354,
    "pair": "Cb7ZRgPLhji3Th7htXyKEqbXvNjPpeTvckXuWakBUhXu",
-   "cur_price": 0.008247,
-   "mark": 0.008247
+   "cur_price": 0.008282,
+   "mark": 0.008282
   }
  },
  "trades": [
@@ -8057,17 +8057,21 @@
   {
    "t": "2026-10-15T12:16:07Z",
    "v": 456.1
+  },
+  {
+   "t": "2026-10-15T12:21:05Z",
+   "v": 456.72
   }
  ],
  "started": "2026-10-08T16:06:06Z",
  "version": "b4",
  "strategy": "tiefer_dip",
  "coverage": {
-  "t": "2026-10-15T12:16:07Z",
+  "t": "2026-10-15T12:21:05Z",
   "kurse": 191,
   "von": 203,
   "sol": true,
-  "sol24": -5.1,
+  "sol24": -4.9,
   "kandidaten": 0,
   "gestoppt": false
  },
