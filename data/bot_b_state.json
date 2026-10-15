@@ -9,19 +9,19 @@
    "peak": 0.0008137,
    "entry": 0.0007736917420326662,
    "pair": "DSUvc5qf5LJHHV5e2tD184ixotSnCnwj7i4jJa4Xsrmt",
-   "cur_price": 0.0006792,
-   "mark": 0.0006792
+   "cur_price": 0.000679,
+   "mark": 0.000679
   },
   "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": {
    "sym": "baton",
    "qty": 16566.444888,
    "cost": 137.90331032095366,
    "opened": "2026-10-15T02:41:21Z",
-   "peak": 0.008789,
+   "peak": 0.008798,
    "entry": 0.008324254917290354,
    "pair": "Cb7ZRgPLhji3Th7htXyKEqbXvNjPpeTvckXuWakBUhXu",
-   "cur_price": 0.008678,
-   "mark": 0.008678
+   "cur_price": 0.008798,
+   "mark": 0.008798
   }
  },
  "trades": [
@@ -7869,17 +7869,21 @@
   {
    "t": "2026-10-15T08:21:08Z",
    "v": 463.99
+  },
+  {
+   "t": "2026-10-15T08:26:07Z",
+   "v": 465.94
   }
  ],
  "started": "2026-10-08T16:06:06Z",
  "version": "b4",
  "strategy": "tiefer_dip",
  "coverage": {
-  "t": "2026-10-15T08:21:08Z",
+  "t": "2026-10-15T08:26:07Z",
   "kurse": 196,
   "von": 206,
   "sol": true,
-  "sol24": -4.6,
+  "sol24": -4.4,
   "kandidaten": 0,
   "gestoppt": false
  },
