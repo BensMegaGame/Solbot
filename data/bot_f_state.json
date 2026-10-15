@@ -31,8 +31,8 @@
    "peak": 1.58,
    "entry": 1.5523471729911038,
    "pair": "caWWda11Ye4Xme9D5GKo67Hb8g5mJv1SzKAwrLRnggQ",
-   "cur_price": 1.37,
-   "mark": 1.37
+   "cur_price": 1.4,
+   "mark": 1.4
   },
   "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82": {
    "sym": "BOME",
@@ -42,8 +42,8 @@
    "peak": 0.0008137,
    "entry": 0.0007539771401986558,
    "pair": "DSUvc5qf5LJHHV5e2tD184ixotSnCnwj7i4jJa4Xsrmt",
-   "cur_price": 0.0006839,
-   "mark": 0.0006839
+   "cur_price": 0.0006853,
+   "mark": 0.0006853
   }
  },
  "trades": [
@@ -826,10 +826,6 @@
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-27T21:01:52Z",
-   "v": 503.79
-  },
   {
    "t": "2026-09-27T21:06:55Z",
    "v": 503.47
@@ -20825,6 +20821,10 @@
   {
    "t": "2026-10-15T05:36:39Z",
    "v": 460.07
+  },
+  {
+   "t": "2026-10-15T05:41:37Z",
+   "v": 462.15
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -20838,7 +20838,7 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-10-15T05:36:39Z",
+  "t": "2026-10-15T05:41:37Z",
   "virtuell": 3,
   "neu": 0,
   "gestoppt": false
