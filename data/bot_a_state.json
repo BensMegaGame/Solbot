@@ -1,5 +1,5 @@
 {
- "cash": 230.4789659411123,
+ "cash": 180.4589659411123,
  "positions": {
   "6hTLdzZaaCjmqtn7RtaEMQsCbXT5Pg8q76tRViEGpump": {
    "sym": "ABU",
@@ -8,8 +8,8 @@
    "opened": "2026-10-14T19:41:02Z",
    "peak": 0.0004125,
    "entry": 0.0002777952921807166,
-   "cur_price": 0.0002525,
-   "mark": 0.0002525
+   "cur_price": 0.0002468,
+   "mark": 0.0002468
   },
   "5GDX5fJTQns4arM1J94wjxdA8KXFsV5qW46MLFpHpump": {
    "sym": "OMNI",
@@ -18,8 +18,18 @@
    "opened": "2026-10-15T14:25:25Z",
    "peak": 0.001003,
    "entry": 0.0006884167263462804,
-   "cur_price": 0.0006553,
-   "mark": 0.0006553
+   "cur_price": 0.0006793,
+   "mark": 0.0006793
+  },
+  "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump": {
+   "sym": "CBUCKS",
+   "qty": 87219.065454,
+   "cost": 50.02,
+   "opened": "2026-10-15T20:10:58Z",
+   "peak": 0.0005671,
+   "entry": 0.0005734984632044806,
+   "cur_price": 0.0005671,
+   "mark": 0.0005671
   }
  },
  "trades": [
@@ -3644,13 +3654,21 @@
    "slip": 0.0,
    "quote": "jup",
    "reason": "screener"
+  },
+  {
+   "t": "2026-10-15T20:10:58Z",
+   "side": "buy",
+   "sym": "CBUCKS",
+   "addr": "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump",
+   "price": 0.0005671,
+   "fill": 0.000573498463,
+   "usd": 50.02,
+   "slip": 0.0209,
+   "quote": "jup",
+   "reason": "screener"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-28T11:30:50Z",
-   "v": 659.3
-  },
   {
    "t": "2026-09-28T11:35:50Z",
    "v": 658.91
@@ -23646,6 +23664,10 @@
   {
    "t": "2026-10-15T20:06:04Z",
    "v": 323.56
+  },
+  {
+   "t": "2026-10-15T20:11:04Z",
+   "v": 323.72
   }
  ],
  "started": "2026-09-10T17:17:16Z",
