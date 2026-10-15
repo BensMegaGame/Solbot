@@ -1,5 +1,5 @@
 {
- "cash": 280.4989659411123,
+ "cash": 230.4789659411123,
  "positions": {
   "6hTLdzZaaCjmqtn7RtaEMQsCbXT5Pg8q76tRViEGpump": {
    "sym": "ABU",
@@ -8,8 +8,18 @@
    "opened": "2026-10-14T19:41:02Z",
    "peak": 0.0004125,
    "entry": 0.0002777952921807166,
-   "cur_price": 0.0002435,
-   "mark": 0.0002435
+   "cur_price": 0.0002376,
+   "mark": 0.0002376
+  },
+  "5GDX5fJTQns4arM1J94wjxdA8KXFsV5qW46MLFpHpump": {
+   "sym": "OMNI",
+   "qty": 72659.478025,
+   "cost": 50.02,
+   "opened": "2026-10-15T14:25:25Z",
+   "peak": 0.0006922,
+   "entry": 0.0006884167263462804,
+   "cur_price": 0.0006922,
+   "mark": 0.0006922
   }
  },
  "trades": [
@@ -3622,13 +3632,21 @@
    "slip": 0.0139,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-10-15T14:25:25Z",
+   "side": "buy",
+   "sym": "OMNI",
+   "addr": "5GDX5fJTQns4arM1J94wjxdA8KXFsV5qW46MLFpHpump",
+   "price": 0.0006922,
+   "fill": 0.000688416726,
+   "usd": 50.02,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "screener"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-28T05:46:03Z",
-   "v": 666.38
-  },
   {
    "t": "2026-09-28T05:51:03Z",
    "v": 667.76
@@ -23624,6 +23642,10 @@
   {
    "t": "2026-10-15T14:21:00Z",
    "v": 324.34
+  },
+  {
+   "t": "2026-10-15T14:25:59Z",
+   "v": 323.56
   }
  ],
  "started": "2026-09-10T17:17:16Z",
