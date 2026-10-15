@@ -42,8 +42,8 @@
    "peak": 0.0008137,
    "entry": 0.0007539771401986558,
    "pair": "DSUvc5qf5LJHHV5e2tD184ixotSnCnwj7i4jJa4Xsrmt",
-   "cur_price": 0.0006619,
-   "mark": 0.0006619
+   "cur_price": 0.0007032,
+   "mark": 0.0007032
   },
   "6Mix12LiHrQFojaQEnfPUC65Qkwd6X4Y5Qg93oFbordr": {
    "sym": "BORDR",
@@ -53,8 +53,8 @@
    "peak": 0.00575,
    "entry": 0.005512640229787087,
    "pair": "FTmwv748VxVVrRohjYzvdfyL4SXP3C6QTnHSem5QhewZ",
-   "cur_price": 0.005525,
-   "mark": 0.005525
+   "cur_price": 0.005574,
+   "mark": 0.005574
   }
  },
  "trades": [
@@ -849,10 +849,6 @@
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-28T10:52:04Z",
-   "v": 489.51
-  },
   {
    "t": "2026-09-28T10:56:56Z",
    "v": 488.89
@@ -20848,6 +20844,10 @@
   {
    "t": "2026-10-15T19:26:36Z",
    "v": 457.13
+  },
+  {
+   "t": "2026-10-15T19:31:51Z",
+   "v": 463.23
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -20861,7 +20861,7 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-10-15T19:26:36Z",
+  "t": "2026-10-15T19:31:51Z",
   "virtuell": 4,
   "neu": 0,
   "gestoppt": false
