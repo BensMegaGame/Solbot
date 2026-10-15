@@ -9,8 +9,8 @@
    "peak": 0.03747,
    "entry": 0.031537863324270915,
    "pair": "AtK4fYMF1mFosQn6qRiMJoE1hsjpCFwpTy1TKpE5Ez6E",
-   "cur_price": 0.03162,
-   "mark": 0.03162
+   "cur_price": 0.03139,
+   "mark": 0.03139
   },
   "6NwarBvDkXhByqVp2Qkq5i9XbtA2B3Bwe8SWGu9vpump": {
    "sym": "CUPSEY",
@@ -53,8 +53,8 @@
    "peak": 0.0008137,
    "entry": 0.0007539771401986558,
    "pair": "DSUvc5qf5LJHHV5e2tD184ixotSnCnwj7i4jJa4Xsrmt",
-   "cur_price": 0.0007048,
-   "mark": 0.0007048
+   "cur_price": 0.0006965,
+   "mark": 0.0006965
   }
  },
  "trades": [
@@ -822,10 +822,6 @@
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-27T17:51:38Z",
-   "v": 504.63
-  },
   {
    "t": "2026-09-27T17:56:44Z",
    "v": 504.76
@@ -20821,6 +20817,10 @@
   {
    "t": "2026-10-15T02:26:42Z",
    "v": 471.32
+  },
+  {
+   "t": "2026-10-15T02:31:42Z",
+   "v": 469.57
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -20833,7 +20833,7 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-10-15T02:26:42Z",
+  "t": "2026-10-15T02:31:42Z",
   "virtuell": 2,
   "neu": 0,
   "gestoppt": false
