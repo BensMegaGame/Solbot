@@ -1,6 +1,17 @@
 {
- "cash": 532.7848964390125,
- "positions": {},
+ "cash": 293.01169304145685,
+ "positions": {
+  "CzLSujWBLFsSjncfkh59rUFqvafWcY5tzedWJSuypump": {
+   "sym": "GOAT",
+   "qty": 15174.421362,
+   "cost": 239.77320339755565,
+   "opened": "2026-10-16T11:46:43Z",
+   "peak": 0.01573,
+   "entry": 0.015801143099795495,
+   "no_quote_since": "2026-10-16T11:46:43Z",
+   "mark": 0.0
+  }
+ },
  "trades": [
   {
    "t": "2026-09-16T17:20:59Z",
@@ -1015,13 +1026,21 @@
    "slip": 0.0065,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-10-16T11:46:43Z",
+   "side": "buy",
+   "sym": "GOAT",
+   "addr": "CzLSujWBLFsSjncfkh59rUFqvafWcY5tzedWJSuypump",
+   "price": 0.01573,
+   "fill": 0.0158011431,
+   "usd": 239.77,
+   "slip": 0.0051,
+   "quote": "jup",
+   "reason": "dip 24h -15% (SOL +4%) 1h +0.8%"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-29T03:06:49Z",
-   "v": 743.87
-  },
   {
    "t": "2026-09-29T03:11:52Z",
    "v": 743.07
@@ -21017,13 +21036,17 @@
   {
    "t": "2026-10-16T11:41:42Z",
    "v": 532.78
+  },
+  {
+   "t": "2026-10-16T11:46:43Z",
+   "v": 293.01
   }
  ],
  "started": "2026-09-16T16:55:59Z",
  "strategy": "largecap_dip",
  "universe_n": 76,
  "coverage": {
-  "t": "2026-10-16T11:41:42Z",
+  "t": "2026-10-16T11:46:43Z",
   "kurse": 76,
   "von": 76,
   "sol": true
