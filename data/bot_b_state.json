@@ -9,19 +9,19 @@
    "peak": 0.0008137,
    "entry": 0.0007736917420326662,
    "pair": "DSUvc5qf5LJHHV5e2tD184ixotSnCnwj7i4jJa4Xsrmt",
-   "cur_price": 0.0006916,
-   "mark": 0.0006916
+   "cur_price": 0.0006949,
+   "mark": 0.0006949
   },
   "8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn": {
    "sym": "ZEREBRO",
    "qty": 3645.904844,
    "cost": 147.12319477040907,
    "opened": "2026-10-16T06:16:21Z",
-   "peak": 0.04672,
+   "peak": 0.04686,
    "entry": 0.040352999067577715,
    "pair": "3sjNoCnkkhWPVXYGDtem8rCciHSGc9jSFZuUAzKbvRVp",
-   "cur_price": 0.04672,
-   "mark": 0.04672
+   "cur_price": 0.04686,
+   "mark": 0.04686
   }
  },
  "trades": [
@@ -9047,17 +9047,21 @@
   {
    "t": "2026-10-16T08:01:21Z",
    "v": 513.43
+  },
+  {
+   "t": "2026-10-16T08:06:20Z",
+   "v": 514.54
   }
  ],
  "started": "2026-10-08T16:06:06Z",
  "version": "b4",
  "strategy": "tiefer_dip",
  "coverage": {
-  "t": "2026-10-16T08:01:21Z",
+  "t": "2026-10-16T08:06:20Z",
   "kurse": 194,
   "von": 207,
   "sol": true,
-  "sol24": 3.1,
+  "sol24": 3.2,
   "kandidaten": 0,
   "gestoppt": false
  },
