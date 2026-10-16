@@ -1,5 +1,5 @@
 {
- "cash": 304.63447179306087,
+ "cash": 392.6583977930609,
  "positions": {
   "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82": {
    "sym": "BOME",
@@ -9,20 +9,8 @@
    "peak": 0.0008137,
    "entry": 0.0007736917420326662,
    "pair": "DSUvc5qf5LJHHV5e2tD184ixotSnCnwj7i4jJa4Xsrmt",
-   "cur_price": 0.0006902,
-   "mark": 0.0006902
-  },
-  "8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn": {
-   "sym": "ZEREBRO",
-   "qty": 1822.952422,
-   "cost": 73.56159738520454,
-   "opened": "2026-10-16T06:16:21Z",
-   "peak": 0.05536,
-   "entry": 0.040352999067577715,
-   "pair": "3sjNoCnkkhWPVXYGDtem8rCciHSGc9jSFZuUAzKbvRVp",
-   "cur_price": 0.05157,
-   "mark": 0.05157,
-   "tp1": true
+   "cur_price": 0.0006916,
+   "mark": 0.0006916
   }
  },
  "trades": [
@@ -229,6 +217,21 @@
    "slip": 0.0002,
    "quote": "jup",
    "reason": "tp1"
+  },
+  {
+   "t": "2026-10-16T10:36:13Z",
+   "side": "sell",
+   "sym": "ZEREBRO",
+   "addr": "8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn",
+   "price": 0.04815,
+   "usd": 88.02,
+   "pnl": 14.46,
+   "peak_x": 1.372,
+   "held_h": 4.3,
+   "frac": 1.0,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
@@ -9183,17 +9186,21 @@
   {
    "t": "2026-10-16T10:31:11Z",
    "v": 524.93
+  },
+  {
+   "t": "2026-10-16T10:36:13Z",
+   "v": 519.2
   }
  ],
  "started": "2026-10-08T16:06:06Z",
  "version": "b4",
  "strategy": "tiefer_dip",
  "coverage": {
-  "t": "2026-10-16T10:31:11Z",
-  "kurse": 195,
+  "t": "2026-10-16T10:36:13Z",
+  "kurse": 194,
   "von": 207,
   "sol": true,
-  "sol24": 3.8,
+  "sol24": 4.0,
   "kandidaten": 0,
   "gestoppt": false
  },
@@ -9202,6 +9209,7 @@
   "C1mBfBoDkwWfd6uTFZp62ARHLjeVp3bDpCDMfMZtPngE": 1791741674.4180765,
   "GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump": 1791850584.6070988,
   "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP": 1791903671.2552521,
-  "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": 1792081865.5302145
+  "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": 1792081865.5302145,
+  "8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn": 1792146973.8770661
  }
 }
