@@ -20,8 +20,8 @@
    "peak": 0.01104,
    "entry": 0.009404107615910415,
    "pair": "Dsxt7wUigQU5puH9nHjmfwnUenMycAgsFtrkfggLh8P1",
-   "cur_price": 0.00862,
-   "mark": 0.00862
+   "cur_price": 0.008501,
+   "mark": 0.008501
   },
   "G7iK3prSzAA4vzcJWvsLUEsdCqzR7PnMzJV61vSdFSNW": {
    "sym": "NST",
@@ -31,8 +31,8 @@
    "peak": 1.58,
    "entry": 1.5523471729911038,
    "pair": "caWWda11Ye4Xme9D5GKo67Hb8g5mJv1SzKAwrLRnggQ",
-   "cur_price": 1.41,
-   "mark": 1.41
+   "cur_price": 1.42,
+   "mark": 1.42
   },
   "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82": {
    "sym": "BOME",
@@ -42,8 +42,8 @@
    "peak": 0.0008137,
    "entry": 0.0007539771401986558,
    "pair": "DSUvc5qf5LJHHV5e2tD184ixotSnCnwj7i4jJa4Xsrmt",
-   "cur_price": 0.0006647,
-   "mark": 0.0006647
+   "cur_price": 0.0006665,
+   "mark": 0.0006665
   },
   "8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn": {
    "sym": "ZEREBRO",
@@ -53,8 +53,8 @@
    "peak": 0.03662,
    "entry": 0.03614431269750309,
    "pair": "3sjNoCnkkhWPVXYGDtem8rCciHSGc9jSFZuUAzKbvRVp",
-   "cur_price": 0.03391,
-   "mark": 0.03391
+   "cur_price": 0.03385,
+   "mark": 0.03385
   }
  },
  "trades": [
@@ -876,10 +876,6 @@
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-29T11:21:50Z",
-   "v": 512.65
-  },
   {
    "t": "2026-09-29T11:26:49Z",
    "v": 514.03
@@ -20875,6 +20871,10 @@
   {
    "t": "2026-10-16T19:56:50Z",
    "v": 466.23
+  },
+  {
+   "t": "2026-10-16T20:01:52Z",
+   "v": 465.66
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -20889,7 +20889,7 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-10-16T19:56:50Z",
+  "t": "2026-10-16T20:01:52Z",
   "virtuell": 5,
   "neu": 0,
   "gestoppt": false
