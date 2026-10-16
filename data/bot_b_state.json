@@ -1,5 +1,5 @@
 {
- "cash": 216.54795879306087,
+ "cash": 304.63447179306087,
  "positions": {
   "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82": {
    "sym": "BOME",
@@ -14,14 +14,15 @@
   },
   "8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn": {
    "sym": "ZEREBRO",
-   "qty": 3645.904844,
-   "cost": 147.12319477040907,
+   "qty": 1822.952422,
+   "cost": 73.56159738520454,
    "opened": "2026-10-16T06:16:21Z",
-   "peak": 0.04795,
+   "peak": 0.04857,
    "entry": 0.040352999067577715,
    "pair": "3sjNoCnkkhWPVXYGDtem8rCciHSGc9jSFZuUAzKbvRVp",
-   "cur_price": 0.04778,
-   "mark": 0.04778
+   "cur_price": 0.04857,
+   "mark": 0.04857,
+   "tp1": true
   }
  },
  "trades": [
@@ -213,6 +214,21 @@
    "slip": 0.0047,
    "quote": "jup",
    "reason": "tiefer dip 24h -34% (SOL +3%) 1h +1.6%"
+  },
+  {
+   "t": "2026-10-16T09:11:15Z",
+   "side": "sell",
+   "sym": "ZEREBRO",
+   "addr": "8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn",
+   "price": 0.04857,
+   "usd": 88.09,
+   "pnl": 14.52,
+   "peak_x": 1.204,
+   "held_h": 2.9,
+   "frac": 0.5,
+   "slip": 0.0002,
+   "quote": "jup",
+   "reason": "tp1"
   }
  ],
  "equity": [
@@ -9099,17 +9115,21 @@
   {
    "t": "2026-10-16T09:06:17Z",
    "v": 516.76
+  },
+  {
+   "t": "2026-10-16T09:11:15Z",
+   "v": 519.19
   }
  ],
  "started": "2026-10-08T16:06:06Z",
  "version": "b4",
  "strategy": "tiefer_dip",
  "coverage": {
-  "t": "2026-10-16T09:06:17Z",
+  "t": "2026-10-16T09:11:15Z",
   "kurse": 194,
   "von": 207,
   "sol": true,
-  "sol24": 3.5,
+  "sol24": 3.3,
   "kandidaten": 0,
   "gestoppt": false
  },
