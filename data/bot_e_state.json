@@ -1,5 +1,5 @@
 {
- "cash": 54.68027810769027,
+ "cash": 269.2420371076903,
  "positions": {
   "CzLSujWBLFsSjncfkh59rUFqvafWcY5tzedWJSuypump": {
    "sym": "GOAT",
@@ -8,18 +8,8 @@
    "opened": "2026-10-16T11:46:43Z",
    "peak": 0.0158,
    "entry": 0.015801143099795495,
-   "mark": 0.01533,
-   "cur_price": 0.01533
-  },
-  "8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn": {
-   "sym": "ZEREBRO",
-   "qty": 5970.501003,
-   "cost": 238.33141493376658,
-   "opened": "2026-10-16T12:31:41Z",
-   "peak": 0.04184,
-   "entry": 0.03991816010314915,
-   "mark": 0.03655,
-   "cur_price": 0.03655
+   "mark": 0.01534,
+   "cur_price": 0.01534
   }
  },
  "trades": [
@@ -1060,13 +1050,24 @@
    "slip": 0.0003,
    "quote": "jup",
    "reason": "dip 24h -16% (SOL +4%) 1h +4.3%"
+  },
+  {
+   "t": "2026-10-16T16:01:41Z",
+   "side": "sell",
+   "sym": "ZEREBRO",
+   "addr": "8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn",
+   "price": 0.03592,
+   "usd": 214.56,
+   "pnl": -23.77,
+   "peak_x": 1.048,
+   "held_h": 3.5,
+   "frac": 1.0,
+   "slip": 0.0022,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-29T07:21:40Z",
-   "v": 756.25
-  },
   {
    "t": "2026-09-29T07:26:40Z",
    "v": 756.81
@@ -21062,24 +21063,25 @@
   {
    "t": "2026-10-16T15:56:35Z",
    "v": 505.53
+  },
+  {
+   "t": "2026-10-16T16:01:41Z",
+   "v": 502.02
   }
  ],
  "started": "2026-09-16T16:55:59Z",
  "strategy": "largecap_dip",
  "universe_n": 69,
  "coverage": {
-  "t": "2026-10-16T15:56:35Z",
+  "t": "2026-10-16T16:01:41Z",
   "kurse": 69,
   "von": 69,
   "sol": true
  },
  "verkauft_am": {
-  "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx": 1791410247.295016,
   "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP": 1791767204.6112287,
   "KENJSUYLASHUMfHyy5o4Hp2FdNqZg1AsUPhfH2kYvEP": 1791776204.015781,
-  "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE": 1791462736.6473026,
-  "BPxxfRCXkUVhig4HS1Lh7kZqV6SPJhzfEk4x6fVBjPCy": 1791475657.9070976,
-  "Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump": 1791486098.572706,
-  "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82": 1791852705.6583858
+  "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82": 1791852705.6583858,
+  "8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn": 1792166501.3722034
  }
 }
