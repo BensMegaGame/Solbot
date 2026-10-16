@@ -1,5 +1,5 @@
 {
- "cash": 44.79693624893156,
+ "cash": 169.02660024893157,
  "positions": {
   "69LjZUUzxj3Cb3Fxeo1X4QpYEQTboApkhXTysPpbpump": {
    "sym": "CODEC",
@@ -8,8 +8,8 @@
    "opened": "2026-10-15T08:51:18Z",
    "peak": 0.006332,
    "entry": 0.005969673068510012,
-   "cur_price": 0.00579,
-   "mark": 0.00579
+   "cur_price": 0.005775,
+   "mark": 0.005775
   },
   "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": {
    "sym": "BATON",
@@ -18,18 +18,8 @@
    "opened": "2026-10-16T16:46:37Z",
    "peak": 0.008967,
    "entry": 0.008889059958016424,
-   "cur_price": 0.008787,
-   "mark": 0.008787
-  },
-  "4MMQY9bwkxxTtsK3W227Q5ABT6yFY8Pmn9Ze7wmAXKY8": {
-   "sym": "ALLINU",
-   "qty": 23097.725103,
-   "cost": 142.37444122725017,
-   "opened": "2026-10-16T16:46:37Z",
-   "peak": 0.006137,
-   "entry": 0.0061640027575165035,
-   "cur_price": 0.00565,
-   "mark": 0.00565
+   "cur_price": 0.008948,
+   "mark": 0.008948
   }
  },
  "trades": [
@@ -998,13 +988,24 @@
    "slip": 0.0076,
    "quote": "jup",
    "reason": "dip 24h -10% (SOL -1%) 1h -1.4%"
+  },
+  {
+   "t": "2026-10-16T17:11:31Z",
+   "side": "sell",
+   "sym": "ALLINU",
+   "addr": "4MMQY9bwkxxTtsK3W227Q5ABT6yFY8Pmn9Ze7wmAXKY8",
+   "price": 0.005373,
+   "usd": 124.23,
+   "pnl": -18.14,
+   "peak_x": 0.996,
+   "held_h": 0.4,
+   "frac": 1.0,
+   "slip": 0.0293,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-29T08:31:28Z",
-   "v": 565.24
-  },
   {
    "t": "2026-09-29T08:36:26Z",
    "v": 565.37
@@ -21000,6 +21001,10 @@
   {
    "t": "2026-10-16T17:06:31Z",
    "v": 458.72
+  },
+  {
+   "t": "2026-10-16T17:11:31Z",
+   "v": 454.65
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -21007,7 +21012,7 @@
  "strategy": "dip_weites_netz",
  "universe_n": 149,
  "coverage": {
-  "t": "2026-10-16T17:06:31Z",
+  "t": "2026-10-16T17:11:31Z",
   "kurse": 127,
   "von": 149,
   "ohne_pool": 106,
@@ -21020,6 +21025,7 @@
   "8nnaeWCw8mUypcGAgbmSuzAT85uWx4UN12adDrMhXrGF": 1791710482.6342764,
   "ZEUS1aR7aX8DFFJf5QjWj2ftDDdNTroMNGo8YoQm3Gq": 1791822985.4868221,
   "6Mix12LiHrQFojaQEnfPUC65Qkwd6X4Y5Qg93oFbordr": 1792081873.6388795,
-  "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump": 1792082780.8214538
+  "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump": 1792082780.8214538,
+  "4MMQY9bwkxxTtsK3W227Q5ABT6yFY8Pmn9Ze7wmAXKY8": 1792170691.0705369
  }
 }
