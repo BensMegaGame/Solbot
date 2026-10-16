@@ -1,5 +1,5 @@
 {
- "cash": 392.6583977930609,
+ "cash": 238.6449821187536,
  "positions": {
   "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82": {
    "sym": "BOME",
@@ -9,8 +9,19 @@
    "peak": 0.0008137,
    "entry": 0.0007736917420326662,
    "pair": "DSUvc5qf5LJHHV5e2tD184ixotSnCnwj7i4jJa4Xsrmt",
-   "cur_price": 0.0006594,
-   "mark": 0.0006594
+   "cur_price": 0.0006615,
+   "mark": 0.0006615
+  },
+  "9LzCMqDgTKYz9Drzqnpgee3SGa89up3a247ypMj2xrqM": {
+   "sym": "AUDIO",
+   "qty": 9409.35589,
+   "cost": 154.01341567430728,
+   "opened": "2026-10-16T19:16:23Z",
+   "peak": 0.0163,
+   "entry": 0.016368114616430698,
+   "pair": "4EbdAfaShVDNeHm6GbXZX3xsKccRHdTbR5962Bvya8xt",
+   "cur_price": 0.0163,
+   "mark": 0.0163
   }
  },
  "trades": [
@@ -232,6 +243,18 @@
    "slip": 0.0,
    "quote": "jup",
    "reason": "trail"
+  },
+  {
+   "t": "2026-10-16T19:16:23Z",
+   "side": "buy",
+   "sym": "AUDIO",
+   "addr": "9LzCMqDgTKYz9Drzqnpgee3SGa89up3a247ypMj2xrqM",
+   "price": 0.0163,
+   "fill": 0.016368114616,
+   "usd": 154.01,
+   "slip": 0.0043,
+   "quote": "jup",
+   "reason": "tiefer dip 24h -55% (SOL -3%) 1h +2.1%"
   }
  ],
  "equity": [
@@ -9602,18 +9625,22 @@
   {
    "t": "2026-10-16T19:11:21Z",
    "v": 513.31
+  },
+  {
+   "t": "2026-10-16T19:16:23Z",
+   "v": 513.05
   }
  ],
  "started": "2026-10-08T16:06:06Z",
  "version": "b4",
  "strategy": "tiefer_dip",
  "coverage": {
-  "t": "2026-10-16T19:11:21Z",
+  "t": "2026-10-16T19:16:23Z",
   "kurse": 194,
   "von": 208,
   "sol": true,
-  "sol24": -2.9,
-  "kandidaten": 0,
+  "sol24": -2.7,
+  "kandidaten": 1,
   "gestoppt": false
  },
  "verkauft_am": {
