@@ -1,5 +1,5 @@
 {
- "cash": 180.4589659411123,
+ "cash": 130.4389659411123,
  "positions": {
   "6hTLdzZaaCjmqtn7RtaEMQsCbXT5Pg8q76tRViEGpump": {
    "sym": "ABU",
@@ -8,8 +8,8 @@
    "opened": "2026-10-14T19:41:02Z",
    "peak": 0.0004125,
    "entry": 0.0002777952921807166,
-   "cur_price": 0.0002286,
-   "mark": 0.0002286
+   "cur_price": 0.0002439,
+   "mark": 0.0002439
   },
   "5GDX5fJTQns4arM1J94wjxdA8KXFsV5qW46MLFpHpump": {
    "sym": "OMNI",
@@ -18,8 +18,8 @@
    "opened": "2026-10-15T14:25:25Z",
    "peak": 0.001003,
    "entry": 0.0006884167263462804,
-   "cur_price": 0.0005771,
-   "mark": 0.0005771
+   "cur_price": 0.0005175,
+   "mark": 0.0005175
   },
   "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump": {
    "sym": "CBUCKS",
@@ -28,8 +28,18 @@
    "opened": "2026-10-15T20:10:58Z",
    "peak": 0.0008012,
    "entry": 0.0005734984632044806,
-   "cur_price": 0.0006477,
-   "mark": 0.0006477
+   "cur_price": 0.0006574,
+   "mark": 0.0006574
+  },
+  "1EwcGE6WrssiY2sKSadB5E5DE9WhPDQvBC6kev1EDGE": {
+   "sym": "1EDGE",
+   "qty": 175296.945391,
+   "cost": 50.02,
+   "opened": "2026-10-16T15:26:01Z",
+   "peak": 0.0002885,
+   "entry": 0.00028534439027691185,
+   "cur_price": 0.0002885,
+   "mark": 0.0002885
   }
  },
  "trades": [
@@ -3666,13 +3676,21 @@
    "slip": 0.0209,
    "quote": "jup",
    "reason": "screener"
+  },
+  {
+   "t": "2026-10-16T15:26:01Z",
+   "side": "buy",
+   "sym": "1EDGE",
+   "addr": "1EwcGE6WrssiY2sKSadB5E5DE9WhPDQvBC6kev1EDGE",
+   "price": 0.0002885,
+   "fill": 0.00028534439,
+   "usd": 50.02,
+   "slip": 0.0188,
+   "quote": "jup",
+   "reason": "screener"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-29T06:45:47Z",
-   "v": 612.02
-  },
   {
    "t": "2026-09-29T06:50:47Z",
    "v": 610.85
@@ -23668,6 +23686,10 @@
   {
    "t": "2026-10-16T15:21:09Z",
    "v": 320.04
+  },
+  {
+   "t": "2026-10-16T15:26:09Z",
+   "v": 319.87
   }
  ],
  "started": "2026-09-10T17:17:16Z",
