@@ -9004,10 +9004,6 @@
  ],
  "equity": [
   {
-   "t": "2026-09-30T08:57:02Z",
-   "v": 310.16
-  },
-  {
    "t": "2026-09-30T09:02:00Z",
    "v": 314.67
   },
@@ -29002,6 +28998,10 @@
   {
    "t": "2026-10-17T17:31:30Z",
    "v": 15.88
+  },
+  {
+   "t": "2026-10-17T17:36:36Z",
+   "v": 15.88
   }
  ],
  "started": "2026-09-15T16:35:51Z",
@@ -29092,17 +29092,19 @@
   "F458Huat36hKjLPc7dmL4uEixBAgX7fUjxWwnUEkpump": 1791414739.6887403
  },
  "coverage": {
-  "t": "2026-10-17T17:31:30Z",
-  "kandidaten": 41,
-  "pfade": 342,
-  "kurse": 102,
-  "von": 144,
-  "fruehkaeufer_neu": 0,
+  "t": "2026-10-17T17:36:36Z",
+  "kandidaten": 48,
+  "pfade": 346,
+  "kurse": 137,
+  "von": 185,
+  "fruehkaeufer_neu": 4,
   "fruehkaeufer_fehler": 0,
-  "weg": {},
-  "coins_mit_fruehkaeufern": 405,
-  "coins_ausgewertet": 214,
+  "weg": {
+   "codex": 4
+  },
+  "coins_mit_fruehkaeufern": 409,
+  "coins_ausgewertet": 215,
   "credits_heute": 246,
-  "codex_heute": 38
+  "codex_heute": 42
  }
 }
