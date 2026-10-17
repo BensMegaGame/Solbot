@@ -1,5 +1,5 @@
 {
- "cash": 0.980000000000004,
+ "cash": 83.14171,
  "positions": {
   "CortexFv3fRcLKTgACr7aLqckGh5eP7TP3z9JHoKqMc6": {
    "sym": "CX",
@@ -34,17 +34,6 @@
    "cur_price": 1.36,
    "mark": 1.36
   },
-  "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82": {
-   "sym": "BOME",
-   "qty": 128513.356841,
-   "cost": 96.89613326830654,
-   "opened": "2026-10-13T00:56:48Z",
-   "peak": 0.0008137,
-   "entry": 0.0007539771401986558,
-   "pair": "DSUvc5qf5LJHHV5e2tD184ixotSnCnwj7i4jJa4Xsrmt",
-   "cur_price": 0.0006451,
-   "mark": 0.0006451
-  },
   "MukLDtJ8Cx9DxLbeyLRSWPSposTMWuwHANbuaudpump": {
    "sym": "OTC",
    "qty": 13037.004983,
@@ -53,8 +42,8 @@
    "peak": 0.007341,
    "entry": 0.007000000785599621,
    "pair": "DA4pM4xSDY4M9V4CgAKKBVH1pw1yscTQQa5nEkGHuKpt",
-   "cur_price": 0.007006,
-   "mark": 0.007006
+   "cur_price": 0.007012,
+   "mark": 0.007012
   }
  },
  "trades": [
@@ -900,13 +889,24 @@
    "slip": 0.0003,
    "quote": "jup",
    "reason": "nach virtuellem stop (C) -13.5%"
+  },
+  {
+   "t": "2026-10-17T16:56:39Z",
+   "side": "sell",
+   "sym": "BOME",
+   "addr": "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82",
+   "price": 0.0006405,
+   "usd": 82.16,
+   "pnl": -14.73,
+   "peak_x": 1.079,
+   "held_h": 112.0,
+   "frac": 1.0,
+   "slip": 0.0015,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-30T08:17:10Z",
-   "v": 506.61
-  },
   {
    "t": "2026-09-30T08:22:13Z",
    "v": 506.35
@@ -20902,6 +20902,10 @@
   {
    "t": "2026-10-17T16:51:40Z",
    "v": 460.85
+  },
+  {
+   "t": "2026-10-17T16:56:39Z",
+   "v": 460.19
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -20910,11 +20914,12 @@
   "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump": 20744,
   "6NwarBvDkXhByqVp2Qkq5i9XbtA2B3Bwe8SWGu9vpump": 20746,
   "6Mix12LiHrQFojaQEnfPUC65Qkwd6X4Y5Qg93oFbordr": 20746,
-  "8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn": 20748
+  "8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn": 20748,
+  "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82": 20748
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-10-17T16:51:40Z",
+  "t": "2026-10-17T16:56:39Z",
   "virtuell": 4,
   "neu": 0,
   "gestoppt": false
@@ -20926,6 +20931,7 @@
   "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump": 1791851810.0811589,
   "6NwarBvDkXhByqVp2Qkq5i9XbtA2B3Bwe8SWGu9vpump": 1792036907.9288394,
   "6Mix12LiHrQFojaQEnfPUC65Qkwd6X4Y5Qg93oFbordr": 1792096298.5175154,
-  "8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn": 1792218108.9833045
+  "8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn": 1792218108.9833045,
+  "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82": 1792256199.7498777
  }
 }
