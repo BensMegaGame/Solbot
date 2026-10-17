@@ -9,8 +9,8 @@
    "peak": 0.0008137,
    "entry": 0.0007736917420326662,
    "pair": "DSUvc5qf5LJHHV5e2tD184ixotSnCnwj7i4jJa4Xsrmt",
-   "cur_price": 0.0006745,
-   "mark": 0.0006745
+   "cur_price": 0.000678,
+   "mark": 0.000678
   },
   "9LzCMqDgTKYz9Drzqnpgee3SGa89up3a247ypMj2xrqM": {
    "sym": "AUDIO",
@@ -20,8 +20,8 @@
    "peak": 0.01639,
    "entry": 0.016368114616430698,
    "pair": "4EbdAfaShVDNeHm6GbXZX3xsKccRHdTbR5962Bvya8xt",
-   "cur_price": 0.01598,
-   "mark": 0.01598
+   "cur_price": 0.01607,
+   "mark": 0.01607
   }
  },
  "trades": [
@@ -10068,17 +10068,21 @@
   {
    "t": "2026-10-17T03:51:27Z",
    "v": 487.18
+  },
+  {
+   "t": "2026-10-17T03:56:28Z",
+   "v": 488.67
   }
  ],
  "started": "2026-10-08T16:06:06Z",
  "version": "b4",
  "strategy": "tiefer_dip",
  "coverage": {
-  "t": "2026-10-17T03:51:27Z",
+  "t": "2026-10-17T03:56:28Z",
   "kurse": 193,
   "von": 204,
   "sol": true,
-  "sol24": -0.2,
+  "sol24": -0.4,
   "kandidaten": 0,
   "gestoppt": false
  },
