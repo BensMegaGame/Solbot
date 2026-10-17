@@ -9,8 +9,8 @@
    "peak": 0.03747,
    "entry": 0.031537863324270915,
    "pair": "AtK4fYMF1mFosQn6qRiMJoE1hsjpCFwpTy1TKpE5Ez6E",
-   "cur_price": 0.03255,
-   "mark": 0.03255
+   "cur_price": 0.03265,
+   "mark": 0.03265
   },
   "ZEUS1aR7aX8DFFJf5QjWj2ftDDdNTroMNGo8YoQm3Gq": {
    "sym": "ZEUS",
@@ -42,8 +42,8 @@
    "peak": 0.007341,
    "entry": 0.007000000785599621,
    "pair": "DA4pM4xSDY4M9V4CgAKKBVH1pw1yscTQQa5nEkGHuKpt",
-   "cur_price": 0.006877,
-   "mark": 0.006877
+   "cur_price": 0.006875,
+   "mark": 0.006875
   }
  },
  "trades": [
@@ -907,10 +907,6 @@
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-30T13:12:07Z",
-   "v": 496.77
-  },
   {
    "t": "2026-09-30T13:17:18Z",
    "v": 494.87
@@ -20906,6 +20902,10 @@
   {
    "t": "2026-10-17T21:46:44Z",
    "v": 459.09
+  },
+  {
+   "t": "2026-10-17T21:51:46Z",
+   "v": 459.36
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -20919,7 +20919,7 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-10-17T21:46:44Z",
+  "t": "2026-10-17T21:51:46Z",
   "virtuell": 4,
   "neu": 0,
   "gestoppt": false
