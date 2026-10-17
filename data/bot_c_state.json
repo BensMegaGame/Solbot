@@ -1,17 +1,6 @@
 {
- "cash": 253.42936502995158,
+ "cash": 330.7520680299516,
  "positions": {
-  "69LjZUUzxj3Cb3Fxeo1X4QpYEQTboApkhXTysPpbpump": {
-   "sym": "CODEC",
-   "qty": 12321.008447,
-   "cost": 73.55239230294026,
-   "opened": "2026-10-15T08:51:18Z",
-   "peak": 0.007128,
-   "entry": 0.005969673068510012,
-   "cur_price": 0.007128,
-   "mark": 0.007128,
-   "tp1": true
-  },
   "MukLDtJ8Cx9DxLbeyLRSWPSposTMWuwHANbuaudpump": {
    "sym": "OTC",
    "qty": 16979.465722,
@@ -19,8 +8,8 @@
    "opened": "2026-10-17T11:51:29Z",
    "peak": 0.008189,
    "entry": 0.008018539684979181,
-   "cur_price": 0.00755,
-   "mark": 0.00755
+   "cur_price": 0.007541,
+   "mark": 0.007541
   }
  },
  "trades": [
@@ -1073,13 +1062,24 @@
    "slip": 0.0013,
    "quote": "jup",
    "reason": "tp1"
+  },
+  {
+   "t": "2026-10-17T15:11:28Z",
+   "side": "sell",
+   "sym": "CODEC",
+   "addr": "69LjZUUzxj3Cb3Fxeo1X4QpYEQTboApkhXTysPpbpump",
+   "price": 0.006274,
+   "usd": 77.32,
+   "pnl": 3.77,
+   "peak_x": 1.194,
+   "held_h": 54.3,
+   "frac": 1.0,
+   "slip": 0.0001,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
-  {
-   "t": "2026-09-30T06:31:52Z",
-   "v": 556.31
-  },
   {
    "t": "2026-09-30T06:36:56Z",
    "v": 557.08
@@ -21075,6 +21075,10 @@
   {
    "t": "2026-10-17T15:06:29Z",
    "v": 469.45
+  },
+  {
+   "t": "2026-10-17T15:11:28Z",
+   "v": 458.79
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -21082,7 +21086,7 @@
  "strategy": "dip_weites_netz",
  "universe_n": 155,
  "coverage": {
-  "t": "2026-10-17T15:06:29Z",
+  "t": "2026-10-17T15:11:28Z",
   "kurse": 135,
   "von": 155,
   "ohne_pool": 102,
@@ -21098,6 +21102,7 @@
   "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump": 1792082780.8214538,
   "4MMQY9bwkxxTtsK3W227Q5ABT6yFY8Pmn9Ze7wmAXKY8": 1792170691.0705369,
   "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": 1792181794.5908744,
-  "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump": 1792231586.6557255
+  "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump": 1792231586.6557255,
+  "69LjZUUzxj3Cb3Fxeo1X4QpYEQTboApkhXTysPpbpump": 1792249888.8606446
  }
 }
