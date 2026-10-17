@@ -9,8 +9,8 @@
    "peak": 0.0008137,
    "entry": 0.0007736917420326662,
    "pair": "DSUvc5qf5LJHHV5e2tD184ixotSnCnwj7i4jJa4Xsrmt",
-   "cur_price": 0.0006597,
-   "mark": 0.0006597
+   "cur_price": 0.0006616,
+   "mark": 0.0006616
   },
   "9LzCMqDgTKYz9Drzqnpgee3SGa89up3a247ypMj2xrqM": {
    "sym": "AUDIO",
@@ -20,8 +20,8 @@
    "peak": 0.01639,
    "entry": 0.016368114616430698,
    "pair": "4EbdAfaShVDNeHm6GbXZX3xsKccRHdTbR5962Bvya8xt",
-   "cur_price": 0.0159,
-   "mark": 0.0159
+   "cur_price": 0.01582,
+   "mark": 0.01582
   },
   "8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn": {
    "sym": "ZEREBRO",
@@ -31,8 +31,8 @@
    "peak": 0.03084,
    "entry": 0.03090326654326953,
    "pair": "3sjNoCnkkhWPVXYGDtem8rCciHSGc9jSFZuUAzKbvRVp",
-   "cur_price": 0.02868,
-   "mark": 0.02868
+   "cur_price": 0.02875,
+   "mark": 0.02875
   }
  },
  "trades": [
@@ -10531,17 +10531,21 @@
   {
    "t": "2026-10-17T13:01:19Z",
    "v": 473.26
+  },
+  {
+   "t": "2026-10-17T13:06:20Z",
+   "v": 473.19
   }
  ],
  "started": "2026-10-08T16:06:06Z",
  "version": "b4",
  "strategy": "tiefer_dip",
  "coverage": {
-  "t": "2026-10-17T13:01:19Z",
+  "t": "2026-10-17T13:06:20Z",
   "kurse": 192,
   "von": 204,
   "sol": true,
-  "sol24": -1.4,
+  "sol24": -1.3,
   "kandidaten": 0,
   "gestoppt": false
  },
