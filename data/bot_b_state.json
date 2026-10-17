@@ -1,5 +1,5 @@
 {
- "cash": 187.5691984784571,
+ "cash": 308.91426847845713,
  "positions": {
   "9LzCMqDgTKYz9Drzqnpgee3SGa89up3a247ypMj2xrqM": {
    "sym": "AUDIO",
@@ -9,19 +9,8 @@
    "peak": 0.01639,
    "entry": 0.016368114616430698,
    "pair": "4EbdAfaShVDNeHm6GbXZX3xsKccRHdTbR5962Bvya8xt",
-   "cur_price": 0.01556,
-   "mark": 0.01556
-  },
-  "8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn": {
-   "sym": "ZEREBRO",
-   "qty": 4703.264945,
-   "cost": 145.3462502189509,
-   "opened": "2026-10-17T10:36:22Z",
-   "peak": 0.03084,
-   "entry": 0.03090326654326953,
-   "pair": "3sjNoCnkkhWPVXYGDtem8rCciHSGc9jSFZuUAzKbvRVp",
-   "cur_price": 0.0263,
-   "mark": 0.0263
+   "cur_price": 0.01557,
+   "mark": 0.01557
   }
  },
  "trades": [
@@ -307,6 +296,21 @@
    "held_h": 105.7,
    "frac": 1.0,
    "slip": 0.0,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-10-17T20:41:14Z",
+   "side": "sell",
+   "sym": "ZEREBRO",
+   "addr": "8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn",
+   "price": 0.02592,
+   "usd": 121.35,
+   "pnl": -24.0,
+   "peak_x": 0.998,
+   "held_h": 10.1,
+   "frac": 1.0,
+   "slip": 0.0053,
    "quote": "jup",
    "reason": "stop"
   }
@@ -10899,17 +10903,21 @@
   {
    "t": "2026-10-17T20:36:13Z",
    "v": 457.67
+  },
+  {
+   "t": "2026-10-17T20:41:14Z",
+   "v": 455.42
   }
  ],
  "started": "2026-10-08T16:06:06Z",
  "version": "b4",
  "strategy": "tiefer_dip",
  "coverage": {
-  "t": "2026-10-17T20:36:13Z",
+  "t": "2026-10-17T20:41:14Z",
   "kurse": 192,
   "von": 204,
   "sol": true,
-  "sol24": 0.2,
+  "sol24": 0.3,
   "kandidaten": 0,
   "gestoppt": false
  },
@@ -10918,7 +10926,7 @@
   "GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump": 1791850584.6070988,
   "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP": 1791903671.2552521,
   "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": 1792081865.5302145,
-  "8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn": 1792146973.8770661,
+  "8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn": 1792269674.4822476,
   "6Mix12LiHrQFojaQEnfPUC65Qkwd6X4Y5Qg93oFbordr": 1792192286.1371248,
   "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82": 1792242979.520777
  }
