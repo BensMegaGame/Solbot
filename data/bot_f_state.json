@@ -9,8 +9,8 @@
    "peak": 0.03747,
    "entry": 0.031537863324270915,
    "pair": "AtK4fYMF1mFosQn6qRiMJoE1hsjpCFwpTy1TKpE5Ez6E",
-   "cur_price": 0.03328,
-   "mark": 0.03328
+   "cur_price": 0.03332,
+   "mark": 0.03332
   },
   "ZEUS1aR7aX8DFFJf5QjWj2ftDDdNTroMNGo8YoQm3Gq": {
    "sym": "ZEUS",
@@ -31,8 +31,8 @@
    "peak": 1.58,
    "entry": 1.5523471729911038,
    "pair": "caWWda11Ye4Xme9D5GKo67Hb8g5mJv1SzKAwrLRnggQ",
-   "cur_price": 1.34,
-   "mark": 1.34
+   "cur_price": 1.35,
+   "mark": 1.35
   },
   "MukLDtJ8Cx9DxLbeyLRSWPSposTMWuwHANbuaudpump": {
    "sym": "OTC",
@@ -42,8 +42,8 @@
    "peak": 0.007341,
    "entry": 0.007000000785599621,
    "pair": "DA4pM4xSDY4M9V4CgAKKBVH1pw1yscTQQa5nEkGHuKpt",
-   "cur_price": 0.007019,
-   "mark": 0.007019
+   "cur_price": 0.007023,
+   "mark": 0.007023
   },
   "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": {
    "sym": "BATON",
@@ -53,8 +53,8 @@
    "peak": 0.008612,
    "entry": 0.008181219507361358,
    "pair": "Cb7ZRgPLhji3Th7htXyKEqbXvNjPpeTvckXuWakBUhXu",
-   "cur_price": 0.007352,
-   "mark": 0.007352
+   "cur_price": 0.007492,
+   "mark": 0.007492
   }
  },
  "trades": [
@@ -930,10 +930,6 @@
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-01T01:42:25Z",
-   "v": 484.24
-  },
   {
    "t": "2026-10-01T01:47:26Z",
    "v": 484.32
@@ -20929,6 +20925,10 @@
   {
    "t": "2026-10-18T10:16:50Z",
    "v": 455.28
+  },
+  {
+   "t": "2026-10-18T10:21:48Z",
+   "v": 457.49
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -20941,7 +20941,7 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-10-18T10:16:50Z",
+  "t": "2026-10-18T10:21:48Z",
   "virtuell": 3,
   "neu": 0,
   "gestoppt": false
