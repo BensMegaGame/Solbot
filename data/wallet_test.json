@@ -1,0 +1,92 @@
+{
+ "t": "2026-10-18T10:11:45Z",
+ "schluessel": {
+  "CODEX_KEY": true,
+  "HELIUS_KEY": true,
+  "JUP_KEY": true
+ },
+ "codex_fenster": {
+  "mit_filter": {
+   "n": 100,
+   "kaeufe": 100,
+   "sek_nach_start_von_bis": [
+    60,
+    436
+   ]
+  },
+  "ohne_filter": {
+   "n": 100,
+   "kaeufe": 42,
+   "sek_nach_start_von_bis": [
+    60,
+    203
+   ]
+  },
+  "fenster2_token": {
+   "n": 100,
+   "sek_nach_start_von_bis": [
+    903,
+    981
+   ]
+  }
+ },
+ "codex_kerzen": {
+  "n": 8,
+  "erste": [
+   [
+    1792185840,
+    4.01752108988e-06,
+    2.39852704917e-05,
+    4.01752108988e-06,
+    1.99294281855e-05
+   ],
+   [
+    1792185900,
+    1.99294281855e-05,
+    2.49066853451e-05,
+    1.20089634897e-05,
+    1.88590618584e-05
+   ]
+  ],
+  "sek_nach_start_erste": -31
+ },
+ "geckoterminal": {
+  "pool": "EfgVgW5gL9hqdjHJ1xSbGR1imAs1Zb31FMDDDiYtzUiT",
+  "gleich_wie_startpool": false,
+  "kerzen": 11,
+  "min_nach_start_erste_letzte": [
+   10,
+   496
+  ],
+  "beispiel": [
+   [
+    1792186500,
+    0.00019237819622138614,
+    0.0002550742745551981,
+    0.00019237819622138614,
+    0.00019237819622138614
+   ],
+   [
+    1792186560,
+    0.00019237819622138614,
+    0.00019237819622138614,
+    0.00015487535859976225,
+    0.00015487535859976225
+   ]
+  ]
+ },
+ "helius": {
+  "hinweis": "noch kein Kandidat"
+ },
+ "jupiter": {
+  "d_kandidat": {
+   "sym": "\u7d22\u62c9\u7eb3",
+   "liq": 18451.0,
+   "kosten": 0.0298
+  },
+  "pump_kurve": {
+   "token": "t8QthbHq7S5UvjbfV8F5Z9xbHWtvQs4NNyn2iExpump",
+   "jupiter_quote": true
+  }
+ }
+}
