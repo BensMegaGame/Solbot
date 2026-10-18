@@ -1,30 +1,31 @@
-"""Bot D v4.1 – "Datensammler": kauft NICHTS mehr, sammelt nur noch Daten fuer die Fruehkaeufer-Analyse.
+"""Bot D v5 – "Wallet-Suche fuer Copy-Trading": kauft NICHTS, sammelt und prueft Wallets in drei Stufen.
 
-WARUM: Als Handels-Bot ist D gescheitert (500 $ -> ~96 $, 295 Positionen, 11 % Gewinner, 78 % per Stop).
-Wertvoll waren seine Daten. Ab v4 sammelt er gezielt das, was fuer die Frage "gibt es Wallets, die immer
-wieder frueh in spaetere Gewinner einsteigen?" noetig ist - fuer Gewinner UND Verlierer, sonst ist die
-Auswertung wertlos (Bots, die ueberall frueh kaufen, saehen sonst wie Genies aus).
+WARUM v5: v4 fragte "wer war bei unseren Coins frueh dabei, und wurden die Coins Gewinner?". Das reicht nicht:
+  - die "Fruehkaeufer" waren fast nur Sniper-Bots (typisch 6 s nach Start, der 40. nach 15 s) - nicht kopierbar;
+  - wir sehen nur ~40 Coins am Tag, eine Wallet handelt viel mehr - eine, die alles kauft, sieht gut aus;
+  - die Gewinnerquote war verzerrt (Gewinner zaehlten sofort, Verlierer erst nach 7 Tagen: 54 % statt ~33 %).
+Die Daten von v4.1 liegen unveraendert in data/archive/ (Kopie beim ersten Lauf von v5).
 
-Pro Kandidat (Codex, 12 h - 7 Tage alt, MCap 15-150k, wie bisher):
-  1) FRUEHKAEUFER (einmal je Coin), seit v4.1 vorrangig ueber CODEX: die ersten 100 Trades des pump.fun-Startpools
-     (Bonding Curve) - auch bei sehr aktiven Coins. Nur ohne pump.fun-Startpool wie bisher die ersten 100 Transaktionen
-     ab Start ueber Helius
-     getTransactionsForAddress (aelteste zuerst, ~10 Credits je Coin). Aus den Token-Kontostaenden
-     vorher/nachher: welche Wallet kaufte, wie viele Sekunden und Slots nach dem Start, wie viel.
-     Kaeufe im Start-Slot oder dem naechsten gelten als Sniper/Insider und werden spaeter ausgeklammert.
-     Falls die Methode im Helius-Plan fehlt: Ausweichweg ueber getSignaturesForAddress + getTransaction.
-  2) ERGEBNIS: Kurs ab Entdeckung 7 Tage lang (bis 72 h alle 5 Min, danach stuendlich). Gewinner = mind. 2x
-     ueber dem ersten gesehenen Kurs innerhalb von 7 Tagen.
-  3) WALLET-RANGLISTE (data/bot_d_top_wallets.json): je Wallet die Coins, in denen sie frueh (nicht als
-     Sniper) gekauft hat, und wie viele davon Gewinner wurden - verglichen mit der Gewinnerquote aller Coins.
-     Das ist eine BEOBACHTUNG, noch keine Strategie: ob eine Wallet wirklich besser ist, wird erst mit
-     zeitlich getrennten Daten geprueft.
+STUFE 1 - SAMMELN (je Coin einmal, Codex): wie bisher die ersten 100 Trades des pump.fun-Startpools, NEU dazu die
+  Kaeufer aus Minute 1-15 und 15-120 nach Start. Kaeufe in den ersten 30 s = Sniper (nicht kopierbar). Wallets bei
+  mehr als 5 % aller Coins = Bot. Ergebnis je Coin: hoechster Kurs in 72 h ab Entdeckung, Gewinner = mind. 2x,
+  gewertet erst nach 72 h. Kandidaten: Wallets mit >= 3 Coins (ohne Sniper-Kaeufe) und mind. 1 Gewinner.
+STUFE 2 - PRUEFEN (walletpruef.py, je Lauf hoechstens 1 neue Wallet): komplette Handelshistorie der letzten 14 Tage
+  ueber Helius, dann Kopierer-Simulation mit 1 Minute Verzoegerung und mit Jupiter gemessenen Kosten. Bestanden nur
+  mit >= 20 Trades, Schnitt > 0, ohne die 2 besten > 0 und in beiden Zeithaelften > 0.
+STUFE 3 - COPY-LISTE (data/bot_d_copy_liste.json, hoechstens 3 Wallets): eine bestandene Wallet kommt sofort auf
+  einen freien Platz; einmal je Woche wird die Liste komplett neu bestimmt (nicht staendig, sonst jagt man der
+  Wallet mit der zufaellig besten Woche hinterher). Gehandelt wird hier NICHT - die Liste ist die Grundlage fuer
+  einen spaeteren Paper-Copy-Dienst.
 
-Offene Positionen aus v3 werden noch nach den alten Regeln verkauft. Die teuren Helius-Abfragen von v3
-(Enhanced Transactions, 100 Credits je Abfrage, und die Wallet-Echtheitspruefung) entfallen.
+Offene Positionen aus v3 werden noch nach den alten Regeln verkauft.
 """
-import os, time, statistics
+import os, time, statistics, shutil, json
+from collections import Counter
 from common import *
+import walletpruef as wp
+
+VERSION = "d5"
 
 HELIUS = os.environ.get("HELIUS_KEY")
 CODEX_KEY = os.environ.get("CODEX_KEY")
@@ -36,14 +37,30 @@ PATH_HOURS = 7 * 24                    # v4: 7 Tage Kursverlauf je Kandidat (Gew
 DICHT_H = 72                           # bis 72 h alle 5 Min, danach stuendlich
 HANDEL = False                         # v4: keine Kaeufe mehr - reiner Datensammler
 FRUEH_PRO_LAUF = 8                     # so viele Coins je Lauf auf Fruehkaeufer pruefen (Laufzeit + Credits)
-CODEX_FRUEH_MAX_TAG = 250              # v4.1: hoechstens so viele Codex-Abfragen je Tag fuer Fruehkaeufer (Monatsbudget 10.000)
+CODEX_MAX_TAG = 200                    # v5: hoechstens so viele Codex-Abfragen je Tag fuer Fruehkaeufer, spaete Kaeufer und
+                                       # Kerzen (+ ~48 fuer die Kandidatensuche, + ~2 Bot E -> ~7.500 von 10.000 im Monat)
 CODEX_EVENTS = 100                     # die ersten 100 Trades des Startpools
 NEU_VERSUCH_D = 3                      # v4.1: Coins, bei denen Helius scheiterte, werden erneut versucht (solange < 3 Tage alt)
 FRUEH_TX = 100                         # die ersten 100 Transaktionen ab Start
 FRUEH_MAX_KAEUFER = 40                 # hoechstens 40 verschiedene Kaeufer je Coin speichern
-SNIPER_SLOTS = 1                       # Kauf im Start-Slot oder dem naechsten = Sniper/Insider
-GEWINNER_X = 2.0                       # Gewinner = mind. 2x ueber dem ersten gesehenen Kurs (7 Tage)
-MIN_COINS_WALLET = 3                   # Wallet erst ab 3 auswertbaren Coins in die Rangliste
+SNIPER_S = 30                          # v5: Kauf in den ersten 30 Sekunden = Sniper/Bot/Insider (nicht kopierbar).
+                                       # Gemessen 18.10.: typischer Fruehkaeufer kauft 6 s nach Start, der 40. nach 15 s.
+GEWINNER_X = 2.0                       # Gewinner = mind. 2x ueber dem ersten gesehenen Kurs ...
+FENSTER_H = 72                         # v5: ... innerhalb von 72 h. Gewertet wird ERST nach 72 h - Gewinner und Verlierer
+                                       # gleich lang beobachtet (vorher zaehlten Gewinner sofort, Verlierer erst nach 7 Tagen
+                                       # -> angezeigte Gewinnerquote 54-92 % statt sauber gerechneter ~33 %)
+MIN_COINS_WALLET = 3                   # Wallet erst ab 3 Coins Kandidat
+SPAET_FENSTER = [(60, 900), (900, 7200)]   # v5: Kaeufer aus Minute 1-15 und 15-120 nach Start (je 1 Codex-Abfrage)
+SPAET_MAX = 40                         # hoechstens 40 neue Kaeufer je Fenster speichern
+BOT_ANTEIL = 0.05                      # Wallet bei mehr als 5 % aller Coins dabei = Bot (erst ab 100 Coins angewandt)
+KAND_MAX = 60                          # so viele Kandidaten fuer Stufe 2
+NEU_PRUEFEN_D = 7                      # Wallet hoechstens alle 7 Tage neu pruefen
+HELIUS_WALLET_MAX_TAG = 4000           # Helius-Credits je Tag fuer Stufe 2 (~13 Wallets, ~120k im Monat)
+MAX_SIM_PARALLEL = 3                   # neue Wallet erst pruefen, wenn weniger als 3 Simulationen offen sind
+KERZEN_PRO_LAUF = 12                   # GeckoTerminal-Abfragen je Lauf (2 je simuliertem Trade)
+KOSTEN_EVERY_S = 30 * 60               # alle 30 Min eine Jupiter-Kostenmessung
+ZEIT_NEUE_WALLET_S, ZEIT_ENDE_S = 100, 195  # Laufzeitschutz (run_paper.sh bricht nach 240 s ab)
+COPY_MAX = 3
 FALLBACK_SEITEN = 25                   # Ausweichweg: hoechstens 25 x 1000 Signaturen zurueckblaettern
 
 # ---- Universum: ganz kleine Caps ----
@@ -368,46 +385,187 @@ def fruehkaeufer_codex(mint, pool, codex_n):
         if len(kaeufer) >= FRUEH_MAX_KAEUFER: break
     return {"t0": t0, "slot0": slot0, "via": "codex", "pool": pool, "n_tx": len(items), "kaeufer": kaeufer}
 
+class BudgetLeer(Exception):
+    pass
+
+def codex_budget(meta, codex_n, n=1):
+    if not CODEX_KEY or meta.get("codex_heute", 0) + codex_n["n"] + n > CODEX_MAX_TAG: raise BudgetLeer()
+
+
+# ---------- v5: spaetere Kaeufer (Minute 1-15 und 15-120 nach Start) ----------
+def spaete_kaeufer(e, mint, meta, codex_n):
+    """[[wallet, sek_nach_start, usd], ...] aus den Codex-Ereignissen der SPAET_FENSTER. Fenster 1 im Startpool
+    (Bonding Curve), Fenster 2 ueber die Token-Adresse (= groesster Pool, nach dem Umzug)."""
+    t0 = int(e["t0"]); schon = {k[0] for k in e.get("kaeufer") or []}
+    out, gesehen = [], set()
+    for i, (a, b) in enumerate(SPAET_FENSTER):
+        adr = e.get("pool") if i == 0 and e.get("pool") else mint
+        for versuch in (0, 1):
+            filt = "" if meta.get("codex_ohne_filter") else ", eventDisplayType: [Buy]"
+            codex_budget(meta, codex_n); codex_n["n"] += 1
+            try:
+                items = (_codex('{ getTokenEvents(query: {address: "%s", networkId: %d, timestamp: {from: %d, to: %d}%s}, '
+                                'direction: ASC, limit: 100) { items { timestamp maker eventDisplayType token0SwapValueUsd '
+                                'token1SwapValueUsd } } }' % (adr, SOLANA, t0 + a, t0 + b, filt)).get("getTokenEvents") or {}).get("items") or []
+                break
+            except RuntimeError as ex:
+                if versuch == 0 and filt and "eventDisplayType" in str(ex):
+                    meta["codex_ohne_filter"] = True; continue    # Filter nicht erlaubt -> ohne Filter, Kaeufe selbst auslesen
+                raise
+        n = 0
+        for x in items:
+            w = x.get("maker")
+            if x.get("eventDisplayType") != "Buy" or not w or w in schon or w in gesehen: continue
+            gesehen.add(w); n += 1
+            usd = max(float(x.get("token0SwapValueUsd") or 0), float(x.get("token1SwapValueUsd") or 0))
+            out.append([w, int((x.get("timestamp") or t0) - t0), round(usd, 2)])
+            if n >= SPAET_MAX: break
+    return out
+
+
+# ---------- v5: Ergebnis je Coin - erst nach 72 h, Gewinner und Verlierer gleich lang beobachtet ----------
 def ergebnis(e, now):
-    """'gewinner' | 'verlierer' | None (noch offen). Gewinner = mind. GEWINNER_X ueber dem ersten Kurs in 7 Tagen."""
-    if not e.get("px0"): return None
-    if e.get("peak", 0) / e["px0"] >= GEWINNER_X: return "gewinner"
-    if now - e.get("seit", now) >= PATH_HOURS * 3600: return "verlierer"
-    return None
+    """'gewinner' | 'verlierer' | None (noch keine 72 h oder kein Kurs)."""
+    if now - e.get("seit", now) < FENSTER_H * 3600: return None
+    if not e.get("p0") or not e.get("p72"): return None
+    return "gewinner" if e["p72"] / e["p0"] >= GEWINNER_X else "verlierer"
 
 
-def rangliste(early, now):
-    """Top-Wallets: Coins, in denen die Wallet frueh (kein Sniper) kaufte, und wie viele davon Gewinner wurden."""
-    w = {}
+def versionswechsel(early, paths, meta):
+    """Beim ersten Lauf von v5: v4.1-Daten nach data/archive/ KOPIEREN und p0/p72 aus den Kursverlaeufen nachrechnen."""
+    if meta.get("version") == VERSION: return
+    os.makedirs(os.path.join(DATA, "archive"), exist_ok=True)
+    stamp = time.strftime("%Y%m%d_%H%M", time.gmtime())
+    for name in ("bot_d_early.json", "bot_d_top_wallets.json", "bot_d_meta.json", "bot_d_state.json"):
+        p = os.path.join(DATA, name)
+        if os.path.exists(p): shutil.copy(p, os.path.join(DATA, "archive", f"{name[:-5]}_v41_{stamp}.json"))
+    pfade = dict(paths)
+    p_arch = os.path.join(DATA, "bot_d_paths_archive.jsonl")
+    if os.path.exists(p_arch):
+        for zeile in open(p_arch):
+            try: r = json.loads(zeile)
+            except Exception: continue
+            if r.get("addr") in early and r["addr"] not in pfade: pfade[r["addr"]] = r
+    n = 0
+    for a, e in early.items():
+        p = pfade.get(a)
+        if not p or not p.get("pts"): continue
+        seit = e.get("seit") or p["first"]
+        pts = [(p["first"] + x[0] * 60, x[1]) for x in p["pts"] if x[1] and x[1] > 0]
+        pts = [x for x in pts if seit - 600 <= x[0] <= seit + FENSTER_H * 3600]
+        if pts: e["p0"], e["p72"] = pts[0][1], max(x[1] for x in pts); n += 1
+    meta["version"] = VERSION
+    print(f"Bot D: Wechsel auf {VERSION} - v4.1-Daten nach data/archive/ kopiert, 72h-Ergebnis fuer {n} Coins nachgerechnet")
+
+
+# ---------- Stufe 1: Kandidaten ----------
+def stufe1(early, now):
+    mit = [(a, e) for a, e in early.items() if e.get("kaeufer") or e.get("spaet")]
+    N = len(mit)
+    auftritt, w = Counter(), {}
     fertig = gew = 0
-    for mint, e in early.items():
+    for a, e in mit:
         erg = ergebnis(e, now)
-        if not erg or not e.get("kaeufer"): continue
-        fertig += 1; gew += erg == "gewinner"
-        x = e.get("peak", 0) / e["px0"]
-        for wallet, dt, dslot, _ in e["kaeufer"]:
-            if dslot <= SNIPER_SLOTS: continue
-            r = w.setdefault(wallet, {"coins": 0, "gewinner": 0, "x": []})
-            r["coins"] += 1; r["gewinner"] += erg == "gewinner"; r["x"].append(x)
-    basis = gew / fertig if fertig else None
-    kand = [(r["gewinner"], r["gewinner"] / r["coins"], r["coins"], sum(r["x"]) / len(r["x"]))
-            for r in w.values() if r["coins"] >= MIN_COINS_WALLET]
-    kand.sort(key=lambda k: (-k[0], -k[1], -k[3]))
-    top = [{"name": f"Wallet {chr(65 + i)}", "coins": c, "gewinner": g, "verlierer": c - g,
-            "quote": round(q, 3), "avg_peak_x": round(x, 2)} for i, (g, q, c, x) in enumerate(kand[:3])]
-    return {"t": now_iso(), "coins_ausgewertet": fertig, "coins_gewinner": gew,
-            "basisquote": round(basis, 3) if basis is not None else None,
-            "wallets_ab_3_coins": len(kand), "wallets_gesamt": len(w), "top": top,
-            "hinweis": "Beobachtung, keine Strategie: noch nicht zeitlich getrennt geprueft."}
+        if erg: fertig += 1; gew += erg == "gewinner"
+        alle = {k[0] for k in e.get("kaeufer") or []} | {k[0] for k in e.get("spaet") or []}
+        auftritt.update(alle)
+        brauchbar = {k[0] for k in e.get("kaeufer") or [] if k[1] >= SNIPER_S} | {k[0] for k in e.get("spaet") or [] if k[1] >= SNIPER_S}
+        for x in brauchbar:
+            r = w.setdefault(x, [0, 0, 0, []])          # coins, ausgewertet, gewinner, hoechststaende
+            r[0] += 1
+            if erg: r[1] += 1; r[2] += erg == "gewinner"; r[3].append(e["p72"] / e["p0"])
+    grenze = BOT_ANTEIL * N if N >= 100 else float("inf")
+    bots = {x for x, c in auftritt.items() if c > grenze}
+    kand = [(r[2], r[1], r[0], x) for x, r in w.items() if x not in bots and r[0] >= MIN_COINS_WALLET and r[2] >= 1]
+    kand.sort(key=lambda k: (-k[0], -(k[0] / k[1] if k[1] else 0), -k[2]))
+    top = [{"name": f"Wallet {chr(65 + i)}", "coins": c, "ausgewertet": au, "gewinner": g, "verlierer": au - g,
+            "quote": round(g / au, 3) if au else None,
+            "avg_peak_x": round(sum(w[x][3]) / len(w[x][3]), 2) if w[x][3] else None}
+           for i, (g, au, c, x) in enumerate(kand[:3])]
+    info = {"coins_mit_daten": N, "coins_ausgewertet": fertig, "coins_gewinner": gew,
+            "basisquote": round(gew / fertig, 3) if fertig else None, "wallets_gesamt": len(auftritt),
+            "bots": len(bots), "kandidaten": len(kand), "top": top}
+    return info, [k[3] for k in kand[:KAND_MAX]]
+
+
+# ---------- Stufe 2: Wallets pruefen ----------
+def stufe2(kand, checks, meta, t_start, codex_n):
+    now = time.time(); tag = time.strftime("%Y-%m-%d", time.gmtime(now))
+    if meta.get("wallet_tag") != tag: meta["wallet_tag"], meta["helius_wallet_heute"] = tag, 0
+    kosten, kosten_art = wp.kosten_aktuell(meta.get("kosten_mess", []))
+    log = []
+    # a) offene Kopierer-Simulationen weiterfuehren
+    abfragen = 0
+    for w, rec in checks.items():
+        if rec.get("status") != "sim": continue
+        while rec.get("offen_sim") and abfragen < KERZEN_PRO_LAUF and time.time() - t_start < ZEIT_ENDE_S:
+            tr = rec["offen_sim"].pop(0); k = []
+            try:
+                pool = wp.gt_pool(tr["mint"], tr["t_kauf"]); abfragen += 1; time.sleep(2.1)
+                bis = tr["t_kauf"] + wp.DELAY_S + wp.SIM_MAX_H * 3600 + 120
+                if pool: k = wp.gt_kerzen(pool, tr["t_kauf"], bis); abfragen += 1; time.sleep(2.1)
+                if pool and not k:
+                    try:
+                        codex_budget(meta, codex_n); codex_n["n"] += 1
+                        k = wp.codex_kerzen(_codex, pool, tr["t_kauf"] - 120, bis)
+                    except BudgetLeer: pass
+            except Exception as ex:
+                rec["kerzen_fehler"] = str(ex)[:80]
+            r = wp.kopie_simulieren(tr, k, kosten) if k else None
+            if r is None: rec["ohne_kurs"] = rec.get("ohne_kurs", 0) + 1
+            else: rec.setdefault("sim", []).append([tr["t_kauf"], round(r, 4)])
+        if not rec.get("offen_sim"):
+            ok, kz = wp.bewerten(rec.get("sim", []))
+            rec.update(kz); rec["status"] = "bestanden" if ok else "durchgefallen"
+            rec["kosten"], rec["kosten_art"] = kosten, kosten_art; rec.pop("offen_sim", None)
+            log.append(f"Wallet {w[:4]}..: {rec['status']} ({kz.get('n')} Trades, Schnitt {kz.get('schnitt')})")
+        if abfragen >= KERZEN_PRO_LAUF or time.time() - t_start >= ZEIT_ENDE_S: break
+    # b) hoechstens eine neue Wallet je Lauf
+    offen = sum(1 for r in checks.values() if r.get("status") == "sim")
+    if (HELIUS and offen < MAX_SIM_PARALLEL and meta["helius_wallet_heute"] + 350 <= HELIUS_WALLET_MAX_TAG
+            and time.time() - t_start < ZEIT_NEUE_WALLET_S):
+        neu = next((x for x in kand if now - (checks.get(x) or {}).get("t", 0) > NEU_PRUEFEN_D * 86400), None)
+        if neu:
+            credits = {"n": 0}
+            try: rec = wp.historie_pruefen(HELIUS, neu, credits, deadline=t_start + ZEIT_ENDE_S)
+            except Exception as ex:
+                fv = (checks.get(neu) or {}).get("fehlversuche", 0) + 1     # bis zu 2x im naechsten Lauf erneut
+                rec = {"t": now if fv >= 3 else 0, "status": "fehler", "grund": str(ex)[:100], "fehlversuche": fv}
+            meta["helius_wallet_heute"] += credits["n"]; meta["credits_heute"] = meta.get("credits_heute", 0) + credits["n"]
+            checks[neu] = rec
+            log.append(f"Wallet {neu[:4]}.. geprueft: {rec['status']} {rec.get('grund', '')} (~{credits['n']} Credits)")
+    return log
+
+
+# ---------- Stufe 3: Copy-Liste ----------
+def stufe3(checks, now):
+    alt = load("bot_d_copy_liste.json", {"wallets": []})
+    woche = time.strftime("%G-W%V", time.gmtime(now))
+    ok = sorted(((r.get("ohne_top2", 0), w) for w, r in checks.items()
+                 if r.get("status") == "bestanden" and now - r.get("t", 0) < 14 * 86400), reverse=True)
+    felder = ("n", "schnitt", "ohne_top2", "haelfte1", "haelfte2", "trefferquote", "halte_min", "tx_tag", "kosten", "kosten_art")
+    if alt.get("woche") != woche:                       # woechentlich komplett neu
+        liste = [w for _, w in ok[:COPY_MAX]]
+    else:                                               # unter der Woche nur freie Plaetze auffuellen
+        liste = [x["wallet"] for x in alt.get("wallets", []) if (checks.get(x["wallet"]) or {}).get("status") == "bestanden"]
+        liste += [w for _, w in ok if w not in liste][:COPY_MAX - len(liste)]
+    seit = {x["wallet"]: x.get("seit") for x in alt.get("wallets", [])}
+    neu = {"woche": woche, "t": now_iso(),
+           "wallets": [{"name": f"Wallet {chr(65 + i)}", "wallet": w, "seit": seit.get(w) or now_iso(),
+                        **{k: checks[w].get(k) for k in felder}} for i, w in enumerate(liste)]}
+    save("bot_d_copy_liste.json", neu)
+    return neu
 
 
 def main():
-    pf = Paper("bot_d", rebuy_sperre_h=24); st = pf.s
+    t_start = time.time()
+    pf = Paper("bot_d", rebuy_sperre_h=24); st = pf.s; st["version"] = VERSION
     st["strategy"] = "datensammler"; st["helius"] = bool(HELIUS); st["codex"] = bool(CODEX_KEY)
     now = time.time(); today = int(now // 86400)
     cooldown = load("bot_d_cooldown.json", {})
     paths = load("bot_d_paths.json", {}); early = load("bot_d_early.json", {})
     meta = load("bot_d_meta.json", {"cands": [], "last_discover": 0})
+    versionswechsel(early, paths, meta)
     tag = time.strftime("%Y-%m-%d", time.gmtime(now))
     if meta.get("credits_tag") != tag: meta["credits_tag"], meta["credits_heute"] = tag, 0
     credits = {"n": 0}
@@ -444,6 +602,8 @@ def main():
         e = early.get(a)
         if e is not None and px > 0 and now - e.get("seit", now) <= PATH_HOURS * 3600:
             e.setdefault("px0", px); e["peak"] = max(e.get("peak", px), px); e["last"] = px
+        if e is not None and px > 0 and now - e.get("seit", now) <= FENSTER_H * 3600:
+            e.setdefault("p0", px); e["p72"] = max(e.get("p72", px), px)       # v5: Hoechststand nur in 72 h
 
     # 3) offene Positionen aus v3 noch abwickeln (keine neuen Kaeufe)
     for a, pos in list(st["positions"].items()):
@@ -484,11 +644,12 @@ def main():
     nochmal = [a for a, e in early.items() if not e.get("kaeufer") and not e.get("codex_versucht")
                and now - e.get("seit", now) < NEU_VERSUCH_D * 86400]
     offen = ([a for a in cands if a not in early] + nochmal)[:FRUEH_PRO_LAUF]
+    spaet_neu, spaet_fehler = 0, None
     for a in offen:
         sym = (early.get(a) or {}).get("sym") or (cands.get(a) or {}).get("sym") or "?"
         alt = early.get(a) or {"sym": sym, "seit": paths.get(a, {}).get("first", now)}
         r, pool = None, None
-        if CODEX_KEY and meta["codex_heute"] + codex_n["n"] + 2 <= CODEX_FRUEH_MAX_TAG:
+        if CODEX_KEY and meta["codex_heute"] + codex_n["n"] + 2 <= CODEX_MAX_TAG:
             try:
                 pool = startpool(a, codex_n)
                 if pool: r = fruehkaeufer_codex(a, pool, codex_n)
@@ -506,11 +667,50 @@ def main():
         if a in prices: alt.setdefault("px0", prices[a]); alt.setdefault("peak", prices[a])
         neu += 1; wege[r["via"]] = wege.get(r["via"], 0) + 1
         time.sleep(0.3)
-    meta["credits_heute"] = meta.get("credits_heute", 0) + credits["n"]
-    meta["codex_heute"] = meta.get("codex_heute", 0) + codex_n["n"]
 
-    # 5) Rangliste fuers Dashboard
-    top = rangliste(early, now)
+    # 4b) v5: spaetere Kaeufer (Minute 1-15, 15-120) - neue Coins zuerst, dann die alten nachholen (neueste zuerst)
+    if meta.get("spaet_tag") != tag: meta["spaet_tag"], meta["spaet_fehler_heute"] = tag, 0
+    nachholen = sorted([a for a, e in early.items() if e.get("t0") and not e.get("spaet_versucht")],
+                       key=lambda a: -(early[a].get("seit") or 0))
+    for a in nachholen[:FRUEH_PRO_LAUF]:
+        if meta["spaet_fehler_heute"] >= 5 or time.time() - t_start > 100: break
+        e = early[a]
+        try:
+            e["spaet"] = spaete_kaeufer(e, a, meta, codex_n); e["spaet_versucht"] = True; spaet_neu += 1
+        except BudgetLeer:
+            break
+        except Exception as ex:
+            meta["spaet_fehler_heute"] += 1; spaet_fehler = str(ex)[:160]; meta["spaet_letzter_fehler"] = spaet_fehler
+            e["spaet_fehlversuche"] = e.get("spaet_fehlversuche", 0) + 1
+            if e["spaet_fehlversuche"] >= 2: e["spaet_versucht"] = True
+        time.sleep(0.3)
+
+    # 4c) v5: Kosten eines 50-$-Kaufs + sofortigen Verkaufs mit Jupiter messen (fuer die Kopierer-Simulation)
+    if now - meta.get("kosten_t", 0) >= KOSTEN_EVERY_S and cands:
+        meta["kosten_t"] = now
+        c = sorted(cands.values(), key=lambda c: -c.get("vol", 0))[int(now // KOSTEN_EVERY_S) % min(len(cands), 20)]
+        k = wp.kosten_messen(c["addr"])
+        if k is not None:
+            meta.setdefault("kosten_mess", []).append({"t": int(now), "sym": c["sym"], "liq": round(c.get("liq", 0)), "k": k})
+            meta["kosten_mess"] = meta["kosten_mess"][-300:]
+    meta["credits_heute"] = meta.get("credits_heute", 0) + credits["n"]
+    meta["codex_heute"] = meta.get("codex_heute", 0) + codex_n["n"]; codex_n["n"] = 0
+
+    # 5) Stufe 1-3
+    info, kand = stufe1(early, now)
+    checks = load("bot_d_wallet_check.json", {})
+    w_log = stufe2(kand, checks, meta, t_start, codex_n)
+    meta["codex_heute"] = meta.get("codex_heute", 0) + codex_n["n"]; codex_n["n"] = 0
+    save("bot_d_wallet_check.json", checks)
+    copy = stufe3(checks, now)
+    stat = Counter(r.get("status") for r in checks.values())
+    kosten, kosten_art = wp.kosten_aktuell(meta.get("kosten_mess", []))
+    top = {"t": now_iso(), "version": VERSION, **info,
+           "stufe2": {"geprueft": len(checks), **dict(stat)},
+           "copy_liste": [{k: v for k, v in x.items() if k != "wallet"} for x in copy["wallets"]],
+           "copy_woche": copy["woche"],
+           "kosten": {"wert": kosten, "art": kosten_art, "messungen": len(meta.get("kosten_mess", []))},
+           "hinweis": "Stufe 1 ist Beobachtung. Erst Stufe 2 (Kopierer-Simulation, Zeitsplit) entscheidet."}
     save("bot_d_top_wallets.json", top)
 
     # 6) Pfade aufraeumen (nach 7 Tagen + 1 Tag ins Archiv)
@@ -525,11 +725,20 @@ def main():
                       "fruehkaeufer_neu": neu, "fruehkaeufer_fehler": fehler, "weg": wege,
                       "coins_mit_fruehkaeufern": sum(1 for e in early.values() if e.get("kaeufer")),
                       "coins_ausgewertet": top["coins_ausgewertet"], "credits_heute": meta["credits_heute"],
-                      "codex_heute": meta["codex_heute"]}
+                      "codex_heute": meta["codex_heute"], "spaet_neu": spaet_neu,
+                      "coins_mit_spaeten": sum(1 for e in early.values() if e.get("spaet")),
+                      "spaet_fehler": spaet_fehler or (meta.get("spaet_letzter_fehler") if meta.get("spaet_fehler_heute") else None),
+                      "codex_ohne_filter": bool(meta.get("codex_ohne_filter")),
+                      "kandidaten_wallets": info["kandidaten"], "wallets_geprueft": len(checks),
+                      "wallets_bestanden": stat.get("bestanden", 0), "copy_liste": len(copy["wallets"]),
+                      "helius_wallet_heute": meta.get("helius_wallet_heute", 0)}
     v = pf.mark(prices); pf.commit()
     print(f"Bot D [datensammler]: kandidaten {len(cands)} | pfade {len(paths)} | kurse {st['coverage']['kurse']}/{len(watch)}"
           f" | fruehkaeufer neu {neu} {wege} fehler {fehler} | coins mit fruehkaeufern {st['coverage']['coins_mit_fruehkaeufern']}"
-          f" | ausgewertet {top['coins_ausgewertet']} | credits heute ~{meta['credits_heute']} | codex heute {meta['codex_heute']} | offene alt-positionen {len(st['positions'])}")
+          f" | ausgewertet {top['coins_ausgewertet']} (basis {top['basisquote']}) | spaete kaeufer neu {spaet_neu}"
+          f" | kandidaten {info['kandidaten']} | geprueft {len(checks)} {dict(stat)} | copy-liste {len(copy['wallets'])}"
+          f" | credits heute ~{meta['credits_heute']} | codex heute {meta['codex_heute']} | {time.time() - t_start:.0f} s")
+    for z in w_log: print("  ", z)
 
 if __name__ == "__main__":
     main()
