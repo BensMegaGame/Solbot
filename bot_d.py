@@ -499,19 +499,26 @@ def stufe2(kand, checks, meta, t_start, codex_n):
     for w, rec in checks.items():
         if rec.get("status") != "sim": continue
         while rec.get("offen_sim") and abfragen < KERZEN_PRO_LAUF and time.time() - t_start < ZEIT_ENDE_S:
-            tr = rec["offen_sim"].pop(0); k = []
+            tr = rec["offen_sim"].pop(0); k = []; r = None
+            bis = tr["t_kauf"] + wp.DELAY_S + wp.SIM_MAX_H * 3600 + 120
             try:
                 pool = wp.gt_pool(tr["mint"], tr["t_kauf"]); abfragen += 1; time.sleep(2.1)
-                bis = tr["t_kauf"] + wp.DELAY_S + wp.SIM_MAX_H * 3600 + 120
                 if pool: k = wp.gt_kerzen(pool, tr["t_kauf"], bis); abfragen += 1; time.sleep(2.1)
-                if pool and not k:
+                r = wp.kopie_simulieren(tr, k, kosten) if k else None
+                # Test 18.10.: GeckoTerminal kennt die pump.fun-Kurve (Startpool) meist nicht. Kaufte die Wallet noch
+                # auf der Kurve, fehlt dort der Kurs -> Codex-Kerzen des Startpools (Test: liefert ab Minute 0).
+                if r is None:
                     try:
-                        codex_budget(meta, codex_n); codex_n["n"] += 1
-                        k = wp.codex_kerzen(_codex, pool, tr["t_kauf"] - 120, bis)
+                        codex_budget(meta, codex_n, 2)
+                        sp = startpool(tr["mint"], codex_n)
+                        if sp:
+                            codex_budget(meta, codex_n); codex_n["n"] += 1
+                            k = wp.codex_kerzen(_codex, sp, tr["t_kauf"] - 120, bis)
+                            r = wp.kopie_simulieren(tr, k, kosten) if k else None
+                            if r is not None: rec["via_codex"] = rec.get("via_codex", 0) + 1
                     except BudgetLeer: pass
             except Exception as ex:
                 rec["kerzen_fehler"] = str(ex)[:80]
-            r = wp.kopie_simulieren(tr, k, kosten) if k else None
             if r is None: rec["ohne_kurs"] = rec.get("ohne_kurs", 0) + 1
             else: rec.setdefault("sim", []).append([tr["t_kauf"], round(r, 4)])
         if not rec.get("offen_sim"):
