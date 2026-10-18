@@ -1,5 +1,5 @@
 {
- "cash": 81.10955094111227,
+ "cash": 31.08955094111227,
  "positions": {
   "6hTLdzZaaCjmqtn7RtaEMQsCbXT5Pg8q76tRViEGpump": {
    "sym": "ABU",
@@ -8,8 +8,8 @@
    "opened": "2026-10-14T19:41:02Z",
    "peak": 0.0004125,
    "entry": 0.0002777952921807166,
-   "cur_price": 0.0001737,
-   "mark": 0.0001737
+   "cur_price": 0.0001768,
+   "mark": 0.0001768
   },
   "1EwcGE6WrssiY2sKSadB5E5DE9WhPDQvBC6kev1EDGE": {
    "sym": "1EDGE",
@@ -28,8 +28,8 @@
    "opened": "2026-10-17T20:10:11Z",
    "peak": 0.0003415,
    "entry": 0.00028876560682980984,
-   "cur_price": 0.0002962,
-   "mark": 0.0002962
+   "cur_price": 0.0002943,
+   "mark": 0.0002943
   },
   "BdXfLfcbDE8YvpbvvmmGTduqcDesaQVUm5xLxgUc2S5t": {
    "sym": "texcat",
@@ -38,8 +38,18 @@
    "opened": "2026-10-18T13:40:41Z",
    "peak": 0.0003347,
    "entry": 0.0003318016658291114,
-   "cur_price": 0.0003057,
-   "mark": 0.0003057
+   "cur_price": 0.0003139,
+   "mark": 0.0003139
+  },
+  "8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump": {
+   "sym": "GLITCH",
+   "qty": 29642.826393,
+   "cost": 50.02,
+   "opened": "2026-10-18T15:35:36Z",
+   "peak": 0.001677,
+   "entry": 0.001687423437186542,
+   "cur_price": 0.001677,
+   "mark": 0.001677
   }
  },
  "trades": [
@@ -3811,13 +3821,21 @@
    "slip": 0.0009,
    "quote": "jup",
    "reason": "trail"
+  },
+  {
+   "t": "2026-10-18T15:35:36Z",
+   "side": "buy",
+   "sym": "GLITCH",
+   "addr": "8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump",
+   "price": 0.001677,
+   "fill": 0.001687423437,
+   "usd": 50.02,
+   "slip": 0.0012,
+   "quote": "jup",
+   "reason": "screener"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-01T06:41:04Z",
-   "v": 596.84
-  },
   {
    "t": "2026-10-01T06:46:05Z",
    "v": 594.36
@@ -23813,6 +23831,10 @@
   {
    "t": "2026-10-18T15:31:05Z",
    "v": 236.04
+  },
+  {
+   "t": "2026-10-18T15:36:11Z",
+   "v": 237.19
   }
  ],
  "started": "2026-09-10T17:17:16Z",
