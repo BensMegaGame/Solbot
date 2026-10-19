@@ -1,16 +1,6 @@
 {
- "cash": 29.36288994111227,
+ "cash": 53.026779941112274,
  "positions": {
-  "48hnR1CWtafBumJsJod6Q8yduwDuYyumCJzuBVzvpump": {
-   "sym": "Dip",
-   "qty": 173220.074749,
-   "cost": 50.02,
-   "opened": "2026-10-17T20:10:11Z",
-   "peak": 0.0003714,
-   "entry": 0.00028876560682980984,
-   "cur_price": 0.0001451,
-   "mark": 0.0001451
-  },
   "BdXfLfcbDE8YvpbvvmmGTduqcDesaQVUm5xLxgUc2S5t": {
    "sym": "texcat",
    "qty": 150752.709077,
@@ -18,8 +8,8 @@
    "opened": "2026-10-18T13:40:41Z",
    "peak": 0.0004004,
    "entry": 0.0003318016658291114,
-   "cur_price": 0.0003482,
-   "mark": 0.0003482
+   "cur_price": 0.0003433,
+   "mark": 0.0003433
   },
   "8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump": {
    "sym": "GLITCH",
@@ -38,8 +28,8 @@
    "opened": "2026-10-18T17:05:55Z",
    "peak": 0.000415,
    "entry": 0.000328487914095073,
-   "cur_price": 0.0003845,
-   "mark": 0.0003845
+   "cur_price": 0.0003869,
+   "mark": 0.0003869
   }
  },
  "trades": [
@@ -3865,13 +3855,24 @@
    "slip": 0.0162,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-10-19T01:45:02Z",
+   "side": "sell",
+   "sym": "Dip",
+   "addr": "48hnR1CWtafBumJsJod6Q8yduwDuYyumCJzuBVzvpump",
+   "price": 0.0001343,
+   "usd": 23.66,
+   "pnl": -26.36,
+   "peak_x": 1.286,
+   "held_h": 29.6,
+   "frac": 1.0,
+   "slip": 0.0141,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-01T16:50:50Z",
-   "v": 556.37
-  },
   {
    "t": "2026-10-01T16:55:49Z",
    "v": 553.66
@@ -23867,6 +23868,10 @@
   {
    "t": "2026-10-19T01:41:15Z",
    "v": 218.95
+  },
+  {
+   "t": "2026-10-19T01:46:14Z",
+   "v": 217.11
   }
  ],
  "started": "2026-09-10T17:17:16Z",
@@ -23880,6 +23885,7 @@
   "5GDX5fJTQns4arM1J94wjxdA8KXFsV5qW46MLFpHpump": 1792253403.712272,
   "Fak3rJEBfR4Vb8DoFpecf6yoxbkkr1gGUH5tdj2rpump": 1792270205.8945198,
   "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump": 1792331103.6660876,
-  "1EwcGE6WrssiY2sKSadB5E5DE9WhPDQvBC6kev1EDGE": 1792339803.6525826
+  "1EwcGE6WrssiY2sKSadB5E5DE9WhPDQvBC6kev1EDGE": 1792339803.6525826,
+  "48hnR1CWtafBumJsJod6Q8yduwDuYyumCJzuBVzvpump": 1792374302.5380707
  }
 }
