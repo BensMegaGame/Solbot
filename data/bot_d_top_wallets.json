@@ -1,5 +1,5 @@
 {
- "t": "2026-10-19T03:01:43Z",
+ "t": "2026-10-19T03:06:38Z",
  "version": "d5",
  "coins_mit_daten": 447,
  "coins_ausgewertet": 333,
@@ -38,17 +38,18 @@
   }
  ],
  "stufe2": {
-  "geprueft": 98,
+  "geprueft": 99,
   "bot": 96,
   "inaktiv": 1,
-  "durchgefallen": 1
+  "durchgefallen": 1,
+  "fehler": 1
  },
  "copy_liste": [],
  "copy_woche": "2026-W43",
  "kosten": {
   "wert": 0.0321,
   "art": "jupiter",
-  "messungen": 31
+  "messungen": 32
  },
  "hinweis": "Stufe 1 ist Beobachtung. Erst Stufe 2 (Kopierer-Simulation, Zeitsplit) entscheidet."
 }
