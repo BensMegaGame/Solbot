@@ -487,36 +487,6 @@
   "status": "sim",
   "offen_sim": [
    {
-    "mint": "Bs5oWCyQBMTszdEYenKApgEwHDzx9EHinTTADZConDom",
-    "t_kauf": 1791991850,
-    "t_verkauf": 1791992150
-   },
-   {
-    "mint": "65eCC3mLDWSfXthj6bcXF4mFpb44gsjzsA9AfPSvFvwr",
-    "t_kauf": 1792005609,
-    "t_verkauf": 1792005909
-   },
-   {
-    "mint": "2Srf6mhufzWJKZ5nniVXgwamLmDJWXPQBmddJ1MMpump",
-    "t_kauf": 1792018851,
-    "t_verkauf": 1792019151
-   },
-   {
-    "mint": "3AkNtx7ZYEmMZKciNyrwUNiHMpP4AUNPqHCmAJcsYCus",
-    "t_kauf": 1792029290,
-    "t_verkauf": 1792029592
-   },
-   {
-    "mint": "DAk42oLFUG4tfaBxVVjtS9iHW2aaKJuEktedZt3pump",
-    "t_kauf": 1792037638,
-    "t_verkauf": 1792037940
-   },
-   {
-    "mint": "APEesmoWve6N1qSD4CbApsJjdfhc9Nnp2fFgbfb53h2o",
-    "t_kauf": 1792057574,
-    "t_verkauf": 1792057877
-   },
-   {
     "mint": "EmFe2EFDAzNWnm1SHbLyePmzVXKu3NVgcV6LHWrBpApz",
     "t_kauf": 1792077571,
     "t_verkauf": 1792077871
@@ -631,12 +601,41 @@
    [
     1791983825,
     0.137
+   ],
+   [
+    1791991850,
+    1.1227
+   ],
+   [
+    1792005609,
+    -0.4208
+   ],
+   [
+    1792018851,
+    0.4839
+   ],
+   [
+    1792029290,
+    0.1196
+   ],
+   [
+    1792037638,
+    0.2057
+   ],
+   [
+    1792057574,
+    -0.3564
    ]
   ],
   "ohne_kurs": 0
  },
  "bummy2yjrb69HLXZB1cbqLLvvd7YE9qk314kufx3UzK": {
   "t": 1792375362.1645434,
+  "status": "bot",
+  "grund": "> 5000 Transaktionen in 14 Tagen"
+ },
+ "2yik7ZsLfFKAmmr9cCHhL1dTabiECnFKDeSVyTbxeETU": {
+  "t": 1792375649.3735583,
   "status": "bot",
   "grund": "> 5000 Transaktionen in 14 Tagen"
  }
