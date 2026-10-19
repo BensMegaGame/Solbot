@@ -1,13 +1,13 @@
 {
- "t": "2026-10-19T00:06:50Z",
+ "t": "2026-10-19T00:11:45Z",
  "version": "d5",
  "coins_mit_daten": 445,
  "coins_ausgewertet": 328,
  "coins_gewinner": 102,
  "basisquote": 0.311,
- "wallets_gesamt": 13199,
+ "wallets_gesamt": 13434,
  "bots": 18,
- "kandidaten": 130,
+ "kandidaten": 160,
  "top": [
   {
    "name": "Wallet A",
@@ -20,26 +20,26 @@
   },
   {
    "name": "Wallet B",
+   "coins": 20,
+   "ausgewertet": 8,
+   "gewinner": 5,
+   "verlierer": 3,
+   "quote": 0.625,
+   "avg_peak_x": 3.13
+  },
+  {
+   "name": "Wallet C",
    "coins": 7,
    "ausgewertet": 5,
    "gewinner": 4,
    "verlierer": 1,
    "quote": 0.8,
    "avg_peak_x": 2.56
-  },
-  {
-   "name": "Wallet C",
-   "coins": 18,
-   "ausgewertet": 6,
-   "gewinner": 4,
-   "verlierer": 2,
-   "quote": 0.667,
-   "avg_peak_x": 3.55
   }
  ],
  "stufe2": {
-  "geprueft": 63,
-  "bot": 63
+  "geprueft": 64,
+  "bot": 64
  },
  "copy_liste": [],
  "copy_woche": "2026-W43",
