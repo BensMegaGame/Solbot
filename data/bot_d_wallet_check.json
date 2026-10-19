@@ -484,39 +484,7 @@
   "liegen_gelassen": 2,
   "eigen_schnitt": 0.0303,
   "halte_min": 5.0,
-  "status": "sim",
-  "offen_sim": [
-   {
-    "mint": "4h7jHyjbvie7gAdVKe4k5NFx8jELZeaiDsYaZy45pump",
-    "t_kauf": 1792280543,
-    "t_verkauf": 1792280846
-   },
-   {
-    "mint": "BEEk9m2qMreARz8HKiyEGkGgUp3UeoHksFT8CfV2pump",
-    "t_kauf": 1792293350,
-    "t_verkauf": 1792293651
-   },
-   {
-    "mint": "FiKJg5JTFC7A3AyUMAhhom8NKu5Yzc7j3jWj1MCQpump",
-    "t_kauf": 1792316176,
-    "t_verkauf": 1792316476
-   },
-   {
-    "mint": "3zJufNUxnTy2KVmDECFykzLSoVuizZQGYzzFd3TMpump",
-    "t_kauf": 1792346494,
-    "t_verkauf": 1792346797
-   },
-   {
-    "mint": "4M4aztBpBHLBxJBCWVrzmu85zwiW5dPo77FpodySpump",
-    "t_kauf": 1792353700,
-    "t_verkauf": 1792354000
-   },
-   {
-    "mint": "4h9Z3qgjikTRoFuP4ief2kKz6qq2VFnuecQghESdpump",
-    "t_kauf": 1792370069,
-    "t_verkauf": 1792370369
-   }
-  ],
+  "status": "durchgefallen",
   "sim": [
    [
     1791903442,
@@ -613,9 +581,43 @@
    [
     1792267422,
     0.0314
+   ],
+   [
+    1792280543,
+    -0.1282
+   ],
+   [
+    1792293350,
+    -0.4019
+   ],
+   [
+    1792316176,
+    -0.0958
+   ],
+   [
+    1792346494,
+    -0.3875
+   ],
+   [
+    1792353700,
+    -0.3346
+   ],
+   [
+    1792370069,
+    -0.4424
    ]
   ],
-  "ohne_kurs": 0
+  "ohne_kurs": 0,
+  "n": 30,
+  "schnitt": -0.1046,
+  "ohne_top2": -0.1696,
+  "haelfte1": -0.0467,
+  "haelfte2": -0.1626,
+  "median": -0.1187,
+  "trefferquote": 0.367,
+  "grund": "Kopierer-Ergebnis nicht in allen Punkten positiv",
+  "kosten": 0.0322,
+  "kosten_art": "jupiter"
  },
  "bummy2yjrb69HLXZB1cbqLLvvd7YE9qk314kufx3UzK": {
   "t": 1792375362.1645434,
@@ -638,5 +640,10 @@
   "letzte": 1792371692,
   "status": "bot",
   "grund": "261.4 Transaktionen je Tag"
+ },
+ "GpFgPBsbCJ2g9ZQXBK86py6ap6jATMeV9LdUoi2PAUYD": {
+  "t": 1792376567.4566016,
+  "status": "bot",
+  "grund": "> 5000 Transaktionen in 14 Tagen"
  }
 }
