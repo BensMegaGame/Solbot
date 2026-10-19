@@ -1,5 +1,5 @@
 {
- "cash": 168.8195629643137,
+ "cash": 304.0590179643137,
  "positions": {
   "J8PSdNP3QewKq2Z1JJJFDMaqF7KcaiJhR7gbr5KZpump": {
    "sym": "TRIPLET",
@@ -8,18 +8,8 @@
    "opened": "2026-10-18T21:26:34Z",
    "peak": 0.005947,
    "entry": 0.005588130892146147,
-   "cur_price": 0.005568,
-   "mark": 0.005568
-  },
-  "2j5SaS7xy776qCBpyPQbZjyQSAtKiFgrwjfErthnW2ZM": {
-   "sym": "CLAUDIA",
-   "qty": 21225.029372,
-   "cost": 131.39883891746157,
-   "opened": "2026-10-19T15:46:24Z",
-   "peak": 0.006764,
-   "entry": 0.006190749450307125,
-   "cur_price": 0.006405,
-   "mark": 0.006405
+   "cur_price": 0.00556,
+   "mark": 0.00556
   }
  },
  "trades": [
@@ -1153,13 +1143,24 @@
    "slip": 0.0027,
    "quote": "jup",
    "reason": "dip 24h -20% (SOL +2%) 1h +0.4%"
+  },
+  {
+   "t": "2026-10-19T18:41:18Z",
+   "side": "sell",
+   "sym": "CLAUDIA",
+   "addr": "2j5SaS7xy776qCBpyPQbZjyQSAtKiFgrwjfErthnW2ZM",
+   "price": 0.006344,
+   "usd": 135.24,
+   "pnl": 3.84,
+   "peak_x": 1.093,
+   "held_h": 2.9,
+   "frac": 1.0,
+   "slip": 0.0018,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-02T09:46:49Z",
-   "v": 567.04
-  },
   {
    "t": "2026-10-02T09:51:50Z",
    "v": 566.44
@@ -21155,6 +21156,10 @@
   {
    "t": "2026-10-19T18:36:18Z",
    "v": 439.5
+  },
+  {
+   "t": "2026-10-19T18:41:18Z",
+   "v": 438.6
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -21162,7 +21167,7 @@
  "strategy": "dip_weites_netz",
  "universe_n": 155,
  "coverage": {
-  "t": "2026-10-19T18:36:18Z",
+  "t": "2026-10-19T18:41:18Z",
   "kurse": 132,
   "von": 155,
   "ohne_pool": 103,
@@ -21171,13 +21176,13 @@
  },
  "verkauft_am": {
   "GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump": 1792406783.7402425,
-  "ZEUS1aR7aX8DFFJf5QjWj2ftDDdNTroMNGo8YoQm3Gq": 1791822985.4868221,
   "6Mix12LiHrQFojaQEnfPUC65Qkwd6X4Y5Qg93oFbordr": 1792081873.6388795,
   "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump": 1792082780.8214538,
   "4MMQY9bwkxxTtsK3W227Q5ABT6yFY8Pmn9Ze7wmAXKY8": 1792170691.0705369,
   "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": 1792181794.5908744,
   "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump": 1792231586.6557255,
   "69LjZUUzxj3Cb3Fxeo1X4QpYEQTboApkhXTysPpbpump": 1792249888.8606446,
-  "MukLDtJ8Cx9DxLbeyLRSWPSposTMWuwHANbuaudpump": 1792251682.8686655
+  "MukLDtJ8Cx9DxLbeyLRSWPSposTMWuwHANbuaudpump": 1792251682.8686655,
+  "2j5SaS7xy776qCBpyPQbZjyQSAtKiFgrwjfErthnW2ZM": 1792435278.5329323
  }
 }
