@@ -1,52 +1,52 @@
 {
- "t": "2026-10-19T00:16:45Z",
+ "t": "2026-10-19T00:21:50Z",
  "version": "d5",
- "coins_mit_daten": 445,
+ "coins_mit_daten": 446,
  "coins_ausgewertet": 328,
  "coins_gewinner": 102,
  "basisquote": 0.311,
- "wallets_gesamt": 13773,
+ "wallets_gesamt": 14058,
  "bots": 19,
- "kandidaten": 175,
+ "kandidaten": 193,
  "top": [
   {
    "name": "Wallet A",
+   "coins": 16,
+   "ausgewertet": 7,
+   "gewinner": 5,
+   "verlierer": 2,
+   "quote": 0.714,
+   "avg_peak_x": 2.88
+  },
+  {
+   "name": "Wallet B",
+   "coins": 9,
+   "ausgewertet": 7,
+   "gewinner": 5,
+   "verlierer": 2,
+   "quote": 0.714,
+   "avg_peak_x": 2.8
+  },
+  {
+   "name": "Wallet C",
    "coins": 7,
    "ausgewertet": 7,
    "gewinner": 5,
    "verlierer": 2,
    "quote": 0.714,
    "avg_peak_x": 3.6
-  },
-  {
-   "name": "Wallet B",
-   "coins": 7,
-   "ausgewertet": 5,
-   "gewinner": 4,
-   "verlierer": 1,
-   "quote": 0.8,
-   "avg_peak_x": 2.56
-  },
-  {
-   "name": "Wallet C",
-   "coins": 6,
-   "ausgewertet": 5,
-   "gewinner": 4,
-   "verlierer": 1,
-   "quote": 0.8,
-   "avg_peak_x": 2.19
   }
  ],
  "stufe2": {
-  "geprueft": 65,
-  "bot": 65
+  "geprueft": 66,
+  "bot": 66
  },
  "copy_liste": [],
  "copy_woche": "2026-W43",
  "kosten": {
-  "wert": 0.0322,
+  "wert": 0.0323,
   "art": "jupiter",
-  "messungen": 26
+  "messungen": 27
  },
  "hinweis": "Stufe 1 ist Beobachtung. Erst Stufe 2 (Kopierer-Simulation, Zeitsplit) entscheidet."
 }
