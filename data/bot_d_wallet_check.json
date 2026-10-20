@@ -837,5 +837,11 @@
   "t": 1792507890.84667,
   "status": "bot",
   "grund": "> 5000 Transaktionen in 14 Tagen"
+ },
+ "EDXC94LZK8GomcNxQgWWZhfLWihSJ8U9tRQTWGT6UFU8": {
+  "t": 0,
+  "status": "fehler",
+  "grund": "429 Client Error: Too Many Requests for url: https://mainnet.helius-rpc.com/?api-key=1b21d4c6-58cf-4",
+  "fehlversuche": 1
  }
 }
