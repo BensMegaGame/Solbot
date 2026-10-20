@@ -42,8 +42,8 @@
    "peak": 0.01544,
    "entry": 0.014165768201616436,
    "pair": "9Tb2ohu5P16BpBarqd3N27WnkF51Ukfs8Z1GzzLDxVZW",
-   "cur_price": 0.01461,
-   "mark": 0.01461
+   "cur_price": 0.0146,
+   "mark": 0.0146
   },
   "GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump": {
    "sym": "JEANPHIL",
@@ -53,8 +53,8 @@
    "peak": 0.005878,
    "entry": 0.005741139082469268,
    "pair": "4R8CiMnJWDNoes3fQi1ccPFJygPXazaHaWpHrN3rZeNj",
-   "cur_price": 0.005484,
-   "mark": 0.005484
+   "cur_price": 0.00548,
+   "mark": 0.00548
   }
  },
  "trades": [
@@ -984,10 +984,6 @@
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-02T15:06:10Z",
-   "v": 549.79
-  },
   {
    "t": "2026-10-02T15:11:12Z",
    "v": 551.87
@@ -20983,13 +20979,15 @@
   {
    "t": "2026-10-19T23:56:33Z",
    "v": 422.25
+  },
+  {
+   "t": "2026-10-20T00:01:45Z",
+   "v": 422.15
   }
  ],
  "started": "2026-09-25T09:22:03Z",
  "version": "f5",
  "cooldown": {
-  "6NwarBvDkXhByqVp2Qkq5i9XbtA2B3Bwe8SWGu9vpump": 20746,
-  "6Mix12LiHrQFojaQEnfPUC65Qkwd6X4Y5Qg93oFbordr": 20746,
   "8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn": 20748,
   "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82": 20748,
   "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": 20749,
@@ -20997,7 +20995,7 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-10-19T23:56:33Z",
+  "t": "2026-10-20T00:01:45Z",
   "virtuell": 5,
   "neu": 0,
   "gestoppt": false
