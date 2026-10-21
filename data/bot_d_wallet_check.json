@@ -1108,36 +1108,6 @@
   "status": "sim",
   "offen_sim": [
    {
-    "mint": "CLQYa2RzUGH3XrZZo9nDjZ2q4aBaKYRCrLwnjkZUgboo",
-    "t_kauf": 1792195658,
-    "t_verkauf": 1792195694
-   },
-   {
-    "mint": "CLQYa2RzUGH3XrZZo9nDjZ2q4aBaKYRCrLwnjkZUgboo",
-    "t_kauf": 1792196754,
-    "t_verkauf": 1792196896
-   },
-   {
-    "mint": "Hukxg44mFqJ8AeVbtSebpGuJD9cF3XHzCCyDp9rapump",
-    "t_kauf": 1792210178,
-    "t_verkauf": 1792210359
-   },
-   {
-    "mint": "Hukxg44mFqJ8AeVbtSebpGuJD9cF3XHzCCyDp9rapump",
-    "t_kauf": 1792228158,
-    "t_verkauf": 1792228362
-   },
-   {
-    "mint": "8M8hAuusNmKg6dEwCr7cHmHcaBwdJbPDxM5vEGAapump",
-    "t_kauf": 1792275025,
-    "t_verkauf": 1792275040
-   },
-   {
-    "mint": "GKxV2YcHsBWp85wHBknC9h3DqUm2qd9DLiph91wbpump",
-    "t_kauf": 1792275873,
-    "t_verkauf": 1792275874
-   },
-   {
     "mint": "DXs7wguCyUgbWSkCv2YrYbm16y7hH9ubbGwZXiSapump",
     "t_kauf": 1792276214,
     "t_verkauf": 1792276230
@@ -1226,9 +1196,21 @@
    [
     1792195457,
     -0.0316
+   ],
+   [
+    1792195658,
+    -0.0778
+   ],
+   [
+    1792196754,
+    -0.2454
+   ],
+   [
+    1792275873,
+    -0.0316
    ]
   ],
-  "ohne_kurs": 5
+  "ohne_kurs": 8
  },
  "5VMkNwSN8HmrGi3L1wPz379FyiAZrvPAEdVxBBWEpwF4": {
   "t": 1792600897.8640814,
@@ -1337,5 +1319,94 @@
   "tx_tag": 129.7,
   "status": "bot",
   "grund": "129.7 Transaktionen je Tag (Schnelltest)"
+ },
+ "DZbgq3yE3r41EFszV3XastvyS8j8QnmNT37nsq7sxR66": {
+  "t": 1792601496.2169485,
+  "tx_tag": 1000.0,
+  "status": "bot",
+  "grund": "1000.0 Transaktionen je Tag (Schnelltest)"
+ },
+ "7r6q4TNQAYU6hGJ2asgbZNsEu2Ah53P74QLsmtb4Zyyp": {
+  "t": 1792601496.4855075,
+  "tx_tag": 165.9,
+  "status": "bot",
+  "grund": "165.9 Transaktionen je Tag (Schnelltest)"
+ },
+ "GpHQCGwAsRvTnKMPuGNQAfAX4ZAQ8jW4ujUh5kX7Tija": {
+  "t": 1792601496.7744071,
+  "tx_tag": 108.8,
+  "status": "bot",
+  "grund": "108.8 Transaktionen je Tag (Schnelltest)"
+ },
+ "8PH2vbqLaTpm1dwFdXz6AD6sMENKEac8KqbJ5LS41YuW": {
+  "t": 1792601497.0005972,
+  "tx_tag": 1000.0,
+  "status": "bot",
+  "grund": "1000.0 Transaktionen je Tag (Schnelltest)"
+ },
+ "5PEuriRHzQcWUsBajRfB8QEZ57eduyqt5gCVzGfBC85": {
+  "t": 1792601497.216795,
+  "tx_tag": 419.7,
+  "status": "bot",
+  "grund": "419.7 Transaktionen je Tag (Schnelltest)"
+ },
+ "5BCbxZRsuRYHuCdupDSNWPBHzM4Tk8MdpKKa3DducSAQ": {
+  "t": 1792601497.710989,
+  "tx_tag": 355.6,
+  "status": "bot",
+  "grund": "355.6 Transaktionen je Tag (Schnelltest)"
+ },
+ "58iikVhaJaJVzeCM6ZNkqHMv7PTLvrZYkhiMDrL9WHg3": {
+  "t": 1792601497.965844,
+  "tx_tag": 1000.0,
+  "status": "bot",
+  "grund": "1000.0 Transaktionen je Tag (Schnelltest)"
+ },
+ "BXEwt3AVbymoRRFNS4fLWTjvno59ZNM9YJywZzHoGN9U": {
+  "t": 1792601498.1694946,
+  "tx_tag": 265.3,
+  "status": "bot",
+  "grund": "265.3 Transaktionen je Tag (Schnelltest)"
+ },
+ "68So3f1Z3VVLQdK6F93mC2wNUJtXkszdrSYYso9xBMGN": {
+  "t": 1792601498.4300182,
+  "tx_tag": 115.9,
+  "status": "bot",
+  "grund": "115.9 Transaktionen je Tag (Schnelltest)"
+ },
+ "6WVw8jQoRe2fBTpjkKXHgw84ScMQtgPzdhtRSvCZXezJ": {
+  "t": 1792601498.6538408,
+  "tx_tag": 610.8,
+  "status": "bot",
+  "grund": "610.8 Transaktionen je Tag (Schnelltest)"
+ },
+ "Fgp4apbKzLst8Xprx35yEUTQtidMkFWwjvpjXXngmRf8": {
+  "t": 1792601498.9119596,
+  "tx_tag": 704.7,
+  "status": "bot",
+  "grund": "704.7 Transaktionen je Tag (Schnelltest)"
+ },
+ "BxjRD8SZct79Wj6gr9EeGB6cZYSW8DSLHshmsU7mYuw9": {
+  "t": 1792601499.1344962,
+  "tx_tag": 457.6,
+  "status": "bot",
+  "grund": "457.6 Transaktionen je Tag (Schnelltest)"
+ },
+ "3KPs6xYqgzUm8VtPS28Ce3ET3w9tKpZY9thut5zsbfoQ": {
+  "t": 1792601499.3458133,
+  "tx_tag": 113.0,
+  "status": "bot",
+  "grund": "113.0 Transaktionen je Tag (Schnelltest)"
+ },
+ "D62t9HbFEDxEAvB2YLLJzEd1CrrycHdHjZPHoZ6U2Hdh": {
+  "t": 1792601499.5726354,
+  "tx_tag": 276.5,
+  "status": "bot",
+  "grund": "276.5 Transaktionen je Tag (Schnelltest)"
+ },
+ "HrVcGrbwe18eU8uXL22Dg8AK7g77VP9X6E8BPKuADiof": {
+  "t": 1792601499.7853985,
+  "status": "inaktiv",
+  "grund": "letzte Transaktion aelter als 3 Tage"
  }
 }
