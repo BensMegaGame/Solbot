@@ -1105,39 +1105,7 @@
   "liegen_gelassen": 2,
   "eigen_schnitt": -0.0363,
   "halte_min": 5.4,
-  "status": "sim",
-  "offen_sim": [
-   {
-    "mint": "WQkXjhYBHASttPa1uWJR8U1XaoKweQrraXPZojapump",
-    "t_kauf": 1792462625,
-    "t_verkauf": 1792462940
-   },
-   {
-    "mint": "CfdFkBcY4aaTFDHFp83DAbdF6e7cViCFETmtWGCApump",
-    "t_kauf": 1792486469,
-    "t_verkauf": 1792487182
-   },
-   {
-    "mint": "WQkXjhYBHASttPa1uWJR8U1XaoKweQrraXPZojapump",
-    "t_kauf": 1792501955,
-    "t_verkauf": 1792504907
-   },
-   {
-    "mint": "Csh4EcsD86rPGN3eFykB431ethVX5dQgAD2ftAtfpump",
-    "t_kauf": 1792506746,
-    "t_verkauf": 1792507489
-   },
-   {
-    "mint": "7w8fazDhYnexgkrE1sVX3Zjp42NWrPccGnZ8XfT2pump",
-    "t_kauf": 1792525759,
-    "t_verkauf": 1792526087
-   },
-   {
-    "mint": "4wewMQpgQewieTWU7twAFy4UYyBQRfJ8bXVKm1hspump",
-    "t_kauf": 1792526403,
-    "t_verkauf": 1792527542
-   }
-  ],
+  "status": "durchgefallen",
   "sim": [
    [
     1791954330,
@@ -1198,9 +1166,21 @@
    [
     1792462542,
     -0.0316
+   ],
+   [
+    1792462625,
+    0.3297
+   ],
+   [
+    1792525759,
+    -0.3698
    ]
   ],
-  "ohne_kurs": 9
+  "ohne_kurs": 13,
+  "n": 17,
+  "grund": "nur 17 Trades mit Kursen",
+  "kosten": 0.03165,
+  "kosten_art": "jupiter"
  },
  "5VMkNwSN8HmrGi3L1wPz379FyiAZrvPAEdVxBBWEpwF4": {
   "t": 1792600897.8640814,
@@ -1485,5 +1465,99 @@
   "tx_tag": 148.5,
   "status": "bot",
   "grund": "148.5 Transaktionen je Tag (Schnelltest)"
+ },
+ "EiiyEXxRDusFAuyA1dRz6RCUThx2i3knDBKgmucKwVG5": {
+  "t": 1792602095.5757673,
+  "tx_tag": 134.7,
+  "status": "bot",
+  "grund": "134.7 Transaktionen je Tag (Schnelltest)"
+ },
+ "6hqvkhmXiRMGT6YXssEpuETYptDUrcVeRTD55WTky76o": {
+  "t": 1792602095.8338404,
+  "tx_tag": 1000.0,
+  "status": "bot",
+  "grund": "1000.0 Transaktionen je Tag (Schnelltest)"
+ },
+ "7PtVk5TZ8J9ohTVS6r2kLzrY33JzShaS3RC6ycC1NNEG": {
+  "t": 1792602096.094797,
+  "tx_tag": 1000.0,
+  "status": "bot",
+  "grund": "1000.0 Transaktionen je Tag (Schnelltest)"
+ },
+ "2gUbVd112nJ2WmKqk7kmwUgMVAF2nLoz4wrGq281GBaj": {
+  "t": 1792602096.3205369,
+  "tx_tag": 167.5,
+  "status": "bot",
+  "grund": "167.5 Transaktionen je Tag (Schnelltest)"
+ },
+ "6isWGQL4i1tXfXVNvrrJn9TQXJSNPiKt7ZiU28tAK762": {
+  "t": 1792602096.5854132,
+  "tx_tag": 1000.0,
+  "status": "bot",
+  "grund": "1000.0 Transaktionen je Tag (Schnelltest)"
+ },
+ "3JZyEirKCesVY6q9ouH8zaP11Xb6eHNDkSsQUebjQo5M": {
+  "t": 1792602096.7951984,
+  "tx_tag": 1000.0,
+  "status": "bot",
+  "grund": "1000.0 Transaktionen je Tag (Schnelltest)"
+ },
+ "CGCSMUrVHV7x9WFM1Dpfe1bkxg9EQubyLVC8GG1VhNGn": {
+  "t": 1792602097.0085328,
+  "status": "inaktiv",
+  "grund": "letzte Transaktion aelter als 3 Tage"
+ },
+ "4a5fxAwazYimNToBUiVdEbFPAs2oqKGPVudFSyKj9HsC": {
+  "t": 1792602097.270807,
+  "tx_tag": 176.6,
+  "status": "bot",
+  "grund": "176.6 Transaktionen je Tag (Schnelltest)"
+ },
+ "Ciz8mX2hp4kqwyivUt2G5BNVBRWEKbpRD7VSwAhhFWgg": {
+  "t": 1792602097.4909594,
+  "tx_tag": 214.8,
+  "status": "bot",
+  "grund": "214.8 Transaktionen je Tag (Schnelltest)"
+ },
+ "CsWAz99CQLQrMTq7LpP3XjWUb56HoSE3co5T4x2dgVmX": {
+  "t": 1792602097.7503262,
+  "tx_tag": 93.3,
+  "status": "bot",
+  "grund": "93.3 Transaktionen je Tag (Schnelltest)"
+ },
+ "EvHbpax2pcJF3h3MeBFTD71x1HqPExeZpv4Q1HPJbePj": {
+  "t": 1792602098.0234013,
+  "tx_tag": 130.4,
+  "status": "bot",
+  "grund": "130.4 Transaktionen je Tag (Schnelltest)"
+ },
+ "HTdX257JFSBPdAQxf4n1EdHMxVedw8XZTQK4k7mYELQ": {
+  "t": 1792602098.2467115,
+  "tx_tag": 267.7,
+  "status": "bot",
+  "grund": "267.7 Transaktionen je Tag (Schnelltest)"
+ },
+ "4RyWvAuFUGZpbWtrvPns5xUXUEWL1Eisk8LQ45RsWsqE": {
+  "t": 1792602098.5116363,
+  "tx_tag": 140.5,
+  "status": "bot",
+  "grund": "140.5 Transaktionen je Tag (Schnelltest)"
+ },
+ "64hJxoZzjoL6MW4uwdKDkaBiZdk87ZxmthHnLwaAKUgS": {
+  "t": 1792602098.7711618,
+  "tx_tag": 1000.0,
+  "status": "bot",
+  "grund": "1000.0 Transaktionen je Tag (Schnelltest)"
+ },
+ "ApkCQwEFYNaVsJmtpnEYN1BDNHJxofNWr6teggKhNss8": {
+  "t": 1792602099.2143312,
+  "tx_tag": 29.4,
+  "letzte": 1792602041,
+  "trades": 0,
+  "geschlossen": 0,
+  "liegen_gelassen": 0,
+  "halte_min": null,
+  "status": "zu_wenig",
+  "grund": "nur 0 Trades in 14 Tagen"
  }
 }
