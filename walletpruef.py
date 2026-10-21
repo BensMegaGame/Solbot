@@ -224,6 +224,25 @@ def bewerten(sim):
     return ok, kz
 
 
+def vorab(key, wallet, credits):
+    """Schnelltest mit EINER Abfrage (1 Credit): die letzten 1.000 Signaturen. Liegen alle in den letzten 14 Tagen,
+    sind das > 70 je Tag -> Bot. Status: bot | inaktiv | vorab_ok (dann volle Pruefung mit historie_pruefen)."""
+    now = time.time()
+    s = [x for x in (_rpc(key, "getSignaturesForAddress", [wallet, {"limit": 1000}]) or []) if x.get("blockTime")]
+    credits["n"] += 1
+    rec = {"t": now}
+    if not s: rec.update(status="inaktiv", grund="keine Transaktionen"); return rec
+    if now - max(x["blockTime"] for x in s) > AKTIV_D * 86400:
+        rec.update(status="inaktiv", grund="letzte Transaktion aelter als 3 Tage"); return rec
+    in14 = [x for x in s if x["blockTime"] >= now - TAGE * 86400]
+    spanne_d = max(1.0, (now - min(x["blockTime"] for x in in14)) / 86400)
+    rec["tx_tag"] = round(len(in14) / spanne_d, 1)
+    if rec["tx_tag"] > MAX_TX_TAG:
+        rec.update(status="bot", grund=f"{rec['tx_tag']} Transaktionen je Tag (Schnelltest)"); return rec
+    rec["status"] = "vorab_ok"
+    return rec
+
+
 def historie_pruefen(key, wallet, credits, deadline=None):
     """Schritte 1-3. Gibt den Pruef-Datensatz zurueck (status + Kennzahlen + offene Simulation)."""
     now = time.time()
