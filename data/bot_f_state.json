@@ -1,5 +1,5 @@
 {
- "cash": 65.281343,
+ "cash": 0.980000000000004,
  "positions": {
   "CortexFv3fRcLKTgACr7aLqckGh5eP7TP3z9JHoKqMc6": {
    "sym": "CX",
@@ -44,6 +44,17 @@
    "pair": "9Tb2ohu5P16BpBarqd3N27WnkF51Ukfs8Z1GzzLDxVZW",
    "cur_price": 0.01518,
    "mark": 0.01518
+  },
+  "METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m": {
+   "sym": "MPLX",
+   "qty": 1021.45719,
+   "cost": 64.301343,
+   "opened": "2026-10-21T16:16:43Z",
+   "peak": 0.06291,
+   "entry": 0.062950600014867,
+   "pair": "BxRhW4q1wTRwJkJ1C4NR4yJCRL2uusoju4g1bVenspZK",
+   "cur_price": 0.06291,
+   "mark": 0.06291
   }
  },
  "trades": [
@@ -985,13 +996,21 @@
    "slip": 0.0088,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-10-21T16:16:43Z",
+   "side": "buy",
+   "sym": "MPLX",
+   "addr": "METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m",
+   "price": 0.06291,
+   "fill": 0.062950600015,
+   "usd": 64.3,
+   "slip": 0.0011,
+   "quote": "jup",
+   "reason": "nach virtuellem stop (E) -11.5%"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-04T07:22:36Z",
-   "v": 517.63
-  },
   {
    "t": "2026-10-04T07:27:29Z",
    "v": 518.28
@@ -20987,6 +21006,10 @@
   {
    "t": "2026-10-21T16:11:42Z",
    "v": 427.4
+  },
+  {
+   "t": "2026-10-21T16:16:43Z",
+   "v": 427.36
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -21000,8 +21023,8 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-10-21T16:11:42Z",
-  "virtuell": 3,
+  "t": "2026-10-21T16:16:43Z",
+  "virtuell": 2,
   "neu": 0,
   "gestoppt": false
  },
