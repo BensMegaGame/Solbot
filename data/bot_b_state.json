@@ -1,5 +1,5 @@
 {
- "cash": 172.97458826448,
+ "cash": 288.00866326448,
  "positions": {
   "9LzCMqDgTKYz9Drzqnpgee3SGa89up3a247ypMj2xrqM": {
    "sym": "AUDIO",
@@ -11,17 +11,6 @@
    "pair": "4EbdAfaShVDNeHm6GbXZX3xsKccRHdTbR5962Bvya8xt",
    "cur_price": 0.01533,
    "mark": 0.01533
-  },
-  "METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m": {
-   "sym": "MPLX",
-   "qty": 1912.619553,
-   "cost": 135.93968021397714,
-   "opened": "2026-10-21T09:06:08Z",
-   "peak": 0.07292,
-   "entry": 0.07107512834988629,
-   "pair": "BxRhW4q1wTRwJkJ1C4NR4yJCRL2uusoju4g1bVenspZK",
-   "cur_price": 0.06063,
-   "mark": 0.06063
   }
  },
  "trades": [
@@ -336,6 +325,21 @@
    "slip": 0.0007,
    "quote": "jup",
    "reason": "tiefer dip 24h -35% (SOL +3%) 1h +0.5%"
+  },
+  {
+   "t": "2026-10-21T17:21:16Z",
+   "side": "sell",
+   "sym": "MPLX",
+   "addr": "METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m",
+   "price": 0.06018,
+   "usd": 115.03,
+   "pnl": -20.91,
+   "peak_x": 1.026,
+   "held_h": 8.3,
+   "frac": 1.0,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -15362,27 +15366,29 @@
   {
    "t": "2026-10-21T17:16:16Z",
    "v": 433.18
+  },
+  {
+   "t": "2026-10-21T17:21:16Z",
+   "v": 432.25
   }
  ],
  "started": "2026-10-08T16:06:06Z",
  "version": "b4",
  "strategy": "tiefer_dip",
  "coverage": {
-  "t": "2026-10-21T17:16:16Z",
+  "t": "2026-10-21T17:21:16Z",
   "kurse": 201,
   "von": 210,
   "sol": true,
-  "sol24": 1.5,
+  "sol24": 1.8,
   "kandidaten": 0,
   "gestoppt": false
  },
  "verkauft_am": {
-  "C1mBfBoDkwWfd6uTFZp62ARHLjeVp3bDpCDMfMZtPngE": 1791741674.4180765,
-  "GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump": 1791850584.6070988,
-  "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP": 1791903671.2552521,
   "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": 1792081865.5302145,
   "8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn": 1792269674.4822476,
   "6Mix12LiHrQFojaQEnfPUC65Qkwd6X4Y5Qg93oFbordr": 1792192286.1371248,
-  "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82": 1792242979.520777
+  "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82": 1792242979.520777,
+  "METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m": 1792603276.0075297
  }
 }
