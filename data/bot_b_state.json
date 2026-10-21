@@ -1,5 +1,5 @@
 {
- "cash": 308.91426847845713,
+ "cash": 172.97458826448,
  "positions": {
   "9LzCMqDgTKYz9Drzqnpgee3SGa89up3a247ypMj2xrqM": {
    "sym": "AUDIO",
@@ -11,6 +11,17 @@
    "pair": "4EbdAfaShVDNeHm6GbXZX3xsKccRHdTbR5962Bvya8xt",
    "cur_price": 0.01532,
    "mark": 0.01532
+  },
+  "METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m": {
+   "sym": "MPLX",
+   "qty": 1912.619553,
+   "cost": 135.93968021397714,
+   "opened": "2026-10-21T09:06:08Z",
+   "peak": 0.07112,
+   "entry": 0.07107512834988629,
+   "pair": "BxRhW4q1wTRwJkJ1C4NR4yJCRL2uusoju4g1bVenspZK",
+   "cur_price": 0.07112,
+   "mark": 0.07112
   }
  },
  "trades": [
@@ -313,6 +324,18 @@
    "slip": 0.0053,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-10-21T09:06:08Z",
+   "side": "buy",
+   "sym": "MPLX",
+   "addr": "METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m",
+   "price": 0.07112,
+   "fill": 0.07107512835,
+   "usd": 135.94,
+   "slip": 0.0007,
+   "quote": "jup",
+   "reason": "tiefer dip 24h -35% (SOL +3%) 1h +0.5%"
   }
  ],
  "equity": [
@@ -14943,18 +14966,22 @@
   {
    "t": "2026-10-21T09:01:06Z",
    "v": 453.07
+  },
+  {
+   "t": "2026-10-21T09:06:08Z",
+   "v": 453.15
   }
  ],
  "started": "2026-10-08T16:06:06Z",
  "version": "b4",
  "strategy": "tiefer_dip",
  "coverage": {
-  "t": "2026-10-21T09:01:06Z",
+  "t": "2026-10-21T09:06:08Z",
   "kurse": 200,
   "von": 210,
   "sol": true,
-  "sol24": 2.3,
-  "kandidaten": 0,
+  "sol24": 2.5,
+  "kandidaten": 1,
   "gestoppt": false
  },
  "verkauft_am": {
