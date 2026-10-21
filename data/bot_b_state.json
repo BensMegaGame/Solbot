@@ -9,8 +9,8 @@
    "peak": 0.01639,
    "entry": 0.016368114616430698,
    "pair": "4EbdAfaShVDNeHm6GbXZX3xsKccRHdTbR5962Bvya8xt",
-   "cur_price": 0.01521,
-   "mark": 0.01521
+   "cur_price": 0.0152,
+   "mark": 0.0152
   },
   "METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m": {
    "sym": "MPLX",
@@ -20,8 +20,8 @@
    "peak": 0.0712,
    "entry": 0.07107512834988629,
    "pair": "BxRhW4q1wTRwJkJ1C4NR4yJCRL2uusoju4g1bVenspZK",
-   "cur_price": 0.07041,
-   "mark": 0.07041
+   "cur_price": 0.07036,
+   "mark": 0.07036
   }
  },
  "trades": [
@@ -15022,17 +15022,21 @@
   {
    "t": "2026-10-21T10:11:06Z",
    "v": 450.76
+  },
+  {
+   "t": "2026-10-21T10:16:06Z",
+   "v": 450.57
   }
  ],
  "started": "2026-10-08T16:06:06Z",
  "version": "b4",
  "strategy": "tiefer_dip",
  "coverage": {
-  "t": "2026-10-21T10:11:06Z",
+  "t": "2026-10-21T10:16:06Z",
   "kurse": 200,
   "von": 210,
   "sol": true,
-  "sol24": 2.2,
+  "sol24": 1.8,
   "kandidaten": 0,
   "gestoppt": false
  },
