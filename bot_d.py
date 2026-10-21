@@ -25,7 +25,7 @@ from collections import Counter
 from common import *
 import walletpruef as wp
 
-VERSION = "d5"
+VERSION = "d5"                         # v5.1: nur Stufe 2 schneller, kein neuer Versionswechsel noetig
 
 HELIUS = os.environ.get("HELIUS_KEY")
 CODEX_KEY = os.environ.get("CODEX_KEY")
@@ -53,13 +53,16 @@ MIN_COINS_WALLET = 3                   # Wallet erst ab 3 Coins Kandidat
 SPAET_FENSTER = [(60, 900), (900, 7200)]   # v5: Kaeufer aus Minute 1-15 und 15-120 nach Start (je 1 Codex-Abfrage)
 SPAET_MAX = 40                         # hoechstens 40 neue Kaeufer je Fenster speichern
 BOT_ANTEIL = 0.05                      # Wallet bei mehr als 5 % aller Coins dabei = Bot (erst ab 100 Coins angewandt)
-KAND_MAX = 60                          # so viele Kandidaten fuer Stufe 2
+KAND_MAX = 2000                        # v5.1: vorher 60 - sobald die 60 besten geprueft waren, stand Stufe 2 still
+                                       # (Hauptgrund, warum ab 20.10. abends keine Wallet mehr geprueft wurde)
 NEU_PRUEFEN_D = 7                      # Wallet hoechstens alle 7 Tage neu pruefen
 HELIUS_WALLET_MAX_TAG = 4000           # Helius-Credits je Tag fuer Stufe 2 (~13 Wallets, ~120k im Monat)
 MAX_SIM_PARALLEL = 3                   # neue Wallet erst pruefen, wenn weniger als 3 Simulationen offen sind
 KERZEN_PRO_LAUF = 12                   # GeckoTerminal-Abfragen je Lauf (2 je simuliertem Trade)
 KOSTEN_EVERY_S = 30 * 60               # alle 30 Min eine Jupiter-Kostenmessung
-ZEIT_NEUE_WALLET_S, ZEIT_ENDE_S = 100, 195  # Laufzeitschutz (run_paper.sh bricht nach 240 s ab)
+ZEIT_VORAB_S, ZEIT_NEUE_WALLET_S, ZEIT_ENDE_S = 140, 150, 195  # Laufzeitschutz (run_paper.sh bricht nach 240 s ab)
+VORAB_PRO_LAUF = 15                    # v5.1: Schnelltests je Lauf (1 Credit, ~1 s je Wallet)
+SPAET_BIS_S = 60                       # v5.1: Nachholen spaeter Kaeufer nur bis 60 s Laufzeit (Rest fuer Stufe 2)
 COPY_MAX = 3
 FALLBACK_SEITEN = 25                   # Ausweichweg: hoechstens 25 x 1000 Signaturen zurueckblaettern
 
@@ -489,16 +492,52 @@ def stufe1(early, now):
 
 
 # ---------- Stufe 2: Wallets pruefen ----------
+# v5.1 (21.10.): In den ersten 3 Tagen waren 125 von 128 gepruefte Wallets Bots, und jede kostete bis zu 5 Seiten
+# Signaturen. Ausserdem durfte eine neue Wallet nur geprueft werden, wenn der Lauf noch keine 100 s alt war - das
+# Nachholen der spaeten Kaeufer frass diese Zeit meist auf (vom 20.10. 20:21 bis 21.10. 17:30 keine einzige Pruefung).
+# Jetzt: (1) Schnelltest mit EINER Abfrage (1 Credit, ~1 s) fuer bis zu 15 Wallets je Lauf, (2) danach die volle
+# Pruefung einer Wallet, die den Schnelltest bestanden hat, (3) mit der restlichen Zeit die Kopierer-Simulation.
 def stufe2(kand, checks, meta, t_start, codex_n):
     now = time.time(); tag = time.strftime("%Y-%m-%d", time.gmtime(now))
     if meta.get("wallet_tag") != tag: meta["wallet_tag"], meta["helius_wallet_heute"] = tag, 0
     kosten, kosten_art = wp.kosten_aktuell(meta.get("kosten_mess", []))
     log = []
-    # a) offene Kopierer-Simulationen weiterfuehren
+    zeit = lambda: time.time() - t_start
+    def credits_buchen(n):
+        meta["helius_wallet_heute"] += n; meta["credits_heute"] = meta.get("credits_heute", 0) + n
+
+    # a) Schnelltest (1 Credit je Wallet): Bot? inaktiv?
+    vorab_n = 0
+    if HELIUS:
+        for x in kand:
+            if vorab_n >= VORAB_PRO_LAUF or zeit() > ZEIT_VORAB_S or meta["helius_wallet_heute"] + 1 > HELIUS_WALLET_MAX_TAG: break
+            if now - (checks.get(x) or {}).get("t", 0) <= NEU_PRUEFEN_D * 86400: continue
+            credits = {"n": 0}
+            try: checks[x] = wp.vorab(HELIUS, x, credits)
+            except Exception as ex: checks[x] = {"t": 0, "status": "fehler", "grund": "schnelltest: " + str(ex)[:80]}
+            credits_buchen(credits["n"]); vorab_n += 1
+            time.sleep(0.15)
+
+    # b) volle Pruefung: hoechstens eine Wallet je Lauf, die den Schnelltest bestanden hat
+    offen = sum(1 for r in checks.values() if r.get("status") == "sim")
+    if (HELIUS and offen < MAX_SIM_PARALLEL and meta["helius_wallet_heute"] + 350 <= HELIUS_WALLET_MAX_TAG
+            and zeit() < ZEIT_NEUE_WALLET_S):
+        neu = next((x for x in kand if (checks.get(x) or {}).get("status") == "vorab_ok"), None)
+        if neu:
+            credits = {"n": 0}
+            try: rec = wp.historie_pruefen(HELIUS, neu, credits, deadline=t_start + ZEIT_ENDE_S)
+            except Exception as ex:
+                fv = (checks.get(neu) or {}).get("fehlversuche", 0) + 1     # bis zu 2x im naechsten Lauf erneut
+                rec = {"t": now, "status": "fehler" if fv >= 3 else "vorab_ok", "grund": str(ex)[:100], "fehlversuche": fv}
+            credits_buchen(credits["n"])
+            checks[neu] = rec
+            log.append(f"Wallet {neu[:4]}.. geprueft: {rec['status']} {rec.get('grund', '')} (~{credits['n']} Credits)")
+
+    # c) offene Kopierer-Simulationen weiterfuehren
     abfragen = 0
     for w, rec in checks.items():
         if rec.get("status") != "sim": continue
-        while rec.get("offen_sim") and abfragen < KERZEN_PRO_LAUF and time.time() - t_start < ZEIT_ENDE_S:
+        while rec.get("offen_sim") and abfragen < KERZEN_PRO_LAUF and zeit() < ZEIT_ENDE_S:
             tr = rec["offen_sim"].pop(0); k = []; r = None
             bis = tr["t_kauf"] + wp.DELAY_S + wp.SIM_MAX_H * 3600 + 120
             try:
@@ -526,21 +565,8 @@ def stufe2(kand, checks, meta, t_start, codex_n):
             rec.update(kz); rec["status"] = "bestanden" if ok else "durchgefallen"
             rec["kosten"], rec["kosten_art"] = kosten, kosten_art; rec.pop("offen_sim", None)
             log.append(f"Wallet {w[:4]}..: {rec['status']} ({kz.get('n')} Trades, Schnitt {kz.get('schnitt')})")
-        if abfragen >= KERZEN_PRO_LAUF or time.time() - t_start >= ZEIT_ENDE_S: break
-    # b) hoechstens eine neue Wallet je Lauf
-    offen = sum(1 for r in checks.values() if r.get("status") == "sim")
-    if (HELIUS and offen < MAX_SIM_PARALLEL and meta["helius_wallet_heute"] + 350 <= HELIUS_WALLET_MAX_TAG
-            and time.time() - t_start < ZEIT_NEUE_WALLET_S):
-        neu = next((x for x in kand if now - (checks.get(x) or {}).get("t", 0) > NEU_PRUEFEN_D * 86400), None)
-        if neu:
-            credits = {"n": 0}
-            try: rec = wp.historie_pruefen(HELIUS, neu, credits, deadline=t_start + ZEIT_ENDE_S)
-            except Exception as ex:
-                fv = (checks.get(neu) or {}).get("fehlversuche", 0) + 1     # bis zu 2x im naechsten Lauf erneut
-                rec = {"t": now if fv >= 3 else 0, "status": "fehler", "grund": str(ex)[:100], "fehlversuche": fv}
-            meta["helius_wallet_heute"] += credits["n"]; meta["credits_heute"] = meta.get("credits_heute", 0) + credits["n"]
-            checks[neu] = rec
-            log.append(f"Wallet {neu[:4]}.. geprueft: {rec['status']} {rec.get('grund', '')} (~{credits['n']} Credits)")
+        if abfragen >= KERZEN_PRO_LAUF or zeit() >= ZEIT_ENDE_S: break
+    if vorab_n: log.append(f"Schnelltest: {vorab_n} Wallets")
     return log
 
 
@@ -565,7 +591,7 @@ def stufe3(checks, now):
 
 
 def main():
-    t_start = time.time()
+    t_start = time.time(); lz = {}     # v5.1: Laufzeit je Abschnitt (Sekunden seit Start), landet in coverage
     pf = Paper("bot_d", rebuy_sperre_h=24); st = pf.s; st["version"] = VERSION
     st["strategy"] = "datensammler"; st["helius"] = bool(HELIUS); st["codex"] = bool(CODEX_KEY)
     now = time.time(); today = int(now // 86400)
@@ -592,6 +618,7 @@ def main():
         paths.setdefault(a, {"sym": c["sym"], "first": now, "pts": [],
                              "q": {k: c[k] for k in ("liq", "mcap", "holders", "top10", "bundler", "sniper", "insider")}})
 
+    lz["kandidaten"] = round(time.time() - t_start)
     # 2) Kurse + Pfade (bis 72 h alle 5 Min, danach stuendlich; insgesamt 7 Tage)
     def faellig(p):
         alter = now - p["first"]
@@ -643,6 +670,7 @@ def main():
         elif held_d >= MAX_HOLD_D: why = "time"
         if why: pf.sell(a, px, 1.0, liq, why)
 
+    lz["kurse"] = round(time.time() - t_start)
     # 4) Fruehkaeufer: jeder Kandidat genau einmal (Gewinner UND Verlierer)
     neu, wege, fehler = 0, {}, 0
     if meta.get("codex_tag") != tag: meta["codex_tag"], meta["codex_heute"] = tag, 0
@@ -675,12 +703,13 @@ def main():
         neu += 1; wege[r["via"]] = wege.get(r["via"], 0) + 1
         time.sleep(0.3)
 
+    lz["fruehkaeufer"] = round(time.time() - t_start)
     # 4b) v5: spaetere Kaeufer (Minute 1-15, 15-120) - neue Coins zuerst, dann die alten nachholen (neueste zuerst)
     if meta.get("spaet_tag") != tag: meta["spaet_tag"], meta["spaet_fehler_heute"] = tag, 0
     nachholen = sorted([a for a, e in early.items() if e.get("t0") and not e.get("spaet_versucht")],
                        key=lambda a: -(early[a].get("seit") or 0))
     for a in nachholen[:FRUEH_PRO_LAUF]:
-        if meta["spaet_fehler_heute"] >= 5 or time.time() - t_start > 100: break
+        if meta["spaet_fehler_heute"] >= 5 or time.time() - t_start > SPAET_BIS_S: break
         e = early[a]
         try:
             e["spaet"] = spaete_kaeufer(e, a, meta, codex_n); e["spaet_versucht"] = True; spaet_neu += 1
@@ -692,6 +721,7 @@ def main():
             if e["spaet_fehlversuche"] >= 2: e["spaet_versucht"] = True
         time.sleep(0.3)
 
+    lz["spaete_kaeufer"] = round(time.time() - t_start)
     # 4c) v5: Kosten eines 50-$-Kaufs + sofortigen Verkaufs mit Jupiter messen (fuer die Kopierer-Simulation)
     if now - meta.get("kosten_t", 0) >= KOSTEN_EVERY_S and cands:
         meta["kosten_t"] = now
@@ -703,12 +733,14 @@ def main():
     meta["credits_heute"] = meta.get("credits_heute", 0) + credits["n"]
     meta["codex_heute"] = meta.get("codex_heute", 0) + codex_n["n"]; codex_n["n"] = 0
 
+    lz["jupiter"] = round(time.time() - t_start)
     # 5) Stufe 1-3
     info, kand = stufe1(early, now)
     checks = load("bot_d_wallet_check.json", {})
     w_log = stufe2(kand, checks, meta, t_start, codex_n)
     meta["codex_heute"] = meta.get("codex_heute", 0) + codex_n["n"]; codex_n["n"] = 0
     save("bot_d_wallet_check.json", checks)
+    lz["stufe2"] = round(time.time() - t_start)
     copy = stufe3(checks, now)
     stat = Counter(r.get("status") for r in checks.values())
     kosten, kosten_art = wp.kosten_aktuell(meta.get("kosten_mess", []))
@@ -738,7 +770,9 @@ def main():
                       "codex_ohne_filter": bool(meta.get("codex_ohne_filter")),
                       "kandidaten_wallets": info["kandidaten"], "wallets_geprueft": len(checks),
                       "wallets_bestanden": stat.get("bestanden", 0), "copy_liste": len(copy["wallets"]),
-                      "helius_wallet_heute": meta.get("helius_wallet_heute", 0)}
+                      "helius_wallet_heute": meta.get("helius_wallet_heute", 0),
+                      "laufzeit_s": {**lz, "gesamt": round(time.time() - t_start)},
+                      "warteschlange": sum(1 for r in checks.values() if r.get("status") == "vorab_ok")}
     v = pf.mark(prices); pf.commit()
     print(f"Bot D [datensammler]: kandidaten {len(cands)} | pfade {len(paths)} | kurse {st['coverage']['kurse']}/{len(watch)}"
           f" | fruehkaeufer neu {neu} {wege} fehler {fehler} | coins mit fruehkaeufern {st['coverage']['coins_mit_fruehkaeufern']}"
