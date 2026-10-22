@@ -1,5 +1,5 @@
 {
- "cash": 168.82192725183376,
+ "cash": 41.30416515364803,
  "positions": {
   "PRVT6TB7uss3FrUd2D9xs2zqDBsa3GbMJMwCQsgmeta": {
    "sym": "UMBRA",
@@ -18,8 +18,18 @@
    "opened": "2026-10-21T22:21:27Z",
    "peak": 0.008333,
    "entry": 0.008139283492791067,
-   "cur_price": 0.008042,
-   "mark": 0.008042
+   "cur_price": 0.008065,
+   "mark": 0.008065
+  },
+  "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump": {
+   "sym": "MANIFEST",
+   "qty": 15238.127274,
+   "cost": 127.51776209818573,
+   "opened": "2026-10-22T00:06:21Z",
+   "peak": 0.00828,
+   "entry": 0.008368335544470903,
+   "cur_price": 0.00828,
+   "mark": 0.00828
   }
  },
  "trades": [
@@ -1207,13 +1217,21 @@
    "slip": 0.0,
    "quote": "jup",
    "reason": "dip 24h -13% (SOL +1%) 1h +2.0%"
+  },
+  {
+   "t": "2026-10-22T00:06:21Z",
+   "side": "buy",
+   "sym": "MANIFEST",
+   "addr": "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump",
+   "price": 0.00828,
+   "fill": 0.008368335544,
+   "usd": 127.52,
+   "slip": 0.0024,
+   "quote": "jup",
+   "reason": "dip 24h -11% (SOL +1%) 1h +0.5%"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-04T15:11:45Z",
-   "v": 536.56
-  },
   {
    "t": "2026-10-04T15:16:47Z",
    "v": 536.73
@@ -21209,6 +21227,10 @@
   {
    "t": "2026-10-22T00:01:23Z",
    "v": 424.99
+  },
+  {
+   "t": "2026-10-22T00:06:21Z",
+   "v": 424.01
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -21216,12 +21238,12 @@
  "strategy": "dip_weites_netz",
  "universe_n": 140,
  "coverage": {
-  "t": "2026-10-22T00:01:23Z",
+  "t": "2026-10-22T00:06:21Z",
   "kurse": 121,
   "von": 141,
   "ohne_pool": 93,
   "sol": true,
-  "kandidaten": 0
+  "kandidaten": 1
  },
  "verkauft_am": {
   "GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump": 1792406783.7402425,
