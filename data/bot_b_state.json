@@ -1,5 +1,5 @@
 {
- "cash": 288.00866326448,
+ "cash": 159.385103118486,
  "positions": {
   "9LzCMqDgTKYz9Drzqnpgee3SGa89up3a247ypMj2xrqM": {
    "sym": "AUDIO",
@@ -11,6 +11,17 @@
    "pair": "4EbdAfaShVDNeHm6GbXZX3xsKccRHdTbR5962Bvya8xt",
    "cur_price": 0.01495,
    "mark": 0.01495
+  },
+  "DvjbEsdca43oQcw2h3HW1CT7N3x5vRcr3QrvTUHnXvgV": {
+   "sym": "DOOD",
+   "qty": 56281.15892306,
+   "cost": 128.623560145994,
+   "opened": "2026-10-22T11:51:30Z",
+   "peak": 0.002278,
+   "entry": 0.0022853751167745276,
+   "pair": "5KXE8RMF7iW9Ptn665AHfzsMFjYb4LV2Ta8eZEtsTwWC",
+   "cur_price": 0.002278,
+   "mark": 0.002278
   }
  },
  "trades": [
@@ -340,6 +351,18 @@
    "slip": 0.0,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-10-22T11:51:30Z",
+   "side": "buy",
+   "sym": "DOOD",
+   "addr": "DvjbEsdca43oQcw2h3HW1CT7N3x5vRcr3QrvTUHnXvgV",
+   "price": 0.002278,
+   "fill": 0.002285375117,
+   "usd": 128.62,
+   "slip": 0.0011,
+   "quote": "jup",
+   "reason": "tiefer dip 24h -31% (SOL -2%) 1h +1.1%"
   }
  ],
  "equity": [
@@ -16254,18 +16277,22 @@
   {
    "t": "2026-10-22T11:46:27Z",
    "v": 428.68
+  },
+  {
+   "t": "2026-10-22T11:51:30Z",
+   "v": 428.26
   }
  ],
  "started": "2026-10-08T16:06:06Z",
  "version": "b4",
  "strategy": "tiefer_dip",
  "coverage": {
-  "t": "2026-10-22T11:46:27Z",
+  "t": "2026-10-22T11:51:30Z",
   "kurse": 195,
   "von": 210,
   "sol": true,
-  "sol24": -1.9,
-  "kandidaten": 0,
+  "sol24": -2.3,
+  "kandidaten": 1,
   "gestoppt": false
  },
  "verkauft_am": {
