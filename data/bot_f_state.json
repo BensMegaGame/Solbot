@@ -20,8 +20,8 @@
    "peak": 0.01104,
    "entry": 0.009404107615910415,
    "pair": "Dsxt7wUigQU5puH9nHjmfwnUenMycAgsFtrkfggLh8P1",
-   "cur_price": 0.008514,
-   "mark": 0.008514
+   "cur_price": 0.00855,
+   "mark": 0.00855
   },
   "G7iK3prSzAA4vzcJWvsLUEsdCqzR7PnMzJV61vSdFSNW": {
    "sym": "NST",
@@ -53,8 +53,8 @@
    "peak": 0.06911,
    "entry": 0.062950600014867,
    "pair": "BxRhW4q1wTRwJkJ1C4NR4yJCRL2uusoju4g1bVenspZK",
-   "cur_price": 0.06911,
-   "mark": 0.06911
+   "cur_price": 0.06803,
+   "mark": 0.06803
   }
  },
  "trades": [
@@ -1011,10 +1011,6 @@
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-04T15:42:20Z",
-   "v": 527.22
-  },
   {
    "t": "2026-10-04T15:47:20Z",
    "v": 528.66
@@ -21010,6 +21006,10 @@
   {
    "t": "2026-10-22T00:35:25Z",
    "v": 426.77
+  },
+  {
+   "t": "2026-10-22T00:39:54Z",
+   "v": 426.05
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -21021,9 +21021,9 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-10-22T00:35:25Z",
+  "t": "2026-10-22T00:39:54Z",
   "virtuell": 3,
-  "neu": 1,
+  "neu": 0,
   "gestoppt": false
  },
  "verkauft_am": {
