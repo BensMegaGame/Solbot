@@ -50,11 +50,11 @@
    "qty": 1021.45719,
    "cost": 64.301343,
    "opened": "2026-10-21T16:16:43Z",
-   "peak": 0.06317,
+   "peak": 0.06349,
    "entry": 0.062950600014867,
    "pair": "BxRhW4q1wTRwJkJ1C4NR4yJCRL2uusoju4g1bVenspZK",
-   "cur_price": 0.06317,
-   "mark": 0.06317
+   "cur_price": 0.06349,
+   "mark": 0.06349
   }
  },
  "trades": [
@@ -1011,10 +1011,6 @@
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-04T15:07:06Z",
-   "v": 520.79
-  },
   {
    "t": "2026-10-04T15:12:04Z",
    "v": 519.73
@@ -21010,20 +21006,22 @@
   {
    "t": "2026-10-21T23:56:38Z",
    "v": 422.58
+  },
+  {
+   "t": "2026-10-22T00:01:52Z",
+   "v": 422.9
   }
  ],
  "started": "2026-09-25T09:22:03Z",
  "version": "f5",
  "cooldown": {
-  "8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn": 20748,
-  "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82": 20748,
   "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": 20749,
   "MukLDtJ8Cx9DxLbeyLRSWPSposTMWuwHANbuaudpump": 20749,
   "GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump": 20752
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-10-21T23:56:38Z",
+  "t": "2026-10-22T00:01:52Z",
   "virtuell": 1,
   "neu": 0,
   "gestoppt": false
