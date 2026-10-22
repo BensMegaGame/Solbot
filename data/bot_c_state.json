@@ -1,5 +1,5 @@
 {
- "cash": 227.06594915364803,
+ "cash": 341.44475415364803,
  "positions": {
   "PRVT6TB7uss3FrUd2D9xs2zqDBsa3GbMJMwCQsgmeta": {
    "sym": "UMBRA",
@@ -11,16 +11,6 @@
    "cur_price": 0.4429,
    "mark": 0.4429,
    "tp1": true
-  },
-  "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump": {
-   "sym": "MANIFEST",
-   "qty": 15238.127274,
-   "cost": 127.51776209818573,
-   "opened": "2026-10-22T00:06:21Z",
-   "peak": 0.008617,
-   "entry": 0.008368335544470903,
-   "cur_price": 0.007534,
-   "mark": 0.007534
   }
  },
  "trades": [
@@ -1250,13 +1240,24 @@
    "slip": 0.0037,
    "quote": "jup",
    "reason": "tp1"
+  },
+  {
+   "t": "2026-10-22T18:36:30Z",
+   "side": "sell",
+   "sym": "MANIFEST",
+   "addr": "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump",
+   "price": 0.007482,
+   "usd": 114.38,
+   "pnl": -13.14,
+   "peak_x": 1.03,
+   "held_h": 18.5,
+   "frac": 1.0,
+   "slip": 0.0083,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-05T09:42:08Z",
-   "v": 542.91
-  },
   {
    "t": "2026-10-05T09:47:10Z",
    "v": 542.59
@@ -21252,6 +21253,10 @@
   {
    "t": "2026-10-22T18:31:32Z",
    "v": 416.15
+  },
+  {
+   "t": "2026-10-22T18:36:30Z",
+   "v": 415.73
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -21259,7 +21264,7 @@
  "strategy": "dip_weites_netz",
  "universe_n": 141,
  "coverage": {
-  "t": "2026-10-22T18:31:32Z",
+  "t": "2026-10-22T18:36:30Z",
   "kurse": 116,
   "von": 141,
   "ohne_pool": 92,
@@ -21268,11 +21273,9 @@
  },
  "verkauft_am": {
   "GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump": 1792406783.7402425,
-  "6Mix12LiHrQFojaQEnfPUC65Qkwd6X4Y5Qg93oFbordr": 1792081873.6388795,
-  "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump": 1792082780.8214538,
   "4MMQY9bwkxxTtsK3W227Q5ABT6yFY8Pmn9Ze7wmAXKY8": 1792170691.0705369,
   "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": 1792638085.371396,
-  "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump": 1792231586.6557255,
+  "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump": 1792694190.0021076,
   "69LjZUUzxj3Cb3Fxeo1X4QpYEQTboApkhXTysPpbpump": 1792249888.8606446,
   "MukLDtJ8Cx9DxLbeyLRSWPSposTMWuwHANbuaudpump": 1792251682.8686655,
   "2j5SaS7xy776qCBpyPQbZjyQSAtKiFgrwjfErthnW2ZM": 1792435278.5329323,
