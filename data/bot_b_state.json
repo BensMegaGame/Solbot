@@ -1,5 +1,5 @@
 {
- "cash": 33.064672787844245,
+ "cash": 161.35914978784425,
  "positions": {
   "9LzCMqDgTKYz9Drzqnpgee3SGa89up3a247ypMj2xrqM": {
    "sym": "AUDIO",
@@ -20,19 +20,8 @@
    "peak": 0.00228,
    "entry": 0.0022853751167745276,
    "pair": "5KXE8RMF7iW9Ptn665AHfzsMFjYb4LV2Ta8eZEtsTwWC",
-   "cur_price": 0.002154,
-   "mark": 0.002154
-  },
-  "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": {
-   "sym": "Dacity",
-   "qty": 12302.091199,
-   "cost": 126.32043033064176,
-   "opened": "2026-10-22T16:41:18Z",
-   "peak": 0.01139,
-   "entry": 0.010268207923943042,
-   "pair": "G2UuRbmVDzDFP4qyoBJrSKBXSi7d6V4bPP9tHPs36y4b",
-   "cur_price": 0.01053,
-   "mark": 0.01053
+   "cur_price": 0.002148,
+   "mark": 0.002148
   }
  },
  "trades": [
@@ -386,6 +375,21 @@
    "slip": 0.0008,
    "quote": "jup",
    "reason": "tiefer dip 24h -30% (SOL -4%) 1h +3.9%"
+  },
+  {
+   "t": "2026-10-22T20:16:13Z",
+   "side": "sell",
+   "sym": "Dacity",
+   "addr": "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump",
+   "price": 0.01043,
+   "usd": 128.29,
+   "pnl": 1.97,
+   "peak_x": 1.109,
+   "held_h": 3.6,
+   "frac": 1.0,
+   "slip": 0.0019,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
@@ -16704,25 +16708,29 @@
   {
    "t": "2026-10-22T20:11:17Z",
    "v": 423.0
+  },
+  {
+   "t": "2026-10-22T20:16:13Z",
+   "v": 421.42
   }
  ],
  "started": "2026-10-08T16:06:06Z",
  "version": "b4",
  "strategy": "tiefer_dip",
  "coverage": {
-  "t": "2026-10-22T20:11:17Z",
+  "t": "2026-10-22T20:16:13Z",
   "kurse": 191,
   "von": 207,
   "sol": true,
-  "sol24": -4.4,
+  "sol24": -4.5,
   "kandidaten": 0,
   "gestoppt": false
  },
  "verkauft_am": {
-  "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": 1792081865.5302145,
   "8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn": 1792269674.4822476,
   "6Mix12LiHrQFojaQEnfPUC65Qkwd6X4Y5Qg93oFbordr": 1792192286.1371248,
   "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82": 1792242979.520777,
-  "METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m": 1792603276.0075297
+  "METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m": 1792603276.0075297,
+  "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": 1792700173.7153804
  }
 }
