@@ -1,5 +1,5 @@
 {
- "cash": 41.30416515364803,
+ "cash": 154.20363615364803,
  "positions": {
   "PRVT6TB7uss3FrUd2D9xs2zqDBsa3GbMJMwCQsgmeta": {
    "sym": "UMBRA",
@@ -11,16 +11,6 @@
    "cur_price": 0.3884,
    "mark": 0.3884
   },
-  "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": {
-   "sym": "BATON",
-   "qty": 15653.846206,
-   "cost": 127.41109202318587,
-   "opened": "2026-10-21T22:21:27Z",
-   "peak": 0.008333,
-   "entry": 0.008139283492791067,
-   "cur_price": 0.007524,
-   "mark": 0.007524
-  },
   "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump": {
    "sym": "MANIFEST",
    "qty": 15238.127274,
@@ -28,8 +18,8 @@
    "opened": "2026-10-22T00:06:21Z",
    "peak": 0.008377,
    "entry": 0.008368335544470903,
-   "cur_price": 0.00811,
-   "mark": 0.00811
+   "cur_price": 0.008103,
+   "mark": 0.008103
   }
  },
  "trades": [
@@ -1229,13 +1219,24 @@
    "slip": 0.0024,
    "quote": "jup",
    "reason": "dip 24h -11% (SOL +1%) 1h +0.5%"
+  },
+  {
+   "t": "2026-10-22T03:01:25Z",
+   "side": "sell",
+   "sym": "BATON",
+   "addr": "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump",
+   "price": 0.007179,
+   "usd": 112.9,
+   "pnl": -14.51,
+   "peak_x": 1.024,
+   "held_h": 4.7,
+   "frac": 1.0,
+   "slip": 0.0022,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-04T18:07:05Z",
-   "v": 533.22
-  },
   {
    "t": "2026-10-04T18:12:03Z",
    "v": 533.22
@@ -21231,6 +21232,10 @@
   {
    "t": "2026-10-22T02:56:24Z",
    "v": 412.95
+  },
+  {
+   "t": "2026-10-22T03:01:25Z",
+   "v": 407.96
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -21238,7 +21243,7 @@
  "strategy": "dip_weites_netz",
  "universe_n": 142,
  "coverage": {
-  "t": "2026-10-22T02:56:24Z",
+  "t": "2026-10-22T03:01:25Z",
   "kurse": 122,
   "von": 143,
   "ohne_pool": 93,
@@ -21250,7 +21255,7 @@
   "6Mix12LiHrQFojaQEnfPUC65Qkwd6X4Y5Qg93oFbordr": 1792081873.6388795,
   "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump": 1792082780.8214538,
   "4MMQY9bwkxxTtsK3W227Q5ABT6yFY8Pmn9Ze7wmAXKY8": 1792170691.0705369,
-  "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": 1792181794.5908744,
+  "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": 1792638085.371396,
   "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump": 1792231586.6557255,
   "69LjZUUzxj3Cb3Fxeo1X4QpYEQTboApkhXTysPpbpump": 1792249888.8606446,
   "MukLDtJ8Cx9DxLbeyLRSWPSposTMWuwHANbuaudpump": 1792251682.8686655,
