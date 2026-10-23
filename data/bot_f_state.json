@@ -42,8 +42,8 @@
    "peak": 0.06911,
    "entry": 0.062950600014867,
    "pair": "BxRhW4q1wTRwJkJ1C4NR4yJCRL2uusoju4g1bVenspZK",
-   "cur_price": 0.05931,
-   "mark": 0.05931
+   "cur_price": 0.05954,
+   "mark": 0.05954
   },
   "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump": {
    "sym": "MANIFEST",
@@ -53,8 +53,8 @@
    "peak": 0.007687,
    "entry": 0.007505103903028301,
    "pair": "2DVbU5h8JCd37gaXAJUZ4t77HsjJW22LLduTZk7GSa43",
-   "cur_price": 0.007306,
-   "mark": 0.007306
+   "cur_price": 0.007163,
+   "mark": 0.007163
   }
  },
  "trades": [
@@ -1038,10 +1038,6 @@
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-05T17:02:42Z",
-   "v": 544.31
-  },
   {
    "t": "2026-10-05T17:07:43Z",
    "v": 541.63
@@ -21037,6 +21033,10 @@
   {
    "t": "2026-10-23T01:51:40Z",
    "v": 394.42
+  },
+  {
+   "t": "2026-10-23T01:56:41Z",
+   "v": 393.15
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -21047,7 +21047,7 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-10-23T01:51:40Z",
+  "t": "2026-10-23T01:56:41Z",
   "virtuell": 3,
   "neu": 0,
   "gestoppt": false
