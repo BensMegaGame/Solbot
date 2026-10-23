@@ -1,5 +1,5 @@
 {
- "cash": 44.7769523836499,
+ "cash": 163.6372473836499,
  "positions": {
   "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2": {
    "sym": "TROLL",
@@ -8,18 +8,19 @@
    "opened": "2026-10-22T00:35:23Z",
    "peak": 0.03381,
    "entry": 0.03346870689104177,
-   "mark": 0.03256,
-   "cur_price": 0.03256
+   "mark": 0.03235,
+   "cur_price": 0.03235
   },
   "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG": {
    "sym": "BIRB",
-   "qty": 3571.577036,
-   "cost": 200.23277581003444,
+   "qty": 1785.788518,
+   "cost": 100.11638790501722,
    "opened": "2026-10-22T02:56:45Z",
-   "peak": 0.06163,
+   "peak": 0.06817,
    "entry": 0.05606284668978772,
-   "mark": 0.06163,
-   "cur_price": 0.06163
+   "mark": 0.06817,
+   "cur_price": 0.06817,
+   "tp1": true
   }
  },
  "trades": [
@@ -1195,13 +1196,24 @@
    "slip": 0.0011,
    "quote": "jup",
    "reason": "dip 24h -16% (SOL -1%) 1h +0.2%"
+  },
+  {
+   "t": "2026-10-23T02:51:42Z",
+   "side": "sell",
+   "sym": "BIRB",
+   "addr": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG",
+   "price": 0.06817,
+   "usd": 118.86,
+   "pnl": 18.74,
+   "peak_x": 1.216,
+   "held_h": 23.9,
+   "frac": 0.5,
+   "slip": 0.0007,
+   "quote": "jup",
+   "reason": "tp1"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-05T17:57:44Z",
-   "v": 724.08
-  },
   {
    "t": "2026-10-05T18:02:50Z",
    "v": 724.48
@@ -21197,13 +21209,17 @@
   {
    "t": "2026-10-23T02:46:39Z",
    "v": 459.95
+  },
+  {
+   "t": "2026-10-23T02:51:42Z",
+   "v": 479.17
   }
  ],
  "started": "2026-09-16T16:55:59Z",
  "strategy": "largecap_dip",
  "universe_n": 76,
  "coverage": {
-  "t": "2026-10-23T02:46:39Z",
+  "t": "2026-10-23T02:51:42Z",
   "kurse": 76,
   "von": 76,
   "sol": true
