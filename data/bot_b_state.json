@@ -1,18 +1,6 @@
 {
- "cash": 270.32371678784426,
- "positions": {
-  "9LzCMqDgTKYz9Drzqnpgee3SGa89up3a247ypMj2xrqM": {
-   "sym": "AUDIO",
-   "qty": 9409.35589,
-   "cost": 154.01341567430728,
-   "opened": "2026-10-16T19:16:23Z",
-   "peak": 0.01639,
-   "entry": 0.016368114616430698,
-   "pair": "4EbdAfaShVDNeHm6GbXZX3xsKccRHdTbR5962Bvya8xt",
-   "cur_price": 0.01475,
-   "mark": 0.01475
-  }
- },
+ "cash": 408.94390478784425,
+ "positions": {},
  "trades": [
   {
    "t": "2026-10-09T07:16:29Z",
@@ -394,6 +382,21 @@
    "slip": 0.005,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-10-23T19:21:18Z",
+   "side": "sell",
+   "sym": "AUDIO",
+   "addr": "9LzCMqDgTKYz9Drzqnpgee3SGa89up3a247ypMj2xrqM",
+   "price": 0.01475,
+   "usd": 138.62,
+   "pnl": -15.39,
+   "peak_x": 1.001,
+   "held_h": 168.1,
+   "frac": 1.0,
+   "slip": 0.0036,
+   "quote": "jup",
+   "reason": "time"
   }
  ],
  "equity": [
@@ -17820,17 +17823,21 @@
   {
    "t": "2026-10-23T19:16:19Z",
    "v": 409.11
+  },
+  {
+   "t": "2026-10-23T19:21:18Z",
+   "v": 408.94
   }
  ],
  "started": "2026-10-08T16:06:06Z",
  "version": "b4",
  "strategy": "tiefer_dip",
  "coverage": {
-  "t": "2026-10-23T19:16:19Z",
+  "t": "2026-10-23T19:21:18Z",
   "kurse": 191,
   "von": 208,
   "sol": true,
-  "sol24": 0.4,
+  "sol24": 0.1,
   "kandidaten": 0,
   "gestoppt": false
  },
@@ -17840,6 +17847,7 @@
   "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82": 1792242979.520777,
   "METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m": 1792603276.0075297,
   "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": 1792700173.7153804,
-  "DvjbEsdca43oQcw2h3HW1CT7N3x5vRcr3QrvTUHnXvgV": 1792728669.7463253
+  "DvjbEsdca43oQcw2h3HW1CT7N3x5vRcr3QrvTUHnXvgV": 1792728669.7463253,
+  "9LzCMqDgTKYz9Drzqnpgee3SGa89up3a247ypMj2xrqM": 1792783278.2891831
  }
 }
