@@ -9004,10 +9004,6 @@
  ],
  "equity": [
   {
-   "t": "2026-10-06T14:32:19Z",
-   "v": 92.18
-  },
-  {
    "t": "2026-10-06T14:37:25Z",
    "v": 93.22
   },
@@ -29002,6 +28998,10 @@
   {
    "t": "2026-10-23T23:21:50Z",
    "v": 15.88
+  },
+  {
+   "t": "2026-10-23T23:26:45Z",
+   "v": 15.88
   }
  ],
  "started": "2026-09-15T16:35:51Z",
@@ -29092,16 +29092,16 @@
   "F458Huat36hKjLPc7dmL4uEixBAgX7fUjxWwnUEkpump": 1791414739.6887403
  },
  "coverage": {
-  "t": "2026-10-23T23:21:50Z",
+  "t": "2026-10-23T23:26:45Z",
   "kandidaten": 44,
   "pfade": 350,
-  "kurse": 127,
-  "von": 166,
+  "kurse": 111,
+  "von": 152,
   "fruehkaeufer_neu": 0,
-  "fruehkaeufer_fehler": 1,
+  "fruehkaeufer_fehler": 0,
   "weg": {},
   "coins_mit_fruehkaeufern": 621,
-  "coins_ausgewertet": 526,
+  "coins_ausgewertet": 527,
   "credits_heute": 4982,
   "codex_heute": 200,
   "spaet_neu": 0,
@@ -29116,11 +29116,11 @@
   "laufzeit_s": {
    "kandidaten": 0,
    "kurse": 8,
-   "fruehkaeufer": 11,
-   "spaete_kaeufer": 11,
-   "jupiter": 11,
-   "stufe2": 11,
-   "gesamt": 12
+   "fruehkaeufer": 8,
+   "spaete_kaeufer": 8,
+   "jupiter": 8,
+   "stufe2": 8,
+   "gesamt": 9
   },
   "warteschlange": 16
  },
