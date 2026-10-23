@@ -1,5 +1,5 @@
 {
- "cash": 66.10331435325395,
+ "cash": 253.19439335325393,
  "positions": {
   "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2": {
    "sym": "TROLL",
@@ -8,18 +8,8 @@
    "opened": "2026-10-22T00:35:23Z",
    "peak": 0.03381,
    "entry": 0.03346870689104177,
-   "mark": 0.03282,
-   "cur_price": 0.03282
-  },
-  "DvjbEsdca43oQcw2h3HW1CT7N3x5vRcr3QrvTUHnXvgV": {
-   "sym": "DOOD",
-   "qty": 108022.569072209,
-   "cost": 211.113701030396,
-   "opened": "2026-10-23T06:11:41Z",
-   "peak": 0.002032,
-   "entry": 0.0019543480852531334,
-   "mark": 0.00176,
-   "cur_price": 0.00176
+   "mark": 0.03228,
+   "cur_price": 0.03228
   }
  },
  "trades": [
@@ -1237,13 +1227,24 @@
    "slip": 0.0051,
    "quote": "jup",
    "reason": "dip 24h -16% (SOL -0%) 1h +0.9%"
+  },
+  {
+   "t": "2026-10-23T17:01:41Z",
+   "side": "sell",
+   "sym": "DOOD",
+   "addr": "DvjbEsdca43oQcw2h3HW1CT7N3x5vRcr3QrvTUHnXvgV",
+   "price": 0.001733,
+   "usd": 187.09,
+   "pnl": -24.02,
+   "peak_x": 1.04,
+   "held_h": 10.8,
+   "frac": 1.0,
+   "slip": 0.0046,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-06T08:07:28Z",
-   "v": 688.77
-  },
   {
    "t": "2026-10-06T08:12:32Z",
    "v": 688.77
@@ -21239,23 +21240,27 @@
   {
    "t": "2026-10-23T16:56:42Z",
    "v": 452.84
+  },
+  {
+   "t": "2026-10-23T17:01:41Z",
+   "v": 446.57
   }
  ],
  "started": "2026-09-16T16:55:59Z",
  "strategy": "largecap_dip",
  "universe_n": 69,
  "coverage": {
-  "t": "2026-10-23T16:56:42Z",
+  "t": "2026-10-23T17:01:41Z",
   "kurse": 69,
   "von": 69,
   "sol": true
  },
  "verkauft_am": {
-  "8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn": 1792166501.3722034,
   "CzLSujWBLFsSjncfkh59rUFqvafWcY5tzedWJSuypump": 1792329099.1136868,
   "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump": 1792423894.1614447,
   "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP": 1792543008.34904,
   "METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m": 1792599401.7537594,
-  "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG": 1792727496.7750733
+  "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG": 1792727496.7750733,
+  "DvjbEsdca43oQcw2h3HW1CT7N3x5vRcr3QrvTUHnXvgV": 1792774901.2736723
  }
 }
