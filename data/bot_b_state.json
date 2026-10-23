@@ -9,8 +9,8 @@
    "peak": 0.01639,
    "entry": 0.016368114616430698,
    "pair": "4EbdAfaShVDNeHm6GbXZX3xsKccRHdTbR5962Bvya8xt",
-   "cur_price": 0.01489,
-   "mark": 0.01489
+   "cur_price": 0.0149,
+   "mark": 0.0149
   },
   "DvjbEsdca43oQcw2h3HW1CT7N3x5vRcr3QrvTUHnXvgV": {
    "sym": "DOOD",
@@ -20,8 +20,8 @@
    "peak": 0.00228,
    "entry": 0.0022853751167745276,
    "pair": "5KXE8RMF7iW9Ptn665AHfzsMFjYb4LV2Ta8eZEtsTwWC",
-   "cur_price": 0.001949,
-   "mark": 0.001949
+   "cur_price": 0.001959,
+   "mark": 0.001959
   }
  },
  "trades": [
@@ -17016,17 +17016,21 @@
   {
    "t": "2026-10-23T02:36:14Z",
    "v": 411.16
+  },
+  {
+   "t": "2026-10-23T02:41:15Z",
+   "v": 411.81
   }
  ],
  "started": "2026-10-08T16:06:06Z",
  "version": "b4",
  "strategy": "tiefer_dip",
  "coverage": {
-  "t": "2026-10-23T02:36:14Z",
+  "t": "2026-10-23T02:41:15Z",
   "kurse": 193,
   "von": 210,
   "sol": true,
-  "sol24": -0.8,
+  "sol24": -1.0,
   "kandidaten": 0,
   "gestoppt": false
  },
