@@ -1,5 +1,5 @@
 {
- "cash": 161.35914978784425,
+ "cash": 270.32371678784426,
  "positions": {
   "9LzCMqDgTKYz9Drzqnpgee3SGa89up3a247ypMj2xrqM": {
    "sym": "AUDIO",
@@ -11,17 +11,6 @@
    "pair": "4EbdAfaShVDNeHm6GbXZX3xsKccRHdTbR5962Bvya8xt",
    "cur_price": 0.01483,
    "mark": 0.01483
-  },
-  "DvjbEsdca43oQcw2h3HW1CT7N3x5vRcr3QrvTUHnXvgV": {
-   "sym": "DOOD",
-   "qty": 56281.15892306,
-   "cost": 128.623560145994,
-   "opened": "2026-10-22T11:51:30Z",
-   "peak": 0.00228,
-   "entry": 0.0022853751167745276,
-   "pair": "5KXE8RMF7iW9Ptn665AHfzsMFjYb4LV2Ta8eZEtsTwWC",
-   "cur_price": 0.001943,
-   "mark": 0.001943
   }
  },
  "trades": [
@@ -390,6 +379,21 @@
    "slip": 0.0019,
    "quote": "jup",
    "reason": "trail"
+  },
+  {
+   "t": "2026-10-23T04:11:09Z",
+   "side": "sell",
+   "sym": "DOOD",
+   "addr": "DvjbEsdca43oQcw2h3HW1CT7N3x5vRcr3QrvTUHnXvgV",
+   "price": 0.001939,
+   "usd": 108.96,
+   "pnl": -19.66,
+   "peak_x": 0.998,
+   "held_h": 16.3,
+   "frac": 1.0,
+   "slip": 0.005,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -17088,17 +17092,21 @@
   {
    "t": "2026-10-23T04:06:09Z",
    "v": 410.25
+  },
+  {
+   "t": "2026-10-23T04:11:09Z",
+   "v": 409.86
   }
  ],
  "started": "2026-10-08T16:06:06Z",
  "version": "b4",
  "strategy": "tiefer_dip",
  "coverage": {
-  "t": "2026-10-23T04:06:09Z",
+  "t": "2026-10-23T04:11:09Z",
   "kurse": 192,
   "von": 210,
   "sol": true,
-  "sol24": -1.4,
+  "sol24": -1.3,
   "kandidaten": 0,
   "gestoppt": false
  },
@@ -17107,6 +17115,7 @@
   "6Mix12LiHrQFojaQEnfPUC65Qkwd6X4Y5Qg93oFbordr": 1792192286.1371248,
   "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82": 1792242979.520777,
   "METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m": 1792603276.0075297,
-  "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": 1792700173.7153804
+  "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": 1792700173.7153804,
+  "DvjbEsdca43oQcw2h3HW1CT7N3x5vRcr3QrvTUHnXvgV": 1792728669.7463253
  }
 }
