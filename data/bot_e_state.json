@@ -1,5 +1,5 @@
 {
- "cash": 277.21701538364994,
+ "cash": 66.10331435325395,
  "positions": {
   "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2": {
    "sym": "TROLL",
@@ -8,8 +8,18 @@
    "opened": "2026-10-22T00:35:23Z",
    "peak": 0.03381,
    "entry": 0.03346870689104177,
-   "mark": 0.03203,
-   "cur_price": 0.03203
+   "mark": 0.03186,
+   "cur_price": 0.03186
+  },
+  "DvjbEsdca43oQcw2h3HW1CT7N3x5vRcr3QrvTUHnXvgV": {
+   "sym": "DOOD",
+   "qty": 108022.569072209,
+   "cost": 211.113701030396,
+   "opened": "2026-10-23T06:11:41Z",
+   "peak": 0.001949,
+   "entry": 0.0019543480852531334,
+   "no_quote_since": "2026-10-23T06:11:41Z",
+   "mark": 0.0
   }
  },
  "trades": [
@@ -1215,13 +1225,21 @@
    "slip": 0.0009,
    "quote": "jup",
    "reason": "trail"
+  },
+  {
+   "t": "2026-10-23T06:11:41Z",
+   "side": "buy",
+   "sym": "DOOD",
+   "addr": "DvjbEsdca43oQcw2h3HW1CT7N3x5vRcr3QrvTUHnXvgV",
+   "price": 0.001949,
+   "fill": 0.001954348085,
+   "usd": 211.11,
+   "slip": 0.0051,
+   "quote": "jup",
+   "reason": "dip 24h -16% (SOL -0%) 1h +0.9%"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-05T21:19:11Z",
-   "v": 686.67
-  },
   {
    "t": "2026-10-05T21:24:22Z",
    "v": 687.55
@@ -21217,13 +21235,17 @@
   {
    "t": "2026-10-23T06:06:38Z",
    "v": 469.1
+  },
+  {
+   "t": "2026-10-23T06:11:41Z",
+   "v": 256.97
   }
  ],
  "started": "2026-09-16T16:55:59Z",
  "strategy": "largecap_dip",
  "universe_n": 76,
  "coverage": {
-  "t": "2026-10-23T06:06:38Z",
+  "t": "2026-10-23T06:11:41Z",
   "kurse": 76,
   "von": 76,
   "sol": true
