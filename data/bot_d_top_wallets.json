@@ -1,13 +1,13 @@
 {
- "t": "2026-10-23T12:16:32Z",
+ "t": "2026-10-23T12:21:36Z",
  "version": "d5",
  "coins_mit_daten": 617,
- "coins_ausgewertet": 493,
- "coins_gewinner": 156,
+ "coins_ausgewertet": 497,
+ "coins_gewinner": 157,
  "basisquote": 0.316,
  "wallets_gesamt": 26317,
  "bots": 30,
- "kandidaten": 816,
+ "kandidaten": 819,
  "top": [
   {
    "name": "Wallet A",
@@ -38,14 +38,14 @@
   }
  ],
  "stufe2": {
-  "geprueft": 826,
+  "geprueft": 829,
   "bot": 741,
   "inaktiv": 60,
   "durchgefallen": 2,
   "zu_schnell": 4,
   "zu_wenig": 3,
   "bestanden": 1,
-  "fehler": 6,
+  "fehler": 9,
   "vorab_ok": 9
  },
  "copy_liste": [
@@ -68,7 +68,7 @@
  "kosten": {
   "wert": 0.0317,
   "art": "jupiter",
-  "messungen": 224
+  "messungen": 225
  },
  "hinweis": "Stufe 1 ist Beobachtung. Erst Stufe 2 (Kopierer-Simulation, Zeitsplit) entscheidet."
 }
