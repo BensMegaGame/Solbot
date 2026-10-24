@@ -5526,10 +5526,10 @@
   "grund": "nur 0 Trades in 14 Tagen"
  },
  "8aXuJ2X76cDF2wfWWfyzGnscbomZt3w15b2vqaPGpCE": {
-  "t": 1792801019.0844731,
-  "status": "vorab_ok",
+  "t": 1792801315.1061497,
+  "status": "fehler",
   "grund": "Laufzeit - naechster Lauf versucht es erneut",
-  "fehlversuche": 2
+  "fehlversuche": 3
  },
  "58iGXzE8E2U1r7oqWqbbQxEtkhBQ9dhTuZH7jgM8zqtF": {
   "t": 1792773397.0495014,
@@ -5691,5 +5691,34 @@
   "tx_tag": 247.0,
   "status": "bot",
   "grund": "247.0 Transaktionen je Tag (Schnelltest)"
+ },
+ "6x1zrSuwYgGkCj8WHih4KA7Ntr9fr8aDk4r7zuEfNrzR": {
+  "t": 1792801315.1063128,
+  "tx_tag": 425.2,
+  "status": "bot",
+  "grund": "425.2 Transaktionen je Tag (Schnelltest)"
+ },
+ "DuFo6EA5w6vqUHRk5XE2snDGf4aFrHXsgJi8jeWXmiXG": {
+  "t": 1792801315.3657112,
+  "tx_tag": 257.1,
+  "status": "bot",
+  "grund": "257.1 Transaktionen je Tag (Schnelltest)"
+ },
+ "pwZpq97vcUqG5r79PMYJ2rPdJeVfuqdTaxmNvj5KYMR": {
+  "t": 1792801315.6139219,
+  "tx_tag": 316.8,
+  "status": "bot",
+  "grund": "316.8 Transaktionen je Tag (Schnelltest)"
+ },
+ "FAqXTzBxJqorXQP6sN1YQ7cVjTmc8mRpPqoxeFkiNBnt": {
+  "t": 1792801315.866508,
+  "tx_tag": 259.5,
+  "status": "bot",
+  "grund": "259.5 Transaktionen je Tag (Schnelltest)"
+ },
+ "C377AnxQ4S41gkwZVqofGQgBQYqtYHeB8oggWffbmaUV": {
+  "t": 1792801316.1232455,
+  "status": "inaktiv",
+  "grund": "letzte Transaktion aelter als 3 Tage"
  }
 }
