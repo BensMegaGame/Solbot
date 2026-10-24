@@ -1,16 +1,17 @@
 {
- "cash": 281.0827515460437,
+ "cash": 352.2456645460437,
  "positions": {
   "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": {
    "sym": "baton",
-   "qty": 24718.35978,
-   "cost": 120.49260780544729,
+   "qty": 12359.17989,
+   "cost": 60.246303902723646,
    "opened": "2026-10-24T09:16:23Z",
-   "peak": 0.005822,
+   "peak": 0.005911,
    "entry": 0.004874619872753033,
    "pair": "Cb7ZRgPLhji3Th7htXyKEqbXvNjPpeTvckXuWakBUhXu",
-   "cur_price": 0.005577,
-   "mark": 0.005577
+   "cur_price": 0.005911,
+   "mark": 0.005911,
+   "tp1": true
   }
  },
  "trades": [
@@ -448,6 +449,21 @@
    "slip": 0.0,
    "quote": "jup",
    "reason": "tiefer dip 24h -30% (SOL -3%) 1h -0.0%"
+  },
+  {
+   "t": "2026-10-24T19:41:15Z",
+   "side": "sell",
+   "sym": "baton",
+   "addr": "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump",
+   "price": 0.005911,
+   "usd": 71.16,
+   "pnl": 10.92,
+   "peak_x": 1.213,
+   "held_h": 10.4,
+   "frac": 0.5,
+   "slip": 0.0125,
+   "quote": "jup",
+   "reason": "tp1"
   }
  ],
  "equity": [
@@ -19042,13 +19058,17 @@
   {
    "t": "2026-10-24T19:36:14Z",
    "v": 418.94
+  },
+  {
+   "t": "2026-10-24T19:41:15Z",
+   "v": 425.3
   }
  ],
  "started": "2026-10-08T16:06:06Z",
  "version": "b4",
  "strategy": "tiefer_dip",
  "coverage": {
-  "t": "2026-10-24T19:36:14Z",
+  "t": "2026-10-24T19:41:15Z",
   "kurse": 187,
   "von": 204,
   "sol": true,
