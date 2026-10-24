@@ -4606,19 +4606,7 @@
   "liegen_gelassen": 6,
   "eigen_schnitt": 0.2836,
   "halte_min": 281.2,
-  "status": "sim",
-  "offen_sim": [
-   {
-    "mint": "MMKxLHYBw4xuKHgf6AKUWHsvC6xCFFUmrmYz8Ympump",
-    "t_kauf": 1792705717,
-    "t_verkauf": null
-   },
-   {
-    "mint": "HqbShgzgsrXuUtZd4ALfzjMHA1D4uBSQT8itLzRzpump",
-    "t_kauf": 1792791605,
-    "t_verkauf": 1792792812
-   }
-  ],
+  "status": "durchgefallen",
   "sim": [
    [
     1792446609,
@@ -4727,9 +4715,27 @@
    [
     1792703723,
     -0.5317
+   ],
+   [
+    1792705717,
+    -0.5317
+   ],
+   [
+    1792791605,
+    3.7015
    ]
   ],
-  "ohne_kurs": 1
+  "ohne_kurs": 1,
+  "n": 29,
+  "schnitt": -0.0595,
+  "ohne_top2": -0.281,
+  "haelfte1": -0.297,
+  "haelfte2": 0.1622,
+  "median": -0.5317,
+  "trefferquote": 0.207,
+  "grund": "Kopierer-Ergebnis nicht in allen Punkten positiv",
+  "kosten": 0.0317,
+  "kosten_art": "jupiter"
  },
  "4XBqViD1XYF1qHrErrsXBzDrCapvP9fEFX4LPjXZi9YU": {
   "t": 1792715801.8144083,
