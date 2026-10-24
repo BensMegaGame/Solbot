@@ -1,15 +1,16 @@
 {
- "cash": 27.403461941112276,
+ "cash": 22.448725941112265,
  "positions": {
   "8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump": {
    "sym": "GLITCH",
-   "qty": 29642.826393,
-   "cost": 50.02,
+   "qty": 14821.4131965,
+   "cost": 25.01,
    "opened": "2026-10-18T15:35:36Z",
-   "peak": 0.002896,
+   "peak": 0.003079,
    "entry": 0.001687423437186542,
-   "cur_price": 0.002763,
-   "mark": 0.002763
+   "cur_price": 0.003079,
+   "mark": 0.003079,
+   "tp0": true
   },
   "8TiMkgvsrat9tM2esko8zVTt99LZLpefUM4SnZaziXaQ": {
    "sym": "QI",
@@ -18,8 +19,8 @@
    "opened": "2026-10-18T17:05:55Z",
    "peak": 0.0004254,
    "entry": 0.000328487914095073,
-   "cur_price": 0.0002076,
-   "mark": 0.0002076
+   "cur_price": 0.0002042,
+   "mark": 0.0002042
   },
   "t9bnCGiZVUYsRKvx4d5dPcoDCSyuBM9C33ZNGNULARP": {
    "sym": "LARPCHECK",
@@ -28,8 +29,18 @@
    "opened": "2026-10-21T19:10:29Z",
    "peak": 0.0009748,
    "entry": 0.0007645090729483838,
-   "cur_price": 0.0006342,
-   "mark": 0.0006342
+   "cur_price": 0.0006293,
+   "mark": 0.0006293
+  },
+  "Cbkg5w7V7W2J2sUmecnyN825CbvwvXwasfhduVtNpump": {
+   "sym": "PHP",
+   "qty": 404241.086342,
+   "cost": 50.02,
+   "opened": "2026-10-24T14:45:16Z",
+   "peak": 0.0001216,
+   "entry": 0.00012373804071385658,
+   "cur_price": 0.0001216,
+   "mark": 0.0001216
   }
  },
  "trades": [
@@ -3897,13 +3908,36 @@
    "slip": 0.0195,
    "quote": "jup",
    "reason": "screener"
+  },
+  {
+   "t": "2026-10-24T14:45:02Z",
+   "side": "sell",
+   "sym": "GLITCH",
+   "addr": "8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump",
+   "price": 0.003079,
+   "usd": 45.07,
+   "pnl": 20.06,
+   "peak_x": 1.825,
+   "held_h": 143.2,
+   "frac": 0.5,
+   "slip": 0.0086,
+   "quote": "jup",
+   "reason": "tp0"
+  },
+  {
+   "t": "2026-10-24T14:45:16Z",
+   "side": "buy",
+   "sym": "PHP",
+   "addr": "Cbkg5w7V7W2J2sUmecnyN825CbvwvXwasfhduVtNpump",
+   "price": 0.0001216,
+   "fill": 0.000123738041,
+   "usd": 50.02,
+   "slip": 0.0245,
+   "quote": "jup",
+   "reason": "screener"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-07T05:51:20Z",
-   "v": 301.9
-  },
   {
    "t": "2026-10-07T05:56:18Z",
    "v": 303.52
@@ -23899,6 +23933,10 @@
   {
    "t": "2026-10-24T14:41:03Z",
    "v": 182.41
+  },
+  {
+   "t": "2026-10-24T14:46:05Z",
+   "v": 189.51
   }
  ],
  "started": "2026-09-10T17:17:16Z",
