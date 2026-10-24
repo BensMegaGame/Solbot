@@ -1,18 +1,6 @@
 {
- "cash": 286.240733351491,
- "positions": {
-  "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": {
-   "sym": "Dacity",
-   "qty": 12167.000992,
-   "cost": 122.70317143635326,
-   "opened": "2026-10-24T02:21:28Z",
-   "peak": 0.01018,
-   "entry": 0.010084915051542494,
-   "pair": "G2UuRbmVDzDFP4qyoBJrSKBXSi7d6V4bPP9tHPs36y4b",
-   "cur_price": 0.009481,
-   "mark": 0.009481
-  }
- },
+ "cash": 401.575359351491,
+ "positions": {},
  "trades": [
   {
    "t": "2026-10-09T07:16:29Z",
@@ -421,6 +409,21 @@
    "slip": 0.0063,
    "quote": "jup",
    "reason": "tiefer dip 24h -32% (SOL -2%) 1h -0.5%"
+  },
+  {
+   "t": "2026-10-24T06:51:22Z",
+   "side": "sell",
+   "sym": "Dacity",
+   "addr": "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump",
+   "price": 0.008184,
+   "usd": 115.33,
+   "pnl": -7.37,
+   "peak_x": 1.009,
+   "held_h": 4.5,
+   "frac": 1.0,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -18399,26 +18402,29 @@
   {
    "t": "2026-10-24T06:46:22Z",
    "v": 401.6
+  },
+  {
+   "t": "2026-10-24T06:51:22Z",
+   "v": 401.58
   }
  ],
  "started": "2026-10-08T16:06:06Z",
  "version": "b4",
  "strategy": "tiefer_dip",
  "coverage": {
-  "t": "2026-10-24T06:46:22Z",
+  "t": "2026-10-24T06:51:22Z",
   "kurse": 186,
   "von": 206,
   "sol": true,
-  "sol24": -2.3,
+  "sol24": -2.5,
   "kandidaten": 0,
   "gestoppt": false
  },
  "verkauft_am": {
   "8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn": 1792269674.4822476,
-  "6Mix12LiHrQFojaQEnfPUC65Qkwd6X4Y5Qg93oFbordr": 1792192286.1371248,
   "ukHH6c7mMyiWCf1b9pnWe25TSpkDDt3H5pQZgZ74J82": 1792242979.520777,
   "METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m": 1792603276.0075297,
-  "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": 1792700173.7153804,
+  "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": 1792824682.8126714,
   "DvjbEsdca43oQcw2h3HW1CT7N3x5vRcr3QrvTUHnXvgV": 1792728669.7463253,
   "9LzCMqDgTKYz9Drzqnpgee3SGa89up3a247ypMj2xrqM": 1792783278.2891831
  }
