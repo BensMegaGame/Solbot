@@ -4609,36 +4609,6 @@
   "status": "sim",
   "offen_sim": [
    {
-    "mint": "56ZvMBiCBZQBhwTBdGwrp53mMnofRWqUKkPoLHDLpump",
-    "t_kauf": 1792533637,
-    "t_verkauf": 1792796310
-   },
-   {
-    "mint": "6oey1dmeV6KsV7fp5FMWeTjfLPXqAJzFU6j7HEvFpump",
-    "t_kauf": 1792541195,
-    "t_verkauf": 1792773956
-   },
-   {
-    "mint": "Yg4obiq3rMgmLxL68qbvH3xi8wk4HjRwsLfW8Ckpump",
-    "t_kauf": 1792564348,
-    "t_verkauf": 1792780131
-   },
-   {
-    "mint": "AaTX31T9UWEFwjTZCaZU5xrxRXbccSPmvvp6yTeYpump",
-    "t_kauf": 1792566540,
-    "t_verkauf": 1792780163
-   },
-   {
-    "mint": "6g1wdY4jUpfFn25Yc17a4dsKEGxAxMTUztsT2vN5pump",
-    "t_kauf": 1792582190,
-    "t_verkauf": null
-   },
-   {
-    "mint": "GDv4YUaTKzBNWkzPRLJJcF3PkZ3pfX868SSoQ7ZQpump",
-    "t_kauf": 1792588035,
-    "t_verkauf": null
-   },
-   {
     "mint": "412ECWXN3jGbd1kn8ck7eeupWttkmrFkNm9JqfAzpump",
     "t_kauf": 1792589870,
     "t_verkauf": 1792592978
@@ -4749,6 +4719,30 @@
    [
     1792533495,
     0.2857
+   ],
+   [
+    1792533637,
+    0.5327
+   ],
+   [
+    1792541195,
+    -0.2077
+   ],
+   [
+    1792564348,
+    -0.5317
+   ],
+   [
+    1792566540,
+    -0.5317
+   ],
+   [
+    1792582190,
+    -0.5317
+   ],
+   [
+    1792588035,
+    2.1609
    ]
   ],
   "ohne_kurs": 0
@@ -5953,5 +5947,100 @@
   "tx_tag": 1000.0,
   "status": "bot",
   "grund": "1000.0 Transaktionen je Tag (Schnelltest)"
+ },
+ "HAWK3BVnwptKRFYfVoVGhBc2TYxpyG9jmAbkHeW9tyKE": {
+  "t": 1792802507.6733675,
+  "tx_tag": 1000.0,
+  "status": "bot",
+  "grund": "1000.0 Transaktionen je Tag (Schnelltest)"
+ },
+ "ECzLjhAW2LNoLWi1a1YDxePUDimx9R8FLxXtP66vSxMq": {
+  "t": 1792802507.884636,
+  "tx_tag": 820.7,
+  "status": "bot",
+  "grund": "820.7 Transaktionen je Tag (Schnelltest)"
+ },
+ "9eZnCmcHSx4MN6o4eRjuhvQ542kJYnYyXniY7yVSvQZ1": {
+  "t": 1792802508.137013,
+  "tx_tag": 209.4,
+  "status": "bot",
+  "grund": "209.4 Transaktionen je Tag (Schnelltest)"
+ },
+ "7zv1rg2hAJLbqKqwEkE6gTGyXgcfUSHeqVxfskgsQQ82": {
+  "t": 1792802511.3601553,
+  "tx_tag": 20.8,
+  "letzte": 1792796311,
+  "trades": 135,
+  "geschlossen": 129,
+  "liegen_gelassen": 4,
+  "eigen_schnitt": -0.174,
+  "halte_min": 2.7,
+  "status": "zu_schnell",
+  "grund": "verkauft typisch nach 2.7 min"
+ },
+ "CQwT1byuHgjKnL6vzmuNaAywKfDBVxDmFVgsQDBWxcWt": {
+  "t": 1792802508.6718435,
+  "tx_tag": 1000.0,
+  "status": "bot",
+  "grund": "1000.0 Transaktionen je Tag (Schnelltest)"
+ },
+ "7bTsRggGmDjDUnT8j2WRjm8oLPCfH4BhLjfES1quRfG3": {
+  "t": 1792802508.9393272,
+  "tx_tag": 545.0,
+  "status": "bot",
+  "grund": "545.0 Transaktionen je Tag (Schnelltest)"
+ },
+ "76PRcBViAkTfdqXoDCTErVN9tfohEeJySjLBz7HmJGXL": {
+  "t": 1792802509.1998296,
+  "tx_tag": 63.5,
+  "status": "bot",
+  "grund": "63.5 Transaktionen je Tag (Schnelltest)"
+ },
+ "HqREYkXU3w1TKy5iK4sCxzvQhQ265kZBtQ1Xwzh94Uwa": {
+  "t": 1792802509.461504,
+  "tx_tag": 120.2,
+  "status": "bot",
+  "grund": "120.2 Transaktionen je Tag (Schnelltest)"
+ },
+ "Finr5rgQ4B4oZxAfjpA61Cpw77ZJG73FHv9X8mqdZiL6": {
+  "t": 1792802509.7369838,
+  "tx_tag": 41.4,
+  "status": "vorab_ok"
+ },
+ "BVabVxQnsHCEWiapqMUFdatKmPQ6C2buvQ5xbbcBbokP": {
+  "t": 1792802509.9590774,
+  "tx_tag": 1000.0,
+  "status": "bot",
+  "grund": "1000.0 Transaktionen je Tag (Schnelltest)"
+ },
+ "GbWMpY5DMw3fzL9TPgHDKU436q6nRqMYghnwCb5xujZU": {
+  "t": 1792802510.1648893,
+  "tx_tag": 86.9,
+  "status": "bot",
+  "grund": "86.9 Transaktionen je Tag (Schnelltest)"
+ },
+ "7JzH5xv82HKEK2kwitBiVi9CvGhu5dB8kui6tsbp962S": {
+  "t": 1792802510.4270496,
+  "tx_tag": 1000.0,
+  "status": "bot",
+  "grund": "1000.0 Transaktionen je Tag (Schnelltest)"
+ },
+ "HjUaQ8vFoHuHrvScy4ZeTjsbdxJbZS1BRJkGk3uZdFvN": {
+  "t": 1792802510.633411,
+  "tx_tag": 467.8,
+  "status": "bot",
+  "grund": "467.8 Transaktionen je Tag (Schnelltest)"
+ },
+ "9RaD53aMMjuaiMcEbZxWCCjPv6FMje936VZBjw2hoY34": {
+  "t": 1792802510.8853445,
+  "tx_tag": 221.2,
+  "status": "bot",
+  "grund": "221.2 Transaktionen je Tag (Schnelltest)"
+ },
+ "7HPNt48xjVK1SSJKa42oN5oCrPiMZipJZE87ob8kCNoX": {
+  "t": 1792802511.0975554,
+  "tx_tag": 557.2,
+  "status": "bot",
+  "grund": "557.2 Transaktionen je Tag (Schnelltest)"
  }
 }
