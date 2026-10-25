@@ -64,6 +64,8 @@ ZEIT_VORAB_S, ZEIT_NEUE_WALLET_S, ZEIT_ENDE_S = 140, 150, 195  # Laufzeitschutz 
 VORAB_PRO_LAUF = 15                    # v5.1: Schnelltests je Lauf (1 Credit, ~1 s je Wallet)
 SPAET_BIS_S = 60                       # v5.1: Nachholen spaeter Kaeufer nur bis 60 s Laufzeit (Rest fuer Stufe 2)
 COPY_MAX = 3
+COPY_NEU_PRUEFEN_H = 24                # v5.2: Wallets der Copy-Liste taeglich neu pruefen (~300 Credits je Wallet)
+COPY_FELDER = ("n", "schnitt", "ohne_top2", "haelfte1", "haelfte2", "trefferquote", "halte_min", "tx_tag", "kosten", "kosten_art")
 FALLBACK_SEITEN = 25                   # Ausweichweg: hoechstens 25 x 1000 Signaturen zurueckblaettern
 
 # ---- Universum: ganz kleine Caps ----
@@ -506,6 +508,24 @@ def stufe2(kand, checks, meta, t_start, codex_n):
     def credits_buchen(n):
         meta["helius_wallet_heute"] += n; meta["credits_heute"] = meta.get("credits_heute", 0) + n
 
+    # 0) v5.2: Wallets der Copy-Liste TAEGLICH neu pruefen (statt alle 7 Tage), damit die Zahlen aktuell bleiben.
+    #    Bis die neue Simulation fertig ist, bleibt die Wallet mit ihren alten Zahlen auf der Liste ("vorher").
+    for x in [y["wallet"] for y in load("bot_d_copy_liste.json", {"wallets": []}).get("wallets", [])]:
+        r = checks.get(x) or {}
+        if (not HELIUS or r.get("status") != "bestanden" or now - r.get("t", 0) < COPY_NEU_PRUEFEN_H * 3600
+                or now - r.get("recheck_versuch", 0) < 3600 or meta["helius_wallet_heute"] + 350 > HELIUS_WALLET_MAX_TAG
+                or zeit() > ZEIT_NEUE_WALLET_S): continue
+        credits = {"n": 0}
+        try:
+            rec = wp.historie_pruefen(HELIUS, x, credits, deadline=t_start + ZEIT_ENDE_S)
+            rec["vorher"] = {k: r.get(k) for k in COPY_FELDER + ("t", "status")}
+            checks[x] = rec
+            log.append(f"Copy-Liste {x[:4]}.. neu geprueft: {rec['status']} {rec.get('grund', '')} (~{credits['n']} Credits)")
+        except Exception as ex:
+            r["recheck_versuch"] = now; r["recheck_fehler"] = str(ex)[:100]
+        credits_buchen(credits["n"])
+        break                                           # hoechstens eine je Lauf
+
     # a) Schnelltest (1 Credit je Wallet): Bot? inaktiv?
     vorab_n = 0
     if HELIUS:
@@ -535,15 +555,15 @@ def stufe2(kand, checks, meta, t_start, codex_n):
 
     # c) offene Kopierer-Simulationen weiterfuehren
     abfragen = 0
-    for w, rec in checks.items():
+    for w, rec in sorted(checks.items(), key=lambda kv: not kv[1].get("vorher")):    # Copy-Liste zuerst
         if rec.get("status") != "sim": continue
         while rec.get("offen_sim") and abfragen < KERZEN_PRO_LAUF and zeit() < ZEIT_ENDE_S:
-            tr = rec["offen_sim"].pop(0); k = []; r = None
+            tr = rec["offen_sim"].pop(0); k = []; r = None; quelle = "gt"
             bis = tr["t_kauf"] + wp.DELAY_S + wp.SIM_MAX_H * 3600 + 120
             try:
                 pool = wp.gt_pool(tr["mint"], tr["t_kauf"]); abfragen += 1; time.sleep(2.1)
                 if pool: k = wp.gt_kerzen(pool, tr["t_kauf"], bis); abfragen += 1; time.sleep(2.1)
-                r = wp.kopie_simulieren(tr, k, kosten) if k else None
+                r = wp.kopie_detail(tr, k, kosten) if k else None
                 # Test 18.10.: GeckoTerminal kennt die pump.fun-Kurve (Startpool) meist nicht. Kaufte die Wallet noch
                 # auf der Kurve, fehlt dort der Kurs -> Codex-Kerzen des Startpools (Test: liefert ab Minute 0).
                 if r is None:
@@ -553,13 +573,16 @@ def stufe2(kand, checks, meta, t_start, codex_n):
                         if sp:
                             codex_budget(meta, codex_n); codex_n["n"] += 1
                             k = wp.codex_kerzen(_codex, sp, tr["t_kauf"] - 120, bis)
-                            r = wp.kopie_simulieren(tr, k, kosten) if k else None
+                            r = wp.kopie_detail(tr, k, kosten) if k else None; quelle = "codex"
                             if r is not None: rec["via_codex"] = rec.get("via_codex", 0) + 1
                     except BudgetLeer: pass
             except Exception as ex:
                 rec["kerzen_fehler"] = str(ex)[:80]
             if r is None: rec["ohne_kurs"] = rec.get("ohne_kurs", 0) + 1
-            else: rec.setdefault("sim", []).append([tr["t_kauf"], round(r, 4)])
+            else:
+                rec.setdefault("sim", []).append([tr["t_kauf"], r["kopie"]])
+                rec.setdefault("details", []).append({"mint": tr["mint"], "t_kauf": tr["t_kauf"], "t_verkauf": tr.get("t_verkauf"),
+                                                      "sol_in": tr.get("sol_in"), "eigen": tr.get("eigen"), "quelle": quelle, **r})
         if not rec.get("offen_sim"):
             ok, kz = wp.bewerten(rec.get("sim", []))
             rec.update(kz); rec["status"] = "bestanden" if ok else "durchgefallen"
@@ -576,16 +599,24 @@ def stufe3(checks, now):
     woche = time.strftime("%G-W%V", time.gmtime(now))
     ok = sorted(((r.get("ohne_top2", 0), w) for w, r in checks.items()
                  if r.get("status") == "bestanden" and now - r.get("t", 0) < 14 * 86400), reverse=True)
-    felder = ("n", "schnitt", "ohne_top2", "haelfte1", "haelfte2", "trefferquote", "halte_min", "tx_tag", "kosten", "kosten_art")
+    def gilt(w):          # bestanden - oder gerade in der taeglichen Neupruefung und vorher bestanden
+        r = checks.get(w) or {}
+        return r.get("status") == "bestanden" or (r.get("status") == "sim" and (r.get("vorher") or {}).get("status") == "bestanden")
+    def zahlen(w):
+        r = checks[w]; q = r if r.get("status") == "bestanden" else r["vorher"]
+        return {**{k: q.get(k) for k in COPY_FELDER},
+                "stand": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime(q.get("t") or 0)),
+                "in_neupruefung": r.get("status") == "sim"}
     if alt.get("woche") != woche:                       # woechentlich komplett neu
-        liste = [w for _, w in ok[:COPY_MAX]]
+        liste = [x["wallet"] for x in alt.get("wallets", []) if gilt(x["wallet"]) and (checks[x["wallet"]].get("status") == "sim")]
+        liste += [w for _, w in ok if w not in liste][:COPY_MAX - len(liste)]
     else:                                               # unter der Woche nur freie Plaetze auffuellen
-        liste = [x["wallet"] for x in alt.get("wallets", []) if (checks.get(x["wallet"]) or {}).get("status") == "bestanden"]
+        liste = [x["wallet"] for x in alt.get("wallets", []) if gilt(x["wallet"])]
         liste += [w for _, w in ok if w not in liste][:COPY_MAX - len(liste)]
     seit = {x["wallet"]: x.get("seit") for x in alt.get("wallets", [])}
     neu = {"woche": woche, "t": now_iso(),
            "wallets": [{"name": f"Wallet {chr(65 + i)}", "wallet": w, "seit": seit.get(w) or now_iso(),
-                        **{k: checks[w].get(k) for k in felder}} for i, w in enumerate(liste)]}
+                        **zahlen(w)} for i, w in enumerate(liste)]}
     save("bot_d_copy_liste.json", neu)
     return neu
 
