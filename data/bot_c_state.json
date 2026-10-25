@@ -1,5 +1,5 @@
 {
- "cash": 76.13490232299587,
+ "cash": 186.83937532299586,
  "positions": {
   "PRVT6TB7uss3FrUd2D9xs2zqDBsa3GbMJMwCQsgmeta": {
    "sym": "UMBRA",
@@ -21,16 +21,6 @@
    "entry": 0.006779582459248623,
    "cur_price": 0.006869,
    "mark": 0.006869
-  },
-  "ABt79MkRXUsoHuV2CVQT32YMXQhTparKFjmidQxgiQ6E": {
-   "sym": "ORDER",
-   "qty": 2390.3509623913,
-   "cost": 123.44252976488336,
-   "opened": "2026-10-25T09:06:33Z",
-   "peak": 0.05345,
-   "entry": 0.051642010611442524,
-   "cur_price": 0.04684,
-   "mark": 0.04684
   }
  },
  "trades": [
@@ -1326,13 +1316,24 @@
    "slip": 0.0012,
    "quote": "jup",
    "reason": "dip 24h -20% (SOL -1%) 1h +0.4%"
+  },
+  {
+   "t": "2026-10-25T12:46:29Z",
+   "side": "sell",
+   "sym": "ORDER",
+   "addr": "ABt79MkRXUsoHuV2CVQT32YMXQhTparKFjmidQxgiQ6E",
+   "price": 0.04645,
+   "usd": 110.7,
+   "pnl": -12.74,
+   "peak_x": 1.035,
+   "held_h": 3.7,
+   "frac": 1.0,
+   "slip": 0.0063,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-08T03:52:11Z",
-   "v": 514.95
-  },
   {
    "t": "2026-10-08T03:57:15Z",
    "v": 515.79
@@ -21328,6 +21329,10 @@
   {
    "t": "2026-10-25T12:41:28Z",
    "v": 400.2
+  },
+  {
+   "t": "2026-10-25T12:46:29Z",
+   "v": 398.94
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -21335,7 +21340,7 @@
  "strategy": "dip_weites_netz",
  "universe_n": 141,
  "coverage": {
-  "t": "2026-10-25T12:41:28Z",
+  "t": "2026-10-25T12:46:29Z",
   "kurse": 121,
   "von": 142,
   "ohne_pool": 90,
@@ -21348,6 +21353,7 @@
   "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump": 1792694190.0021076,
   "2j5SaS7xy776qCBpyPQbZjyQSAtKiFgrwjfErthnW2ZM": 1792435278.5329323,
   "J8PSdNP3QewKq2Z1JJJFDMaqF7KcaiJhR7gbr5KZpump": 1792500980.0226529,
-  "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": 1792905394.6722174
+  "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": 1792905394.6722174,
+  "ABt79MkRXUsoHuV2CVQT32YMXQhTparKFjmidQxgiQ6E": 1792932389.1477976
  }
 }
