@@ -1,5 +1,5 @@
 {
- "cash": 22.448725941112265,
+ "cash": 46.877596941112266,
  "positions": {
   "8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump": {
    "sym": "GLITCH",
@@ -8,8 +8,8 @@
    "opened": "2026-10-18T15:35:36Z",
    "peak": 0.003079,
    "entry": 0.001687423437186542,
-   "cur_price": 0.0022,
-   "mark": 0.0022,
+   "cur_price": 0.002228,
+   "mark": 0.002228,
    "tp0": true
   },
   "8TiMkgvsrat9tM2esko8zVTt99LZLpefUM4SnZaziXaQ": {
@@ -19,8 +19,8 @@
    "opened": "2026-10-18T17:05:55Z",
    "peak": 0.0004254,
    "entry": 0.000328487914095073,
-   "cur_price": 0.0001951,
-   "mark": 0.0001951
+   "cur_price": 0.0001911,
+   "mark": 0.0001911
   },
   "t9bnCGiZVUYsRKvx4d5dPcoDCSyuBM9C33ZNGNULARP": {
    "sym": "LARPCHECK",
@@ -29,18 +29,8 @@
    "opened": "2026-10-21T19:10:29Z",
    "peak": 0.0009748,
    "entry": 0.0007645090729483838,
-   "cur_price": 0.0006532,
-   "mark": 0.0006532
-  },
-  "Cbkg5w7V7W2J2sUmecnyN825CbvwvXwasfhduVtNpump": {
-   "sym": "PHP",
-   "qty": 404241.086342,
-   "cost": 50.02,
-   "opened": "2026-10-24T14:45:16Z",
-   "peak": 0.000191,
-   "entry": 0.00012373804071385658,
-   "cur_price": 6.273e-05,
-   "mark": 6.273e-05
+   "cur_price": 0.0006651,
+   "mark": 0.0006651
   }
  },
  "trades": [
@@ -3935,13 +3925,24 @@
    "slip": 0.0245,
    "quote": "jup",
    "reason": "screener"
+  },
+  {
+   "t": "2026-10-25T20:20:06Z",
+   "side": "sell",
+   "sym": "PHP",
+   "addr": "Cbkg5w7V7W2J2sUmecnyN825CbvwvXwasfhduVtNpump",
+   "price": 6.112e-05,
+   "usd": 24.43,
+   "pnl": -25.59,
+   "peak_x": 1.544,
+   "held_h": 29.6,
+   "frac": 1.0,
+   "slip": 0.0066,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-08T11:26:07Z",
-   "v": 373.18
-  },
   {
    "t": "2026-10-08T11:31:07Z",
    "v": 375.82
@@ -23937,18 +23938,16 @@
   {
    "t": "2026-10-25T20:16:21Z",
    "v": 152.86
+  },
+  {
+   "t": "2026-10-25T20:21:21Z",
+   "v": 152.52
   }
  ],
  "started": "2026-09-10T17:17:16Z",
  "verkauft_am": {
-  "6hTLdzZaaCjmqtn7RtaEMQsCbXT5Pg8q76tRViEGpump": 1792352702.5970998,
-  "9g4Pib6AM3oVdP9YA7ZcssAXAuhoUzkjR8w27doYpump": 1792221007.2875123,
-  "7jNwX4Me9zGEjmWY7zARDG2LYjVs1WXD6DZ1JvSfpump": 1792007102.5020468,
-  "5GDX5fJTQns4arM1J94wjxdA8KXFsV5qW46MLFpHpump": 1792253403.712272,
-  "Fak3rJEBfR4Vb8DoFpecf6yoxbkkr1gGUH5tdj2rpump": 1792270205.8945198,
-  "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump": 1792331103.6660876,
-  "1EwcGE6WrssiY2sKSadB5E5DE9WhPDQvBC6kev1EDGE": 1792339803.6525826,
   "48hnR1CWtafBumJsJod6Q8yduwDuYyumCJzuBVzvpump": 1792374302.5380707,
-  "BdXfLfcbDE8YvpbvvmmGTduqcDesaQVUm5xLxgUc2S5t": 1792609802.295765
+  "BdXfLfcbDE8YvpbvvmmGTduqcDesaQVUm5xLxgUc2S5t": 1792609802.295765,
+  "Cbkg5w7V7W2J2sUmecnyN825CbvwvXwasfhduVtNpump": 1792959606.042863
  }
 }
