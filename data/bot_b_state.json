@@ -1,6 +1,18 @@
 {
- "cash": 424.00668754604374,
- "positions": {},
+ "cash": 296.7846812822306,
+ "positions": {
+  "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG": {
+   "sym": "BIRB",
+   "qty": 1415.703404,
+   "cost": 127.22200626381311,
+   "opened": "2026-10-25T00:21:29Z",
+   "peak": 0.09072,
+   "entry": 0.08986487275820176,
+   "pair": "GUWFT7bbLphGrcpAPnnEnBbe1uErv9e6LLC2qPx2wZy1",
+   "cur_price": 0.09072,
+   "mark": 0.09072
+  }
+ },
  "trades": [
   {
    "t": "2026-10-09T07:16:29Z",
@@ -466,6 +478,18 @@
    "slip": 0.0027,
    "quote": "jup",
    "reason": "trail"
+  },
+  {
+   "t": "2026-10-25T00:21:29Z",
+   "side": "buy",
+   "sym": "BIRB",
+   "addr": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG",
+   "price": 0.09072,
+   "fill": 0.089864872758,
+   "usd": 127.22,
+   "slip": 0.0004,
+   "quote": "jup",
+   "reason": "tiefer dip 24h -30% (SOL +0%) 1h +5.1%"
   }
  ],
  "equity": [
@@ -19284,18 +19308,22 @@
   {
    "t": "2026-10-25T00:16:27Z",
    "v": 424.01
+  },
+  {
+   "t": "2026-10-25T00:21:30Z",
+   "v": 425.22
   }
  ],
  "started": "2026-10-08T16:06:06Z",
  "version": "b4",
  "strategy": "tiefer_dip",
  "coverage": {
-  "t": "2026-10-25T00:16:27Z",
+  "t": "2026-10-25T00:21:30Z",
   "kurse": 188,
   "von": 202,
   "sol": true,
-  "sol24": -0.3,
-  "kandidaten": 0,
+  "sol24": 0.1,
+  "kandidaten": 1,
   "gestoppt": false
  },
  "verkauft_am": {
