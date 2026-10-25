@@ -1,5 +1,5 @@
 {
- "cash": 341.44475415364803,
+ "cash": 87.04803908787922,
  "positions": {
   "PRVT6TB7uss3FrUd2D9xs2zqDBsa3GbMJMwCQsgmeta": {
    "sym": "UMBRA",
@@ -8,9 +8,29 @@
    "opened": "2026-10-21T15:01:32Z",
    "peak": 0.5075,
    "entry": 0.37857151855095894,
-   "cur_price": 0.4918,
-   "mark": 0.4918,
+   "cur_price": 0.4868,
+   "mark": 0.4868,
    "tp1": true
+  },
+  "6nR8wBnfsmXfcdDr1hovJKjvFQxNSidN6XFyfAFZpump": {
+   "sym": "CLASH",
+   "qty": 18761.975136,
+   "cost": 127.1983575328844,
+   "opened": "2026-10-25T00:01:51Z",
+   "peak": 0.006721,
+   "entry": 0.006779582459248623,
+   "cur_price": 0.006721,
+   "mark": 0.006721
+  },
+  "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": {
+   "sym": "DACITY",
+   "qty": 13672.343731,
+   "cost": 127.1983575328844,
+   "opened": "2026-10-25T00:01:51Z",
+   "peak": 0.00921,
+   "entry": 0.009303332335368448,
+   "cur_price": 0.00921,
+   "mark": 0.00921
   }
  },
  "trades": [
@@ -1255,13 +1275,33 @@
    "slip": 0.0083,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-10-25T00:01:51Z",
+   "side": "buy",
+   "sym": "CLASH",
+   "addr": "6nR8wBnfsmXfcdDr1hovJKjvFQxNSidN6XFyfAFZpump",
+   "price": 0.006721,
+   "fill": 0.006779582459,
+   "usd": 127.2,
+   "slip": 0.0077,
+   "quote": "jup",
+   "reason": "dip 24h -16% (SOL -1%) 1h +0.7%"
+  },
+  {
+   "t": "2026-10-25T00:01:51Z",
+   "side": "buy",
+   "sym": "DACITY",
+   "addr": "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump",
+   "price": 0.00921,
+   "fill": 0.009303332335,
+   "usd": 127.2,
+   "slip": 0.0077,
+   "quote": "jup",
+   "reason": "dip 24h -13% (SOL -1%) 1h -1.4%"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-07T15:07:18Z",
-   "v": 545.36
-  },
   {
    "t": "2026-10-07T15:12:12Z",
    "v": 540.36
@@ -21257,6 +21297,10 @@
   {
    "t": "2026-10-24T23:56:39Z",
    "v": 423.93
+  },
+  {
+   "t": "2026-10-25T00:01:51Z",
+   "v": 420.71
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -21264,7 +21308,7 @@
  "strategy": "dip_weites_netz",
  "universe_n": 144,
  "coverage": {
-  "t": "2026-10-24T23:56:39Z",
+  "t": "2026-10-25T00:01:51Z",
   "kurse": 120,
   "von": 144,
   "ohne_pool": 90,
