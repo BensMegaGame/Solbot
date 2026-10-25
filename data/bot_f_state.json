@@ -20,8 +20,8 @@
    "peak": 0.008123,
    "entry": 0.007505103903028301,
    "pair": "2DVbU5h8JCd37gaXAJUZ4t77HsjJW22LLduTZk7GSa43",
-   "cur_price": 0.007124,
-   "mark": 0.007124
+   "cur_price": 0.007189,
+   "mark": 0.007189
   },
   "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": {
    "sym": "DACITY",
@@ -31,8 +31,8 @@
    "peak": 0.009088,
    "entry": 0.008535817182284994,
    "pair": "G2UuRbmVDzDFP4qyoBJrSKBXSi7d6V4bPP9tHPs36y4b",
-   "cur_price": 0.008632,
-   "mark": 0.008632
+   "cur_price": 0.008546,
+   "mark": 0.008546
   }
  },
  "trades": [
@@ -1073,10 +1073,6 @@
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-08T02:02:26Z",
-   "v": 550.3
-  },
   {
    "t": "2026-10-08T02:07:27Z",
    "v": 550.21
@@ -21072,6 +21068,10 @@
   {
    "t": "2026-10-25T10:51:50Z",
    "v": 366.44
+  },
+  {
+   "t": "2026-10-25T10:56:51Z",
+   "v": 366.38
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -21085,9 +21085,9 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-10-25T10:51:50Z",
+  "t": "2026-10-25T10:56:51Z",
   "virtuell": 8,
-  "neu": 1,
+  "neu": 0,
   "gestoppt": false
  },
  "verkauft_am": {
