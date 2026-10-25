@@ -174,22 +174,32 @@ def codex_kerzen(codex, pool, von, bis):
     t = d.get("t") or []
     return [[t[i], d["o"][i], d["h"][i], d["l"][i], d["c"][i]] for i in range(len(t)) if d["c"][i]]
 
-def kopie_simulieren(tr, kerzen, kosten):
-    """Ergebnis eines Kopierers in Prozent nach Kosten, oder None (keine Kurse)."""
+def kopie_detail(tr, kerzen, kosten):
+    """Wie kopie_simulieren, aber mit allen Einzelheiten (v5.2, zum Nachpruefen):
+    {"kopie", "entry", "exit", "grund", "luecke_rein_s", "luecke_raus_s", "kerzen"} oder None (keine Kurse)."""
     te = tr["t_kauf"] + DELAY_S
     ende = te + SIM_MAX_H * 3600
     raus = min(tr["t_verkauf"] + DELAY_S, ende) if tr.get("t_verkauf") else ende
     k = [r for r in kerzen if r[4]]
     rein = next((r for r in k if r[0] <= te < r[0] + 60), None) or next((r for r in k if r[0] > te), None)
     if not rein or rein[0] > te + 15 * 60: return None          # kein Kurs in der Naehe des Einstiegs
-    entry = float(rein[4]); exit_px = None
+    entry = float(rein[4]); exit_px, t_exit, grund = None, None, None
     for r in k:
         if r[0] <= rein[0]: continue
         if r[0] > raus: break
-        if float(r[3]) <= entry * (1 + SIM_STOP): exit_px = entry * (1 + SIM_STOP); break
-        exit_px = float(r[4])
-    if exit_px is None: exit_px = entry                          # gleiche Minute raus
-    return exit_px / entry - 1 - kosten
+        if float(r[3]) <= entry * (1 + SIM_STOP): exit_px, t_exit, grund = entry * (1 + SIM_STOP), r[0], "stop"; break
+        exit_px, t_exit = float(r[4]), r[0]
+    if exit_px is None: exit_px, t_exit = entry, rein[0]          # gleiche Minute raus
+    if not grund: grund = "nach_verkauf" if tr.get("t_verkauf") and tr["t_verkauf"] + DELAY_S < ende else "max_16h"
+    return {"kopie": round(exit_px / entry - 1 - kosten, 4), "entry": entry, "exit": exit_px, "grund": grund,
+            "luecke_rein_s": int(rein[0] - te),                  # Kerze des Einstiegs: Abstand zum Soll-Zeitpunkt
+            "luecke_raus_s": int(raus - t_exit) if grund != "stop" else 0,   # wie alt war der letzte Kurs beim Ausstieg
+            "kerzen": len(k)}
+
+def kopie_simulieren(tr, kerzen, kosten):
+    """Ergebnis eines Kopierers in Prozent nach Kosten, oder None (keine Kurse)."""
+    d = kopie_detail(tr, kerzen, kosten)
+    return d["kopie"] if d else None
 
 
 # ---------------- Kosten mit Jupiter messen ----------------
@@ -277,6 +287,10 @@ def historie_pruefen(key, wallet, credits, deadline=None):
     if not trades or now - max(t["t_kauf"] for t in trades) > AKTIV_D * 86400:
         rec.update(status="inaktiv", grund="kein Kauf in den letzten 3 Tagen"); return rec
     rec["status"] = "sim"
-    rec["offen_sim"] = [{"mint": t["mint"], "t_kauf": t["t_kauf"], "t_verkauf": t.get("t_verkauf")} for t in sim[-SIM_TRADES:]]
-    rec["sim"] = []; rec["ohne_kurs"] = 0
+    rec["offen_sim"] = [{"mint": t["mint"], "t_kauf": t["t_kauf"], "t_verkauf": t.get("t_verkauf"),
+                         "sol_in": round(t["sol_in"], 4),
+                         # v5.2: Ergebnis der Wallet SELBST fuer diesen Trade (nur wenn ganz verkauft) - zum Vergleich mit der Kopie
+                         "eigen": round(t["sol_out"] / t["sol_in"] - 1, 4) if not t.get("offen") and t["sol_in"] > 0 else None}
+                        for t in sim[-SIM_TRADES:]]
+    rec["sim"] = []; rec["details"] = []; rec["ohne_kurs"] = 0
     return rec
