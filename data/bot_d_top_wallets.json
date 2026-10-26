@@ -1,13 +1,13 @@
 {
- "t": "2026-10-25T23:56:42Z",
+ "t": "2026-10-26T00:04:57Z",
  "version": "d5",
- "coins_mit_daten": 702,
- "coins_ausgewertet": 597,
- "coins_gewinner": 186,
- "basisquote": 0.312,
- "wallets_gesamt": 31681,
+ "coins_mit_daten": 710,
+ "coins_ausgewertet": 598,
+ "coins_gewinner": 187,
+ "basisquote": 0.313,
+ "wallets_gesamt": 31993,
  "bots": 34,
- "kandidaten": 1153,
+ "kandidaten": 1165,
  "top": [
   {
    "name": "Wallet A",
@@ -39,34 +39,16 @@
  ],
  "stufe2": {
   "geprueft": 1135,
-  "bot": 993,
-  "inaktiv": 94,
+  "bot": 991,
+  "inaktiv": 97,
   "durchgefallen": 3,
   "zu_schnell": 8,
   "zu_wenig": 6,
-  "bestanden": 1,
-  "fehler": 10,
-  "vorab_ok": 20
+  "fehler": 11,
+  "vorab_ok": 19
  },
- "copy_liste": [
-  {
-   "name": "Wallet A",
-   "seit": "2026-10-21T18:07:35Z",
-   "n": 28,
-   "schnitt": 0.3065,
-   "ohne_top2": 0.091,
-   "haelfte1": 0.2466,
-   "haelfte2": 0.3664,
-   "trefferquote": 0.357,
-   "halte_min": 6.8,
-   "tx_tag": 15.8,
-   "kosten": 0.03165,
-   "kosten_art": "jupiter",
-   "stand": "2026-10-21T17:46:40Z",
-   "in_neupruefung": false
-  }
- ],
- "copy_woche": "2026-W43",
+ "copy_liste": [],
+ "copy_woche": "2026-W44",
  "kosten": {
   "wert": 0.0318,
   "art": "jupiter",
