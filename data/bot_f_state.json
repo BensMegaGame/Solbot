@@ -20,8 +20,8 @@
    "peak": 0.008123,
    "entry": 0.007505103903028301,
    "pair": "2DVbU5h8JCd37gaXAJUZ4t77HsjJW22LLduTZk7GSa43",
-   "cur_price": 0.006666,
-   "mark": 0.006666
+   "cur_price": 0.006668,
+   "mark": 0.006668
   },
   "ABt79MkRXUsoHuV2CVQT32YMXQhTparKFjmidQxgiQ6E": {
    "sym": "ORDER",
@@ -31,19 +31,19 @@
    "peak": 0.04692,
    "entry": 0.04627270271700369,
    "pair": "BxUigngqxhU8Wapwvck5cavcBbfgE47ETNwLeXnCVwz4",
-   "cur_price": 0.0433,
-   "mark": 0.0433
+   "cur_price": 0.04297,
+   "mark": 0.04297
   },
   "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG": {
    "sym": "BIRB",
    "qty": 978.226093,
    "cost": 69.87113529937783,
    "opened": "2026-10-26T00:25:04Z",
-   "peak": 0.07229,
+   "peak": 0.07249,
    "entry": 0.0714263663578005,
    "pair": "GUWFT7bbLphGrcpAPnnEnBbe1uErv9e6LLC2qPx2wZy1",
-   "cur_price": 0.07116,
-   "mark": 0.07116
+   "cur_price": 0.07249,
+   "mark": 0.07249
   }
  },
  "trades": [
@@ -1123,10 +1123,6 @@
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-08T16:22:40Z",
-   "v": 506.07
-  },
   {
    "t": "2026-10-08T16:27:32Z",
    "v": 506.72
@@ -21122,6 +21118,10 @@
   {
    "t": "2026-10-26T01:11:42Z",
    "v": 346.19
+  },
+  {
+   "t": "2026-10-26T01:16:42Z",
+   "v": 347.01
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -21135,7 +21135,7 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-10-26T01:11:42Z",
+  "t": "2026-10-26T01:16:42Z",
   "virtuell": 7,
   "neu": 0,
   "gestoppt": false
