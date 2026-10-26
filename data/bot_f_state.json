@@ -1,5 +1,5 @@
 {
- "cash": 143.3992123290335,
+ "cash": 73.52807702965568,
  "positions": {
   "CzLSujWBLFsSjncfkh59rUFqvafWcY5tzedWJSuypump": {
    "sym": "GOAT",
@@ -20,8 +20,8 @@
    "peak": 0.008123,
    "entry": 0.007505103903028301,
    "pair": "2DVbU5h8JCd37gaXAJUZ4t77HsjJW22LLduTZk7GSa43",
-   "cur_price": 0.006642,
-   "mark": 0.006642
+   "cur_price": 0.006649,
+   "mark": 0.006649
   },
   "ABt79MkRXUsoHuV2CVQT32YMXQhTparKFjmidQxgiQ6E": {
    "sym": "ORDER",
@@ -31,8 +31,19 @@
    "peak": 0.04692,
    "entry": 0.04627270271700369,
    "pair": "BxUigngqxhU8Wapwvck5cavcBbfgE47ETNwLeXnCVwz4",
-   "cur_price": 0.04487,
-   "mark": 0.04487
+   "cur_price": 0.04462,
+   "mark": 0.04462
+  },
+  "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG": {
+   "sym": "BIRB",
+   "qty": 978.226093,
+   "cost": 69.87113529937783,
+   "opened": "2026-10-26T00:25:04Z",
+   "peak": 0.0713,
+   "entry": 0.0714263663578005,
+   "pair": "GUWFT7bbLphGrcpAPnnEnBbe1uErv9e6LLC2qPx2wZy1",
+   "cur_price": 0.0713,
+   "mark": 0.0713
   }
  },
  "trades": [
@@ -1097,13 +1108,21 @@
    "slip": 0.0,
    "quote": "jup",
    "reason": "nach virtuellem stop (C) -10.2%"
+  },
+  {
+   "t": "2026-10-26T00:25:04Z",
+   "side": "buy",
+   "sym": "BIRB",
+   "addr": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG",
+   "price": 0.0713,
+   "fill": 0.071426366358,
+   "usd": 69.87,
+   "slip": 0.0006,
+   "quote": "jup",
+   "reason": "nach virtuellem stop (E) -10.0%"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-08T15:27:14Z",
-   "v": 513.38
-  },
   {
    "t": "2026-10-08T15:32:14Z",
    "v": 510.88
@@ -21099,6 +21118,10 @@
   {
    "t": "2026-10-26T00:17:59Z",
    "v": 349.26
+  },
+  {
+   "t": "2026-10-26T00:25:04Z",
+   "v": 348.83
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -21112,8 +21135,8 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-10-26T00:17:59Z",
-  "virtuell": 8,
+  "t": "2026-10-26T00:25:04Z",
+  "virtuell": 7,
   "neu": 0,
   "gestoppt": false
  },
