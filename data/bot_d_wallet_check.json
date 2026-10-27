@@ -463,48 +463,6 @@
   "status": "sim",
   "offen_sim": [
    {
-    "mint": "H5UCZUqCsuTQijwNLBX2KjwP7XJaMaESBSDzQytypump",
-    "t_kauf": 1792987176,
-    "t_verkauf": null,
-    "sol_in": 0.15,
-    "eigen": null
-   },
-   {
-    "mint": "35fWL6pdJqpconRZPrawUAQegw1QF3p2tgN7mzhTpump",
-    "t_kauf": 1792989125,
-    "t_verkauf": null,
-    "sol_in": 0.15,
-    "eigen": null
-   },
-   {
-    "mint": "AhBidGAgv6QbKSWfrSCegGrzFLcBx4E5FNYTKHNQQj6C",
-    "t_kauf": 1792998055,
-    "t_verkauf": 1793000126,
-    "sol_in": 0.5015,
-    "eigen": 0.0426
-   },
-   {
-    "mint": "DvjbEsdca43oQcw2h3HW1CT7N3x5vRcr3QrvTUHnXvgV",
-    "t_kauf": 1793004952,
-    "t_verkauf": 1793005984,
-    "sol_in": 0.5015,
-    "eigen": 0.0395
-   },
-   {
-    "mint": "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP",
-    "t_kauf": 1793007452,
-    "t_verkauf": 1793009464,
-    "sol_in": 0.5,
-    "eigen": 0.046
-   },
-   {
-    "mint": "H7VZNCBynDK5ikBS9krDJ2Tx8CUr1wxedV19ZgkWpump",
-    "t_kauf": 1793010416,
-    "t_verkauf": 1793013151,
-    "sol_in": 0.5015,
-    "eigen": 0.0534
-   },
-   {
     "mint": "H7VZNCBynDK5ikBS9krDJ2Tx8CUr1wxedV19ZgkWpump",
     "t_kauf": 1793013309,
     "t_verkauf": 1793013648,
@@ -552,6 +510,14 @@
    [
     1792980577,
     -0.0179
+   ],
+   [
+    1792998055,
+    0.0089
+   ],
+   [
+    1793004952,
+    0.0164
    ]
   ],
   "details": [
@@ -704,9 +670,39 @@
     "luecke_rein_s": -37,
     "luecke_raus_s": 10936,
     "kerzen": 243
+   },
+   {
+    "mint": "AhBidGAgv6QbKSWfrSCegGrzFLcBx4E5FNYTKHNQQj6C",
+    "t_kauf": 1792998055,
+    "t_verkauf": 1793000126,
+    "sol_in": 0.5015,
+    "eigen": 0.0426,
+    "quelle": "gt",
+    "kopie": 0.0089,
+    "entry": 0.001337993898784105,
+    "exit": 0.0013924912092616178,
+    "grund": "nach_verkauf",
+    "luecke_rein_s": -55,
+    "luecke_raus_s": 26,
+    "kerzen": 923
+   },
+   {
+    "mint": "DvjbEsdca43oQcw2h3HW1CT7N3x5vRcr3QrvTUHnXvgV",
+    "t_kauf": 1793004952,
+    "t_verkauf": 1793005984,
+    "sol_in": 0.5015,
+    "eigen": 0.0395,
+    "quelle": "gt",
+    "kopie": 0.0164,
+    "entry": 0.0023537448791994503,
+    "exit": 0.0024673130617126793,
+    "grund": "nach_verkauf",
+    "luecke_rein_s": -52,
+    "luecke_raus_s": 4,
+    "kerzen": 558
    }
   ],
-  "ohne_kurs": 13
+  "ohne_kurs": 17
  },
  "6cnNNLATVjQ31dzUzqXCqRsb7jmVvP8uZprGYHDAdFd7": {
   "t": 1793059622.7533307,
@@ -916,9 +912,9 @@
   "grund": "letzte Transaktion aelter als 3 Tage"
  },
  "6cwaJAZ3c58MxEbhwN4ZBF6YjPU2FxUTMoxSf2SPbWTd": {
-  "t": 1792458385.5886374,
-  "status": "bot",
-  "grund": "> 5000 Transaktionen in 14 Tagen"
+  "t": 0,
+  "status": "fehler",
+  "grund": "schnelltest: 429 Client Error: Too Many Requests for url: https://mainnet.helius-rpc.com/?api"
  },
  "DnPy15SMu9a8QkPPQmk8CcYkNqvZiRUrsj8WZbMKPetd": {
   "t": 1792458686.9927733,
