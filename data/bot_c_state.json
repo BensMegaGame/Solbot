@@ -1,5 +1,5 @@
 {
- "cash": 267.52535658176106,
+ "cash": 149.79509484074953,
  "positions": {
   "6nR8wBnfsmXfcdDr1hovJKjvFQxNSidN6XFyfAFZpump": {
    "sym": "CLASH",
@@ -10,6 +10,16 @@
    "entry": 0.006779582459248623,
    "cur_price": 0.006654,
    "mark": 0.006654
+  },
+  "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": {
+   "sym": "BATON",
+   "qty": 23244.89041,
+   "cost": 117.73026174101152,
+   "opened": "2026-10-27T05:31:42Z",
+   "peak": 0.005063,
+   "entry": 0.005064780244795807,
+   "cur_price": 0.005063,
+   "mark": 0.005063
   }
  },
  "trades": [
@@ -1362,13 +1372,21 @@
    "slip": 0.001,
    "quote": "jup",
    "reason": "trail"
+  },
+  {
+   "t": "2026-10-27T05:31:42Z",
+   "side": "buy",
+   "sym": "BATON",
+   "addr": "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump",
+   "price": 0.005063,
+   "fill": 0.005064780245,
+   "usd": 117.73,
+   "slip": 0.0102,
+   "quote": "jup",
+   "reason": "dip 24h -10% (SOL -2%) 1h -0.4%"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-09T20:36:28Z",
-   "v": 512.18
-  },
   {
    "t": "2026-10-09T20:41:27Z",
    "v": 512.18
@@ -21364,6 +21382,10 @@
   {
    "t": "2026-10-27T05:26:39Z",
    "v": 392.37
+  },
+  {
+   "t": "2026-10-27T05:31:42Z",
+   "v": 392.33
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -21371,12 +21393,12 @@
  "strategy": "dip_weites_netz",
  "universe_n": 147,
  "coverage": {
-  "t": "2026-10-27T05:26:39Z",
+  "t": "2026-10-27T05:31:42Z",
   "kurse": 123,
   "von": 147,
   "ohne_pool": 89,
   "sol": true,
-  "kandidaten": 0
+  "kandidaten": 1
  },
  "verkauft_am": {
   "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": 1792638085.371396,
