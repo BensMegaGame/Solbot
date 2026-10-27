@@ -17,11 +17,11 @@
    "qty": 978.226093,
    "cost": 69.87113529937783,
    "opened": "2026-10-26T00:25:04Z",
-   "peak": 0.0753,
+   "peak": 0.07614,
    "entry": 0.0714263663578005,
    "pair": "GUWFT7bbLphGrcpAPnnEnBbe1uErv9e6LLC2qPx2wZy1",
-   "cur_price": 0.07495,
-   "mark": 0.07495
+   "cur_price": 0.07614,
+   "mark": 0.07614
   }
  },
  "trades": [
@@ -1131,10 +1131,6 @@
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-09T15:06:53Z",
-   "v": 563.62
-  },
   {
    "t": "2026-10-09T15:11:40Z",
    "v": 563.93
@@ -21130,12 +21126,15 @@
   {
    "t": "2026-10-26T23:57:02Z",
    "v": 339.79
+  },
+  {
+   "t": "2026-10-27T00:05:10Z",
+   "v": 340.95
   }
  ],
  "started": "2026-09-25T09:22:03Z",
  "version": "f5",
  "cooldown": {
-  "ZEUS1aR7aX8DFFJf5QjWj2ftDDdNTroMNGo8YoQm3Gq": 20753,
   "CortexFv3fRcLKTgACr7aLqckGh5eP7TP3z9JHoKqMc6": 20755,
   "METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m": 20755,
   "G7iK3prSzAA4vzcJWvsLUEsdCqzR7PnMzJV61vSdFSNW": 20755,
@@ -21145,7 +21144,7 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-10-26T23:57:02Z",
+  "t": "2026-10-27T00:05:10Z",
   "virtuell": 6,
   "neu": 0,
   "gestoppt": false
