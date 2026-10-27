@@ -460,16 +460,7 @@
   "liegen_gelassen": 2,
   "eigen_schnitt": -0.0185,
   "halte_min": 6.2,
-  "status": "sim",
-  "offen_sim": [
-   {
-    "mint": "H7VZNCBynDK5ikBS9krDJ2Tx8CUr1wxedV19ZgkWpump",
-    "t_kauf": 1793013309,
-    "t_verkauf": 1793013648,
-    "sol_in": 0.5,
-    "eigen": 0.0236
-   }
-  ],
+  "status": "durchgefallen",
   "sim": [
    [
     1792868505,
@@ -702,7 +693,11 @@
     "kerzen": 558
    }
   ],
-  "ohne_kurs": 17
+  "ohne_kurs": 18,
+  "n": 12,
+  "grund": "nur 12 Trades mit Kursen",
+  "kosten": 0.0318,
+  "kosten_art": "jupiter"
  },
  "6cnNNLATVjQ31dzUzqXCqRsb7jmVvP8uZprGYHDAdFd7": {
   "t": 1793059622.7533307,
@@ -912,14 +907,16 @@
   "grund": "letzte Transaktion aelter als 3 Tage"
  },
  "6cwaJAZ3c58MxEbhwN4ZBF6YjPU2FxUTMoxSf2SPbWTd": {
-  "t": 0,
-  "status": "fehler",
-  "grund": "schnelltest: 429 Client Error: Too Many Requests for url: https://mainnet.helius-rpc.com/?api"
+  "t": 1793063501.3838854,
+  "tx_tag": 317.9,
+  "status": "bot",
+  "grund": "317.9 Transaktionen je Tag (Schnelltest)"
  },
  "DnPy15SMu9a8QkPPQmk8CcYkNqvZiRUrsj8WZbMKPetd": {
-  "t": 1792458686.9927733,
+  "t": 1793063501.179289,
+  "tx_tag": 297.6,
   "status": "bot",
-  "grund": "> 5000 Transaktionen in 14 Tagen"
+  "grund": "297.6 Transaktionen je Tag (Schnelltest)"
  },
  "2CzXSZe8577hmjo1Xi1WQBtSBJc93fD4U2dt7jnJ313Y": {
   "t": 1792458990.1968946,
