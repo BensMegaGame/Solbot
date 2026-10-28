@@ -7075,9 +7075,16 @@
   "grund": "406.4 Transaktionen je Tag (Schnelltest)"
  },
  "7QARH6KVTWu4piFYT2AHf33EQrPdLQ92cgGkZAbS6RE7": {
-  "t": 1792888908.4924436,
-  "tx_tag": 49.6,
-  "status": "vorab_ok"
+  "t": 1793148401.0350862,
+  "tx_tag": 26.6,
+  "letzte": 1793125721,
+  "trades": 121,
+  "geschlossen": 116,
+  "liegen_gelassen": 5,
+  "eigen_schnitt": -0.0977,
+  "halte_min": 1.8,
+  "status": "zu_schnell",
+  "grund": "verkauft typisch nach 1.8 min"
  },
  "B4Y6WLJYM7oT3gicrraB3VH9jUspkE72zAAzWpnfqpSR": {
   "t": 1792888908.7029574,
@@ -9972,5 +9979,23 @@
   "tx_tag": 194.4,
   "status": "bot",
   "grund": "194.4 Transaktionen je Tag (Schnelltest)"
+ },
+ "4gtaksjHVZgXAeu7nCg95NhdE42ewEWhEB5enaCcvqUZ": {
+  "t": 1793148400.3388357,
+  "tx_tag": 1000.0,
+  "status": "bot",
+  "grund": "1000.0 Transaktionen je Tag (Schnelltest)"
+ },
+ "AcdgzkAjc1jK1A46Kj3TKQ3mgsoEzt739hDvLg4YBPG5": {
+  "t": 1793148400.6209521,
+  "tx_tag": 198.9,
+  "status": "bot",
+  "grund": "198.9 Transaktionen je Tag (Schnelltest)"
+ },
+ "ADgbCgBmWR1Lqdoea5BynuUeZqpMv7wHX2nzaogPrTAw": {
+  "t": 1793148400.8275983,
+  "tx_tag": 1000.0,
+  "status": "bot",
+  "grund": "1000.0 Transaktionen je Tag (Schnelltest)"
  }
 }
