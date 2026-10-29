@@ -8,8 +8,8 @@
    "opened": "2026-10-25T00:01:51Z",
    "peak": 0.007009,
    "entry": 0.006779582459248623,
-   "cur_price": 0.006249,
-   "mark": 0.006249
+   "cur_price": 0.006282,
+   "mark": 0.006282
   },
   "MukLDtJ8Cx9DxLbeyLRSWPSposTMWuwHANbuaudpump": {
    "sym": "OTC",
@@ -18,8 +18,8 @@
    "opened": "2026-10-28T12:21:15Z",
    "peak": 0.01025,
    "entry": 0.009543470029453376,
-   "cur_price": 0.00861,
-   "mark": 0.00861
+   "cur_price": 0.008675,
+   "mark": 0.008675
   },
   "JAFqCQSpy5YinrsmixWSMaD7jTn4MytJRkyWvYPnY6ea": {
    "sym": "PANGEA",
@@ -28,8 +28,8 @@
    "opened": "2026-10-29T02:51:27Z",
    "peak": 0.001601,
    "entry": 0.0016226531416325273,
-   "cur_price": 0.001601,
-   "mark": 0.001601
+   "cur_price": 0.0016,
+   "mark": 0.0016
   }
  },
  "trades": [
@@ -1451,10 +1451,6 @@
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-11T18:46:20Z",
-   "v": 522.32
-  },
   {
    "t": "2026-10-11T18:51:19Z",
    "v": 523.28
@@ -21450,6 +21446,10 @@
   {
    "t": "2026-10-29T03:36:21Z",
    "v": 390.46
+  },
+  {
+   "t": "2026-10-29T03:41:23Z",
+   "v": 391.85
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -21457,12 +21457,12 @@
  "strategy": "dip_weites_netz",
  "universe_n": 151,
  "coverage": {
-  "t": "2026-10-29T03:36:21Z",
+  "t": "2026-10-29T03:41:23Z",
   "kurse": 130,
   "von": 151,
   "ohne_pool": 86,
   "sol": true,
-  "kandidaten": 0
+  "kandidaten": 1
  },
  "verkauft_am": {
   "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": 1793135794.9970624,
