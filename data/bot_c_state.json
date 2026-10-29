@@ -1,5 +1,5 @@
 {
- "cash": 163.9776135343967,
+ "cash": 44.57479401843281,
  "positions": {
   "6nR8wBnfsmXfcdDr1hovJKjvFQxNSidN6XFyfAFZpump": {
    "sym": "CLASH",
@@ -18,8 +18,18 @@
    "opened": "2026-10-28T12:21:15Z",
    "peak": 0.01025,
    "entry": 0.009543470029453376,
-   "cur_price": 0.009025,
-   "mark": 0.009025
+   "cur_price": 0.00911,
+   "mark": 0.00911
+  },
+  "JAFqCQSpy5YinrsmixWSMaD7jTn4MytJRkyWvYPnY6ea": {
+   "sym": "PANGEA",
+   "qty": 73584.931032047,
+   "cost": 119.4028195159639,
+   "opened": "2026-10-29T02:51:27Z",
+   "peak": 0.001601,
+   "entry": 0.0016226531416325273,
+   "cur_price": 0.001601,
+   "mark": 0.001601
   }
  },
  "trades": [
@@ -1426,13 +1436,21 @@
    "slip": 0.0003,
    "quote": "jup",
    "reason": "dip 24h -10% (SOL +2%) 1h +1.5%"
+  },
+  {
+   "t": "2026-10-29T02:51:27Z",
+   "side": "buy",
+   "sym": "PANGEA",
+   "addr": "JAFqCQSpy5YinrsmixWSMaD7jTn4MytJRkyWvYPnY6ea",
+   "price": 0.001601,
+   "fill": 0.001622653142,
+   "usd": 119.4,
+   "slip": 0.0155,
+   "quote": "jup",
+   "reason": "dip 24h -30% (SOL -2%) 1h -0.6%"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-11T17:56:18Z",
-   "v": 528.59
-  },
   {
    "t": "2026-10-11T18:01:24Z",
    "v": 526.27
@@ -21428,6 +21446,10 @@
   {
    "t": "2026-10-29T02:46:26Z",
    "v": 397.94
+  },
+  {
+   "t": "2026-10-29T02:51:27Z",
+   "v": 397.44
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -21435,12 +21457,12 @@
  "strategy": "dip_weites_netz",
  "universe_n": 151,
  "coverage": {
-  "t": "2026-10-29T02:46:26Z",
+  "t": "2026-10-29T02:51:27Z",
   "kurse": 131,
   "von": 151,
   "ohne_pool": 86,
   "sol": true,
-  "kandidaten": 0
+  "kandidaten": 1
  },
  "verkauft_am": {
   "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": 1793135794.9970624,
