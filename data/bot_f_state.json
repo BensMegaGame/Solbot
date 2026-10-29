@@ -20,8 +20,8 @@
    "peak": 0.08464,
    "entry": 0.0714263663578005,
    "pair": "GUWFT7bbLphGrcpAPnnEnBbe1uErv9e6LLC2qPx2wZy1",
-   "cur_price": 0.06834,
-   "mark": 0.06834
+   "cur_price": 0.06825,
+   "mark": 0.06825
   },
   "DvjbEsdca43oQcw2h3HW1CT7N3x5vRcr3QrvTUHnXvgV": {
    "sym": "DOOD",
@@ -31,8 +31,8 @@
    "peak": 0.002012,
    "entry": 0.0019450299483195536,
    "pair": "5KXE8RMF7iW9Ptn665AHfzsMFjYb4LV2Ta8eZEtsTwWC",
-   "cur_price": 0.001801,
-   "mark": 0.001801
+   "cur_price": 0.001804,
+   "mark": 0.001804
   },
   "MEW1gQWJ3nEXg2qgERiKu7FAFj79PHvQVREQUzScPP5": {
    "sym": "MEW",
@@ -53,8 +53,8 @@
    "peak": 0.008758,
    "entry": 0.00854860423305616,
    "pair": "DA4pM4xSDY4M9V4CgAKKBVH1pw1yscTQQa5nEkGHuKpt",
-   "cur_price": 0.007406,
-   "mark": 0.007406
+   "cur_price": 0.007499,
+   "mark": 0.007499
   }
  },
  "trades": [
@@ -1200,10 +1200,6 @@
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-12T11:01:34Z",
-   "v": 573.14
-  },
   {
    "t": "2026-10-12T11:06:38Z",
    "v": 572.52
@@ -21199,6 +21195,10 @@
   {
    "t": "2026-10-29T19:51:51Z",
    "v": 322.73
+  },
+  {
+   "t": "2026-10-29T19:56:49Z",
+   "v": 323.45
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -21210,9 +21210,9 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-10-29T19:51:51Z",
+  "t": "2026-10-29T19:56:49Z",
   "virtuell": 7,
-  "neu": 1,
+  "neu": 0,
   "gestoppt": false
  },
  "verkauft_am": {
