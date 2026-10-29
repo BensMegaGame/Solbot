@@ -1,18 +1,6 @@
 {
- "cash": 326.1942033456969,
- "positions": {
-  "CWZ6BsdnjkDVTGkmL6bGbJXXig6ceef12KvyGQW14cMt": {
-   "sym": "ANTFUN",
-   "qty": 6159.6923995,
-   "cost": 97.31514944929637,
-   "opened": "2026-10-25T01:16:51Z",
-   "peak": 0.01849,
-   "entry": 0.0157987027821707,
-   "mark": 0.01757,
-   "cur_price": 0.01757,
-   "tp1": true
-  }
- },
+ "cash": 432.86102034569694,
+ "positions": {},
  "trades": [
   {
    "t": "2026-09-16T17:20:59Z",
@@ -1312,13 +1300,24 @@
    "slip": 0.0026,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-10-29T13:21:27Z",
+   "side": "sell",
+   "sym": "ANTFUN",
+   "addr": "CWZ6BsdnjkDVTGkmL6bGbJXXig6ceef12KvyGQW14cMt",
+   "price": 0.01735,
+   "usd": 106.67,
+   "pnl": 9.35,
+   "peak_x": 1.17,
+   "held_h": 108.1,
+   "frac": 1.0,
+   "slip": 0.0014,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-12T04:26:42Z",
-   "v": 560.57
-  },
   {
    "t": "2026-10-12T04:31:46Z",
    "v": 560.57
@@ -21314,13 +21313,17 @@
   {
    "t": "2026-10-29T13:16:28Z",
    "v": 434.42
+  },
+  {
+   "t": "2026-10-29T13:21:27Z",
+   "v": 432.86
   }
  ],
  "started": "2026-09-16T16:55:59Z",
  "strategy": "largecap_dip",
  "universe_n": 75,
  "coverage": {
-  "t": "2026-10-29T13:16:28Z",
+  "t": "2026-10-29T13:21:27Z",
   "kurse": 75,
   "von": 75,
   "sol": true
@@ -21329,6 +21332,7 @@
   "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG": 1792727496.7750733,
   "DvjbEsdca43oQcw2h3HW1CT7N3x5vRcr3QrvTUHnXvgV": 1792774901.2736723,
   "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2": 1792801813.9816115,
-  "MEW1gQWJ3nEXg2qgERiKu7FAFj79PHvQVREQUzScPP5": 1793241100.1892395
+  "MEW1gQWJ3nEXg2qgERiKu7FAFj79PHvQVREQUzScPP5": 1793241100.1892395,
+  "CWZ6BsdnjkDVTGkmL6bGbJXXig6ceef12KvyGQW14cMt": 1793280087.6464105
  }
 }
