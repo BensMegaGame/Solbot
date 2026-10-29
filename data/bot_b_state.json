@@ -1,6 +1,18 @@
 {
- "cash": 384.61100579756146,
- "positions": {},
+ "cash": 269.207704058293,
+ "positions": {
+  "JAFqCQSpy5YinrsmixWSMaD7jTn4MytJRkyWvYPnY6ea": {
+   "sym": "PANGEA",
+   "qty": 71373.08005286,
+   "cost": 115.40330173926843,
+   "opened": "2026-10-29T03:31:16Z",
+   "peak": 0.001603,
+   "entry": 0.0016169023622603785,
+   "pair": "6YkNBt32e2M9SF9JpbgWETD5QqGpvEdNdGNN87A9ADDr",
+   "cur_price": 0.001603,
+   "mark": 0.001603
+  }
+ },
  "trades": [
   {
    "t": "2026-10-09T07:16:29Z",
@@ -520,13 +532,21 @@
    "slip": 0.0066,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-10-29T03:31:16Z",
+   "side": "buy",
+   "sym": "PANGEA",
+   "addr": "JAFqCQSpy5YinrsmixWSMaD7jTn4MytJRkyWvYPnY6ea",
+   "price": 0.001603,
+   "fill": 0.001616902362,
+   "usd": 115.4,
+   "slip": 0.0097,
+   "quote": "jup",
+   "reason": "tiefer dip 24h -37% (SOL -3%) 1h +1.8%"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-11T18:36:12Z",
-   "v": 500.93
-  },
   {
    "t": "2026-10-11T18:41:13Z",
    "v": 500.93
@@ -20522,18 +20542,22 @@
   {
    "t": "2026-10-29T03:26:15Z",
    "v": 384.61
+  },
+  {
+   "t": "2026-10-29T03:31:16Z",
+   "v": 383.62
   }
  ],
  "started": "2026-10-08T16:06:06Z",
  "version": "b4",
  "strategy": "tiefer_dip",
  "coverage": {
-  "t": "2026-10-29T03:26:15Z",
-  "kurse": 204,
+  "t": "2026-10-29T03:31:16Z",
+  "kurse": 203,
   "von": 216,
   "sol": true,
-  "sol24": -2.1,
-  "kandidaten": 0,
+  "sol24": -2.5,
+  "kandidaten": 1,
   "gestoppt": false
  },
  "verkauft_am": {
