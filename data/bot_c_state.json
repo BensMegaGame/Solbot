@@ -1,5 +1,5 @@
 {
- "cash": 141.19469224647273,
+ "cash": 261.75782224647276,
  "positions": {
   "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump": {
    "sym": "MANIFEST",
@@ -8,18 +8,8 @@
    "opened": "2026-10-29T03:56:23Z",
    "peak": 0.006441,
    "entry": 0.006143900666461687,
-   "cur_price": 0.00605,
-   "mark": 0.00605
-  },
-  "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": {
-   "sym": "BATON",
-   "qty": 19151.547085,
-   "cost": 114.25674192362612,
-   "opened": "2026-10-29T08:51:25Z",
-   "peak": 0.006642,
-   "entry": 0.005965927526195262,
-   "cur_price": 0.006354,
-   "mark": 0.006354
+   "cur_price": 0.006107,
+   "mark": 0.006107
   }
  },
  "trades": [
@@ -1507,13 +1497,24 @@
    "slip": 0.0181,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-10-29T17:16:24Z",
+   "side": "sell",
+   "sym": "BATON",
+   "addr": "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump",
+   "price": 0.006226,
+   "usd": 120.56,
+   "pnl": 6.31,
+   "peak_x": 1.113,
+   "held_h": 8.4,
+   "frac": 1.0,
+   "slip": 0.0135,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-12T08:21:30Z",
-   "v": 509.31
-  },
   {
    "t": "2026-10-12T08:26:28Z",
    "v": 509.31
@@ -21509,6 +21510,10 @@
   {
    "t": "2026-10-29T17:11:23Z",
    "v": 377.58
+  },
+  {
+   "t": "2026-10-29T17:16:27Z",
+   "v": 377.54
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -21516,15 +21521,15 @@
  "strategy": "dip_weites_netz",
  "universe_n": 150,
  "coverage": {
-  "t": "2026-10-29T17:11:23Z",
+  "t": "2026-10-29T17:16:27Z",
   "kurse": 128,
   "von": 151,
   "ohne_pool": 86,
   "sol": true,
-  "kandidaten": 0
+  "kandidaten": 1
  },
  "verkauft_am": {
-  "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": 1793135794.9970624,
+  "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": 1793294184.9381115,
   "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump": 1792694190.0021076,
   "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": 1792905394.6722174,
   "ABt79MkRXUsoHuV2CVQT32YMXQhTparKFjmidQxgiQ6E": 1792932389.1477976,
