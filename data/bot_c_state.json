@@ -1,5 +1,5 @@
 {
- "cash": 44.57479401843281,
+ "cash": 36.36979117009882,
  "positions": {
   "6nR8wBnfsmXfcdDr1hovJKjvFQxNSidN6XFyfAFZpump": {
    "sym": "CLASH",
@@ -11,16 +11,6 @@
    "cur_price": 0.006265,
    "mark": 0.006265
   },
-  "MukLDtJ8Cx9DxLbeyLRSWPSposTMWuwHANbuaudpump": {
-   "sym": "OTC",
-   "qty": 12872.846347,
-   "cost": 122.85162330635286,
-   "opened": "2026-10-28T12:21:15Z",
-   "peak": 0.01025,
-   "entry": 0.009543470029453376,
-   "cur_price": 0.008696,
-   "mark": 0.008696
-  },
   "JAFqCQSpy5YinrsmixWSMaD7jTn4MytJRkyWvYPnY6ea": {
    "sym": "PANGEA",
    "qty": 73584.931032047,
@@ -30,6 +20,16 @@
    "entry": 0.0016226531416325273,
    "cur_price": 0.001601,
    "mark": 0.001601
+  },
+  "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump": {
+   "sym": "MANIFEST",
+   "qty": 18958.851904,
+   "cost": 116.48130284833401,
+   "opened": "2026-10-29T03:56:23Z",
+   "peak": 0.006133,
+   "entry": 0.006143900666461687,
+   "cur_price": 0.006133,
+   "mark": 0.006133
   }
  },
  "trades": [
@@ -1448,13 +1448,36 @@
    "slip": 0.0155,
    "quote": "jup",
    "reason": "dip 24h -30% (SOL -2%) 1h -0.6%"
+  },
+  {
+   "t": "2026-10-29T03:56:21Z",
+   "side": "sell",
+   "sym": "OTC",
+   "addr": "MukLDtJ8Cx9DxLbeyLRSWPSposTMWuwHANbuaudpump",
+   "price": 0.008504,
+   "usd": 108.28,
+   "pnl": -14.58,
+   "peak_x": 1.074,
+   "held_h": 15.6,
+   "frac": 1.0,
+   "slip": 0.0114,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-10-29T03:56:23Z",
+   "side": "buy",
+   "sym": "MANIFEST",
+   "addr": "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump",
+   "price": 0.006133,
+   "fill": 0.006143900666,
+   "usd": 116.48,
+   "slip": 0.0103,
+   "quote": "jup",
+   "reason": "dip 24h -12% (SOL -2%) 1h +1.3%"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-11T19:01:19Z",
-   "v": 523.49
-  },
   {
    "t": "2026-10-11T19:06:18Z",
    "v": 521.0
@@ -21450,6 +21473,10 @@
   {
    "t": "2026-10-29T03:51:22Z",
    "v": 391.87
+  },
+  {
+   "t": "2026-10-29T03:56:24Z",
+   "v": 388.0
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -21457,12 +21484,12 @@
  "strategy": "dip_weites_netz",
  "universe_n": 151,
  "coverage": {
-  "t": "2026-10-29T03:51:22Z",
+  "t": "2026-10-29T03:56:24Z",
   "kurse": 130,
   "von": 151,
   "ohne_pool": 86,
   "sol": true,
-  "kandidaten": 0
+  "kandidaten": 1
  },
  "verkauft_am": {
   "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": 1793135794.9970624,
@@ -21470,6 +21497,6 @@
   "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": 1792905394.6722174,
   "ABt79MkRXUsoHuV2CVQT32YMXQhTparKFjmidQxgiQ6E": 1792932389.1477976,
   "PRVT6TB7uss3FrUd2D9xs2zqDBsa3GbMJMwCQsgmeta": 1792957599.0988278,
-  "MukLDtJ8Cx9DxLbeyLRSWPSposTMWuwHANbuaudpump": 1793068893.2556913
+  "MukLDtJ8Cx9DxLbeyLRSWPSposTMWuwHANbuaudpump": 1793246181.5282798
  }
 }
