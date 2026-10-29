@@ -6,11 +6,11 @@
    "qty": 4815.520276,
    "cost": 68.21554400000001,
    "opened": "2026-10-18T13:26:38Z",
-   "peak": 0.01544,
+   "peak": 0.0157,
    "entry": 0.014165768201616436,
    "pair": "9Tb2ohu5P16BpBarqd3N27WnkF51Ukfs8Z1GzzLDxVZW",
-   "cur_price": 0.01407,
-   "mark": 0.01407
+   "cur_price": 0.0157,
+   "mark": 0.0157
   },
   "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG": {
    "sym": "BIRB",
@@ -20,8 +20,8 @@
    "peak": 0.08464,
    "entry": 0.0714263663578005,
    "pair": "GUWFT7bbLphGrcpAPnnEnBbe1uErv9e6LLC2qPx2wZy1",
-   "cur_price": 0.06964,
-   "mark": 0.06964
+   "cur_price": 0.06943,
+   "mark": 0.06943
   },
   "DvjbEsdca43oQcw2h3HW1CT7N3x5vRcr3QrvTUHnXvgV": {
    "sym": "DOOD",
@@ -31,8 +31,8 @@
    "peak": 0.002012,
    "entry": 0.0019450299483195536,
    "pair": "5KXE8RMF7iW9Ptn665AHfzsMFjYb4LV2Ta8eZEtsTwWC",
-   "cur_price": 0.001813,
-   "mark": 0.001813
+   "cur_price": 0.001823,
+   "mark": 0.001823
   },
   "MEW1gQWJ3nEXg2qgERiKu7FAFj79PHvQVREQUzScPP5": {
    "sym": "MEW",
@@ -42,8 +42,8 @@
    "peak": 0.0004654,
    "entry": 0.00042269181393431073,
    "pair": "879F697iuDJGMevRkRcnW21fcXiAeLJK1ffsw2ATebce",
-   "cur_price": 0.0004571,
-   "mark": 0.0004571
+   "cur_price": 0.0004603,
+   "mark": 0.0004603
   },
   "MukLDtJ8Cx9DxLbeyLRSWPSposTMWuwHANbuaudpump": {
    "sym": "OTC",
@@ -53,8 +53,8 @@
    "peak": 0.008758,
    "entry": 0.00854860423305616,
    "pair": "DA4pM4xSDY4M9V4CgAKKBVH1pw1yscTQQa5nEkGHuKpt",
-   "cur_price": 0.007872,
-   "mark": 0.007872
+   "cur_price": 0.00767,
+   "mark": 0.00767
   }
  },
  "trades": [
@@ -1200,10 +1200,6 @@
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-12T07:46:46Z",
-   "v": 576.31
-  },
   {
    "t": "2026-10-12T07:51:46Z",
    "v": 580.68
@@ -21199,6 +21195,10 @@
   {
    "t": "2026-10-29T16:36:45Z",
    "v": 331.46
+  },
+  {
+   "t": "2026-10-29T16:41:40Z",
+   "v": 338.44
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -21210,7 +21210,7 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-10-29T16:36:45Z",
+  "t": "2026-10-29T16:41:40Z",
   "virtuell": 8,
   "neu": 0,
   "gestoppt": false
