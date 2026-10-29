@@ -4144,16 +4144,14 @@
   "grund": "141.3 Transaktionen je Tag (Schnelltest)"
  },
  "2UXDBheNme4KmpGqMJ4YAQhSYyUwnJym4CwUMCs3LUkx": {
-  "t": 1792702590.6826754,
-  "tx_tag": 398.7,
-  "status": "bot",
-  "grund": "398.7 Transaktionen je Tag (Schnelltest)"
+  "t": 0,
+  "status": "fehler",
+  "grund": "schnelltest: 429 Client Error: Too Many Requests for url: https://mainnet.helius-rpc.com/?api"
  },
  "9fuZ8nVmEkAZwWMZtWdyhYyjz3zXR971LZauSNWAUa4B": {
-  "t": 1792702590.9020214,
-  "tx_tag": 1000.0,
-  "status": "bot",
-  "grund": "1000.0 Transaktionen je Tag (Schnelltest)"
+  "t": 0,
+  "status": "fehler",
+  "grund": "schnelltest: 429 Client Error: Too Many Requests for url: https://mainnet.helius-rpc.com/?api"
  },
  "SF9TGdsfTPcA3ZVmPdPtYphgzRg6ZqUY4hnjPgjD1MW": {
   "t": 1792705900.7847755,
