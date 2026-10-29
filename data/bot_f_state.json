@@ -20,8 +20,8 @@
    "peak": 0.08464,
    "entry": 0.0714263663578005,
    "pair": "GUWFT7bbLphGrcpAPnnEnBbe1uErv9e6LLC2qPx2wZy1",
-   "cur_price": 0.07289,
-   "mark": 0.07289
+   "cur_price": 0.07318,
+   "mark": 0.07318
   },
   "DvjbEsdca43oQcw2h3HW1CT7N3x5vRcr3QrvTUHnXvgV": {
    "sym": "DOOD",
@@ -31,8 +31,8 @@
    "peak": 0.002012,
    "entry": 0.0019450299483195536,
    "pair": "5KXE8RMF7iW9Ptn665AHfzsMFjYb4LV2Ta8eZEtsTwWC",
-   "cur_price": 0.001899,
-   "mark": 0.001899
+   "cur_price": 0.001978,
+   "mark": 0.001978
   }
  },
  "trades": [
@@ -1154,10 +1154,6 @@
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-11T15:06:40Z",
-   "v": 569.64
-  },
   {
    "t": "2026-10-11T15:11:40Z",
    "v": 569.84
@@ -21153,21 +21149,22 @@
   {
    "t": "2026-10-28T23:56:40Z",
    "v": 338.43
+  },
+  {
+   "t": "2026-10-29T00:02:58Z",
+   "v": 341.48
   }
  ],
  "started": "2026-09-25T09:22:03Z",
  "version": "f5",
  "cooldown": {
-  "CortexFv3fRcLKTgACr7aLqckGh5eP7TP3z9JHoKqMc6": 20755,
-  "METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m": 20755,
-  "G7iK3prSzAA4vzcJWvsLUEsdCqzR7PnMzJV61vSdFSNW": 20755,
   "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": 20756,
   "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump": 20757,
   "ABt79MkRXUsoHuV2CVQT32YMXQhTparKFjmidQxgiQ6E": 20757
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-10-28T23:56:40Z",
+  "t": "2026-10-29T00:02:58Z",
   "virtuell": 5,
   "neu": 0,
   "gestoppt": false
