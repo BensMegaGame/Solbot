@@ -1,16 +1,6 @@
 {
- "cash": 153.9175923456969,
+ "cash": 326.1942033456969,
  "positions": {
-  "MEW1gQWJ3nEXg2qgERiKu7FAFj79PHvQVREQUzScPP5": {
-   "sym": "MEW",
-   "qty": 409987.53536,
-   "cost": 193.63150610896426,
-   "opened": "2026-10-24T02:26:51Z",
-   "peak": 0.0005008,
-   "entry": 0.00047228632436091306,
-   "mark": 0.0004252,
-   "cur_price": 0.0004252
-  },
   "CWZ6BsdnjkDVTGkmL6bGbJXXig6ceef12KvyGQW14cMt": {
    "sym": "ANTFUN",
    "qty": 6159.6923995,
@@ -18,8 +8,8 @@
    "opened": "2026-10-25T01:16:51Z",
    "peak": 0.01849,
    "entry": 0.0157987027821707,
-   "mark": 0.01808,
-   "cur_price": 0.01808,
+   "mark": 0.01805,
+   "cur_price": 0.01805,
    "tp1": true
   }
  },
@@ -1307,13 +1297,24 @@
    "slip": 0.0005,
    "quote": "jup",
    "reason": "tp1"
+  },
+  {
+   "t": "2026-10-29T02:31:40Z",
+   "side": "sell",
+   "sym": "MEW",
+   "addr": "MEW1gQWJ3nEXg2qgERiKu7FAFj79PHvQVREQUzScPP5",
+   "price": 0.0004209,
+   "usd": 172.28,
+   "pnl": -21.35,
+   "peak_x": 1.06,
+   "held_h": 120.1,
+   "frac": 1.0,
+   "slip": 0.0026,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-11T17:36:40Z",
-   "v": 591.34
-  },
   {
    "t": "2026-10-11T17:41:35Z",
    "v": 591.64
@@ -21309,24 +21310,25 @@
   {
    "t": "2026-10-29T02:26:39Z",
    "v": 439.61
+  },
+  {
+   "t": "2026-10-29T02:31:40Z",
+   "v": 437.38
   }
  ],
  "started": "2026-09-16T16:55:59Z",
  "strategy": "largecap_dip",
  "universe_n": 74,
  "coverage": {
-  "t": "2026-10-29T02:26:39Z",
+  "t": "2026-10-29T02:31:40Z",
   "kurse": 74,
   "von": 74,
   "sol": true
  },
  "verkauft_am": {
-  "CzLSujWBLFsSjncfkh59rUFqvafWcY5tzedWJSuypump": 1792329099.1136868,
-  "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump": 1792423894.1614447,
-  "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP": 1792543008.34904,
-  "METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m": 1792599401.7537594,
   "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG": 1792727496.7750733,
   "DvjbEsdca43oQcw2h3HW1CT7N3x5vRcr3QrvTUHnXvgV": 1792774901.2736723,
-  "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2": 1792801813.9816115
+  "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2": 1792801813.9816115,
+  "MEW1gQWJ3nEXg2qgERiKu7FAFj79PHvQVREQUzScPP5": 1793241100.1892395
  }
 }
