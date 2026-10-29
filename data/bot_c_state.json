@@ -8,8 +8,8 @@
    "opened": "2026-10-29T02:51:27Z",
    "peak": 0.001637,
    "entry": 0.0016226531416325273,
-   "cur_price": 0.001575,
-   "mark": 0.001575
+   "cur_price": 0.001555,
+   "mark": 0.001555
   },
   "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump": {
    "sym": "MANIFEST",
@@ -18,8 +18,8 @@
    "opened": "2026-10-29T03:56:23Z",
    "peak": 0.006441,
    "entry": 0.006143900666461687,
-   "cur_price": 0.005776,
-   "mark": 0.005776
+   "cur_price": 0.005799,
+   "mark": 0.005799
   },
   "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": {
    "sym": "BATON",
@@ -28,8 +28,8 @@
    "opened": "2026-10-29T08:51:25Z",
    "peak": 0.006262,
    "entry": 0.005965927526195262,
-   "cur_price": 0.006006,
-   "mark": 0.006006
+   "cur_price": 0.005968,
+   "mark": 0.005968
   }
  },
  "trades": [
@@ -1505,10 +1505,6 @@
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-12T04:21:26Z",
-   "v": 509.31
-  },
   {
    "t": "2026-10-12T04:26:25Z",
    "v": 509.31
@@ -21504,16 +21500,20 @@
   {
    "t": "2026-10-29T13:11:13Z",
    "v": 375.43
+  },
+  {
+   "t": "2026-10-29T13:16:13Z",
+   "v": 373.67
   }
  ],
  "started": "2026-09-25T09:21:19Z",
  "version": "c6",
  "strategy": "dip_weites_netz",
- "universe_n": 151,
+ "universe_n": 150,
  "coverage": {
-  "t": "2026-10-29T13:11:13Z",
-  "kurse": 128,
-  "von": 152,
+  "t": "2026-10-29T13:16:13Z",
+  "kurse": 127,
+  "von": 151,
   "ohne_pool": 86,
   "sol": true,
   "kandidaten": 0
