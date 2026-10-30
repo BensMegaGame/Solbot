@@ -20,8 +20,8 @@
    "peak": 0.002135,
    "entry": 0.0019450299483195536,
    "pair": "5KXE8RMF7iW9Ptn665AHfzsMFjYb4LV2Ta8eZEtsTwWC",
-   "cur_price": 0.002011,
-   "mark": 0.002011
+   "cur_price": 0.001996,
+   "mark": 0.001996
   },
   "MEW1gQWJ3nEXg2qgERiKu7FAFj79PHvQVREQUzScPP5": {
    "sym": "MEW",
@@ -42,8 +42,8 @@
    "peak": 0.007632,
    "entry": 0.007013835510868752,
    "pair": "Dsxt7wUigQU5puH9nHjmfwnUenMycAgsFtrkfggLh8P1",
-   "cur_price": 0.006735,
-   "mark": 0.006735
+   "cur_price": 0.006528,
+   "mark": 0.006528
   }
  },
  "trades": [
@@ -1258,10 +1258,6 @@
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-13T09:46:39Z",
-   "v": 500.68
-  },
   {
    "t": "2026-10-13T09:51:38Z",
    "v": 499.17
@@ -21257,6 +21253,10 @@
   {
    "t": "2026-10-30T18:36:43Z",
    "v": 328.54
+  },
+  {
+   "t": "2026-10-30T18:41:48Z",
+   "v": 326.72
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -21270,7 +21270,7 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-10-30T18:36:43Z",
+  "t": "2026-10-30T18:41:48Z",
   "virtuell": 12,
   "neu": 0,
   "gestoppt": false
