@@ -3011,48 +3011,6 @@
   "status": "sim",
   "offen_sim": [
    {
-    "mint": "E9vaDNqpHtFtQWoEYiZV3ihZKoq6JHx3iYj4i5QYpump",
-    "t_kauf": 1793307854,
-    "t_verkauf": 1793308179,
-    "sol_in": 0.1016,
-    "eigen": -0.2824
-   },
-   {
-    "mint": "6fv6ZLiiwZzQq5kqx1STsMHFjcbahCqimttDY6WxyszA",
-    "t_kauf": 1793308117,
-    "t_verkauf": 1793308445,
-    "sol_in": 0.1015,
-    "eigen": -0.4698
-   },
-   {
-    "mint": "8bbpPt3fix4wiNo3j2SZJ5zR1wYDNeJ84RWbVFDZpump",
-    "t_kauf": 1793309084,
-    "t_verkauf": 1793309421,
-    "sol_in": 0.1016,
-    "eigen": 0.4037
-   },
-   {
-    "mint": "HyPESTUwRbb21wH4Qyw9ayKhb9AC7bWciqGbnGp7dRip",
-    "t_kauf": 1793309371,
-    "t_verkauf": 1793309700,
-    "sol_in": 0.1016,
-    "eigen": 0.0518
-   },
-   {
-    "mint": "2orqEGSdkm5BMmhdM8TpKCpACk32a3Zaj3Lef7ceqsc6",
-    "t_kauf": 1793310076,
-    "t_verkauf": 1793310394,
-    "sol_in": 0.1015,
-    "eigen": 1.0404
-   },
-   {
-    "mint": "Hh75XVgo1zKLctEwhiaGUHwyzn4rfGirnzhTxq1xpump",
-    "t_kauf": 1793310882,
-    "t_verkauf": 1793311198,
-    "sol_in": 0.1031,
-    "eigen": -0.0916
-   },
-   {
     "mint": "GTukywV127Qw35tYD29wTxpKMNbMJ5DYdodz3xK2pump",
     "t_kauf": 1793311019,
     "t_verkauf": 1793311343,
@@ -3135,6 +3093,14 @@
    [
     1793218002,
     -0.5319
+   ],
+   [
+    1793308117,
+    -0.5319
+   ],
+   [
+    1793310882,
+    -0.0319
    ]
   ],
   "details": [
@@ -3287,9 +3253,39 @@
     "luecke_rein_s": 138,
     "luecke_raus_s": 0,
     "kerzen": 2
+   },
+   {
+    "mint": "6fv6ZLiiwZzQq5kqx1STsMHFjcbahCqimttDY6WxyszA",
+    "t_kauf": 1793308117,
+    "t_verkauf": 1793308445,
+    "sol_in": 0.1015,
+    "eigen": -0.4698,
+    "quelle": "gt",
+    "kopie": -0.5319,
+    "entry": 4.339125660887672e-05,
+    "exit": 2.169562830443836e-05,
+    "grund": "stop",
+    "luecke_rein_s": -37,
+    "luecke_raus_s": 0,
+    "kerzen": 111
+   },
+   {
+    "mint": "Hh75XVgo1zKLctEwhiaGUHwyzn4rfGirnzhTxq1xpump",
+    "t_kauf": 1793310882,
+    "t_verkauf": 1793311198,
+    "sol_in": 0.1031,
+    "eigen": -0.0916,
+    "quelle": "gt",
+    "kopie": -0.0319,
+    "entry": 1.3255355130752546e-05,
+    "exit": 1.3255355130752546e-05,
+    "grund": "nach_verkauf",
+    "luecke_rein_s": 378,
+    "luecke_raus_s": -62,
+    "kerzen": 2
    }
   ],
-  "ohne_kurs": 8,
+  "ohne_kurs": 12,
   "via_codex": 1
  },
  "BMaoPuSJNr5qcJEQL2tRAtQAhKYWfQ6bPaG5bJM15LfA": {
