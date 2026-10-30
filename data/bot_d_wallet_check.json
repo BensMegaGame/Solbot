@@ -3008,51 +3008,7 @@
   "liegen_gelassen": 6,
   "eigen_schnitt": 0.067,
   "halte_min": 5.4,
-  "status": "sim",
-  "offen_sim": [
-   {
-    "mint": "GTukywV127Qw35tYD29wTxpKMNbMJ5DYdodz3xK2pump",
-    "t_kauf": 1793311019,
-    "t_verkauf": 1793311343,
-    "sol_in": 0.1016,
-    "eigen": -0.1109
-   },
-   {
-    "mint": "5ffG1bN262PD9XTAgLVLjXNqrmk9Tfr1w3ar2xoqpump",
-    "t_kauf": 1793312675,
-    "t_verkauf": 1793312999,
-    "sol_in": 0.103,
-    "eigen": 0.3887
-   },
-   {
-    "mint": "2UKT7TrqzMWK1X5CWmWwoiBCGFHfYuk4yjjUsbnzpump",
-    "t_kauf": 1793313087,
-    "t_verkauf": 1793313422,
-    "sol_in": 0.1016,
-    "eigen": 0.1174
-   },
-   {
-    "mint": "HA479B5zxyLPsV6rUo8PzoYKK2WCDZhJojJuqdx9pump",
-    "t_kauf": 1793313584,
-    "t_verkauf": 1793313879,
-    "sol_in": 0.1016,
-    "eigen": 1.5306
-   },
-   {
-    "mint": "8p51fvM5ZKrzp3tRkTRKTVgxUGw1PrRu3TTkkJkJHype",
-    "t_kauf": 1793316236,
-    "t_verkauf": 1793316572,
-    "sol_in": 0.1016,
-    "eigen": -0.7164
-   },
-   {
-    "mint": "5d3BgrBRzYMhswg1QNveWvDUvQAKpVAUEiidBT2earny",
-    "t_kauf": 1793317036,
-    "t_verkauf": 1793317364,
-    "sol_in": 0.1016,
-    "eigen": 0.0972
-   }
-  ],
+  "status": "durchgefallen",
   "sim": [
    [
     1792805213,
@@ -3285,8 +3241,12 @@
     "kerzen": 2
    }
   ],
-  "ohne_kurs": 12,
-  "via_codex": 1
+  "ohne_kurs": 18,
+  "via_codex": 1,
+  "n": 12,
+  "grund": "nur 12 Trades mit Kursen",
+  "kosten": 0.0319,
+  "kosten_art": "jupiter"
  },
  "BMaoPuSJNr5qcJEQL2tRAtQAhKYWfQ6bPaG5bJM15LfA": {
   "t": 1793235991.7154968,
