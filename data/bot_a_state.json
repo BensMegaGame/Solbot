@@ -1,5 +1,5 @@
 {
- "cash": 53.84437694111225,
+ "cash": 44.54922394111225,
  "positions": {
   "t9bnCGiZVUYsRKvx4d5dPcoDCSyuBM9C33ZNGNULARP": {
    "sym": "LARPCHECK",
@@ -18,19 +18,18 @@
    "opened": "2026-10-28T17:10:40Z",
    "peak": 0.000662,
    "entry": 0.0006428414640751908,
-   "cur_price": 0.0005443,
-   "mark": 0.0005443
+   "cur_price": 0.0005458,
+   "mark": 0.0005458
   },
-  "HAsTKXYvv65zM7J6Cu5o5PcZsiKMQYo5oz4WPjgqwP6k": {
-   "sym": "jeff",
-   "qty": 27989.59106327,
-   "cost": 25.01,
-   "opened": "2026-10-30T02:55:55Z",
-   "peak": 0.002337,
-   "entry": 0.000893546459591543,
-   "cur_price": 0.001543,
-   "mark": 0.001543,
-   "tp0": true
+  "EwX2T1p2PmgTsSq2Bi6XtQYxPC5krR4P2fxPfN4Qpump": {
+   "sym": "\u2588\u2588\u2588",
+   "qty": 99696.360189,
+   "cost": 50.02,
+   "opened": "2026-10-30T16:45:28Z",
+   "peak": 0.0004923,
+   "entry": 0.0005017234320809132,
+   "cur_price": 0.0004923,
+   "mark": 0.0004923
   }
  },
  "trades": [
@@ -4009,13 +4008,36 @@
    "slip": 0.023,
    "quote": "jup",
    "reason": "tp0"
+  },
+  {
+   "t": "2026-10-30T16:45:04Z",
+   "side": "sell",
+   "sym": "jeff",
+   "addr": "HAsTKXYvv65zM7J6Cu5o5PcZsiKMQYo5oz4WPjgqwP6k",
+   "price": 0.001474,
+   "usd": 40.72,
+   "pnl": 15.71,
+   "peak_x": 2.615,
+   "held_h": 13.8,
+   "frac": 1.0,
+   "slip": 0.0219,
+   "quote": "jup",
+   "reason": "trail"
+  },
+  {
+   "t": "2026-10-30T16:45:28Z",
+   "side": "buy",
+   "sym": "\u2588\u2588\u2588",
+   "addr": "EwX2T1p2PmgTsSq2Bi6XtQYxPC5krR4P2fxPfN4Qpump",
+   "price": 0.0004923,
+   "fill": 0.000501723432,
+   "usd": 50.02,
+   "slip": 0.019,
+   "quote": "jup",
+   "reason": "screener"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-13T07:51:11Z",
-   "v": 372.11
-  },
   {
    "t": "2026-10-13T07:56:10Z",
    "v": 371.94
@@ -24011,12 +24033,17 @@
   {
    "t": "2026-10-30T16:40:58Z",
    "v": 173.85
+  },
+  {
+   "t": "2026-10-30T16:46:01Z",
+   "v": 170.57
   }
  ],
  "started": "2026-09-10T17:17:16Z",
  "verkauft_am": {
   "Cbkg5w7V7W2J2sUmecnyN825CbvwvXwasfhduVtNpump": 1792959606.042863,
   "8TiMkgvsrat9tM2esko8zVTt99LZLpefUM4SnZaziXaQ": 1793207402.8462992,
-  "8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump": 1793328902.001242
+  "8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump": 1793328902.001242,
+  "HAsTKXYvv65zM7J6Cu5o5PcZsiKMQYo5oz4WPjgqwP6k": 1793378704.953463
  }
 }
