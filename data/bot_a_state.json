@@ -1,5 +1,5 @@
 {
- "cash": 69.04354194111225,
+ "cash": 19.02354194111225,
  "positions": {
   "BLeMEetdzeq9xsNti2tCiau4JnD7mzyQzQFHdy5pump": {
    "sym": "RETIRED",
@@ -8,8 +8,8 @@
    "opened": "2026-10-28T17:10:40Z",
    "peak": 0.0008684,
    "entry": 0.0006428414640751908,
-   "cur_price": 0.0007713,
-   "mark": 0.0007713
+   "cur_price": 0.0007773,
+   "mark": 0.0007773
   },
   "EwX2T1p2PmgTsSq2Bi6XtQYxPC5krR4P2fxPfN4Qpump": {
    "sym": "\u2588\u2588\u2588",
@@ -18,8 +18,18 @@
    "opened": "2026-10-30T16:45:28Z",
    "peak": 0.000713,
    "entry": 0.0005017234320809132,
-   "cur_price": 0.0003715,
-   "mark": 0.0003715
+   "cur_price": 0.0003613,
+   "mark": 0.0003613
+  },
+  "HytpiyuR3sVXGB5UqoqrnThCPH2X1tWVm5neep3Dpump": {
+   "sym": "Bitcoin",
+   "qty": 174462.550059,
+   "cost": 50.02,
+   "opened": "2026-10-31T23:50:34Z",
+   "peak": 0.0002943,
+   "entry": 0.0002867090959239342,
+   "cur_price": 0.0002943,
+   "mark": 0.0002943
   }
  },
  "trades": [
@@ -4040,13 +4050,21 @@
    "slip": 0.015,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-10-31T23:50:34Z",
+   "side": "buy",
+   "sym": "Bitcoin",
+   "addr": "HytpiyuR3sVXGB5UqoqrnThCPH2X1tWVm5neep3Dpump",
+   "price": 0.0002943,
+   "fill": 0.000286709096,
+   "usd": 50.02,
+   "slip": 0.0409,
+   "quote": "jup",
+   "reason": "screener"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-14T14:55:49Z",
-   "v": 315.72
-  },
   {
    "t": "2026-10-14T15:00:49Z",
    "v": 316.26
@@ -24042,6 +24060,10 @@
   {
    "t": "2026-10-31T23:46:07Z",
    "v": 166.1
+  },
+  {
+   "t": "2026-10-31T23:51:08Z",
+   "v": 166.87
   }
  ],
  "started": "2026-09-10T17:17:16Z",
