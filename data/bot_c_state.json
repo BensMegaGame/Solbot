@@ -1,17 +1,6 @@
 {
- "cash": 255.49890717253092,
- "positions": {
-  "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": {
-   "sym": "DACITY",
-   "qty": 13666.797971,
-   "cost": 109.52810307394182,
-   "opened": "2026-11-01T16:51:24Z",
-   "peak": 0.008359,
-   "entry": 0.008014174447178694,
-   "cur_price": 0.007279,
-   "mark": 0.007279
-  }
- },
+ "cash": 354.38528217253094,
+ "positions": {},
  "trades": [
   {
    "t": "2026-09-25T10:30:42Z",
@@ -1539,13 +1528,24 @@
    "slip": 0.0068,
    "quote": "jup",
    "reason": "dip 24h -11% (SOL -1%) 1h +0.1%"
+  },
+  {
+   "t": "2026-11-01T23:31:24Z",
+   "side": "sell",
+   "sym": "DACITY",
+   "addr": "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump",
+   "price": 0.007212,
+   "usd": 98.89,
+   "pnl": -10.64,
+   "peak_x": 1.043,
+   "held_h": 6.7,
+   "frac": 1.0,
+   "slip": 0.0164,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-15T14:36:18Z",
-   "v": 508.53
-  },
   {
    "t": "2026-10-15T14:41:21Z",
    "v": 504.72
@@ -21541,6 +21541,10 @@
   {
    "t": "2026-11-01T23:26:27Z",
    "v": 354.98
+  },
+  {
+   "t": "2026-11-01T23:31:27Z",
+   "v": 354.39
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -21548,7 +21552,7 @@
  "strategy": "dip_weites_netz",
  "universe_n": 153,
  "coverage": {
-  "t": "2026-11-01T23:26:27Z",
+  "t": "2026-11-01T23:31:27Z",
   "kurse": 129,
   "von": 153,
   "ohne_pool": 86,
@@ -21558,9 +21562,7 @@
  "verkauft_am": {
   "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": 1793294184.9381115,
   "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump": 1793318487.5193958,
-  "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": 1792905394.6722174,
-  "ABt79MkRXUsoHuV2CVQT32YMXQhTparKFjmidQxgiQ6E": 1792932389.1477976,
-  "PRVT6TB7uss3FrUd2D9xs2zqDBsa3GbMJMwCQsgmeta": 1792957599.0988278,
+  "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": 1793575884.7856612,
   "MukLDtJ8Cx9DxLbeyLRSWPSposTMWuwHANbuaudpump": 1793246181.5282798,
   "6nR8wBnfsmXfcdDr1hovJKjvFQxNSidN6XFyfAFZpump": 1793257877.5688963,
   "JAFqCQSpy5YinrsmixWSMaD7jTn4MytJRkyWvYPnY6ea": 1793284881.745525
