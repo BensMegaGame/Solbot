@@ -1,6 +1,17 @@
 {
- "cash": 432.86102034569694,
- "positions": {},
+ "cash": 238.0535611901333,
+ "positions": {
+  "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG": {
+   "sym": "BIRB",
+   "qty": 2436.798197,
+   "cost": 194.80745915556363,
+   "opened": "2026-11-01T07:36:33Z",
+   "peak": 0.08012,
+   "entry": 0.07994402630279179,
+   "no_quote_since": "2026-11-01T07:36:33Z",
+   "mark": 0.0
+  }
+ },
  "trades": [
   {
    "t": "2026-09-16T17:20:59Z",
@@ -1315,13 +1326,21 @@
    "slip": 0.0014,
    "quote": "jup",
    "reason": "trail"
+  },
+  {
+   "t": "2026-11-01T07:36:33Z",
+   "side": "buy",
+   "sym": "BIRB",
+   "addr": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG",
+   "price": 0.08012,
+   "fill": 0.079944026303,
+   "usd": 194.81,
+   "slip": 0.001,
+   "quote": "jup",
+   "reason": "dip 24h -13% (SOL -0%) 1h +1.4%"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-14T22:41:45Z",
-   "v": 532.78
-  },
   {
    "t": "2026-10-14T22:46:43Z",
    "v": 532.78
@@ -21317,13 +21336,17 @@
   {
    "t": "2026-11-01T07:31:33Z",
    "v": 432.86
+  },
+  {
+   "t": "2026-11-01T07:36:33Z",
+   "v": 238.05
   }
  ],
  "started": "2026-09-16T16:55:59Z",
  "strategy": "largecap_dip",
  "universe_n": 62,
  "coverage": {
-  "t": "2026-11-01T07:31:33Z",
+  "t": "2026-11-01T07:36:33Z",
   "kurse": 62,
   "von": 62,
   "sol": true
