@@ -1,18 +1,6 @@
 {
- "cash": 356.0950941138923,
- "positions": {
-  "METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m": {
-   "sym": "MPLX",
-   "qty": 1527.2913395,
-   "cost": 97.4015220381205,
-   "opened": "2026-11-01T13:41:37Z",
-   "peak": 0.07472,
-   "entry": 0.06377402890925023,
-   "mark": 0.0704,
-   "cur_price": 0.0704,
-   "tp1": true
-  }
- },
+ "cash": 463.4466811138923,
+ "positions": {},
  "trades": [
   {
    "t": "2026-09-16T17:20:59Z",
@@ -1381,13 +1369,24 @@
    "slip": 0.0007,
    "quote": "jup",
    "reason": "trail"
+  },
+  {
+   "t": "2026-11-02T07:21:33Z",
+   "side": "sell",
+   "sym": "MPLX",
+   "addr": "METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m",
+   "price": 0.07014,
+   "usd": 107.35,
+   "pnl": 9.95,
+   "peak_x": 1.172,
+   "held_h": 17.7,
+   "frac": 1.0,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-15T22:26:41Z",
-   "v": 532.78
-  },
   {
    "t": "2026-10-15T22:31:43Z",
    "v": 532.78
@@ -21383,13 +21382,17 @@
   {
    "t": "2026-11-02T07:16:33Z",
    "v": 463.62
+  },
+  {
+   "t": "2026-11-02T07:21:33Z",
+   "v": 463.45
   }
  ],
  "started": "2026-09-16T16:55:59Z",
  "strategy": "largecap_dip",
  "universe_n": 57,
  "coverage": {
-  "t": "2026-11-02T07:16:33Z",
+  "t": "2026-11-02T07:21:33Z",
   "kurse": 57,
   "von": 57,
   "sol": true
@@ -21397,6 +21400,7 @@
  "verkauft_am": {
   "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG": 1793602892.3909016,
   "MEW1gQWJ3nEXg2qgERiKu7FAFj79PHvQVREQUzScPP5": 1793241100.1892395,
-  "CWZ6BsdnjkDVTGkmL6bGbJXXig6ceef12KvyGQW14cMt": 1793280087.6464105
+  "CWZ6BsdnjkDVTGkmL6bGbJXXig6ceef12KvyGQW14cMt": 1793280087.6464105,
+  "METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m": 1793604093.6414747
  }
 }
