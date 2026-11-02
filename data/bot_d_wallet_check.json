@@ -360,13 +360,12 @@
   "grund": "> 5000 Transaktionen in 14 Tagen"
  },
  "A7xvXEVMoH6eJrc6ZmNxgwdmDHwCsKu2NSmyFBqkq6cT": {
-  "t": 1792974407.964443,
-  "tx_tag": 337.9,
-  "status": "bot",
-  "grund": "337.9 Transaktionen je Tag (Schnelltest)"
+  "t": 1793579488.3514872,
+  "status": "inaktiv",
+  "grund": "letzte Transaktion aelter als 3 Tage"
  },
  "FRQD8Lc1oY537vwVHFsAKGWbXrMGFgZ8CBHACV2WovAn": {
-  "t": 1792974407.7052195,
+  "t": 1793579488.0845308,
   "status": "inaktiv",
   "grund": "letzte Transaktion aelter als 3 Tage"
  },
@@ -7759,9 +7758,16 @@
   "grund": "298.2 Transaktionen je Tag (Schnelltest)"
  },
  "6UJQQ6VrjsKPQf2THEabYQxjizzCgGKmLjHcZcyEuJdy": {
-  "t": 1793578889.9249456,
+  "t": 1793579491.5409017,
   "tx_tag": 37.4,
-  "status": "vorab_ok"
+  "letzte": 1793573903,
+  "trades": 99,
+  "geschlossen": 92,
+  "liegen_gelassen": 4,
+  "eigen_schnitt": -0.0212,
+  "halte_min": 1.2,
+  "status": "zu_schnell",
+  "grund": "verkauft typisch nach 1.2 min"
  },
  "Ewx8pnp1N4sdLeCoH87V9EDV6QQPHbg4RfA2NstF1b5Y": {
   "t": 1793578890.2015052,
@@ -7822,10 +7828,10 @@
   "grund": "315.7 Transaktionen je Tag (Schnelltest)"
  },
  "A561VCba1N6TUqXgfjTpqMqyp1cUXNtomWksbd6EXGXe": {
-  "t": 1792974111.0632405,
-  "tx_tag": 137.7,
+  "t": 1793579490.5557852,
+  "tx_tag": 98.3,
   "status": "bot",
-  "grund": "137.7 Transaktionen je Tag (Schnelltest)"
+  "grund": "98.3 Transaktionen je Tag (Schnelltest)"
  },
  "7sJ3GVZ1TDvuqHSpwanT8WAQYmuJVtpTCt8FATsoQJF1": {
   "t": 1793579188.876129,
@@ -7846,10 +7852,10 @@
   "grund": "989.2 Transaktionen je Tag (Schnelltest)"
  },
  "GHzCBZRnHA5Te6ZHwkxJC8PNGKgFmmf6D9fzTkTpZHrk": {
-  "t": 1792974408.2415917,
-  "tx_tag": 121.8,
+  "t": 1793579489.1992235,
+  "tx_tag": 70.0,
   "status": "bot",
-  "grund": "121.8 Transaktionen je Tag (Schnelltest)"
+  "grund": "70.0 Transaktionen je Tag (Schnelltest)"
  },
  "EsM1TfSegaGq4WhYo3CiqHKfhGekq6S2ALADVyNufsVo": {
   "t": 1792974408.452133,
@@ -7858,10 +7864,10 @@
   "grund": "1000.0 Transaktionen je Tag (Schnelltest)"
  },
  "7Js5gmq57y9jG2sseKrAeJt3vbncSWSFFHDEsyJDnyVm": {
-  "t": 1792974408.7345316,
-  "tx_tag": 1000.0,
+  "t": 1793579489.673923,
+  "tx_tag": 275.2,
   "status": "bot",
-  "grund": "1000.0 Transaktionen je Tag (Schnelltest)"
+  "grund": "275.2 Transaktionen je Tag (Schnelltest)"
  },
  "3pVqDdRLxpbWkWjRJJyLhRGosNWHujGJ5vfYHCbm48MB": {
   "t": 1792974408.985892,
@@ -7876,52 +7882,50 @@
   "grund": "274.0 Transaktionen je Tag (Schnelltest)"
  },
  "6a7tbRtWETeGrzWmLTUFkRAMQ2p9HxN4xCaSinRYnFXZ": {
-  "t": 1792974409.4067602,
-  "tx_tag": 518.4,
+  "t": 1793579490.138118,
+  "tx_tag": 457.2,
   "status": "bot",
-  "grund": "518.4 Transaktionen je Tag (Schnelltest)"
+  "grund": "457.2 Transaktionen je Tag (Schnelltest)"
  },
  "6DTmJxZW1Dwuyb7UuUo5yYFHwQewfZDLaNYvFinvAYsj": {
-  "t": 1792974409.624275,
-  "tx_tag": 179.8,
+  "t": 1793579490.8186657,
+  "tx_tag": 180.1,
   "status": "bot",
-  "grund": "179.8 Transaktionen je Tag (Schnelltest)"
+  "grund": "180.1 Transaktionen je Tag (Schnelltest)"
  },
  "DvkknXZYP62vELaSjC7iseTPXtTkWQ37hW3S2HW8kNy1": {
-  "t": 1792974409.8455775,
-  "tx_tag": 115.0,
+  "t": 1793579488.9829473,
+  "tx_tag": 221.6,
   "status": "bot",
-  "grund": "115.0 Transaktionen je Tag (Schnelltest)"
+  "grund": "221.6 Transaktionen je Tag (Schnelltest)"
  },
  "8C5HPbH4pvZx4VykP6McmVr4gCSvHHDStcKiQjWXkJWX": {
-  "t": 1792974410.0452306,
-  "tx_tag": 722.5,
+  "t": 1793579490.3461373,
+  "tx_tag": 141.9,
   "status": "bot",
-  "grund": "722.5 Transaktionen je Tag (Schnelltest)"
+  "grund": "141.9 Transaktionen je Tag (Schnelltest)"
  },
  "9ke5yTqjeYK6SvDiuPf5P6Q9CqjxrCeJCvNPdpGWgvf1": {
-  "t": 1792974410.304959,
-  "tx_tag": 1000.0,
+  "t": 1793579489.9234562,
+  "tx_tag": 420.9,
   "status": "bot",
-  "grund": "1000.0 Transaktionen je Tag (Schnelltest)"
+  "grund": "420.9 Transaktionen je Tag (Schnelltest)"
  },
  "5rZhxm7gk4UwVwjHag879oe16iQ3w4FgLN7oD9BqtTEi": {
-  "t": 1792974410.6809893,
-  "tx_tag": 428.0,
-  "status": "bot",
-  "grund": "428.0 Transaktionen je Tag (Schnelltest)"
+  "t": 1793579488.5542388,
+  "status": "inaktiv",
+  "grund": "letzte Transaktion aelter als 3 Tage"
  },
  "DT81afdPF4amKvZfQHziiga48LnhvnXAU1rRbmGtVNGu": {
-  "t": 1792974410.9409602,
-  "tx_tag": 427.9,
-  "status": "bot",
-  "grund": "427.9 Transaktionen je Tag (Schnelltest)"
+  "t": 1793579488.769088,
+  "status": "inaktiv",
+  "grund": "letzte Transaktion aelter als 3 Tage"
  },
  "82XHVSY9AjMgauwAoLVmHpJw6n8g3c818Qcms1UvpNUS": {
-  "t": 1792974411.1537266,
-  "tx_tag": 144.9,
+  "t": 1793579489.4525726,
+  "tx_tag": 83.1,
   "status": "bot",
-  "grund": "144.9 Transaktionen je Tag (Schnelltest)"
+  "grund": "83.1 Transaktionen je Tag (Schnelltest)"
  },
  "9EwQoN74Hzw747EM7wB3WtvgAdRGH1czaPtbqZj1qDj4": {
   "t": 1792974703.5769787,
@@ -12918,5 +12922,17 @@
   "tx_tag": 574.0,
   "status": "bot",
   "grund": "574.0 Transaktionen je Tag (Schnelltest)"
+ },
+ "FtrG8E89558mSfdjGPQdZVGhGp3nuVtngRyj7nd1kHpp": {
+  "t": 1793579491.0821493,
+  "tx_tag": 143.2,
+  "status": "bot",
+  "grund": "143.2 Transaktionen je Tag (Schnelltest)"
+ },
+ "HtDaZpec1Rky2VHQXirjCJDc6er29GDdTqQYQE2iamdX": {
+  "t": 1793579491.3338263,
+  "tx_tag": 101.2,
+  "status": "bot",
+  "grund": "101.2 Transaktionen je Tag (Schnelltest)"
  }
 }
