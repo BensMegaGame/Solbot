@@ -20,8 +20,8 @@
    "peak": 0.00215,
    "entry": 0.0019450299483195536,
    "pair": "5KXE8RMF7iW9Ptn665AHfzsMFjYb4LV2Ta8eZEtsTwWC",
-   "cur_price": 0.001886,
-   "mark": 0.001886
+   "cur_price": 0.00189,
+   "mark": 0.00189
   },
   "ZEUS1aR7aX8DFFJf5QjWj2ftDDdNTroMNGo8YoQm3Gq": {
    "sym": "ZEUS",
@@ -42,19 +42,19 @@
    "peak": 1.87,
    "entry": 1.7176882278413834,
    "pair": "Gis8fU4MutdDa6tHCouMV5Xfgo7hER2fKQWG3v9aQ16U",
-   "cur_price": 1.87,
-   "mark": 1.87
+   "cur_price": 1.85,
+   "mark": 1.85
   },
   "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": {
    "sym": "DACITY",
    "qty": 9271.070893,
    "cost": 67.24379524109645,
    "opened": "2026-11-01T21:41:38Z",
-   "peak": 0.008495,
+   "peak": 0.008504,
    "entry": 0.007253077451049155,
    "pair": "G2UuRbmVDzDFP4qyoBJrSKBXSi7d6V4bPP9tHPs36y4b",
-   "cur_price": 0.008369,
-   "mark": 0.008369
+   "cur_price": 0.008504,
+   "mark": 0.008504
   }
  },
  "trades": [
@@ -1308,10 +1308,6 @@
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-16T03:46:45Z",
-   "v": 480.68
-  },
   {
    "t": "2026-10-16T03:51:46Z",
    "v": 480.91
@@ -21307,6 +21303,10 @@
   {
    "t": "2026-11-02T12:36:29Z",
    "v": 346.58
+  },
+  {
+   "t": "2026-11-02T12:41:31Z",
+   "v": 347.2
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -21319,7 +21319,7 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-11-02T12:36:29Z",
+  "t": "2026-11-02T12:41:31Z",
   "virtuell": 6,
   "neu": 0,
   "gestoppt": false
