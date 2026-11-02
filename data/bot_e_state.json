@@ -1,6 +1,17 @@
 {
- "cash": 463.4466811138923,
- "positions": {},
+ "cash": 254.87567461264075,
+ "positions": {
+  "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx": {
+   "sym": "STONK",
+   "qty": 2010.451974179,
+   "cost": 208.57100650125153,
+   "opened": "2026-11-02T21:11:48Z",
+   "peak": 0.1036,
+   "entry": 0.10374334188531155,
+   "no_quote_since": "2026-11-02T21:11:48Z",
+   "mark": 0.0
+  }
+ },
  "trades": [
   {
    "t": "2026-09-16T17:20:59Z",
@@ -1384,13 +1395,21 @@
    "slip": 0.0,
    "quote": "jup",
    "reason": "trail"
+  },
+  {
+   "t": "2026-11-02T21:11:48Z",
+   "side": "buy",
+   "sym": "STONK",
+   "addr": "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx",
+   "price": 0.1036,
+   "fill": 0.103743341885,
+   "usd": 208.57,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "dip 24h -15% (SOL -3%) 1h -1.3%"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-16T12:16:36Z",
-   "v": 531.1
-  },
   {
    "t": "2026-10-16T12:21:36Z",
    "v": 531.1
@@ -21386,13 +21405,17 @@
   {
    "t": "2026-11-02T21:06:46Z",
    "v": 463.45
+  },
+  {
+   "t": "2026-11-02T21:11:48Z",
+   "v": 254.88
   }
  ],
  "started": "2026-09-16T16:55:59Z",
  "strategy": "largecap_dip",
  "universe_n": 62,
  "coverage": {
-  "t": "2026-11-02T21:06:46Z",
+  "t": "2026-11-02T21:11:48Z",
   "kurse": 62,
   "von": 62,
   "sol": true
