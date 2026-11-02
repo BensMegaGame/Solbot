@@ -39,11 +39,11 @@
    "qty": 38.621360798,
    "cost": 66.33945678593929,
    "opened": "2026-10-31T09:46:48Z",
-   "peak": 1.82,
+   "peak": 1.87,
    "entry": 1.7176882278413834,
    "pair": "Gis8fU4MutdDa6tHCouMV5Xfgo7hER2fKQWG3v9aQ16U",
-   "cur_price": 1.82,
-   "mark": 1.82
+   "cur_price": 1.87,
+   "mark": 1.87
   },
   "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": {
    "sym": "DACITY",
@@ -53,8 +53,8 @@
    "peak": 0.008495,
    "entry": 0.007253077451049155,
    "pair": "G2UuRbmVDzDFP4qyoBJrSKBXSi7d6V4bPP9tHPs36y4b",
-   "cur_price": 0.00834,
-   "mark": 0.00834
+   "cur_price": 0.008369,
+   "mark": 0.008369
   }
  },
  "trades": [
@@ -1308,10 +1308,6 @@
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-16T03:41:44Z",
-   "v": 480.68
-  },
   {
    "t": "2026-10-16T03:46:45Z",
    "v": 480.68
@@ -21307,6 +21303,10 @@
   {
    "t": "2026-11-02T12:31:29Z",
    "v": 344.38
+  },
+  {
+   "t": "2026-11-02T12:36:29Z",
+   "v": 346.58
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -21319,9 +21319,9 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-11-02T12:31:29Z",
+  "t": "2026-11-02T12:36:29Z",
   "virtuell": 6,
-  "neu": 1,
+  "neu": 0,
   "gestoppt": false
  },
  "verkauft_am": {
