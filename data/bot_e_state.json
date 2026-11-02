@@ -1,16 +1,6 @@
 {
- "cash": 155.8392631138923,
+ "cash": 356.0950941138923,
  "positions": {
-  "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG": {
-   "sym": "BIRB",
-   "qty": 2436.798197,
-   "cost": 194.80745915556363,
-   "opened": "2026-11-01T07:36:33Z",
-   "peak": 0.0877,
-   "entry": 0.07994402630279179,
-   "mark": 0.08613,
-   "cur_price": 0.08613
-  },
   "METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m": {
    "sym": "MPLX",
    "qty": 1527.2913395,
@@ -18,8 +8,8 @@
    "opened": "2026-11-01T13:41:37Z",
    "peak": 0.07472,
    "entry": 0.06377402890925023,
-   "mark": 0.07064,
-   "cur_price": 0.07064,
+   "mark": 0.07042,
+   "cur_price": 0.07042,
    "tp1": true
   }
  },
@@ -1376,13 +1366,24 @@
    "slip": 0.0001,
    "quote": "jup",
    "reason": "tp1"
+  },
+  {
+   "t": "2026-11-02T07:01:32Z",
+   "side": "sell",
+   "sym": "BIRB",
+   "addr": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG",
+   "price": 0.08206,
+   "usd": 200.26,
+   "pnl": 5.45,
+   "peak_x": 1.097,
+   "held_h": 23.4,
+   "frac": 1.0,
+   "slip": 0.0007,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-15T22:06:39Z",
-   "v": 532.78
-  },
   {
    "t": "2026-10-15T22:11:40Z",
    "v": 532.78
@@ -21378,21 +21379,23 @@
   {
    "t": "2026-11-02T06:56:33Z",
    "v": 473.61
+  },
+  {
+   "t": "2026-11-02T07:01:32Z",
+   "v": 463.65
   }
  ],
  "started": "2026-09-16T16:55:59Z",
  "strategy": "largecap_dip",
  "universe_n": 57,
  "coverage": {
-  "t": "2026-11-02T06:56:33Z",
+  "t": "2026-11-02T07:01:32Z",
   "kurse": 57,
   "von": 57,
   "sol": true
  },
  "verkauft_am": {
-  "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG": 1792727496.7750733,
-  "DvjbEsdca43oQcw2h3HW1CT7N3x5vRcr3QrvTUHnXvgV": 1792774901.2736723,
-  "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2": 1792801813.9816115,
+  "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG": 1793602892.3909016,
   "MEW1gQWJ3nEXg2qgERiKu7FAFj79PHvQVREQUzScPP5": 1793241100.1892395,
   "CWZ6BsdnjkDVTGkmL6bGbJXXig6ceef12KvyGQW14cMt": 1793280087.6464105
  }
