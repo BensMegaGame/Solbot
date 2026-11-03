@@ -20,19 +20,19 @@
    "peak": 0.00215,
    "entry": 0.0019450299483195536,
    "pair": "5KXE8RMF7iW9Ptn665AHfzsMFjYb4LV2Ta8eZEtsTwWC",
-   "cur_price": 0.001761,
-   "mark": 0.001761
+   "cur_price": 0.001758,
+   "mark": 0.001758
   },
   "DuEy8wWrzCUun5ZbbG9hkVqXqqicpTQw8gB7nEAzpCHQ": {
    "sym": "FLUID",
    "qty": 38.621360798,
    "cost": 66.33945678593929,
    "opened": "2026-10-31T09:46:48Z",
-   "peak": 1.96,
+   "peak": 1.97,
    "entry": 1.7176882278413834,
    "pair": "Gis8fU4MutdDa6tHCouMV5Xfgo7hER2fKQWG3v9aQ16U",
-   "cur_price": 1.96,
-   "mark": 1.96
+   "cur_price": 1.97,
+   "mark": 1.97
   },
   "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": {
    "sym": "DACITY",
@@ -42,8 +42,8 @@
    "peak": 0.008504,
    "entry": 0.007253077451049155,
    "pair": "G2UuRbmVDzDFP4qyoBJrSKBXSi7d6V4bPP9tHPs36y4b",
-   "cur_price": 0.007187,
-   "mark": 0.007187
+   "cur_price": 0.007052,
+   "mark": 0.007052
   },
   "KENJSUYLASHUMfHyy5o4Hp2FdNqZg1AsUPhfH2kYvEP": {
    "sym": "GRIFFAIN",
@@ -53,8 +53,8 @@
    "peak": 0.01199,
    "entry": 0.011094062298543953,
    "pair": "CpsMssqi3P9VMvNqxrdWVbSBCwyUHbGgNcrw7MorBq3g",
-   "cur_price": 0.01199,
-   "mark": 0.01199
+   "cur_price": 0.0119,
+   "mark": 0.0119
   }
  },
  "trades": [
@@ -1335,10 +1335,6 @@
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-17T07:11:45Z",
-   "v": 456.87
-  },
   {
    "t": "2026-10-17T07:16:50Z",
    "v": 456.81
@@ -21334,6 +21330,10 @@
   {
    "t": "2026-11-03T16:01:37Z",
    "v": 337.86
+  },
+  {
+   "t": "2026-11-03T16:06:36Z",
+   "v": 336.39
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -21345,8 +21345,8 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-11-03T16:01:37Z",
-  "virtuell": 7,
+  "t": "2026-11-03T16:06:36Z",
+  "virtuell": 6,
   "neu": 0,
   "gestoppt": false
  },
