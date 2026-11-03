@@ -9004,10 +9004,6 @@
  ],
  "equity": [
   {
-   "t": "2026-10-16T23:21:46Z",
-   "v": 15.88
-  },
-  {
    "t": "2026-10-16T23:26:44Z",
    "v": 15.88
   },
@@ -29002,6 +28998,10 @@
   {
    "t": "2026-11-03T08:11:38Z",
    "v": 15.88
+  },
+  {
+   "t": "2026-11-03T08:16:41Z",
+   "v": 15.88
   }
  ],
  "started": "2026-09-15T16:35:51Z",
@@ -29092,35 +29092,35 @@
   "F458Huat36hKjLPc7dmL4uEixBAgX7fUjxWwnUEkpump": 1791414739.6887403
  },
  "coverage": {
-  "t": "2026-11-03T08:11:38Z",
+  "t": "2026-11-03T08:16:41Z",
   "kandidaten": 45,
   "pfade": 307,
-  "kurse": 91,
-  "von": 131,
+  "kurse": 88,
+  "von": 128,
   "fruehkaeufer_neu": 0,
   "fruehkaeufer_fehler": 0,
   "weg": {},
   "coins_mit_fruehkaeufern": 990,
-  "coins_ausgewertet": 874,
-  "credits_heute": 4008,
+  "coins_ausgewertet": 876,
+  "credits_heute": 4019,
   "codex_heute": 32,
   "spaet_neu": 0,
   "coins_mit_spaeten": 846,
   "spaet_fehler": null,
   "codex_ohne_filter": false,
-  "kandidaten_wallets": 2103,
-  "wallets_geprueft": 2117,
+  "kandidaten_wallets": 2115,
+  "wallets_geprueft": 2128,
   "wallets_bestanden": 0,
   "copy_liste": 0,
-  "helius_wallet_heute": 3888,
+  "helius_wallet_heute": 3899,
   "laufzeit_s": {
    "kandidaten": 0,
    "kurse": 7,
    "fruehkaeufer": 7,
    "spaete_kaeufer": 7,
    "jupiter": 7,
-   "stufe2": 7,
-   "gesamt": 8
+   "stufe2": 10,
+   "gesamt": 11
   },
   "warteschlange": 91
  },
