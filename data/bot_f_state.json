@@ -42,8 +42,8 @@
    "peak": 0.008504,
    "entry": 0.007253077451049155,
    "pair": "G2UuRbmVDzDFP4qyoBJrSKBXSi7d6V4bPP9tHPs36y4b",
-   "cur_price": 0.007226,
-   "mark": 0.007226
+   "cur_price": 0.007182,
+   "mark": 0.007182
   },
   "KENJSUYLASHUMfHyy5o4Hp2FdNqZg1AsUPhfH2kYvEP": {
    "sym": "GRIFFAIN",
@@ -53,8 +53,8 @@
    "peak": 0.01198,
    "entry": 0.011094062298543953,
    "pair": "CpsMssqi3P9VMvNqxrdWVbSBCwyUHbGgNcrw7MorBq3g",
-   "cur_price": 0.01176,
-   "mark": 0.01176
+   "cur_price": 0.01182,
+   "mark": 0.01182
   }
  },
  "trades": [
@@ -1335,10 +1335,6 @@
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-17T06:31:54Z",
-   "v": 456.65
-  },
   {
    "t": "2026-10-17T06:36:45Z",
    "v": 456.56
@@ -21334,6 +21330,10 @@
   {
    "t": "2026-11-03T15:21:43Z",
    "v": 336.73
+  },
+  {
+   "t": "2026-11-03T15:26:47Z",
+   "v": 336.65
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -21345,7 +21345,7 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-11-03T15:21:43Z",
+  "t": "2026-11-03T15:26:47Z",
   "virtuell": 7,
   "neu": 0,
   "gestoppt": false
