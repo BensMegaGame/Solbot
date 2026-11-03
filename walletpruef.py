@@ -28,10 +28,10 @@ GT = "https://api.geckoterminal.com/api/v2/networks/solana"
 GT_H = {"Accept": "application/json;version=20230302", **UA}
 
 TAGE = 14                 # Pruefzeitraum
-MAX_TX_TAG = 50           # mehr Transaktionen je Tag = Bot
+MAX_TX_TAG = 100          # mehr Transaktionen je Tag = Bot (v6: 100 statt 50 - lieber testen als zu streng aussortieren)
 SIG_SEITEN = 5            # hoechstens 5 x 1000 Signaturen
 MAX_TX_HOLEN = 300        # hoechstens so viele Transaktionen einzeln holen (~300 Credits je Wallet)
-MIN_TRADES = 20
+MIN_TRADES = 10            # v6: 10 statt 20 Trades mit Kursen
 MIN_HALTE_MIN = 5         # typische Zeit bis zum ersten Verkauf
 AKTIV_D = 3
 DELAY_S = 60              # unsere Verzoegerung beim Kopieren
@@ -182,7 +182,9 @@ def kopie_detail(tr, kerzen, kosten):
     raus = min(tr["t_verkauf"] + DELAY_S, ende) if tr.get("t_verkauf") else ende
     k = [r for r in kerzen if r[4]]
     rein = next((r for r in k if r[0] <= te < r[0] + 60), None) or next((r for r in k if r[0] > te), None)
-    if not rein or rein[0] > te + 15 * 60: return None          # kein Kurs in der Naehe des Einstiegs
+    # v6: Kerze hoechstens 2 Min nach unserem Einstieg (vorher 15 Min). Mit spaeteren Kerzen wurde z.B. ein Trade, bei dem
+    # die Wallet -68 % machte, als Kopie mit -3 % gewertet (Einstieg 8 Min zu spaet, Kurs danach nicht mehr bekannt).
+    if not rein or rein[0] > te + 120: return None
     entry = float(rein[4]); exit_px, t_exit, grund = None, None, None
     for r in k:
         if r[0] <= rein[0]: continue
@@ -228,9 +230,12 @@ def bewerten(sim):
     kz = {"n": len(x), "schnitt": round(statistics.mean(x), 4), "ohne_top2": round(statistics.mean(ohne), 4),
           "haelfte1": round(statistics.mean(x[:h]), 4), "haelfte2": round(statistics.mean(x[h:]), 4),
           "median": round(statistics.median(x), 4), "trefferquote": round(sum(v > 0 for v in x) / len(x), 3)}
-    ok = kz["schnitt"] > 0 and kz["ohne_top2"] > 0 and kz["haelfte1"] > 0 and kz["haelfte2"] > 0
+    # v6 (03.11.): lockerer, weil ohnehin nur auf Papier kopiert wird - der Live-Test entscheidet, nicht die Simulation.
+    # Bestanden = Kopie im Schnitt nach Kosten im Plus. Die strengeren Werte (ohne Top 2, beide Haelften) bleiben als Info.
+    ok = kz["schnitt"] > 0
+    kz["streng"] = kz["ohne_top2"] > 0 and kz["haelfte1"] > 0 and kz["haelfte2"] > 0
     if not ok:
-        kz["grund"] = "Kopierer-Ergebnis nicht in allen Punkten positiv"
+        kz["grund"] = "Kopie im Schnitt im Minus"
     return ok, kz
 
 

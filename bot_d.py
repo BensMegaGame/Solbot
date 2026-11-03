@@ -24,6 +24,7 @@ import os, time, statistics, shutil, json
 from collections import Counter
 from common import *
 import walletpruef as wp
+import copytrade
 
 VERSION = "d5"                         # v5.1: nur Stufe 2 schneller, kein neuer Versionswechsel noetig
 
@@ -35,7 +36,8 @@ RC = "https://api.rugcheck.xyz/v1/tokens"
 DISCOVER_EVERY_S = 30 * 60             # Codex hoechstens alle 30 Min (~1.440 Calls/Monat)
 PATH_HOURS = 7 * 24                    # v4: 7 Tage Kursverlauf je Kandidat (Gewinner/Verlierer sicher bestimmen)
 DICHT_H = 72                           # bis 72 h alle 5 Min, danach stuendlich
-HANDEL = False                         # v4: keine Kaeufe mehr - reiner Datensammler
+HANDEL = False                         # v4: keine eigenen Kaeufe nach Coin-Regeln mehr
+HANDEL_VERSION = "d6"                  # v6 (03.11.): Paper-Copy-Trading der Copy-Liste (copytrade.py), Neustart mit 500 $
 FRUEH_PRO_LAUF = 8                     # so viele Coins je Lauf auf Fruehkaeufer pruefen (Laufzeit + Credits)
 CODEX_MAX_TAG = 200                    # v5: hoechstens so viele Codex-Abfragen je Tag fuer Fruehkaeufer, spaete Kaeufer und
                                        # Kerzen (+ ~48 fuer die Kandidatensuche, + ~2 Bot E -> ~7.500 von 10.000 im Monat)
@@ -493,6 +495,40 @@ def stufe1(early, now):
     return info, [k[3] for k in kand[:KAND_MAX]]
 
 
+def verlauf(w, rec):
+    """v6: jedes Pruefergebnis zusaetzlich in eine Verlaufsdatei - vorher wurde es ueberschrieben (Wallet A war am 03.11.
+    von der Copy-Liste verschwunden, ohne dass sich noch nachvollziehen liess, warum)."""
+    append_jsonl("bot_d_wallet_verlauf.jsonl", {"t": now_iso(), "wallet": w, **{k: v for k, v in rec.items()
+                                                 if k not in ("details", "sim", "offen_sim", "vorher")}})
+
+
+def kriterien_v6(checks, meta):
+    """Einmalig beim Wechsel auf die lockereren Kriterien: fertige Simulationen neu bewerten, Bots mit 50-100
+    Transaktionen je Tag (nach alter Grenze aussortiert) erneut pruefen lassen."""
+    if meta.get("kriterien") == "v6": return
+    neu_bewertet = neu_pruefen = 0
+    for w, r in checks.items():
+        if r.get("status") in ("bestanden", "durchgefallen") and r.get("sim"):
+            ok, kz = wp.bewerten(r["sim"]); r.pop("grund", None); r.update(kz)
+            r["status"] = "bestanden" if ok else "durchgefallen"; neu_bewertet += 1; verlauf(w, r)
+        elif r.get("status") == "bot" and (r.get("tx_tag") or 999) <= wp.MAX_TX_TAG:
+            r["t"] = 0; neu_pruefen += 1
+        elif r.get("status") == "zu_wenig":
+            r["t"] = 0; neu_pruefen += 1
+    meta["kriterien"] = "v6"
+    print(f"Bot D: Kriterien v6 - {neu_bewertet} Simulationen neu bewertet, {neu_pruefen} Wallets werden erneut geprueft")
+
+
+def state_wechsel():
+    """v6: alter Paper-Stand (v3-Handel, ~96 $) ins Archiv, Copy-Trading startet mit 500 $."""
+    alt = load("bot_d_state.json", None)
+    if not alt or alt.get("version") == HANDEL_VERSION: return
+    os.makedirs(os.path.join(DATA, "archive"), exist_ok=True)
+    stamp = time.strftime("%Y%m%d_%H%M", time.gmtime())
+    os.replace(os.path.join(DATA, "bot_d_state.json"), os.path.join(DATA, "archive", f"bot_d_state_{alt.get('version', 'alt')}_{stamp}.json"))
+    print(f"Bot D: Wechsel auf {HANDEL_VERSION} (Paper-Copy-Trading) - alter Stand archiviert, Neustart mit {START_CAPITAL:.0f} $")
+
+
 # ---------- Stufe 2: Wallets pruefen ----------
 # v5.1 (21.10.): In den ersten 3 Tagen waren 125 von 128 gepruefte Wallets Bots, und jede kostete bis zu 5 Seiten
 # Signaturen. Ausserdem durfte eine neue Wallet nur geprueft werden, wenn der Lauf noch keine 100 s alt war - das
@@ -519,7 +555,7 @@ def stufe2(kand, checks, meta, t_start, codex_n):
         try:
             rec = wp.historie_pruefen(HELIUS, x, credits, deadline=t_start + ZEIT_ENDE_S)
             rec["vorher"] = {k: r.get(k) for k in COPY_FELDER + ("t", "status")}
-            checks[x] = rec
+            checks[x] = rec; verlauf(x, rec)
             log.append(f"Copy-Liste {x[:4]}.. neu geprueft: {rec['status']} {rec.get('grund', '')} (~{credits['n']} Credits)")
         except Exception as ex:
             r["recheck_versuch"] = now; r["recheck_fehler"] = str(ex)[:100]
@@ -550,7 +586,7 @@ def stufe2(kand, checks, meta, t_start, codex_n):
                 fv = (checks.get(neu) or {}).get("fehlversuche", 0) + 1     # bis zu 2x im naechsten Lauf erneut
                 rec = {"t": now, "status": "fehler" if fv >= 3 else "vorab_ok", "grund": str(ex)[:100], "fehlversuche": fv}
             credits_buchen(credits["n"])
-            checks[neu] = rec
+            checks[neu] = rec; verlauf(neu, rec)
             log.append(f"Wallet {neu[:4]}.. geprueft: {rec['status']} {rec.get('grund', '')} (~{credits['n']} Credits)")
 
     # c) offene Kopierer-Simulationen weiterfuehren
@@ -586,7 +622,7 @@ def stufe2(kand, checks, meta, t_start, codex_n):
         if not rec.get("offen_sim"):
             ok, kz = wp.bewerten(rec.get("sim", []))
             rec.update(kz); rec["status"] = "bestanden" if ok else "durchgefallen"
-            rec["kosten"], rec["kosten_art"] = kosten, kosten_art; rec.pop("offen_sim", None)
+            rec["kosten"], rec["kosten_art"] = kosten, kosten_art; rec.pop("offen_sim", None); verlauf(w, rec)
             log.append(f"Wallet {w[:4]}..: {rec['status']} ({kz.get('n')} Trades, Schnitt {kz.get('schnitt')})")
         if abfragen >= KERZEN_PRO_LAUF or zeit() >= ZEIT_ENDE_S: break
     if vorab_n: log.append(f"Schnelltest: {vorab_n} Wallets")
@@ -597,7 +633,7 @@ def stufe2(kand, checks, meta, t_start, codex_n):
 def stufe3(checks, now):
     alt = load("bot_d_copy_liste.json", {"wallets": []})
     woche = time.strftime("%G-W%V", time.gmtime(now))
-    ok = sorted(((r.get("ohne_top2", 0), w) for w, r in checks.items()
+    ok = sorted(((r.get("schnitt") or 0, w) for w, r in checks.items()
                  if r.get("status") == "bestanden" and now - r.get("t", 0) < 14 * 86400), reverse=True)
     def gilt(w):          # bestanden - oder gerade in der taeglichen Neupruefung und vorher bestanden
         r = checks.get(w) or {}
@@ -623,8 +659,9 @@ def stufe3(checks, now):
 
 def main():
     t_start = time.time(); lz = {}     # v5.1: Laufzeit je Abschnitt (Sekunden seit Start), landet in coverage
-    pf = Paper("bot_d", rebuy_sperre_h=24); st = pf.s; st["version"] = VERSION
-    st["strategy"] = "datensammler"; st["helius"] = bool(HELIUS); st["codex"] = bool(CODEX_KEY)
+    state_wechsel()
+    pf = Paper("bot_d", rebuy_sperre_h=24); st = pf.s; st["version"] = HANDEL_VERSION
+    st["strategy"] = "copy-trading (paper)"; st["helius"] = bool(HELIUS); st["codex"] = bool(CODEX_KEY)
     now = time.time(); today = int(now // 86400)
     cooldown = load("bot_d_cooldown.json", {})
     paths = load("bot_d_paths.json", {}); early = load("bot_d_early.json", {})
@@ -633,6 +670,12 @@ def main():
     tag = time.strftime("%Y-%m-%d", time.gmtime(now))
     if meta.get("credits_tag") != tag: meta["credits_tag"], meta["credits_heute"] = tag, 0
     credits = {"n": 0}
+
+    # 0) v6: Paper-Copy-Trading ZUERST (kurze Verzoegerung ist das Wichtigste)
+    copy_liste = load("bot_d_copy_liste.json", {"wallets": []}).get("wallets", [])
+    try: copy_preise, copy_log = copytrade.lauf(pf, copy_liste, HELIUS, meta)
+    except Exception as ex: copy_preise, copy_log = {}, [f"Copy-Trading Fehler: {str(ex)[:120]}"]
+    lz["copy"] = round(time.time() - t_start)
 
     # 1) Kandidaten (alle 30 Min neu)
     if now - meta.get("last_discover", 0) >= DISCOVER_EVERY_S:
@@ -672,6 +715,7 @@ def main():
 
     # 3) offene Positionen aus v3 noch abwickeln (keine neuen Kaeufe)
     for a, pos in list(st["positions"].items()):
+        if pos.get("quelle"): continue                  # v6: Kopien verwaltet copytrade.py
         px = prices.get(a)
         if not px:
             pos.setdefault("no_px_since", now_iso())
@@ -768,6 +812,7 @@ def main():
     # 5) Stufe 1-3
     info, kand = stufe1(early, now)
     checks = load("bot_d_wallet_check.json", {})
+    kriterien_v6(checks, meta)
     w_log = stufe2(kand, checks, meta, t_start, codex_n)
     meta["codex_heute"] = meta.get("codex_heute", 0) + codex_n["n"]; codex_n["n"] = 0
     save("bot_d_wallet_check.json", checks)
@@ -803,14 +848,16 @@ def main():
                       "wallets_bestanden": stat.get("bestanden", 0), "copy_liste": len(copy["wallets"]),
                       "helius_wallet_heute": meta.get("helius_wallet_heute", 0),
                       "laufzeit_s": {**lz, "gesamt": round(time.time() - t_start)},
-                      "warteschlange": sum(1 for r in checks.values() if r.get("status") == "vorab_ok")}
-    v = pf.mark(prices); pf.commit()
-    print(f"Bot D [datensammler]: kandidaten {len(cands)} | pfade {len(paths)} | kurse {st['coverage']['kurse']}/{len(watch)}"
+                      "warteschlange": sum(1 for r in checks.values() if r.get("status") == "vorab_ok"),
+                      "copy_credits_heute": meta.get("copy_credits_heute", 0),
+                      "copy_wallets": [x["name"] for x in copy_liste]}
+    v = pf.mark({**prices, **copy_preise}); pf.commit()
+    print(f"Bot D [copy-trading paper, equity {v:.2f} $, positionen {len(st['positions'])}]: kandidaten {len(cands)} | pfade {len(paths)} | kurse {st['coverage']['kurse']}/{len(watch)}"
           f" | fruehkaeufer neu {neu} {wege} fehler {fehler} | coins mit fruehkaeufern {st['coverage']['coins_mit_fruehkaeufern']}"
           f" | ausgewertet {top['coins_ausgewertet']} (basis {top['basisquote']}) | spaete kaeufer neu {spaet_neu}"
           f" | kandidaten {info['kandidaten']} | geprueft {len(checks)} {dict(stat)} | copy-liste {len(copy['wallets'])}"
           f" | credits heute ~{meta['credits_heute']} | codex heute {meta['codex_heute']} | {time.time() - t_start:.0f} s")
-    for z in w_log: print("  ", z)
+    for z in copy_log + w_log: print("  ", z)
 
 if __name__ == "__main__":
     main()
