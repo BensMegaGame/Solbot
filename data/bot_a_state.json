@@ -1,5 +1,5 @@
 {
- "cash": 91.96136994111222,
+ "cash": 115.78702294111223,
  "positions": {
   "BLeMEetdzeq9xsNti2tCiau4JnD7mzyQzQFHdy5pump": {
    "sym": "RETIRED",
@@ -18,19 +18,9 @@
    "opened": "2026-10-30T16:45:28Z",
    "peak": 0.001412,
    "entry": 0.0005017234320809132,
-   "cur_price": 0.001014,
-   "mark": 0.001014,
+   "cur_price": 0.001026,
+   "mark": 0.001026,
    "tp0": true
-  },
-  "HytpiyuR3sVXGB5UqoqrnThCPH2X1tWVm5neep3Dpump": {
-   "sym": "Bitcoin",
-   "qty": 174462.550059,
-   "cost": 50.02,
-   "opened": "2026-10-31T23:50:34Z",
-   "peak": 0.0004264,
-   "entry": 0.0002867090959239342,
-   "cur_price": 0.0001471,
-   "mark": 0.0001471
   }
  },
  "trades": [
@@ -4120,13 +4110,24 @@
    "slip": 0.0,
    "quote": "jup",
    "reason": "trail"
+  },
+  {
+   "t": "2026-11-03T22:10:04Z",
+   "side": "sell",
+   "sym": "Bitcoin",
+   "addr": "HytpiyuR3sVXGB5UqoqrnThCPH2X1tWVm5neep3Dpump",
+   "price": 0.0001433,
+   "usd": 23.83,
+   "pnl": -26.19,
+   "peak_x": 1.487,
+   "held_h": 70.3,
+   "frac": 1.0,
+   "slip": 0.0098,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-17T13:16:10Z",
-   "v": 248.49
-  },
   {
    "t": "2026-10-17T13:21:09Z",
    "v": 245.38
@@ -24122,6 +24123,10 @@
   {
    "t": "2026-11-03T22:06:07Z",
    "v": 196.81
+  },
+  {
+   "t": "2026-11-03T22:11:07Z",
+   "v": 195.57
   }
  ],
  "started": "2026-09-10T17:17:16Z",
@@ -24130,6 +24135,7 @@
   "8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump": 1793328902.001242,
   "HAsTKXYvv65zM7J6Cu5o5PcZsiKMQYo5oz4WPjgqwP6k": 1793378704.953463,
   "t9bnCGiZVUYsRKvx4d5dPcoDCSyuBM9C33ZNGNULARP": 1793466302.208295,
-  "GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump": 1793712606.0369341
+  "GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump": 1793712606.0369341,
+  "HytpiyuR3sVXGB5UqoqrnThCPH2X1tWVm5neep3Dpump": 1793743804.930048
  }
 }
