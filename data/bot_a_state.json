@@ -1,5 +1,5 @@
 {
- "cash": 62.09699694111223,
+ "cash": 91.96136994111222,
  "positions": {
   "BLeMEetdzeq9xsNti2tCiau4JnD7mzyQzQFHdy5pump": {
    "sym": "RETIRED",
@@ -8,8 +8,8 @@
    "opened": "2026-10-28T17:10:40Z",
    "peak": 0.0009988,
    "entry": 0.0006428414640751908,
-   "cur_price": 0.0005621,
-   "mark": 0.0005621
+   "cur_price": 0.00057,
+   "mark": 0.00057
   },
   "EwX2T1p2PmgTsSq2Bi6XtQYxPC5krR4P2fxPfN4Qpump": {
    "sym": "\u2588\u2588\u2588",
@@ -18,8 +18,8 @@
    "opened": "2026-10-30T16:45:28Z",
    "peak": 0.001264,
    "entry": 0.0005017234320809132,
-   "cur_price": 0.000969,
-   "mark": 0.000969,
+   "cur_price": 0.0009779,
+   "mark": 0.0009779,
    "tp0": true
   },
   "HytpiyuR3sVXGB5UqoqrnThCPH2X1tWVm5neep3Dpump": {
@@ -29,19 +29,8 @@
    "opened": "2026-10-31T23:50:34Z",
    "peak": 0.0004264,
    "entry": 0.0002867090959239342,
-   "cur_price": 0.0002112,
-   "mark": 0.0002112
-  },
-  "GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump": {
-   "sym": "WASTED",
-   "qty": 25854.304452,
-   "cost": 25.01,
-   "opened": "2026-11-03T06:00:56Z",
-   "peak": 0.001849,
-   "entry": 0.0009673437568754751,
-   "cur_price": 0.001366,
-   "mark": 0.001366,
-   "tp0": true
+   "cur_price": 0.0002114,
+   "mark": 0.0002114
   }
  },
  "trades": [
@@ -4116,13 +4105,24 @@
    "slip": 0.0159,
    "quote": "jup",
    "reason": "tp0"
+  },
+  {
+   "t": "2026-11-03T13:30:06Z",
+   "side": "sell",
+   "sym": "WASTED",
+   "addr": "GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump",
+   "price": 0.001033,
+   "usd": 29.86,
+   "pnl": 4.85,
+   "peak_x": 1.911,
+   "held_h": 7.5,
+   "frac": 1.0,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-17T04:36:16Z",
-   "v": 258.46
-  },
   {
    "t": "2026-10-17T04:41:16Z",
    "v": 255.26
@@ -24118,14 +24118,18 @@
   {
    "t": "2026-11-03T13:25:59Z",
    "v": 226.3
+  },
+  {
+   "t": "2026-11-03T13:31:00Z",
+   "v": 221.94
   }
  ],
  "started": "2026-09-10T17:17:16Z",
  "verkauft_am": {
-  "Cbkg5w7V7W2J2sUmecnyN825CbvwvXwasfhduVtNpump": 1792959606.042863,
   "8TiMkgvsrat9tM2esko8zVTt99LZLpefUM4SnZaziXaQ": 1793207402.8462992,
   "8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump": 1793328902.001242,
   "HAsTKXYvv65zM7J6Cu5o5PcZsiKMQYo5oz4WPjgqwP6k": 1793378704.953463,
-  "t9bnCGiZVUYsRKvx4d5dPcoDCSyuBM9C33ZNGNULARP": 1793466302.208295
+  "t9bnCGiZVUYsRKvx4d5dPcoDCSyuBM9C33ZNGNULARP": 1793466302.208295,
+  "GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump": 1793712606.0369341
  }
 }
