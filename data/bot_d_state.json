@@ -6,14 +6,14 @@
    "qty": 2345.511593,
    "cost": 50.02,
    "opened": "2026-11-04T04:46:26Z",
-   "peak": 0.0214,
+   "peak": 0.0215,
    "entry": 0.021325837889388764,
    "quelle": "BMKvvgLhG6jse8Jo7nrpi1ZHocABq4sBgWBbAJBsLv4C",
    "quelle_name": "Wallet A",
    "t_wallet": 1793767289,
    "wallet_sol": 0.3018,
-   "cur_price": 0.0214,
-   "mark": 0.0214
+   "cur_price": 0.0215,
+   "mark": 0.0215
   }
  },
  "trades": [
@@ -1113,6 +1113,10 @@
   {
    "t": "2026-11-04T04:51:33Z",
    "v": 432.07
+  },
+  {
+   "t": "2026-11-04T04:56:34Z",
+   "v": 432.3
   }
  ],
  "started": "2026-11-03T09:11:31Z",
@@ -1129,17 +1133,17 @@
   }
  },
  "coverage": {
-  "t": "2026-11-04T04:51:33Z",
+  "t": "2026-11-04T04:56:34Z",
   "kandidaten": 44,
   "pfade": 315,
-  "kurse": 98,
-  "von": 137,
+  "kurse": 100,
+  "von": 143,
   "fruehkaeufer_neu": 0,
   "fruehkaeufer_fehler": 0,
   "weg": {},
   "coins_mit_fruehkaeufern": 1019,
   "coins_ausgewertet": 899,
-  "credits_heute": 4178,
+  "credits_heute": 4179,
   "codex_heute": 33,
   "spaet_neu": 0,
   "coins_mit_spaeten": 869,
@@ -1161,7 +1165,7 @@
    "gesamt": 8
   },
   "warteschlange": 335,
-  "copy_credits_heute": 63,
+  "copy_credits_heute": 64,
   "copy_wallets": [
    "Wallet A"
   ]
