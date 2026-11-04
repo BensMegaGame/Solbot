@@ -1,5 +1,5 @@
 {
- "cash": 63.79078294111222,
+ "cash": 13.770782941112216,
  "positions": {
   "BLeMEetdzeq9xsNti2tCiau4JnD7mzyQzQFHdy5pump": {
    "sym": "RETIRED",
@@ -8,8 +8,8 @@
    "opened": "2026-10-28T17:10:40Z",
    "peak": 0.0009988,
    "entry": 0.0006428414640751908,
-   "cur_price": 0.0006016,
-   "mark": 0.0006016
+   "cur_price": 0.0006076,
+   "mark": 0.0006076
   },
   "4xWRsdRkre5ibf3ZyS2eje6sUY8wGnmtSHx7gkGtpump": {
    "sym": "VETO",
@@ -18,8 +18,8 @@
    "opened": "2026-11-04T05:10:33Z",
    "peak": 0.0004505,
    "entry": 0.0002695446984141371,
-   "cur_price": 0.0002048,
-   "mark": 0.0002048
+   "cur_price": 0.000207,
+   "mark": 0.000207
   },
   "GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump": {
    "sym": "WASTED",
@@ -28,8 +28,18 @@
    "opened": "2026-11-04T13:30:23Z",
    "peak": 0.0008288,
    "entry": 0.0008296766477231103,
-   "cur_price": 0.0007982,
-   "mark": 0.0007982
+   "cur_price": 0.0008098,
+   "mark": 0.0008098
+  },
+  "Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr": {
+   "sym": "FLOAT",
+   "qty": 22072.8236,
+   "cost": 50.02,
+   "opened": "2026-11-04T13:55:11Z",
+   "peak": 0.002435,
+   "entry": 0.002266135085680656,
+   "cur_price": 0.002435,
+   "mark": 0.002435
   }
  },
  "trades": [
@@ -4173,13 +4183,21 @@
    "slip": 0.0062,
    "quote": "jup",
    "reason": "screener"
+  },
+  {
+   "t": "2026-11-04T13:55:11Z",
+   "side": "buy",
+   "sym": "FLOAT",
+   "addr": "Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr",
+   "price": 0.002435,
+   "fill": 0.002266135086,
+   "usd": 50.02,
+   "slip": 0.0203,
+   "quote": "jup",
+   "reason": "screener"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-18T05:01:11Z",
-   "v": 221.67
-  },
   {
    "t": "2026-10-18T05:06:12Z",
    "v": 224.77
@@ -24175,6 +24193,10 @@
   {
    "t": "2026-11-04T13:50:58Z",
    "v": 196.73
+  },
+  {
+   "t": "2026-11-04T13:55:58Z",
+   "v": 202.03
   }
  ],
  "started": "2026-09-10T17:17:16Z",
