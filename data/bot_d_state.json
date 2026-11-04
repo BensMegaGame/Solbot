@@ -6,14 +6,14 @@
    "qty": 2791135.921237,
    "cost": 50.02,
    "opened": "2026-11-04T10:51:21Z",
-   "peak": 2.308e-05,
+   "peak": 2.733e-05,
    "entry": 1.7921019044401e-05,
    "quelle": "BMKvvgLhG6jse8Jo7nrpi1ZHocABq4sBgWBbAJBsLv4C",
    "quelle_name": "Wallet A",
    "t_wallet": 1793789274,
    "wallet_sol": 0.3026,
-   "cur_price": 2.308e-05,
-   "mark": 2.308e-05
+   "cur_price": 2.733e-05,
+   "mark": 2.733e-05
   }
  },
  "trades": [
@@ -1513,6 +1513,10 @@
   {
    "t": "2026-11-04T10:56:29Z",
    "v": 345.13
+  },
+  {
+   "t": "2026-11-04T11:01:30Z",
+   "v": 356.99
   }
  ],
  "started": "2026-11-03T09:11:31Z",
@@ -1529,17 +1533,17 @@
   }
  },
  "coverage": {
-  "t": "2026-11-04T10:56:29Z",
+  "t": "2026-11-04T11:01:30Z",
   "kandidaten": 48,
   "pfade": 315,
-  "kurse": 94,
-  "von": 133,
+  "kurse": 105,
+  "von": 149,
   "fruehkaeufer_neu": 0,
   "fruehkaeufer_fehler": 0,
   "weg": {},
   "coins_mit_fruehkaeufern": 1026,
   "coins_ausgewertet": 906,
-  "credits_heute": 4399,
+  "credits_heute": 4400,
   "codex_heute": 56,
   "spaet_neu": 0,
   "coins_mit_spaeten": 876,
@@ -1552,16 +1556,16 @@
   "helius_wallet_heute": 3997,
   "laufzeit_s": {
    "copy": 0,
-   "kandidaten": 0,
+   "kandidaten": 1,
    "kurse": 7,
    "fruehkaeufer": 7,
    "spaete_kaeufer": 7,
    "jupiter": 7,
    "stufe2": 7,
-   "gesamt": 8
+   "gesamt": 9
   },
   "warteschlange": 339,
-  "copy_credits_heute": 148,
+  "copy_credits_heute": 149,
   "copy_wallets": [
    "Wallet A"
   ]
