@@ -1,5 +1,5 @@
 {
- "cash": 115.78702294111223,
+ "cash": 65.76702294111223,
  "positions": {
   "BLeMEetdzeq9xsNti2tCiau4JnD7mzyQzQFHdy5pump": {
    "sym": "RETIRED",
@@ -8,8 +8,8 @@
    "opened": "2026-10-28T17:10:40Z",
    "peak": 0.0009988,
    "entry": 0.0006428414640751908,
-   "cur_price": 0.0004149,
-   "mark": 0.0004149
+   "cur_price": 0.0004099,
+   "mark": 0.0004099
   },
   "EwX2T1p2PmgTsSq2Bi6XtQYxPC5krR4P2fxPfN4Qpump": {
    "sym": "\u2588\u2588\u2588",
@@ -18,9 +18,19 @@
    "opened": "2026-10-30T16:45:28Z",
    "peak": 0.001505,
    "entry": 0.0005017234320809132,
-   "cur_price": 0.001157,
-   "mark": 0.001157,
+   "cur_price": 0.001143,
+   "mark": 0.001143,
    "tp0": true
+  },
+  "4xWRsdRkre5ibf3ZyS2eje6sUY8wGnmtSHx7gkGtpump": {
+   "sym": "VETO",
+   "qty": 185572.190046,
+   "cost": 50.02,
+   "opened": "2026-11-04T05:10:33Z",
+   "peak": 0.0002793,
+   "entry": 0.0002695446984141371,
+   "cur_price": 0.0002793,
+   "mark": 0.0002793
   }
  },
  "trades": [
@@ -4125,13 +4135,21 @@
    "slip": 0.0098,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-11-04T05:10:33Z",
+   "side": "buy",
+   "sym": "VETO",
+   "addr": "4xWRsdRkre5ibf3ZyS2eje6sUY8wGnmtSHx7gkGtpump",
+   "price": 0.0002793,
+   "fill": 0.000269544698,
+   "usd": 50.02,
+   "slip": 0.015,
+   "quote": "jup",
+   "reason": "screener"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-17T20:16:04Z",
-   "v": 247.49
-  },
   {
    "t": "2026-10-17T20:21:05Z",
    "v": 250.67
@@ -24127,6 +24145,10 @@
   {
    "t": "2026-11-04T05:06:04Z",
    "v": 205.75
+  },
+  {
+   "t": "2026-11-04T05:11:05Z",
+   "v": 206.47
   }
  ],
  "started": "2026-09-10T17:17:16Z",
