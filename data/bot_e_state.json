@@ -1,6 +1,17 @@
 {
- "cash": 521.7360389676992,
- "positions": {},
+ "cash": 286.93482143223457,
+ "positions": {
+  "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump": {
+   "sym": "GATO",
+   "qty": 20225.656474,
+   "cost": 234.80121753546464,
+   "opened": "2026-11-04T02:56:45Z",
+   "peak": 0.01152,
+   "entry": 0.011609077699767158,
+   "no_quote_since": "2026-11-04T02:56:45Z",
+   "mark": 0.0
+  }
+ },
  "trades": [
   {
    "t": "2026-09-16T17:20:59Z",
@@ -1468,13 +1479,21 @@
    "slip": 0.0009,
    "quote": "jup",
    "reason": "trail"
+  },
+  {
+   "t": "2026-11-04T02:56:45Z",
+   "side": "buy",
+   "sym": "GATO",
+   "addr": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
+   "price": 0.01152,
+   "fill": 0.0116090777,
+   "usd": 234.8,
+   "slip": 0.0066,
+   "quote": "jup",
+   "reason": "dip 24h -15% (SOL -1%) 1h -0.4%"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-17T18:01:44Z",
-   "v": 490.94
-  },
   {
    "t": "2026-10-17T18:06:41Z",
    "v": 491.24
@@ -21470,13 +21489,17 @@
   {
    "t": "2026-11-04T02:51:41Z",
    "v": 521.74
+  },
+  {
+   "t": "2026-11-04T02:56:45Z",
+   "v": 286.93
   }
  ],
  "started": "2026-09-16T16:55:59Z",
  "strategy": "largecap_dip",
  "universe_n": 71,
  "coverage": {
-  "t": "2026-11-04T02:51:41Z",
+  "t": "2026-11-04T02:56:45Z",
   "kurse": 71,
   "von": 71,
   "sol": true
