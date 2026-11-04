@@ -1,5 +1,5 @@
 {
- "cash": 81.46954500000001,
+ "cash": 139.20408400000002,
  "positions": {
   "CzLSujWBLFsSjncfkh59rUFqvafWcY5tzedWJSuypump": {
    "sym": "GOAT",
@@ -9,19 +9,8 @@
    "peak": 0.0157,
    "entry": 0.014165768201616436,
    "pair": "9Tb2ohu5P16BpBarqd3N27WnkF51Ukfs8Z1GzzLDxVZW",
-   "cur_price": 0.01356,
-   "mark": 0.01356
-  },
-  "DvjbEsdca43oQcw2h3HW1CT7N3x5vRcr3QrvTUHnXvgV": {
-   "sym": "DOOD",
-   "qty": 35018.563065561,
-   "cost": 68.11215390963314,
-   "opened": "2026-10-28T13:56:37Z",
-   "peak": 0.00215,
-   "entry": 0.0019450299483195536,
-   "pair": "5KXE8RMF7iW9Ptn665AHfzsMFjYb4LV2Ta8eZEtsTwWC",
-   "cur_price": 0.001669,
-   "mark": 0.001669
+   "cur_price": 0.01357,
+   "mark": 0.01357
   },
   "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": {
    "sym": "DACITY",
@@ -31,8 +20,8 @@
    "peak": 0.008504,
    "entry": 0.007253077451049155,
    "pair": "G2UuRbmVDzDFP4qyoBJrSKBXSi7d6V4bPP9tHPs36y4b",
-   "cur_price": 0.006788,
-   "mark": 0.006788
+   "cur_price": 0.006741,
+   "mark": 0.006741
   },
   "KENJSUYLASHUMfHyy5o4Hp2FdNqZg1AsUPhfH2kYvEP": {
    "sym": "GRIFFAIN",
@@ -1336,13 +1325,24 @@
    "slip": 0.0063,
    "quote": "jup",
    "reason": "tp"
+  },
+  {
+   "t": "2026-11-04T03:01:46Z",
+   "side": "sell",
+   "sym": "DOOD",
+   "addr": "DvjbEsdca43oQcw2h3HW1CT7N3x5vRcr3QrvTUHnXvgV",
+   "price": 0.00165,
+   "usd": 57.73,
+   "pnl": -10.38,
+   "peak_x": 1.105,
+   "held_h": 157.1,
+   "frac": 1.0,
+   "slip": 0.0041,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-17T18:06:43Z",
-   "v": 454.87
-  },
   {
    "t": "2026-10-17T18:11:43Z",
    "v": 454.47
@@ -21338,6 +21338,10 @@
   {
    "t": "2026-11-04T02:56:46Z",
    "v": 331.23
+  },
+  {
+   "t": "2026-11-04T03:01:46Z",
+   "v": 330.14
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -21345,13 +21349,14 @@
  "cooldown": {
   "MEW1gQWJ3nEXg2qgERiKu7FAFj79PHvQVREQUzScPP5": 20762,
   "ZEUS1aR7aX8DFFJf5QjWj2ftDDdNTroMNGo8YoQm3Gq": 20765,
-  "DuEy8wWrzCUun5ZbbG9hkVqXqqicpTQw8gB7nEAzpCHQ": 20765
+  "DuEy8wWrzCUun5ZbbG9hkVqXqqicpTQw8gB7nEAzpCHQ": 20765,
+  "DvjbEsdca43oQcw2h3HW1CT7N3x5vRcr3QrvTUHnXvgV": 20766
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-11-04T02:56:46Z",
+  "t": "2026-11-04T03:01:46Z",
   "virtuell": 5,
-  "neu": 1,
+  "neu": 0,
   "gestoppt": false
  },
  "verkauft_am": {
@@ -21360,6 +21365,7 @@
   "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG": 1793373104.8315704,
   "MEW1gQWJ3nEXg2qgERiKu7FAFj79PHvQVREQUzScPP5": 1793416323.687597,
   "ZEUS1aR7aX8DFFJf5QjWj2ftDDdNTroMNGo8YoQm3Gq": 1793664320.8836412,
-  "DuEy8wWrzCUun5ZbbG9hkVqXqqicpTQw8gB7nEAzpCHQ": 1793742103.7268329
+  "DuEy8wWrzCUun5ZbbG9hkVqXqqicpTQw8gB7nEAzpCHQ": 1793742103.7268329,
+  "DvjbEsdca43oQcw2h3HW1CT7N3x5vRcr3QrvTUHnXvgV": 1793761306.520367
  }
 }
