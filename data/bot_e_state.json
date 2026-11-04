@@ -1,25 +1,15 @@
 {
- "cash": 55.219734979837966,
+ "cash": 265.12165097983797,
  "positions": {
-  "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump": {
-   "sym": "GATO",
-   "qty": 20225.656474,
-   "cost": 234.80121753546464,
-   "opened": "2026-11-04T02:56:45Z",
-   "peak": 0.01152,
-   "entry": 0.011609077699767158,
-   "mark": 0.01076,
-   "cur_price": 0.01076
-  },
   "METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m": {
    "sym": "MPLX",
    "qty": 2707.51245,
    "cost": 231.7150864523966,
    "opened": "2026-11-04T03:06:42Z",
-   "peak": 0.08538,
+   "peak": 0.08619,
    "entry": 0.0855822792070251,
-   "mark": 0.08515,
-   "cur_price": 0.08515
+   "mark": 0.08619,
+   "cur_price": 0.08619
   }
  },
  "trades": [
@@ -1513,13 +1503,24 @@
    "slip": 0.0007,
    "quote": "jup",
    "reason": "dip 24h -12% (SOL -2%) 1h +2.9%"
+  },
+  {
+   "t": "2026-11-04T03:26:39Z",
+   "side": "sell",
+   "sym": "GATO",
+   "addr": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
+   "price": 0.01039,
+   "usd": 209.9,
+   "pnl": -24.9,
+   "peak_x": 0.992,
+   "held_h": 0.5,
+   "frac": 1.0,
+   "slip": 0.001,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-17T18:31:40Z",
-   "v": 491.55
-  },
   {
    "t": "2026-10-17T18:36:32Z",
    "v": 490.64
@@ -21515,13 +21516,17 @@
   {
    "t": "2026-11-04T03:21:38Z",
    "v": 503.39
+  },
+  {
+   "t": "2026-11-04T03:26:39Z",
+   "v": 498.48
   }
  ],
  "started": "2026-09-16T16:55:59Z",
  "strategy": "largecap_dip",
  "universe_n": 71,
  "coverage": {
-  "t": "2026-11-04T03:21:38Z",
+  "t": "2026-11-04T03:26:39Z",
   "kurse": 71,
   "von": 71,
   "sol": true
@@ -21532,6 +21537,7 @@
   "CWZ6BsdnjkDVTGkmL6bGbJXXig6ceef12KvyGQW14cMt": 1793280087.6464105,
   "METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m": 1793604093.6414747,
   "Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump": 1793746904.2738492,
-  "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx": 1793756233.8498175
+  "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx": 1793756233.8498175,
+  "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump": 1793762799.6376052
  }
 }
