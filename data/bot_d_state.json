@@ -1,21 +1,6 @@
 {
- "cash": 346.19440600000024,
- "positions": {
-  "BkpyZRX2o4oPWbQjgD1rqeZirZnGr3RVoTMrPpj8pump": {
-   "sym": "VETTO",
-   "qty": 3849619.473372,
-   "cost": 50.02,
-   "opened": "2026-11-04T11:51:22Z",
-   "peak": 1.545e-05,
-   "entry": 1.2993492044081424e-05,
-   "quelle": "BMKvvgLhG6jse8Jo7nrpi1ZHocABq4sBgWBbAJBsLv4C",
-   "quelle_name": "Wallet A",
-   "t_wallet": 1793792793,
-   "wallet_sol": 0.3018,
-   "cur_price": 1.545e-05,
-   "mark": 1.545e-05
-  }
- },
+ "cash": 365.6367550000002,
+ "positions": {},
  "trades": [
   {
    "t": "2026-11-04T01:31:33Z",
@@ -298,6 +283,21 @@
    "slip": 0.0175,
    "quote": "jup",
    "reason": "kopie Wallet A (+288 s)"
+  },
+  {
+   "t": "2026-11-04T12:01:20Z",
+   "side": "sell",
+   "sym": "VETTO",
+   "addr": "BkpyZRX2o4oPWbQjgD1rqeZirZnGr3RVoTMrPpj8pump",
+   "price": 4.82e-06,
+   "usd": 19.44,
+   "pnl": -30.58,
+   "peak_x": 1.189,
+   "held_h": 0.2,
+   "frac": 1.0,
+   "slip": 0.0187,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -1588,6 +1588,10 @@
   {
    "t": "2026-11-04T11:56:28Z",
    "v": 405.67
+  },
+  {
+   "t": "2026-11-04T12:01:28Z",
+   "v": 365.64
   }
  ],
  "started": "2026-11-03T09:11:31Z",
@@ -1604,17 +1608,17 @@
   }
  },
  "coverage": {
-  "t": "2026-11-04T11:56:28Z",
+  "t": "2026-11-04T12:01:28Z",
   "kandidaten": 45,
-  "pfade": 314,
-  "kurse": 97,
-  "von": 138,
+  "pfade": 312,
+  "kurse": 103,
+  "von": 145,
   "fruehkaeufer_neu": 0,
   "fruehkaeufer_fehler": 0,
   "weg": {},
   "coins_mit_fruehkaeufern": 1026,
   "coins_ausgewertet": 906,
-  "credits_heute": 4413,
+  "credits_heute": 4414,
   "codex_heute": 56,
   "spaet_neu": 0,
   "coins_mit_spaeten": 876,
@@ -1636,7 +1640,7 @@
    "gesamt": 8
   },
   "warteschlange": 339,
-  "copy_credits_heute": 162,
+  "copy_credits_heute": 163,
   "copy_wallets": [
    "Wallet A"
   ]
@@ -1651,6 +1655,7 @@
   "6aV3U8viDyQjrDzLz9osALNY7Uh5sCwYCRKn1MTpump": 1793768487.3203425,
   "KYuMNKf8HhefPhs2YMmGCgi4ByzEWeaxoG79aGapump": 1793773883.2627003,
   "rDxsGGpiJa2jQmLYrMaq9U452LYUxmmJK8fiW3Epump": 1793780482.7356465,
-  "8kfp8MzuFuj3vrnmG3KBcYVctYmu2JYerdFhPnX4pump": 1793790384.486528
+  "8kfp8MzuFuj3vrnmG3KBcYVctYmu2JYerdFhPnX4pump": 1793790384.486528,
+  "BkpyZRX2o4oPWbQjgD1rqeZirZnGr3RVoTMrPpj8pump": 1793793680.2023969
  }
 }
