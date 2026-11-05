@@ -1,20 +1,6 @@
 {
- "cash": 304.0645240000004,
+ "cash": 254.5909100000004,
  "positions": {
-  "QBA36bRK8MEVWEaodE1XegV3ALLwWMxfw4W8Z4Hpump": {
-   "sym": "PIKACHU",
-   "qty": 324315.037439,
-   "cost": 50.02,
-   "opened": "2026-11-05T03:26:34Z",
-   "peak": 0.0001879,
-   "entry": 0.00015423274972073474,
-   "quelle": "BMKvvgLhG6jse8Jo7nrpi1ZHocABq4sBgWBbAJBsLv4C",
-   "quelle_name": "Wallet A",
-   "t_wallet": 1793848899,
-   "wallet_sol": 0.3023,
-   "cur_price": 1.749e-06,
-   "mark": 1.749e-06
-  },
   "8gqa941V8eaUhgvdcWo1aiBKHoiSJrH7WZyQPiSupump": {
    "sym": "OPT",
    "qty": 6905970.844965,
@@ -26,8 +12,22 @@
    "quelle_name": "Wallet A",
    "t_wallet": 1793849891,
    "wallet_sol": 0.3023,
-   "cur_price": 7.875e-06,
-   "mark": 7.875e-06
+   "cur_price": 6.316e-06,
+   "mark": 6.316e-06
+  },
+  "zv1CG2s41QWD11FZxW5uP8c2qU6ocAaANL2CPh1pump": {
+   "sym": "MOSQUE",
+   "qty": 347327.247804,
+   "cost": 50.02,
+   "opened": "2026-11-05T03:46:33Z",
+   "peak": 0.0001343,
+   "entry": 0.00014401403954413262,
+   "quelle": "BMKvvgLhG6jse8Jo7nrpi1ZHocABq4sBgWBbAJBsLv4C",
+   "quelle_name": "Wallet A",
+   "t_wallet": 1793850149,
+   "wallet_sol": 0.302,
+   "cur_price": 0.0001343,
+   "mark": 0.0001343
   }
  },
  "trades": [
@@ -675,6 +675,33 @@
    "slip": 0.0302,
    "quote": "jup",
    "reason": "wallet verkauft (+16 s)"
+  },
+  {
+   "t": "2026-11-05T03:46:33Z",
+   "side": "buy",
+   "sym": "MOSQUE",
+   "addr": "zv1CG2s41QWD11FZxW5uP8c2qU6ocAaANL2CPh1pump",
+   "price": 0.0001343,
+   "fill": 0.00014401404,
+   "usd": 50.02,
+   "slip": 0.0244,
+   "quote": "jup",
+   "reason": "kopie Wallet A (+244 s)"
+  },
+  {
+   "t": "2026-11-05T03:46:33Z",
+   "side": "sell",
+   "sym": "PIKACHU",
+   "addr": "QBA36bRK8MEVWEaodE1XegV3ALLwWMxfw4W8Z4Hpump",
+   "price": 1.751e-06,
+   "usd": 0.55,
+   "pnl": -49.47,
+   "peak_x": 1.218,
+   "held_h": 0.3,
+   "frac": 1.0,
+   "slip": 0.0036,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -2721,6 +2748,10 @@
   {
    "t": "2026-11-05T03:41:47Z",
    "v": 359.02
+  },
+  {
+   "t": "2026-11-05T03:46:43Z",
+   "v": 344.86
   }
  ],
  "started": "2026-11-03T09:11:31Z",
@@ -2731,23 +2762,23 @@
  "copy": {
   "wallets": {
    "BMKvvgLhG6jse8Jo7nrpi1ZHocABq4sBgWBbAJBsLv4C": {
-    "bis_sig": "H8aoG9uaLgTrdGmhbskf3guC17Fso9dxdyBJH4VteL3CYrheNPiEd7Dnf8rCh9k8TENTVMqoZFVSqEUaSXNFwBj",
-    "kaeufe_gesehen": 33
+    "bis_sig": "59AGCD1zAUJkkM1h42gCGQ6jEZU5HdX5ZYa93xnXEkeU29xCyz8piJZUeukfLwfwvojvuXESu8rArwDFCMq933oB",
+    "kaeufe_gesehen": 34
    }
   }
  },
  "coverage": {
-  "t": "2026-11-05T03:41:47Z",
+  "t": "2026-11-05T03:46:43Z",
   "kandidaten": 38,
   "pfade": 323,
-  "kurse": 114,
-  "von": 155,
+  "kurse": 110,
+  "von": 152,
   "fruehkaeufer_neu": 0,
-  "fruehkaeufer_fehler": 1,
+  "fruehkaeufer_fehler": 0,
   "weg": {},
   "coins_mit_fruehkaeufern": 1055,
   "coins_ausgewertet": 922,
-  "credits_heute": 4141,
+  "credits_heute": 4144,
   "codex_heute": 23,
   "spaet_neu": 0,
   "coins_mit_spaeten": 901,
@@ -2760,16 +2791,16 @@
   "helius_wallet_heute": 4000,
   "laufzeit_s": {
    "copy": 1,
-   "kandidaten": 2,
-   "kurse": 10,
-   "fruehkaeufer": 12,
-   "spaete_kaeufer": 12,
-   "jupiter": 12,
-   "stufe2": 13,
-   "gesamt": 14
+   "kandidaten": 1,
+   "kurse": 9,
+   "fruehkaeufer": 9,
+   "spaete_kaeufer": 9,
+   "jupiter": 9,
+   "stufe2": 9,
+   "gesamt": 10
   },
   "warteschlange": 381,
-  "copy_credits_heute": 56,
+  "copy_credits_heute": 59,
   "copy_wallets": [
    "Wallet A"
   ]
@@ -2797,6 +2828,7 @@
   "3A7Zc14qXjYxbWqVNG7yzkpc8YxD7ALjhCcriArqpump": 1793827890.5144594,
   "RKqMTySmPYw9XeBQT4QrDjZnYT7rnWR8XF1QRmPpump": 1793839290.0024333,
   "7G9wsjgzXPSCJgGT3hEa46KuUZxrCo3pvT8KtwDpump": 1793849194.599439,
-  "GruNVDqBbw5hWoQ2V8UFugzVUXa7WeUUUK9yo6W1pump": 1793850094.5904608
+  "GruNVDqBbw5hWoQ2V8UFugzVUXa7WeUUUK9yo6W1pump": 1793850094.5904608,
+  "QBA36bRK8MEVWEaodE1XegV3ALLwWMxfw4W8Z4Hpump": 1793850393.7497249
  }
 }
