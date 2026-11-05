@@ -3682,6 +3682,10 @@
   {
    "t": "2026-11-05T21:26:35Z",
    "v": 372.18
+  },
+  {
+   "t": "2026-11-05T21:31:31Z",
+   "v": 372.18
   }
  ],
  "started": "2026-11-03T09:11:31Z",
@@ -3698,21 +3702,19 @@
   }
  },
  "coverage": {
-  "t": "2026-11-05T21:26:35Z",
+  "t": "2026-11-05T21:31:31Z",
   "kandidaten": 37,
   "pfade": 318,
-  "kurse": 114,
-  "von": 163,
-  "fruehkaeufer_neu": 2,
+  "kurse": 117,
+  "von": 168,
+  "fruehkaeufer_neu": 0,
   "fruehkaeufer_fehler": 0,
-  "weg": {
-   "codex": 2
-  },
+  "weg": {},
   "coins_mit_fruehkaeufern": 1081,
   "coins_ausgewertet": 943,
-  "credits_heute": 4847,
+  "credits_heute": 4848,
   "codex_heute": 117,
-  "spaet_neu": 2,
+  "spaet_neu": 0,
   "coins_mit_spaeten": 923,
   "spaet_fehler": null,
   "codex_ohne_filter": false,
@@ -3723,16 +3725,16 @@
   "helius_wallet_heute": 4000,
   "laufzeit_s": {
    "copy": 0,
-   "kandidaten": 1,
+   "kandidaten": 0,
    "kurse": 8,
-   "fruehkaeufer": 10,
-   "spaete_kaeufer": 11,
-   "jupiter": 12,
-   "stufe2": 12,
-   "gesamt": 13
+   "fruehkaeufer": 9,
+   "spaete_kaeufer": 9,
+   "jupiter": 9,
+   "stufe2": 9,
+   "gesamt": 10
   },
   "warteschlange": 381,
-  "copy_credits_heute": 284,
+  "copy_credits_heute": 285,
   "copy_wallets": [
    "Wallet A"
   ]
