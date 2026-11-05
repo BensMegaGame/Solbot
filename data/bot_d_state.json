@@ -6,28 +6,28 @@
    "qty": 6905970.844965,
    "cost": 50.02,
    "opened": "2026-11-05T03:41:34Z",
-   "peak": 7.875e-06,
+   "peak": 1.134e-05,
    "entry": 7.243007699122933e-06,
    "quelle": "BMKvvgLhG6jse8Jo7nrpi1ZHocABq4sBgWBbAJBsLv4C",
    "quelle_name": "Wallet A",
    "t_wallet": 1793849891,
    "wallet_sol": 0.3023,
-   "cur_price": 6.316e-06,
-   "mark": 6.316e-06
+   "cur_price": 1.134e-05,
+   "mark": 1.134e-05
   },
   "zv1CG2s41QWD11FZxW5uP8c2qU6ocAaANL2CPh1pump": {
    "sym": "MOSQUE",
    "qty": 347327.247804,
    "cost": 50.02,
    "opened": "2026-11-05T03:46:33Z",
-   "peak": 0.0001343,
+   "peak": 0.0001904,
    "entry": 0.00014401403954413262,
    "quelle": "BMKvvgLhG6jse8Jo7nrpi1ZHocABq4sBgWBbAJBsLv4C",
    "quelle_name": "Wallet A",
    "t_wallet": 1793850149,
    "wallet_sol": 0.302,
-   "cur_price": 0.0001343,
-   "mark": 0.0001343
+   "cur_price": 0.0001904,
+   "mark": 0.0001904
   }
  },
  "trades": [
@@ -2752,6 +2752,10 @@
   {
    "t": "2026-11-05T03:46:43Z",
    "v": 344.86
+  },
+  {
+   "t": "2026-11-05T03:51:43Z",
+   "v": 399.04
   }
  ],
  "started": "2026-11-03T09:11:31Z",
@@ -2768,17 +2772,17 @@
   }
  },
  "coverage": {
-  "t": "2026-11-05T03:46:43Z",
+  "t": "2026-11-05T03:51:43Z",
   "kandidaten": 38,
   "pfade": 323,
-  "kurse": 110,
-  "von": 152,
+  "kurse": 109,
+  "von": 151,
   "fruehkaeufer_neu": 0,
   "fruehkaeufer_fehler": 0,
   "weg": {},
   "coins_mit_fruehkaeufern": 1055,
   "coins_ausgewertet": 922,
-  "credits_heute": 4144,
+  "credits_heute": 4145,
   "codex_heute": 23,
   "spaet_neu": 0,
   "coins_mit_spaeten": 901,
@@ -2790,17 +2794,17 @@
   "copy_liste": 1,
   "helius_wallet_heute": 4000,
   "laufzeit_s": {
-   "copy": 1,
-   "kandidaten": 1,
-   "kurse": 9,
-   "fruehkaeufer": 9,
-   "spaete_kaeufer": 9,
-   "jupiter": 9,
-   "stufe2": 9,
+   "copy": 0,
+   "kandidaten": 0,
+   "kurse": 8,
+   "fruehkaeufer": 8,
+   "spaete_kaeufer": 8,
+   "jupiter": 8,
+   "stufe2": 8,
    "gesamt": 10
   },
   "warteschlange": 381,
-  "copy_credits_heute": 59,
+  "copy_credits_heute": 60,
   "copy_wallets": [
    "Wallet A"
   ]
