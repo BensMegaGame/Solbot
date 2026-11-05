@@ -6,28 +6,28 @@
    "qty": 324315.037439,
    "cost": 50.02,
    "opened": "2026-11-05T03:26:34Z",
-   "peak": 0.0001416,
+   "peak": 0.0001879,
    "entry": 0.00015423274972073474,
    "quelle": "BMKvvgLhG6jse8Jo7nrpi1ZHocABq4sBgWBbAJBsLv4C",
    "quelle_name": "Wallet A",
    "t_wallet": 1793848899,
    "wallet_sol": 0.3023,
-   "cur_price": 0.0001416,
-   "mark": 0.0001416
+   "cur_price": 0.0001879,
+   "mark": 0.0001879
   },
   "GruNVDqBbw5hWoQ2V8UFugzVUXa7WeUUUK9yo6W1pump": {
    "sym": "SOLCMD",
    "qty": 6691047.798964,
    "cost": 50.02,
    "opened": "2026-11-05T03:26:34Z",
-   "peak": 6.181e-06,
+   "peak": 8.183e-06,
    "entry": 7.475660240798875e-06,
    "quelle": "BMKvvgLhG6jse8Jo7nrpi1ZHocABq4sBgWBbAJBsLv4C",
    "quelle_name": "Wallet A",
    "t_wallet": 1793849177,
    "wallet_sol": 0.3018,
-   "cur_price": 6.181e-06,
-   "mark": 6.181e-06
+   "cur_price": 8.183e-06,
+   "mark": 8.183e-06
   }
  },
  "trades": [
@@ -2682,6 +2682,10 @@
   {
    "t": "2026-11-05T03:26:44Z",
    "v": 385.86
+  },
+  {
+   "t": "2026-11-05T03:31:43Z",
+   "v": 414.27
   }
  ],
  "started": "2026-11-03T09:11:31Z",
@@ -2698,17 +2702,17 @@
   }
  },
  "coverage": {
-  "t": "2026-11-05T03:26:44Z",
+  "t": "2026-11-05T03:31:43Z",
   "kandidaten": 39,
   "pfade": 322,
-  "kurse": 122,
-  "von": 165,
+  "kurse": 115,
+  "von": 158,
   "fruehkaeufer_neu": 0,
   "fruehkaeufer_fehler": 0,
   "weg": {},
   "coins_mit_fruehkaeufern": 1055,
   "coins_ausgewertet": 922,
-  "credits_heute": 4085,
+  "credits_heute": 4086,
   "codex_heute": 22,
   "spaet_neu": 0,
   "coins_mit_spaeten": 901,
@@ -2722,15 +2726,15 @@
   "laufzeit_s": {
    "copy": 1,
    "kandidaten": 1,
-   "kurse": 9,
-   "fruehkaeufer": 9,
-   "spaete_kaeufer": 9,
-   "jupiter": 9,
+   "kurse": 8,
+   "fruehkaeufer": 8,
+   "spaete_kaeufer": 8,
+   "jupiter": 8,
    "stufe2": 9,
-   "gesamt": 11
+   "gesamt": 10
   },
   "warteschlange": 381,
-  "copy_credits_heute": 50,
+  "copy_credits_heute": 51,
   "copy_wallets": [
    "Wallet A"
   ]
