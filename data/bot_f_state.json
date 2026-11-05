@@ -20,8 +20,8 @@
    "peak": 0.01228,
    "entry": 0.011094062298543953,
    "pair": "CpsMssqi3P9VMvNqxrdWVbSBCwyUHbGgNcrw7MorBq3g",
-   "cur_price": 0.01165,
-   "mark": 0.01165
+   "cur_price": 0.0116,
+   "mark": 0.0116
   },
   "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump": {
    "sym": "GATO",
@@ -31,8 +31,8 @@
    "peak": 0.01235,
    "entry": 0.010407961061396274,
    "pair": "5E3dXLXGwmTDCokA51WYYaKttjFZBwqCoyUHBUi5gt2m",
-   "cur_price": 0.0099,
-   "mark": 0.0099
+   "cur_price": 0.01002,
+   "mark": 0.01002
   }
  },
  "trades": [
@@ -1370,10 +1370,6 @@
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-19T03:21:45Z",
-   "v": 428.35
-  },
   {
    "t": "2026-10-19T03:26:42Z",
    "v": 427.08
@@ -21369,6 +21365,10 @@
   {
    "t": "2026-11-05T11:56:45Z",
    "v": 346.34
+  },
+  {
+   "t": "2026-11-05T12:01:50Z",
+   "v": 346.83
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -21381,7 +21381,7 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-11-05T11:56:45Z",
+  "t": "2026-11-05T12:01:50Z",
   "virtuell": 4,
   "neu": 0,
   "gestoppt": false
