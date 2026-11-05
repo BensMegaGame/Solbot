@@ -9,8 +9,8 @@
    "peak": 0.0157,
    "entry": 0.014165768201616436,
    "pair": "9Tb2ohu5P16BpBarqd3N27WnkF51Ukfs8Z1GzzLDxVZW",
-   "cur_price": 0.01326,
-   "mark": 0.01326
+   "cur_price": 0.01323,
+   "mark": 0.01323
   },
   "KENJSUYLASHUMfHyy5o4Hp2FdNqZg1AsUPhfH2kYvEP": {
    "sym": "GRIFFAIN",
@@ -20,8 +20,8 @@
    "peak": 0.01228,
    "entry": 0.011094062298543953,
    "pair": "CpsMssqi3P9VMvNqxrdWVbSBCwyUHbGgNcrw7MorBq3g",
-   "cur_price": 0.01094,
-   "mark": 0.01094
+   "cur_price": 0.0109,
+   "mark": 0.0109
   },
   "METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m": {
    "sym": "MPLX",
@@ -39,11 +39,11 @@
    "qty": 11104.495149,
    "cost": 65.95164986928472,
    "opened": "2026-11-05T15:26:43Z",
-   "peak": 0.006,
+   "peak": 0.00603,
    "entry": 0.00593918489623762,
    "pair": "HL4KFTfhZZMm7NGefszQxzJ3M6CaDWE7TesyuRuQYmMJ",
-   "cur_price": 0.006,
-   "mark": 0.006
+   "cur_price": 0.00603,
+   "mark": 0.00603
   }
  },
  "trades": [
@@ -1420,10 +1420,6 @@
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-19T07:01:41Z",
-   "v": 435.41
-  },
   {
    "t": "2026-10-19T07:06:41Z",
    "v": 432.95
@@ -21419,6 +21415,10 @@
   {
    "t": "2026-11-05T15:36:43Z",
    "v": 328.79
+  },
+  {
+   "t": "2026-11-05T15:41:42Z",
+   "v": 328.76
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -21432,7 +21432,7 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-11-05T15:36:43Z",
+  "t": "2026-11-05T15:41:42Z",
   "virtuell": 2,
   "neu": 0,
   "gestoppt": false
