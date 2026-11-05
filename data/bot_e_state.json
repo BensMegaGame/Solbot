@@ -1,15 +1,25 @@
 {
- "cash": 260.0411546389108,
+ "cash": 45.463222933900965,
  "positions": {
   "XsueG8BtpquVJX9LVLLEGuViXUungE6WmK5YZ3p3bd1": {
    "sym": "CRCLx",
    "qty": 3.166607,
    "cost": 212.7973083409271,
    "opened": "2026-11-05T18:41:48Z",
-   "peak": 68.45,
+   "peak": 69.17,
    "entry": 67.20041619971379,
-   "mark": 68.45,
-   "cur_price": 68.45
+   "mark": 69.17,
+   "cur_price": 69.17
+  },
+  "XsDoVfqeBukxuZHWhdvWHBhgEHjGNst4MLodqsJHzoB": {
+   "sym": "TSLAx",
+   "qty": 0.6227,
+   "cost": 214.57793170500986,
+   "opened": "2026-11-05T19:46:46Z",
+   "peak": 344.49,
+   "entry": 344.592792203324,
+   "no_quote_since": "2026-11-05T19:46:46Z",
+   "mark": 0.0
   }
  },
  "trades": [
@@ -1545,13 +1555,21 @@
    "slip": 0.0017,
    "quote": "jup",
    "reason": "dip 24h -13% (SOL -6%) 1h +0.3%"
+  },
+  {
+   "t": "2026-11-05T19:46:46Z",
+   "side": "buy",
+   "sym": "TSLAx",
+   "addr": "XsDoVfqeBukxuZHWhdvWHBhgEHjGNst4MLodqsJHzoB",
+   "price": 344.49,
+   "fill": 344.592792203324,
+   "usd": 214.58,
+   "slip": 0.0013,
+   "quote": "jup",
+   "reason": "dip 24h -12% (SOL -5%) 1h +1.1%"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-19T11:06:41Z",
-   "v": 490.21
-  },
   {
    "t": "2026-10-19T11:11:33Z",
    "v": 491.57
@@ -21547,13 +21565,17 @@
   {
    "t": "2026-11-05T19:41:38Z",
    "v": 476.8
+  },
+  {
+   "t": "2026-11-05T19:46:46Z",
+   "v": 264.5
   }
  ],
  "started": "2026-09-16T16:55:59Z",
  "strategy": "largecap_dip",
  "universe_n": 82,
  "coverage": {
-  "t": "2026-11-05T19:41:38Z",
+  "t": "2026-11-05T19:46:46Z",
   "kurse": 82,
   "von": 82,
   "sol": true
