@@ -20,8 +20,8 @@
    "peak": 0.01228,
    "entry": 0.011094062298543953,
    "pair": "CpsMssqi3P9VMvNqxrdWVbSBCwyUHbGgNcrw7MorBq3g",
-   "cur_price": 0.01143,
-   "mark": 0.01143
+   "cur_price": 0.01142,
+   "mark": 0.01142
   },
   "METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m": {
    "sym": "MPLX",
@@ -53,8 +53,8 @@
    "peak": 0.00642,
    "entry": 0.0061237419939388,
    "pair": "58fzJMbX5PatnfJPqWWsqkVFPRKptkbb5r2vCw4Qq3z9",
-   "cur_price": 0.006251,
-   "mark": 0.006251
+   "cur_price": 0.00622,
+   "mark": 0.00622
   }
  },
  "trades": [
@@ -1443,10 +1443,6 @@
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-20T14:01:43Z",
-   "v": 415.12
-  },
   {
    "t": "2026-10-20T14:06:46Z",
    "v": 413.91
@@ -21442,6 +21438,10 @@
   {
    "t": "2026-11-06T22:36:47Z",
    "v": 338.05
+  },
+  {
+   "t": "2026-11-06T22:41:47Z",
+   "v": 337.65
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -21455,7 +21455,7 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-11-06T22:36:47Z",
+  "t": "2026-11-06T22:41:47Z",
   "virtuell": 7,
   "neu": 0,
   "gestoppt": false
