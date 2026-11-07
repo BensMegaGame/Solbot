@@ -8,8 +8,8 @@
    "opened": "2026-11-05T19:56:27Z",
    "peak": 0.01606,
    "entry": 0.01571230047627014,
-   "cur_price": 0.0152,
-   "mark": 0.0152
+   "cur_price": 0.01518,
+   "mark": 0.01518
   },
   "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": {
    "sym": "DACITY",
@@ -18,8 +18,8 @@
    "opened": "2026-11-06T00:01:22Z",
    "peak": 0.008016,
    "entry": 0.007622338479438877,
-   "cur_price": 0.007513,
-   "mark": 0.007513
+   "cur_price": 0.007503,
+   "mark": 0.007503
   },
   "npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump": {
    "sym": "DESSA",
@@ -28,8 +28,8 @@
    "opened": "2026-11-07T08:31:25Z",
    "peak": 0.02412,
    "entry": 0.02383407317032571,
-   "cur_price": 0.02294,
-   "mark": 0.02294
+   "cur_price": 0.02273,
+   "mark": 0.02273
   }
  },
  "trades": [
@@ -1667,10 +1667,6 @@
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-21T04:46:25Z",
-   "v": 423.22
-  },
   {
    "t": "2026-10-21T04:51:24Z",
    "v": 423.22
@@ -21666,17 +21662,21 @@
   {
    "t": "2026-11-07T13:21:06Z",
    "v": 318.19
+  },
+  {
+   "t": "2026-11-07T13:26:11Z",
+   "v": 317.08
   }
  ],
  "started": "2026-09-25T09:21:19Z",
  "version": "c6",
  "strategy": "dip_weites_netz",
- "universe_n": 151,
+ "universe_n": 152,
  "coverage": {
-  "t": "2026-11-07T13:21:06Z",
+  "t": "2026-11-07T13:26:11Z",
   "kurse": 129,
-  "von": 151,
-  "ohne_pool": 85,
+  "von": 152,
+  "ohne_pool": 86,
   "sol": true,
   "kandidaten": 0
  },
