@@ -1,19 +1,19 @@
 {
- "cash": 587.5888850000008,
+ "cash": 579.6968940000008,
  "positions": {
-  "CBsg6Nr9UoTPsLhqNHTbaFt4c6qcNgrnbntwabdQpump": {
-   "sym": "FRUNK",
-   "qty": 3236257.830258,
+  "9GzUx9PvJ5EQkWbTEvTYXsETpWZfrF6S8PLh3GJ3pump": {
+   "sym": "$LUHCALM",
+   "qty": 5306149.414697,
    "cost": 50.02,
-   "opened": "2026-11-07T23:21:30Z",
-   "peak": 1.565e-05,
-   "entry": 1.5456123282987103e-05,
+   "opened": "2026-11-07T23:36:28Z",
+   "peak": 1.002e-05,
+   "entry": 9.426798246851917e-06,
    "quelle": "BMKvvgLhG6jse8Jo7nrpi1ZHocABq4sBgWBbAJBsLv4C",
    "quelle_name": "Wallet A",
-   "t_wallet": 1794093577,
-   "wallet_sol": 0.1018,
-   "cur_price": 1.271e-05,
-   "mark": 1.271e-05
+   "t_wallet": 1794094438,
+   "wallet_sol": 0.1027,
+   "cur_price": 1.002e-05,
+   "mark": 1.002e-05
   }
  },
  "trades": [
@@ -1567,6 +1567,33 @@
    "slip": 0.0241,
    "quote": "jup",
    "reason": "kopie Wallet A (+113 s)"
+  },
+  {
+   "t": "2026-11-07T23:36:28Z",
+   "side": "buy",
+   "sym": "$LUHCALM",
+   "addr": "9GzUx9PvJ5EQkWbTEvTYXsETpWZfrF6S8PLh3GJ3pump",
+   "price": 1.002e-05,
+   "fill": 9.426798e-06,
+   "usd": 50.02,
+   "slip": 0.0211,
+   "quote": "jup",
+   "reason": "kopie Wallet A (+150 s)"
+  },
+  {
+   "t": "2026-11-07T23:36:28Z",
+   "side": "sell",
+   "sym": "FRUNK",
+   "addr": "CBsg6Nr9UoTPsLhqNHTbaFt4c6qcNgrnbntwabdQpump",
+   "price": 1.327e-05,
+   "usd": 42.13,
+   "pnl": -7.89,
+   "peak_x": 1.013,
+   "held_h": 0.2,
+   "frac": 1.0,
+   "slip": 0.0192,
+   "quote": "jup",
+   "reason": "wallet verkauft (+111 s)"
   }
  ],
  "equity": [
@@ -6869,6 +6896,10 @@
   {
    "t": "2026-11-07T23:31:39Z",
    "v": 628.72
+  },
+  {
+   "t": "2026-11-07T23:36:44Z",
+   "v": 632.86
   }
  ],
  "started": "2026-11-03T09:11:31Z",
@@ -6879,8 +6910,8 @@
  "copy": {
   "wallets": {
    "BMKvvgLhG6jse8Jo7nrpi1ZHocABq4sBgWBbAJBsLv4C": {
-    "bis_sig": "5xXmSiT421vSYQ95sujuZ6hqoNRBjKkFbbYq3i45UB4Rpcv294bN7PfCZc6NRth96pbouYmTpdfbrVigARFS3w2R",
-    "kaeufe_gesehen": 74
+    "bis_sig": "2U72nS1DEtNvSLUetM1EN7AmP7C2J1aPMPrrUUEtXdXSkKWok7sgTtVVf1nh2H36DrRYQzqD21TcBMPe91QGLRns",
+    "kaeufe_gesehen": 75
    },
    "6TztascWVawd6JswEir6nvRsrjFGJWo6CZyazejaAd3": {
     "bis_sig": "5fZj9m1LE1Ms625q7PDSLfWAKiWU8JdegUDrTySbWXHVzHhvC6VUzSziJ3EqCb5ZGLLsDm7aSZV6fTgLV7BEMcsY",
@@ -6889,20 +6920,23 @@
   }
  },
  "coverage": {
-  "t": "2026-11-07T23:31:39Z",
-  "kandidaten": 36,
-  "pfade": 307,
-  "kurse": 100,
-  "von": 152,
-  "fruehkaeufer_neu": 0,
-  "fruehkaeufer_fehler": 0,
-  "weg": {},
-  "coins_mit_fruehkaeufern": 1129,
+  "t": "2026-11-07T23:36:44Z",
+  "kandidaten": 40,
+  "pfade": 310,
+  "kurse": 106,
+  "von": 157,
+  "fruehkaeufer_neu": 2,
+  "fruehkaeufer_fehler": 1,
+  "weg": {
+   "gtfa": 1,
+   "codex": 1
+  },
+  "coins_mit_fruehkaeufern": 1131,
   "coins_ausgewertet": 1014,
-  "credits_heute": 5205,
-  "codex_heute": 105,
-  "spaet_neu": 0,
-  "coins_mit_spaeten": 968,
+  "credits_heute": 5254,
+  "codex_heute": 112,
+  "spaet_neu": 2,
+  "coins_mit_spaeten": 970,
   "spaet_fehler": null,
   "codex_ohne_filter": false,
   "kandidaten_wallets": 2490,
@@ -6911,17 +6945,17 @@
   "copy_liste": 2,
   "helius_wallet_heute": 4000,
   "laufzeit_s": {
-   "copy": 0,
-   "kandidaten": 0,
-   "kurse": 8,
-   "fruehkaeufer": 8,
-   "spaete_kaeufer": 8,
-   "jupiter": 8,
-   "stufe2": 8,
-   "gesamt": 10
+   "copy": 1,
+   "kandidaten": 1,
+   "kurse": 10,
+   "fruehkaeufer": 14,
+   "spaete_kaeufer": 15,
+   "jupiter": 15,
+   "stufe2": 15,
+   "gesamt": 16
   },
   "warteschlange": 483,
-  "copy_credits_heute": 670,
+  "copy_credits_heute": 674,
   "copy_wallets": [
    "Wallet A",
    "Wallet B"
@@ -6984,6 +7018,7 @@
   "ENkSJsVGr1BysVrah2bNAniApmapWZHhN34G7zcApump": 1794087082.9613268,
   "14nWwaPhgQrNYQfKUv36QYb5cPTftZVQWqnymbXNspwn": 1794088286.3081677,
   "Hb2fnvwpW6H6UymoTovRZqcDpmMNGWz2SXCRQ5LFpump": 1794088586.372856,
-  "GT6HdvQM4MfBPGsiez5ebBodVssxGGvZF8SLsqfLpump": 1794089487.886266
+  "GT6HdvQM4MfBPGsiez5ebBodVssxGGvZF8SLsqfLpump": 1794089487.886266,
+  "CBsg6Nr9UoTPsLhqNHTbaFt4c6qcNgrnbntwabdQpump": 1794094588.7502623
  }
 }
