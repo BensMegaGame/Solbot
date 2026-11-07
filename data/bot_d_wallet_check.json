@@ -2850,48 +2850,6 @@
   "status": "sim",
   "offen_sim": [
    {
-    "mint": "GcGQDG9RQL3nTh9ra4LeENpUnjCRbm5u7zoK88bbpump",
-    "t_kauf": 1793954940,
-    "t_verkauf": 1793955240,
-    "sol_in": 0.053,
-    "eigen": 0.0614
-   },
-   {
-    "mint": "CXRT8bpLxm2aeJ1FteTCKESm8nseeZ1b36S3f4CYpump",
-    "t_kauf": 1793957120,
-    "t_verkauf": 1793957421,
-    "sol_in": 0.053,
-    "eigen": -0.0098
-   },
-   {
-    "mint": "GEjboXiFVb8LrNs8sePkvCVbDtLdmXFQ1UjqRdw3pump",
-    "t_kauf": 1793959763,
-    "t_verkauf": 1793960069,
-    "sol_in": 0.053,
-    "eigen": -0.7653
-   },
-   {
-    "mint": "7avdHbPjBLbauZ2tMBXVhJhfHUpKHuqXU3be1vdtpump",
-    "t_kauf": 1793961913,
-    "t_verkauf": 1793962213,
-    "sol_in": 0.053,
-    "eigen": 0.8701
-   },
-   {
-    "mint": "CaRD64EDbb82CmTHS35XEJqL96f463Z3m725hgcapump",
-    "t_kauf": 1793966422,
-    "t_verkauf": 1793966722,
-    "sol_in": 0.053,
-    "eigen": 0.5691
-   },
-   {
-    "mint": "C8WvgVddkYYrw4r2ihjpDKYpraiscdJaYr6eNPSipump",
-    "t_kauf": 1793968036,
-    "t_verkauf": 1793968336,
-    "sol_in": 0.053,
-    "eigen": 0.3045
-   },
-   {
     "mint": "4gYMbXqWx97LneXMVMeZB8ygGTmyM8W7ktCyZSLLpump",
     "t_kauf": 1793981653,
     "t_verkauf": 1793981953,
@@ -3006,6 +2964,30 @@
    [
     1793926508,
     -0.5319
+   ],
+   [
+    1793954940,
+    -0.5319
+   ],
+   [
+    1793957120,
+    0.1075
+   ],
+   [
+    1793959763,
+    -0.5319
+   ],
+   [
+    1793961913,
+    0.0997
+   ],
+   [
+    1793966422,
+    0.6635
+   ],
+   [
+    1793968036,
+    0.4633
    ]
   ],
   "details": [
@@ -3278,6 +3260,96 @@
     "luecke_rein_s": -8,
     "luecke_raus_s": 0,
     "kerzen": 210
+   },
+   {
+    "mint": "GcGQDG9RQL3nTh9ra4LeENpUnjCRbm5u7zoK88bbpump",
+    "t_kauf": 1793954940,
+    "t_verkauf": 1793955240,
+    "sol_in": 0.053,
+    "eigen": 0.0614,
+    "quelle": "gt",
+    "kopie": -0.5319,
+    "entry": 5.169010910895183e-05,
+    "exit": 2.5845054554475914e-05,
+    "grund": "stop",
+    "luecke_rein_s": 0,
+    "luecke_raus_s": 0,
+    "kerzen": 30
+   },
+   {
+    "mint": "CXRT8bpLxm2aeJ1FteTCKESm8nseeZ1b36S3f4CYpump",
+    "t_kauf": 1793957120,
+    "t_verkauf": 1793957421,
+    "sol_in": 0.053,
+    "eigen": -0.0098,
+    "quelle": "gt",
+    "kopie": 0.1075,
+    "entry": 3.711155272215173e-05,
+    "exit": 4.228358348239357e-05,
+    "grund": "nach_verkauf",
+    "luecke_rein_s": -20,
+    "luecke_raus_s": 21,
+    "kerzen": 446
+   },
+   {
+    "mint": "GEjboXiFVb8LrNs8sePkvCVbDtLdmXFQ1UjqRdw3pump",
+    "t_kauf": 1793959763,
+    "t_verkauf": 1793960069,
+    "sol_in": 0.053,
+    "eigen": -0.7653,
+    "quelle": "gt",
+    "kopie": -0.5319,
+    "entry": 2.9445515783255556e-05,
+    "exit": 1.4722757891627778e-05,
+    "grund": "stop",
+    "luecke_rein_s": -23,
+    "luecke_raus_s": 0,
+    "kerzen": 17
+   },
+   {
+    "mint": "7avdHbPjBLbauZ2tMBXVhJhfHUpKHuqXU3be1vdtpump",
+    "t_kauf": 1793961913,
+    "t_verkauf": 1793962213,
+    "sol_in": 0.053,
+    "eigen": 0.8701,
+    "quelle": "gt",
+    "kopie": 0.0997,
+    "entry": 8.643796412591753e-05,
+    "exit": 9.781274522504166e-05,
+    "grund": "nach_verkauf",
+    "luecke_rein_s": -13,
+    "luecke_raus_s": 13,
+    "kerzen": 32
+   },
+   {
+    "mint": "CaRD64EDbb82CmTHS35XEJqL96f463Z3m725hgcapump",
+    "t_kauf": 1793966422,
+    "t_verkauf": 1793966722,
+    "sol_in": 0.053,
+    "eigen": 0.5691,
+    "quelle": "gt",
+    "kopie": 0.6635,
+    "entry": 3.857161037178119e-05,
+    "exit": 6.539268164786054e-05,
+    "grund": "nach_verkauf",
+    "luecke_rein_s": -22,
+    "luecke_raus_s": 22,
+    "kerzen": 39
+   },
+   {
+    "mint": "C8WvgVddkYYrw4r2ihjpDKYpraiscdJaYr6eNPSipump",
+    "t_kauf": 1793968036,
+    "t_verkauf": 1793968336,
+    "sol_in": 0.053,
+    "eigen": 0.3045,
+    "quelle": "gt",
+    "kopie": 0.4633,
+    "entry": 4.2661154056908774e-05,
+    "exit": 6.37866051420956e-05,
+    "grund": "nach_verkauf",
+    "luecke_rein_s": -16,
+    "luecke_raus_s": 16,
+    "kerzen": 137
    }
   ],
   "ohne_kurs": 0
@@ -5928,10 +6000,9 @@
   "grund": "107.7 Transaktionen je Tag (Schnelltest)"
  },
  "7TRUCVcZ4mnY38tXdbaA1Y5PnVaxDmMmKgPnDnvUn7cA": {
-  "t": 1793405501.7035925,
-  "tx_tag": 137.2,
-  "status": "bot",
-  "grund": "137.2 Transaktionen je Tag (Schnelltest)"
+  "t": 1794010598.112691,
+  "tx_tag": 88.4,
+  "status": "vorab_ok"
  },
  "66B95ED19CLsJtsVYPkTBQT3EZPPpEawCimCPruVucSX": {
   "t": 1793757701.1711419,
@@ -6002,10 +6073,9 @@
   "grund": "letzte Transaktion aelter als 3 Tage"
  },
  "BF6GFz4xJHXzvPXMzawRQ9DK1CgXhnXNeqiC9jTnfPKx": {
-  "t": 1793405502.3177185,
-  "tx_tag": 107.3,
-  "status": "bot",
-  "grund": "107.3 Transaktionen je Tag (Schnelltest)"
+  "t": 1794010598.5436356,
+  "status": "inaktiv",
+  "grund": "letzte Transaktion aelter als 3 Tage"
  },
  "Hd9X3Gk9XQ7WYWWMHFGTqFsciFDxg4Dym66jSjfWfJJY": {
   "t": 1793752301.3622658,
@@ -6059,10 +6129,9 @@
   "grund": "letzte Transaktion aelter als 3 Tage"
  },
  "2A6NC5RZmp9sb5QP8VTB6WTVcvJaSbSQd7MvyxHUYyWu": {
-  "t": 1793405502.5755475,
-  "tx_tag": 503.8,
-  "status": "bot",
-  "grund": "503.8 Transaktionen je Tag (Schnelltest)"
+  "t": 1794010598.8154247,
+  "status": "inaktiv",
+  "grund": "letzte Transaktion aelter als 3 Tage"
  },
  "73kKY2EqLTUjnd8YtjGLkrwiW6YfiLxFmBDPsa5ge9bS": {
   "t": 1793407903.8968928,
@@ -6175,7 +6244,7 @@
   "grund": "74.3 Transaktionen je Tag (Schnelltest)"
  },
  "GG5ATPW7bxGm5y4aGa2uWWZV1JvjETiM2Rabc2fT8Y7f": {
-  "t": 1793405502.113941,
+  "t": 1794010597.0924346,
   "tx_tag": 1000.0,
   "status": "bot",
   "grund": "1000.0 Transaktionen je Tag (Schnelltest)"
@@ -6213,10 +6282,9 @@
   "status": "vorab_ok"
  },
  "5FAwzUoCr4TgrVdwENKqtsgubswmEzS427QaPhVG7Pav": {
-  "t": 1793405501.9106548,
-  "tx_tag": 746.9,
-  "status": "bot",
-  "grund": "746.9 Transaktionen je Tag (Schnelltest)"
+  "t": 1794010598.326148,
+  "status": "inaktiv",
+  "grund": "letzte Transaktion aelter als 3 Tage"
  },
  "5jqDeHjfK6AKPdn4s2Q33GvMXFuJZD7Z3pnFDW8Eiy9i": {
   "t": 1793756201.2611494,
@@ -6259,10 +6327,9 @@
   "grund": "158.9 Transaktionen je Tag (Schnelltest)"
  },
  "6uuK4Vn31UwFPa8JUX8wscLaxPt9JTXgp65F47iweThF": {
-  "t": 1793405501.2355065,
-  "tx_tag": 151.5,
-  "status": "bot",
-  "grund": "151.5 Transaktionen je Tag (Schnelltest)"
+  "t": 1794010597.3673127,
+  "tx_tag": 91.1,
+  "status": "vorab_ok"
  },
  "9z259H5KTpUdCqiw6g4QeuF783ywDoRB5iTSv7qwbxAa": {
   "t": 1793407903.149618,
@@ -11347,10 +11414,10 @@
   "status": "vorab_ok"
  },
  "9if8FTM83VEzq8zZGCnKBJAnJdxmh1zFsRex8LXVXy6p": {
-  "t": 1793405502.787005,
-  "tx_tag": 256.9,
+  "t": 1794010599.0349722,
+  "tx_tag": 362.8,
   "status": "bot",
-  "grund": "256.9 Transaktionen je Tag (Schnelltest)"
+  "grund": "362.8 Transaktionen je Tag (Schnelltest)"
  },
  "5Bz3Pxr1zHZkvwPN3KoHtNf6GUf784QNQSUKHRjfq5J3": {
   "t": 1793698001.3542802,
@@ -11358,16 +11425,16 @@
   "status": "vorab_ok"
  },
  "9qhhzBRzB4w3JaQan2JMGx6Ed6gHwjXDQRT11yTdur5B": {
-  "t": 1793405503.297778,
-  "tx_tag": 609.0,
+  "t": 1794010599.4913223,
+  "tx_tag": 697.2,
   "status": "bot",
-  "grund": "609.0 Transaktionen je Tag (Schnelltest)"
+  "grund": "697.2 Transaktionen je Tag (Schnelltest)"
  },
  "46x7gJqyQhsjQuXcws7ESW8h47kGcbQ1FD2RhFjfAWJN": {
-  "t": 1793405503.5062578,
-  "tx_tag": 1000.0,
+  "t": 1794010599.2864673,
+  "tx_tag": 969.1,
   "status": "bot",
-  "grund": "1000.0 Transaktionen je Tag (Schnelltest)"
+  "grund": "969.1 Transaktionen je Tag (Schnelltest)"
  },
  "G6LaKS1q5cTcicHdvrAGaAS9z5D9n2VdAsZ9u7iTWTxD": {
   "t": 1793752603.9912212,
@@ -11375,16 +11442,15 @@
   "status": "vorab_ok"
  },
  "5KY74bB45yYCUWSmeDNNUsXyDiZTrjJ7seqAVFFpebz4": {
-  "t": 1793405503.978286,
-  "tx_tag": 198.4,
-  "status": "bot",
-  "grund": "198.4 Transaktionen je Tag (Schnelltest)"
+  "t": 1794010597.6243312,
+  "tx_tag": 97.2,
+  "status": "vorab_ok"
  },
  "E6rUq5BtBnY9Zfg6WF4e8qsEZWBa8eYEM1aRGYaz278d": {
-  "t": 1793405504.187442,
-  "tx_tag": 455.5,
+  "t": 1794010597.9077654,
+  "tx_tag": 370.6,
   "status": "bot",
-  "grund": "455.5 Transaktionen je Tag (Schnelltest)"
+  "grund": "370.6 Transaktionen je Tag (Schnelltest)"
  },
  "H6Q4HhDmGzh81pnXCbRswT2xtdLJGLTBtHLMjo29HciE": {
   "t": 1793405504.4050357,
