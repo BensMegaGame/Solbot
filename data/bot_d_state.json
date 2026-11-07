@@ -1,47 +1,33 @@
 {
- "cash": 470.2925020000007,
+ "cash": 495.13774900000067,
  "positions": {
-  "C3t8RNspBkxSHjbT7N6GE57kyj4ZwPHuW2q3qE13pump": {
-   "sym": "KEKO",
-   "qty": 4605144.71593,
+  "BfzAiiDdvswb9PChjHgth2D7oasjBvHaLAXpj1Sqpump": {
+   "sym": "WHITEHOUSE",
+   "qty": 6418104.608426,
    "cost": 50.02,
-   "opened": "2026-11-07T19:46:20Z",
-   "peak": 1.069e-05,
-   "entry": 1.086176506613833e-05,
+   "opened": "2026-11-07T20:01:19Z",
+   "peak": 6.521e-06,
+   "entry": 7.793578174829265e-06,
    "quelle": "BMKvvgLhG6jse8Jo7nrpi1ZHocABq4sBgWBbAJBsLv4C",
    "quelle_name": "Wallet A",
-   "t_wallet": 1794080499,
-   "wallet_sol": 0.1084,
-   "cur_price": 9.993e-06,
-   "mark": 9.993e-06
+   "t_wallet": 1794081598,
+   "wallet_sol": 0.1026,
+   "cur_price": 6.521e-06,
+   "mark": 6.521e-06
   },
-  "HhWYK2qbrh6EXTEWrifLoEmywwCC7f9jgdMM5v9Gpump": {
-   "sym": "EVEN",
-   "qty": 5343995.580288,
+  "F7PuP5Typwuv3P6dtbB7N6fBVmqYSWu7We7S4wT1pump": {
+   "sym": "DEMWOJAK",
+   "qty": 539223.610416,
    "cost": 50.02,
-   "opened": "2026-11-07T19:51:20Z",
-   "peak": 1.065e-05,
-   "entry": 9.36003768126326e-06,
-   "quelle": "BMKvvgLhG6jse8Jo7nrpi1ZHocABq4sBgWBbAJBsLv4C",
-   "quelle_name": "Wallet A",
-   "t_wallet": 1794080834,
-   "wallet_sol": 0.1033,
-   "cur_price": 9.576e-06,
-   "mark": 9.576e-06
-  },
-  "6tqnuJMjHGhYVz7oiCL7gy5UsnhwoRZjJqWjW6b3pump": {
-   "sym": "PTA6",
-   "qty": 1044473.075829,
-   "cost": 50.02,
-   "opened": "2026-11-07T19:56:19Z",
-   "peak": 4.509e-05,
-   "entry": 4.7890176546962736e-05,
+   "opened": "2026-11-07T20:01:20Z",
+   "peak": 8.581e-05,
+   "entry": 9.276300042093964e-05,
    "quelle": "6TztascWVawd6JswEir6nvRsrjFGJWo6CZyazejaAd3",
    "quelle_name": "Wallet B",
-   "t_wallet": 1794081264,
-   "wallet_sol": 0.053,
-   "cur_price": 4.509e-05,
-   "mark": 4.509e-05
+   "t_wallet": 1794081491,
+   "wallet_sol": 0.0515,
+   "cur_price": 8.581e-05,
+   "mark": 8.581e-05
   }
  },
  "trades": [
@@ -1295,6 +1281,75 @@
    "slip": 0.0277,
    "quote": "jup",
    "reason": "kopie Wallet B (+114 s)"
+  },
+  {
+   "t": "2026-11-07T20:01:19Z",
+   "side": "sell",
+   "sym": "KEKO",
+   "addr": "C3t8RNspBkxSHjbT7N6GE57kyj4ZwPHuW2q3qE13pump",
+   "price": 9.941e-06,
+   "usd": 44.82,
+   "pnl": -5.2,
+   "peak_x": 0.984,
+   "held_h": 0.2,
+   "frac": 1.0,
+   "slip": 0.0242,
+   "quote": "jup",
+   "reason": "wallet verkauft (+280 s)"
+  },
+  {
+   "t": "2026-11-07T20:01:19Z",
+   "side": "buy",
+   "sym": "WHITEHOUSE",
+   "addr": "BfzAiiDdvswb9PChjHgth2D7oasjBvHaLAXpj1Sqpump",
+   "price": 6.521e-06,
+   "fill": 7.793578e-06,
+   "usd": 50.02,
+   "slip": 0.0367,
+   "quote": "jup",
+   "reason": "kopie Wallet A (+81 s)"
+  },
+  {
+   "t": "2026-11-07T20:01:19Z",
+   "side": "sell",
+   "sym": "EVEN",
+   "addr": "HhWYK2qbrh6EXTEWrifLoEmywwCC7f9jgdMM5v9Gpump",
+   "price": 6.268e-06,
+   "usd": 15.74,
+   "pnl": -34.28,
+   "peak_x": 1.138,
+   "held_h": 0.2,
+   "frac": 1.0,
+   "slip": 0.0286,
+   "quote": "jup",
+   "reason": "wallet verkauft (+58 s)"
+  },
+  {
+   "t": "2026-11-07T20:01:20Z",
+   "side": "buy",
+   "sym": "DEMWOJAK",
+   "addr": "F7PuP5Typwuv3P6dtbB7N6fBVmqYSWu7We7S4wT1pump",
+   "price": 8.581e-05,
+   "fill": 9.2763e-05,
+   "usd": 50.02,
+   "slip": 0.0031,
+   "quote": "jup",
+   "reason": "kopie Wallet B (+188 s)"
+  },
+  {
+   "t": "2026-11-07T20:01:20Z",
+   "side": "sell",
+   "sym": "PTA6",
+   "addr": "6tqnuJMjHGhYVz7oiCL7gy5UsnhwoRZjJqWjW6b3pump",
+   "price": 6.134e-05,
+   "usd": 64.32,
+   "pnl": 14.3,
+   "peak_x": 1.281,
+   "held_h": 0.1,
+   "frac": 1.0,
+   "slip": 0.0489,
+   "quote": "jup",
+   "reason": "wallet verkauft (+114 s)"
   }
  ],
  "equity": [
@@ -6425,6 +6480,10 @@
   {
    "t": "2026-11-07T19:56:30Z",
    "v": 614.58
+  },
+  {
+   "t": "2026-11-07T20:01:29Z",
+   "v": 583.26
   }
  ],
  "started": "2026-11-03T09:11:31Z",
@@ -6435,31 +6494,29 @@
  "copy": {
   "wallets": {
    "BMKvvgLhG6jse8Jo7nrpi1ZHocABq4sBgWBbAJBsLv4C": {
-    "bis_sig": "2xR6ZF5oGDYcC1LS1j3h9ZmExkyRBvrAc9AuXHfS4ct16CmkQPaMR3tWWXkZMR86vdNw6nx4smgdENa6Q6LmM36P",
-    "kaeufe_gesehen": 59
+    "bis_sig": "5jQcLNrdTk1tcJ8iVCgYhsxjHqh5oaHhigZTr6YHquFQEdZopQC2otoA7PFoPAH8nTZrU7wsTq2BdBPRMwETgVHc",
+    "kaeufe_gesehen": 60
    },
    "6TztascWVawd6JswEir6nvRsrjFGJWo6CZyazejaAd3": {
-    "bis_sig": "2nLY67WLmFGZVh9nNYYddZT8TJBy5dFRtN4aRs1jsRZZRim13Mg6HcwftDiHKM9bM5WXitNZBfoEebnQZpe4paJi",
-    "kaeufe_gesehen": 11
+    "bis_sig": "3Jpt4eg4zq5cV8wZutT8CVer1X6XpMtj7CrjqvPL6QSkBkSA6Rgd8M7jnmNDg6t6L94FJq7e4wLJrzu5Qs5EPDxW",
+    "kaeufe_gesehen": 12
    }
   }
  },
  "coverage": {
-  "t": "2026-11-07T19:56:30Z",
+  "t": "2026-11-07T20:01:29Z",
   "kandidaten": 36,
   "pfade": 309,
-  "kurse": 101,
-  "von": 153,
-  "fruehkaeufer_neu": 1,
+  "kurse": 106,
+  "von": 161,
+  "fruehkaeufer_neu": 0,
   "fruehkaeufer_fehler": 0,
-  "weg": {
-   "codex": 1
-  },
+  "weg": {},
   "coins_mit_fruehkaeufern": 1127,
   "coins_ausgewertet": 1011,
-  "credits_heute": 5043,
+  "credits_heute": 5050,
   "codex_heute": 98,
-  "spaet_neu": 1,
+  "spaet_neu": 0,
   "coins_mit_spaeten": 966,
   "spaet_fehler": null,
   "codex_ohne_filter": false,
@@ -6472,14 +6529,14 @@
    "copy": 2,
    "kandidaten": 2,
    "kurse": 10,
-   "fruehkaeufer": 11,
-   "spaete_kaeufer": 11,
-   "jupiter": 11,
-   "stufe2": 12,
-   "gesamt": 13
+   "fruehkaeufer": 10,
+   "spaete_kaeufer": 10,
+   "jupiter": 10,
+   "stufe2": 10,
+   "gesamt": 11
   },
   "warteschlange": 483,
-  "copy_credits_heute": 543,
+  "copy_credits_heute": 550,
   "copy_wallets": [
    "Wallet A",
    "Wallet B"
@@ -6530,6 +6587,9 @@
   "GgsFG4dPeLXAWN7LQemvKd1gSdMh8zy8hnUs12Yqpump": 1794074177.697448,
   "FEERbYtJWeyoUveWoZ94MiSkPD4VvMTgwVKn96xFpump": 1794074177.7888505,
   "J6stE1odDy3PBiqQAahQtFiQDEjFHLuB5AHpaZ17pump": 1794074777.5338871,
-  "6MidA49VWEJaYoyDGTcDKxmFFxrq3ohyCYgZQWfbpump": 1794078981.1662393
+  "6MidA49VWEJaYoyDGTcDKxmFFxrq3ohyCYgZQWfbpump": 1794078981.1662393,
+  "C3t8RNspBkxSHjbT7N6GE57kyj4ZwPHuW2q3qE13pump": 1794081679.3313403,
+  "HhWYK2qbrh6EXTEWrifLoEmywwCC7f9jgdMM5v9Gpump": 1794081679.6990817,
+  "6tqnuJMjHGhYVz7oiCL7gy5UsnhwoRZjJqWjW6b3pump": 1794081680.3222451
  }
 }
