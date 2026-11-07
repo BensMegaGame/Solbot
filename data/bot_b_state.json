@@ -6,11 +6,11 @@
    "qty": 4423.82315,
    "cost": 103.18096518224152,
    "opened": "2026-11-07T00:01:20Z",
-   "peak": 0.02314,
+   "peak": 0.02324,
    "entry": 0.023323935357190198,
    "pair": "DEXTCER4k9dwbxTMU8zNVVwGevVmvHMB183pF2xxZwvH",
-   "cur_price": 0.02314,
-   "mark": 0.02314
+   "cur_price": 0.02324,
+   "mark": 0.02324
   }
  },
  "trades": [
@@ -601,10 +601,6 @@
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-20T15:26:16Z",
-   "v": 452.22
-  },
   {
    "t": "2026-10-20T15:31:17Z",
    "v": 452.22
@@ -20600,18 +20596,22 @@
   {
    "t": "2026-11-07T00:01:20Z",
    "v": 343.06
+  },
+  {
+   "t": "2026-11-07T00:06:20Z",
+   "v": 343.5
   }
  ],
  "started": "2026-10-08T16:06:06Z",
  "version": "b4",
  "strategy": "tiefer_dip",
  "coverage": {
-  "t": "2026-11-07T00:01:20Z",
+  "t": "2026-11-07T00:06:20Z",
   "kurse": 198,
   "von": 213,
   "sol": true,
-  "sol24": 0.9,
-  "kandidaten": 1,
+  "sol24": 0.6,
+  "kandidaten": 0,
   "gestoppt": false
  },
  "verkauft_am": {
