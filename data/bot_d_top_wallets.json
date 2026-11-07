@@ -1,5 +1,5 @@
 {
- "t": "2026-11-07T00:53:12Z",
+ "t": "2026-11-07T00:58:28Z",
  "version": "d5",
  "coins_mit_daten": 1113,
  "coins_ausgewertet": 976,
@@ -39,31 +39,31 @@
  ],
  "stufe2": {
   "geprueft": 2421,
-  "bot": 1502,
+  "bot": 1498,
   "inaktiv": 427,
   "zu_wenig": 5,
-  "zu_schnell": 8,
-  "sim": 3,
+  "zu_schnell": 7,
+  "bestanden": 2,
   "fehler": 17,
-  "vorab_ok": 458,
-  "bestanden": 1
+  "vorab_ok": 463,
+  "sim": 2
  },
  "copy_liste": [
   {
    "name": "Wallet A",
    "seit": "2026-11-04T00:57:43Z",
    "n": 27,
-   "schnitt": 0.1323,
-   "ohne_top2": -0.0576,
-   "haelfte1": -0.0183,
-   "haelfte2": 0.2722,
+   "schnitt": 0.1195,
+   "ohne_top2": -0.0739,
+   "haelfte1": -0.0157,
+   "haelfte2": 0.245,
    "trefferquote": 0.333,
    "halte_min": 15.0,
-   "tx_tag": 81.9,
-   "kosten": 0.032,
+   "tx_tag": 72.8,
+   "kosten": 0.0319,
    "kosten_art": "jupiter",
-   "stand": "2026-11-06T00:36:27Z",
-   "in_neupruefung": true
+   "stand": "2026-11-07T00:36:42Z",
+   "in_neupruefung": false
   },
   {
    "name": "Wallet B",
