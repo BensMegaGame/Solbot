@@ -5867,6 +5867,10 @@
   {
    "t": "2026-11-07T15:01:24Z",
    "v": 369.06
+  },
+  {
+   "t": "2026-11-07T15:06:24Z",
+   "v": 369.06
   }
  ],
  "started": "2026-11-03T09:11:31Z",
@@ -5877,8 +5881,8 @@
  "copy": {
   "wallets": {
    "BMKvvgLhG6jse8Jo7nrpi1ZHocABq4sBgWBbAJBsLv4C": {
-    "bis_sig": "88npT2F25xNpq63t3MU6UbWsVebZyneJDrPinh2CyTzR5wqw1Jw34owkxUGgNVy6JUFMUn3XR7XGkywksLPv9Bb",
-    "kaeufe_gesehen": 40
+    "bis_sig": "3cYLeyT5WGF3gJ47jJTAxVfkK8yxzPJBiP35hLxRTWMJeiDfZPPZRuHdUKyJe95my7KbSwhQNQsVWnKYzTWnQsR9",
+    "kaeufe_gesehen": 41
    },
    "6TztascWVawd6JswEir6nvRsrjFGJWo6CZyazejaAd3": {
     "bis_sig": "2kjE9XfE5n89LLkiMPeRLJBDLUMncb3grXF9RBVssMmVwT1KuZC1drFrsJXfTfLDjcYV3CH5A9MoryS7a6eXPMJp",
@@ -5887,17 +5891,17 @@
   }
  },
  "coverage": {
-  "t": "2026-11-07T15:01:24Z",
+  "t": "2026-11-07T15:06:24Z",
   "kandidaten": 43,
-  "pfade": 308,
-  "kurse": 104,
-  "von": 155,
+  "pfade": 307,
+  "kurse": 101,
+  "von": 154,
   "fruehkaeufer_neu": 0,
   "fruehkaeufer_fehler": 0,
   "weg": {},
   "coins_mit_fruehkaeufern": 1121,
   "coins_ausgewertet": 997,
-  "credits_heute": 4718,
+  "credits_heute": 4721,
   "codex_heute": 76,
   "spaet_neu": 0,
   "coins_mit_spaeten": 961,
@@ -5919,7 +5923,7 @@
    "gesamt": 10
   },
   "warteschlange": 477,
-  "copy_credits_heute": 382,
+  "copy_credits_heute": 385,
   "copy_wallets": [
    "Wallet A",
    "Wallet B"
