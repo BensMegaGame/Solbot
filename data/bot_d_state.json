@@ -6263,6 +6263,10 @@
   {
    "t": "2026-11-07T18:46:28Z",
    "v": 498.28
+  },
+  {
+   "t": "2026-11-07T18:51:36Z",
+   "v": 498.28
   }
  ],
  "started": "2026-11-03T09:11:31Z",
@@ -6273,8 +6277,8 @@
  "copy": {
   "wallets": {
    "BMKvvgLhG6jse8Jo7nrpi1ZHocABq4sBgWBbAJBsLv4C": {
-    "bis_sig": "4YfXULNL4KaWFvvMwQkbqeamHarPfoXeDKpkFY3Qit8UkEr8FyWDgVBbB22cSPUw9PdB6bG2xFkuWn7R2fyLE5rX",
-    "kaeufe_gesehen": 53
+    "bis_sig": "66A7N5puY5r4A4CVkjtrQbc24vakkGC1HFBgvjrEFxpzPjtH5bXztQa8Jw6gKF9vnuEWHYVkLicg5iNmuDCYt1Kp",
+    "kaeufe_gesehen": 54
    },
    "6TztascWVawd6JswEir6nvRsrjFGJWo6CZyazejaAd3": {
     "bis_sig": "3y8aft4jyrYRaP2N8pUq4kYGd5PWBuFFh4AEBCAUUBCCwgnxt1ijUgmzAmQSFGNQKuttwMfVrtPLsR1q1NiYT1hM",
@@ -6283,39 +6287,41 @@
   }
  },
  "coverage": {
-  "t": "2026-11-07T18:46:28Z",
+  "t": "2026-11-07T18:51:36Z",
   "kandidaten": 33,
-  "pfade": 304,
-  "kurse": 90,
-  "von": 144,
-  "fruehkaeufer_neu": 0,
+  "pfade": 307,
+  "kurse": 96,
+  "von": 151,
+  "fruehkaeufer_neu": 3,
   "fruehkaeufer_fehler": 0,
-  "weg": {},
-  "coins_mit_fruehkaeufern": 1122,
+  "weg": {
+   "codex": 3
+  },
+  "coins_mit_fruehkaeufern": 1125,
   "coins_ausgewertet": 1009,
-  "credits_heute": 4962,
-  "codex_heute": 81,
-  "spaet_neu": 0,
-  "coins_mit_spaeten": 962,
+  "credits_heute": 4969,
+  "codex_heute": 90,
+  "spaet_neu": 3,
+  "coins_mit_spaeten": 965,
   "spaet_fehler": null,
   "codex_ohne_filter": false,
-  "kandidaten_wallets": 2485,
-  "wallets_geprueft": 2468,
+  "kandidaten_wallets": 2489,
+  "wallets_geprueft": 2472,
   "wallets_bestanden": 2,
   "copy_liste": 2,
-  "helius_wallet_heute": 3992,
+  "helius_wallet_heute": 3996,
   "laufzeit_s": {
-   "copy": 0,
-   "kandidaten": 0,
-   "kurse": 7,
-   "fruehkaeufer": 7,
-   "spaete_kaeufer": 7,
-   "jupiter": 7,
-   "stufe2": 7,
-   "gesamt": 8
+   "copy": 1,
+   "kandidaten": 1,
+   "kurse": 9,
+   "fruehkaeufer": 11,
+   "spaete_kaeufer": 13,
+   "jupiter": 14,
+   "stufe2": 15,
+   "gesamt": 16
   },
-  "warteschlange": 482,
-  "copy_credits_heute": 505,
+  "warteschlange": 483,
+  "copy_credits_heute": 508,
   "copy_wallets": [
    "Wallet A",
    "Wallet B"
