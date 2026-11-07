@@ -39,11 +39,11 @@
    "qty": 11104.495149,
    "cost": 65.95164986928472,
    "opened": "2026-11-05T15:26:43Z",
-   "peak": 0.006479,
+   "peak": 0.00648,
    "entry": 0.00593918489623762,
    "pair": "HL4KFTfhZZMm7NGefszQxzJ3M6CaDWE7TesyuRuQYmMJ",
-   "cur_price": 0.006394,
-   "mark": 0.006394
+   "cur_price": 0.00648,
+   "mark": 0.00648
   },
   "6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump": {
    "sym": "VINE",
@@ -1443,10 +1443,6 @@
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-21T04:26:40Z",
-   "v": 423.64
-  },
   {
    "t": "2026-10-21T04:31:43Z",
    "v": 423.64
@@ -21442,6 +21438,10 @@
   {
    "t": "2026-11-07T13:01:24Z",
    "v": 334.45
+  },
+  {
+   "t": "2026-11-07T13:06:24Z",
+   "v": 335.4
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -21455,7 +21455,7 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-11-07T13:01:24Z",
+  "t": "2026-11-07T13:06:24Z",
   "virtuell": 8,
   "neu": 0,
   "gestoppt": false
