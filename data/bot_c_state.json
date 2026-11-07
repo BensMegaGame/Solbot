@@ -1,5 +1,5 @@
 {
- "cash": 33.91866823830179,
+ "cash": 124.5852032383018,
  "positions": {
   "BeGY8KqKxboEwRbJd1q9H2K829jS4Rc5dEyNMYXCbV5p": {
    "sym": "NPC",
@@ -11,16 +11,6 @@
    "cur_price": 0.01531,
    "mark": 0.01531
   },
-  "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP": {
-   "sym": "SI",
-   "qty": 12586.241121,
-   "cost": 101.08189079545134,
-   "opened": "2026-11-05T23:01:22Z",
-   "peak": 0.00851,
-   "entry": 0.008031142087910375,
-   "cur_price": 0.007272,
-   "mark": 0.007272
-  },
   "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": {
    "sym": "DACITY",
    "qty": 13230.313191,
@@ -28,8 +18,8 @@
    "opened": "2026-11-06T00:01:22Z",
    "peak": 0.008016,
    "entry": 0.007622338479438877,
-   "cur_price": 0.00729,
-   "mark": 0.00729
+   "cur_price": 0.007362,
+   "mark": 0.007362
   }
  },
  "trades": [
@@ -1637,13 +1627,24 @@
    "slip": 0.0064,
    "quote": "jup",
    "reason": "dip 24h -25% (SOL -7%) 1h +1.6%"
+  },
+  {
+   "t": "2026-11-07T06:21:22Z",
+   "side": "sell",
+   "sym": "SI",
+   "addr": "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP",
+   "price": 0.007192,
+   "usd": 90.67,
+   "pnl": -10.42,
+   "peak_x": 1.06,
+   "held_h": 31.3,
+   "frac": 1.0,
+   "slip": 0.009,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-20T21:41:24Z",
-   "v": 423.22
-  },
   {
    "t": "2026-10-20T21:46:26Z",
    "v": 423.22
@@ -21639,6 +21640,10 @@
   {
    "t": "2026-11-07T06:16:22Z",
    "v": 320.41
+  },
+  {
+   "t": "2026-11-07T06:21:22Z",
+   "v": 320.5
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -21646,7 +21651,7 @@
  "strategy": "dip_weites_netz",
  "universe_n": 151,
  "coverage": {
-  "t": "2026-11-07T06:16:22Z",
+  "t": "2026-11-07T06:21:22Z",
   "kurse": 128,
   "von": 151,
   "ohne_pool": 85,
@@ -21654,12 +21659,8 @@
   "kandidaten": 0
  },
  "verkauft_am": {
-  "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": 1793294184.9381115,
-  "BCdwQBAn8dYB5YjTsoB6TdHAWokxv28k2oZUodERpump": 1793318487.5193958,
   "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": 1793575884.7856612,
-  "MukLDtJ8Cx9DxLbeyLRSWPSposTMWuwHANbuaudpump": 1793246181.5282798,
-  "6nR8wBnfsmXfcdDr1hovJKjvFQxNSidN6XFyfAFZpump": 1793257877.5688963,
-  "JAFqCQSpy5YinrsmixWSMaD7jTn4MytJRkyWvYPnY6ea": 1793284881.745525,
-  "npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump": 1793588190.5042007
+  "npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump": 1793588190.5042007,
+  "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP": 1794032482.2381575
  }
 }
