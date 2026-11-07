@@ -6,14 +6,14 @@
    "qty": 1529652.42779,
    "cost": 50.02,
    "opened": "2026-11-07T17:26:17Z",
-   "peak": 3.864e-05,
+   "peak": 0.0001085,
    "entry": 3.270023901590999e-05,
    "quelle": "BMKvvgLhG6jse8Jo7nrpi1ZHocABq4sBgWBbAJBsLv4C",
    "quelle_name": "Wallet A",
    "t_wallet": 1794072171,
    "wallet_sol": 0.1027,
-   "cur_price": 3.864e-05,
-   "mark": 3.864e-05
+   "cur_price": 0.0001085,
+   "mark": 0.0001085
   }
  },
  "trades": [
@@ -6095,6 +6095,10 @@
   {
    "t": "2026-11-07T17:31:27Z",
    "v": 501.98
+  },
+  {
+   "t": "2026-11-07T17:36:26Z",
+   "v": 608.84
   }
  ],
  "started": "2026-11-03T09:11:31Z",
@@ -6105,27 +6109,27 @@
  "copy": {
   "wallets": {
    "BMKvvgLhG6jse8Jo7nrpi1ZHocABq4sBgWBbAJBsLv4C": {
-    "bis_sig": "2ejyEBqNmYtraTn7EURzDgYdnzrcaHaqkd9pWvhfjCMojBccwn45qUtp1CeZZSzB81WqRaSSV1qRmrpha9PNhFvw",
-    "kaeufe_gesehen": 46
+    "bis_sig": "cW1qXBuxY12H5JGFPyF1Nhawyzrsrx7GCcGqabXqmoTsHkZrHZRdpUvShcTcFWQtk7jpi3eqbbAagbGarqEDzMG",
+    "kaeufe_gesehen": 47
    },
    "6TztascWVawd6JswEir6nvRsrjFGJWo6CZyazejaAd3": {
-    "bis_sig": "3zC2g8GERhy9zJkxXzPU7KsoKePfiPpAi78P1B8uQJ5TUgqFH1H7DvBaJ9ZCSfzCXmq1ww5vyf4saVTWczPQySfx",
+    "bis_sig": "5beTrwWrUZBLs4PHWsQLYQqr1W3eMVynBHVNkXrYbj42MyL7GdDUT8BxGwSqQVUoGjc6f3XewkSH6t5kgDvdwB6g",
     "kaeufe_gesehen": 10
    }
   }
  },
  "coverage": {
-  "t": "2026-11-07T17:31:27Z",
+  "t": "2026-11-07T17:36:26Z",
   "kandidaten": 32,
   "pfade": 305,
-  "kurse": 103,
-  "von": 156,
+  "kurse": 96,
+  "von": 149,
   "fruehkaeufer_neu": 0,
   "fruehkaeufer_fehler": 0,
   "weg": {},
   "coins_mit_fruehkaeufern": 1122,
   "coins_ausgewertet": 1006,
-  "credits_heute": 4858,
+  "credits_heute": 4862,
   "codex_heute": 80,
   "spaet_neu": 0,
   "coins_mit_spaeten": 962,
@@ -6137,17 +6141,17 @@
   "copy_liste": 2,
   "helius_wallet_heute": 3989,
   "laufzeit_s": {
-   "copy": 1,
-   "kandidaten": 1,
-   "kurse": 9,
-   "fruehkaeufer": 9,
-   "spaete_kaeufer": 9,
-   "jupiter": 9,
+   "copy": 2,
+   "kandidaten": 2,
+   "kurse": 8,
+   "fruehkaeufer": 8,
+   "spaete_kaeufer": 8,
+   "jupiter": 8,
    "stufe2": 9,
    "gesamt": 10
   },
   "warteschlange": 482,
-  "copy_credits_heute": 458,
+  "copy_credits_heute": 462,
   "copy_wallets": [
    "Wallet A",
    "Wallet B"
