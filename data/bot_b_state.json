@@ -1,6 +1,18 @@
 {
- "cash": 343.8698839408051,
- "positions": {},
+ "cash": 240.68891875856357,
+ "positions": {
+  "npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump": {
+   "sym": "DESSA",
+   "qty": 4423.82315,
+   "cost": 103.18096518224152,
+   "opened": "2026-11-07T00:01:20Z",
+   "peak": 0.02314,
+   "entry": 0.023323935357190198,
+   "pair": "DEXTCER4k9dwbxTMU8zNVVwGevVmvHMB183pF2xxZwvH",
+   "cur_price": 0.02314,
+   "mark": 0.02314
+  }
+ },
  "trades": [
   {
    "t": "2026-10-09T07:16:29Z",
@@ -574,13 +586,21 @@
    "slip": 0.0049,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-11-07T00:01:20Z",
+   "side": "buy",
+   "sym": "DESSA",
+   "addr": "npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump",
+   "price": 0.02314,
+   "fill": 0.023323935357,
+   "usd": 103.18,
+   "slip": 0.003,
+   "quote": "jup",
+   "reason": "tiefer dip 24h -35% (SOL +1%) 1h +1.2%"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-20T15:21:16Z",
-   "v": 452.22
-  },
   {
    "t": "2026-10-20T15:26:16Z",
    "v": 452.22
@@ -20576,18 +20596,22 @@
   {
    "t": "2026-11-06T23:56:18Z",
    "v": 343.87
+  },
+  {
+   "t": "2026-11-07T00:01:20Z",
+   "v": 343.06
   }
  ],
  "started": "2026-10-08T16:06:06Z",
  "version": "b4",
  "strategy": "tiefer_dip",
  "coverage": {
-  "t": "2026-11-06T23:56:18Z",
+  "t": "2026-11-07T00:01:20Z",
   "kurse": 198,
   "von": 213,
   "sol": true,
-  "sol24": 1.0,
-  "kandidaten": 0,
+  "sol24": 0.9,
+  "kandidaten": 1,
   "gestoppt": false
  },
  "verkauft_am": {
