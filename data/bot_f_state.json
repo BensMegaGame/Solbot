@@ -39,11 +39,11 @@
    "qty": 11104.495149,
    "cost": 65.95164986928472,
    "opened": "2026-11-05T15:26:43Z",
-   "peak": 0.006476,
+   "peak": 0.006479,
    "entry": 0.00593918489623762,
    "pair": "HL4KFTfhZZMm7NGefszQxzJ3M6CaDWE7TesyuRuQYmMJ",
-   "cur_price": 0.006443,
-   "mark": 0.006443
+   "cur_price": 0.006479,
+   "mark": 0.006479
   },
   "6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump": {
    "sym": "VINE",
@@ -53,8 +53,8 @@
    "peak": 0.00642,
    "entry": 0.0061237419939388,
    "pair": "58fzJMbX5PatnfJPqWWsqkVFPRKptkbb5r2vCw4Qq3z9",
-   "cur_price": 0.006319,
-   "mark": 0.006319
+   "cur_price": 0.006303,
+   "mark": 0.006303
   }
  },
  "trades": [
@@ -1443,10 +1443,6 @@
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-21T01:01:46Z",
-   "v": 428.37
-  },
   {
    "t": "2026-10-21T01:06:49Z",
    "v": 427.48
@@ -21442,6 +21438,10 @@
   {
    "t": "2026-11-07T09:36:35Z",
    "v": 336.88
+  },
+  {
+   "t": "2026-11-07T09:41:33Z",
+   "v": 337.1
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -21455,7 +21455,7 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-11-07T09:36:35Z",
+  "t": "2026-11-07T09:41:33Z",
   "virtuell": 8,
   "neu": 0,
   "gestoppt": false
