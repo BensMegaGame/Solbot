@@ -6,14 +6,14 @@
    "qty": 1036659.997439,
    "cost": 50.02,
    "opened": "2026-11-07T05:41:29Z",
-   "peak": 5.162e-05,
+   "peak": 5.432e-05,
    "entry": 4.825111427427614e-05,
    "quelle": "6TztascWVawd6JswEir6nvRsrjFGJWo6CZyazejaAd3",
    "quelle_name": "Wallet B",
    "t_wallet": 1794029831,
    "wallet_sol": 0.053,
-   "cur_price": 5.162e-05,
-   "mark": 5.162e-05
+   "cur_price": 5.432e-05,
+   "mark": 5.432e-05
   }
  },
  "trades": [
@@ -5365,6 +5365,10 @@
   {
    "t": "2026-11-07T05:41:38Z",
    "v": 410.16
+  },
+  {
+   "t": "2026-11-07T05:46:36Z",
+   "v": 412.96
   }
  ],
  "started": "2026-11-03T09:11:31Z",
@@ -5379,23 +5383,23 @@
     "kaeufe_gesehen": 39
    },
    "6TztascWVawd6JswEir6nvRsrjFGJWo6CZyazejaAd3": {
-    "bis_sig": "2TkKZUUtGLaDPwAAWkMizk8YG7UKPgZRJFF9BdZkSwvD9KjmTki1suTiUa3tM4PGC32NRKBibeYAg6KgToTXnucZ",
+    "bis_sig": "4duCkTJceYssLHwSphQLmsZt5bkY1zz5o5f3PDfyKyF9baKso7hSEQfscuqE3rgTHoYXmQCym31DXmPmHaP78U4R",
     "kaeufe_gesehen": 5
    }
   }
  },
  "coverage": {
-  "t": "2026-11-07T05:41:38Z",
+  "t": "2026-11-07T05:46:36Z",
   "kandidaten": 42,
   "pfade": 315,
-  "kurse": 121,
-  "von": 168,
+  "kurse": 108,
+  "von": 158,
   "fruehkaeufer_neu": 0,
   "fruehkaeufer_fehler": 0,
   "weg": {},
   "coins_mit_fruehkaeufern": 1112,
   "coins_ausgewertet": 983,
-  "credits_heute": 4188,
+  "credits_heute": 4191,
   "codex_heute": 44,
   "spaet_neu": 0,
   "coins_mit_spaeten": 952,
@@ -5417,7 +5421,7 @@
    "gesamt": 10
   },
   "warteschlange": 462,
-  "copy_credits_heute": 145,
+  "copy_credits_heute": 148,
   "copy_wallets": [
    "Wallet A",
    "Wallet B"
