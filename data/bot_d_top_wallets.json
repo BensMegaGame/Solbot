@@ -1,5 +1,5 @@
 {
- "t": "2026-11-07T00:17:25Z",
+ "t": "2026-11-07T00:23:11Z",
  "version": "d5",
  "coins_mit_daten": 1113,
  "coins_ausgewertet": 975,
@@ -39,14 +39,14 @@
  ],
  "stufe2": {
   "geprueft": 2421,
-  "bot": 1509,
+  "bot": 1508,
   "inaktiv": 421,
   "zu_wenig": 5,
   "zu_schnell": 8,
-  "bestanden": 1,
+  "bestanden": 2,
   "fehler": 18,
-  "vorab_ok": 456,
-  "sim": 3
+  "vorab_ok": 457,
+  "sim": 2
  },
  "copy_liste": [
   {
@@ -63,6 +63,22 @@
    "kosten": 0.032,
    "kosten_art": "jupiter",
    "stand": "2026-11-06T00:36:27Z",
+   "in_neupruefung": false
+  },
+  {
+   "name": "Wallet B",
+   "seit": "2026-11-07T00:23:11Z",
+   "n": 30,
+   "schnitt": 0.2356,
+   "ohne_top2": -0.0894,
+   "haelfte1": 0.5108,
+   "haelfte2": -0.0395,
+   "trefferquote": 0.4,
+   "halte_min": 5.0,
+   "tx_tag": 36.9,
+   "kosten": 0.0319,
+   "kosten_art": "jupiter",
+   "stand": "2026-11-07T00:01:39Z",
    "in_neupruefung": false
   }
  ],
