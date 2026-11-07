@@ -1,5 +1,5 @@
 {
- "cash": 83.92345827203428,
+ "cash": 15.84941476732942,
  "positions": {
   "CzLSujWBLFsSjncfkh59rUFqvafWcY5tzedWJSuypump": {
    "sym": "GOAT",
@@ -9,8 +9,8 @@
    "peak": 0.0157,
    "entry": 0.014165768201616436,
    "pair": "9Tb2ohu5P16BpBarqd3N27WnkF51Ukfs8Z1GzzLDxVZW",
-   "cur_price": 0.01306,
-   "mark": 0.01306
+   "cur_price": 0.01303,
+   "mark": 0.01303
   },
   "KENJSUYLASHUMfHyy5o4Hp2FdNqZg1AsUPhfH2kYvEP": {
    "sym": "GRIFFAIN",
@@ -31,8 +31,8 @@
    "peak": 0.08007,
    "entry": 0.0767509465334341,
    "pair": "BxRhW4q1wTRwJkJ1C4NR4yJCRL2uusoju4g1bVenspZK",
-   "cur_price": 0.07312,
-   "mark": 0.07312
+   "cur_price": 0.07352,
+   "mark": 0.07352
   },
   "6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump": {
    "sym": "VINE",
@@ -42,8 +42,19 @@
    "peak": 0.00642,
    "entry": 0.0061237419939388,
    "pair": "58fzJMbX5PatnfJPqWWsqkVFPRKptkbb5r2vCw4Qq3z9",
-   "cur_price": 0.006175,
-   "mark": 0.006175
+   "cur_price": 0.006196,
+   "mark": 0.006196
+  },
+  "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": {
+   "sym": "BATON",
+   "qty": 13623.855419,
+   "cost": 68.07404350470486,
+   "opened": "2026-11-07T21:06:37Z",
+   "peak": 0.004867,
+   "entry": 0.004996679824550101,
+   "pair": "Cb7ZRgPLhji3Th7htXyKEqbXvNjPpeTvckXuWakBUhXu",
+   "cur_price": 0.004867,
+   "mark": 0.004867
   }
  },
  "trades": [
@@ -1444,13 +1455,21 @@
    "slip": 0.001,
    "quote": "jup",
    "reason": "tp"
+  },
+  {
+   "t": "2026-11-07T21:06:37Z",
+   "side": "buy",
+   "sym": "BATON",
+   "addr": "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump",
+   "price": 0.004867,
+   "fill": 0.004996679825,
+   "usd": 68.07,
+   "slip": 0.027,
+   "quote": "jup",
+   "reason": "nach virtuellem stop (C) -10.0%"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-21T12:26:38Z",
-   "v": 422.61
-  },
   {
    "t": "2026-10-21T12:32:08Z",
    "v": 422.56
@@ -21446,6 +21465,10 @@
   {
    "t": "2026-11-07T21:01:39Z",
    "v": 340.27
+  },
+  {
+   "t": "2026-11-07T21:06:37Z",
+   "v": 338.95
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -21460,8 +21483,8 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-11-07T21:01:39Z",
-  "virtuell": 8,
+  "t": "2026-11-07T21:06:37Z",
+  "virtuell": 7,
   "neu": 0,
   "gestoppt": false
  },
