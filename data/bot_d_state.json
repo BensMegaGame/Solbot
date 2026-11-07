@@ -6,14 +6,14 @@
    "qty": 4185505.159189,
    "cost": 50.02,
    "opened": "2026-11-07T17:16:16Z",
-   "peak": 1.009e-05,
+   "peak": 1.535e-05,
    "entry": 1.1950767732345139e-05,
    "quelle": "BMKvvgLhG6jse8Jo7nrpi1ZHocABq4sBgWBbAJBsLv4C",
    "quelle_name": "Wallet A",
    "t_wallet": 1794071676,
    "wallet_sol": 0.1026,
-   "cur_price": 1.009e-05,
-   "mark": 1.009e-05
+   "cur_price": 1.535e-05,
+   "mark": 1.535e-05
   }
  },
  "trades": [
@@ -6056,6 +6056,10 @@
   {
    "t": "2026-11-07T17:16:26Z",
    "v": 524.63
+  },
+  {
+   "t": "2026-11-07T17:21:26Z",
+   "v": 546.64
   }
  ],
  "started": "2026-11-03T09:11:31Z",
@@ -6066,27 +6070,27 @@
  "copy": {
   "wallets": {
    "BMKvvgLhG6jse8Jo7nrpi1ZHocABq4sBgWBbAJBsLv4C": {
-    "bis_sig": "4YsuEqoR6hsbG2nBLNN55R1TKggp9Jbd79hnuFGBsvHeqjHyviQX3qTbbavNGaToswLdKXmrGViTibvejuBQDUfG",
+    "bis_sig": "4CRR5QXkR3RwXvNt5rLo7nyWUDpHxSQxsncnb7mDXeGnDyaXGP9MCNFj3pBdwT43EMZ7SCXFNLeprBAwEo4bG6Xp",
     "kaeufe_gesehen": 45
    },
    "6TztascWVawd6JswEir6nvRsrjFGJWo6CZyazejaAd3": {
-    "bis_sig": "24ZaiYkBWPMQsx5irCcx2Pydy9Keo8J6tYji5C6p5XdkUkaHTUSnGUuYhMWyruqmL1HbnWX321URd3QN8TEZoacb",
+    "bis_sig": "iaQ9GdssQHcRRZLLefkQvqKUWmpjuo5ecRfsN7iKNTLLqpqq2pHdZiwJkb8r9LxqX5ASxiJKa4bW9YmAobTBxyh",
     "kaeufe_gesehen": 9
    }
   }
  },
  "coverage": {
-  "t": "2026-11-07T17:16:26Z",
-  "kandidaten": 34,
+  "t": "2026-11-07T17:21:26Z",
+  "kandidaten": 32,
   "pfade": 305,
-  "kurse": 106,
-  "von": 156,
+  "kurse": 113,
+  "von": 163,
   "fruehkaeufer_neu": 0,
   "fruehkaeufer_fehler": 0,
   "weg": {},
   "coins_mit_fruehkaeufern": 1122,
   "coins_ausgewertet": 1006,
-  "credits_heute": 4847,
+  "credits_heute": 4851,
   "codex_heute": 80,
   "spaet_neu": 0,
   "coins_mit_spaeten": 962,
@@ -6108,7 +6112,7 @@
    "gesamt": 11
   },
   "warteschlange": 482,
-  "copy_credits_heute": 447,
+  "copy_credits_heute": 451,
   "copy_wallets": [
    "Wallet A",
    "Wallet B"
