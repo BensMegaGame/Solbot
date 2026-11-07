@@ -1,5 +1,5 @@
 {
- "cash": 126.58576923120417,
+ "cash": 83.79272222719123,
  "positions": {
   "BeGY8KqKxboEwRbJd1q9H2K829jS4Rc5dEyNMYXCbV5p": {
    "sym": "NPC",
@@ -8,18 +8,29 @@
    "opened": "2026-11-05T19:56:27Z",
    "peak": 0.01606,
    "entry": 0.01571230047627014,
-   "cur_price": 0.01459,
-   "mark": 0.01459
+   "cur_price": 0.01445,
+   "mark": 0.01445
   },
   "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": {
    "sym": "DACITY",
-   "qty": 13230.313191,
-   "cost": 100.84592533078705,
+   "qty": 6615.1565955,
+   "cost": 50.42296266539353,
    "opened": "2026-11-06T00:01:22Z",
-   "peak": 0.008718,
+   "peak": 0.008814,
    "entry": 0.007622338479438877,
-   "cur_price": 0.008672,
-   "mark": 0.008672
+   "cur_price": 0.008814,
+   "mark": 0.008814,
+   "tp1": true
+  },
+  "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": {
+   "sym": "BATON",
+   "qty": 18650.095411,
+   "cost": 100.76137500401293,
+   "opened": "2026-11-07T20:16:22Z",
+   "peak": 0.005265,
+   "entry": 0.005402727052247837,
+   "cur_price": 0.005265,
+   "mark": 0.005265
   }
  },
  "trades": [
@@ -1669,13 +1680,36 @@
    "slip": 0.0011,
    "quote": "jup",
    "reason": "trail"
+  },
+  {
+   "t": "2026-11-07T20:16:19Z",
+   "side": "sell",
+   "sym": "DACITY",
+   "addr": "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump",
+   "price": 0.008814,
+   "usd": 57.97,
+   "pnl": 7.55,
+   "peak_x": 1.156,
+   "held_h": 44.2,
+   "frac": 0.5,
+   "slip": 0.0081,
+   "quote": "jup",
+   "reason": "tp1"
+  },
+  {
+   "t": "2026-11-07T20:16:22Z",
+   "side": "buy",
+   "sym": "BATON",
+   "addr": "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump",
+   "price": 0.005265,
+   "fill": 0.005402727052,
+   "usd": 100.76,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "dip 24h -11% (SOL -1%) 1h -1.0%"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-21T11:36:23Z",
-   "v": 423.22
-  },
   {
    "t": "2026-10-21T11:41:22Z",
    "v": 423.22
@@ -21671,6 +21705,10 @@
   {
    "t": "2026-11-07T20:11:19Z",
    "v": 335.2
+  },
+  {
+   "t": "2026-11-07T20:16:22Z",
+   "v": 333.27
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -21678,12 +21716,12 @@
  "strategy": "dip_weites_netz",
  "universe_n": 158,
  "coverage": {
-  "t": "2026-11-07T20:11:19Z",
+  "t": "2026-11-07T20:16:22Z",
   "kurse": 133,
   "von": 158,
   "ohne_pool": 86,
   "sol": true,
-  "kandidaten": 0
+  "kandidaten": 1
  },
  "verkauft_am": {
   "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": 1793575884.7856612,
