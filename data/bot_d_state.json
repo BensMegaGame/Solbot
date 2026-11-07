@@ -12,22 +12,22 @@
    "quelle_name": "Wallet A",
    "t_wallet": 1794073187,
    "wallet_sol": 0.1022,
-   "cur_price": 1.839e-05,
-   "mark": 1.839e-05
+   "cur_price": 1.255e-05,
+   "mark": 1.255e-05
   },
   "FEERbYtJWeyoUveWoZ94MiSkPD4VvMTgwVKn96xFpump": {
    "sym": "IKY",
    "qty": 5106694.108489,
    "cost": 50.02,
    "opened": "2026-11-07T17:41:18Z",
-   "peak": 9.399e-06,
+   "peak": 1.171e-05,
    "entry": 9.794986528926876e-06,
    "quelle": "BMKvvgLhG6jse8Jo7nrpi1ZHocABq4sBgWBbAJBsLv4C",
    "quelle_name": "Wallet A",
    "t_wallet": 1794073193,
    "wallet_sol": 0.1022,
-   "cur_price": 9.399e-06,
-   "mark": 9.399e-06
+   "cur_price": 1.171e-05,
+   "mark": 1.171e-05
   }
  },
  "trades": [
@@ -6156,6 +6156,10 @@
   {
    "t": "2026-11-07T17:41:27Z",
    "v": 532.39
+  },
+  {
+   "t": "2026-11-07T17:46:27Z",
+   "v": 531.08
   }
  ],
  "started": "2026-11-03T09:11:31Z",
@@ -6176,17 +6180,17 @@
   }
  },
  "coverage": {
-  "t": "2026-11-07T17:41:27Z",
+  "t": "2026-11-07T17:46:27Z",
   "kandidaten": 32,
-  "pfade": 305,
-  "kurse": 106,
+  "pfade": 304,
+  "kurse": 102,
   "von": 154,
   "fruehkaeufer_neu": 0,
   "fruehkaeufer_fehler": 0,
   "weg": {},
   "coins_mit_fruehkaeufern": 1122,
   "coins_ausgewertet": 1006,
-  "credits_heute": 4868,
+  "credits_heute": 4870,
   "codex_heute": 80,
   "spaet_neu": 0,
   "coins_mit_spaeten": 962,
@@ -6198,17 +6202,17 @@
   "copy_liste": 2,
   "helius_wallet_heute": 3989,
   "laufzeit_s": {
-   "copy": 2,
-   "kandidaten": 2,
-   "kurse": 10,
-   "fruehkaeufer": 10,
-   "spaete_kaeufer": 10,
-   "jupiter": 10,
-   "stufe2": 10,
-   "gesamt": 11
+   "copy": 1,
+   "kandidaten": 1,
+   "kurse": 8,
+   "fruehkaeufer": 8,
+   "spaete_kaeufer": 8,
+   "jupiter": 8,
+   "stufe2": 8,
+   "gesamt": 10
   },
   "warteschlange": 482,
-  "copy_credits_heute": 468,
+  "copy_credits_heute": 470,
   "copy_wallets": [
    "Wallet A",
    "Wallet B"
