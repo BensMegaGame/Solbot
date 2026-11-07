@@ -1,5 +1,5 @@
 {
- "cash": 83.79272222719123,
+ "cash": 137.54520122719123,
  "positions": {
   "BeGY8KqKxboEwRbJd1q9H2K829jS4Rc5dEyNMYXCbV5p": {
    "sym": "NPC",
@@ -11,17 +11,6 @@
    "cur_price": 0.01444,
    "mark": 0.01444
   },
-  "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": {
-   "sym": "DACITY",
-   "qty": 6615.1565955,
-   "cost": 50.42296266539353,
-   "opened": "2026-11-06T00:01:22Z",
-   "peak": 0.008814,
-   "entry": 0.007622338479438877,
-   "cur_price": 0.008372,
-   "mark": 0.008372,
-   "tp1": true
-  },
   "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": {
    "sym": "BATON",
    "qty": 18650.095411,
@@ -29,8 +18,8 @@
    "opened": "2026-11-07T20:16:22Z",
    "peak": 0.005347,
    "entry": 0.005402727052247837,
-   "cur_price": 0.005249,
-   "mark": 0.005249
+   "cur_price": 0.005344,
+   "mark": 0.005344
   }
  },
  "trades": [
@@ -1707,13 +1696,24 @@
    "slip": 0.0,
    "quote": "jup",
    "reason": "dip 24h -11% (SOL -1%) 1h -1.0%"
+  },
+  {
+   "t": "2026-11-07T20:46:19Z",
+   "side": "sell",
+   "sym": "DACITY",
+   "addr": "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump",
+   "price": 0.008115,
+   "usd": 53.75,
+   "pnl": 3.33,
+   "peak_x": 1.156,
+   "held_h": 44.7,
+   "frac": 1.0,
+   "slip": 0.0062,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-21T12:06:22Z",
-   "v": 423.22
-  },
   {
    "t": "2026-10-21T12:11:23Z",
    "v": 423.22
@@ -21709,6 +21709,10 @@
   {
    "t": "2026-11-07T20:41:18Z",
    "v": 329.99
+  },
+  {
+   "t": "2026-11-07T20:46:19Z",
+   "v": 330.13
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -21716,7 +21720,7 @@
  "strategy": "dip_weites_netz",
  "universe_n": 158,
  "coverage": {
-  "t": "2026-11-07T20:41:18Z",
+  "t": "2026-11-07T20:46:19Z",
   "kurse": 132,
   "von": 158,
   "ohne_pool": 87,
@@ -21724,7 +21728,7 @@
   "kandidaten": 0
  },
  "verkauft_am": {
-  "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": 1793575884.7856612,
+  "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": 1794084379.6580565,
   "npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump": 1794079280.7142031,
   "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP": 1794032482.2381575
  }
