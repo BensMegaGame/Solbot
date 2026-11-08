@@ -1,5 +1,5 @@
 {
- "cash": 227.0290113018413,
+ "cash": 32.440612724736525,
  "positions": {
   "GJAFwWjJ3vnTsrQVabjBVK2TYB1YtRCQXRDfDgUnpump": {
    "sym": "ACT",
@@ -10,6 +10,26 @@
    "entry": 0.009950056262086964,
    "cur_price": 0.009779,
    "mark": 0.009779
+  },
+  "GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump": {
+   "sym": "JEANPHIL",
+   "qty": 25543.914619,
+   "cost": 97.29419928855239,
+   "opened": "2026-11-08T23:16:17Z",
+   "peak": 0.003767,
+   "entry": 0.003808899330417559,
+   "cur_price": 0.003767,
+   "mark": 0.003767
+  },
+  "74SBV4zDXxTRgv1pEMoECskKBkZHc2yGPnc7GYVepump": {
+   "sym": "SWARMS",
+   "qty": 15236.321935,
+   "cost": 97.29419928855239,
+   "opened": "2026-11-08T23:16:17Z",
+   "peak": 0.006319,
+   "entry": 0.006385674948561816,
+   "cur_price": 0.006319,
+   "mark": 0.006319
   }
  },
  "trades": [
@@ -1770,13 +1790,33 @@
    "slip": 0.0043,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-11-08T23:16:17Z",
+   "side": "buy",
+   "sym": "JEANPHIL",
+   "addr": "GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump",
+   "price": 0.003767,
+   "fill": 0.00380889933,
+   "usd": 97.29,
+   "slip": 0.0075,
+   "quote": "jup",
+   "reason": "dip 24h -15% (SOL -1%) 1h -0.1%"
+  },
+  {
+   "t": "2026-11-08T23:16:17Z",
+   "side": "buy",
+   "sym": "SWARMS",
+   "addr": "74SBV4zDXxTRgv1pEMoECskKBkZHc2yGPnc7GYVepump",
+   "price": 0.006319,
+   "fill": 0.006385674949,
+   "usd": 97.29,
+   "slip": 0.0064,
+   "quote": "jup",
+   "reason": "dip 24h -11% (SOL -1%) 1h +0.9%"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-22T14:36:26Z",
-   "v": 425.65
-  },
   {
    "t": "2026-10-22T14:41:25Z",
    "v": 425.22
@@ -21772,6 +21812,10 @@
   {
    "t": "2026-11-08T23:11:11Z",
    "v": 324.25
+  },
+  {
+   "t": "2026-11-08T23:16:17Z",
+   "v": 322.16
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -21779,12 +21823,12 @@
  "strategy": "dip_weites_netz",
  "universe_n": 154,
  "coverage": {
-  "t": "2026-11-08T23:11:11Z",
+  "t": "2026-11-08T23:16:17Z",
   "kurse": 135,
   "von": 154,
   "ohne_pool": 83,
   "sol": true,
-  "kandidaten": 0
+  "kandidaten": 3
  },
  "verkauft_am": {
   "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": 1794084379.6580565,
