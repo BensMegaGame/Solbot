@@ -8,8 +8,8 @@
    "opened": "2026-11-05T19:56:27Z",
    "peak": 0.01606,
    "entry": 0.01571230047627014,
-   "cur_price": 0.01476,
-   "mark": 0.01476
+   "cur_price": 0.0148,
+   "mark": 0.0148
   },
   "GJAFwWjJ3vnTsrQVabjBVK2TYB1YtRCQXRDfDgUnpump": {
    "sym": "ACT",
@@ -18,8 +18,8 @@
    "opened": "2026-11-08T17:31:05Z",
    "peak": 0.009955,
    "entry": 0.009950056262086964,
-   "cur_price": 0.009955,
-   "mark": 0.009955
+   "cur_price": 0.009873,
+   "mark": 0.009873
   }
  },
  "trades": [
@@ -1768,10 +1768,6 @@
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-22T08:56:25Z",
-   "v": 420.69
-  },
   {
    "t": "2026-10-22T09:01:27Z",
    "v": 420.19
@@ -21767,6 +21763,10 @@
   {
    "t": "2026-11-08T17:31:05Z",
    "v": 329.71
+  },
+  {
+   "t": "2026-11-08T17:36:02Z",
+   "v": 329.15
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -21774,12 +21774,12 @@
  "strategy": "dip_weites_netz",
  "universe_n": 154,
  "coverage": {
-  "t": "2026-11-08T17:31:05Z",
+  "t": "2026-11-08T17:36:02Z",
   "kurse": 134,
   "von": 154,
   "ohne_pool": 83,
   "sol": true,
-  "kandidaten": 1
+  "kandidaten": 0
  },
  "verkauft_am": {
   "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": 1794084379.6580565,
