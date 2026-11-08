@@ -1,5 +1,5 @@
 {
- "t": "2026-11-08T00:04:49Z",
+ "t": "2026-11-08T00:10:04Z",
  "version": "d5",
  "coins_mit_daten": 1134,
  "coins_ausgewertet": 1014,
@@ -39,13 +39,14 @@
  ],
  "stufe2": {
   "geprueft": 2473,
-  "bot": 1518,
-  "inaktiv": 436,
+  "bot": 1516,
+  "inaktiv": 437,
   "zu_wenig": 5,
   "zu_schnell": 7,
-  "bestanden": 2,
-  "fehler": 19,
+  "bestanden": 1,
+  "fehler": 20,
   "vorab_ok": 484,
+  "sim": 1,
   "durchgefallen": 2
  },
  "copy_liste": [
@@ -79,7 +80,7 @@
    "kosten": 0.0319,
    "kosten_art": "jupiter",
    "stand": "2026-11-07T00:01:39Z",
-   "in_neupruefung": false
+   "in_neupruefung": true
   }
  ],
  "copy_woche": "2026-W45",
