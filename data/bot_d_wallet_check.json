@@ -284,51 +284,7 @@
   "liegen_gelassen": 5,
   "eigen_schnitt": 0.2518,
   "halte_min": 15.0,
-  "status": "sim",
-  "offen_sim": [
-   {
-    "mint": "4Pr5MUxbgLiUezRppY17SvhxbfwvNEHFdgAvQjnXpump",
-    "t_kauf": 1794087383,
-    "t_verkauf": 1794088283,
-    "sol_in": 0.1117,
-    "eigen": -0.4462
-   },
-   {
-    "mint": "FTeQeZDPDak1Stv3NpCrLV5Lp7s1GXkoNxsc9Wnjpump",
-    "t_kauf": 1794087667,
-    "t_verkauf": 1794087685,
-    "sol_in": 0.1051,
-    "eigen": -0.7791
-   },
-   {
-    "mint": "14nWwaPhgQrNYQfKUv36QYb5cPTftZVQWqnymbXNspwn",
-    "t_kauf": 1794088258,
-    "t_verkauf": 1794088259,
-    "sol_in": 0.1019,
-    "eigen": -0.6181
-   },
-   {
-    "mint": "GT6HdvQM4MfBPGsiez5ebBodVssxGGvZF8SLsqfLpump",
-    "t_kauf": 1794088460,
-    "t_verkauf": 1794089360,
-    "sol_in": 0.1019,
-    "eigen": -0.1697
-   },
-   {
-    "mint": "CBsg6Nr9UoTPsLhqNHTbaFt4c6qcNgrnbntwabdQpump",
-    "t_kauf": 1794093577,
-    "t_verkauf": 1794094477,
-    "sol_in": 0.1018,
-    "eigen": -0.0652
-   },
-   {
-    "mint": "9GzUx9PvJ5EQkWbTEvTYXsETpWZfrF6S8PLh3GJ3pump",
-    "t_kauf": 1794094438,
-    "t_verkauf": 1794095338,
-    "sol_in": 0.1027,
-    "eigen": -0.3147
-   }
-  ],
+  "status": "durchgefallen",
   "sim": [
    [
     1794071676,
@@ -417,6 +373,30 @@
    [
     1794086137,
     0.0792
+   ],
+   [
+    1794087383,
+    -0.3972
+   ],
+   [
+    1794087667,
+    -0.0319
+   ],
+   [
+    1794088258,
+    -0.0319
+   ],
+   [
+    1794088460,
+    -0.2857
+   ],
+   [
+    1794093577,
+    -0.1788
+   ],
+   [
+    1794094438,
+    -0.2451
    ]
   ],
   "details": [
@@ -749,6 +729,96 @@
     "luecke_rein_s": -37,
     "luecke_raus_s": 157,
     "kerzen": 31
+   },
+   {
+    "mint": "4Pr5MUxbgLiUezRppY17SvhxbfwvNEHFdgAvQjnXpump",
+    "t_kauf": 1794087383,
+    "t_verkauf": 1794088283,
+    "sol_in": 0.1117,
+    "eigen": -0.4462,
+    "quelle": "gt",
+    "kopie": -0.3972,
+    "entry": 1.0145695005103405e-05,
+    "exit": 6.4397096689154786e-06,
+    "grund": "nach_verkauf",
+    "luecke_rein_s": -23,
+    "luecke_raus_s": 23,
+    "kerzen": 107
+   },
+   {
+    "mint": "FTeQeZDPDak1Stv3NpCrLV5Lp7s1GXkoNxsc9Wnjpump",
+    "t_kauf": 1794087667,
+    "t_verkauf": 1794087685,
+    "sol_in": 0.1051,
+    "eigen": -0.7791,
+    "quelle": "gt",
+    "kopie": -0.0319,
+    "entry": 2.497648961167062e-06,
+    "exit": 2.497648961167062e-06,
+    "grund": "nach_verkauf",
+    "luecke_rein_s": -7,
+    "luecke_raus_s": 25,
+    "kerzen": 6
+   },
+   {
+    "mint": "14nWwaPhgQrNYQfKUv36QYb5cPTftZVQWqnymbXNspwn",
+    "t_kauf": 1794088258,
+    "t_verkauf": 1794088259,
+    "sol_in": 0.1019,
+    "eigen": -0.6181,
+    "quelle": "gt",
+    "kopie": -0.0319,
+    "entry": 3.179071506177637e-06,
+    "exit": 3.179071506177637e-06,
+    "grund": "nach_verkauf",
+    "luecke_rein_s": -58,
+    "luecke_raus_s": 59,
+    "kerzen": 65
+   },
+   {
+    "mint": "GT6HdvQM4MfBPGsiez5ebBodVssxGGvZF8SLsqfLpump",
+    "t_kauf": 1794088460,
+    "t_verkauf": 1794089360,
+    "sol_in": 0.1019,
+    "eigen": -0.1697,
+    "quelle": "gt",
+    "kopie": -0.2857,
+    "entry": 1.2426882745900255e-05,
+    "exit": 9.272576508192358e-06,
+    "grund": "nach_verkauf",
+    "luecke_rein_s": -20,
+    "luecke_raus_s": 20,
+    "kerzen": 108
+   },
+   {
+    "mint": "CBsg6Nr9UoTPsLhqNHTbaFt4c6qcNgrnbntwabdQpump",
+    "t_kauf": 1794093577,
+    "t_verkauf": 1794094477,
+    "sol_in": 0.1018,
+    "eigen": -0.0652,
+    "quelle": "gt",
+    "kopie": -0.1788,
+    "entry": 1.5556460304704033e-05,
+    "exit": 1.327138264555892e-05,
+    "grund": "nach_verkauf",
+    "luecke_rein_s": -37,
+    "luecke_raus_s": 37,
+    "kerzen": 80
+   },
+   {
+    "mint": "9GzUx9PvJ5EQkWbTEvTYXsETpWZfrF6S8PLh3GJ3pump",
+    "t_kauf": 1794094438,
+    "t_verkauf": 1794095338,
+    "sol_in": 0.1027,
+    "eigen": -0.3147,
+    "quelle": "gt",
+    "kopie": -0.2451,
+    "entry": 1.0383681165520567e-05,
+    "exit": 8.169554111332914e-06,
+    "grund": "nach_verkauf",
+    "luecke_rein_s": -58,
+    "luecke_raus_s": 118,
+    "kerzen": 23
    }
   ],
   "ohne_kurs": 2,
@@ -765,7 +835,18 @@
    "kosten_art": "jupiter",
    "t": 1794011802.2276416,
    "status": "bestanden"
-  }
+  },
+  "n": 28,
+  "schnitt": -0.0253,
+  "ohne_top2": -0.1102,
+  "haelfte1": -0.0066,
+  "haelfte2": -0.0439,
+  "median": -0.112,
+  "trefferquote": 0.321,
+  "streng": false,
+  "grund": "Kopie im Schnitt im Minus",
+  "kosten": 0.0319,
+  "kosten_art": "jupiter"
  },
  "3aEoBZFwEPB6LeSixoWucBWXFpjRxTESi4vkssZHB6JU": {
   "t": 1793579190.0963223,
