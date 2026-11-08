@@ -20,8 +20,8 @@
    "peak": 0.01228,
    "entry": 0.011094062298543953,
    "pair": "CpsMssqi3P9VMvNqxrdWVbSBCwyUHbGgNcrw7MorBq3g",
-   "cur_price": 0.01034,
-   "mark": 0.01034
+   "cur_price": 0.0103,
+   "mark": 0.0103
   },
   "METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m": {
    "sym": "MPLX",
@@ -42,8 +42,8 @@
    "peak": 0.00642,
    "entry": 0.0061237419939388,
    "pair": "58fzJMbX5PatnfJPqWWsqkVFPRKptkbb5r2vCw4Qq3z9",
-   "cur_price": 0.006121,
-   "mark": 0.006121
+   "cur_price": 0.006151,
+   "mark": 0.006151
   },
   "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": {
    "sym": "BATON",
@@ -53,8 +53,8 @@
    "peak": 0.005811,
    "entry": 0.004996679824550101,
    "pair": "Cb7ZRgPLhji3Th7htXyKEqbXvNjPpeTvckXuWakBUhXu",
-   "cur_price": 0.005811,
-   "mark": 0.005811
+   "cur_price": 0.005678,
+   "mark": 0.005678
   }
  },
  "trades": [
@@ -1470,10 +1470,6 @@
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-22T06:01:51Z",
-   "v": 412.59
-  },
   {
    "t": "2026-10-22T06:06:53Z",
    "v": 412.74
@@ -21469,6 +21465,10 @@
   {
    "t": "2026-11-08T14:36:18Z",
    "v": 346.81
+  },
+  {
+   "t": "2026-11-08T14:41:18Z",
+   "v": 345.11
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -21481,7 +21481,7 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-11-08T14:36:18Z",
+  "t": "2026-11-08T14:41:18Z",
   "virtuell": 7,
   "neu": 0,
   "gestoppt": false
