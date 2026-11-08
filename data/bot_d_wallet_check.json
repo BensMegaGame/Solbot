@@ -2870,51 +2870,7 @@
   "liegen_gelassen": 1,
   "eigen_schnitt": 0.4375,
   "halte_min": 5.0,
-  "status": "sim",
-  "offen_sim": [
-   {
-    "mint": "9RZeokzHNXoRyJkWDFdvcQTAzUhKpXm7RrqkUM3Fpump",
-    "t_kauf": 1794071438,
-    "t_verkauf": 1794071739,
-    "sol_in": 0.053,
-    "eigen": 15.4547
-   },
-   {
-    "mint": "CSfp1cVmtZSfnbGZhjTQAdhFXRv4VeT6mLvq9Tfbpump",
-    "t_kauf": 1794072635,
-    "t_verkauf": 1794072935,
-    "sol_in": 0.053,
-    "eigen": -0.7476
-   },
-   {
-    "mint": "6tqnuJMjHGhYVz7oiCL7gy5UsnhwoRZjJqWjW6b3pump",
-    "t_kauf": 1794081264,
-    "t_verkauf": 1794081565,
-    "sol_in": 0.053,
-    "eigen": 0.585
-   },
-   {
-    "mint": "F7PuP5Typwuv3P6dtbB7N6fBVmqYSWu7We7S4wT1pump",
-    "t_kauf": 1794081491,
-    "t_verkauf": 1794081791,
-    "sol_in": 0.0515,
-    "eigen": 1.2756
-   },
-   {
-    "mint": "Hb2fnvwpW6H6UymoTovRZqcDpmMNGWz2SXCRQ5LFpump",
-    "t_kauf": 1794088131,
-    "t_verkauf": 1794088432,
-    "sol_in": 0.053,
-    "eigen": 3.7908
-   },
-   {
-    "mint": "8rHoAfpdE89bi1SRRKaYUWfng3YpntoxZQyEQy9GPmZV",
-    "t_kauf": 1794096085,
-    "t_verkauf": 1794096385,
-    "sol_in": 0.053,
-    "eigen": 1.6523
-   }
-  ],
+  "status": "bestanden",
   "sim": [
    [
     1793907675,
@@ -3011,6 +2967,30 @@
    [
     1794058201,
     0.0034
+   ],
+   [
+    1794071438,
+    -0.1558
+   ],
+   [
+    1794072635,
+    -0.5319
+   ],
+   [
+    1794081264,
+    0.2964
+   ],
+   [
+    1794081491,
+    1.1179
+   ],
+   [
+    1794088131,
+    1.5757
+   ],
+   [
+    1794096085,
+    1.7271
    ]
   ],
   "details": [
@@ -3373,6 +3353,96 @@
     "luecke_rein_s": -1,
     "luecke_raus_s": 3,
     "kerzen": 314
+   },
+   {
+    "mint": "9RZeokzHNXoRyJkWDFdvcQTAzUhKpXm7RrqkUM3Fpump",
+    "t_kauf": 1794071438,
+    "t_verkauf": 1794071739,
+    "sol_in": 0.053,
+    "eigen": 15.4547,
+    "quelle": "gt",
+    "kopie": -0.1558,
+    "entry": 0.0008010526512462732,
+    "exit": 0.0007017733596776488,
+    "grund": "nach_verkauf",
+    "luecke_rein_s": -38,
+    "luecke_raus_s": 39,
+    "kerzen": 241
+   },
+   {
+    "mint": "CSfp1cVmtZSfnbGZhjTQAdhFXRv4VeT6mLvq9Tfbpump",
+    "t_kauf": 1794072635,
+    "t_verkauf": 1794072935,
+    "sol_in": 0.053,
+    "eigen": -0.7476,
+    "quelle": "gt",
+    "kopie": -0.5319,
+    "entry": 1.0390511471619719e-05,
+    "exit": 5.195255735809859e-06,
+    "grund": "stop",
+    "luecke_rein_s": -35,
+    "luecke_raus_s": 0,
+    "kerzen": 12
+   },
+   {
+    "mint": "6tqnuJMjHGhYVz7oiCL7gy5UsnhwoRZjJqWjW6b3pump",
+    "t_kauf": 1794081264,
+    "t_verkauf": 1794081565,
+    "sol_in": 0.053,
+    "eigen": 0.585,
+    "quelle": "gt",
+    "kopie": 0.2964,
+    "entry": 4.764731993409185e-05,
+    "exit": 6.329160773911828e-05,
+    "grund": "nach_verkauf",
+    "luecke_rein_s": -24,
+    "luecke_raus_s": 25,
+    "kerzen": 86
+   },
+   {
+    "mint": "F7PuP5Typwuv3P6dtbB7N6fBVmqYSWu7We7S4wT1pump",
+    "t_kauf": 1794081491,
+    "t_verkauf": 1794081791,
+    "sol_in": 0.0515,
+    "eigen": 1.2756,
+    "quelle": "gt",
+    "kopie": 1.1179,
+    "entry": 6.0032138809666524e-05,
+    "exit": 0.00012905831686500587,
+    "grund": "nach_verkauf",
+    "luecke_rein_s": -11,
+    "luecke_raus_s": 11,
+    "kerzen": 61
+   },
+   {
+    "mint": "Hb2fnvwpW6H6UymoTovRZqcDpmMNGWz2SXCRQ5LFpump",
+    "t_kauf": 1794088131,
+    "t_verkauf": 1794088432,
+    "sol_in": 0.053,
+    "eigen": 3.7908,
+    "quelle": "gt",
+    "kopie": 1.5757,
+    "entry": 7.715523163422419e-05,
+    "exit": 0.00020119018054586585,
+    "grund": "nach_verkauf",
+    "luecke_rein_s": -51,
+    "luecke_raus_s": 52,
+    "kerzen": 229
+   },
+   {
+    "mint": "8rHoAfpdE89bi1SRRKaYUWfng3YpntoxZQyEQy9GPmZV",
+    "t_kauf": 1794096085,
+    "t_verkauf": 1794096385,
+    "sol_in": 0.053,
+    "eigen": 1.6523,
+    "quelle": "gt",
+    "kopie": 1.7271,
+    "entry": 4.208935403653426e-05,
+    "exit": 0.00011612403069035468,
+    "grund": "nach_verkauf",
+    "luecke_rein_s": -25,
+    "luecke_raus_s": 25,
+    "kerzen": 103
    }
   ],
   "ohne_kurs": 0,
@@ -3389,7 +3459,17 @@
    "kosten_art": "jupiter",
    "t": 1794009699.403859,
    "status": "bestanden"
-  }
+  },
+  "n": 30,
+  "schnitt": 0.0973,
+  "ohne_top2": -0.0137,
+  "haelfte1": -0.051,
+  "haelfte2": 0.2456,
+  "median": 0.0456,
+  "trefferquote": 0.533,
+  "streng": false,
+  "kosten": 0.0319,
+  "kosten_art": "jupiter"
  },
  "5NoQ6usgx9i8VoDRbPDqZnKnFShgDDc6uGvdgYCDocFY": {
   "t": 1793844705.563553,
