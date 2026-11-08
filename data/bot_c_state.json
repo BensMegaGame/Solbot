@@ -1,16 +1,6 @@
 {
- "cash": 135.7662933018413,
+ "cash": 227.0290113018413,
  "positions": {
-  "BeGY8KqKxboEwRbJd1q9H2K829jS4Rc5dEyNMYXCbV5p": {
-   "sym": "NPC",
-   "qty": 6434.80795883,
-   "cost": 101.10563615623148,
-   "opened": "2026-11-05T19:56:27Z",
-   "peak": 0.01606,
-   "entry": 0.01571230047627014,
-   "cur_price": 0.0144,
-   "mark": 0.0144
-  },
   "GJAFwWjJ3vnTsrQVabjBVK2TYB1YtRCQXRDfDgUnpump": {
    "sym": "ACT",
    "qty": 9941.54,
@@ -18,8 +8,8 @@
    "opened": "2026-11-08T17:31:05Z",
    "peak": 0.009955,
    "entry": 0.009950056262086964,
-   "cur_price": 0.009522,
-   "mark": 0.009522
+   "cur_price": 0.0096,
+   "mark": 0.0096
   }
  },
  "trades": [
@@ -1765,13 +1755,24 @@
    "slip": 0.0,
    "quote": "jup",
    "reason": "dip 24h -10% (SOL -1%) 1h +0.2%"
+  },
+  {
+   "t": "2026-11-08T22:06:11Z",
+   "side": "sell",
+   "sym": "NPC",
+   "addr": "BeGY8KqKxboEwRbJd1q9H2K829jS4Rc5dEyNMYXCbV5p",
+   "price": 0.01414,
+   "usd": 91.26,
+   "pnl": -9.84,
+   "peak_x": 1.022,
+   "held_h": 74.2,
+   "frac": 1.0,
+   "slip": 0.0043,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-22T13:26:29Z",
-   "v": 428.41
-  },
   {
    "t": "2026-10-22T13:31:30Z",
    "v": 428.06
@@ -21767,6 +21768,10 @@
   {
    "t": "2026-11-08T22:01:14Z",
    "v": 323.09
+  },
+  {
+   "t": "2026-11-08T22:06:14Z",
+   "v": 322.47
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -21774,7 +21779,7 @@
  "strategy": "dip_weites_netz",
  "universe_n": 154,
  "coverage": {
-  "t": "2026-11-08T22:01:14Z",
+  "t": "2026-11-08T22:06:14Z",
   "kurse": 135,
   "von": 154,
   "ohne_pool": 83,
@@ -21786,6 +21791,7 @@
   "npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump": 1794079280.7142031,
   "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP": 1794032482.2381575,
   "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": 1794085880.7586532,
-  "9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump": 1794114385.968044
+  "9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump": 1794114385.968044,
+  "BeGY8KqKxboEwRbJd1q9H2K829jS4Rc5dEyNMYXCbV5p": 1794175571.6315346
  }
 }
