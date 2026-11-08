@@ -31,8 +31,8 @@
    "peak": 0.08007,
    "entry": 0.0767509465334341,
    "pair": "BxRhW4q1wTRwJkJ1C4NR4yJCRL2uusoju4g1bVenspZK",
-   "cur_price": 0.07425,
-   "mark": 0.07425
+   "cur_price": 0.07416,
+   "mark": 0.07416
   },
   "6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump": {
    "sym": "VINE",
@@ -53,8 +53,8 @@
    "peak": 0.005286,
    "entry": 0.004996679824550101,
    "pair": "Cb7ZRgPLhji3Th7htXyKEqbXvNjPpeTvckXuWakBUhXu",
-   "cur_price": 0.004898,
-   "mark": 0.004898
+   "cur_price": 0.004773,
+   "mark": 0.004773
   }
  },
  "trades": [
@@ -1470,10 +1470,6 @@
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-21T22:41:44Z",
-   "v": 421.09
-  },
   {
    "t": "2026-10-21T22:46:44Z",
    "v": 421.11
@@ -21469,6 +21465,10 @@
   {
    "t": "2026-11-08T07:16:36Z",
    "v": 337.74
+  },
+  {
+   "t": "2026-11-08T07:21:35Z",
+   "v": 335.95
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -21481,9 +21481,9 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-11-08T07:16:36Z",
+  "t": "2026-11-08T07:21:35Z",
   "virtuell": 8,
-  "neu": 1,
+  "neu": 0,
   "gestoppt": false
  },
  "verkauft_am": {
