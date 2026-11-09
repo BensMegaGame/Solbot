@@ -1,16 +1,6 @@
 {
- "cash": 27.828503659092277,
+ "cash": 126.19386865909227,
  "positions": {
-  "GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump": {
-   "sym": "JEANPHIL",
-   "qty": 25543.914619,
-   "cost": 97.29419928855239,
-   "opened": "2026-11-08T23:16:17Z",
-   "peak": 0.004297,
-   "entry": 0.003808899330417559,
-   "cur_price": 0.004057,
-   "mark": 0.004057
-  },
   "74SBV4zDXxTRgv1pEMoECskKBkZHc2yGPnc7GYVepump": {
    "sym": "SWARMS",
    "qty": 15236.321935,
@@ -26,10 +16,10 @@
    "qty": 3037.863329,
    "cost": 100.28613306564425,
    "opened": "2026-11-09T16:51:14Z",
-   "peak": 0.03334,
+   "peak": 0.03398,
    "entry": 0.03301206216497446,
-   "cur_price": 0.03334,
-   "mark": 0.03334
+   "cur_price": 0.03398,
+   "mark": 0.03398
   }
  },
  "trades": [
@@ -1841,13 +1831,24 @@
    "slip": 0.002,
    "quote": "jup",
    "reason": "dip 24h -25% (SOL -3%) 1h -0.4%"
+  },
+  {
+   "t": "2026-11-09T17:01:13Z",
+   "side": "sell",
+   "sym": "JEANPHIL",
+   "addr": "GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump",
+   "price": 0.003854,
+   "usd": 98.37,
+   "pnl": 1.07,
+   "peak_x": 1.128,
+   "held_h": 17.7,
+   "frac": 1.0,
+   "slip": 0.0011,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-23T08:21:22Z",
-   "v": 418.43
-  },
   {
    "t": "2026-10-23T08:26:21Z",
    "v": 418.43
@@ -21843,6 +21844,10 @@
   {
    "t": "2026-11-09T16:56:13Z",
    "v": 334.22
+  },
+  {
+   "t": "2026-11-09T17:01:13Z",
+   "v": 330.89
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -21850,7 +21855,7 @@
  "strategy": "dip_weites_netz",
  "universe_n": 148,
  "coverage": {
-  "t": "2026-11-09T16:56:13Z",
+  "t": "2026-11-09T17:01:13Z",
   "kurse": 126,
   "von": 149,
   "ohne_pool": 85,
@@ -21864,6 +21869,7 @@
   "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": 1794085880.7586532,
   "9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump": 1794114385.968044,
   "BeGY8KqKxboEwRbJd1q9H2K829jS4Rc5dEyNMYXCbV5p": 1794175571.6315346,
-  "GJAFwWjJ3vnTsrQVabjBVK2TYB1YtRCQXRDfDgUnpump": 1794190576.1697395
+  "GJAFwWjJ3vnTsrQVabjBVK2TYB1YtRCQXRDfDgUnpump": 1794190576.1697395,
+  "GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump": 1794243673.5587065
  }
 }
