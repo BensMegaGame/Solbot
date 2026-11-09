@@ -1,5 +1,5 @@
 {
- "cash": 128.11463672473653,
+ "cash": 27.828503659092277,
  "positions": {
   "GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump": {
    "sym": "JEANPHIL",
@@ -8,8 +8,8 @@
    "opened": "2026-11-08T23:16:17Z",
    "peak": 0.004297,
    "entry": 0.003808899330417559,
-   "cur_price": 0.004089,
-   "mark": 0.004089
+   "cur_price": 0.004047,
+   "mark": 0.004047
   },
   "74SBV4zDXxTRgv1pEMoECskKBkZHc2yGPnc7GYVepump": {
    "sym": "SWARMS",
@@ -18,8 +18,18 @@
    "opened": "2026-11-08T23:16:17Z",
    "peak": 0.00668,
    "entry": 0.006385674948561816,
-   "cur_price": 0.006672,
-   "mark": 0.006672
+   "cur_price": 0.006663,
+   "mark": 0.006663
+  },
+  "npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump": {
+   "sym": "DESSA",
+   "qty": 3037.863329,
+   "cost": 100.28613306564425,
+   "opened": "2026-11-09T16:51:14Z",
+   "peak": 0.0325,
+   "entry": 0.03301206216497446,
+   "cur_price": 0.0325,
+   "mark": 0.0325
   }
  },
  "trades": [
@@ -1819,13 +1829,21 @@
    "slip": 0.0003,
    "quote": "jup",
    "reason": "trail"
+  },
+  {
+   "t": "2026-11-09T16:51:14Z",
+   "side": "buy",
+   "sym": "DESSA",
+   "addr": "npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump",
+   "price": 0.0325,
+   "fill": 0.033012062165,
+   "usd": 100.29,
+   "slip": 0.002,
+   "quote": "jup",
+   "reason": "dip 24h -25% (SOL -3%) 1h -0.4%"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-23T08:11:24Z",
-   "v": 418.43
-  },
   {
    "t": "2026-10-23T08:16:24Z",
    "v": 418.43
@@ -21821,6 +21839,10 @@
   {
    "t": "2026-11-09T16:46:10Z",
    "v": 334.22
+  },
+  {
+   "t": "2026-11-09T16:51:14Z",
+   "v": 331.45
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -21828,12 +21850,12 @@
  "strategy": "dip_weites_netz",
  "universe_n": 148,
  "coverage": {
-  "t": "2026-11-09T16:46:10Z",
+  "t": "2026-11-09T16:51:14Z",
   "kurse": 126,
   "von": 149,
   "ohne_pool": 85,
   "sol": true,
-  "kandidaten": 0
+  "kandidaten": 1
  },
  "verkauft_am": {
   "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": 1794084379.6580565,
