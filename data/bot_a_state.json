@@ -1,5 +1,5 @@
 {
- "cash": 53.703643941112205,
+ "cash": 78.2266559411122,
  "positions": {
   "GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump": {
    "sym": "WASTED",
@@ -8,18 +8,8 @@
    "opened": "2026-11-04T13:30:23Z",
    "peak": 0.001056,
    "entry": 0.0008296766477231103,
-   "cur_price": 0.0008001,
-   "mark": 0.0008001
-  },
-  "31HzUsjzTt7FBCGnDy68cBnELayVsnd3zYEBtsXXpump": {
-   "sym": "TrumpWars",
-   "qty": 202617.450932,
-   "cost": 50.02,
-   "opened": "2026-11-04T18:40:19Z",
-   "peak": 0.0003825,
-   "entry": 0.0002468691604297554,
-   "cur_price": 0.0001243,
-   "mark": 0.0001243
+   "cur_price": 0.0008005,
+   "mark": 0.0008005
   }
  },
  "trades": [
@@ -4274,13 +4264,24 @@
    "slip": 0.0219,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-11-09T11:30:03Z",
+   "side": "sell",
+   "sym": "TrumpWars",
+   "addr": "31HzUsjzTt7FBCGnDy68cBnELayVsnd3zYEBtsXXpump",
+   "price": 0.0001212,
+   "usd": 24.52,
+   "pnl": -25.5,
+   "peak_x": 1.549,
+   "held_h": 112.8,
+   "frac": 1.0,
+   "slip": 0.0152,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-23T02:51:05Z",
-   "v": 166.94
-  },
   {
    "t": "2026-10-23T02:56:05Z",
    "v": 165.55
@@ -24276,6 +24277,10 @@
   {
    "t": "2026-11-09T11:25:53Z",
    "v": 127.13
+  },
+  {
+   "t": "2026-11-09T11:30:53Z",
+   "v": 126.49
   }
  ],
  "started": "2026-09-10T17:17:16Z",
@@ -24285,6 +24290,7 @@
   "EwX2T1p2PmgTsSq2Bi6XtQYxPC5krR4P2fxPfN4Qpump": 1794147904.9801114,
   "4xWRsdRkre5ibf3ZyS2eje6sUY8wGnmtSHx7gkGtpump": 1793817603.0517266,
   "BLeMEetdzeq9xsNti2tCiau4JnD7mzyQzQFHdy5pump": 1793880902.5730276,
-  "Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr": 1793905803.1226225
+  "Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr": 1793905803.1226225,
+  "31HzUsjzTt7FBCGnDy68cBnELayVsnd3zYEBtsXXpump": 1794223803.6565435
  }
 }
