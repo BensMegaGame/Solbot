@@ -1,5 +1,5 @@
 {
- "cash": 127.4307901517496,
+ "cash": 215.6597121517496,
  "positions": {
   "74SBV4zDXxTRgv1pEMoECskKBkZHc2yGPnc7GYVepump": {
    "sym": "SWARMS",
@@ -10,16 +10,6 @@
    "entry": 0.006385674948561816,
    "cur_price": 0.006622,
    "mark": 0.006622
-  },
-  "9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump": {
-   "sym": "JOB",
-   "qty": 22762.816418,
-   "cost": 99.58939750734267,
-   "opened": "2026-11-09T18:06:13Z",
-   "peak": 0.004473,
-   "entry": 0.004375091187248298,
-   "cur_price": 0.004036,
-   "mark": 0.004036
   }
  },
  "trades": [
@@ -1873,13 +1863,24 @@
    "slip": 0.0013,
    "quote": "jup",
    "reason": "trail"
+  },
+  {
+   "t": "2026-11-09T21:01:13Z",
+   "side": "sell",
+   "sym": "JOB",
+   "addr": "9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump",
+   "price": 0.003906,
+   "usd": 88.23,
+   "pnl": -11.36,
+   "peak_x": 1.022,
+   "held_h": 2.9,
+   "frac": 1.0,
+   "slip": 0.0038,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-23T12:21:23Z",
-   "v": 424.46
-  },
   {
    "t": "2026-10-23T12:26:24Z",
    "v": 424.46
@@ -21875,6 +21876,10 @@
   {
    "t": "2026-11-09T20:56:14Z",
    "v": 320.2
+  },
+  {
+   "t": "2026-11-09T21:01:13Z",
+   "v": 316.55
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -21882,7 +21887,7 @@
  "strategy": "dip_weites_netz",
  "universe_n": 148,
  "coverage": {
-  "t": "2026-11-09T20:56:14Z",
+  "t": "2026-11-09T21:01:13Z",
   "kurse": 124,
   "von": 148,
   "ohne_pool": 85,
@@ -21894,7 +21899,7 @@
   "npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump": 1794250272.1652563,
   "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP": 1794032482.2381575,
   "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": 1794085880.7586532,
-  "9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump": 1794114385.968044,
+  "9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump": 1794258073.6254177,
   "BeGY8KqKxboEwRbJd1q9H2K829jS4Rc5dEyNMYXCbV5p": 1794175571.6315346,
   "GJAFwWjJ3vnTsrQVabjBVK2TYB1YtRCQXRDfDgUnpump": 1794190576.1697395,
   "GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump": 1794243673.5587065
