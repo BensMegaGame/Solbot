@@ -1,15 +1,15 @@
 {
- "cash": 126.19386865909227,
+ "cash": 26.604471151749607,
  "positions": {
   "74SBV4zDXxTRgv1pEMoECskKBkZHc2yGPnc7GYVepump": {
    "sym": "SWARMS",
    "qty": 15236.321935,
    "cost": 97.29419928855239,
    "opened": "2026-11-08T23:16:17Z",
-   "peak": 0.006711,
+   "peak": 0.006723,
    "entry": 0.006385674948561816,
-   "cur_price": 0.006684,
-   "mark": 0.006684
+   "cur_price": 0.006723,
+   "mark": 0.006723
   },
   "npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump": {
    "sym": "DESSA",
@@ -18,8 +18,18 @@
    "opened": "2026-11-09T16:51:14Z",
    "peak": 0.03585,
    "entry": 0.03301206216497446,
-   "cur_price": 0.03419,
-   "mark": 0.03419
+   "cur_price": 0.0343,
+   "mark": 0.0343
+  },
+  "9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump": {
+   "sym": "JOB",
+   "qty": 22762.816418,
+   "cost": 99.58939750734267,
+   "opened": "2026-11-09T18:06:13Z",
+   "peak": 0.004298,
+   "entry": 0.004375091187248298,
+   "cur_price": 0.004298,
+   "mark": 0.004298
   }
  },
  "trades": [
@@ -1846,13 +1856,21 @@
    "slip": 0.0011,
    "quote": "jup",
    "reason": "trail"
+  },
+  {
+   "t": "2026-11-09T18:06:13Z",
+   "side": "buy",
+   "sym": "JOB",
+   "addr": "9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump",
+   "price": 0.004298,
+   "fill": 0.004375091187,
+   "usd": 99.59,
+   "slip": 0.0028,
+   "quote": "jup",
+   "reason": "dip 24h -16% (SOL -3%) 1h -1.0%"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-23T09:26:18Z",
-   "v": 420.59
-  },
   {
    "t": "2026-10-23T09:31:19Z",
    "v": 419.22
@@ -21848,6 +21866,10 @@
   {
    "t": "2026-11-09T18:01:12Z",
    "v": 331.9
+  },
+  {
+   "t": "2026-11-09T18:06:13Z",
+   "v": 331.07
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -21855,12 +21877,12 @@
  "strategy": "dip_weites_netz",
  "universe_n": 148,
  "coverage": {
-  "t": "2026-11-09T18:01:12Z",
+  "t": "2026-11-09T18:06:13Z",
   "kurse": 125,
   "von": 148,
   "ohne_pool": 85,
   "sol": true,
-  "kandidaten": 0
+  "kandidaten": 1
  },
  "verkauft_am": {
   "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": 1794084379.6580565,
