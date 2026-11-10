@@ -1,5 +1,5 @@
 {
- "cash": 9.58177228949392,
+ "cash": 68.06218828949392,
  "positions": {
   "CzLSujWBLFsSjncfkh59rUFqvafWcY5tzedWJSuypump": {
    "sym": "GOAT",
@@ -23,17 +23,6 @@
    "cur_price": 0.01037,
    "mark": 0.01037
   },
-  "METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m": {
-   "sym": "MPLX",
-   "qty": 901.074074,
-   "cost": 69.15828807623764,
-   "opened": "2026-11-05T12:16:45Z",
-   "peak": 0.08007,
-   "entry": 0.0767509465334341,
-   "pair": "BxRhW4q1wTRwJkJ1C4NR4yJCRL2uusoju4g1bVenspZK",
-   "cur_price": 0.06561,
-   "mark": 0.06561
-  },
   "6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump": {
    "sym": "VINE",
    "qty": 10907.435098,
@@ -53,8 +42,8 @@
    "peak": 0.004372,
    "entry": 0.0038209477152407363,
    "pair": "HAUVBmNthCFmG9SRXMvZ1GAXNpU955hkPdSAsC2cx4C8",
-   "cur_price": 0.004261,
-   "mark": 0.004261
+   "cur_price": 0.00413,
+   "mark": 0.00413
   }
  },
  "trades": [
@@ -1494,13 +1483,24 @@
    "slip": 0.0095,
    "quote": "jup",
    "reason": "nach virtuellem stop (C) -11.7%"
+  },
+  {
+   "t": "2026-11-10T02:01:34Z",
+   "side": "sell",
+   "sym": "MPLX",
+   "addr": "METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m",
+   "price": 0.06518,
+   "usd": 58.48,
+   "pnl": -10.68,
+   "peak_x": 1.043,
+   "held_h": 109.7,
+   "frac": 1.0,
+   "slip": 0.001,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-23T17:21:40Z",
-   "v": 400.16
-  },
   {
    "t": "2026-10-23T17:26:40Z",
    "v": 398.72
@@ -21496,28 +21496,33 @@
   {
    "t": "2026-11-10T01:56:31Z",
    "v": 321.77
+  },
+  {
+   "t": "2026-11-10T02:01:34Z",
+   "v": 318.95
   }
  ],
  "started": "2026-09-25T09:22:03Z",
  "version": "f5",
  "cooldown": {
   "74SBV4zDXxTRgv1pEMoECskKBkZHc2yGPnc7GYVepump": 20769,
-  "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": 20771
+  "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": 20771,
+  "METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m": 20772
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-11-10T01:56:31Z",
+  "t": "2026-11-10T02:01:34Z",
   "virtuell": 8,
   "neu": 0,
   "gestoppt": false
  },
  "verkauft_am": {
-  "ZEUS1aR7aX8DFFJf5QjWj2ftDDdNTroMNGo8YoQm3Gq": 1793664320.8836412,
   "DuEy8wWrzCUun5ZbbG9hkVqXqqicpTQw8gB7nEAzpCHQ": 1793742103.7268329,
   "DvjbEsdca43oQcw2h3HW1CT7N3x5vRcr3QrvTUHnXvgV": 1793761306.520367,
   "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": 1793816807.189014,
   "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump": 1793883398.9028015,
   "74SBV4zDXxTRgv1pEMoECskKBkZHc2yGPnc7GYVepump": 1794076296.8748128,
-  "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": 1794256294.3129926
+  "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": 1794256294.3129926,
+  "METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m": 1794276094.170885
  }
 }
