@@ -1,5 +1,5 @@
 {
- "cash": 68.06218828949392,
+ "cash": 4.608701141552729,
  "positions": {
   "CzLSujWBLFsSjncfkh59rUFqvafWcY5tzedWJSuypump": {
    "sym": "GOAT",
@@ -9,8 +9,8 @@
    "peak": 0.0157,
    "entry": 0.014165768201616436,
    "pair": "9Tb2ohu5P16BpBarqd3N27WnkF51Ukfs8Z1GzzLDxVZW",
-   "cur_price": 0.01261,
-   "mark": 0.01261
+   "cur_price": 0.01259,
+   "mark": 0.01259
   },
   "KENJSUYLASHUMfHyy5o4Hp2FdNqZg1AsUPhfH2kYvEP": {
    "sym": "GRIFFAIN",
@@ -20,8 +20,8 @@
    "peak": 0.01228,
    "entry": 0.011094062298543953,
    "pair": "CpsMssqi3P9VMvNqxrdWVbSBCwyUHbGgNcrw7MorBq3g",
-   "cur_price": 0.01041,
-   "mark": 0.01041
+   "cur_price": 0.01042,
+   "mark": 0.01042
   },
   "6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump": {
    "sym": "VINE",
@@ -31,8 +31,8 @@
    "peak": 0.00642,
    "entry": 0.0061237419939388,
    "pair": "58fzJMbX5PatnfJPqWWsqkVFPRKptkbb5r2vCw4Qq3z9",
-   "cur_price": 0.005843,
-   "mark": 0.005843
+   "cur_price": 0.005818,
+   "mark": 0.005818
   },
   "9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump": {
    "sym": "JOB",
@@ -42,8 +42,19 @@
    "peak": 0.004372,
    "entry": 0.0038209477152407363,
    "pair": "HAUVBmNthCFmG9SRXMvZ1GAXNpU955hkPdSAsC2cx4C8",
-   "cur_price": 0.004019,
-   "mark": 0.004019
+   "cur_price": 0.003956,
+   "mark": 0.003956
+  },
+  "FjPKUGnF5zBpdEv18gT8FJCtxh3MKrFkoeYekgYr1win": {
+   "sym": "1WIN",
+   "qty": 1433.05464095,
+   "cost": 63.45348714794119,
+   "opened": "2026-11-10T02:11:30Z",
+   "peak": 0.04386,
+   "entry": 0.044278484109912676,
+   "pair": "3Uq381E8SfUit1AG5zXMQC9VmjJJJDMzenPm26DkvLeK",
+   "cur_price": 0.04386,
+   "mark": 0.04386
   }
  },
  "trades": [
@@ -1498,13 +1509,21 @@
    "slip": 0.001,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-11-10T02:11:30Z",
+   "side": "buy",
+   "sym": "1WIN",
+   "addr": "FjPKUGnF5zBpdEv18gT8FJCtxh3MKrFkoeYekgYr1win",
+   "price": 0.04386,
+   "fill": 0.04427848411,
+   "usd": 63.45,
+   "slip": 0.0005,
+   "quote": "jup",
+   "reason": "nach virtuellem stop (E) -10.6%"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-23T17:31:40Z",
-   "v": 398.26
-  },
   {
    "t": "2026-10-23T17:36:40Z",
    "v": 398.59
@@ -21500,6 +21519,10 @@
   {
    "t": "2026-11-10T02:06:55Z",
    "v": 317.17
+  },
+  {
+   "t": "2026-11-10T02:11:30Z",
+   "v": 315.2
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -21511,8 +21534,8 @@
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-11-10T02:06:55Z",
-  "virtuell": 8,
+  "t": "2026-11-10T02:11:30Z",
+  "virtuell": 7,
   "neu": 0,
   "gestoppt": false
  },
