@@ -1,5 +1,5 @@
 {
- "cash": 168.72548035849874,
+ "cash": 214.80637135849872,
  "positions": {
   "74SBV4zDXxTRgv1pEMoECskKBkZHc2yGPnc7GYVepump": {
    "sym": "SWARMS",
@@ -8,19 +8,8 @@
    "opened": "2026-11-08T23:16:17Z",
    "peak": 0.006808,
    "entry": 0.006385674948561816,
-   "cur_price": 0.006489,
-   "mark": 0.006489
-  },
-  "Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr": {
-   "sym": "FLOAT",
-   "qty": 5439.161011,
-   "cost": 46.83041539662543,
-   "opened": "2026-11-10T02:36:17Z",
-   "peak": 0.01064,
-   "entry": 0.008609860105614996,
-   "cur_price": 0.01002,
-   "mark": 0.01002,
-   "tp1": true
+   "cur_price": 0.006494,
+   "mark": 0.006494
   }
  },
  "trades": [
@@ -1916,13 +1905,24 @@
    "slip": 0.005,
    "quote": "jup",
    "reason": "tp1"
+  },
+  {
+   "t": "2026-11-10T09:41:14Z",
+   "side": "sell",
+   "sym": "FLOAT",
+   "addr": "Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr",
+   "price": 0.01,
+   "usd": 46.08,
+   "pnl": -0.75,
+   "peak_x": 1.236,
+   "held_h": 7.1,
+   "frac": 1.0,
+   "slip": 0.0016,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-24T01:01:34Z",
-   "v": 421.81
-  },
   {
    "t": "2026-10-24T01:06:35Z",
    "v": 422.7
@@ -21918,6 +21918,10 @@
   {
    "t": "2026-11-10T09:36:14Z",
    "v": 322.09
+  },
+  {
+   "t": "2026-11-10T09:41:14Z",
+   "v": 313.75
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -21925,7 +21929,7 @@
  "strategy": "dip_weites_netz",
  "universe_n": 154,
  "coverage": {
-  "t": "2026-11-10T09:36:14Z",
+  "t": "2026-11-10T09:41:14Z",
   "kurse": 128,
   "von": 154,
   "ohne_pool": 86,
@@ -21940,6 +21944,7 @@
   "9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump": 1794258073.6254177,
   "BeGY8KqKxboEwRbJd1q9H2K829jS4Rc5dEyNMYXCbV5p": 1794175571.6315346,
   "GJAFwWjJ3vnTsrQVabjBVK2TYB1YtRCQXRDfDgUnpump": 1794190576.1697395,
-  "GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump": 1794243673.5587065
+  "GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump": 1794243673.5587065,
+  "Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr": 1794303674.8374553
  }
 }
