@@ -1,6 +1,21 @@
 {
- "cash": 742.9065570000013,
- "positions": {},
+ "cash": 692.8865570000013,
+ "positions": {
+  "6BLLvChiDnbxsSEZnBmbXyNwYoLRER876TS1fdHhM8LX": {
+   "sym": "FORGIVENESS",
+   "qty": 979748.433869,
+   "cost": 50.02,
+   "opened": "2026-11-10T04:51:20Z",
+   "peak": 5.046e-05,
+   "entry": 5.105392187510051e-05,
+   "quelle": "6TztascWVawd6JswEir6nvRsrjFGJWo6CZyazejaAd3",
+   "quelle_name": "Wallet A",
+   "t_wallet": 1794285996,
+   "wallet_sol": 0.053,
+   "cur_price": 5.046e-05,
+   "mark": 5.046e-05
+  }
+ },
  "trades": [
   {
    "t": "2026-11-04T01:31:33Z",
@@ -2161,6 +2176,18 @@
    "slip": 0.0097,
    "quote": "jup",
    "reason": "wallet verkauft (+158 s)"
+  },
+  {
+   "t": "2026-11-10T04:51:20Z",
+   "side": "buy",
+   "sym": "FORGIVENESS",
+   "addr": "6BLLvChiDnbxsSEZnBmbXyNwYoLRER876TS1fdHhM8LX",
+   "price": 5.046e-05,
+   "fill": 5.1053922e-05,
+   "usd": 50.02,
+   "slip": 0.0066,
+   "quote": "jup",
+   "reason": "kopie Wallet A (+284 s)"
   }
  ],
  "equity": [
@@ -10019,6 +10046,10 @@
   {
    "t": "2026-11-10T04:46:28Z",
    "v": 742.91
+  },
+  {
+   "t": "2026-11-10T04:51:29Z",
+   "v": 742.32
   }
  ],
  "started": "2026-11-03T09:11:31Z",
@@ -10033,23 +10064,23 @@
     "kaeufe_gesehen": 76
    },
    "6TztascWVawd6JswEir6nvRsrjFGJWo6CZyazejaAd3": {
-    "bis_sig": "35Svb8P5QMtEwsmjK5HBcRLjB2SfeW4e17Wd6jvgabwpBNt6JU4ZCXG3kEGG9NrcNv4EiLQv2DuW3Wyx7qrKLvbb",
-    "kaeufe_gesehen": 39
+    "bis_sig": "dZGfeEjXyS3osRiH45LQmXwrUSqVcWLaZV4nuZiZRT1nWvL3L5LYghsicrdGkovx3K4e6furKjpMZ14KpejsMJL",
+    "kaeufe_gesehen": 40
    }
   }
  },
  "coverage": {
-  "t": "2026-11-10T04:46:28Z",
+  "t": "2026-11-10T04:51:29Z",
   "kandidaten": 46,
   "pfade": 322,
-  "kurse": 101,
-  "von": 154,
+  "kurse": 103,
+  "von": 152,
   "fruehkaeufer_neu": 0,
   "fruehkaeufer_fehler": 0,
   "weg": {},
   "coins_mit_fruehkaeufern": 1181,
   "coins_ausgewertet": 1075,
-  "credits_heute": 3885,
+  "credits_heute": 3887,
   "codex_heute": 23,
   "spaet_neu": 0,
   "coins_mit_spaeten": 1017,
@@ -10071,7 +10102,7 @@
    "gesamt": 10
   },
   "warteschlange": 531,
-  "copy_credits_heute": 65,
+  "copy_credits_heute": 67,
   "copy_wallets": [
    "Wallet A"
   ]
