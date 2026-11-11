@@ -1,5 +1,5 @@
 {
- "cash": 24.645725941112183,
+ "cash": 20.579235941112167,
  "positions": {
   "GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump": {
    "sym": "WASTED",
@@ -8,8 +8,8 @@
    "opened": "2026-11-04T13:30:23Z",
    "peak": 0.001652,
    "entry": 0.0008296766477231103,
-   "cur_price": 0.001378,
-   "mark": 0.001378,
+   "cur_price": 0.001436,
+   "mark": 0.001436,
    "tp0": true
   },
   "BWJfBNeXpapG7uoqByp5KSwWgCQba8QcDmA2DQiEpump": {
@@ -19,28 +19,39 @@
    "opened": "2026-11-10T12:55:43Z",
    "peak": 0.0004631,
    "entry": 0.0003494279654472007,
-   "cur_price": 0.0004507,
-   "mark": 0.0004507
+   "cur_price": 0.0004567,
+   "mark": 0.0004567
   },
   "HoqJaoes6yfL8YEsHGfENwVKT7LrAPy97ZDg9hmBu4Ep": {
    "sym": "THUG",
-   "qty": 267671.916861,
-   "cost": 50.02,
+   "qty": 133835.9584305,
+   "cost": 25.01,
    "opened": "2026-11-10T18:10:23Z",
-   "peak": 0.0003209,
+   "peak": 0.0003557,
    "entry": 0.00018687055626375257,
-   "cur_price": 0.0003185,
-   "mark": 0.0003185
+   "cur_price": 0.0003557,
+   "mark": 0.0003557,
+   "tp0": true
   },
   "CXz596uKfWb5tkyz5Vh5a9QCKKh38io6hdgGrKKcpump": {
    "sym": "GTA6KODAK",
    "qty": 259302.16554,
    "cost": 50.02,
    "opened": "2026-11-11T01:10:23Z",
-   "peak": 0.0002689,
+   "peak": 0.0002739,
    "entry": 0.00019290236121180372,
-   "cur_price": 0.0002689,
-   "mark": 0.0002689
+   "cur_price": 0.0002739,
+   "mark": 0.0002739
+  },
+  "34DXEU2ttEtBSb1TqGJm7izgvYTTkqKcCoiNWdPDpump": {
+   "sym": "BIG",
+   "qty": 47323.97519,
+   "cost": 50.02,
+   "opened": "2026-11-11T02:01:04Z",
+   "peak": 0.001052,
+   "entry": 0.0010569695339238893,
+   "cur_price": 0.001052,
+   "mark": 0.001052
   }
  },
  "trades": [
@@ -4403,13 +4414,36 @@
    "slip": 0.0245,
    "quote": "jup",
    "reason": "screener"
+  },
+  {
+   "t": "2026-11-11T02:00:04Z",
+   "side": "sell",
+   "sym": "THUG",
+   "addr": "HoqJaoes6yfL8YEsHGfENwVKT7LrAPy97ZDg9hmBu4Ep",
+   "price": 0.0003557,
+   "usd": 45.95,
+   "pnl": 20.94,
+   "peak_x": 1.903,
+   "held_h": 7.8,
+   "frac": 0.5,
+   "slip": 0.0405,
+   "quote": "jup",
+   "reason": "tp0"
+  },
+  {
+   "t": "2026-11-11T02:01:04Z",
+   "side": "buy",
+   "sym": "BIG",
+   "addr": "34DXEU2ttEtBSb1TqGJm7izgvYTTkqKcCoiNWdPDpump",
+   "price": 0.001052,
+   "fill": 0.001056969534,
+   "usd": 50.02,
+   "slip": 0.0037,
+   "quote": "jup",
+   "reason": "screener"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-24T17:21:10Z",
-   "v": 187.03
-  },
   {
    "t": "2026-10-24T17:26:10Z",
    "v": 183.37
@@ -24405,6 +24439,10 @@
   {
    "t": "2026-11-11T01:56:05Z",
    "v": 285.68
+  },
+  {
+   "t": "2026-11-11T02:01:06Z",
+   "v": 297.66
   }
  ],
  "started": "2026-09-10T17:17:16Z",
