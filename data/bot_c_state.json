@@ -1,5 +1,5 @@
 {
- "cash": 124.38157952737367,
+ "cash": 29.212969873413982,
  "positions": {
   "74SBV4zDXxTRgv1pEMoECskKBkZHc2yGPnc7GYVepump": {
    "sym": "SWARMS",
@@ -18,8 +18,18 @@
    "opened": "2026-11-11T08:26:27Z",
    "peak": 0.009443,
    "entry": 0.009313114775008919,
-   "cur_price": 0.009064,
-   "mark": 0.009064
+   "cur_price": 0.00899,
+   "mark": 0.00899
+  },
+  "6aqQf9dsYAUwyW3jRawBBxZ1oy8ehmBYb519MhjV2eab": {
+   "sym": "SLC",
+   "qty": 249369.897513,
+   "cost": 95.16860965395969,
+   "opened": "2026-11-11T22:01:37Z",
+   "peak": 0.0003878,
+   "entry": 0.0003816363185897304,
+   "cur_price": 0.0003878,
+   "mark": 0.0003878
   }
  },
  "trades": [
@@ -1969,13 +1979,21 @@
    "slip": 0.0,
    "quote": "jup",
    "reason": "dip 24h -15% (SOL -3%) 1h +2.3%"
+  },
+  {
+   "t": "2026-11-11T22:01:37Z",
+   "side": "buy",
+   "sym": "SLC",
+   "addr": "6aqQf9dsYAUwyW3jRawBBxZ1oy8ehmBYb519MhjV2eab",
+   "price": 0.0003878,
+   "fill": 0.000381636319,
+   "usd": 95.17,
+   "slip": 0.0049,
+   "quote": "jup",
+   "reason": "dip 24h -17% (SOL +2%) 1h +1.8%"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-25T13:21:26Z",
-   "v": 400.32
-  },
   {
    "t": "2026-10-25T13:26:27Z",
    "v": 401.56
@@ -21971,6 +21989,10 @@
   {
    "t": "2026-11-11T21:56:34Z",
    "v": 317.16
+  },
+  {
+   "t": "2026-11-11T22:01:37Z",
+   "v": 317.94
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -21978,12 +22000,12 @@
  "strategy": "dip_weites_netz",
  "universe_n": 154,
  "coverage": {
-  "t": "2026-11-11T21:56:34Z",
+  "t": "2026-11-11T22:01:37Z",
   "kurse": 127,
   "von": 154,
   "ohne_pool": 84,
   "sol": true,
-  "kandidaten": 0
+  "kandidaten": 1
  },
  "verkauft_am": {
   "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": 1794331878.7762864,

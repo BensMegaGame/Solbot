@@ -1,6 +1,21 @@
 {
- "cash": 598.0915140000013,
- "positions": {},
+ "cash": 548.0715140000013,
+ "positions": {
+  "FjFVmDDM3w7qVLS9uxLkXnDM4qCGsqXSow6d32phpump": {
+   "sym": "HAMSTER",
+   "qty": 343820.785598,
+   "cost": 50.02,
+   "opened": "2026-11-11T22:01:39Z",
+   "peak": 0.0001536,
+   "entry": 0.0001454827692078049,
+   "quelle": "6TztascWVawd6JswEir6nvRsrjFGJWo6CZyazejaAd3",
+   "quelle_name": "Wallet A",
+   "t_wallet": 1794434300,
+   "wallet_sol": 0.053,
+   "cur_price": 0.0001536,
+   "mark": 0.0001536
+  }
+ },
  "trades": [
   {
    "t": "2026-11-04T01:31:33Z",
@@ -2620,6 +2635,18 @@
    "slip": 0.0152,
    "quote": "jup",
    "reason": "wallet verkauft (+181 s)"
+  },
+  {
+   "t": "2026-11-11T22:01:39Z",
+   "side": "buy",
+   "sym": "HAMSTER",
+   "addr": "FjFVmDDM3w7qVLS9uxLkXnDM4qCGsqXSow6d32phpump",
+   "price": 0.0001536,
+   "fill": 0.000145482769,
+   "usd": 50.02,
+   "slip": 0.0141,
+   "quote": "jup",
+   "reason": "kopie Wallet A (+198 s)"
   }
  ],
  "equity": [
@@ -12454,6 +12481,10 @@
   {
    "t": "2026-11-11T21:56:44Z",
    "v": 598.09
+  },
+  {
+   "t": "2026-11-11T22:01:48Z",
+   "v": 600.88
   }
  ],
  "started": "2026-11-03T09:11:31Z",
@@ -12468,23 +12499,23 @@
     "kaeufe_gesehen": 76
    },
    "6TztascWVawd6JswEir6nvRsrjFGJWo6CZyazejaAd3": {
-    "bis_sig": "45dsyhu7XcAdWBdg3qhqhK9AZNkN45B9RLp6ie6sdQdqkJu8U9Gp4ZckRctKqQi8csbpwcGZuRNzemV62kRuCbv5",
-    "kaeufe_gesehen": 58
+    "bis_sig": "4kWk7qtnpUqe6V89nyUDesipY2RNUVfBGNVdPU7r8TmXmsvWKgbUBZ2SG2AoMTSHbdfFXGKTnAe51Y2Fe6Cko3Yw",
+    "kaeufe_gesehen": 59
    }
   }
  },
  "coverage": {
-  "t": "2026-11-11T21:56:44Z",
+  "t": "2026-11-11T22:01:48Z",
   "kandidaten": 47,
   "pfade": 323,
-  "kurse": 108,
-  "von": 157,
+  "kurse": 122,
+  "von": 169,
   "fruehkaeufer_neu": 0,
   "fruehkaeufer_fehler": 0,
   "weg": {},
   "coins_mit_fruehkaeufern": 1236,
   "coins_ausgewertet": 1109,
-  "credits_heute": 4718,
+  "credits_heute": 4720,
   "codex_heute": 118,
   "spaet_neu": 0,
   "coins_mit_spaeten": 1062,
@@ -12503,10 +12534,10 @@
    "spaete_kaeufer": 9,
    "jupiter": 9,
    "stufe2": 9,
-   "gesamt": 10
+   "gesamt": 11
   },
   "warteschlange": 519,
-  "copy_credits_heute": 295,
+  "copy_credits_heute": 297,
   "copy_wallets": [
    "Wallet A"
   ]
