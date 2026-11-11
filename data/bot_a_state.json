@@ -1,5 +1,5 @@
 {
- "cash": 67.37637794111217,
+ "cash": 97.76096494111216,
  "positions": {
   "GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump": {
    "sym": "WASTED",
@@ -8,8 +8,8 @@
    "opened": "2026-11-04T13:30:23Z",
    "peak": 0.001652,
    "entry": 0.0008296766477231103,
-   "cur_price": 0.001338,
-   "mark": 0.001338,
+   "cur_price": 0.001364,
+   "mark": 0.001364,
    "tp0": true
   },
   "BWJfBNeXpapG7uoqByp5KSwWgCQba8QcDmA2DQiEpump": {
@@ -19,19 +19,8 @@
    "opened": "2026-11-10T12:55:43Z",
    "peak": 0.0004651,
    "entry": 0.0003494279654472007,
-   "cur_price": 0.000431,
-   "mark": 0.000431
-  },
-  "HoqJaoes6yfL8YEsHGfENwVKT7LrAPy97ZDg9hmBu4Ep": {
-   "sym": "THUG",
-   "qty": 133835.9584305,
-   "cost": 25.01,
-   "opened": "2026-11-10T18:10:23Z",
-   "peak": 0.0003678,
-   "entry": 0.00018687055626375257,
-   "cur_price": 0.0002589,
-   "mark": 0.0002589,
-   "tp0": true
+   "cur_price": 0.0004229,
+   "mark": 0.0004229
   },
   "CXz596uKfWb5tkyz5Vh5a9QCKKh38io6hdgGrKKcpump": {
    "sym": "GTA6KODAK",
@@ -40,8 +29,8 @@
    "opened": "2026-11-11T01:10:23Z",
    "peak": 0.0003721,
    "entry": 0.00019290236121180372,
-   "cur_price": 0.0003647,
-   "mark": 0.0003647,
+   "cur_price": 0.0003526,
+   "mark": 0.0003526,
    "tp0": true
   },
   "34DXEU2ttEtBSb1TqGJm7izgvYTTkqKcCoiNWdPDpump": {
@@ -51,8 +40,8 @@
    "opened": "2026-11-11T02:01:04Z",
    "peak": 0.001082,
    "entry": 0.0010569695339238893,
-   "cur_price": 0.0009021,
-   "mark": 0.0009021
+   "cur_price": 0.0009184,
+   "mark": 0.0009184
   }
  },
  "trades": [
@@ -4457,13 +4446,24 @@
    "slip": 0.0215,
    "quote": "jup",
    "reason": "tp0"
+  },
+  {
+   "t": "2026-11-11T03:15:04Z",
+   "side": "sell",
+   "sym": "THUG",
+   "addr": "HoqJaoes6yfL8YEsHGfENwVKT7LrAPy97ZDg9hmBu4Ep",
+   "price": 0.0002319,
+   "usd": 30.38,
+   "pnl": 5.37,
+   "peak_x": 1.968,
+   "held_h": 9.1,
+   "frac": 1.0,
+   "slip": 0.0198,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-24T18:36:14Z",
-   "v": 183.32
-  },
   {
    "t": "2026-10-24T18:41:05Z",
    "v": 183.51
@@ -24459,6 +24459,10 @@
   {
    "t": "2026-11-11T03:11:04Z",
    "v": 294.03
+  },
+  {
+   "t": "2026-11-11T03:16:04Z",
+   "v": 288.59
   }
  ],
  "started": "2026-09-10T17:17:16Z",
@@ -24468,6 +24472,7 @@
   "BLeMEetdzeq9xsNti2tCiau4JnD7mzyQzQFHdy5pump": 1793880902.5730276,
   "Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr": 1793905803.1226225,
   "31HzUsjzTt7FBCGnDy68cBnELayVsnd3zYEBtsXXpump": 1794223803.6565435,
-  "TiMSdJrkVwUpeEWJpuqRvHt4wVS7uH77LbNPGGVJXNw": 1794359403.1367462
+  "TiMSdJrkVwUpeEWJpuqRvHt4wVS7uH77LbNPGGVJXNw": 1794359403.1367462,
+  "HoqJaoes6yfL8YEsHGfENwVKT7LrAPy97ZDg9hmBu4Ep": 1794366904.0805845
  }
 }
