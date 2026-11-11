@@ -1,6 +1,21 @@
 {
- "cash": 612.3369810000013,
- "positions": {},
+ "cash": 562.3169810000013,
+ "positions": {
+  "Z5ijNneoDubKBEhzTumUgfm18m6PjUDred4gp7Xpump": {
+   "sym": "mihao",
+   "qty": 541416.21331,
+   "cost": 50.02,
+   "opened": "2026-11-11T16:51:27Z",
+   "peak": 8.943e-05,
+   "entry": 9.238733301723259e-05,
+   "quelle": "6TztascWVawd6JswEir6nvRsrjFGJWo6CZyazejaAd3",
+   "quelle_name": "Wallet A",
+   "t_wallet": 1794415761,
+   "wallet_sol": 0.053,
+   "cur_price": 8.943e-05,
+   "mark": 8.943e-05
+  }
+ },
  "trades": [
   {
    "t": "2026-11-04T01:31:33Z",
@@ -2485,6 +2500,18 @@
    "slip": 0.0367,
    "quote": "jup",
    "reason": "wallet verkauft (+292 s)"
+  },
+  {
+   "t": "2026-11-11T16:51:27Z",
+   "side": "buy",
+   "sym": "mihao",
+   "addr": "Z5ijNneoDubKBEhzTumUgfm18m6PjUDred4gp7Xpump",
+   "price": 8.943e-05,
+   "fill": 9.2387333e-05,
+   "usd": 50.02,
+   "slip": 0.0271,
+   "quote": "jup",
+   "reason": "kopie Wallet A (+126 s)"
   }
  ],
  "equity": [
@@ -12071,6 +12098,10 @@
   {
    "t": "2026-11-11T16:46:33Z",
    "v": 612.34
+  },
+  {
+   "t": "2026-11-11T16:51:36Z",
+   "v": 610.74
   }
  ],
  "started": "2026-11-03T09:11:31Z",
@@ -12085,23 +12116,23 @@
     "kaeufe_gesehen": 76
    },
    "6TztascWVawd6JswEir6nvRsrjFGJWo6CZyazejaAd3": {
-    "bis_sig": "kYknKP54vZPSwf3y6UHkoy87xdrHSXbPXmpEn2ZSg9kjQbrjxKDzSHHGwpHjRU3ktFQgbHzUb3zmvvyJFDze86K",
-    "kaeufe_gesehen": 52
+    "bis_sig": "3DCxRUoTjHo6nx8gkwKeziE65gTQ4K2qy4mgfdpqYLWuDJsK9g2ZjVyMzfVFUyiFm2JgdEhgbCJcMvmqEQtiZe67",
+    "kaeufe_gesehen": 53
    }
   }
  },
  "coverage": {
-  "t": "2026-11-11T16:46:33Z",
+  "t": "2026-11-11T16:51:36Z",
   "kandidaten": 56,
   "pfade": 318,
-  "kurse": 100,
-  "von": 150,
+  "kurse": 106,
+  "von": 152,
   "fruehkaeufer_neu": 0,
   "fruehkaeufer_fehler": 0,
   "weg": {},
   "coins_mit_fruehkaeufern": 1225,
   "coins_ausgewertet": 1106,
-  "credits_heute": 4640,
+  "credits_heute": 4642,
   "codex_heute": 82,
   "spaet_neu": 0,
   "coins_mit_spaeten": 1052,
@@ -12113,17 +12144,17 @@
   "copy_liste": 1,
   "helius_wallet_heute": 4110,
   "laufzeit_s": {
-   "copy": 0,
-   "kandidaten": 0,
-   "kurse": 7,
-   "fruehkaeufer": 7,
-   "spaete_kaeufer": 7,
-   "jupiter": 7,
-   "stufe2": 7,
-   "gesamt": 8
+   "copy": 1,
+   "kandidaten": 1,
+   "kurse": 9,
+   "fruehkaeufer": 9,
+   "spaete_kaeufer": 9,
+   "jupiter": 9,
+   "stufe2": 9,
+   "gesamt": 10
   },
   "warteschlange": 519,
-  "copy_credits_heute": 217,
+  "copy_credits_heute": 219,
   "copy_wallets": [
    "Wallet A"
   ]
