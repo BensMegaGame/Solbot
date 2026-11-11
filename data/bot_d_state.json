@@ -11975,6 +11975,10 @@
   {
    "t": "2026-11-11T14:46:32Z",
    "v": 612.34
+  },
+  {
+   "t": "2026-11-11T14:51:37Z",
+   "v": 612.34
   }
  ],
  "started": "2026-11-03T09:11:31Z",
@@ -11995,23 +11999,25 @@
   }
  },
  "coverage": {
-  "t": "2026-11-11T14:46:32Z",
-  "kandidaten": 49,
-  "pfade": 322,
-  "kurse": 113,
-  "von": 159,
-  "fruehkaeufer_neu": 0,
+  "t": "2026-11-11T14:51:37Z",
+  "kandidaten": 53,
+  "pfade": 323,
+  "kurse": 102,
+  "von": 150,
+  "fruehkaeufer_neu": 1,
   "fruehkaeufer_fehler": 0,
-  "weg": {},
-  "coins_mit_fruehkaeufern": 1220,
-  "coins_ausgewertet": 1104,
-  "credits_heute": 4616,
-  "codex_heute": 66,
-  "spaet_neu": 0,
-  "coins_mit_spaeten": 1047,
+  "weg": {
+   "codex": 1
+  },
+  "coins_mit_fruehkaeufern": 1221,
+  "coins_ausgewertet": 1105,
+  "credits_heute": 4617,
+  "codex_heute": 69,
+  "spaet_neu": 1,
+  "coins_mit_spaeten": 1048,
   "spaet_fehler": null,
   "codex_ohne_filter": false,
-  "kandidaten_wallets": 2759,
+  "kandidaten_wallets": 2760,
   "wallets_geprueft": 2649,
   "wallets_bestanden": 1,
   "copy_liste": 1,
@@ -12019,15 +12025,15 @@
   "laufzeit_s": {
    "copy": 0,
    "kandidaten": 0,
-   "kurse": 9,
-   "fruehkaeufer": 9,
+   "kurse": 7,
+   "fruehkaeufer": 8,
    "spaete_kaeufer": 9,
    "jupiter": 9,
    "stufe2": 9,
    "gesamt": 10
   },
   "warteschlange": 519,
-  "copy_credits_heute": 193,
+  "copy_credits_heute": 194,
   "copy_wallets": [
    "Wallet A"
   ]
