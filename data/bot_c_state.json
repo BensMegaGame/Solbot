@@ -1,5 +1,5 @@
 {
- "cash": 15.675879883159396,
+ "cash": 95.5041418831594,
  "positions": {
   "74SBV4zDXxTRgv1pEMoECskKBkZHc2yGPnc7GYVepump": {
    "sym": "SWARMS",
@@ -20,16 +20,6 @@
    "entry": 0.009313114775008919,
    "cur_price": 0.009136,
    "mark": 0.009136
-  },
-  "DKYcjobF7HPtL9RyQBRdeRQ2iWvizpfbgWwPWNXdpump": {
-   "sym": "DACITYCOIN",
-   "qty": 15476.082554,
-   "cost": 89.29799839458903,
-   "opened": "2026-11-12T19:11:22Z",
-   "peak": 0.005753,
-   "entry": 0.005770064748815182,
-   "cur_price": 0.005242,
-   "mark": 0.005242
   }
  },
  "trades": [
@@ -2072,13 +2062,24 @@
    "slip": 0.0191,
    "quote": "jup",
    "reason": "dip 24h -18% (SOL -4%) 1h +0.1%"
+  },
+  {
+   "t": "2026-11-12T19:31:19Z",
+   "side": "sell",
+   "sym": "DACITYCOIN",
+   "addr": "DKYcjobF7HPtL9RyQBRdeRQ2iWvizpfbgWwPWNXdpump",
+   "price": 0.005184,
+   "usd": 79.83,
+   "pnl": -9.47,
+   "peak_x": 0.997,
+   "held_h": 0.3,
+   "frac": 1.0,
+   "slip": 0.0007,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-26T10:51:19Z",
-   "v": 377.85
-  },
   {
    "t": "2026-10-26T10:56:21Z",
    "v": 378.06
@@ -22074,6 +22075,10 @@
   {
    "t": "2026-11-12T19:26:20Z",
    "v": 290.16
+  },
+  {
+   "t": "2026-11-12T19:31:19Z",
+   "v": 288.87
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -22081,7 +22086,7 @@
  "strategy": "dip_weites_netz",
  "universe_n": 153,
  "coverage": {
-  "t": "2026-11-12T19:26:20Z",
+  "t": "2026-11-12T19:31:19Z",
   "kurse": 127,
   "von": 153,
   "ohne_pool": 83,
@@ -22100,6 +22105,7 @@
   "Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr": 1794303674.8374553,
   "6aqQf9dsYAUwyW3jRawBBxZ1oy8ehmBYb519MhjV2eab": 1794441996.214584,
   "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump": 1794469878.427608,
-  "5w3wVdJaESaJKyLmStM6Hv9UyUkmZ1b9DLQquAqqpump": 1794502880.101175
+  "5w3wVdJaESaJKyLmStM6Hv9UyUkmZ1b9DLQquAqqpump": 1794502880.101175,
+  "DKYcjobF7HPtL9RyQBRdeRQ2iWvizpfbgWwPWNXdpump": 1794511879.0246818
  }
 }
