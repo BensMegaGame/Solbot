@@ -1,6 +1,18 @@
 {
- "cash": 331.5869340671873,
- "positions": {},
+ "cash": 232.09085384703113,
+ "positions": {
+  "DKYcjobF7HPtL9RyQBRdeRQ2iWvizpfbgWwPWNXdpump": {
+   "sym": "DacityCoin",
+   "qty": 22967.890483,
+   "cost": 99.49608022015619,
+   "opened": "2026-11-12T23:06:21Z",
+   "peak": 0.004234,
+   "entry": 0.0043319642391102305,
+   "pair": "7Te1wXcfeQjKLGHXFvxSCnGZTqunoZ9fxBn7KKjrkNEr",
+   "cur_price": 0.004234,
+   "mark": 0.004234
+  }
+ },
  "trades": [
   {
    "t": "2026-10-09T07:16:29Z",
@@ -712,13 +724,21 @@
    "slip": 0.0227,
    "quote": "jup",
    "reason": "trail"
+  },
+  {
+   "t": "2026-11-12T23:06:21Z",
+   "side": "buy",
+   "sym": "DacityCoin",
+   "addr": "DKYcjobF7HPtL9RyQBRdeRQ2iWvizpfbgWwPWNXdpump",
+   "price": 0.004234,
+   "fill": 0.004331964239,
+   "usd": 99.5,
+   "slip": 0.0003,
+   "quote": "jup",
+   "reason": "tiefer dip 24h -34% (SOL -2%) 1h +4.0%"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-26T14:26:16Z",
-   "v": 384.61
-  },
   {
    "t": "2026-10-26T14:31:14Z",
    "v": 384.61
@@ -20714,18 +20734,22 @@
   {
    "t": "2026-11-12T23:01:18Z",
    "v": 331.59
+  },
+  {
+   "t": "2026-11-12T23:06:21Z",
+   "v": 329.34
   }
  ],
  "started": "2026-10-08T16:06:06Z",
  "version": "b4",
  "strategy": "tiefer_dip",
  "coverage": {
-  "t": "2026-11-12T23:01:18Z",
+  "t": "2026-11-12T23:06:21Z",
   "kurse": 178,
   "von": 192,
   "sol": true,
-  "sol24": -2.5,
-  "kandidaten": 0,
+  "sol24": -2.2,
+  "kandidaten": 1,
   "gestoppt": false
  },
  "verkauft_am": {
