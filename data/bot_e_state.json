@@ -1,16 +1,6 @@
 {
- "cash": 45.463222933900965,
+ "cash": 250.47785893390096,
  "positions": {
-  "XsueG8BtpquVJX9LVLLEGuViXUungE6WmK5YZ3p3bd1": {
-   "sym": "CRCLx",
-   "qty": 3.166607,
-   "cost": 212.7973083409271,
-   "opened": "2026-11-05T18:41:48Z",
-   "peak": 69.75,
-   "entry": 67.20041619971379,
-   "mark": 64.95,
-   "cur_price": 64.95
-  },
   "XsDoVfqeBukxuZHWhdvWHBhgEHjGNst4MLodqsJHzoB": {
    "sym": "TSLAx",
    "qty": 0.6227,
@@ -18,8 +8,8 @@
    "opened": "2026-11-05T19:46:46Z",
    "peak": 394.67,
    "entry": 344.592792203324,
-   "mark": 391.53,
-   "cur_price": 391.53
+   "mark": 391.41,
+   "cur_price": 391.41
   }
  },
  "trades": [
@@ -1567,13 +1557,24 @@
    "slip": 0.0013,
    "quote": "jup",
    "reason": "dip 24h -12% (SOL -5%) 1h +1.1%"
+  },
+  {
+   "t": "2026-11-12T18:46:36Z",
+   "side": "sell",
+   "sym": "CRCLx",
+   "addr": "XsueG8BtpquVJX9LVLLEGuViXUungE6WmK5YZ3p3bd1",
+   "price": 64.82,
+   "usd": 205.01,
+   "pnl": -7.78,
+   "peak_x": 1.038,
+   "held_h": 168.1,
+   "frac": 1.0,
+   "slip": 0.0013,
+   "quote": "jup",
+   "reason": "time"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-26T10:06:34Z",
-   "v": 431.88
-  },
   {
    "t": "2026-10-26T10:11:40Z",
    "v": 432.75
@@ -21569,23 +21570,22 @@
   {
    "t": "2026-11-12T18:41:43Z",
    "v": 494.94
+  },
+  {
+   "t": "2026-11-12T18:46:38Z",
+   "v": 494.21
   }
  ],
  "started": "2026-09-16T16:55:59Z",
  "strategy": "largecap_dip",
  "universe_n": 48,
  "coverage": {
-  "t": "2026-11-12T18:41:43Z",
+  "t": "2026-11-12T18:46:38Z",
   "kurse": 48,
   "von": 48,
   "sol": true
  },
  "verkauft_am": {
-  "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG": 1793602892.3909016,
-  "CWZ6BsdnjkDVTGkmL6bGbJXXig6ceef12KvyGQW14cMt": 1793280087.6464105,
-  "METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m": 1793880706.417789,
-  "Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump": 1793746904.2738492,
-  "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx": 1793756233.8498175,
-  "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump": 1793762799.6376052
+  "XsueG8BtpquVJX9LVLLEGuViXUungE6WmK5YZ3p3bd1": 1794509196.0332766
  }
 }
