@@ -1,5 +1,5 @@
 {
- "cash": 114.84406694111213,
+ "cash": 64.82406694111214,
  "positions": {
   "BWJfBNeXpapG7uoqByp5KSwWgCQba8QcDmA2DQiEpump": {
    "sym": "Leonida",
@@ -8,8 +8,8 @@
    "opened": "2026-11-10T12:55:43Z",
    "peak": 0.0004652,
    "entry": 0.0003494279654472007,
-   "cur_price": 0.0004568,
-   "mark": 0.0004568
+   "cur_price": 0.0004478,
+   "mark": 0.0004478
   },
   "34DXEU2ttEtBSb1TqGJm7izgvYTTkqKcCoiNWdPDpump": {
    "sym": "BIG",
@@ -18,8 +18,8 @@
    "opened": "2026-11-11T02:01:04Z",
    "peak": 0.00129,
    "entry": 0.0010569695339238893,
-   "cur_price": 0.0009419,
-   "mark": 0.0009419
+   "cur_price": 0.000996,
+   "mark": 0.000996
   },
   "Eyo1o3QYKQwdvP6UtK9dQLTZj2BBtoJdN4tMWB2Dpump": {
    "sym": "GOODTIME",
@@ -30,6 +30,16 @@
    "entry": 0.00016423089602957708,
    "cur_price": 0.0001055,
    "mark": 0.0001055
+  },
+  "8Mi9E1V2bdPeAaRkR5yxUsAvpzP6UBUEEUrYmgKNpump": {
+   "sym": "WEALTH",
+   "qty": 93312.573987,
+   "cost": 50.02,
+   "opened": "2026-11-12T20:36:08Z",
+   "peak": 0.0005362,
+   "entry": 0.0005360478000206985,
+   "cur_price": 0.0005362,
+   "mark": 0.0005362
   }
  },
  "trades": [
@@ -4560,13 +4570,21 @@
    "slip": 0.0118,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-11-12T20:36:08Z",
+   "side": "buy",
+   "sym": "WEALTH",
+   "addr": "8Mi9E1V2bdPeAaRkR5yxUsAvpzP6UBUEEUrYmgKNpump",
+   "price": 0.0005362,
+   "fill": 0.0005360478,
+   "usd": 50.02,
+   "slip": 0.0205,
+   "quote": "jup",
+   "reason": "screener"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-26T11:56:03Z",
-   "v": 150.88
-  },
   {
    "t": "2026-10-26T12:01:02Z",
    "v": 150.84
@@ -24562,6 +24580,10 @@
   {
    "t": "2026-11-12T20:31:08Z",
    "v": 256.94
+  },
+  {
+   "t": "2026-11-12T20:36:09Z",
+   "v": 258.23
   }
  ],
  "started": "2026-09-10T17:17:16Z",
