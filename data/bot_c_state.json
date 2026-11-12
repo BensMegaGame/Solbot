@@ -1,5 +1,5 @@
 {
- "cash": 30.68189332337029,
+ "cash": 115.3813273233703,
  "positions": {
   "74SBV4zDXxTRgv1pEMoECskKBkZHc2yGPnc7GYVepump": {
    "sym": "SWARMS",
@@ -20,16 +20,6 @@
    "entry": 0.009313114775008919,
    "cur_price": 0.009115,
    "mark": 0.009115
-  },
-  "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump": {
-   "sym": "CBUCKS",
-   "qty": 21403.46792,
-   "cost": 94.8693385500437,
-   "opened": "2026-11-12T02:26:33Z",
-   "peak": 0.004434,
-   "entry": 0.0044324283758425485,
-   "cur_price": 0.004025,
-   "mark": 0.004025
   }
  },
  "trades": [
@@ -2018,13 +2008,24 @@
    "slip": 0.0011,
    "quote": "jup",
    "reason": "dip 24h -16% (SOL +0%) 1h +2.7%"
+  },
+  {
+   "t": "2026-11-12T07:51:18Z",
+   "side": "sell",
+   "sym": "CBUCKS",
+   "addr": "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump",
+   "price": 0.003962,
+   "usd": 84.7,
+   "pnl": -10.17,
+   "peak_x": 1.0,
+   "held_h": 5.4,
+   "frac": 1.0,
+   "slip": 0.0011,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-25T23:11:34Z",
-   "v": 380.92
-  },
   {
    "t": "2026-10-25T23:16:31Z",
    "v": 380.6
@@ -22020,6 +22021,10 @@
   {
    "t": "2026-11-12T07:46:22Z",
    "v": 310.77
+  },
+  {
+   "t": "2026-11-12T07:51:20Z",
+   "v": 309.32
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -22027,7 +22032,7 @@
  "strategy": "dip_weites_netz",
  "universe_n": 153,
  "coverage": {
-  "t": "2026-11-12T07:46:22Z",
+  "t": "2026-11-12T07:51:20Z",
   "kurse": 125,
   "von": 153,
   "ohne_pool": 83,
@@ -22044,6 +22049,7 @@
   "GJAFwWjJ3vnTsrQVabjBVK2TYB1YtRCQXRDfDgUnpump": 1794190576.1697395,
   "GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump": 1794243673.5587065,
   "Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr": 1794303674.8374553,
-  "6aqQf9dsYAUwyW3jRawBBxZ1oy8ehmBYb519MhjV2eab": 1794441996.214584
+  "6aqQf9dsYAUwyW3jRawBBxZ1oy8ehmBYb519MhjV2eab": 1794441996.214584,
+  "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump": 1794469878.427608
  }
 }
