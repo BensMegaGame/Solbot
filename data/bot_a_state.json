@@ -1,5 +1,5 @@
 {
- "cash": 88.09867794111213,
+ "cash": 114.84406694111213,
  "positions": {
   "BWJfBNeXpapG7uoqByp5KSwWgCQba8QcDmA2DQiEpump": {
    "sym": "Leonida",
@@ -8,8 +8,8 @@
    "opened": "2026-11-10T12:55:43Z",
    "peak": 0.0004651,
    "entry": 0.0003494279654472007,
-   "cur_price": 0.0003382,
-   "mark": 0.0003382
+   "cur_price": 0.0003423,
+   "mark": 0.0003423
   },
   "34DXEU2ttEtBSb1TqGJm7izgvYTTkqKcCoiNWdPDpump": {
    "sym": "BIG",
@@ -18,8 +18,8 @@
    "opened": "2026-11-11T02:01:04Z",
    "peak": 0.00126,
    "entry": 0.0010569695339238893,
-   "cur_price": 0.001064,
-   "mark": 0.001064
+   "cur_price": 0.001098,
+   "mark": 0.001098
   },
   "Eyo1o3QYKQwdvP6UtK9dQLTZj2BBtoJdN4tMWB2Dpump": {
    "sym": "GOODTIME",
@@ -28,18 +28,8 @@
    "opened": "2026-11-11T22:40:11Z",
    "peak": 0.0001625,
    "entry": 0.00016423089602957708,
-   "cur_price": 0.0001397,
-   "mark": 0.0001397
-  },
-  "4xgqefa5WcdHWKXzqvM9MRJqWYGaHVEUnpUL4Vq5pump": {
-   "sym": "HUNG",
-   "qty": 56527.614572,
-   "cost": 50.02,
-   "opened": "2026-11-12T00:05:25Z",
-   "peak": 0.0008941,
-   "entry": 0.00088487724767315,
-   "cur_price": 0.0005883,
-   "mark": 0.0005883
+   "cur_price": 0.000142,
+   "mark": 0.000142
   }
  },
  "trades": [
@@ -4555,13 +4545,24 @@
    "slip": 0.0047,
    "quote": "jup",
    "reason": "trail"
+  },
+  {
+   "t": "2026-11-12T02:40:06Z",
+   "side": "sell",
+   "sym": "HUNG",
+   "addr": "4xgqefa5WcdHWKXzqvM9MRJqWYGaHVEUnpUL4Vq5pump",
+   "price": 0.0004341,
+   "usd": 26.75,
+   "pnl": -23.27,
+   "peak_x": 1.01,
+   "held_h": 2.6,
+   "frac": 1.0,
+   "slip": 0.0118,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-25T18:01:19Z",
-   "v": 167.56
-  },
   {
    "t": "2026-10-25T18:06:17Z",
    "v": 167.22
@@ -24557,6 +24558,10 @@
   {
    "t": "2026-11-12T02:36:11Z",
    "v": 262.67
+  },
+  {
+   "t": "2026-11-12T02:41:12Z",
+   "v": 259.05
   }
  ],
  "started": "2026-09-10T17:17:16Z",
@@ -24569,6 +24574,7 @@
   "HoqJaoes6yfL8YEsHGfENwVKT7LrAPy97ZDg9hmBu4Ep": 1794366904.0805845,
   "CXz596uKfWb5tkyz5Vh5a9QCKKh38io6hdgGrKKcpump": 1794405604.8976314,
   "F2xQeTCTqnczXxXQaBWAfDpUnpxn4wQHRPSqvUYJpump": 1794424505.7583208,
-  "GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump": 1794448201.8363564
+  "GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump": 1794448201.8363564,
+  "4xgqefa5WcdHWKXzqvM9MRJqWYGaHVEUnpUL4Vq5pump": 1794451206.4806938
  }
 }
