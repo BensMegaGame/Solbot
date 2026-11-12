@@ -1,5 +1,5 @@
 {
- "cash": 23.547448277748416,
+ "cash": 104.97387827774843,
  "positions": {
   "74SBV4zDXxTRgv1pEMoECskKBkZHc2yGPnc7GYVepump": {
    "sym": "SWARMS",
@@ -8,8 +8,8 @@
    "opened": "2026-11-08T23:16:17Z",
    "peak": 0.006808,
    "entry": 0.006385674948561816,
-   "cur_price": 0.006511,
-   "mark": 0.006511
+   "cur_price": 0.006516,
+   "mark": 0.006516
   },
   "GJAFwWjJ3vnTsrQVabjBVK2TYB1YtRCQXRDfDgUnpump": {
    "sym": "ACT",
@@ -20,16 +20,6 @@
    "entry": 0.009313114775008919,
    "cur_price": 0.009014,
    "mark": 0.009014
-  },
-  "5w3wVdJaESaJKyLmStM6Hv9UyUkmZ1b9DLQquAqqpump": {
-   "sym": "SID",
-   "qty": 20645.99854,
-   "cost": 91.83387904562188,
-   "opened": "2026-11-12T15:31:28Z",
-   "peak": 0.004562,
-   "entry": 0.004448023129891294,
-   "cur_price": 0.004126,
-   "mark": 0.004126
   }
  },
  "trades": [
@@ -2045,13 +2035,24 @@
    "slip": 0.0109,
    "quote": "jup",
    "reason": "dip 24h -11% (SOL -4%) 1h +0.4%"
+  },
+  {
+   "t": "2026-11-12T17:01:20Z",
+   "side": "sell",
+   "sym": "SID",
+   "addr": "5w3wVdJaESaJKyLmStM6Hv9UyUkmZ1b9DLQquAqqpump",
+   "price": 0.003993,
+   "usd": 81.43,
+   "pnl": -10.41,
+   "peak_x": 1.026,
+   "held_h": 1.5,
+   "frac": 1.0,
+   "slip": 0.0142,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-26T08:21:25Z",
-   "v": 381.5
-  },
   {
    "t": "2026-10-26T08:26:27Z",
    "v": 380.35
@@ -22047,6 +22048,10 @@
   {
    "t": "2026-11-12T16:56:19Z",
    "v": 299.83
+  },
+  {
+   "t": "2026-11-12T17:01:20Z",
+   "v": 296.15
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -22054,7 +22059,7 @@
  "strategy": "dip_weites_netz",
  "universe_n": 153,
  "coverage": {
-  "t": "2026-11-12T16:56:19Z",
+  "t": "2026-11-12T17:01:20Z",
   "kurse": 127,
   "von": 153,
   "ohne_pool": 83,
@@ -22072,6 +22077,7 @@
   "GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump": 1794243673.5587065,
   "Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr": 1794303674.8374553,
   "6aqQf9dsYAUwyW3jRawBBxZ1oy8ehmBYb519MhjV2eab": 1794441996.214584,
-  "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump": 1794469878.427608
+  "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump": 1794469878.427608,
+  "5w3wVdJaESaJKyLmStM6Hv9UyUkmZ1b9DLQquAqqpump": 1794502880.101175
  }
 }
