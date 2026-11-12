@@ -8,8 +8,8 @@
    "opened": "2026-11-08T23:16:17Z",
    "peak": 0.006808,
    "entry": 0.006385674948561816,
-   "cur_price": 0.006556,
-   "mark": 0.006556
+   "cur_price": 0.006553,
+   "mark": 0.006553
   },
   "GJAFwWjJ3vnTsrQVabjBVK2TYB1YtRCQXRDfDgUnpump": {
    "sym": "ACT",
@@ -18,8 +18,8 @@
    "opened": "2026-11-11T08:26:27Z",
    "peak": 0.009443,
    "entry": 0.009313114775008919,
-   "cur_price": 0.009114,
-   "mark": 0.009114
+   "cur_price": 0.009151,
+   "mark": 0.009151
   },
   "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump": {
    "sym": "CBUCKS",
@@ -28,8 +28,8 @@
    "opened": "2026-11-12T02:26:33Z",
    "peak": 0.004434,
    "entry": 0.0044324283758425485,
-   "cur_price": 0.004134,
-   "mark": 0.004134
+   "cur_price": 0.004093,
+   "mark": 0.004093
   }
  },
  "trades": [
@@ -2021,10 +2021,6 @@
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-25T21:31:34Z",
-   "v": 385.59
-  },
   {
    "t": "2026-10-25T21:36:34Z",
    "v": 384.07
@@ -22020,6 +22016,10 @@
   {
    "t": "2026-11-12T06:06:26Z",
    "v": 311.97
+  },
+  {
+   "t": "2026-11-12T06:11:30Z",
+   "v": 311.42
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -22027,12 +22027,12 @@
  "strategy": "dip_weites_netz",
  "universe_n": 153,
  "coverage": {
-  "t": "2026-11-12T06:06:26Z",
-  "kurse": 124,
+  "t": "2026-11-12T06:11:30Z",
+  "kurse": 125,
   "von": 153,
   "ohne_pool": 83,
   "sol": true,
-  "kandidaten": 0
+  "kandidaten": 1
  },
  "verkauft_am": {
   "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": 1794331878.7762864,
