@@ -1,17 +1,6 @@
 {
- "cash": 250.47785893390096,
- "positions": {
-  "XsDoVfqeBukxuZHWhdvWHBhgEHjGNst4MLodqsJHzoB": {
-   "sym": "TSLAx",
-   "qty": 0.6227,
-   "cost": 214.57793170500986,
-   "opened": "2026-11-05T19:46:46Z",
-   "peak": 394.67,
-   "entry": 344.592792203324,
-   "mark": 390.051,
-   "cur_price": 390.051
-  }
- },
+ "cash": 496.6864509339009,
+ "positions": {},
  "trades": [
   {
    "t": "2026-09-16T17:20:59Z",
@@ -1572,13 +1561,39 @@
    "slip": 0.0013,
    "quote": "jup",
    "reason": "time"
+  },
+  {
+   "t": "2026-11-12T20:11:36Z",
+   "side": "sell",
+   "sym": "TSLAx",
+   "addr": "XsDoVfqeBukxuZHWhdvWHBhgEHjGNst4MLodqsJHzoB",
+   "price": 396.52,
+   "usd": 123.1,
+   "pnl": 15.82,
+   "peak_x": 1.151,
+   "held_h": 168.4,
+   "frac": 0.5,
+   "slip": 0.001,
+   "quote": "jup",
+   "reason": "tp1"
+  },
+  {
+   "t": "2026-11-12T20:11:36Z",
+   "side": "sell",
+   "sym": "TSLAx",
+   "addr": "XsDoVfqeBukxuZHWhdvWHBhgEHjGNst4MLodqsJHzoB",
+   "price": 396.52,
+   "usd": 123.1,
+   "pnl": 15.82,
+   "peak_x": 1.151,
+   "held_h": 168.4,
+   "frac": 1.0,
+   "slip": 0.001,
+   "quote": "jup",
+   "reason": "time"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-26T11:31:33Z",
-   "v": 430.94
-  },
   {
    "t": "2026-10-26T11:36:35Z",
    "v": 431.07
@@ -21574,18 +21589,23 @@
   {
    "t": "2026-11-12T20:06:41Z",
    "v": 493.36
+  },
+  {
+   "t": "2026-11-12T20:11:36Z",
+   "v": 496.69
   }
  ],
  "started": "2026-09-16T16:55:59Z",
  "strategy": "largecap_dip",
  "universe_n": 48,
  "coverage": {
-  "t": "2026-11-12T20:06:41Z",
+  "t": "2026-11-12T20:11:36Z",
   "kurse": 48,
   "von": 48,
   "sol": true
  },
  "verkauft_am": {
-  "XsueG8BtpquVJX9LVLLEGuViXUungE6WmK5YZ3p3bd1": 1794509196.0332766
+  "XsueG8BtpquVJX9LVLLEGuViXUungE6WmK5YZ3p3bd1": 1794509196.0332766,
+  "XsDoVfqeBukxuZHWhdvWHBhgEHjGNst4MLodqsJHzoB": 1794514296.75722
  }
 }
