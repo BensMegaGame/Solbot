@@ -1,5 +1,5 @@
 {
- "cash": 100.421223,
+ "cash": 157.491393,
  "positions": {
   "KENJSUYLASHUMfHyy5o4Hp2FdNqZg1AsUPhfH2kYvEP": {
    "sym": "GRIFFAIN",
@@ -12,17 +12,6 @@
    "cur_price": 0.009592,
    "mark": 0.009592
   },
-  "6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump": {
-   "sym": "VINE",
-   "qty": 10907.435098,
-   "cost": 66.79431835578457,
-   "opened": "2026-11-06T02:46:33Z",
-   "peak": 0.00642,
-   "entry": 0.0061237419939388,
-   "pair": "58fzJMbX5PatnfJPqWWsqkVFPRKptkbb5r2vCw4Qq3z9",
-   "cur_price": 0.005234,
-   "mark": 0.005234
-  },
   "FjPKUGnF5zBpdEv18gT8FJCtxh3MKrFkoeYekgYr1win": {
    "sym": "1WIN",
    "qty": 1433.05464095,
@@ -31,8 +20,8 @@
    "peak": 0.0501,
    "entry": 0.044278484109912676,
    "pair": "3Uq381E8SfUit1AG5zXMQC9VmjJJJDMzenPm26DkvLeK",
-   "cur_price": 0.0428,
-   "mark": 0.0428
+   "cur_price": 0.04259,
+   "mark": 0.04259
   }
  },
  "trades": [
@@ -1556,13 +1545,24 @@
    "slip": 0.0088,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-11-12T14:36:36Z",
+   "side": "sell",
+   "sym": "VINE",
+   "addr": "6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump",
+   "price": 0.005205,
+   "usd": 57.07,
+   "pnl": -9.72,
+   "peak_x": 1.048,
+   "held_h": 155.8,
+   "frac": 1.0,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-26T05:56:45Z",
-   "v": 337.63
-  },
   {
    "t": "2026-10-26T06:01:47Z",
    "v": 338.23
@@ -21558,6 +21558,10 @@
   {
    "t": "2026-11-12T14:31:39Z",
    "v": 271.84
+  },
+  {
+   "t": "2026-11-12T14:36:36Z",
+   "v": 271.52
   }
  ],
  "started": "2026-09-25T09:22:03Z",
@@ -21567,11 +21571,12 @@
   "METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m": 20772,
   "9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump": 20772,
   "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": 20773,
-  "CzLSujWBLFsSjncfkh59rUFqvafWcY5tzedWJSuypump": 20774
+  "CzLSujWBLFsSjncfkh59rUFqvafWcY5tzedWJSuypump": 20774,
+  "6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump": 20774
  },
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-11-12T14:31:39Z",
+  "t": "2026-11-12T14:36:36Z",
   "virtuell": 6,
   "neu": 0,
   "gestoppt": true
@@ -21582,6 +21587,7 @@
   "Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump": 1794256294.3129926,
   "METAewgxyPbgwsseH8T16a39CQ5VyVxZi9zXiDPY18m": 1794276094.170885,
   "9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump": 1794325879.5892947,
-  "CzLSujWBLFsSjncfkh59rUFqvafWcY5tzedWJSuypump": 1794489388.754706
+  "CzLSujWBLFsSjncfkh59rUFqvafWcY5tzedWJSuypump": 1794489388.754706,
+  "6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump": 1794494196.3415635
  }
 }
