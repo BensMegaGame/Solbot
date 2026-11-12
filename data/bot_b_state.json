@@ -1,6 +1,18 @@
 {
- "cash": 337.63088438169615,
- "positions": {},
+ "cash": 236.32161906718733,
+ "positions": {
+  "Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr": {
+   "sym": "FLOAT",
+   "qty": 28649.909161,
+   "cost": 101.30926531450883,
+   "opened": "2026-11-12T00:11:30Z",
+   "peak": 0.003601,
+   "entry": 0.0035361112227335497,
+   "pair": "FJk9sajdc2Q4heRPPu3yLzkmf2ZByZkpiHQLv9e2bn5A",
+   "cur_price": 0.003601,
+   "mark": 0.003601
+  }
+ },
  "trades": [
   {
    "t": "2026-10-09T07:16:29Z",
@@ -685,13 +697,21 @@
    "slip": 0.0057,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-11-12T00:11:30Z",
+   "side": "buy",
+   "sym": "FLOAT",
+   "addr": "Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr",
+   "price": 0.003601,
+   "fill": 0.003536111223,
+   "usd": 101.31,
+   "slip": 0.0066,
+   "quote": "jup",
+   "reason": "tiefer dip 24h -59% (SOL -0%) 1h +0.0%"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-25T15:31:26Z",
-   "v": 393.04
-  },
   {
    "t": "2026-10-25T15:36:26Z",
    "v": 393.25
@@ -20687,18 +20707,22 @@
   {
    "t": "2026-11-12T00:06:28Z",
    "v": 337.63
+  },
+  {
+   "t": "2026-11-12T00:11:30Z",
+   "v": 339.49
   }
  ],
  "started": "2026-10-08T16:06:06Z",
  "version": "b4",
  "strategy": "tiefer_dip",
  "coverage": {
-  "t": "2026-11-12T00:06:28Z",
+  "t": "2026-11-12T00:11:30Z",
   "kurse": 180,
   "von": 199,
   "sol": true,
-  "sol24": 0.1,
-  "kandidaten": 0,
+  "sol24": -0.1,
+  "kandidaten": 1,
   "gestoppt": false
  },
  "verkauft_am": {
