@@ -13387,6 +13387,10 @@
   {
    "t": "2026-11-12T15:41:22Z",
    "v": 558.94
+  },
+  {
+   "t": "2026-11-12T15:46:19Z",
+   "v": 558.94
   }
  ],
  "started": "2026-11-03T09:11:31Z",
@@ -13407,21 +13411,19 @@
   }
  },
  "coverage": {
-  "t": "2026-11-12T15:41:22Z",
+  "t": "2026-11-12T15:46:19Z",
   "kandidaten": 42,
   "pfade": 313,
-  "kurse": 99,
-  "von": 149,
-  "fruehkaeufer_neu": 1,
+  "kurse": 101,
+  "von": 146,
+  "fruehkaeufer_neu": 0,
   "fruehkaeufer_fehler": 0,
-  "weg": {
-   "codex": 1
-  },
+  "weg": {},
   "coins_mit_fruehkaeufern": 1260,
   "coins_ausgewertet": 1133,
   "credits_heute": 4147,
   "codex_heute": 70,
-  "spaet_neu": 1,
+  "spaet_neu": 0,
   "coins_mit_spaeten": 1082,
   "spaet_fehler": null,
   "codex_ohne_filter": false,
@@ -13434,11 +13436,11 @@
    "copy": 0,
    "kandidaten": 0,
    "kurse": 7,
-   "fruehkaeufer": 8,
-   "spaete_kaeufer": 9,
-   "jupiter": 9,
-   "stufe2": 9,
-   "gesamt": 10
+   "fruehkaeufer": 7,
+   "spaete_kaeufer": 7,
+   "jupiter": 7,
+   "stufe2": 7,
+   "gesamt": 8
   },
   "warteschlange": 553,
   "copy_credits_heute": 12,
