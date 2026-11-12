@@ -1,17 +1,6 @@
 {
- "cash": 55.26975294111214,
+ "cash": 88.09867794111213,
  "positions": {
-  "GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump": {
-   "sym": "WASTED",
-   "qty": 30144.2737585,
-   "cost": 25.01,
-   "opened": "2026-11-04T13:30:23Z",
-   "peak": 0.001699,
-   "entry": 0.0008296766477231103,
-   "cur_price": 0.001118,
-   "mark": 0.001118,
-   "tp0": true
-  },
   "BWJfBNeXpapG7uoqByp5KSwWgCQba8QcDmA2DQiEpump": {
    "sym": "Leonida",
    "qty": 143148.244978,
@@ -19,8 +8,8 @@
    "opened": "2026-11-10T12:55:43Z",
    "peak": 0.0004651,
    "entry": 0.0003494279654472007,
-   "cur_price": 0.0003068,
-   "mark": 0.0003068
+   "cur_price": 0.0002973,
+   "mark": 0.0002973
   },
   "34DXEU2ttEtBSb1TqGJm7izgvYTTkqKcCoiNWdPDpump": {
    "sym": "BIG",
@@ -29,8 +18,8 @@
    "opened": "2026-11-11T02:01:04Z",
    "peak": 0.00126,
    "entry": 0.0010569695339238893,
-   "cur_price": 0.0008841,
-   "mark": 0.0008841
+   "cur_price": 0.000879,
+   "mark": 0.000879
   },
   "Eyo1o3QYKQwdvP6UtK9dQLTZj2BBtoJdN4tMWB2Dpump": {
    "sym": "GOODTIME",
@@ -39,8 +28,8 @@
    "opened": "2026-11-11T22:40:11Z",
    "peak": 0.0001625,
    "entry": 0.00016423089602957708,
-   "cur_price": 0.0001323,
-   "mark": 0.0001323
+   "cur_price": 0.0001335,
+   "mark": 0.0001335
   },
   "4xgqefa5WcdHWKXzqvM9MRJqWYGaHVEUnpUL4Vq5pump": {
    "sym": "HUNG",
@@ -49,8 +38,8 @@
    "opened": "2026-11-12T00:05:25Z",
    "peak": 0.0008941,
    "entry": 0.00088487724767315,
-   "cur_price": 0.000634,
-   "mark": 0.000634
+   "cur_price": 0.0006064,
+   "mark": 0.0006064
   }
  },
  "trades": [
@@ -4551,13 +4540,24 @@
    "slip": 0.0066,
    "quote": "jup",
    "reason": "screener"
+  },
+  {
+   "t": "2026-11-12T01:50:01Z",
+   "side": "sell",
+   "sym": "WASTED",
+   "addr": "GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump",
+   "price": 0.001094,
+   "usd": 32.83,
+   "pnl": 7.82,
+   "peak_x": 2.048,
+   "held_h": 180.3,
+   "frac": 1.0,
+   "slip": 0.0047,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-25T17:11:20Z",
-   "v": 174.4
-  },
   {
    "t": "2026-10-25T17:16:19Z",
    "v": 172.45
@@ -24553,6 +24553,10 @@
   {
    "t": "2026-11-12T01:46:15Z",
    "v": 250.86
+  },
+  {
+   "t": "2026-11-12T01:51:13Z",
+   "v": 247.19
   }
  ],
  "started": "2026-09-10T17:17:16Z",
@@ -24564,6 +24568,7 @@
   "TiMSdJrkVwUpeEWJpuqRvHt4wVS7uH77LbNPGGVJXNw": 1794359403.1367462,
   "HoqJaoes6yfL8YEsHGfENwVKT7LrAPy97ZDg9hmBu4Ep": 1794366904.0805845,
   "CXz596uKfWb5tkyz5Vh5a9QCKKh38io6hdgGrKKcpump": 1794405604.8976314,
-  "F2xQeTCTqnczXxXQaBWAfDpUnpxn4wQHRPSqvUYJpump": 1794424505.7583208
+  "F2xQeTCTqnczXxXQaBWAfDpUnpxn4wQHRPSqvUYJpump": 1794424505.7583208,
+  "GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump": 1794448201.8363564
  }
 }
