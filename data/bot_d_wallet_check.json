@@ -16393,48 +16393,6 @@
   "status": "sim",
   "offen_sim": [
    {
-    "mint": "H32V2sgbpShrvnoGiNBXaqnyFcLPr1j4xow1xPxupump",
-    "t_kauf": 1794509703,
-    "t_verkauf": 1794510031,
-    "sol_in": 0.8018,
-    "eigen": -0.7693
-   },
-   {
-    "mint": "13TJjqxc8RXtfphNEit7D1kLcLqRakiAt1LPybWffork",
-    "t_kauf": 1794510510,
-    "t_verkauf": 1794510568,
-    "sol_in": 0.8025,
-    "eigen": -0.5187
-   },
-   {
-    "mint": "811efsMFKMscUpwqCoU8t4Y2xjwFBEkecpRY56qRpump",
-    "t_kauf": 1794511033,
-    "t_verkauf": 1794511047,
-    "sol_in": 0.8018,
-    "eigen": -0.8473
-   },
-   {
-    "mint": "FhAWL4NEC4fDoCJXnKb3ymog3EV3pGXjVtXkrkkSpump",
-    "t_kauf": 1794512078,
-    "t_verkauf": 1794512089,
-    "sol_in": 0.8018,
-    "eigen": -0.8225
-   },
-   {
-    "mint": "H9Jcdm1rabFVCnCZHWaiX1cpBQdvDz6MFoNfNwWbpump",
-    "t_kauf": 1794512766,
-    "t_verkauf": 1794512991,
-    "sol_in": 0.8018,
-    "eigen": -0.5459
-   },
-   {
-    "mint": "ECs6n795WEpSf5yDrw9ejsPKArxbouBiVYw5nxtRpump",
-    "t_kauf": 1794512956,
-    "t_verkauf": 1794513120,
-    "sol_in": 0.802,
-    "eigen": -0.5256
-   },
-   {
     "mint": "EBreGKiKWYuaY54KsDJGKCTNuT2tSnYuU7MDPrDupump",
     "t_kauf": 1794515019,
     "t_verkauf": 1794515919,
@@ -16563,6 +16521,30 @@
    [
     1794509499,
     -0.0778
+   ],
+   [
+    1794509703,
+    -0.531
+   ],
+   [
+    1794510510,
+    -0.1005
+   ],
+   [
+    1794511033,
+    -0.031
+   ],
+   [
+    1794512078,
+    -0.031
+   ],
+   [
+    1794512766,
+    -0.2383
+   ],
+   [
+    1794512956,
+    -0.531
    ]
   ],
   "details": [
@@ -16730,6 +16712,96 @@
     "luecke_rein_s": -39,
     "luecke_raus_s": 39,
     "kerzen": 40
+   },
+   {
+    "mint": "H32V2sgbpShrvnoGiNBXaqnyFcLPr1j4xow1xPxupump",
+    "t_kauf": 1794509703,
+    "t_verkauf": 1794510031,
+    "sol_in": 0.8018,
+    "eigen": -0.7693,
+    "quelle": "gt",
+    "kopie": -0.531,
+    "entry": 2.3949720140864822e-05,
+    "exit": 1.1974860070432411e-05,
+    "grund": "stop",
+    "luecke_rein_s": -3,
+    "luecke_raus_s": 0,
+    "kerzen": 75
+   },
+   {
+    "mint": "13TJjqxc8RXtfphNEit7D1kLcLqRakiAt1LPybWffork",
+    "t_kauf": 1794510510,
+    "t_verkauf": 1794510568,
+    "sol_in": 0.8025,
+    "eigen": -0.5187,
+    "quelle": "gt",
+    "kopie": -0.1005,
+    "entry": 3.7572492775926183e-06,
+    "exit": 3.495945589898409e-06,
+    "grund": "nach_verkauf",
+    "luecke_rein_s": -30,
+    "luecke_raus_s": 28,
+    "kerzen": 12
+   },
+   {
+    "mint": "811efsMFKMscUpwqCoU8t4Y2xjwFBEkecpRY56qRpump",
+    "t_kauf": 1794511033,
+    "t_verkauf": 1794511047,
+    "sol_in": 0.8018,
+    "eigen": -0.8473,
+    "quelle": "gt",
+    "kopie": -0.031,
+    "entry": 3.117361748806616e-06,
+    "exit": 3.117361748806616e-06,
+    "grund": "nach_verkauf",
+    "luecke_rein_s": -13,
+    "luecke_raus_s": 27,
+    "kerzen": 5
+   },
+   {
+    "mint": "FhAWL4NEC4fDoCJXnKb3ymog3EV3pGXjVtXkrkkSpump",
+    "t_kauf": 1794512078,
+    "t_verkauf": 1794512089,
+    "sol_in": 0.8018,
+    "eigen": -0.8225,
+    "quelle": "gt",
+    "kopie": -0.031,
+    "entry": 2.856590404632034e-06,
+    "exit": 2.856590404632034e-06,
+    "grund": "nach_verkauf",
+    "luecke_rein_s": -38,
+    "luecke_raus_s": 49,
+    "kerzen": 6
+   },
+   {
+    "mint": "H9Jcdm1rabFVCnCZHWaiX1cpBQdvDz6MFoNfNwWbpump",
+    "t_kauf": 1794512766,
+    "t_verkauf": 1794512991,
+    "sol_in": 0.8018,
+    "eigen": -0.5459,
+    "quelle": "gt",
+    "kopie": -0.2383,
+    "entry": 2.108872028244687e-05,
+    "exit": 1.6717621216466132e-05,
+    "grund": "nach_verkauf",
+    "luecke_rein_s": -6,
+    "luecke_raus_s": 51,
+    "kerzen": 19
+   },
+   {
+    "mint": "ECs6n795WEpSf5yDrw9ejsPKArxbouBiVYw5nxtRpump",
+    "t_kauf": 1794512956,
+    "t_verkauf": 1794513120,
+    "sol_in": 0.802,
+    "eigen": -0.5256,
+    "quelle": "gt",
+    "kopie": -0.531,
+    "entry": 1.6940026257843864e-05,
+    "exit": 8.470013128921932e-06,
+    "grund": "stop",
+    "luecke_rein_s": -16,
+    "luecke_raus_s": 0,
+    "kerzen": 29
    }
   ],
   "ohne_kurs": 1,
