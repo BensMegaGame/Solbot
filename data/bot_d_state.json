@@ -20,14 +20,14 @@
    "qty": 2048858.654538,
    "cost": 50.02,
    "opened": "2026-11-13T14:41:11Z",
-   "peak": 4.641e-05,
+   "peak": 4.892e-05,
    "entry": 2.441359236236776e-05,
    "quelle": "DuCHeSSQMT8psckL2Rqm6GkvJkL5F4zV9HZAi4oeKVfv",
    "quelle_name": "Wallet A",
    "t_wallet": 1794580656,
    "wallet_sol": 0.8096,
-   "cur_price": 4.641e-05,
-   "mark": 4.641e-05
+   "cur_price": 4.892e-05,
+   "mark": 4.892e-05
   }
  },
  "trades": [
@@ -14984,6 +14984,10 @@
   {
    "t": "2026-11-13T14:51:25Z",
    "v": 599.8
+  },
+  {
+   "t": "2026-11-13T14:56:24Z",
+   "v": 604.94
   }
  ],
  "started": "2026-11-03T09:11:31Z",
@@ -15002,23 +15006,23 @@
     "kaeufe_gesehen": 63
    },
    "DuCHeSSQMT8psckL2Rqm6GkvJkL5F4zV9HZAi4oeKVfv": {
-    "bis_sig": "5K6bVfsXkB5ZRx3CTj8vz7G6A9pjNBoaMT7WkgD5p7kTFKSApm7YHLa7LUf3fyhqttBKqmibMiryPEJCm4D7t8eC",
+    "bis_sig": "hh2UR5j45MnDat5CzvR6UwTUR2LAHVgYMx25DAqL2c13uQUQgGTbNpRHieMfaiUv3UWTxPzKsKbiiWkkkuvWKc2",
     "kaeufe_gesehen": 29
    }
   }
  },
  "coverage": {
-  "t": "2026-11-13T14:51:25Z",
+  "t": "2026-11-13T14:56:24Z",
   "kandidaten": 32,
-  "pfade": 295,
-  "kurse": 106,
-  "von": 146,
+  "pfade": 293,
+  "kurse": 108,
+  "von": 155,
   "fruehkaeufer_neu": 0,
   "fruehkaeufer_fehler": 0,
   "weg": {},
   "coins_mit_fruehkaeufern": 1283,
   "coins_ausgewertet": 1155,
-  "credits_heute": 4401,
+  "credits_heute": 4403,
   "codex_heute": 54,
   "spaet_neu": 0,
   "coins_mit_spaeten": 1104,
@@ -15032,15 +15036,15 @@
   "laufzeit_s": {
    "copy": 1,
    "kandidaten": 1,
-   "kurse": 8,
-   "fruehkaeufer": 8,
-   "spaete_kaeufer": 8,
-   "jupiter": 8,
-   "stufe2": 8,
-   "gesamt": 9
+   "kurse": 9,
+   "fruehkaeufer": 9,
+   "spaete_kaeufer": 9,
+   "jupiter": 9,
+   "stufe2": 9,
+   "gesamt": 10
   },
   "warteschlange": 566,
-  "copy_credits_heute": 238,
+  "copy_credits_heute": 240,
   "copy_wallets": [
    "Wallet A"
   ]
