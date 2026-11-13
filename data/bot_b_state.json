@@ -1,18 +1,6 @@
 {
- "cash": 232.09085384703113,
- "positions": {
-  "DKYcjobF7HPtL9RyQBRdeRQ2iWvizpfbgWwPWNXdpump": {
-   "sym": "DacityCoin",
-   "qty": 22967.890483,
-   "cost": 99.49608022015619,
-   "opened": "2026-11-12T23:06:21Z",
-   "peak": 0.004927,
-   "entry": 0.0043319642391102305,
-   "pair": "7Te1wXcfeQjKLGHXFvxSCnGZTqunoZ9fxBn7KKjrkNEr",
-   "cur_price": 0.004642,
-   "mark": 0.004642
-  }
- },
+ "cash": 334.3376098470311,
+ "positions": {},
  "trades": [
   {
    "t": "2026-10-09T07:16:29Z",
@@ -736,13 +724,24 @@
    "slip": 0.0003,
    "quote": "jup",
    "reason": "tiefer dip 24h -34% (SOL -2%) 1h +4.0%"
+  },
+  {
+   "t": "2026-11-13T01:36:18Z",
+   "side": "sell",
+   "sym": "DacityCoin",
+   "addr": "DKYcjobF7HPtL9RyQBRdeRQ2iWvizpfbgWwPWNXdpump",
+   "price": 0.004456,
+   "usd": 102.25,
+   "pnl": 2.75,
+   "peak_x": 1.137,
+   "held_h": 2.5,
+   "frac": 1.0,
+   "slip": 0.0032,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-26T16:56:19Z",
-   "v": 384.61
-  },
   {
    "t": "2026-10-26T17:01:20Z",
    "v": 384.61
@@ -20738,22 +20737,27 @@
   {
    "t": "2026-11-13T01:31:21Z",
    "v": 338.71
+  },
+  {
+   "t": "2026-11-13T01:36:18Z",
+   "v": 334.34
   }
  ],
  "started": "2026-10-08T16:06:06Z",
  "version": "b4",
  "strategy": "tiefer_dip",
  "coverage": {
-  "t": "2026-11-13T01:31:21Z",
+  "t": "2026-11-13T01:36:18Z",
   "kurse": 179,
   "von": 192,
   "sol": true,
-  "sol24": -1.9,
+  "sol24": -2.2,
   "kandidaten": 0,
   "gestoppt": false
  },
  "verkauft_am": {
   "npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump": 1794279963.7984533,
-  "Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr": 1794447984.684031
+  "Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr": 1794447984.684031,
+  "DKYcjobF7HPtL9RyQBRdeRQ2iWvizpfbgWwPWNXdpump": 1794533778.1038604
  }
 }

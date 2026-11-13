@@ -1,6 +1,21 @@
 {
- "cash": 572.4215330000014,
- "positions": {},
+ "cash": 522.4015330000015,
+ "positions": {
+  "MRPVcV8efFFGJNvdMYUpWWDb9DXgzeJePJ7smujpump": {
+   "sym": "MEGASPEED",
+   "qty": 1782757.022001,
+   "cost": 50.02,
+   "opened": "2026-11-13T01:36:30Z",
+   "peak": 2.673e-05,
+   "entry": 2.8057665392817592e-05,
+   "quelle": "DuCHeSSQMT8psckL2Rqm6GkvJkL5F4zV9HZAi4oeKVfv",
+   "quelle_name": "Wallet A",
+   "t_wallet": 1794533702,
+   "wallet_sol": 0.8018,
+   "cur_price": 2.673e-05,
+   "mark": 2.673e-05
+  }
+ },
  "trades": [
   {
    "t": "2026-11-04T01:31:33Z",
@@ -2728,6 +2743,18 @@
    "slip": 0.0268,
    "quote": "jup",
    "reason": "wallet verkauft (+249 s)"
+  },
+  {
+   "t": "2026-11-13T01:36:30Z",
+   "side": "buy",
+   "sym": "MEGASPEED",
+   "addr": "MRPVcV8efFFGJNvdMYUpWWDb9DXgzeJePJ7smujpump",
+   "price": 2.673e-05,
+   "fill": 2.8057665e-05,
+   "usd": 50.02,
+   "slip": 0.0179,
+   "quote": "jup",
+   "reason": "kopie Wallet A (+88 s)"
   }
  ],
  "equity": [
@@ -13886,6 +13913,10 @@
   {
    "t": "2026-11-13T01:31:40Z",
    "v": 572.42
+  },
+  {
+   "t": "2026-11-13T01:36:39Z",
+   "v": 570.05
   }
  ],
  "started": "2026-11-03T09:11:31Z",
@@ -13904,23 +13935,23 @@
     "kaeufe_gesehen": 63
    },
    "DuCHeSSQMT8psckL2Rqm6GkvJkL5F4zV9HZAi4oeKVfv": {
-    "bis_sig": "5pydAJx5TWXCeGBgdQk3wMW2P8xk7DzwSWfERJSm1y1PUkdPtxH3YthKBj1DqC5ErA639RGVsy4gLjkvXUj49v1f",
-    "kaeufe_gesehen": 1
+    "bis_sig": "5EfzZorEA4oLTzGGQiPXAbgR2Q6xtVM2mjqcAAXFrYGVzyVz1B1PtHox43pzjRYuqYn9YJqXoJaRovGb3ub2NcoR",
+    "kaeufe_gesehen": 2
    }
   }
  },
  "coverage": {
-  "t": "2026-11-13T01:31:40Z",
+  "t": "2026-11-13T01:36:39Z",
   "kandidaten": 30,
   "pfade": 302,
-  "kurse": 107,
-  "von": 146,
+  "kurse": 114,
+  "von": 156,
   "fruehkaeufer_neu": 0,
   "fruehkaeufer_fehler": 0,
   "weg": {},
   "coins_mit_fruehkaeufern": 1268,
   "coins_ausgewertet": 1139,
-  "credits_heute": 4019,
+  "credits_heute": 4021,
   "codex_heute": 5,
   "spaet_neu": 0,
   "coins_mit_spaeten": 1089,
@@ -13934,15 +13965,15 @@
   "laufzeit_s": {
    "copy": 1,
    "kandidaten": 1,
-   "kurse": 8,
-   "fruehkaeufer": 8,
-   "spaete_kaeufer": 8,
-   "jupiter": 8,
-   "stufe2": 8,
-   "gesamt": 9
+   "kurse": 9,
+   "fruehkaeufer": 9,
+   "spaete_kaeufer": 9,
+   "jupiter": 9,
+   "stufe2": 9,
+   "gesamt": 10
   },
   "warteschlange": 566,
-  "copy_credits_heute": 11,
+  "copy_credits_heute": 13,
   "copy_wallets": [
    "Wallet A"
   ]
