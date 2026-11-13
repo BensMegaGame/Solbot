@@ -26,8 +26,8 @@
    "quelle_name": "Wallet A",
    "t_wallet": 1794571513,
    "wallet_sol": 0.8023,
-   "cur_price": 2.074e-05,
-   "mark": 2.074e-05
+   "cur_price": 2.383e-06,
+   "mark": 2.383e-06
   }
  },
  "trades": [
@@ -14798,6 +14798,10 @@
   {
    "t": "2026-11-13T12:06:28Z",
    "v": 607.75
+  },
+  {
+   "t": "2026-11-13T12:11:24Z",
+   "v": 567.22
   }
  ],
  "started": "2026-11-03T09:11:31Z",
@@ -14816,23 +14820,23 @@
     "kaeufe_gesehen": 63
    },
    "DuCHeSSQMT8psckL2Rqm6GkvJkL5F4zV9HZAi4oeKVfv": {
-    "bis_sig": "2RfdEieQtxVPWyrzpuVTpdx7Pqig21MvmtwdHvej4w32shmK9xuap7VTgTJPGxjhWx2ZhR7Lc828KLoWa3GTS4HR",
+    "bis_sig": "3Ddh6HcCQBHGShnsjRzTgrzVBzG7Ydzu4R2c3WvcU5qaUqdTLL1yPK6ac7EjULhTvSutBzKq1npR2fhyF6gZxBZZ",
     "kaeufe_gesehen": 26
    }
   }
  },
  "coverage": {
-  "t": "2026-11-13T12:06:28Z",
+  "t": "2026-11-13T12:11:24Z",
   "kandidaten": 31,
   "pfade": 298,
-  "kurse": 111,
-  "von": 154,
+  "kurse": 98,
+  "von": 142,
   "fruehkaeufer_neu": 0,
   "fruehkaeufer_fehler": 0,
   "weg": {},
   "coins_mit_fruehkaeufern": 1279,
   "coins_ausgewertet": 1152,
-  "credits_heute": 4361,
+  "credits_heute": 4363,
   "codex_heute": 42,
   "spaet_neu": 0,
   "coins_mit_spaeten": 1100,
@@ -14846,15 +14850,15 @@
   "laufzeit_s": {
    "copy": 1,
    "kandidaten": 1,
-   "kurse": 9,
-   "fruehkaeufer": 9,
-   "spaete_kaeufer": 9,
-   "jupiter": 9,
-   "stufe2": 9,
-   "gesamt": 11
+   "kurse": 8,
+   "fruehkaeufer": 8,
+   "spaete_kaeufer": 8,
+   "jupiter": 8,
+   "stufe2": 8,
+   "gesamt": 9
   },
   "warteschlange": 566,
-  "copy_credits_heute": 198,
+  "copy_credits_heute": 200,
   "copy_wallets": [
    "Wallet A"
   ]
