@@ -1,6 +1,17 @@
 {
- "cash": 506.8218800136455,
- "positions": {},
+ "cash": 278.73203400750504,
+ "positions": {
+  "CLoUDKc4Ane7HeQcPpE3YHnznRxhMimJ4MyaUqyHFzAu": {
+   "sym": "CLOUD",
+   "qty": 2962.277006759,
+   "cost": 228.0898460061405,
+   "opened": "2026-11-14T04:56:55Z",
+   "peak": 0.07693,
+   "entry": 0.07699814888537096,
+   "no_quote_since": "2026-11-14T04:56:55Z",
+   "mark": 0.0
+  }
+ },
  "trades": [
   {
    "t": "2026-09-16T17:20:59Z",
@@ -1618,13 +1629,21 @@
    "slip": 0.0063,
    "quote": "jup",
    "reason": "trail"
+  },
+  {
+   "t": "2026-11-14T04:56:55Z",
+   "side": "buy",
+   "sym": "CLOUD",
+   "addr": "CLoUDKc4Ane7HeQcPpE3YHnznRxhMimJ4MyaUqyHFzAu",
+   "price": 0.07693,
+   "fill": 0.076998148885,
+   "usd": 228.09,
+   "slip": 0.0008,
+   "quote": "jup",
+   "reason": "dip 24h -28% (SOL -4%) 1h +0.8%"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-27T20:16:45Z",
-   "v": 424.42
-  },
   {
    "t": "2026-10-27T20:21:46Z",
    "v": 424.22
@@ -21620,13 +21639,17 @@
   {
    "t": "2026-11-14T04:51:50Z",
    "v": 506.82
+  },
+  {
+   "t": "2026-11-14T04:56:55Z",
+   "v": 278.73
   }
  ],
  "started": "2026-09-16T16:55:59Z",
  "strategy": "largecap_dip",
  "universe_n": 56,
  "coverage": {
-  "t": "2026-11-14T04:51:50Z",
+  "t": "2026-11-14T04:56:55Z",
   "kurse": 56,
   "von": 56,
   "sol": true
