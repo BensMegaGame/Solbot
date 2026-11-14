@@ -1,17 +1,6 @@
 {
- "cash": 51.75625394111212,
+ "cash": 90.71750294111212,
  "positions": {
-  "BWJfBNeXpapG7uoqByp5KSwWgCQba8QcDmA2DQiEpump": {
-   "sym": "Leonida",
-   "qty": 71574.122489,
-   "cost": 25.01,
-   "opened": "2026-11-10T12:55:43Z",
-   "peak": 0.0008619,
-   "entry": 0.0003494279654472007,
-   "cur_price": 0.0005744,
-   "mark": 0.0005744,
-   "tp0": true
-  },
   "34DXEU2ttEtBSb1TqGJm7izgvYTTkqKcCoiNWdPDpump": {
    "sym": "BIG",
    "qty": 47323.97519,
@@ -19,8 +8,8 @@
    "opened": "2026-11-11T02:01:04Z",
    "peak": 0.00151,
    "entry": 0.0010569695339238893,
-   "cur_price": 0.001215,
-   "mark": 0.001215
+   "cur_price": 0.001192,
+   "mark": 0.001192
   },
   "8Mi9E1V2bdPeAaRkR5yxUsAvpzP6UBUEEUrYmgKNpump": {
    "sym": "WEALTH",
@@ -39,8 +28,8 @@
    "opened": "2026-11-13T14:05:51Z",
    "peak": 0.004234,
    "entry": 0.0013647603246988872,
-   "cur_price": 0.003555,
-   "mark": 0.003555,
+   "cur_price": 0.003635,
+   "mark": 0.003635,
    "tp0": true
   },
   "6mXFCoZ515w37YfmwXGJMPfQfiK5tr9WkihW3oN9pump": {
@@ -50,8 +39,8 @@
    "opened": "2026-11-13T14:50:40Z",
    "peak": 0.0003313,
    "entry": 0.0002544575954300492,
-   "cur_price": 0.0002303,
-   "mark": 0.0002303
+   "cur_price": 0.0002289,
+   "mark": 0.0002289
   }
  },
  "trades": [
@@ -4690,13 +4679,24 @@
    "slip": 0.0175,
    "quote": "jup",
    "reason": "tp0"
+  },
+  {
+   "t": "2026-11-14T11:10:02Z",
+   "side": "sell",
+   "sym": "Leonida",
+   "addr": "BWJfBNeXpapG7uoqByp5KSwWgCQba8QcDmA2DQiEpump",
+   "price": 0.0005481,
+   "usd": 38.96,
+   "pnl": 13.95,
+   "peak_x": 2.467,
+   "held_h": 94.2,
+   "frac": 1.0,
+   "slip": 0.0021,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-28T02:31:06Z",
-   "v": 164.8
-  },
   {
    "t": "2026-10-28T02:36:06Z",
    "v": 165.13
@@ -24692,6 +24692,10 @@
   {
    "t": "2026-11-14T11:06:17Z",
    "v": 299.98
+  },
+  {
+   "t": "2026-11-14T11:11:18Z",
+   "v": 297.93
   }
  ],
  "started": "2026-09-10T17:17:16Z",
@@ -24705,6 +24709,7 @@
   "GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump": 1794448201.8363564,
   "4xgqefa5WcdHWKXzqvM9MRJqWYGaHVEUnpUL4Vq5pump": 1794451206.4806938,
   "8AAVuQpJcqpvCuutxyBTVvgBEXZJSkZoNv1sExpBpump": 1794544206.9212015,
-  "Eyo1o3QYKQwdvP6UtK9dQLTZj2BBtoJdN4tMWB2Dpump": 1794545704.8716352
+  "Eyo1o3QYKQwdvP6UtK9dQLTZj2BBtoJdN4tMWB2Dpump": 1794545704.8716352,
+  "BWJfBNeXpapG7uoqByp5KSwWgCQba8QcDmA2DQiEpump": 1794654602.3319535
  }
 }
