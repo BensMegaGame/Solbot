@@ -1,6 +1,21 @@
 {
- "cash": 256.45839000000166,
- "positions": {},
+ "cash": 206.43839000000165,
+ "positions": {
+  "2qr9W18YzHnub5zuiAx3TsNw8BJfTuUnaYRG1Cc6pump": {
+   "sym": "billie",
+   "qty": 1186326.129648,
+   "cost": 50.02,
+   "opened": "2026-11-14T18:46:23Z",
+   "peak": 4.437e-05,
+   "entry": 4.216378510927822e-05,
+   "quelle": "BHcs5QcWduEjf3Gft2siVmGi16bL7QuaZw1qX7sxNk4S",
+   "quelle_name": "Wallet A",
+   "t_wallet": 1794681838,
+   "wallet_sol": 0.3015,
+   "cur_price": 4.437e-05,
+   "mark": 4.437e-05
+  }
+ },
  "trades": [
   {
    "t": "2026-11-04T01:31:33Z",
@@ -3970,6 +3985,18 @@
    "slip": 0.0118,
    "quote": "jup",
    "reason": "wallet verkauft (+121 s)"
+  },
+  {
+   "t": "2026-11-14T18:46:23Z",
+   "side": "buy",
+   "sym": "billie",
+   "addr": "2qr9W18YzHnub5zuiAx3TsNw8BJfTuUnaYRG1Cc6pump",
+   "price": 4.437e-05,
+   "fill": 4.2163785e-05,
+   "usd": 50.02,
+   "slip": 0.0126,
+   "quote": "jup",
+   "reason": "kopie Wallet A (+145 s)"
   }
  ],
  "equity": [
@@ -17104,6 +17131,10 @@
   {
    "t": "2026-11-14T18:41:29Z",
    "v": 256.46
+  },
+  {
+   "t": "2026-11-14T18:46:31Z",
+   "v": 259.08
   }
  ],
  "started": "2026-11-03T09:11:31Z",
@@ -17126,23 +17157,23 @@
     "kaeufe_gesehen": 75
    },
    "BHcs5QcWduEjf3Gft2siVmGi16bL7QuaZw1qX7sxNk4S": {
-    "bis_sig": "4fyLwBRGDVFdsF7aBqLi17impsjXT4D73eWszSk4cGHHnj32hKSFQNmocMG6NAPUsbGpkfEqiyvZeHFJ2LvGxKCW",
-    "kaeufe_gesehen": 12
+    "bis_sig": "kqULddVkpwsxvc2oiZmoYzvsMiUU291ekPA2JCr1twwhuBT4DwUTK8C9epwNU2Npcz7Fyq8TLCFbP6Lqo2rj5pS",
+    "kaeufe_gesehen": 13
    }
   }
  },
  "coverage": {
-  "t": "2026-11-14T18:41:29Z",
+  "t": "2026-11-14T18:46:31Z",
   "kandidaten": 30,
   "pfade": 288,
-  "kurse": 99,
-  "von": 140,
+  "kurse": 87,
+  "von": 128,
   "fruehkaeufer_neu": 0,
   "fruehkaeufer_fehler": 0,
   "weg": {},
   "coins_mit_fruehkaeufern": 1317,
-  "coins_ausgewertet": 1191,
-  "credits_heute": 4499,
+  "coins_ausgewertet": 1192,
+  "credits_heute": 4501,
   "codex_heute": 116,
   "spaet_neu": 0,
   "coins_mit_spaeten": 1135,
@@ -17164,7 +17195,7 @@
    "gesamt": 9
   },
   "warteschlange": 597,
-  "copy_credits_heute": 439,
+  "copy_credits_heute": 441,
   "copy_wallets": [
    "Wallet A"
   ]
