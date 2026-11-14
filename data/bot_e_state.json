@@ -1,17 +1,6 @@
 {
- "cash": 273.1575480136455,
- "positions": {
-  "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump": {
-   "sym": "mihao",
-   "qty": 15203.764152,
-   "cost": 223.52890292025543,
-   "opened": "2026-11-14T01:13:32Z",
-   "peak": 0.01671,
-   "entry": 0.014702207998329875,
-   "mark": 0.01632,
-   "cur_price": 0.01632
-  }
- },
+ "cash": 506.8218800136455,
+ "positions": {},
  "trades": [
   {
    "t": "2026-09-16T17:20:59Z",
@@ -1614,13 +1603,24 @@
    "slip": 0.0001,
    "quote": "jup",
    "reason": "dip 24h -12% (SOL -5%) 1h -0.7%"
+  },
+  {
+   "t": "2026-11-14T03:41:52Z",
+   "side": "sell",
+   "sym": "mihao",
+   "addr": "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump",
+   "price": 0.01544,
+   "usd": 233.66,
+   "pnl": 10.14,
+   "peak_x": 1.137,
+   "held_h": 2.5,
+   "frac": 1.0,
+   "slip": 0.0063,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-27T19:01:53Z",
-   "v": 426.48
-  },
   {
    "t": "2026-10-27T19:06:49Z",
    "v": 426.52
@@ -21616,19 +21616,24 @@
   {
    "t": "2026-11-14T03:36:53Z",
    "v": 521.28
+  },
+  {
+   "t": "2026-11-14T03:41:52Z",
+   "v": 506.82
   }
  ],
  "started": "2026-09-16T16:55:59Z",
  "strategy": "largecap_dip",
  "universe_n": 56,
  "coverage": {
-  "t": "2026-11-14T03:36:53Z",
+  "t": "2026-11-14T03:41:52Z",
   "kurse": 56,
   "von": 56,
   "sol": true
  },
  "verkauft_am": {
   "XsueG8BtpquVJX9LVLLEGuViXUungE6WmK5YZ3p3bd1": 1794509196.0332766,
-  "XsDoVfqeBukxuZHWhdvWHBhgEHjGNst4MLodqsJHzoB": 1794514296.75722
+  "XsDoVfqeBukxuZHWhdvWHBhgEHjGNst4MLodqsJHzoB": 1794514296.75722,
+  "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump": 1794627712.0399876
  }
 }
