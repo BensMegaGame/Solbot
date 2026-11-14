@@ -1,16 +1,6 @@
 {
- "cash": 95.5041418831594,
+ "cash": 194.2276748831594,
  "positions": {
-  "74SBV4zDXxTRgv1pEMoECskKBkZHc2yGPnc7GYVepump": {
-   "sym": "SWARMS",
-   "qty": 15236.321935,
-   "cost": 97.29419928855239,
-   "opened": "2026-11-08T23:16:17Z",
-   "peak": 0.006903,
-   "entry": 0.006385674948561816,
-   "cur_price": 0.006557,
-   "mark": 0.006557
-  },
   "GJAFwWjJ3vnTsrQVabjBVK2TYB1YtRCQXRDfDgUnpump": {
    "sym": "ACT",
    "qty": 10194.567933,
@@ -18,8 +8,8 @@
    "opened": "2026-11-11T08:26:27Z",
    "peak": 0.009443,
    "entry": 0.009313114775008919,
-   "cur_price": 0.008814,
-   "mark": 0.008814
+   "cur_price": 0.008816,
+   "mark": 0.008816
   }
  },
  "trades": [
@@ -2077,13 +2067,24 @@
    "slip": 0.0007,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-11-14T04:16:36Z",
+   "side": "sell",
+   "sym": "SWARMS",
+   "addr": "74SBV4zDXxTRgv1pEMoECskKBkZHc2yGPnc7GYVepump",
+   "price": 0.006469,
+   "usd": 98.72,
+   "pnl": 1.43,
+   "peak_x": 1.081,
+   "held_h": 125.0,
+   "frac": 1.0,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-27T19:36:36Z",
-   "v": 400.16
-  },
   {
    "t": "2026-10-27T19:41:36Z",
    "v": 400.46
@@ -22079,6 +22080,10 @@
   {
    "t": "2026-11-14T04:11:40Z",
    "v": 285.26
+  },
+  {
+   "t": "2026-11-14T04:16:41Z",
+   "v": 284.1
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -22086,7 +22091,7 @@
  "strategy": "dip_weites_netz",
  "universe_n": 150,
  "coverage": {
-  "t": "2026-11-14T04:11:40Z",
+  "t": "2026-11-14T04:16:41Z",
   "kurse": 125,
   "von": 150,
   "ohne_pool": 83,
@@ -22106,6 +22111,7 @@
   "6aqQf9dsYAUwyW3jRawBBxZ1oy8ehmBYb519MhjV2eab": 1794441996.214584,
   "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump": 1794469878.427608,
   "5w3wVdJaESaJKyLmStM6Hv9UyUkmZ1b9DLQquAqqpump": 1794502880.101175,
-  "DKYcjobF7HPtL9RyQBRdeRQ2iWvizpfbgWwPWNXdpump": 1794511879.0246818
+  "DKYcjobF7HPtL9RyQBRdeRQ2iWvizpfbgWwPWNXdpump": 1794511879.0246818,
+  "74SBV4zDXxTRgv1pEMoECskKBkZHc2yGPnc7GYVepump": 1794629796.4822726
  }
 }
