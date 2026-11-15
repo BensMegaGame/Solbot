@@ -1,21 +1,6 @@
 {
- "cash": 297.9440860000016,
- "positions": {
-  "v1USm912zHMXETQQJ7dbbuDMTEsMu5z61hQ4Hvspump": {
-   "sym": "USOE",
-   "qty": 472732.832304,
-   "cost": 50.02,
-   "opened": "2026-11-15T17:56:20Z",
-   "peak": 0.0001078,
-   "entry": 0.00010581029406443611,
-   "quelle": "BHcs5QcWduEjf3Gft2siVmGi16bL7QuaZw1qX7sxNk4S",
-   "quelle_name": "Wallet A",
-   "t_wallet": 1794765148,
-   "wallet_sol": 0.6016,
-   "cur_price": 2.611e-06,
-   "mark": 2.611e-06
-  }
- },
+ "cash": 299.1580950000016,
+ "positions": {},
  "trades": [
   {
    "t": "2026-11-04T01:31:33Z",
@@ -4672,6 +4657,21 @@
    "slip": 0.0238,
    "quote": "jup",
    "reason": "wallet verkauft (+166 s)"
+  },
+  {
+   "t": "2026-11-15T18:06:20Z",
+   "side": "sell",
+   "sym": "USOE",
+   "addr": "v1USm912zHMXETQQJ7dbbuDMTEsMu5z61hQ4Hvspump",
+   "price": 2.611e-06,
+   "usd": 1.21,
+   "pnl": -48.81,
+   "peak_x": 1.019,
+   "held_h": 0.2,
+   "frac": 1.0,
+   "slip": 0.0006,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -18926,6 +18926,10 @@
   {
    "t": "2026-11-15T18:01:28Z",
    "v": 299.18
+  },
+  {
+   "t": "2026-11-15T18:06:27Z",
+   "v": 299.16
   }
  ],
  "started": "2026-11-03T09:11:31Z",
@@ -18948,23 +18952,23 @@
     "kaeufe_gesehen": 75
    },
    "BHcs5QcWduEjf3Gft2siVmGi16bL7QuaZw1qX7sxNk4S": {
-    "bis_sig": "3gwmrYfeiJXK96TbMEefJ39BiMkpCAKPPba8MYMham6jAHPZcsGjXB74Ne8Jd1BRgEujTJDS298J58AiDxKwrHyM",
-    "kaeufe_gesehen": 44
+    "bis_sig": "8cwkKLn37hXmKTLCDKKXEFq1EAAxxskBGe7iRMiBHf8B3Gdy3PopY7z4XzCMRMC5xjeReKQwBxYcoGZL7TYGHwA",
+    "kaeufe_gesehen": 45
    }
   }
  },
  "coverage": {
-  "t": "2026-11-15T18:01:28Z",
+  "t": "2026-11-15T18:06:27Z",
   "kandidaten": 30,
   "pfade": 257,
   "kurse": 68,
-  "von": 93,
+  "von": 96,
   "fruehkaeufer_neu": 0,
   "fruehkaeufer_fehler": 0,
   "weg": {},
   "coins_mit_fruehkaeufern": 1317,
   "coins_ausgewertet": 1224,
-  "credits_heute": 4294,
+  "credits_heute": 4296,
   "codex_heute": 19,
   "spaet_neu": 0,
   "coins_mit_spaeten": 1135,
@@ -18986,7 +18990,7 @@
    "gesamt": 8
   },
   "warteschlange": 648,
-  "copy_credits_heute": 302,
+  "copy_credits_heute": 304,
   "copy_wallets": [
    "Wallet A"
   ]
@@ -19097,6 +19101,7 @@
   "DoqsX2uvZnZNTzbxuS5nbXLoxrrPUWE8BZXRQfEPpump": 1794761780.752682,
   "J2KDaGrr2kHzQzUwabvXy9MfxjjrtUiQgEVD6adGpump": 1794763579.7893574,
   "3GN46GsmAUQSpHXtY3oasJFYAbp9RBzVoR7X8ar1pump": 1794764180.5027938,
-  "7jhZKHXQgWghBRdEDU7yKvboCsNLUNcYfS4i54w8pump": 1794765681.4721575
+  "7jhZKHXQgWghBRdEDU7yKvboCsNLUNcYfS4i54w8pump": 1794765681.4721575,
+  "v1USm912zHMXETQQJ7dbbuDMTEsMu5z61hQ4Hvspump": 1794765980.7579565
  }
 }
