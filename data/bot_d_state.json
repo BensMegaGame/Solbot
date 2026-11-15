@@ -1,6 +1,21 @@
 {
- "cash": 304.78104600000165,
- "positions": {},
+ "cash": 254.76104600000164,
+ "positions": {
+  "3GN46GsmAUQSpHXtY3oasJFYAbp9RBzVoR7X8ar1pump": {
+   "sym": "BEAR",
+   "qty": 687083.522695,
+   "cost": 50.02,
+   "opened": "2026-11-15T17:31:20Z",
+   "peak": 7.235e-05,
+   "entry": 7.28004650785435e-05,
+   "quelle": "BHcs5QcWduEjf3Gft2siVmGi16bL7QuaZw1qX7sxNk4S",
+   "quelle_name": "Wallet A",
+   "t_wallet": 1794763591,
+   "wallet_sol": 0.6015,
+   "cur_price": 7.235e-05,
+   "mark": 7.235e-05
+  }
+ },
  "trades": [
   {
    "t": "2026-11-04T01:31:33Z",
@@ -4591,6 +4606,18 @@
    "slip": 0.0292,
    "quote": "jup",
    "reason": "wallet verkauft (+152 s)"
+  },
+  {
+   "t": "2026-11-15T17:31:20Z",
+   "side": "buy",
+   "sym": "BEAR",
+   "addr": "3GN46GsmAUQSpHXtY3oasJFYAbp9RBzVoR7X8ar1pump",
+   "price": 7.235e-05,
+   "fill": 7.2800465e-05,
+   "usd": 50.02,
+   "slip": 0.0138,
+   "quote": "jup",
+   "reason": "kopie Wallet A (+288 s)"
   }
  ],
  "equity": [
@@ -18817,6 +18844,10 @@
   {
    "t": "2026-11-15T17:26:26Z",
    "v": 304.78
+  },
+  {
+   "t": "2026-11-15T17:31:27Z",
+   "v": 304.47
   }
  ],
  "started": "2026-11-03T09:11:31Z",
@@ -18839,23 +18870,23 @@
     "kaeufe_gesehen": 75
    },
    "BHcs5QcWduEjf3Gft2siVmGi16bL7QuaZw1qX7sxNk4S": {
-    "bis_sig": "LXXDaMwf5Wqec94yJpaz99Dds8AEPMPTgR4XGdxWox1wQcX6kvAPwHhPdEWc54nf4iQRHKWxVSFkB5dm6gY8pD7",
-    "kaeufe_gesehen": 41
+    "bis_sig": "cZ8rXAiwH633KoyjpHHmdvUHn9Bec9mCZp1ZVGTWQ5za4iN58D7gF6YyJ3evvZ3Te5RYxNUT8tmCRmTcUpm6mCu",
+    "kaeufe_gesehen": 42
    }
   }
  },
  "coverage": {
-  "t": "2026-11-15T17:26:26Z",
+  "t": "2026-11-15T17:31:27Z",
   "kandidaten": 30,
   "pfade": 258,
-  "kurse": 66,
-  "von": 91,
+  "kurse": 75,
+  "von": 101,
   "fruehkaeufer_neu": 0,
   "fruehkaeufer_fehler": 0,
   "weg": {},
   "coins_mit_fruehkaeufern": 1317,
   "coins_ausgewertet": 1223,
-  "credits_heute": 4277,
+  "credits_heute": 4280,
   "codex_heute": 19,
   "spaet_neu": 0,
   "coins_mit_spaeten": 1135,
@@ -18869,15 +18900,15 @@
   "laufzeit_s": {
    "copy": 1,
    "kandidaten": 1,
-   "kurse": 6,
-   "fruehkaeufer": 6,
-   "spaete_kaeufer": 6,
-   "jupiter": 6,
-   "stufe2": 6,
+   "kurse": 7,
+   "fruehkaeufer": 7,
+   "spaete_kaeufer": 7,
+   "jupiter": 7,
+   "stufe2": 7,
    "gesamt": 8
   },
   "warteschlange": 648,
-  "copy_credits_heute": 285,
+  "copy_credits_heute": 288,
   "copy_wallets": [
    "Wallet A"
   ]
