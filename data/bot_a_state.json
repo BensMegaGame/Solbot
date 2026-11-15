@@ -1,5 +1,5 @@
 {
- "cash": 149.51738094111212,
+ "cash": 99.49738094111211,
  "positions": {
   "34DXEU2ttEtBSb1TqGJm7izgvYTTkqKcCoiNWdPDpump": {
    "sym": "BIG",
@@ -8,8 +8,8 @@
    "opened": "2026-11-11T02:01:04Z",
    "peak": 0.001639,
    "entry": 0.0010569695339238893,
-   "cur_price": 0.001491,
-   "mark": 0.001491
+   "cur_price": 0.001437,
+   "mark": 0.001437
   },
   "8Mi9E1V2bdPeAaRkR5yxUsAvpzP6UBUEEUrYmgKNpump": {
    "sym": "WEALTH",
@@ -18,8 +18,8 @@
    "opened": "2026-11-12T20:36:08Z",
    "peak": 0.0007197,
    "entry": 0.0005360478000206985,
-   "cur_price": 0.000433,
-   "mark": 0.000433
+   "cur_price": 0.0004162,
+   "mark": 0.0004162
   },
   "F4vEFNoH9H2oLYRabaQQ2Z6jAAi2AhRVdTdVH6Nn2J1q": {
    "sym": "CJ",
@@ -28,8 +28,18 @@
    "opened": "2026-11-14T13:41:05Z",
    "peak": 0.0004226,
    "entry": 0.00027777093394788706,
-   "cur_price": 0.0002266,
-   "mark": 0.0002266
+   "cur_price": 0.0002215,
+   "mark": 0.0002215
+  },
+  "9cmXfuC26anZtH9AUWVzpUxU1UJ7PPogYxftYTepump": {
+   "sym": "WISHMAS",
+   "qty": 238745.281705,
+   "cost": 50.02,
+   "opened": "2026-11-15T21:46:01Z",
+   "peak": 0.0002024,
+   "entry": 0.0002095119938822751,
+   "cur_price": 0.0002024,
+   "mark": 0.0002024
   }
  },
  "trades": [
@@ -4725,13 +4735,21 @@
    "slip": 0.0021,
    "quote": "jup",
    "reason": "trail"
+  },
+  {
+   "t": "2026-11-15T21:46:01Z",
+   "side": "buy",
+   "sym": "WISHMAS",
+   "addr": "9cmXfuC26anZtH9AUWVzpUxU1UJ7PPogYxftYTepump",
+   "price": 0.0002024,
+   "fill": 0.000209511994,
+   "usd": 50.02,
+   "slip": 0.0255,
+   "quote": "jup",
+   "reason": "screener"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-29T13:05:52Z",
-   "v": 151.1
-  },
   {
    "t": "2026-10-29T13:10:53Z",
    "v": 149.58
@@ -24727,6 +24745,10 @@
   {
    "t": "2026-11-15T21:41:08Z",
    "v": 301.29
+  },
+  {
+   "t": "2026-11-15T21:46:09Z",
+   "v": 294.55
   }
  ],
  "started": "2026-09-10T17:17:16Z",
