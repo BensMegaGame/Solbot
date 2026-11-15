@@ -1,17 +1,6 @@
 {
- "cash": 175.39502621477024,
+ "cash": 62.855858934793616,
  "positions": {
-  "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump": {
-   "sym": "mihao",
-   "qty": 7511.0,
-   "cost": 108.02455412668864,
-   "opened": "2026-11-14T18:16:38Z",
-   "peak": 0.01756,
-   "entry": 0.014382180019529843,
-   "mark": 0.01684,
-   "cur_price": 0.01684,
-   "tp1": true
-  },
   "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG": {
    "sym": "BIRB",
    "qty": 3668.088124,
@@ -19,8 +8,18 @@
    "opened": "2026-11-15T02:16:41Z",
    "peak": 0.06287,
    "entry": 0.0598723670520402,
-   "mark": 0.06135,
-   "cur_price": 0.06135
+   "mark": 0.06124,
+   "cur_price": 0.06124
+  },
+  "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2": {
+   "sym": "TROLL",
+   "qty": 10715.887307,
+   "cost": 235.58523527997664,
+   "opened": "2026-11-15T06:06:43Z",
+   "peak": 0.02205,
+   "entry": 0.02198466898080236,
+   "no_quote_since": "2026-11-15T06:06:43Z",
+   "mark": 0.0
   }
  },
  "trades": [
@@ -1706,13 +1705,36 @@
    "slip": 0.0051,
    "quote": "jup",
    "reason": "tp1"
+  },
+  {
+   "t": "2026-11-15T06:06:40Z",
+   "side": "sell",
+   "sym": "mihao",
+   "addr": "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump",
+   "price": 0.0164,
+   "usd": 123.05,
+   "pnl": 15.02,
+   "peak_x": 1.221,
+   "held_h": 11.8,
+   "frac": 1.0,
+   "slip": 0.0018,
+   "quote": "jup",
+   "reason": "trail"
+  },
+  {
+   "t": "2026-11-15T06:06:43Z",
+   "side": "buy",
+   "sym": "TROLL",
+   "addr": "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2",
+   "price": 0.02205,
+   "fill": 0.021984668981,
+   "usd": 235.59,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "dip 24h -15% (SOL -7%) 1h -0.1%"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-28T21:26:48Z",
-   "v": 450.6
-  },
   {
    "t": "2026-10-28T21:31:49Z",
    "v": 450.68
@@ -21708,13 +21730,17 @@
   {
    "t": "2026-11-15T06:01:48Z",
    "v": 526.92
+  },
+  {
+   "t": "2026-11-15T06:06:43Z",
+   "v": 287.49
   }
  ],
  "started": "2026-09-16T16:55:59Z",
  "strategy": "largecap_dip",
  "universe_n": 51,
  "coverage": {
-  "t": "2026-11-15T06:01:48Z",
+  "t": "2026-11-15T06:06:43Z",
   "kurse": 51,
   "von": 51,
   "sol": true
@@ -21722,7 +21748,7 @@
  "verkauft_am": {
   "XsueG8BtpquVJX9LVLLEGuViXUungE6WmK5YZ3p3bd1": 1794509196.0332766,
   "XsDoVfqeBukxuZHWhdvWHBhgEHjGNst4MLodqsJHzoB": 1794514296.75722,
-  "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump": 1794627712.0399876,
+  "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump": 1794722800.1549258,
   "CLoUDKc4Ane7HeQcPpE3YHnznRxhMimJ4MyaUqyHFzAu": 1794666702.1213057
  }
 }
