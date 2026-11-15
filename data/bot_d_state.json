@@ -1,6 +1,21 @@
 {
- "cash": 310.8091340000016,
- "positions": {},
+ "cash": 260.78913400000164,
+ "positions": {
+  "2DMzYAoeFZSKAgu9dmQKJa6PwyxhbFtub2ruKhTzpump": {
+   "sym": "Lindy",
+   "qty": 1231745.224941,
+   "cost": 50.02,
+   "opened": "2026-11-15T05:41:29Z",
+   "peak": 4.157e-05,
+   "entry": 4.060904721785784e-05,
+   "quelle": "BHcs5QcWduEjf3Gft2siVmGi16bL7QuaZw1qX7sxNk4S",
+   "quelle_name": "Wallet A",
+   "t_wallet": 1794720989,
+   "wallet_sol": 0.6016,
+   "cur_price": 4.157e-05,
+   "mark": 4.157e-05
+  }
+ },
  "trades": [
   {
    "t": "2026-11-04T01:31:33Z",
@@ -4186,6 +4201,18 @@
    "slip": 0.0053,
    "quote": "jup",
    "reason": "wallet verkauft (+50 s)"
+  },
+  {
+   "t": "2026-11-15T05:41:29Z",
+   "side": "buy",
+   "sym": "Lindy",
+   "addr": "2DMzYAoeFZSKAgu9dmQKJa6PwyxhbFtub2ruKhTzpump",
+   "price": 4.157e-05,
+   "fill": 4.0609047e-05,
+   "usd": 50.02,
+   "slip": 0.0328,
+   "quote": "jup",
+   "reason": "kopie Wallet A (+300 s)"
   }
  ],
  "equity": [
@@ -17844,6 +17871,10 @@
   {
    "t": "2026-11-15T05:36:35Z",
    "v": 310.81
+  },
+  {
+   "t": "2026-11-15T05:41:36Z",
+   "v": 311.99
   }
  ],
  "started": "2026-11-03T09:11:31Z",
@@ -17866,23 +17897,23 @@
     "kaeufe_gesehen": 75
    },
    "BHcs5QcWduEjf3Gft2siVmGi16bL7QuaZw1qX7sxNk4S": {
-    "bis_sig": "3aHKqC85A6aSq8Fst8q36BvWubsdjvtLj4zamo6jnBEmbXNATBAucC654A9JvofXs3w6PPPT22NdLu4eS1jw31Rf",
-    "kaeufe_gesehen": 23
+    "bis_sig": "3ifvtyeMgMWEGLGNYab2YR8o3AtxBD6DyEYVXhjvo1qSvc5rMi7pryZz5aFZT5CLpvEz2NFCJLmCkqZbGhdwvgDi",
+    "kaeufe_gesehen": 24
    }
   }
  },
  "coverage": {
-  "t": "2026-11-15T05:36:35Z",
+  "t": "2026-11-15T05:41:36Z",
   "kandidaten": 30,
   "pfade": 273,
-  "kurse": 82,
-  "von": 116,
+  "kurse": 75,
+  "von": 108,
   "fruehkaeufer_neu": 0,
   "fruehkaeufer_fehler": 0,
   "weg": {},
   "coins_mit_fruehkaeufern": 1317,
   "coins_ausgewertet": 1206,
-  "credits_heute": 4022,
+  "credits_heute": 4024,
   "codex_heute": 19,
   "spaet_neu": 0,
   "coins_mit_spaeten": 1135,
@@ -17900,11 +17931,11 @@
    "fruehkaeufer": 6,
    "spaete_kaeufer": 6,
    "jupiter": 6,
-   "stufe2": 6,
+   "stufe2": 7,
    "gesamt": 8
   },
   "warteschlange": 645,
-  "copy_credits_heute": 86,
+  "copy_credits_heute": 88,
   "copy_wallets": [
    "Wallet A"
   ]
