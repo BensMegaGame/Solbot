@@ -1,17 +1,6 @@
 {
- "cash": 190.0122208744495,
+ "cash": 315.7969678744495,
  "positions": {
-  "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG": {
-   "sym": "BIRB",
-   "qty": 1834.044062,
-   "cost": 109.80855926967877,
-   "opened": "2026-11-15T02:16:41Z",
-   "peak": 0.07333,
-   "entry": 0.0598723670520402,
-   "mark": 0.06919,
-   "cur_price": 0.06919,
-   "tp1": true
-  },
   "CWZ6BsdnjkDVTGkmL6bGbJXXig6ceef12KvyGQW14cMt": {
    "sym": "ANTFUN",
    "qty": 25078.562139,
@@ -19,8 +8,8 @@
    "opened": "2026-11-16T10:21:34Z",
    "peak": 0.01066,
    "entry": 0.010480565097932869,
-   "mark": 0.0106,
-   "cur_price": 0.0106
+   "mark": 0.01059,
+   "cur_price": 0.01059
   }
  },
  "trades": [
@@ -1790,13 +1779,24 @@
    "slip": 0.0002,
    "quote": "jup",
    "reason": "dip 24h -11% (SOL -1%) 1h +0.3%"
+  },
+  {
+   "t": "2026-11-16T13:16:21Z",
+   "side": "sell",
+   "sym": "BIRB",
+   "addr": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG",
+   "price": 0.06845,
+   "usd": 125.78,
+   "pnl": 15.98,
+   "peak_x": 1.225,
+   "held_h": 35.0,
+   "frac": 1.0,
+   "slip": 0.0005,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-30T04:36:52Z",
-   "v": 432.86
-  },
   {
    "t": "2026-10-30T04:41:46Z",
    "v": 432.86
@@ -21792,13 +21792,17 @@
   {
    "t": "2026-11-16T13:11:21Z",
    "v": 582.74
+  },
+  {
+   "t": "2026-11-16T13:16:21Z",
+   "v": 581.38
   }
  ],
  "started": "2026-09-16T16:55:59Z",
  "strategy": "largecap_dip",
  "universe_n": 51,
  "coverage": {
-  "t": "2026-11-16T13:11:21Z",
+  "t": "2026-11-16T13:16:21Z",
   "kurse": 51,
   "von": 51,
   "sol": true
@@ -21808,6 +21812,7 @@
   "XsDoVfqeBukxuZHWhdvWHBhgEHjGNst4MLodqsJHzoB": 1794514296.75722,
   "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump": 1794722800.1549258,
   "CLoUDKc4Ane7HeQcPpE3YHnznRxhMimJ4MyaUqyHFzAu": 1794666702.1213057,
-  "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2": 1794822688.6171076
+  "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2": 1794822688.6171076,
+  "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG": 1794834981.520019
  }
 }
