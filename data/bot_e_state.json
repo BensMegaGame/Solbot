@@ -1,5 +1,5 @@
 {
- "cash": 315.36920010567025,
+ "cash": 56.516803366100646,
  "positions": {
   "CWZ6BsdnjkDVTGkmL6bGbJXXig6ceef12KvyGQW14cMt": {
    "sym": "ANTFUN",
@@ -10,6 +10,16 @@
    "entry": 0.010480565097932869,
    "mark": 0.01036,
    "cur_price": 0.01036
+  },
+  "3vgopg7xm3EWkXfxmWPUpcf7g939hecfqg18sLuXDzVt": {
+   "sym": "HAROLD",
+   "qty": 20267.86215,
+   "cost": 258.8523967395696,
+   "opened": "2026-11-16T20:56:40Z",
+   "peak": 0.01272,
+   "entry": 0.012771568842526866,
+   "no_quote_since": "2026-11-16T20:56:40Z",
+   "mark": 0.0
   }
  },
  "trades": [
@@ -1821,13 +1831,21 @@
    "slip": 0.0018,
    "quote": "jup",
    "reason": "trail"
+  },
+  {
+   "t": "2026-11-16T20:56:40Z",
+   "side": "buy",
+   "sym": "HAROLD",
+   "addr": "3vgopg7xm3EWkXfxmWPUpcf7g939hecfqg18sLuXDzVt",
+   "price": 0.01272,
+   "fill": 0.012771568843,
+   "usd": 258.85,
+   "slip": 0.0008,
+   "quote": "jup",
+   "reason": "dip 24h -18% (SOL -1%) 1h +0.6%"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-30T12:16:49Z",
-   "v": 432.86
-  },
   {
    "t": "2026-10-30T12:21:46Z",
    "v": 432.86
@@ -21823,13 +21841,17 @@
   {
    "t": "2026-11-16T20:51:36Z",
    "v": 575.18
+  },
+  {
+   "t": "2026-11-16T20:56:40Z",
+   "v": 316.33
   }
  ],
  "started": "2026-09-16T16:55:59Z",
  "strategy": "largecap_dip",
  "universe_n": 51,
  "coverage": {
-  "t": "2026-11-16T20:51:36Z",
+  "t": "2026-11-16T20:56:40Z",
   "kurse": 51,
   "von": 51,
   "sol": true
