@@ -7863,10 +7863,10 @@
   "grund": "129.3 Transaktionen je Tag (Schnelltest)"
  },
  "13VK7ZrRrx1uZ4Frm2TjacNsbipun21qqifE8wibPVys": {
-  "t": 1794185179.2473207,
-  "tx_tag": 332.2,
+  "t": 1794789996.4463725,
+  "tx_tag": 623.0,
   "status": "bot",
-  "grund": "332.2 Transaktionen je Tag (Schnelltest)"
+  "grund": "623.0 Transaktionen je Tag (Schnelltest)"
  },
  "AKZTiYGdD6x4bcjgdBF1sUL3rxyXjiDGDKzwS5KcG1Me": {
   "t": 1794185180.92276,
@@ -7874,10 +7874,10 @@
   "status": "vorab_ok"
  },
  "7u1HfqSgGzMqgYAazAE6cLSmhzwUdFXMeFW63eM3YT3e": {
-  "t": 1794185179.036184,
-  "tx_tag": 246.2,
+  "t": 1794789996.6602905,
+  "tx_tag": 391.6,
   "status": "bot",
-  "grund": "246.2 Transaktionen je Tag (Schnelltest)"
+  "grund": "391.6 Transaktionen je Tag (Schnelltest)"
  },
  "7gijTQx4rc8jyZLhjen55CyTBFhVu8WMPokbQfXCZyF7": {
   "t": 1794185180.6372073,
@@ -13979,195 +13979,9 @@
   "grund": "114.1 Transaktionen je Tag (Schnelltest)"
  },
  "EAUNabzBQwKsjyk69qjRniBiiWoRTN32X9upre3Ku7Vu": {
-  "t": 1794185181.9437616,
-  "tx_tag": 49.3,
-  "letzte": 1794181164,
-  "trades": 12,
-  "geschlossen": 10,
-  "liegen_gelassen": 1,
-  "eigen_schnitt": 0.6413,
-  "halte_min": 135.6,
-  "status": "durchgefallen",
-  "sim": [
-   [
-    1793608769,
-    -0.0127
-   ],
-   [
-    1793609269,
-    -0.0263
-   ],
-   [
-    1793610301,
-    -0.015
-   ],
-   [
-    1793623640,
-    0.8587
-   ],
-   [
-    1793630974,
-    -0.061
-   ],
-   [
-    1793757562,
-    -0.5313
-   ],
-   [
-    1793776574,
-    0.2047
-   ],
-   [
-    1793861826,
-    0.2676
-   ],
-   [
-    1793969242,
-    0.3688
-   ]
-  ],
-  "details": [
-   {
-    "mint": "78ThnYbKk5dquDUbMEwg4XURvK1RdkctiHivyeUEpump",
-    "t_kauf": 1793608769,
-    "t_verkauf": 1793609184,
-    "sol_in": 0.14,
-    "eigen": -0.0001,
-    "quelle": "gt",
-    "kopie": -0.0127,
-    "entry": 8.021399585506489e-05,
-    "exit": 8.170462095346407e-05,
-    "grund": "nach_verkauf",
-    "luecke_rein_s": -29,
-    "luecke_raus_s": 24,
-    "kerzen": 851
-   },
-   {
-    "mint": "DB71YyPjp63CQ4idDrUTMGXVBfzf1mDiEACLNP5cpump",
-    "t_kauf": 1793609269,
-    "t_verkauf": 1793613790,
-    "sol_in": 1.5077,
-    "eigen": 1.0718,
-    "quelle": "gt",
-    "kopie": -0.0263,
-    "entry": 0.001611109365694655,
-    "exit": 0.0016191501313197359,
-    "grund": "nach_verkauf",
-    "luecke_rein_s": -49,
-    "luecke_raus_s": 10,
-    "kerzen": 888
-   },
-   {
-    "mint": "78ThnYbKk5dquDUbMEwg4XURvK1RdkctiHivyeUEpump",
-    "t_kauf": 1793610301,
-    "t_verkauf": 1793610895,
-    "sol_in": 0.13,
-    "eigen": 0.3613,
-    "quelle": "gt",
-    "kopie": -0.015,
-    "entry": 8.479610791182999e-05,
-    "exit": 8.617449972050446e-05,
-    "grund": "nach_verkauf",
-    "luecke_rein_s": -1,
-    "luecke_raus_s": 55,
-    "kerzen": 847
-   },
-   {
-    "mint": "78ThnYbKk5dquDUbMEwg4XURvK1RdkctiHivyeUEpump",
-    "t_kauf": 1793623640,
-    "t_verkauf": 1793654539,
-    "sol_in": 0.7601,
-    "eigen": 0.1893,
-    "quelle": "gt",
-    "kopie": 0.8587,
-    "entry": 7.195458165673e-05,
-    "exit": 0.00013599615144675893,
-    "grund": "nach_verkauf",
-    "luecke_rein_s": -20,
-    "luecke_raus_s": 19,
-    "kerzen": 859
-   },
-   {
-    "mint": "DB71YyPjp63CQ4idDrUTMGXVBfzf1mDiEACLNP5cpump",
-    "t_kauf": 1793630974,
-    "t_verkauf": 1793670952,
-    "sol_in": 1.2352,
-    "eigen": 0.0041,
-    "quelle": "gt",
-    "kopie": -0.061,
-    "entry": 0.0018444769310773648,
-    "exit": 0.0017896776350319853,
-    "grund": "nach_verkauf",
-    "luecke_rein_s": -34,
-    "luecke_raus_s": 52,
-    "kerzen": 882
-   },
-   {
-    "mint": "78ThnYbKk5dquDUbMEwg4XURvK1RdkctiHivyeUEpump",
-    "t_kauf": 1793757562,
-    "t_verkauf": 1793764175,
-    "sol_in": 0.55,
-    "eigen": 2.0341,
-    "quelle": "gt",
-    "kopie": -0.5313,
-    "entry": 0.00021332600433312214,
-    "exit": 0.00010666300216656107,
-    "grund": "stop",
-    "luecke_rein_s": -22,
-    "luecke_raus_s": 0,
-    "kerzen": 854
-   },
-   {
-    "mint": "78ThnYbKk5dquDUbMEwg4XURvK1RdkctiHivyeUEpump",
-    "t_kauf": 1793776574,
-    "t_verkauf": 1793842645,
-    "sol_in": 1.6701,
-    "eigen": 1.2548,
-    "quelle": "gt",
-    "kopie": 0.2047,
-    "entry": 9.385161815373238e-05,
-    "exit": 0.00011600353342714727,
-    "grund": "max_16h",
-    "luecke_rein_s": -14,
-    "luecke_raus_s": 14,
-    "kerzen": 817
-   },
-   {
-    "mint": "78ThnYbKk5dquDUbMEwg4XURvK1RdkctiHivyeUEpump",
-    "t_kauf": 1793861826,
-    "t_verkauf": 1793906825,
-    "sol_in": 1.1301,
-    "eigen": 1.7215,
-    "quelle": "gt",
-    "kopie": 0.2676,
-    "entry": 7.330562226761906e-05,
-    "exit": 9.521764676431622e-05,
-    "grund": "nach_verkauf",
-    "luecke_rein_s": -6,
-    "luecke_raus_s": 5,
-    "kerzen": 825
-   },
-   {
-    "mint": "78ThnYbKk5dquDUbMEwg4XURvK1RdkctiHivyeUEpump",
-    "t_kauf": 1793969242,
-    "t_verkauf": 1794010360,
-    "sol_in": 1.9101,
-    "eigen": null,
-    "quelle": "gt",
-    "kopie": 0.3688,
-    "entry": 6.48461820857236e-05,
-    "exit": 9.079031557969369e-05,
-    "grund": "nach_verkauf",
-    "luecke_rein_s": -22,
-    "luecke_raus_s": 40,
-    "kerzen": 832
-   }
-  ],
-  "ohne_kurs": 3,
-  "n": 9,
-  "grund": "nur 9 Trades mit Kursen",
-  "kosten": 0.0313,
-  "kosten_art": "jupiter"
+  "t": 1794789996.227455,
+  "tx_tag": 61.6,
+  "status": "vorab_ok"
  },
  "8LBMyJtJfUxec2vFbvggMLiVALW4xKBPMecEU2892erv": {
   "t": 1794528402.5276175,
