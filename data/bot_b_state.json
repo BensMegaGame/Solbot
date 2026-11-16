@@ -1,6 +1,18 @@
 {
- "cash": 334.3376098470311,
- "positions": {},
+ "cash": 234.01632689292177,
+ "positions": {
+  "KMifrkYmDdAKtVXAVBEPEQxJ7qP2iLgUcfZjUZipump": {
+   "sym": "RAMBO",
+   "qty": 9164.121774,
+   "cost": 100.32128295410932,
+   "opened": "2026-11-16T02:31:24Z",
+   "peak": 0.01094,
+   "entry": 0.010947179165464168,
+   "pair": "Gz15vwSPY9KFYNkrMPkoKp2h9yygVBovoXJsGwSJcvFk",
+   "cur_price": 0.01094,
+   "mark": 0.01094
+  }
+ },
  "trades": [
   {
    "t": "2026-10-09T07:16:29Z",
@@ -739,13 +751,21 @@
    "slip": 0.0032,
    "quote": "jup",
    "reason": "trail"
+  },
+  {
+   "t": "2026-11-16T02:31:24Z",
+   "side": "buy",
+   "sym": "RAMBO",
+   "addr": "KMifrkYmDdAKtVXAVBEPEQxJ7qP2iLgUcfZjUZipump",
+   "price": 0.01094,
+   "fill": 0.010947179165,
+   "usd": 100.32,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "tiefer dip 24h -30% (SOL +2%) 1h +4.5%"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-29T17:51:20Z",
-   "v": 362.03
-  },
   {
    "t": "2026-10-29T17:56:22Z",
    "v": 362.03
@@ -20741,18 +20761,22 @@
   {
    "t": "2026-11-16T02:26:24Z",
    "v": 334.34
+  },
+  {
+   "t": "2026-11-16T02:31:24Z",
+   "v": 334.27
   }
  ],
  "started": "2026-10-08T16:06:06Z",
  "version": "b4",
  "strategy": "tiefer_dip",
  "coverage": {
-  "t": "2026-11-16T02:26:24Z",
+  "t": "2026-11-16T02:31:24Z",
   "kurse": 177,
   "von": 193,
   "sol": true,
-  "sol24": 2.7,
-  "kandidaten": 0,
+  "sol24": 2.4,
+  "kandidaten": 1,
   "gestoppt": false
  },
  "verkauft_am": {
