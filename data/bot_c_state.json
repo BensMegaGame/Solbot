@@ -1,5 +1,5 @@
 {
- "cash": 209.80191351496046,
+ "cash": 122.03912705004785,
  "positions": {
   "BeGY8KqKxboEwRbJd1q9H2K829jS4Rc5dEyNMYXCbV5p": {
    "sym": "NPC",
@@ -10,6 +10,16 @@
    "entry": 0.011782045334375789,
    "cur_price": 0.01156,
    "mark": 0.01156
+  },
+  "FeR8VBqNRSUD5NtXAj2n3j1dAHkZHfyDktKuLXD4pump": {
+   "sym": "JELLYJELLY",
+   "qty": 2217.993357,
+   "cost": 87.76278646491261,
+   "opened": "2026-11-16T09:31:21Z",
+   "peak": 0.03943,
+   "entry": 0.039568552443104824,
+   "cur_price": 0.03943,
+   "mark": 0.03943
   }
  },
  "trades": [
@@ -2178,13 +2188,21 @@
    "slip": 0.0,
    "quote": "jup",
    "reason": "trail"
+  },
+  {
+   "t": "2026-11-16T09:31:21Z",
+   "side": "buy",
+   "sym": "JELLYJELLY",
+   "addr": "FeR8VBqNRSUD5NtXAj2n3j1dAHkZHfyDktKuLXD4pump",
+   "price": 0.03943,
+   "fill": 0.039568552443,
+   "usd": 87.76,
+   "slip": 0.0037,
+   "quote": "jup",
+   "reason": "dip 24h -11% (SOL -2%) 1h -0.7%"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-30T00:51:23Z",
-   "v": 365.03
-  },
   {
    "t": "2026-10-30T00:56:23Z",
    "v": 365.03
@@ -22180,6 +22198,10 @@
   {
    "t": "2026-11-16T09:26:23Z",
    "v": 292.48
+  },
+  {
+   "t": "2026-11-16T09:31:21Z",
+   "v": 292.17
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -22187,12 +22209,12 @@
  "strategy": "dip_weites_netz",
  "universe_n": 152,
  "coverage": {
-  "t": "2026-11-16T09:26:23Z",
+  "t": "2026-11-16T09:31:21Z",
   "kurse": 127,
   "von": 152,
   "ohne_pool": 80,
   "sol": true,
-  "kandidaten": 0
+  "kandidaten": 1
  },
  "verkauft_am": {
   "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": 1794331878.7762864,
