@@ -1,6 +1,18 @@
 {
- "cash": 310.0359558929218,
- "positions": {},
+ "cash": 217.00516912504526,
+ "positions": {
+  "6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump": {
+   "sym": "VINE",
+   "qty": 10760.292711,
+   "cost": 93.03078676787652,
+   "opened": "2026-11-16T20:46:21Z",
+   "peak": 0.008578,
+   "entry": 0.008645748704658684,
+   "pair": "58fzJMbX5PatnfJPqWWsqkVFPRKptkbb5r2vCw4Qq3z9",
+   "cur_price": 0.008578,
+   "mark": 0.008578
+  }
+ },
  "trades": [
   {
    "t": "2026-10-09T07:16:29Z",
@@ -766,13 +778,21 @@
    "slip": 0.0072,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-11-16T20:46:21Z",
+   "side": "buy",
+   "sym": "VINE",
+   "addr": "6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump",
+   "price": 0.008578,
+   "fill": 0.008645748705,
+   "usd": 93.03,
+   "slip": 0.0017,
+   "quote": "jup",
+   "reason": "tiefer dip 24h -32% (SOL -1%) 1h -1.2%"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-30T12:06:16Z",
-   "v": 362.03
-  },
   {
    "t": "2026-10-30T12:11:16Z",
    "v": 362.03
@@ -20768,18 +20788,22 @@
   {
    "t": "2026-11-16T20:41:20Z",
    "v": 310.04
+  },
+  {
+   "t": "2026-11-16T20:46:21Z",
+   "v": 309.31
   }
  ],
  "started": "2026-10-08T16:06:06Z",
  "version": "b4",
  "strategy": "tiefer_dip",
  "coverage": {
-  "t": "2026-11-16T20:41:20Z",
+  "t": "2026-11-16T20:46:21Z",
   "kurse": 174,
   "von": 193,
   "sol": true,
-  "sol24": -0.8,
-  "kandidaten": 0,
+  "sol24": -0.7,
+  "kandidaten": 1,
   "gestoppt": false
  },
  "verkauft_am": {
