@@ -9,8 +9,8 @@
    "peak": 0.00896,
    "entry": 0.008645748704658684,
    "pair": "58fzJMbX5PatnfJPqWWsqkVFPRKptkbb5r2vCw4Qq3z9",
-   "cur_price": 0.008536,
-   "mark": 0.008536
+   "cur_price": 0.008374,
+   "mark": 0.008374
   },
   "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump": {
    "sym": "mihao",
@@ -20,8 +20,8 @@
    "peak": 0.01091,
    "entry": 0.011009826821852243,
    "pair": "Ho1aSG6WGH1FfXdEHrK2f4Ggt1Hoxo9s5jcLMDqeyeBz",
-   "cur_price": 0.01087,
-   "mark": 0.01087
+   "cur_price": 0.01079,
+   "mark": 0.01079
   }
  },
  "trades": [
@@ -816,10 +816,6 @@
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-31T01:56:30Z",
-   "v": 362.03
-  },
   {
    "t": "2026-10-31T02:01:31Z",
    "v": 362.03
@@ -20815,17 +20811,21 @@
   {
    "t": "2026-11-17T10:31:15Z",
    "v": 307.68
+  },
+  {
+   "t": "2026-11-17T10:36:14Z",
+   "v": 305.26
   }
  ],
  "started": "2026-10-08T16:06:06Z",
  "version": "b4",
  "strategy": "tiefer_dip",
  "coverage": {
-  "t": "2026-11-17T10:31:15Z",
+  "t": "2026-11-17T10:36:14Z",
   "kurse": 177,
   "von": 193,
   "sol": true,
-  "sol24": 1.3,
+  "sol24": 1.7,
   "kandidaten": 0,
   "gestoppt": false
  },
