@@ -1,5 +1,5 @@
 {
- "cash": 32.099812675085545,
+ "cash": 25.431566927235224,
  "positions": {
   "BeGY8KqKxboEwRbJd1q9H2K829jS4Rc5dEyNMYXCbV5p": {
    "sym": "NPC",
@@ -8,28 +8,28 @@
    "opened": "2026-11-15T00:41:26Z",
    "peak": 0.01256,
    "entry": 0.011782045334375789,
-   "cur_price": 0.01171,
-   "mark": 0.01171
+   "cur_price": 0.01175,
+   "mark": 0.01175
   },
   "FeR8VBqNRSUD5NtXAj2n3j1dAHkZHfyDktKuLXD4pump": {
    "sym": "JELLYJELLY",
    "qty": 2217.993357,
    "cost": 87.76278646491261,
    "opened": "2026-11-16T09:31:21Z",
-   "peak": 0.04214,
+   "peak": 0.04223,
    "entry": 0.039568552443104824,
-   "cur_price": 0.04214,
-   "mark": 0.04214
+   "cur_price": 0.04223,
+   "mark": 0.04223
   },
-  "6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump": {
-   "sym": "VINE",
-   "qty": 10490.879533,
-   "cost": 89.93931437496231,
-   "opened": "2026-11-16T23:06:37Z",
-   "peak": 0.008569,
-   "entry": 0.008573095715383077,
-   "cur_price": 0.007766,
-   "mark": 0.007766
+  "KMifrkYmDdAKtVXAVBEPEQxJ7qP2iLgUcfZjUZipump": {
+   "sym": "RAMBO",
+   "qty": 9466.497935,
+   "cost": 86.87626074785032,
+   "opened": "2026-11-17T01:46:35Z",
+   "peak": 0.009177,
+   "entry": 0.009177233370182987,
+   "cur_price": 0.009177,
+   "mark": 0.009177
   }
  },
  "trades": [
@@ -2222,13 +2222,36 @@
    "slip": 0.0058,
    "quote": "jup",
    "reason": "dip 24h -30% (SOL -1%) 1h -0.7%"
+  },
+  {
+   "t": "2026-11-17T01:46:32Z",
+   "side": "sell",
+   "sym": "VINE",
+   "addr": "6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump",
+   "price": 0.007702,
+   "usd": 80.21,
+   "pnl": -9.73,
+   "peak_x": 1.0,
+   "held_h": 2.7,
+   "frac": 1.0,
+   "slip": 0.0072,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-11-17T01:46:35Z",
+   "side": "buy",
+   "sym": "RAMBO",
+   "addr": "KMifrkYmDdAKtVXAVBEPEQxJ7qP2iLgUcfZjUZipump",
+   "price": 0.009177,
+   "fill": 0.00917723337,
+   "usd": 86.88,
+   "slip": 0.0038,
+   "quote": "jup",
+   "reason": "dip 24h -15% (SOL +1%) 1h +5.0%"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-30T17:06:18Z",
-   "v": 365.03
-  },
   {
    "t": "2026-10-30T17:11:19Z",
    "v": 365.03
@@ -22224,6 +22247,10 @@
   {
    "t": "2026-11-17T01:41:35Z",
    "v": 290.79
+  },
+  {
+   "t": "2026-11-17T01:46:35Z",
+   "v": 290.0
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -22231,7 +22258,7 @@
  "strategy": "dip_weites_netz",
  "universe_n": 152,
  "coverage": {
-  "t": "2026-11-17T01:41:35Z",
+  "t": "2026-11-17T01:46:35Z",
   "kurse": 124,
   "von": 152,
   "ohne_pool": 81,
@@ -22240,10 +22267,7 @@
  },
  "verkauft_am": {
   "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": 1794331878.7762864,
-  "npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump": 1794250272.1652563,
-  "9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump": 1794258073.6254177,
   "GJAFwWjJ3vnTsrQVabjBVK2TYB1YtRCQXRDfDgUnpump": 1794695483.672037,
-  "GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump": 1794243673.5587065,
   "Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr": 1794303674.8374553,
   "6aqQf9dsYAUwyW3jRawBBxZ1oy8ehmBYb519MhjV2eab": 1794441996.214584,
   "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump": 1794469878.427608,
@@ -22251,6 +22275,7 @@
   "DKYcjobF7HPtL9RyQBRdeRQ2iWvizpfbgWwPWNXdpump": 1794511879.0246818,
   "74SBV4zDXxTRgv1pEMoECskKBkZHc2yGPnc7GYVepump": 1794629796.4822726,
   "KMifrkYmDdAKtVXAVBEPEQxJ7qP2iLgUcfZjUZipump": 1794783388.4849234,
-  "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump": 1794804988.007114
+  "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump": 1794804988.007114,
+  "6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump": 1794879992.7550938
  }
 }
