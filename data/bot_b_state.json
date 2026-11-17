@@ -1,5 +1,5 @@
 {
- "cash": 217.00516912504526,
+ "cash": 124.2931518472566,
  "positions": {
   "6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump": {
    "sym": "VINE",
@@ -9,8 +9,19 @@
    "peak": 0.00896,
    "entry": 0.008645748704658684,
    "pair": "58fzJMbX5PatnfJPqWWsqkVFPRKptkbb5r2vCw4Qq3z9",
-   "cur_price": 0.008547,
-   "mark": 0.008547
+   "cur_price": 0.00881,
+   "mark": 0.00881
+  },
+  "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump": {
+   "sym": "mihao",
+   "qty": 8420.842469,
+   "cost": 92.71201727778866,
+   "opened": "2026-11-17T10:26:18Z",
+   "peak": 0.01091,
+   "entry": 0.011009826821852243,
+   "pair": "Ho1aSG6WGH1FfXdEHrK2f4Ggt1Hoxo9s5jcLMDqeyeBz",
+   "cur_price": 0.01091,
+   "mark": 0.01091
   }
  },
  "trades": [
@@ -790,13 +801,21 @@
    "slip": 0.0017,
    "quote": "jup",
    "reason": "tiefer dip 24h -32% (SOL -1%) 1h -1.2%"
+  },
+  {
+   "t": "2026-11-17T10:26:18Z",
+   "side": "buy",
+   "sym": "mihao",
+   "addr": "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump",
+   "price": 0.01091,
+   "fill": 0.011009826822,
+   "usd": 92.71,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "tiefer dip 24h -34% (SOL +2%) 1h -1.5%"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-31T01:46:33Z",
-   "v": 362.03
-  },
   {
    "t": "2026-10-31T01:51:30Z",
    "v": 362.03
@@ -20792,18 +20811,22 @@
   {
    "t": "2026-11-17T10:21:15Z",
    "v": 308.97
+  },
+  {
+   "t": "2026-11-17T10:26:18Z",
+   "v": 310.96
   }
  ],
  "started": "2026-10-08T16:06:06Z",
  "version": "b4",
  "strategy": "tiefer_dip",
  "coverage": {
-  "t": "2026-11-17T10:21:15Z",
+  "t": "2026-11-17T10:26:18Z",
   "kurse": 177,
   "von": 193,
   "sol": true,
-  "sol24": 1.7,
-  "kandidaten": 0,
+  "sol24": 1.5,
+  "kandidaten": 1,
   "gestoppt": false
  },
  "verkauft_am": {
