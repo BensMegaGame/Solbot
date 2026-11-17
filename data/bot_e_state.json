@@ -1,5 +1,5 @@
 {
- "cash": 310.0294557206053,
+ "cash": 52.65885010623293,
  "positions": {
   "3vgopg7xm3EWkXfxmWPUpcf7g939hecfqg18sLuXDzVt": {
    "sym": "HAROLD",
@@ -10,6 +10,16 @@
    "entry": 0.012771568842526866,
    "mark": 0.01292,
    "cur_price": 0.01292
+  },
+  "BPxxfRCXkUVhig4HS1Lh7kZqV6SPJhzfEk4x6fVBjPCy": {
+   "sym": "BP",
+   "qty": 253.883365107,
+   "cost": 257.3706056143724,
+   "opened": "2026-11-17T22:41:54Z",
+   "peak": 1.012,
+   "entry": 1.0137356006207916,
+   "no_quote_since": "2026-11-17T22:41:54Z",
+   "mark": 0.0
   }
  },
  "trades": [
@@ -1875,13 +1885,21 @@
    "slip": 0.0,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-11-17T22:41:54Z",
+   "side": "buy",
+   "sym": "BP",
+   "addr": "BPxxfRCXkUVhig4HS1Lh7kZqV6SPJhzfEk4x6fVBjPCy",
+   "price": 1.012,
+   "fill": 1.013735600621,
+   "usd": 257.37,
+   "slip": 0.0032,
+   "quote": "jup",
+   "reason": "dip 24h -17% (SOL +3%) 1h +1.0%"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-31T14:01:44Z",
-   "v": 432.86
-  },
   {
    "t": "2026-10-31T14:06:39Z",
    "v": 432.86
@@ -21877,13 +21895,17 @@
   {
    "t": "2026-11-17T22:36:46Z",
    "v": 571.89
+  },
+  {
+   "t": "2026-11-17T22:41:54Z",
+   "v": 314.52
   }
  ],
  "started": "2026-09-16T16:55:59Z",
  "strategy": "largecap_dip",
  "universe_n": 51,
  "coverage": {
-  "t": "2026-11-17T22:36:46Z",
+  "t": "2026-11-17T22:41:54Z",
   "kurse": 49,
   "von": 51,
   "sol": true
