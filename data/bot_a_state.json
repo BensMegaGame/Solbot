@@ -1,5 +1,5 @@
 {
- "cash": 49.54380994111211,
+ "cash": 95.3346039411121,
  "positions": {
   "34DXEU2ttEtBSb1TqGJm7izgvYTTkqKcCoiNWdPDpump": {
    "sym": "BIG",
@@ -8,8 +8,8 @@
    "opened": "2026-11-11T02:01:04Z",
    "peak": 0.001667,
    "entry": 0.0010569695339238893,
-   "cur_price": 0.001464,
-   "mark": 0.001464
+   "cur_price": 0.001387,
+   "mark": 0.001387
   },
   "8Mi9E1V2bdPeAaRkR5yxUsAvpzP6UBUEEUrYmgKNpump": {
    "sym": "WEALTH",
@@ -18,8 +18,8 @@
    "opened": "2026-11-12T20:36:08Z",
    "peak": 0.0007197,
    "entry": 0.0005360478000206985,
-   "cur_price": 0.0003736,
-   "mark": 0.0003736
+   "cur_price": 0.0003585,
+   "mark": 0.0003585
   },
   "F4vEFNoH9H2oLYRabaQQ2Z6jAAi2AhRVdTdVH6Nn2J1q": {
    "sym": "CJ",
@@ -28,8 +28,8 @@
    "opened": "2026-11-14T13:41:05Z",
    "peak": 0.0004226,
    "entry": 0.00027777093394788706,
-   "cur_price": 0.0001742,
-   "mark": 0.0001742
+   "cur_price": 0.0001699,
+   "mark": 0.0001699
   },
   "9cmXfuC26anZtH9AUWVzpUxU1UJ7PPogYxftYTepump": {
    "sym": "WISHMAS",
@@ -38,8 +38,8 @@
    "opened": "2026-11-15T21:46:01Z",
    "peak": 0.0002474,
    "entry": 0.0002095119938822751,
-   "cur_price": 0.0001638,
-   "mark": 0.0001638
+   "cur_price": 0.0001603,
+   "mark": 0.0001603
   },
   "BWJfBNeXpapG7uoqByp5KSwWgCQba8QcDmA2DQiEpump": {
    "sym": "Leonida",
@@ -48,19 +48,20 @@
    "opened": "2026-11-16T13:10:15Z",
    "peak": 0.0005446,
    "entry": 0.00027324480919268385,
-   "cur_price": 0.000455,
-   "mark": 0.000455,
+   "cur_price": 0.0004535,
+   "mark": 0.0004535,
    "tp0": true
   },
   "FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump": {
    "sym": "HOGE",
-   "qty": 92803.557995,
-   "cost": 50.02,
+   "qty": 46401.7789975,
+   "cost": 25.01,
    "opened": "2026-11-17T13:20:21Z",
-   "peak": 0.0009207,
+   "peak": 0.001021,
    "entry": 0.0005389879556416894,
-   "cur_price": 0.0009207,
-   "mark": 0.0009207
+   "cur_price": 0.001021,
+   "mark": 0.001021,
+   "tp0": true
   }
  },
  "trades": [
@@ -4807,13 +4808,24 @@
    "slip": 0.0226,
    "quote": "jup",
    "reason": "screener"
+  },
+  {
+   "t": "2026-11-17T13:40:08Z",
+   "side": "sell",
+   "sym": "HOGE",
+   "addr": "FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump",
+   "price": 0.001021,
+   "usd": 45.79,
+   "pnl": 20.78,
+   "peak_x": 1.894,
+   "held_h": 0.3,
+   "frac": 0.5,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "tp0"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-31T05:01:24Z",
-   "v": 194.8
-  },
   {
    "t": "2026-10-31T05:06:25Z",
    "v": 194.25
@@ -24809,6 +24821,10 @@
   {
    "t": "2026-11-17T13:36:06Z",
    "v": 351.25
+  },
+  {
+   "t": "2026-11-17T13:41:05Z",
+   "v": 352.18
   }
  ],
  "started": "2026-09-10T17:17:16Z",
