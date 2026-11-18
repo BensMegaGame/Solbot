@@ -1,5 +1,5 @@
 {
- "cash": 222.10121058276252,
+ "cash": 131.12064942054505,
  "positions": {
   "BeGY8KqKxboEwRbJd1q9H2K829jS4Rc5dEyNMYXCbV5p": {
    "sym": "NPC",
@@ -10,6 +10,16 @@
    "entry": 0.011782045334375789,
    "cur_price": 0.01134,
    "mark": 0.01134
+  },
+  "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump": {
+   "sym": "CBUCKS",
+   "qty": 21835.424105,
+   "cost": 90.98056116221747,
+   "opened": "2026-11-18T08:06:31Z",
+   "peak": 0.004161,
+   "entry": 0.004166649602257289,
+   "cur_price": 0.004161,
+   "mark": 0.004161
   }
  },
  "trades": [
@@ -2301,13 +2311,21 @@
    "slip": 0.0,
    "quote": "jup",
    "reason": "trail"
+  },
+  {
+   "t": "2026-11-18T08:06:31Z",
+   "side": "buy",
+   "sym": "CBUCKS",
+   "addr": "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump",
+   "price": 0.004161,
+   "fill": 0.004166649602,
+   "usd": 90.98,
+   "slip": 0.001,
+   "quote": "jup",
+   "reason": "dip 24h -22% (SOL +3%) 1h -0.1%"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-31T23:26:25Z",
-   "v": 365.03
-  },
   {
    "t": "2026-10-31T23:31:26Z",
    "v": 365.03
@@ -22303,6 +22321,10 @@
   {
    "t": "2026-11-18T08:01:31Z",
    "v": 303.2
+  },
+  {
+   "t": "2026-11-18T08:06:31Z",
+   "v": 303.08
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -22310,7 +22332,7 @@
  "strategy": "dip_weites_netz",
  "universe_n": 153,
  "coverage": {
-  "t": "2026-11-18T08:01:31Z",
+  "t": "2026-11-18T08:06:31Z",
   "kurse": 127,
   "von": 153,
   "ohne_pool": 80,
