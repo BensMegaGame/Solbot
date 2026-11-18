@@ -1,5 +1,5 @@
 {
- "cash": 127.2516669411121,
+ "cash": 151.7460449411121,
  "positions": {
   "34DXEU2ttEtBSb1TqGJm7izgvYTTkqKcCoiNWdPDpump": {
    "sym": "BIG",
@@ -8,18 +8,8 @@
    "opened": "2026-11-11T02:01:04Z",
    "peak": 0.001781,
    "entry": 0.0010569695339238893,
-   "cur_price": 0.001439,
-   "mark": 0.001439
-  },
-  "8Mi9E1V2bdPeAaRkR5yxUsAvpzP6UBUEEUrYmgKNpump": {
-   "sym": "WEALTH",
-   "qty": 93312.573987,
-   "cost": 50.02,
-   "opened": "2026-11-12T20:36:08Z",
-   "peak": 0.0007197,
-   "entry": 0.0005360478000206985,
-   "cur_price": 0.0002777,
-   "mark": 0.0002777
+   "cur_price": 0.001434,
+   "mark": 0.001434
   },
   "F4vEFNoH9H2oLYRabaQQ2Z6jAAi2AhRVdTdVH6Nn2J1q": {
    "sym": "CJ",
@@ -28,8 +18,8 @@
    "opened": "2026-11-14T13:41:05Z",
    "peak": 0.0004226,
    "entry": 0.00027777093394788706,
-   "cur_price": 0.0002175,
-   "mark": 0.0002175
+   "cur_price": 0.0002169,
+   "mark": 0.0002169
   },
   "9cmXfuC26anZtH9AUWVzpUxU1UJ7PPogYxftYTepump": {
    "sym": "WISHMAS",
@@ -38,8 +28,8 @@
    "opened": "2026-11-15T21:46:01Z",
    "peak": 0.0002474,
    "entry": 0.0002095119938822751,
-   "cur_price": 0.0001961,
-   "mark": 0.0001961
+   "cur_price": 0.0001944,
+   "mark": 0.0001944
   },
   "BWJfBNeXpapG7uoqByp5KSwWgCQba8QcDmA2DQiEpump": {
    "sym": "Leonida",
@@ -48,8 +38,8 @@
    "opened": "2026-11-16T13:10:15Z",
    "peak": 0.0005866,
    "entry": 0.00027324480919268385,
-   "cur_price": 0.0004519,
-   "mark": 0.0004519,
+   "cur_price": 0.000436,
+   "mark": 0.000436,
    "tp0": true
   }
  },
@@ -4827,13 +4817,24 @@
    "slip": 0.0,
    "quote": "jup",
    "reason": "trail"
+  },
+  {
+   "t": "2026-11-18T02:00:03Z",
+   "side": "sell",
+   "sym": "WEALTH",
+   "addr": "8Mi9E1V2bdPeAaRkR5yxUsAvpzP6UBUEEUrYmgKNpump",
+   "price": 0.0002678,
+   "usd": 24.49,
+   "pnl": -25.53,
+   "peak_x": 1.343,
+   "held_h": 125.4,
+   "frac": 1.0,
+   "slip": 0.02,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-10-31T17:20:59Z",
-   "v": 174.46
-  },
   {
    "t": "2026-10-31T17:26:00Z",
    "v": 175.07
@@ -24829,11 +24830,14 @@
   {
    "t": "2026-11-18T01:56:17Z",
    "v": 348.61
+  },
+  {
+   "t": "2026-11-18T02:01:19Z",
+   "v": 344.99
   }
  ],
  "started": "2026-09-10T17:17:16Z",
  "verkauft_am": {
-  "TiMSdJrkVwUpeEWJpuqRvHt4wVS7uH77LbNPGGVJXNw": 1794359403.1367462,
   "HoqJaoes6yfL8YEsHGfENwVKT7LrAPy97ZDg9hmBu4Ep": 1794366904.0805845,
   "CXz596uKfWb5tkyz5Vh5a9QCKKh38io6hdgGrKKcpump": 1794405604.8976314,
   "F2xQeTCTqnczXxXQaBWAfDpUnpxn4wQHRPSqvUYJpump": 1794424505.7583208,
@@ -24843,6 +24847,7 @@
   "Eyo1o3QYKQwdvP6UtK9dQLTZj2BBtoJdN4tMWB2Dpump": 1794545704.8716352,
   "BWJfBNeXpapG7uoqByp5KSwWgCQba8QcDmA2DQiEpump": 1794654602.3319535,
   "6mXFCoZ515w37YfmwXGJMPfQfiK5tr9WkihW3oN9pump": 1794698705.7842565,
-  "FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump": 1794938707.6838822
+  "FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump": 1794938707.6838822,
+  "8Mi9E1V2bdPeAaRkR5yxUsAvpzP6UBUEEUrYmgKNpump": 1794967203.9965835
  }
 }
