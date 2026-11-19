@@ -1571,10 +1571,6 @@
  ],
  "equity": [
   {
-   "t": "2026-11-01T15:21:42Z",
-   "v": 336.89
-  },
-  {
    "t": "2026-11-01T15:26:41Z",
    "v": 336.46
   },
@@ -21569,17 +21565,18 @@
   {
    "t": "2026-11-18T23:56:29Z",
    "v": 263.22
+  },
+  {
+   "t": "2026-11-19T00:01:33Z",
+   "v": 263.22
   }
  ],
  "started": "2026-09-25T09:22:03Z",
  "version": "f5",
- "cooldown": {
-  "KENJSUYLASHUMfHyy5o4Hp2FdNqZg1AsUPhfH2kYvEP": 20776,
-  "FjPKUGnF5zBpdEv18gT8FJCtxh3MKrFkoeYekgYr1win": 20776
- },
+ "cooldown": {},
  "strategy": "nach_dem_stop",
  "coverage": {
-  "t": "2026-11-18T23:56:29Z",
+  "t": "2026-11-19T00:01:33Z",
   "virtuell": 6,
   "neu": 0,
   "gestoppt": true
