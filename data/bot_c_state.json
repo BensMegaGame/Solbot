@@ -1,16 +1,6 @@
 {
- "cash": 123.48004835725267,
+ "cash": 199.0274293572527,
  "positions": {
-  "BeGY8KqKxboEwRbJd1q9H2K829jS4Rc5dEyNMYXCbV5p": {
-   "sym": "NPC",
-   "qty": 7151.73368236,
-   "cost": 84.26205046494782,
-   "opened": "2026-11-15T00:41:26Z",
-   "peak": 0.01256,
-   "entry": 0.011782045334375789,
-   "cur_price": 0.0107,
-   "mark": 0.0107
-  },
   "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump": {
    "sym": "PIPPIN",
    "qty": 5057.686183,
@@ -18,8 +8,8 @@
    "opened": "2026-11-19T10:11:22Z",
    "peak": 0.01825,
    "entry": 0.017050248066625133,
-   "cur_price": 0.01798,
-   "mark": 0.01798
+   "cur_price": 0.01821,
+   "mark": 0.01821
   }
  },
  "trades": [
@@ -2350,13 +2340,24 @@
    "slip": 0.0,
    "quote": "jup",
    "reason": "dip 24h -14% (SOL -1%) 1h +0.3%"
+  },
+  {
+   "t": "2026-11-19T15:56:12Z",
+   "side": "sell",
+   "sym": "NPC",
+   "addr": "BeGY8KqKxboEwRbJd1q9H2K829jS4Rc5dEyNMYXCbV5p",
+   "price": 0.0106,
+   "usd": 75.55,
+   "pnl": -8.71,
+   "peak_x": 1.066,
+   "held_h": 111.2,
+   "frac": 1.0,
+   "slip": 0.0051,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-11-02T07:16:21Z",
-   "v": 336.95
-  },
   {
    "t": "2026-11-02T07:21:21Z",
    "v": 336.95
@@ -22352,6 +22353,10 @@
   {
    "t": "2026-11-19T15:51:08Z",
    "v": 290.94
+  },
+  {
+   "t": "2026-11-19T15:56:12Z",
+   "v": 291.13
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -22359,7 +22364,7 @@
  "strategy": "dip_weites_netz",
  "universe_n": 153,
  "coverage": {
-  "t": "2026-11-19T15:51:08Z",
+  "t": "2026-11-19T15:56:12Z",
   "kurse": 124,
   "von": 153,
   "ohne_pool": 83,
@@ -22368,7 +22373,6 @@
  },
  "verkauft_am": {
   "GJAFwWjJ3vnTsrQVabjBVK2TYB1YtRCQXRDfDgUnpump": 1794695483.672037,
-  "6aqQf9dsYAUwyW3jRawBBxZ1oy8ehmBYb519MhjV2eab": 1794441996.214584,
   "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump": 1794994883.7576149,
   "5w3wVdJaESaJKyLmStM6Hv9UyUkmZ1b9DLQquAqqpump": 1794502880.101175,
   "DKYcjobF7HPtL9RyQBRdeRQ2iWvizpfbgWwPWNXdpump": 1794511879.0246818,
@@ -22376,6 +22380,7 @@
   "KMifrkYmDdAKtVXAVBEPEQxJ7qP2iLgUcfZjUZipump": 1794885397.3874562,
   "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump": 1794804988.007114,
   "6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump": 1794879992.7550938,
-  "FeR8VBqNRSUD5NtXAj2n3j1dAHkZHfyDktKuLXD4pump": 1794912082.0355837
+  "FeR8VBqNRSUD5NtXAj2n3j1dAHkZHfyDktKuLXD4pump": 1794912082.0355837,
+  "BeGY8KqKxboEwRbJd1q9H2K829jS4Rc5dEyNMYXCbV5p": 1795103772.4735022
  }
 }
