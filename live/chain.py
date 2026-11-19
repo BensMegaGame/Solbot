@@ -12,17 +12,42 @@ from solders.hash import Hash
 USDC = "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
 SOL_MINT = "So11111111111111111111111111111111111111112"
 TOKEN_PROGRAMS = ["TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",      # SPL Token
-                  "TokenzQdBNbLqP5VEhdkAS6EPFLC1PE9n9vbDgUEfJp7GEz"]     # Token-2022
+                  "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb"]     # Token-2022
 JUP = "https://api.jup.ag/swap/v1"
 UA = {"User-Agent": "solbot-live/1.0"}
 MAX_PRIO_LAMPORTS = 200_000          # Priority-Fee hoechstens 0,0002 SOL je Transaktion (~1-2 Cent)
 
 
-def lade_wallet(pfad):
-    """Privater Schluessel aus Datei: base58 (Phantom-Export) oder JSON-Liste mit 64 Zahlen."""
-    s = open(pfad).read().strip()
+B58 = "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz"
+
+def _b58(s):
+    n = 0
+    for c in s:
+        if c not in B58: raise ValueError(f"unerlaubtes Zeichen {c!r}")
+        n = n * 58 + B58.index(c)
+    raw = n.to_bytes((n.bit_length() + 7) // 8, "big") if n else b""
+    return b"\0" * (len(s) - len(s.lstrip("1"))) + raw
+
+def schluessel_bereinigen(s):
+    """Entfernt Leerzeichen, Zeilenumbrueche und Einfuege-Steuerzeichen; erkennt doppelt eingefuegte Schluessel."""
+    for x in ("\x1b[200~", "\x1b[201~", "[200~", "[201~"): s = s.replace(x, "")
+    s = "".join(s.split())
+    h = len(s) // 2
+    if len(s) % 2 == 0 and h >= 40 and s[:h] == s[h:]: s = s[:h]     # zweimal eingefuegt
+    return s
+
+def keypair_aus_text(s):
+    """base58 (Phantom/Jupiter, 64 oder 32 Bytes), JSON-Liste mit Zahlen oder Hex (128 Zeichen)."""
+    s = schluessel_bereinigen(s)
     if s.startswith("["): return Keypair.from_bytes(bytes(json.loads(s)))
-    return Keypair.from_base58_string(s)
+    if len(s) == 128 and all(c in "0123456789abcdefABCDEF" for c in s): return Keypair.from_bytes(bytes.fromhex(s))
+    raw = _b58(s)
+    if len(raw) == 64: return Keypair.from_bytes(raw)
+    if len(raw) == 32: return Keypair.from_seed(raw)
+    raise ValueError(f"{len(s)} Zeichen ergeben {len(raw)} Bytes - erwartet 64 (ein Private Key hat meist 87-88 Zeichen)")
+
+def lade_wallet(pfad):
+    return keypair_aus_text(open(pfad).read())
 
 
 class Chain:
