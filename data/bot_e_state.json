@@ -1,17 +1,6 @@
 {
- "cash": 283.4720071062329,
- "positions": {
-  "3vgopg7xm3EWkXfxmWPUpcf7g939hecfqg18sLuXDzVt": {
-   "sym": "HAROLD",
-   "qty": 20267.86215,
-   "cost": 258.8523967395696,
-   "opened": "2026-11-16T20:56:40Z",
-   "peak": 0.01343,
-   "entry": 0.012771568842526866,
-   "mark": 0.0122,
-   "cur_price": 0.0122
-  }
- },
+ "cash": 451.10100710623294,
+ "positions": {},
  "trades": [
   {
    "t": "2026-09-16T17:20:59Z",
@@ -1902,13 +1891,24 @@
    "slip": 0.0032,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-11-20T17:16:13Z",
+   "side": "sell",
+   "sym": "HAROLD",
+   "addr": "3vgopg7xm3EWkXfxmWPUpcf7g939hecfqg18sLuXDzVt",
+   "price": 0.007551,
+   "usd": 167.63,
+   "pnl": -91.22,
+   "peak_x": 1.052,
+   "held_h": 92.3,
+   "frac": 1.0,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-11-03T08:36:41Z",
-   "v": 452.46
-  },
   {
    "t": "2026-11-03T08:41:51Z",
    "v": 451.92
@@ -21904,25 +21904,28 @@
   {
    "t": "2026-11-20T17:11:16Z",
    "v": 530.74
+  },
+  {
+   "t": "2026-11-20T17:16:13Z",
+   "v": 451.1
   }
  ],
  "started": "2026-09-16T16:55:59Z",
  "strategy": "largecap_dip",
  "universe_n": 51,
  "coverage": {
-  "t": "2026-11-20T17:11:16Z",
+  "t": "2026-11-20T17:16:13Z",
   "kurse": 50,
   "von": 51,
   "sol": true
  },
  "verkauft_am": {
-  "XsueG8BtpquVJX9LVLLEGuViXUungE6WmK5YZ3p3bd1": 1794509196.0332766,
-  "XsDoVfqeBukxuZHWhdvWHBhgEHjGNst4MLodqsJHzoB": 1794514296.75722,
   "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump": 1794897700.1648033,
   "CLoUDKc4Ane7HeQcPpE3YHnznRxhMimJ4MyaUqyHFzAu": 1794666702.1213057,
   "5UUH9RTDiSpq6HKS6bp4NdU9PNJpXRXuiw6ShBTBhgH2": 1794822688.6171076,
   "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG": 1794834981.520019,
   "CWZ6BsdnjkDVTGkmL6bGbJXXig6ceef12KvyGQW14cMt": 1794891698.7079287,
-  "BPxxfRCXkUVhig4HS1Lh7kZqV6SPJhzfEk4x6fVBjPCy": 1795098079.7182603
+  "BPxxfRCXkUVhig4HS1Lh7kZqV6SPJhzfEk4x6fVBjPCy": 1795098079.7182603,
+  "3vgopg7xm3EWkXfxmWPUpcf7g939hecfqg18sLuXDzVt": 1795194973.5345426
  }
 }
