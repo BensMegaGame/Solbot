@@ -24,7 +24,7 @@ MODI (.env):  LIVE_MODUS=trocken  -> rechnet alles, baut und simuliert Transakti
 NOTAUS:       Datei STOP in diesem Ordner anlegen -> der Bot macht gar nichts mehr (offene Positionen bleiben!).
               alles_verkaufen.py verkauft alles in USDC.
 """
-import os, sys, time, json, traceback
+import os, sys, time, json, traceback, calendar
 
 HIER = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(HIER)
@@ -48,6 +48,7 @@ BUY_DEVIATION = 1.25                           # wie Paper: Jupiter-Fill vs. Dex
 SOL_MIN_USD, SOL_ZIEL_USD = 1.0, 5.0
 WARTEN_S = 30                                  # so lange in einem Lauf auf Bestaetigung warten
 STAUB_USD = 0.50                               # Rest unter 0,50 $ gilt als verkauft
+WIEDERKAUF_SPERRE_H = 6                        # 20.11.: denselben Coin erst 6 h nach einem kompletten Verkauf wieder kaufen
 STATE = "live_state.json"
 
 
@@ -64,6 +65,15 @@ class Bot:
         self.kp = lade_wallet(KEY_FILE)
         self.ch = Chain(self.kp, os.environ["HELIUS_KEY"], os.environ["JUP_KEY"])
         self.now = time.time(); self.toks = {}; self.lam = 0; self.werte = {}
+        if "wiederkauf_sperre" not in self.st:   # einmalig: Verkaeufe der letzten 6 h aus dem Trade-Log uebernehmen
+            sp = self.st["wiederkauf_sperre"] = {}
+            try:
+                for z in open(os.path.join(STATE_DIR, "live_trades.jsonl")):
+                    t = json.loads(z)
+                    if t.get("side") != "sell": continue
+                    bis = calendar.timegm(time.strptime(t["t"][:19], "%Y-%m-%dT%H:%M:%S")) + WIEDERKAUF_SPERRE_H * 3600
+                    if bis > self.now: sp[t["mint"]] = bis
+            except (OSError, ValueError, KeyError): pass
         self.aktion_gesperrt = False
 
     # ---------- Hilfen ----------
@@ -143,6 +153,7 @@ class Bot:
             pos["tp1"] = True; self.werte[m] = rest_wert
         if ganz:
             del self.st["positions"][m]; self.werte.pop(m, None); self.meta["last_sell"] = self.now
+            self.st.setdefault("wiederkauf_sperre", {})[m] = self.now + WIEDERKAUF_SPERRE_H * 3600
             if pd["grund"] == "stop":
                 self.st["cooldown"][m] = heute() + E.COOLDOWN_D
                 self.meta["consec_stops"] = self.meta.get("consec_stops", 0) + 1
@@ -225,6 +236,7 @@ class Bot:
         self.konten_aufraeumen()
         self.tagesbericht(sol_px)
         self.st["cooldown"] = {k: v for k, v in self.st["cooldown"].items() if v > heute()}
+        self.st["wiederkauf_sperre"] = {k: v for k, v in self.st.get("wiederkauf_sperre", {}).items() if v > self.now}
         self.st["letzter_lauf"] = common.now_iso()
         self.speichern()
         print(f"Bot E LIVE [{MODUS}] {self.konto_text()} | SOL {self.lam / 1e9:.4f} | positionen {len(self.st['positions'])} "
@@ -327,6 +339,7 @@ class Bot:
         cands = []
         for a, p in pairs.items():
             if a == SOL_MINT or a in st["positions"] or st["cooldown"].get(a, 0) > heute(): continue
+            if st.get("wiederkauf_sperre", {}).get(a, 0) > self.now: continue   # 6 h nach Verkauf gesperrt
             sym = p["baseToken"]["symbol"]
             if not E.tradeable(sym): continue
             c24, c1 = E.f(p, "priceChange", "h24"), E.f(p, "priceChange", "h1")
