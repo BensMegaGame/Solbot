@@ -1,15 +1,16 @@
 {
- "cash": 199.0274293572527,
+ "cash": 248.84604735725267,
  "positions": {
   "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump": {
    "sym": "PIPPIN",
-   "qty": 5057.686183,
-   "cost": 86.2348040632924,
+   "qty": 2528.8430915,
+   "cost": 43.1174020316462,
    "opened": "2026-11-19T10:11:22Z",
-   "peak": 0.01923,
+   "peak": 0.01976,
    "entry": 0.017050248066625133,
-   "cur_price": 0.01923,
-   "mark": 0.01923
+   "cur_price": 0.01976,
+   "mark": 0.01976,
+   "tp1": true
   }
  },
  "trades": [
@@ -2355,13 +2356,24 @@
    "slip": 0.0051,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-11-20T00:26:15Z",
+   "side": "sell",
+   "sym": "PIPPIN",
+   "addr": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
+   "price": 0.01976,
+   "usd": 49.82,
+   "pnl": 6.7,
+   "peak_x": 1.159,
+   "held_h": 14.2,
+   "frac": 0.5,
+   "slip": 0.0061,
+   "quote": "jup",
+   "reason": "tp1"
   }
  ],
  "equity": [
-  {
-   "t": "2026-11-02T15:46:15Z",
-   "v": 336.95
-  },
   {
    "t": "2026-11-02T15:51:16Z",
    "v": 336.95
@@ -22357,6 +22369,10 @@
   {
    "t": "2026-11-20T00:21:16Z",
    "v": 296.29
+  },
+  {
+   "t": "2026-11-20T00:26:15Z",
+   "v": 298.82
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -22364,7 +22380,7 @@
  "strategy": "dip_weites_netz",
  "universe_n": 153,
  "coverage": {
-  "t": "2026-11-20T00:21:16Z",
+  "t": "2026-11-20T00:26:15Z",
   "kurse": 126,
   "von": 153,
   "ohne_pool": 83,
