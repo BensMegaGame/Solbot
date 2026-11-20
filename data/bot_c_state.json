@@ -1,18 +1,6 @@
 {
- "cash": 248.84604735725267,
- "positions": {
-  "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump": {
-   "sym": "PIPPIN",
-   "qty": 2528.8430915,
-   "cost": 43.1174020316462,
-   "opened": "2026-11-19T10:11:22Z",
-   "peak": 0.02041,
-   "entry": 0.017050248066625133,
-   "cur_price": 0.01948,
-   "mark": 0.01948,
-   "tp1": true
-  }
- },
+ "cash": 296.70310035725265,
+ "positions": {},
  "trades": [
   {
    "t": "2026-09-25T10:30:42Z",
@@ -2371,13 +2359,24 @@
    "slip": 0.0061,
    "quote": "jup",
    "reason": "tp1"
+  },
+  {
+   "t": "2026-11-20T00:51:15Z",
+   "side": "sell",
+   "sym": "PIPPIN",
+   "addr": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump",
+   "price": 0.01898,
+   "usd": 47.86,
+   "pnl": 4.74,
+   "peak_x": 1.197,
+   "held_h": 14.7,
+   "frac": 1.0,
+   "slip": 0.0056,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
-  {
-   "t": "2026-11-02T16:11:18Z",
-   "v": 336.95
-  },
   {
    "t": "2026-11-02T16:16:18Z",
    "v": 336.95
@@ -22373,6 +22372,10 @@
   {
    "t": "2026-11-20T00:46:15Z",
    "v": 298.11
+  },
+  {
+   "t": "2026-11-20T00:51:15Z",
+   "v": 296.7
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -22380,7 +22383,7 @@
  "strategy": "dip_weites_netz",
  "universe_n": 153,
  "coverage": {
-  "t": "2026-11-20T00:46:15Z",
+  "t": "2026-11-20T00:51:15Z",
   "kurse": 126,
   "von": 153,
   "ohne_pool": 83,
@@ -22390,13 +22393,12 @@
  "verkauft_am": {
   "GJAFwWjJ3vnTsrQVabjBVK2TYB1YtRCQXRDfDgUnpump": 1794695483.672037,
   "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump": 1794994883.7576149,
-  "5w3wVdJaESaJKyLmStM6Hv9UyUkmZ1b9DLQquAqqpump": 1794502880.101175,
-  "DKYcjobF7HPtL9RyQBRdeRQ2iWvizpfbgWwPWNXdpump": 1794511879.0246818,
   "74SBV4zDXxTRgv1pEMoECskKBkZHc2yGPnc7GYVepump": 1794629796.4822726,
   "KMifrkYmDdAKtVXAVBEPEQxJ7qP2iLgUcfZjUZipump": 1794885397.3874562,
   "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump": 1794804988.007114,
   "6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump": 1794879992.7550938,
   "FeR8VBqNRSUD5NtXAj2n3j1dAHkZHfyDktKuLXD4pump": 1794912082.0355837,
-  "BeGY8KqKxboEwRbJd1q9H2K829jS4Rc5dEyNMYXCbV5p": 1795103772.4735022
+  "BeGY8KqKxboEwRbJd1q9H2K829jS4Rc5dEyNMYXCbV5p": 1795103772.4735022,
+  "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump": 1795135875.894853
  }
 }
