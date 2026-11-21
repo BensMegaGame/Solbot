@@ -1,0 +1,869 @@
+{
+ "t": "2026-11-21T09:57:52Z",
+ "coins": {
+  "DCTY": {
+   "alt_erstellt": 1795017399,
+   "pools": [
+    {
+     "poolId": "DChXQ4qFPpNPEDfZLNiwvPhrVuuFGfqEDLAAZbiZHUWf",
+     "market": "pumpfun-amm",
+     "createdAt": 1792465410004,
+     "liquidity": {
+      "quote": 499.664479,
+      "usd": 212232.6279330723
+     },
+     "marketCap": {
+      "quote": 9677.813706439036,
+      "usd": 2055327.046336091
+     }
+    },
+    {
+     "poolId": "3v3sLe2mrNjjwWtB6fBQMFv1WGC1Xj2VMEicJTA1TcG8",
+     "market": "meteora-dlmm",
+     "createdAt": 1795017858417,
+     "liquidity": {
+      "quote": 541.993783858,
+      "usd": 58413.055267550924
+     },
+     "marketCap": {
+      "quote": 30012.737131383034,
+      "usd": 2040100.1970382617
+     }
+    },
+    {
+     "poolId": "3gUa73kgEfZW6zj97uShGaCd4GAPjc7kd61aKkcCMqpw",
+     "market": "meteora-dlmm",
+     "createdAt": 1795019166969,
+     "liquidity": {
+      "quote": 350.104747776,
+      "usd": 33510.20060933143
+     },
+     "marketCap": {
+      "quote": 30224.157984609825,
+      "usd": 2054471.4195774738
+     }
+    },
+    {
+     "poolId": "4exs9btspvKHEYtuCFMXXV9snF99UvbFJKtDhAzmgYtz",
+     "market": "meteora-dlmm",
+     "createdAt": 1795017399295,
+     "liquidity": {
+      "quote": 98.485719221,
+      "usd": 11365.474421804614
+     },
+     "marketCap": {
+      "quote": 29538.234925539167,
+      "usd": 2007846.156382139
+     }
+    },
+    {
+     "poolId": "Fg6jSVfzpvnG6nwovQ6MMDVybrmBFXLQmwEHTWDD9avX",
+     "market": "meteora-dlmm",
+     "createdAt": 1795016713216,
+     "liquidity": {
+      "quote": 32.331600197,
+      "usd": 3764.5147706614057
+     },
+     "marketCap": {
+      "quote": 29346.516557419836,
+      "usd": 1994814.200020947
+     }
+    },
+    {
+     "poolId": "BkUEx2fjBrNNaEbb6zeZmSEJ4y8AN17B8uW3fzWzBmUB",
+     "market": "meteora-dlmm",
+     "createdAt": 1795090257081,
+     "liquidity": {
+      "quote": 14.434851718,
+      "usd": 1118.1405547857821
+     },
+     "marketCap": {
+      "quote": 30149.917359362447,
+      "usd": 2049424.9516884438
+     }
+    },
+    {
+     "poolId": "9hjBLBrc7WZW2H8UQvBAvG5WiTZotXUv2Bdcn4f4pump",
+     "market": "pumpfun",
+     "createdAt": 1792300456906,
+     "liquidity": {
+      "quote": 0,
+      "usd": 0
+     },
+     "marketCap": {
+      "quote": 0,
+      "usd": 0
+     }
+    }
+   ],
+   "zeitfelder": [
+    [
+     ".token.creation.created_time",
+     1792300457
+    ],
+    [
+     ".pools[0].lastUpdated",
+     1795255070
+    ],
+    [
+     ".pools[0].createdAt",
+     1792465410
+    ],
+    [
+     ".pools[1].lastUpdated",
+     1795255069
+    ],
+    [
+     ".pools[1].createdAt",
+     1795017858
+    ],
+    [
+     ".pools[2].lastUpdated",
+     1795255072
+    ],
+    [
+     ".pools[2].createdAt",
+     1795019166
+    ],
+    [
+     ".pools[3].lastUpdated",
+     1795255070
+    ],
+    [
+     ".pools[3].createdAt",
+     1795017399
+    ],
+    [
+     ".pools[4].lastUpdated",
+     1795255070
+    ],
+    [
+     ".pools[4].createdAt",
+     1795016713
+    ],
+    [
+     ".pools[5].lastUpdated",
+     1795255063
+    ],
+    [
+     ".pools[5].createdAt",
+     1795090257
+    ],
+    [
+     ".pools[6].lastUpdated",
+     1795255072
+    ],
+    [
+     ".pools[6].createdAt",
+     1792300456
+    ],
+    [
+     ".risk.snipers.wallets[3].buyTime",
+     1792300462
+    ],
+    [
+     ".risk.bundlers.wallets[0].bundleTime",
+     1795072401
+    ],
+    [
+     ".risk.bundlers.wallets[1].bundleTime",
+     1795014393
+    ],
+    [
+     ".risk.bundlers.wallets[2].bundleTime",
+     1795143488
+    ],
+    [
+     ".risk.bundlers.wallets[3].bundleTime",
+     1795182443
+    ],
+    [
+     ".risk.bundlers.wallets[4].bundleTime",
+     1795086862
+    ],
+    [
+     ".risk.bundlers.wallets[5].bundleTime",
+     1795080166
+    ],
+    [
+     ".risk.bundlers.wallets[6].bundleTime",
+     1795017855
+    ],
+    [
+     ".risk.bundlers.wallets[7].bundleTime",
+     1795017587
+    ],
+    [
+     ".risk.bundlers.wallets[8].bundleTime",
+     1795089980
+    ],
+    [
+     ".risk.bundlers.wallets[9].bundleTime",
+     1795017785
+    ]
+   ],
+   "info_fehler": null,
+   "start_gewaehlt": 1792300456,
+   "kerzen_n": 1309,
+   "kerzen_fehler": null,
+   "kerzen_erste20": [
+    {
+     "open": 42821.85763582225,
+     "close": 39659.2131892141,
+     "low": 37856.202665071156,
+     "high": 42821.85763582225,
+     "volume": 1152,
+     "time": 1792465380
+    },
+    {
+     "open": 39659.2131892141,
+     "close": 37222.315890974605,
+     "low": 34440.50407934357,
+     "high": 39659.2131892141,
+     "volume": 265,
+     "time": 1792465440
+    },
+    {
+     "open": 37222.315890974605,
+     "close": 39824.0893831427,
+     "low": 37222.315890974605,
+     "high": 39824.0893831427,
+     "volume": 0,
+     "time": 1792465500
+    },
+    {
+     "open": 39824.0893831427,
+     "close": 27078.26895462585,
+     "low": 27078.26895462585,
+     "high": 40614.64139078671,
+     "volume": 1862,
+     "time": 1792465560
+    },
+    {
+     "open": 27078.26895462585,
+     "close": 27367.905714787918,
+     "low": 27078.26895462585,
+     "high": 29606.141837255844,
+     "volume": 438,
+     "time": 1792465620
+    },
+    {
+     "open": 27367.905714787918,
+     "close": 30660.279478013337,
+     "low": 27367.905714787918,
+     "high": 30660.279478013337,
+     "volume": 10,
+     "time": 1792465680
+    },
+    {
+     "open": 30660.279478013337,
+     "close": 30059.276483220743,
+     "low": 30059.276483220743,
+     "high": 30660.279478013337,
+     "volume": 79,
+     "time": 1792465800
+    },
+    {
+     "open": 30059.276483220743,
+     "close": 29981.152520656677,
+     "low": 29981.152520656677,
+     "high": 30059.276483220743,
+     "volume": 9,
+     "time": 1792465860
+    },
+    {
+     "open": 29981.152520656677,
+     "close": 30025.681710177694,
+     "low": 29981.152520656677,
+     "high": 30025.681710177694,
+     "volume": 5,
+     "time": 1792466040
+    },
+    {
+     "open": 30025.681710177694,
+     "close": 29991.384870274935,
+     "low": 29991.384870274935,
+     "high": 30025.681710177694,
+     "volume": 1,
+     "time": 1792466100
+    },
+    {
+     "open": 29991.384870274935,
+     "close": 30015.410044689528,
+     "low": 29991.384870274935,
+     "high": 30015.410044689528,
+     "volume": 2,
+     "time": 1792466160
+    },
+    {
+     "open": 30015.410044689528,
+     "close": 30018.207277845588,
+     "low": 30015.410044689528,
+     "high": 30019.12205999489,
+     "volume": 0,
+     "time": 1792466280
+    },
+    {
+     "open": 30018.207277845588,
+     "close": 30074.847910183675,
+     "low": 30018.207277845588,
+     "high": 30074.847910183675,
+     "volume": 0,
+     "time": 1792466460
+    },
+    {
+     "open": 30074.847910183675,
+     "close": 30101.260570593327,
+     "low": 30074.847910183675,
+     "high": 30101.260570593327,
+     "volume": 0,
+     "time": 1792466580
+    },
+    {
+     "open": 30101.260570593327,
+     "close": 30124.7268259702,
+     "low": 30101.260570593327,
+     "high": 30124.7268259702,
+     "volume": 0,
+     "time": 1792466640
+    },
+    {
+     "open": 30124.7268259702,
+     "close": 30113.19352638214,
+     "low": 30113.19352638214,
+     "high": 30124.7268259702,
+     "volume": 0,
+     "time": 1792466820
+    },
+    {
+     "open": 30113.19352638214,
+     "close": 30101.15306515608,
+     "low": 30101.15306515608,
+     "high": 30113.19352638214,
+     "volume": 0,
+     "time": 1792467000
+    },
+    {
+     "open": 30101.15306515608,
+     "close": 30125.238803792694,
+     "low": 30101.15306515608,
+     "high": 30125.238803792694,
+     "volume": 0,
+     "time": 1792467180
+    },
+    {
+     "open": 30125.238803792694,
+     "close": 30113.19352638214,
+     "low": 30113.19352638214,
+     "high": 30125.238803792694,
+     "volume": 0,
+     "time": 1792467360
+    },
+    {
+     "open": 30113.19352638214,
+     "close": 30160.338956619657,
+     "low": 30113.19352638214,
+     "high": 30160.338956619657,
+     "volume": 0,
+     "time": 1792467540
+    }
+   ],
+   "kerzen_vor_altem_start": 1249,
+   "holder_n": 838,
+   "holder_erste10": [
+    {
+     "holders": 0,
+     "time": 1792300200
+    },
+    {
+     "holders": 16,
+     "time": 1792300500
+    },
+    {
+     "holders": 27,
+     "time": 1792300800
+    },
+    {
+     "holders": 33,
+     "time": 1792301100
+    },
+    {
+     "holders": 36,
+     "time": 1792301400
+    },
+    {
+     "holders": 34,
+     "time": 1792301700
+    },
+    {
+     "holders": 30,
+     "time": 1792302000
+    },
+    {
+     "holders": 29,
+     "time": 1792302900
+    },
+    {
+     "holders": 35,
+     "time": 1792303500
+    },
+    {
+     "holders": 34,
+     "time": 1792304100
+    }
+   ],
+   "holder_fehler": null
+  },
+  "mihao": {
+   "alt_erstellt": 1794352663,
+   "pools": [
+    {
+     "poolId": "Ho1aSG6WGH1FfXdEHrK2f4Ggt1Hoxo9s5jcLMDqeyeBz",
+     "market": "pumpfun-amm",
+     "createdAt": 1792946595003,
+     "liquidity": {
+      "quote": 2305.691416051,
+      "usd": 313456.3496560578
+     },
+     "marketCap": {
+      "quote": 100051.3584214002,
+      "usd": 6800939.0525068175
+     }
+    },
+    {
+     "poolId": "8N9bUK6zfZFmuGa4dEpeEoj9Cs4VZSxhdMCMtZALHR5z",
+     "market": "meteora-dlmm",
+     "createdAt": 1794352663990,
+     "liquidity": {
+      "quote": 2148.180647194,
+      "usd": 168640.64377641102
+     },
+     "marketCap": {
+      "quote": 101054.22576019759,
+      "usd": 6867759.052159746
+     }
+    },
+    {
+     "poolId": "9ViFN1A2FG2aL69Uu3dZwVMbcSdKuuMM5PLouZmguK2e",
+     "market": "meteora-dlmm",
+     "createdAt": 1793475601599,
+     "liquidity": {
+      "quote": 240.022163535,
+      "usd": 21469.899840590297
+     },
+     "marketCap": {
+      "quote": 101278.14595965778,
+      "usd": 6882976.921231876
+     }
+    },
+    {
+     "poolId": "ABwh1ofw3qxMcf3SxkoSsK2zExdYfVGoAqxmNHqWdvSq",
+     "market": "meteora-dlmm",
+     "createdAt": 1794401737390,
+     "liquidity": {
+      "quote": 396.411767,
+      "usd": 11754.05400772207
+     },
+     "marketCap": {
+      "quote": 7239920.871455082,
+      "usd": 7239920.871455082
+     }
+    },
+    {
+     "poolId": "6dNHfRq1Bb4n3kvFr44xUeJWJQhUegXAEzQWWkoMxvDv",
+     "market": "meteora-dlmm",
+     "createdAt": 1795123262327,
+     "liquidity": {
+      "quote": 2064.37338,
+      "usd": 5862.835656167295
+     },
+     "marketCap": {
+      "quote": 6718970.248340418,
+      "usd": 6718970.248340418
+     }
+    },
+    {
+     "poolId": "5hJGcmxuNLB32Euz5m2BmXqR3qu1hQEdejLCqtZutjmM",
+     "market": "meteora-dlmm",
+     "createdAt": 1794353389062,
+     "liquidity": {
+      "quote": 37.752269388,
+      "usd": 3888.8625018379926
+     },
+     "marketCap": {
+      "quote": 101054.22735129324,
+      "usd": 6867194.697819185
+     }
+    },
+    {
+     "poolId": "2YoyVHuiqfrSwgDFgt2gei3j9zZkno3D2AAVvakSoto2",
+     "market": "meteora-dlmm",
+     "createdAt": 1794354403963,
+     "liquidity": {
+      "quote": 0,
+      "usd": 0
+     },
+     "marketCap": {
+      "quote": 0,
+      "usd": 0
+     }
+    },
+    {
+     "poolId": "Gmg6h88C7A1ujZp8iwQmAaPMaXG4kxyZ8wDmkAzbs4Cx",
+     "market": "pumpfun-amm",
+     "createdAt": 1794358519653,
+     "liquidity": {
+      "quote": 0,
+      "usd": 0
+     },
+     "marketCap": {
+      "quote": 0,
+      "usd": 0
+     }
+    },
+    {
+     "poolId": "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump",
+     "market": "pumpfun",
+     "createdAt": 1792934861367,
+     "liquidity": {
+      "quote": 0,
+      "usd": 0
+     },
+     "marketCap": {
+      "quote": 0,
+      "usd": 0
+     }
+    }
+   ],
+   "zeitfelder": [
+    [
+     ".token.creation.created_time",
+     1792934861
+    ],
+    [
+     ".pools[0].lastUpdated",
+     1795255068
+    ],
+    [
+     ".pools[0].createdAt",
+     1792946595
+    ],
+    [
+     ".pools[1].lastUpdated",
+     1795255022
+    ],
+    [
+     ".pools[1].createdAt",
+     1794352663
+    ],
+    [
+     ".pools[2].lastUpdated",
+     1795255022
+    ],
+    [
+     ".pools[2].createdAt",
+     1793475601
+    ],
+    [
+     ".pools[3].lastUpdated",
+     1795255022
+    ],
+    [
+     ".pools[3].createdAt",
+     1794401737
+    ],
+    [
+     ".pools[4].lastUpdated",
+     1795255022
+    ],
+    [
+     ".pools[4].createdAt",
+     1795123262
+    ],
+    [
+     ".pools[5].lastUpdated",
+     1795254752
+    ],
+    [
+     ".pools[5].createdAt",
+     1794353389
+    ],
+    [
+     ".pools[6].lastUpdated",
+     1795249659
+    ],
+    [
+     ".pools[6].createdAt",
+     1794354403
+    ],
+    [
+     ".pools[7].lastUpdated",
+     1795253389
+    ],
+    [
+     ".pools[7].createdAt",
+     1794358519
+    ],
+    [
+     ".pools[8].lastUpdated",
+     1793905791
+    ],
+    [
+     ".pools[8].createdAt",
+     1792934861
+    ],
+    [
+     ".risk.bundlers.wallets[0].bundleTime",
+     1794073275
+    ],
+    [
+     ".risk.bundlers.wallets[1].bundleTime",
+     1794367217
+    ],
+    [
+     ".risk.bundlers.wallets[2].bundleTime",
+     1794353471
+    ],
+    [
+     ".risk.bundlers.wallets[3].bundleTime",
+     1794352842
+    ],
+    [
+     ".risk.bundlers.wallets[4].bundleTime",
+     1794455281
+    ],
+    [
+     ".risk.bundlers.wallets[5].bundleTime",
+     1794353530
+    ],
+    [
+     ".risk.bundlers.wallets[6].bundleTime",
+     1794437707
+    ],
+    [
+     ".risk.bundlers.wallets[7].bundleTime",
+     1794436207
+    ],
+    [
+     ".risk.bundlers.wallets[8].bundleTime",
+     1794331306
+    ],
+    [
+     ".risk.bundlers.wallets[9].bundleTime",
+     1794528275
+    ]
+   ],
+   "info_fehler": null,
+   "start_gewaehlt": 1792934861,
+   "kerzen_n": 2000,
+   "kerzen_fehler": null,
+   "kerzen_erste20": [
+    {
+     "open": 460485.70027078415,
+     "close": 460877.0547832727,
+     "low": 460485.70027078415,
+     "high": 460877.0547832727,
+     "volume": 29,
+     "time": 1794216060
+    },
+    {
+     "open": 460877.0547832727,
+     "close": 460901.56906900846,
+     "low": 460877.0547832727,
+     "high": 460901.56906900846,
+     "volume": 21,
+     "time": 1794216180
+    },
+    {
+     "open": 460901.56906900846,
+     "close": 460553.8190147796,
+     "low": 460553.8190147796,
+     "high": 460901.56906900846,
+     "volume": 11,
+     "time": 1794216240
+    },
+    {
+     "open": 460553.8190147796,
+     "close": 459941.1036108621,
+     "low": 459941.1036108621,
+     "high": 460553.8190147796,
+     "volume": 0,
+     "time": 1794216300
+    },
+    {
+     "open": 459941.1036108621,
+     "close": 456045.84068903635,
+     "low": 456045.84068903635,
+     "high": 459941.1036108621,
+     "volume": 139,
+     "time": 1794216360
+    },
+    {
+     "open": 456045.84068903635,
+     "close": 456234.8173898597,
+     "low": 456045.84068903635,
+     "high": 456234.8173898597,
+     "volume": 0,
+     "time": 1794216420
+    },
+    {
+     "open": 456234.8173898597,
+     "close": 455528.7424661199,
+     "low": 455528.7424661199,
+     "high": 456234.8173898597,
+     "volume": 22,
+     "time": 1794216480
+    },
+    {
+     "open": 455528.7424661199,
+     "close": 456369.2680064777,
+     "low": 455528.7424661199,
+     "high": 456369.2680064777,
+     "volume": 0,
+     "time": 1794216600
+    },
+    {
+     "open": 456369.2680064777,
+     "close": 456214.27126905555,
+     "low": 456211.1879850836,
+     "high": 456369.2680064777,
+     "volume": 0,
+     "time": 1794216660
+    },
+    {
+     "open": 456214.27126905555,
+     "close": 459589.02374547935,
+     "low": 456214.27126905555,
+     "high": 459589.02374547935,
+     "volume": 103,
+     "time": 1794216720
+    },
+    {
+     "open": 459589.02374547935,
+     "close": 459477.85957248625,
+     "low": 459477.85957248625,
+     "high": 459589.02374547935,
+     "volume": 0,
+     "time": 1794216900
+    },
+    {
+     "open": 459477.85957248625,
+     "close": 461080.3750027626,
+     "low": 459477.85957248625,
+     "high": 461080.3750027626,
+     "volume": 0,
+     "time": 1794217020
+    },
+    {
+     "open": 461080.3750027626,
+     "close": 460240.0014081801,
+     "low": 460240.0014081801,
+     "high": 461080.3750027626,
+     "volume": 1,
+     "time": 1794217200
+    },
+    {
+     "open": 460240.0014081801,
+     "close": 460257.5138313669,
+     "low": 460240.0014081801,
+     "high": 460257.5138313669,
+     "volume": 0,
+     "time": 1794217320
+    },
+    {
+     "open": 460257.5138313669,
+     "close": 460020.76639280724,
+     "low": 460020.76639280724,
+     "high": 460257.5138313669,
+     "volume": 19,
+     "time": 1794217380
+    },
+    {
+     "open": 460020.76639280724,
+     "close": 458276.11220174044,
+     "low": 458276.11220174044,
+     "high": 460020.76639280724,
+     "volume": 0,
+     "time": 1794217560
+    },
+    {
+     "open": 458276.11220174044,
+     "close": 458338.14573867654,
+     "low": 458276.11220174044,
+     "high": 458338.14573867654,
+     "volume": 2,
+     "time": 1794217620
+    },
+    {
+     "open": 458338.14573867654,
+     "close": 457193.2815842768,
+     "low": 457193.2815842768,
+     "high": 458338.14573867654,
+     "volume": 42,
+     "time": 1794217680
+    },
+    {
+     "open": 457193.2815842768,
+     "close": 457193.2815842768,
+     "low": 457193.2815842768,
+     "high": 457210.23535414727,
+     "volume": 0,
+     "time": 1794217800
+    },
+    {
+     "open": 457193.2815842768,
+     "close": 457264.6579737387,
+     "low": 457193.2815842768,
+     "high": 457264.6579737387,
+     "volume": 0,
+     "time": 1794217860
+    }
+   ],
+   "kerzen_vor_altem_start": 1940,
+   "holder_n": 1000,
+   "holder_erste10": [
+    {
+     "holders": 1203,
+     "time": 1794056100
+    },
+    {
+     "holders": 1201,
+     "time": 1794056400
+    },
+    {
+     "holders": 1200,
+     "time": 1794056700
+    },
+    {
+     "holders": 1198,
+     "time": 1794057000
+    },
+    {
+     "holders": 1203,
+     "time": 1794057300
+    },
+    {
+     "holders": 1207,
+     "time": 1794057600
+    },
+    {
+     "holders": 1206,
+     "time": 1794057900
+    },
+    {
+     "holders": 1208,
+     "time": 1794058200
+    },
+    {
+     "holders": 1208,
+     "time": 1794058500
+    },
+    {
+     "holders": 1210,
+     "time": 1794058800
+    }
+   ],
+   "holder_fehler": null
+  }
+ }
+}
