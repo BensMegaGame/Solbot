@@ -1,5 +1,5 @@
 {
- "cash": 51.875743941112056,
+ "cash": 95.72671194111206,
  "positions": {
   "9cmXfuC26anZtH9AUWVzpUxU1UJ7PPogYxftYTepump": {
    "sym": "WISHMAS",
@@ -8,19 +8,8 @@
    "opened": "2026-11-15T21:46:01Z",
    "peak": 0.0003076,
    "entry": 0.0002095119938822751,
-   "cur_price": 0.0002477,
-   "mark": 0.0002477
-  },
-  "4Ye6Y6Vaic8cyPdfW2f9PcLhXkysBtSmV84G8X7spump": {
-   "sym": "greg",
-   "qty": 85062.19406,
-   "cost": 25.01,
-   "opened": "2026-11-21T10:15:50Z",
-   "peak": 0.0007861,
-   "entry": 0.0002940201610877659,
-   "cur_price": 0.0005327,
-   "mark": 0.0005327,
-   "tp0": true
+   "cur_price": 0.0002486,
+   "mark": 0.0002486
   },
   "Fn95NtGXWPaJXc4N5y9rVkUq1NwZbjBNJzPVvNRLpump": {
    "sym": "SHIT",
@@ -29,8 +18,8 @@
    "opened": "2026-11-21T16:00:19Z",
    "peak": 0.003025,
    "entry": 0.0016909287442749877,
-   "cur_price": 0.001592,
-   "mark": 0.001592
+   "cur_price": 0.001662,
+   "mark": 0.001662
   }
  },
  "trades": [
@@ -5014,13 +5003,24 @@
    "slip": 0.0069,
    "quote": "jup",
    "reason": "screener"
+  },
+  {
+   "t": "2026-11-21T20:35:02Z",
+   "side": "sell",
+   "sym": "greg",
+   "addr": "4Ye6Y6Vaic8cyPdfW2f9PcLhXkysBtSmV84G8X7spump",
+   "price": 0.0005063,
+   "usd": 43.85,
+   "pnl": 18.84,
+   "peak_x": 2.674,
+   "held_h": 10.3,
+   "frac": 1.0,
+   "slip": 0.0209,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
-  {
-   "t": "2026-11-04T11:56:01Z",
-   "v": 195.7
-  },
   {
    "t": "2026-11-04T12:01:00Z",
    "v": 195.4
@@ -25016,6 +25016,10 @@
   {
    "t": "2026-11-21T20:31:05Z",
    "v": 203.42
+  },
+  {
+   "t": "2026-11-21T20:36:04Z",
+   "v": 204.24
   }
  ],
  "started": "2026-09-10T17:17:16Z",
@@ -25029,6 +25033,7 @@
   "F4vEFNoH9H2oLYRabaQQ2Z6jAAi2AhRVdTdVH6Nn2J1q": 1795000803.0456429,
   "34DXEU2ttEtBSb1TqGJm7izgvYTTkqKcCoiNWdPDpump": 1795009202.271235,
   "Fpzcd2R1y2MPdezgMRigQuBx7aCPPn5sZBXpvtP3pump": 1795236304.3033197,
-  "9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump": 1795255503.563523
+  "9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump": 1795255503.563523,
+  "4Ye6Y6Vaic8cyPdfW2f9PcLhXkysBtSmV84G8X7spump": 1795293302.9512522
  }
 }
