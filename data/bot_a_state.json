@@ -1,5 +1,5 @@
 {
- "cash": 52.34307994111206,
+ "cash": 51.875743941112056,
  "positions": {
   "9cmXfuC26anZtH9AUWVzpUxU1UJ7PPogYxftYTepump": {
    "sym": "WISHMAS",
@@ -8,18 +8,29 @@
    "opened": "2026-11-15T21:46:01Z",
    "peak": 0.0002866,
    "entry": 0.0002095119938822751,
-   "cur_price": 0.0002246,
-   "mark": 0.0002246
+   "cur_price": 0.0002194,
+   "mark": 0.0002194
   },
   "4Ye6Y6Vaic8cyPdfW2f9PcLhXkysBtSmV84G8X7spump": {
    "sym": "greg",
-   "qty": 170124.38812,
-   "cost": 50.02,
+   "qty": 85062.19406,
+   "cost": 25.01,
    "opened": "2026-11-21T10:15:50Z",
-   "peak": 0.0004333,
+   "peak": 0.0006287,
    "entry": 0.0002940201610877659,
-   "cur_price": 0.0004027,
-   "mark": 0.0004027
+   "cur_price": 0.0006287,
+   "mark": 0.0006287,
+   "tp0": true
+  },
+  "Fn95NtGXWPaJXc4N5y9rVkUq1NwZbjBNJzPVvNRLpump": {
+   "sym": "SHIT",
+   "qty": 29581.376607,
+   "cost": 50.02,
+   "opened": "2026-11-21T16:00:19Z",
+   "peak": 0.001674,
+   "entry": 0.0016909287442749877,
+   "cur_price": 0.001674,
+   "mark": 0.001674
   }
  },
  "trades": [
@@ -4976,13 +4987,36 @@
    "slip": 0.0154,
    "quote": "jup",
    "reason": "screener"
+  },
+  {
+   "t": "2026-11-21T16:00:03Z",
+   "side": "sell",
+   "sym": "greg",
+   "addr": "4Ye6Y6Vaic8cyPdfW2f9PcLhXkysBtSmV84G8X7spump",
+   "price": 0.0006287,
+   "usd": 49.55,
+   "pnl": 24.54,
+   "peak_x": 2.138,
+   "held_h": 5.7,
+   "frac": 0.5,
+   "slip": 0.021,
+   "quote": "jup",
+   "reason": "tp0"
+  },
+  {
+   "t": "2026-11-21T16:00:19Z",
+   "side": "buy",
+   "sym": "SHIT",
+   "addr": "Fn95NtGXWPaJXc4N5y9rVkUq1NwZbjBNJzPVvNRLpump",
+   "price": 0.001674,
+   "fill": 0.001690928744,
+   "usd": 50.02,
+   "slip": 0.0069,
+   "quote": "jup",
+   "reason": "screener"
   }
  ],
  "equity": [
-  {
-   "t": "2026-11-04T07:21:03Z",
-   "v": 225.63
-  },
   {
    "t": "2026-11-04T07:26:03Z",
    "v": 224.02
@@ -24978,6 +25012,10 @@
   {
    "t": "2026-11-21T15:55:56Z",
    "v": 174.47
+  },
+  {
+   "t": "2026-11-21T16:00:58Z",
+   "v": 207.25
   }
  ],
  "started": "2026-09-10T17:17:16Z",
