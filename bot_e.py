@@ -19,6 +19,9 @@ SOLANA, SOL_MINT = 1399811149, "So11111111111111111111111111111111111111112"
 
 # ---- Universum ----
 U_MIN_MCAP, U_MIN_LIQ, U_MIN_VOL24 = 10_000_000, 300_000, 200_000   # Testphase: ~Top 100 statt Top 50
+U_MAX_MCAP = 1_000_000_000      # 20.11.: echte Riesen (JUP, PUMP ...) raus - fallen selten 10-30 % am Tag
+ST_KEY = os.environ.get("SOLANATRACKER_KEY")   # 20.11.: Reserve-Quelle fuers Universum, wenn Codex nicht antwortet
+ST_MIN_HOLDERS = 1000           # SolanaTracker: Fake-/Wash-Tokens (Mio.-MCap ohne Holder) raus
 U_LIMIT = 120
 DISCOVER_EVERY_S = 12 * 3600      # Top-100 nach MCap aendert sich kaum; 2 Codex-Calls/Tag (~60/Monat)
 EXCLUDE_SYM = {"USDC", "USDT", "USDS", "PYUSD", "USD1", "DAI", "FDUSD", "USDE", "EURC", "USDG", "USDY", "CASH",
@@ -52,17 +55,18 @@ BREAKEVEN_AFTER_TP1 = True  # nach TP1 Stop auf Einstand ziehen: der Rest kann n
 MAX_HOLD_D, FLAT_EXIT_GAIN = 7, 0.03      # nach 7 Tagen raus, wenn unter +3 %
 HIST_KEEP_S = 7 * 3600
 
-def tradeable(sym):
+def tradeable(sym, addr=None):
+    if addr and addr.startswith("Xs"): return False   # 20.11.: xStocks (tokenisierte Aktien, z.B. TSLAx) - Aktienkurs, kein Krypto
     sym = (sym or "").upper()
     if sym in EXCLUDE_SYM: return False
     return not any(s in sym for s in EXCLUDE_SUB)
 
 Q_E = """
 query($net:[Int!]) {
-  filterTokens(filters:{ network:$net, marketCap:{gte:%d}, liquidity:{gte:%d}, volume24:{gte:%d} },
+  filterTokens(filters:{ network:$net, marketCap:{gte:%d, lte:%d}, liquidity:{gte:%d}, volume24:{gte:%d} },
                rankings:[{attribute:marketCap, direction:DESC}], limit:%d)
   { results { token { address symbol } } }
-}""" % (U_MIN_MCAP, U_MIN_LIQ, U_MIN_VOL24, U_LIMIT)
+}""" % (U_MIN_MCAP, U_MAX_MCAP, U_MIN_LIQ, U_MIN_VOL24, U_LIMIT)
 
 def codex_universe():
     if not CODEX_KEY: return None
@@ -71,9 +75,37 @@ def codex_universe():
                           json={"query": Q_E, "variables": {"net": [SOLANA]}}, timeout=30)
         r.raise_for_status(); d = r.json()
         if d.get("errors"): print("codex:", str(d["errors"])[:200]); return None
-        return [x["token"]["address"] for x in d["data"]["filterTokens"]["results"] if tradeable(x["token"]["symbol"])]
+        return [x["token"]["address"] for x in d["data"]["filterTokens"]["results"]
+                if tradeable(x["token"]["symbol"], x["token"]["address"])]
     except Exception as e:
         print("codex fehler:", e); return None
+
+def tracker_universe():
+    """Reserve: gleiche Filter ueber SolanaTracker /search (1 Abfrage). Zusaetzlich min. Holder gegen Wash-Tokens.
+    Sicherheitsnetz bleibt: gekauft wird nur, wenn DexScreener beim Kauf MCap/Liquiditaet/Volumen bestaetigt."""
+    if not ST_KEY: return None
+    try:
+        r = requests.get("https://data.solanatracker.io/search", headers={"x-api-key": ST_KEY, **UA}, timeout=30,
+                         params={"minMarketCap": U_MIN_MCAP, "maxMarketCap": U_MAX_MCAP, "minLiquidity": U_MIN_LIQ,
+                                 "minVolume_24h": U_MIN_VOL24, "minHolders": ST_MIN_HOLDERS,
+                                 "sortBy": "marketCapUsd", "sortOrder": "desc", "limit": U_LIMIT})
+        r.raise_for_status(); d = r.json().get("data") or []
+        out = []
+        for x in d:
+            a = x.get("mint")
+            if a and a not in out and tradeable(x.get("symbol"), a) and (x.get("volume_24h") is None or x["volume_24h"] >= U_MIN_VOL24):
+                out.append(a)
+        return out or None
+    except Exception as e:
+        print("solanatracker fehler:", e); return None
+
+def universum_holen():
+    """Codex zuerst, sonst SolanaTracker. Liefert (liste, quelle) oder (None, None)."""
+    u = codex_universe()
+    if u: return u, "codex"
+    u = tracker_universe()
+    if u: return u, "solanatracker"
+    return None, None
 
 # v4.1 - Kurse ueber feste PAAR-Adressen statt ueber Token-Adressen.
 # Bis 20.09. fragte Bot E DexScreener mit /latest/dex/tokens/<30 Tokens> ab. Diese Antwort enthaelt aber
@@ -146,9 +178,12 @@ def main():
     now = time.time(); today = int(now // 86400)
     meta = load("bot_e_meta.json", {}); hist = load("bot_e_hist.json", {}); cooldown = load("bot_e_cooldown.json", {})
     if now - meta.get("last_discover", 0) >= DISCOVER_EVERY_S or not meta.get("universe"):
-        u = codex_universe()
-        if u: meta["universe"], meta["last_discover"], meta["pair_of"] = u, now, {}   # Paare neu suchen (Liquiditaet wandert)
-        elif meta.get("universe"): print("Bot E: Codex nicht erreichbar, nutze altes Universum")
+        u, quelle = universum_holen()
+        if u:
+            meta["universe"], meta["last_discover"], meta["pair_of"] = u, now, {}   # Paare neu suchen (Liquiditaet wandert)
+            meta["universe_quelle"] = quelle; print(f"Bot E: Universum {len(u)} Coins von {quelle}")
+        elif meta.get("universe"): print("Bot E: Codex und SolanaTracker nicht erreichbar, nutze altes Universum")
+    meta["universe"] = [a for a in meta.get("universe", []) if not a.startswith("Xs")]   # altes Universum: xStocks sofort raus
     universe = list(set(meta.get("universe", [])) | set(st["positions"].keys()))
     if not universe: print("Bot E: kein Universum (CODEX_KEY?)"); pf.mark({}); pf.commit(); return
     pairs = batch_pairs(universe, meta)
@@ -202,14 +237,14 @@ def main():
         for a, p in pairs.items():
             if a == SOL_MINT or a in st["positions"] or cooldown.get(a, 0) > today: continue
             sym = p["baseToken"]["symbol"]
-            if not tradeable(sym): continue
+            if not tradeable(sym, a): continue
             c24, c1, c6 = f(p, "priceChange", "h24"), f(p, "priceChange", "h1"), f(p, "priceChange", "h6")
             mcap = f(p, "marketCap") or f(p, "fdv") or 0; liq = f(p, "liquidity", "usd") or 0
             vol = f(p, "volume", "h24") or 0; px = f(p, "priceUsd") or 0
             if None in (c24, c1) or px <= 0: continue
             if not (DROP_24H[0] <= c24 <= DROP_24H[1]): continue          # normaler Tag - nichts loggen
             why = None
-            if mcap < U_MIN_MCAP or liq < U_MIN_LIQ: why = f"mcap/liq {mcap/1e6:.0f}M/{liq/1e6:.1f}M"
+            if mcap < U_MIN_MCAP or mcap > U_MAX_MCAP or liq < U_MIN_LIQ: why = f"mcap/liq {mcap/1e6:.0f}M/{liq/1e6:.1f}M"
             elif c24 > sol24 - REL_TO_SOL_PP: why = f"nur {c24 - sol24:+.0f}pp vs SOL"
             elif c1 < STAB_1H_MIN: why = f"1h {c1:+.1f}% faellt noch"
             elif vol / mcap < VOL_TO_MCAP_MIN: why = f"vol/mcap {vol/mcap:.1%}"
