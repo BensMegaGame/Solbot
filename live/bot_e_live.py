@@ -213,14 +213,18 @@ class Bot:
         # Universum und Kurse (Regeln und Funktionen von Bot E)
         m = self.meta
         if self.now - m.get("last_discover", 0) >= E.DISCOVER_EVERY_S or not m.get("universe"):
-            u = E.codex_universe()
-            if u: m["universe"], m["last_discover"], m["pair_of"] = u, self.now, {}
+            u, quelle = E.universum_holen()
+            if u: m["universe"], m["last_discover"], m["pair_of"], m["universe_quelle"] = u, self.now, {}, quelle
             elif not m.get("universe"):
                 p = os.path.join(os.path.dirname(REPO), "solbot", "data", "bot_e_meta.json")
                 if os.path.exists(p):
                     m["universe"] = json.load(open(p)).get("universe") or []; m["last_discover"] = self.now - E.DISCOVER_EVERY_S + 3600
                     self.einmal("universe_paper", f"ℹ️ Codex nicht erreichbar - Universum ({len(m['universe'])} Coins) "
                                                   f"vorlaeufig von E Paper uebernommen.", 86400)
+        m["universe"] = [x for x in m.get("universe") or [] if not x.startswith("Xs")]   # xStocks raus (20.11.)
+        if m.get("universe_quelle") and m.get("universe_quelle") != m.get("universe_quelle_gemeldet"):
+            tg.senden(f"ℹ️ Coin-Universum neu: {len(m['universe'])} Coins von {m['universe_quelle']}")
+            m["universe_quelle_gemeldet"] = m["universe_quelle"]
         universe = list(set(m.get("universe") or []) | set(self.st["positions"]))
         if not universe:
             self.einmal("kein_universum", "⚠️ Kein Coin-Universum (Codex nicht erreichbar). Es wird nichts gekauft.", 6 * 3600)
@@ -341,13 +345,13 @@ class Bot:
             if a == SOL_MINT or a in st["positions"] or st["cooldown"].get(a, 0) > heute(): continue
             if st.get("wiederkauf_sperre", {}).get(a, 0) > self.now: continue   # 6 h nach Verkauf gesperrt
             sym = p["baseToken"]["symbol"]
-            if not E.tradeable(sym): continue
+            if not E.tradeable(sym, a): continue
             c24, c1 = E.f(p, "priceChange", "h24"), E.f(p, "priceChange", "h1")
             mcap = E.f(p, "marketCap") or E.f(p, "fdv") or 0; liq = E.f(p, "liquidity", "usd") or 0
             vol = E.f(p, "volume", "h24") or 0; px = E.f(p, "priceUsd") or 0
             if None in (c24, c1) or px <= 0: continue
             if not (E.DROP_24H[0] <= c24 <= E.DROP_24H[1]): continue
-            if mcap < E.U_MIN_MCAP or liq < E.U_MIN_LIQ: continue
+            if mcap < E.U_MIN_MCAP or mcap > E.U_MAX_MCAP or liq < E.U_MIN_LIQ: continue
             if c24 > sol24 - E.REL_TO_SOL_PP or c1 < E.STAB_1H_MIN or vol / mcap < E.VOL_TO_MCAP_MIN: continue
             pts = [x[1] for x in st["hist"].get(a, []) if self.now - x[0] <= 6 * 3600]
             if len(pts) < 6 or not (E.BOUNCE_6H[0] / 100 <= px / min(pts) - 1 <= E.BOUNCE_6H[1] / 100): continue
