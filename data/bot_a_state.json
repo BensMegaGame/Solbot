@@ -1,5 +1,5 @@
 {
- "cash": 61.51251994111206,
+ "cash": 78.85817694111206,
  "positions": {
   "9cmXfuC26anZtH9AUWVzpUxU1UJ7PPogYxftYTepump": {
    "sym": "WISHMAS",
@@ -8,8 +8,8 @@
    "opened": "2026-11-15T21:46:01Z",
    "peak": 0.0002866,
    "entry": 0.0002095119938822751,
-   "cur_price": 0.0001834,
-   "mark": 0.0001834
+   "cur_price": 0.0001767,
+   "mark": 0.0001767
   },
   "9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump": {
    "sym": "rockstar",
@@ -20,16 +20,6 @@
    "entry": 0.00010998346913856492,
    "cur_price": 7.785e-05,
    "mark": 7.785e-05
-  },
-  "Fpzcd2R1y2MPdezgMRigQuBx7aCPPn5sZBXpvtP3pump": {
-   "sym": "HUGH",
-   "qty": 249631.735772,
-   "cost": 50.02,
-   "opened": "2026-11-20T22:35:39Z",
-   "peak": 0.0002406,
-   "entry": 0.00020037516402035332,
-   "cur_price": 0.0001044,
-   "mark": 0.0001044
   }
  },
  "trades": [
@@ -4944,13 +4934,24 @@
    "slip": 0.0168,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-11-21T04:45:04Z",
+   "side": "sell",
+   "sym": "HUGH",
+   "addr": "Fpzcd2R1y2MPdezgMRigQuBx7aCPPn5sZBXpvtP3pump",
+   "price": 7.021e-05,
+   "usd": 17.35,
+   "pnl": -32.67,
+   "peak_x": 1.201,
+   "held_h": 6.2,
+   "frac": 1.0,
+   "slip": 0.0052,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-11-03T20:06:05Z",
-   "v": 216.28
-  },
   {
    "t": "2026-11-03T20:11:08Z",
    "v": 215.35
@@ -24946,6 +24947,10 @@
   {
    "t": "2026-11-21T04:40:59Z",
    "v": 166.77
+  },
+  {
+   "t": "2026-11-21T04:45:58Z",
+   "v": 156.45
   }
  ],
  "started": "2026-09-10T17:17:16Z",
@@ -24957,6 +24962,7 @@
   "8Mi9E1V2bdPeAaRkR5yxUsAvpzP6UBUEEUrYmgKNpump": 1794967203.9965835,
   "HCNhQCu5nrmWhSE3mo7fRU9eGiGLmi2fnE8omgLpump": 1795000505.2761188,
   "F4vEFNoH9H2oLYRabaQQ2Z6jAAi2AhRVdTdVH6Nn2J1q": 1795000803.0456429,
-  "34DXEU2ttEtBSb1TqGJm7izgvYTTkqKcCoiNWdPDpump": 1795009202.271235
+  "34DXEU2ttEtBSb1TqGJm7izgvYTTkqKcCoiNWdPDpump": 1795009202.271235,
+  "Fpzcd2R1y2MPdezgMRigQuBx7aCPPn5sZBXpvtP3pump": 1795236304.3033197
  }
 }
