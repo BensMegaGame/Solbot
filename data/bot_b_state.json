@@ -1,5 +1,5 @@
 {
- "cash": 455.63762400000013,
+ "cash": 425.61762400000015,
  "positions": {
   "GRMRQSkBGg2Cc8Y9GePNBcJVk49YepWkXUDQBXAMpump": {
    "sym": "RUDY",
@@ -38,12 +38,23 @@
    "peak": 5.18e-05,
    "entry": 3.723847660736592e-05,
    "pair": "AszTn7GufCoDMJNFkCqGarc2BB6QniUP9hzy4j2pkkL2",
-   "cur_price": 3.799e-05,
-   "mark": 3.799e-05,
+   "cur_price": 3.62e-05,
+   "mark": 3.62e-05,
    "tp": true,
    "tp_t": 1795381254.6511354,
    "tp_px": 5.18e-05,
    "moon_log": []
+  },
+  "DUvFjnaE3r46WLbz9rz6MNk2bq9xPFPUfMd8bDgmpump": {
+   "sym": "URANUS",
+   "qty": 2270280.385459,
+   "cost": 30.02,
+   "opened": "2026-11-22T22:50:55Z",
+   "peak": 1.314e-05,
+   "entry": 1.3223036322859578e-05,
+   "pair": "HbLbkEKoW1wxgfrjdZpvAXhUphM4qYBhMLEzz8fMvXfP",
+   "cur_price": 1.314e-05,
+   "mark": 1.314e-05
   }
  },
  "trades": [
@@ -139,6 +150,18 @@
    "slip": 0.0229,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-11-22T22:50:55Z",
+   "side": "buy",
+   "sym": "URANUS",
+   "addr": "DUvFjnaE3r46WLbz9rz6MNk2bq9xPFPUfMd8bDgmpump",
+   "price": 1.314e-05,
+   "fill": 1.3223036e-05,
+   "usd": 30.02,
+   "slip": 0.0181,
+   "quote": "jup",
+   "reason": "absturz -81% vom hoch (1.9x)"
   }
  ],
  "equity": [
@@ -3069,18 +3092,22 @@
   {
    "t": "2026-11-22T22:45:55Z",
    "v": 493.86
+  },
+  {
+   "t": "2026-11-22T22:50:55Z",
+   "v": 493.31
   }
  ],
  "started": "2026-11-20T09:50:55Z",
  "version": "b5",
  "strategy": "nach_dem_absturz",
  "coverage": {
-  "t": "2026-11-22T22:45:55Z",
-  "wartend": 575,
+  "t": "2026-11-22T22:50:55Z",
+  "wartend": 577,
   "beobachtet": 49,
-  "neu": 0,
+  "neu": 2,
   "beobachtung_gestartet": 0,
-  "signale": 0,
+  "signale": 1,
   "moonbags": 2
  },
  "verkauft_am": {
