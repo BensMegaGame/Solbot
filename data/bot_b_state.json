@@ -9,8 +9,8 @@
    "peak": 2.223e-05,
    "entry": 1.2986466903759407e-05,
    "pair": "8i183K6cZXHN17umKrcr6Zjc9BXgN2nnqdQanYKgvko6",
-   "cur_price": 1.101e-05,
-   "mark": 1.101e-05,
+   "cur_price": 1.143e-05,
+   "mark": 1.143e-05,
    "tp": true,
    "tp_t": 1795294863.702464,
    "tp_px": 1.713e-05,
@@ -38,8 +38,8 @@
    "peak": 5.18e-05,
    "entry": 3.723847660736592e-05,
    "pair": "AszTn7GufCoDMJNFkCqGarc2BB6QniUP9hzy4j2pkkL2",
-   "cur_price": 3.62e-05,
-   "mark": 3.62e-05,
+   "cur_price": 3.793e-05,
+   "mark": 3.793e-05,
    "tp": true,
    "tp_t": 1795381254.6511354,
    "tp_px": 5.18e-05,
@@ -50,11 +50,11 @@
    "qty": 2270280.385459,
    "cost": 30.02,
    "opened": "2026-11-22T22:50:55Z",
-   "peak": 1.314e-05,
+   "peak": 1.336e-05,
    "entry": 1.3223036322859578e-05,
    "pair": "HbLbkEKoW1wxgfrjdZpvAXhUphM4qYBhMLEzz8fMvXfP",
-   "cur_price": 1.314e-05,
-   "mark": 1.314e-05
+   "cur_price": 1.336e-05,
+   "mark": 1.336e-05
   }
  },
  "trades": [
@@ -3096,18 +3096,22 @@
   {
    "t": "2026-11-22T22:50:55Z",
    "v": 493.31
+  },
+  {
+   "t": "2026-11-22T22:55:55Z",
+   "v": 494.4
   }
  ],
  "started": "2026-11-20T09:50:55Z",
  "version": "b5",
  "strategy": "nach_dem_absturz",
  "coverage": {
-  "t": "2026-11-22T22:50:55Z",
-  "wartend": 577,
+  "t": "2026-11-22T22:55:55Z",
+  "wartend": 578,
   "beobachtet": 49,
-  "neu": 2,
+  "neu": 1,
   "beobachtung_gestartet": 0,
-  "signale": 1,
+  "signale": 0,
   "moonbags": 2
  },
  "verkauft_am": {
