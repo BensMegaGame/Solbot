@@ -1,5 +1,5 @@
 {
- "cash": 498.95162700000003,
+ "cash": 468.93162700000005,
  "positions": {
   "GRMRQSkBGg2Cc8Y9GePNBcJVk49YepWkXUDQBXAMpump": {
    "sym": "RUDY",
@@ -9,14 +9,25 @@
    "peak": 2.223e-05,
    "entry": 1.2986466903759407e-05,
    "pair": "8i183K6cZXHN17umKrcr6Zjc9BXgN2nnqdQanYKgvko6",
-   "cur_price": 1.843e-05,
-   "mark": 1.843e-05,
+   "cur_price": 1.811e-05,
+   "mark": 1.811e-05,
    "tp": true,
    "tp_t": 1795294863.702464,
    "tp_px": 1.713e-05,
    "moon_log": [
     6
    ]
+  },
+  "fRxGeXTCXLPQyChrq5sanfUWAe2vseLBiGdDE7k4S1M": {
+   "sym": "SIM",
+   "qty": 14755515.903041,
+   "cost": 30.02,
+   "opened": "2026-11-22T12:50:48Z",
+   "peak": 2.541e-06,
+   "entry": 2.034493419089e-06,
+   "pair": "Are3C4uea7s61tdWCF9M81FRZbMLmGv4RqdVez2t6jA4",
+   "cur_price": 2.541e-06,
+   "mark": 2.541e-06
   }
  },
  "trades": [
@@ -46,6 +57,18 @@
    "slip": 0.0239,
    "quote": "jup",
    "reason": "tp30"
+  },
+  {
+   "t": "2026-11-22T12:50:48Z",
+   "side": "buy",
+   "sym": "SIM",
+   "addr": "fRxGeXTCXLPQyChrq5sanfUWAe2vseLBiGdDE7k4S1M",
+   "price": 2.541e-06,
+   "fill": 2.034493e-06,
+   "usd": 30.02,
+   "slip": 0.0326,
+   "quote": "jup",
+   "reason": "absturz -98% vom hoch (1.7x)"
   }
  ],
  "equity": [
@@ -2496,18 +2519,22 @@
   {
    "t": "2026-11-22T12:45:48Z",
    "v": 509.6
+  },
+  {
+   "t": "2026-11-22T12:50:48Z",
+   "v": 516.89
   }
  ],
  "started": "2026-11-20T09:50:55Z",
  "version": "b5",
  "strategy": "nach_dem_absturz",
  "coverage": {
-  "t": "2026-11-22T12:45:48Z",
+  "t": "2026-11-22T12:50:48Z",
   "wartend": 480,
   "beobachtet": 43,
-  "neu": 1,
+  "neu": 0,
   "beobachtung_gestartet": 0,
-  "signale": 0,
+  "signale": 1,
   "moonbags": 1
  }
 }
