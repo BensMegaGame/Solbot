@@ -1,5 +1,5 @@
 {
- "cash": 248.0855539084281,
+ "cash": 43.928595212825456,
  "positions": {
   "CREDBHvVqREBCAxMihzr8D1nepHMr2gmQoZWpmgGmeta": {
    "sym": "CRED",
@@ -10,6 +10,16 @@
    "entry": 0.617978357992978,
    "mark": 0.6257,
    "cur_price": 0.6257
+  },
+  "FjPKUGnF5zBpdEv18gT8FJCtxh3MKrFkoeYekgYr1win": {
+   "sym": "1WIN",
+   "qty": 5429.88582672,
+   "cost": 204.15695869560264,
+   "opened": "2026-11-22T17:11:11Z",
+   "peak": 0.03755,
+   "entry": 0.03759875717661757,
+   "no_quote_since": "2026-11-22T17:11:11Z",
+   "mark": 0.0
   }
  },
  "trades": [
@@ -1929,13 +1939,21 @@
    "slip": 0.0014,
    "quote": "jup",
    "reason": "dip 24h -10% (SOL +2%) 1h +1.1%"
+  },
+  {
+   "t": "2026-11-22T17:11:11Z",
+   "side": "buy",
+   "sym": "1WIN",
+   "addr": "FjPKUGnF5zBpdEv18gT8FJCtxh3MKrFkoeYekgYr1win",
+   "price": 0.03755,
+   "fill": 0.037598757177,
+   "usd": 204.16,
+   "slip": 0.0019,
+   "quote": "jup",
+   "reason": "dip 24h -10% (SOL -0%) 1h -0.6%"
   }
  ],
  "equity": [
-  {
-   "t": "2026-11-05T08:31:46Z",
-   "v": 477.44
-  },
   {
    "t": "2026-11-05T08:36:45Z",
    "v": 477.44
@@ -21931,13 +21949,17 @@
   {
    "t": "2026-11-22T17:06:07Z",
    "v": 453.64
+  },
+  {
+   "t": "2026-11-22T17:11:11Z",
+   "v": 249.48
   }
  ],
  "started": "2026-09-16T16:55:59Z",
  "strategy": "largecap_dip",
  "universe_n": 33,
  "coverage": {
-  "t": "2026-11-22T17:06:07Z",
+  "t": "2026-11-22T17:11:11Z",
   "kurse": 33,
   "von": 33,
   "sol": true
