@@ -5081,10 +5081,6 @@
  ],
  "equity": [
   {
-   "t": "2026-11-04T18:16:38Z",
-   "v": 456.61
-  },
-  {
    "t": "2026-11-04T18:21:40Z",
    "v": 456.61
   },
@@ -25079,6 +25075,10 @@
   {
    "t": "2026-11-22T02:51:07Z",
    "v": 415.4
+  },
+  {
+   "t": "2026-11-22T02:56:06Z",
+   "v": 415.4
   }
  ],
  "started": "2026-11-03T09:11:31Z",
@@ -25107,11 +25107,11 @@
   }
  },
  "coverage": {
-  "t": "2026-11-22T02:51:07Z",
+  "t": "2026-11-22T02:56:06Z",
   "kandidaten": 30,
   "pfade": 40,
-  "kurse": 14,
-  "von": 15,
+  "kurse": 13,
+  "von": 14,
   "fruehkaeufer_neu": 0,
   "fruehkaeufer_fehler": 0,
   "weg": {},
@@ -25130,13 +25130,13 @@
   "helius_wallet_heute": 4059,
   "laufzeit_s": {
    "copy": 0,
-   "kandidaten": 0,
+   "kandidaten": 1,
    "kurse": 2,
    "fruehkaeufer": 2,
    "spaete_kaeufer": 2,
    "jupiter": 2,
    "stufe2": 2,
-   "gesamt": 2
+   "gesamt": 3
   },
   "warteschlange": 659,
   "copy_credits_heute": 0,
