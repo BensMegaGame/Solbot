@@ -1,5 +1,5 @@
 {
- "cash": 116.14044194111206,
+ "cash": 66.12044194111206,
  "positions": {
   "9cmXfuC26anZtH9AUWVzpUxU1UJ7PPogYxftYTepump": {
    "sym": "WISHMAS",
@@ -8,8 +8,18 @@
    "opened": "2026-11-15T21:46:01Z",
    "peak": 0.0003683,
    "entry": 0.0002095119938822751,
-   "cur_price": 0.0002575,
-   "mark": 0.0002575
+   "cur_price": 0.0002528,
+   "mark": 0.0002528
+  },
+  "5qaP7oKUqKffwwo5DaEqDoTtsBLMpdbQTxEkCDaTpump": {
+   "sym": "Max",
+   "qty": 87872.610172,
+   "cost": 50.02,
+   "opened": "2026-11-22T13:45:07Z",
+   "peak": 0.0005574,
+   "entry": 0.0005692331194224446,
+   "cur_price": 0.0005574,
+   "mark": 0.0005574
   }
  },
  "trades": [
@@ -5023,13 +5033,21 @@
    "slip": 0.009,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-11-22T13:45:07Z",
+   "side": "buy",
+   "sym": "Max",
+   "addr": "5qaP7oKUqKffwwo5DaEqDoTtsBLMpdbQTxEkCDaTpump",
+   "price": 0.0005574,
+   "fill": 0.000569233119,
+   "usd": 50.02,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "screener"
   }
  ],
  "equity": [
-  {
-   "t": "2026-11-05T05:06:12Z",
-   "v": 218.14
-  },
   {
    "t": "2026-11-05T05:11:14Z",
    "v": 217.64
@@ -25025,6 +25043,10 @@
   {
    "t": "2026-11-22T13:40:47Z",
    "v": 177.62
+  },
+  {
+   "t": "2026-11-22T13:45:49Z",
+   "v": 175.46
   }
  ],
  "started": "2026-09-10T17:17:16Z",
