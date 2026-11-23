@@ -9,8 +9,8 @@
    "peak": 2.223e-05,
    "entry": 1.2986466903759407e-05,
    "pair": "8i183K6cZXHN17umKrcr6Zjc9BXgN2nnqdQanYKgvko6",
-   "cur_price": 9.639e-06,
-   "mark": 9.639e-06,
+   "cur_price": 9.755e-06,
+   "mark": 9.755e-06,
    "tp": true,
    "tp_t": 1795294863.702464,
    "tp_px": 1.713e-05,
@@ -27,8 +27,8 @@
    "peak": 2.541e-06,
    "entry": 2.034493419089e-06,
    "pair": "Are3C4uea7s61tdWCF9M81FRZbMLmGv4RqdVez2t6jA4",
-   "cur_price": 1.735e-06,
-   "mark": 1.735e-06
+   "cur_price": 1.742e-06,
+   "mark": 1.742e-06
   },
   "4mE8dPH1RTqQBT5EPim5Ubt2v2wXZ9zgEDDWmL1o1EYu": {
    "sym": "SBS",
@@ -38,8 +38,8 @@
    "peak": 5.18e-05,
    "entry": 3.723847660736592e-05,
    "pair": "AszTn7GufCoDMJNFkCqGarc2BB6QniUP9hzy4j2pkkL2",
-   "cur_price": 1.525e-05,
-   "mark": 1.525e-05,
+   "cur_price": 1.52e-05,
+   "mark": 1.52e-05,
    "tp": true,
    "tp_t": 1795381254.6511354,
    "tp_px": 5.18e-05,
@@ -72,19 +72,19 @@
    "peak": 2.488e-05,
    "entry": 2.297583762581057e-05,
    "pair": "8oh9Kk2GwTk1WyRHUyfYr3rKPySW5TvqeDYM94occEeX",
-   "cur_price": 2.167e-05,
-   "mark": 2.167e-05
+   "cur_price": 2.184e-05,
+   "mark": 2.184e-05
   },
   "51TUkCJcBPi5fj9gZgjnXh6Ny5RSiEbrxUBoikDLpump": {
    "sym": "ILY",
    "qty": 1572506.732381,
    "cost": 30.02,
    "opened": "2026-11-23T08:45:54Z",
-   "peak": 1.84e-05,
+   "peak": 2.001e-05,
    "entry": 1.909053829902873e-05,
    "pair": "7wf1eFVWWdFnVUMdiJ2rFChE4C3qA6QVoBVDbUXvvQ9V",
-   "cur_price": 1.707e-05,
-   "mark": 1.707e-05
+   "cur_price": 2.001e-05,
+   "mark": 2.001e-05
   }
  },
  "trades": [
@@ -3645,16 +3645,20 @@
   {
    "t": "2026-11-23T08:50:54Z",
    "v": 491.31
+  },
+  {
+   "t": "2026-11-23T08:55:53Z",
+   "v": 496.32
   }
  ],
  "started": "2026-11-20T09:50:55Z",
  "version": "b5",
  "strategy": "nach_dem_absturz",
  "coverage": {
-  "t": "2026-11-23T08:50:54Z",
-  "wartend": 644,
+  "t": "2026-11-23T08:55:53Z",
+  "wartend": 645,
   "beobachtet": 54,
-  "neu": 0,
+  "neu": 1,
   "beobachtung_gestartet": 0,
   "signale": 0,
   "moonbags": 3
