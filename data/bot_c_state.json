@@ -1,16 +1,6 @@
 {
- "cash": 115.2415985196066,
+ "cash": 206.2198445196066,
  "positions": {
-  "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump": {
-   "sym": "BUTTCOIN",
-   "qty": 15281.816571,
-   "cost": 86.44725957502305,
-   "opened": "2026-11-21T23:51:12Z",
-   "peak": 0.006372,
-   "entry": 0.005656870645802169,
-   "cur_price": 0.006056,
-   "mark": 0.006056
-  },
   "6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump": {
    "sym": "VINE",
    "qty": 9472.512032,
@@ -18,8 +8,8 @@
    "opened": "2026-11-22T15:41:07Z",
    "peak": 0.009684,
    "entry": 0.009121340449456738,
-   "cur_price": 0.009144,
-   "mark": 0.009144
+   "cur_price": 0.009174,
+   "mark": 0.009174
   }
  },
  "trades": [
@@ -2446,13 +2436,24 @@
    "slip": 0.0056,
    "quote": "jup",
    "reason": "dip 24h -11% (SOL -0%) 1h -0.1%"
+  },
+  {
+   "t": "2026-11-23T17:21:22Z",
+   "side": "sell",
+   "sym": "BUTTCOIN",
+   "addr": "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump",
+   "price": 0.005955,
+   "usd": 90.98,
+   "pnl": 4.53,
+   "peak_x": 1.126,
+   "held_h": 41.5,
+   "frac": 1.0,
+   "slip": 0.0004,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
-  {
-   "t": "2026-11-06T08:41:26Z",
-   "v": 337.0
-  },
   {
    "t": "2026-11-06T08:46:25Z",
    "v": 336.99
@@ -22448,6 +22449,10 @@
   {
    "t": "2026-11-23T17:16:21Z",
    "v": 294.4
+  },
+  {
+   "t": "2026-11-23T17:21:22Z",
+   "v": 293.12
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -22455,7 +22460,7 @@
  "strategy": "dip_weites_netz",
  "universe_n": 154,
  "coverage": {
-  "t": "2026-11-23T17:16:21Z",
+  "t": "2026-11-23T17:21:22Z",
   "kurse": 127,
   "von": 153,
   "ohne_pool": 77,
@@ -22463,11 +22468,9 @@
   "kandidaten": 0
  },
  "verkauft_am": {
-  "GJAFwWjJ3vnTsrQVabjBVK2TYB1YtRCQXRDfDgUnpump": 1794695483.672037,
   "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump": 1794994883.7576149,
-  "74SBV4zDXxTRgv1pEMoECskKBkZHc2yGPnc7GYVepump": 1794629796.4822726,
   "KMifrkYmDdAKtVXAVBEPEQxJ7qP2iLgUcfZjUZipump": 1794885397.3874562,
-  "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump": 1794804988.007114,
+  "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump": 1795454482.3786592,
   "6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump": 1794879992.7550938,
   "FeR8VBqNRSUD5NtXAj2n3j1dAHkZHfyDktKuLXD4pump": 1794912082.0355837,
   "BeGY8KqKxboEwRbJd1q9H2K829jS4Rc5dEyNMYXCbV5p": 1795103772.4735022,
