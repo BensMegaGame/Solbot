@@ -1,5 +1,5 @@
 {
- "cash": 66.12044194111206,
+ "cash": 16.10044194111206,
  "positions": {
   "9cmXfuC26anZtH9AUWVzpUxU1UJ7PPogYxftYTepump": {
    "sym": "WISHMAS",
@@ -8,8 +8,8 @@
    "opened": "2026-11-15T21:46:01Z",
    "peak": 0.0003683,
    "entry": 0.0002095119938822751,
-   "cur_price": 0.0002358,
-   "mark": 0.0002358
+   "cur_price": 0.0002394,
+   "mark": 0.0002394
   },
   "5qaP7oKUqKffwwo5DaEqDoTtsBLMpdbQTxEkCDaTpump": {
    "sym": "Max",
@@ -18,8 +18,18 @@
    "opened": "2026-11-22T13:45:07Z",
    "peak": 0.0006025,
    "entry": 0.0005692331194224446,
-   "cur_price": 0.0004246,
-   "mark": 0.0004246
+   "cur_price": 0.0004239,
+   "mark": 0.0004239
+  },
+  "Jd3NCawdFiDNWpLiTtsMqoeoBMjC1ZQMrMScRVzpump": {
+   "sym": "NOHR",
+   "qty": 51699.31228,
+   "cost": 50.02,
+   "opened": "2026-11-23T15:20:40Z",
+   "peak": 0.0009691,
+   "entry": 0.0009675177056339753,
+   "cur_price": 0.0009691,
+   "mark": 0.0009691
   }
  },
  "trades": [
@@ -5045,13 +5055,21 @@
    "slip": 0.0,
    "quote": "jup",
    "reason": "screener"
+  },
+  {
+   "t": "2026-11-23T15:20:40Z",
+   "side": "buy",
+   "sym": "NOHR",
+   "addr": "Jd3NCawdFiDNWpLiTtsMqoeoBMjC1ZQMrMScRVzpump",
+   "price": 0.0009691,
+   "fill": 0.000967517706,
+   "usd": 50.02,
+   "slip": 0.022,
+   "quote": "jup",
+   "reason": "screener"
   }
  ],
  "equity": [
-  {
-   "t": "2026-11-06T06:41:03Z",
-   "v": 146.5
-  },
   {
    "t": "2026-11-06T06:46:02Z",
    "v": 145.56
@@ -25047,6 +25065,10 @@
   {
    "t": "2026-11-23T15:15:54Z",
    "v": 159.73
+  },
+  {
+   "t": "2026-11-23T15:20:55Z",
+   "v": 160.61
   }
  ],
  "started": "2026-09-10T17:17:16Z",
