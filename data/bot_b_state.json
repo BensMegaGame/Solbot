@@ -1,5 +1,5 @@
 {
- "cash": 426.61105200000014,
+ "cash": 396.59105200000016,
  "positions": {
   "GRMRQSkBGg2Cc8Y9GePNBcJVk49YepWkXUDQBXAMpump": {
    "sym": "RUDY",
@@ -38,8 +38,8 @@
    "peak": 5.18e-05,
    "entry": 3.723847660736592e-05,
    "pair": "AszTn7GufCoDMJNFkCqGarc2BB6QniUP9hzy4j2pkkL2",
-   "cur_price": 1.547e-05,
-   "mark": 1.547e-05,
+   "cur_price": 1.525e-05,
+   "mark": 1.525e-05,
    "tp": true,
    "tp_t": 1795381254.6511354,
    "tp_px": 5.18e-05,
@@ -55,8 +55,8 @@
    "peak": 1.862e-05,
    "entry": 1.3223036322859578e-05,
    "pair": "HbLbkEKoW1wxgfrjdZpvAXhUphM4qYBhMLEzz8fMvXfP",
-   "cur_price": 9.487e-06,
-   "mark": 9.487e-06,
+   "cur_price": 9.377e-06,
+   "mark": 9.377e-06,
    "tp": true,
    "tp_t": 1795391452.0859635,
    "tp_px": 1.803e-05,
@@ -72,8 +72,19 @@
    "peak": 2.488e-05,
    "entry": 2.297583762581057e-05,
    "pair": "8oh9Kk2GwTk1WyRHUyfYr3rKPySW5TvqeDYM94occEeX",
-   "cur_price": 2.225e-05,
-   "mark": 2.225e-05
+   "cur_price": 2.217e-05,
+   "mark": 2.217e-05
+  },
+  "51TUkCJcBPi5fj9gZgjnXh6Ny5RSiEbrxUBoikDLpump": {
+   "sym": "ILY",
+   "qty": 1572506.732381,
+   "cost": 30.02,
+   "opened": "2026-11-23T08:45:54Z",
+   "peak": 1.84e-05,
+   "entry": 1.909053829902873e-05,
+   "pair": "7wf1eFVWWdFnVUMdiJ2rFChE4C3qA6QVoBVDbUXvvQ9V",
+   "cur_price": 1.84e-05,
+   "mark": 1.84e-05
   }
  },
  "trades": [
@@ -208,6 +219,18 @@
    "slip": 0.0146,
    "quote": "jup",
    "reason": "absturz -80% vom hoch (2.6x)"
+  },
+  {
+   "t": "2026-11-23T08:45:54Z",
+   "side": "buy",
+   "sym": "ILY",
+   "addr": "51TUkCJcBPi5fj9gZgjnXh6Ny5RSiEbrxUBoikDLpump",
+   "price": 1.84e-05,
+   "fill": 1.9090538e-05,
+   "usd": 30.02,
+   "slip": 0.0186,
+   "quote": "jup",
+   "reason": "absturz -80% vom hoch (2.0x)"
   }
  ],
  "equity": [
@@ -3614,18 +3637,22 @@
   {
    "t": "2026-11-23T08:40:54Z",
    "v": 495.41
+  },
+  {
+   "t": "2026-11-23T08:45:54Z",
+   "v": 494.11
   }
  ],
  "started": "2026-11-20T09:50:55Z",
  "version": "b5",
  "strategy": "nach_dem_absturz",
  "coverage": {
-  "t": "2026-11-23T08:40:54Z",
-  "wartend": 643,
+  "t": "2026-11-23T08:45:54Z",
+  "wartend": 644,
   "beobachtet": 54,
   "neu": 1,
   "beobachtung_gestartet": 0,
-  "signale": 0,
+  "signale": 1,
   "moonbags": 3
  },
  "verkauft_am": {
