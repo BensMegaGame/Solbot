@@ -9,8 +9,8 @@
    "peak": 2.223e-05,
    "entry": 1.2986466903759407e-05,
    "pair": "8i183K6cZXHN17umKrcr6Zjc9BXgN2nnqdQanYKgvko6",
-   "cur_price": 9.642e-06,
-   "mark": 9.642e-06,
+   "cur_price": 9.467e-06,
+   "mark": 9.467e-06,
    "tp": true,
    "tp_t": 1795294863.702464,
    "tp_px": 1.713e-05,
@@ -38,8 +38,8 @@
    "peak": 5.18e-05,
    "entry": 3.723847660736592e-05,
    "pair": "AszTn7GufCoDMJNFkCqGarc2BB6QniUP9hzy4j2pkkL2",
-   "cur_price": 1.411e-05,
-   "mark": 1.411e-05,
+   "cur_price": 1.403e-05,
+   "mark": 1.403e-05,
    "tp": true,
    "tp_t": 1795381254.6511354,
    "tp_px": 5.18e-05,
@@ -83,8 +83,8 @@
    "peak": 2.001e-05,
    "entry": 1.909053829902873e-05,
    "pair": "7wf1eFVWWdFnVUMdiJ2rFChE4C3qA6QVoBVDbUXvvQ9V",
-   "cur_price": 1.823e-05,
-   "mark": 1.823e-05
+   "cur_price": 1.818e-05,
+   "mark": 1.818e-05
   }
  },
  "trades": [
@@ -3673,16 +3673,20 @@
   {
    "t": "2026-11-23T09:25:53Z",
    "v": 493.47
+  },
+  {
+   "t": "2026-11-23T09:30:52Z",
+   "v": 493.27
   }
  ],
  "started": "2026-11-20T09:50:55Z",
  "version": "b5",
  "strategy": "nach_dem_absturz",
  "coverage": {
-  "t": "2026-11-23T09:25:53Z",
-  "wartend": 646,
+  "t": "2026-11-23T09:30:52Z",
+  "wartend": 648,
   "beobachtet": 54,
-  "neu": 1,
+  "neu": 2,
   "beobachtung_gestartet": 0,
   "signale": 0,
   "moonbags": 3
