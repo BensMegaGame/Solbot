@@ -1,5 +1,5 @@
 {
- "cash": 456.6310520000001,
+ "cash": 426.61105200000014,
  "positions": {
   "GRMRQSkBGg2Cc8Y9GePNBcJVk49YepWkXUDQBXAMpump": {
    "sym": "RUDY",
@@ -38,8 +38,8 @@
    "peak": 5.18e-05,
    "entry": 3.723847660736592e-05,
    "pair": "AszTn7GufCoDMJNFkCqGarc2BB6QniUP9hzy4j2pkkL2",
-   "cur_price": 2.094e-05,
-   "mark": 2.094e-05,
+   "cur_price": 2.236e-05,
+   "mark": 2.236e-05,
    "tp": true,
    "tp_t": 1795381254.6511354,
    "tp_px": 5.18e-05,
@@ -55,14 +55,25 @@
    "peak": 1.862e-05,
    "entry": 1.3223036322859578e-05,
    "pair": "HbLbkEKoW1wxgfrjdZpvAXhUphM4qYBhMLEzz8fMvXfP",
-   "cur_price": 1.165e-05,
-   "mark": 1.165e-05,
+   "cur_price": 1.057e-05,
+   "mark": 1.057e-05,
    "tp": true,
    "tp_t": 1795391452.0859635,
    "tp_px": 1.803e-05,
    "moon_log": [
     6
    ]
+  },
+  "BjCRkoV3Ksd6bukFUyuF9pdPWTAoeAizFXXZ8qDJpump": {
+   "sym": "\u5c0f\u9762\u5305",
+   "qty": 1306590.013775,
+   "cost": 30.02,
+   "opened": "2026-11-23T06:50:59Z",
+   "peak": 2.26e-05,
+   "entry": 2.297583762581057e-05,
+   "pair": "8oh9Kk2GwTk1WyRHUyfYr3rKPySW5TvqeDYM94occEeX",
+   "cur_price": 2.26e-05,
+   "mark": 2.26e-05
   }
  },
  "trades": [
@@ -185,6 +196,18 @@
    "slip": 0.0012,
    "quote": "jup",
    "reason": "tp30"
+  },
+  {
+   "t": "2026-11-23T06:50:59Z",
+   "side": "buy",
+   "sym": "\u5c0f\u9762\u5305",
+   "addr": "BjCRkoV3Ksd6bukFUyuF9pdPWTAoeAizFXXZ8qDJpump",
+   "price": 2.26e-05,
+   "fill": 2.2975838e-05,
+   "usd": 30.02,
+   "slip": 0.0146,
+   "quote": "jup",
+   "reason": "absturz -80% vom hoch (2.6x)"
   }
  ],
  "equity": [
@@ -3499,18 +3522,22 @@
   {
    "t": "2026-11-23T06:45:58Z",
    "v": 499.02
+  },
+  {
+   "t": "2026-11-23T06:50:59Z",
+   "v": 498.21
   }
  ],
  "started": "2026-11-20T09:50:55Z",
  "version": "b5",
  "strategy": "nach_dem_absturz",
  "coverage": {
-  "t": "2026-11-23T06:45:58Z",
-  "wartend": 637,
+  "t": "2026-11-23T06:50:59Z",
+  "wartend": 638,
   "beobachtet": 52,
   "neu": 1,
   "beobachtung_gestartet": 0,
-  "signale": 0,
+  "signale": 1,
   "moonbags": 3
  },
  "verkauft_am": {
