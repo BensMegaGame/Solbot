@@ -1,5 +1,5 @@
 {
- "cash": 396.59105200000016,
+ "cash": 418.72344300000015,
  "positions": {
   "GRMRQSkBGg2Cc8Y9GePNBcJVk49YepWkXUDQBXAMpump": {
    "sym": "RUDY",
@@ -38,8 +38,8 @@
    "peak": 5.18e-05,
    "entry": 3.723847660736592e-05,
    "pair": "AszTn7GufCoDMJNFkCqGarc2BB6QniUP9hzy4j2pkkL2",
-   "cur_price": 1.444e-05,
-   "mark": 1.444e-05,
+   "cur_price": 1.46e-05,
+   "mark": 1.46e-05,
    "tp": true,
    "tp_t": 1795381254.6511354,
    "tp_px": 5.18e-05,
@@ -72,19 +72,8 @@
    "peak": 2.488e-05,
    "entry": 2.297583762581057e-05,
    "pair": "8oh9Kk2GwTk1WyRHUyfYr3rKPySW5TvqeDYM94occEeX",
-   "cur_price": 2.338e-05,
-   "mark": 2.338e-05
-  },
-  "51TUkCJcBPi5fj9gZgjnXh6Ny5RSiEbrxUBoikDLpump": {
-   "sym": "ILY",
-   "qty": 1572506.732381,
-   "cost": 30.02,
-   "opened": "2026-11-23T08:45:54Z",
-   "peak": 2.001e-05,
-   "entry": 1.909053829902873e-05,
-   "pair": "7wf1eFVWWdFnVUMdiJ2rFChE4C3qA6QVoBVDbUXvvQ9V",
-   "cur_price": 1.528e-05,
-   "mark": 1.528e-05
+   "cur_price": 2.32e-05,
+   "mark": 2.32e-05
   }
  },
  "trades": [
@@ -231,6 +220,21 @@
    "slip": 0.0186,
    "quote": "jup",
    "reason": "absturz -80% vom hoch (2.0x)"
+  },
+  {
+   "t": "2026-11-23T09:50:52Z",
+   "side": "sell",
+   "sym": "ILY",
+   "addr": "51TUkCJcBPi5fj9gZgjnXh6Ny5RSiEbrxUBoikDLpump",
+   "price": 1.43e-05,
+   "usd": 22.13,
+   "pnl": -7.89,
+   "peak_x": 1.048,
+   "held_h": 1.1,
+   "frac": 1.0,
+   "slip": 0.0141,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -3689,21 +3693,26 @@
   {
    "t": "2026-11-23T09:45:51Z",
    "v": 490.47
+  },
+  {
+   "t": "2026-11-23T09:50:52Z",
+   "v": 488.37
   }
  ],
  "started": "2026-11-20T09:50:55Z",
  "version": "b5",
  "strategy": "nach_dem_absturz",
  "coverage": {
-  "t": "2026-11-23T09:45:51Z",
-  "wartend": 648,
+  "t": "2026-11-23T09:50:52Z",
+  "wartend": 651,
   "beobachtet": 54,
-  "neu": 0,
+  "neu": 3,
   "beobachtung_gestartet": 0,
   "signale": 0,
   "moonbags": 3
  },
  "verkauft_am": {
-  "SPHFHU7sz2EZQYqyxMrZjgFdiYSCXJxRBE4giAjpump": 1795386656.4278142
+  "SPHFHU7sz2EZQYqyxMrZjgFdiYSCXJxRBE4giAjpump": 1795386656.4278142,
+  "51TUkCJcBPi5fj9gZgjnXh6Ny5RSiEbrxUBoikDLpump": 1795427452.4031856
  }
 }
