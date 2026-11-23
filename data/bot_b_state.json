@@ -1,5 +1,5 @@
 {
- "cash": 444.21711600000015,
+ "cash": 437.9179550000002,
  "positions": {
   "GRMRQSkBGg2Cc8Y9GePNBcJVk49YepWkXUDQBXAMpump": {
    "sym": "RUDY",
@@ -9,8 +9,8 @@
    "peak": 2.223e-05,
    "entry": 1.2986466903759407e-05,
    "pair": "8i183K6cZXHN17umKrcr6Zjc9BXgN2nnqdQanYKgvko6",
-   "cur_price": 9.321e-06,
-   "mark": 9.321e-06,
+   "cur_price": 1.014e-05,
+   "mark": 1.014e-05,
    "tp": true,
    "tp_t": 1795294863.702464,
    "tp_px": 1.713e-05,
@@ -27,8 +27,8 @@
    "peak": 5.18e-05,
    "entry": 3.723847660736592e-05,
    "pair": "AszTn7GufCoDMJNFkCqGarc2BB6QniUP9hzy4j2pkkL2",
-   "cur_price": 1.886e-05,
-   "mark": 1.886e-05,
+   "cur_price": 1.353e-05,
+   "mark": 1.353e-05,
    "tp": true,
    "tp_t": 1795381254.6511354,
    "tp_px": 5.18e-05,
@@ -44,8 +44,8 @@
    "peak": 1.862e-05,
    "entry": 1.3223036322859578e-05,
    "pair": "HbLbkEKoW1wxgfrjdZpvAXhUphM4qYBhMLEzz8fMvXfP",
-   "cur_price": 1.006e-05,
-   "mark": 1.006e-05,
+   "cur_price": 7.507e-06,
+   "mark": 7.507e-06,
    "tp": true,
    "tp_t": 1795391452.0859635,
    "tp_px": 1.803e-05,
@@ -53,16 +53,16 @@
     6
    ]
   },
-  "BjCRkoV3Ksd6bukFUyuF9pdPWTAoeAizFXXZ8qDJpump": {
-   "sym": "\u5c0f\u9762\u5305",
-   "qty": 1306590.013775,
+  "8xegBRcvNUMYTtxno5DnPLMMHRXQg9RrUVnQwEVppump": {
+   "sym": "chego",
+   "qty": 1084877.885649,
    "cost": 30.02,
-   "opened": "2026-11-23T06:50:59Z",
-   "peak": 2.955e-05,
-   "entry": 2.297583762581057e-05,
-   "pair": "8oh9Kk2GwTk1WyRHUyfYr3rKPySW5TvqeDYM94occEeX",
-   "cur_price": 1.971e-05,
-   "mark": 1.971e-05
+   "opened": "2026-11-23T17:36:13Z",
+   "peak": 2.962e-05,
+   "entry": 2.7671317110534808e-05,
+   "pair": "FNTWRwDmHHUBYQgFCGvKxeSMoJA4bk8PVBwe82ygHi85",
+   "cur_price": 2.962e-05,
+   "mark": 2.962e-05
   }
  },
  "trades": [
@@ -239,6 +239,33 @@
    "slip": 0.0411,
    "quote": "jup",
    "reason": "zeit 24h"
+  },
+  {
+   "t": "2026-11-23T17:36:13Z",
+   "side": "sell",
+   "sym": "\u5c0f\u9762\u5305",
+   "addr": "BjCRkoV3Ksd6bukFUyuF9pdPWTAoeAizFXXZ8qDJpump",
+   "price": 1.829e-05,
+   "usd": 23.72,
+   "pnl": -6.3,
+   "peak_x": 1.286,
+   "held_h": 10.8,
+   "frac": 1.0,
+   "slip": 0.009,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-11-23T17:36:13Z",
+   "side": "buy",
+   "sym": "chego",
+   "addr": "8xegBRcvNUMYTtxno5DnPLMMHRXQg9RrUVnQwEVppump",
+   "price": 2.962e-05,
+   "fill": 2.7671317e-05,
+   "usd": 30.02,
+   "slip": 0.0081,
+   "quote": "jup",
+   "reason": "absturz -87% vom hoch (6.1x)"
   }
  ],
  "equity": [
@@ -3881,23 +3908,28 @@
   {
    "t": "2026-11-23T13:35:52Z",
    "v": 484.87
+  },
+  {
+   "t": "2026-11-23T17:36:13Z",
+   "v": 482.9
   }
  ],
  "started": "2026-11-20T09:50:55Z",
  "version": "b5",
  "strategy": "nach_dem_absturz",
  "coverage": {
-  "t": "2026-11-23T13:35:52Z",
-  "wartend": 685,
-  "beobachtet": 50,
-  "neu": 4,
-  "beobachtung_gestartet": 0,
-  "signale": 0,
+  "t": "2026-11-23T17:36:13Z",
+  "wartend": 715,
+  "beobachtet": 49,
+  "neu": 32,
+  "beobachtung_gestartet": 2,
+  "signale": 1,
   "moonbags": 3
  },
  "verkauft_am": {
   "SPHFHU7sz2EZQYqyxMrZjgFdiYSCXJxRBE4giAjpump": 1795386656.4278142,
   "51TUkCJcBPi5fj9gZgjnXh6Ny5RSiEbrxUBoikDLpump": 1795427452.4031856,
-  "fRxGeXTCXLPQyChrq5sanfUWAe2vseLBiGdDE7k4S1M": 1795438252.5424213
+  "fRxGeXTCXLPQyChrq5sanfUWAe2vseLBiGdDE7k4S1M": 1795438252.5424213,
+  "BjCRkoV3Ksd6bukFUyuF9pdPWTAoeAizFXXZ8qDJpump": 1795455373.516489
  }
 }
