@@ -55,8 +55,8 @@
    "peak": 1.862e-05,
    "entry": 1.3223036322859578e-05,
    "pair": "HbLbkEKoW1wxgfrjdZpvAXhUphM4qYBhMLEzz8fMvXfP",
-   "cur_price": 1.04e-05,
-   "mark": 1.04e-05,
+   "cur_price": 1.073e-05,
+   "mark": 1.073e-05,
    "tp": true,
    "tp_t": 1795391452.0859635,
    "tp_px": 1.803e-05,
@@ -69,11 +69,11 @@
    "qty": 1306590.013775,
    "cost": 30.02,
    "opened": "2026-11-23T06:50:59Z",
-   "peak": 2.88e-05,
+   "peak": 2.915e-05,
    "entry": 2.297583762581057e-05,
    "pair": "8oh9Kk2GwTk1WyRHUyfYr3rKPySW5TvqeDYM94occEeX",
-   "cur_price": 2.831e-05,
-   "mark": 2.831e-05
+   "cur_price": 2.915e-05,
+   "mark": 2.915e-05
   }
  },
  "trades": [
@@ -3781,16 +3781,20 @@
   {
    "t": "2026-11-23T11:35:52Z",
    "v": 497.03
+  },
+  {
+   "t": "2026-11-23T11:40:53Z",
+   "v": 498.31
   }
  ],
  "started": "2026-11-20T09:50:55Z",
  "version": "b5",
  "strategy": "nach_dem_absturz",
  "coverage": {
-  "t": "2026-11-23T11:35:52Z",
-  "wartend": 663,
+  "t": "2026-11-23T11:40:53Z",
+  "wartend": 664,
   "beobachtet": 50,
-  "neu": 0,
+  "neu": 1,
   "beobachtung_gestartet": 0,
   "signale": 0,
   "moonbags": 3
