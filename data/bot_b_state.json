@@ -1,5 +1,5 @@
 {
- "cash": 416.10820000000024,
+ "cash": 386.08820000000026,
  "positions": {
   "GRMRQSkBGg2Cc8Y9GePNBcJVk49YepWkXUDQBXAMpump": {
    "sym": "RUDY",
@@ -78,8 +78,19 @@
    "peak": 3.358e-05,
    "entry": 3.171242551387814e-05,
    "pair": "DjPQsLsXyseQnRV5veXGcM4NbHUR4D6THBybMa1uXtqc",
-   "cur_price": 3.308e-05,
-   "mark": 3.308e-05
+   "cur_price": 3.256e-05,
+   "mark": 3.256e-05
+  },
+  "HuN5y4fJU7LNkaPjV9LhxkY7LUwpynW7yhL4qoVhpump": {
+   "sym": "Singularity",
+   "qty": 590168.993754,
+   "cost": 30.02,
+   "opened": "2026-11-24T02:26:09Z",
+   "peak": 4.961e-05,
+   "entry": 5.0866786153989696e-05,
+   "pair": "6tBgPPkJ4jDmpZXAeVRLHUSEivmPCDaj4bTU58FSAnCB",
+   "cur_price": 4.961e-05,
+   "mark": 4.961e-05
   }
  },
  "trades": [
@@ -364,6 +375,18 @@
    "slip": 0.0068,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-11-24T02:26:09Z",
+   "side": "buy",
+   "sym": "Singularity",
+   "addr": "HuN5y4fJU7LNkaPjV9LhxkY7LUwpynW7yhL4qoVhpump",
+   "price": 4.961e-05,
+   "fill": 5.0866786e-05,
+   "usd": 30.02,
+   "slip": 0.0272,
+   "quote": "jup",
+   "reason": "absturz -80% vom hoch (4.7x)"
   }
  ],
  "equity": [
@@ -4058,18 +4081,22 @@
   {
    "t": "2026-11-24T02:21:10Z",
    "v": 471.12
+  },
+  {
+   "t": "2026-11-24T02:26:09Z",
+   "v": 469.89
   }
  ],
  "started": "2026-11-20T09:50:55Z",
  "version": "b5",
  "strategy": "nach_dem_absturz",
  "coverage": {
-  "t": "2026-11-24T02:21:10Z",
-  "wartend": 772,
+  "t": "2026-11-24T02:26:09Z",
+  "wartend": 775,
   "beobachtet": 45,
-  "neu": 0,
+  "neu": 3,
   "beobachtung_gestartet": 0,
-  "signale": 0,
+  "signale": 1,
   "moonbags": 4
  },
  "verkauft_am": {
