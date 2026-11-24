@@ -1,5 +1,5 @@
 {
- "cash": 16.10044194111206,
+ "cash": 45.24544194111206,
  "positions": {
   "9cmXfuC26anZtH9AUWVzpUxU1UJ7PPogYxftYTepump": {
    "sym": "WISHMAS",
@@ -8,8 +8,8 @@
    "opened": "2026-11-15T21:46:01Z",
    "peak": 0.0003683,
    "entry": 0.0002095119938822751,
-   "cur_price": 0.0001919,
-   "mark": 0.0001919
+   "cur_price": 0.0001921,
+   "mark": 0.0001921
   },
   "5qaP7oKUqKffwwo5DaEqDoTtsBLMpdbQTxEkCDaTpump": {
    "sym": "Max",
@@ -18,18 +18,8 @@
    "opened": "2026-11-22T13:45:07Z",
    "peak": 0.0006025,
    "entry": 0.0005692331194224446,
-   "cur_price": 0.0004091,
-   "mark": 0.0004091
-  },
-  "Jd3NCawdFiDNWpLiTtsMqoeoBMjC1ZQMrMScRVzpump": {
-   "sym": "NOHR",
-   "qty": 51699.31228,
-   "cost": 50.02,
-   "opened": "2026-11-23T15:20:40Z",
-   "peak": 0.001482,
-   "entry": 0.0009675177056339753,
-   "cur_price": 0.001007,
-   "mark": 0.001007
+   "cur_price": 0.0004039,
+   "mark": 0.0004039
   }
  },
  "trades": [
@@ -5067,13 +5057,24 @@
    "slip": 0.022,
    "quote": "jup",
    "reason": "screener"
+  },
+  {
+   "t": "2026-11-24T07:55:04Z",
+   "side": "sell",
+   "sym": "NOHR",
+   "addr": "Jd3NCawdFiDNWpLiTtsMqoeoBMjC1ZQMrMScRVzpump",
+   "price": 0.0003867,
+   "usd": 29.14,
+   "pnl": -20.88,
+   "peak_x": 1.532,
+   "held_h": 16.6,
+   "frac": 1.0,
+   "slip": 0.0133,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-11-06T23:16:09Z",
-   "v": 171.79
-  },
   {
    "t": "2026-11-06T23:21:09Z",
    "v": 172.21
@@ -25069,11 +25070,14 @@
   {
    "t": "2026-11-24T07:50:49Z",
    "v": 149.93
+  },
+  {
+   "t": "2026-11-24T07:55:49Z",
+   "v": 126.6
   }
  ],
  "started": "2026-09-10T17:17:16Z",
  "verkauft_am": {
-  "GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump": 1794738304.682399,
   "BWJfBNeXpapG7uoqByp5KSwWgCQba8QcDmA2DQiEpump": 1794990005.825049,
   "FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump": 1795224003.568685,
   "8Mi9E1V2bdPeAaRkR5yxUsAvpzP6UBUEEUrYmgKNpump": 1794967203.9965835,
@@ -25083,6 +25087,7 @@
   "Fpzcd2R1y2MPdezgMRigQuBx7aCPPn5sZBXpvtP3pump": 1795236304.3033197,
   "9HFUEab7sompLDPTAaTGkryMNGbtBaFMhHMVpJEBpump": 1795255503.563523,
   "4Ye6Y6Vaic8cyPdfW2f9PcLhXkysBtSmV84G8X7spump": 1795293302.9512522,
-  "Fn95NtGXWPaJXc4N5y9rVkUq1NwZbjBNJzPVvNRLpump": 1795305003.392241
+  "Fn95NtGXWPaJXc4N5y9rVkUq1NwZbjBNJzPVvNRLpump": 1795305003.392241,
+  "Jd3NCawdFiDNWpLiTtsMqoeoBMjC1ZQMrMScRVzpump": 1795506904.319689
  }
 }
