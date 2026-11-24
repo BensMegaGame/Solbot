@@ -5081,10 +5081,6 @@
  ],
  "equity": [
   {
-   "t": "2026-11-06T23:41:37Z",
-   "v": 372.18
-  },
-  {
    "t": "2026-11-06T23:46:38Z",
    "v": 372.18
   },
@@ -25079,6 +25075,10 @@
   {
    "t": "2026-11-24T08:16:05Z",
    "v": 415.4
+  },
+  {
+   "t": "2026-11-24T08:21:10Z",
+   "v": 415.4
   }
  ],
  "started": "2026-11-03T09:11:31Z",
@@ -25107,11 +25107,11 @@
   }
  },
  "coverage": {
-  "t": "2026-11-24T08:16:05Z",
+  "t": "2026-11-24T08:21:10Z",
   "kandidaten": 30,
   "pfade": 30,
   "kurse": 19,
-  "von": 21,
+  "von": 22,
   "fruehkaeufer_neu": 0,
   "fruehkaeufer_fehler": 0,
   "weg": {},
@@ -25131,12 +25131,12 @@
   "laufzeit_s": {
    "copy": 0,
    "kandidaten": 0,
-   "kurse": 2,
-   "fruehkaeufer": 2,
-   "spaete_kaeufer": 2,
-   "jupiter": 2,
-   "stufe2": 2,
-   "gesamt": 2
+   "kurse": 7,
+   "fruehkaeufer": 7,
+   "spaete_kaeufer": 7,
+   "jupiter": 7,
+   "stufe2": 7,
+   "gesamt": 8
   },
   "warteschlange": 650,
   "copy_credits_heute": 0,
