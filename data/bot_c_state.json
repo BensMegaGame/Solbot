@@ -1,17 +1,6 @@
 {
- "cash": 203.29034116372463,
- "positions": {
-  "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump": {
-   "sym": "MIHAO",
-   "qty": 11524.214322,
-   "cost": 87.15300335588198,
-   "opened": "2026-11-24T01:26:24Z",
-   "peak": 0.007558,
-   "entry": 0.007562598275311907,
-   "cur_price": 0.006957,
-   "mark": 0.006957
-  }
- },
+ "cash": 281.41918416372465,
+ "positions": {},
  "trades": [
   {
    "t": "2026-09-25T10:30:42Z",
@@ -2478,13 +2467,24 @@
    "slip": 0.0,
    "quote": "jup",
    "reason": "dip 24h -10% (SOL +3%) 1h -0.0%"
+  },
+  {
+   "t": "2026-11-24T03:31:13Z",
+   "side": "sell",
+   "sym": "MIHAO",
+   "addr": "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump",
+   "price": 0.006798,
+   "usd": 78.13,
+   "pnl": -9.02,
+   "peak_x": 0.999,
+   "held_h": 2.1,
+   "frac": 1.0,
+   "slip": 0.0022,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-11-06T18:51:31Z",
-   "v": 338.24
-  },
   {
    "t": "2026-11-06T18:56:30Z",
    "v": 338.89
@@ -22480,6 +22480,10 @@
   {
    "t": "2026-11-24T03:26:13Z",
    "v": 283.46
+  },
+  {
+   "t": "2026-11-24T03:31:13Z",
+   "v": 281.42
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -22487,7 +22491,7 @@
  "strategy": "dip_weites_netz",
  "universe_n": 152,
  "coverage": {
-  "t": "2026-11-24T03:26:13Z",
+  "t": "2026-11-24T03:31:13Z",
   "kurse": 126,
   "von": 152,
   "ohne_pool": 79,
@@ -22496,12 +22500,12 @@
  },
  "verkauft_am": {
   "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump": 1794994883.7576149,
-  "KMifrkYmDdAKtVXAVBEPEQxJ7qP2iLgUcfZjUZipump": 1794885397.3874562,
   "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump": 1795454482.3786592,
   "6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump": 1795483281.9263272,
   "FeR8VBqNRSUD5NtXAj2n3j1dAHkZHfyDktKuLXD4pump": 1794912082.0355837,
   "BeGY8KqKxboEwRbJd1q9H2K829jS4Rc5dEyNMYXCbV5p": 1795103772.4735022,
   "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump": 1795135875.894853,
-  "Bn9oW3GVKQdgNJG5w5P53dbuZfUtAehwFAniZYry68T8": 1795200966.0705216
+  "Bn9oW3GVKQdgNJG5w5P53dbuZfUtAehwFAniZYry68T8": 1795200966.0705216,
+  "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump": 1795491073.9056594
  }
 }
