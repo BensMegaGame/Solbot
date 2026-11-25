@@ -1,17 +1,6 @@
 {
- "cash": 182.9943157247592,
- "positions": {
-  "BeGY8KqKxboEwRbJd1q9H2K829jS4Rc5dEyNMYXCbV5p": {
-   "sym": "NPC",
-   "qty": 7587.47526411,
-   "cost": 80.04578871546592,
-   "opened": "2026-11-24T14:16:04Z",
-   "peak": 0.01056,
-   "entry": 0.010549726480703746,
-   "cur_price": 0.009513,
-   "mark": 0.009513
-  }
- },
+ "cash": 254.6907317247592,
+ "positions": {},
  "trades": [
   {
    "t": "2026-09-25T10:30:42Z",
@@ -2559,13 +2548,24 @@
    "slip": 0.0042,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-11-25T14:11:05Z",
+   "side": "sell",
+   "sym": "NPC",
+   "addr": "BeGY8KqKxboEwRbJd1q9H2K829jS4Rc5dEyNMYXCbV5p",
+   "price": 0.009447,
+   "usd": 71.7,
+   "pnl": -8.35,
+   "peak_x": 1.001,
+   "held_h": 23.9,
+   "frac": 1.0,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-11-08T05:31:26Z",
-   "v": 327.54
-  },
   {
    "t": "2026-11-08T05:36:26Z",
    "v": 327.54
@@ -22561,6 +22561,10 @@
   {
    "t": "2026-11-25T14:06:04Z",
    "v": 255.17
+  },
+  {
+   "t": "2026-11-25T14:11:06Z",
+   "v": 254.69
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -22568,7 +22572,7 @@
  "strategy": "dip_weites_netz",
  "universe_n": 154,
  "coverage": {
-  "t": "2026-11-25T14:06:04Z",
+  "t": "2026-11-25T14:11:06Z",
   "kurse": 122,
   "von": 154,
   "ohne_pool": 83,
@@ -22576,10 +22580,9 @@
   "kandidaten": 0
  },
  "verkauft_am": {
-  "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump": 1794994883.7576149,
   "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump": 1795454482.3786592,
   "6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump": 1795483281.9263272,
-  "BeGY8KqKxboEwRbJd1q9H2K829jS4Rc5dEyNMYXCbV5p": 1795103772.4735022,
+  "BeGY8KqKxboEwRbJd1q9H2K829jS4Rc5dEyNMYXCbV5p": 1795615865.9869235,
   "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump": 1795135875.894853,
   "Bn9oW3GVKQdgNJG5w5P53dbuZfUtAehwFAniZYry68T8": 1795200966.0705216,
   "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump": 1795491073.9056594,
