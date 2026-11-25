@@ -1,5 +1,5 @@
 {
- "cash": 361.10984800000034,
+ "cash": 383.2583830000003,
  "positions": {
   "GRMRQSkBGg2Cc8Y9GePNBcJVk49YepWkXUDQBXAMpump": {
    "sym": "RUDY",
@@ -9,8 +9,8 @@
    "peak": 2.223e-05,
    "entry": 1.2986466903759407e-05,
    "pair": "8i183K6cZXHN17umKrcr6Zjc9BXgN2nnqdQanYKgvko6",
-   "cur_price": 1.004e-05,
-   "mark": 1.004e-05,
+   "cur_price": 1.008e-05,
+   "mark": 1.008e-05,
    "tp": true,
    "tp_t": 1795294863.702464,
    "tp_px": 1.713e-05,
@@ -65,8 +65,8 @@
    "peak": 0.0002811,
    "entry": 0.00015452420874203815,
    "pair": "58XqWPXDGp3GfU9DAFxs8C1GJwTLdHdQhJRofAF5yWTV",
-   "cur_price": 0.0001381,
-   "mark": 0.0001381,
+   "cur_price": 0.0001393,
+   "mark": 0.0001393,
    "tp": true,
    "tp_t": 1795483867.7348254,
    "tp_px": 0.0002406,
@@ -83,8 +83,8 @@
    "peak": 0.0001699,
    "entry": 3.1417965332493914e-05,
    "pair": "66tQXZjwhVXbSxCctXv4YL8EgM2aijQEj5Cm7vpYX3nV",
-   "cur_price": 9.666e-05,
-   "mark": 9.666e-05,
+   "cur_price": 9.839e-05,
+   "mark": 9.839e-05,
    "tp": true,
    "tp_t": 1795505149.4417045,
    "tp_px": 4.138e-05,
@@ -127,17 +127,6 @@
     6
    ]
   },
-  "AuPon7CveYeRk3E7YdUt9QMGu5hEGkqSxzo9NiZdpump": {
-   "sym": "Sisyphus",
-   "qty": 3420043.840373,
-   "cost": 30.02,
-   "opened": "2026-11-25T21:06:09Z",
-   "peak": 8.968e-06,
-   "entry": 8.777665258444736e-06,
-   "pair": "7Anuz4f24P4UH5z7JbXvNxgaRc4ttNdCbJFTSro34Q7j",
-   "cur_price": 7.418e-06,
-   "mark": 7.418e-06
-  },
   "6GJQL9SciHTqVoRV9Rj3aAQePL4D8ngX64m2hMDnpump": {
    "sym": "BOBCAT",
    "qty": 2528674.382308,
@@ -146,8 +135,8 @@
    "peak": 1.153e-05,
    "entry": 1.187183300864535e-05,
    "pair": "8DWmKURoyUudd6tSUD2i7BruFkFU3LEQPJJmq9uSd8Uc",
-   "cur_price": 1.153e-05,
-   "mark": 1.153e-05
+   "cur_price": 1.149e-05,
+   "mark": 1.149e-05
   }
  },
  "trades": [
@@ -606,6 +595,21 @@
    "slip": 0.0285,
    "quote": "jup",
    "reason": "absturz -81% vom hoch (2.4x)"
+  },
+  {
+   "t": "2026-11-25T21:36:11Z",
+   "side": "sell",
+   "sym": "Sisyphus",
+   "addr": "AuPon7CveYeRk3E7YdUt9QMGu5hEGkqSxzo9NiZdpump",
+   "price": 6.561e-06,
+   "usd": 22.15,
+   "pnl": -7.87,
+   "peak_x": 1.022,
+   "held_h": 0.5,
+   "frac": 1.0,
+   "slip": 0.0121,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
@@ -5460,18 +5464,22 @@
   {
    "t": "2026-11-25T21:31:11Z",
    "v": 471.23
+  },
+  {
+   "t": "2026-11-25T21:36:11Z",
+   "v": 468.4
   }
  ],
  "started": "2026-11-20T09:50:55Z",
  "version": "b5",
  "strategy": "nach_dem_absturz",
  "coverage": {
-  "t": "2026-11-25T21:31:11Z",
-  "wartend": 1098,
+  "t": "2026-11-25T21:36:11Z",
+  "wartend": 1102,
   "beobachtet": 48,
-  "neu": 1,
+  "neu": 4,
   "beobachtung_gestartet": 0,
-  "signale": 1,
+  "signale": 0,
   "moonbags": 7
  },
  "verkauft_am": {
@@ -5483,6 +5491,7 @@
   "89DKn95R7QvjAcGSeqHvmj3pq7TJFbJcckURqjvuHsHp": 1795483875.7387223,
   "HuN5y4fJU7LNkaPjV9LhxkY7LUwpynW7yhL4qoVhpump": 1795542366.907428,
   "kPqBsUZuogprbq15ZpACwDzbUHSAxTxbhRrxmrDpump": 1795563971.1254897,
-  "2MdCPWNFufmJSZhajSvi1yqBFTB24GQ4ipjNcB8Vpump": 1795618257.8622632
+  "2MdCPWNFufmJSZhajSvi1yqBFTB24GQ4ipjNcB8Vpump": 1795618257.8622632,
+  "AuPon7CveYeRk3E7YdUt9QMGu5hEGkqSxzo9NiZdpump": 1795642571.1755872
  }
 }
