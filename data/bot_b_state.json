@@ -64,8 +64,8 @@
    "peak": 0.0002811,
    "entry": 0.00015452420874203815,
    "pair": "58XqWPXDGp3GfU9DAFxs8C1GJwTLdHdQhJRofAF5yWTV",
-   "cur_price": 0.0001298,
-   "mark": 0.0001298,
+   "cur_price": 0.0001294,
+   "mark": 0.0001294,
    "tp": true,
    "tp_t": 1795483867.7348254,
    "tp_px": 0.0002406,
@@ -99,8 +99,8 @@
    "peak": 1.195e-05,
    "entry": 1.077215483175798e-05,
    "pair": "3mScrdy7PEtWgewpc89dMpZz9V7wgqrpy3FksVpqd3xk",
-   "cur_price": 1.004e-05,
-   "mark": 1.004e-05
+   "cur_price": 9.988e-06,
+   "mark": 9.988e-06
   },
   "84tAcSK5L9kuQEVM8C8vMHXnfdA83nGBT2nYfSbPUcAc": {
    "sym": "Fly",
@@ -110,8 +110,8 @@
    "peak": 2.734e-05,
    "entry": 1.7958194997478464e-05,
    "pair": "Hf9GzCEiZRixeXb3fa1q4YnmdWeNaVvKKutG5PcykqKr",
-   "cur_price": 2.032e-05,
-   "mark": 2.032e-05,
+   "cur_price": 1.998e-05,
+   "mark": 1.998e-05,
    "tp": true,
    "tp_t": 1795563962.7887647,
    "tp_px": 2.734e-05,
@@ -4470,17 +4470,21 @@
   {
    "t": "2026-11-25T01:41:04Z",
    "v": 487.58
+  },
+  {
+   "t": "2026-11-25T01:45:58Z",
+   "v": 487.28
   }
  ],
  "started": "2026-11-20T09:50:55Z",
  "version": "b5",
  "strategy": "nach_dem_absturz",
  "coverage": {
-  "t": "2026-11-25T01:41:04Z",
-  "wartend": 901,
-  "beobachtet": 49,
-  "neu": 3,
-  "beobachtung_gestartet": 12,
+  "t": "2026-11-25T01:45:58Z",
+  "wartend": 902,
+  "beobachtet": 48,
+  "neu": 1,
+  "beobachtung_gestartet": 0,
   "signale": 0,
   "moonbags": 6
  },
