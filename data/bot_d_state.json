@@ -1,21 +1,6 @@
 {
- "cash": 277.12138900000195,
- "positions": {
-  "DTLJXMxGdD1tMhKXurxbS7aqX3j79YkCkGQsQu5Zpump": {
-   "sym": "xmascoin",
-   "qty": 1490027.163199,
-   "cost": 50.02,
-   "opened": "2026-11-26T08:06:15Z",
-   "peak": 3.047e-05,
-   "entry": 3.356985780890734e-05,
-   "quelle": "6TztascWVawd6JswEir6nvRsrjFGJWo6CZyazejaAd3",
-   "quelle_name": "Wallet A",
-   "t_wallet": 1795680284,
-   "wallet_sol": 0.053,
-   "cur_price": 3.047e-05,
-   "mark": 3.047e-05
-  }
- },
+ "cash": 316.94568600000196,
+ "positions": {},
  "trades": [
   {
    "t": "2026-11-04T01:31:33Z",
@@ -5266,13 +5251,24 @@
    "slip": 0.0373,
    "quote": "jup",
    "reason": "kopie Wallet A (+91 s)"
+  },
+  {
+   "t": "2026-11-26T08:11:13Z",
+   "side": "sell",
+   "sym": "xmascoin",
+   "addr": "DTLJXMxGdD1tMhKXurxbS7aqX3j79YkCkGQsQu5Zpump",
+   "price": 2.75e-05,
+   "usd": 39.82,
+   "pnl": -10.2,
+   "peak_x": 0.908,
+   "held_h": 0.1,
+   "frac": 1.0,
+   "slip": 0.0145,
+   "quote": "jup",
+   "reason": "wallet verkauft (+88 s)"
   }
  ],
  "equity": [
-  {
-   "t": "2026-11-08T23:31:22Z",
-   "v": 808.78
-  },
   {
    "t": "2026-11-08T23:36:21Z",
    "v": 808.78
@@ -25268,6 +25264,10 @@
   {
    "t": "2026-11-26T08:06:18Z",
    "v": 322.52
+  },
+  {
+   "t": "2026-11-26T08:11:16Z",
+   "v": 316.95
   }
  ],
  "started": "2026-11-03T09:11:31Z",
@@ -25282,7 +25282,7 @@
     "kaeufe_gesehen": 76
    },
    "6TztascWVawd6JswEir6nvRsrjFGJWo6CZyazejaAd3": {
-    "bis_sig": "k3EeF3EZjE4CPjDttDrsBRKdEZEZRYUnRi2DBdyqSd1CgfhP7S2BLaX2eBykmGVb4wnPPfMpGW2CcRndnfTzP2h",
+    "bis_sig": "281pnS7v5DfgoT2Kfs5WxGHuGTR9PKb87aVy6WewpxsuQqombJEyA4mSW7bpg3Jty4pgPQUFDCc3KqS8AsR2j17F",
     "kaeufe_gesehen": 77
    },
    "DuCHeSSQMT8psckL2Rqm6GkvJkL5F4zV9HZAi4oeKVfv": {
@@ -25296,17 +25296,17 @@
   }
  },
  "coverage": {
-  "t": "2026-11-26T08:06:18Z",
+  "t": "2026-11-26T08:11:16Z",
   "kandidaten": 30,
   "pfade": 30,
-  "kurse": 1,
-  "von": 2,
+  "kurse": 2,
+  "von": 3,
   "fruehkaeufer_neu": 0,
   "fruehkaeufer_fehler": 0,
   "weg": {},
   "coins_mit_fruehkaeufern": 1317,
   "coins_ausgewertet": 1278,
-  "credits_heute": 4108,
+  "credits_heute": 4111,
   "codex_heute": 0,
   "spaet_neu": 0,
   "coins_mit_spaeten": 1135,
@@ -25325,10 +25325,10 @@
    "spaete_kaeufer": 2,
    "jupiter": 2,
    "stufe2": 3,
-   "gesamt": 4
+   "gesamt": 3
   },
   "warteschlange": 665,
-  "copy_credits_heute": 118,
+  "copy_credits_heute": 121,
   "copy_wallets": [
    "Wallet A"
   ]
@@ -25339,6 +25339,7 @@
   "GJj6y6pTYrqZT3AKXZpsecBaxD3xdo7oTxWPGCgpump": 1795671981.8523865,
   "DYKzUfMhug8j3Begn8gm2LkpYLXvJL33JnCn1DCZpump": 1795675576.3273296,
   "6v489gBv5A7xwhdcBEmfpQJtvWZ1ZkJ83RVFLQ2Rpump": 1795675880.993408,
-  "3H7PsHWaJMuywcTsPpVvwAfc2Xx6JA6A5UKD4GDTpump": 1795678869.0529735
+  "3H7PsHWaJMuywcTsPpVvwAfc2Xx6JA6A5UKD4GDTpump": 1795678869.0529735,
+  "DTLJXMxGdD1tMhKXurxbS7aqX3j79YkCkGQsQu5Zpump": 1795680673.8187315
  }
 }
