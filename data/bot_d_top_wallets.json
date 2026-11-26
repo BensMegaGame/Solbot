@@ -1,5 +1,5 @@
 {
- "t": "2026-11-26T01:28:30Z",
+ "t": "2026-11-26T01:32:40Z",
  "version": "d5",
  "coins_mit_daten": 1320,
  "coins_ausgewertet": 1278,
@@ -46,9 +46,26 @@
   "fehler": 11,
   "durchgefallen": 4,
   "zu_schnell": 15,
-  "sim": 1
+  "bestanden": 1
  },
- "copy_liste": [],
+ "copy_liste": [
+  {
+   "name": "Wallet A",
+   "seit": "2026-11-26T01:32:40Z",
+   "n": 30,
+   "schnitt": 0.0507,
+   "ohne_top2": -0.0782,
+   "haelfte1": 0.046,
+   "haelfte2": 0.0553,
+   "trefferquote": 0.6,
+   "halte_min": 5.0,
+   "tx_tag": 33.3,
+   "kosten": 0.0356,
+   "kosten_art": "jupiter",
+   "stand": "2026-11-26T00:46:28Z",
+   "in_neupruefung": false
+  }
+ ],
  "copy_woche": "2026-W48",
  "kosten": {
   "wert": 0.0356,
