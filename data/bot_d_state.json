@@ -5540,10 +5540,6 @@
  ],
  "equity": [
   {
-   "t": "2026-11-09T10:16:19Z",
-   "v": 789.09
-  },
-  {
    "t": "2026-11-09T10:21:22Z",
    "v": 789.09
   },
@@ -25538,6 +25534,10 @@
   {
    "t": "2026-11-26T18:51:15Z",
    "v": 371.46
+  },
+  {
+   "t": "2026-11-26T18:56:16Z",
+   "v": 371.46
   }
  ],
  "started": "2026-11-03T09:11:31Z",
@@ -25566,17 +25566,17 @@
   }
  },
  "coverage": {
-  "t": "2026-11-26T18:51:15Z",
+  "t": "2026-11-26T18:56:16Z",
   "kandidaten": 30,
   "pfade": 30,
-  "kurse": 0,
-  "von": 2,
+  "kurse": 4,
+  "von": 6,
   "fruehkaeufer_neu": 0,
   "fruehkaeufer_fehler": 0,
   "weg": {},
   "coins_mit_fruehkaeufern": 1317,
   "coins_ausgewertet": 1278,
-  "credits_heute": 4273,
+  "credits_heute": 4274,
   "codex_heute": 0,
   "spaet_neu": 0,
   "coins_mit_spaeten": 1135,
@@ -25595,10 +25595,10 @@
    "spaete_kaeufer": 2,
    "jupiter": 2,
    "stufe2": 2,
-   "gesamt": 3
+   "gesamt": 2
   },
   "warteschlange": 665,
-  "copy_credits_heute": 283,
+  "copy_credits_heute": 284,
   "copy_wallets": [
    "Wallet A"
   ]
