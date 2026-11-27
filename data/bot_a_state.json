@@ -1,5 +1,5 @@
 {
- "cash": 32.40900794111206,
+ "cash": 7.080895941112054,
  "positions": {
   "5qaP7oKUqKffwwo5DaEqDoTtsBLMpdbQTxEkCDaTpump": {
    "sym": "Max",
@@ -8,18 +8,18 @@
    "opened": "2026-11-22T13:45:07Z",
    "peak": 0.0006025,
    "entry": 0.0005692331194224446,
-   "cur_price": 0.000421,
-   "mark": 0.000421
+   "cur_price": 0.00042,
+   "mark": 0.00042
   },
-  "B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump": {
-   "sym": "FIONA",
-   "qty": 20561.10296,
+  "8rjgC1GsBo4fwuXjq7Hy12SAFxgFxbtSJJSFBYkVpump": {
+   "sym": "WW",
+   "qty": 70926.870385,
    "cost": 50.02,
-   "opened": "2026-11-25T21:50:22Z",
-   "peak": 0.002549,
-   "entry": 0.0024327488703942564,
-   "cur_price": 0.001228,
-   "mark": 0.001228
+   "opened": "2026-11-27T08:10:12Z",
+   "peak": 0.0006899,
+   "entry": 0.000705233428861095,
+   "cur_price": 0.0006899,
+   "mark": 0.0006899
   }
  },
  "trades": [
@@ -5099,13 +5099,36 @@
    "slip": 0.0,
    "quote": "jup",
    "reason": "screener"
+  },
+  {
+   "t": "2026-11-27T08:10:03Z",
+   "side": "sell",
+   "sym": "FIONA",
+   "addr": "B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump",
+   "price": 0.001195,
+   "usd": 24.69,
+   "pnl": -25.33,
+   "peak_x": 1.048,
+   "held_h": 34.3,
+   "frac": 1.0,
+   "slip": 0.0053,
+   "quote": "jup",
+   "reason": "stop"
+  },
+  {
+   "t": "2026-11-27T08:10:12Z",
+   "side": "buy",
+   "sym": "WW",
+   "addr": "8rjgC1GsBo4fwuXjq7Hy12SAFxgFxbtSJJSFBYkVpump",
+   "price": 0.0006899,
+   "fill": 0.000705233429,
+   "usd": 50.02,
+   "slip": 0.0202,
+   "quote": "jup",
+   "reason": "screener"
   }
  ],
  "equity": [
-  {
-   "t": "2026-11-09T23:31:00Z",
-   "v": 150.11
-  },
   {
    "t": "2026-11-09T23:36:01Z",
    "v": 150.54
@@ -25101,6 +25124,10 @@
   {
    "t": "2026-11-27T08:05:53Z",
    "v": 94.65
+  },
+  {
+   "t": "2026-11-27T08:10:53Z",
+   "v": 92.92
   }
  ],
  "started": "2026-09-10T17:17:16Z",
@@ -25111,6 +25138,7 @@
   "4Ye6Y6Vaic8cyPdfW2f9PcLhXkysBtSmV84G8X7spump": 1795293302.9512522,
   "Fn95NtGXWPaJXc4N5y9rVkUq1NwZbjBNJzPVvNRLpump": 1795305003.392241,
   "Jd3NCawdFiDNWpLiTtsMqoeoBMjC1ZQMrMScRVzpump": 1795506904.319689,
-  "9cmXfuC26anZtH9AUWVzpUxU1UJ7PPogYxftYTepump": 1795643402.4576507
+  "9cmXfuC26anZtH9AUWVzpUxU1UJ7PPogYxftYTepump": 1795643402.4576507,
+  "B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump": 1795767003.9885795
  }
 }
