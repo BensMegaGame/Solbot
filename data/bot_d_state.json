@@ -1,21 +1,6 @@
 {
- "cash": 212.410696000002,
- "positions": {
-  "Fpbbrcyaz3CwcEwbR66e9FzDEtNfx8m7yvSjVZrNpump": {
-   "sym": "VETO",
-   "qty": 1318091.722451,
-   "cost": 50.02,
-   "opened": "2026-11-27T16:00:58Z",
-   "peak": 5.149e-05,
-   "entry": 3.7948800639600025e-05,
-   "quelle": "6TztascWVawd6JswEir6nvRsrjFGJWo6CZyazejaAd3",
-   "quelle_name": "Wallet A",
-   "t_wallet": 1795795103,
-   "wallet_sol": 0.053,
-   "cur_price": 3.336e-06,
-   "mark": 3.336e-06
-  }
- },
+ "cash": 216.722529000002,
+ "positions": {},
  "trades": [
   {
    "t": "2026-11-04T01:31:33Z",
@@ -5968,13 +5953,24 @@
    "slip": 0.0218,
    "quote": "jup",
    "reason": "kopie Wallet A (+155 s)"
+  },
+  {
+   "t": "2026-11-27T16:16:00Z",
+   "side": "sell",
+   "sym": "VETO",
+   "addr": "Fpbbrcyaz3CwcEwbR66e9FzDEtNfx8m7yvSjVZrNpump",
+   "price": 3.301e-06,
+   "usd": 4.31,
+   "pnl": -45.71,
+   "peak_x": 1.357,
+   "held_h": 0.3,
+   "frac": 1.0,
+   "slip": 0.0049,
+   "quote": "jup",
+   "reason": "stop"
   }
  ],
  "equity": [
-  {
-   "t": "2026-11-10T07:36:31Z",
-   "v": 746.45
-  },
   {
    "t": "2026-11-10T07:41:30Z",
    "v": 746.45
@@ -25970,6 +25966,10 @@
   {
    "t": "2026-11-27T16:11:00Z",
    "v": 216.81
+  },
+  {
+   "t": "2026-11-27T16:16:03Z",
+   "v": 216.72
   }
  ],
  "started": "2026-11-03T09:11:31Z",
@@ -25998,7 +25998,7 @@
   }
  },
  "coverage": {
-  "t": "2026-11-27T16:11:00Z",
+  "t": "2026-11-27T16:16:03Z",
   "kandidaten": 30,
   "pfade": 30,
   "kurse": 7,
@@ -26008,7 +26008,7 @@
   "weg": {},
   "coins_mit_fruehkaeufern": 1317,
   "coins_ausgewertet": 1278,
-  "credits_heute": 3968,
+  "credits_heute": 3969,
   "codex_heute": 11,
   "spaet_neu": 0,
   "coins_mit_spaeten": 1135,
@@ -26021,7 +26021,7 @@
   "helius_wallet_heute": 3725,
   "laufzeit_s": {
    "copy": 0,
-   "kandidaten": 1,
+   "kandidaten": 0,
    "kurse": 2,
    "fruehkaeufer": 2,
    "spaete_kaeufer": 2,
@@ -26030,7 +26030,7 @@
    "gesamt": 3
   },
   "warteschlange": 661,
-  "copy_credits_heute": 243,
+  "copy_credits_heute": 244,
   "copy_wallets": [
    "Wallet A"
   ]
@@ -26067,6 +26067,7 @@
   "jMhjZicmQSAJNoub4VEyJKqJxXzuyFCSKGgribxpump": 1795774724.2656589,
   "EJEeWpvfviFyz1GQqSFHjXmvvXvUTkbjsRBWh1DLpump": 1795774724.4014792,
   "HrURiXYRBkK25NcPDeBFn88AUH2yPwtWyWCL5WXrdSGV": 1795775724.5079124,
-  "6rdrHFPsHL1kif7uorfAa91GrCYJcXPaG2tz1jDtpump": 1795789855.3455434
+  "6rdrHFPsHL1kif7uorfAa91GrCYJcXPaG2tz1jDtpump": 1795789855.3455434,
+  "Fpbbrcyaz3CwcEwbR66e9FzDEtNfx8m7yvSjVZrNpump": 1795796160.7602222
  }
 }
