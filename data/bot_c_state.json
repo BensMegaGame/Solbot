@@ -1,6 +1,17 @@
 {
- "cash": 254.6907317247592,
- "positions": {},
+ "cash": 178.26351220733144,
+ "positions": {
+  "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump": {
+   "sym": "CBUCKS",
+   "qty": 12006.39972,
+   "cost": 76.42721951742774,
+   "opened": "2026-11-27T23:01:25Z",
+   "peak": 0.006262,
+   "entry": 0.006365540153566347,
+   "cur_price": 0.006262,
+   "mark": 0.006262
+  }
+ },
  "trades": [
   {
    "t": "2026-09-25T10:30:42Z",
@@ -2563,13 +2574,21 @@
    "slip": 0.0,
    "quote": "jup",
    "reason": "stop"
+  },
+  {
+   "t": "2026-11-27T23:01:25Z",
+   "side": "buy",
+   "sym": "CBUCKS",
+   "addr": "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump",
+   "price": 0.006262,
+   "fill": 0.006365540154,
+   "usd": 76.43,
+   "slip": 0.0163,
+   "quote": "jup",
+   "reason": "dip 24h -12% (SOL +1%) 1h +1.9%"
   }
  ],
  "equity": [
-  {
-   "t": "2026-11-10T14:21:07Z",
-   "v": 312.36
-  },
   {
    "t": "2026-11-10T14:26:06Z",
    "v": 311.97
@@ -22565,6 +22584,10 @@
   {
    "t": "2026-11-27T22:56:21Z",
    "v": 254.69
+  },
+  {
+   "t": "2026-11-27T23:01:25Z",
+   "v": 253.45
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -22572,12 +22595,12 @@
  "strategy": "dip_weites_netz",
  "universe_n": 156,
  "coverage": {
-  "t": "2026-11-27T22:56:21Z",
+  "t": "2026-11-27T23:01:25Z",
   "kurse": 127,
   "von": 156,
   "ohne_pool": 81,
   "sol": true,
-  "kandidaten": 0
+  "kandidaten": 1
  },
  "verkauft_am": {
   "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump": 1795454482.3786592,
