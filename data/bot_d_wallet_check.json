@@ -3200,48 +3200,6 @@
   "status": "sim",
   "offen_sim": [
    {
-    "mint": "As3XtYSstuVdrVyb6sJZZ77Tu8JvjTBg6S6hgPv4pump",
-    "t_kauf": 1795619315,
-    "t_verkauf": 1795619319,
-    "sol_in": 0.0319,
-    "eigen": 0.1955
-   },
-   {
-    "mint": "Bg74niwsyZFFxPhY8J47crDtDSUctKZEb1AuZL93pump",
-    "t_kauf": 1795623253,
-    "t_verkauf": 1795623420,
-    "sol_in": 0.0319,
-    "eigen": 0.4439
-   },
-   {
-    "mint": "DCgbRLsxYx8hWhPCst7UDywXDbYg5NrE5FSU1rZqpump",
-    "t_kauf": 1795625691,
-    "t_verkauf": 1795627493,
-    "sol_in": 0.0319,
-    "eigen": -0.0262
-   },
-   {
-    "mint": "J9eBkCb4UtquAMQqB6duwBmR99fFSMoTnDcaMB9Wpump",
-    "t_kauf": 1795626737,
-    "t_verkauf": 1795627434,
-    "sol_in": 0.0319,
-    "eigen": -0.4476
-   },
-   {
-    "mint": "DCgbRLsxYx8hWhPCst7UDywXDbYg5NrE5FSU1rZqpump",
-    "t_kauf": 1795629353,
-    "t_verkauf": 1795630476,
-    "sol_in": 0.0303,
-    "eigen": -0.3863
-   },
-   {
-    "mint": "5619Qq9Cy9CwjB9SmsiEM3VT7o9dLozSy74a7NG5pump",
-    "t_kauf": 1795639297,
-    "t_verkauf": 1795639552,
-    "sol_in": 0.0319,
-    "eigen": -0.3619
-   },
-   {
     "mint": "J9eBkCb4UtquAMQqB6duwBmR99fFSMoTnDcaMB9Wpump",
     "t_kauf": 1795643056,
     "t_verkauf": 1795644858,
@@ -3324,6 +3282,22 @@
    [
     1795600241,
     -0.3389
+   ],
+   [
+    1795619315,
+    -0.036
+   ],
+   [
+    1795623253,
+    0.736
+   ],
+   [
+    1795626737,
+    -0.1089
+   ],
+   [
+    1795639297,
+    -0.536
    ]
   ],
   "details": [
@@ -3476,9 +3450,69 @@
     "luecke_rein_s": 19,
     "luecke_raus_s": 84,
     "kerzen": 48
+   },
+   {
+    "mint": "As3XtYSstuVdrVyb6sJZZ77Tu8JvjTBg6S6hgPv4pump",
+    "t_kauf": 1795619315,
+    "t_verkauf": 1795619319,
+    "sol_in": 0.0319,
+    "eigen": 0.1955,
+    "quelle": "gt",
+    "kopie": -0.036,
+    "entry": 0.00019880162955702586,
+    "exit": 0.00019880162955702586,
+    "grund": "nach_verkauf",
+    "luecke_rein_s": -35,
+    "luecke_raus_s": 39,
+    "kerzen": 838
+   },
+   {
+    "mint": "Bg74niwsyZFFxPhY8J47crDtDSUctKZEb1AuZL93pump",
+    "t_kauf": 1795623253,
+    "t_verkauf": 1795623420,
+    "sol_in": 0.0319,
+    "eigen": 0.4439,
+    "quelle": "gt",
+    "kopie": 0.736,
+    "entry": 1.7275900148582114e-06,
+    "exit": 3.061211047163121e-06,
+    "grund": "nach_verkauf",
+    "luecke_rein_s": -13,
+    "luecke_raus_s": 0,
+    "kerzen": 11
+   },
+   {
+    "mint": "J9eBkCb4UtquAMQqB6duwBmR99fFSMoTnDcaMB9Wpump",
+    "t_kauf": 1795626737,
+    "t_verkauf": 1795627434,
+    "sol_in": 0.0319,
+    "eigen": -0.4476,
+    "quelle": "gt",
+    "kopie": -0.1089,
+    "entry": 1.3530801234943441e-06,
+    "exit": 1.2544352496844997e-06,
+    "grund": "nach_verkauf",
+    "luecke_rein_s": 43,
+    "luecke_raus_s": 594,
+    "kerzen": 37
+   },
+   {
+    "mint": "5619Qq9Cy9CwjB9SmsiEM3VT7o9dLozSy74a7NG5pump",
+    "t_kauf": 1795639297,
+    "t_verkauf": 1795639552,
+    "sol_in": 0.0319,
+    "eigen": -0.3619,
+    "quelle": "gt",
+    "kopie": -0.536,
+    "entry": 2.1583620013132967e-05,
+    "exit": 1.0791810006566484e-05,
+    "grund": "stop",
+    "luecke_rein_s": -37,
+    "luecke_raus_s": 0,
+    "kerzen": 37
    }
   ],
-  "ohne_kurs": 8,
+  "ohne_kurs": 10,
   "kerzen_fehler": "[{\"message\": \"Your account has exceeded its usage limit for this billing period,"
  },
  "9bFpPQ71wvvgMemmcgWbcEyka6UkdJAJPmSP98UghX4p": {
