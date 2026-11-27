@@ -3197,51 +3197,7 @@
   "liegen_gelassen": 2,
   "eigen_schnitt": -0.068,
   "halte_min": 10.1,
-  "status": "sim",
-  "offen_sim": [
-   {
-    "mint": "J9eBkCb4UtquAMQqB6duwBmR99fFSMoTnDcaMB9Wpump",
-    "t_kauf": 1795643056,
-    "t_verkauf": 1795644858,
-    "sol_in": 0.0319,
-    "eigen": -0.2581
-   },
-   {
-    "mint": "CK5VrtRsBXjjGnr5RbdxPXaDixim5s6XMEWN29rXdLiQ",
-    "t_kauf": 1795662912,
-    "t_verkauf": 1795663256,
-    "sol_in": 0.0319,
-    "eigen": 0.2993
-   },
-   {
-    "mint": "6B5X3keXJ4J8LLvswa2mbqMhrRDbt85Jo88sbB6apump",
-    "t_kauf": 1795670535,
-    "t_verkauf": 1795670992,
-    "sol_in": 0.0319,
-    "eigen": -0.4829
-   },
-   {
-    "mint": "32rBxcFjCFnyqZ41CEPM5AL67X1dcw8w83vZt6Kxpump",
-    "t_kauf": 1795700506,
-    "t_verkauf": 1795701130,
-    "sol_in": 0.0319,
-    "eigen": -0.4269
-   },
-   {
-    "mint": "6is11V1KgpybgPdMkYGBacbiT62kqunsvnLDNzDfpump",
-    "t_kauf": 1795705769,
-    "t_verkauf": 1795708631,
-    "sol_in": 0.0319,
-    "eigen": -0.062
-   },
-   {
-    "mint": "D2u4NuRSrpwC3AcXvQuqgtc6ge97pjnSrjmBp5cipump",
-    "t_kauf": 1795722953,
-    "t_verkauf": 1795723222,
-    "sol_in": 0.0319,
-    "eigen": -0.7722
-   }
-  ],
+  "status": "durchgefallen",
   "sim": [
    [
     1795524327,
@@ -3297,6 +3253,26 @@
    ],
    [
     1795639297,
+    -0.536
+   ],
+   [
+    1795662912,
+    0.7355
+   ],
+   [
+    1795670535,
+    -0.2516
+   ],
+   [
+    1795700506,
+    -0.3882
+   ],
+   [
+    1795705769,
+    0.0994
+   ],
+   [
+    1795722953,
     -0.536
    ]
   ],
@@ -3510,10 +3486,96 @@
     "luecke_rein_s": -37,
     "luecke_raus_s": 0,
     "kerzen": 37
+   },
+   {
+    "mint": "CK5VrtRsBXjjGnr5RbdxPXaDixim5s6XMEWN29rXdLiQ",
+    "t_kauf": 1795662912,
+    "t_verkauf": 1795663256,
+    "sol_in": 0.0319,
+    "eigen": 0.2993,
+    "quelle": "gt",
+    "kopie": 0.7355,
+    "entry": 1.6389425818648488e-05,
+    "exit": 2.9033623892652633e-05,
+    "grund": "nach_verkauf",
+    "luecke_rein_s": -12,
+    "luecke_raus_s": 116,
+    "kerzen": 7
+   },
+   {
+    "mint": "6B5X3keXJ4J8LLvswa2mbqMhrRDbt85Jo88sbB6apump",
+    "t_kauf": 1795670535,
+    "t_verkauf": 1795670992,
+    "sol_in": 0.0319,
+    "eigen": -0.4829,
+    "quelle": "gt",
+    "kopie": -0.2516,
+    "entry": 3.255201494789019e-06,
+    "exit": 2.553517783449621e-06,
+    "grund": "nach_verkauf",
+    "luecke_rein_s": -15,
+    "luecke_raus_s": 52,
+    "kerzen": 7
+   },
+   {
+    "mint": "32rBxcFjCFnyqZ41CEPM5AL67X1dcw8w83vZt6Kxpump",
+    "t_kauf": 1795700506,
+    "t_verkauf": 1795701130,
+    "sol_in": 0.0319,
+    "eigen": -0.4269,
+    "quelle": "gt",
+    "kopie": -0.3882,
+    "entry": 2.73815775631437e-06,
+    "exit": 1.7738678695526751e-06,
+    "grund": "nach_verkauf",
+    "luecke_rein_s": -46,
+    "luecke_raus_s": 70,
+    "kerzen": 74
+   },
+   {
+    "mint": "6is11V1KgpybgPdMkYGBacbiT62kqunsvnLDNzDfpump",
+    "t_kauf": 1795705769,
+    "t_verkauf": 1795708631,
+    "sol_in": 0.0319,
+    "eigen": -0.062,
+    "quelle": "gt",
+    "kopie": 0.0994,
+    "entry": 2.235617990178905e-05,
+    "exit": 2.5382505030928568e-05,
+    "grund": "nach_verkauf",
+    "luecke_rein_s": -29,
+    "luecke_raus_s": 11,
+    "kerzen": 137
+   },
+   {
+    "mint": "D2u4NuRSrpwC3AcXvQuqgtc6ge97pjnSrjmBp5cipump",
+    "t_kauf": 1795722953,
+    "t_verkauf": 1795723222,
+    "sol_in": 0.0319,
+    "eigen": -0.7722,
+    "quelle": "gt",
+    "kopie": -0.536,
+    "entry": 1.8852133897622016e-05,
+    "exit": 9.426066948811008e-06,
+    "grund": "stop",
+    "luecke_rein_s": -53,
+    "luecke_raus_s": 0,
+    "kerzen": 20
    }
   ],
-  "ohne_kurs": 10,
-  "kerzen_fehler": "[{\"message\": \"Your account has exceeded its usage limit for this billing period,"
+  "ohne_kurs": 11,
+  "kerzen_fehler": "[{\"message\": \"Your account has exceeded its usage limit for this billing period,",
+  "n": 19,
+  "schnitt": -0.0642,
+  "ohne_top2": -0.1583,
+  "haelfte1": -0.0661,
+  "haelfte2": -0.0625,
+  "median": -0.194,
+  "trefferquote": 0.316,
+  "streng": false,
+  "grund": "Kopie im Schnitt im Minus",
+  "kosten": 0.036,
+  "kosten_art": "jupiter"
  },
  "9bFpPQ71wvvgMemmcgWbcEyka6UkdJAJPmSP98UghX4p": {
   "t": 1793754703.6468632,
