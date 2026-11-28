@@ -2440,41 +2440,6 @@
   "status": "sim",
   "offen_sim": [
    {
-    "mint": "ACzDUEXiDMWS6K3jxMcEKQJzJpHPjenw38hiFBihpump",
-    "t_kauf": 1795749041,
-    "t_verkauf": 1795749341,
-    "sol_in": 0.0515,
-    "eigen": 1.2143
-   },
-   {
-    "mint": "EomygbXHKGwb9bkCatVftQpCVgvBPmgAnMUuwusxpump",
-    "t_kauf": 1795750816,
-    "t_verkauf": 1795751117,
-    "sol_in": 0.053,
-    "eigen": 0.4158
-   },
-   {
-    "mint": "C6oCcRXnB6SEp3Pmi9gL8DHVsoEWR9aaZtf9UGj8pump",
-    "t_kauf": 1795757156,
-    "t_verkauf": 1795757456,
-    "sol_in": 0.053,
-    "eigen": -0.1022
-   },
-   {
-    "mint": "87CvVzNfgYv6X64Hi6Gb3Lf4S9Ef5yBxPLk6EH1opump",
-    "t_kauf": 1795762263,
-    "t_verkauf": 1795762563,
-    "sol_in": 0.053,
-    "eigen": 0.1833
-   },
-   {
-    "mint": "At5hmwDn4YgPDoic1UN7zMdTtCoiXJsMhnKaoazEpump",
-    "t_kauf": 1795773123,
-    "t_verkauf": 1795773423,
-    "sol_in": 0.053,
-    "eigen": -0.0269
-   },
-   {
     "mint": "5phSFous8mThwibFomir1t16TivbsxGtPMzMyJ15pump",
     "t_kauf": 1795773325,
     "t_verkauf": 1795773628,
@@ -2650,8 +2615,105 @@
     "eigen": 0.1957
    }
   ],
-  "sim": [],
-  "details": [],
+  "sim": [
+   [
+    1795749041,
+    0.3437
+   ],
+   [
+    1795750816,
+    0.4538
+   ],
+   [
+    1795757156,
+    0.0992
+   ],
+   [
+    1795762263,
+    -0.0484
+   ],
+   [
+    1795773123,
+    0.4263
+   ]
+  ],
+  "details": [
+   {
+    "mint": "ACzDUEXiDMWS6K3jxMcEKQJzJpHPjenw38hiFBihpump",
+    "t_kauf": 1795749041,
+    "t_verkauf": 1795749341,
+    "sol_in": 0.0515,
+    "eigen": 1.2143,
+    "quelle": "gt",
+    "kopie": 0.3437,
+    "entry": 3.7344554431925026e-05,
+    "exit": 5.1535893825484426e-05,
+    "grund": "nach_verkauf",
+    "luecke_rein_s": -41,
+    "luecke_raus_s": 41,
+    "kerzen": 686
+   },
+   {
+    "mint": "EomygbXHKGwb9bkCatVftQpCVgvBPmgAnMUuwusxpump",
+    "t_kauf": 1795750816,
+    "t_verkauf": 1795751117,
+    "sol_in": 0.053,
+    "eigen": 0.4158,
+    "quelle": "gt",
+    "kopie": 0.4538,
+    "entry": 3.5883799687630265e-05,
+    "exit": 5.3470001032454675e-05,
+    "grund": "nach_verkauf",
+    "luecke_rein_s": -16,
+    "luecke_raus_s": 17,
+    "kerzen": 129
+   },
+   {
+    "mint": "C6oCcRXnB6SEp3Pmi9gL8DHVsoEWR9aaZtf9UGj8pump",
+    "t_kauf": 1795757156,
+    "t_verkauf": 1795757456,
+    "sol_in": 0.053,
+    "eigen": -0.1022,
+    "quelle": "gt",
+    "kopie": 0.0992,
+    "entry": 3.0353250074870255e-05,
+    "exit": 3.446509891000655e-05,
+    "grund": "nach_verkauf",
+    "luecke_rein_s": -56,
+    "luecke_raus_s": 56,
+    "kerzen": 57
+   },
+   {
+    "mint": "87CvVzNfgYv6X64Hi6Gb3Lf4S9Ef5yBxPLk6EH1opump",
+    "t_kauf": 1795762263,
+    "t_verkauf": 1795762563,
+    "sol_in": 0.053,
+    "eigen": 0.1833,
+    "quelle": "gt",
+    "kopie": -0.0484,
+    "entry": 3.659127397845838e-05,
+    "exit": 3.6147626370560974e-05,
+    "grund": "nach_verkauf",
+    "luecke_rein_s": -3,
+    "luecke_raus_s": 3,
+    "kerzen": 24
+   },
+   {
+    "mint": "At5hmwDn4YgPDoic1UN7zMdTtCoiXJsMhnKaoazEpump",
+    "t_kauf": 1795773123,
+    "t_verkauf": 1795773423,
+    "sol_in": 0.053,
+    "eigen": -0.0269,
+    "quelle": "gt",
+    "kopie": 0.4263,
+    "entry": 3.103991416278519e-05,
+    "exit": 4.5400301222706696e-05,
+    "grund": "nach_verkauf",
+    "luecke_rein_s": -3,
+    "luecke_raus_s": 3,
+    "kerzen": 162
+   }
+  ],
   "ohne_kurs": 0,
   "vorher": {
    "n": 30,
@@ -4038,9 +4100,15 @@
   "status": "vorab_ok"
  },
  "5re24EbknTzcaqQYyXeCUZKgp22CYMddZJv3aEtcNzL9": {
-  "t": 1795826487.5343573,
-  "tx_tag": 7.2,
-  "status": "vorab_ok"
+  "t": 1795827391.6452873,
+  "tx_tag": 7.1,
+  "letzte": 1795817749,
+  "trades": 0,
+  "geschlossen": 0,
+  "liegen_gelassen": 0,
+  "halte_min": null,
+  "status": "zu_wenig",
+  "grund": "nur 0 Trades in 14 Tagen"
  },
  "6Se4zeeGYN4F8pZ6F5Fbcty9tU7mWY4TooZUAKDUo7HY": {
   "t": 1795305670.2392874,
@@ -4054,10 +4122,9 @@
   "grund": "nur 0 Trades in 14 Tagen"
  },
  "7KtvFjTb7hUkJ3PcPSd7VejRQsK8nHNUcoDw1X8VJvdj": {
-  "t": 1795222575.6972826,
-  "status": "fehler",
-  "grund": "Laufzeit - naechster Lauf versucht es erneut",
-  "fehlversuche": 3
+  "t": 1795827388.0161977,
+  "tx_tag": 7.2,
+  "status": "vorab_ok"
  },
  "498SWfPJisr26J4oCiZccyzReFrByNE7jsHwbm3caNma": {
   "t": 1795658484.955426,
@@ -4883,7 +4950,7 @@
   "grund": "letzte Transaktion aelter als 3 Tage"
  },
  "EMvHkm4ReT739ZqdMNYXHmRpiejFeMynv28E32BU5jp5": {
-  "t": 1795222577.7623224,
+  "t": 1795827390.4561517,
   "status": "inaktiv",
   "grund": "letzte Transaktion aelter als 3 Tage"
  },
@@ -4965,7 +5032,7 @@
   "grund": "122.2 Transaktionen je Tag (Schnelltest)"
  },
  "R32xAccFis3YzBzGwZ1C4QkGiehLxSao7gDmErA3kjk": {
-  "t": 1795222577.1203792,
+  "t": 1795827389.966359,
   "status": "inaktiv",
   "grund": "letzte Transaktion aelter als 3 Tage"
  },
@@ -4975,7 +5042,7 @@
   "grund": "letzte Transaktion aelter als 3 Tage"
  },
  "4XBqViD1XYF1qHrErrsXBzDrCapvP9fEFX4LPjXZi9YU": {
-  "t": 1795222576.3834035,
+  "t": 1795827389.2869682,
   "tx_tag": 1000.0,
   "status": "bot",
   "grund": "1000.0 Transaktionen je Tag (Schnelltest)"
@@ -4986,10 +5053,9 @@
   "grund": "letzte Transaktion aelter als 3 Tage"
  },
  "BbwF4wSwmxMVp7xubA7qigCUU6RMcvK2soMu8VrDHjDH": {
-  "t": 1795222577.3300889,
-  "tx_tag": 118.2,
-  "status": "bot",
-  "grund": "118.2 Transaktionen je Tag (Schnelltest)"
+  "t": 1795827390.184761,
+  "status": "inaktiv",
+  "grund": "letzte Transaktion aelter als 3 Tage"
  },
  "AEMJqxite3B8SYftMJtyFemqFDoukTdRh2dbi1yakhV8": {
   "t": 1793927487.746196,
@@ -5213,7 +5279,7 @@
   "grund": "letzte Transaktion aelter als 3 Tage"
  },
  "FXZGytQbUvXjRfuLsyMR2S1wGYWbYTNeYbUjArMmTuz5": {
-  "t": 1795222576.6418662,
+  "t": 1795827389.4977028,
   "tx_tag": 1000.0,
   "status": "bot",
   "grund": "1000.0 Transaktionen je Tag (Schnelltest)"
@@ -5967,8 +6033,8 @@
   "grund": "1000.0 Transaktionen je Tag (Schnelltest)"
  },
  "51qcgkWCbqgVGVn5GmpPTUGAJ8zH3wvB1Gh5Mews3zpa": {
-  "t": 1795222578.0062106,
-  "tx_tag": 7.4,
+  "t": 1795827390.940593,
+  "tx_tag": 20.7,
   "status": "vorab_ok"
  },
  "D1LuHTfZyWQoZB2YE1TWRNiNbySYKzQhGekALRRLxnoc": {
@@ -6021,9 +6087,9 @@
   "grund": "letzte Transaktion aelter als 3 Tage"
  },
  "DgvmaLHph87NGYqMeYBSEhfdEWiftoUtHmr3LbyPi1y9": {
-  "t": 0,
-  "status": "fehler",
-  "grund": "schnelltest: 429 Client Error: Too Many Requests for url: https://mainnet.helius-rpc.com/?api"
+  "t": 1795827388.2777874,
+  "status": "inaktiv",
+  "grund": "letzte Transaktion aelter als 3 Tage"
  },
  "E3yE42dQZCmwzsGBCZfFYPU9SaQjT5uR4WATdXDcf6tu": {
   "t": 1795827149.4137578,
@@ -6079,19 +6145,19 @@
   "grund": "1000.0 Transaktionen je Tag (Schnelltest)"
  },
  "HAWK3BVnwptKRFYfVoVGhBc2TYxpyG9jmAbkHeW9tyKE": {
-  "t": 1795222578.235956,
+  "t": 1795827391.1596868,
   "tx_tag": 1000.0,
   "status": "bot",
   "grund": "1000.0 Transaktionen je Tag (Schnelltest)"
  },
  "ECzLjhAW2LNoLWi1a1YDxePUDimx9R8FLxXtP66vSxMq": {
-  "t": 1795222575.6977618,
-  "tx_tag": 991.0,
+  "t": 1795827388.5525877,
+  "tx_tag": 432.9,
   "status": "bot",
-  "grund": "991.0 Transaktionen je Tag (Schnelltest)"
+  "grund": "432.9 Transaktionen je Tag (Schnelltest)"
  },
  "9eZnCmcHSx4MN6o4eRjuhvQ542kJYnYyXniY7yVSvQZ1": {
-  "t": 1795222575.949935,
+  "t": 1795827388.8064082,
   "status": "inaktiv",
   "grund": "letzte Transaktion aelter als 3 Tage"
  },
@@ -6118,7 +6184,7 @@
   "status": "vorab_ok"
  },
  "HqREYkXU3w1TKy5iK4sCxzvQhQ265kZBtQ1Xwzh94Uwa": {
-  "t": 1795222577.5371895,
+  "t": 1795827390.6657004,
   "status": "inaktiv",
   "grund": "letzte Transaktion aelter als 3 Tage"
  },
@@ -6150,9 +6216,10 @@
   "grund": "127.9 Transaktionen je Tag (Schnelltest)"
  },
  "9RaD53aMMjuaiMcEbZxWCCjPv6FMje936VZBjw2hoY34": {
-  "t": 1795222578.4457617,
-  "status": "inaktiv",
-  "grund": "letzte Transaktion aelter als 3 Tage"
+  "t": 1795827391.428889,
+  "tx_tag": 260.0,
+  "status": "bot",
+  "grund": "260.0 Transaktionen je Tag (Schnelltest)"
  },
  "7HPNt48xjVK1SSJKa42oN5oCrPiMZipJZE87ob8kCNoX": {
   "t": 1793409402.8374279,
@@ -10686,10 +10753,10 @@
   "grund": "724.3 Transaktionen je Tag (Schnelltest)"
  },
  "GN2CGUyYYLakXQmeiNtfvxcNDviKM9biqQMnxfEPzF4C": {
-  "t": 1795222576.854258,
-  "tx_tag": 508.4,
+  "t": 1795827389.7354972,
+  "tx_tag": 390.1,
   "status": "bot",
-  "grund": "508.4 Transaktionen je Tag (Schnelltest)"
+  "grund": "390.1 Transaktionen je Tag (Schnelltest)"
  },
  "CzAzndSP4tMg4kBj2wMtvHmJRycmvMi4EtDGogUBsYRo": {
   "t": 1795824680.7594147,
@@ -10833,9 +10900,9 @@
   "grund": "letzte Transaktion aelter als 3 Tage"
  },
  "13k76rASDTkRKebXRizvqKJDRir5hjMppBNabnu6uuR4": {
-  "t": 1795222576.164562,
-  "tx_tag": 0.3,
-  "status": "vorab_ok"
+  "t": 1795827389.020483,
+  "status": "inaktiv",
+  "grund": "letzte Transaktion aelter als 3 Tage"
  },
  "4CU9noKhjWWW5TjcGaYoKDhxm3rvi6wePoURXPH4ggF8": {
   "t": 1793408203.9096494,
