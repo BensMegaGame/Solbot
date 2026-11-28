@@ -1,5 +1,5 @@
 {
- "cash": 101.34837717121603,
+ "cash": 22.03333714413563,
  "positions": {
   "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump": {
    "sym": "CBUCKS",
@@ -18,8 +18,18 @@
    "opened": "2026-11-28T06:16:15Z",
    "peak": 0.009506,
    "entry": 0.008311595427661075,
-   "cur_price": 0.009154,
-   "mark": 0.009154
+   "cur_price": 0.008975,
+   "mark": 0.008975
+  },
+  "DKu9kykSfbN5LBfFXtNNDPaX35o4Fv6vJ9FKk7pZpump": {
+   "sym": "AVA",
+   "qty": 12857.795766,
+   "cost": 79.3150400270804,
+   "opened": "2026-11-28T08:21:13Z",
+   "peak": 0.006162,
+   "entry": 0.0061686343033083455,
+   "cur_price": 0.006162,
+   "mark": 0.006162
   }
  },
  "trades": [
@@ -2608,13 +2618,21 @@
    "slip": 0.0,
    "quote": "jup",
    "reason": "dip 24h -13% (SOL -3%) 1h +1.6%"
+  },
+  {
+   "t": "2026-11-28T08:21:13Z",
+   "side": "buy",
+   "sym": "AVA",
+   "addr": "DKu9kykSfbN5LBfFXtNNDPaX35o4Fv6vJ9FKk7pZpump",
+   "price": 0.006162,
+   "fill": 0.006168634303,
+   "usd": 79.32,
+   "slip": 0.0,
+   "quote": "jup",
+   "reason": "dip 24h -15% (SOL -3%) 1h -1.1%"
   }
  ],
  "equity": [
-  {
-   "t": "2026-11-10T23:41:11Z",
-   "v": 317.36
-  },
   {
    "t": "2026-11-10T23:46:12Z",
    "v": 317.63
@@ -22610,6 +22628,10 @@
   {
    "t": "2026-11-28T08:16:10Z",
    "v": 264.32
+  },
+  {
+   "t": "2026-11-28T08:21:13Z",
+   "v": 262.58
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -22617,12 +22639,12 @@
  "strategy": "dip_weites_netz",
  "universe_n": 157,
  "coverage": {
-  "t": "2026-11-28T08:16:10Z",
+  "t": "2026-11-28T08:21:13Z",
   "kurse": 127,
   "von": 157,
   "ohne_pool": 82,
   "sol": true,
-  "kandidaten": 0
+  "kandidaten": 1
  },
  "verkauft_am": {
   "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump": 1795454482.3786592,
