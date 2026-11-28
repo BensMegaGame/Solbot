@@ -1,5 +1,5 @@
 {
- "cash": 22.03333714413563,
+ "cash": 104.47294314413563,
  "positions": {
   "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump": {
    "sym": "CBUCKS",
@@ -8,28 +8,18 @@
    "opened": "2026-11-27T23:01:25Z",
    "peak": 0.006721,
    "entry": 0.006365540153566347,
-   "cur_price": 0.006518,
-   "mark": 0.006518
-  },
-  "CWZ6BsdnjkDVTGkmL6bGbJXXig6ceef12KvyGQW14cMt": {
-   "sym": "ANTFUN",
-   "qty": 9253.955598,
-   "cost": 76.91513503611542,
-   "opened": "2026-11-28T06:16:15Z",
-   "peak": 0.009506,
-   "entry": 0.008311595427661075,
-   "cur_price": 0.008975,
-   "mark": 0.008975
+   "cur_price": 0.006643,
+   "mark": 0.006643
   },
   "DKu9kykSfbN5LBfFXtNNDPaX35o4Fv6vJ9FKk7pZpump": {
    "sym": "AVA",
    "qty": 12857.795766,
    "cost": 79.3150400270804,
    "opened": "2026-11-28T08:21:13Z",
-   "peak": 0.006162,
+   "peak": 0.006165,
    "entry": 0.0061686343033083455,
-   "cur_price": 0.006162,
-   "mark": 0.006162
+   "cur_price": 0.006165,
+   "mark": 0.006165
   }
  },
  "trades": [
@@ -2630,13 +2620,24 @@
    "slip": 0.0,
    "quote": "jup",
    "reason": "dip 24h -15% (SOL -3%) 1h -1.1%"
+  },
+  {
+   "t": "2026-11-28T08:26:10Z",
+   "side": "sell",
+   "sym": "ANTFUN",
+   "addr": "CWZ6BsdnjkDVTGkmL6bGbJXXig6ceef12KvyGQW14cMt",
+   "price": 0.008924,
+   "usd": 82.44,
+   "pnl": 5.52,
+   "peak_x": 1.144,
+   "held_h": 2.2,
+   "frac": 1.0,
+   "slip": 0.001,
+   "quote": "jup",
+   "reason": "trail"
   }
  ],
  "equity": [
-  {
-   "t": "2026-11-10T23:46:12Z",
-   "v": 317.63
-  },
   {
    "t": "2026-11-10T23:51:14Z",
    "v": 317.57
@@ -22632,6 +22633,10 @@
   {
    "t": "2026-11-28T08:21:13Z",
    "v": 262.58
+  },
+  {
+   "t": "2026-11-28T08:26:10Z",
+   "v": 263.5
   }
  ],
  "started": "2026-09-25T09:21:19Z",
@@ -22639,21 +22644,20 @@
  "strategy": "dip_weites_netz",
  "universe_n": 157,
  "coverage": {
-  "t": "2026-11-28T08:21:13Z",
+  "t": "2026-11-28T08:26:10Z",
   "kurse": 127,
   "von": 157,
   "ohne_pool": 82,
   "sol": true,
-  "kandidaten": 1
+  "kandidaten": 0
  },
  "verkauft_am": {
   "Cm6fNnMk7NfzStP9CZpsQA2v3jjzbcYGAxdJySmHpump": 1795454482.3786592,
   "6AJcP7wuLwmRYLBNbi825wgguaPsWzPBEHcHndpRpump": 1795483281.9263272,
   "BeGY8KqKxboEwRbJd1q9H2K829jS4Rc5dEyNMYXCbV5p": 1795615865.9869235,
-  "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump": 1795135875.894853,
-  "Bn9oW3GVKQdgNJG5w5P53dbuZfUtAehwFAniZYry68T8": 1795200966.0705216,
   "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump": 1795491073.9056594,
   "DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP": 1795511162.1115837,
-  "8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump": 1795545978.118671
+  "8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump": 1795545978.118671,
+  "CWZ6BsdnjkDVTGkmL6bGbJXXig6ceef12KvyGQW14cMt": 1795854370.520768
  }
 }
